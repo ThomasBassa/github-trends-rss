@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import operator
 import sqlite3
 
 DB_PATH = 'GHTrends.db'
@@ -74,16 +75,32 @@ class TrendingDB:
                     'VALUES (?, ?, ?, ?)', trends)
             db.commit()
 
-    def upsert_repo_summary(self, repo_summary):
+    def get_blanked_repos(self):
+        #Might be temporary for the sake of testing repo_data...
         with sqlite3.connect(self.path) as db:
             c = db.cursor()
-            c.execute('INSERT INTO Repos'
-                    '(repo_name, description, readme_html) '
-                    'VALUES (?, ?, ?) '
-                    'ON CONFLICT(repo_name) DO UPDATE SET '
-                    'description=excluded.description, '
-                    'readme_html=excluded.readme_html, '
-                    'last_seen=CURRENT_DATE', repo_summary)
+            c.execute('SELECT DISTINCT repo_name FROM Trends '
+                    'WHERE repo_name NOT IN (SELECT repo_name FROM Repos)')
+            return list(map(operator.itemgetter(0), c.fetchall()))
+
+    def upsert_repo_summary(self, repo_summary):
+        #we don't have 'INSERT ... ON CONFLICT DO UPDATE'
+        #so we have to check whether to insert or update...
+        with sqlite3.connect(self.path) as db:
+            c = db.cursor()
+            c.execute('SELECT count(*) FROM Repos WHERE repo_name=?',
+                    (repo_summary.repo_name,))
+            #if present (count != 0), update
+            if int(c.fetchone()[0]): 
+                c.execute('UPDATE Repos SET '
+                        'description=?, readme_html=?, last_seen=CURRENT_DATE '
+                        'WHERE repo_name=?',
+                        (repo_summary.description, repo_summary.readme_html,
+                            repo_summary.repo_name))
+            else:
+                #otherwise insert
+                c.execute('INSERT INTO Repos(repo_name, description, readme_html) '
+                        'VALUES (?, ?, ?) ', repo_summary)
             db.commit()
 
 
@@ -100,6 +117,10 @@ def main():
             print('No key provided...')
     else:
         print('DB already exists')
+        #from repo_data import RepoSummary
+        #print('Adding test repo...')
+        #summary = RepoSummary('test/test', 'This is a test', '<p>Seriously a test</p>')
+        #tdb.upsert_repo_summary(summary)
 
 if __name__ == '__main__':
     main()

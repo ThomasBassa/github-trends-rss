@@ -2,15 +2,26 @@
 
 import asyncio
 from collections import namedtuple
+import traceback
 from github import Github
+from github.GithubException import UnknownObjectException, RateLimitExceededException
 #next 2 used for the "hack"
 import github
 from github.Repository import Repository
 
+import itertools
 import pprint
+import random
 
 RepoSummary = namedtuple('RepoSummary',
         ['repo_name', 'description', 'readme_html'])
+
+#via the python docs for itertools
+def grouper(iterable, n, fillvalue=None):
+    "Collect data into fixed-length chunks or blocks"
+    # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx"
+    args = [iter(iterable)] * n
+    return itertools.zip_longest(*args, fillvalue=fillvalue)
 
 #Hacks to manipulate request headers for get_readme
 #This is modified from github/Repository.py's get_readme method
@@ -34,10 +45,71 @@ def get_html_readme(self, ref=github.GithubObject.NotSet):
 Repository.get_html_readme = get_html_readme
 
 class RepoGatherer:
+    _NO_README_HTML = '<p><i>This repo does not have a README.</i></p>'
+
     def __init__(self, key):
         self.g = Github(key)
+        self.exceeded = False
+
+    def get_rate_limit(self):
+        return self.g.get_rate_limit().core
+
+    async def get_many_repos(self, repos, db=None):
+        """Get the data for many repos with proper rate limiting/delays.
+        Immediately save them to an optional TrendingDB as encountered.
+        Returns the list of results if no DB specified; otherwise returns an empty list"""
+        all_repos = list(repos)
+
+        #Enforce rate limit; reduce job count if needed
+        limits = self.get_rate_limit()
+        print('{0.remaining}/{0.limit} reqests; reset {0.reset}'.format(limits))
+        possible_repos = limits.remaining // 2; #possibly worse than 2...
+
+        repo_count = len(all_repos)
+        if repo_count > possible_repos:
+            print('Warning: Need to fetch {} repos but rate limit is only good for {}'
+                    .format(repo_count, possible_repos))
+            all_repos = all_repos[:possible_repos]
+
+        if not all_repos:
+            print('Rate limit exceeded for now or nothing to do...')
+            return []
+
+        tasks = []
+        #Split the repos into groups of 5
+        #(5 is arbitrary-- approx. how many fetches at a time)
+        batches = grouper(all_repos, 5)
+        #delay eatch batch's items by an additional second
+        for delay, batch in enumerate(batches):
+            for repo in batch:
+                if repo is not None: #grouper adds extra Nones...
+                    tasks.append(self.get_delay_data(repo, delay))
+
+        results = []
+        saved_count = 0
+        for fut in asyncio.as_completed(tasks):
+            summary = await fut
+            if db:
+                db.upsert_repo_summary(summary)
+                print('Saved {}'.format(summary.repo_name))
+                saved_count += 1
+            else:
+                results.append(summary)
+
+        if db:
+            print('Saved data for {} repos.'.format(saved_count))
+        else:
+            print('Got data for {} repos.'.format(len(results)))
+        return results
+
+    async def get_delay_data(self, repo_in, delay):
+        """Call get_repo_data after waiting for delay seconds"""
+        #print('Delayed by {}s'.format(delay))
+        await asyncio.sleep(delay)
+        return await self.get_repo_data(repo_in)
 
     async def get_repo_data(self, repo_in):
+        """Async wrapper for _get_repo (returns RepoSummary)"""
         loop = asyncio.get_event_loop()
         return await loop.run_in_executor(None, self._get_repo, repo_in)
 
@@ -45,33 +117,72 @@ class RepoGatherer:
         """Return a RepoSummary for the provided repo,
         which should be a repo name (not a full url)
         e.g. username/repository"""
-        repo = self.g.get_repo(repo_in)
+        print('Gathering data for {}...'.format(repo_in))
+        try:
+            if self.exceeded:
+                raise RuntimeError('Previously exceeded rate limit; stop!')
+            repo = self.g.get_repo(repo_in)
 
-        name = repo.full_name
-        descr = repo.description
-        #proper api method-- "raw-ish" text
-        #readme = repo.get_readme().decoded_content
-        html_readme = repo.get_html_readme()
+            name = repo.full_name
+            descr = repo.description
+            try:
+                #proper api method-- "raw-ish" text
+                #readme = repo.get_readme().decoded_content
+                html_readme = repo.get_html_readme()
+            except UnknownObjectException:
+                html_readme = self._NO_README_HTML
+        except RateLimitExceededException:
+            self.exceeded = True
+            raise RuntimeError('Rate limit exceeded!')
+
+        print('Done gathering {}'.format(repo_in))
         return RepoSummary(name, descr, html_readme)
 
 
 async def main():
-    import sys
+    #import sys
     from trending_db import TrendingDB
-    if len(sys.argv) < 2:
-        print('provide a repo to test against as an arg')
-        return
-
-    repo = sys.argv[1]
+    #if len(sys.argv) < 2:
+    #    print('provide a repo to test against as an arg')
+    #    return
+    #repo = sys.argv[1]
 
     tdb = TrendingDB()
     key = tdb.get_key()
-    print(await RepoGatherer(key).get_repo_data(repo))
+    #print(await RepoGatherer(key).get_repo_data(repo))
+
+    all_repos = tdb.get_blanked_repos()
+    if not all_repos:
+        print('Nothing to do...')
+        return
+
+    #This whole bit is a short-circuit of ghtrends' last phase of main()
+    gat = RepoGatherer(key)
+
+    try:
+        await gat.get_many_repos(all_repos, tdb)
+        #summaries = await gat.get_many_repos(all_repos)
+        #print('Got data for {} repos. Saving...'.format(len(summaries)))
+        #for summary in summaries:
+        #    tdb.upsert_repo_summary(summary)
+        print('Complete!')
+    except RuntimeError:
+        print('RuntimeError in "main"')
+        traceback.print_exc()
 
 
 if __name__ == '__main__':
+    from concurrent.futures import ThreadPoolExecutor
+
+    exe = ThreadPoolExecutor(4)
     loop = asyncio.get_event_loop()
+    loop.set_default_executor(exe)
     try:
         loop.run_until_complete(main())
+        exe.shutdown(wait=True)
+    except Exception:
+        print("top-level error")
+        traceback.print_exc()
+        exe.shutdown(wait=False)
     finally:
         loop.close()

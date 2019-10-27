@@ -7,6 +7,7 @@ from lxml import html
 import cssselect
 import aiohttp
 
+import random
 import pprint
 import operator
 import itertools
@@ -27,8 +28,8 @@ ALL_LANG = Language('all', 'All Languages')
 async def main():
     tdb = TrendingDB()
     async with aiohttp.ClientSession() as session:
-        tree = await get_disk_tree()
-        #tree = await get_page_tree(ROOT_URL, session)
+        #tree = await get_disk_tree()
+        tree = await get_page_tree(ROOT_URL, session)
         loop = asyncio.get_event_loop()
         langs, periods = await loop.run_in_executor(None, get_langs_and_periods, tree)
 
@@ -52,24 +53,31 @@ async def main():
             jobs.append(FetchJob(lang, period))
 
         #for now, cut off at 10 jobs
-        jobs = jobs[:10]
+        #jobs = jobs[:10]
 
         #pprint.pprint(list(map(operator.attrgetter('url'), jobs)))
-        await asyncio.gather(*map(operator.methodcaller('fetch', session), jobs))
+        #await asyncio.gather(*map(operator.methodcaller('fetch', session), jobs))
+
+        task_list = [job.fetch(session) for job in jobs]
+        trend_count = 0
+        all_repos = set()
+        for fut in asyncio.as_completed(task_list):
+            job = await fut
+            tdb.insert_trends_from_job(job)
+            trend_count += len(job.repos)
+            all_repos.update(map(operator.itemgetter(1), job.repos))
+
         print('Done fetching!')
 
-        #... there's probably a less complicated way to do this.
-        #It'd probably be better to add items to the set as we go?
-        #These are denoted in "reverse" order due to the way functional notation works
-        #for each job, apply .repos (map, attrgetter) -> 'list' of lists of tuples
-        #combine all the lists together as one using chain with * expansion
-        #    -> 'list' of tuples
-        #get second item of each tuple (map, itemgetter) -> 'list' of strings (repos)
-        #combine, remove duplicates (frozenset)
-        all_repos = frozenset(map(operator.itemgetter(1),
-            itertools.chain(*map(operator.attrgetter('repos'), jobs))))
+    print('Found {} trending entries.'.format(trend_count))
+    print('Found {} unique repos. Gathering...'.format(len(all_repos)))
+    pprint.pprint(all_repos)
 
-        pprint.pprint(all_repos)
+    key = tdb.get_key()
+    gat = RepoGatherer(key)
+    await gat.get_many_repos(all_repos, tdb)
+
+    print('Complete!')
 
 
 class FetchJob:
@@ -97,18 +105,22 @@ class FetchJob:
 
     async def fetch(self, session):
         """Fetch the contents at url, populating the repos list.
-        Does not return a value-- read from self.repos after calling this.
+        Returns self-- read from self.repos after calling this.
         repos will become a list of tuples of (rank, repo name)
         Note that more obscure languages may not have any trending items!"""
         #Heavily modified from https://github.com/ryotarai/github_trends_rss/blob/master/lambda/functions/worker/main.py
         if self.repos is not None: #avoid redundant requests
-            return
+            return self
 
         self.repos = []
         rank = 1
 
-        #tree = await get_page_tree(self.url, session)
-        tree = await get_disk_tree(self.url)
+        #Random delay to avoid choking on too many requests...
+        delay = random.randint(1, 90)
+        await asyncio.sleep(delay)
+
+        tree = await get_page_tree(self.url, session)
+        #tree = await get_disk_tree(self.url)
         articles = tree.cssselect("article.Box-row")
         for li in articles:
             a = li.cssselect("h1 a")[0]
@@ -123,6 +135,8 @@ class FetchJob:
 
             self.repos.append((rank, repo_name))
             rank += 1
+        print('Done with repos for {}/{}'.format(self.lang_name, self.period_name))
+        return self
 
 
 def get_langs_and_periods(tree):
@@ -160,7 +174,7 @@ async def get_page_tree(url, session):
         page = await resp.text()
     loop = asyncio.get_event_loop()
     tree = await loop.run_in_executor(None, html.fromstring, page)
-    #print('done')
+    print('Fetched {}'.format(url))
     return tree
 
 async def get_disk_tree(fake_url=ROOT_URL):
@@ -182,8 +196,18 @@ def _disktree():
 
 
 if __name__ == '__main__':
+    import traceback
+    from concurrent.futures import ThreadPoolExecutor
+
+    exe = ThreadPoolExecutor(4)
     loop = asyncio.get_event_loop()
+    loop.set_default_executor(exe)
     try:
         loop.run_until_complete(main())
+        exe.shutdown(wait=True)
+    except Exception:
+        print("top-level error")
+        traceback.print_exc()
+        exe.shutdown(wait=False)
     finally:
         loop.close()
