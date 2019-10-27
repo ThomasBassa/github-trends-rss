@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import asyncio
 from collections import namedtuple
 from github import Github
 #next 2 used for the "hack"
@@ -36,7 +37,11 @@ class RepoGatherer:
     def __init__(self, key):
         self.g = Github(key)
 
-    def get_repo_data(self, repo_in):
+    async def get_repo_data(self, repo_in):
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, self._get_repo, repo_in)
+
+    def _get_repo(self, repo_in):
         """Return a RepoSummary for the provided repo,
         which should be a repo name (not a full url)
         e.g. username/repository"""
@@ -50,7 +55,7 @@ class RepoGatherer:
         return RepoSummary(name, descr, html_readme)
 
 
-def main():
+async def main():
     import sys
     from trending_db import TrendingDB
     if len(sys.argv) < 2:
@@ -61,8 +66,12 @@ def main():
 
     tdb = TrendingDB()
     key = tdb.get_key()
-    print(RepoGatherer(key).get_repo_data(repo))
+    print(await RepoGatherer(key).get_repo_data(repo))
 
 
 if __name__ == '__main__':
-    main()
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_until_complete(main())
+    finally:
+        loop.close()

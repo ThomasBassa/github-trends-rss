@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
  
+import asyncio
 import re
 from collections import namedtuple
 from lxml import html
 import cssselect
-import requests
+import aiohttp
 
 import pprint
 import operator
 import itertools
+import copy
 
 from trending_db import TrendingDB
 from repo_data import RepoGatherer
@@ -22,39 +24,52 @@ MACHINE_RE = re.compile(ROOT_URL + r'/(.*)\?.*')
 Language = namedtuple('Language', ['machine_name', 'name'])
 ALL_LANG = Language('all', 'All Languages')
 
-def main():
-    #tree = get_root_tree()
+async def main():
     tdb = TrendingDB()
-    tree = get_disk_tree()
-    langs, periods = get_langs_and_periods(tree)
+    async with aiohttp.ClientSession() as session:
+        tree = await get_disk_tree()
+        #tree = await get_page_tree(ROOT_URL, session)
+        loop = asyncio.get_event_loop()
+        langs, periods = await loop.run_in_executor(None, get_langs_and_periods, tree)
 
-    #languages = sorted(langs, key=operator.attrgetter('name'))
-    #pprint.pprint(languages)
-    #pprint.pprint(periods)
+        #languages = sorted(langs, key=operator.attrgetter('name'))
+        #pprint.pprint(languages)
+        #pprint.pprint(periods)
 
-    tdb.update_langs(langs | frozenset((ALL_LANG,)))
-    tdb.update_periods(periods)
-    
-    jobs = []
-    #Use periods to construct jobs for the "all" lang
-    for period in periods:
-        job = FetchJob(ALL_LANG, period)
-        #Don't use usual contruction of URL...
-        job.url = period['all_url']
-        jobs.append(job)
+        tdb.update_langs(langs | frozenset((ALL_LANG,)))
+        tdb.update_periods(periods)
 
-    #The rest of the jobs are formed from langs cross periods
-    for lang, period in itertools.product(langs, periods):
-        jobs.append(FetchJob(lang, period))
+        jobs = []
+        #Use periods to construct jobs for the "all" lang
+        for period in periods:
+            job = FetchJob(ALL_LANG, period)
+            #Don't use usual contruction of URL...
+            job.url = period['all_url']
+            jobs.append(job)
 
-    #pprint.pprint(list(map(operator.attrgetter('url'), jobs)))
-    all_repos = set()
-    for job in jobs:
-        job.fetch()
-        tdb.insert_trends_from_job(job)
-        all_repos.update(map(operator.itemgetter(1), job.repos))
+        #The rest of the jobs are formed from langs cross periods
+        for lang, period in itertools.product(langs, periods):
+            jobs.append(FetchJob(lang, period))
 
-    pprint.pprint(all_repos)
+        #for now, cut off at 10 jobs
+        jobs = jobs[:10]
+
+        #pprint.pprint(list(map(operator.attrgetter('url'), jobs)))
+        await asyncio.gather(*map(operator.methodcaller('fetch', session), jobs))
+        print('Done fetching!')
+
+        #... there's probably a less complicated way to do this.
+        #It'd probably be better to add items to the set as we go?
+        #These are denoted in "reverse" order due to the way functional notation works
+        #for each job, apply .repos (map, attrgetter) -> 'list' of lists of tuples
+        #combine all the lists together as one using chain with * expansion
+        #    -> 'list' of tuples
+        #get second item of each tuple (map, itemgetter) -> 'list' of strings (repos)
+        #combine, remove duplicates (frozenset)
+        all_repos = frozenset(map(operator.itemgetter(1),
+            itertools.chain(*map(operator.attrgetter('repos'), jobs))))
+
+        pprint.pprint(all_repos)
 
 
 class FetchJob:
@@ -80,7 +95,7 @@ class FetchJob:
                   'period_name': self.period_name,
                   'period_suffix': self.period_suffix}))
 
-    def fetch(self):
+    async def fetch(self, session):
         """Fetch the contents at url, populating the repos list.
         Does not return a value-- read from self.repos after calling this.
         repos will become a list of tuples of (rank, repo name)
@@ -92,8 +107,8 @@ class FetchJob:
         self.repos = []
         rank = 1
 
-        #tree = self._get_page()
-        tree = get_disk_tree(self.url)
+        #tree = await get_page_tree(self.url, session)
+        tree = await get_disk_tree(self.url)
         articles = tree.cssselect("article.Box-row")
         for li in articles:
             a = li.cssselect("h1 a")[0]
@@ -108,11 +123,6 @@ class FetchJob:
 
             self.repos.append((rank, repo_name))
             rank += 1
-
-    def _get_page(self):
-        print('Fetching {} ...'.format(self.url))
-        page = requests.get(self.url)
-        return html.fromstring(page.content)
 
 
 def get_langs_and_periods(tree):
@@ -143,26 +153,37 @@ def get_langs_and_periods(tree):
 
     return languages, periods
 
-def get_root_tree():
-    print('fetching...')
-    page = requests.get(ROOT_URL)
-    tree = html.fromstring(page.content)
-    print('done')
+async def get_page_tree(url, session):
+    """Returns a document tree parsed from url"""
+    print('Fetching {} ...'.format(url))
+    async with session.get(url) as resp:
+        page = await resp.text()
+    loop = asyncio.get_event_loop()
+    tree = await loop.run_in_executor(None, html.fromstring, page)
+    #print('done')
     return tree
 
-page = ''
-def get_disk_tree(fake_url=ROOT_URL):
+async def get_disk_tree(fake_url=ROOT_URL):
     """Returns a document tree parsed from trending.html
     (for development testing w/o constantly requesting from GH servers)"""
-    global page
     print('Fetching {} ...'.format(fake_url))
-    if not page:
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(None, _disktree)
+
+tree = None
+def _disktree():
+    global tree
+    if tree is None:
         with open('trending.html', 'r') as f:
             page = f.read()
-    tree = html.fromstring(page)
+        tree = html.fromstring(page)
 
     return tree
 
 
 if __name__ == '__main__':
-    main()
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_until_complete(main())
+    finally:
+        loop.close()
