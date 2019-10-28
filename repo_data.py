@@ -14,7 +14,7 @@ import pprint
 import random
 
 RepoSummary = namedtuple('RepoSummary',
-        ['repo_name', 'description', 'readme_html'])
+        ['repo_name', 'description', 'readme_html', 'name_change'])
 
 #via the python docs for itertools
 def grouper(iterable, n, fillvalue=None):
@@ -57,12 +57,12 @@ class RepoGatherer:
     async def get_many_repos(self, repos, db=None):
         """Get the data for many repos with proper rate limiting/delays.
         Immediately save them to an optional TrendingDB as encountered.
-        Returns the list of results if no DB specified; otherwise returns an empty list"""
+        Returns the list of results."""
         all_repos = list(repos)
 
         #Enforce rate limit; reduce job count if needed
         limits = self.get_rate_limit()
-        print('{0.remaining}/{0.limit} reqests; reset {0.reset}'.format(limits))
+        print('Limits: {0.remaining}/{0.limit} reqests; reset {0.reset}'.format(limits))
         possible_repos = limits.remaining // 2; #possibly worse than 2...
 
         repo_count = len(all_repos)
@@ -83,33 +83,25 @@ class RepoGatherer:
         for delay, batch in enumerate(batches):
             for repo in batch:
                 if repo is not None: #grouper adds extra Nones...
-                    tasks.append(self.get_delay_data(repo, delay))
+                    tasks.append(self.get_repo_data(repo, delay))
 
         results = []
-        saved_count = 0
         for fut in asyncio.as_completed(tasks):
             summary = await fut
             if db:
                 db.upsert_repo_summary(summary)
                 print('Saved {}'.format(summary.repo_name))
-                saved_count += 1
-            else:
-                results.append(summary)
+            results.append(summary)
 
-        if db:
-            print('Saved data for {} repos.'.format(saved_count))
-        else:
-            print('Got data for {} repos.'.format(len(results)))
+        print('Got data for {} repos.'.format(len(results)))
         return results
 
-    async def get_delay_data(self, repo_in, delay):
-        """Call get_repo_data after waiting for delay seconds"""
-        #print('Delayed by {}s'.format(delay))
-        await asyncio.sleep(delay)
-        return await self.get_repo_data(repo_in)
-
-    async def get_repo_data(self, repo_in):
-        """Async wrapper for _get_repo (returns RepoSummary)"""
+    async def get_repo_data(self, repo_in, delay=0):
+        """Async wrapper for _get_repo (returns RepoSummary),
+        optionally delays by delay seconds"""
+        if delay:
+            #print('Delayed by {}s'.format(delay))
+            await asyncio.sleep(delay)
         loop = asyncio.get_event_loop()
         return await loop.run_in_executor(None, self._get_repo, repo_in)
 
@@ -123,7 +115,10 @@ class RepoGatherer:
                 raise RuntimeError('Previously exceeded rate limit; stop!')
             repo = self.g.get_repo(repo_in)
 
+            name_change = None
             name = repo.full_name
+            if name != repo_in:
+                name_change = (repo_in, name)
             descr = repo.description
             try:
                 #proper api method-- "raw-ish" text
@@ -136,7 +131,7 @@ class RepoGatherer:
             raise RuntimeError('Rate limit exceeded!')
 
         print('Done gathering {}'.format(repo_in))
-        return RepoSummary(name, descr, html_readme)
+        return RepoSummary(name, descr, html_readme, name_change)
 
 
 async def main():

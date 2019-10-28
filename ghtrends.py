@@ -63,9 +63,10 @@ async def main():
         all_repos = set()
         for fut in asyncio.as_completed(task_list):
             job = await fut
-            tdb.insert_trends_from_job(job)
+            #need to do repos first so we get name changes
+            #tdb.insert_trends_from_job(job)
             trend_count += len(job.repos)
-            all_repos.update(map(operator.itemgetter(1), job.repos))
+            all_repos.update(job.repos)
 
         print('Done fetching!')
 
@@ -75,7 +76,12 @@ async def main():
 
     key = tdb.get_key()
     gat = RepoGatherer(key)
-    await gat.get_many_repos(all_repos, tdb)
+    summaries = await gat.get_many_repos(all_repos, tdb)
+    name_changes = dict(filter(None, map(operator.attrgetter('name_change'), summaries)))
+
+    for job in jobs:
+        job.repos = map(lambda r: name_changes.get(r) or r, job.repos)
+        tdb.insert_trends_from_job(job)
 
     print('Complete!')
 
@@ -106,14 +112,13 @@ class FetchJob:
     async def fetch(self, session):
         """Fetch the contents at url, populating the repos list.
         Returns self-- read from self.repos after calling this.
-        repos will become a list of tuples of (rank, repo name)
+        repos will become a list of repo names in ranked order, e.g. [0] is first
         Note that more obscure languages may not have any trending items!"""
         #Heavily modified from https://github.com/ryotarai/github_trends_rss/blob/master/lambda/functions/worker/main.py
         if self.repos is not None: #avoid redundant requests
             return self
 
         self.repos = []
-        rank = 1
 
         #Random delay to avoid choking on too many requests...
         delay = random.randint(1, 90)
@@ -133,8 +138,7 @@ class FetchJob:
             #    description = ps[0].text_content().strip()
             #repo['description'] = description
 
-            self.repos.append((rank, repo_name))
-            rank += 1
+            self.repos.append(repo_name)
         print('Done with repos for {}/{}'.format(self.lang_name, self.period_name))
         return self
 
