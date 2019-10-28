@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
+import pprint
 import sqlite3
 
 DB_PATH = 'GHTrends.db'
@@ -33,6 +34,7 @@ CREATE TABLE Trends(
 CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
             db.commit()
 
+    #TODO do we need to do more to update langs & periods "properly"?
     def set_key(self, key):
         #Just hardcoding 0 as id since I only expect storing 1 value here...
         k = (0, key)
@@ -53,12 +55,24 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
             c.executemany('INSERT OR REPLACE INTO Languages VALUES (?, ?)', langs)
             db.commit()
 
+    def get_langs(self):
+        with sqlite3.connect(self.path) as db:
+            c = db.cursor()
+            c.execute('SELECT * FROM Languages')
+            return c.fetchall()
+
     def update_periods(self, periods):
         name_pairs = map(lambda p: (p['period_machine_name'], p['period_name']), periods)
         with sqlite3.connect(self.path) as db:
             c = db.cursor()
             c.executemany('INSERT OR REPLACE INTO Periods VALUES (?, ?)', name_pairs)
             db.commit()
+
+    def get_periods(self):
+        with sqlite3.connect(self.path) as db:
+            c = db.cursor()
+            c.execute('SELECT * FROM Periods')
+            return c.fetchall()
 
     def insert_trends_from_job(self, fetchjob):
         trends = map(lambda rp: (
@@ -69,6 +83,9 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
             ), enumerate(fetchjob.repos))
         with sqlite3.connect(self.path) as db:
             c = db.cursor()
+            c.execute('PRAGMA foreign_keys = ON')
+            c.executemany('INSERT OR IGNORE INTO Repos '
+                    '(repo_name) VALUES (?)', ((e,) for e in fetchjob.repos))
             c.executemany('INSERT OR REPLACE INTO Trends'
                     '(lang_machine_name, period_machine_name, repo_name, rank) '
                     'VALUES (?, ?, ?, ?)', trends)
@@ -89,13 +106,16 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
             #TODO do we need 2 connects + commits? Doing this for "safety" reasons
             with sqlite3.connect(self.path) as db:
                 c = db.cursor()
+                c.execute('PRAGMA foreign_keys = ON')
                 #Update (old, new) --reverse the tuple for sql order
                 c.execute('UPDATE Repos SET repo_name=? WHERE repo_name=?',
                         repo_summary.name_change[::-1])
                 db.commit()
+            print('Updated repo name {}->{}'.format(*repo_summary.name_change))
 
         with sqlite3.connect(self.path) as db:
             c = db.cursor()
+            c.execute('PRAGMA foreign_keys = ON')
             c.execute('SELECT count(*) FROM Repos WHERE repo_name=?',
                     (repo_summary.repo_name,))
             #if present (count != 0), update
@@ -105,11 +125,24 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
                         'WHERE repo_name=?',
                         (repo_summary.description, repo_summary.readme_html,
                             repo_summary.repo_name))
+                print('Updated {}'.format(repo_summary.repo_name))
             else:
                 #otherwise insert
                 c.execute('INSERT INTO Repos(repo_name, description, readme_html) '
                         'VALUES (?, ?, ?) ', repo_summary[:3])
+                print('Saved {}'.format(repo_summary.repo_name))
             db.commit()
+
+    def get_composite_trends(self, lang, period):
+        with sqlite3.connect(self.path) as db:
+            c = db.cursor()
+            c.execute('SELECT lang_name, period_name, rank, date, repo_name, '
+                    'description, readme_html, last_seen, first_seen FROM '
+                    'Trends NATURAL JOIN Repos NATURAL JOIN Languages '
+                    'NATURAL JOIN Periods '
+                    'WHERE lang_machine_name=? AND period_machine_name=?',
+                    (lang, period))
+            return c.fetchall()
 
 
 def main():
@@ -124,7 +157,8 @@ def main():
         else:
             print('No key provided...')
     else:
-        print('DB already exists')
+        print('DB already exists, listing all/daily')
+        pprint.pprint(tdb.get_composite_trends('all', 'daily'))
         #from repo_data import RepoSummary
         #print('Adding test repo...')
         #summary = RepoSummary('test/test', 'This is a test', '<p>Seriously a test</p>')

@@ -90,7 +90,6 @@ class RepoGatherer:
             summary = await fut
             if db:
                 db.upsert_repo_summary(summary)
-                print('Saved {}'.format(summary.repo_name))
             results.append(summary)
 
         print('Got data for {} repos.'.format(len(results)))

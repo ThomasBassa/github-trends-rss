@@ -63,8 +63,7 @@ async def main():
         all_repos = set()
         for fut in asyncio.as_completed(task_list):
             job = await fut
-            #need to do repos first so we get name changes
-            #tdb.insert_trends_from_job(job)
+            tdb.insert_trends_from_job(job)
             trend_count += len(job.repos)
             all_repos.update(job.repos)
 
@@ -76,12 +75,13 @@ async def main():
 
     key = tdb.get_key()
     gat = RepoGatherer(key)
-    summaries = await gat.get_many_repos(all_repos, tdb)
-    name_changes = dict(filter(None, map(operator.attrgetter('name_change'), summaries)))
+    await gat.get_many_repos(all_repos, tdb)
+    #summaries = await gat.get_many_repos(all_repos, tdb)
 
-    for job in jobs:
-        job.repos = map(lambda r: name_changes.get(r) or r, job.repos)
-        tdb.insert_trends_from_job(job)
+    #name_changes = dict(filter(None, map(operator.attrgetter('name_change'), summaries)))
+    #for job in jobs:
+    #    job.repos = map(lambda r: name_changes.get(r) or r, job.repos)
+    #    tdb.insert_trends_from_job(job)
 
     print('Complete!')
 
@@ -120,9 +120,10 @@ class FetchJob:
 
         self.repos = []
 
-        #Random delay to avoid choking on too many requests...
-        delay = random.randint(1, 90)
-        await asyncio.sleep(delay)
+        if self.lang_machine_name != ALL_LANG[0]:
+            #Random delay to avoid choking on too many requests...
+            delay = random.randint(1, 90)
+            await asyncio.sleep(delay)
 
         tree = await get_page_tree(self.url, session)
         #tree = await get_disk_tree(self.url)
@@ -139,7 +140,9 @@ class FetchJob:
             #repo['description'] = description
 
             self.repos.append(repo_name)
-        print('Done with repos for {}/{}'.format(self.lang_name, self.period_name))
+
+        print('Found {0} repos for {1.lang_name}/{1.period_name}'
+                .format(len(self.repos), self))
         return self
 
 
