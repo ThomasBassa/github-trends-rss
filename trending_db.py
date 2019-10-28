@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 
+from collections import namedtuple
 import operator
 import pprint
 import sqlite3
 
 DB_PATH = 'GHTrends.db'
+
+CompositeTrend = namedtuple('CompositeTrend',
+            ['lang_name', 'period_name', 'rank', 'date', 'repo_name',
+            'description', 'readme_html', 'last_seen', 'first_seen'])
 
 class TrendingDB:
     def __init__(self, db_path=DB_PATH):
@@ -61,6 +66,7 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
             c.execute('SELECT * FROM Languages')
             return c.fetchall()
 
+    #TODO Should we also save the period suffix?
     def update_periods(self, periods):
         name_pairs = map(lambda p: (p['period_machine_name'], p['period_name']), periods)
         with sqlite3.connect(self.path) as db:
@@ -142,7 +148,7 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
                     'NATURAL JOIN Periods '
                     'WHERE lang_machine_name=? AND period_machine_name=?',
                     (lang, period))
-            return c.fetchall()
+            return list(map(CompositeTrend._make, c.fetchall()))
 
 
 def main():
