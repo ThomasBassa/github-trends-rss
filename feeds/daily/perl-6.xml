@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>GitHub Trending: Perl 6, Today</title><link>https://github.com/trending/perl-6?since=daily</link><description>The top repositories on GitHub for perl-6, measured daily</description><pubDate>Mon, 28 Oct 2019 03:42:19 GMT</pubDate><lastBuildDate>Mon, 28 Oct 2019 03:42:19 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>perl6/nqp #1 in Perl 6, Today</title><link>https://github.com/perl6/nqp</link><description>&lt;p&gt;&lt;i&gt;NQP&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body pod" data-path="README.pod"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 id="user-content-nqp---not-quite-perl"&gt;&lt;a id="user-content-nqp---not-quite-perl" class="anchor" aria-hidden="true" href="#nqp---not-quite-perl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NQP - Not Quite Perl&lt;/h1&gt;
+
+&lt;p&gt;NQP is Copyright (C) 2009-2019 by The Perl Foundation. See &lt;i&gt;LICENSE&lt;/i&gt; for licensing details.&lt;/p&gt;
+
+&lt;p&gt;This is "Not Quite Perl" -- a lightweight Raku-like environment for virtual machines. The key feature of NQP is that it's designed to be a very small environment (as compared with, say, perl6 or Rakudo) and is focused on being a high-level way to create compilers and libraries for virtual machines like MoarVM [1], the JVM, and others.&lt;/p&gt;
+
+&lt;p&gt;Unlike a full-fledged implementation of Raku, NQP strives to have as small a runtime footprint as it can, while still providing a Raku object model and regular expression engine for the virtual machine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[1] https://github.com/MoarVM/MoarVM&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="user-content-building-from-source"&gt;&lt;a id="user-content-building-from-source" class="anchor" aria-hidden="true" href="#building-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from source&lt;/h2&gt;
+
+&lt;a href="https://travis-ci.org/perl6/nqp" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ebb7d6c4b89b1e2278966ab9f69aa408d9581332/68747470733a2f2f7472617669732d63692e6f72672f7065726c362f6e71702e7376673f6272616e63683d6d6173746572" data-canonical-src="https://travis-ci.org/perl6/nqp.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+
+&lt;p&gt;To build NQP from source, you'll just need a &lt;code&gt;make&lt;/code&gt; utility and Perl 5.8 or newer. To automatically obtain and build MoarVM you may also need a git client.&lt;/p&gt;
+
+&lt;p&gt;To obtain NQP directly from its repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone git://github.com/perl6/nqp.git&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you don't have git installed, you can get a tarball or zip of NQP from github by visiting &lt;a href="http://github.com/perl6/nqp/tree/master"&gt;http://github.com/perl6/nqp/tree/master&lt;/a&gt; and clicking "Download". Then unpack the tarball or zip.&lt;/p&gt;
+
+&lt;p&gt;NQP can run on three different backends: MoarVM, the JVM, and JavaScript. The JVM and JavaScript backends are currently experimental. The JVM backend requires JDK 1.9 (Also known as JDK 9)&lt;/p&gt;
+
+&lt;p&gt;Decide on which backends you want it to run, and configure and build it as follows:&lt;/p&gt;
+
+&lt;p&gt;Once you have a copy of NQP, build it as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd nqp
+$ perl Configure.pl --backends=moar,jvm
+$ make&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you don't have an installed MoarVM, you can have Configure.pl build one for you by passing the &lt;code&gt;--gen-moar&lt;/code&gt; option to it as well.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;make&lt;/code&gt; step will create a "nqp" or "nqp.exe" executable in the current directory. Programs can then be run from the build directory using a command like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./nqp hello.nqp&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By default, NQP searches for the MoarVM executable and installs to the directory &lt;code&gt;./install&lt;/code&gt;. You can change that with the &lt;code&gt;--prefix&lt;/code&gt; option to Configure.pl.&lt;/p&gt;
+
+&lt;p&gt;Once built, NQP's &lt;code&gt;make install&lt;/code&gt; target will install NQP and its libraries into the same location as the MoarVM installation that was used to create it. Until this step is performed, the "nqp" executable created by &lt;code&gt;make&lt;/code&gt; above can only be reliably run from the root of NQP's build directory. After &lt;code&gt;make install&lt;/code&gt; is performed the executable can be run from any directory.&lt;/p&gt;
+
+&lt;p&gt;If the NQP compiler is invoked without an explicit script to run, it enters a small interactive mode that allows statements to be executed from the command line. Each line entered is treated as a separate compilation unit, however (which means that subroutines are preserved after they are defined, but variables are not).&lt;/p&gt;
+
+&lt;h2 id="user-content-troubleshooting"&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;h3 id="user-content-os-x"&gt;&lt;a id="user-content-os-x" class="anchor" aria-hidden="true" href="#os-x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OS X&lt;/h3&gt;
+
+&lt;p&gt;On OS X, it appears that configuration fails in some configurations:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;3rdparty/libuv/include/uv-darwin.h:26:11: fatal error: 'mach/mach.h' file not found&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Should this happen to you, then a solution might be the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd MoarVM/3rdparty/libuv/include
+$ ln -s /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/mach
+$ cd ../../../..
+$ # run the Configure again&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that the 10.9 in the above, represents the major version of OS X being used. On Mavericks use 10.9 (like above), on Yosemite use 10.10.&lt;/p&gt;
+
+&lt;h2 id="user-content-using-nqp"&gt;&lt;a id="user-content-using-nqp" class="anchor" aria-hidden="true" href="#using-nqp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using NQP&lt;/h2&gt;
+
+&lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt; there's &lt;b&gt;no end-user support&lt;/b&gt; for NQP and the behaviour can change without notice. It's a tool for writing Raku compilers, not a low-level module for Raku programmers.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://github.com/perl6/nqp/tree/master/examples"&gt;examples directory&lt;/a&gt; is a good place to start, with the &lt;a href="https://github.com/perl6/nqp/blob/master/examples/loops.nqp"&gt;loops&lt;/a&gt; and other files. Opcodes are listed in &lt;a href="https://github.com/perl6/nqp/blob/master/docs/ops.markdown"&gt;the docs directory&lt;/a&gt;. NQP also has built-in routines listed in &lt;a href="https://github.com/perl6/nqp/blob/master/docs/built-ins.md"&gt;the docs directory&lt;/a&gt;. You can use NQP from this release, it will be already installed if you have built Raku from scratch.&lt;/p&gt;
+
+&lt;h2 id="user-content-javascript-backend"&gt;&lt;a id="user-content-javascript-backend" class="anchor" aria-hidden="true" href="#javascript-backend"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JavaScript backend&lt;/h2&gt;
+
+&lt;p&gt;The best thing before playing with it/hacking on it is to contact pmurias via IRC at #perl6 on irc.freenode.org. We depend on node.js at least 10.10.0&lt;/p&gt;
+
+&lt;p&gt;Building the JavaScript backend currently requires building the moar backend:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --backends=moar,js
+$ make&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Currently it needs to be run like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./nqp-js file.nqp&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are developing nqp-js, you may want to pass the --link option to configure to have the nqp-runtime linked instead of installed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd src/vm/js/nqp-runtime; npm link .
+$ perl Configure --backends=moar,js&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>perl6</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>

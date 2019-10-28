@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>GitHub Trending: CMake, This month</title><link>https://github.com/trending/cmake?since=monthly</link><description>The top repositories on GitHub for cmake, measured monthly</description><pubDate>Mon, 28 Oct 2019 03:42:18 GMT</pubDate><lastBuildDate>Mon, 28 Oct 2019 03:42:18 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>microsoft/vcpkg #1 in CMake, This month</title><link>https://github.com/microsoft/vcpkg</link><description>&lt;p&gt;&lt;i&gt;C++ Library Manager for Windows, Linux, and MacOS&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-vcpkg" class="anchor" aria-hidden="true" href="#vcpkg"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vcpkg&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This tool and ecosystem are constantly evolving; your involvement is vital to its success!&lt;/p&gt;
+&lt;p&gt;For short description of available commands, run &lt;code&gt;vcpkg help&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;Prerequisites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 10, 8.1, 7, Linux, or MacOS&lt;/li&gt;
+&lt;li&gt;Visual Studio 2015 Update 3 or newer (on Windows)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Optional:&lt;/em&gt; CMake 3.12.4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; git clone https://github.com/Microsoft/vcpkg.git
+&amp;gt; cd vcpkg
+
+PS&amp;gt; .\bootstrap-vcpkg.bat
+Linux:~/$ ./bootstrap-vcpkg.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, to hook up user-wide &lt;a href="docs/users/integration.md"&gt;integration&lt;/a&gt;, run (note: requires admin on first use)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PS&amp;gt; .\vcpkg integrate install
+Linux:~/$ ./vcpkg integrate install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Install any packages with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PS&amp;gt; .\vcpkg install sdl2 curl
+Linux:~/$ ./vcpkg install sdl2 curl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The best way to use installed libraries with CMake is via the toolchain file &lt;code&gt;scripts\buildsystems\vcpkg.cmake&lt;/code&gt;. To use this file, you simply need to add it onto your CMake command line as &lt;code&gt;-DCMAKE_TOOLCHAIN_FILE=[vcpkg root]\scripts\buildsystems\vcpkg.cmake&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In Visual Studio, you can create a New Project (or open an existing one). All installed libraries are immediately ready to be &lt;code&gt;#include&lt;/code&gt;'d and used in your project without additional configuration.&lt;/p&gt;
+&lt;p&gt;For more information, see our &lt;a href="docs/examples/installing-and-using-packages.md"&gt;using a package&lt;/a&gt; example for the specifics. If your library is not present in vcpkg catalog, you can open an &lt;a href="https://github.com/microsoft/vcpkg/issues"&gt;issue on the GitHub repo&lt;/a&gt; where the dev team and the community can see it and potentially create the port file for this library.&lt;/p&gt;
+&lt;p&gt;Additional notes on macOS and Linux support can be found in the &lt;a href="https://blogs.msdn.microsoft.com/vcblog/2018/04/24/announcing-a-single-c-library-manager-for-linux-macos-and-windows-vcpkg/" rel="nofollow"&gt;official announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-tab-completion--auto-completion" class="anchor" aria-hidden="true" href="#tab-completion--auto-completion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tab-Completion / Auto-Completion&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;vcpkg&lt;/code&gt; supports auto-completion of commands, package names, options etc in Powershell and bash. To enable tab-completion, use one of the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PS&amp;gt; .\vcpkg integrate powershell
+Linux:~/$ ./vcpkg integrate bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and restart your console.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href="docs/index.md"&gt;documentation&lt;/a&gt; for specific walkthroughs, including &lt;a href="docs/examples/installing-and-using-packages.md"&gt;installing and using a package&lt;/a&gt;, &lt;a href="docs/examples/packaging-zipfiles.md"&gt;adding a new package from a zipfile&lt;/a&gt;, and &lt;a href="docs/examples/packaging-github-repos.md"&gt;adding a new package from a GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our docs are now also available online at ReadTheDocs: &lt;a href="https://vcpkg.readthedocs.io/" rel="nofollow"&gt;https://vcpkg.readthedocs.io/&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;See a 4 minute &lt;a href="https://www.youtube.com/watch?v=y41WFKbQFTw" rel="nofollow"&gt;video demo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Vcpkg is built with your contributions. Here are some ways you can contribute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Microsoft/vcpkg/issues"&gt;Submit Issues&lt;/a&gt; in vcpkg or existing packages&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Microsoft/vcpkg/pulls"&gt;Submit Fixes and New Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please refer to our &lt;a href="CONTRIBUTING.md"&gt;Contribution guidelines&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;. For more information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact &lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional questions or comments.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Code licensed under the &lt;a href="LICENSE.txt"&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item><item><title>ultralight-ux/Ultralight #2 in CMake, This month</title><link>https://github.com/ultralight-ux/Ultralight</link><description>&lt;p&gt;&lt;i&gt;Ultralight— a lightweight, pure-GPU, HTML UI renderer for native apps.&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ultralight" class="anchor" aria-hidden="true" href="#ultralight"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ultralight&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Welcome to the Ultralight Universal SDK!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This package contains everything you need to start building cross-platform HTML apps.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is Ultralight?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ultralight is a lightweight, pure-GPU, HTML rendering engine for native apps. Our aim is to provide support for the majority of the HTML5/CSS/JavaScript spec while still being as lightweight (in binary size and memory usage) as possible.&lt;/p&gt;
+&lt;p&gt;The motivation for this project stemmed from the observation that Chromium and other layout engines have become suboptimal for use in desktop app UI due to a separate set of design goals (running untrusted code, favoring performance at the cost of memory, the need to support every web platform feature under the sun, etc.).&lt;/p&gt;
+&lt;p&gt;Most native apps also need finer control over low-level platform functionality (such as file system, rendering, clipboard, etc.). Ultralight aims to not just be lightweight, but to offer native app developers much deeper integration with the underlying HTML engine.&lt;/p&gt;
+&lt;p&gt;Ultralight is also pure-GPU, meaning that all rendering (text, shadows, images, CSS transforms), is done via the GPU. The renderer emits abstract GPU commands (see the GPUDriver interface) which can then be handled by whichever graphics API you prefer (we provide stock implementations for D3D11, OpenGL, and Metal as of this writing).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cross-Platform AppCore Runtime&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On top of Ultralight, we've built an additional layer called AppCore that handles window creation, native event loops, native graphics API drivers, and more.&lt;/p&gt;
+&lt;p&gt;AppCore is intended to be used by those intending to build a standalone HTML-based desktop app and will eventually offer an API similar to Electron.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;Ultralight is &lt;em&gt;free&lt;/em&gt; for non-commercial use, and free for commercial use by small indies (&amp;lt;$100K annual revenue). For info regarding pricing/terms for larger commercial projects please email &lt;a href="mailto:adam@ultralig.ht"&gt;adam@ultralig.ht&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project also uses LGPL code (the AppCore and WebCore modules)-- source is provided in adjacent repositories. You can use these modules in your code without being forced to release your code under LGPL as long as you A) link dynamically and B) release the source to any modifications you make.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-the-latest-sdk" class="anchor" aria-hidden="true" href="#getting-the-latest-sdk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Latest SDK&lt;/h2&gt;
+&lt;p&gt;You can get the latest SDK for each platform via the following links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-win-x64.7z" rel="nofollow"&gt;Windows | x64 | Release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-win-x86.7z" rel="nofollow"&gt;Windows | x86 | Release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-linux-x64.7z" rel="nofollow"&gt;Linux | x64 | Release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-mac-x64.7z" rel="nofollow"&gt;macOS | x64 | Release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Debug packages are also available below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-win-x64.7z" rel="nofollow"&gt;Windows | x64 | Debug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-win-x86.7z" rel="nofollow"&gt;Windows | x86 | Debug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-linux-x64.7z" rel="nofollow"&gt;Linux | x64 | Debug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/ultralight-sdk-latest-mac-x64.7z" rel="nofollow"&gt;macOS | x64 | Debug&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: Full debug symbols are only provided for WebCore and AppCore modules.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-pre-built-binaries-for-a-specific-commit" class="anchor" aria-hidden="true" href="#getting-pre-built-binaries-for-a-specific-commit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Pre-Built Binaries for a Specific Commit&lt;/h2&gt;
+&lt;p&gt;Pre-built binares are uploaded to the following S3 buckets every commit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Release Bins&lt;/strong&gt;: &lt;a href="https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/" rel="nofollow"&gt;https://ultralight-sdk.sfo2.cdn.digitaloceanspaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debug Bins&lt;/strong&gt;: &lt;a href="https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/" rel="nofollow"&gt;https://ultralight-sdk-dbg.sfo2.cdn.digitaloceanspaces.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Click any of the links for an XML listing of available files.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-useful-links" class="anchor" aria-hidden="true" href="#useful-links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful Links&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;th&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Slack Channel&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://chat.ultralig.ht" rel="nofollow"&gt;https://chat.ultralig.ht&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://twitter.com/ultralight_ux" rel="nofollow"&gt;https://twitter.com/ultralight_ux&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;API Reference&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://ultralig.ht/api/1_0/" rel="nofollow"&gt;https://ultralig.ht/api/1_0/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Docs (In Progress)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://docs.ultralig.ht" rel="nofollow"&gt;https://docs.ultralig.ht&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#getting-started"&gt;Getting Started&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#build-requirements"&gt;Build Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building-sample-projects"&gt;Building Sample Projects&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#building-samples-with-cmake-all-platforms"&gt;Building Samples with CMake (All Platforms)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#building-64-bit-on-windows"&gt;Building 64-bit on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-the-c-api"&gt;Using the C++ API&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#compiler--linker-flags"&gt;Compiler / Linker Flags&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#setting-your-include-directories"&gt;Setting Your Include Directories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linking-to-the-library-windows--msvc"&gt;Linking to the Library (Windows / MSVC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linking-to-the-library-linux"&gt;Linking to the Library (Linux)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linking-to-the-library-macos"&gt;Linking to the Library (macOS)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#api-headers"&gt;API Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#platform-handlers"&gt;Platform Handlers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#config"&gt;Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gpudriver"&gt;GPUDriver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#fontloader"&gt;FontLoader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#filesystem"&gt;FileSystem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rendering"&gt;Rendering&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#creating-the-renderer"&gt;Creating the Renderer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#updating-the-renderer"&gt;Updating the Renderer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#drawing-view-overlays"&gt;Drawing View Overlays&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#managing-views"&gt;Managing Views&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#creating-views"&gt;Creating Views&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#loading-content"&gt;Loading Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#passing-mouse--keyboard-input"&gt;Passing Mouse / Keyboard Input&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#handling-view-events"&gt;Handling View Events&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#viewlistener-interface"&gt;ViewListener Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#loadlistener-interface"&gt;LoadListener Interface&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#javascript-integration"&gt;JavaScript Integration&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#javascriptcore-api"&gt;JavaScriptCore API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-the-jscontext"&gt;Set the JSContext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#domready-event"&gt;DOMReady Event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#evaluating-scripts"&gt;Evaluating Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#calling-js-functions-from-c"&gt;Calling JS Functions from C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#calling-c-functions-from-js"&gt;Calling C++ Functions from JS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-the-appcore-code"&gt;Using the AppCore Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h1&gt;
+&lt;p&gt;Before you get started, you will need the following on each platform:&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-build-requirements" class="anchor" aria-hidden="true" href="#build-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Requirements&lt;/h2&gt;
+&lt;p&gt;Common requirements for all platforms&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CMake 2.8.12 or later&lt;/li&gt;
+&lt;li&gt;Compiler with C++11 or later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-building-sample-projects" class="anchor" aria-hidden="true" href="#building-sample-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Sample Projects&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-building-samples-with-cmake-all-platforms" class="anchor" aria-hidden="true" href="#building-samples-with-cmake-all-platforms"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Samples with CMake (All Platforms)&lt;/h2&gt;
+&lt;p&gt;To generate projects for your platform and build, run the following from &lt;strong&gt;the root of the SDK&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-building-64-bit-on-windows" class="anchor" aria-hidden="true" href="#building-64-bit-on-windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building 64-bit on Windows&lt;/h3&gt;
+&lt;p&gt;If you run the command &lt;code&gt;cmake ..&lt;/code&gt; without any generators on Windows, it will usually select the default 32-bit Visual Studio version you have installed. To generate projects for 64-bit on Windows you will need to explicitly tell CMake to use the &lt;code&gt;x64&lt;/code&gt; platform.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir build64
+cd build64
+cmake .. -DCMAKE_GENERATOR_PLATFORM=x64
+cmake --build . --config Release
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-running-the-samples" class="anchor" aria-hidden="true" href="#running-the-samples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running the Samples&lt;/h3&gt;
+&lt;p&gt;On &lt;strong&gt;macOS&lt;/strong&gt; and &lt;strong&gt;Linux&lt;/strong&gt; the projects will be built to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/build/samples/Browser/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you get &lt;code&gt;error while loading shared libraries...&lt;/code&gt; when running a sample on Ubuntu, you may need to call &lt;code&gt;export LD_LIBRARY_PATH=.&lt;/code&gt; to make LD search the current working directory for shared libs.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On &lt;strong&gt;Windows&lt;/strong&gt; the projects will be built to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/build/samples/Browser/$(Configuration)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-using-the-c-api" class="anchor" aria-hidden="true" href="#using-the-c-api"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using the C++ API&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-compiler--linker-flags" class="anchor" aria-hidden="true" href="#compiler--linker-flags"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiler / Linker Flags&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-setting-your-include-directories" class="anchor" aria-hidden="true" href="#setting-your-include-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting your Include Directories&lt;/h3&gt;
+&lt;p&gt;To use Ultralight in your C++ code, simply add the following directory to your project's include directories (replace &lt;code&gt;$(ULTRLIGHT_SDK_ROOT)&lt;/code&gt; with the actual path you've placed the SDK):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(ULTRALIGHT_SDK_ROOT)/include/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-linking-to-the-library-windows--msvc" class="anchor" aria-hidden="true" href="#linking-to-the-library-windows--msvc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linking to the Library (Windows / MSVC)&lt;/h3&gt;
+&lt;p&gt;In Visual Studio, go to &lt;strong&gt;Linker → General → Additional Library Directories&lt;/strong&gt; in your project's properties and set one of the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For &lt;strong&gt;Win32 / x86&lt;/strong&gt; Platforms:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(ULTRALIGHT_SDK_ROOT)/lib/win/x86/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For &lt;strong&gt;x64&lt;/strong&gt; Platforms:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(ULTRALIGHT_SDK_ROOT)/lib/win/x64/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then, go to &lt;strong&gt;Linker → Input → Additional Dependencies&lt;/strong&gt; and add the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Ultralight.lib
+UltralightCore.lib
+WebCore.lib
+AppCore.lib
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;AppCore.lib&lt;/code&gt; is optional, only link if you use the AppCore API headers..&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-linking-to-the-library-linux" class="anchor" aria-hidden="true" href="#linking-to-the-library-linux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linking to the Library (Linux)&lt;/h3&gt;
+&lt;p&gt;First, copy the shared libraries in &lt;code&gt;$(ULTRALIGHT_SDK_ROOT)/bin/linux&lt;/code&gt; to your OS's standard library directory.&lt;/p&gt;
+&lt;p&gt;Then, add the following to your Makefile's &lt;code&gt;LDFLAGS&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-lUltralight -lUltralightCore -lWebCore -lAppCore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;-lAppCore&lt;/code&gt; is optional, only link if you use the AppCore API headers..&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-linking-to-the-library-macos" class="anchor" aria-hidden="true" href="#linking-to-the-library-macos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linking to the Library (macOS)&lt;/h3&gt;
+&lt;p&gt;Within XCode, select your target and go to &lt;strong&gt;General → Linked Frameworks and Libraries&lt;/strong&gt; and add the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;libUltralightCore.dylib
+libUltralight.dylib
+libWebCore.dylib
+libAppCore.dylib
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or alternatively, if you are building with a Makefile, add the following to your &lt;code&gt;LDFLAGS&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-lUltralight -lUltralightCore -lWebCore -lAppCore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: AppCore is optional, only link if you use the AppCore API headers..&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-api-headers" class="anchor" aria-hidden="true" href="#api-headers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API Headers&lt;/h2&gt;
+&lt;p&gt;Simply include &lt;code&gt;&amp;lt;Ultralight/Ultralight.h&amp;gt;&lt;/code&gt; at the top of your code to import the API.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;Ultralight/Ultralight.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want to use the optional AppCore API (cross-platform windowing/drawing layer), you should also include &lt;code&gt;&amp;lt;AppCore/AppCore.h&amp;gt;&lt;/code&gt; at the top of your code.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;AppCore/AppCore.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ultralight also exposes the full &lt;strong&gt;JavaScriptCore&lt;/strong&gt; API so that users can make native calls to/from the JavaScript VM. To include these headers simply add:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;JavaScriptCore/JavaScript.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-platform-handlers" class="anchor" aria-hidden="true" href="#platform-handlers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Platform Handlers&lt;/h2&gt;
+&lt;p&gt;Most OS-specific tasks in Ultralight can be overridden by users via the &lt;code&gt;Platform&lt;/code&gt; interface.&lt;/p&gt;
+&lt;p&gt;Default platform implementations have been provided for everything except the &lt;code&gt;FileSystem&lt;/code&gt; interface.&lt;/p&gt;
+&lt;p&gt;Of special note, the default GPUDriver is an offscreen OpenGL implementation that renders each View to a bitmap (see &lt;code&gt;View::bitmap&lt;/code&gt;). This isn't the most performant option so you should instead use a native driver for each platform (eg, Metal on macOS). Platform-native drivers are automatically used when creating a Window through the AppCore API.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;auto&lt;/span&gt;&amp;amp; platform = Platform::instance();
+
+platform.set_config(config_);
+platform.set_gpu_driver(gpu_driver_);
+platform.set_file_system(file_system_);
+platform.set_font_loader(font_loader_);&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-config" class="anchor" aria-hidden="true" href="#config"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Config&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Config&lt;/strong&gt; class allows you to configure renderer behavior and runtime WebKit options.&lt;/p&gt;
+&lt;p&gt;The most common things to customize are &lt;code&gt;face_winding&lt;/code&gt; for front-facing triangles and &lt;code&gt;device_scale_hint&lt;/code&gt; for application DPI scaling (used for oversampling raster output).&lt;/p&gt;
+&lt;p&gt;You can also set the default font (instead of Times New Roman).&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;Config config;
+config.face_winding = &lt;span class="pl-c1"&gt;kFaceWinding_Clockwise&lt;/span&gt;; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; CW in D3D, CCW in OGL&lt;/span&gt;
+config.device_scale_hint = &lt;span class="pl-c1"&gt;1.0&lt;/span&gt;;               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Set DPI to monitor DPI scale&lt;/span&gt;
+config.font_family_standard = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Segoe UI&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Default font family&lt;/span&gt;
+
+&lt;span class="pl-en"&gt;Platform::instance&lt;/span&gt;().set_config(config);&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-gpudriver" class="anchor" aria-hidden="true" href="#gpudriver"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPUDriver&lt;/h3&gt;
+&lt;p&gt;The virtual &lt;strong&gt;GPUDriver&lt;/strong&gt; interface is used to perform all rendering in Ultralight.&lt;/p&gt;
+&lt;p&gt;Reference implementations for Direct3D11, OpenGL 3.2, Metal 2, and others are provided in the AppCore code (see &lt;code&gt;deps/AppCore/src/&lt;/code&gt; in the SDK).&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;UExport&lt;/span&gt; GPUDriver
+{
+&lt;span class="pl-k"&gt;public:&lt;/span&gt;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-en"&gt;~GPUDriver&lt;/span&gt;();
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*****************************&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * Synchronization            *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *****************************&lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;BeginSynchronize&lt;/span&gt;() = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;EndSynchronize&lt;/span&gt;() = 0;
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*****************************&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * Textures                   *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *****************************&lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; &lt;span class="pl-en"&gt;NextTextureId&lt;/span&gt;() = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;CreateTexture&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; texture_id,
+                             Ref&amp;lt;Bitmap&amp;gt; bitmap) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;UpdateTexture&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; texture_id,
+                             Ref&amp;lt;Bitmap&amp;gt; bitmap) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;BindTexture&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint8_t&lt;/span&gt; texture_unit,
+                           &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; texture_id) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;DestroyTexture&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; texture_id) = 0;
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*****************************&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * Render Buffers             *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *****************************&lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; &lt;span class="pl-en"&gt;NextRenderBufferId&lt;/span&gt;() = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;CreateRenderBuffer&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; render_buffer_id,
+                                 &lt;span class="pl-k"&gt;const&lt;/span&gt; RenderBuffer&amp;amp; buffer) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;BindRenderBuffer&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; render_buffer_id) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;SetRenderBufferViewport&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; render_buffer_id,
+                                       &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; width,
+                                       &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; height) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;ClearRenderBuffer&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; render_buffer_id) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;DestroyRenderBuffer&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; render_buffer_id) = 0;
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*****************************&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * Geometry                   *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *****************************&lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; &lt;span class="pl-en"&gt;NextGeometryId&lt;/span&gt;() = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;CreateGeometry&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; geometry_id,
+                              &lt;span class="pl-k"&gt;const&lt;/span&gt; VertexBuffer&amp;amp; vertices,
+                              &lt;span class="pl-k"&gt;const&lt;/span&gt; IndexBuffer&amp;amp; indices) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;UpdateGeometry&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; geometry_id,
+                              &lt;span class="pl-k"&gt;const&lt;/span&gt; VertexBuffer&amp;amp; vertices,
+                              &lt;span class="pl-k"&gt;const&lt;/span&gt; IndexBuffer&amp;amp; indices) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;DrawGeometry&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; geometry_id,
+                            &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; indices_count,
+                            &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; indices_offset,
+                            &lt;span class="pl-k"&gt;const&lt;/span&gt; GPUState&amp;amp; state) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;DestroyGeometry&lt;/span&gt;(&lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; geometry_id) = 0;
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*****************************&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * Command List               *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *****************************&lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;UpdateCommandList&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; CommandList&amp;amp; list) = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt; &lt;span class="pl-en"&gt;HasCommandsPending&lt;/span&gt;() = 0;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;DrawCommandList&lt;/span&gt;() = 0;
+};&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-fontloader" class="anchor" aria-hidden="true" href="#fontloader"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FontLoader&lt;/h3&gt;
+&lt;p&gt;The virtual &lt;strong&gt;FontLoader&lt;/strong&gt; interface is used to load font files (TrueType and OpenType files, usually stored somewhere in the Operating System) by font family.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;UExport&lt;/span&gt; FontLoader
+{
+&lt;span class="pl-k"&gt;public:&lt;/span&gt;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-en"&gt;~FontLoader&lt;/span&gt;();
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; String16 &lt;span class="pl-en"&gt;fallback_font&lt;/span&gt;() &lt;span class="pl-k"&gt;const&lt;/span&gt; = 0;
+  
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; Ref&amp;lt;Buffer&amp;gt; &lt;span class="pl-en"&gt;Load&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; String16&amp;amp; family,
+                           &lt;span class="pl-k"&gt;int&lt;/span&gt; weight,
+                           &lt;span class="pl-k"&gt;bool&lt;/span&gt; &lt;span class="pl-c1"&gt;italic&lt;/span&gt;,
+                           &lt;span class="pl-k"&gt;float&lt;/span&gt; size) = 0;
+};&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-filesystem" class="anchor" aria-hidden="true" href="#filesystem"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FileSystem&lt;/h3&gt;
+&lt;p&gt;The virtual &lt;strong&gt;FileSystem&lt;/strong&gt; interface is used for loading File URLs (eg, &lt;code&gt;file:///page.html&lt;/code&gt;) and the JavaScript FileSystem API.&lt;/p&gt;
+&lt;p&gt;This API should be used to load any HTML/JS/CSS assets you've bundled with your application.&lt;/p&gt;
+&lt;p&gt;Only a small subset needs to be implemented to support File URL loading, specifically the following:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;UExport&lt;/span&gt; FileSystem
+{
+&lt;span class="pl-k"&gt;public:&lt;/span&gt;
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-en"&gt;~FileSystem&lt;/span&gt;();
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt; &lt;span class="pl-en"&gt;FileExists&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; String16&amp;amp; path) = 0;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt; &lt;span class="pl-en"&gt;GetFileSize&lt;/span&gt;(FileHandle handle,
+                           &lt;span class="pl-c1"&gt;int64_t&lt;/span&gt;&amp;amp; result) = 0;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt; &lt;span class="pl-en"&gt;GetFileMimeType&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; String16&amp;amp; path,
+                               String16&amp;amp; result) = 0;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; FileHandle &lt;span class="pl-en"&gt;OpenFile&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; String16&amp;amp; path,
+                              &lt;span class="pl-k"&gt;bool&lt;/span&gt; open_for_writing) = 0;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;CloseFile&lt;/span&gt;(FileHandle&amp;amp; handle) = 0;
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-c1"&gt;int64_t&lt;/span&gt; &lt;span class="pl-en"&gt;ReadFromFile&lt;/span&gt;(FileHandle handle,
+                               &lt;span class="pl-k"&gt;char&lt;/span&gt;* data,
+                               &lt;span class="pl-c1"&gt;int64_t&lt;/span&gt; length) = 0;
+};&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-rendering" class="anchor" aria-hidden="true" href="#rendering"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-creating-the-renderer" class="anchor" aria-hidden="true" href="#creating-the-renderer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Creating the Renderer&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Renderer&lt;/strong&gt; class is used to create &lt;strong&gt;Views&lt;/strong&gt; and update them.&lt;/p&gt;
+&lt;p&gt;You should create only one instance per application lifetime:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;Ref&amp;lt;Renderer&amp;gt; renderer = Renderer::Create();&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-updating-the-renderer" class="anchor" aria-hidden="true" href="#updating-the-renderer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updating the Renderer&lt;/h3&gt;
+&lt;p&gt;Once per frame, you should call &lt;code&gt;Renderer::Update()&lt;/code&gt; and &lt;code&gt;Renderer::Render()&lt;/code&gt;, here is brief outline of how your Update function should look:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;MyApplication::Update&lt;/span&gt;()
+{
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Update internal logic (timers, event callbacks, etc.)&lt;/span&gt;
+  renderer-&amp;gt;&lt;span class="pl-c1"&gt;Update&lt;/span&gt;();
+
+  driver-&amp;gt;&lt;span class="pl-c1"&gt;BeginSynchronize&lt;/span&gt;();
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Render all active views to command lists and dispatch calls to GPUDriver&lt;/span&gt;
+  renderer-&amp;gt;&lt;span class="pl-c1"&gt;Render&lt;/span&gt;();
+
+  driver-&amp;gt;&lt;span class="pl-c1"&gt;EndSynchronize&lt;/span&gt;();
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Draw any pending commands to screen&lt;/span&gt;
+  &lt;span class="pl-k"&gt;if&lt;/span&gt; (driver-&amp;gt;&lt;span class="pl-c1"&gt;HasCommandsPending&lt;/span&gt;())
+  {
+    driver-&amp;gt;&lt;span class="pl-c1"&gt;DrawCommandList&lt;/span&gt;();
+    
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Perform any additional drawing (Overlays) here...&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;DrawOverlays&lt;/span&gt;();
+
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Flip buffers here.&lt;/span&gt;
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-drawing-view-overlays" class="anchor" aria-hidden="true" href="#drawing-view-overlays"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Drawing View Overlays&lt;/h3&gt;
+&lt;p&gt;When using your own GPUDriver, Views are rendered to an offscreen texture and so it is the user's responsibility to draw this texture to the screen. To get the &lt;strong&gt;Texture ID&lt;/strong&gt; for a &lt;strong&gt;View&lt;/strong&gt;, please see &lt;code&gt;View::render_target()&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-managing-views" class="anchor" aria-hidden="true" href="#managing-views"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Managing Views&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Views&lt;/strong&gt; are used to display and interact with web content in Ultralight.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-creating-views" class="anchor" aria-hidden="true" href="#creating-views"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Creating Views&lt;/h3&gt;
+&lt;p&gt;To create a View, simply call &lt;code&gt;Renderer::CreateView()&lt;/code&gt; with your desired width and height:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Ref&amp;lt;View&amp;gt; view = renderer_-&amp;gt;CreateView(800, 600, false);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-loading-content" class="anchor" aria-hidden="true" href="#loading-content"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Loading Content&lt;/h3&gt;
+&lt;p&gt;You can load content into a View via either &lt;code&gt;View::LoadHTML()&lt;/code&gt; or &lt;code&gt;View::LoadURL()&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;view-&amp;gt;&lt;span class="pl-en"&gt;LoadHTML&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; HTML string&lt;/span&gt;
+
+view-&amp;gt;&lt;span class="pl-en"&gt;LoadURL&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;http://www.google.com&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Remote URL&lt;/span&gt;
+
+view-&amp;gt;&lt;span class="pl-en"&gt;LoadURL&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;file:///asset.html&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; File URL&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: To load local File URLs, make sure your FileSystem resolves file paths relative to your application's asset directory.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-passing-mouse--keyboard-input" class="anchor" aria-hidden="true" href="#passing-mouse--keyboard-input"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Passing Mouse / Keyboard Input&lt;/h3&gt;
+&lt;p&gt;You can pass input events to a &lt;strong&gt;View&lt;/strong&gt; via the following methods:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;view-&amp;gt;&lt;span class="pl-en"&gt;FireMouseEvent&lt;/span&gt;(mouse_event);
+
+view-&amp;gt;&lt;span class="pl-en"&gt;FireKeyEvent&lt;/span&gt;(key_event);
+
+view-&amp;gt;&lt;span class="pl-en"&gt;FireScrollEvent&lt;/span&gt;(scroll_event);&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Look at &lt;code&gt;MouseEvent.h&lt;/code&gt;, &lt;code&gt;KeyEvent.h&lt;/code&gt;, and &lt;code&gt;ScrollEvent.h&lt;/code&gt; for more information.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-handling-view-events" class="anchor" aria-hidden="true" href="#handling-view-events"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Handling View Events&lt;/h3&gt;
+&lt;p&gt;You can set callbacks for various &lt;strong&gt;View&lt;/strong&gt;-related events by implementing the &lt;strong&gt;ViewListener&lt;/strong&gt; interface and/or the &lt;strong&gt;LoadListener&lt;/strong&gt; interface.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-viewlistener-interface" class="anchor" aria-hidden="true" href="#viewlistener-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ViewListener Interface&lt;/h4&gt;
+&lt;p&gt;To listen for View-specific events, you should inherit from the virtual &lt;strong&gt;ViewListener&lt;/strong&gt; interface and bind your instance to a &lt;strong&gt;View&lt;/strong&gt; via &lt;code&gt;View::set_view_listener()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MyViewListener&lt;/span&gt; : &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;ViewListener&lt;/span&gt;
+{
+&lt;span class="pl-k"&gt;public:&lt;/span&gt;
+  &lt;span class="pl-en"&gt;MyViewListener&lt;/span&gt;() {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-en"&gt;~MyViewListener&lt;/span&gt;() {}
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnChangeTitle&lt;/span&gt;(View* caller,
+                             &lt;span class="pl-k"&gt;const&lt;/span&gt; String&amp;amp; title) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnChangeURL&lt;/span&gt;(View* caller,
+                           &lt;span class="pl-k"&gt;const&lt;/span&gt; String&amp;amp; url) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnChangeTooltip&lt;/span&gt;(View* caller,
+                               &lt;span class="pl-k"&gt;const&lt;/span&gt; String&amp;amp; tooltip) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnChangeCursor&lt;/span&gt;(View* caller,
+                              Cursor cursor) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnAddConsoleMessage&lt;/span&gt;(View* caller,
+                                   MessageSource source,
+                                   MessageLevel level,
+                                   &lt;span class="pl-k"&gt;const&lt;/span&gt; String&amp;amp; message,
+                                   &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; line_number,
+                                   &lt;span class="pl-c1"&gt;uint32_t&lt;/span&gt; column_number,
+                                   &lt;span class="pl-k"&gt;const&lt;/span&gt; String&amp;amp; source_id) {}
+};
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; ... &amp;lt;snip&amp;gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Later, bind an instance of MyViewListener to your View&lt;/span&gt;
+view-&amp;gt;&lt;span class="pl-en"&gt;set_view_listener&lt;/span&gt;(&lt;span class="pl-k"&gt;new&lt;/span&gt; MyViewListener());&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-loadlistener-interface" class="anchor" aria-hidden="true" href="#loadlistener-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LoadListener Interface&lt;/h4&gt;
+&lt;p&gt;To listen for page load events, you should inherit from the virtual &lt;strong&gt;LoadListener&lt;/strong&gt; interface and bind your instance to a &lt;strong&gt;View&lt;/strong&gt; via &lt;code&gt;View::set_load_listener()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MyLoadListener&lt;/span&gt; : &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;LoadListener&lt;/span&gt;
+{
+&lt;span class="pl-k"&gt;public:&lt;/span&gt;
+  &lt;span class="pl-en"&gt;MyLoadListener&lt;/span&gt;() {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-en"&gt;~MyLoadListener&lt;/span&gt;() {}
+
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnBeginLoading&lt;/span&gt;(View* caller) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnFinishLoading&lt;/span&gt;(View* caller) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnUpdateHistory&lt;/span&gt;(View* caller) {}
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnDOMReady&lt;/span&gt;(View* caller) {}
+};
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; ... &amp;lt;snip&amp;gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Later, bind an instance of MyLoadListener to your View&lt;/span&gt;
+view-&amp;gt;&lt;span class="pl-en"&gt;set_load_listener&lt;/span&gt;(&lt;span class="pl-k"&gt;new&lt;/span&gt; MyLoadListener());&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-javascript-integration" class="anchor" aria-hidden="true" href="#javascript-integration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JavaScript Integration&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-javascriptcore-api" class="anchor" aria-hidden="true" href="#javascriptcore-api"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JavaScriptCore API&lt;/h3&gt;
+&lt;p&gt;Ultralight exposes the entire &lt;strong&gt;JavaScriptCore C API&lt;/strong&gt; for maximum performance and flexibility. This allows you to make direct calls to and from the native JavaScriptCore VM.&lt;/p&gt;
+&lt;p&gt;To include this API in your code, simply include &lt;code&gt;&amp;lt;JavaScriptCore/JavaScript.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;JavaScriptCore/JavaScript.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To simplify things, a C++ wrapper for JavaScriptCore is provided in the AppCore code &lt;strong&gt;(we'll be using this in subsequent code examples)&lt;/strong&gt;. Simply include &lt;code&gt;&amp;lt;AppCore/JSHelpers.h&amp;gt;&lt;/code&gt; to use it:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;AppCore/JSHelpers.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-set-the-jscontext" class="anchor" aria-hidden="true" href="#set-the-jscontext"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Set the JSContext&lt;/h3&gt;
+&lt;p&gt;Before you can make any calls to JavaScript code (including creating any JSValues, JSObjects, etc.), you should &lt;strong&gt;pass your View's JSContext to &lt;code&gt;SetJSContext()&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;include&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;AppCore/JSHelpers.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;using&lt;/span&gt; &lt;span class="pl-k"&gt;namespace&lt;/span&gt; &lt;span class="pl-en"&gt;framework&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt;...&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Get JSContext from a View&lt;/span&gt;
+JSContextRef myContext = view-&amp;gt;&lt;span class="pl-en"&gt;js_context&lt;/span&gt;();
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Set the JSContext for all subsequent JSHelper calls&lt;/span&gt;
+&lt;span class="pl-en"&gt;SetJSContext&lt;/span&gt;(myContext);
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Now we can create JSValues/JSObjects and call JavaScript code&lt;/span&gt;
+JSValue val = &lt;span class="pl-c1"&gt;42&lt;/span&gt;;
+
+JSObject obj;
+obj[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;myProperty&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;] = val;
+
+JSValue result = JSEval(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1 + 1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note: you can create JSStrings and JSFunctions without a context.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Don't need a context to create JSStrings:&lt;/span&gt;
+JSString str = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Don't need a context to default construct JSFunctions:&lt;/span&gt;
+JSFunction emptyFunc;
+emptyFunc.IsValid(); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Evaluates to FALSE&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-domready-event" class="anchor" aria-hidden="true" href="#domready-event"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOMReady Event&lt;/h3&gt;
+&lt;p&gt;You should perform all API calls that reference DOM elements or scripts on a page in the &lt;strong&gt;DOMReady Event&lt;/strong&gt;. See the &lt;strong&gt;&lt;a href="#loadlistener-interface"&gt;LoadListener Interface&lt;/a&gt;&lt;/strong&gt; above for details on how to register your own listener for this event.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;struct&lt;/span&gt; &lt;span class="pl-en"&gt;MyListener&lt;/span&gt; : &lt;span class="pl-k"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;LoadListener&lt;/span&gt;
+{
+  &lt;span class="pl-k"&gt;virtual&lt;/span&gt; &lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;OnDOMReady&lt;/span&gt;(View* caller) &lt;span class="pl-k"&gt;override&lt;/span&gt;
+  {
+    &lt;span class="pl-c1"&gt;SetJSContext&lt;/span&gt;(caller-&amp;gt;&lt;span class="pl-c1"&gt;js_context&lt;/span&gt;());
+
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Perform page-specific JavaScript here.&lt;/span&gt;
+  }
+};&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-evaluating-scripts" class="anchor" aria-hidden="true" href="#evaluating-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Evaluating Scripts&lt;/h3&gt;
+&lt;p&gt;You can evaluate JavaScript in the current context by calling &lt;code&gt;JSEval()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;JSValue result = JSEval(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1 + 1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+
+result.IsNumber(); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; TRUE&lt;/span&gt;
+
+result.ToInteger(); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; 2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-calling-js-functions-from-c" class="anchor" aria-hidden="true" href="#calling-js-functions-from-c"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Calling JS Functions from C++&lt;/h3&gt;
+&lt;p&gt;Let's say you had the following JavaScript function defined on your page:&lt;/p&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;function&lt;/span&gt; &lt;span class="pl-en"&gt;addNumbers&lt;/span&gt;(&lt;span class="pl-smi"&gt;a&lt;/span&gt;, &lt;span class="pl-smi"&gt;b&lt;/span&gt;) { &lt;span class="pl-k"&gt;return&lt;/span&gt; a &lt;span class="pl-k"&gt;+&lt;/span&gt; b; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To get the function in C++, you would simply call:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Get the global object&lt;/span&gt;
+JSObject global = JSGlobalObject();
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Get the "addNumbers" property as a JSFunction. (debug assert if invalid)&lt;/span&gt;
+JSFunction addNumbers = global[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;addNumbers&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Call the JSFunction object (takes an initializer list of zero or more JSValues):&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Check if function is valid first.&lt;/span&gt;
+&lt;span class="pl-k"&gt;if&lt;/span&gt; (addNumbers.IsValid())
+{
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Call the JSFunction&lt;/span&gt;
+  JSValue result = &lt;span class="pl-c1"&gt;addNumbers&lt;/span&gt;({ &lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt; }); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; will equal 2&lt;/span&gt;
+  
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * NOTE: You can also pass a JSObject as the first parameter of a&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * JSFunction invocation to specify the 'this' object in JavaScript.&lt;/span&gt;
+&lt;span class="pl-c"&gt;   *&lt;/span&gt;
+&lt;span class="pl-c"&gt;   * If you don't specify one like above, the Global Object is used.&lt;/span&gt;
+&lt;span class="pl-c"&gt;   &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+   &lt;span class="pl-c1"&gt;addNumbers&lt;/span&gt;(myObject, { &lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt; });
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-calling-c-functions-from-js" class="anchor" aria-hidden="true" href="#calling-c-functions-from-js"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Calling C++ Functions from JS&lt;/h3&gt;
+&lt;p&gt;First define your C++ callback function with the following signature:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;MyClass::MyCallback&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; JSObject&amp;amp; thisObject, &lt;span class="pl-k"&gt;const&lt;/span&gt; JSArgs&amp;amp; args)
+{
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Handle callback here.&lt;/span&gt;
+}
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt;*&lt;/span&gt;
+&lt;span class="pl-c"&gt; * NOTE: You can also bind callbacks with return values: simply use JSValue&lt;/span&gt;
+&lt;span class="pl-c"&gt; * in your function's return value. The rest of the code remains the same.&lt;/span&gt;
+&lt;span class="pl-c"&gt; &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+JSValue &lt;span class="pl-en"&gt;MyClass::MyCallback&lt;/span&gt;(&lt;span class="pl-k"&gt;const&lt;/span&gt; JSObject&amp;amp; thisObject, &lt;span class="pl-k"&gt;const&lt;/span&gt; JSArgs&amp;amp; args)
+{
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Handle callback here.&lt;/span&gt;
+  
+  &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-c1"&gt;JSValue&lt;/span&gt;();
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then simply bind it to a named property using the &lt;code&gt;BindJSCallback&lt;/code&gt; macro:&lt;/p&gt;
+&lt;div class="highlight highlight-source-c++"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Get the global object&lt;/span&gt;
+JSObject global = JSGlobalObject();
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Bind it to the "MyCallback" property, will be exposed to JS as a Function&lt;/span&gt;
+global[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;MyCallback&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;] = BindJSCallback(&amp;amp;MyClass::MyCallback);&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can call it from JavaScript on the page:&lt;/p&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;MyCallback&lt;/span&gt;(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-c1"&gt;3&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-using-the-appcore-code" class="anchor" aria-hidden="true" href="#using-the-appcore-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using the AppCore Code&lt;/h1&gt;
+&lt;p&gt;The AppCore code provides a cross-platform base for you to start writing applications with Ultralight-- the only thing you need to provide are HTML assets and application logic.&lt;/p&gt;
+&lt;p&gt;Take a look at the Browser sample code and Tutorials for an example of use.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ultralight-ux</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item><item><title>KiCad/kicad-packages3D #3 in CMake, This month</title><link>https://github.com/KiCad/kicad-packages3D</link><description>&lt;p&gt;&lt;i&gt;Official KiCad 3D model libraries for rendering and MCAD integration&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kicad-3d-models" class="anchor" aria-hidden="true" href="#kicad-3d-models"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KiCad 3D Models&lt;/h1&gt;
+&lt;p&gt;This repository contains 3D models for rendering and MCAD integration, for use with &lt;a href="http://kicad-pcb.org/" rel="nofollow"&gt;KiCAD EDA&lt;/a&gt; software.
+The model needs a mechanical model source (a manually-modelled or script-generated file); its WRL counterpart file must be obtained as a conversion from the MCAD model&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-file-formats" class="anchor" aria-hidden="true" href="#supported-file-formats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported File Formats&lt;/h2&gt;
+&lt;p&gt;The 3D model library supports two file formats:&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-step" class="anchor" aria-hidden="true" href="#step"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;STEP&lt;/h3&gt;
+&lt;p&gt;STEP files are used for integration with MCAD software packages.&lt;br&gt;
+STEP models must be 1:1 in mm, better if the model is a solid single object (a union of parts) for size and loading optimization. KiCad supports STEP file integration and can export board and component models into an integrated STEP file. This file can then be imported by a MCAD package.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-wrl" class="anchor" aria-hidden="true" href="#wrl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;WRL&lt;/h3&gt;
+&lt;p&gt;WRL files must be exported from its mechanical model counterpart. WRL files are used for photo-realistic rendering using KiCad's raytracing rendering engine. This format supports more complex material properties, allowing various common component materials to be accurately rendered.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-source-files" class="anchor" aria-hidden="true" href="#source-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Source Files&lt;/h2&gt;
+&lt;p&gt;Source files for generated models should be submitted to (&lt;a href="https://github.com/kicad/packages3d-source"&gt;https://github.com/kicad/packages3d-source&lt;/a&gt;). This includes generator scripts, or native model files from source software (e.g. &lt;a href="https://www.freecadweb.org/" rel="nofollow"&gt;FreeCAD&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-preferred-method-to-create-3d-models" class="anchor" aria-hidden="true" href="#preferred-method-to-create-3d-models"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preferred method to create 3D models&lt;/h2&gt;
+&lt;p&gt;The model has to be created in a mechanical program, able to generate STEP export. The model can be created by automatic scripts or manually.
+&lt;a href="https://www.freecadweb.org/" rel="nofollow"&gt;FreeCAD&lt;/a&gt; is the preferred software because it is open source, and anyone can rework the model for future improvements, but also other proprietary MCAD software are allowed.
+In case the model is generated by scripts, the scripts should be linked to the PR stating sw and version used to run the scripts;
+when the model is manually created, the MCAD source file should be added to the PR as well as STEP file.
+STEP models should be 1:1 in mm, better if the model is a solid single object (a union of parts) for size and loading optimization;
+text is not suggested on models because of size increasing, anyway in case of text the fonts must be licensed free as the word.
+WRL models should be exported from its mechanical counterpart and, when possible, have the suggested material properties as in these documents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="Vrml_materials_doc/KiCad_3D-Viewer_component-materials-reference-list_MarioLuzeiro.pdf"&gt;WRL Material Properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="Vrml_materials_doc/KiCad_3D-Viewer_Illumination_model_and_materials-MarioLuzeiro.pdf"&gt;WRL Illumination model&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A simple method to export a fully compliant WRL model from a mechanical STEP model is through &lt;a href="https://sourceforge.net/projects/kicadstepup/" rel="nofollow"&gt;KiCad StepUp&lt;/a&gt;.&lt;br&gt;
+A tutorial video can be found &lt;a href="https://youtu.be/O6vr8QFnYGw" rel="nofollow"&gt;here&lt;/a&gt;&lt;br&gt;
+A good starting point to learn how to create models by script is this github repo &lt;a href="https://github.com/easyw/kicad-3d-models-in-freecad"&gt;kicad-3d-models-in-freecad&lt;/a&gt;.&lt;br&gt;
+The scripts are made in Python and run in FreeCAD with &lt;a href="https://github.com/jmwright/cadquery-freecad-module"&gt;CadQuery module&lt;/a&gt; add-on.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-model-alignment" class="anchor" aria-hidden="true" href="#model-alignment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model Alignment&lt;/h3&gt;
+&lt;p&gt;The 3D models in this library are aligned with the footprints available in the KiCad footprint libraries.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-model-scaling" class="anchor" aria-hidden="true" href="#model-scaling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model Scaling&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The STEP file format includes model scaling information, and so the 3D model scaling parameter must always be set to 1:1 in mm&lt;/li&gt;
+&lt;li&gt;The WRL file format does not specify absolute dimensions. KiCad normalizes WRL model dimension to units of &lt;em&gt;0.1 Inches&lt;/em&gt;, and the internal units of the WRL files should be scaled accordingly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Refer to the Wiki page on &lt;a href="https://github.com/KiCad/packages3D/wiki/Contributing"&gt;Contributing&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-model-licencing" class="anchor" aria-hidden="true" href="#model-licencing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model Licencing&lt;/h2&gt;
+&lt;p&gt;Refer to the LICENSE.md file&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-external-model-libraries" class="anchor" aria-hidden="true" href="#external-model-libraries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;External Model Libraries&lt;/h2&gt;
+&lt;p&gt;In addition to the 3D model data provided in this library, there are other sources that designers may use to source 3D models.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many manufacturers provide accurate 3D models for specific components.&lt;/li&gt;
+&lt;li&gt;Online repositories, e.g.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/FreeCAD/FreeCAD-library/tree/master/Electrical%20Parts"&gt;FreeCAD Electric Library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/FreeCAD/FreeCAD-library/tree/master/Electrical%20Parts/electronic-components"&gt;FreeCAD Electronic Library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://grabcad.com/" rel="nofollow"&gt;GrabCAD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.3dcontentcentral.com/" rel="nofollow"&gt;3D ContentCentral&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.traceparts.com/" rel="nofollow"&gt;traceparts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ensure that the LICENSE of any 3D data used is compatible with the intended use-case of the project.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>KiCad</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item><item><title>KiCad/kicad-footprints #4 in CMake, This month</title><link>https://github.com/KiCad/kicad-footprints</link><description>&lt;p&gt;&lt;i&gt;Official KiCad Footprint Libraries for Kicad version 5&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kicad-footprint-libraries" class="anchor" aria-hidden="true" href="#kicad-footprint-libraries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KiCad Footprint Libraries&lt;/h1&gt;
+&lt;p&gt;This repository contains the official KiCad footprint libraries.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The libraries in this repository are intended to be used with KiCad version 5 or with a nightly that supports rounded rectangle and polygon pads.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each footprint library is stored as a directory with the &lt;code&gt;.pretty&lt;/code&gt; suffix. The footprint files are &lt;code&gt;.kicad_mod&lt;/code&gt; files within&lt;/p&gt;
+&lt;p&gt;Weekly builds can be found at &lt;a href="https://kicad.github.io/footprints" rel="nofollow"&gt;https://kicad.github.io/footprints&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Contribution guidelines can be found at &lt;a href="http://kicad-pcb.org/libraries/contribute" rel="nofollow"&gt;http://kicad-pcb.org/libraries/contribute&lt;/a&gt;
+The library convention can be found at &lt;a href="http://kicad-pcb.org/libraries/klc/" rel="nofollow"&gt;http://kicad-pcb.org/libraries/klc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Other KiCad library repositories are located:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Symbols:&lt;/strong&gt; &lt;a href="https://github.com/kicad/kicad-symbols"&gt;https://github.com/kicad/kicad-symbols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3D Models:&lt;/strong&gt; &lt;a href="https://github.com/kicad/kicad-packages3d"&gt;https://github.com/kicad/kicad-packages3d&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Templates:&lt;/strong&gt; &lt;a href="https://github.com/kicad/kicad-templates"&gt;https://github.com/kicad/kicad-templates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>KiCad</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item><item><title>huchunxu/ros_21_tutorials #5 in CMake, This month</title><link>https://github.com/huchunxu/ros_21_tutorials</link><description>&lt;p&gt;&lt;i&gt;《古月 · ROS入门21讲》课件&amp;源码&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/poster.png"&gt;&lt;img src="docs/poster.png" alt="poster" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="docs/schedule.jpg"&gt;&lt;img src="docs/schedule.jpg" alt="schedule" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>huchunxu</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item><item><title>KiCad/kicad-symbols #6 in CMake, This month</title><link>https://github.com/KiCad/kicad-symbols</link><description>&lt;p&gt;&lt;i&gt;Official KiCad schematic symbol libraries for Kicad 5&lt;/i&gt;&lt;/p&gt; &lt;p&gt;Last seen &lt;b&gt;2019-10-28&lt;/b&gt;; First seen &lt;b&gt;2019-10-28&lt;/b&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kicad-symbols" class="anchor" aria-hidden="true" href="#kicad-symbols"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KiCad Symbols&lt;/h1&gt;
+&lt;p&gt;This repository contains the official KiCad schematic symbol libraries.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The libraries in this repositiory are intended for KiCad version 5 or a nightly build that supports the schematic library version 2.4 or newer.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each symbol library is stored as a &lt;code&gt;.lib&lt;/code&gt; and &lt;code&gt;.dcm&lt;/code&gt; file pair.&lt;/p&gt;
+&lt;p&gt;Weekly builds can be found at &lt;a href="https://kicad.github.io/symbols" rel="nofollow"&gt;https://kicad.github.io/symbols&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Contribution guidelines can be found at &lt;a href="http://kicad-pcb.org/libraries/contribute" rel="nofollow"&gt;http://kicad-pcb.org/libraries/contribute&lt;/a&gt;
+The library convention can be found at &lt;a href="http://kicad-pcb.org/libraries/klc/" rel="nofollow"&gt;http://kicad-pcb.org/libraries/klc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Other KiCad library repositories are located:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Footprints: &lt;a href="https://github.com/kicad/kicad-footprints"&gt;https://github.com/kicad/kicad-footprints&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3D Models: &lt;a href="https://github.com/kicad/kicad-packages3d"&gt;https://github.com/kicad/kicad-packages3d&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Templates: &lt;a href="https://github.com/kicad/kicad-templates"&gt;https://github.com/kicad/kicad-templates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>KiCad</author><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>
