@@ -35,6 +35,7 @@ def main():
         period = period_t[0]
         hlang = lang_t[1]
         hperiod = period_t[1]
+        print('Generating feed for {}, {}'.format(lang, period))
 
         out_path = 'feeds/{}'.format(period)
         out_file = '{}/{}.xml'.format(out_path, lang)
@@ -51,12 +52,21 @@ def main():
         feed['lastBuildDate'] = feed['pubDate']
 
         composite = tdb.get_composite_trends(lang, period)
-        feed['items'] = list(map(row_to_rss_item, composite))
+        if composite:
+            feed['items'] = list(map(row_to_rss_item, composite))
+        else:
+            #TODO today's date as string
+            feed['items'] = [PyRSS2Gen.RSSItem(
+                title='No repos in {}, {} today'.format(hlang, hperiod),
+                pubDate=datetime.utcnow()
+            )]
 
         rss = PyRSS2Gen.RSS2(**feed)
 
         os.makedirs(out_path, exist_ok=True)
         rss.write_xml(open(out_file, 'w'), 'utf-8')
+        print('Generated feed for {}, {}'.format(lang, period))
+    print('Complete!')
 
 def row_to_rss_item(row):
     #lang_name, period_name, rank, date,
@@ -68,7 +78,8 @@ def row_to_rss_item(row):
             .format(row))
     item['link'] = 'https://github.com/{}'.format(row.repo_name)
     item['author'] = row.repo_name.split('/')[0]
-    #TODO gid?
+    item['guid'] = PyRSS2Gen.Guid(item['link'], isPermaLink=False)
+
     #TODO categories? Language(s)? (that'd only be relevant for 'all'...)
 
     #Sqlite stores dates as YYYY-MM-DD

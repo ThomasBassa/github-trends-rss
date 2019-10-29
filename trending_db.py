@@ -161,7 +161,8 @@ CREATE TABLE GHKey(id INTEGER PRIMARY KEY, key TEXT NOT NULL);''')
                     'description, readme_html, last_seen, first_seen FROM '
                     'Trends NATURAL JOIN Repos NATURAL JOIN Languages '
                     'NATURAL JOIN Periods '
-                    'WHERE lang_machine_name=? AND period_machine_name=?',
+                    'WHERE lang_machine_name=? AND period_machine_name=? '
+                    'AND date=CURRENT_DATE ORDER BY rank',
                     (lang, period))
             return list(map(CompositeTrend._make, c.fetchall()))
 
