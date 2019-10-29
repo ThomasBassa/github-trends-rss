@@ -17,16 +17,17 @@
 
 import asyncio
 from collections import namedtuple
+import itertools
+import pprint
+import random
+import re
 import traceback
+
 from github import Github
 from github.GithubException import UnknownObjectException, RateLimitExceededException
 #next 2 used for the "hack"
 import github
 from github.Repository import Repository
-
-import itertools
-import pprint
-import random
 
 RepoSummary = namedtuple('RepoSummary',
         ['repo_name', 'description', 'readme_html', 'name_change'])
@@ -137,7 +138,7 @@ class RepoGatherer:
             try:
                 #proper api method-- "raw-ish" text
                 #readme = repo.get_readme().decoded_content
-                html_readme = repo.get_html_readme()
+                html_readme = self._clean_nonprinting(repo.get_html_readme())
             except UnknownObjectException:
                 html_readme = self._NO_README_HTML
         except RateLimitExceededException:
@@ -146,6 +147,13 @@ class RepoGatherer:
 
         print('Done gathering {}'.format(repo_in))
         return RepoSummary(name, descr, html_readme, name_change)
+
+    _CLEAN_RE = re.compile(r'[\x0E-\x1F\x7F]')
+    @staticmethod
+    def _clean_nonprinting(string):
+        """Remove various non-printing characters that
+        might show up in a README for reasons I don't understand"""
+        return RepoGatherer._CLEAN_RE.sub('', string)
 
 
 async def main():

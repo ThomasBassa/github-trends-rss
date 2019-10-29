@@ -88,8 +88,10 @@ def row_to_rss_item(row):
 
     row_descr = row.description or '[No description found.]'
 
-    descr = '<p><i>{}</i></p> <p>Last seen <b>{}</b>; First seen <b>{}</b></p>'.format(
-            row_descr, row.last_seen, row.first_seen)
+    #TODO when more stable, include first/last seen?
+    #descr = '<p><i>{}</i></p> <p>Last seen <b>{}</b>; First seen <b>{}</b></p>'.format(
+    #        row_descr, row.last_seen, row.first_seen)
+    descr = '<p><i>{}</i></p>'.format(row_descr)
 
     descr += row.readme_html or '<p>No README was found for this project.</p>'
     item['description'] = descr

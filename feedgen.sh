@@ -5,7 +5,7 @@ set -e
 cd ~/ghtrends
 source ./bin/activate
 python3 ./ghtrends.py &>fetch.log
-python3 ./make_feeds.py &>feedgen.log
+python3 ./make_feeds.py &>gen_feeds.log
 
 cp -rf feeds/ ~/trends_site/
 
