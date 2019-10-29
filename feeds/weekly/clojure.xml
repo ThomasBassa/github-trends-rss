@@ -1,2 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Clojure, This week</title><link>https://github.com/trending/clojure?since=weekly</link><description>The top repositories on GitHub for clojure, measured weekly</description><pubDate>Mon, 28 Oct 2019 04:49:44 GMT</pubDate><lastBuildDate>Mon, 28 Oct 2019 04:49:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Clojure, This week</title><link>https://github.com/trending/clojure?since=weekly</link><description>The top repositories on GitHub for clojure, measured weekly</description><pubDate>Tue, 29 Oct 2019 03:38:06 GMT</pubDate><lastBuildDate>Tue, 29 Oct 2019 03:38:06 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>thheller/shadow-cljs #1 in Clojure, This week</title><link>https://github.com/thheller/shadow-cljs</link><description>&lt;p&gt;&lt;i&gt;ClojureScript compilation made easy&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;code&gt;shadow-cljs&lt;/code&gt; provides everything you need to compile your ClojureScript code with a focus on simplicity and ease of use.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojurians.slack.com/messages/C6N245JGG/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/92d3fa09f9f0af877c547150d00e789eca2f8b82/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c6f6a757269616e732d736861646f772d2d636c6a732d6c69676874677265792e737667" alt="" data-canonical-src="https://img.shields.io/badge/Clojurians-shadow--cljs-lightgrey.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/thheller/shadow-cljs"&gt;&lt;img src="https://camo.githubusercontent.com/5d5c21abecefb3adc3b2123e1eb4d32fb54b03de/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f736861646f772d636c6a732e737667" alt="npm" data-canonical-src="https://img.shields.io/npm/v/shadow-cljs.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://clojars.org/thheller/shadow-cljs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f91298f67b2b1c7a75124738f669be1f6928e976/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f746868656c6c65722f736861646f772d636c6a732e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/thheller/shadow-cljs.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://shadow-cljs.org" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/thheller/shadow-cljs/master/src/main/shadow/cljs/devtools/server/web/resources/img/shadow-cljs.png" width="120" height="120" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Good configuration defaults so you don't have to sweat the details&lt;/li&gt;
+&lt;li&gt;Seamless &lt;code&gt;npm&lt;/code&gt; integration&lt;/li&gt;
+&lt;li&gt;Fast builds, reliable caching, ...&lt;/li&gt;
+&lt;li&gt;Supporting various targets &lt;code&gt;:browser&lt;/code&gt;, &lt;code&gt;:node-script&lt;/code&gt;, &lt;code&gt;:npm-module&lt;/code&gt;, &lt;code&gt;:react-native&lt;/code&gt;, &lt;code&gt;:chrome-extension&lt;/code&gt;, ...&lt;/li&gt;
+&lt;li&gt;Live Reload (CLJS + CSS)&lt;/li&gt;
+&lt;li&gt;CLJS REPL&lt;/li&gt;
+&lt;li&gt;Code splitting (via &lt;code&gt;:modules&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/116838/28730426-d32dc74a-7395-11e7-9cec-54275af35345.png"&gt;&lt;img src="https://user-images.githubusercontent.com/116838/28730426-d32dc74a-7395-11e7-9cec-54275af35345.png" alt="overview-img" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nodejs.org" rel="nofollow"&gt;node.js&lt;/a&gt; (v6.0.0+, most recent version preferred)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.npmjs.com" rel="nofollow"&gt;npm&lt;/a&gt; (comes bundled with &lt;code&gt;node.js&lt;/code&gt;) or &lt;a href="https://www.yarnpkg.com" rel="nofollow"&gt;yarn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://adoptopenjdk.net/" rel="nofollow"&gt;Java SDK&lt;/a&gt; (Version 8+, Hotspot)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;Creating your project can be done quickly using the &lt;code&gt;npx create-cljs-project&lt;/code&gt; utility. &lt;code&gt;npx&lt;/code&gt; is part of &lt;code&gt;npm&lt;/code&gt; and lets us run utility scripts quickly without worrying about installing them first. The installer will create a basic project scaffold and install the latest version of &lt;code&gt;shadow-cljs&lt;/code&gt; in the project.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ npx create-cljs-project acme-app
+npx: installed 1 &lt;span class="pl-k"&gt;in&lt;/span&gt; 5.887s
+shadow-cljs - creating project: .../acme-app
+Creating: .../acme-app/package.json
+Creating: .../acme-app/shadow-cljs.edn
+Creating: .../acme-app/.gitignore
+Creating: .../acme-app/src/main
+Creating: .../acme-app/src/test
+----
+Installing shadow-cljs &lt;span class="pl-k"&gt;in&lt;/span&gt; project.
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
++ shadow-cljs@&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;version&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;
+added 88 packages from 103 contributors and audited 636 packages &lt;span class="pl-k"&gt;in&lt;/span&gt; 6.287s
+found 0 vulnerabilities
+
+----
+Done.
+----&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The resulting project has the following structure&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;.&lt;/span&gt;
+├── node_modules (omitted ...)
+├── package.json
+├── package-lock.json
+├── shadow-cljs.edn
+└── src
+    ├── main
+    └── &lt;span class="pl-c1"&gt;test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;shadow-cljs.edn&lt;/code&gt; will be used to configure your CLJS builds and CLJS dependencies. &lt;code&gt;package.json&lt;/code&gt; is used by &lt;code&gt;npm&lt;/code&gt; to manage JS dependencies.&lt;/p&gt;
+&lt;p&gt;Everything is ready to go if you just want to start playing with a REPL&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ npx shadow-cljs node-repl
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; or&lt;/span&gt;
+$ npx shadow-cljs browser-repl&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When building actual projects we need to configure the build first and create at least one source file.&lt;/p&gt;
+&lt;p&gt;The default source paths are configured to use &lt;code&gt;src/main&lt;/code&gt; as the primary source directory. It is recommended to follow the &lt;a href="https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html" rel="nofollow"&gt;Java Naming Conventions&lt;/a&gt; to organize your CLJS namespaces. It is recommended to start all namespaces with a unique enough prefix (eg. company name, project name) to avoid conflicts with generic names such as &lt;code&gt;app.core&lt;/code&gt;. Suppose you were building a Web Frontend for &lt;a href="https://en.wikipedia.org/wiki/Acme_Corporation" rel="nofollow"&gt;Acme Inc.&lt;/a&gt; using &lt;code&gt;acme.frontend.app&lt;/code&gt; might be a good starting point as it can easily grow to include &lt;code&gt;acme.backend.*&lt;/code&gt; later on.&lt;/p&gt;
+&lt;p&gt;Using the above example the expected filename for &lt;code&gt;acme.frontend.app&lt;/code&gt; is &lt;code&gt;src/main/acme/frontend/app.cljs&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lets start with a simple example for a browser-based build.&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;ns&lt;/span&gt; &lt;span class="pl-e"&gt;acme.frontend.app&lt;/span&gt;)
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;init&lt;/span&gt; []
+  (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello World&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Inside the &lt;code&gt;shadow-cljs.edn&lt;/code&gt; &lt;code&gt;:builds&lt;/code&gt; section add&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;{...
+ &lt;span class="pl-c1"&gt;:builds&lt;/span&gt;
+ {&lt;span class="pl-c1"&gt;:frontend&lt;/span&gt;
+  {&lt;span class="pl-c1"&gt;:target&lt;/span&gt; &lt;span class="pl-c1"&gt;:browser&lt;/span&gt;
+   &lt;span class="pl-c1"&gt;:modules&lt;/span&gt; {&lt;span class="pl-c1"&gt;:main&lt;/span&gt; {&lt;span class="pl-c1"&gt;:init-fn&lt;/span&gt; acme.frontend.app/init}}
+   }}}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This config tells the compiler to call &lt;code&gt;(acme.frontend.app/init)&lt;/code&gt; when the generated JS code is loaded. Since no &lt;code&gt;:output-dir&lt;/code&gt; is configured the default &lt;code&gt;public/js&lt;/code&gt; is used. You can start the development process by running:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ npx shadow-cljs watch frontend
+...
+a few moments later ...
+...
+[:frontend] Build completed. (134 files, 35 compiled, 0 warnings, 5.80s)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The compilation will create the &lt;code&gt;public/js/main.js&lt;/code&gt; we configured above (&lt;code&gt;:main&lt;/code&gt; becomes &lt;code&gt;main.js&lt;/code&gt; in the &lt;code&gt;:output-dir&lt;/code&gt;). Since we want to load this in the browser we need to create a HTML file in &lt;code&gt;public/index.html&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-html-basic"&gt;&lt;pre&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;&lt;span class="pl-ent"&gt;html&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span class="pl-ent"&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;meta&lt;/span&gt; &lt;span class="pl-e"&gt;charset&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;utf-8&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; /&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;title&lt;/span&gt;&amp;gt;acme frontend&amp;lt;/&lt;span class="pl-ent"&gt;title&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span class="pl-ent"&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span class="pl-ent"&gt;body&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;div&lt;/span&gt; &lt;span class="pl-e"&gt;id&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;root&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;div&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;script&lt;/span&gt; &lt;span class="pl-e"&gt;src&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/js/main.js&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;script&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span class="pl-ent"&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span class="pl-ent"&gt;html&lt;/span&gt;&amp;gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We also need a simple HTTP server to serve our HTML since modern Browsers all place a few restrictions on files loaded directly from disk which will lead to issues later. &lt;code&gt;shadow-cljs&lt;/code&gt; provides such a server but you can use anything you like at this point. It only matters that the files from the &lt;code&gt;public&lt;/code&gt; directory are served properly. To start the built-in web server just adjust the build config from above.&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;{...
+ &lt;span class="pl-c1"&gt;:dev-http&lt;/span&gt; {&lt;span class="pl-c1"&gt;8080&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;public&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}
+ &lt;span class="pl-c1"&gt;:builds&lt;/span&gt;
+ {&lt;span class="pl-c1"&gt;:frontend&lt;/span&gt;
+  {&lt;span class="pl-c1"&gt;:target&lt;/span&gt; &lt;span class="pl-c1"&gt;:browser&lt;/span&gt;
+   &lt;span class="pl-c1"&gt;:modules&lt;/span&gt; {&lt;span class="pl-c1"&gt;:main&lt;/span&gt; {&lt;span class="pl-c1"&gt;:init-fn&lt;/span&gt; acme.frontend.app/init}}
+   }}}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Once the config is saved the server will automatically start and serve the content at &lt;a href="http://localhost:8080" rel="nofollow"&gt;http://localhost:8080&lt;/a&gt;. There is no need to restart &lt;code&gt;shadow-cljs&lt;/code&gt;. When opening the above URL the Browser Console should show "Hello World".&lt;/p&gt;
+&lt;p&gt;To be continued ...&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Please refer to the &lt;a href="https://shadow-cljs.github.io/docs/UsersGuide.html" rel="nofollow"&gt;User Manual&lt;/a&gt;. (Work in Progress)&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-video-courses" class="anchor" aria-hidden="true" href="#video-courses"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Video Courses&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[EN] &lt;a href="https://www.jacekschae.com/learn-reagent-free/uk29i?coupon=SHADOW" rel="nofollow"&gt;Learn Reagent Free&lt;/a&gt; - &lt;a href="https://github.com/reagent-project/reagent"&gt;reagent&lt;/a&gt;+&lt;a href="https://firebase.google.com/" rel="nofollow"&gt;firebase&lt;/a&gt; demo application built using shadow-cljs&lt;/li&gt;
+&lt;li&gt;[EN] &lt;a href="https://www.jacekschae.com/learn-reagent-pro/uk29i?coupon=SHADOW" rel="nofollow"&gt;Learn Reagent Pro&lt;/a&gt; [Affiliate Link, 30$ discount] - &lt;a href="https://github.com/reagent-project/reagent"&gt;reagent&lt;/a&gt;+&lt;a href="https://firebase.google.com/" rel="nofollow"&gt;firebase&lt;/a&gt; demo application built using shadow-cljs&lt;/li&gt;
+&lt;li&gt;[EN] &lt;a href="https://www.learnreframe.com/?ref=uk29i" rel="nofollow"&gt;Learn re-frame&lt;/a&gt; [Affiliate Link] - re-frame SPA tutorial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-guides" class="anchor" aria-hidden="true" href="#guides"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Guides&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[EN] &lt;a href="https://medium.com/@jiyinyiyong/a-beginner-guide-to-compile-clojurescript-with-shadow-cljs-26369190b786" rel="nofollow"&gt;A beginner guide to compile ClojureScript with shadow-cljs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CN] &lt;a href="https://segmentfault.com/a/1190000011499210" rel="nofollow"&gt;shadow-cljs 2.x 使用教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[EN] &lt;a href="http://bobnadler.com/articles/2018/01/28/clojurescript-with-middleman-via-shadow-cljs.html" rel="nofollow"&gt;ClojureScript with Middleman via Shadow-CLJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[EN] &lt;a href="https://medium.com/@loganpowell/clojurescript-development-for-javascript-developers-in-atom-with-shadow-cljs-and-protorepl-ec5e38e3de26" rel="nofollow"&gt;Clojurescript Development for JavaScript Developers in Atom with Shadow-cljs and ProtoREPL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;... please let me know if you created something to include here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/shadow-cljs/quickstart-browser"&gt;Official Browser Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mhuebert/shadow-re-frame"&gt;mhuebert/shadow-re-frame&lt;/a&gt; - Usage of &lt;a href="https://github.com/Day8/re-frame"&gt;re-frame&lt;/a&gt;, &lt;a href="https://github.com/Day8/re-frame-trace"&gt;re-frame-trace&lt;/a&gt;, and the &lt;a href="https://github.com/thheller/shadow-cljs/"&gt;shadow-cljs&lt;/a&gt; build tool. &lt;strong&gt;&lt;a href="https://mhuebert.github.io/shadow-re-frame/" rel="nofollow"&gt;Live Demo&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jacekschae/shadow-reagent"&gt;jacekschae/shadow-reagent&lt;/a&gt; - shadow-cljs + proto-repl + reagent&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jacekschae/shadow-firebase"&gt;jacekschae/shadow-firebase&lt;/a&gt; - shadow-cljs + firebase&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ahonn/shadow-electorn-starter"&gt;ahonn/shadow-electron-starter&lt;/a&gt; - ClojureScript + Shadow-cljs + Electron + Reagent&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jacekschae/conduit"&gt;jacekschae/conduit&lt;/a&gt; - Real world application built with shadow-cljs + re-frame + re-frame-10x &lt;br&gt; &lt;a href="https://jacekschae.github.io/conduit-re-frame-demo/" rel="nofollow"&gt;Demo&lt;/a&gt; | &lt;a href="https://jacekschae.github.io/conduit-re-frame-10x-demo/" rel="nofollow"&gt;Demo with re-frame-10x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/quangv/shadow-re-frame-simple-example"&gt;quangv/shadow-re-frame-simple-example&lt;/a&gt; - a simple re-frame + shadow-cljs example.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/teawaterwire/cryptotwittos"&gt;CryptoTwittos&lt;/a&gt; - reagent, re-frame, web3&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/loganpowell/shadow-proto-starter"&gt;loganpowell/shadow-proto-starter&lt;/a&gt; - shadow-cljs, Atom, Proto-REPL, node.js library&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/manuel-uberti/boodle"&gt;manuel-uberti/boodle&lt;/a&gt; - re-frame based Accounting SPA with &lt;code&gt;deps.edn&lt;/code&gt; based backend&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/iku000888/shadow-cljs-kitchen-async-puppeteer"&gt;shadow-cljs-kitchen-async-puppeteer&lt;/a&gt; - Automated browser test with puppeteer and cljs.test, built with shadow-cljs&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/baskeboler/cljs-karaoke-client"&gt;baskeboler/cljs-karaoke-client&lt;/a&gt; - web karaoke player using shadow-cljs + reagent + re-frame + re-frame-10x + re-frame-async-flow-fx (&lt;a href="https://karaoke.uyuyuy.xyz/#/songs/Rolling%20Stones-all%20over%20now%20rolling%20stones?offset=0" rel="nofollow"&gt;Demo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;... please let me know if you created something to include here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2018 Thomas Heller&lt;/p&gt;
+&lt;p&gt;Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>thheller</author><guid isPermaLink="false">https://github.com/thheller/shadow-cljs</guid><pubDate>Tue, 29 Oct 2019 00:00:00 GMT</pubDate></item><item><title>reagent-project/reagent #2 in Clojure, This week</title><link>https://github.com/reagent-project/reagent</link><description>&lt;p&gt;&lt;i&gt;A minimalistic ClojureScript interface to React.js&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-reagent" class="anchor" aria-hidden="true" href="#reagent"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reagent&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="logo.png"&gt;&lt;img src="logo.png" alt="Reagent-Project" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A simple &lt;a href="http://github.com/clojure/clojurescript"&gt;ClojureScript&lt;/a&gt; interface to &lt;a href="http://facebook.github.io/react/" rel="nofollow"&gt;React&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Reagent provides a way to write efficient React components using (almost) nothing but plain ClojureScript functions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://reagent-project.github.io/" rel="nofollow"&gt;Detailed intro with live examples&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://reagent-project.github.io/news/index.html" rel="nofollow"&gt;News&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://reagent-project.github.io/docs/master/" rel="nofollow"&gt;API Documentation&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/reagent-project/reagent/tree/master/doc"&gt;Tutorials and FAQ&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Community discussion and support channels&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://clojurians.slack.com/messages/reagent/" rel="nofollow"&gt;#reagent&lt;/a&gt;&lt;/strong&gt; channel in &lt;a href="http://clojurians.net/" rel="nofollow"&gt;Clojure Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://groups.google.com/forum/#!forum/reagent-project" rel="nofollow"&gt;Reagent Project Mailing List&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commercial video material&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.jacekschae.com/learn-reagent-free/tycit?coupon=REAGENT" rel="nofollow"&gt;Learn Reagent Free&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.jacekschae.com/learn-reagent-pro/tycit?coupon=REAGENT" rel="nofollow"&gt;Learn Reagent Pro&lt;/a&gt; (Affiliate link, $30 discount)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.jacekschae.com/learn-re-frame-free/tycit?coupon=REAGENT" rel="nofollow"&gt;Learn Re-frame Free&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.jacekschae.com/learn-re-frame-pro/tycit?coupon=REAGENT" rel="nofollow"&gt;Learn Re-frame Pro&lt;/a&gt; (Affiliate link, $30 discount)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://purelyfunctional.tv/guide/reagent/" rel="nofollow"&gt;purelyfunctional.tv &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lambdaisland.com/collections/react-reagent-re-frame" rel="nofollow"&gt;Lambda Island Videos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;p&gt;To create a new Reagent project using &lt;a href="http://leiningen.org/" rel="nofollow"&gt;Leiningen&lt;/a&gt; template simply run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;lein new reagent myproject
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you wish to only create the assets for ClojureScript without a Clojure backend then do the following instead:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;lein new reagent-frontend myproject
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will setup a new Reagent project with some reasonable defaults, see here for more &lt;a href="https://github.com/reagent-project/reagent-template"&gt;details&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use Reagent in an existing project you add this to your dependencies in &lt;code&gt;project.clj&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://clojars.org/reagent" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f6baff29ae89778c8b04949509bf21d0ddbd005e/687474703a2f2f636c6f6a6172732e6f72672f72656167656e742f6c61746573742d76657273696f6e2e737667" alt="Clojars Project" data-canonical-src="http://clojars.org/reagent/latest-version.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;a href="https://circleci.com/gh/reagent-project/reagent" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6ff69ee723e4781a137a2ec49df44f54d7d1b624/68747470733a2f2f636972636c6563692e636f6d2f67682f72656167656e742d70726f6a6563742f72656167656e742e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/reagent-project/reagent.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is all you need to do if you want the standard version of React. If you want to use your own build of React (or React from a CDN), you have to use &lt;code&gt;:exclusions&lt;/code&gt; variant of the dependency, and also provide &lt;code&gt;react&lt;/code&gt; and &lt;code&gt;react-dom&lt;/code&gt; namespaces (by creating &lt;code&gt;.cljs&lt;/code&gt; files with just &lt;code&gt;ns&lt;/code&gt; form, or by adding your own &lt;code&gt;:foreign-libs&lt;/code&gt; entries).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[reagent "0.x.x" :exclusions [cljsjs/react cljsjs/react-dom]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Reagent uses &lt;a href="https://github.com/weavejester/hiccup"&gt;Hiccup-like&lt;/a&gt; markup instead of React's sort-of html. It looks like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;some-component&lt;/span&gt; []
+  [&lt;span class="pl-c1"&gt;:div&lt;/span&gt;
+   [&lt;span class="pl-c1"&gt;:h3&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;I am a component!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]
+   [&lt;span class="pl-c1"&gt;:p.someclass&lt;/span&gt;
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;I have &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; [&lt;span class="pl-c1"&gt;:strong&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]
+    [&lt;span class="pl-c1"&gt;:span&lt;/span&gt; {&lt;span class="pl-c1"&gt;:style&lt;/span&gt; {&lt;span class="pl-c1"&gt;:color&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;red&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}} &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; and red&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; text.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Reagent extends standard Hiccup in one way: it is possible to "squeeze" elements together by using a &lt;code&gt;&amp;gt;&lt;/code&gt; character.&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;:div&lt;/span&gt;
+  [&lt;span class="pl-c1"&gt;:p&lt;/span&gt;
+    [&lt;span class="pl-c1"&gt;:b&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Nested Element&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]]]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;can be written as:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;:div&amp;gt;p&amp;gt;b&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Nested Element&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Since version 0.8:&lt;/strong&gt; The &lt;code&gt;:class&lt;/code&gt; attribute also supports collections of classes, and nil values are removed:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;:div&lt;/span&gt; {&lt;span class="pl-c1"&gt;:class&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;a-class&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; (&lt;span class="pl-k"&gt;when&lt;/span&gt; active? &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;active&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;b-class&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]}]&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can use one component inside another:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;calling-component&lt;/span&gt; []
+  [&lt;span class="pl-c1"&gt;:div&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Parent component&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+   [some-component]])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And pass properties from one component to another:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;child&lt;/span&gt; [name]
+  [&lt;span class="pl-c1"&gt;:p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hi, I am &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; name])
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;childcaller&lt;/span&gt; []
+  [child &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Foo Bar&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You mount the component into the DOM like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;mountit&lt;/span&gt; []
+  (&lt;span class="pl-en"&gt;r/render&lt;/span&gt; [childcaller]
+            (&lt;span class="pl-en"&gt;.-body&lt;/span&gt; js/document)))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;assuming we have imported Reagent like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;ns&lt;/span&gt; &lt;span class="pl-e"&gt;example&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;:require&lt;/span&gt; [reagent.core &lt;span class="pl-c1"&gt;:as&lt;/span&gt; r]))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;State is handled using Reagent's version of &lt;code&gt;atom&lt;/code&gt;, like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defonce&lt;/span&gt; &lt;span class="pl-e"&gt;click-count&lt;/span&gt; (&lt;span class="pl-en"&gt;r/atom&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;))
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;state-ful-with-atom&lt;/span&gt; []
+  [&lt;span class="pl-c1"&gt;:div&lt;/span&gt; {&lt;span class="pl-c1"&gt;:on-click&lt;/span&gt; #(&lt;span class="pl-en"&gt;swap!&lt;/span&gt; click-count inc)}
+   &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;I have been clicked &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; @click-count &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; times.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Any component that dereferences a &lt;code&gt;reagent.core/atom&lt;/code&gt; will be automatically re-rendered.&lt;/p&gt;
+&lt;p&gt;If you want do some setting up when the component is first created, the component function can return a new function that will be called to do the actual rendering:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;timer-component&lt;/span&gt; []
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; [seconds-elapsed (&lt;span class="pl-en"&gt;r/atom&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;)]
+    (&lt;span class="pl-k"&gt;fn&lt;/span&gt; []
+      (&lt;span class="pl-en"&gt;js/setTimeout&lt;/span&gt; #(&lt;span class="pl-en"&gt;swap!&lt;/span&gt; seconds-elapsed inc) &lt;span class="pl-c1"&gt;1000&lt;/span&gt;)
+      [&lt;span class="pl-c1"&gt;:div&lt;/span&gt;
+       &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Seconds Elapsed: &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; @seconds-elapsed])))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This way you can avoid using React's lifecycle callbacks like &lt;code&gt;getInitialState&lt;/code&gt; and &lt;code&gt;componentWillMount&lt;/code&gt; most of the time.&lt;/p&gt;
+&lt;p&gt;But you can still use them if you want to, either using &lt;code&gt;reagent.core/create-class&lt;/code&gt; or by attaching meta-data to a component function:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defonce&lt;/span&gt; &lt;span class="pl-e"&gt;my-html&lt;/span&gt; (&lt;span class="pl-en"&gt;r/atom&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;plain-component&lt;/span&gt; []
+  [&lt;span class="pl-c1"&gt;:p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;My html is &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; @my-html])
+
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;component-with-callback&lt;/span&gt;
+  (&lt;span class="pl-en"&gt;with-meta&lt;/span&gt; plain-component
+    {&lt;span class="pl-c1"&gt;:component-did-mount&lt;/span&gt;
+     (&lt;span class="pl-k"&gt;fn&lt;/span&gt; [this]
+       (&lt;span class="pl-en"&gt;reset!&lt;/span&gt; my-html (&lt;span class="pl-en"&gt;.-innerHTML&lt;/span&gt; (&lt;span class="pl-en"&gt;reagent/dom-node&lt;/span&gt; this))))}))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See the examples directory for more examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-performance" class="anchor" aria-hidden="true" href="#performance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
+&lt;p&gt;React is pretty darn fast, and so is Reagent. It should even be faster than plain old javascript React a lot of the time, since ClojureScript allows us to skip a lot of unnecessary rendering (through judicious use of React's &lt;code&gt;shouldComponentUpdate&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The ClojureScript overhead is kept down, thanks to lots of caching.&lt;/p&gt;
+&lt;p&gt;Code size is a little bigger than React.js, but still quite small. The todomvc example clocks in at roughly 79K gzipped, using advanced compilation.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;The idea and some of the code for making components atom-like comes from &lt;a href="https://github.com/piranha/pump"&gt;pump&lt;/a&gt;. The reactive-atom idea (and some code) comes from &lt;a href="https://github.com/lynaghk/reflex"&gt;reflex&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The license is MIT.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>reagent-project</author><guid isPermaLink="false">https://github.com/reagent-project/reagent</guid><pubDate>Tue, 29 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: YARA, Today</title><link>https://github.com/trending/yara?since=daily</link><description>The top repositories on GitHub for yara, measured daily</description><pubDate>Mon, 28 Oct 2019 04:49:48 GMT</pubDate><lastBuildDate>Mon, 28 Oct 2019 04:49:48 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: YARA, Today</title><link>https://github.com/trending/yara?since=daily</link><description>The top repositories on GitHub for yara, measured daily</description><pubDate>Tue, 29 Oct 2019 03:38:09 GMT</pubDate><lastBuildDate>Tue, 29 Oct 2019 03:38:09 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>horsicq/Detect-It-Easy #1 in YARA, Today</title><link>https://github.com/horsicq/Detect-It-Easy</link><description>&lt;p&gt;&lt;i&gt;Program for determining types of files for Windows, Linux and MacOS.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="http://ntinfo.biz" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8b09b62cc149018999c6409cce67f4f7a74abf0e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686f72736963712f4449452d656e67696e652e737667" alt="GitHub tag (latest SemVer)" data-canonical-src="https://img.shields.io/github/tag/horsicq/DIE-engine.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://ntinfo.biz" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/26d71b069d6c7d61b064079d4a346ea56a0d4aa9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f686f72736963712f4449452d656e67696e652f746f74616c2e737667" alt="GitHub All Releases" data-canonical-src="https://img.shields.io/github/downloads/horsicq/DIE-engine/total.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-detect-it-easy" class="anchor" aria-hidden="true" href="#detect-it-easy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Detect-It-Easy&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/horsicq/Detect-It-Easy/blob/master/screenshot.jpg"&gt;&lt;img src="https://github.com/horsicq/Detect-It-Easy/raw/master/screenshot.jpg" alt="alt text" title="Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Detect It Easy, or abbreviated "DIE" is a program for determining types of files.&lt;/p&gt;
+&lt;p&gt;"DIE" is a cross-platform application, apart from Windows version there are also
+available versions for Linux and Mac OS.&lt;/p&gt;
+&lt;p&gt;Many programs of the kind (PEID, PE tools) allow to use third-party signatures.
+Unfortunately, those signatures scan only bytes by the pre-set mask, and it is
+not possible to specify additional parameters. As the result, false triggering
+often occur. More complicated algorithms are usually strictly set in the program
+itself. Hence, to add a new complex detect one needs to recompile the entire
+project. No one, except the authors themselves, can change the algorithm of
+a detect. As time passes, such programs lose relevance without the constant support.&lt;/p&gt;
+&lt;p&gt;Detect It Easy has totally open architecture of signatures. You can easily
+add your own algorithms of detects or modify those that already exist. This
+is achieved by using scripts. The script language is very similar to JavaScript
+and any person, who understands the basics of programming, will understand easily
+how it works. Possibly, someone may decide the scripts are working very slow.
+Indeed, scripts run slower than compiled code, but, thanks to the good optimization
+of Script Engine, this doesn't cause any special inconvenience. The possibilities
+of open architecture compensate these limitations.&lt;/p&gt;
+&lt;p&gt;DIE exists in three versions. Basic version ("DIE"), Lite version ("DIEL") and
+console version ("DIEC"). All the three use the same signatures, which are located
+in the folder "db". If you open this folder, nested sub-folders will be found
+("Binary", "PE" and others). The names of sub-folders correspond to the types of files.
+First, DIE determines the type of file, and then sequentially loads all the signatures,
+which lie in the corresponding folder. Currently the program defines the following types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MSDOS executable files MS-DOS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PE executable files Windows&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ELF executable files Linux&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MACH executable files Mac OS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Text files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Binary all other files&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You could download binaries for Windows, Linux and Mac here: &lt;a href="http://ntinfo.biz/" rel="nofollow"&gt;http://ntinfo.biz/&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>horsicq</author><guid isPermaLink="false">https://github.com/horsicq/Detect-It-Easy</guid><pubDate>Tue, 29 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>

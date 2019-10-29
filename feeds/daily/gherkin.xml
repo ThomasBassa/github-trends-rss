@@ -1,2 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Gherkin, Today</title><link>https://github.com/trending/gherkin?since=daily</link><description>The top repositories on GitHub for gherkin, measured daily</description><pubDate>Mon, 28 Oct 2019 04:49:44 GMT</pubDate><lastBuildDate>Mon, 28 Oct 2019 04:49:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Gherkin, Today</title><link>https://github.com/trending/gherkin?since=daily</link><description>The top repositories on GitHub for gherkin, measured daily</description><pubDate>Tue, 29 Oct 2019 03:38:10 GMT</pubDate><lastBuildDate>Tue, 29 Oct 2019 03:38:10 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>pantheon-systems/pantheon-wordpress-upstream-tests #1 in Gherkin, Today</title><link>https://github.com/pantheon-systems/pantheon-wordpress-upstream-tests</link><description>&lt;p&gt;&lt;i&gt;Tests behavior of WordPress Core upstreams for Pantheon. Also within test suites of contrib plugins&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-pantheon-wordpress-upstream" class="anchor" aria-hidden="true" href="#pantheon-wordpress-upstream"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pantheon-wordpress-upstream&lt;/h1&gt;
+&lt;p&gt;Runs a Behat-based test suite against a given branch of the &lt;a href="https://github.com/pantheon-systems/wordpress"&gt;Pantheon WordPress upstream&lt;/a&gt; on &lt;a href="https://pantheon.io/" rel="nofollow"&gt;Pantheon&lt;/a&gt; infrastructure to ensure the branch is fully functional on Pantheon.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/pantheon-systems/pantheon-wordpress-upstream-tests" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0ef6655be2865dc6c04a1098b94a36ef6bed8ed4/68747470733a2f2f636972636c6563692e636f6d2f67682f70616e7468656f6e2d73797374656d732f70616e7468656f6e2d776f726470726573732d757073747265616d2d74657374732e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/pantheon-systems/pantheon-wordpress-upstream-tests.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-how-it-works" class="anchor" aria-hidden="true" href="#how-it-works"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;The purpose of this repository is to ensure a given branch of the Pantheon WordPress Upstream is fully functional on Pantheon infrastructure. This is used as a part of Pantheon's automated WordPress updating process.&lt;/p&gt;
+&lt;p&gt;On a high level, here's how it works:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A new CircleCI job is &lt;a href="https://circleci.com/docs/nightly-builds/" rel="nofollow"&gt;initiated through a cron job&lt;/a&gt;, or when a push is made against the WordPress upstream.&lt;/li&gt;
+&lt;li&gt;The job environment defines three important environment variables:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TERMINUS_TOKEN&lt;/code&gt; - A &lt;a href="https://pantheon.io/docs/machine-tokens/" rel="nofollow"&gt;machine token&lt;/a&gt; used for creating and deleting site environments on Pantheon. Because this token is meant to be kept secret, the value is set in the CircleCI admin, and not tracked in &lt;code&gt;circle.yml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TERMINUS_SITE&lt;/code&gt; - An existing Pantheon site to be used for running the test suite. This site must support &lt;a href="https://pantheon.io/features/multidev-cloud-environments" rel="nofollow"&gt;multidev&lt;/a&gt;, and the &lt;code&gt;TERMINUS_TOKEN&lt;/code&gt; must be able to create and delete environments for this site.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TERMINUS_ENV&lt;/code&gt; - A unique name for the multidev branch to be created, to prevent collisions between jobs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;CircleCI installs &lt;a href="https://pantheon.io/docs/terminus/" rel="nofollow"&gt;Terminus&lt;/a&gt;, an interface for programmatically interacting with Pantheon.&lt;/li&gt;
+&lt;li&gt;The test suite runs in three steps:&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pantheon-systems/pantheon-wordpress-upstream/blob/master/prepare.sh"&gt;&lt;code&gt;prepare.sh&lt;/code&gt;&lt;/a&gt; - Prepares the Pantheon site environment to have the test suite run against it. Preparation includes:
+&lt;ul&gt;
+&lt;li&gt;Creating the site environment using Terminus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pantheon-systems/pantheon-wordpress-upstream/blob/master/test.sh"&gt;&lt;code&gt;test.sh&lt;/code&gt;&lt;/a&gt; - Runs the Behat test suite against the created environment.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pantheon-systems/pantheon-wordpress-upstream/blob/master/cleanup.sh"&gt;&lt;code&gt;cleanup.sh&lt;/code&gt;&lt;/a&gt; - Cleans up after the test suite has completed. Cleanup includes:
+&lt;ul&gt;
+&lt;li&gt;Deleting the site environment using Terminus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And that's it!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-making-improvements" class="anchor" aria-hidden="true" href="#making-improvements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making Improvements&lt;/h2&gt;
+&lt;p&gt;Need to improve this test runner in some way? You can clone the repository locally and run it against any Pantheon site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING! WARNING!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PLEASE READ THE FOLLOWING VERY CAREFULLY.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BY FORCE PUSHING AGAINST &lt;code&gt;TERMINUS_ENV&lt;/code&gt; AND ERASING THE DATABASE, THIS TEST RUNNER IRREVOCABLY DAMAGES YOUR PANTHEON SITE. USE ONLY WITH A SINGLE-USE, "THROWAWAY" SITE. DO NOT USE WITH ANY PANTHEON SITE THAT CANNOT BE DELETED.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With the warning out of the way, here's how you can use the test runner locally.&lt;/p&gt;
+&lt;p&gt;First, make sure Terminus is installed and authenticated:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;composer global require pantheon-systems/terminus
+terminus auth login --machine-token=&amp;lt;secret-token&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, you can clone and use the test runner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:pantheon-systems/pantheon-wordpress-upstream-tests.git
+cd pantheon-wordpress-upstream-tests
+export TERMINUS_SITE=wordpress-upstream
+export TERMINUS_ENV=test-1
+export WORDPRESS_ADMIN_USERNAME=pantheon
+export WORDPRESS_ADMIN_PASSWORD="$(openssl rand -hex 8)"
+./prepare.sh
+./test.sh
+./cleanup.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Feel free to &lt;a href="https://github.com/pantheon-systems/pantheon-wordpress-upstream/issues"&gt;open an issue&lt;/a&gt; with any questions you may have.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>pantheon-systems</author><guid isPermaLink="false">https://github.com/pantheon-systems/pantheon-wordpress-upstream-tests</guid><pubDate>Tue, 29 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>
