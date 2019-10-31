@@ -1,2 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: PLpgSQL, This month</title><link>https://github.com/trending/plpgsql?since=monthly</link><description>The top repositories on GitHub for plpgsql, measured monthly</description><pubDate>Wed, 30 Oct 2019 00:04:44 GMT</pubDate><lastBuildDate>Wed, 30 Oct 2019 00:04:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>No repos in PLpgSQL, This month today</title><pubDate>Wed, 30 Oct 2019 00:04:44 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: PLpgSQL, This month</title><link>https://github.com/trending/plpgsql?since=monthly</link><description>The top repositories on GitHub for plpgsql, measured monthly</description><pubDate>Thu, 31 Oct 2019 00:04:20 GMT</pubDate><lastBuildDate>Thu, 31 Oct 2019 00:04:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>datacharmer/test_db #1 in PLpgSQL, This month</title><link>https://github.com/datacharmer/test_db</link><description>&lt;p&gt;&lt;i&gt;A sample MySQL database with an integrated test suite, used to test your applications and database servers&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-test_db" class="anchor" aria-hidden="true" href="#test_db"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;test_db&lt;/h1&gt;
+&lt;p&gt;A sample database with an integrated test suite, used to test your applications and database servers&lt;/p&gt;
+&lt;p&gt;This repository was migrated from &lt;a href="https://launchpad.net/test-db" rel="nofollow"&gt;Launchpad&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See usage in the &lt;a href="https://dev.mysql.com/doc/employee/en/index.html" rel="nofollow"&gt;MySQL docs&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-where-it-comes-from" class="anchor" aria-hidden="true" href="#where-it-comes-from"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Where it comes from&lt;/h2&gt;
+&lt;p&gt;The original data was created by Fusheng Wang and Carlo Zaniolo at
+Siemens Corporate Research. The data is in XML format.
+&lt;a href="http://timecenter.cs.aau.dk/software.htm" rel="nofollow"&gt;http://timecenter.cs.aau.dk/software.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Giuseppe Maxia made the relational schema and Patrick Crews exported
+the data in relational format.&lt;/p&gt;
+&lt;p&gt;The database contains about 300,000 employee records with 2.8 million
+salary entries. The export data is 167 MB, which is not huge, but
+heavy enough to be non-trivial for testing.&lt;/p&gt;
+&lt;p&gt;The data was generated, and as such there are inconsistencies and subtle
+problems. Rather than removing them, we decided to leave the contents
+untouched, and use these issues as data cleaning exercises.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;You need a MySQL database server (5.0+) and run the commands below through a
+user that has the following privileges:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT, INSERT, UPDATE, DELETE, 
+CREATE, DROP, RELOAD, REFERENCES, 
+INDEX, ALTER, SHOW DATABASES, 
+CREATE TEMPORARY TABLES, 
+LOCK TABLES, EXECUTE, CREATE VIEW
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the repository&lt;/li&gt;
+&lt;li&gt;Change directory to the repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then run&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql &amp;lt; employees.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want to install with two large partitioned tables, run&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql &amp;lt; employees_partitioned.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-testing-the-installation" class="anchor" aria-hidden="true" href="#testing-the-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing the installation&lt;/h2&gt;
+&lt;p&gt;After installing, you can run one of the following&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql -t &amp;lt; test_employees_md5.sql
+# OR
+mysql -t &amp;lt; test_employees_sha.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysql  -t &amp;lt; test_employees_md5.sql
++----------------------+
+| INFO                 |
++----------------------+
+| TESTING INSTALLATION |
++----------------------+
++--------------+------------------+----------------------------------+
+| table_name   | expected_records | expected_crc                     |
++--------------+------------------+----------------------------------+
+| employees    |           300024 | 4ec56ab5ba37218d187cf6ab09ce1aa1 |
+| departments  |                9 | d1af5e170d2d1591d776d5638d71fc5f |
+| dept_manager |               24 | 8720e2f0853ac9096b689c14664f847e |
+| dept_emp     |           331603 | ccf6fe516f990bdaa49713fc478701b7 |
+| titles       |           443308 | bfa016c472df68e70a03facafa1bc0a8 |
+| salaries     |          2844047 | fd220654e95aea1b169624ffe3fca934 |
++--------------+------------------+----------------------------------+
++--------------+------------------+----------------------------------+
+| table_name   | found_records    | found_crc                        |
++--------------+------------------+----------------------------------+
+| employees    |           300024 | 4ec56ab5ba37218d187cf6ab09ce1aa1 |
+| departments  |                9 | d1af5e170d2d1591d776d5638d71fc5f |
+| dept_manager |               24 | 8720e2f0853ac9096b689c14664f847e |
+| dept_emp     |           331603 | ccf6fe516f990bdaa49713fc478701b7 |
+| titles       |           443308 | bfa016c472df68e70a03facafa1bc0a8 |
+| salaries     |          2844047 | fd220654e95aea1b169624ffe3fca934 |
++--------------+------------------+----------------------------------+
++--------------+---------------+-----------+
+| table_name   | records_match | crc_match |
++--------------+---------------+-----------+
+| employees    | OK            | ok        |
+| departments  | OK            | ok        |
+| dept_manager | OK            | ok        |
+| dept_emp     | OK            | ok        |
+| titles       | OK            | ok        |
+| salaries     | OK            | ok        |
++--------------+---------------+-----------+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-disclaimer" class="anchor" aria-hidden="true" href="#disclaimer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DISCLAIMER&lt;/h2&gt;
+&lt;p&gt;To the best of my knowledge, this data is fabricated and
+it does not correspond to real people.
+Any similarity to existing people is purely coincidental.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENSE&lt;/h2&gt;
+&lt;p&gt;This work is licensed under the
+Creative Commons Attribution-Share Alike 3.0 Unported License.
+To view a copy of this license, visit
+&lt;a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow"&gt;http://creativecommons.org/licenses/by-sa/3.0/&lt;/a&gt; or send a letter to
+Creative Commons, 171 Second Street, Suite 300, San Francisco,
+California, 94105, USA.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>datacharmer</author><guid isPermaLink="false">https://github.com/datacharmer/test_db</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>olahallengren/sql-server-maintenance-solution #2 in PLpgSQL, This month</title><link>https://github.com/olahallengren/sql-server-maintenance-solution</link><description>&lt;p&gt;&lt;i&gt;SQL Server Maintenance Solution&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-sql-server-maintenance-solution" class="anchor" aria-hidden="true" href="#sql-server-maintenance-solution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SQL Server Maintenance Solution&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/blob/master/LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667" alt="licence badge" data-canonical-src="https://img.shields.io/badge/license-MIT-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/stargazers"&gt;&lt;img src="https://camo.githubusercontent.com/093f545a50840611eb7fd6baa16bb77970e9d0b8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6f6c6168616c6c656e6772656e2f73716c2d7365727665722d6d61696e74656e616e63652d736f6c7574696f6e2e737667" alt="stars badge" data-canonical-src="https://img.shields.io/github/stars/olahallengren/sql-server-maintenance-solution.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/network"&gt;&lt;img src="https://camo.githubusercontent.com/52e0ec3d3260268aec3c627bdf832ccfcf6a969a/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f6f6c6168616c6c656e6772656e2f73716c2d7365727665722d6d61696e74656e616e63652d736f6c7574696f6e2e737667" alt="forks badge" data-canonical-src="https://img.shields.io/github/forks/olahallengren/sql-server-maintenance-solution.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/issues"&gt;&lt;img src="https://camo.githubusercontent.com/9c42a060422b5deb3fea2f23e932e0f7d8ae864e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6f6c6168616c6c656e6772656e2f73716c2d7365727665722d6d61696e74656e616e63652d736f6c7574696f6e2e737667" alt="issues badge" data-canonical-src="https://img.shields.io/github/issues/olahallengren/sql-server-maintenance-solution.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/issues?q=is%3Aopen+is%3Aissue+label%3Abug_report"&gt;&lt;img src="https://camo.githubusercontent.com/cfd60275382f2130ef1d03d1c2194a0678ba0704/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6f6c6168616c6c656e6772656e2f73716c2d7365727665722d6d61696e74656e616e63652d736f6c7574696f6e2f6275675f7265706f72742e737667" alt="bug_report badge" data-canonical-src="https://img.shields.io/github/issues/olahallengren/sql-server-maintenance-solution/bug_report.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/olahallengren/sql-server-maintenance-solution/issues?q=is%3Aopen+is%3Aissue+label%3Afeature_request"&gt;&lt;img src="https://camo.githubusercontent.com/93b002f2e4abe89e5f092205608dc4b152aecc1d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6f6c6168616c6c656e6772656e2f73716c2d7365727665722d6d61696e74656e616e63652d736f6c7574696f6e2f666561747572655f726571756573742e737667" alt="feature_request badge" data-canonical-src="https://img.shields.io/github/issues/olahallengren/sql-server-maintenance-solution/feature_request.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Download &lt;a href="/MaintenanceSolution.sql"&gt;MaintenanceSolution.sql&lt;/a&gt;.
+This script creates all the objects and jobs that you need.&lt;/p&gt;
+&lt;p&gt;You can also download the objects as separate scripts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/DatabaseBackup.sql"&gt;DatabaseBackup&lt;/a&gt;: SQL Server Backup&lt;/li&gt;
+&lt;li&gt;&lt;a href="/DatabaseIntegrityCheck.sql"&gt;DatabaseIntegrityCheck&lt;/a&gt;: SQL Server Integrity Check&lt;/li&gt;
+&lt;li&gt;&lt;a href="/IndexOptimize.sql"&gt;IndexOptimize&lt;/a&gt;: SQL Server Index and Statistics Maintenance&lt;/li&gt;
+&lt;li&gt;&lt;a href="/CommandExecute.sql"&gt;CommandExecute&lt;/a&gt;: Stored procedure to execute and log commands&lt;/li&gt;
+&lt;li&gt;&lt;a href="/CommandLog.sql"&gt;CommandLog&lt;/a&gt;: Table to log commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that you always need CommandExecute; DatabaseBackup, DatabaseIntegrityCheck, and IndexOptimize are using it.
+You need CommandLog if you are going to use the option to log commands to a table.&lt;/p&gt;
+&lt;p&gt;Supported versions: SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016, SQL Server 2017, Azure SQL Database, and Azure SQL Database Managed Instance&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backup: &lt;a href="https://ola.hallengren.com/sql-server-backup.html" rel="nofollow"&gt;https://ola.hallengren.com/sql-server-backup.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Integrity Check: &lt;a href="https://ola.hallengren.com/sql-server-integrity-check.html" rel="nofollow"&gt;https://ola.hallengren.com/sql-server-integrity-check.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Index and Statistics Maintenance: &lt;a href="https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html" rel="nofollow"&gt;https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>olahallengren</author><guid isPermaLink="false">https://github.com/olahallengren/sql-server-maintenance-solution</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>

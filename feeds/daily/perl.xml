@@ -1,2 +1,616 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Perl, Today</title><link>https://github.com/trending/perl?since=daily</link><description>The top repositories on GitHub for perl, measured daily</description><pubDate>Wed, 30 Oct 2019 00:04:44 GMT</pubDate><lastBuildDate>Wed, 30 Oct 2019 00:04:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>No repos in Perl, Today today</title><pubDate>Wed, 30 Oct 2019 00:04:44 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Perl, Today</title><link>https://github.com/trending/perl?since=daily</link><description>The top repositories on GitHub for perl, measured daily</description><pubDate>Thu, 31 Oct 2019 00:04:22 GMT</pubDate><lastBuildDate>Thu, 31 Oct 2019 00:04:22 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>brendangregg/FlameGraph #1 in Perl, Today</title><link>https://github.com/brendangregg/FlameGraph</link><description>&lt;p&gt;&lt;i&gt;Stack trace visualizer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-flame-graphs-visualize-profiled-code" class="anchor" aria-hidden="true" href="#flame-graphs-visualize-profiled-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flame Graphs visualize profiled code&lt;/h1&gt;
+&lt;p&gt;Main Website: &lt;a href="http://www.brendangregg.com/flamegraphs.html" rel="nofollow"&gt;http://www.brendangregg.com/flamegraphs.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example (click to zoom):&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.brendangregg.com/FlameGraphs/cpu-bash-flamegraph.svg" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/789f18134b375f4ef0ce667012aa7992bef365d5/687474703a2f2f7777772e6272656e64616e67726567672e636f6d2f466c616d654772617068732f6370752d626173682d666c616d6567726170682e737667" alt="Example" data-canonical-src="http://www.brendangregg.com/FlameGraphs/cpu-bash-flamegraph.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click a box to zoom the Flame Graph to this stack frame only.
+To search and highlight all stack frames matching a regular expression, click the &lt;em&gt;search&lt;/em&gt; button in the upper right corner or press Ctrl-F.
+By default, search is case sensitive, but this can be toggled by pressing Ctrl-I or by clicking the &lt;em&gt;ic&lt;/em&gt; button in the upper right corner.&lt;/p&gt;
+&lt;p&gt;Other sites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Flame Graph article in ACMQ and CACM: &lt;a href="http://queue.acm.org/detail.cfm?id=2927301" rel="nofollow"&gt;http://queue.acm.org/detail.cfm?id=2927301&lt;/a&gt; &lt;a href="http://cacm.acm.org/magazines/2016/6/202665-the-flame-graph/abstract" rel="nofollow"&gt;http://cacm.acm.org/magazines/2016/6/202665-the-flame-graph/abstract&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CPU profiling using Linux perf_events, DTrace, SystemTap, or ktap: &lt;a href="http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html" rel="nofollow"&gt;http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CPU profiling using XCode Instruments: &lt;a href="http://schani.wordpress.com/2012/11/16/flame-graphs-for-instruments/" rel="nofollow"&gt;http://schani.wordpress.com/2012/11/16/flame-graphs-for-instruments/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CPU profiling using Xperf.exe: &lt;a href="http://randomascii.wordpress.com/2013/03/26/summarizing-xperf-cpu-usage-with-flame-graphs/" rel="nofollow"&gt;http://randomascii.wordpress.com/2013/03/26/summarizing-xperf-cpu-usage-with-flame-graphs/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Memory profiling: &lt;a href="http://www.brendangregg.com/FlameGraphs/memoryflamegraphs.html" rel="nofollow"&gt;http://www.brendangregg.com/FlameGraphs/memoryflamegraphs.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Other examples, updates, and news: &lt;a href="http://www.brendangregg.com/flamegraphs.html#Updates" rel="nofollow"&gt;http://www.brendangregg.com/flamegraphs.html#Updates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flame graphs can be created in three steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Capture stacks&lt;/li&gt;
+&lt;li&gt;Fold stacks&lt;/li&gt;
+&lt;li&gt;flamegraph.pl&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;&lt;a id="user-content-1-capture-stacks" class="anchor" aria-hidden="true" href="#1-capture-stacks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Capture stacks&lt;/h1&gt;
+&lt;p&gt;Stack samples can be captured using Linux perf_events, FreeBSD pmcstat (hwpmc), DTrace, SystemTap, and many other profilers. See the stackcollapse-* converters.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-linux-perf_events" class="anchor" aria-hidden="true" href="#linux-perf_events"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux perf_events&lt;/h3&gt;
+&lt;p&gt;Using Linux perf_events (aka "perf") to capture 60 seconds of 99 Hertz stack samples, both user- and kernel-level stacks, all processes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# perf record -F 99 -a -g -- sleep 60
+# perf script &amp;gt; out.perf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now only capturing PID 181:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# perf record -F 99 -p 181 -g -- sleep 60
+# perf script &amp;gt; out.perf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-dtrace" class="anchor" aria-hidden="true" href="#dtrace"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DTrace&lt;/h3&gt;
+&lt;p&gt;Using DTrace to capture 60 seconds of kernel stacks at 997 Hertz:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dtrace -x stackframes=100 -n 'profile-997 /arg0/ { @[stack()] = count(); } tick-60s { exit(0); }' -o out.kern_stacks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using DTrace to capture 60 seconds of user-level stacks for PID 12345 at 97 Hertz:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dtrace -x ustackframes=100 -n 'profile-97 /pid == 12345 &amp;amp;&amp;amp; arg1/ { @[ustack()] = count(); } tick-60s { exit(0); }' -o out.user_stacks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;60 seconds of user-level stacks, including time spent in-kernel, for PID 12345 at 97 Hertz:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dtrace -x ustackframes=100 -n 'profile-97 /pid == 12345/ { @[ustack()] = count(); } tick-60s { exit(0); }' -o out.user_stacks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Switch &lt;code&gt;ustack()&lt;/code&gt; for &lt;code&gt;jstack()&lt;/code&gt; if the application has a ustack helper to include translated frames (eg, node.js frames; see: &lt;a href="http://dtrace.org/blogs/dap/2012/01/05/where-does-your-node-program-spend-its-time/" rel="nofollow"&gt;http://dtrace.org/blogs/dap/2012/01/05/where-does-your-node-program-spend-its-time/&lt;/a&gt;).  The rate for user-level stack collection is deliberately slower than kernel, which is especially important when using &lt;code&gt;jstack()&lt;/code&gt; as it performs additional work to translate frames.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-2-fold-stacks" class="anchor" aria-hidden="true" href="#2-fold-stacks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Fold stacks&lt;/h1&gt;
+&lt;p&gt;Use the stackcollapse programs to fold stack samples into single lines.  The programs provided are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse.pl&lt;/code&gt;: for DTrace stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-perf.pl&lt;/code&gt;: for Linux perf_events "perf script" output&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-pmc.pl&lt;/code&gt;: for FreeBSD pmcstat -G stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-stap.pl&lt;/code&gt;: for SystemTap stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-instruments.pl&lt;/code&gt;: for XCode Instruments&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-vtune.pl&lt;/code&gt;: for Intel VTune profiles&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-ljp.awk&lt;/code&gt;: for Lightweight Java Profiler&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-jstack.pl&lt;/code&gt;: for Java jstack(1) output&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-gdb.pl&lt;/code&gt;: for gdb(1) stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-go.pl&lt;/code&gt;: for Golang pprof stacks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stackcollapse-vsprof.pl&lt;/code&gt;: for Microsoft Visual Studio profiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usage example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;For perf_events:
+$ ./stackcollapse-perf.pl out.perf &amp;gt; out.folded
+
+For DTrace:
+$ ./stackcollapse.pl out.kern_stacks &amp;gt; out.kern_folded
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;unix`_sys_sysenter_post_swapgs 1401
+unix`_sys_sysenter_post_swapgs;genunix`close 5
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf 85
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf;c2audit`audit_closef 26
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf;c2audit`audit_setf 5
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf;genunix`audit_getstate 6
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf;genunix`audit_unfalloc 2
+unix`_sys_sysenter_post_swapgs;genunix`close;genunix`closeandsetf;genunix`closef 48
+[...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-3-flamegraphpl" class="anchor" aria-hidden="true" href="#3-flamegraphpl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. flamegraph.pl&lt;/h1&gt;
+&lt;p&gt;Use flamegraph.pl to render a SVG.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./flamegraph.pl out.kern_folded &amp;gt; kernel.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An advantage of having the folded input file (and why this is separate to flamegraph.pl) is that you can use grep for functions of interest. Eg:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ grep cpuid out.kern_folded | ./flamegraph.pl &amp;gt; cpuid.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-provided-examples" class="anchor" aria-hidden="true" href="#provided-examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Provided Examples&lt;/h1&gt;
+&lt;h3&gt;&lt;a id="user-content-linux-perf_events-1" class="anchor" aria-hidden="true" href="#linux-perf_events-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux perf_events&lt;/h3&gt;
+&lt;p&gt;An example output from Linux "perf script" is included, gzip'd, as example-perf-stacks.txt.gz. The resulting flame graph is example-perf.svg:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.brendangregg.com/FlameGraphs/example-perf.svg" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1d909160062a92eed18dbb4e7d1f772dbacc0176/687474703a2f2f7777772e6272656e64616e67726567672e636f6d2f466c616d654772617068732f6578616d706c652d706572662e737667" alt="Example" data-canonical-src="http://www.brendangregg.com/FlameGraphs/example-perf.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can create this using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gunzip -c example-perf-stacks.txt.gz | ./stackcollapse-perf.pl --all | ./flamegraph.pl --color=java --hash &amp;gt; example-perf.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This shows my typical workflow: I'll gzip profiles on the target, then copy them to my laptop for analysis. Since I have hundreds of profiles, I leave them gzip'd!&lt;/p&gt;
+&lt;p&gt;Since this profile included Java, I used the flamegraph.pl --color=java palette. I've also used stackcollapse-perf.pl --all, which includes all annotations that help flamegraph.pl use separate colors for kernel and user level code. The resulting flame graph uses: green == Java, yellow == C++, red == user-mode native, orange == kernel.&lt;/p&gt;
+&lt;p&gt;This profile was from an analysis of vert.x performance. The benchmark client, wrk, is also visible in the flame graph.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-dtrace-1" class="anchor" aria-hidden="true" href="#dtrace-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DTrace&lt;/h3&gt;
+&lt;p&gt;An example output from DTrace is also included, example-dtrace-stacks.txt, and the resulting flame graph, example-dtrace.svg:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.brendangregg.com/FlameGraphs/example-dtrace.svg" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8c428ea94b65a5a43438116bc3d52eaa89bc2b2b/687474703a2f2f7777772e6272656e64616e67726567672e636f6d2f466c616d654772617068732f6578616d706c652d6474726163652e737667" alt="Example" data-canonical-src="http://www.brendangregg.com/FlameGraphs/example-dtrace.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can generate this using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./stackcollapse.pl example-stacks.txt | ./flamegraph.pl &amp;gt; example.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This was from a particular performance investigation: the Flame Graph identified that CPU time was spent in the lofs module, and quantified that time.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h1&gt;
+&lt;p&gt;See the USAGE message (--help) for options:&lt;/p&gt;
+&lt;p&gt;USAGE: ./flamegraph.pl [options] infile &amp;gt; outfile.svg&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--title TEXT     # change title text
+--subtitle TEXT  # second level title (optional)
+--width NUM      # width of image (default 1200)
+--height NUM     # height of each frame (default 16)
+--minwidth NUM   # omit smaller functions (default 0.1 pixels)
+--fonttype FONT  # font type (default "Verdana")
+--fontsize NUM   # font size (default 12)
+--countname TEXT # count type label (default "samples")
+--nametype TEXT  # name type label (default "Function:")
+--colors PALETTE # set color palette. choices are: hot (default), mem,
+                 # io, wakeup, chain, java, js, perl, red, green, blue,
+                 # aqua, yellow, purple, orange
+--bgcolors COLOR # set background colors. gradient choices are yellow
+                 # (default), blue, green, grey; flat colors use "#rrggbb"
+--hash           # colors are keyed by function name hash
+--cp             # use consistent palette (palette.map)
+--reverse        # generate stack-reversed flame graph
+--inverted       # icicle graph
+--flamechart     # produce a flame chart (sort by time, do not merge stacks)
+--negate         # switch differential hues (blue&amp;lt;-&amp;gt;red)
+--notes TEXT     # add notes comment in SVG (for debugging)
+--help           # this message
+
+eg,
+./flamegraph.pl --title="Flame Graph: malloc()" trace.txt &amp;gt; graph.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As suggested in the example, flame graphs can process traces of any event,
+such as malloc()s, provided stack traces are gathered.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-consistent-palette" class="anchor" aria-hidden="true" href="#consistent-palette"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Consistent Palette&lt;/h1&gt;
+&lt;p&gt;If you use the &lt;code&gt;--cp&lt;/code&gt; option, it will use the $colors selection and randomly
+generate the palette like normal. Any future flamegraphs created using the &lt;code&gt;--cp&lt;/code&gt;
+option will use the same palette map. Any new symbols from future flamegraphs
+will have their colors randomly generated using the $colors selection.&lt;/p&gt;
+&lt;p&gt;If you don't like the palette, just delete the palette.map file.&lt;/p&gt;
+&lt;p&gt;This allows your to change your colorscheme between flamegraphs to make the
+differences REALLY stand out.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;Say we have 2 captures, one with a problem, and one when it was working
+(whatever "it" is):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat working.folded | ./flamegraph.pl --cp &amp;gt; working.svg
+# this generates a palette.map, as per the normal random generated look.
+
+cat broken.folded | ./flamegraph.pl --cp --colors mem &amp;gt; broken.svg
+# this svg will use the same palette.map for the same events, but a very
+# different colorscheme for any new events.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Take a look at the demo directory for an example:&lt;/p&gt;
+&lt;p&gt;palette-example-working.svg&lt;br&gt;
+palette-example-broken.svg&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>brendangregg</author><guid isPermaLink="false">https://github.com/brendangregg/FlameGraph</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>SpiderLabs/owasp-modsecurity-crs #2 in Perl, Today</title><link>https://github.com/SpiderLabs/owasp-modsecurity-crs</link><description>&lt;p&gt;&lt;i&gt;OWASP ModSecurity Core Rule Set (CRS) Project (Official Repository)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/92366da3fe49bf9ad4450eb238384df21239fdc6/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e332f6465763f6c6162656c3d76332e33253246646576"&gt;&lt;img src="https://camo.githubusercontent.com/92366da3fe49bf9ad4450eb238384df21239fdc6/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e332f6465763f6c6162656c3d76332e33253246646576" alt="Travis build v3.3/dev" data-canonical-src="https://img.shields.io/travis/spiderlabs/owasp-modsecurity-crs/v3.3/dev?label=v3.3%2Fdev" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/853db456480cbb01e9ac80befcfe8685f6191e2a/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e322f6465763f6c6162656c3d76332e32253246646576"&gt;&lt;img src="https://camo.githubusercontent.com/853db456480cbb01e9ac80befcfe8685f6191e2a/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e322f6465763f6c6162656c3d76332e32253246646576" alt="Travis build v3.2/dev" data-canonical-src="https://img.shields.io/travis/spiderlabs/owasp-modsecurity-crs/v3.2/dev?label=v3.2%2Fdev" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c7630ec5728db166616212a9ce55de153537698c/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e312f6465763f6c6162656c3d76332e31253246646576"&gt;&lt;img src="https://camo.githubusercontent.com/c7630ec5728db166616212a9ce55de153537698c/68747470733a2f2f696d672e736869656c64732e696f2f7472617669732f7370696465726c6162732f6f776173702d6d6f6473656375726974792d6372732f76332e312f6465763f6c6162656c3d76332e31253246646576" alt="Travis build v3.1/dev" data-canonical-src="https://img.shields.io/travis/spiderlabs/owasp-modsecurity-crs/v3.1/dev?label=v3.1%2Fdev" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.owasp.org/index.php/OWASP_Project_Inventory#tab=Flagship_Projects" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/76ea87f327271bc332fab1a77b6aebea58301c7a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6f776173702d666c61677368697025323070726f6a6563742d3338613034372e737667" alt="OWASP Flagship" data-canonical-src="https://img.shields.io/badge/owasp-flagship%20project-38a047.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://bestpractices.coreinfrastructure.org/projects/1390" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bf712dbdb8b0d689645d9eefb57837f68cc5ae5f/68747470733a2f2f626573747072616374696365732e636f7265696e6672617374727563747572652e6f72672f70726f6a656374732f313339302f6261646765" alt="CII Best Practices" data-canonical-src="https://bestpractices.coreinfrastructure.org/projects/1390/badge" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-owasp-modsecurity-core-rule-set-crs" class="anchor" aria-hidden="true" href="#owasp-modsecurity-core-rule-set-crs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OWASP ModSecurity Core Rule Set (CRS)&lt;/h1&gt;
+&lt;p&gt;The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for use with ModSecurity or compatible web application firewalls. The CRS aims to protect web applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-crs-resources" class="anchor" aria-hidden="true" href="#crs-resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRS Resources&lt;/h2&gt;
+&lt;p&gt;Please see the &lt;a href="https://coreruleset.org/" rel="nofollow"&gt;OWASP ModSecurity Core Rule Set page&lt;/a&gt; to get introduced to the CRS and view resources on installation, configuration, and working with the CRS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing-to-the-crs" class="anchor" aria-hidden="true" href="#contributing-to-the-crs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing to the CRS&lt;/h2&gt;
+&lt;p&gt;We strive to make the OWASP ModSecurity CRS accessible to a wide audience of beginner and experienced users. We are interested in hearing any bug reports, false positive alert reports, evasions, usability issues, and suggestions for new detections.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/SpiderLabs/owasp-modsecurity-crs/issues"&gt;Create an issue on GitHub&lt;/a&gt; to report a false positive or false negative (evasion). Please include your installed version and the relevant portions of your ModSecurity audit log.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://groups.google.com/a/owasp.org/forum/#!forum/modsecurity-core-rule-set-project" rel="nofollow"&gt;Sign up for our Google Group&lt;/a&gt; to ask general usage questions and participate in discussions on the CRS. Also &lt;a href="https://lists.owasp.org/pipermail/owasp-modsecurity-core-rule-set/index" rel="nofollow"&gt;here&lt;/a&gt; you can find the archives for the previous mailing list.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://webchat.freenode.net/?channels=%23modsecurity" rel="nofollow"&gt;Join the #modsecurity channel on Freenode IRC&lt;/a&gt; to chat about the CRS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright (c) 2006-2019 Trustwave and contributors. All rights reserved.&lt;/p&gt;
+&lt;p&gt;The OWASP ModSecurity Core Rule Set is distributed under Apache Software License (ASL) version 2. Please see the enclosed LICENSE file for full details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>SpiderLabs</author><guid isPermaLink="false">https://github.com/SpiderLabs/owasp-modsecurity-crs</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>sitaramc/gitolite #3 in Perl, Today</title><link>https://github.com/sitaramc/gitolite</link><description>&lt;p&gt;&lt;i&gt;Hosting git repositories -- Gitolite allows you to setup git hosting on a central server, with very fine-grained access control and many (many!) more powerful features.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body markdown" data-path="README.markdown"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-gitolite-readme" class="anchor" aria-hidden="true" href="#gitolite-readme"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gitolite README&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-about-this-readme" class="anchor" aria-hidden="true" href="#about-this-readme"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;about this README&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;(Github-users: click the "wiki" link before sending me anything via github.)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is a minimal README for gitolite&lt;/strong&gt;, so you can quickly get started with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;installing gitolite on a fresh userid on a Unix(-like) machine, using ssh&lt;/li&gt;
+&lt;li&gt;learning enough to do some basic access control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;For anything more, you need to look at the complete documentation, at:
+&lt;a href="http://gitolite.com/gitolite" rel="nofollow"&gt;http://gitolite.com/gitolite&lt;/a&gt;&lt;/strong&gt;.  Please go there for what/why/how, concepts,
+background, troubleshooting, more details on what is covered here, advanced
+features not covered here, migration from older gitolite, running gitolite
+over http (rather than ssh), and many more topics.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id="user-content-assumptions" class="anchor" aria-hidden="true" href="#assumptions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You are familiar with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: at least one Unix-like OS&lt;/li&gt;
+&lt;li&gt;ssh: ssh, ssh keys, ssh authorized keys file&lt;/li&gt;
+&lt;li&gt;git: basic use of git, bare and non-bare remotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You are setting up a fresh, ssh-based, installation of gitolite on a Unix
+machine of some sort.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You have root access, or someone has created a userid called "git" for you
+to use and given you a password for it.  This is a brand new userid (or
+you have deleted everything but &lt;code&gt;.bashrc&lt;/code&gt; and similar files to make it
+look like one!)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If your server is not connected to the internet, you know how to clone the
+gitolite source code by using some in-between server or "git bundle".&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a id="user-content-installation-and-setup" class="anchor" aria-hidden="true" href="#installation-and-setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation and setup&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-server-requirements" class="anchor" aria-hidden="true" href="#server-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;server requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;any unix system&lt;/li&gt;
+&lt;li&gt;sh&lt;/li&gt;
+&lt;li&gt;git 1.6.6 or later&lt;/li&gt;
+&lt;li&gt;perl 5.8.8 or later&lt;/li&gt;
+&lt;li&gt;openssh 5.0 or later&lt;/li&gt;
+&lt;li&gt;a dedicated userid to host the repos (in this document, we assume it is
+"git", but it can be anything; substitute accordingly)&lt;/li&gt;
+&lt;li&gt;this user id does NOT currently have any ssh pubkey-based access
+&lt;ul&gt;
+&lt;li&gt;ideally, this user id has shell access ONLY by "su - git" from some
+other userid on the same server (this ensure minimal confusion for ssh
+newbies!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-steps-to-install" class="anchor" aria-hidden="true" href="#steps-to-install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;steps to install&lt;/h3&gt;
+&lt;p&gt;First, prepare the ssh key:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;login to "git" on the server&lt;/li&gt;
+&lt;li&gt;make sure &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; is empty or non-existent&lt;/li&gt;
+&lt;li&gt;make sure your ssh public key from your workstation has been copied as
+$HOME/YourName.pub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, install gitolite by running these commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/sitaramc/gitolite
+mkdir -p $HOME/bin
+gitolite/install -to $HOME/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, setup gitolite with yourself as the administrator:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gitolite setup -pk YourName.pub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the last command doesn't run perhaps "bin" is not in your "PATH". You can
+either add it, or just run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$HOME/bin/gitolite setup -pk YourName.pub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you get any other errors please refer to the online documentation whose URL
+was given at the top of this file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-adding-users-and-repos" class="anchor" aria-hidden="true" href="#adding-users-and-repos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;adding users and repos&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Do NOT add new repos or users manually on the server.&lt;/em&gt;  Gitolite users,
+repos, and access rules are maintained by making changes to a special repo
+called "gitolite-admin" and &lt;em&gt;pushing&lt;/em&gt; those changes to the server.&lt;/p&gt;
+&lt;p&gt;To administer your gitolite installation, start by doing this on your
+workstation (if you have not already done so):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@host:gitolite-admin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;hr&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: if you are asked for a password, something went wrong.&lt;/strong&gt;.  Go hit
+the link for the complete documentation earlier in this file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;hr&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now if you "cd gitolite-admin", you will see two subdirectories in it: "conf"
+and "keydir".&lt;/p&gt;
+&lt;p&gt;To add new users alice, bob, and carol, obtain their public keys and add them
+to "keydir" as alice.pub, bob.pub, and carol.pub respectively.&lt;/p&gt;
+&lt;p&gt;To add a new repo "foo" and give different levels of access to these
+users, edit the file "conf/gitolite.conf" and add lines like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;repo foo
+    RW+         =   alice
+    RW          =   bob
+    R           =   carol
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you have made these changes, do something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git add conf
+git add keydir
+git commit -m "added foo, gave access to alice, bob, carol"
+git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When the push completes, gitolite will add the new users to
+&lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; on the server, as well as create a new, empty, repo
+called "foo".&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-help-for-your-users" class="anchor" aria-hidden="true" href="#help-for-your-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;help for your users&lt;/h2&gt;
+&lt;p&gt;Once a user has sent you their public key and you have added them as
+specified above and given them access, you have to tell them what URL to
+access their repos at.  This is usually "git clone git@host:reponame"; see
+man git-clone for other forms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: again, if they are asked for a password, something is wrong.&lt;/p&gt;
+&lt;p&gt;If they need to know what repos they have access to, they just have to run
+"ssh git@host info".&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-access-rule-examples" class="anchor" aria-hidden="true" href="#access-rule-examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;access rule examples&lt;/h2&gt;
+&lt;p&gt;Gitolite's access rules are very powerful.  The simplest use was already
+shown above.  Here is a slightly more detailed example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;repo foo
+    RW+                     =   alice
+    -   master              =   bob
+    -   refs/tags/v[0-9]    =   bob
+    RW                      =   bob
+    RW  refs/tags/v[0-9]    =   carol
+    R                       =   dave
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here's what these example rules say:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;alice can do anything to any branch or tag -- create, push,
+delete, rewind/overwrite etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bob can create or fast-forward push any branch whose name does
+not start with "master" and create any tag whose name does not
+start with "v"+digit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;carol can create tags whose names start with "v"+digit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dave can clone/fetch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please see the main documentation linked above for all the gory details, as
+well as more features and examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-groups" class="anchor" aria-hidden="true" href="#groups"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;groups&lt;/h2&gt;
+&lt;p&gt;Gitolite allows you to group users or repos for convenience.  Here's an
+example that creates two groups of users:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@staff      =   alice bob carol
+@interns    =   ashok
+
+repo secret
+    RW      =   @staff
+
+repo foss
+    RW+     =   @staff
+    RW      =   @interns
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Group lists accumulate.  The following two lines have the same effect as
+the earlier definition of @staff above:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@staff      =   alice bob
+@staff      =   carol
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also use group names in other group names:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@all-devs   =   @staff @interns
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, @all is a special group name that is often convenient to use if
+you really mean "all repos" or "all users".&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-commands" class="anchor" aria-hidden="true" href="#commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;commands&lt;/h2&gt;
+&lt;p&gt;Users can run certain commands remotely, using ssh.  Running&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ssh git@host help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;prints a list of available commands.&lt;/p&gt;
+&lt;p&gt;The most commonly used command is "info".  All commands respond to a
+single argument of "-h" with suitable information.&lt;/p&gt;
+&lt;p&gt;If you have shell on the server, you have a lot more commands available to
+you; try running "gitolite help".&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENSE&lt;/h2&gt;
+&lt;h1&gt;&lt;a id="user-content-contact-and-support" class="anchor" aria-hidden="true" href="#contact-and-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;contact and support&lt;/h1&gt;
+&lt;p&gt;Please see &lt;a href="http://gitolite.com/gitolite/#contactsupport" rel="nofollow"&gt;http://gitolite.com/gitolite/#contactsupport&lt;/a&gt; for mailing list and IRC
+info.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-license-1" class="anchor" aria-hidden="true" href="#license-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;license&lt;/h1&gt;
+&lt;p&gt;The gitolite software is copyright Sitaram Chamarty and is licensed under the
+GPL v2; please see the file called COPYING in the source distribution.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="http://gitolite.com/gitolite/#license" rel="nofollow"&gt;http://gitolite.com/gitolite/#license&lt;/a&gt; for more.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;hr&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: GIT is a trademark of Software Freedom Conservancy and my use of
+"Gitolite" is under license.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;hr&gt;
+&lt;/blockquote&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>sitaramc</author><guid isPermaLink="false">https://github.com/sitaramc/gitolite</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>petr999/fcgi-spawn #4 in Perl, Today</title><link>https://github.com/petr999/fcgi-spawn</link><description>&lt;p&gt;&lt;i&gt;FCGI::Spawn -- FastCGI application daemon for Perl/CGI compatibility&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;General Information
+-------------------
+
+FCGI-Spawn is the module and daemon both built on top of FCGI-ProcManager
+specially for those who need not ( almost ) to write any of his/her own Perl
+code. This is the quote of FCGI-ProcManager's explanation:
+
+"FCGI-ProcManager is a process manager for FCGI.  By implementing the
+process manager in perl, we can more finely tune FastCGI performance, and 
+we can take CPU and memory advantages of fast forks and copy-on-write UNIX
+process management characteristics."
+
+But unlike this, the FCGI-Spawn is intended for those who need to have the
+FCGI daemon with those specifications:
+- communicate via given UNIX local socket or TCP port
+With UNIX virtualization environments like FreeBSD's jail(8) the socket name and its
+desired file mode is the stuff you posess for communication betweeen Web
+server ( FastCGI requester ) and FastCGI daemon.
+- execute any given file in FastCGI environment;
+File name to execute is given with FastCGI protocol, this is what the PHP
+does in FastCGI mode;
+- fork with the given number of processes and share the compiled modules code
+  in common memory areas with copy-on-write facilities;
+- limit the number of requests served by the same process;
+Same as MaxRequests feature of Apache, especially wanted for Perl in sight of it never 
+returns allocated memory to OS. On a complex Perl applications, the memory allocation
+volume for particular porocess under load can grow up almost unpredictably. ;-)
+- reload the Perl module on every request if it has been changed from
+the moment it was loaded previously;
+- Cache the oobjects liek the compiled templates, automatically recompiling
+  them on change.
+Useful for debugging and fixing code when put on production hosting, another 
+obiouse feature of PHP, including FastCGI mode. Absence of such a feature in
+other Perl runtime environments can get any Perl newcomer stuck.
+
+There were no quick recipe yet, so i gave myself a try to implement one. :-)
+
+Installation
+------------
+
+FCGI-Spawn is expected to compile and run on the same systems range as
+FCGI-ProcManager is.
+
+To build,
+
+  perl Makefile.PL
+  make all
+  make install
+
+Usage
+-----
+
+To use CGI.pm in your applications unchanged, you chould apply the supplied
+CGI.pm.patch. ON some cases, the application is needed to be patched anyway.
+Obviously, it is enough to find CGI-&amp;gt;new or 'new CGI' in your code and replace
+it with $FCGI::Spawn::fcgi. That's all, folks.
+
+Next, you should decide the what system user you should execute the daemon.
+Typically, fcgi_spawn daemon is suitable for most cases, it takes this and some
+more parameters on a command line.
+
+Alternately, you may create an executable Perl file expected to being launched
+as a daemon by yourself.
+
+Also, you should configure the UNIX system user and/or group to launch the
+daemon with. `To configure' I mean both the environment and ulimit(3). And, the
+target daemon user should be able to create, and communicate via the socket set
+as an argument for FCGI-Spawn instance creation ( the new() method ). And, bear
+in mind that the FactCGI requester ( the Web server ) should be able to operate
+via this socket, so after creation it should be writable by Web server user. To
+satisfy this, I recommend the FCGI-Spawn daemon user be included into the same
+group as Web server and socket's permissions should be 0660.
+
+I tried to organize the request loop operations with using the pm_pre_dispatch() / pm_post_dispatch() 
+but could not keep in frames of its assumptions.
+Refer for more usage details to:
+
+  perldoc fcgi_spawn
+  perldoc FCGI::Spawn
+  perldoc FCGI::ProcManager
+
+
+Copyright
+---------
+Copyright (c) 2006-2010, Peter Vereshagin &amp;lt;peter@vereshagin.org&amp;gt;
+
+
+Disclaimer
+----------
+
+This library is free software released "AS IS WITH ALL FAULTS"
+and WITHOUT ANY WARRANTIES under the terms of the GNU Lesser
+General Public License, Version 2.1, a copy of which can be
+found in the "COPYING" file of this distribution.
+
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>petr999</author><guid isPermaLink="false">https://github.com/petr999/fcgi-spawn</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>inverse-inc/packetfence #5 in Perl, Today</title><link>https://github.com/inverse-inc/packetfence</link><description>&lt;p&gt;&lt;i&gt;PacketFence is a fully supported, trusted, Free and Open Source network access control (NAC) solution. Boasting an impressive feature set including a captive-portal for registration and remediation, centralized wired and wireless management, powerful BYOD management options, 802.1X support, layer-2 isolation of problematic devices; PacketFence can be used to effectively secure networks small to very large heterogeneous networks.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-packetfence" class="anchor" aria-hidden="true" href="#packetfence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PacketFence&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://gitlab.com/inverse-inc/packetfence/commits/devel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4eb601ae55ef4dd41e09107fd0841a28d133758e/68747470733a2f2f6769746c61622e636f6d2f696e76657273652d696e632f7061636b657466656e63652f6261646765732f646576656c2f706970656c696e652e737667" alt="pipeline status" data-canonical-src="https://gitlab.com/inverse-inc/packetfence/badges/devel/pipeline.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-what-is-packetfence" class="anchor" aria-hidden="true" href="#what-is-packetfence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is PacketFence?&lt;/h2&gt;
+&lt;p&gt;PacketFence is a fully supported, trusted, Free and Open Source
+network access control (NAC) system. Boasting an impressive feature
+set including a captive-portal for registration and remediation,
+centralized wired and wireless management, 802.1X support, layer-2
+isolation of problematic devices, integration with IDS solutions and vulnerability scanners; PacketFence can be used to effectively secure networks - from small to very large heterogeneous networks.&lt;/p&gt;
+&lt;p&gt;You want to know who is on your network? You want to give different access to your network based on who is connecting? PacketFence is for you!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Follow the instructions provided in the &lt;a href="https://packetfence.org/support/index.html#/documentation" rel="nofollow"&gt;Administration Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-more-information" class="anchor" aria-hidden="true" href="#more-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More Information&lt;/h2&gt;
+&lt;p&gt;Noteworthy changes since the last release see the &lt;a href="https://github.com/inverse-inc/packetfence/blob/devel/NEWS.asciidoc"&gt;NEWS&lt;/a&gt; file.&lt;/p&gt;
+&lt;p&gt;Upgrading? See the &lt;a href="https://github.com/inverse-inc/packetfence/blob/devel/UPGRADE.asciidoc"&gt;UPGRADE&lt;/a&gt; file.&lt;/p&gt;
+&lt;p&gt;For more details and developer visible changes see the &lt;a href="https://github.com/inverse-inc/packetfence"&gt;project's page on Github&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-support" class="anchor" aria-hidden="true" href="#support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support&lt;/h2&gt;
+&lt;p&gt;Join the &lt;a href="https://packetfence.org/support/index.html#/community" rel="nofollow"&gt;community&lt;/a&gt; or request &lt;a href="https://packetfence.org/support/index.html#/commercial" rel="nofollow"&gt;commercial support&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h2&gt;
+&lt;p&gt;PacketFence is a collaborative effort in order to create the best Open Source NAC solution. There are multiple ways you can contribute to the project.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-you-are-a-network-vendor" class="anchor" aria-hidden="true" href="#you-are-a-network-vendor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;em&gt;You are a network vendor&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Provide Inverse with switches, access points, wireless controllers, etc. so we can support even more equipment.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-you-are-a-security-software-vendor" class="anchor" aria-hidden="true" href="#you-are-a-security-software-vendor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;em&gt;You are a security software vendor&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Provide Inverse with licenses of your software so we can integrate your IDS, Netflow analyzer, IPS, Web filter, etc. directly into PacketFence and its captive portal technology.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-you-are-a-packetfence-user" class="anchor" aria-hidden="true" href="#you-are-a-packetfence-user"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;em&gt;You are a PacketFence user&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;You can provide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation reviews, enhancements and translations&lt;/li&gt;
+&lt;li&gt;Share your ideas and participate to the discussion in &lt;a href="https://packetfence.org/support/index.html#/community" title="Community Mailing Lists" rel="nofollow"&gt;mailing lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Provide Inverse with switches, access points, wireless controllers, etc. so we can support even more equipment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-you-are-a-developer" class="anchor" aria-hidden="true" href="#you-are-a-developer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;em&gt;You are a developer&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;You can provide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation reviews, enhancements and translations&lt;/li&gt;
+&lt;li&gt;Share your ideas and participate to the discussion in &lt;a href="https://packetfence.org/support/index.html#/community" title="Community Mailing Lists" rel="nofollow"&gt;mailing lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Patches for bugs or enhancements&lt;/li&gt;
+&lt;li&gt;Write tests&lt;/li&gt;
+&lt;li&gt;Handle tasks in our Roadmap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-you-are-a-security-researcher" class="anchor" aria-hidden="true" href="#you-are-a-security-researcher"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;em&gt;You are a security researcher&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Push PacketFence into new areas by leveraging the extensibility built into PacketFence. A lot of the low-level plumbing is done for you so you can focus on demoing your ideas.&lt;/p&gt;
+&lt;p&gt;Get in touch with us on the developer &lt;a href="https://packetfence.org/support/index.html#/community" title="Community Mailing Lists" rel="nofollow"&gt;mailing list&lt;/a&gt; with your ideas!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-source" class="anchor" aria-hidden="true" href="#source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Source&lt;/h2&gt;
+&lt;p&gt;Feel free to fork our &lt;a href="https://github.com/inverse-inc/packetfence"&gt;github repository&lt;/a&gt; if you are willing to contribute.&lt;/p&gt;
+&lt;p&gt;Most of the development happens in branches. Once ready for integration into &lt;a href="https://github.com/inverse-inc/packetfence/tree/devel"&gt;devel&lt;/a&gt;, a pull request is opened and a code review takes place. See the list of &lt;a href="https://github.com/inverse-inc/packetfence/branches"&gt;all branches in the works&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-translations" class="anchor" aria-hidden="true" href="#translations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translations&lt;/h2&gt;
+&lt;p&gt;PacketFence is available in various languages. The following list describes the official translations alongside their maintainers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;English - Inverse inc.&lt;/li&gt;
+&lt;li&gt;Brazilian Portuguese - Diego de Souza Lopes&lt;/li&gt;
+&lt;li&gt;French - Inverse inc.&lt;/li&gt;
+&lt;li&gt;Polish - Maciej Uhlig&lt;/li&gt;
+&lt;li&gt;Spanish (Spain) - Dominique Couot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you would like to translate the software in an other language, please consult the &lt;a href="https://packetfence.org/support/faq/article/how-to-translate-packetfence-in-another-language.html" rel="nofollow"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under the GNU General Public License v2.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://inverse.ca/" rel="nofollow"&gt;Inverse inc.&lt;/a&gt; leads the development of the solution. Over the years, numerous people and organizations have contributed to the project and we would like to thank them all !&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>inverse-inc</author><guid isPermaLink="false">https://github.com/inverse-inc/packetfence</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>brentgwalker/spider.io-Top-Websites-Test #6 in Perl, Today</title><link>https://github.com/brentgwalker/spider.io-Top-Websites-Test</link><description>&lt;p&gt;&lt;i&gt;A script to determine potentially nefarious sites linked to in top 100,000 sites.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;
+This project is a response to Problem 1 from the spider.io test
+questions.
+
+The project consists of two pieces: the main perl script ("test1.pl"),
+together with an associated module, containing various subroutines
+("Test1.pm").
+
+The script downloads the daily list of the top 1,000,000 websites
+generated by Alexa.com from the link:
+&lt;a href="http://s3.amazonaws.com/alexa-static/top-1m.csv.zip" rel="nofollow"&gt;http://s3.amazonaws.com/alexa-static/top-1m.csv.zip&lt;/a&gt;
+
+It uncompresses this, and extracts the top 100,000 sites.
+
+It then uses the database of "bugs" maintained by the developers of
+the Ghostery plugin (&lt;a href="http://www.ghostery.com" rel="nofollow"&gt;www.ghostery.com&lt;/a&gt;). This database is available at:
+&lt;a href="http://www.ghostery.com/update/all?format=json" rel="nofollow"&gt;http://www.ghostery.com/update/all?format=json&lt;/a&gt;. This file is
+downloaded to "bugs.js" in the local directory.
+
+The bugs file is parsed for the list of bugs currently known to
+Ghostery. For each bug, Ghostery has an information page located at a
+link of the form: &lt;a href="http://www.ghostery.com/apps/Bug_Name" rel="nofollow"&gt;http://www.ghostery.com/apps/Bug_Name&lt;/a&gt;. These data
+files contain a listing of example websites on which the bug has been
+found. The script goes through the list of bugs from the Ghostery
+database, and for each downloads the Ghostery information page. It
+then parses the downloaded information page to extract the list of
+example sites for each bug. For each bug, the examples listed by
+Ghostery are then cross-referenced with the list of top 100,000
+sites. The bugs which have an example appearing in the top sites list
+are then printed.
+
+The outputs of the code are two files: "top100000.txt", which simply
+contains a list of the top 100,000 sites extracted from the Alexa csv
+file; and "bugs_in_top_100000_websites.txt", which is a list of the
+bugs about which Ghostery knows that appear on the top 100,000 sites.
+
+The script will not overwrite existing copies of the top 1 million
+sites "top-1m.csv.zip", the Ghostery bugs database ("bug.js"), or any
+of the downloaded bug webpages ("Bug_Name.html"). All these files are
+left behind after running the script.
+
+Brent Walker, Feb. 2012.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>brentgwalker</author><guid isPermaLink="false">https://github.com/brentgwalker/spider.io-Top-Websites-Test</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>microsoft/ALAppExtensions #7 in Perl, Today</title><link>https://github.com/microsoft/ALAppExtensions</link><description>&lt;p&gt;&lt;i&gt;Repository for collaboration on Microsoft AL application add-on and localization extensions for Microsoft Dynamics 365 Business Central.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-microsoft-al-application-foundation-modules-and-application-add-ons-for-microsoft-dynamics-365-business-central" class="anchor" aria-hidden="true" href="#microsoft-al-application-foundation-modules-and-application-add-ons-for-microsoft-dynamics-365-business-central"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microsoft AL application foundation modules and application add-ons for Microsoft Dynamics 365 Business Central&lt;/h1&gt;
+&lt;p&gt;Welcome to the ALAppExtension repository!&lt;/p&gt;
+&lt;p&gt;This repo is a platform for Microsoft and our vibrant partner channel and community to work together to develop system modules and add-on apps in the AL language and to enable the general extensibility of Microsoft Dynamics 365 Business Central.&lt;/p&gt;
+&lt;p&gt;We’re working to make the core application thinner, more extensible, and easier to localize by extracting more and more of our system logic into modules, forming a system application and application foundation, as well as extracting business logic into add-on and localization apps. As we go, we’ll publish the source code for the modules and apps in this repo. The modules and apps are open for contributions. The apps can furthermore serve as starting point for verticalizations or just as samples for developing apps.&lt;/p&gt;
+&lt;p&gt;Microsoft will ship the contributions in upcoming releases of &lt;a href="https://dynamics.microsoft.com/en-us/business-central" rel="nofollow"&gt;Microsoft Dynamics 365 Business Central&lt;/a&gt;, where you’ll get to enjoy the effect of your contributions.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-types-of-engagements" class="anchor" aria-hidden="true" href="#types-of-engagements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Types of engagements&lt;/h2&gt;
+&lt;p&gt;There are a couple of ways to engage with us here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can grab the code and contribute to the published modules and apps. For more information, see the &lt;em&gt;Contributing&lt;/em&gt; section below.&lt;/li&gt;
+&lt;li&gt;If you’re building your own app and need something specific from us, like an event, you can help improve the general extensibility of the business logic. For more information, see the &lt;em&gt;Extensibility requests&lt;/em&gt; section below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h3&gt;
+&lt;p&gt;This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit &lt;a href="https://cla.microsoft.com" rel="nofollow"&gt;https://cla.microsoft.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.&lt;/p&gt;
+&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;. For more information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact &lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional questions or comments.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-extensibility-requests" class="anchor" aria-hidden="true" href="#extensibility-requests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extensibility requests&lt;/h3&gt;
+&lt;p&gt;The following are the types of requests you can submit to unblock your app:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new integration events – Get the event you need to hook-in to a process.&lt;/li&gt;
+&lt;li&gt;Change function visibility – For example, make a public function external or a similar change so you can call it from your extension and reuse the business logic.&lt;/li&gt;
+&lt;li&gt;Replace Option with Enum – Replace a specific option with an enum that supports your extension. The new type enum is extensible, but all code was written for non-extensible options.&lt;/li&gt;
+&lt;li&gt;Extensibility enhancements – Request changes in the application code that will improve extensibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ll have a look at your request, and if we can we’ll implement it asap. If we can’t we’ll let you know and briefly explain why not. When that happens, don’t be discouraged. Go back to the drawing board, see if you can work it out, and then come back and submit another request.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-see-also" class="anchor" aria-hidden="true" href="#see-also"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See Also&lt;/h2&gt;
+&lt;p&gt;&lt;a href="FAQ.md"&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><guid isPermaLink="false">https://github.com/microsoft/ALAppExtensions</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item><item><title>LangilleLab/microbiome_helper #8 in Perl, Today</title><link>https://github.com/LangilleLab/microbiome_helper</link><description>&lt;p&gt;&lt;i&gt;A repository of bioinformatic scripts, SOPs, and tutorials for analyzing microbiome data. &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-microbiome-helper" class="anchor" aria-hidden="true" href="#microbiome-helper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microbiome Helper&lt;/h1&gt;
+&lt;p&gt;An assortment of scripts to help process and automate various microbiome and metagenomic bioinformatic tools. We provide workflows, tutorials and a virtual box image to help researchers process microbial data.&lt;/p&gt;
+&lt;p&gt;Our paper on Microbiome Helper has been &lt;a href="http://msystems.asm.org/content/2/1/e00127-16" rel="nofollow"&gt;published in mSystems&lt;/a&gt;. Please cite this paper if you use our repository:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Comeau AM, Douglas GM, Langille MGI. 2017. Microbiome Helper: a Custom and Streamlined Workflow for Microbiome Research. mSystems 2(1): e00127-16; DOI: 10.1128/mSystems.00127-16    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please see our &lt;a href="https://github.com/mlangill/microbiome_helper/wiki"&gt;wiki site&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contact" class="anchor" aria-hidden="true" href="#contact"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Please feel free to post a question on the &lt;a href="https://groups.google.com/forum/#!forum/microbiome-helper" rel="nofollow"&gt;Microbiome Helper google group&lt;/a&gt; if you have any issues.&lt;/li&gt;
+&lt;li&gt;Other technical questions and bug reporting about this repository and tutorials can be sent to &lt;a href="mailto:gavin.douglas@dal.ca"&gt;gavin.douglas@dal.ca&lt;/a&gt;, and questions about the wet-lab protocols can be sent to &lt;a href="mailto:andre.comeau@dal.ca"&gt;andre.comeau@dal.ca&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;General comments or inquires about Microbiome Helper can be sent to &lt;a href="mailto:morgan.g.i.langille@dal.ca"&gt;morgan.g.i.langille@dal.ca&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>LangilleLab</author><guid isPermaLink="false">https://github.com/LangilleLab/microbiome_helper</guid><pubDate>Thu, 31 Oct 2019 00:00:00 GMT</pubDate></item></channel></rss>
