@@ -15,7 +15,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import itertools
 import os
 
@@ -45,7 +45,7 @@ def main():
         feed['link'] = '{}/{}?since={}'.format(ROOT_URL, lang, period)
         feed['description'] = ('The top repositories on GitHub for {}, measured {}'
                 .format(lang, period))
-        feed['ttl'] = 1400 #1 day is 1440 minutes; shave some off as margin of error
+        feed['ttl'] = 720 #720 minutes == 12 hours; arbitrarily chosen
 
         feed['pubDate'] = datetime.now(timezone.utc)
         #This is probably wrong
@@ -82,9 +82,10 @@ def row_to_rss_item(row):
 
     #TODO categories? Language(s)? (that'd only be relevant for 'all'...)
 
-    #Sqlite stores dates as YYYY-MM-DD
-    #wrong alt: item['pubDate'] = date(*map(int, row.date.split('-')))
-    item['pubDate'] = datetime.strptime(row.date, '%Y-%m-%d')
+    #SQLite stores dates as YYYY-MM-DD
+    pub_date = datetime.strptime(row.date, '%Y-%m-%d')
+    #offset pubdate by ranking so chronological order == ranking order
+    item['pubDate'] = pub_date + timedelta(minutes=row.rank)
 
     row_descr = row.description or '[No description found.]'
 
