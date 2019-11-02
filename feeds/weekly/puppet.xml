@@ -1,2 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Puppet, This week</title><link>https://github.com/trending/puppet?since=weekly</link><description>The top repositories on GitHub for puppet, measured weekly</description><pubDate>Sat, 02 Nov 2019 00:08:04 GMT</pubDate><lastBuildDate>Sat, 02 Nov 2019 00:08:04 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>1400</ttl><item><title>No repos in Puppet, This week today</title><pubDate>Sat, 02 Nov 2019 00:08:04 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Puppet, This week</title><link>https://github.com/trending/puppet?since=weekly</link><description>The top repositories on GitHub for puppet, measured weekly</description><pubDate>Sat, 02 Nov 2019 02:38:41 GMT</pubDate><lastBuildDate>Sat, 02 Nov 2019 02:38:41 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>alphagov/govuk-puppet #1 in Puppet, This week</title><link>https://github.com/alphagov/govuk-puppet</link><description>&lt;p&gt;&lt;i&gt;Puppet manifests used to provision the main GOV.UK web stack&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-govuk-puppet" class="anchor" aria-hidden="true" href="#govuk-puppet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GOV.UK Puppet&lt;/h1&gt;
+&lt;p&gt;This repository contains the puppet modules and manifests for GOV.UK.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;In order to run/test the Puppet manifests you will need Ruby 1.9.x and
+Bundler.&lt;/p&gt;
+&lt;p&gt;Dependencies are managed with &lt;a href="http://bundler.io/" rel="nofollow"&gt;Bundler&lt;/a&gt; and
+&lt;a href="http://librarian-puppet.com/" rel="nofollow"&gt;librarian-puppet&lt;/a&gt;, but hopefully this should be
+transparent unless you need to update the dependencies yourself.&lt;/p&gt;
+&lt;p&gt;If you're on a GOV.UK development VM, you should be able to run&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ govuk_puppet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;which is a thin wrapper around the &lt;code&gt;puppet-apply-dev&lt;/code&gt; script.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-standards" class="anchor" aria-hidden="true" href="#standards"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Standards&lt;/h2&gt;
+&lt;p&gt;Please familiarise yourself with our Puppet standards before contributing to
+this repository:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/docs/things-that-should-not-be-in-puppet.md"&gt;Things that should not be in Puppet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/docs/dependency-management.md"&gt;Dependency management&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/docs/process-supervision.md"&gt;Process supervision&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/docs/nagios-checks.md"&gt;Nagios checks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Run &lt;code&gt;rake spec&lt;/code&gt; and &lt;code&gt;rake lint&lt;/code&gt; to run the tests and lint before checking in.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;All modules from librarian-puppet are cached in this repo under
+&lt;code&gt;vendor/puppet/&lt;/code&gt; in order to ensure that third-party code doesn't change
+underneath us, protect us from downtime, and improve build times.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h3&gt;
+&lt;p&gt;If you're using this repo for the first time or the contents of
+&lt;code&gt;Gemfile[.lock]&lt;/code&gt; or &lt;code&gt;Puppetfile[.lock]&lt;/code&gt; have recently changed then you'll
+need to run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle install
+$ bundle exec rake librarian:install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please avoid using &lt;code&gt;librarian-puppet&lt;/code&gt; directly because it's not very good at
+respecting or maintaining its own config file.&lt;/p&gt;
+&lt;p&gt;Running these commands will often be the solution to Puppet errors about
+unknown classes or functions such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Unknown function validate_bool at …&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Could not find class apt for …&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Puppet::Parser::AST::Resource failed with error ArgumentError: Invalid resource type apt::source …&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It may affect errors relating to classes you have not modified when running spec tests after a rebase.&lt;/p&gt;
+&lt;p&gt;This should also fix errors while trying to run &lt;code&gt;govuk_puppet&lt;/code&gt;, of the form:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chown: changing ownership of '/home/vagrant/.puppet/[…]': Operation not permitted&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-updating" class="anchor" aria-hidden="true" href="#updating"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updating&lt;/h3&gt;
+&lt;p&gt;If you need to add a new module to the &lt;code&gt;Puppetfile&lt;/code&gt; then you will need to
+run the following to install it and update the cache:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake librarian:package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you need to update an existing module to a newer version, you'll need to
+run the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake 'librarian:update[alphagov/tune_ext]'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Afterwards you should commit the &lt;code&gt;Puppetfile&lt;/code&gt;, &lt;code&gt;Puppetfile.lock&lt;/code&gt; and any new
+files in &lt;code&gt;vendor/puppet/&lt;/code&gt;. If updating a module then you will need to
+manually delete the old tarball from the cache directory.&lt;/p&gt;
+&lt;p&gt;NB: There should &lt;em&gt;never&lt;/em&gt; be any changes to &lt;code&gt;.librarian/puppet/config&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h2&gt;
+&lt;p&gt;Assuming that your dependencies are installed, run all the tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The module tests are located in &lt;code&gt;modules/&amp;lt;module&amp;gt;/spec&lt;/code&gt;. See the &lt;a href="https://github.com/rodjek/rspec-puppet"&gt;RSpec
+Puppet&lt;/a&gt; documentation for more
+details. The specs are run in parallel by default.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/rodjek/puppet-lint"&gt;Puppet-lint&lt;/a&gt; is a tool that checks various syntax and style rules common
+to well written Puppet code. It can be run with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake lint
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This outputs a set of errors or warnings that should be fixed. See the &lt;a href="http://docs.puppetlabs.com/guides/style_guide.html" rel="nofollow"&gt;Puppet
+Style Guide&lt;/a&gt; for more
+information.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-scoped-testing" class="anchor" aria-hidden="true" href="#scoped-testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scoped testing&lt;/h3&gt;
+&lt;p&gt;You can run the tests for a specific module or modules by setting an
+environment variable, &lt;code&gt;mods&lt;/code&gt; for the rake task, e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake mods=nginx,varnish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;manifests/&lt;/code&gt; directory is considered one module called &lt;code&gt;manifests&lt;/code&gt; for
+this purpose.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake mods=manifests,govuk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-precommit-testing" class="anchor" aria-hidden="true" href="#precommit-testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Precommit Testing&lt;/h3&gt;
+&lt;p&gt;This repo uses &lt;a href="http://pre-commit.com/" rel="nofollow"&gt;pre-commit&lt;/a&gt; for managing its pre-
+commit hooks. This is available via brew:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew install pre-commit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The pre-commit hooks are configured in the .pre-commit-config.yaml file in the
+root of this repo. To make the pre-commit hooks work you first need to install
+the pre-commit shim in your local .git/hooks directory:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pre-commit install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will run hooks configured in &lt;code&gt;.pre-commit-config.yaml&lt;/code&gt; when you run a
+&lt;code&gt;git commit&lt;/code&gt; and will pass each hook the list of files staged as part of the
+commit. You can test the hooks by doing:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pre-commit run&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can also run the hooks on all files to test the status of the entire repo.
+This might be useful, for example, as part of a PR builder job:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pre-commit run --all-files&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-node-testing" class="anchor" aria-hidden="true" href="#node-testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Node testing&lt;/h3&gt;
+&lt;p&gt;Some issues that span multiple classes or modules may not be picked up unit
+testing. Duplicate resources and mislabelled dependencies are such examples.
+To catch these, all available &lt;code&gt;govuk::node&lt;/code&gt; classes can be exercised with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake spec:nodes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compiling node complete node catalogs takes quite a long time, so you may
+wish to restrict it to certain classes of node by setting the environment
+variable &lt;code&gt;classes&lt;/code&gt; for the rake task, e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake spec:nodes classes=frontend,backend
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-test-hieradata" class="anchor" aria-hidden="true" href="#test-hieradata"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test Hieradata&lt;/h4&gt;
+&lt;p&gt;During spec tests &lt;code&gt;spec/fixtures/hiera/hiera.yaml&lt;/code&gt; is used to configure hieradata which &lt;em&gt;only&lt;/em&gt; uses &lt;code&gt;spec/fixtures/hieradata/common.yaml&lt;/code&gt; for its values (i.e. nothing from &lt;code&gt;hieradata/&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;During node tests the hieradata uses the &lt;code&gt;vagrant&lt;/code&gt; and &lt;code&gt;development&lt;/code&gt; environments. The &lt;code&gt;development&lt;/code&gt; environment should only be used if a value in &lt;code&gt;ENV['classes']&lt;/code&gt; matches the regexp &lt;code&gt;/^development$/&lt;/code&gt; (i.e. in normal operation it will use &lt;code&gt;vagrant&lt;/code&gt;). This can mean that settings in &lt;code&gt;common.yaml&lt;/code&gt; will be overwritten in accordance with hiera's &lt;code&gt;:hierarchy&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-test-coverage" class="anchor" aria-hidden="true" href="#test-coverage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test Coverage&lt;/h3&gt;
+&lt;p&gt;Each test suite's results are followed by a summary of how many resources that suite covers, how many the tests touch and the coverage as a percentage. e.g.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;Total resources:   175
+Touched resources: 36
+Resource coverage: 20.57%&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A list of untouched resources can be gained by setting the &lt;code&gt;FULL_COVERAGE_REPORT&lt;/code&gt; environment variable before running the tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FULL_COVERAGE_REPORT=true bundle exec rake spec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Warning&lt;/strong&gt;&lt;/em&gt; Given the number of modules that have limited tests this will produce a very large amount of output unless the tests are scoped.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-rspec-basic-mode" class="anchor" aria-hidden="true" href="#rspec-basic-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rspec Basic Mode&lt;/h3&gt;
+&lt;p&gt;It is sometimes useful to have access to the normal RSpec Rake task. This exposes the &lt;code&gt;SPEC&lt;/code&gt; and &lt;code&gt;SPEC_OPTS&lt;/code&gt; environment variables that mean you can set the test specification and RSpec options respectively. This gives finer grain control when it is needed. e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle exec rake rspec_basic_mode SPEC="./modules/collectd/spec/classes/collectd__package_spec.rb:7" SPEC_OPTS="-c"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;runs the single test at line 7 of &lt;code&gt;collectd__package_spec.rb&lt;/code&gt; with colour mode enabled.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Warning&lt;/strong&gt;&lt;/em&gt; using this option disables parallel running of tests and the &lt;code&gt;mod&lt;/code&gt; arguments will not work.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-vagrant-testing" class="anchor" aria-hidden="true" href="#vagrant-testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vagrant testing&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h4&gt;
+&lt;p&gt;You will need an up-to-date checkout of the private &lt;code&gt;govuk-provisioning&lt;/code&gt;
+repository for node definitions.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h4&gt;
+&lt;p&gt;It is recommended that you use Vagrant &amp;gt; 1.4 from a binary/system install.
+&lt;code&gt;alphagov/gds-boxen&lt;/code&gt; can set this up for you.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h4&gt;
+&lt;p&gt;You need only bring up the subset of nodes that you're working on. For
+example, to bring up a frontend and backend:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;vagrant up frontend-1.frontend backend-1.backend&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Vagrant will run the Puppet provisioner against the node when it boots up.
+Nodes should look almost identical to that of our real
+production/staging/preview environments, including network addresses. To
+access a node's services like HTTP/HTTPS you can point your &lt;code&gt;hosts&lt;/code&gt; file to
+the host-only IP address (eth1).&lt;/p&gt;
+&lt;p&gt;Physical attributes like &lt;code&gt;memory&lt;/code&gt; and &lt;code&gt;num_cores&lt;/code&gt; will be ignored because
+they don't scale appropriately to local VMs, but can still be customised as
+described below.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-customisation" class="anchor" aria-hidden="true" href="#customisation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customisation&lt;/h4&gt;
+&lt;p&gt;Node definitions can be overridden with a &lt;code&gt;nodes.local.yaml&lt;/code&gt; file in this
+directory. This is merged on top of all other node
+definitions. The following keys are currently available for customisation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;box_dist&lt;/code&gt; Ubuntu distribution. Currently "trusty".&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;box_version&lt;/code&gt; Internal version number of the GDS basebox.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;memory&lt;/code&gt; Amount of RAM. Default is "384".&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip&lt;/code&gt; IP address for hostonly networking. Currently all subnets are /16.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt; Name of the Puppet class/role.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example to increase the amount of RAM on a PuppetMaster:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;---
+&lt;span class="pl-ent"&gt;puppetmaster-1.management&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;memory&lt;/span&gt;: &lt;span class="pl-c1"&gt;768&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-errors" class="anchor" aria-hidden="true" href="#errors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Errors&lt;/h4&gt;
+&lt;p&gt;Some errors that you might encounter..&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-nfs-failed-mounts" class="anchor" aria-hidden="true" href="#nfs-failed-mounts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NFS failed mounts&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;[frontend-1.frontend] Mounting NFS shared folders...
+Mounting NFS shared folders failed. This is most often caused by the NFS
+client software not being installed on the guest machine. Please verify
+that the NFS client software is properly installed, and consult any resources
+specific to the linux distro you're using for more information on how to do this.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This seems to be caused by a combination of OSX, VirtualBox, and Cisco
+AnyConnect. Try temporarily disconnecting from the VPN when bringing up a
+new node. You can also set &lt;code&gt;VAGRANT_GOVUK_NFS=no&lt;/code&gt; as an environment variable to
+disable the use of NFS. This is less performant but fine for checking puppet
+runs.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>alphagov</author><guid isPermaLink="false">https://github.com/alphagov/govuk-puppet</guid><pubDate>Sat, 02 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
