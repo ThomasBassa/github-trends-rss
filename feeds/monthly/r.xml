@@ -1,2 +1,1128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: R, This month</title><link>https://github.com/trending/r?since=monthly</link><description>The top repositories on GitHub for r, measured monthly</description><pubDate>Mon, 04 Nov 2019 01:05:14 GMT</pubDate><lastBuildDate>Mon, 04 Nov 2019 01:05:14 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in R, This month today</title><pubDate>Mon, 04 Nov 2019 01:05:14 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: R, This month</title><link>https://github.com/trending/r?since=monthly</link><description>The top repositories on GitHub for r, measured monthly</description><pubDate>Tue, 05 Nov 2019 01:06:27 GMT</pubDate><lastBuildDate>Tue, 05 Nov 2019 01:06:27 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>rfordatascience/tidytuesday #1 in R, This month</title><link>https://github.com/rfordatascience/tidytuesday</link><description>&lt;p&gt;&lt;i&gt;Official repo for the #tidytuesday project&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="static/tt_logo.png"&gt;&lt;img src="static/tt_logo.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-a-weekly-social-data-project-in-r" class="anchor" aria-hidden="true" href="#a-weekly-social-data-project-in-r"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A weekly social data project in R&lt;/h2&gt;
+&lt;p&gt;A weekly data project aimed at the R ecosystem. As this project was borne out of the &lt;code&gt;R4DS Online Learning Community&lt;/code&gt; and the &lt;code&gt;R for Data Science&lt;/code&gt; textbook, an emphasis was placed on understanding how to summarize and arrange data to make meaningful charts with &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;tidyr&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;, and other tools in the &lt;code&gt;tidyverse&lt;/code&gt; ecosystem. However, any code-based methodology is welcome - just please remember to share the code used to generate the results.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Join the &lt;code&gt;R4DS Online Learning Community&lt;/code&gt; in the weekly &lt;code&gt;#TidyTuesday&lt;/code&gt; event! Every week we post a raw dataset, a chart or article related to that dataset, and ask you to explore the data. While the dataset will be “tamed”, it will not always be tidy! As such you might need to apply various &lt;code&gt;R for Data Science&lt;/code&gt; techniques to wrangle the data into a true tidy format. The goal of &lt;code&gt;TidyTuesday&lt;/code&gt; is to apply your R skills, get feedback, explore other’s work, and connect with the greater &lt;code&gt;#RStats&lt;/code&gt; community! As such we encourage everyone of all skills to participate!&lt;/p&gt;
+&lt;p&gt;We will have many sources of data and want to emphasize that &lt;strong&gt;no causation&lt;/strong&gt; is implied. There are various moderating variables that affect all data, many of which might not have been captured in these datasets. As such, our guidelines are to use the data provided to practice your data tidying and plotting techniques. Participants are invited to consider for themselves what nuancing factors might underlie these relationships.&lt;/p&gt;
+&lt;p&gt;The intent of Tidy Tuesday is to provide a safe and supportive forum for individuals to practice their &lt;strong&gt;wrangling&lt;/strong&gt; and &lt;strong&gt;data visualization&lt;/strong&gt; skills independent of drawing conclusions. While we understand that the two are related, the focus of this practice is purely on building skills with real-world data.&lt;/p&gt;
+&lt;p&gt;All data will be posted on the data sets page on Monday. It will include the link to the original article (for context) and to the data set.&lt;/p&gt;
+&lt;p&gt;We welcome all newcomers, enthusiasts, and experts to participate, but be mindful of a few things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The data set comes from the source article or the source that the article credits. Be mindful that the data is what it is and Tidy Tuesday is designed to help you practice &lt;strong&gt;data visualization&lt;/strong&gt; and &lt;strong&gt;basic data wrangling&lt;/strong&gt; in R.&lt;/li&gt;
+&lt;li&gt;Again, the data is what it is! You are welcome to explore beyond the provided dataset, but the data is provided as a "toy" dataset to practice techniques on.&lt;/li&gt;
+&lt;li&gt;This is NOT about criticizing the original article or graph. Real people made the graphs, collected or acquired the data! Focus on the provided dataset, learning, and improving your techniques in R.&lt;/li&gt;
+&lt;li&gt;This is NOT about criticizing or tearing down your fellow &lt;code&gt;#RStats&lt;/code&gt; practitioners or their code! Be supportive and kind to each other! Like other's posts and help promote the &lt;code&gt;#RStats&lt;/code&gt; community!&lt;/li&gt;
+&lt;li&gt;Use the hashtag #TidyTuesday on Twitter if you create your own version and would like to share it.&lt;/li&gt;
+&lt;li&gt;Include a picture of the visualisation when you post to Twitter.&lt;/li&gt;
+&lt;li&gt;Include a copy of the code used to create your visualization when you post to Twitter. Comment your code wherever possible to help yourself and others understand your process!&lt;/li&gt;
+&lt;li&gt;Focus on improving your craft, even if you end up with something simple!&lt;/li&gt;
+&lt;li&gt;Give credit to the original data source whenever possible.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-submitting-datasets" class="anchor" aria-hidden="true" href="#submitting-datasets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Submitting Datasets&lt;/h2&gt;
+&lt;p&gt;Want to submit an interesting dataset? Please open an &lt;a href="https://github.com/rfordatascience/tidytuesday/issues"&gt;Issue&lt;/a&gt; and post a link to the article (or blogpost, etc) using the data, then we can discuss adding it to a future TidyTuesday Event!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-submitting-code-chunks" class="anchor" aria-hidden="true" href="#submitting-code-chunks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Submitting Code Chunks&lt;/h2&gt;
+&lt;p&gt;Want to submit a useful code-chunk? Please submit as a &lt;a href="https://github.com/rfordatascience/tidytuesday/tree/master/community_resources/code_chunks"&gt;Pull Request&lt;/a&gt; and follow the &lt;a href="https://github.com/rfordatascience/tidytuesday/blob/master/community_resources/code_chunks/readme.md"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;&lt;a id="user-content-datasets" class="anchor" aria-hidden="true" href="#datasets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DataSets&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-2018" class="anchor" aria-hidden="true" href="#2018"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="data/2018"&gt;2018&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-2019" class="anchor" aria-hidden="true" href="#2019"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="data/2019"&gt;2019&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Week&lt;/th&gt;
+&lt;th align="center"&gt;Date&lt;/th&gt;
+&lt;th align="left"&gt;Data&lt;/th&gt;
+&lt;th align="left"&gt;Source&lt;/th&gt;
+&lt;th align="left"&gt;Article&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-01-01&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-01-01"&gt;#Rstats &amp;amp; #TidyTuesday Tweets&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://rtweet.info/" rel="nofollow"&gt;&lt;code&gt;rtweet&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://stackoverflow.blog/2017/10/10/impressive-growth-r/" rel="nofollow"&gt;stackoverflow.blog&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-01-08&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-01-08"&gt;TV's Golden Age&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.imdb.com/" rel="nofollow"&gt;IMDb&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.economist.com/graphic-detail/2018/11/24/tvs-golden-age-is-real" rel="nofollow"&gt;The Economist&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-01-15&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-01-15"&gt;Space Launches&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.planet4589.org/space/lvdb/index.html" rel="nofollow"&gt;JSR Launch Vehicle Database&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://economist.com/graphic-detail/2018/10/18/the-space-race-is-dominated-by-new-contenders" rel="nofollow"&gt;The Economist&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-01-22&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-01-22"&gt;Incarceration Trends&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/vera-institute/incarceration_trends"&gt;Vera Institute&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/vera-institute/incarceration_trends"&gt;Vera Institute&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-01-29&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-01-29"&gt;Dairy production &amp;amp; Consumption&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.ers.usda.gov/data-products/dairy-data/" rel="nofollow"&gt;USDA&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.npr.org/2019/01/09/683339929/nobody-is-moving-our-cheese-american-surplus-reaches-record-high" rel="nofollow"&gt;NPR&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;6&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-02-05&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-02-05"&gt;House Price Index &amp;amp; Mortgage Rates&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.freddiemac.com/research/indices/house-price-index.html" rel="nofollow"&gt;FreddieMac&lt;/a&gt; &amp;amp; &lt;a href="http://www.freddiemac.com/pmms/" rel="nofollow"&gt;FreddieMac&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://fortune.com/2014/06/24/american-housing-the-good-the-bad-and-the-ugly-in-6-charts/" rel="nofollow"&gt;Fortune&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;7&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-02-12&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-02-12"&gt;Federal R&amp;amp;D Spending&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.aaas.org/programs/r-d-budget-and-policy/historical-rd-data" rel="nofollow"&gt;AAAS&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://dotearth.blogs.nytimes.com/2014/11/02/panels-latest-warming-warning-misses-global-slumber-party-on-energy-research/" rel="nofollow"&gt;New York Times&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;8&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-02-19&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-02-19"&gt;US PhD's Awarded&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ncses.nsf.gov/pubs/nsf19301/data" rel="nofollow"&gt;NSF&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://twitter.com/EpiEllie/status/1096876638632140805" rel="nofollow"&gt;&lt;code&gt;#epibookclub&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;9&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-02-26&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-02-26"&gt;French Train Delays&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ressources.data.sncf.com/explore/dataset/regularite-mensuelle-tgv-aqst/information/?sort=nombre_de_trains_annules&amp;amp;q=gare&amp;amp;dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJzcGxpbmUiLCJmdW5jIjoiQVZHIiwieUF4aXMiOiJleHRlcm5lcyIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6IiNhNmQ4NTQifV0sInhBeGlzIjoicGVyaW9kZSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6Im1vbnRoIiwic29ydCI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoicmVndWxhcml0ZS1tZW5zdWVsbGUtdGd2LWFxc3QiLCJvcHRpb25zIjp7InNvcnQiOiJub21icmVfZGVfdHJhaW5zX2FubnVsZXMifX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D" rel="nofollow"&gt;SNCF&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://today.rtl.lu/news/luxembourg/1306023.html" rel="nofollow"&gt;RTL - Today&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;10&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-03-05&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-03-05"&gt;Women in the Workplace&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.census.gov/data/tables/time-series/demo/industry-occupation/median-earnings.html" rel="nofollow"&gt;Census Bureau&lt;/a&gt; &amp;amp; &lt;a href="https://www.bls.gov/opub/ted/2012/ted_20121123.htm" rel="nofollow"&gt;Bureau of Labor&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.census.gov/library/stories/2018/05/gender-pay-gap-in-finance-sales.html" rel="nofollow"&gt;Census Bureau&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;11&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-03-12&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-03-12"&gt;Board Games&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://boardgamegeek.com/" rel="nofollow"&gt;Board Game Geeks&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://fivethirtyeight.com/features/designing-the-best-board-game-on-the-planet/" rel="nofollow"&gt;fivethirtyeight&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;12&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-03-19&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-03-19"&gt;Stanford Open Policing Project&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://openpolicing.stanford.edu/data/" rel="nofollow"&gt;Stanford Open Policing Project&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/5harad/openpolicing"&gt;SOPP - arXiv:1706.05678&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://arxiv.org/abs/1706.05678" rel="nofollow"&gt;SOPP - arXiv:1706.05678&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;13&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-03-26&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-03-26"&gt;Seattle Pet Names&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb" rel="nofollow"&gt;seattle.gov&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://seattle.curbed.com/2019/1/2/18165658/seattle-popular-pet-names-2018" rel="nofollow"&gt;Curbed Seattle&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;14&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-04-02&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-04-02"&gt;Seattle Bike Traffic&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.seattle.gov/transportation/projects-and-programs/programs/bike-program/bike-counters" rel="nofollow"&gt;seattle.gov&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.seattletimes.com/seattle-news/transportation/what-we-can-learn-from-seattles-bike-counter-data/" rel="nofollow"&gt;Seattle Times&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;15&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-04-09&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-04-09"&gt;Tennis Grand Slam Champions&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/List_of_Grand_Slam_women%27s_singles_champions" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ig.ft.com/sites/visual-history-of-womens-tennis/" rel="nofollow"&gt;Financial Times&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;16&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-04-16&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-04-16"&gt;The Economist Data Viz Mistakes&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368" rel="nofollow"&gt;The Economist&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368" rel="nofollow"&gt;The Economist&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;17&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-04-23&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-04-23"&gt;Anime Data&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.kaggle.com/aludosan/myanimelist-anime-dataset-as-20190204" rel="nofollow"&gt;MyAnimeList&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://myanimelist.net/topanime.php?type=bypopularity" rel="nofollow"&gt;MyAnimeList&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;18&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-04-30&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-04-30"&gt;Chicago Bird Collisions&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://datadryad.org/resource/doi:10.5061/dryad.8rr0498" rel="nofollow"&gt;Winger et al, 2019&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2019.0364#d3e550" rel="nofollow"&gt;Winger et al, 2019&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;19&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-05-07&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-05-07"&gt;Global Student to Teacher Ratios&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://data.uis.unesco.org/index.aspx?queryid=180" rel="nofollow"&gt;UNESCO&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.centerforpubliceducation.org/research/class-size-and-student-achievement" rel="nofollow"&gt;Center for Public Education&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;20&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-05-14&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-05-14"&gt;Nobel Prize Winners&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.kaggle.com/nobelfoundation/nobel-laureates" rel="nofollow"&gt;Kaggle&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.economist.com/graphic-detail/2016/10/03/greying-of-the-nobel-laureates" rel="nofollow"&gt;The Economist&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;21&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-05-21&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-05-21"&gt;Global Plastic Waste&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ourworldindata.org/plastic-pollution" rel="nofollow"&gt;Our World In Data&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ourworldindata.org/plastic-pollution" rel="nofollow"&gt;Our World in Data&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;22&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-05-28&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-05-28"&gt;Wine Ratings&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.kaggle.com/zynicide/wine-reviews" rel="nofollow"&gt;Kaggle&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.vivino.com/wine-news/how-much-does-a-good-bottle-of-wine-cost" rel="nofollow"&gt;Vivino&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;23&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-06-04&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-06-04"&gt;Ramen Ratings&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.theramenrater.com/resources-2/the-list/" rel="nofollow"&gt;TheRamenRater.com&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.foodrepublic.com/2014/12/02/theres-a-website-that-has-rated-1518-bowls-of-instant-ramen/" rel="nofollow"&gt;Food Republic&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;24&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-06-11&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-06-11"&gt;Meteorites&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh/data" rel="nofollow"&gt;NASA&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.theguardian.com/news/datablog/interactive/2013/feb/15/meteorite-fall-map" rel="nofollow"&gt;The Guardian - Meteorite map&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;25&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-06-18&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-06-18"&gt;Christmas Bird Counts&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.birdscanada.org/index.jsp" rel="nofollow"&gt;Bird Studies Canada&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://sharleenw.rbind.io/post/hamilton_cbc_part_1/hamilton-christmas-bird-count-part-1/" rel="nofollow"&gt;Hamilton Christmas Bird Count&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;26&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-06-25&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-06-25"&gt;Global UFO Sightings&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.nuforc.org/" rel="nofollow"&gt;NUFORC&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.kaggle.com/jonathanbouchet/e-t-phone-home-but-mostly-after-8-00pm" rel="nofollow"&gt;Example Plots&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;27&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-07-02&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-07-02"&gt;Media Franchise Revenues&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_media_franchises" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.reddit.com/r/dataisbeautiful/comments/c53540/highest_grossing_media_franchises_oc/" rel="nofollow"&gt;reddit/dataisbeautiful post&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;28&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-07-09&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-07-09"&gt;Women's World Cup&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.world/sportsvizsunday/womens-world-cup-data" rel="nofollow"&gt;data.world&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/FIFA_Women%27s_World_Cup" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;29&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-07-16&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-07-16"&gt;R4DS Membership&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://join.slack.com/t/rfordatascience/shared_invite/enQtMzA1Nzk1MjIzNDczLTY0OTVlMzM3ZTU5ZjA3NWE5ZDkxOGVmNjRjODQ2YmRjMzg4NWQxMDAxZTcwNzViZTczOThiNzBhYWJhZDM2ZTU" rel="nofollow"&gt;R4DS Slack&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://t.co/wNexiphbr5" rel="nofollow"&gt;R4DS useR Presentation&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;30&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-07-23&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-07-23"&gt;Wildlife Strikes&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://wildlife.faa.gov/" rel="nofollow"&gt;FAA&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.faa.gov/airports/airport_safety/wildlife/media/Wildlife-Strike-Report-1990-2017.pdf" rel="nofollow"&gt;FAA&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;31&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-07-30&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-07-30"&gt;Video Games&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://steamspy.com/year/" rel="nofollow"&gt;Steam Spy&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://cruiseofdimensionality.home.blog/2019/07/24/pc-video-games-we-still-play/" rel="nofollow"&gt;Liza Wood&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;32&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-08-06&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-08-06"&gt;Bob Ross paintings&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/fivethirtyeight/data/tree/master/bob-ross"&gt;FiveThirtyEight&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/" rel="nofollow"&gt;FiveThirtyEight&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;33&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-08-13&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-08-13"&gt;Roman Emperors&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/List_of_Roman_emperors" rel="nofollow"&gt;Wikipedia&lt;/a&gt; / &lt;a href="https://github.com/zonination/emperors/blob/master/README.md"&gt;Zonination&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.reddit.com/r/dataisbeautiful/comments/8tzfgz/roman_emperors_by_year_oc/" rel="nofollow"&gt;reddit.com/r/dataisbeautiful&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;34&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-08-20&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-08-20"&gt;Nuclear Explosions&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/data-is-plural/nuclear-explosions/blob/master/documents/sipri-report-original.pdf"&gt;SIPRI&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ourworldindata.org/nuclear-weapons" rel="nofollow"&gt;Our World in Data&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;35&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-08-27&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-08-27"&gt;Simpsons Guest Stars&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/data-is-plural/nuclear-explosions/blob/master/documents/sipri-report-original.pdf"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/List_of_The_Simpsons_guest_stars" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;36&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-09-03&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-09-03"&gt;Moore's Law&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://en.wikipedia.org/wiki/Transistor_count" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://ourworldindata.org/technological-progress" rel="nofollow"&gt;Wikipedia&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;37&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-09-10&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-09-10"&gt;Amusement Park Injuries&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.world/amillerbernd/texas-amusement-park-accidents/workspace/file?filename=Amusement-Park-Injuries-xlsxCleaned.xls" rel="nofollow"&gt;Data.world&lt;/a&gt; &amp;amp; &lt;a href="https://saferparksdata.org/" rel="nofollow"&gt;Saferparks&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://saferparksdata.org/" rel="nofollow"&gt;Saferparks&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;38&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-09-17&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-09-17"&gt;National Park Visits&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.world/inform8n/us-national-parks-visitation-1904-2016-with-boundaries" rel="nofollow"&gt;Data.world&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://fivethirtyeight.com/features/the-national-parks-have-never-been-more-popular/" rel="nofollow"&gt;&lt;code&gt;fivethirtyeight&lt;/code&gt; article&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;39&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-09-24&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-09-24"&gt;School Diversity&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://nces.ed.gov/ccd/pubschuniv.asp" rel="nofollow"&gt;NCES&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.washingtonpost.com/graphics/2019/local/school-diversity-data/" rel="nofollow"&gt;&lt;code&gt;Washington Post&lt;/code&gt; article&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;40&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-10-01&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-10-01"&gt;All the Pizza&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://twitter.com/jaredlander/status/1178122846419193858?s=20" rel="nofollow"&gt;Jared Lander &amp;amp; Ludmila Janda&lt;/a&gt;, &lt;a href="https://github.com/tylerjrichards/Barstool_Pizza"&gt;Tyler Richards&lt;/a&gt;, &lt;a href="https://www.kaggle.com/datafiniti/pizza-restaurants-and-the-pizza-they-sell" rel="nofollow"&gt;DataFiniti&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://towardsdatascience.com/adventures-in-barstools-pizza-data-9b8ae6bb6cd1" rel="nofollow"&gt;Tyler Richards on TWD&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;41&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-10-08&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-10-08"&gt;Powerlifting&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.openpowerlifting.org/data" rel="nofollow"&gt;OpenPowerlifting.org&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://oziolor.wordpress.com/2018/05/19/part-i-getting-old-you-can-still-lift/" rel="nofollow"&gt;Elias Oziolor&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;42&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-10-15&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-10-15"&gt;Car Fuel Economy&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.fueleconomy.gov/feg/download.shtml" rel="nofollow"&gt;EPA&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://thebioengineer.github.io/thebioengineer.github.io/2019/09/10/big-mtcars/" rel="nofollow"&gt;Ellis Hughes&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;43&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-10-22&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-10-22"&gt;Horror movie ratings&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.kaggle.com/PromptCloudHQ/imdb-horror-movie-dataset" rel="nofollow"&gt;IMDB&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://stephenfollows.com/what-the-data-says-about-producing-low-budget-horror-films/" rel="nofollow"&gt;Stephen Follows&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;44&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-10-29&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-10-29"&gt;NYC Squirrel Census&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw" rel="nofollow"&gt;Squirrel Census&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.citylab.com/life/2019/06/squirrel-census-results-population-central-park-nyc/592162/" rel="nofollow"&gt;CityLab&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;45&lt;/td&gt;
+&lt;td align="center"&gt;&lt;code&gt;2019-11-05&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="data/2019/2019-11-05"&gt;Bike &amp;amp; Walk Commutes&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.census.gov/library/publications/2014/acs/acs-25.html?#" rel="nofollow"&gt;ACS&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="https://www.census.gov/library/publications/2014/acs/acs-25.html?#" rel="nofollow"&gt;ACS&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;&lt;a id="user-content-useful-links" class="anchor" aria-hidden="true" href="#useful-links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful links&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.rfordatasci.com" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The R4DS Online Learning Community Website&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://r4ds.had.co.nz/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The R for Data Science textbook&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://carbon.now.sh/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Carbon for sharing beautiful code pics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/MilesMcBain/gistfo"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Post gist to Carbon from RStudio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/yonicd/carbonate"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Post to Carbon from RStudio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/join"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Join GitHub!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://guides.github.com/activities/hello-world/"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Basics of GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://happygitwithr.com/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Learn how to use GitHub with R&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://ggplot2.tidyverse.org/reference/ggsave.html" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Save high-rez &lt;code&gt;ggplot2&lt;/code&gt; images&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;&lt;a id="user-content-useful-data-sources" class="anchor" aria-hidden="true" href="#useful-data-sources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful data sources&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data is Plural collection&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/BuzzFeedNews/everything/blob/master/README.md"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;BuzzFeedNews GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/theeconomist/"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The Economist GitHub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://cran.r-project.org/web/packages/fivethirtyeight/fivethirtyeight.pdf" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;fivethirtyeight&lt;/code&gt; data package&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/TheUpshot"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The Upshot by NY Times&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/baltimore-sun-data"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The Baltimore Sun Data Desk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/datadesk"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The LA Times Data Desk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/OpenNewsLabs/news-graphics-team"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Open News Labs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://t.co/BMvJO2dT1o" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;BBC Data Journalism team&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1&gt;&lt;a id="user-content-data-vizscience-books" class="anchor" aria-hidden="true" href="#data-vizscience-books"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Viz/Science Books&lt;/h1&gt;
+&lt;p&gt;Only books available freely online are sourced here. Feel free to add to the list&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://serialmentor.com/dataviz/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Fundamentals of Data Viz by Claus Wilke&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://bookdown.org/rdpeng/artofdatascience/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The Art of Data Science by Roger D. Peng &amp;amp; Elizabeth Matsui&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.tidytextmining.com/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tidy Text Mining by Julia Silge &amp;amp; David Robinson&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://geocompr.robinlovelace.net/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Geocomputation with R by Robin Lovelace, Jakub Nowosad, Jannes Muenchow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://socviz.co/index.html#preface" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Visualization by Kieran Healy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://www.cookbook-r.com/Graphs/" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ggplot2&lt;/code&gt; cookbook by Winston Chang&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="link" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f517.png"&gt;🔗&lt;/g-emoji&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;BBC Data Journalism team&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rfordatascience</author><guid isPermaLink="false">https://github.com/rfordatascience/tidytuesday</guid><pubDate>Tue, 05 Nov 2019 00:01:00 GMT</pubDate></item><item><title>satijalab/seurat #2 in R, This month</title><link>https://github.com/satijalab/seurat</link><description>&lt;p&gt;&lt;i&gt;R toolkit for single cell genomics&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.com/satijalab/seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b4198e3101857fb90f7a1c9ece82ef77a3c24d4b/68747470733a2f2f7472617669732d63692e636f6d2f736174696a616c61622f7365757261742e737667" alt="Build Status" data-canonical-src="https://travis-ci.com/satijalab/seurat.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/satijalab/seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f3f97cad37286f12acbb7868bffc4119c0e6d75b/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f736174696a616c61622f7365757261743f7376673d74727565" alt="AppVeyor build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/satijalab/seurat?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=Seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3f41aaffd0745b04e91bef2deb22c61155581231/68747470733a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f536575726174" alt="CRAN Version" data-canonical-src="https://www.r-pkg.org/badges/version/Seurat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=Seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3de70c3ddcccdf931f9ad808e71008c3185033a5/68747470733a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f536575726174" alt="CRAN Downloads" data-canonical-src="https://cranlogs.r-pkg.org/badges/Seurat" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-seurat-v311" class="anchor" aria-hidden="true" href="#seurat-v311"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Seurat v3.1.1&lt;/h1&gt;
+&lt;p&gt;Seurat is an R toolkit for single cell genomics, developed and maintained by the Satija Lab at NYGC.&lt;/p&gt;
+&lt;p&gt;Instructions, documentation, and tutorials can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://satijalab.org/seurat" rel="nofollow"&gt;https://satijalab.org/seurat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seurat is also hosted on GitHub, you can view and clone the repository at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/satijalab/seurat"&gt;https://github.com/satijalab/seurat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seurat has been successfully installed on Mac OS X, Linux, and Windows, using the devtools package to install directly from GitHub&lt;/p&gt;
+&lt;p&gt;Improvements and new features will be added on a regular basis, please contact &lt;a href="mailto:seuratpackage@gmail.com"&gt;seuratpackage@gmail.com&lt;/a&gt; with any questions or if you would like to contribute&lt;/p&gt;
+&lt;p&gt;Version History&lt;/p&gt;
+&lt;p&gt;August 20, 2019&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 3.1&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for SCTransform integration workflows&lt;/li&gt;
+&lt;li&gt;Integration speed ups: reference-based integration + reciprocal PCA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;April 12, 2019&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 3.0&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Preprint published describing new methods for identifying anchors across single-cell datasets&lt;/li&gt;
+&lt;li&gt;Restructured Seurat object with native support for multimodal data&lt;/li&gt;
+&lt;li&gt;Parallelization support via future&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;July 20, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.4&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Java dependency removed and functionality rewritten in Rcpp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;March 22, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.3&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;New utility functions&lt;/li&gt;
+&lt;li&gt;Speed and efficiency improvments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;January 10, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.2&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for multiple-dataset alignment with RunMultiCCA and AlignSubspace&lt;/li&gt;
+&lt;li&gt;New methods for evaluating alignment performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;October 12, 2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.1&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for using MAST and DESeq2 packages for differential expression testing in FindMarkers&lt;/li&gt;
+&lt;li&gt;Support for multi-modal single-cell data via @assay slot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;July 26, 2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.0&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Preprint released for integrated analysis of scRNA-seq across conditions, technologies and species&lt;/li&gt;
+&lt;li&gt;Significant restructuring of code to support clarity and dataset exploration&lt;/li&gt;
+&lt;li&gt;Methods for scoring gene expression and cell-cycle phase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;October 4, 2016&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 1.4 released&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Improved tools for cluster evaluation/visualizations&lt;/li&gt;
+&lt;li&gt;Methods for combining and adding to datasets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;August 22, 2016:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 1.3 released&lt;/li&gt;
+&lt;li&gt;Changes :
+&lt;ul&gt;
+&lt;li&gt;Improved clustering approach - see FAQ for details&lt;/li&gt;
+&lt;li&gt;All functions support sparse matrices&lt;/li&gt;
+&lt;li&gt;Methods for removing unwanted sources of variation&lt;/li&gt;
+&lt;li&gt;Consistent function names&lt;/li&gt;
+&lt;li&gt;Updated visualizations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;May 21, 2015:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drop-Seq manuscript published. Version 1.2 released&lt;/li&gt;
+&lt;li&gt;Changes :
+&lt;ul&gt;
+&lt;li&gt;Added support for spectral t-SNE and density clustering&lt;/li&gt;
+&lt;li&gt;New visualizations - including pcHeatmap, dot.plot, and feature.plot&lt;/li&gt;
+&lt;li&gt;Expanded package documentation, reduced import package burden&lt;/li&gt;
+&lt;li&gt;Seurat code is now hosted on GitHub, enables easy install through devtools&lt;/li&gt;
+&lt;li&gt;Small bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;April 13, 2015:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spatial mapping manuscript published. Version 1.1 released (initial release)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>satijalab</author><guid isPermaLink="false">https://github.com/satijalab/seurat</guid><pubDate>Tue, 05 Nov 2019 00:02:00 GMT</pubDate></item><item><title>genomicsclass/labs #3 in R, This month</title><link>https://github.com/genomicsclass/labs</link><description>&lt;p&gt;&lt;i&gt;Rmd source files for the HarvardX series PH525x&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h3&gt;&lt;a id="user-content-data-analysis-for-the-life-sciences" class="anchor" aria-hidden="true" href="#data-analysis-for-the-life-sciences"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Analysis for the Life Sciences&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-news" class="anchor" aria-hidden="true" href="#news"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NEWS:&lt;/h4&gt;
+&lt;p&gt;September 16, 2015 : We are reogranizing the labs here for the new courses launching this Fall.
+We have decided to drop the &lt;code&gt;course1&lt;/code&gt; style of directory structure, as the number of courses
+is still in flux. We are now using a modular structure. See &lt;code&gt;renaming_map.md&lt;/code&gt; for how courses
+were remapped to new names.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-book-versions" class="anchor" aria-hidden="true" href="#book-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Book versions&lt;/h4&gt;
+&lt;p&gt;Compiled versions of this document as HTML can be found here:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://genomicsclass.github.io/book/" rel="nofollow"&gt;http://genomicsclass.github.io/book/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The ePub version of this document can be found on &lt;em&gt;Leanpub&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://leanpub.com/dataanalysisforthelifesciences/" rel="nofollow"&gt;https://leanpub.com/dataanalysisforthelifesciences/&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-pull-requests-and-issues" class="anchor" aria-hidden="true" href="#pull-requests-and-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pull requests and issues&lt;/h4&gt;
+&lt;p&gt;We greatly appreciate all of our readers who contribute pull requests!&lt;/p&gt;
+&lt;p&gt;If you want to contribute through pull request, please first clone a &lt;em&gt;new version&lt;/em&gt; of the repo. If you have a version of the repo from 2014, it will contain some large data objects, which accidentally snuck in, and we won't be able to accept your pull request.&lt;/p&gt;
+&lt;p&gt;Please do not add an issue which says "I couldn't knit the Rmd". This is nearly always because users are missing one or more of the libraries and datasets used within (we do not re-install libraries in each Rmd script as this would slow down our compilation of the book material). You will find the missing library if you step through the Rmd one chunk at a time.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>genomicsclass</author><guid isPermaLink="false">https://github.com/genomicsclass/labs</guid><pubDate>Tue, 05 Nov 2019 00:03:00 GMT</pubDate></item><item><title>selva86/datasets #4 in R, This month</title><link>https://github.com/selva86/datasets</link><description>&lt;p&gt;&lt;i&gt;A collection of datasets of ML problem solving&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-datasets" class="anchor" aria-hidden="true" href="#datasets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Datasets&lt;/h1&gt;
+&lt;h3&gt;&lt;a id="user-content-datasets-collected-from-r-packages" class="anchor" aria-hidden="true" href="#datasets-collected-from-r-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Datasets collected from R packages&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;mlbench&lt;/li&gt;
+&lt;li&gt;kernlab&lt;/li&gt;
+&lt;li&gt;klaR&lt;/li&gt;
+&lt;li&gt;car&lt;/li&gt;
+&lt;li&gt;reshape2&lt;/li&gt;
+&lt;li&gt;hflights&lt;/li&gt;
+&lt;li&gt;ISLR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-the-original-source-repositories-are" class="anchor" aria-hidden="true" href="#the-original-source-repositories-are"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The original source repositories are:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ftp://ftp.ics.uci.edu/pub/machine-learning-databases&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ics.uci.edu/~mlearn/MLRepository.html" rel="nofollow"&gt;http://www.ics.uci.edu/~mlearn/MLRepository.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://kdd.ics.uci.edu" rel="nofollow"&gt;http://kdd.ics.uci.edu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.liacs.nl/~putten/library/cc2000/" rel="nofollow"&gt;http://www.liacs.nl/~putten/library/cc2000/&lt;/a&gt; (ticdata)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>selva86</author><guid isPermaLink="false">https://github.com/selva86/datasets</guid><pubDate>Tue, 05 Nov 2019 00:04:00 GMT</pubDate></item><item><title>szcf-weiya/ESL-CN #5 in R, This month</title><link>https://github.com/szcf-weiya/ESL-CN</link><description>&lt;p&gt;&lt;i&gt;The Elements of Statistical Learning (ESL)的中文翻译、代码实现及其习题解答。&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-esl-cn" class="anchor" aria-hidden="true" href="#esl-cn"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ESL-CN&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/szcf-weiya/ESL-CN" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9d93822115cc5bf0f7b26ae6f81db326198b4c59/68747470733a2f2f7472617669732d63692e6f72672f737a63662d77656979612f45534c2d434e2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/szcf-weiya/ESL-CN.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/ESL-CN/community?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8306fcf5e3121d6c05e2a5ca418460e515433a9e/68747470733a2f2f6261646765732e6769747465722e696d2f45534c2d434e2f636f6d6d756e6974792e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/ESL-CN/community.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Elements of Statistical Learning (ESL) 的中文翻译、代码实现及其习题解答。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-习题解答" class="anchor" aria-hidden="true" href="#习题解答"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;习题解答&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/7"&gt;&lt;img src="https://camo.githubusercontent.com/0ed58e6b0fa77dfcfdd408089ec8c89e7a6de922/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230322d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%202-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/2"&gt;&lt;img src="https://camo.githubusercontent.com/196c12432db5bf49032cf86711af1466c1739cbe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230332d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%203-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/12"&gt;&lt;img src="https://camo.githubusercontent.com/a5bd6daa399f3168579f2d4cbdf7b68cd1fcbcc6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230342d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%204-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/6"&gt;&lt;img src="https://camo.githubusercontent.com/349b6c3b9775919441d6c58272e1b44d1c10be6a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230352d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%205-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/14"&gt;&lt;img src="https://camo.githubusercontent.com/7da82cd51b2d9bd40fe1b419a10133478a374e16/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230362d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%206-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/4"&gt;&lt;img src="https://camo.githubusercontent.com/8fc1c94b956910dcb5b73872d94acf6ebc031245/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230372d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%207-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/17"&gt;&lt;img src="https://camo.githubusercontent.com/e4ee369d8838f675b01838dcb9e2635972ede2df/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230382d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%208-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/15"&gt;&lt;img src="https://camo.githubusercontent.com/837c5487a38163efd3963cdba3dd2c29ac871c30/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d63686170746572253230392d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%209-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/1"&gt;&lt;img src="https://camo.githubusercontent.com/9893b5b0491e7ce118daba2c1e15359afd69324a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031302d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2010-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/18"&gt;&lt;img src="https://camo.githubusercontent.com/67ffe95d98bf96f466c0d1ef93e8537a37b9a555/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031312d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2011-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/3"&gt;&lt;img src="https://camo.githubusercontent.com/4fe8478babfa9340382e88212cd489c2ab49c3f5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031322d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2012-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/19"&gt;&lt;img src="https://camo.githubusercontent.com/daadc30c5dc08ee214c4652e13fbe0c83570a2db/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031332d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2013-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/5"&gt;&lt;img src="https://camo.githubusercontent.com/695da77849b8ecd94beb3856cc4d715d94959eca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031342d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2014-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/16"&gt;&lt;img src="https://camo.githubusercontent.com/678799d3b1d8ae737f4dd13b40a3a3255ee868fb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031352d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2015-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/21"&gt;&lt;img src="https://camo.githubusercontent.com/4c93a35c1e015419a7cad85231214d12c0e8256d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031362d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2016-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/20"&gt;&lt;img src="https://camo.githubusercontent.com/719b4462f6fc6e75400ee920f3b45c62ef0f6644/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031372d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2017-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/szcf-weiya/ESL-CN/milestone/13"&gt;&lt;img src="https://camo.githubusercontent.com/fc7a8d9ccca9579a95ef2cca5a9837074c85b107/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736f6c7574696f6e2d6368617074657225323031382d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/solution-chapter%2018-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-代码实现" class="anchor" aria-hidden="true" href="#代码实现"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;代码实现&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="code/EM/em.R"&gt;EM 算法模拟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/NaiveBayes"&gt;朴素贝叶斯进行文本挖掘&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/CART"&gt;CART实现&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/boosting"&gt;AdaBoost实现R&amp;amp;Julia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/MARS"&gt;MARS实现&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/rbm"&gt;RBM&lt;/a&gt;，或者可以查看 &lt;a href="http://nbviewer.jupyter.org/github/szcf-weiya/ESL-CN/blob/master/code/rbm/RBM.ipynb" rel="nofollow"&gt;Jupyter Notebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/Gibbs"&gt;Gibbs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/SOM"&gt;Self-organized Map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/nonParametrics"&gt;kernel estimation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/Resampling"&gt;Resampling Method&lt;/a&gt;: 包括交叉验证(cv)和自助法(bootstrap)&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/nn"&gt;Neural Network&lt;/a&gt;: &lt;a href="http://nbviewer.jupyter.org/github/szcf-weiya/TFnotes/blob/master/nn/nn.ipynb" rel="nofollow"&gt;Simple Classification&lt;/a&gt;，&lt;a href="http://nbviewer.jupyter.org/github/szcf-weiya/ESL-CN/blob/master/code/nn/Implementation-for-Section-6.ipynb" rel="nofollow"&gt;Implementation for Section 11.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="code/HighDim"&gt;高维问题例子&lt;/a&gt;: &lt;a href="http://rmd.hohoweiya.xyz/ex18_1.nb.html" rel="nofollow"&gt;例18.1的模拟&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-文献统计" class="anchor" aria-hidden="true" href="#文献统计"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;文献统计&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Chap&lt;/th&gt;
+&lt;th&gt;AOS&lt;/th&gt;
+&lt;th&gt;JASA&lt;/th&gt;
+&lt;th&gt;JRSS&lt;/th&gt;
+&lt;th&gt;BKA&lt;/th&gt;
+&lt;th&gt;percentage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;4/14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0/7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1/11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;12/23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;6/17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1/11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;9/25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;4/14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;2/14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1/8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0/12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;8/21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>szcf-weiya</author><guid isPermaLink="false">https://github.com/szcf-weiya/ESL-CN</guid><pubDate>Tue, 05 Nov 2019 00:05:00 GMT</pubDate></item><item><title>tidyverse/dplyr #6 in R, This month</title><link>https://github.com/tidyverse/dplyr</link><description>&lt;p&gt;&lt;i&gt;dplyr: A grammar of data manipulation&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;
+&lt;h1&gt;&lt;a id="user-content-dplyr-" class="anchor" aria-hidden="true" href="#dplyr-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dplyr &lt;a href="https://dplyr.tidyverse.org" rel="nofollow"&gt;&lt;img src="man/figures/logo.png" align="right" height="139" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href="https://cran.r-project.org/package=dplyr" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1c7572b5960180fdfa0a6b9116c58840b50f954e/68747470733a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f64706c7972" alt="CRAN status" data-canonical-src="https://www.r-pkg.org/badges/version/dplyr" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/tidyverse/dplyr" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/25edc6e92bb513d8f4eeb899075a655bf31bfac3/68747470733a2f2f7472617669732d63692e6f72672f7469647976657273652f64706c79722e7376673f6272616e63683d6d6173746572" alt="Travis build status" data-canonical-src="https://travis-ci.org/tidyverse/dplyr.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/tidyverse/dplyr" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ba104218f948ddcb120e3e8c4c215c9f4b5f7347/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f7469647976657273652f64706c79723f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/tidyverse/dplyr?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codecov.io/gh/tidyverse/dplyr?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9d734f1862d60d169da9cc3e65473a78d73b8ddb/68747470733a2f2f636f6465636f762e696f2f67682f7469647976657273652f64706c79722f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="Codecov test coverage" data-canonical-src="https://codecov.io/gh/tidyverse/dplyr/branch/master/graph/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;dplyr is a grammar of data manipulation, providing a consistent set of
+verbs that help you solve the most common data manipulation challenges:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mutate()&lt;/code&gt; adds new variables that are functions of existing
+variables&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;select()&lt;/code&gt; picks variables based on their names.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter()&lt;/code&gt; picks cases based on their values.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;summarise()&lt;/code&gt; reduces multiple values down to a single summary.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arrange()&lt;/code&gt; changes the ordering of the rows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These all combine naturally with &lt;code&gt;group_by()&lt;/code&gt; which allows you to
+perform any operation “by group”. You can learn more about them in
+&lt;code&gt;vignette("dplyr")&lt;/code&gt;. As well as these single-table verbs, dplyr also
+provides a variety of two-table verbs, which you can learn about in
+&lt;code&gt;vignette("two-table")&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you are new to dplyr, the best place to start is the &lt;a href="http://r4ds.had.co.nz/transform.html" rel="nofollow"&gt;data import
+chapter&lt;/a&gt; in R for data science.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-backends" class="anchor" aria-hidden="true" href="#backends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Backends&lt;/h2&gt;
+&lt;p&gt;dplyr is designed to abstract over how the data is stored. Out of the
+box, dplyr works with data frames/tibbles; other packages provide
+alternative computational backends:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For large, in-memory datasets, try
+&lt;a href="https://dtplyr.tidyverse.org/" rel="nofollow"&gt;dtplyr&lt;/a&gt; to access the excellent
+performance of &lt;a href="http://r-datatable.com/" rel="nofollow"&gt;data.table&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For data in relational databases,
+&lt;a href="http://dbplyr.tidyverse.org/" rel="nofollow"&gt;dbplyr&lt;/a&gt; will automatically translate
+your dplyr code in to SQL.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For very large datasets stored in &lt;a href="https://spark.apache.org" rel="nofollow"&gt;Apache
+Spark&lt;/a&gt;, use
+&lt;a href="https://spark.rstudio.com" rel="nofollow"&gt;sparklyr&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; The easiest way to get dplyr is to install the whole tidyverse:&lt;/span&gt;
+install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tidyverse&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Alternatively, install just dplyr:&lt;/span&gt;
+install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;dplyr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-development-version" class="anchor" aria-hidden="true" href="#development-version"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development version&lt;/h3&gt;
+&lt;p&gt;To get a bug fix, or use a feature from the development version, you can
+install dplyr from GitHub.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; install.packages("devtools")&lt;/span&gt;
+&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tidyverse/dplyr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-cheatsheet" class="anchor" aria-hidden="true" href="#cheatsheet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cheatsheet&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf"&gt;&lt;img src="https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-transformation-cheatsheet-thumbs.png" width="630" height="252" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;dplyr&lt;/span&gt;)
+
+&lt;span class="pl-smi"&gt;starwars&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+  filter(&lt;span class="pl-smi"&gt;species&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Droid&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 5 x 13&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   name  height  mass hair_color skin_color eye_color birth_year gender&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;  &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 C-3PO    167    75 &amp;lt;NA&amp;gt;       gold       yellow           112 &amp;lt;NA&amp;gt;  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 R2-D2     96    32 &amp;lt;NA&amp;gt;       white, bl… red               33 &amp;lt;NA&amp;gt;  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 R5-D4     97    32 &amp;lt;NA&amp;gt;       white, red red               NA &amp;lt;NA&amp;gt;  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 IG-88    200   140 none       metal      red               15 none  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 BB8       NA    NA none       none       black             NA none  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # … with 5 more variables: homeworld &amp;lt;chr&amp;gt;, species &amp;lt;chr&amp;gt;, films &amp;lt;list&amp;gt;,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; #   vehicles &amp;lt;list&amp;gt;, starships &amp;lt;list&amp;gt;&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;starwars&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+  select(&lt;span class="pl-smi"&gt;name&lt;/span&gt;, ends_with(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;color&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 87 x 4&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   name           hair_color skin_color  eye_color&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;       &amp;lt;chr&amp;gt;    &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Luke Skywalker blond      fair        blue     &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 C-3PO          &amp;lt;NA&amp;gt;       gold        yellow   &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 R2-D2          &amp;lt;NA&amp;gt;       white, blue red      &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 Darth Vader    none       white       yellow   &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 Leia Organa    brown      light       brown    &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # … with 82 more rows&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;starwars&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+  mutate(&lt;span class="pl-smi"&gt;name&lt;/span&gt;, &lt;span class="pl-v"&gt;bmi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;mass&lt;/span&gt; &lt;span class="pl-k"&gt;/&lt;/span&gt; ((&lt;span class="pl-smi"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;/&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;)  &lt;span class="pl-k"&gt;^&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;)) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  select(&lt;span class="pl-smi"&gt;name&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt;&lt;span class="pl-smi"&gt;mass&lt;/span&gt;, &lt;span class="pl-smi"&gt;bmi&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 87 x 4&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   name           height  mass   bmi&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;           &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Luke Skywalker    172    77  26.0&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 C-3PO             167    75  26.9&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 R2-D2              96    32  34.7&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 Darth Vader       202   136  33.3&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 Leia Organa       150    49  21.8&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # … with 82 more rows&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;starwars&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+  arrange(desc(&lt;span class="pl-smi"&gt;mass&lt;/span&gt;))
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 87 x 13&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   name  height  mass hair_color skin_color eye_color birth_year gender&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;  &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Jabb…    175  1358 &amp;lt;NA&amp;gt;       green-tan… orange         600   herma…&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 Grie…    216   159 none       brown, wh… green, y…       NA   male  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 IG-88    200   140 none       metal      red             15   none  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 Dart…    202   136 none       white      yellow          41.9 male  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 Tarf…    234   136 brown      brown      blue            NA   male  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # … with 82 more rows, and 5 more variables: homeworld &amp;lt;chr&amp;gt;,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; #   species &amp;lt;chr&amp;gt;, films &amp;lt;list&amp;gt;, vehicles &amp;lt;list&amp;gt;, starships &amp;lt;list&amp;gt;&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;starwars&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  group_by(&lt;span class="pl-smi"&gt;species&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  summarise(
+    &lt;span class="pl-v"&gt;n&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; n(),
+    &lt;span class="pl-v"&gt;mass&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; mean(&lt;span class="pl-smi"&gt;mass&lt;/span&gt;, &lt;span class="pl-v"&gt;na.rm&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)
+  ) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  filter(&lt;span class="pl-smi"&gt;n&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
+         &lt;span class="pl-smi"&gt;mass&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 8 x 3&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   species      n  mass&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;    &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Droid        5  69.8&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 Gungan       3  74  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 Human       35  82.8&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 Kaminoan     2  88  &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 Mirialan     2  53.1&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # … with 3 more rows&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;p&gt;If you encounter a clear bug, please file a minimal reproducible example
+on &lt;a href="https://github.com/tidyverse/dplyr/issues"&gt;github&lt;/a&gt;. For questions
+and other discussion, please use
+&lt;a href="https://community.rstudio.com/" rel="nofollow"&gt;community.rstudio.com&lt;/a&gt;, or the
+&lt;a href="https://groups.google.com/group/manipulatr" rel="nofollow"&gt;manipulatr mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Please note that this project is released with a &lt;a href="https://dplyr.tidyverse.org/CODE_OF_CONDUCT" rel="nofollow"&gt;Contributor Code of
+Conduct&lt;/a&gt;. By participating
+in this project you agree to abide by its terms.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>tidyverse</author><guid isPermaLink="false">https://github.com/tidyverse/dplyr</guid><pubDate>Tue, 05 Nov 2019 00:06:00 GMT</pubDate></item><item><title>tidyverse/ggplot2 #7 in R, This month</title><link>https://github.com/tidyverse/ggplot2</link><description>&lt;p&gt;&lt;i&gt;An implementation of the Grammar of Graphics in R&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;
+&lt;h1&gt;&lt;a id="user-content-ggplot2-" class="anchor" aria-hidden="true" href="#ggplot2-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ggplot2 &lt;a target="_blank" rel="noopener noreferrer" href="man/figures/logo.png"&gt;&lt;img src="man/figures/logo.png" align="right" width="120" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/tidyverse/ggplot2" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3621740a79d3a99f071c5954af024016233423a9/68747470733a2f2f7472617669732d63692e6f72672f7469647976657273652f6767706c6f74322e7376673f6272616e63683d6d6173746572" alt="Travis Build Status" data-canonical-src="https://travis-ci.org/tidyverse/ggplot2.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/tidyverse/ggplot2" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3e19fd752aaa9f769980bd884d47a3888e9ed04f/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f7469647976657273652f6767706c6f74323f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/tidyverse/ggplot2?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codecov.io/github/tidyverse/ggplot2?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c823e70511a557ba865b59883c0ff295a53a4e31/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f7469647976657273652f6767706c6f74322f6d61737465722e737667" alt="Coverage Status" data-canonical-src="https://img.shields.io/codecov/c/github/tidyverse/ggplot2/master.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=ggplot2" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3563f2e7d300ad449ddde9d6b9150899b63857bc/687474703a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f6767706c6f7432" alt="CRAN_Status_Badge" data-canonical-src="http://www.r-pkg.org/badges/version/ggplot2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;ggplot2 is a system for declaratively creating graphics, based on &lt;a href="http://amzn.to/2ef1eWp" rel="nofollow"&gt;The
+Grammar of Graphics&lt;/a&gt;. You provide the data, tell
+ggplot2 how to map variables to aesthetics, what graphical primitives to
+use, and it takes care of the details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; The easiest way to get ggplot2 is to install the whole tidyverse:&lt;/span&gt;
+install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tidyverse&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Alternatively, install just ggplot2:&lt;/span&gt;
+install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ggplot2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Or the the development version from GitHub:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; install.packages("devtools")&lt;/span&gt;
+&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tidyverse/ggplot2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-cheatsheet" class="anchor" aria-hidden="true" href="#cheatsheet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cheatsheet&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf"&gt;&lt;img src="https://raw.githubusercontent.com/rstudio/cheatsheets/master/pngs/thumbnails/data-visualization-cheatsheet-thumbs.png" width="630" height="252" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;It’s hard to succinctly describe how ggplot2 works because it embodies a
+deep philosophy of visualisation. However, in most cases you start with
+&lt;code&gt;ggplot()&lt;/code&gt;, supply a dataset and aesthetic mapping (with &lt;code&gt;aes()&lt;/code&gt;). You
+then add on layers (like &lt;code&gt;geom_point()&lt;/code&gt; or &lt;code&gt;geom_histogram()&lt;/code&gt;), scales
+(like &lt;code&gt;scale_colour_brewer()&lt;/code&gt;), faceting specifications (like
+&lt;code&gt;facet_wrap()&lt;/code&gt;) and coordinate systems (like &lt;code&gt;coord_flip()&lt;/code&gt;).&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;ggplot2&lt;/span&gt;)
+
+ggplot(&lt;span class="pl-smi"&gt;mpg&lt;/span&gt;, aes(&lt;span class="pl-smi"&gt;displ&lt;/span&gt;, &lt;span class="pl-smi"&gt;hwy&lt;/span&gt;, &lt;span class="pl-v"&gt;colour&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;class&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt; 
+  geom_point()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README-example-1.png"&gt;&lt;img src="man/figures/README-example-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lifecycle" class="anchor" aria-hidden="true" href="#lifecycle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lifecycle&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.tidyverse.org/lifecycle/#stable" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/57bc311ca33c5dda60526cb1bb5cf3da0d393cee/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6966656379636c652d737461626c652d627269676874677265656e2e737667" alt="lifecycle" data-canonical-src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ggplot2 is now over 10 years old and is used by hundreds of thousands of
+people to make millions of plots. That means, by-and-large, ggplot2
+itself changes relatively little. When we do make changes, they will be
+generally to add new functions or arguments rather than changing the
+behaviour of existing functions, and if we do make changes to existing
+behaviour we will do them for compelling reasons.&lt;/p&gt;
+&lt;p&gt;If you are looking for innovation, look to ggplot2’s rich ecosystem of
+extensions. See a community maintained list at
+&lt;a href="http://www.ggplot2-exts.org/gallery/" rel="nofollow"&gt;http://www.ggplot2-exts.org/gallery/&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-learning-ggplot2" class="anchor" aria-hidden="true" href="#learning-ggplot2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learning ggplot2&lt;/h2&gt;
+&lt;p&gt;If you are new to ggplot2 you are better off starting with a systematic
+introduction, rather than trying to learn from reading individual
+documentation pages. Currently, there are three good places to start:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="http://r4ds.had.co.nz/data-visualisation.html" rel="nofollow"&gt;data
+visualisation&lt;/a&gt; and
+&lt;a href="http://r4ds.had.co.nz/graphics-for-communication.html" rel="nofollow"&gt;graphics for
+communication&lt;/a&gt;
+chapters in &lt;a href="http://r4ds.had.co.nz" rel="nofollow"&gt;R for data science&lt;/a&gt;. R for data
+science is designed to give you a comprehensive introduction to the
+&lt;a href="http://tidyverse.org" rel="nofollow"&gt;tidyverse&lt;/a&gt;, and these two chapters will get
+you up to speed with the essentials of ggplot2 as quickly as
+possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you’d like to take an online course, try &lt;a href="http://shop.oreilly.com/product/0636920052807.do" rel="nofollow"&gt;Data Visualization in R
+With ggplot2&lt;/a&gt; by
+Kara Woo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to dive into making common graphics as quickly as
+possible, I recommend &lt;a href="https://amzn.to/2TU78ip" rel="nofollow"&gt;The R Graphics
+Cookbook&lt;/a&gt; by Winston Chang. It provides a
+set of recipes to solve common graphics problems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you’ve mastered the basics and want to learn more, read &lt;a href="http://amzn.to/2fncG50" rel="nofollow"&gt;ggplot2:
+Elegant Graphics for Data Analysis&lt;/a&gt;. It
+describes the theoretical underpinnings of ggplot2 and shows you how all
+the pieces fit together. This book helps you understand the theory that
+underpins ggplot2, and will help you create new types of graphics
+specifically tailored to your needs. The book is not available for free,
+but you can find the complete source for the book at
+&lt;a href="https://github.com/hadley/ggplot2-book"&gt;https://github.com/hadley/ggplot2-book&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;p&gt;There are two main places to get help with ggplot2:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="https://community.rstudio.com/" rel="nofollow"&gt;RStudio community&lt;/a&gt; is a
+friendly place to ask any questions about ggplot2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/tagged/ggplot2?sort=frequent&amp;amp;pageSize=50" rel="nofollow"&gt;Stack
+Overflow&lt;/a&gt;
+is a great source of answers to common ggplot2 questions. It is also
+a great place to get help, once you have created a reproducible
+example that illustrates your problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>tidyverse</author><guid isPermaLink="false">https://github.com/tidyverse/ggplot2</guid><pubDate>Tue, 05 Nov 2019 00:07:00 GMT</pubDate></item><item><title>rstudio/rmarkdown #8 in R, This month</title><link>https://github.com/rstudio/rmarkdown</link><description>&lt;p&gt;&lt;i&gt;Dynamic Documents for R&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h3&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/rstudio/rmarkdown" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e7c372364772722bac233d1f3c04ab48ebcaaa2d/68747470733a2f2f7472617669732d63692e6f72672f7273747564696f2f726d61726b646f776e2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/rstudio/rmarkdown.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=rmarkdown" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/12d5d241e7b5b2f43b2263c5d3e138c13e5724cd/68747470733a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f726d61726b646f776e" alt="Downloads from the RStudio CRAN mirror" data-canonical-src="https://cranlogs.r-pkg.org/badges/rmarkdown" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;rmarkdown&lt;/strong&gt; package helps you create dynamic analysis documents that combine code, rendered output (such as figures), and prose. You bring your data, code, and ideas, and R Markdown renders your content into a polished document that can be used to:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/de0519dd8e4ebc982eb0ddfaa9c6cd0924149e6c/68747470733a2f2f626f6f6b646f776e2e6f72672f79696875692f726d61726b646f776e2f696d616765732f6865782d726d61726b646f776e2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/de0519dd8e4ebc982eb0ddfaa9c6cd0924149e6c/68747470733a2f2f626f6f6b646f776e2e6f72672f79696875692f726d61726b646f776e2f696d616765732f6865782d726d61726b646f776e2e706e67" alt="The rmarkddown hex sticker" width="200" data-canonical-src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Do data science interactively within the RStudio IDE,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reproduce your analyses,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Collaborate and share code with others, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Communicate your results with others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R Markdown documents can be rendered to many output formats including HTML documents, PDFs, Word files, slideshows, and more, allowing you to focus on the content while R Markdown takes care of your presentation.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;p&gt;The easiest way to install the &lt;strong&gt;rmarkdown&lt;/strong&gt; package is from within the &lt;a href="http://www.rstudio.com/ide/download/preview" rel="nofollow"&gt;RStudio IDE&lt;/a&gt;, but you don't need to explicitly install it or load it, as RStudio automatically does both when needed. A recent version of Pandoc (&amp;gt;= 1.12.3) is also required; RStudio also automatically includes this too so you do not need to download Pandoc if you plan to use rmarkdown from the RStudio IDE.&lt;/p&gt;
+&lt;p&gt;If you want to use the rmarkdown package outside of RStudio, you can install the package from CRAN as follows:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rmarkdown&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want to use the development version of the rmarkdown package (either with or without RStudio), you can install the package from GitHub via the &lt;a href="https://remotes.r-lib.org" rel="nofollow"&gt;&lt;strong&gt;remotes&lt;/strong&gt; package&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-e"&gt;remotes&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rstudio/rmarkdown&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If not using the RStudio IDE, you'll need to install a recent version of Pandoc (&amp;gt;= 1.12.3); see the &lt;a href="https://rmarkdown.rstudio.com/docs/articles/pandoc.html" rel="nofollow"&gt;Pandoc installation instructions&lt;/a&gt; for help.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;p&gt;The easiest way to make a new R Markdown document is from within RStudio. Go to &lt;em&gt;File &amp;gt; New File &amp;gt; R Markdown&lt;/em&gt;. From the new file wizard, you may:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide a document title (&lt;em&gt;optional but recommended&lt;/em&gt;),&lt;/li&gt;
+&lt;li&gt;Provide an author name (&lt;em&gt;optional but recommended&lt;/em&gt;),&lt;/li&gt;
+&lt;li&gt;Select a default output format- HTML is the recommended format for authoring, and you can switch the output format anytime (&lt;em&gt;required&lt;/em&gt;),&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt; (&lt;em&gt;required&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once inside your new &lt;code&gt;.Rmd&lt;/code&gt; file, you should see some boilerplate text that includes code chunks. Use the "Knit" button in the RStudio IDE to render the file and preview the output with a single click or use the keyboard shortcut Cmd/Ctrl + Shift + K.&lt;/p&gt;
+&lt;p&gt;You can also delete all the text below the YAML frontmatter and fill in your own &lt;code&gt;.Rmd&lt;/code&gt; by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding code chunks (keyboard shortcut: &lt;code&gt;Ctrl + Alt + I&lt;/code&gt;; OS X: &lt;code&gt;Cmd + Option + I&lt;/code&gt;),&lt;/li&gt;
+&lt;li&gt;Writing prose with &lt;a href="https://www.markdowntutorial.com/" rel="nofollow"&gt;Markdown formatting&lt;/a&gt;, and&lt;/li&gt;
+&lt;li&gt;Running each code chunk interactively by clicking the &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5810eee50a88cc3e87ad09099f483fcb02614ecb/68747470733a2f2f726d61726b646f776e2e7273747564696f2e636f6d2f696d616765732f6e6f7465626f6f6b2d72756e2d6368756e6b2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/5810eee50a88cc3e87ad09099f483fcb02614ecb/68747470733a2f2f726d61726b646f776e2e7273747564696f2e636f6d2f696d616765732f6e6f7465626f6f6b2d72756e2d6368756e6b2e706e67" alt="The run button" data-canonical-src="https://rmarkdown.rstudio.com/images/notebook-run-chunk.png" style="max-width:100%;"&gt;&lt;/a&gt; icon within RStudio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also click "Knit to HTML" again to render the full document with all code chunks. For more help getting started in R Markdown, please see the &lt;a href="https://rmarkdown.rstudio.com/lesson-1.html" rel="nofollow"&gt;R Markdown website&lt;/a&gt; or use the &lt;strong&gt;"Get Started"&lt;/strong&gt; links at the top of this page.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h3&gt;
+&lt;p&gt;There are two main places to get help:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href="https://community.rstudio.com/c/R-Markdown" rel="nofollow"&gt;RStudio community&lt;/a&gt; is a friendly place to ask any questions about rmarkdown and the R Markdown family of packages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/tagged/r-markdown" rel="nofollow"&gt;Stack Overflow&lt;/a&gt; is a great source of answers to common rmarkdown questions. It is also a great place to get help, once you have created a reproducible example that illustrates your problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rstudio</author><guid isPermaLink="false">https://github.com/rstudio/rmarkdown</guid><pubDate>Tue, 05 Nov 2019 00:08:00 GMT</pubDate></item><item><title>youngwoos/Doit_R #9 in R, This month</title><link>https://github.com/youngwoos/Doit_R</link><description>&lt;p&gt;&lt;i&gt;&lt;Do it! 쉽게 배우는 R 데이터 분석&gt; 저장소&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-do-it-쉽게-배우는-r-데이터-분석-저장소" class="anchor" aria-hidden="true" href="#do-it-쉽게-배우는-r-데이터-분석-저장소"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&amp;lt;Do it! 쉽게 배우는 R 데이터 분석&amp;gt; 저장소&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/youngwoos/Doit_R/tree/master/Data"&gt;Data&lt;/a&gt; 폴더에 실습에 필요한 데이터 파일이 들어있습니다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;한국복지패널데이터는 아래 링크를 통해 다운받을 수 있습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bit.ly/Koweps_hpc10_2015_v2" rel="nofollow"&gt;Koweps_hpc10_2015_beta1.sav&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/youngwoos/Doit_R/tree/master/Script"&gt;Script&lt;/a&gt; 폴더에 본문에 사용된 R 스크립트와 퀴즈, 분석 도전의 정답 스크립트가 들어있습니다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;강의용 프리젠테이션 파일을 &lt;a href="https://github.com/youngwoos/Doit_R/tree/master/Lecture"&gt;Lecture&lt;/a&gt;에서 다운받으실 수 있습니다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-질문하기" class="anchor" aria-hidden="true" href="#질문하기"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;질문하기&lt;/h2&gt;
+&lt;p&gt;궁금한 점이 있으면 페이스북 &lt;a href="https://www.facebook.com/groups/datacommunity" rel="nofollow"&gt;데이터 분석 커뮤니티&lt;/a&gt;에 질문을 올려 주세요. 이곳에서는 데이터 분석을 공부하기 시작한 사람들이 활동하고 있으니 질문과 답변을 주고받으면서 함께 공부할 수 있습니다. 질문할 때 작성한 코드나 캡쳐 이미지를 함께 올려 주시면 답변하는 데 도움이 됩니다.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-기타-문의" class="anchor" aria-hidden="true" href="#기타-문의"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타 문의&lt;/h2&gt;
+&lt;p&gt;다른 문의 사항은 &lt;a href="mailto:stats7445@gmail.com"&gt;stats7445@gmail.com&lt;/a&gt;으로 메일을 보내주세요.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>youngwoos</author><guid isPermaLink="false">https://github.com/youngwoos/Doit_R</guid><pubDate>Tue, 05 Nov 2019 00:09:00 GMT</pubDate></item></channel></rss>
