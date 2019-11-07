@@ -1,93 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: XC, This week</title><link>https://github.com/trending/xc?since=weekly</link><description>The top repositories on GitHub for xc, measured weekly</description><pubDate>Wed, 06 Nov 2019 01:06:05 GMT</pubDate><lastBuildDate>Wed, 06 Nov 2019 01:06:05 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>xmos/lib_gpio #1 in XC, This week</title><link>https://github.com/xmos/lib_gpio</link><description>&lt;p&gt;&lt;i&gt;GPIO abstraction for multibit ports&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-gpio-library" class="anchor" aria-hidden="true" href="#gpio-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPIO Library&lt;/h1&gt;
-&lt;h2 id="user-content-overview"&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
-&lt;p&gt;The XMOS GPIO library allows you to access xCORE ports as low-speed GPIO.&lt;/p&gt;
-&lt;p&gt;Although xCORE ports can be directly accessed via the xC programming
-language this library allows more flexible usage. In particular, it
-allows splitting a multi-pin output/input port to be able to use
-the individual pins independently. It also allows accessing ports
-across separate XMOS tiles or separate XMOS chips.&lt;/p&gt;
-&lt;a name="user-content-features"&gt;&lt;/a&gt;
-&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Abstract interface to GPIO functionality of XMOS ports&lt;/li&gt;
-&lt;li&gt;Allow control of individual bits of multi-bit ports&lt;/li&gt;
-&lt;li&gt;Allow access to ports across tiles&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;a name="user-content-operating-modes"&gt;&lt;/a&gt;
-&lt;h2&gt;&lt;a id="user-content-operating-modes" class="anchor" aria-hidden="true" href="#operating-modes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Operating modes&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Multi-bit output for individual access to the pins of a multi-bit output port&lt;/li&gt;
-&lt;li&gt;Multi-bit input for individual access to the pins of a multi-bit input port&lt;/li&gt;
-&lt;li&gt;Multi-bit input for individual access to the pins of a multi-bit
-input port allowing the application to react to events on those pins&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;a name="user-content-software-version-and-dependencies"&gt;&lt;/a&gt;
-&lt;h2&gt;&lt;a id="user-content-software-version-and-dependencies" class="anchor" aria-hidden="true" href="#software-version-and-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software version and dependencies&lt;/h2&gt;
-&lt;pre&gt;.. libdeps::
-
-&lt;/pre&gt;
-&lt;a name="user-content-related-application-notes"&gt;&lt;/a&gt;
-&lt;h2&gt;&lt;a id="user-content-related-application-notes" class="anchor" aria-hidden="true" href="#related-application-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related application notes&lt;/h2&gt;
-&lt;p&gt;Currently there are none.&lt;/p&gt;
-
-&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_gpio</guid><pubDate>Wed, 06 Nov 2019 00:01:00 GMT</pubDate></item><item><title>xmos/lib_mic_array #2 in XC, This week</title><link>https://github.com/xmos/lib_mic_array</link><description>&lt;p&gt;&lt;i&gt;Microphone array library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-microphone-array-library" class="anchor" aria-hidden="true" href="#microphone-array-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microphone array library&lt;/h1&gt;
-&lt;pre&gt;.. rheader::
-
-   Microphone array library |version|
-
-&lt;/pre&gt;
-&lt;a name="user-content-id1"&gt;&lt;/a&gt;
-&lt;h2&gt;&lt;a id="user-content-microphone-array-library-1" class="anchor" aria-hidden="true" href="#microphone-array-library-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microphone array library&lt;/h2&gt;
-&lt;p&gt;The XMOS microphone array library is designed to allow interfacing to PDM
-microphones coupled with efficient decimation to user selectable output
-sample rates. Additionally, a high resolution delay can be introduced to
-each of the individual PDM microphones allowing for individual time shifts.
-This library is only available for XS2 devices.&lt;/p&gt;
-&lt;a name="user-content-features"&gt;&lt;/a&gt;
-&lt;h3&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h3&gt;
-&lt;p&gt;The microphone array library has the following features:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;48kHz, 24kHz, 16kHz, 12kHz and 8kHz output sample rate by default (3.072MHz PDM clock),&lt;/li&gt;
-&lt;li&gt;44.1kHz, 22.05kHz, 14.7kHz, 11.025kHz and 7.35kHz output sample rate by default (2.8224MHz PDM clock),&lt;/li&gt;
-&lt;li&gt;4, 8, 12 or 16 PDM interfaces per tile,&lt;/li&gt;
-&lt;li&gt;No less than 70dB of stop band attenuation for all output sample frequencies,&lt;/li&gt;
-&lt;li&gt;Configurable latency, ripple and bandwidth,&lt;/li&gt;
-&lt;li&gt;Framing, configurable frame size from 1 sample to 8192 samples plus 50% overlapping frames option,&lt;/li&gt;
-&lt;li&gt;Windowing and sample index bit reversal within a frame,&lt;/li&gt;
-&lt;li&gt;Individual microphone gain compensation,&lt;/li&gt;
-&lt;li&gt;DC offset removal,&lt;/li&gt;
-&lt;li&gt;Up to 3.072MHz input sample rate,&lt;/li&gt;
-&lt;li&gt;High resolution (2.63 microsecond) microphone specific delay lines,&lt;/li&gt;
-&lt;li&gt;Every task requires only a 62.5 MIPS core to run,&lt;/li&gt;
-&lt;li&gt;Group delay of a maximum of 18 output clock cycles,&lt;/li&gt;
-&lt;li&gt;No less than 140dB of dynamic range.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;a name="user-content-components"&gt;&lt;/a&gt;
-&lt;h3&gt;&lt;a id="user-content-components" class="anchor" aria-hidden="true" href="#components"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Components&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;PDM interface,&lt;/li&gt;
-&lt;li&gt;Four channel decimators,&lt;/li&gt;
-&lt;li&gt;High resolution delay block.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;a name="user-content-software-version-and-dependencies"&gt;&lt;/a&gt;
-&lt;h3&gt;&lt;a id="user-content-software-version-and-dependencies" class="anchor" aria-hidden="true" href="#software-version-and-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software version and dependencies&lt;/h3&gt;
-&lt;pre&gt;.. libdeps::
-
-&lt;/pre&gt;
-&lt;a name="user-content-related-application-notes"&gt;&lt;/a&gt;
-&lt;h3&gt;&lt;a id="user-content-related-application-notes" class="anchor" aria-hidden="true" href="#related-application-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related application notes&lt;/h3&gt;
-&lt;p&gt;None&lt;/p&gt;
-
-&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_mic_array</guid><pubDate>Wed, 06 Nov 2019 00:02:00 GMT</pubDate></item><item><title>xmos/lib_device_control #3 in XC, This week</title><link>https://github.com/xmos/lib_device_control</link><description>&lt;p&gt;&lt;i&gt;xCORE device control library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-device-control-library" class="anchor" aria-hidden="true" href="#device-control-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Device Control Library&lt;/h1&gt;
+<rss version="2.0"><channel><title>GitHub Trending: XC, This week</title><link>https://github.com/trending/xc?since=weekly</link><description>The top repositories on GitHub for xc, measured weekly</description><pubDate>Thu, 07 Nov 2019 01:06:50 GMT</pubDate><lastBuildDate>Thu, 07 Nov 2019 01:06:50 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>xmos/lib_device_control #1 in XC, This week</title><link>https://github.com/xmos/lib_device_control</link><description>&lt;p&gt;&lt;i&gt;xCORE device control library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-device-control-library" class="anchor" aria-hidden="true" href="#device-control-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Device Control Library&lt;/h1&gt;
 &lt;h2 id="user-content-summary"&gt;&lt;a id="user-content-summary" class="anchor" aria-hidden="true" href="#summary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The Device Control Library provides the ability to configure and control an XMOS device
 from a host over a number of transport layers.&lt;/p&gt;
@@ -165,7 +77,43 @@ layer is used.&lt;/p&gt;
 &lt;blockquote&gt;
 AN01034 - Using the Device Control Library over USB&lt;/blockquote&gt;
 
-&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_device_control</guid><pubDate>Wed, 06 Nov 2019 00:03:00 GMT</pubDate></item><item><title>xmos/lib_i2c #4 in XC, This week</title><link>https://github.com/xmos/lib_i2c</link><description>&lt;p&gt;&lt;i&gt;I2C peripheral library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-i2c-library" class="anchor" aria-hidden="true" href="#i2c-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;I2C Library&lt;/h1&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_device_control</guid><pubDate>Thu, 07 Nov 2019 00:01:00 GMT</pubDate></item><item><title>xmos/lib_gpio #2 in XC, This week</title><link>https://github.com/xmos/lib_gpio</link><description>&lt;p&gt;&lt;i&gt;GPIO abstraction for multibit ports&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-gpio-library" class="anchor" aria-hidden="true" href="#gpio-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPIO Library&lt;/h1&gt;
+&lt;h2 id="user-content-overview"&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The XMOS GPIO library allows you to access xCORE ports as low-speed GPIO.&lt;/p&gt;
+&lt;p&gt;Although xCORE ports can be directly accessed via the xC programming
+language this library allows more flexible usage. In particular, it
+allows splitting a multi-pin output/input port to be able to use
+the individual pins independently. It also allows accessing ports
+across separate XMOS tiles or separate XMOS chips.&lt;/p&gt;
+&lt;a name="user-content-features"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract interface to GPIO functionality of XMOS ports&lt;/li&gt;
+&lt;li&gt;Allow control of individual bits of multi-bit ports&lt;/li&gt;
+&lt;li&gt;Allow access to ports across tiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;a name="user-content-operating-modes"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-operating-modes" class="anchor" aria-hidden="true" href="#operating-modes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Operating modes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Multi-bit output for individual access to the pins of a multi-bit output port&lt;/li&gt;
+&lt;li&gt;Multi-bit input for individual access to the pins of a multi-bit input port&lt;/li&gt;
+&lt;li&gt;Multi-bit input for individual access to the pins of a multi-bit
+input port allowing the application to react to events on those pins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;a name="user-content-software-version-and-dependencies"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-software-version-and-dependencies" class="anchor" aria-hidden="true" href="#software-version-and-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software version and dependencies&lt;/h2&gt;
+&lt;pre&gt;.. libdeps::
+
+&lt;/pre&gt;
+&lt;a name="user-content-related-application-notes"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-related-application-notes" class="anchor" aria-hidden="true" href="#related-application-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related application notes&lt;/h2&gt;
+&lt;p&gt;Currently there are none.&lt;/p&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_gpio</guid><pubDate>Thu, 07 Nov 2019 00:02:00 GMT</pubDate></item><item><title>xmos/lib_i2c #3 in XC, This week</title><link>https://github.com/xmos/lib_i2c</link><description>&lt;p&gt;&lt;i&gt;I2C peripheral library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-i2c-library" class="anchor" aria-hidden="true" href="#i2c-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;I2C Library&lt;/h1&gt;
 &lt;h2 id="user-content-summary"&gt;&lt;a id="user-content-summary" class="anchor" aria-hidden="true" href="#summary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
 &lt;p&gt;A software defined, industry-standard, I&lt;sup&gt;2&lt;/sup&gt;C library
 that allows you to control an I&lt;sup&gt;2&lt;/sup&gt;C bus via xCORE ports.
@@ -241,4 +189,56 @@ on a single xCORE device simultaneously.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 
-&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_i2c</guid><pubDate>Wed, 06 Nov 2019 00:04:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_i2c</guid><pubDate>Thu, 07 Nov 2019 00:03:00 GMT</pubDate></item><item><title>xmos/lib_mic_array #4 in XC, This week</title><link>https://github.com/xmos/lib_mic_array</link><description>&lt;p&gt;&lt;i&gt;Microphone array library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-microphone-array-library" class="anchor" aria-hidden="true" href="#microphone-array-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microphone array library&lt;/h1&gt;
+&lt;pre&gt;.. rheader::
+
+   Microphone array library |version|
+
+&lt;/pre&gt;
+&lt;a name="user-content-id1"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-microphone-array-library-1" class="anchor" aria-hidden="true" href="#microphone-array-library-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microphone array library&lt;/h2&gt;
+&lt;p&gt;The XMOS microphone array library is designed to allow interfacing to PDM
+microphones coupled with efficient decimation to user selectable output
+sample rates. Additionally, a high resolution delay can be introduced to
+each of the individual PDM microphones allowing for individual time shifts.
+This library is only available for XS2 devices.&lt;/p&gt;
+&lt;a name="user-content-features"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h3&gt;
+&lt;p&gt;The microphone array library has the following features:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;48kHz, 24kHz, 16kHz, 12kHz and 8kHz output sample rate by default (3.072MHz PDM clock),&lt;/li&gt;
+&lt;li&gt;44.1kHz, 22.05kHz, 14.7kHz, 11.025kHz and 7.35kHz output sample rate by default (2.8224MHz PDM clock),&lt;/li&gt;
+&lt;li&gt;4, 8, 12 or 16 PDM interfaces per tile,&lt;/li&gt;
+&lt;li&gt;No less than 70dB of stop band attenuation for all output sample frequencies,&lt;/li&gt;
+&lt;li&gt;Configurable latency, ripple and bandwidth,&lt;/li&gt;
+&lt;li&gt;Framing, configurable frame size from 1 sample to 8192 samples plus 50% overlapping frames option,&lt;/li&gt;
+&lt;li&gt;Windowing and sample index bit reversal within a frame,&lt;/li&gt;
+&lt;li&gt;Individual microphone gain compensation,&lt;/li&gt;
+&lt;li&gt;DC offset removal,&lt;/li&gt;
+&lt;li&gt;Up to 3.072MHz input sample rate,&lt;/li&gt;
+&lt;li&gt;High resolution (2.63 microsecond) microphone specific delay lines,&lt;/li&gt;
+&lt;li&gt;Every task requires only a 62.5 MIPS core to run,&lt;/li&gt;
+&lt;li&gt;Group delay of a maximum of 18 output clock cycles,&lt;/li&gt;
+&lt;li&gt;No less than 140dB of dynamic range.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;a name="user-content-components"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-components" class="anchor" aria-hidden="true" href="#components"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Components&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;PDM interface,&lt;/li&gt;
+&lt;li&gt;Four channel decimators,&lt;/li&gt;
+&lt;li&gt;High resolution delay block.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;a name="user-content-software-version-and-dependencies"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-software-version-and-dependencies" class="anchor" aria-hidden="true" href="#software-version-and-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software version and dependencies&lt;/h3&gt;
+&lt;pre&gt;.. libdeps::
+
+&lt;/pre&gt;
+&lt;a name="user-content-related-application-notes"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-related-application-notes" class="anchor" aria-hidden="true" href="#related-application-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related application notes&lt;/h3&gt;
+&lt;p&gt;None&lt;/p&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>xmos</author><guid isPermaLink="false">https://github.com/xmos/lib_mic_array</guid><pubDate>Thu, 07 Nov 2019 00:04:00 GMT</pubDate></item></channel></rss>

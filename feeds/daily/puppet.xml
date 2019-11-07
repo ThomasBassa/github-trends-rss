@@ -1,397 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Puppet, Today</title><link>https://github.com/trending/puppet?since=daily</link><description>The top repositories on GitHub for puppet, measured daily</description><pubDate>Wed, 06 Nov 2019 01:06:03 GMT</pubDate><lastBuildDate>Wed, 06 Nov 2019 01:06:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>SumoLogic/sumologic-collector-puppet-module #1 in Puppet, Today</title><link>https://github.com/SumoLogic/sumologic-collector-puppet-module</link><description>&lt;p&gt;&lt;i&gt;Puppet module for installing Sumo Logic's collector.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-sumo-collector-puppet-module" class="anchor" aria-hidden="true" href="#sumo-collector-puppet-module"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sumo-collector-puppet-module&lt;/h1&gt;
-&lt;h3&gt;&lt;a id="user-content-sumo-puppet-module-overview" class="anchor" aria-hidden="true" href="#sumo-puppet-module-overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sumo Puppet Module Overview&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The Sumo Puppet module downloads the sumo logic collector agent from the Internet and installs the Sumo Collector agent. The module needs to download the package from the Sumologic API's so Internet access is required on your machines.&lt;/li&gt;
-&lt;li&gt;The module also allows sources to be created during installation and updated afterwards.&lt;/li&gt;
-&lt;li&gt;Currently, the module only supports the installation of latest collector version.&lt;/li&gt;
-&lt;li&gt;Upgrade of the collector is not supported currently.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;a id="user-content-note" class="anchor" aria-hidden="true" href="#note"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Note:&lt;/h4&gt;
-&lt;p&gt;For Puppet 4.x and later:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Utilize the release v0.2.1 or later. Release v0.2.1 and subsequent v0.2.x releases will be enhanced per puppet guidelines to support latest puppet versions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For Puppet 3.x:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Utilize the release v1.0.6 if you need sumo.conf compatibility.&lt;/li&gt;
-&lt;li&gt;Utilize the release v1.0.8 if you need latest SumoLogic collector compatibility.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h2&gt;
-&lt;p&gt;To install Sumo Puppet Module follow below steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Navigate to Puppet global modules directory or specific environment modules directory.&lt;/li&gt;
-&lt;li&gt;Clone the Sumo Puppet module.&lt;/li&gt;
-&lt;li&gt;Rename the module as sumo.&lt;/li&gt;
-&lt;/ul&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Puppet, Today</title><link>https://github.com/trending/puppet?since=daily</link><description>The top repositories on GitHub for puppet, measured daily</description><pubDate>Thu, 07 Nov 2019 01:06:51 GMT</pubDate><lastBuildDate>Thu, 07 Nov 2019 01:06:51 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>voxpupuli/puppet-php #1 in Puppet, Today</title><link>https://github.com/voxpupuli/puppet-php</link><description>&lt;p&gt;&lt;i&gt;Generic Puppet module to manage PHP on many platforms&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://forge.puppetlabs.com/puppet/php" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/349cb054776eb67bd81269e81dc93b363159c03a/687474703a2f2f696d672e736869656c64732e696f2f707570706574666f7267652f762f7075707065742f7068702e737667" alt="Puppet Forge" data-canonical-src="http://img.shields.io/puppetforge/v/puppet/php.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/voxpupuli/puppet-php" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cfa8de3c08f7fff3706d790ec9c99cb4f1ee7cd3/68747470733a2f2f7472617669732d63692e6f72672f766f78707570756c692f7075707065742d7068702e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/voxpupuli/puppet-php.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-current-status" class="anchor" aria-hidden="true" href="#current-status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Current Status&lt;/h2&gt;
+&lt;p&gt;As the original creators of &lt;code&gt;puppet-php&lt;/code&gt; are no longer maintaining the module, it has been handed over into the care of Vox Pupuli.
+Please be sure to update all your links to the new location.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-voxpupuliphp-puppet-module" class="anchor" aria-hidden="true" href="#voxpupuliphp-puppet-module"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;voxpupuli/php Puppet Module&lt;/h1&gt;
+&lt;p&gt;voxpupuli/php is a Puppet module for managing PHP with a strong focus
+on php-fpm. The module aims to use sane defaults for the supported
+architectures. We strive to support all recent versions of Debian,
+Ubuntu, RedHat/CentOS, openSUSE/SLES and FreeBSD. Managing Apache
+with &lt;code&gt;mod_php&lt;/code&gt; is not supported.&lt;/p&gt;
+&lt;p&gt;This originally was a fork of &lt;a href="https://github.com/jippi/puppet-php"&gt;jippi/puppet-php&lt;/a&gt;
+(nodes-php on Puppet Forge) but has since been rewritten in large parts.&lt;/p&gt;
 &lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
-&lt;p&gt;Once the Sumo puppet module is installed, you will need to supply the sumo class with the authentication information.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The accessid.&lt;/li&gt;
-&lt;li&gt;The accesskey.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;OR&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;One-time token for installation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Additional optional parameters can be passed as required. The parameters details are explained in the next section.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h3&gt;
-&lt;p&gt;A basic example, using accesskey/accessid, module expects the sources.json to be present on agent nodes in the default directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid       &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey      &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+&lt;p&gt;Quickest way to get started is simply &lt;code&gt;include&lt;/code&gt;'ing the &lt;em&gt;&lt;code&gt;php&lt;/code&gt; class&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;include&lt;/span&gt; '::php'&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or, you can override defaults and specify additional custom
+configurations by declaring &lt;code&gt;class { '::php': }&lt;/code&gt; with parameters:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;ensure       &lt;/span&gt;=&amp;gt; latest,
+  &lt;span class="pl-c1"&gt;manage_repos &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;fpm          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;dev          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;composer     &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;pear         &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;phpunit      &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
 }&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Another example, using accesskey/accessid and manage_sources as true, the module will copy the sources.json on agent nodes in the default directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid       &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey      &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;manage_sources &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+&lt;p&gt;Optionally the PHP version or configuration root directory can be changed also:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php::globals'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;php_version &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;7.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;config_root &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/etc/php/7.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+}-&amp;gt;
+&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;manage_repos &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
 }&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Note: manage_sources will be deprecated in future releases, use sources_override instead.&lt;/p&gt;
-&lt;p&gt;Below example illustrates setting up local configuration management. In this case the syncsources.json file will be used for describing Sources to configure on registration, which will be continuously monitored and synchronized with the Collector's configuration.
-In this case the module expects the syncsources.json to be present on agent nodes in the default directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid              &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey             &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;local_config_mgmt     &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Below example illustrates local configuration management with the syncsources.json being managed by the puppet master i.e. the module will copy the syncsources.json on agent nodes in the default directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid              &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey             &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;local_config_mgmt     &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;sync_sources_override &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;All the above examples illustrate setting up the sources using a single JSON file (sources.json/syncsources.json) present under the default directory.
-To specify sources in multiple JSON files, specify the parameter sources_directory_or_file as 'dir'. If specified as 'dir', the collector will look for any JSON files present under the default directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid                  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey                 &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;sources_directory_or_file &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dir&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;With local configuration management:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid                  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey                 &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;local_config_mgmt         &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;sources_directory_or_file &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dir&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Advanced example illustrating passing additional command-line parameters and using rpm or deb package for installation:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid                &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey               &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;sync_sources_override   &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;use_package	          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;local_config_mgmt       &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;clobber                 &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;, 
-  &lt;span class="pl-c1"&gt;ephemeral               &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;skip_access_key_removal &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Advanced example illustrating tarball binary package for installation:&lt;/p&gt;
-&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'sumo'&lt;/span&gt;:
-  &lt;span class="pl-c1"&gt;accessid                &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accessid&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;accesskey               &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;accesskey&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;sync_sources_override   &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;use_package	          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;use_tar_pkg             &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;local_config_mgmt       &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;clobber                 &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;, 
-  &lt;span class="pl-c1"&gt;ephemeral               &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-  &lt;span class="pl-c1"&gt;skip_access_key_removal &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;&lt;a id="user-content-parameters" class="anchor" aria-hidden="true" href="#parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parameters&lt;/h2&gt;
-&lt;p&gt;This module supports all the command-line options except dir [directory] listed in
-SumoLogic's &lt;a href="https://help.sumologic.com/Send-Data/Installed-Collectors/05Reference-Information-for-Collector-Installation/06Parameters-for-the-Command-Line-Installer" rel="nofollow"&gt;documentation&lt;/a&gt;.  Head there
-for a full explanation of what each option does to the SumoLogic collector.&lt;/p&gt;
-&lt;p&gt;The only required parameters are a pair of authentication parameters: &lt;code&gt;accessid&lt;/code&gt; and &lt;code&gt;accesskey&lt;/code&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Parameter Name&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Default value (in the module, not the collector)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;accessid&lt;/td&gt;
-&lt;td&gt;The access id for the collector to register with&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;accesskey&lt;/td&gt;
-&lt;td&gt;The access key for the collector to register with&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;token&lt;/td&gt;
-&lt;td&gt;One-time token for installation&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;clobber&lt;/td&gt;
-&lt;td&gt;Whether you want to clobber the collector&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;collector_name&lt;/td&gt;
-&lt;td&gt;Name of the collector&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;collector_secure_files&lt;/td&gt;
-&lt;td&gt;To enable or disable Enhanced File System Security&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;collector_url&lt;/td&gt;
-&lt;td&gt;The URL used to download and register Collector&lt;/td&gt;
-&lt;td&gt;'&lt;a href="https://collectors.sumologic.com" rel="nofollow"&gt;https://collectors.sumologic.com&lt;/a&gt;'&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;description&lt;/td&gt;
-&lt;td&gt;Description for the Collector to appear in Sumo Logic&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;disable_action_source&lt;/td&gt;
-&lt;td&gt;To disable the running of script-based Sources&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;disable_script_source&lt;/td&gt;
-&lt;td&gt;To disable the running of script-based action Sources&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;disable_upgrade&lt;/td&gt;
-&lt;td&gt;If true, the Collector rejects upgrade requests from Sumo Logic&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ephemeral&lt;/td&gt;
-&lt;td&gt;Whether to mark the collector as ephemeral&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;hostname&lt;/td&gt;
-&lt;td&gt;The host name of the machine on which the Collector is running&lt;/td&gt;
-&lt;td&gt;Hostname&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;local_config_mgmt&lt;/td&gt;
-&lt;td&gt;If you want this module to enable local config management&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;manage_sources&lt;/td&gt;
-&lt;td&gt;If you want this module to manage your sources file, will be deprecated in later releases. Use sources_override&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;proxy_host&lt;/td&gt;
-&lt;td&gt;When using a proxy, the hostname to connect to&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;proxy_ntlmdomain&lt;/td&gt;
-&lt;td&gt;When using an NTML proxy, the URL used to connect&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;proxy_password&lt;/td&gt;
-&lt;td&gt;When using a proxy, the password to use to connect&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;proxy_port&lt;/td&gt;
-&lt;td&gt;When using a proxy, the port to connect to&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;proxy_user&lt;/td&gt;
-&lt;td&gt;When using a proxy, the user to connect as&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;runas_username&lt;/td&gt;
-&lt;td&gt;When set, the Collector will run as the specified user&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;skip_access_key_removal&lt;/td&gt;
-&lt;td&gt;If true, it will skip the access key removal from the user.properties file&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;skip_registration&lt;/td&gt;
-&lt;td&gt;When true, the Collector will install files and create user.properties file, but not register or start the Collector&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sources_override&lt;/td&gt;
-&lt;td&gt;If you want this module to manage your sources file&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sources_directory_or_file&lt;/td&gt;
-&lt;td&gt;'file': Sources are listed in a single JSON file (sources.json/syncsources.json) in default dir. 'dir': Sources are listed in multiple JSON files under the default directory. (/usr/local/sumo or c:\sumo)&lt;/td&gt;
-&lt;td&gt;'file'&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_exec&lt;/td&gt;
-&lt;td&gt;The installation executable name&lt;/td&gt;
-&lt;td&gt;architecture specific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_json_source_path&lt;/td&gt;
-&lt;td&gt;The Puppet URL for your sources.json file&lt;/td&gt;
-&lt;td&gt;puppet:///modules/sumo/sources.json&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_json_sync_source_path&lt;/td&gt;
-&lt;td&gt;The Puppet URL for your syncsources.json file&lt;/td&gt;
-&lt;td&gt;puppet:///modules/sumo/syncsources.json&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_package_filename&lt;/td&gt;
-&lt;td&gt;Name to store the downloaded sumo package with&lt;/td&gt;
-&lt;td&gt;architecture specific (if use_package == true)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_package_suffix&lt;/td&gt;
-&lt;td&gt;The final string on the download URL&lt;/td&gt;
-&lt;td&gt;architecture specific (if use_package == true)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_package_provider&lt;/td&gt;
-&lt;td&gt;Puppet package provider to install the package&lt;/td&gt;
-&lt;td&gt;architecture specific (if use_package == true)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_short_arch&lt;/td&gt;
-&lt;td&gt;The shortened architecture to download&lt;/td&gt;
-&lt;td&gt;architecture specific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sumo_win_arch&lt;/td&gt;
-&lt;td&gt;The shortened architecture to download&lt;/td&gt;
-&lt;td&gt;architecture specific&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sync_sources_override&lt;/td&gt;
-&lt;td&gt;If you want this module to manage your sync sources file&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;target_cpu&lt;/td&gt;
-&lt;td&gt;You can choose to set a CPU target to limit the amount of CPU processing a Collector uses&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;time_zone&lt;/td&gt;
-&lt;td&gt;The time zone to use when the time zone can't be extracted from the time stamp&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;use_package&lt;/td&gt;
-&lt;td&gt;Install from a rpm or a deb package. This flag overrides the tarball flag: use_tar_pkg i.e. if both use_package and use_tar_pkg are true, the rpm or the deb package will be used for installation.&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;use_tar_pkg&lt;/td&gt;
-&lt;td&gt;Install from a tarball.&lt;/td&gt;
-&lt;td&gt;false&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;win_run_as_password&lt;/td&gt;
-&lt;td&gt;When set in conjunction with -VrunAs.username, the Collector will run as the specified user with the specified password&lt;/td&gt;
-&lt;td&gt;undef&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;&lt;a id="user-content-testing--contributing" class="anchor" aria-hidden="true" href="#testing--contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing / Contributing&lt;/h2&gt;
-&lt;p&gt;See &lt;a href="https://github.com/SumoLogic/sumo-collector-puppet-module/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>SumoLogic</author><guid isPermaLink="false">https://github.com/SumoLogic/sumologic-collector-puppet-module</guid><pubDate>Wed, 06 Nov 2019 00:01:00 GMT</pubDate></item><item><title>jdowning/puppet-rbenv #2 in Puppet, Today</title><link>https://github.com/jdowning/puppet-rbenv</link><description>&lt;p&gt;&lt;i&gt;Puppet module to install rbenv ruby manager for systemwide use&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-puppet-rbenv" class="anchor" aria-hidden="true" href="#puppet-rbenv"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;puppet-rbenv&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://travis-ci.org/jdowning/puppet-rbenv" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d2555b6eebb1e83e9fda23c8518243d97141bd92/68747470733a2f2f7472617669732d63692e6f72672f6a646f776e696e672f7075707065742d7262656e762e706e67" alt="Build Status" data-canonical-src="https://travis-ci.org/jdowning/puppet-rbenv.png" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://forge.puppetlabs.com/jdowning/rbenv" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4e112afa35f76697f881cdba875ffcd96cf98ec2/687474703a2f2f696d672e736869656c64732e696f2f707570706574666f7267652f762f6a646f776e696e672f7262656e762e7376673f7374796c653d666c6174" alt="Puppet Forge" data-canonical-src="http://img.shields.io/puppetforge/v/jdowning/rbenv.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-description" class="anchor" aria-hidden="true" href="#description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
-&lt;p&gt;This Puppet module will install and manage &lt;a href="http://rbenv.org" rel="nofollow"&gt;rbenv&lt;/a&gt;. By default, it installs
-rbenv for systemwide use, rather than for a user or project. Additionally,
-you can install different versions of Ruby, rbenv plugins, and Ruby gems.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;puppet module install --modulepath /path/to/puppet/modules jdowning-rbenv&lt;/code&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
-&lt;p&gt;To use this module, you must declare it in your manifest like so:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class { 'rbenv': }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you wish to install rbenv somewhere other than the default
-(&lt;code&gt;/usr/local/rbenv&lt;/code&gt;), you can do so by declaring the &lt;code&gt;install_dir&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class { 'rbenv': install_dir =&amp;gt; '/opt/rbenv' }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can also ensure rbenv is kept up-to-date:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class { 'rbenv':
-  install_dir =&amp;gt; '/opt/rbenv'
-  latest      =&amp;gt; true
+&lt;p&gt;There are more configuration options available. Please refer to the
+auto-generated documentation at &lt;a href="http://php.puppet.mayflower.de/" rel="nofollow"&gt;http://php.puppet.mayflower.de/&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-defining-phpini-settings" class="anchor" aria-hidden="true" href="#defining-phpini-settings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Defining &lt;code&gt;php.ini&lt;/code&gt; settings&lt;/h3&gt;
+&lt;p&gt;PHP configuration parameters in &lt;code&gt;php.ini&lt;/code&gt; files can be defined as parameter
+&lt;code&gt;settings&lt;/code&gt; on the main &lt;code&gt;php&lt;/code&gt; class, or &lt;code&gt;php::fpm&lt;/code&gt; / &lt;code&gt;php::cli&lt;/code&gt; classes,
+or &lt;code&gt;php::extension&lt;/code&gt; resources for each component independently.&lt;/p&gt;
+&lt;p&gt;These settings are written into their respective &lt;code&gt;php.ini&lt;/code&gt; file. Global
+settings in &lt;code&gt;php::settings&lt;/code&gt; are merged with the settings of all components.
+Please note that settings of extensions are always independent.&lt;/p&gt;
+&lt;p&gt;In the following example the PHP options and timezone will be set in
+all PHP configurations, i.e. the PHP cli application and all php-fpm pools.&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;  &lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+    &lt;span class="pl-c1"&gt;settings   &lt;/span&gt;=&amp;gt; {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;PHP/max_execution_time&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;90&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;PHP/max_input_time&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;300&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;PHP/memory_limit&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;        =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;64M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;PHP/post_max_size&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;       =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;32M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;PHP/upload_max_filesize&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;32M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Date/date.timezone&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Europe/Berlin&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    },
+  }&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-installing-extensions" class="anchor" aria-hidden="true" href="#installing-extensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing extensions&lt;/h3&gt;
+&lt;p&gt;PHP configuration parameters in &lt;code&gt;php.ini&lt;/code&gt; files can be defined
+as parameter &lt;code&gt;extensions&lt;/code&gt; on the main &lt;code&gt;php&lt;/code&gt; class. They are
+activated for all activated SAPIs.&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;  &lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+    &lt;span class="pl-c1"&gt;extensions &lt;/span&gt;=&amp;gt; {
+      &lt;span class="pl-c1"&gt;bcmath    &lt;/span&gt;=&amp;gt; { },
+      &lt;span class="pl-c1"&gt;imagick   &lt;/span&gt;=&amp;gt; {
+        &lt;span class="pl-c1"&gt;provider &lt;/span&gt;=&amp;gt; pecl,
+      },
+      &lt;span class="pl-c1"&gt;xmlrpc    &lt;/span&gt;=&amp;gt; { },
+      &lt;span class="pl-c1"&gt;memcached &lt;/span&gt;=&amp;gt; {
+        &lt;span class="pl-c1"&gt;provider        &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pecl&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-c1"&gt;header_packages &lt;/span&gt;=&amp;gt; [ &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;libmemcached-devel&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, ],
+      },
+      &lt;span class="pl-c1"&gt;apc       &lt;/span&gt;=&amp;gt; {
+        &lt;span class="pl-c1"&gt;provider &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pecl&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+          &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;apc/stat&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;       =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;apc/stat_ctime&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-c1"&gt;sapi     &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fpm&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+      },
+    },
+  }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See &lt;a href="http://php.puppet.mayflower.de/php/extension.html" rel="nofollow"&gt;the documentation&lt;/a&gt;
+of the &lt;code&gt;php::extension&lt;/code&gt; resource for all available parameters and default
+values.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-defining-php-fpm-pools" class="anchor" aria-hidden="true" href="#defining-php-fpm-pools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Defining php-fpm pools&lt;/h3&gt;
+&lt;p&gt;If different php-fpm pools are required, you can use &lt;code&gt;php::fpm::pool&lt;/code&gt;
+defined resource type. A single pool called &lt;code&gt;www&lt;/code&gt; will be configured
+by default. Specify additional pools like so:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;  &lt;span class="pl-k"&gt;php::fpm::pool&lt;/span&gt; { &lt;span class="pl-en"&gt;'www2'&lt;/span&gt;:
+    &lt;span class="pl-c1"&gt;listen &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;127.0.1.1:9000&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For an overview of all possible parameters for &lt;code&gt;php::fpm::pool&lt;/code&gt; resources
+please see &lt;a href="http://php.puppet.mayflower.de/php/fpm/pool.html" rel="nofollow"&gt;its documention&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-overriding-php-fpm-user" class="anchor" aria-hidden="true" href="#overriding-php-fpm-user"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overriding php-fpm user&lt;/h3&gt;
+&lt;p&gt;By default, php-fpm is set up to run as Apache. If you need to customize that user, you can do that like so:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;  &lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+    &lt;span class="pl-c1"&gt;fpm_user  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;nginx&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;fpm_group &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;nginx&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  }&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-php-with-one-fpm-pool-per-user" class="anchor" aria-hidden="true" href="#php-with-one-fpm-pool-per-user"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PHP with one FPM pool per user&lt;/h3&gt;
+&lt;p&gt;This will create one vhost. $users is an array of people having php files at
+$fqdn/$user. This codesnipped uses voxpupuli/php and voxpupuli/nginx to create
+the vhost and one php fpm pool per user. This was tested on Archlinux with
+nginx 1.13 and PHP 7.2.3.&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;$users&lt;/span&gt; = [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;bob&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;alice&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
+
+&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'php'&lt;/span&gt;:
+   &lt;span class="pl-c1"&gt;ensure       &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;present&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;manage_repos &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;fpm          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;dev          &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;composer     &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;pear         &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;phpunit      &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;,
+   &lt;span class="pl-c1"&gt;fpm_pools    &lt;/span&gt;=&amp;gt; {},
 }
+
+&lt;span class="pl-k"&gt;include&lt;/span&gt; nginx
+
+nginx::resource::server{&lt;span class="pl-smi"&gt;$facts&lt;/span&gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fqdn&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]:
+  &lt;span class="pl-c1"&gt;www_root  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/var/www&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;autoindex &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;on&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+}
+&lt;span class="pl-k"&gt;nginx::resource::location&lt;/span&gt;{&lt;span class="pl-en"&gt;'dontexportprivatedata'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;server        &lt;/span&gt;=&amp;gt; &lt;span class="pl-smi"&gt;$facts&lt;/span&gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fqdn&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+  &lt;span class="pl-c1"&gt;location      &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~ /&lt;span class="pl-cce"&gt;\.&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;location_deny &lt;/span&gt;=&amp;gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;all&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+}
+&lt;span class="pl-smi"&gt;$users&lt;/span&gt;.each |&lt;span class="pl-smi"&gt;$user&lt;/span&gt;| {
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; create one fpm pool. will be owned by the specific user&lt;/span&gt;
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; fpm socket will be owned by the nginx user 'http'&lt;/span&gt;
+  php::fpm::pool{&lt;span class="pl-en"&gt;$user:&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;user         &lt;/span&gt;=&amp;gt; &lt;span class="pl-smi"&gt;$user&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;group        &lt;/span&gt;=&amp;gt; &lt;span class="pl-smi"&gt;$user&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;listen_owner &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;listen_group &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;listen_mode  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;0660&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;listen       &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/var/run/php-fpm/&lt;span class="pl-smi"&gt;${user}&lt;/span&gt;-fpm.sock&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  }
+  &lt;span class="pl-k"&gt;nginx::resource::location&lt;/span&gt; { &lt;span class="pl-en"&gt;"${name}_root"&lt;/span&gt;:
+    &lt;span class="pl-c1"&gt;ensure      &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;present&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;server      &lt;/span&gt;=&amp;gt; &lt;span class="pl-smi"&gt;$facts&lt;/span&gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fqdn&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-c1"&gt;location    &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~ .*&lt;span class="pl-smi"&gt;${user}&lt;/span&gt;&lt;span class="pl-cce"&gt;\/&lt;/span&gt;.*&lt;span class="pl-cce"&gt;\.&lt;/span&gt;php$&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;index_files &lt;/span&gt;=&amp;gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;index.php&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-c1"&gt;fastcgi     &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;unix:/var/run/php-fpm/&lt;span class="pl-smi"&gt;${user}&lt;/span&gt;-fpm.sock&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-k"&gt;include&lt;/span&gt;     =&amp;gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fastcgi.conf&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-alternative-examples-using-hiera" class="anchor" aria-hidden="true" href="#alternative-examples-using-hiera"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alternative examples using Hiera&lt;/h3&gt;
+&lt;p&gt;Alternative to the Puppet DSL code examples above, you may optionally define your PHP configuration using Hiera.&lt;/p&gt;
+&lt;p&gt;Below are all the examples you see above, but defined in YAML format for use with Hiera.&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;---
+&lt;span class="pl-ent"&gt;php::ensure&lt;/span&gt;: &lt;span class="pl-s"&gt;latest&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::manage_repos&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::fpm&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::fpm_user&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;nginx&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::fpm_group&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;nginx&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::dev&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::composer&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::pear&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::phpunit&lt;/span&gt;: &lt;span class="pl-c1"&gt;false&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::settings&lt;/span&gt;:
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;PHP/max_execution_time&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;90&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;PHP/max_input_time&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;300&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;PHP/memory_limit&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;64M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;PHP/post_max_size&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;32M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;PHP/upload_max_filesize&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;32M&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;Date/date.timezone&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Europe/Berlin&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::extensions&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;bcmath&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;xmlrpc&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;imagick&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;provider&lt;/span&gt;: &lt;span class="pl-s"&gt;pecl&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;memcached&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;provider&lt;/span&gt;: &lt;span class="pl-s"&gt;pecl&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;header_packages&lt;/span&gt;:
+      - &lt;span class="pl-s"&gt;libmemcached-dev&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;apc&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;provider&lt;/span&gt;: &lt;span class="pl-s"&gt;pecl&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;settings&lt;/span&gt;:
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;apc/stat&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-c1"&gt;1&lt;/span&gt;
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-ent"&gt;apc/stat_ctime&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-c1"&gt;1&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;sapi&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fpm&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-ent"&gt;php::fpm::pools&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;www2&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;listen&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;127.0.1.1:9000&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notes&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-debian-squeeze--ubuntu-precise-come-with-php-53" class="anchor" aria-hidden="true" href="#debian-squeeze--ubuntu-precise-come-with-php-53"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debian squeeze &amp;amp; Ubuntu precise come with PHP 5.3&lt;/h3&gt;
+&lt;p&gt;On Debian-based systems, we use &lt;code&gt;php5enmod&lt;/code&gt; to enable extension-specific
+configuration. This script is only present in &lt;code&gt;php5&lt;/code&gt; packages beginning with
+version 5.4. Furthermore, PHP 5.3 is not supported by upstream anymore.&lt;/p&gt;
+&lt;p&gt;We strongly suggest you use a recent PHP version, even if you're using an
+older though still supported distribution release. Our default is to have
+&lt;code&gt;php::manage_repos&lt;/code&gt; enabled to add apt sources for
+&lt;a href="http://www.dotdeb.org/" rel="nofollow"&gt;Dotdeb&lt;/a&gt; on Debian and
+&lt;a href="https://launchpad.net/~ondrej/+archive/ubuntu/php5/" rel="nofollow"&gt;ppa:ondrej/php5&lt;/a&gt; on
+Ubuntu with packages for the current stable PHP version closely tracking
+upstream.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-ubuntu-systems-and-ondřejs-ppa" class="anchor" aria-hidden="true" href="#ubuntu-systems-and-ondřejs-ppa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ubuntu systems and Ondřej's PPA&lt;/h3&gt;
+&lt;p&gt;The older Ubuntu PPAs run by Ondřej have been deprecated (ondrej/php5, ondrej/php5.6)
+in favor of a new PPA: ondrej/php which contains all 3 versions of PHP: 5.5, 5.6, and 7.0
+Here's an example in hiera of getting PHP 5.6 installed with php-fpm, pear/pecl, and composer:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;php::globals::&lt;span class="pl-en"&gt;php_version:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;5.6&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+php::&lt;span class="pl-en"&gt;fpm:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+php::&lt;span class="pl-en"&gt;dev:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+php::&lt;span class="pl-en"&gt;composer:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+php::&lt;span class="pl-en"&gt;pear:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+php::&lt;span class="pl-en"&gt;phpunit:&lt;/span&gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you do not specify a php version, in Ubuntu the default will be 7.0 if you are
+running Xenial (16.04), otherwise PHP 5.6 will be installed (for other versions)&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-apache-support" class="anchor" aria-hidden="true" href="#apache-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache support&lt;/h3&gt;
+&lt;p&gt;Apache with &lt;code&gt;mod_php&lt;/code&gt; is not supported by this module. Please use
+&lt;a href="https://forge.puppetlabs.com/puppetlabs/apache" rel="nofollow"&gt;puppetlabs/apache&lt;/a&gt; instead.&lt;/p&gt;
+&lt;p&gt;We prefer using php-fpm. You can find an example Apache vhost in
+&lt;code&gt;manifests/apache_vhost.pp&lt;/code&gt; that shows you how to use &lt;code&gt;mod_proxy_fcgi&lt;/code&gt; to
+connect to php-fpm.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-redhatcentos-scl-users" class="anchor" aria-hidden="true" href="#redhatcentos-scl-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RedHat/CentOS SCL Users&lt;/h3&gt;
+&lt;p&gt;If you plan to use the SCL repositories with this module you must do the following adjustments:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-general-config" class="anchor" aria-hidden="true" href="#general-config"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;General config&lt;/h4&gt;
+&lt;p&gt;This ensures that the module will create configurations in the directory ``/etc/opt/rh/&amp;lt;php_version&amp;gt;/` (also in php.d/
+for extensions). Anyway you have to manage the SCL repo's by your own.&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php::globals'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;php_version &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rh-php71&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;rhscl_mode  &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rhscl&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+}
+-&amp;gt; class { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;::php&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;manage_repos &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-extensions" class="anchor" aria-hidden="true" href="#extensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extensions&lt;/h4&gt;
+&lt;p&gt;Extensions in SCL are being installed with packages that cover 1 or more .so files. This is kinda incompatible with
+this module, since this module specifies an extension by name and derives the name of the package and the config (.ini)
+from it. To manage extensions of SCL packages you must use the following parameters:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;class&lt;/span&gt; { &lt;span class="pl-en"&gt;'::php'&lt;/span&gt;:
+  ...
+  &lt;span class="pl-c1"&gt;extensions  &lt;/span&gt;=&amp;gt; {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;soap&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+      &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    },
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By this you tell the module to configure bz2 and calender while ensuring only the package &lt;code&gt;common&lt;/code&gt;. Additionally to the
+installation of 'common' the inifiles 'calender.ini' and 'bz2.ini' will be created by the scheme
+&lt;code&gt;&amp;lt;config_file_prefix&amp;gt;&amp;lt;extension_title&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A list of commonly used modules:&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;    {
+      &lt;span class="pl-c1"&gt;extensions &lt;/span&gt;=&amp;gt; {
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;xml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;multifile_settings &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dom&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; {},
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;simplexml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;xmlwriter&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;xsl&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;wddx&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+            &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;xmlreader&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+          },
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;soap&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;imap&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;intl&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;gd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mbstring&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;xmlrpc&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;multifile_settings &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+              &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; {},
+              &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo_sqlite&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+              &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sqlite3&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+            },
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;process&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;20-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;multifile_settings &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;posix&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;shmop&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sysvmsg&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sysvsem&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sysvshm&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+          },
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqlnd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;30-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;multifile_settings &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqlnd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysql&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqli&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo_mysql&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sysvshm&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+          },
+        },
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqlnd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {
+          &lt;span class="pl-c1"&gt;ini_prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;30-&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;multifile_settings &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+          &lt;span class="pl-c1"&gt;settings &lt;/span&gt;=&amp;gt; {
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqlnd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysql&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mysqli&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo_mysql&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+             &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;sysvshm&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; {},
+          },
+        },
+      }
+    }&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-facts" class="anchor" aria-hidden="true" href="#facts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Facts&lt;/h3&gt;
+&lt;p&gt;We deliver a &lt;code&gt;phpversion&lt;/code&gt; fact with this module. This is explicitly &lt;strong&gt;NOT&lt;/strong&gt; intended
+to be used within your puppet manifests as it will only work on your second puppet
+run. Its intention is to make querying PHP versions per server easy via PuppetDB or Foreman.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-freebsd-support" class="anchor" aria-hidden="true" href="#freebsd-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FreeBSD support&lt;/h3&gt;
+&lt;p&gt;On FreeBSD systems we purge the system-wide &lt;code&gt;extensions.ini&lt;/code&gt; in favour of
+per-module configuration files.&lt;/p&gt;
+&lt;p&gt;Please also note that support for Composer and PHPUnit on FreeBSD is untested
+and thus likely incomplete.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-running-the-test-suite" class="anchor" aria-hidden="true" href="#running-the-test-suite"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running the test suite&lt;/h3&gt;
+&lt;p&gt;To run the tests install the ruby dependencies with &lt;code&gt;bundler&lt;/code&gt; and execute
+&lt;code&gt;rake&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bundle install --path vendor/bundle
+bundle exec rake
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The class will merely setup rbenv on your host. If you wish to install
-rubies, plugins, or gems, you will have to add those declarations to your manifests
-as well.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-installing-ruby-using-ruby-build" class="anchor" aria-hidden="true" href="#installing-ruby-using-ruby-build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Ruby using ruby-build&lt;/h3&gt;
-&lt;p&gt;Ruby requires additional packages to operate properly. Fortunately, this module
-will ensure these dependencies are met before installing Ruby. To install Ruby
-you will need the &lt;a href="https://github.com/rbenv/ruby-build"&gt;ruby-build&lt;/a&gt; plugin. Once
-installed, you can install most any Ruby. Additionally, you can set the Ruby to
-be the global interpreter.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rbenv::plugin { 'rbenv/ruby-build': }
-rbenv::build { '2.0.0-p247': global =&amp;gt; true }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Sometimes Ruby needs to be patched prior to being compiled. puppet-rbenv
-currently supports patching from a single file located either on the
-Puppet Master or the local filesystem. Therefore, the only accepted paths are those
-starting with puppet:/// or file:///.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rbenv::build { '2.0.0-p247': patch =&amp;gt; 'puppet:///modules/rbenv/patch.patch' }
-rbenv::build { '2.0.0-p247': patch =&amp;gt; 'file:///path/to/patch.patch' }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-plugins" class="anchor" aria-hidden="true" href="#plugins"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plugins&lt;/h2&gt;
-&lt;p&gt;Plugins can be installed from GitHub using the following definiton:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rbenv::plugin { 'github_user/github_repo': }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can ensure a plugin is kept up-to-date. This is helpful for a plugin like
-&lt;code&gt;ruby-build&lt;/code&gt; so that definitions are always available:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rbenv::plugin { 'rbenv/ruby-build': latest =&amp;gt; true }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-gems" class="anchor" aria-hidden="true" href="#gems"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gems&lt;/h2&gt;
-&lt;p&gt;Gems can be installed too! You &lt;em&gt;must&lt;/em&gt; specify the &lt;code&gt;ruby_version&lt;/code&gt; you want to
-install for.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rbenv::gem { 'thor': ruby_version =&amp;gt; '2.0.0-p247' }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-full-example" class="anchor" aria-hidden="true" href="#full-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Full Example&lt;/h2&gt;
-&lt;p&gt;site.pp&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class { 'rbenv': }
-rbenv::plugin { [ 'rbenv/rbenv-vars', 'rbenv/ruby-build' ]: }
-rbenv::build { '2.0.0-p247': global =&amp;gt; true }
-rbenv::gem { 'thor': ruby_version =&amp;gt; '2.0.0-p247' }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h2&gt;
-&lt;p&gt;You can run specs in  this module with rspec:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bundle install
-bundle exec rake spec
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or with Docker:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker build -t puppet-rbenv .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-vagrant" class="anchor" aria-hidden="true" href="#vagrant"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vagrant&lt;/h2&gt;
-&lt;p&gt;You can also test this module in a Vagrant box. There are two box definitons included in the
-Vagrant file for CentOS and Ubuntu testing. You will need to use &lt;code&gt;librarian-puppet&lt;/code&gt; to setup
-dependencies:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;bundle install
-bundle exec librarian-puppet install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To test both boxes:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vagrant up
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To test one distribution:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vagrant up [centos|ubuntu]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>jdowning</author><guid isPermaLink="false">https://github.com/jdowning/puppet-rbenv</guid><pubDate>Wed, 06 Nov 2019 00:02:00 GMT</pubDate></item></channel></rss>
+&lt;h2&gt;&lt;a id="user-content-bugs--new-features" class="anchor" aria-hidden="true" href="#bugs--new-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bugs &amp;amp; New Features&lt;/h2&gt;
+&lt;p&gt;If you happen to stumble upon a bug, please feel free to create a pull request
+with a fix (optionally with a test), and a description of the bug and how it
+was resolved.&lt;/p&gt;
+&lt;p&gt;Or if you're not into coding, simply create an issue adding steps to let us
+reproduce the bug and we will happily fix it.&lt;/p&gt;
+&lt;p&gt;If you have a good idea for a feature or how to improve this module in general,
+please create an issue to discuss it. We are very open to feedback. Pull
+requests are always welcome.&lt;/p&gt;
+&lt;p&gt;We hate orphaned and unmaintained Puppet modules as much as you do and
+therefore promise that we will continue to maintain this module and keep
+response times to issues short. If we happen to lose interest, we will write
+a big fat warning into this README to let you know.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The project is released under the permissive MIT license.&lt;/p&gt;
+&lt;p&gt;The source can be found at
+&lt;a href="https://github.com/voxpupuli/puppet-php/"&gt;github.com/voxpupuli/puppet-php&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This Puppet module was originally maintained by some fellow puppeteers at
+&lt;a href="https://mayflower.de" rel="nofollow"&gt;Mayflower GmbH&lt;/a&gt; and is now maintained by
+&lt;a href="https://voxpupuli.org/" rel="nofollow"&gt;Vox Pupuli&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>voxpupuli</author><guid isPermaLink="false">https://github.com/voxpupuli/puppet-php</guid><pubDate>Thu, 07 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
