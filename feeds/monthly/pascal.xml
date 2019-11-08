@@ -1,2 +1,452 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Pascal, This month</title><link>https://github.com/trending/pascal?since=monthly</link><description>The top repositories on GitHub for pascal, measured monthly</description><pubDate>Thu, 07 Nov 2019 01:06:57 GMT</pubDate><lastBuildDate>Thu, 07 Nov 2019 01:06:57 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Pascal, This month today</title><pubDate>Thu, 07 Nov 2019 01:06:57 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Pascal, This month</title><link>https://github.com/trending/pascal?since=monthly</link><description>The top repositories on GitHub for pascal, measured monthly</description><pubDate>Fri, 08 Nov 2019 01:07:45 GMT</pubDate><lastBuildDate>Fri, 08 Nov 2019 01:07:45 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>transmission-remote-gui/transgui #1 in Pascal, This month</title><link>https://github.com/transmission-remote-gui/transgui</link><description>&lt;p&gt;&lt;i&gt;🧲 A feature rich cross platform Transmission BitTorrent client. Faster and has more functionality than the built-in web GUI.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-transmission-remote-gui" class="anchor" aria-hidden="true" href="#transmission-remote-gui"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Transmission Remote GUI&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/transmission-remote-gui/transgui" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6e3c4d2783fca58f26c9bab4f0b1cda539bdd8f1/68747470733a2f2f7472617669732d63692e6f72672f7472616e736d697373696f6e2d72656d6f74652d6775692f7472616e736775692e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/transmission-remote-gui/transgui.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c2862a2272f2de762cafa563ebedf3538d01d06e/687474703a2f2f692e696d6775722e636f6d2f5869307a596e702e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/c2862a2272f2de762cafa563ebedf3538d01d06e/687474703a2f2f692e696d6775722e636f6d2f5869307a596e702e706e67" alt="Screenshot" data-canonical-src="http://i.imgur.com/Xi0zYnp.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#linux"&gt;Linux&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#easy-way-recommended"&gt;Easy way (recommended)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#harder-way"&gt;Harder way&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windows"&gt;Windows&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#portable-zip-tarball-recommended"&gt;Portable zip tarball (recommended)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installer"&gt;Installer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-chocolatey"&gt;Using Chocolatey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#macos"&gt;macOS&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#without-a-package-manager"&gt;Without a package manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#homebrew-cask"&gt;Homebrew-Cask&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#command-line-parameters"&gt;Command line parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#portable-mode"&gt;Portable mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#fixed-hotkeys"&gt;Fixed hotkeys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#advanced-parameters"&gt;Advanced parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Transmission Remote GUI is feature rich cross platform front-end to remotely control Transmission daemon via its RPC protocol. It is faster and has more functionality than builtin Transmission web interface.&lt;/p&gt;
+&lt;p&gt;Transmission Remote GUI is developed using Lazarus RAD and Free Pascal compiler.&lt;/p&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Native application for Windows, Linux and macOS&lt;/li&gt;
+&lt;li&gt;uTorrent-like interface&lt;/li&gt;
+&lt;li&gt;Select files to download&lt;/li&gt;
+&lt;li&gt;Choose files priority&lt;/li&gt;
+&lt;li&gt;View details about connected peers&lt;/li&gt;
+&lt;li&gt;Full information about each torrent&lt;/li&gt;
+&lt;li&gt;Per torrent options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;The installers are listed on the GitHub &lt;a href="https://github.com/transmission-remote-gui/transgui/releases/latest"&gt;Releases&lt;/a&gt; page, and the installation instructions for different platform are listed as below &lt;g-emoji class="g-emoji" alias="arrow_down" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b07.png"&gt;⬇️&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-linux" class="anchor" aria-hidden="true" href="#linux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-easy-way-recommended" class="anchor" aria-hidden="true" href="#easy-way-recommended"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Easy way (recommended)&lt;/h4&gt;
+&lt;p&gt;There are precompiled program's binaries for i386 and x86_64 Linux architectures.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and extract the release for your architecture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now you can execute the &lt;code&gt;transgui&lt;/code&gt; binary. &lt;em&gt;(Change the &lt;code&gt;transgui&lt;/code&gt; file permissions to executable if needed)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Additionally, you can create a desktop or menu shortcut to the transgui executable, and run the program using the created shortcut.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-harder-way" class="anchor" aria-hidden="true" href="#harder-way"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Harder way&lt;/h4&gt;
+&lt;p&gt;Build the program by yourself.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure you have working Lazarus and Free Pascal compiler installed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Free Pascal Compiler 2.6.2+ and Lazarus 1.6 is used to develop Transmission Remote GUI.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Download the sources archive and extract it to some folder or perform svn checkout.&lt;/li&gt;
+&lt;li&gt;Open terminal/command line prompt and cd to the sources folder.&lt;/li&gt;
+&lt;li&gt;Execute &lt;code&gt;make&lt;/code&gt; command to build the application.&lt;/li&gt;
+&lt;li&gt;Execute &lt;code&gt;make zipdist&lt;/code&gt; command to create a release .zip archive in the &lt;code&gt;Release&lt;/code&gt; sub-folder.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-windows" class="anchor" aria-hidden="true" href="#windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-portable-zip-tarball-recommended" class="anchor" aria-hidden="true" href="#portable-zip-tarball-recommended"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portable zip tarball (recommended)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Zip tarball release is much more small than the installer one, which can save you some bandwidth, disk space and time, just simply download and extract the zip tarball to wherever you want, directly execute &lt;code&gt;transgui.exe&lt;/code&gt; or add shortcut for it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The first time you use this program, you may need to install some additional dependencies (if you need SSL/TLS enabled), including &lt;a href="https://www.microsoft.com/download/details.aspx?id=40784" rel="nofollow"&gt;Visual C++ Redistributable Package&lt;/a&gt;(&lt;a href="http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe" rel="nofollow"&gt;Direct link&lt;/a&gt;) and &lt;a href="https://wiki.openssl.org/index.php/Binaries" rel="nofollow"&gt;OpenSSL libs&lt;/a&gt;(&lt;a href="https://slproweb.com/products/Win32OpenSSL.html" rel="nofollow"&gt;Direct link&lt;/a&gt;), this only needs to be done once.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-installer" class="anchor" aria-hidden="true" href="#installer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installer&lt;/h4&gt;
+&lt;p&gt;This installer has additional installation wizard and includes static OpenSSL libraries in every releases, the size would be much bigger than the zip tarball, but you don't need to take care of the OpenSSL dependencies.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Directly download the installer.&lt;/li&gt;
+&lt;li&gt;Run the installer and follow the steps to install it on your system.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a id="user-content-using-chocolatey" class="anchor" aria-hidden="true" href="#using-chocolatey"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using &lt;a href="https://chocolatey.org" rel="nofollow"&gt;Chocolatey&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Run &lt;code&gt;cinst transgui&lt;/code&gt; to install the latest version of Transmission Remote GUI.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-macos" class="anchor" aria-hidden="true" href="#macos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;macOS&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-without-a-package-manager" class="anchor" aria-hidden="true" href="#without-a-package-manager"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Without a package manager&lt;/h4&gt;
+&lt;p&gt;This method needs no additional pre-requirement or dependency, just:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the app image from release page.&lt;/li&gt;
+&lt;li&gt;Open the image file to mount the image.&lt;/li&gt;
+&lt;li&gt;Directly run the application or drag the app icon to your disk / Application folder.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a id="user-content-homebrew-cask" class="anchor" aria-hidden="true" href="#homebrew-cask"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Homebrew-Cask&lt;/h4&gt;
+&lt;p&gt;You need to have &lt;a href="https://brew.sh/" rel="nofollow"&gt;Homebrew&lt;/a&gt; installed, and &lt;a href="https://caskroom.github.io/" rel="nofollow"&gt;Homebrew-Cask&lt;/a&gt; enabled, with Homebrew, you can enable Homebrew-Cask by a single command, skip this step if you already got it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew tap caskroom/cask&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With Homebrew-Cask, directly execute this command to install Transmission Remote Gui:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew cask install transmission-remote-gui&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-command-line-parameters" class="anchor" aria-hidden="true" href="#command-line-parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Command line parameters&lt;/h2&gt;
+&lt;p&gt;You can specify path to a .torrent file or a magnet link as a command line parameter. The program will add the specified torrent.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-hidden&lt;/code&gt; : Start the program hidden. Only the program's tray icon will be visible.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--home=&amp;lt;home_dir&amp;gt;&lt;/code&gt; : Specifies a home directory for the program. All program's settings are stored in the home directory. You can run multiple instances of the program by specifying different home directories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-portable-mode" class="anchor" aria-hidden="true" href="#portable-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portable mode&lt;/h2&gt;
+&lt;p&gt;If the program finds the transgui.ini file in the same folder as the binary file, then it will store all configuration and data files in the program's folder, instead of the folder in a user profile.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-fixed-hotkeys" class="anchor" aria-hidden="true" href="#fixed-hotkeys"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fixed hotkeys&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;1&lt;/kbd&gt; : All Torrents&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;2&lt;/kbd&gt; : Downloading&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;3&lt;/kbd&gt; : Completed&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;4&lt;/kbd&gt; : Active&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;5&lt;/kbd&gt; : Inactive&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;6&lt;/kbd&gt; : Stopped&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;7&lt;/kbd&gt; : Error&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;8&lt;/kbd&gt; : Waiting&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; : Searchbox (filter torrents by keywords) - Esc cancel filter and clean the box.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;G&lt;/kbd&gt; : Info Pane - General Tab&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;K&lt;/kbd&gt; : Info Pane - Trackers Tab&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt; : Info Pane - Peers Tab&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; : Info Pane - Files Tab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-advanced-parameters" class="anchor" aria-hidden="true" href="#advanced-parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advanced parameters&lt;/h2&gt;
+&lt;p&gt;There are some parameters in the &lt;code&gt;transgui.ini file&lt;/code&gt;, that can not be modified via the GUI.
+More info on: &lt;a href="https://github.com/transmission-remote-gui/transgui/issues/924"&gt;#924&lt;/a&gt; (File Manager &amp;amp; Shortcuts) , &lt;a href="https://github.com/transmission-remote-gui/transgui/issues/1020"&gt;#1020&lt;/a&gt; (User Defined Menu &lt;em&gt;Windows Only&lt;/em&gt;) and &lt;a href="https://github.com/transmission-remote-gui/transgui/issues/1070"&gt;#1070&lt;/a&gt; (.torrent Auto Opening)&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[Interface]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; Maximum number of elements in the folder history list&lt;/span&gt;
+&lt;span class="pl-k"&gt;MaxFoldersHistory&lt;/span&gt;=10
+
+&lt;span class="pl-en"&gt;[Interface]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;In Linux/MacOs Only if "Open Container Folder" give you error&lt;/span&gt;
+&lt;span class="pl-k"&gt;FileOpenDoc&lt;/span&gt;=0
+
+&lt;span class="pl-en"&gt;[Interface]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;Alternate File Manager (Windows Only)&lt;/span&gt;
+&lt;span class="pl-k"&gt;FileManagerDefault&lt;/span&gt;={Full path to your File Manager .exe}
+&lt;span class="pl-k"&gt;FileManagerDefaultParam&lt;/span&gt;={Alternate parameters, could be left blank}
+
+&lt;span class="pl-en"&gt;[Interface]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;System Wide Shortcut key (Windows Only)&lt;/span&gt;
+&lt;span class="pl-k"&gt;GlobalHotkey&lt;/span&gt;={Virtual Key Code} full list here http://docwiki.embarcadero.com/RADStudio/Seattle/en/Virtual_Key_Codes (Plus VK_A...VK_Z and VK_0..VK_9)
+&lt;span class="pl-k"&gt;GlobalHotkeyMod&lt;/span&gt;={Modifier Key} [MOD_SHIFT , MOD_CONTROL , MOD_ALT , MOD_WIN alone or combined with + sign]
+
+&lt;span class="pl-en"&gt;[Interface]&lt;/span&gt;
+&lt;span class="pl-k"&gt;WatchLocalFolder&lt;/span&gt;= {LOCAL Folder to watch for torrent files}
+&lt;span class="pl-k"&gt;WatchDestinationFolder&lt;/span&gt;= {REMOTE destination where the data would be saved if missing or empty last destination folder is used}
+&lt;span class="pl-k"&gt;WatchInterval&lt;/span&gt;=1 {Time period in MINUTES between folder scans for torrents, may be fractional values 0,&lt;span class="pl-k"&gt;50&lt;/span&gt; = 30 seconds}
+
+&lt;span class="pl-en"&gt;[Shortcuts]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;Modify all the shortcuts of the GUI here&lt;/span&gt;
+
+&lt;span class="pl-en"&gt;[Usermenu]&lt;/span&gt;
+&lt;span class="pl-k"&gt;Caption1&lt;/span&gt;={Caption in the menu}
+&lt;span class="pl-k"&gt;ExeName1&lt;/span&gt;={Full path to the program .exe you want to add to menu}
+&lt;span class="pl-k"&gt;Params1&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;%s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {Usually &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;%s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; but some programs may require additional parameters}
+&lt;span class="pl-k"&gt;Caption2&lt;/span&gt;={same for item 2}
+&lt;span class="pl-k"&gt;ExeName2&lt;/span&gt;={same for item 2}
+&lt;span class="pl-k"&gt;Params2&lt;/span&gt;={same for item 2}
+
+&lt;span class="pl-en"&gt;[StatusBarPanels]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;Customize the width of the statusbar panels to fit your language&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;0 is the left most panel and 7 is the right most panel.&lt;/span&gt;
+&lt;span class="pl-k"&gt;0&lt;/span&gt;=327
+&lt;span class="pl-k"&gt;1&lt;/span&gt;=152
+&lt;span class="pl-k"&gt;2&lt;/span&gt;=152
+&lt;span class="pl-k"&gt;3&lt;/span&gt;=130
+&lt;span class="pl-k"&gt;4&lt;/span&gt;=130
+&lt;span class="pl-k"&gt;5&lt;/span&gt;=130
+&lt;span class="pl-k"&gt;6&lt;/span&gt;=130
+&lt;span class="pl-k"&gt;7&lt;/span&gt;=130
+
+&lt;span class="pl-en"&gt;[MainForm]&lt;/span&gt;
+&lt;span class="pl-k"&gt;BigToolBarHeight&lt;/span&gt;=48 {Height of the Big Icon Toolbar if missing default is 64}
+
+&lt;span class="pl-en"&gt;[MainForm]&lt;/span&gt;
+&lt;span class="pl-k"&gt;FromNow&lt;/span&gt;=1 {&lt;span class="pl-k"&gt;1&lt;/span&gt;=Shows the dates relatives to now , &lt;span class="pl-k"&gt;0&lt;/span&gt;=Absolute Dates MM/DD/YY HH:MM:SS}&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright (c) 2008-2019 by Yury Sidorov and Transmission Remote GUI working group.&lt;/p&gt;
+&lt;p&gt;Transmission Remote GUI is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.&lt;/p&gt;
+&lt;p&gt;Transmission Remote GUI is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>transmission-remote-gui</author><guid isPermaLink="false">https://github.com/transmission-remote-gui/transgui</guid><pubDate>Fri, 08 Nov 2019 00:01:00 GMT</pubDate></item><item><title>jrsoftware/issrc #2 in Pascal, This month</title><link>https://github.com/jrsoftware/issrc</link><description>&lt;p&gt;&lt;i&gt;Inno Setup is a free installer for Windows programs. First introduced in 1997, Inno Setup today rivals and even surpasses many commercial installers in feature set and stability.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-inno-setup" class="anchor" aria-hidden="true" href="#inno-setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inno Setup&lt;/h1&gt;
+&lt;p&gt;Copyright (C) 1997-2019 Jordan Russell. All rights reserved.&lt;br&gt;
+Portions Copyright (C) 2000-2019 Martijn Laan. All rights reserved.&lt;br&gt;
+For conditions of distribution and use, see LICENSE.TXT.&lt;/p&gt;
+&lt;p&gt;Source code README&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Obtain sources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First you need to download the sources from Github. From the command line do:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; git clone https://github.com/jrsoftware/issrc.git is
+&amp;gt; cd is
+&amp;gt; git submodule init
+&amp;gt; git submodule update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you don't have the Git client (&lt;code&gt;git&lt;/code&gt;), get it from:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://git-scm.com/" rel="nofollow"&gt;http://git-scm.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To update your sources from the command line do:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; git pull
+&amp;gt; git submodule update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To be able to contribute to Inno Setup, clone your own fork instead of
+cloning the main Inno Setup repository, commit your work on topic branches
+and make pull requests. See &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Embarcadero Delphi&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We compile all of Inno Setup's projects under Delphi 10.3 Rio.&lt;/p&gt;
+&lt;p&gt;If you do not have access to this version of Delphi, you should be
+able to compile the projects on later versions, however complete
+compatibility is NOT guaranteed. We try to make Inno Setup compilable on
+the later versions when possible, but do not have the resources to test
+every change on every Delphi version.&lt;/p&gt;
+&lt;p&gt;There's a free version of Delphi available called the Community Edition.
+See &lt;a href="https://www.embarcadero.com/products/delphi/starter/free-download" rel="nofollow"&gt;https://www.embarcadero.com/products/delphi/starter/free-download&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Microsoft MSXML&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Install Microsoft MSXML 4.0 SP2 if you haven't already done so.
+See &lt;a href="http://www.microsoft.com/en-us/download/details.aspx?id=19662" rel="nofollow"&gt;http://www.microsoft.com/en-us/download/details.aspx?id=19662&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are not sure whether you have MSXML 4.0 SP2 already, check for a
+file named msxml4.dll in your Windows System directory with a version number
+of 4.20.9818.0 (or later).&lt;/p&gt;
+&lt;p&gt;Note: Microsoft MSXML is only needed to be able to compile the help files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Microsoft HTML Help Workshop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Install Microsoft HTML Help Workshop if you haven't already done so.
+See &lt;a href="http://www.microsoft.com/en-us/download/details.aspx?id=21138" rel="nofollow"&gt;http://www.microsoft.com/en-us/download/details.aspx?id=21138&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note: Microsoft HTML Help Workshop is only needed to be able to compile the
+help files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Build Inno Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To build all files run &lt;strong&gt;build.bat&lt;/strong&gt; and follow the instructions.&lt;/p&gt;
+&lt;p&gt;To just compile Inno Setup run &lt;strong&gt;compile.bat&lt;/strong&gt; and follow the instructions.&lt;/p&gt;
+&lt;p&gt;To just compile the Inno Setup help file and its web version run
+&lt;strong&gt;ISHelp\compile.bat&lt;/strong&gt; and follow the instructions.&lt;/p&gt;
+&lt;p&gt;To just compile the Inno Setup Preprocessor help file and its web version run
+&lt;strong&gt;Projects\Ispp\Help\compile.bat&lt;/strong&gt; and follow the instructions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-component-installation" class="anchor" aria-hidden="true" href="#component-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Component Installation&lt;/h2&gt;
+&lt;p&gt;If you intend to view or modify the Setup project's forms, you must install
+the following component units, which can be found in the Components
+directory.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BidiCtrls&lt;/li&gt;
+&lt;li&gt;BitmapImage&lt;/li&gt;
+&lt;li&gt;FolderTreeView&lt;/li&gt;
+&lt;li&gt;NewCheckListBox&lt;/li&gt;
+&lt;li&gt;NewNotebookReg&lt;/li&gt;
+&lt;li&gt;NewProgressBar&lt;/li&gt;
+&lt;li&gt;NewStaticText&lt;/li&gt;
+&lt;li&gt;PasswordEdit&lt;/li&gt;
+&lt;li&gt;RichEditViewer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you intend to view or modify the Compil32 project's forms, you must
+additionally install the following components.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DropListBox&lt;/li&gt;
+&lt;li&gt;NewTabSet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you only want to edit code, then you may skip installation of the
+components, and choose "Cancel" if the Delphi IDE tells you a class can't
+be found.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Inno Setup consists of six projects:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Compil32&lt;/strong&gt; - This is the GUI front-end for the compiler. Compil32 does not
+do the actual compilation itself; it relegates it to ISCmplr.dll. If the
+ISCmplr project is changed, you normally don't need to recompile Compil32
+since it's essentially a text editor, and is not affected by internal
+changes to the compiler.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ISCC&lt;/strong&gt; - This is the command-line front-end to the compiler. Like
+Compil32, it depends on ISCmplr.dll to do the actual compiling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ISCmplr&lt;/strong&gt; - This is a DLL which is loaded by Compil32 and ISCC to compile
+scripts. The actual compiler code is in Compile.pas. See CompInt.pas for the
+various structures and function declarations used to interface to the DLL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setup&lt;/strong&gt; - This is the actual "Setup" program. It displays the wizard, and
+performs all (un)installation-related tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SetupLdr&lt;/strong&gt; - This is the "setup loader." It self-extracts a compressed
+Setup program into the user's TEMP directory and runs it from there. It also
+displays the "This will install..." and /HELP message boxes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ISPP\ISPP&lt;/strong&gt; - This is a DLL implementing Inno Setup's preprocessor interface&lt;/p&gt;
+&lt;p&gt;How do the projects link together?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ISCmplr, ISPP, Setup, and SetupLdr share the unit Struct.pas. This unit
+contains various data structures and constants shared by the projects. If
+Struct.pas is changed, you usually will need to recompile ISCmplr, ISPP,
+Setup, and SetupLdr so that everything is in synch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are more units which are shared between projects. Search the 'uses'
+clauses of the projects and units if you aren't sure if a project uses a
+particular unit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The ISPP help file uses various copies of other Inno Setup files. To synch
+these run &lt;strong&gt;synch-isfiles.bat&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-source-code-tips" class="anchor" aria-hidden="true" href="#source-code-tips"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Source code tips&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you modify the Setup or SetupLdr projects and want to be able to compile
+your installations with the new code, you'll need to copy the new EXE
+file(s) to the Setup Compiler directory under the extension .E32.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When debugging the Setup project you should set &lt;code&gt;UseSetupLdr=no&lt;/code&gt; and
+&lt;code&gt;OutputBaseFilename=setup&lt;/code&gt; in your script, and copy the resulting setup-*.bin
+files to the source code directory. This way you can simulate an actual
+installation while running under the Delphi debugger.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All of the forms in the Setup project, with the exception of Main.dfm, have
+Scaled set to False. This is because they dynamically scale themselves at
+run-time by calling a function named InitializeFont.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A note for those curious: The Setup Compiler creates single EXE Setups by
+first creating the SETUP.EXE as usual, then concatenating the SETUP.0 and
+SETUP-1.BIN to the end of the SETUP.EXE, and finally modifying an internal
+data block in SETUP.EXE so it knows it's in "single EXE" form.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For compiler debugging purposes define &lt;code&gt;STATICCOMPILER&lt;/code&gt; in CompForm.pas
+and &lt;code&gt;STATICPREPROC&lt;/code&gt; in Compile.pas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-precompiled-executables-and-libraries" class="anchor" aria-hidden="true" href="#precompiled-executables-and-libraries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Precompiled executables and libraries&lt;/h2&gt;
+&lt;p&gt;The source code contains several precompiled executables and libraries:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Files\isbunzip.dll&lt;/strong&gt;, &lt;strong&gt;Files\isbzip.dll&lt;/strong&gt; - Compiled by Visual Studio 2005
+from the bzlib directory in the Iscompress repository.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Files\isunzlib.dll&lt;/strong&gt;, &lt;strong&gt;Files\iszlib.dll&lt;/strong&gt; - Compiled by Visual Studio 2005
+from the zlib-dll directory in the Iscompress repository.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Files\islzma.dll&lt;/strong&gt;, &lt;strong&gt;Files\islzma32.exe&lt;/strong&gt;, &lt;strong&gt;Files\islzma64.exe&lt;/strong&gt; - Compiled
+by Visual Studio 2005 from the &lt;a href="Projects/Lzma2/Encoder"&gt;Projects\Lzma2\Encoder&lt;/a&gt; directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Files\isscint.dll&lt;/strong&gt; - Compiled by Visual Studio 2005 from Scintilla 2.22 source
+code with scintilla-2.22-patch.txt applied.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projects\_shfolder.res&lt;/strong&gt; - shfolder.dll from a fresh install of IE 5.5 SP2 on
+NT 4.0 stored in a compiled resource file. Note: this file is normally not
+actually used by Setup.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projects\Helper\x64\Release\Helper.exe&lt;/strong&gt;, &lt;strong&gt;Projects\HelperEXEs.res&lt;/strong&gt; -
+Compiled by Visual Studio 2005 from the &lt;a href="Projects/Helper"&gt;Projects\Helper&lt;/a&gt; directory and then
+stored in a compiled resource file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projects\LzmaDecode\LzmaDecodeInno.obj&lt;/strong&gt; - See &lt;a href="Projects/LzmaDecode/compiling.txt"&gt;Projects\LzmaDecode\compiling.txt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projects\Lzma2\Decoder\ISLzmaDec.obj&lt;/strong&gt;, &lt;strong&gt;Projects\Lzma2\Decoder\ISLzma2Dec.obj&lt;/strong&gt; -
+See &lt;a href="Projects/Lzma2/Decoder/compiling.txt"&gt;Projects\Lzma2\Decoder\compiling.txt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ISHelp\ISHelpGen\ISHelpGen.exe&lt;/strong&gt; - See &lt;a href="ISHelp/ISHelpGen/compile.bat"&gt;ISHelp\ISHelpGen\compile.bat&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples\MyProg.exe&lt;/strong&gt;, &lt;strong&gt;Examples\MyProg-x64.exe&lt;/strong&gt; - Compiled by Visual Studio
+2005 from the &lt;a href="Examples/MyProg"&gt;Examples\MyProg&lt;/a&gt; directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples\MyProg-ARM64.exe&lt;/strong&gt; - Compiled by Visual Studio 2017 from the
+&lt;a href="Examples/MyProg"&gt;Examples\MyProg&lt;/a&gt; directory.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-inno-setup-specific-editing-guidelines-for-the-help-files" class="anchor" aria-hidden="true" href="#inno-setup-specific-editing-guidelines-for-the-help-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inno Setup-specific editing guidelines for the help files&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When mentioning something the user would type in a script, e.g. "MinVersion",
+surround it by &lt;code&gt;&amp;lt;tt&amp;gt;&amp;lt;/tt&amp;gt;&lt;/code&gt; so that it's displayed in the Courier New font. This is
+a convention used throughout the help file. Example: &lt;code&gt;&amp;lt;tt&amp;gt;MinVersion&amp;lt;/tt&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>jrsoftware</author><guid isPermaLink="false">https://github.com/jrsoftware/issrc</guid><pubDate>Fri, 08 Nov 2019 00:02:00 GMT</pubDate></item><item><title>cheat-engine/cheat-engine #3 in Pascal, This month</title><link>https://github.com/cheat-engine/cheat-engine</link><description>&lt;p&gt;&lt;i&gt;Cheat Engine. A development environment focused on modding&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+    &lt;a href="https://github.com/cheat-engine/cheat-engine/raw/master/Cheat%20Engine/images"&gt;
+        &lt;img src="https://github.com/cheat-engine/cheat-engine/raw/master/Cheat%20Engine/images/celogo.png" style="max-width:100%;"&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 align="center"&gt;&lt;a id="user-content-cheat-engine" class="anchor" aria-hidden="true" href="#cheat-engine"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cheat Engine&lt;/h1&gt;
+&lt;p&gt;Cheat Engine is a development environment focused on modding games and applications for personal use.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-download" class="anchor" aria-hidden="true" href="#download"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/cheat-engine/cheat-engine/releases/latest"&gt;Latest Version&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://github.com/cheat-engine/cheat-engine/releases"&gt;Older versions&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-links" class="anchor" aria-hidden="true" href="#links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.cheatengine.org" rel="nofollow"&gt;Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.cheatengine.org" rel="nofollow"&gt;Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fearlessrevolution.com/index.php" rel="nofollow"&gt;Forum (alternate)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.cheatengine.org/index.php?title=Main_Page" rel="nofollow"&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-social-media" class="anchor" aria-hidden="true" href="#social-media"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Social Media&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://reddit.com/r/cheatengine" rel="nofollow"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/_cheatengine" rel="nofollow"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-donate" class="anchor" aria-hidden="true" href="#donate"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Donate&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.patreon.com/cheatengine" rel="nofollow"&gt;Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.paypal.com/xclick/business=dark_byte%40hotmail.com&amp;amp;no_note=1&amp;amp;tax=0&amp;amp;lc=US" rel="nofollow"&gt;PayPal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-build-instructions" class="anchor" aria-hidden="true" href="#build-instructions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Instructions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install the latest version of Lazarus from &lt;a href="https://sourceforge.net/projects/lazarus/files/latest/download" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Run Lazarus and click on &lt;code&gt;Project-&amp;gt;Open Project&lt;/code&gt;.  Select
+&lt;code&gt;cheatengine.lpi&lt;/code&gt; from the &lt;code&gt;Cheat Engine&lt;/code&gt; folder as the project.&lt;/li&gt;
+&lt;li&gt;Click on &lt;code&gt;Run-&amp;gt;Build&lt;/code&gt; or press &lt;kbd&gt;SHIFT+F9&lt;/kbd&gt;.
+&lt;ul&gt;
+&lt;li&gt;If you want to run or debug from the IDE on Windows you will need to run
+Lazarus as administrator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fork the repository on GitHub.&lt;/li&gt;
+&lt;li&gt;Create a branch for your changes.
+&lt;ul&gt;
+&lt;li&gt;Lazarus likes to make changes to files when you open
+them or move something around, so make sure you only stage the changes that
+are required for what you are trying to accomplish.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Push your branch to your personal fork.&lt;/li&gt;
+&lt;li&gt;Go to the original Cheat Engine repository and create a pull request:
+&lt;ul&gt;
+&lt;li&gt;Click on &lt;code&gt;compare across forks&lt;/code&gt; and select your fork as the head fork and your new
+branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>cheat-engine</author><guid isPermaLink="false">https://github.com/cheat-engine/cheat-engine</guid><pubDate>Fri, 08 Nov 2019 00:03:00 GMT</pubDate></item><item><title>HeidiSQL/HeidiSQL #4 in Pascal, This month</title><link>https://github.com/HeidiSQL/HeidiSQL</link><description>&lt;p&gt;&lt;i&gt;A lightweight client for managing MariaDB, MySQL, SQL Server and PostgreSQL, written in Delphi&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="readme.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7c6b4ac10587761b1d1a93b47904017ae745d1db/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174"&gt;&lt;img src="https://camo.githubusercontent.com/7c6b4ac10587761b1d1a93b47904017ae745d1db/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174" alt="" data-canonical-src="https://img.shields.io/github/license/HeidiSQL/HeidiSQL.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/0f5135b2ddf61904a7df887b3660d85fd181d933/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174"&gt;&lt;img src="https://camo.githubusercontent.com/0f5135b2ddf61904a7df887b3660d85fd181d933/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174" alt="" data-canonical-src="https://img.shields.io/github/release/HeidiSQL/HeidiSQL.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/98740d3c720bd9cdf435c081159445b41542aa17/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c616e6775616765732f746f702f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174"&gt;&lt;img src="https://camo.githubusercontent.com/98740d3c720bd9cdf435c081159445b41542aa17/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c616e6775616765732f746f702f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174" alt="" data-canonical-src="https://img.shields.io/github/languages/top/HeidiSQL/HeidiSQL.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/fbc6d08d32227908f45cfeba0a4553f77f65cedc/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c616e6775616765732f636f64652d73697a652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174"&gt;&lt;img src="https://camo.githubusercontent.com/fbc6d08d32227908f45cfeba0a4553f77f65cedc/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c616e6775616765732f636f64652d73697a652f486569646953514c2f486569646953514c2e7376673f7374796c653d666c6174" alt="" data-canonical-src="https://img.shields.io/github/languages/code-size/HeidiSQL/HeidiSQL.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-heidisql" class="anchor" aria-hidden="true" href="#heidisql"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HeidiSQL&lt;/h1&gt;
+&lt;p&gt;HeidiSQL is a useful and reliable tool designed for web developers using the popular &lt;a href="http://www.mariadb.org/" rel="nofollow"&gt;MariaDB&lt;/a&gt; or &lt;a href="http://www.mysql.com/" rel="nofollow"&gt;MySQL&lt;/a&gt; server, &lt;a href="http://www.microsoft.com/sql/" rel="nofollow"&gt;Microsoft SQL databases&lt;/a&gt; or &lt;a href="http://www.postgresql.org/" rel="nofollow"&gt;PostgreSQL&lt;/a&gt;. It enables you to browse and edit data, create and edit tables, views, procedures, triggers and scheduled events. Also, you can export structure and data, either to SQL file, clipboard or to other servers. Read about &lt;a href="https://www.heidisql.com/#featurelist" rel="nofollow"&gt;features&lt;/a&gt; or see some &lt;a href="https://www.heidisql.com/screenshots.php" rel="nofollow"&gt;screenshots&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-need-help" class="anchor" aria-hidden="true" href="#need-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Need help?&lt;/h1&gt;
+&lt;p&gt;Look at &lt;a href="http://www.heidisql.com/help.php" rel="nofollow"&gt;the online help page&lt;/a&gt; to learn how to use HeidiSQL.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-building" class="anchor" aria-hidden="true" href="#building"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building&lt;/h1&gt;
+&lt;p&gt;Delphi 10.3 is required for building HeidiSQL. Older Delphi versions will most likely fail; newer Delphi versions may work or fail. Unfortunately, Lazarus or one
+of the other free compilers cannot currently compile HeidiSQL.&lt;/p&gt;
+&lt;p&gt;Once Delphi is installed, you need to load the SynEdit project from the components folder. Build both run-time and design-time packages. Install the
+design-time package. Do the same for the VirtualTree component project, and install madExcept.&lt;/p&gt;
+&lt;p&gt;Afterwards, load the HeidiSQL project from the packages folder.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-translation" class="anchor" aria-hidden="true" href="#translation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translation&lt;/h1&gt;
+&lt;p&gt;If you'd like to contribute by translating HeidiSQL into your mother tongue, you need to register at
+&lt;a href="https://www.transifex.com/heidisql/heidisql/" rel="nofollow"&gt;Transifex&lt;/a&gt;, and join an existing language or request a
+new one.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-icons8-copyright" class="anchor" aria-hidden="true" href="#icons8-copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Icons8 copyright&lt;/h1&gt;
+&lt;p&gt;Icons added in January 2019 into a TImageCollection component are copyright by &lt;a href="https://icons8.com" rel="nofollow"&gt;Icons8&lt;/a&gt;. Used with a special permission from Icons8 given to Ansgar for this project only. Do not copy them for anything else other than building HeidiSQL.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>HeidiSQL</author><guid isPermaLink="false">https://github.com/HeidiSQL/HeidiSQL</guid><pubDate>Fri, 08 Nov 2019 00:04:00 GMT</pubDate></item></channel></rss>
