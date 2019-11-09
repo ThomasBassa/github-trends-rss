@@ -1,161 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, This month</title><link>https://github.com/trending/emacs-lisp?since=monthly</link><description>The top repositories on GitHub for emacs-lisp, measured monthly</description><pubDate>Fri, 08 Nov 2019 01:07:53 GMT</pubDate><lastBuildDate>Fri, 08 Nov 2019 01:07:53 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>abo-abo/swiper #1 in Emacs Lisp, This month</title><link>https://github.com/abo-abo/swiper</link><description>&lt;p&gt;&lt;i&gt;Ivy - a generic completion frontend for Emacs, Swiper - isearch with an overview, and more. Oh, man!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/abo-abo/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f13930412aac3d15215dad01d52b6c731292e8d1/68747470733a2f2f7472617669732d63692e6f72672f61626f2d61626f2f7377697065722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/abo-abo/swiper.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;flexible, simple tools for minibuffer completion in Emacs&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This repository contains:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ivy&lt;/strong&gt;, a generic completion mechanism for Emacs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Counsel&lt;/strong&gt;, a collection of Ivy-enhanced versions of common Emacs
-commands.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Swiper&lt;/strong&gt;, an Ivy-enhanced alternative to isearch.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-ivy" class="anchor" aria-hidden="true" href="#ivy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ivy&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://melpa.org/#/ivy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b07b95d4ee91c75105920569bc2d03f5f890271/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f6976792d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/ivy-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://stable.melpa.org/#/ivy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0dc055002fc3da7f785236986eefb98108f34f51/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f6976792d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/ivy-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ivy is a generic completion mechanism for Emacs. While it operates
-similarly to other completion schemes such as &lt;code&gt;icomplete-mode&lt;/code&gt;, Ivy
-aims to be more efficient, smaller, simpler, and smoother to use yet
-highly customizable.&lt;/p&gt;
-&lt;p&gt;To try Ivy, just call &lt;kbd&gt;M-x&lt;/kbd&gt; &lt;code&gt;ivy-mode&lt;/code&gt;. This will enable
-generic Ivy completion, including specific completion for file and
-buffer names.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
-&lt;p&gt;Install the &lt;code&gt;ivy&lt;/code&gt; package from MELPA / GNU ELPA.&lt;/p&gt;
-&lt;p&gt;Users of Debian ≥10 (and derivatives such as Ubuntu ≥18.04) can
-install Ivy, Counsel, and Swiper with &lt;code&gt;sudo apt install elpa-counsel&lt;/code&gt;.
-To add Hydra support &lt;code&gt;sudo apt install elpa-ivy-hydra&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-manual" class="anchor" aria-hidden="true" href="#manual"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manual&lt;/h3&gt;
-&lt;p&gt;The manual is available as &lt;a href="https://oremacs.com/swiper/" rel="nofollow"&gt;HTML&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;After installing from MELPA, the manual is also available through the &lt;code&gt;(ivy)&lt;/code&gt; Info node.&lt;/p&gt;
-&lt;p&gt;The source file for the Info page is
-&lt;a href="https://github.com/abo-abo/swiper/blob/master/doc/ivy.org"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-wiki" class="anchor" aria-hidden="true" href="#wiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wiki&lt;/h3&gt;
-&lt;p&gt;Ivy and Swiper wiki is here: &lt;a href="https://github.com/abo-abo/swiper/wiki"&gt;the wiki&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-small-config-example" class="anchor" aria-hidden="true" href="#small-config-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Small config example&lt;/h3&gt;
-&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(ivy-mode &lt;span class="pl-c1"&gt;1&lt;/span&gt;)
-(&lt;span class="pl-k"&gt;setq&lt;/span&gt; ivy-use-virtual-buffers &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
-(&lt;span class="pl-k"&gt;setq&lt;/span&gt; enable-recursive-minibuffers &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; enable this if you want &lt;span class="pl-smi"&gt;`swiper'&lt;/span&gt; to use it&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; (setq search-default-mode #'char-fold-to-regexp)&lt;/span&gt;
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-cce"&gt;\C&lt;/span&gt;-s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;'swiper&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c C-r&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'ivy-resume&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f6&amp;gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'ivy-resume&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;M-x&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-M-x&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-x C-f&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-find-file&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; f&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-describe-function&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; v&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-describe-variable&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; l&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-find-library&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f2&amp;gt; i&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-info-lookup-symbol&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f2&amp;gt; u&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-unicode-char&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-git&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c j&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-git-grep&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c k&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-ag&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-x l&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-locate&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-S-o&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-rhythmbox&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; minibuffer-local-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-r&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-minibuffer-history&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Note: parts of this config can be replaced by using &lt;code&gt;counsel-mode&lt;/code&gt;.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-counsel" class="anchor" aria-hidden="true" href="#counsel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Counsel&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://melpa.org/#/counsel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b1d9741244e07553b3e7edbdd74c5345481216c/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f636f756e73656c2d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/counsel-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://stable.melpa.org/#/counsel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b829c1e7ce2494091aae0c6f5cbfc69325b62c03/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f636f756e73656c2d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/counsel-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ivy-mode&lt;/code&gt; ensures that any Emacs command using
-&lt;code&gt;completing-read-function&lt;/code&gt; uses ivy for completion.&lt;/p&gt;
-&lt;p&gt;Counsel takes this further, providing versions of common Emacs
-commands that are customised to make the best use of ivy. For example,
-&lt;code&gt;counsel-find-file&lt;/code&gt; has some additional keybindings. Pressing
-&lt;kbd&gt;DEL&lt;/kbd&gt; will move you to the parent directory.&lt;/p&gt;
-&lt;p&gt;Enabling &lt;code&gt;counsel-mode&lt;/code&gt; remaps built-in Emacs functions that have
-counsel replacements:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Emacs command&lt;/th&gt;
-&lt;th&gt;Counsel equivalent&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;execute-extended-command&lt;/td&gt;
-&lt;td&gt;counsel-M-x&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;describe-bindings&lt;/td&gt;
-&lt;td&gt;counsel-descbinds&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;describe-function&lt;/td&gt;
-&lt;td&gt;counsel-describe-function&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;describe-variable&lt;/td&gt;
-&lt;td&gt;counsel-describe-variable&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;apropos-command&lt;/td&gt;
-&lt;td&gt;counsel-apropos&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;describe-face&lt;/td&gt;
-&lt;td&gt;counsel-describe-face&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;list-faces-display&lt;/td&gt;
-&lt;td&gt;counsel-faces&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;find-file&lt;/td&gt;
-&lt;td&gt;counsel-find-file&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;find-library&lt;/td&gt;
-&lt;td&gt;counsel-find-library&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;imenu&lt;/td&gt;
-&lt;td&gt;counsel-imenu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;load-library&lt;/td&gt;
-&lt;td&gt;counsel-load-library&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;load-theme&lt;/td&gt;
-&lt;td&gt;counsel-load-theme&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;yank-pop&lt;/td&gt;
-&lt;td&gt;counsel-yank-pop&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;info-lookup-symbol&lt;/td&gt;
-&lt;td&gt;counsel-info-lookup-symbol&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;pop-to-mark-command&lt;/td&gt;
-&lt;td&gt;counsel-mark-ring&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;bookmark-jump&lt;/td&gt;
-&lt;td&gt;counsel-bookmark&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1&gt;&lt;a id="user-content-swiper" class="anchor" aria-hidden="true" href="#swiper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swiper&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://melpa.org/#/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e4db0c28cf6c9e4de9529a34141a0ceeac953afc/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f7377697065722d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/swiper-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://stable.melpa.org/#/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3856d8e21ce5c31895a9cdd449701dbac9a5af58/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f7377697065722d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/swiper-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Swiper is an alternative to isearch that uses ivy to show an overview
-of all matches.&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9501632a3893ff3c9ad7cf61ca09311ea5a570a7/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f7377697065722e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/9501632a3893ff3c9ad7cf61ca09311ea5a570a7/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f7377697065722e706e67" alt="swiper.png" data-canonical-src="https://oremacs.com/download/swiper.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A helm version of swiper is also available:
-&lt;a href="https://github.com/abo-abo/swiper-helm"&gt;swiper-helm&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-screenshots" class="anchor" aria-hidden="true" href="#screenshots"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshots&lt;/h2&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5a19441661db376c2b3403e7c2af8d6bb323fd2c/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f6976792d7377697065722d312e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/5a19441661db376c2b3403e7c2af8d6bb323fd2c/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f6976792d7377697065722d312e706e67" alt="ivy-swiper-1.png" data-canonical-src="https://oremacs.com/download/ivy-swiper-1.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;There's also a ten minute &lt;a href="https://www.youtube.com/watch?v=VvnJQpTFVDc" rel="nofollow"&gt;video demo&lt;/a&gt;.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-frequently-asked-questions" class="anchor" aria-hidden="true" href="#frequently-asked-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frequently asked questions&lt;/h1&gt;
-&lt;p&gt;Q: How do I enter an input that matches one of the candidates instead
-of this candidate? Example: create a file &lt;code&gt;bar&lt;/code&gt; when a file
-&lt;code&gt;barricade&lt;/code&gt; exists in the current directory.&lt;/p&gt;
-&lt;p&gt;A: Press &lt;kbd&gt;C-M-j&lt;/kbd&gt;. Alternatively, you can make the prompt line selectable with &lt;code&gt;(setq ivy-use-selectable-prompt t)&lt;/code&gt;.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h1&gt;
-&lt;p&gt;Please see the &lt;a href="https://github.com/abo-abo/swiper/blob/master/CONTRIBUTING.org"&gt;guidelines&lt;/a&gt; for reporting issues and opening pull requests.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>abo-abo</author><guid isPermaLink="false">https://github.com/abo-abo/swiper</guid><pubDate>Fri, 08 Nov 2019 00:01:00 GMT</pubDate></item><item><title>syl20bnr/spacemacs #2 in Emacs Lisp, This month</title><link>https://github.com/syl20bnr/spacemacs</link><description>&lt;p&gt;&lt;i&gt;A community-driven Emacs distribution - The best editor is neither Emacs nor Vim,  it's Emacs *and* Vim!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a name="user-content-top"&gt;&lt;/a&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, This month</title><link>https://github.com/trending/emacs-lisp?since=monthly</link><description>The top repositories on GitHub for emacs-lisp, measured monthly</description><pubDate>Sat, 09 Nov 2019 01:04:20 GMT</pubDate><lastBuildDate>Sat, 09 Nov 2019 01:04:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>hlissner/doom-emacs #1 in Emacs Lisp, This month</title><link>https://github.com/hlissner/doom-emacs</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration for the stubborn martian vimmer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="http://doomemacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/d38622bbeea8e0a3a1c42e21d2839363d21b4627/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f646f6f6d2d656d6163732e7376673f6c6162656c3d72656c6561736526636f6c6f723d6f72616e6765" alt="Made with Doom Emacs" data-canonical-src="https://img.shields.io/github/tag/hlissner/doom-emacs.svg?label=release&amp;amp;color=orange" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://emacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/145199dd89d8ed47968846fe8dcdde64b838ffab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6164655f666f722d456d6163735f32362e312b2d626c756576696f6c65742e737667" alt="Made for Emacs 26.1+" data-canonical-src="https://img.shields.io/badge/Made_for-Emacs_26.1+-blueviolet.svg" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://github.com/hlissner/doom-emacs/actions"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/workflows/CI/badge.svg" alt="Build status: develop" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/48087b2da5b43d9130b73e6e8ad3e7b42caa3330/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d626c75652e7376673f6c6f676f3d646973636f7264266c6162656c3d6a6f696e" alt="Join our discord server" align="right" data-canonical-src="https://img.shields.io/badge/Discord-blue.svg?logo=discord&amp;amp;label=join" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png"&gt;&lt;img src="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png" alt="Doom Emacs Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;b&gt;&lt;a href="/../../tree/screenshots"&gt;Screenshots&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/getting_started.org"&gt;Get started&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/contributing.org"&gt;Contribute&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/index.org"&gt;Documentation&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/faq.org"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quick start&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/hlissner/doom-emacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d/bin/doom install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what-is-doom-emacs"&gt;What is Doom Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dooms-mantras"&gt;Doom's mantras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#community"&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-what-is-doom-emacs" class="anchor" aria-hidden="true" href="#what-is-doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Doom Emacs&lt;/h1&gt;
+&lt;a href="http://ultravioletbat.deviantart.com/art/Yay-Evil-111710573" rel="nofollow"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/raw/screenshots/cacochan.png" align="right" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;p&gt;It is a story as old as time. A stubborn, shell-dwelling, and melodramatic
+vimmer -- envious of the features of modern text editors -- spirals into despair
+before succumbing to the &lt;a href="https://github.com/emacs-evil/evil"&gt;dark side&lt;/a&gt;. This is his config.&lt;/p&gt;
+&lt;p&gt;Doom is a configuration for &lt;a href="https://www.gnu.org/software/emacs/" rel="nofollow"&gt;GNU Emacs&lt;/a&gt;
+designed to make Emacs faster and easier to customize. It can serve as framework
+for your own configuration or a resource for fellow Emacs enthusiasts who want
+to learn more about our favorite OS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dooms-mantras" class="anchor" aria-hidden="true" href="#dooms-mantras"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom's mantras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gotta go fast.&lt;/strong&gt; Startup and run-time performance are high priorities.
+Expensive functionality (built-in or in plugins) is modified and optimized
+toward this end, otherwise, they must be opt-in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Close to metal.&lt;/strong&gt; There's less between you and vanilla Emacs, by design.
+There's less to grok. Modules should be syntactically sweet and backend logic
+explicit and abstraction-light. The code itself ought to be designed as if
+grokking it were part of the user experience; and it is!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Opinionated, but not stubborn.&lt;/strong&gt; Doom is a bundle of reasonable defaults
+and curated opinions, but you aren't stuck with it. Use as little or as much
+of it as you like. Use it as-is as a complete Emacs distribution; disable
+everything and use it as a baseline for your own; or anywhere in between.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Your system, your rules.&lt;/strong&gt; There are more ways to set up your programming
+environment than there are dislikes on Youtube Rewind '18, so Doom and its
+plugins promise not to &lt;em&gt;automatically&lt;/em&gt; (and definitely not &lt;em&gt;silently&lt;/em&gt;) install
+system dependencies. This means fonts, packages and programs. &lt;code&gt;doom doctor&lt;/code&gt;
+will tell you what's missing though!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A curated set of sane defaults for all packages, all (major) OSes, and Emacs
+itself.&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; programming languages. Too many to list. Includes syntax
+highlighting, linters/checker integration, inline code evaluation, code
+completion (where possible), REPLs, documentation lookups, snippets, and more!&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; tools, like docker, pass, ansible, terraform, and more.&lt;/li&gt;
+&lt;li&gt;Minimalistic good looks inspired by modern editors.&lt;/li&gt;
+&lt;li&gt;A modular architecture for a more organized Emacs configuration.&lt;/li&gt;
+&lt;li&gt;A custom elisp library to help you simplify your config.&lt;/li&gt;
+&lt;li&gt;A declarative &lt;a href="core/autoload/packages.el"&gt;package management system&lt;/a&gt; (powered by
+&lt;a href="https://github.com/raxod502/straight.el"&gt;straight.el&lt;/a&gt;) with a command line interface. Install packages
+from anywhere, not just (M)ELPA.&lt;/li&gt;
+&lt;li&gt;Vim-emulation powered by &lt;a href="https://github.com/emacs-evil/evil"&gt;evil-mode&lt;/a&gt;, including ports of
+popular vim plugins and functionality.&lt;/li&gt;
+&lt;li&gt;A Spacemacs-esque &lt;a href="modules/config/default/+evil-bindings.el"&gt;keybinding scheme&lt;/a&gt;, centered around leader
+and localleader prefix keys (&lt;kbd&gt;SPC&lt;/kbd&gt; and &lt;kbd&gt;SPC&lt;/kbd&gt;&lt;kbd&gt;m&lt;/kbd&gt;, by
+default).&lt;/li&gt;
+&lt;li&gt;A rule-based &lt;a href="modules/ui/popup/README.org"&gt;popup management system&lt;/a&gt; that dictates how
+temporary or disposable buffers are displayed (and disposed of).&lt;/li&gt;
+&lt;li&gt;Automatic indentation detection and &lt;a href="http://editorconfig.org/" rel="nofollow"&gt;editorconfig&lt;/a&gt;
+integration. Let someone else argue about tabs vs &lt;strong&gt;_*&lt;strong&gt;spaces&lt;/strong&gt;*_&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Project-management tools and framework-specific minor modes with their own
+snippets libraries.&lt;/li&gt;
+&lt;li&gt;Project search (and replace) utilities, powered by
+&lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the_silver_searcher&lt;/a&gt; or &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Isolated and persistent workspaces (also substitutes for vim tabs).&lt;/li&gt;
+&lt;li&gt;An environment variables file generator and loader, so that Emacs can
+perfectly inherit your shell configuration.&lt;/li&gt;
+&lt;li&gt;Everything is optional!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;a Discord server&lt;/a&gt;! Hop on and say hi!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Encountered strange behavior or an error? Here are some things to try before you
+shoot off that bug report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom refresh&lt;/code&gt;. This ensures Doom is properly set up and its autoloads
+files are up-to-date.&lt;/li&gt;
+&lt;li&gt;If you have byte-compiled your config (with &lt;code&gt;bin/doom compile&lt;/code&gt;), see if
+&lt;code&gt;bin/doom clean&lt;/code&gt; makes the issue go away. Never debug issues with a
+byte-compiled config, it will make your job harder.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom doctor&lt;/code&gt; to detect common issues in your development environment.&lt;/li&gt;
+&lt;li&gt;Search Doom's issue tracker for mention of any error messages you've received.&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/faq.org"&gt;Visit our FAQ&lt;/a&gt; to see if your issue is listed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If all else fails, &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;file that bug report&lt;/a&gt;! Please include the
+behavior you've observed, the behavior you expected, and any error messages or
+warnings logged to the *Messages* buffer (can be opened with &lt;kbd&gt;SPC h
+e&lt;/kbd&gt; or &lt;code&gt;M-x view-echo-area-messages&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It's a great help if you included a backtrace with errors, i.e. &lt;code&gt;M-x toggle-debug-on-error&lt;/code&gt; then recreating the error(s).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Doom (and my Emacs work in general) is a labor of love and incurable madness,
+done on my spare time. If you'd like to support my work, there are many things
+you can do to help; I welcome any contribution!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I love pull requests and bug reports. Check out the &lt;a href="docs/contributing.org"&gt;Contributing
+Guidelines&lt;/a&gt; to find out how you can help out.&lt;/li&gt;
+&lt;li&gt;I welcome Elisp pointers! Don't hesitate to &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;tell me my Elisp-fu
+sucks&lt;/a&gt; (but please tell me why).&lt;/li&gt;
+&lt;li&gt;Hop on &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;our Discord server&lt;/a&gt; and say hi! Help others out, hang out
+or talk to me about Emacs, or gamedev, or programming, machine learning,
+physics, pixel art, anime, gaming -- anything you like. Nourish this lonely
+soul!&lt;/li&gt;
+&lt;li&gt;If you'd like to support my work financially, consider buying me a drink
+through &lt;a href="https://liberapay.com/hlissner/donate" rel="nofollow"&gt;liberapay&lt;/a&gt; or &lt;a href="https://paypal.me/henriklissner/10" rel="nofollow"&gt;paypal&lt;/a&gt;. Donations are a
+great help. My work here contends with studies, ventures in indie gamedev, and
+my freelance work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/doom-emacs</guid><pubDate>Sat, 09 Nov 2019 00:01:00 GMT</pubDate></item><item><title>syl20bnr/spacemacs #2 in Emacs Lisp, This month</title><link>https://github.com/syl20bnr/spacemacs</link><description>&lt;p&gt;&lt;i&gt;A community-driven Emacs distribution - The best editor is neither Emacs nor Vim,  it's Emacs *and* Vim!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a name="user-content-top"&gt;&lt;/a&gt;
 &lt;a href="http://spacemacs.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8f5ee1d9b7278ed2c63f1f89e9a583ec59b52b6b/68747470733a2f2f63646e2e7261776769742e636f6d2f73796c3230626e722f73706163656d6163732f343432643032353737396461326636326663383663323038323730333639373731346462363531342f6173736574732f73706163656d6163732d62616467652e737667" alt="Made with Spacemacs" data-canonical-src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="http://www.twitter.com/spacemacs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7cf10772eb6ccebe92d678c452a971e6e2778653/687474703a2f2f692e696d6775722e636f6d2f7458536f5468462e706e67" alt="Twitter" align="right" data-canonical-src="http://i.imgur.com/tXSoThF.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/doc/img/title2.png"&gt;&lt;img src="/doc/img/title2.png" alt="Spacemacs" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -490,7 +480,7 @@ the spacemacs badge: &lt;a href="http://spacemacs.org" rel="nofollow"&gt;&lt;img
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Thank you!&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>syl20bnr</author><guid isPermaLink="false">https://github.com/syl20bnr/spacemacs</guid><pubDate>Fri, 08 Nov 2019 00:02:00 GMT</pubDate></item><item><title>emacs-lsp/lsp-mode #3 in Emacs Lisp, This month</title><link>https://github.com/emacs-lsp/lsp-mode</link><description>&lt;p&gt;&lt;i&gt;Emacs client/library for the Language Server Protocol&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body org" data-path="README.org"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://melpa.org/#/lsp-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9af67d09707b47dd26115a48505d481f9dcdd805/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f6c73702d6d6f64652d62616467652e737667" alt="https://melpa.org/packages/lsp-mode-badge.svg" data-canonical-src="https://melpa.org/packages/lsp-mode-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>syl20bnr</author><guid isPermaLink="false">https://github.com/syl20bnr/spacemacs</guid><pubDate>Sat, 09 Nov 2019 00:02:00 GMT</pubDate></item><item><title>emacs-lsp/lsp-mode #3 in Emacs Lisp, This month</title><link>https://github.com/emacs-lsp/lsp-mode</link><description>&lt;p&gt;&lt;i&gt;Emacs client/library for the Language Server Protocol&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body org" data-path="README.org"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://melpa.org/#/lsp-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9af67d09707b47dd26115a48505d481f9dcdd805/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f6c73702d6d6f64652d62616467652e737667" alt="https://melpa.org/packages/lsp-mode-badge.svg" data-canonical-src="https://melpa.org/packages/lsp-mode-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
   &lt;a href="https://stable.melpa.org/#/lsp-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7a2cc5cd5fb1a171dde8e45435a353f849853123/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f6c73702d6d6f64652d62616467652e737667" alt="https://stable.melpa.org/packages/lsp-mode-badge.svg" data-canonical-src="https://stable.melpa.org/packages/lsp-mode-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
   &lt;a href="https://gitter.im/emacs-lsp/lsp-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/40a1fe7a717b706a101e6e1d917dfdb3f422a8c3/68747470733a2f2f6261646765732e6769747465722e696d2f656d6163732d6c73702f6c73702d6d6f64652e737667" alt="https://badges.gitter.im/emacs-lsp/lsp-mode.svg" data-canonical-src="https://badges.gitter.im/emacs-lsp/lsp-mode.svg" style="max-width:100%;"&gt;&lt;/a&gt;
   &lt;a href="https://travis-ci.org/emacs-lsp/lsp-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5674691682ca175709f1682ede1931f44a188aef/68747470733a2f2f7472617669732d63692e6f72672f656d6163732d6c73702f6c73702d6d6f64652e7376673f6272616e63683d6d6173746572" alt="https://travis-ci.org/emacs-lsp/lsp-mode.svg?branch=master" data-canonical-src="https://travis-ci.org/emacs-lsp/lsp-mode.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -892,7 +882,7 @@ the spacemacs badge: &lt;a href="http://spacemacs.org" rel="nofollow"&gt;&lt;img
   &lt;li&gt;&lt;a href="https://github.com/yyoncho/dap-mode"&gt;dap-mode&lt;/a&gt; - Debugger integration for &lt;code&gt;lsp-mode&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/joaotavora/eglot"&gt;eglot&lt;/a&gt; - An alternative minimal LSP implementation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>emacs-lsp</author><guid isPermaLink="false">https://github.com/emacs-lsp/lsp-mode</guid><pubDate>Fri, 08 Nov 2019 00:03:00 GMT</pubDate></item><item><title>emacs-mirror/emacs #4 in Emacs Lisp, This month</title><link>https://github.com/emacs-mirror/emacs</link><description>&lt;p&gt;&lt;i&gt;Mirror of GNU Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Copyright (C) 2001-2019 Free Software Foundation, Inc.
+&lt;/article&gt;&lt;/div&gt;</description><author>emacs-lsp</author><guid isPermaLink="false">https://github.com/emacs-lsp/lsp-mode</guid><pubDate>Sat, 09 Nov 2019 00:03:00 GMT</pubDate></item><item><title>emacs-mirror/emacs #4 in Emacs Lisp, This month</title><link>https://github.com/emacs-mirror/emacs</link><description>&lt;p&gt;&lt;i&gt;Mirror of GNU Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Copyright (C) 2001-2019 Free Software Foundation, Inc.
 See the end of the file for license conditions.
 
 
@@ -1017,153 +1007,163 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with GNU Emacs.  If not, see &amp;lt;&lt;a href="https://www.gnu.org/licenses/" rel="nofollow"&gt;https://www.gnu.org/licenses/&lt;/a&gt;&amp;gt;.
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>emacs-mirror</author><guid isPermaLink="false">https://github.com/emacs-mirror/emacs</guid><pubDate>Fri, 08 Nov 2019 00:04:00 GMT</pubDate></item><item><title>hlissner/doom-emacs #5 in Emacs Lisp, This month</title><link>https://github.com/hlissner/doom-emacs</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration for the stubborn martian vimmer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="http://doomemacs.org" rel="nofollow"&gt;
-  &lt;img src="https://camo.githubusercontent.com/d38622bbeea8e0a3a1c42e21d2839363d21b4627/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f646f6f6d2d656d6163732e7376673f6c6162656c3d72656c6561736526636f6c6f723d6f72616e6765" alt="Made with Doom Emacs" data-canonical-src="https://img.shields.io/github/tag/hlissner/doom-emacs.svg?label=release&amp;amp;color=orange" style="max-width:100%;"&gt;
-&lt;/a&gt;
-&lt;a href="https://emacs.org" rel="nofollow"&gt;
-  &lt;img src="https://camo.githubusercontent.com/08eda2dac6b577caf2cff1ddf28376e7e97870a0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6164655f666f722d456d6163735f32352e332b2d626c756576696f6c65742e737667" alt="Made for Emacs 25.3+" data-canonical-src="https://img.shields.io/badge/Made_for-Emacs_25.3+-blueviolet.svg" style="max-width:100%;"&gt;
-&lt;/a&gt;
-&lt;a href="https://github.com/hlissner/doom-emacs/actions"&gt;
-  &lt;img src="https://github.com/hlissner/doom-emacs/workflows/CI/badge.svg" alt="Build status: develop" style="max-width:100%;"&gt;
-&lt;/a&gt;
-&lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;
-  &lt;img src="https://camo.githubusercontent.com/48087b2da5b43d9130b73e6e8ad3e7b42caa3330/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d626c75652e7376673f6c6f676f3d646973636f7264266c6162656c3d6a6f696e" alt="Join our discord server" align="right" data-canonical-src="https://img.shields.io/badge/Discord-blue.svg?logo=discord&amp;amp;label=join" style="max-width:100%;"&gt;
-&lt;/a&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png"&gt;&lt;img src="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png" alt="Doom Emacs Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;
-  &lt;b&gt;&lt;a href="/../../tree/screenshots"&gt;Screenshots&lt;/a&gt;&lt;/b&gt;
-  |
-  &lt;b&gt;&lt;a href="docs/getting_started.org"&gt;Get started&lt;/a&gt;&lt;/b&gt;
-  |
-  &lt;b&gt;&lt;a href="docs/contributing.org"&gt;Contribute&lt;/a&gt;&lt;/b&gt;
-  |
-  &lt;b&gt;&lt;a href="docs/index.org"&gt;Documentation&lt;/a&gt;&lt;/b&gt;
-  |
-  &lt;b&gt;&lt;a href="docs/faq.org"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Quick start&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/hlissner/doom-emacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d
-&lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d/bin/doom install&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#what-is-doom-emacs"&gt;What is Doom Emacs&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#dooms-mantras"&gt;Doom's mantras&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#community"&gt;Community&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-what-is-doom-emacs" class="anchor" aria-hidden="true" href="#what-is-doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Doom Emacs&lt;/h1&gt;
-&lt;a href="http://ultravioletbat.deviantart.com/art/Yay-Evil-111710573" rel="nofollow"&gt;
-  &lt;img src="https://github.com/hlissner/doom-emacs/raw/screenshots/cacochan.png" align="right" style="max-width:100%;"&gt;
-&lt;/a&gt;
-&lt;p&gt;It is a story as old as time. A stubborn, shell-dwelling, and melodramatic
-vimmer -- envious of the features of modern text editors -- spirals into despair
-before succumbing to the &lt;a href="https://github.com/emacs-evil/evil"&gt;dark side&lt;/a&gt;. This is his config.&lt;/p&gt;
-&lt;p&gt;Doom is a configuration for &lt;a href="https://www.gnu.org/software/emacs/" rel="nofollow"&gt;GNU Emacs&lt;/a&gt;
-designed to make Emacs faster and easier to customize. It can serve as framework
-for your own configuration or a resource for fellow Emacs enthusiasts who want
-to learn more about our favorite OS.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-dooms-mantras" class="anchor" aria-hidden="true" href="#dooms-mantras"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom's mantras&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Gotta go fast.&lt;/strong&gt; Startup and run-time performance are high priorities.
-Expensive functionality (built-in or in plugins) is modified and optimized
-toward this end, otherwise, they must be opt-in.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Close to metal.&lt;/strong&gt; There's less between you and vanilla Emacs, by design.
-There's less to grok. Modules should be syntactically sweet and backend logic
-explicit and abstraction-light. The code itself ought to be designed as if
-grokking it were part of the user experience; and it is!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Opinionated, but not stubborn.&lt;/strong&gt; Doom is a bundle of reasonable defaults
-and curated opinions, but you aren't stuck with it. Use as little or as much
-of it as you like. Use it as-is as a complete Emacs distribution; disable
-everything and use it as a baseline for your own; or anywhere in between.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Your system, your rules.&lt;/strong&gt; There are more ways to set up your programming
-environment than there are dislikes on Youtube Rewind '18, so Doom and its
-plugins promise not to &lt;em&gt;automatically&lt;/em&gt; (and definitely not &lt;em&gt;silently&lt;/em&gt;) install
-system dependencies. This means fonts, packages and programs. &lt;code&gt;doom doctor&lt;/code&gt;
-will tell you what's missing though!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A curated set of sane defaults for all packages, all (major) OSes, and Emacs
-itself.&lt;/li&gt;
-&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; programming languages. Too many to list. Includes syntax
-highlighting, linters/checker integration, inline code evaluation, code
-completion (where possible), REPLs, documentation lookups, snippets, and more!&lt;/li&gt;
-&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; tools, like docker, pass, ansible, terraform, and more.&lt;/li&gt;
-&lt;li&gt;Minimalistic good looks inspired by modern editors.&lt;/li&gt;
-&lt;li&gt;A modular architecture for a more organized Emacs configuration.&lt;/li&gt;
-&lt;li&gt;A custom elisp library to help you simplify your config.&lt;/li&gt;
-&lt;li&gt;A declarative &lt;a href="core/autoload/packages.el"&gt;package management system&lt;/a&gt; (powered by
-&lt;a href="https://github.com/raxod502/straight.el"&gt;straight.el&lt;/a&gt;) with a command line interface. Install packages
-from anywhere, not just (M)ELPA.&lt;/li&gt;
-&lt;li&gt;Vim-emulation powered by &lt;a href="https://github.com/emacs-evil/evil"&gt;evil-mode&lt;/a&gt;, including ports of
-popular vim plugins and functionality.&lt;/li&gt;
-&lt;li&gt;A Spacemacs-esque &lt;a href="modules/config/default/+evil-bindings.el"&gt;keybinding scheme&lt;/a&gt;, centered around leader
-and localleader prefix keys (&lt;kbd&gt;SPC&lt;/kbd&gt; and &lt;kbd&gt;SPC&lt;/kbd&gt;&lt;kbd&gt;m&lt;/kbd&gt;, by
-default).&lt;/li&gt;
-&lt;li&gt;A rule-based &lt;a href="modules/ui/popup/README.org"&gt;popup management system&lt;/a&gt; that dictates how
-temporary or disposable buffers are displayed (and disposed of).&lt;/li&gt;
-&lt;li&gt;Automatic indentation detection and &lt;a href="http://editorconfig.org/" rel="nofollow"&gt;editorconfig&lt;/a&gt;
-integration. Let someone else argue about tabs vs &lt;strong&gt;_*&lt;strong&gt;spaces&lt;/strong&gt;*_&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Project-management tools and framework-specific minor modes with their own
-snippets libraries.&lt;/li&gt;
-&lt;li&gt;Project search (and replace) utilities, powered by
-&lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the_silver_searcher&lt;/a&gt; or &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Isolated and persistent workspaces (also substitutes for vim tabs).&lt;/li&gt;
-&lt;li&gt;An environment variables file generator and loader, so that Emacs can
-perfectly inherit your shell configuration.&lt;/li&gt;
-&lt;li&gt;Everything is optional!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
-&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
-&lt;p&gt;We have &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;a Discord server&lt;/a&gt;! Hop on and say hi!&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
-&lt;p&gt;Encountered strange behavior or an error? Here are some things to try before you
-shoot off that bug report:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Run &lt;code&gt;bin/doom refresh&lt;/code&gt;. This ensures Doom is properly set up and its autoloads
-files are up-to-date.&lt;/li&gt;
-&lt;li&gt;If you have byte-compiled your config (with &lt;code&gt;bin/doom compile&lt;/code&gt;), see if
-&lt;code&gt;bin/doom clean&lt;/code&gt; makes the issue go away. Never debug issues with a
-byte-compiled config, it will make your job harder.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;bin/doom doctor&lt;/code&gt; to detect common issues in your development environment.&lt;/li&gt;
-&lt;li&gt;Search Doom's issue tracker for mention of any error messages you've received.&lt;/li&gt;
-&lt;li&gt;&lt;a href="docs/faq.org"&gt;Visit our FAQ&lt;/a&gt; to see if your issue is listed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If all else fails, &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;file that bug report&lt;/a&gt;! Please include the
-behavior you've observed, the behavior you expected, and any error messages or
-warnings logged to the *Messages* buffer (can be opened with &lt;kbd&gt;SPC h
-e&lt;/kbd&gt; or &lt;code&gt;M-x view-echo-area-messages&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;It's a great help if you included a backtrace with errors, i.e. &lt;code&gt;M-x toggle-debug-on-error&lt;/code&gt; then recreating the error(s).&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
-&lt;p&gt;Doom (and my Emacs work in general) is a labor of love and incurable madness,
-done on my spare time. If you'd like to support my work, there are many things
-you can do to help; I welcome any contribution!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I love pull requests and bug reports. Check out the &lt;a href="docs/contributing.org"&gt;Contributing
-Guidelines&lt;/a&gt; to find out how you can help out.&lt;/li&gt;
-&lt;li&gt;I welcome Elisp pointers! Don't hesitate to &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;tell me my Elisp-fu
-sucks&lt;/a&gt; (but please tell me why).&lt;/li&gt;
-&lt;li&gt;Hop on &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;our Discord server&lt;/a&gt; and say hi! Help others out, hang out
-or talk to me about Emacs, or gamedev, or programming, machine learning,
-physics, pixel art, anime, gaming -- anything you like. Nourish this lonely
-soul!&lt;/li&gt;
-&lt;li&gt;If you'd like to support my work financially, consider buying me a drink
-through &lt;a href="https://liberapay.com/hlissner/donate" rel="nofollow"&gt;liberapay&lt;/a&gt; or &lt;a href="https://paypal.me/henriklissner/10" rel="nofollow"&gt;paypal&lt;/a&gt;. Donations are a
-great help. My work here contends with studies, ventures in indie gamedev, and
-my freelance work.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/doom-emacs</guid><pubDate>Fri, 08 Nov 2019 00:05:00 GMT</pubDate></item><item><title>melpa/melpa #6 in Emacs Lisp, This month</title><link>https://github.com/melpa/melpa</link><description>&lt;p&gt;&lt;i&gt;Recipes and build machinery for the biggest Emacs package repo&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-melpa" class="anchor" aria-hidden="true" href="#melpa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MELPA&lt;/h1&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>emacs-mirror</author><guid isPermaLink="false">https://github.com/emacs-mirror/emacs</guid><pubDate>Sat, 09 Nov 2019 00:04:00 GMT</pubDate></item><item><title>abo-abo/swiper #5 in Emacs Lisp, This month</title><link>https://github.com/abo-abo/swiper</link><description>&lt;p&gt;&lt;i&gt;Ivy - a generic completion frontend for Emacs, Swiper - isearch with an overview, and more. Oh, man!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/abo-abo/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f13930412aac3d15215dad01d52b6c731292e8d1/68747470733a2f2f7472617669732d63692e6f72672f61626f2d61626f2f7377697065722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/abo-abo/swiper.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;flexible, simple tools for minibuffer completion in Emacs&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This repository contains:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ivy&lt;/strong&gt;, a generic completion mechanism for Emacs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Counsel&lt;/strong&gt;, a collection of Ivy-enhanced versions of common Emacs
+commands.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Swiper&lt;/strong&gt;, an Ivy-enhanced alternative to isearch.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-ivy" class="anchor" aria-hidden="true" href="#ivy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ivy&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://melpa.org/#/ivy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b07b95d4ee91c75105920569bc2d03f5f890271/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f6976792d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/ivy-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://stable.melpa.org/#/ivy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0dc055002fc3da7f785236986eefb98108f34f51/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f6976792d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/ivy-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ivy is a generic completion mechanism for Emacs. While it operates
+similarly to other completion schemes such as &lt;code&gt;icomplete-mode&lt;/code&gt;, Ivy
+aims to be more efficient, smaller, simpler, and smoother to use yet
+highly customizable.&lt;/p&gt;
+&lt;p&gt;To try Ivy, just call &lt;kbd&gt;M-x&lt;/kbd&gt; &lt;code&gt;ivy-mode&lt;/code&gt;. This will enable
+generic Ivy completion, including specific completion for file and
+buffer names.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Install the &lt;code&gt;ivy&lt;/code&gt; package from MELPA / GNU ELPA.&lt;/p&gt;
+&lt;p&gt;Users of Debian ≥10 (and derivatives such as Ubuntu ≥18.04) can
+install Ivy, Counsel, and Swiper with &lt;code&gt;sudo apt install elpa-counsel&lt;/code&gt;.
+To add Hydra support &lt;code&gt;sudo apt install elpa-ivy-hydra&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-manual" class="anchor" aria-hidden="true" href="#manual"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manual&lt;/h3&gt;
+&lt;p&gt;The manual is available as &lt;a href="https://oremacs.com/swiper/" rel="nofollow"&gt;HTML&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After installing from MELPA, the manual is also available through the &lt;code&gt;(ivy)&lt;/code&gt; Info node.&lt;/p&gt;
+&lt;p&gt;The source file for the Info page is
+&lt;a href="https://github.com/abo-abo/swiper/blob/master/doc/ivy.org"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-wiki" class="anchor" aria-hidden="true" href="#wiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wiki&lt;/h3&gt;
+&lt;p&gt;Ivy and Swiper wiki is here: &lt;a href="https://github.com/abo-abo/swiper/wiki"&gt;the wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-small-config-example" class="anchor" aria-hidden="true" href="#small-config-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Small config example&lt;/h3&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(ivy-mode &lt;span class="pl-c1"&gt;1&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; ivy-use-virtual-buffers &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; enable-recursive-minibuffers &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; enable this if you want &lt;span class="pl-smi"&gt;`swiper'&lt;/span&gt; to use it&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; (setq search-default-mode #'char-fold-to-regexp)&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-cce"&gt;\C&lt;/span&gt;-s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;'swiper&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c C-r&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'ivy-resume&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f6&amp;gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'ivy-resume&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;M-x&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-M-x&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-x C-f&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-find-file&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; f&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-describe-function&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; v&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-describe-variable&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f1&amp;gt; l&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-find-library&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f2&amp;gt; i&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-info-lookup-symbol&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;lt;f2&amp;gt; u&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-unicode-char&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-git&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c j&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-git-grep&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c k&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-ag&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-x l&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-locate&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;global-set-key&lt;/span&gt; (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-S-o&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-rhythmbox&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; minibuffer-local-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-r&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'counsel-minibuffer-history&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: parts of this config can be replaced by using &lt;code&gt;counsel-mode&lt;/code&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-counsel" class="anchor" aria-hidden="true" href="#counsel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Counsel&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://melpa.org/#/counsel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b1d9741244e07553b3e7edbdd74c5345481216c/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f636f756e73656c2d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/counsel-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://stable.melpa.org/#/counsel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b829c1e7ce2494091aae0c6f5cbfc69325b62c03/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f636f756e73656c2d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/counsel-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ivy-mode&lt;/code&gt; ensures that any Emacs command using
+&lt;code&gt;completing-read-function&lt;/code&gt; uses ivy for completion.&lt;/p&gt;
+&lt;p&gt;Counsel takes this further, providing versions of common Emacs
+commands that are customised to make the best use of ivy. For example,
+&lt;code&gt;counsel-find-file&lt;/code&gt; has some additional keybindings. Pressing
+&lt;kbd&gt;DEL&lt;/kbd&gt; will move you to the parent directory.&lt;/p&gt;
+&lt;p&gt;Enabling &lt;code&gt;counsel-mode&lt;/code&gt; remaps built-in Emacs functions that have
+counsel replacements:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Emacs command&lt;/th&gt;
+&lt;th&gt;Counsel equivalent&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;execute-extended-command&lt;/td&gt;
+&lt;td&gt;counsel-M-x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;describe-bindings&lt;/td&gt;
+&lt;td&gt;counsel-descbinds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;describe-function&lt;/td&gt;
+&lt;td&gt;counsel-describe-function&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;describe-variable&lt;/td&gt;
+&lt;td&gt;counsel-describe-variable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;apropos-command&lt;/td&gt;
+&lt;td&gt;counsel-apropos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;describe-face&lt;/td&gt;
+&lt;td&gt;counsel-describe-face&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;list-faces-display&lt;/td&gt;
+&lt;td&gt;counsel-faces&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find-file&lt;/td&gt;
+&lt;td&gt;counsel-find-file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;find-library&lt;/td&gt;
+&lt;td&gt;counsel-find-library&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;imenu&lt;/td&gt;
+&lt;td&gt;counsel-imenu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;load-library&lt;/td&gt;
+&lt;td&gt;counsel-load-library&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;load-theme&lt;/td&gt;
+&lt;td&gt;counsel-load-theme&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;yank-pop&lt;/td&gt;
+&lt;td&gt;counsel-yank-pop&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;info-lookup-symbol&lt;/td&gt;
+&lt;td&gt;counsel-info-lookup-symbol&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pop-to-mark-command&lt;/td&gt;
+&lt;td&gt;counsel-mark-ring&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bookmark-jump&lt;/td&gt;
+&lt;td&gt;counsel-bookmark&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;&lt;a id="user-content-swiper" class="anchor" aria-hidden="true" href="#swiper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swiper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://melpa.org/#/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e4db0c28cf6c9e4de9529a34141a0ceeac953afc/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f7377697065722d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/swiper-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://stable.melpa.org/#/swiper" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3856d8e21ce5c31895a9cdd449701dbac9a5af58/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f7377697065722d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/swiper-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Swiper is an alternative to isearch that uses ivy to show an overview
+of all matches.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9501632a3893ff3c9ad7cf61ca09311ea5a570a7/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f7377697065722e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/9501632a3893ff3c9ad7cf61ca09311ea5a570a7/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f7377697065722e706e67" alt="swiper.png" data-canonical-src="https://oremacs.com/download/swiper.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A helm version of swiper is also available:
+&lt;a href="https://github.com/abo-abo/swiper-helm"&gt;swiper-helm&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-screenshots" class="anchor" aria-hidden="true" href="#screenshots"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5a19441661db376c2b3403e7c2af8d6bb323fd2c/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f6976792d7377697065722d312e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/5a19441661db376c2b3403e7c2af8d6bb323fd2c/68747470733a2f2f6f72656d6163732e636f6d2f646f776e6c6f61642f6976792d7377697065722d312e706e67" alt="ivy-swiper-1.png" data-canonical-src="https://oremacs.com/download/ivy-swiper-1.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There's also a ten minute &lt;a href="https://www.youtube.com/watch?v=VvnJQpTFVDc" rel="nofollow"&gt;video demo&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-frequently-asked-questions" class="anchor" aria-hidden="true" href="#frequently-asked-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frequently asked questions&lt;/h1&gt;
+&lt;p&gt;Q: How do I enter an input that matches one of the candidates instead
+of this candidate? Example: create a file &lt;code&gt;bar&lt;/code&gt; when a file
+&lt;code&gt;barricade&lt;/code&gt; exists in the current directory.&lt;/p&gt;
+&lt;p&gt;A: Press &lt;kbd&gt;C-M-j&lt;/kbd&gt;. Alternatively, you can make the prompt line selectable with &lt;code&gt;(setq ivy-use-selectable-prompt t)&lt;/code&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h1&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/abo-abo/swiper/blob/master/CONTRIBUTING.org"&gt;guidelines&lt;/a&gt; for reporting issues and opening pull requests.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>abo-abo</author><guid isPermaLink="false">https://github.com/abo-abo/swiper</guid><pubDate>Sat, 09 Nov 2019 00:05:00 GMT</pubDate></item><item><title>melpa/melpa #6 in Emacs Lisp, This month</title><link>https://github.com/melpa/melpa</link><description>&lt;p&gt;&lt;i&gt;Recipes and build machinery for the biggest Emacs package repo&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-melpa" class="anchor" aria-hidden="true" href="#melpa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MELPA&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://travis-ci.org/melpa/melpa" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f70a965c98a8de20ac05d341d955a21773f6df6c/68747470733a2f2f7472617669732d63692e6f72672f6d656c70612f6d656c70612e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/melpa/melpa.png?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;MELPA is a growing collection of &lt;code&gt;package.el&lt;/code&gt;-compatible Emacs Lisp
 packages built automatically on our server from the upstream source
@@ -1538,158 +1538,85 @@ our packages.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;MELPA&lt;/em&gt; is &lt;em&gt;Milkypostman's ELPA&lt;/em&gt; or &lt;em&gt;Milkypostman's Experimental Lisp
 Package Archive&lt;/em&gt; if you're not into the whole brevity thing.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>melpa</author><guid isPermaLink="false">https://github.com/melpa/melpa</guid><pubDate>Fri, 08 Nov 2019 00:06:00 GMT</pubDate></item><item><title>hlissner/emacs-doom-themes #7 in Emacs Lisp, This month</title><link>https://github.com/hlissner/emacs-doom-themes</link><description>&lt;p&gt;&lt;i&gt;An opinionated pack of modern color-themes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a918642e7742aa7f5aae9e686f48e79bd1a96cb0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6c6162656c3d72656c65617365267374796c653d666c61742d737175617265"&gt;&lt;img src="https://camo.githubusercontent.com/a918642e7742aa7f5aae9e686f48e79bd1a96cb0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6c6162656c3d72656c65617365267374796c653d666c61742d737175617265" alt="Release tag" data-canonical-src="https://img.shields.io/github/tag/hlissner/emacs-doom-themes.svg?label=release&amp;amp;style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="http://melpa.org/#/doom-themes" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/621f359fdf4553c5252a571785de56a85d53010b/687474703a2f2f6d656c70612e6f72672f7061636b616765732f646f6f6d2d7468656d65732d62616467652e7376673f7374796c653d666c61742d737175617265" alt="MELPA" data-canonical-src="http://melpa.org/packages/doom-themes-badge.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://travis-ci.org/hlissner/emacs-doom-themes" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/987575e312ca7a4f68f417530468a5f6e190cccf/68747470733a2f2f7472617669732d63692e6f72672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6272616e63683d6d6173746572267374796c653d666c61742d737175617265" alt="Build Status" data-canonical-src="https://travis-ci.org/hlissner/emacs-doom-themes.svg?branch=master&amp;amp;style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="./LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/95e854794a291423fe200ec681d09ed63f9fadd1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d677265656e2e7376673f7374796c653d666c61742d737175617265" alt="MIT" data-canonical-src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-doom-themes" class="anchor" aria-hidden="true" href="#doom-themes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;doom-themes&lt;/h1&gt;
-&lt;p&gt;DOOM Themes is an opinionated UI plugin and pack of themes extracted from my
-&lt;a href="https://github.com/hlissner/.emacs.d"&gt;emacs.d&lt;/a&gt;, inspired by some of my favorite color themes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots"&gt;See the screenshots.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#install"&gt;Install&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#common-issues"&gt;Common Issues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#contribute"&gt;Contribute&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Color themes:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Flagship themes
-&lt;ul class="contains-task-list"&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-one&lt;/code&gt;: doom-themes' flagship theme, inspired by &lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s One Dark themes&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-one-light&lt;/code&gt;: light version of doom-one (thanks to &lt;a href="https://github.com/ztlevi"&gt;ztlevi&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-vibrant&lt;/code&gt;: a slightly more vibrant version of &lt;code&gt;doom-one&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Additional themes
-&lt;ul class="contains-task-list"&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-acario-dark&lt;/code&gt;: an original dark theme (thanks to &lt;a href="https://github.com/gagbo"&gt;gagbo&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-acario-light&lt;/code&gt;: an original light theme (thanks to &lt;a href="https://github.com/gagbo"&gt;gagbo&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-city-lights&lt;/code&gt;: based on Atom's &lt;a href="http://citylights.xyz/" rel="nofollow"&gt;City lights&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-challenger-deep&lt;/code&gt;: based on Vim's &lt;a href="https://github.com/challenger-deep-theme/vim"&gt;Challenger deep&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-dracula&lt;/code&gt;: an implementation of &lt;a href="https://draculatheme.com/" rel="nofollow"&gt;Dracula&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-fairy-floss&lt;/code&gt;: a candy colored Sublime theme by &lt;a href="https://sailorhg.github.io/fairyfloss/" rel="nofollow"&gt;sailorhg&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-gruvbox&lt;/code&gt;: adapted from Mohretz's &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; (thanks to &lt;a href="https://github.com/JongW"&gt;JongW&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-Iosvkem&lt;/code&gt;: adapted from &lt;a href="https://github.com/neutaaaaan/iosvkem"&gt;Iosvkem&lt;/a&gt; (thanks to &lt;a href="https://github.com/neutaaaaan"&gt;neutaaaaan&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-laserwave&lt;/code&gt;: an clean 80's synthwave / outrun theme inspired by VS Code's &lt;a href="https://github.com/Jaredk3nt/laserwave"&gt;laserwave&lt;/a&gt; (thanks to &lt;a href="https://github.com/hyakt"&gt;hyakt&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-molokai&lt;/code&gt;: based on Textmate's monokai&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-moonlight&lt;/code&gt; ported from VS Code's &lt;a href="https://github.com/atomiks/moonlight-vscode-theme"&gt;Moonlight Theme&lt;/a&gt; (thanks to &lt;a href="https://github.com/Brettm12345"&gt;Brettm12345&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-nord&lt;/code&gt;: dark variant of &lt;a href="https://www.nordtheme.com/" rel="nofollow"&gt;Nord&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-nord-light&lt;/code&gt;: light variant of &lt;a href="https://www.nordtheme.com/" rel="nofollow"&gt;Nord&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-nova&lt;/code&gt;: adapted from &lt;a href="https://trevordmiller.com/projects/nova" rel="nofollow"&gt;Nova&lt;/a&gt; (thanks to &lt;a href="https://github.com/bigardone"&gt;bigardone&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-oceanic-next&lt;/code&gt;: adapted from &lt;a href="https://github.com/voronianski/oceanic-next-color-scheme"&gt;Oceanic Next&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/juanwolf"&gt;juanwolf&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-opera&lt;/code&gt;: an original dark theme (thanks to &lt;a href="https://github.com/jwintz"&gt;jwintz&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-opera-light&lt;/code&gt;: an original light theme (thanks to &lt;a href="https://github.com/jwintz"&gt;jwintz&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-outrun-electric&lt;/code&gt;: a neon colored theme inspired in VS Code's &lt;a href="https://github.com/samrap/outrun-theme-vscode"&gt;Outrun Electric&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-palenight&lt;/code&gt; adapted from &lt;a href="https://github.com/equinusocio/vsc-material-theme"&gt;Material Themes&lt;/a&gt; (thanks to &lt;a href="https://github.com/Brettm12345"&gt;Brettm12345&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-peacock&lt;/code&gt;: based on Peacock from &lt;a href="http://daylerees.github.io/" rel="nofollow"&gt;daylerees' themes&lt;/a&gt; (thanks to &lt;a href="https://github.com/teesloane"&gt;teesloane&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-snazzy&lt;/code&gt;: a dark theme inspired in Atom's &lt;a href="https://github.com/sindresorhus/hyper-snazzy"&gt;Hyper Snazzy&lt;/a&gt; (thanks to &lt;a href="https://github.com/ar1a"&gt;ar1a&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-solarized-dark&lt;/code&gt;: dark variant of &lt;a href="http://ethanschoonover.com/solarized" rel="nofollow"&gt;Solarized&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-solarized-light&lt;/code&gt;: light variant of &lt;a href="http://ethanschoonover.com/solarized" rel="nofollow"&gt;Solarized&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-sourcerer&lt;/code&gt;: based on &lt;a href="https://github.com/xero/sourcerer.vim"&gt;Sourcerer&lt;/a&gt; (thanks to &lt;a href="https://github.com/defphil"&gt;defphil&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-spacegrey&lt;/code&gt;: &lt;a href="http://kkga.github.io/spacegray/" rel="nofollow"&gt;I'm sure you've heard of it&lt;/a&gt; (thanks to &lt;a href="https://github.com/teesloane"&gt;teesloane&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-tomorrow-day&lt;/code&gt;: &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow&lt;/a&gt;'s light variant (thanks to &lt;a href="https://github.com/emacswatcher"&gt;emacswatcher&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-tomorrow-night&lt;/code&gt;: one of the dark variants of &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow&lt;/a&gt; (thanks to &lt;a href="https://github.com/emacswatcher"&gt;emacswatcher&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-wilmersdorf&lt;/code&gt;: port of Ian Pan's &lt;a href="https://github.com/ianpan870102/wilmersdorf-emacs-theme"&gt;Wilmersdorf&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; &lt;code&gt;doom-mono-dark&lt;/code&gt; / &lt;code&gt;doom-mono-light&lt;/code&gt;: a minimalistic, monochromatic theme&lt;/li&gt;
-&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; &lt;code&gt;doom-tron&lt;/code&gt;: based on Tron Legacy from &lt;a href="http://daylerees.github.io/" rel="nofollow"&gt;daylerees' themes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Included features:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;(doom-themes-visual-bell-config)&lt;/code&gt;: flash the mode-line when the Emacs bell
-rings (i.e. an error occurs).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;(doom-themes-neotree-config)&lt;/code&gt;: a &lt;a href="https://github.com/jaypei/emacs-neotree"&gt;neotree&lt;/a&gt; theme that takes after &lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s
-file drawer, and is simpler than the built in icon theme in neotree
-(&lt;a href="/../screenshots/doom-one.png"&gt;screenshot&lt;/a&gt;, &lt;a href="https://github.com/hlissner/emacs-doom-themes/wiki"&gt;more details&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;This requires &lt;code&gt;all-the-icons&lt;/code&gt;' fonts to be installed: &lt;code&gt;M-x all-the-icons-install-fonts&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;(doom-themes-treemacs-config)&lt;/code&gt;: two &lt;a href="https://github.com/Alexander-Miller/treemacs"&gt;treemacs&lt;/a&gt; icon themes, one that takes after
-&lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s, and a second more colorful implementation (WIP).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;(doom-themes-org-config)&lt;/code&gt;: corrects and improves some of org-mode's native
-fontification.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Re-set &lt;code&gt;org-todo' &amp;amp; &lt;/code&gt;org-headline-done' faces to make them respect
-underlying faces (i.e. don't override the :height or :background of
-underlying faces).&lt;/li&gt;
-&lt;li&gt;Make statistic cookies respect underlying faces.&lt;/li&gt;
-&lt;li&gt;Fontify item bullets (make them stand out)&lt;/li&gt;
-&lt;li&gt;Fontify item checkboxes (and when they're marked done), like TODOs that
-are marked done.&lt;/li&gt;
-&lt;li&gt;Fontify dividers/separators (5+ dashes)&lt;/li&gt;
-&lt;li&gt;Fontify #hashtags and @at-tags, for personal convenience; see
-&lt;code&gt;doom-org-special-tags&lt;/code&gt; to disable this.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Resources that may interest you:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;To get dimmed sidebars and brighter source buffers (like in the
-&lt;a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots"&gt;screenshots&lt;/a&gt;), see &lt;a href="https://github.com/hlissner/emacs-solaire-mode"&gt;solaire-mode&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;To get line number highlighting for &lt;code&gt;nlinum&lt;/code&gt;, set
-&lt;code&gt;nlinum-highlight-current-line&lt;/code&gt; to non-nil (or see &lt;a href="https://melpa.org/#/hlinum" rel="nofollow"&gt;hlinum&lt;/a&gt; for &lt;code&gt;linum&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AnthonyDiGirolamo"&gt;AnthonyDiGirolamo&lt;/a&gt; added doom-one (&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes/raw/master/screenshots/airline-doom-one-theme.png"&gt;screenshot&lt;/a&gt;) and
-doom-molokai (&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes/raw/master/screenshots/airline-doom-molokai-theme.png"&gt;screenshot&lt;/a&gt;) skins to
-&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes"&gt;airline-themes&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I'm working on making my modeline more accessible. In the meantime, check
-out &lt;a href="https://github.com/hlissner/.emacs.d/blob/master/modules/ui/doom-modeline/config.el"&gt;my mode-line configuration&lt;/a&gt; in my &lt;a href="https://github.com/hlissner/.emacs.d"&gt;emacs.d&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;M-x package-install RET doom-themes&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;A comprehensive configuration example:&lt;/p&gt;
-&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;require&lt;/span&gt; &lt;span class="pl-c1"&gt;'doom-themes&lt;/span&gt;)
+&lt;/article&gt;&lt;/div&gt;</description><author>melpa</author><guid isPermaLink="false">https://github.com/melpa/melpa</guid><pubDate>Sat, 09 Nov 2019 00:06:00 GMT</pubDate></item><item><title>emacs-helm/helm #7 in Emacs Lisp, This month</title><link>https://github.com/emacs-helm/helm</link><description>&lt;p&gt;&lt;i&gt;Emacs incremental completion and selection narrowing framework&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;&amp;lt;!-- -*- html -*- --&amp;gt;
+&amp;lt;p align="center"&amp;gt;&amp;lt;a href="&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt&amp;quot;&amp;gt;&amp;lt;img" rel="nofollow"&gt;http://www.gnu.org/licenses/gpl-3.0.txt"&amp;gt;&amp;lt;img&lt;/a&gt; src="&lt;a href="https://img.shields.io/badge/license-GPL_3-green.svg" rel="nofollow"&gt;https://img.shields.io/badge/license-GPL_3-green.svg&lt;/a&gt;" alt="License GPL 3" /&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;a href="&lt;a href="https://melpa.org/#/helm&amp;quot;&amp;gt;&amp;lt;img" rel="nofollow"&gt;https://melpa.org/#/helm"&amp;gt;&amp;lt;img&lt;/a&gt; alt="MELPA" src="&lt;a href="https://melpa.org/packages/helm-badge.svg&amp;quot;/&amp;gt;&amp;lt;/a" rel="nofollow"&gt;https://melpa.org/packages/helm-badge.svg"/&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt;
+  &amp;lt;a href="&lt;a href="https://stable.melpa.org/#/helm&amp;quot;&amp;gt;&amp;lt;img" rel="nofollow"&gt;https://stable.melpa.org/#/helm"&amp;gt;&amp;lt;img&lt;/a&gt; alt="MELPA Stable" src="&lt;a href="https://stable.melpa.org/packages/helm-badge.svg&amp;quot;/&amp;gt;&amp;lt;/a" rel="nofollow"&gt;https://stable.melpa.org/packages/helm-badge.svg"/&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt;
+&amp;lt;/p&amp;gt;
 
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Global settings (defaults)&lt;/span&gt;
-(&lt;span class="pl-k"&gt;setq&lt;/span&gt; doom-themes-enable-bold &lt;span class="pl-c1"&gt;t&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; if nil, bold is universally disabled&lt;/span&gt;
-      doom-themes-enable-italic &lt;span class="pl-c1"&gt;t&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; if nil, italics is universally disabled&lt;/span&gt;
 
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; may have their own settings.&lt;/span&gt;
-(&lt;span class="pl-c1"&gt;load-theme&lt;/span&gt; &lt;span class="pl-c1"&gt;'doom-one&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+&amp;lt;h1 align="center"&amp;gt;Emacs-Helm&amp;lt;/h1&amp;gt;
 
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Enable flashing mode-line on errors&lt;/span&gt;
-(doom-themes-visual-bell-config)
+&amp;lt;p align="center"&amp;gt;
+  &amp;lt;img src="&lt;a href="https://avatars3.githubusercontent.com/u/1541688?v=3&amp;amp;amp;s=200" rel="nofollow"&gt;https://avatars3.githubusercontent.com/u/1541688?v=3&amp;amp;amp;s=200&lt;/a&gt;" alt="Emacs-helm" title="" /&amp;gt;
+&amp;lt;/p&amp;gt;
 
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Enable custom neotree theme (all-the-icons must be installed!)&lt;/span&gt;
-(doom-themes-neotree-config)
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; or for treemacs users&lt;/span&gt;
-(&lt;span class="pl-k"&gt;setq&lt;/span&gt; doom-themes-treemacs-theme &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;doom-colors&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; use the colorful treemacs theme&lt;/span&gt;
-(doom-themes-treemacs-config)
+***
+&amp;lt;p align="justify"&amp;gt;
+  &amp;lt;b&amp;gt;Helm&amp;lt;/b&amp;gt; is an Emacs framework for incremental completions and narrowing
+  selections. It provides an easy-to-use API for developers wishing to build
+  their own Helm applications in Emacs, powerful search tools and dozens of
+  already built-in commands providing completion to almost everything.
+  It is a must-have for anyone using Emacs as a main work environment.
+  Helm has been widely adopted by many Emacs power-users.
+  It is available in Melpa and can be easily installed from the Emacs package manager.
+&amp;lt;/p&amp;gt;
 
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Corrects (and improves) org-mode's native fontification.&lt;/span&gt;
-(doom-themes-org-config)&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://github.com/hlissner/emacs-doom-themes/wiki"&gt;The wiki contains details for customizing the neotree theme&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-common-issues" class="anchor" aria-hidden="true" href="#common-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common Issues&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;If you use &lt;code&gt;nlinum&lt;/code&gt; or &lt;code&gt;linum&lt;/code&gt; in org-mode, the larger headline sizes in some
-themes &lt;a href="https://github.com/hlissner/emacs-doom-themes/issues/86"&gt;could bleed into the line numbers&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Fix this by setting :height explicitly for your line number plugins, after
-you've loaded the theme. e.g.&lt;/p&gt;
-&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;let&lt;/span&gt; ((height (&lt;span class="pl-c1"&gt;face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'default&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt;)))
-  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; for all linum/nlinum users&lt;/span&gt;
-  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'linum&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height)
-  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; only for &lt;span class="pl-smi"&gt;`linum-relative'&lt;/span&gt; users:&lt;/span&gt;
-  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'linum-relative-current-face&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height)
-  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; only for &lt;span class="pl-smi"&gt;`nlinum-relative'&lt;/span&gt; users:&lt;/span&gt;
-  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'nlinum-relative-current-face&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height))&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h2&gt;
-&lt;p&gt;I welcome contributions of any kind, be they pull requests, bug reports or elisp
-pointers. Additional theme and plugin support requests are welcome too.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/emacs-doom-themes</guid><pubDate>Fri, 08 Nov 2019 00:07:00 GMT</pubDate></item></channel></rss>
+***
+&amp;lt;p align="center"&amp;gt;
+  &amp;lt;a href="&lt;a href="https://emacs-helm.github.io/helm/&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Homepage&amp;lt;/b&amp;gt;&amp;lt;/a" rel="nofollow"&gt;https://emacs-helm.github.io/helm/"&amp;gt;&amp;lt;b&amp;gt;Homepage&amp;lt;/b&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt; |
+  &amp;lt;a href="&lt;a href="https://github.com/emacs-helm/helm/releases&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Downloads&amp;lt;/b&amp;gt;&amp;lt;/a"&gt;https://github.com/emacs-helm/helm/releases"&amp;gt;&amp;lt;b&amp;gt;Downloads&amp;lt;/b&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt; |
+  &amp;lt;a href="&lt;a href="https://github.com/emacs-helm/helm/wiki#install&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Get"&gt;https://github.com/emacs-helm/helm/wiki#install"&amp;gt;&amp;lt;b&amp;gt;Get&lt;/a&gt; started&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt; |
+  &amp;lt;a href="&lt;a href="https://github.com/emacs-helm/helm/wiki&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Helm"&gt;https://github.com/emacs-helm/helm/wiki"&amp;gt;&amp;lt;b&amp;gt;Helm&lt;/a&gt; wiki&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt; |
+  &amp;lt;a href="&lt;a href="https://github.com/emacs-helm/helm/wiki/FAQ&amp;quot;&amp;gt;&amp;lt;b&amp;gt;FAQ&amp;lt;/b&amp;gt;&amp;lt;/a"&gt;https://github.com/emacs-helm/helm/wiki/FAQ"&amp;gt;&amp;lt;b&amp;gt;FAQ&amp;lt;/b&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt;
+&amp;lt;/p&amp;gt;
+
+***
+
+&amp;lt;p align="center"&amp;gt;
+  Maintaining Helm requires a &amp;lt;a href="&lt;a href="https://github.com/emacs-helm/helm/commits?author=thierryvolpiatto&amp;quot;&amp;gt;&amp;lt;b&amp;gt;lot"&gt;https://github.com/emacs-helm/helm/commits?author=thierryvolpiatto"&amp;gt;&amp;lt;b&amp;gt;lot&lt;/a&gt; of work&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;,
+  which I have done voluntarily since 2011.&amp;lt;br&amp;gt;
+  As it demands lots of my time it gets increasingly difficult&amp;lt;br&amp;gt;
+  maintaining it without financial help.&amp;lt;br&amp;gt;
+  Thanks to all the people that are helping or have helped Helm development,&amp;lt;br&amp;gt;
+  but they are actually too few to continue serenely.&amp;lt;br&amp;gt;
+  By the way, after the release of version 3.0 I will have to stop&amp;lt;br&amp;gt;
+  developing Helm seriously until I get enough financial support,&amp;lt;br&amp;gt;
+  only providing a minimal bugfix maintenance.&amp;lt;br&amp;gt;
+  Thanks for your understanding&amp;lt;br&amp;gt;
+  If you feel Helm is making your daily work easier,&amp;lt;br&amp;gt;
+  &amp;lt;b&amp;gt;please consider making a donation.&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;
+
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p align="center"&amp;gt;
+  &amp;lt;i&amp;gt;Thank you! &amp;amp;mdash; Thierry Volpiatto&amp;lt;/i&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;div align="center"&amp;gt;
+  &amp;lt;a href="&lt;a href="https://www.paypal.me/tvolpiatto" rel="nofollow"&gt;https://www.paypal.me/tvolpiatto&lt;/a&gt;"&amp;gt;
+    &amp;lt;img title="Donate with Paypal"
+         alt="Donate with Paypal"
+         style="height: 50px; width: auto;"
+         src="&lt;a href="https://github.com/emacs-helm/helm/blob/master/images/paypal.png?raw=true&amp;quot;&amp;gt;&amp;lt;/a"&gt;https://github.com/emacs-helm/helm/blob/master/images/paypal.png?raw=true"&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt;
+  &amp;amp;nbsp;&amp;amp;nbsp;
+  &amp;lt;a href="&lt;a href="https://patreon.com/preview/30231724baf440fabe80d44d0ee77067" rel="nofollow"&gt;https://patreon.com/preview/30231724baf440fabe80d44d0ee77067&lt;/a&gt;"&amp;gt;
+    &amp;lt;img title="Donate monthly using Patreon"
+         alt="Donate monthly using Patreon"
+         style="height: 50px; width: auto;"
+         src="&lt;a href="https://github.com/emacs-helm/helm/blob/master/images/patreon-25x.png?raw=true&amp;quot;&amp;gt;&amp;lt;/a"&gt;https://github.com/emacs-helm/helm/blob/master/images/patreon-25x.png?raw=true"&amp;gt;&amp;lt;/a&lt;/a&gt;&amp;gt;
+  &amp;amp;nbsp;&amp;amp;nbsp;
+&amp;lt;/div&amp;gt;
+
+***
+
+&amp;lt;p align="center"&amp;gt;
+  Helm in action searching with &amp;lt;a href="&lt;a href="https://github.com/ggreer/the_silver_searcher&amp;quot;&amp;lt;b&amp;gt;Grep"&gt;https://github.com/ggreer/the_silver_searcher"&amp;lt;b&amp;gt;Grep&lt;/a&gt; Ag&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;
+                                   &amp;lt;/p&amp;gt;
+
+&amp;lt;p align="center"&amp;gt;
+  &amp;lt;img src="&lt;a href="https://github.com/emacs-helm/helm/blob/master/images/helm-grep-ag-persistent.png?raw=true"&gt;https://github.com/emacs-helm/helm/blob/master/images/helm-grep-ag-persistent.png?raw=true&lt;/a&gt;" alt="Emacs-helm grep ag" title="" /&amp;gt;
+&amp;lt;/p&amp;gt;
+
+[badge-license]: &lt;a href="https://img.shields.io/badge/license-GPL_3-green.svg" rel="nofollow"&gt;https://img.shields.io/badge/license-GPL_3-green.svg&lt;/a&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>emacs-helm</author><guid isPermaLink="false">https://github.com/emacs-helm/helm</guid><pubDate>Sat, 09 Nov 2019 00:07:00 GMT</pubDate></item></channel></rss>

@@ -1,2 +1,958 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, This week</title><link>https://github.com/trending/haskell?since=weekly</link><description>The top repositories on GitHub for haskell, measured weekly</description><pubDate>Fri, 08 Nov 2019 01:07:49 GMT</pubDate><lastBuildDate>Fri, 08 Nov 2019 01:07:49 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Haskell, This week today</title><pubDate>Fri, 08 Nov 2019 01:07:49 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, This week</title><link>https://github.com/trending/haskell?since=weekly</link><description>The top repositories on GitHub for haskell, measured weekly</description><pubDate>Sat, 09 Nov 2019 01:04:22 GMT</pubDate><lastBuildDate>Sat, 09 Nov 2019 01:04:22 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>PostgREST/postgrest #1 in Haskell, This week</title><link>https://github.com/PostgREST/postgrest</link><description>&lt;p&gt;&lt;i&gt;REST API for any Postgres database&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="static/bigger-logo.png"&gt;&lt;img src="static/bigger-logo.png" alt="Logo" title="Logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.patreon.com/postgrest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b58bca7cfd49bb287996ec5e9507f6c553ffedcf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d50617472656f6e2d6f72616e67652e7376673f636f6c6f72423d463936383534" alt="Donate" data-canonical-src="https://img.shields.io/badge/Donate-Patreon-orange.svg?colorB=F96854" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.paypal.me/postgrest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d5d24e33e2f4b6fe53987419a21b203c03789a8f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d50617950616c2d677265656e2e737667" alt="Donate" data-canonical-src="https://img.shields.io/badge/Donate-PayPal-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://heroku.com/deploy?template=https://github.com/PostgREST/postgrest" rel="nofollow"&gt;
+&lt;img src="https://camo.githubusercontent.com/28f245d50718262bcedf4ac848d3796b91016046/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545322538362539315f4465706c6f795f746f2d4865726f6b752d3730353662662e737667" alt="Deploy" data-canonical-src="https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://gitter.im/begriffs/postgrest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/287041f1718973583e609d554a404c31cde5c403/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769747465722d6a6f696e253230636861742532302545322538362539322d627269676874677265656e2e737667" alt="Join the chat at https://gitter.im/begriffs/postgrest" data-canonical-src="https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://postgrest.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c7b42a2a9563380b01c0f92d8a41413c4c0047ef/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63732d6c61746573742d627269676874677265656e2e7376673f7374796c653d666c6174" alt="Docs" data-canonical-src="https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://hub.docker.com/r/postgrest/postgrest/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d7e55dc1eb22ebc1784a8b48e1a88b7594b40e00/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f706f737467726573742f706f737467726573742e737667" alt="Docker Stars" data-canonical-src="https://img.shields.io/docker/pulls/postgrest/postgrest.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/PostgREST/postgrest/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/455bc284b2fb56609b34548e1982be5701246913/68747470733a2f2f636972636c6563692e636f6d2f67682f506f737467524553542f706f737467726573742f747265652f6d61737465722e7376673f7374796c653d736869656c64" alt="Build Status" data-canonical-src="https://circleci.com/gh/PostgREST/postgrest/tree/master.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://hackage.haskell.org/package/postgrest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/28a718bacfb8ddfcdda28adfe98bbb0c1b3d5b05/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f706f737467726573742e7376673f6c6162656c3d6861636b616765" alt="Hackage docs" data-canonical-src="https://img.shields.io/hackage/v/postgrest.svg?label=hackage" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PostgREST serves a fully RESTful API from any existing PostgreSQL
+database. It provides a cleaner, more standards-compliant, faster
+API than you are likely to write from scratch.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-sponsors" class="anchor" aria-hidden="true" href="#sponsors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sponsors&lt;/h2&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td align="center" valign="middle"&gt;
+        &lt;a href="https://www.cybertec-postgresql.com/en/" rel="nofollow"&gt;
+          &lt;img width="222px" src="static/cybertec.png" style="max-width:100%;"&gt;
+        &lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td align="center" valign="middle"&gt;
+        &lt;a href="https://www.2ndquadrant.com/en/?utm_campaign=External%20Websites&amp;amp;utm_source=PostgREST&amp;amp;utm_medium=Logo" rel="nofollow"&gt;
+          &lt;img width="222px" src="static/2ndquadrant.png" style="max-width:100%;"&gt;
+        &lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td align="center" valign="middle"&gt;
+        &lt;a href="https://tryretool.com/?utm_source=sponsor&amp;amp;utm_campaign=postgrest" rel="nofollow"&gt;
+          &lt;img width="222px" src="static/retool.png" style="max-width:100%;"&gt;
+        &lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Big thanks to our sponsors! You can join them by supporting PostgREST on &lt;a href="https://www.patreon.com/postgrest" rel="nofollow"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the binary (&lt;a href="https://github.com/PostgREST/postgrest/releases/latest"&gt;latest release&lt;/a&gt;)
+for your platform.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Invoke for help:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;postgrest --help&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="http://postgrest.org" rel="nofollow"&gt;Documentation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Latest documentation is at &lt;a href="http://postgrest.org" rel="nofollow"&gt;postgrest.org&lt;/a&gt;. You can contribute to the docs in &lt;a href="https://github.com/PostgREST/postgrest-docs"&gt;PostgREST/postgrest-docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-performance" class="anchor" aria-hidden="true" href="#performance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Performance&lt;/h2&gt;
+&lt;p&gt;TLDR; subsecond response times for up to 2000 requests/sec on Heroku
+free tier. If you're used to servers written in interpreted languages,
+prepare to be pleasantly surprised by PostgREST performance.&lt;/p&gt;
+&lt;p&gt;Three factors contribute to the speed. First the server is written
+in &lt;a href="https://www.haskell.org/" rel="nofollow"&gt;Haskell&lt;/a&gt; using the
+&lt;a href="http://www.yesodweb.com/blog/2011/03/preliminary-warp-cross-language-benchmarks" rel="nofollow"&gt;Warp&lt;/a&gt;
+HTTP server (aka a compiled language with lightweight threads).
+Next it delegates as much calculation as possible to the database
+including&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Serializing JSON responses directly in SQL&lt;/li&gt;
+&lt;li&gt;Data validation&lt;/li&gt;
+&lt;li&gt;Authorization&lt;/li&gt;
+&lt;li&gt;Combined row counting and retrieval&lt;/li&gt;
+&lt;li&gt;Data post in single command (&lt;code&gt;returning *&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally it uses the database efficiently with the
+&lt;a href="https://nikita-volkov.github.io/hasql-benchmarks/" rel="nofollow"&gt;Hasql&lt;/a&gt; library
+by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keeping a pool of db connections&lt;/li&gt;
+&lt;li&gt;Using the PostgreSQL binary protocol&lt;/li&gt;
+&lt;li&gt;Being stateless to allow horizontal scaling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-security" class="anchor" aria-hidden="true" href="#security"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Security&lt;/h2&gt;
+&lt;p&gt;PostgREST &lt;a href="http://postgrest.org/en/stable/auth.html" rel="nofollow"&gt;handles
+authentication&lt;/a&gt; (via JSON Web
+Tokens) and delegates authorization to the role information defined in
+the database. This ensures there is a single declarative source of truth
+for security.  When dealing with the database the server assumes the
+identity of the currently authenticated user, and for the duration of
+the connection cannot do anything the user themselves couldn't. Other
+forms of authentication can be built on top of the JWT primitive. See
+the docs for more information.&lt;/p&gt;
+&lt;p&gt;PostgreSQL 9.5 supports true &lt;a href="http://www.postgresql.org/docs/9.5/static/ddl-rowsecurity.html" rel="nofollow"&gt;row-level
+security&lt;/a&gt;.
+In previous versions it can be simulated with triggers and
+security-barrier views. Because the possible queries to the database
+are limited to certain templates using
+&lt;a href="http://blog.2ndquadrant.com/how-do-postgresql-security_barrier-views-work/" rel="nofollow"&gt;leakproof&lt;/a&gt;
+functions, the trigger workaround does not compromise row-level
+security.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-versioning" class="anchor" aria-hidden="true" href="#versioning"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Versioning&lt;/h2&gt;
+&lt;p&gt;A robust long-lived API needs the freedom to exist in multiple
+versions. PostgREST does versioning through database schemas. This
+allows you to expose tables and views without making the app brittle.
+Underlying tables can be superseded and hidden behind public facing
+views.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-self-documentation" class="anchor" aria-hidden="true" href="#self-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self-documentation&lt;/h2&gt;
+&lt;p&gt;PostgREST uses the &lt;a href="https://openapis.org/" rel="nofollow"&gt;OpenAPI&lt;/a&gt; standard to
+generate up-to-date documentation for APIs. You can use a tool like
+&lt;a href="https://github.com/swagger-api/swagger-ui"&gt;Swagger-UI&lt;/a&gt; to render
+interactive documentation for demo requests against the live API server.&lt;/p&gt;
+&lt;p&gt;This project uses HTTP to communicate other metadata as well.  For
+instance the number of rows returned by an endpoint is reported by -
+and limited with - range headers. More about
+&lt;a href="http://begriffs.com/posts/2014-03-06-beyond-http-header-links.html" rel="nofollow"&gt;that&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-data-integrity" class="anchor" aria-hidden="true" href="#data-integrity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Integrity&lt;/h2&gt;
+&lt;p&gt;Rather than relying on an Object Relational Mapper and custom
+imperative coding, this system requires you put declarative constraints
+directly into your database. Hence no application can corrupt your
+data (including your API server).&lt;/p&gt;
+&lt;p&gt;The PostgREST exposes HTTP interface with safeguards to prevent
+surprises, such as enforcing idempotent PUT requests.&lt;/p&gt;
+&lt;p&gt;See examples of &lt;a href="http://www.tutorialspoint.com/postgresql/postgresql_constraints.htm" rel="nofollow"&gt;PostgreSQL
+constraints&lt;/a&gt;
+and the &lt;a href="http://postgrest.org/en/stable/api.html" rel="nofollow"&gt;API guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supporting-development" class="anchor" aria-hidden="true" href="#supporting-development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supporting development&lt;/h2&gt;
+&lt;p&gt;You can help PostgREST ongoing maintenance and development by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Making a regular donation through Patreon &lt;a href="https://www.patreon.com/postgrest" rel="nofollow"&gt;https://www.patreon.com/postgrest&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternatively, you can make a one-time donation via Paypal &lt;a href="https://www.paypal.me/postgrest" rel="nofollow"&gt;https://www.paypal.me/postgrest&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Every donation will be spent on making PostgREST better for the whole community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;The PostgREST organization is grateful to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The project &lt;a href="https://github.com/PostgREST/postgrest/blob/master/BACKERS.md"&gt;sponsors and backers&lt;/a&gt; who support PostgREST's development.&lt;/li&gt;
+&lt;li&gt;The project &lt;a href="https://github.com/PostgREST/postgrest/graphs/contributors"&gt;contributors&lt;/a&gt; who have improved PostgREST immensely with their code
+and good judgement. See more details in the &lt;a href="https://github.com/PostgREST/postgrest/blob/master/CHANGELOG.md"&gt;changelog&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The cool logo came from &lt;a href="https://github.com/casalaina"&gt;Mikey Casalaina&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>PostgREST</author><guid isPermaLink="false">https://github.com/PostgREST/postgrest</guid><pubDate>Sat, 09 Nov 2019 00:01:00 GMT</pubDate></item><item><title>github/semantic #2 in Haskell, This week</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; is a Haskell library and command line tool for parsing, analyzing, and comparing source code.&lt;/p&gt;
+&lt;p&gt;In a hurry? Check out our documentation of &lt;a href="docs/examples.md"&gt;example uses for the &lt;code&gt;semantic&lt;/code&gt; command line tool&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Table of Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#language-support"&gt;Language support&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#development"&gt;Development&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#technology-and-architecture"&gt;Technology and architecture&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#licensing"&gt;Licensing&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Run &lt;code&gt;semantic --help&lt;/code&gt; for complete list of up-to-date options.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-parse" class="anchor" aria-hidden="true" href="#parse"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parse&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic parse ([--sexpression] | [--json] | [--json-graph] | [--symbols]
+                      | [--dot] | [--show] | [--quiet]) [FILES...]
+  Generate parse trees for path(s)
+
+Available options:
+  --sexpression            Output s-expression parse trees (default)
+  --json                   Output JSON parse trees
+  --json-graph             Output JSON adjacency list
+  --symbols                Output JSON symbol list
+  --dot                    Output DOT graph parse trees
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --quiet                  Don't produce output, but show timing stats
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-diff" class="anchor" aria-hidden="true" href="#diff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diff&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic diff ([--sexpression] | [--json] | [--json-graph] | [--toc] |
+                     [--dot] | [--show]) [FILE_A] [FILE_B]
+  Compute changes between paths
+
+Available options:
+  --sexpression            Output s-expression diff tree (default)
+  --json                   Output JSON diff trees
+  --json-graph             Output JSON diff trees
+  --toc                    Output JSON table of contents diff summary
+  --dot                    Output the diff as a DOT graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-graph" class="anchor" aria-hidden="true" href="#graph"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic graph ([--imports] | [--calls]) [--packages] ([--dot] | [--json]
+                      | [--show]) ([--root DIR] [--exclude-dir DIR]
+                      DIR:LANGUAGE | FILE | --language ARG (FILES... | --stdin))
+  Compute a graph for a directory or from a top-level entry point module
+
+Available options:
+  --imports                Compute an import graph (default)
+  --calls                  Compute a call graph
+  --packages               Include a vertex for the package, with edges from it
+                           to each module
+  --dot                    Output in DOT graph format (default)
+  --json                   Output JSON graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --root DIR               Root directory of project. Optional, defaults to
+                           entry file/directory.
+  --exclude-dir DIR        Exclude a directory (e.g. vendor)
+  --language ARG           The language for the analysis.
+  --stdin                  Read a list of newline-separated paths to analyze
+                           from stdin.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-language-support" class="anchor" aria-hidden="true" href="#language-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language support&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Priority&lt;/th&gt;
+&lt;th align="left"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Parse&lt;/th&gt;
+&lt;th align="center"&gt;Assign&lt;/th&gt;
+&lt;th align="center"&gt;Diff&lt;/th&gt;
+&lt;th align="center"&gt;ToC&lt;/th&gt;
+&lt;th align="center"&gt;Symbols&lt;/th&gt;
+&lt;th align="center"&gt;Import graph&lt;/th&gt;
+&lt;th align="center"&gt;Call graph&lt;/th&gt;
+&lt;th align="center"&gt;Control flow graph&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Ruby&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;JavaScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td align="left"&gt;TypeScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td align="left"&gt;Python&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td align="left"&gt;Go&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;PHP&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Java&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSON&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSX&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Haskell&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Markdown&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt; — Supported&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt; — Partial support&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt; — Under development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; requires at least GHC 8.6.4 and Cabal 2.4. We strongly recommend using &lt;a href="https://www.haskell.org/ghcup/" rel="nofollow"&gt;&lt;code&gt;ghcup&lt;/code&gt;&lt;/a&gt; to sandbox GHC versions, as GHC packages installed through your OS's package manager may not install statically-linked versions of the GHC boot libraries.&lt;/p&gt;
+&lt;p&gt;We use &lt;code&gt;cabal's&lt;/code&gt; &lt;a href="https://www.haskell.org/cabal/users-guide/nix-local-build-overview.html" rel="nofollow"&gt;Nix-style local builds&lt;/a&gt; for development. To get started quickly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone git@github.com:github/semantic.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; semantic
+script/bootstrap
+cabal v2-build
+cabal v2-test
+cabal v2-run semantic -- --help&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;stack&lt;/code&gt; as a build tool is not officially supported; there is an unofficial &lt;a href="https://gist.github.com/jkachmar/f200caee83280f1f25e9cfa2dd2b16bb"&gt;&lt;code&gt;stack.yaml&lt;/code&gt;&lt;/a&gt; available, though we cannot make guarantees as to its stability.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-technology-and-architecture" class="anchor" aria-hidden="true" href="#technology-and-architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technology and architecture&lt;/h2&gt;
+&lt;p&gt;Architecturally, &lt;code&gt;semantic&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reads blobs.&lt;/li&gt;
+&lt;li&gt;Generates parse trees for those blobs with &lt;a href="https://github.com/tree-sitter/tree-sitter"&gt;tree-sitter&lt;/a&gt; (an incremental parsing system for programming tools).&lt;/li&gt;
+&lt;li&gt;Assigns those trees into a generalized representation of syntax.&lt;/li&gt;
+&lt;li&gt;Performs analysis, computes diffs, or just returns parse trees.&lt;/li&gt;
+&lt;li&gt;Renders output in one of many supported formats.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Semantic leverages a number of interesting algorithms and techniques:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Myers' algorithm (SES) as described in the paper &lt;a href="http://www.xmailserver.org/diff2.pdf" rel="nofollow"&gt;&lt;em&gt;An O(ND) Difference Algorithm and Its Variations&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RWS as described in the paper &lt;a href="https://db.in.tum.de/~finis/papers/RWS-Diff.pdf" rel="nofollow"&gt;&lt;em&gt;RWS-Diff: Flexible and Efficient Change Detection in Hierarchical Data&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open unions and &lt;a href="http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf" rel="nofollow"&gt;data types à la carte&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An implementation of &lt;a href="https://plum-umd.github.io/abstracting-definitional-interpreters/" rel="nofollow"&gt;Abstracting Definitional Interpreters&lt;/a&gt; extended to work with an à la carte representation of syntax terms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributions" class="anchor" aria-hidden="true" href="#contributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h2&gt;
+&lt;p&gt;Contributions are welcome!  Please see our &lt;a href="CONTRIBUTING.md"&gt;contribution
+guidelines&lt;/a&gt; and our &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&lt;/a&gt; for
+details on how to participate in our community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;Semantic is licensed under the &lt;a href="LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Sat, 09 Nov 2019 00:02:00 GMT</pubDate></item><item><title>commercialhaskell/stack #3 in Haskell, This week</title><link>https://github.com/commercialhaskell/stack</link><description>&lt;p&gt;&lt;i&gt;The Haskell Tool Stack&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-the-haskell-tool-stack" class="anchor" aria-hidden="true" href="#the-haskell-tool-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Haskell Tool Stack&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.azure.com/commercialhaskell/stack/_build/latest?definitionId=1?branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/af4cca4edf474a6f58facb78f28c458582e3cd91/68747470733a2f2f6465762e617a7572652e636f6d2f636f6d6d65726369616c6861736b656c6c2f737461636b2f5f617069732f6275696c642f7374617475732f636f6d6d65726369616c6861736b656c6c2e737461636b3f6272616e63684e616d653d6d6173746572" alt="Build Status" data-canonical-src="https://dev.azure.com/commercialhaskell/stack/_apis/build/status/commercialhaskell.stack?branchName=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/commercialhaskell/stack/releases"&gt;&lt;img src="https://camo.githubusercontent.com/949c785e33be7450335e66fe7a388030b897d225/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f636f6d6d65726369616c6861736b656c6c2f737461636b2e737667" alt="Release" data-canonical-src="https://img.shields.io/github/release/commercialhaskell/stack.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/commercialhaskell/stack?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5accf8346d42c7a8ca7adafc9ee28535907a4ed1/68747470733a2f2f6261646765732e6769747465722e696d2f636f6d6d65726369616c6861736b656c6c2f737461636b2e737667" alt="Join the chat at https://gitter.im/commercialhaskell/stack" data-canonical-src="https://badges.gitter.im/commercialhaskell/stack.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stack is a cross-platform program for developing Haskell projects. It is intended for Haskellers both new and experienced.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="http://haskellstack.org" rel="nofollow"&gt;haskellstack.org&lt;/a&gt; or the &lt;a href="./doc"&gt;doc&lt;/a&gt; directory for more
+information.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-subsystem-maintainers" class="anchor" aria-hidden="true" href="#subsystem-maintainers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Subsystem maintainers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GHCJS - &lt;a href="https://github.com/matchwood"&gt;Matchwood&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NOTE: GHCJS support is considered experimental. In Stack 2.0, we are
+removing support for building GHCJS itself; links will be added to
+this README for information on separate tools. Issues on GHCJS may be
+closed as not supported, and the next major Stack release may remove
+GHCJS support entirely.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>commercialhaskell</author><guid isPermaLink="false">https://github.com/commercialhaskell/stack</guid><pubDate>Sat, 09 Nov 2019 00:03:00 GMT</pubDate></item><item><title>haskell/haskell-ide-engine #4 in Haskell, This week</title><link>https://github.com/haskell/haskell-ide-engine</link><description>&lt;p&gt;&lt;i&gt;The engine for haskell ide-integration. Not an IDE&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-haskell-ide-engine-hie" class="anchor" aria-hidden="true" href="#haskell-ide-engine-hie"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Haskell IDE Engine (HIE)&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/haskell/haskell-ide-engine/raw/master/logos/HIE_logo_512.png"&gt;&lt;img src="https://github.com/haskell/haskell-ide-engine/raw/master/logos/HIE_logo_512.png" width="256" align="right" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/haskell/haskell-ide-engine/blob/master/LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/e91a929ad3a9026c2d11216147f47b02866c9577/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d425344332d677265656e2e7376673f64756d6d79" alt="License BSD3" data-canonical-src="https://img.shields.io/badge/license-BSD3-green.svg?dummy" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/haskell/haskell-ide-engine/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5c7ec34b3056999d94f373bf8596a8c3ee85a94c/68747470733a2f2f696d672e736869656c64732e696f2f636972636c6563692f70726f6a6563742f6769746875622f6861736b656c6c2f6861736b656c6c2d6964652d656e67696e652f6d61737465722e737667" alt="CircleCI" data-canonical-src="https://img.shields.io/circleci/project/github/haskell/haskell-ide-engine/master.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/Bubba/haskell-ide-engine-74xec" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e965bc22ff5d28e244bde14e2923b6d6d7215caa/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f36686974376d7876676472616f3371303f7376673d74727565" alt="AppVeyor" data-canonical-src="https://ci.appveyor.com/api/projects/status/6hit7mxvgdrao3q0?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.codetriage.com/haskell/haskell-ide-engine" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2e91fe3f3c3461f8d7a5aaf33fb79d5ed0be4d42/68747470733a2f2f7777772e636f64657472696167652e636f6d2f6861736b656c6c2f6861736b656c6c2d6964652d656e67696e652f6261646765732f75736572732e737667" alt="Open Source Helpers" data-canonical-src="https://www.codetriage.com/haskell/haskell-ide-engine/badges/users.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This project aims to be &lt;strong&gt;the universal interface&lt;/strong&gt; to &lt;strong&gt;a growing number of Haskell tools&lt;/strong&gt;, providing a &lt;strong&gt;full-featured and easy to query backend&lt;/strong&gt; for editors and IDEs that require Haskell-specific functionality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We are currently focusing on using the &lt;a href="https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md"&gt;Language Server Protocol&lt;/a&gt; as the interface via which
+we talk to clients.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#haskell-ide-engine-hie"&gt;Haskell IDE Engine (HIE)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#installation-with-nix"&gt;Installation with Nix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-on-archlinux"&gt;Installation on ArchLinux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-from-source"&gt;Installation from source&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#common-pre-requirements"&gt;Common pre-requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linux-specific-pre-requirements"&gt;Linux-specific pre-requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windows-specific-pre-requirements-optional"&gt;Windows-specific pre-requirements (optional)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-the-source-code"&gt;Download the source code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building"&gt;Building&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#install-specific-ghc-version"&gt;Install specific GHC Version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#multiple-versions-of-hie-optional"&gt;Multiple versions of HIE (optional)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuration"&gt;Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#editor-integration"&gt;Editor Integration&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-vs-code"&gt;Using HIE with VS Code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#using-vs-code-with-nix"&gt;Using VS Code with Nix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-sublime-text"&gt;Using HIE with Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-vim-or-neovim"&gt;Using HIE with Vim or Neovim&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#Coc"&gt;Coc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vim-plug"&gt;vim-plug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#clone-the-languageclient-neovim-repo"&gt;Clone the LanguageClient-neovim repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sample-vimrc"&gt;Sample &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-atom"&gt;Using HIE with Atom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-emacs"&gt;Using HIE with Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-spacemacs"&gt;Using HIE with Spacemacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-spacemacs-on-nix-based-projects"&gt;Using HIE with Spacemacs on Nix Based Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-hie-with-oni"&gt;Using HIE with Oni&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#docs-on-hovercompletion"&gt;Docs on hover/completion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#planned-features"&gt;Planned Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#its-time-to-join-the-project"&gt;It's time to join the project!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#documentation"&gt;Documentation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#architecture"&gt;Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#emacs"&gt;Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#parse-errors-file-state-going-out-of-sync"&gt;Parse errors, file state going out of sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#emacs-direnv-loads-environment-too-late"&gt;&lt;code&gt;emacs-direnv&lt;/code&gt; loads environment too late&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#dyld-on-macos"&gt;DYLD on macOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#macos-got-error-while-installing-ghc-861-or-862---dyld-library-not-loaded-usrlocaloptgmpliblibgmp10dylib"&gt;macOS: Got error while installing GHC 8.6.1 or 8.6.2 - dyld: Library not loaded: /usr/local/opt/gmp/lib/libgmp.10.dylib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#macos-got-error-while-processing-diagnostics-unable-to-load-package-integer-gmp-1020"&gt;macOS: Got error while processing diagnostics: unable to load package &lt;code&gt;integer-gmp-1.0.2.0&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cannot-satisfy--package-id-package"&gt;cannot satisfy -package-id &amp;lt;package&amp;gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#is-package-base-x"&gt;Is &amp;lt;package&amp;gt; base-x?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#is-there-a-hash--after-package"&gt;Is there a hash (#) after &amp;lt;package&amp;gt;?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#otherwise"&gt;Otherwise&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#nix-cabal-helper-no-such-file-or-directory"&gt;Nix: cabal-helper, No such file or directory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#liquid-haskell"&gt;Liquid Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Supports plain GHC projects, cabal projects(sandboxed and non sandboxed) and stack projects&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fast due to caching of compile info&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uses LSP, so should be easy to integrate with a wide selection of editors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Diagnostics via hlint and GHC warnings/errors&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2aa08d157d92b2953bd86cfd35769fc0c42fb994/68747470733a2f2f692e696d6775722e636f6d2f3176716d3465462e676966"&gt;&lt;img src="https://camo.githubusercontent.com/2aa08d157d92b2953bd86cfd35769fc0c42fb994/68747470733a2f2f692e696d6775722e636f6d2f3176716d3465462e676966" alt="Diagnostics" data-canonical-src="https://i.imgur.com/1vqm4eF.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code actions and quick fixes via apply-refact&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6d201abf03ddb9be69ab213e92d8402b87a1e682/68747470733a2f2f692e696d6775722e636f6d2f644272536935462e676966"&gt;&lt;img src="https://camo.githubusercontent.com/6d201abf03ddb9be69ab213e92d8402b87a1e682/68747470733a2f2f692e696d6775722e636f6d2f644272536935462e676966" alt="Apply Refact" data-canonical-src="https://i.imgur.com/dBrSi5F.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type information and documentation(via haddock) on hover&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/61086adf657ed1e8cb4e23dc4c8ad2993535261f/68747470733a2f2f692e696d6775722e636f6d2f41637659524f762e676966"&gt;&lt;img src="https://camo.githubusercontent.com/61086adf657ed1e8cb4e23dc4c8ad2993535261f/68747470733a2f2f692e696d6775722e636f6d2f41637659524f762e676966" alt="Hover" data-canonical-src="https://i.imgur.com/AcvYROv.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jump to definition&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1df0430f4d616f03d5fb0cc2f566cf90ed4caf92/68747470733a2f2f692e696d6775722e636f6d2f6b6d435532427a2e676966"&gt;&lt;img src="https://camo.githubusercontent.com/1df0430f4d616f03d5fb0cc2f566cf90ed4caf92/68747470733a2f2f692e696d6775722e636f6d2f6b6d435532427a2e676966" alt="Find Def" data-canonical-src="https://i.imgur.com/kmCU2Bz.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all top level definitions&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/98474da5d6fb94d6b50afc17159c07c7076ab5fd/68747470733a2f2f692e696d6775722e636f6d2f474572635971702e676966"&gt;&lt;img src="https://camo.githubusercontent.com/98474da5d6fb94d6b50afc17159c07c7076ab5fd/68747470733a2f2f692e696d6775722e636f6d2f474572635971702e676966" alt="Doc Symbols" data-canonical-src="https://i.imgur.com/GErcYqp.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Highlight references in document&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/321a7f27cb6a831de91a318d83ebd765785e0c9e/68747470733a2f2f692e696d6775722e636f6d2f594c6a487332732e676966"&gt;&lt;img src="https://camo.githubusercontent.com/321a7f27cb6a831de91a318d83ebd765785e0c9e/68747470733a2f2f692e696d6775722e636f6d2f594c6a487332732e676966" alt="Doc Highlight" data-canonical-src="https://i.imgur.com/YLjHs2s.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Completion&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f17cb65e337a168f3f99ab8c4749b076beee47ed/68747470733a2f2f692e696d6775722e636f6d2f775236494a374d2e676966"&gt;&lt;img src="https://camo.githubusercontent.com/f17cb65e337a168f3f99ab8c4749b076beee47ed/68747470733a2f2f692e696d6775722e636f6d2f775236494a374d2e676966" alt="Completion" data-canonical-src="https://i.imgur.com/wR6IJ7M.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Formatting via brittany&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/816777ff5ea8c4e5615579dc2ca14a895ad43420/68747470733a2f2f692e696d6775722e636f6d2f63715a5a3848432e676966"&gt;&lt;img src="https://camo.githubusercontent.com/816777ff5ea8c4e5615579dc2ca14a895ad43420/68747470733a2f2f692e696d6775722e636f6d2f63715a5a3848432e676966" alt="Formatting" data-canonical-src="https://i.imgur.com/cqZZ8HC.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renaming via HaRe&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9037127f728c4eec37a72e25b191c7b7a5a71c0b/68747470733a2f2f692e696d6775722e636f6d2f7a3033473261352e676966"&gt;&lt;img src="https://camo.githubusercontent.com/9037127f728c4eec37a72e25b191c7b7a5a71c0b/68747470733a2f2f692e696d6775722e636f6d2f7a3033473261352e676966" alt="Renaming" data-canonical-src="https://i.imgur.com/z03G2a5.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add packages to cabal and hpack package files&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/2488460/43036067-20ae5964-8cf2-11e8-9951-4fd849b3f735.gif"&gt;&lt;img src="https://user-images.githubusercontent.com/2488460/43036067-20ae5964-8cf2-11e8-9951-4fd849b3f735.gif" alt="Adding package to hpack" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1387653/40287051-b6f987fe-5c5f-11e8-980f-ed7bfa1b2aec.gif"&gt;&lt;img src="https://user-images.githubusercontent.com/1387653/40287051-b6f987fe-5c5f-11e8-980f-ed7bfa1b2aec.gif" alt="Adding import &amp;amp; deps" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Typo quick fixes&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/2488460/43036093-746ae176-8cf2-11e8-8b2d-59799b21c283.gif"&gt;&lt;img src="https://user-images.githubusercontent.com/2488460/43036093-746ae176-8cf2-11e8-8b2d-59799b21c283.gif" alt="Quick fixes" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add missing imports (via hsimport)&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/2488460/43036113-9bb5d5b0-8cf2-11e8-8e32-20952378cf2b.gif"&gt;&lt;img src="https://user-images.githubusercontent.com/2488460/43036113-9bb5d5b0-8cf2-11e8-8e32-20952378cf2b.gif" alt="Missing imports" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-installation-with-nix" class="anchor" aria-hidden="true" href="#installation-with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation with Nix&lt;/h3&gt;
+&lt;p&gt;Follow the instructions at &lt;a href="https://github.com/Infinisil/all-hies"&gt;https://github.com/Infinisil/all-hies&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation-on-archlinux" class="anchor" aria-hidden="true" href="#installation-on-archlinux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation on ArchLinux&lt;/h3&gt;
+&lt;p&gt;An &lt;a href="https://aur.archlinux.org/packages/haskell-ide-engine/" rel="nofollow"&gt;haskell-ide-engine&lt;/a&gt; package is available on the AUR.&lt;/p&gt;
+&lt;p&gt;Using &lt;a href="https://github.com/aurapm/aura"&gt;Aura&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# aura -A haskell-ide-engine
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-installation-from-source" class="anchor" aria-hidden="true" href="#installation-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation from source&lt;/h3&gt;
+&lt;p&gt;To install HIE, you need stack version &amp;gt;= 1.7.1.&lt;/p&gt;
+&lt;p&gt;HIE builds from source code, so there's a couple of extra steps.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-common-pre-requirements" class="anchor" aria-hidden="true" href="#common-pre-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common pre-requirements&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;stack&lt;/code&gt; must be in your PATH&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt; must be in your PATH&lt;/li&gt;
+&lt;li&gt;Stack local bin directory must be in your PATH. Get it with &lt;code&gt;stack path --local-bin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tip: you can quickly check if some command is in your path by running the command.
+If you receive some meaningful output instead of "command not found"-like message
+then it means you have the command in PATH.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-linux-specific-pre-requirements" class="anchor" aria-hidden="true" href="#linux-specific-pre-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux-specific pre-requirements&lt;/h4&gt;
+&lt;p&gt;On Linux you will need install a couple of extra libraries (for Unicode (&lt;a href="http://site.icu-project.org/" rel="nofollow"&gt;ICU&lt;/a&gt;) and &lt;a href="https://www.gnu.org/software/ncurses/" rel="nofollow"&gt;NCURSES&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Debian/Ubuntu&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sudo apt install libicu-dev libtinfo-dev libgmp-dev&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Fedora&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sudo dnf install libicu-devel ncurses-devel&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-windows-specific-pre-requirements-optional" class="anchor" aria-hidden="true" href="#windows-specific-pre-requirements-optional"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows-specific pre-requirements (optional)&lt;/h4&gt;
+&lt;p&gt;In order to avoid problems with long paths on Windows you can do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Edit the group policy: set "Enable Win32 long paths" to "Enabled" (Works
+only for Windows 10).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the &lt;code&gt;haskell-ide-engine&lt;/code&gt; to the root of your logical drive (e.g. to
+&lt;code&gt;C:\hie&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a id="user-content-download-the-source-code" class="anchor" aria-hidden="true" href="#download-the-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download the source code&lt;/h4&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; haskell-ide-engine&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-building" class="anchor" aria-hidden="true" href="#building"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building&lt;/h4&gt;
+&lt;p&gt;Uses the &lt;a href="https://shakebuild.com/" rel="nofollow"&gt;shake&lt;/a&gt; build system for predictable builds.&lt;/p&gt;
+&lt;p&gt;Note, on first invocation of the build script, a GHC is being installed for execution.
+The GHC used for the &lt;code&gt;install.hs&lt;/code&gt; can be adjusted in &lt;code&gt;shake.yaml&lt;/code&gt; by using a different resolver.&lt;/p&gt;
+&lt;p&gt;Available commands can be seen with:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack ./install.hs &lt;span class="pl-c1"&gt;help&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Remember, this will take time to download a Stackage-LTS and an appropriate GHC. However, afterwards all commands should work as expected.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-install-via-cabal" class="anchor" aria-hidden="true" href="#install-via-cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install via cabal&lt;/h5&gt;
+&lt;p&gt;The install-script can be invoked via &lt;code&gt;cabal&lt;/code&gt; instead of &lt;code&gt;stack&lt;/code&gt; with the command&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;cabal v2-run ./install.hs --project-file install/shake.project &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;target&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Running the script with cabal on windows requires a cabal version greater or equal to &lt;code&gt;3.0.0.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Unfortunately, it is still required to have &lt;code&gt;stack&lt;/code&gt; installed so that the install-script can locate the &lt;code&gt;local-bin&lt;/code&gt; directory (on Linux &lt;code&gt;~/.local/bin&lt;/code&gt;) and copy the &lt;code&gt;hie&lt;/code&gt; binaries to &lt;code&gt;hie-x.y.z&lt;/code&gt;, which is required for the &lt;code&gt;hie-wrapper&lt;/code&gt; to function as expected.&lt;/p&gt;
+&lt;p&gt;For brevity, only the &lt;code&gt;stack&lt;/code&gt;-based commands are presented in the following sections.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-install-cabal-using-stack" class="anchor" aria-hidden="true" href="#install-cabal-using-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install cabal using stack&lt;/h5&gt;
+&lt;p&gt;Although you can use hie for stack based projects (those which have a &lt;code&gt;stack.yaml&lt;/code&gt; in the project base directory) without having cabal installed, you will need it for cabal based projects (with only a &lt;code&gt;&amp;lt;projectName&amp;gt;.cabal&lt;/code&gt; file or a &lt;code&gt;cabal.project&lt;/code&gt; one in the project base directory).&lt;/p&gt;
+&lt;p&gt;You can install an appropiate cabal version using stack by running:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack ./install.hs stack-install-cabal&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;&lt;a id="user-content-install-specific-ghc-version" class="anchor" aria-hidden="true" href="#install-specific-ghc-version"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install specific GHC Version&lt;/h5&gt;
+&lt;p&gt;Install &lt;strong&gt;Nightly&lt;/strong&gt; (and hoogle docs):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack ./install.hs hie-8.6.4
+stack ./install.hs build-data&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Install &lt;strong&gt;LTS&lt;/strong&gt; (and hoogle docs):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack ./install.hs hie-8.4.4
+stack ./install.hs build-data&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The Haskell IDE Engine can also be built with &lt;code&gt;cabal new-build&lt;/code&gt; instead of &lt;code&gt;stack build&lt;/code&gt;.
+This has the advantage that you can decide how the GHC versions have been installed.
+However, this approach does currently not work for windows due to a missing feature upstream.
+To see what GHC versions are available, the command &lt;code&gt;stack install.hs cabal-ghcs&lt;/code&gt; can be used.
+It will list all GHC versions that are on the path and their respective installation directory.
+If you think, this list is incomplete, you can try to modify the PATH variable, such that the executables can be found.
+Note, that the targets &lt;code&gt;cabal-build&lt;/code&gt;, &lt;code&gt;cabal-build-data&lt;/code&gt; and &lt;code&gt;cabal-build-all&lt;/code&gt; depend on the found GHC versions.
+They install Haskell IDE Engine only for the found GHC versions.&lt;/p&gt;
+&lt;p&gt;An example output is:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; stack install.hs cabal-ghcs
+&lt;span class="pl-k"&gt;******************************************************************&lt;/span&gt;
+Found the following GHC paths:
+ghc-8.4.4: /opt/bin/ghc-8.4.4
+ghc-8.6.2: /opt/bin/ghc-8.6.2
+
+&lt;span class="pl-k"&gt;******************************************************************&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If your desired ghc has been found, you use it to install Haskell IDE Engine.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack install.hs cabal-hie-8.4.4
+stack install.hs cabal-build-data&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To install HIE for all GHC versions that are present on your system, use:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack ./install.hs cabal-build-all&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In general, targets that use &lt;code&gt;cabal&lt;/code&gt; instead of &lt;code&gt;stack&lt;/code&gt; are prefixed with &lt;code&gt;cabal-*&lt;/code&gt; and are identical to their counterpart, except they do not install a GHC if it is missing but fail.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-multiple-versions-of-hie-optional" class="anchor" aria-hidden="true" href="#multiple-versions-of-hie-optional"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multiple versions of HIE (optional)&lt;/h5&gt;
+&lt;p&gt;If you installed multiple versions of HIE then you will need to use a wrapper script.
+Wrapper script will analyze your project, find suitable version of HIE and launch it.
+Enable it by editing VS Code settings like that:&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageServerHaskell.useCustomHieWrapper&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageServerHaskell.useCustomHieWrapperPath&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hie-wrapper&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;There are some settings that can be configured via a &lt;code&gt;settings.json&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageServerHaskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hlintOn&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-ii"&gt;Boolean&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;maxNumberOfProblems&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-ii"&gt;Number&lt;/span&gt;
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;diagnosticsDebounceDuration&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-ii"&gt;:&lt;/span&gt; &lt;span class="pl-ii"&gt;Number&lt;/span&gt;
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;liquidOn&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                    &lt;span class="pl-ii"&gt;:&lt;/span&gt; &lt;span class="pl-ii"&gt;Bool&lt;/span&gt; &lt;span class="pl-ii"&gt;(default&lt;/span&gt; &lt;span class="pl-ii"&gt;False)&lt;/span&gt;
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;completionSnippetsOn&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;        &lt;span class="pl-ii"&gt;:&lt;/span&gt; &lt;span class="pl-ii"&gt;Bool&lt;/span&gt; &lt;span class="pl-ii"&gt;(default&lt;/span&gt; &lt;span class="pl-ii"&gt;True)&lt;/span&gt;
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;formatOnImportOn&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;            &lt;span class="pl-ii"&gt;:&lt;/span&gt; &lt;span class="pl-ii"&gt;Bool&lt;/span&gt; &lt;span class="pl-ii"&gt;(default&lt;/span&gt; &lt;span class="pl-ii"&gt;True)&lt;/span&gt;
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;formattingProvider&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;          &lt;span class="pl-ii"&gt;:&lt;/span&gt; &lt;span class="pl-ii"&gt;String&lt;/span&gt; &lt;span class="pl-ii"&gt;(default&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;brittany&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+                                                &lt;span class="pl-ii"&gt;alternate&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;floskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-ii"&gt;)&lt;/span&gt;
+    }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;VS Code: These settings will show up in the settings window&lt;/li&gt;
+&lt;li&gt;LanguageClient-neovim: Create this file in &lt;code&gt;$projectdir/.vim/settings.json&lt;/code&gt; or set &lt;code&gt;g:LanguageClient_settingsPath&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-editor-integration" class="anchor" aria-hidden="true" href="#editor-integration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Editor Integration&lt;/h2&gt;
+&lt;p&gt;Note to editor integrators: there is now a &lt;code&gt;hie-wrapper&lt;/code&gt; executable, which is installed alongside the &lt;code&gt;hie&lt;/code&gt; executable.  When this is invoked in the project root directory, it attempts to work out the GHC version used in the project, and then launch the matching &lt;code&gt;hie&lt;/code&gt; executable.&lt;/p&gt;
+&lt;p&gt;All of the editor integrations assume that you have already installed HIE (see above) and that &lt;code&gt;stack&lt;/code&gt; put the &lt;code&gt;hie&lt;/code&gt; binary in your path (usually &lt;code&gt;~/.local/bin&lt;/code&gt; on linux and macOS).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-vs-code" class="anchor" aria-hidden="true" href="#using-hie-with-vs-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with VS Code&lt;/h3&gt;
+&lt;p&gt;Install from
+&lt;a href="https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server" rel="nofollow"&gt;the VSCode marketplace&lt;/a&gt;, or manually from the repository &lt;a href="https://github.com/alanz/vscode-hie-server"&gt;vscode-hie-server&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-using-vs-code-with-nix" class="anchor" aria-hidden="true" href="#using-vs-code-with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using VS Code with Nix&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;.config/nixpkgs/config.nix&lt;/code&gt; sample:&lt;/p&gt;
+&lt;div class="highlight highlight-source-nix"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;with&lt;/span&gt; &lt;span class="pl-c1"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&amp;lt;nixpkgs&amp;gt;&lt;/span&gt; {};
+
+&lt;span class="pl-k"&gt;let&lt;/span&gt;
+  &lt;span class="pl-e"&gt;hie&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; (&lt;span class="pl-c1"&gt;import&lt;/span&gt; (&lt;span class="pl-v"&gt;fetchFromGitHub&lt;/span&gt; {
+                   &lt;span class="pl-e"&gt;owner&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;domenkozar&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+                   &lt;span class="pl-e"&gt;repo&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hie-nix&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+                   &lt;span class="pl-e"&gt;rev&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;e3113da&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+                   &lt;span class="pl-e"&gt;sha256&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;05rkzjvzywsg66iafm84xgjlkf27yfbagrdcb8sc9fd59hrzyiqk&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+                 }) {})&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;hie84&lt;/span&gt;;
+&lt;span class="pl-k"&gt;in&lt;/span&gt;
+{
+  &lt;span class="pl-e"&gt;allowUnfree&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;;
+  &lt;span class="pl-e"&gt;packageOverrides&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;pkgs&lt;/span&gt;: &lt;span class="pl-k"&gt;rec&lt;/span&gt; {
+
+    &lt;span class="pl-e"&gt;vscode&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;pkgs&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;vscode&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;overrideDerivation&lt;/span&gt; (&lt;span class="pl-smi"&gt;old&lt;/span&gt;: {
+      &lt;span class="pl-e"&gt;postFixup&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;''&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-s"&gt;        wrapProgram $out/bin/code --prefix PATH : &lt;span class="pl-mi"&gt;&lt;span class="pl-pse"&gt;${&lt;/span&gt;&lt;span class="pl-v"&gt;lib&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;makeBinPath&lt;/span&gt; [&lt;span class="pl-v"&gt;hie&lt;/span&gt;]&lt;span class="pl-pse"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-s"&gt;      &lt;span class="pl-pds"&gt;''&lt;/span&gt;&lt;/span&gt;;
+    });
+
+  };
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-sublime-text" class="anchor" aria-hidden="true" href="#using-hie-with-sublime-text"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Sublime Text&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure HIE is installed (see above) and that the directory stack put the &lt;code&gt;hie&lt;/code&gt; binary in is in your path
+&lt;ul&gt;
+&lt;li&gt;(usually &lt;code&gt;~/.local/bin&lt;/code&gt; on unix)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Install &lt;a href="https://packagecontrol.io/packages/LSP" rel="nofollow"&gt;LSP&lt;/a&gt; using &lt;a href="https://packagecontrol.io/" rel="nofollow"&gt;Package Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;From Sublime Text, press Command+Shift+P and search for Preferences: LSP Settings&lt;/li&gt;
+&lt;li&gt;Paste in these settings. Make sure to change the command path to your &lt;code&gt;hie&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;{
+"clients": {
+  "haskell-ide-engine": {
+    "command": ["hie"],
+    "scopes": ["source.haskell"],
+    "syntaxes": ["Packages/Haskell/Haskell.sublime-syntax"],
+    "languageId": "haskell",
+  },
+},
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now open a Haskell project with Sublime Text. You should have these features available to you:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Errors are underlined in red&lt;/li&gt;
+&lt;li&gt;LSP: Show Diagnostics will show a list of hints and errors&lt;/li&gt;
+&lt;li&gt;LSP: Format Document will prettify the file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-vim-or-neovim" class="anchor" aria-hidden="true" href="#using-hie-with-vim-or-neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Vim or Neovim&lt;/h3&gt;
+&lt;p&gt;As above, make sure HIE is installed.
+Then you can use &lt;a href="https://github.com/neoclide/coc.nvim"&gt;Coc&lt;/a&gt;, &lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;
+or any other vim Langauge server protocol client.
+Coc is recommend since it is the only complete LSP implementation for Vim and Neovim and offers snippets and floating documentation out of the box.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-coc" class="anchor" aria-hidden="true" href="#coc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Coc&lt;/h4&gt;
+&lt;p&gt;Follow Coc's &lt;a href="https://github.com/neoclide/coc.nvim"&gt;installation instructions&lt;/a&gt;,
+Then issue &lt;code&gt;:CocConfig&lt;/code&gt; and add the following to your Coc config file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hie-wrapper&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; [
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    ],
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; [
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    ],
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;initializationOptions&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageServerHaskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+      }
+    },
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-languageclient-neovim" class="anchor" aria-hidden="true" href="#languageclient-neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LanguageClient-neovim&lt;/h4&gt;
+&lt;h5&gt;&lt;a id="user-content-vim-plug" class="anchor" aria-hidden="true" href="#vim-plug"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim-plug&lt;/h5&gt;
+&lt;p&gt;If you use &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;, then you can do this by e.g.,
+including the following line in the Plug section of your &lt;code&gt;init.vim&lt;/code&gt; or &lt;code&gt;~/.vimrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': './install.sh'
+    \ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and issuing a &lt;code&gt;:PlugInstall&lt;/code&gt; command within Neovim or Vim.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-clone-the-languageclient-neovim-repo" class="anchor" aria-hidden="true" href="#clone-the-languageclient-neovim-repo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Clone the LanguageClient-neovim repo&lt;/h5&gt;
+&lt;p&gt;As an alternative to using &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt; shown above, clone &lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;
+into &lt;code&gt;~/.vim/pack/XXX/start/&lt;/code&gt;, where &lt;code&gt;XXX&lt;/code&gt; is just a name for your "plugin suite".&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-sample-vimrc" class="anchor" aria-hidden="true" href="#sample-vimrc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sample &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/h5&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;set&lt;/span&gt; &lt;span class="pl-c1"&gt;rtp&lt;/span&gt;&lt;span class="pl-k"&gt;+=&lt;/span&gt;&lt;span class="pl-c1"&gt;~/.vim/pack/XXX/start/LanguageClient-neovim&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_serverCommands&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hie-wrapper&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;] }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You'll probably want to add some mappings for common commands:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;nnoremap&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;F5&amp;gt;&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient_contextMenu&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;lk :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_hover&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;lg&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_definition&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;lr&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_rename&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;lf&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_formatting&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;lb&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_references&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;la&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_codeAction&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;map&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;ls&lt;/span&gt; :&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;LanguageClient#textDocument_documentSymbol&lt;/span&gt;()&lt;span class="pl-c1"&gt;&amp;lt;CR&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use &lt;kbd&gt;Ctrl+x&lt;/kbd&gt;&lt;kbd&gt;Ctrl+o&lt;/kbd&gt; (&lt;code&gt;&amp;lt;C-x&amp;gt;&amp;lt;C-o&amp;gt;&lt;/code&gt;) to open up the auto-complete menu,
+or for asynchronous auto-completion, follow the setup instructions on
+&lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you'd like diagnostics to be highlighted, add a highlight group for &lt;code&gt;ALEError&lt;/code&gt;/&lt;code&gt;ALEWarning&lt;/code&gt;/&lt;code&gt;ALEInfo&lt;/code&gt;,
+or customize &lt;code&gt; g:LanguageClient_diagnosticsDisplay&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;hi&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt; &lt;span class="pl-v"&gt;ALEError&lt;/span&gt; &lt;span class="pl-v"&gt;Error&lt;/span&gt;
+&lt;span class="pl-c1"&gt;hi&lt;/span&gt; Warning &lt;span class="pl-c1"&gt;term&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;underline&lt;/span&gt; cterm&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;underline&lt;/span&gt; ctermfg&lt;span class="pl-k"&gt;=&lt;/span&gt;Yellow &lt;span class="pl-c1"&gt;gui&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;undercurl&lt;/span&gt; guisp&lt;span class="pl-k"&gt;=&lt;/span&gt;Gold
+&lt;span class="pl-c1"&gt;hi&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt; &lt;span class="pl-v"&gt;ALEWarning&lt;/span&gt; &lt;span class="pl-v"&gt;Warning&lt;/span&gt;
+&lt;span class="pl-c1"&gt;hi&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt; &lt;span class="pl-v"&gt;ALEInfo&lt;/span&gt; &lt;span class="pl-v"&gt;SpellCap&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you're finding that the server isn't starting at the correct project root,
+it may also be helpful to also specify root markers:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_rootMarkers&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*.cabal&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;stack.yaml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-atom" class="anchor" aria-hidden="true" href="#using-hie-with-atom"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Atom&lt;/h3&gt;
+&lt;p&gt;Make sure HIE is installed, then install the two Atom packages &lt;a href="https://atom.io/packages/atom-ide-ui" rel="nofollow"&gt;atom-ide-ui&lt;/a&gt; and &lt;a href="https://atom.io/packages/ide-haskell-hie" rel="nofollow"&gt;ide-haskell-hie&lt;/a&gt;,&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ apm install language-haskell atom-ide-ui ide-haskell-hie&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-emacs" class="anchor" aria-hidden="true" href="#using-hie-with-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Emacs&lt;/h3&gt;
+&lt;p&gt;Install HIE along with the following emacs packages:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/emacs-lsp/lsp-mode"&gt;lsp-mode&lt;/a&gt;
+&lt;a href="https://github.com/emacs-lsp/lsp-ui"&gt;lsp-ui&lt;/a&gt;
+&lt;a href="https://github.com/emacs-lsp/lsp-haskell"&gt;lsp-haskell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Make sure to follow the instructions in the README of each of these packages.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-spacemacs" class="anchor" aria-hidden="true" href="#using-hie-with-spacemacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Spacemacs&lt;/h3&gt;
+&lt;p&gt;Install HIE, and then add the following to your &lt;code&gt;.spacemacs&lt;/code&gt; config,&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-en"&gt;dotspacemacs&lt;/span&gt;/layers ()
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;...&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (setq-default
+   &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; ...&lt;/span&gt;
+   dotspacemacs-configuration-layers
+   '(
+     lsp
+     (haskell :variables &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Or optionally just haskell without the variables.&lt;/span&gt;
+              haskell-completion-backend 'ghci
+              haskell-process-type 'stack-ghci)
+     )
+   dotspacemacs-additional-packages '(
+      (lsp-haskell :location (recipe :fetcher github :repo &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;emacs-lsp/lsp-haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+      )
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; ...&lt;/span&gt;
+    ))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and then activate &lt;a href="https://github.com/emacs-lsp/lsp-haskell"&gt;&lt;code&gt;lsp-haskell&lt;/code&gt;&lt;/a&gt; in your &lt;code&gt;user-config&lt;/code&gt; section,&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-en"&gt;dotspacemacs&lt;/span&gt;/user-config ()
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;...&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;setq&lt;/span&gt; lsp-haskell-process-path-hie &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hie-wrapper&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  (require 'lsp-haskell)
+  (add-hook 'haskell-mode-hook &lt;span class="pl-c1"&gt;#'lsp&lt;/span&gt;)
+  )&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you should be able to use HIE in Spacemacs. I still recommend checking out &lt;a href="https://github.com/emacs-lsp/lsp-ui"&gt;lsp-ui&lt;/a&gt; and &lt;a href="https://github.com/emacs-lsp/lsp-mode"&gt;lsp-mode&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-spacemacs-on-nix-based-projects" class="anchor" aria-hidden="true" href="#using-hie-with-spacemacs-on-nix-based-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Spacemacs on Nix Based Projects&lt;/h3&gt;
+&lt;p&gt;If you use HIE with spacemacs on nix-built haskell projects, you may want to try
+out &lt;a href="https://github.com/benkolera/spacemacs-hie-nix"&gt;this spacemacs layer&lt;/a&gt;. It
+has installation instructions which includes a nix expression to install
+everything that hie needs in your environment. It wraps the hie binary calls to
+use nix-sandbox to find the closest ancestor directory that has nixfiles.&lt;/p&gt;
+&lt;p&gt;It is still pretty new and may change drastically as the author understands the
+lsp, lsp-ui, lsp-haskell, hie stack a bit better. PRs and feedback are very
+welcome on the layer's repo if you find it useful and/or lacking in some way.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-hie-with-oni" class="anchor" aria-hidden="true" href="#using-hie-with-oni"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using HIE with Oni&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.onivim.io/" rel="nofollow"&gt;Oni&lt;/a&gt; (a Neovim GUI) added built-in support for HIE, using stack, in &lt;a href="https://github.com/onivim/oni/pull/1918/files"&gt;#1918&lt;/a&gt;. If you need to change the configuration for HIE, you can overwrite the following settings in your &lt;code&gt;~/.config/oni/config.tsx&lt;/code&gt; file (accessible via the command palette and &lt;code&gt;Configuration: Edit User Config&lt;/code&gt;),&lt;/p&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; &lt;span class="pl-k"&gt;const&lt;/span&gt; &lt;span class="pl-c1"&gt;configuration&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;language.haskell.languageServer.command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stack&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;language.haskell.languageServer.arguments&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;exec&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hie&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;],
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;language.haskell.languageServer.rootFiles&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.git&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;],
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;language.haskell.languageServer.configuration&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {},
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-docs-on-hovercompletion" class="anchor" aria-hidden="true" href="#docs-on-hovercompletion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docs on hover/completion&lt;/h2&gt;
+&lt;p&gt;HIE supports fetching docs from haddock on hover. It will fallback on using a hoogle db(generally located in ~/.hoogle on linux)
+if no haddock documentation is found.&lt;/p&gt;
+&lt;p&gt;To generate haddock documentation for stack projects:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; your-project-directory
+$ stack haddock --keep-going&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To enable documentation generation for cabal projects, add the following to your ~/.cabal/config&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;documentation: True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To generate a hoogle database that hie can use&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; haskell-ide-engine
+$ stack --stack-yaml=&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;stack.yaml you used to build hie&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;exec&lt;/span&gt; hoogle generate&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can set the environment variable &lt;code&gt;HIE_HOOGLE_DATABASE&lt;/code&gt; to specify a specific database.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-planned-features" class="anchor" aria-hidden="true" href="#planned-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Planned Features&lt;/h3&gt;
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; Multiproject support&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Project wide references&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Cross project find definition&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; New-build support&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; HaRe refactorings&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; More code actions&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Cross project/dependency Find Definition&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Case splitting, type insertion etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project is not started from scratch:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;See why &lt;a href="/docs/Challenges.md"&gt;we should supersede previous tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check the &lt;a href="/docs/Tools.md"&gt;list of existing tools and functionality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See more &lt;a href="/docs/Inspirations.md"&gt;other tools and IDEs for inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-its-time-to-join-the-project" class="anchor" aria-hidden="true" href="#its-time-to-join-the-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;It's time to join the project!&lt;/h3&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"&gt;❤️&lt;/g-emoji&gt; Haskell tooling dream is near, we need your help! &lt;g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"&gt;❤️&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Register in &lt;a href="https://groups.google.com/forum/#!forum/haskell-ide" rel="nofollow"&gt;our google group mailing list&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Join &lt;a href="https://webchat.freenode.net/?channels=haskell-ide-engine" rel="nofollow"&gt;our IRC channel&lt;/a&gt; at &lt;code&gt;#haskell-ide-engine&lt;/code&gt; on &lt;code&gt;freenode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fork this repo and hack as much as you can.&lt;/li&gt;
+&lt;li&gt;Ask @alanz or @hvr to join the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;All the documentation is in &lt;a href="/docs"&gt;the docs folder&lt;/a&gt; at the root of this project.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-architecture" class="anchor" aria-hidden="true" href="#architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture&lt;/h3&gt;
+&lt;p&gt;Have a look at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href="docs/Architecture.md"&gt;Architecture discussion&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/Protocol.md"&gt;Protocol discussion&lt;/a&gt; and&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/Design.md"&gt;Design discussion&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-emacs" class="anchor" aria-hidden="true" href="#emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emacs&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-parse-errors-file-state-going-out-of-sync" class="anchor" aria-hidden="true" href="#parse-errors-file-state-going-out-of-sync"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parse errors, file state going out of sync&lt;/h4&gt;
+&lt;p&gt;With the &lt;code&gt;lsp-mode&lt;/code&gt; client for Emacs, it seems that the document can very easily get out of sync between, which leads to parse errors being displayed. To fix this, enable full document synchronization with&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-document-sync-method &lt;span class="pl-c1"&gt;'full&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-emacs-direnv-loads-environment-too-late" class="anchor" aria-hidden="true" href="#emacs-direnv-loads-environment-too-late"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/wbolster/emacs-direnv"&gt;&lt;code&gt;emacs-direnv&lt;/code&gt;&lt;/a&gt; loads environment too late&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;emacs-direnv&lt;/code&gt; sometimes loads the environment too late, meaning &lt;code&gt;lsp-mode&lt;/code&gt; won't be able to find correct GHC/cabal versions. To fix this, add a direnv update hook &lt;em&gt;after&lt;/em&gt; adding the lsp hook for &lt;code&gt;haskell-mode&lt;/code&gt; (meaning the direnv hook is executed first, because hooks are LIFO):&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'haskell-mode-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'lsp&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'haskell-mode-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'direnv-update-environment&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-dyld-on-macos" class="anchor" aria-hidden="true" href="#dyld-on-macos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DYLD on macOS&lt;/h3&gt;
+&lt;p&gt;If you hit a problem that looks like &lt;code&gt;can't load .so/.DLL for: libiconv.dylib (dlopen(libiconv.dylib, 5): image not found)&lt;/code&gt;, it means that libraries cannot be found in the library path. We can hint where to look for them and append more paths to &lt;code&gt;DYLD_LIBRARY_PATH&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/usr/lib:/usr/local/lib"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On practice &lt;code&gt;/usr/local/lib&lt;/code&gt; is full of dylibs linked by &lt;code&gt;brew&lt;/code&gt;. After you amend &lt;code&gt;DYLD_LIBRARY_PATH&lt;/code&gt;, some of the previously compiled application might not work and yell about incorrect linking, for example, &lt;code&gt;dyld: Symbol not found: __cg_jpeg_resync_to_restart&lt;/code&gt;. You may need to look up where it comes from and remove clashing links, in this case it were clashing images libs:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ brew unlink libjpeg
+$ brew unlink libtiff
+$ brew unlink libpng&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Recompile.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-macos-got-error-while-installing-ghc-861-or-862---dyld-library-not-loaded-usrlocaloptgmpliblibgmp10dylib" class="anchor" aria-hidden="true" href="#macos-got-error-while-installing-ghc-861-or-862---dyld-library-not-loaded-usrlocaloptgmpliblibgmp10dylib"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;macOS: Got error while installing GHC 8.6.1 or 8.6.2 - dyld: Library not loaded: /usr/local/opt/gmp/lib/libgmp.10.dylib&lt;/h3&gt;
+&lt;p&gt;These builds have a dependency on &lt;a href="https://brew.sh" rel="nofollow"&gt;homebrew&lt;/a&gt;'s &lt;code&gt;gmp&lt;/code&gt; library. Install with brew: &lt;code&gt;brew install gmp&lt;/code&gt;.
+&lt;a href="https://ghc.haskell.org/trac/ghc/ticket/15769" rel="nofollow"&gt;Should be fixed in GHC 8.6.3.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-macos-got-error-while-processing-diagnostics-unable-to-load-package-integer-gmp-1020" class="anchor" aria-hidden="true" href="#macos-got-error-while-processing-diagnostics-unable-to-load-package-integer-gmp-1020"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;macOS: Got error while processing diagnostics: unable to load package &lt;code&gt;integer-gmp-1.0.2.0&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/alanz/vscode-hie-server/issues/89#issuecomment-398212122"&gt;Rename the file&lt;/a&gt; at &lt;code&gt;~/.stack/programs/x86_64-osx/ghc-8.4.3/lib/ghc-8.4.3/integer-gmp-1.0.2.0/HSinteger-gmp-1.0.2.0.o&lt;/code&gt; to a temporary name.
+&lt;a href="https://ghc.haskell.org/trac/ghc/ticket/15105" rel="nofollow"&gt;Should be fixed in GHC 8.8.1.&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cannot-satisfy--package-id-package" class="anchor" aria-hidden="true" href="#cannot-satisfy--package-id-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cannot satisfy -package-id &amp;lt;package&amp;gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-is-package-base-x" class="anchor" aria-hidden="true" href="#is-package-base-x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Is &amp;lt;package&amp;gt; base-x?&lt;/h4&gt;
+&lt;p&gt;Make sure that the GHC version of HIE matches the one of the project. After that run&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal configure
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and then restart HIE (e.g. by restarting your editor).&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-is-there-a-hash--after-package" class="anchor" aria-hidden="true" href="#is-there-a-hash--after-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Is there a hash (#) after &amp;lt;package&amp;gt;?&lt;/h4&gt;
+&lt;p&gt;Delete any &lt;code&gt;.ghc.environment*&lt;/code&gt; files in your project root and try again. (At the time of writing, cabal new-style projects are not supported with ghc-mod)&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-otherwise" class="anchor" aria-hidden="true" href="#otherwise"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Otherwise&lt;/h4&gt;
+&lt;p&gt;Try running &lt;code&gt;cabal update&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-nix-cabal-helper-no-such-file-or-directory" class="anchor" aria-hidden="true" href="#nix-cabal-helper-no-such-file-or-directory"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nix: cabal-helper, No such file or directory&lt;/h3&gt;
+&lt;p&gt;An error on stderr like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cabal-helper-wrapper: /home/&amp;lt;...&amp;gt;/.cache/cabal-helper/cabal-helper&amp;lt;...&amp;gt;: createProcess: runInteractiveProcess:
+  exec: does not exist (No such file or directory)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;can happen because cabal-helper compiles and runs above executable at runtime without using nix-build, which means a Nix garbage collection can delete the paths it depends on. Delete ~/.cache/cabal-helper and restart HIE to fix this.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-liquid-haskell" class="anchor" aria-hidden="true" href="#liquid-haskell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Liquid Haskell&lt;/h3&gt;
+&lt;p&gt;Liquid Haskell requires an SMT solver on the path. We do not take care of installing one, thus, Liquid Haskell will not run until one is installed.
+The recommended SMT solver is &lt;a href="https://github.com/Z3Prover/z3"&gt;z3&lt;/a&gt;. To run the tests, it is also required to have an SMT solver on the path, otherwise the tests will fail for Liquid Haskell.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>haskell</author><guid isPermaLink="false">https://github.com/haskell/haskell-ide-engine</guid><pubDate>Sat, 09 Nov 2019 00:04:00 GMT</pubDate></item></channel></rss>
