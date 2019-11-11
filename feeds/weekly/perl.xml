@@ -1,2 +1,959 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Perl, This week</title><link>https://github.com/trending/perl?since=weekly</link><description>The top repositories on GitHub for perl, measured weekly</description><pubDate>Sun, 10 Nov 2019 01:07:31 GMT</pubDate><lastBuildDate>Sun, 10 Nov 2019 01:07:31 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Perl, This week today</title><pubDate>Sun, 10 Nov 2019 01:07:31 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Perl, This week</title><link>https://github.com/trending/perl?since=weekly</link><description>The top repositories on GitHub for perl, measured weekly</description><pubDate>Mon, 11 Nov 2019 01:07:31 GMT</pubDate><lastBuildDate>Mon, 11 Nov 2019 01:07:31 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>so-fancy/diff-so-fancy #1 in Perl, This week</title><link>https://github.com/so-fancy/diff-so-fancy</link><description>&lt;p&gt;&lt;i&gt;Good-lookin' diffs. Actually… nah… The best-lookin' diffs. :tada:&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-diff-so-fancy----" class="anchor" aria-hidden="true" href="#diff-so-fancy----"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;diff-so-fancy  &lt;a href="https://circleci.com/gh/so-fancy/diff-so-fancy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ee5458a75b56de816d381137171523a14bee9482/68747470733a2f2f636972636c6563692e636f6d2f67682f736f2d66616e63792f646966662d736f2d66616e63792e7376673f7374796c653d736869656c64" alt="Circle CI build" data-canonical-src="https://circleci.com/gh/so-fancy/diff-so-fancy.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://travis-ci.org/so-fancy/diff-so-fancy" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/25801b944eda068c873bc99f349f3256cd1ef151/68747470733a2f2f7472617669732d63692e6f72672f736f2d66616e63792f646966662d736f2d66616e63792e7376673f6272616e63683d6d6173746572" alt="TravisCI build" data-canonical-src="https://travis-ci.org/so-fancy/diff-so-fancy.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://ci.appveyor.com/project/stevemao/diff-so-fancy/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/07b59e20689f7928a914c6c0f5038ba6a59f8bfd/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f736f2d66616e63792f646966662d736f2d66616e63793f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor build" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/so-fancy/diff-so-fancy?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;diff-so-fancy&lt;/code&gt; strives to make your diffs &lt;strong&gt;human&lt;/strong&gt; readable instead of machine readable. This helps improve code quality and helps you spot defects faster.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-screenshot" class="anchor" aria-hidden="true" href="#screenshot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Vanilla &lt;code&gt;git diff&lt;/code&gt; vs &lt;code&gt;git&lt;/code&gt; and &lt;code&gt;diff-so-fancy&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png"&gt;&lt;img src="https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png" alt="diff-highlight vs diff-so-fancy" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;Installation is as simple as downloading the &lt;a href="https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy" rel="nofollow"&gt;&lt;code&gt;diff-so-fancy&lt;/code&gt;&lt;/a&gt; script to a directory in your path.
+Windows users may need to install &lt;a href="https://sourceforge.net/projects/mingw/files/" rel="nofollow"&gt;MinGW&lt;/a&gt; or the &lt;a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" rel="nofollow"&gt;Windows subsystem for Linux&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;diff-so-fancy&lt;/code&gt; is also available from NPM, Nix, brew, and as a package on Arch Linux.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Configure git to use &lt;code&gt;diff-so-fancy&lt;/code&gt; for all diff output:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git config --global core.pager &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;diff-so-fancy | less --tabs=4 -RFX&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-improved-colors-for-the-highlighted-bits" class="anchor" aria-hidden="true" href="#improved-colors-for-the-highlighted-bits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Improved colors for the highlighted bits&lt;/h3&gt;
+&lt;p&gt;The default Git colors are not optimal. The colors used for the screenshot above were:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git config --global color.ui &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+
+git config --global color.diff-highlight.oldNormal    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;red bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff-highlight.oldHighlight &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;red bold 52&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff-highlight.newNormal    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;green bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff-highlight.newHighlight &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;green bold 22&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+git config --global color.diff.meta       &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;11&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff.frag       &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;magenta bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff.commit     &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yellow bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff.old        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;red bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff.new        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;green bold&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+git config --global color.diff.whitespace &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;red reverse&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-markemptylines" class="anchor" aria-hidden="true" href="#markemptylines"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;markEmptyLines&lt;/h3&gt;
+&lt;p&gt;Should the first block of an empty line be colored. (Default: true)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --bool --global diff-so-fancy.markEmptyLines false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-changehunkindicators" class="anchor" aria-hidden="true" href="#changehunkindicators"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;changeHunkIndicators&lt;/h3&gt;
+&lt;p&gt;Simplify git header chunks to a more human readable format. (Default: true)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --bool --global diff-so-fancy.changeHunkIndicators false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-stripleadingsymbols" class="anchor" aria-hidden="true" href="#stripleadingsymbols"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;stripLeadingSymbols&lt;/h3&gt;
+&lt;p&gt;Should the pesky &lt;code&gt;+&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt; at line-start be removed. (Default: true)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --bool --global diff-so-fancy.stripLeadingSymbols false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-useunicoderuler" class="anchor" aria-hidden="true" href="#useunicoderuler"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useUnicodeRuler&lt;/h3&gt;
+&lt;p&gt;By default, the separator for the file header uses Unicode line-drawing characters. If this is causing output errors on your terminal, set this to &lt;code&gt;false&lt;/code&gt; to use ASCII characters instead. (Default: true)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --bool --global diff-so-fancy.useUnicodeRuler false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-rulerwidth" class="anchor" aria-hidden="true" href="#rulerwidth"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rulerWidth&lt;/h3&gt;
+&lt;p&gt;By default, the separator for the file header spans the full width of the terminal. Use this setting to set the width of the file header manually.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global diff-so-fancy.rulerWidth 47    # git log's commit header width
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Pull requests are quite welcome, and should target the &lt;a href="https://github.com/so-fancy/diff-so-fancy/tree/next"&gt;&lt;code&gt;next&lt;/code&gt; branch&lt;/a&gt;. We are also looking for any feedback or ideas on how to make &lt;code&gt;diff-so-fancy&lt;/code&gt; even &lt;em&gt;fancier&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-other-documentation" class="anchor" aria-hidden="true" href="#other-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="pro-tips.md"&gt;Pro-tips on advanced usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="reporting-bugs.md"&gt;Reporting Bugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="hacking-and-testing.md"&gt;Hacking and Testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="history.md"&gt;History&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;MIT&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>so-fancy</author><guid isPermaLink="false">https://github.com/so-fancy/diff-so-fancy</guid><pubDate>Mon, 11 Nov 2019 00:01:00 GMT</pubDate></item><item><title>microsoft/ALAppExtensions #2 in Perl, This week</title><link>https://github.com/microsoft/ALAppExtensions</link><description>&lt;p&gt;&lt;i&gt;Repository for collaboration on Microsoft AL application add-on and localization extensions for Microsoft Dynamics 365 Business Central.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-microsoft-al-application-foundation-modules-and-application-add-ons-for-microsoft-dynamics-365-business-central" class="anchor" aria-hidden="true" href="#microsoft-al-application-foundation-modules-and-application-add-ons-for-microsoft-dynamics-365-business-central"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microsoft AL application foundation modules and application add-ons for Microsoft Dynamics 365 Business Central&lt;/h1&gt;
+&lt;p&gt;Welcome to the ALAppExtension repository!&lt;/p&gt;
+&lt;p&gt;This repo is a platform for Microsoft and our vibrant partner channel and community to work together to develop system modules and add-on apps in the AL language and to enable the general extensibility of Microsoft Dynamics 365 Business Central.&lt;/p&gt;
+&lt;p&gt;We’re working to make the core application thinner, more extensible, and easier to localize by extracting more and more of our system logic into modules, forming a system application and application foundation, as well as extracting business logic into add-on and localization apps. As we go, we’ll publish the source code for the modules and apps in this repo. The modules and apps are open for contributions. The apps can furthermore serve as starting point for verticalizations or just as samples for developing apps.&lt;/p&gt;
+&lt;p&gt;Microsoft will ship the contributions in upcoming releases of &lt;a href="https://dynamics.microsoft.com/en-us/business-central" rel="nofollow"&gt;Microsoft Dynamics 365 Business Central&lt;/a&gt;, where you’ll get to enjoy the effect of your contributions.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-types-of-engagements" class="anchor" aria-hidden="true" href="#types-of-engagements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Types of engagements&lt;/h2&gt;
+&lt;p&gt;There are a couple of ways to engage with us here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can grab the code and contribute to the published modules and apps. For more information, see the &lt;em&gt;Contributing&lt;/em&gt; section below.&lt;/li&gt;
+&lt;li&gt;If you’re building your own app and need something specific from us, like an event, you can help improve the general extensibility of the business logic. For more information, see the &lt;em&gt;Extensibility requests&lt;/em&gt; section below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h3&gt;
+&lt;p&gt;This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit &lt;a href="https://cla.microsoft.com" rel="nofollow"&gt;https://cla.microsoft.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.&lt;/p&gt;
+&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;. For more information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact &lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional questions or comments.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-extensibility-requests" class="anchor" aria-hidden="true" href="#extensibility-requests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extensibility requests&lt;/h3&gt;
+&lt;p&gt;The following are the types of requests you can submit to unblock your app:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new integration events – Get the event you need to hook-in to a process.&lt;/li&gt;
+&lt;li&gt;Change function visibility – For example, make a public function external or a similar change so you can call it from your extension and reuse the business logic.&lt;/li&gt;
+&lt;li&gt;Replace Option with Enum – Replace a specific option with an enum that supports your extension. The new type enum is extensible, but all code was written for non-extensible options.&lt;/li&gt;
+&lt;li&gt;Extensibility enhancements – Request changes in the application code that will improve extensibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’ll have a look at your request, and if we can we’ll implement it asap. If we can’t we’ll let you know and briefly explain why not. When that happens, don’t be discouraged. Go back to the drawing board, see if you can work it out, and then come back and submit another request.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-see-also" class="anchor" aria-hidden="true" href="#see-also"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See Also&lt;/h2&gt;
+&lt;p&gt;&lt;a href="FAQ.md"&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><guid isPermaLink="false">https://github.com/microsoft/ALAppExtensions</guid><pubDate>Mon, 11 Nov 2019 00:02:00 GMT</pubDate></item><item><title>webmin/webmin #3 in Perl, This week</title><link>https://github.com/webmin/webmin</link><description>&lt;p&gt;&lt;i&gt;Powerful and flexible web-based server management control panel&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-contents" class="anchor" aria-hidden="true" href="#contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/webmin/webmin/blob/master/CHANGELOG.md"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;a href="http://webmin.com/download.html" rel="nofollow"&gt;&lt;img src="https://github.com/webmin-devel/webmin/raw/master/media/download-23x14-stable.png?raw=true" title="Stable Versions" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="http://webmin.com/devel.html" rel="nofollow"&gt;&lt;img src="https://github.com/webmin-devel/webmin/raw/master/media/download-23x14-devel.png?raw=true" title="Development Versions" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#documentation"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#development"&gt;Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Webmin&lt;/strong&gt; is a web-based system administration tool for Unix-like servers, and services with over &lt;em&gt;1,000,000&lt;/em&gt; installations worldwide. Using it, it is possible to configure operating system internals, such as users, disk quotas, services or configuration files, as well as modify, and control open-source apps, such as BIND DNS Server, Apache HTTP Server, PHP, MySQL, and &lt;a href="https://doxfer.webmin.com/Webmin/Introduction" rel="nofollow"&gt;many more&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/webmin-devel/webmin/blob/master/media/webmin-demo-basic.gif?raw=true"&gt;&lt;img src="https://github.com/webmin-devel/webmin/raw/master/media/webmin-demo-basic.gif?raw=true" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Usability can be expanded by installing modules, which can be custom made. Aside from this, there are two other major projects that extend its functionality:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.virtualmin.com" rel="nofollow"&gt;Virtualmin&lt;/a&gt; is a powerful, flexible, most popular, and most comprehensive web-hosting control panel for Linux, and BSD systems, with over &lt;em&gt;100,000&lt;/em&gt; installations worldwide. It is available in an open-source community-supported version, and a more feature-filled version with premium support;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/webmin/usermin"&gt;Usermin&lt;/a&gt; presents and controls a subset of user-centred features, rather than administrator-level tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Webmin includes &lt;em&gt;116&lt;/em&gt; &lt;a href="https://doxfer.webmin.com/Webmin/Webmin_Modules" rel="nofollow"&gt;standard modules&lt;/a&gt;, and there are at least as many third-party modules.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;Perl 5.10 or higher.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Webmin can be installed in two different ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;By downloading a pre-built package, available for different distributions (CentOS, Fedora, SuSE, Mandriva, Debian, Ubuntu, Solaris and &lt;a href="http://www.webmin.com/support.html" rel="nofollow"&gt;other&lt;/a&gt;) from our &lt;a href="http://webmin.com/download.html" rel="nofollow"&gt;download page&lt;/a&gt;;
+&lt;kbd&gt;Note: It is highly recommended to &lt;a href="https://doxfer.webmin.com/Webmin/Installation" rel="nofollow"&gt;add repository&lt;/a&gt; to your system for having automatic updates.&lt;/kbd&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By downloading, extracting &lt;a href="https://prdownloads.sourceforge.net/webadmin/webmin-1.932.tar.gz" rel="nofollow"&gt;source file&lt;/a&gt;, and running &lt;a href="http://www.webmin.com/tgz.html" rel="nofollow"&gt;&lt;em&gt;setup.sh&lt;/em&gt;&lt;/a&gt; script, with no arguments, which will setup to run it directly from this directory, or with a command-line argument, such as targeted directory.
+&lt;kbd&gt;Note: If you are installing Webmin &lt;a href="http://www.webmin.com/windows.html" rel="nofollow"&gt;on Windows&lt;/a&gt; system, you must run the command &lt;code&gt;perl setup.pl&lt;/code&gt; instead. The Windows version depends on several programs, and modules that may not be part of the standard distribution. You will need &lt;em&gt;process.exe&lt;/em&gt; commmand, &lt;em&gt;sc.exe&lt;/em&gt; command, and &lt;em&gt;Win32::Daemon&lt;/em&gt; Perl module.&lt;/kbd&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Complete set of documentation for Webmin and all of its modules can be found at out &lt;a href="https://doxfer.webmin.com/Webmin/Main_Page" rel="nofollow"&gt;Wiki page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-lead-developer" class="anchor" aria-hidden="true" href="#lead-developer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lead developer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.webmin.com/about.html" rel="nofollow"&gt;Jamie Cameron&lt;/a&gt; &lt;a href="https://www.linkedin.com/in/jamiecameron2" rel="nofollow"&gt;&lt;img src="https://github.com/webmin-devel/webmin/raw/master/media/linkedin-15x15.png?raw=true" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-contributors" class="anchor" aria-hidden="true" href="#contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/swelljoe"&gt;Joe Cooper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rostovtsev"&gt;Ilia Rostovtsev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gnadelwartz"&gt;Kay Marquardt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nawawi"&gt;Nawawi Jamili&lt;/a&gt; + &lt;a href="https://github.com/webmin/webmin/graphs/contributors"&gt;57 more..&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Webmin is released under the &lt;a href="https://github.com/webmin/webmin/blob/master/LICENCE"&gt;BSD License&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>webmin</author><guid isPermaLink="false">https://github.com/webmin/webmin</guid><pubDate>Mon, 11 Nov 2019 00:03:00 GMT</pubDate></item><item><title>darold/pgbadger #4 in Perl, This week</title><link>https://github.com/darold/pgbadger</link><description>&lt;p&gt;&lt;i&gt;A fast PostgreSQL Log Analyzer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h3&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TABLE OF CONTENTS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#NAME"&gt;NAME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#SYNOPSIS"&gt;SYNOPSIS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#DESCRIPTION"&gt;DESCRIPTION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#FEATURE"&gt;FEATURE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#REQUIREMENT"&gt;REQUIREMENT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#INSTALLATION"&gt;INSTALLATION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#POSTGRESQL-CONFIGURATION"&gt;POSTGRESQL-CONFIGURATION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#LOG-STATEMENTS"&gt;LOG-STATEMENTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#PARALLEL-PROCESSING"&gt;PARALLEL-PROCESSING&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#INCREMENTAL-REPORTS"&gt;INCREMENTAL-REPORTS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#BINARY-FORMAT"&gt;BINARY-FORMAT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#JSON-FORMAT"&gt;JSON-FORMAT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#AUTHORS"&gt;AUTHORS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#LICENSE"&gt;LICENSE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-name" class="anchor" aria-hidden="true" href="#name"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NAME&lt;/h3&gt;
+&lt;p&gt;pgBadger - a fast PostgreSQL log analysis report&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-synopsis" class="anchor" aria-hidden="true" href="#synopsis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SYNOPSIS&lt;/h3&gt;
+&lt;p&gt;Usage: pgbadger [options] logfile [...]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PostgreSQL log analyzer with fully detailed reports and graphs.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Arguments:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;logfile can be a single log file, a list of files, or a shell command
+returning a list of files. If you want to pass log content from stdin
+use - as filename. Note that input from stdin will not work with csvlog.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Options:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-a | --average minutes : number of minutes to build the average graphs of
+                         queries and connections. Default 5 minutes.
+-A | --histo-average min: number of minutes to build the histogram graphs
+                         of queries. Default 60 minutes.
+-b | --begin datetime  : start date/time for the data to be parsed in log
+                         (either a timestamp or a time)
+-c | --dbclient host   : only report on entries for the given client host.
+-C | --nocomment       : remove comments like /* ... */ from queries.
+-d | --dbname database : only report on entries for the given database.
+-D | --dns-resolv      : client ip addresses are replaced by their DNS name.
+                         Be warned that this can really slow down pgBadger.
+-e | --end datetime    : end date/time for the data to be parsed in log
+                         (either a timestamp or a time)
+-E | --explode         : explode the main report by generating one report
+                         per database. Global information not related to a
+                         database are added to the postgres database report.
+-f | --format logtype  : possible values: syslog, syslog2, stderr, jsonlog,
+                         cvs, pgbouncer, logplex and rds. Use this option
+                         when pgBadger is not able to detect the log format.
+-G | --nograph         : disable graphs on HTML output. Enabled by default.
+-h | --help            : show this message and exit.
+-H | --html-dir path   : path to directory where HTML report must be written
+                         in incremental mode, binary files stay on directory
+                         defined with -O, --outdir option.
+-i | --ident name      : programname used as syslog ident. Default: postgres
+-I | --incremental     : use incremental mode, reports will be generated by
+                         days in a separate directory, --outdir must be set.
+-j | --jobs number     : number of jobs to run at same time. Run as single
+                         by default or when working with csvlog.
+-J | --Jobs number     : number of log file to parse in parallel. Process one
+                         file at a time by default or when csvlog is used.
+-l | --last-parsed file: allow incremental log parsing by registering the
+                         last datetime and line parsed. Useful if you want
+                         to watch errors since last run or if you want one
+                         report per day with a log rotated each week.
+-L | --logfile-list file:file containing a list of log file to parse.
+-m | --maxlength size  : maximum length of a query, it will be restricted to
+                         the given size. Default: no truncate
+-M | --no-multiline    : do not collect multiline statement to avoid garbage
+                         especially on errors that generate a huge report.
+-n | --nohighlight     : disable SQL code highlighting.
+-N | --appname name    : only report on entries for given application name
+-o | --outfile filename: define the filename for the output. Default depends
+                         on the output format: out.html, out.txt, out.bin,
+                         out.json or out.tsung. This option can be used
+                         multiple time to output several format. To use json
+                         output the Perl module JSON::XS must be installed,
+                         To dump output to stdout use - as filename.
+-O | --outdir path     : directory where out file must be saved.
+-p | --prefix string   : the value of your custom log_line_prefix as
+                         defined in your postgresql.conf. Only use it if you
+                         aren't using one of the standard prefixes specified
+                         in the pgBadger documentation, such as if your
+                         prefix includes additional variables like client ip
+                         or application name. See examples below.
+-P | --no-prettify     : disable SQL queries prettify formatter.
+-q | --quiet           : don't print anything to stdout, not even a progress
+                         bar.
+-r | --remote-host ip  : set the host where to execute the cat command on
+                         remote logfile to parse locally the file.
+-R | --retention N     : number of weeks to keep in incremental mode. Default
+                         to 0, disabled. Used to set the number of weeks to
+                         keep in output directory. Older weeks and days
+                         directory are automatically removed.
+-s | --sample number   : number of query samples to store. Default: 3.
+-S | --select-only     : only report SELECT queries.
+-t | --top number      : number of queries to store/display. Default: 20.
+-T | --title string    : change title of the HTML page report.
+-u | --dbuser username : only report on entries for the given user.
+-U | --exclude-user username : exclude entries for the specified user from
+                         report. Can be used multiple time.
+-v | --verbose         : enable verbose or debug mode. Disabled by default.
+-V | --version         : show pgBadger version and exit.
+-w | --watch-mode      : only report errors just like logwatch could do.
+-x | --extension       : output format. Values: text, html, bin, json or
+                         tsung. Default: html
+-X | --extra-files     : in incremental mode allow pgBadger to write CSS and
+                         JS files in the output directory as separate files.
+-z | --zcat exec_path  : set the full path to the zcat program. Use it if
+                         zcat or bzcat or unzip is not in your path.
+-Z | --timezone +/-XX  : Set the number of hours from GMT of the timezone.
+                         Use this to adjust date/time in JavaScript graphs.
+--pie-limit num        : pie data lower than num% will show a sum instead.
+--exclude-query regex  : any query matching the given regex will be excluded
+                         from the report. For example: "^(VACUUM|COMMIT)"
+                         You can use this option multiple times.
+--exclude-file filename: path of the file which contains all the regex to
+                         use to exclude queries from the report. One regex
+                         per line.
+--include-query regex  : any query that does not match the given regex will
+                         be excluded from the report. You can use this
+                         option multiple times. For example: "(tbl1|tbl2)".
+--include-file filename: path of the file which contains all the regex of
+                         the queries to include from the report. One regex
+                         per line.
+--disable-error        : do not generate error report.
+--disable-hourly       : do not generate hourly report.
+--disable-type         : do not generate report of queries by type, database
+                         or user.
+--disable-query        : do not generate query reports (slowest, most
+                         frequent, queries by users, by database, ...).
+--disable-session      : do not generate session report.
+--disable-connection   : do not generate connection report.
+--disable-lock         : do not generate lock report.
+--disable-temporary    : do not generate temporary report.
+--disable-checkpoint   : do not generate checkpoint/restartpoint report.
+--disable-autovacuum   : do not generate autovacuum report.
+--charset              : used to set the HTML charset to be used.
+                         Default: utf-8.
+--csv-separator        : used to set the CSV field separator, default: ,
+--exclude-time  regex  : any timestamp matching the given regex will be
+                         excluded from the report. Example: "2013-04-12 .*"
+                         You can use this option multiple times.
+--include-time  regex  : only timestamps matching the given regex will be
+                         included in the report. Example: "2013-04-12 .*"
+                         You can use this option multiple times.
+--exclude-db name      : exclude entries for the specified database from
+                         report. Example: "pg_dump". Can be used multiple
+                         time.
+--exclude-appname name : exclude entries for the specified application name
+                         from report.  Example: "pg_dump".  Can be used
+                         multiple time.
+--exclude-line regex   : pgBadger will start to exclude any log entry that
+                         will match the given regex. Can be used multiple
+                         time.
+--exclude-client name  : exclude log entries for the specified client ip.
+                         Can be used multiple time.
+--anonymize            : obscure all literals in queries, useful to hide
+                         confidential data.
+--noreport             : prevent pgBadger to create reports in incremental
+                         mode.
+--log-duration         : force pgBadger to associate log entries generated
+                         by both log_duration = on and log_statement = 'all'
+--enable-checksum      : used to add a md5 sum under each query report.
+--journalctl command   : command to use to replace PostgreSQL logfile by
+                         a call to journalctl. Basically it might be:
+                            journalctl -u postgresql-9.5
+--pid-dir path         : set the path where the pid file must be stored.
+                         Default /tmp
+--pid-file file        : set the name of the pid file to manage concurrent
+                         execution of pgBadger. Default: pgbadger.pid
+--rebuild              : used to rebuild all html reports in incremental
+                         output directories where there's binary data files.
+--pgbouncer-only       : only show PgBouncer related menu in the header.
+--start-monday         : in incremental mode, calendar's weeks start on
+                         sunday. Use this option to start on monday.
+--normalized-only      : only dump all normalized query to out.txt
+--log-timezone +/-XX   : Set the number of hours from GMT of the timezone
+                         that must be used to adjust date/time read from
+                         log file before beeing parsed. Using this option
+                         make more difficult log search with a date/time.
+--prettify-json        : use it if you want json output to be prettified.
+--month-report YYYY-MM : create a cumulative HTML report over the specified
+                         month. Requires incremental output directories and
+                         the presence of all necessary binary data files
+--noexplain             : do not process lines generated by auto_explain.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;pgBadger is able to parse a remote log file using a passwordless ssh connection.
+Use the -r or --remote-host to set the host ip address or hostname. There's also
+some additional options to fully control the ssh connection.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--ssh-program ssh   path to the ssh program to use. Default: ssh.
+--ssh-user username      connection login name. Default to running user.
+--ssh-identity file      path to the identity file to use.
+--ssh-timeout second     timeout to ssh connection failure. Default 10 secs.
+--ssh-option  options    list of -o options to use for the ssh connection.
+                         Options always used:
+                             -o ConnectTimeout=$ssh_timeout
+                             -o PreferredAuthentications=hostbased,publickey
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Log file to parse can also be specified using an URI, supported protocol are
+http[s] and [s]ftp. The curl command will be used to download the file and the
+file will be parsed during download. The ssh protocol is also supported and will
+use the ssh command like with the remote host use. See examples bellow.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger /var/log/postgresql.log
+pgbadger /var/log/postgres.log.2.gz /var/log/postgres.log.1.gz /var/log/postgres.log
+pgbadger /var/log/postgresql/postgresql-2012-05-*
+pgbadger --exclude-query="^(COPY|COMMIT)" /var/log/postgresql.log
+pgbadger -b "2012-06-25 10:56:11" -e "2012-06-25 10:59:11" /var/log/postgresql.log
+cat /var/log/postgres.log | pgbadger -
+# Log prefix with stderr log output
+pgbadger --prefix '%t [%p]: user=%u,db=%d,client=%h' /pglog/postgresql-2012-08-21*
+pgbadger --prefix '%m %u@%d %p %r %a : ' /pglog/postgresql.log
+# Log line prefix with syslog log output
+pgbadger --prefix 'user=%u,db=%d,client=%h,appname=%a' /pglog/postgresql-2012-08-21*
+# Use my 8 CPUs to parse my 10GB file faster, much faster
+pgbadger -j 8 /pglog/postgresql-10.1-main.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use URI notation for remote log file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger http://172.12.110.1//var/log/postgresql/postgresql-10.1-main.log
+pgbadger ftp://username@172.12.110.14/postgresql-10.1-main.log
+pgbadger ssh://username@172.12.110.14//var/log/postgresql/postgresql-10.1-main.log*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can use together a local PostgreSQL log and a remote pgbouncer log file to parse:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger /var/log/postgresql/postgresql-10.1-main.log ssh://username@172.12.110.14/pgbouncer.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate Tsung sessions XML file with select queries only:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger -S -o sessions.tsung --prefix '%t [%p]: user=%u,db=%d ' /pglog/postgresql-10.1.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Reporting errors every week by cron job:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;30 23 * * 1 /usr/bin/pgbadger -q -w /var/log/postgresql.log -o /var/reports/pg_errors.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate report every week using incremental behavior:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 4 * * 1 /usr/bin/pgbadger -q `find /var/log/ -mtime -7 -name "postgresql.log*"` -o /var/reports/pg_errors-`date +\%F`.html -l /var/reports/pgbadger_incremental_file.dat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This supposes that your log file and HTML report are also rotated every week.&lt;/p&gt;
+&lt;p&gt;Or better, use the auto-generated incremental reports:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 4 * * * /usr/bin/pgbadger -I -q /var/log/postgresql/postgresql.log.1 -O /var/www/pg_reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will generate a report per day and per week.&lt;/p&gt;
+&lt;p&gt;In incremental mode, you can also specify the number of week to keep in the
+reports:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/usr/bin/pgbadger --retention 2 -I -q /var/log/postgresql/postgresql.log.1 -O /var/www/pg_reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you have a pg_dump at 23:00 and 13:00 each day during half an hour, you can
+use pgBadger as follow to exclude these period from the report:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger --exclude-time "2013-09-.* (23|13):.*" postgresql.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will help avoid having COPY statements, as generated by pg_dump, on top of
+the list of slowest queries. You can also use --exclude-appname "pg_dump" to
+solve this problem in a simpler way.&lt;/p&gt;
+&lt;p&gt;You can also parse journalctl output just as if it was a log file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger --journalctl 'journalctl -u postgresql-9.5'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or worst, call it from a remote host:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger -r 192.168.1.159 --journalctl 'journalctl -u postgresql-9.5'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;you don't need to specify any log file at command line, but if you have other
+PostgreSQL log file to parse, you can add them as usual.&lt;/p&gt;
+&lt;p&gt;To rebuild all incremental html reports after, proceed as follow:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm /path/to/reports/*.js
+rm /path/to/reports/*.css
+pgbadger -X -I -O /path/to/reports/ --rebuild
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it will also update all resource files (JS and CSS). Use -E or --explode
+if the reports were built using this option.&lt;/p&gt;
+&lt;p&gt;pgBadger also support Heroku PostgreSQL logs using logplex format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;heroku logs -p postgres | pgbadger -f logplex -o heroku.html -
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;this will stream Heroku PostgreSQL log to pgbadger through stdin.&lt;/p&gt;
+&lt;p&gt;pgBadger can auto detect RDS and cloudwatch PostgreSQL logs using
+rds format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger -f rds -o rds_out.html rds.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To create a cumulative report over a month use command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger --month-report 2919-05 /path/to/incremantal/reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;this will add a link to the month name into the calendar view in
+incremental reports to look at report for month 2019 May.
+Use -E or --explode if the reports were built using this option.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-description" class="anchor" aria-hidden="true" href="#description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DESCRIPTION&lt;/h3&gt;
+&lt;p&gt;pgBadger is a PostgreSQL log analyzer built for speed with fully reports
+from your PostgreSQL log file. It's a single and small Perl script that
+outperforms any other PostgreSQL log analyzer.&lt;/p&gt;
+&lt;p&gt;It is written in pure Perl and uses a JavaScript library (flotr2) to draw
+graphs so that you don't need to install any additional Perl modules or
+other packages. Furthermore, this library gives us more features such
+as zooming. pgBadger also uses the Bootstrap JavaScript library and
+the FontAwesome webfont for better design. Everything is embedded.&lt;/p&gt;
+&lt;p&gt;pgBadger is able to autodetect your log file format (syslog, stderr, csvlog
+or jsonlog) if the file is long enough. It is designed to parse huge log
+files as well as compressed files. Supported compressed format are gzip,
+bzip2 and xz.  For the xz format you must have an xz version upper than 5.05
+that supports the --robot option. For the complete list of features see below.&lt;/p&gt;
+&lt;p&gt;All charts are zoomable and can be saved as PNG images.&lt;/p&gt;
+&lt;p&gt;You can also limit pgBadger to only report errors or remove any part of the
+report using command line options.&lt;/p&gt;
+&lt;p&gt;pgBadger supports any custom format set into the log_line_prefix directive of
+your postgresql.conf file as long as it at least specify the %t and %p patterns.&lt;/p&gt;
+&lt;p&gt;pgBadger allows parallel processing of a single log file or multiple
+files through the use of the -j option specifying the number of CPUs.&lt;/p&gt;
+&lt;p&gt;If you want to save system performance you can also use log_duration instead of
+log_min_duration_statement to have reports on duration and number of queries only.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-feature" class="anchor" aria-hidden="true" href="#feature"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FEATURE&lt;/h3&gt;
+&lt;p&gt;pgBadger reports everything about your SQL queries:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    Overall statistics.
+    The most frequent waiting queries.
+    Queries that waited the most.
+    Queries generating the most temporary files.
+    Queries generating the largest temporary files.
+    The slowest queries.
+    Queries that took up the most time.
+    The most frequent queries.
+    The most frequent errors.
+    Histogram of query times.
+    Histogram of sessions times.
+    Users involved in top queries.
+    Applications involved in top queries.
+    Queries generating the most cancellation.
+    Queries most cancelled.
+    The most time consuming prepare/bind queries
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following reports are also available with hourly charts divided into
+periods of five minutes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    SQL queries statistics.
+    Temporary file statistics.
+    Checkpoints statistics.
+    Autovacuum and autoanalyze statistics.
+    Cancelled queries.
+    Error events (panic, fatal, error and warning).
+    Error class distribution.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are also some pie charts about distribution of:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    Locks statistics.
+    Queries by type (select/insert/update/delete).
+    Distribution of queries type per database/application
+    Sessions per database/user/client/application.
+    Connections per database/user/client/application.
+    Autovacuum and autoanalyze per table.
+    Queries per user and total duration per user.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All charts are zoomable and can be saved as PNG images. SQL queries reported are
+highlighted and beautified automatically.&lt;/p&gt;
+&lt;p&gt;pgBadger is also able to parse PgBouncer log files and to create the following
+reports:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    Request Throughput
+    Bytes I/O Throughput
+    Queries Average duration
+    Simultaneous sessions
+    Histogram of sessions times
+    Sessions per database
+    Sessions per user
+    Sessions per host
+    Established connections
+    Connections per database
+    Connections per user
+    Connections per host
+    Most used reserved pools
+    Most Frequent Errors/Events
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also have incremental reports with one report per day and a cumulative
+report per week. Two multiprocess modes are available to speed up log parsing,
+one using one core per log file, and the second using multiple cores to parse
+a single file. These modes can be combined.&lt;/p&gt;
+&lt;p&gt;Histogram granularity can be adjusted using the -A command line option. By default
+they will report the mean of each top queries/errors occurring per hour, but you can
+specify the granularity down to the minute.&lt;/p&gt;
+&lt;p&gt;pgBadger can also be used in a central place to parse remote log files using a
+passwordless SSH connection. This mode can be used with compressed files and in
+the multiprocess per file mode (-J) but can not be used with the CSV log format.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-requirement" class="anchor" aria-hidden="true" href="#requirement"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REQUIREMENT&lt;/h3&gt;
+&lt;p&gt;pgBadger comes as a single Perl script - you do not need anything other than a modern
+Perl distribution. Charts are rendered using a JavaScript library so you don't need
+anything other than a web browser. Your browser will do all the work.&lt;/p&gt;
+&lt;p&gt;If you planned to parse PostgreSQL CSV log files you might need some Perl Modules:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    Text::CSV_XS - to parse PostgreSQL CSV log files.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This module is optional, if you don't have PostgreSQL log in the CSV format you don't
+need to install it.&lt;/p&gt;
+&lt;p&gt;If you want to export statistics as JSON file you need an additional Perl module:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    JSON::XS - JSON serialising/deserialising, done correctly and fast
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This module is optional, if you don't select the json output format you don't
+need to install it. You can install it on a Debian like system using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    sudo apt-get install libjson-xs-perl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and in RPM like system using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    sudo yum install perl-JSON-XS
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compressed log file format is autodetected from the file extension. If pgBadger find
+a gz extension it will use the zcat utility, with a bz2 extension it will use bzcat
+and if the file extension is zip or xz then the unzip or xz utilities will be used.&lt;/p&gt;
+&lt;p&gt;If those utilities are not found in the PATH environment variable then use the --zcat
+command line option to change this path. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    --zcat="/usr/local/bin/gunzip -c" or --zcat="/usr/local/bin/bzip2 -dc"
+    --zcat="C:\tools\unzip -p"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default pgBadger will use the zcat, bzcat and unzip utilities following the
+file extension. If you use the default autodetection compress format you can
+mixed gz, bz2, xz or zip files. Specifying a custom value to --zcat option will
+remove this feature of mixed compressed format.&lt;/p&gt;
+&lt;p&gt;Note that multiprocessing can not be used with compressed files or CSV files as
+well as under Windows platform.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;INSTALLATION&lt;/h3&gt;
+&lt;p&gt;Download the tarball from GitHub and unpack the archive as follow:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    tar xzf pgbadger-11.x.tar.gz
+    cd pgbadger-11.x/
+    perl Makefile.PL
+    make &amp;amp;&amp;amp; sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will copy the Perl script pgbadger to /usr/local/bin/pgbadger by default and the
+man page into /usr/local/share/man/man1/pgbadger.1. Those are the default installation
+directories for 'site' install.&lt;/p&gt;
+&lt;p&gt;If you want to install all under /usr/ location, use INSTALLDIRS='perl' as an argument
+of Makefile.PL. The script will be installed into /usr/bin/pgbadger and the manpage
+into /usr/share/man/man1/pgbadger.1.&lt;/p&gt;
+&lt;p&gt;For example, to install everything just like Debian does, proceed as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    perl Makefile.PL INSTALLDIRS=vendor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default INSTALLDIRS is set to site.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-postgresql-configuration" class="anchor" aria-hidden="true" href="#postgresql-configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;POSTGRESQL CONFIGURATION&lt;/h3&gt;
+&lt;p&gt;You must enable and set some configuration directives in your postgresql.conf
+before starting.&lt;/p&gt;
+&lt;p&gt;You must first enable SQL query logging to have something to parse:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_min_duration_statement = 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here every statement will be logged, on a busy server you may want to increase
+this value to only log queries with a longer duration. Note that if you have
+log_statement set to 'all' nothing will be logged through the log_min_duration_statement
+directive. See the next chapter for more information.&lt;/p&gt;
+&lt;p&gt;pgBadger supports any custom format set into the log_line_prefix directive of
+your postgresql.conf file as long as it at least specify a time escape sequence
+(%t, %m or %n) and the process related escape sequence (%p or %c).&lt;/p&gt;
+&lt;p&gt;For example, with 'stderr' log format, log_line_prefix must be at least:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_line_prefix = '%t [%p]: '
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Log line prefix could add user, database name, application name and client ip
+address as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_line_prefix = '%t [%p]: user=%u,db=%d,app=%a,client=%h '
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or for syslog log file format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_line_prefix = 'user=%u,db=%d,app=%a,client=%h '
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Log line prefix for stderr output could also be:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_line_prefix = '%t [%p]: db=%d,user=%u,app=%a,client=%h '
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or for syslog output:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_line_prefix = 'db=%d,user=%u,app=%a,client=%h '
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You need to enable other parameters in postgresql.conf to get more information from your log files:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    log_checkpoints = on
+    log_connections = on
+    log_disconnections = on
+    log_lock_waits = on
+    log_temp_files = 0
+    log_autovacuum_min_duration = 0
+    log_error_verbosity = default
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Do not enable log_statement as its log format will not be parsed by pgBadger.&lt;/p&gt;
+&lt;p&gt;Of course your log messages should be in English without locale support:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    lc_messages='C'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;but this is not only recommended by pgBadger.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-log-statements" class="anchor" aria-hidden="true" href="#log-statements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LOG STATEMENTS&lt;/h3&gt;
+&lt;p&gt;Considerations about log_min_duration_statement, log_duration and log_statement
+configuration directives.&lt;/p&gt;
+&lt;p&gt;If you want the query statistics to include the actual query strings, you
+must set log_min_duration_statement to 0 or more milliseconds.&lt;/p&gt;
+&lt;p&gt;If you just want to report duration and number of queries and don't want all
+details about queries, set log_min_duration_statement to -1 to disable it and
+enable log_duration in your postgresql.conf file. If you want to add the most
+common request report you can either choose to set log_min_duration_statement
+to a higher value or choose to enable log_statement.&lt;/p&gt;
+&lt;p&gt;Enabling log_min_duration_statement will add reports about slowest queries and
+queries that took up the most time. Take care that if you have log_statement
+set to 'all' nothing will be logged with log_min_duration_statement.&lt;/p&gt;
+&lt;p&gt;Warning: Do not enable both log_min_duration_statement, log_duration and
+log_statement all together, this will result in wrong counter values. Note
+that this will also increase drastically the size of your log.
+log_min_duration_statement should always be preferred.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-parallel-processing" class="anchor" aria-hidden="true" href="#parallel-processing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PARALLEL PROCESSING&lt;/h3&gt;
+&lt;p&gt;To enable parallel processing you just have to use the -j N option where N is
+the number of cores you want to use.&lt;/p&gt;
+&lt;p&gt;pgBadger will then proceed as follow:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    for each log file
+        chunk size = int(file size / N)
+        look at start/end offsets of these chunks
+        fork N processes and seek to the start offset of each chunk
+            each process will terminate when the parser reach the end offset
+            of its chunk
+            each process write stats into a binary temporary file
+       wait for all children has terminated
+    All binary temporary files generated will then be read and loaded into
+    memory to build the html output.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With that method, at start/end of chunks pgBadger may truncate or omit a
+maximum of N queries per log file which is an insignificant gap if you have
+millions of queries in your log file. The chance that the query that you were
+looking for is lost is near 0, this is why I think this gap is livable. Most
+of the time the query is counted twice but truncated.&lt;/p&gt;
+&lt;p&gt;When you have many small log files and many CPUs it is speedier to dedicate
+one core to one log file at a time. To enable this behavior you have to use
+option -J N instead. With 200 log files of 10MB each the use of the -J option
+starts being really interesting with 8 Cores. Using this method you will be
+sure not to lose any queries in the reports.&lt;/p&gt;
+&lt;p&gt;He are a benchmark done on a server with 8 CPUs and a single file of 9.5GB.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;     Option |  1 CPU  | 2 CPU | 4 CPU | 8 CPU
+    --------+---------+-------+-------+------
+       -j   | 1h41m18 | 50m25 | 25m39 | 15m58
+       -J   | 1h41m18 | 54m28 | 41m16 | 34m45
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With 200 log files of 10MB each and a total of 2GB the results are slightly
+different:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;     Option | 1 CPU | 2 CPU | 4 CPU | 8 CPU
+    --------+-------+-------+-------+------
+       -j   | 20m15 |  9m56 |  5m20 | 4m20
+       -J   | 20m15 |  9m49 |  5m00 | 2m40
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So it is recommended to use -j unless you have hundreds of small log files
+and can use at least 8 CPUs.&lt;/p&gt;
+&lt;p&gt;IMPORTANT: when you are using parallel parsing pgBadger will generate a
+lot of temporary files in the /tmp directory and will remove them at the
+end, so do not remove those files unless pgBadger is not running. They are
+all named with the following template tmp_pgbadgerXXXX.bin so they can be
+easily identified.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-incremental-reports" class="anchor" aria-hidden="true" href="#incremental-reports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;INCREMENTAL REPORTS&lt;/h3&gt;
+&lt;p&gt;pgBadger includes an automatic incremental report mode using option -I or
+--incremental. When running in this mode, pgBadger will generate one report
+per day and a cumulative report per week. Output is first done in binary
+format into the mandatory output directory (see option -O or --outdir),
+then in HTML format for daily and weekly reports with a main index file.&lt;/p&gt;
+&lt;p&gt;The main index file will show a dropdown menu per week with a link to each
+week report and links to daily reports of each week.&lt;/p&gt;
+&lt;p&gt;For example, if you run pgBadger as follows based on a daily rotated file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 4 * * * /usr/bin/pgbadger -I -q /var/log/postgresql/postgresql.log.1 -O /var/www/pg_reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;you will have all daily and weekly reports for the full running period.&lt;/p&gt;
+&lt;p&gt;In this mode pgBadger will create an automatic incremental file in the
+output directory, so you don't have to use the -l option unless you want
+to change the path of that file. This means that you can run pgBadger in
+this mode each day on a log file rotated each week, and it will not count
+the log entries twice.&lt;/p&gt;
+&lt;p&gt;To save disk space you may want to use the -X or --extra-files command line
+option to force pgBadger to write JavaScript and CSS to separate files in
+the output directory. The resources will then be loaded using script and
+link tags.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-rebuilding-reports" class="anchor" aria-hidden="true" href="#rebuilding-reports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rebuilding reports&lt;/h4&gt;
+&lt;p&gt;Incremental reports can be rebuilt after a pgbadger report fix or a new
+feature to update all HTML reports. To rebuild all reports where a binary
+file is still present proceed as follow:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm /path/to/reports/*.js
+rm /path/to/reports/*.css
+pgbadger -X -I -O /path/to/reports/ --rebuild
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it will also update all resource files (JS and CSS). Use -E or --explode
+if the reports were built using this option.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-monthly-reports" class="anchor" aria-hidden="true" href="#monthly-reports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Monthly reports&lt;/h4&gt;
+&lt;p&gt;By default pgBadger in incremental mode only compute daily and weekly reports.
+If you want monthly cumulative reports you will have to use a separate command
+to specify the report to build. For example to build a report for August 2019:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger -X --month-report 2919-08 /var/www/pg_reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;this will add a link to the month name into the calendar view of incremental
+reports to look at monthly report. The report for a current month can be run
+every day it is entirely rebuilt each time. The monthly report is not built by
+default because it could take lot of time following the amount of data.&lt;/p&gt;
+&lt;p&gt;If reports were built with the per database option ( -E | --explode ) it must
+be used too when calling pgbadger to build monthly report:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger -E -X --month-report 2919-08 /var/www/pg_reports/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is the same when using the rebuild option ( -R | --rebuild ).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-binary-format" class="anchor" aria-hidden="true" href="#binary-format"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BINARY FORMAT&lt;/h3&gt;
+&lt;p&gt;Using the binary format it is possible to create custom incremental and
+cumulative reports. For example, if you want to refresh a pgBadger
+report each hour from a daily PostgreSQL log file, you can proceed by
+running each hour the following commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger --last-parsed .pgbadger_last_state_file -o sunday/hourX.bin /var/log/pgsql/postgresql-Sun.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to generate the incremental data files in binary format. And to generate the fresh HTML
+report from that binary file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pgbadger sunday/*.bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or as another example, if you generate one log file per hour and you want
+reports to be rebuilt each time the log file is rotated, proceed as
+follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    pgbadger -o day1/hour01.bin /var/log/pgsql/pglog/postgresql-2012-03-23_10.log
+    pgbadger -o day1/hour02.bin /var/log/pgsql/pglog/postgresql-2012-03-23_11.log
+    pgbadger -o day1/hour03.bin /var/log/pgsql/pglog/postgresql-2012-03-23_12.log
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you want to refresh the HTML report, for example each time after a new binary file
+is generated, just do the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    pgbadger -o day1_report.html day1/*.bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Adjust the commands to suit your particular needs.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-json-format" class="anchor" aria-hidden="true" href="#json-format"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JSON FORMAT&lt;/h3&gt;
+&lt;p&gt;JSON format is good for sharing data with other languages, which makes it
+easy to integrate pgBadger result into other monitoring tools like Cacti
+or Graphite.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-authors" class="anchor" aria-hidden="true" href="#authors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AUTHORS&lt;/h3&gt;
+&lt;p&gt;pgBadger is an original work from Gilles Darold.&lt;/p&gt;
+&lt;p&gt;The pgBadger logo is an original creation of Damien Cazeils.&lt;/p&gt;
+&lt;p&gt;The pgBadger v4.x design comes from the "Art is code" company.&lt;/p&gt;
+&lt;p&gt;This web site is a work of Gilles Darold.&lt;/p&gt;
+&lt;p&gt;pgBadger is maintained by Gilles Darold and every one who wants to contribute.&lt;/p&gt;
+&lt;p&gt;Many people have contributed to pgBadger, they are all quoted in the Changelog file.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENSE&lt;/h3&gt;
+&lt;p&gt;pgBadger is free software distributed under the PostgreSQL Licence.&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2012-2019, Gilles Darold&lt;/p&gt;
+&lt;p&gt;A modified version of the SQL::Beautify Perl Module is embedded in pgBadger
+with copyright (C) 2009 by Jonas Kramer and is published under the terms of
+the Artistic License 2.0.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>darold</author><guid isPermaLink="false">https://github.com/darold/pgbadger</guid><pubDate>Mon, 11 Nov 2019 00:04:00 GMT</pubDate></item><item><title>Ensembl/ensembl-vep #5 in Perl, This week</title><link>https://github.com/Ensembl/ensembl-vep</link><description>&lt;p&gt;&lt;i&gt;The Ensembl Variant Effect Predictor predicts the functional effects of genomic variants&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ensembl-vep" class="anchor" aria-hidden="true" href="#ensembl-vep"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ensembl-vep&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/Ensembl/ensembl-vep/blob/release/98/LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/10a22492b53612bb3ca7d14fdf88e949ce7d5b73/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f456e73656d626c2f656e73656d626c2d7665702e737667" alt="GitHub" data-canonical-src="https://img.shields.io/github/license/Ensembl/ensembl-vep.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://coveralls.io/github/Ensembl/ensembl-vep?branch=release/98" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ef27a0a299d7d853d054263269af8d370183273d/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f456e73656d626c2f656e73656d626c2d7665702f62616467652e7376673f6272616e63683d72656c656173652f3938" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/Ensembl/ensembl-vep/badge.svg?branch=release/98" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://hub.docker.com/r/ensemblorg/ensembl-vep" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fc85d80eae2b6a4b8c5a86c2a27750ae5fc88411/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f6275696c642f656e73656d626c6f72672f656e73656d626c2d7665702e737667" alt="Docker Build Status" data-canonical-src="https://img.shields.io/docker/build/ensemblorg/ensembl-vep.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://hub.docker.com/r/ensemblorg/ensembl-vep" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b7a20113017fe1207c3372a9139023d48897debe/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f656e73656d626c6f72672f656e73656d626c2d7665702e737667" alt="Docker Hub Pulls" data-canonical-src="https://img.shields.io/docker/pulls/ensemblorg/ensembl-vep.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VEP&lt;/strong&gt; (Variant Effect Predictor) predicts the functional effects of genomic variants.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Haplosaurus&lt;/strong&gt; uses phased genotype data to predict whole-transcript haplotype sequences.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Variant Recoder&lt;/strong&gt; translates between different variant encodings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of contents&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#install"&gt;Installation and requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#vep"&gt;VEP&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vepusage"&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#haplo"&gt;Haplosaurus&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#haplousage"&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#haplooutput"&gt;Output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#haploREST"&gt;REST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#haploflags"&gt;Flags&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#recoder"&gt;Variant Recoder&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#recoderusage"&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#recoderoutput"&gt;Output&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name="user-content-install"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation-and-requirements" class="anchor" aria-hidden="true" href="#installation-and-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation and requirements&lt;/h3&gt;
+&lt;p&gt;The VEP package requires:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;gcc&lt;/strong&gt;, &lt;strong&gt;g++&lt;/strong&gt; and &lt;strong&gt;make&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perl&lt;/strong&gt; (&amp;gt;=5.10 recommended, tested on 5.10, 5.14, 5.18, 5.22, 5.26)&lt;/li&gt;
+&lt;li&gt;Perl libraries &lt;a href="https://metacpan.org/pod/Archive::Zip" rel="nofollow"&gt;Archive::Zip&lt;/a&gt; and &lt;a href="https://metacpan.org/pod/DBI" rel="nofollow"&gt;DBI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The remaining dependencies can be installed using the included &lt;a href="http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html#installer" rel="nofollow"&gt;INSTALL.pl&lt;/a&gt; script. Basic instructions:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/Ensembl/ensembl-vep.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; ensembl-vep
+perl INSTALL.pl&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The installer may also be used to check for updates to this and co-dependent packages, simply re-run INSTALL.pl.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html" rel="nofollow"&gt;documentation&lt;/a&gt; for full installation instructions.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-additional-cpan-modules" class="anchor" aria-hidden="true" href="#additional-cpan-modules"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional CPAN modules&lt;/h4&gt;
+&lt;p&gt;The following modules are optional but most users will benefit from installing them. We recommend using &lt;a href="http://search.cpan.org/~miyagawa/Menlo-1.9003/script/cpanm-menlo" rel="nofollow"&gt;cpanminus&lt;/a&gt; to install.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://search.cpan.org/~michielb/DBD-mysql/lib/DBD/mysql.pm" rel="nofollow"&gt;DBD::mysql&lt;/a&gt; - required for database access (&lt;code&gt;--database&lt;/code&gt; or &lt;code&gt;--cache&lt;/code&gt; without &lt;code&gt;--offline&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://search.cpan.org/~benbooth/Set-IntervalTree/lib/Set/IntervalTree.pm" rel="nofollow"&gt;Set::IntervalTree&lt;/a&gt; - required for Haplosaurus, also confers speed updates to VEP&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://search.cpan.org/dist/JSON/" rel="nofollow"&gt;JSON&lt;/a&gt; - required for writing JSON output&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm" rel="nofollow"&gt;PerlIO::gzip&lt;/a&gt; - faster compressed file parsing&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://search.cpan.org/~lds/Bio-BigFile-1.07/lib/Bio/DB/BigFile.pm" rel="nofollow"&gt;Bio::DB::BigFile&lt;/a&gt; - required for reading custom annotation data from BigWig files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-docker" class="anchor" aria-hidden="true" href="#docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker&lt;/h4&gt;
+&lt;p&gt;A docker image for VEP is available from &lt;a href="https://hub.docker.com/r/ensemblorg/ensembl-vep" rel="nofollow"&gt;DockerHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html#docker" rel="nofollow"&gt;documentation&lt;/a&gt; for the Docker installation instructions.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name="user-content-vep"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-vep" class="anchor" aria-hidden="true" href="#vep"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VEP&lt;/h2&gt;
+&lt;p&gt;&lt;a name="user-content-vepusage"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./vep -i input.vcf -o out.txt -offline&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See &lt;a href="http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html#basic" rel="nofollow"&gt;documentation&lt;/a&gt; for full command line instructions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please report any bugs or issues by &lt;a href="http://www.ensembl.org/info/about/contact/index.html" rel="nofollow"&gt;contacting Ensembl&lt;/a&gt; or creating a &lt;a href="https://github.com/Ensembl/ensembl-vep/issues"&gt;GitHub issue&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name="user-content-haplo"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-haplosaurus" class="anchor" aria-hidden="true" href="#haplosaurus"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Haplosaurus&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;haplo&lt;/code&gt; is a local tool implementation of the same functionality that powers the &lt;a href="http://www.ensembl.org/Homo_sapiens/Transcript/Haplotypes?t=ENST00000304748" rel="nofollow"&gt;Ensembl transcript haplotypes view&lt;/a&gt;. It takes phased genotypes from a VCF and constructs a pair of haplotype sequences for each overlapped transcript; these sequences are also translated into predicted protein haplotype sequences. Each variant haplotype sequence is aligned and compared to the reference, and an HGVS-like name is constructed representing its differences to the reference.&lt;/p&gt;
+&lt;p&gt;This approach offers an advantage over VEP's analysis, which treats each input variant independently. By considering the combined change contributed by all the variant alleles across a transcript, the compound effects the variants may have are correctly accounted for.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;haplo&lt;/code&gt; shares much of the same command line functionality with &lt;code&gt;vep&lt;/code&gt;, and can use VEP caches, Ensembl databases, GFF and GTF files as sources of transcript data; all &lt;code&gt;vep&lt;/code&gt; command line flags relating to this functionality work the same with &lt;code&gt;haplo&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-haplousage"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-usage-1" class="anchor" aria-hidden="true" href="#usage-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Input data must be a &lt;a href="http://samtools.github.io/hts-specs/VCFv4.3.pdf" rel="nofollow"&gt;VCF&lt;/a&gt; containing phased genotype data for at least one individual and file must be sorted by chromosome and genomic position; no other formats are currently supported.&lt;/p&gt;
+&lt;p&gt;When using a VEP cache as the source of transcript annotation, the first time you run &lt;code&gt;haplo&lt;/code&gt; with a particular cache it will spend some time scanning transcript locations in the cache.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./haplo -i input.vcf -o out.txt -cache&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a name="user-content-haplooutput"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-output" class="anchor" aria-hidden="true" href="#output"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Output&lt;/h3&gt;
+&lt;p&gt;The default output format is a simple tab-delimited file reporting all observed non-reference haplotypes. It has the following fields:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Transcript stable ID&lt;/li&gt;
+&lt;li&gt;CDS haplotype name&lt;/li&gt;
+&lt;li&gt;Comma-separated list of &lt;a href="#haploflags"&gt;flags&lt;/a&gt; for CDS haplotype&lt;/li&gt;
+&lt;li&gt;Protein haplotype name&lt;/li&gt;
+&lt;li&gt;Comma-separated list of &lt;a href="#haploflags"&gt;flags&lt;/a&gt; for protein haplotype&lt;/li&gt;
+&lt;li&gt;Comma-separated list of frequency data for protein haplotype&lt;/li&gt;
+&lt;li&gt;Comma-separated list of contributing variants&lt;/li&gt;
+&lt;li&gt;Comma-separated list of sample:count that exhibit this haplotype&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The altered haplotype sequences can be obtained by switching to JSON output using &lt;code&gt;--json&lt;/code&gt; which will display them by default.
+Each transcript analysed is summarised as a JSON object written to one line of the output file.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="#haploREST"&gt;JSON output&lt;/a&gt; structure matches the format of the &lt;a href="https://rest.ensembl.org/documentation/info/transcript_haplotypes_get" rel="nofollow"&gt;transcript haplotype REST endpoint&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You may exclude fields in the JSON from being exported with &lt;code&gt;--dont_export field1,field2&lt;/code&gt;. This may be used, for example, to exclude the full haplotype sequence and aligned sequences from the output with &lt;code&gt;--dont_export seq,aligned_sequences&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note JSON output does not currently include side-loaded frequency data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a name="user-content-haplorest"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-rest-service" class="anchor" aria-hidden="true" href="#rest-service"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REST service&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://rest.ensembl.org/documentation/info/transcript_haplotypes_get" rel="nofollow"&gt;transcript haplotype REST endpoint&lt;/a&gt;.
+returns arrays of protein_haplotypes and cds_haplotypes for a given transcript. The default haplotype record includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;population_counts&lt;/strong&gt;: the number of times the haplotype is seen in each population&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;population_frequencies&lt;/strong&gt;: the frequency of the haplotype  in each population&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;contributing_variants&lt;/strong&gt;:  variants contributing to the haplotype&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;diffs&lt;/strong&gt;: differences between the reference and this haplotype&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hex&lt;/strong&gt;: the md5 hex of this haplotype sequence&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;other_hexes&lt;/strong&gt;: the md5 hex of other related haplotype sequences (
+CDSHaplotypes that translate to this ProteinHaplotype or
+ProteinHaplotype representing the translation of this CDSHaplotype)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;has_indel&lt;/strong&gt;: does the haplotype contain insertions or deletions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;type&lt;/strong&gt;: the type of haplotype - cds, protein&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt;: a human readable name for the haplotype (sequence id + REF or a change description)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;flags&lt;/strong&gt;: &lt;a href="#haploflags"&gt;flags&lt;/a&gt; for the haplotype&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;frequency&lt;/strong&gt;: haplotype frequency in full sample set&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;count&lt;/strong&gt;: haplotype count in full sample set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The REST service does not return raw sequences, sample-haplotype assignments and the aligned sequences used to generate
+differences by default.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-haploflags"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-flags" class="anchor" aria-hidden="true" href="#flags"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flags&lt;/h3&gt;
+&lt;p&gt;Haplotypes may be flagged with one or more of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;indel&lt;/strong&gt;: haplotype contains an insertion or deletion (indel) relative to the reference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;frameshift:&lt;/strong&gt; haplotype contains at least one indel that disrupts the reading frame of the transcript.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;resolved_frameshift:&lt;/strong&gt; haplotype contains two or more indels whose combined effect restores the reading frame of the transcript.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;stop_changed:&lt;/strong&gt; indicates either a STOP codon is gained (protein truncating variant, PTV) or the existing reference STOP codon is lost.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;deleterious_sift_or_polyphen:&lt;/strong&gt; haplotype contains at least one single amino acid substitution event flagged as deleterious (SIFT) or probably damaging (PolyPhen2).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-bioperl-ext"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-bioperl-ext" class="anchor" aria-hidden="true" href="#bioperl-ext"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;bioperl-ext&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;haplo&lt;/code&gt; can make use of a fast compiled alignment algorithm from the &lt;a href="https://github.com/bioperl/bioperl-ext"&gt;bioperl-ext&lt;/a&gt; package; this can speed up analysis, particularly in longer transcripts where insertions and/or deletions are introduced. The bioperl-ext package is no longer maintained and requires some tweaking to install. The following instructions install the package in &lt;code&gt;$HOME/perl5&lt;/code&gt;; edit &lt;code&gt;PREFIX=[path]&lt;/code&gt; to change this. You may also need to edit the &lt;code&gt;export&lt;/code&gt; command to point to the path created for the architecture on your machine.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/bioperl/bioperl-ext.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; bioperl-ext/Bio/Ext/Align/
+perl -pi -e&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;s|(cd libs.+)CFLAGS=&lt;span class="pl-cce"&gt;\\&lt;/span&gt;\'|&lt;span class="pl-cce"&gt;\$&lt;/span&gt;1CFLAGS=&lt;span class="pl-cce"&gt;\\&lt;/span&gt;\'-fPIC |&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; Makefile.PL
+perl Makefile.PL PREFIX=&lt;span class="pl-k"&gt;~&lt;/span&gt;/perl5
+make
+make install
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; -
+&lt;span class="pl-k"&gt;export&lt;/span&gt; PERL5LIB=&lt;span class="pl-smi"&gt;${PERL5LIB}&lt;/span&gt;:&lt;span class="pl-smi"&gt;${HOME}&lt;/span&gt;/perl5/lib/x86_64-linux-gnu/perl/5.22.1/&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If successful the following should print &lt;code&gt;OK&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;perl -MBio::Tools::dpAlign -e&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;print qq{OK\n}&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name="user-content-recoder"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-variant-recoder" class="anchor" aria-hidden="true" href="#variant-recoder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Variant Recoder&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;variant_recoder&lt;/code&gt; is a tool for translating between different variant encodings. It accepts as input any format supported by VEP (VCF, variant ID, HGVS), with extensions to allow for parsing of potentially ambiguous HGVS notations. For each input variant, &lt;code&gt;variant_recoder&lt;/code&gt; reports all possible encodings including variant IDs from &lt;a href="http://www.ensembl.org/info/genome/variation/species/sources_documentation.html" rel="nofollow"&gt;all sources imported into the Ensembl database&lt;/a&gt; and HGVS (genomic, transcript and protein), reported on Ensembl, RefSeq and LRG sequences.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-recoderusage"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-usage-2" class="anchor" aria-hidden="true" href="#usage-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;variant_recoder&lt;/code&gt; depends on database access for identifier lookup, and cannot be used in offline mode as per VEP. The output format is JSON and the &lt;a href="http://search.cpan.org/dist/JSON/" rel="nofollow"&gt;JSON perl module&lt;/a&gt; is required.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./variant_recoder --id [input_data_string]
+./variant_recoder -i [input_file] --species [species]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a name="user-content-recoderoutput"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-output-1" class="anchor" aria-hidden="true" href="#output-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Output&lt;/h3&gt;
+&lt;p&gt;Output is a JSON array of objects, one per input variant, with the following keys:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;input&lt;/strong&gt;: input string&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;id&lt;/strong&gt;: variant identifiers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hgvsg&lt;/strong&gt;: HGVS genomic nomenclature&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hgvsc&lt;/strong&gt;: HGVS transcript nomenclature&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hgvsp&lt;/strong&gt;: HGVS protein nomenclature&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;spdi&lt;/strong&gt;: Genomic SPDI notation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vcf_string&lt;/strong&gt;: VCF format (optional)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;warnings&lt;/strong&gt;: Warnings generated e.g. for invalid HGVS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use &lt;code&gt;--pretty&lt;/code&gt; to pre-format and indent JSON output.&lt;/p&gt;
+&lt;p&gt;Example output:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./variant_recoder --id &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;AGT:p.Met268Thr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; --pretty
+[
+   {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;input&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;AGT:p.Met268Thr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rs699&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;CM920010&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hgvsg&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;NC_000001.11:g.230710048A&amp;gt;G&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hgvsc&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ENST00000366667.4:c.803T&amp;gt;C&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;NM_000029.3:c.803T&amp;gt;C&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hgvsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ENSP00000355627.4:p.Met268Thr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;NP_000020.1:p.Met268Thr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;spdi&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;NC_000001.11:230710047:A:G&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;warnings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:&lt;/span&gt; [
+         &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Possible invalid use of gene name 'AGT' as HGVS reference; AGT:p.Met268Thr may resolve to multiple genomic locations&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ]
+   }
+]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a name="user-content-recoderopts"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;variant_recoder&lt;/code&gt; shares many of the same command line flags as VEP. Others are unique to &lt;code&gt;variant_recoder&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-id|--input_data [input_string]&lt;/code&gt;: a single variant as a string.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-i|--input_file [input_file]&lt;/code&gt;: input file containing one or more variants, one per line. Mixed formats disallowed.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--species&lt;/code&gt;: species to use (default: homo_sapiens).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--grch37&lt;/code&gt;: use GRCh37 assembly instead of GRCh38.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--genomes&lt;/code&gt;: set database parameters for &lt;a href="http://ensemblgenomes.org/" rel="nofollow"&gt;Ensembl Genomes&lt;/a&gt; species.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--pretty&lt;/code&gt;: write pre-formatted indented JSON.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--fields [field1,field2]&lt;/code&gt;: limit output fields. Comma-separated list, one or more of: &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;hgvsg&lt;/code&gt;, &lt;code&gt;hgvsc&lt;/code&gt;, &lt;code&gt;hgvsp&lt;/code&gt;, &lt;code&gt;spdi&lt;/code&gt;, &lt;code&gt;vcf_string&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--host [db_host]&lt;/code&gt;: change database host from default &lt;code&gt;ensembldb.ensembl.org&lt;/code&gt; (UK); geographic mirrors are &lt;code&gt;useastdb.ensembl.org&lt;/code&gt; (US East Coast) and &lt;code&gt;asiadb.ensembl.org&lt;/code&gt; (Asia). &lt;code&gt;--user&lt;/code&gt;, &lt;code&gt;--port&lt;/code&gt; and &lt;code&gt;--pass&lt;/code&gt; may also be set.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--pick&lt;/code&gt;, &lt;code&gt;--per_gene&lt;/code&gt;, &lt;code&gt;--pick_allele&lt;/code&gt;, &lt;code&gt;--pick_allele_gene&lt;/code&gt;, &lt;code&gt;--pick_order&lt;/code&gt;: set and customise transcript selection process, see &lt;a href="http://www.ensembl.org/info/docs/tools/vep/script/vep_other.html#pick" rel="nofollow"&gt;VEP documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Ensembl</author><guid isPermaLink="false">https://github.com/Ensembl/ensembl-vep</guid><pubDate>Mon, 11 Nov 2019 00:05:00 GMT</pubDate></item></channel></rss>

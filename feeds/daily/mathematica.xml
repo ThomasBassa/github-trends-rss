@@ -1,2 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Mathematica, Today</title><link>https://github.com/trending/mathematica?since=daily</link><description>The top repositories on GitHub for mathematica, measured daily</description><pubDate>Sun, 10 Nov 2019 01:07:29 GMT</pubDate><lastBuildDate>Sun, 10 Nov 2019 01:07:29 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Mathematica, Today today</title><pubDate>Sun, 10 Nov 2019 01:07:29 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Mathematica, Today</title><link>https://github.com/trending/mathematica?since=daily</link><description>The top repositories on GitHub for mathematica, measured daily</description><pubDate>Mon, 11 Nov 2019 01:07:27 GMT</pubDate><lastBuildDate>Mon, 11 Nov 2019 01:07:27 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>WolframResearch/WolframLanguageForJupyter #1 in Mathematica, Today</title><link>https://github.com/WolframResearch/WolframLanguageForJupyter</link><description>&lt;p&gt;&lt;i&gt;Wolfram Language kernel for Jupyter notebooks&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-wolfram-language-kernel-for-jupyter-notebooks" class="anchor" aria-hidden="true" href="#wolfram-language-kernel-for-jupyter-notebooks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wolfram Language kernel for Jupyter notebooks&lt;/h1&gt;
+&lt;p&gt;Jupyter provides a protocol (ZMQ) to connect their notebooks to various languages. This project defines a Wolfram Language kernel which can be used in Jupyter notebooks.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h1&gt;
+&lt;p&gt;On your machine, you will need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jupyter&lt;/li&gt;
+&lt;li&gt;Wolfram Engine, i.e., a Wolfram Desktop or Mathematica installation&lt;/li&gt;
+&lt;li&gt;Optional, but recommended: &lt;code&gt;wolframscript&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h1&gt;
+&lt;p&gt;There are &lt;strong&gt;two&lt;/strong&gt; ways to make the Wolfram Language available in Jupyter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using the &lt;code&gt;wolframscript&lt;/code&gt; command line script interpreter&lt;/li&gt;
+&lt;li&gt;Using Wolfram Language commands from the &lt;code&gt;WolframLanguageForJupyter&lt;/code&gt; paclet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-method-1-using-wolframscript" class="anchor" aria-hidden="true" href="#method-1-using-wolframscript"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Method 1: Using &lt;code&gt;wolframscript&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Run the following command to make the Wolfram Language engine available to Jupyter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;configure-jupyter.wls add
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If the location of the Wolfram Engine changes, you will have to run &lt;code&gt;configure-jupyter.wls&lt;/code&gt; again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;configure-jupyter.wls&lt;/code&gt; gives an error if the Wolfram Engine could not be added.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more configuration options run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;configure-jupyter.wls help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-method-2-using-wolfram-language" class="anchor" aria-hidden="true" href="#method-2-using-wolfram-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Method 2: Using Wolfram Language&lt;/h2&gt;
+&lt;p&gt;You can download the latest version of the paclet here:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/WolframResearch/WolframLanguageForJupyter/releases"&gt;https://github.com/WolframResearch/WolframLanguageForJupyter/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To install the paclet, run the following command (replacing x, y, and z with the correct values):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PacletInstall["WolframLanguageForJupyter-x.y.z.paclet"]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To load the paclet, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Needs["WolframLanguageForJupyter`"]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To add the Wolfram Language to Jupyter, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ConfigureJupyter["Add"]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To specify a specific Jupyter binary, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ConfigureJupyter["Add", "JupyterInstallation" -&amp;gt; "..."]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To specify a specific Wolfram Engine binary, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ConfigureJupyter["Add", "WolframEngineBinary" -&amp;gt; "..." ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please note, however, that the value for the &lt;code&gt;"WolframEngineBinary"&lt;/code&gt; option should not be a &lt;code&gt;wolframscript&lt;/code&gt; path.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-testing-your-installation" class="anchor" aria-hidden="true" href="#testing-your-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing your installation&lt;/h1&gt;
+&lt;p&gt;The following command should now list the Wolfram Engine:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jupyter kernelspec list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output should include a line like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;wolframlanguage-11.3.0    C:\ProgramData\jupyter\kernels\wolframlanguage-11.3.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To test your installation, run the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then select Wolfram Language from the drop down menu:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/menu-01.png"&gt;&lt;img src="images/menu-01.png" alt="menu" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After the In[] prompt you can now type a Wolfram Language command (use shift-enter to evaluate):&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/in-out-01.png"&gt;&lt;img src="images/in-out-01.png" alt="in-out-1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Outputs are either strings, for simple textual results, or images, for graphics and typeset results:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/in-out-02.png"&gt;&lt;img src="images/in-out-02.png" alt="in-out-2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Any messages that occur during evaluation are displayed:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/in-out-03.png"&gt;&lt;img src="images/in-out-03.png" alt="in-out-3" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-building-the-wolframlanguageforjupyter-paclet" class="anchor" aria-hidden="true" href="#building-the-wolframlanguageforjupyter-paclet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building the WolframLanguageForJupyter paclet&lt;/h1&gt;
+&lt;p&gt;To build the WolframLanguageForJupyter paclet file yourself, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;configure-jupyter.wls build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This creates the &lt;code&gt;WolframLanguageForJupyter-x.y.z.paclet&lt;/code&gt; file (use the &lt;code&gt;PacletInfo.m&lt;/code&gt; to increment the version).&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-removing-your-installation" class="anchor" aria-hidden="true" href="#removing-your-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Removing your installation&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-method-1-using-wolframscript-1" class="anchor" aria-hidden="true" href="#method-1-using-wolframscript-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Method 1: Using &lt;code&gt;wolframscript&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Run the following command to remove the Wolfram Language engine from Jupyter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;configure-jupyter.wls remove
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-method-2-using-wolfram-language-1" class="anchor" aria-hidden="true" href="#method-2-using-wolfram-language-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Method 2: Using Wolfram Language&lt;/h2&gt;
+&lt;p&gt;Run the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ConfigureJupyter["Remove"]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-links" class="anchor" aria-hidden="true" href="#links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WolframResearch/WolframLanguageForJupyter"&gt;https://github.com/WolframResearch/WolframLanguageForJupyter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jupyter.readthedocs.io/en/latest/projects/content-projects.html" rel="nofollow"&gt;https://jupyter.readthedocs.io/en/latest/projects/content-projects.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>WolframResearch</author><guid isPermaLink="false">https://github.com/WolframResearch/WolframLanguageForJupyter</guid><pubDate>Mon, 11 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
