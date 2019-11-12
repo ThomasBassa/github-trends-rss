@@ -1,2 +1,786 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Awk, Today</title><link>https://github.com/trending/awk?since=daily</link><description>The top repositories on GitHub for awk, measured daily</description><pubDate>Mon, 11 Nov 2019 01:07:32 GMT</pubDate><lastBuildDate>Mon, 11 Nov 2019 01:07:32 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Awk, Today today</title><pubDate>Mon, 11 Nov 2019 01:07:32 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Awk, Today</title><link>https://github.com/trending/awk?since=daily</link><description>The top repositories on GitHub for awk, measured daily</description><pubDate>Tue, 12 Nov 2019 01:08:39 GMT</pubDate><lastBuildDate>Tue, 12 Nov 2019 01:08:39 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>soimort/translate-shell #1 in Awk, Today</title><link>https://github.com/soimort/translate-shell</link><description>&lt;p&gt;&lt;i&gt;:speech_balloon: Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-translate-shell" class="anchor" aria-hidden="true" href="#translate-shell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate Shell&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.soimort.org/translate-shell" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/soimort/translate-shell/gh-pages/images/icon.png" alt="Icon" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/soimort/translate-shell" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/54dd374e4324f33afd98f81bcb7d8bb4b5f7c09c/68747470733a2f2f636972636c6563692e636f6d2f67682f736f696d6f72742f7472616e736c6174652d7368656c6c2e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/soimort/translate-shell.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/soimort/translate-shell/actions"&gt;&lt;img src="https://github.com/soimort/translate-shell/workflows/CI/badge.svg" alt="Actions" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/soimort/translate-shell/releases"&gt;&lt;img src="https://raw.githubusercontent.com/soimort/translate-shell/gh-pages/images/badge-release.png" alt="Version" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.soimort.org/translate-shell/trans" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/soimort/translate-shell/gh-pages/images/badge-download.png" alt="Download" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/soimort/translate-shell?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.soimort.org/translate-shell" rel="nofollow"&gt;Translate Shell&lt;/a&gt;&lt;/strong&gt; (formerly &lt;em&gt;Google Translate CLI&lt;/em&gt;) is a command-line translator powered by &lt;strong&gt;&lt;a href="https://translate.google.com/" rel="nofollow"&gt;Google Translate&lt;/a&gt;&lt;/strong&gt; (default), &lt;strong&gt;&lt;a href="https://www.bing.com/translator" rel="nofollow"&gt;Bing Translator&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://translate.yandex.com/" rel="nofollow"&gt;Yandex.Translate&lt;/a&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;a href="https://www.apertium.org/" rel="nofollow"&gt;Apertium&lt;/a&gt;&lt;/strong&gt;. It gives you easy access to one of these translation engines in your terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans 'Saluton, Mondo!'
+Saluton, Mondo!
+
+Hello, World!
+
+Translations of Saluton, Mondo!
+[ Esperanto -&amp;gt; English ]
+Saluton ,
+    Hello,
+Mondo !
+    World!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, translations with detailed explanations are shown. You can also translate the text briefly: (only the most relevant translation will be shown)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -brief 'Saluton, Mondo!'
+Hello, World!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Translate Shell&lt;/strong&gt; can also be used like an interactive shell; input the text to be translated line by line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -shell -brief
+&amp;gt; Rien ne réussit comme le succès.
+Nothing succeeds like success.
+&amp;gt; Was mich nicht umbringt, macht mich stärker.
+What does not kill me makes me stronger.
+&amp;gt; Юмор есть остроумие глубокого чувства.
+Humor has a deep sense of wit.
+&amp;gt; 學而不思則罔，思而不學則殆。
+Learning without thought is labor lost, thought without learning is perilous.
+&amp;gt; 幸福になるためには、人から愛されるのが一番の近道。
+In order to be happy, the best way is to be loved by people.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-system-requirements" class="anchor" aria-hidden="true" href="#system-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;System Requirements&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Translate Shell&lt;/strong&gt; is known to work on many POSIX-compliant systems, including but not limited to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GNU/Linux&lt;/li&gt;
+&lt;li&gt;macOS&lt;/li&gt;
+&lt;li&gt;*BSD&lt;/li&gt;
+&lt;li&gt;Android (through Termux)&lt;/li&gt;
+&lt;li&gt;Windows (through WSL, Cygwin, or MSYS2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.gnu.org/software/gawk/" rel="nofollow"&gt;GNU Awk&lt;/a&gt;&lt;/strong&gt; (&lt;strong&gt;gawk&lt;/strong&gt;) &lt;strong&gt;4.0 or later&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;This program relies heavily on GNU extensions of the &lt;a href="http://en.wikipedia.org/wiki/AWK" rel="nofollow"&gt;AWK language&lt;/a&gt;, which are non-portable for other AWK implementations (e.g. nawk).&lt;/li&gt;
+&lt;li&gt;How to get gawk:
+&lt;ul&gt;
+&lt;li&gt;gawk comes with all GNU/Linux distributions.&lt;/li&gt;
+&lt;li&gt;On FreeBSD, gawk is available in the ports.&lt;/li&gt;
+&lt;li&gt;On macOS, gawk is available in MacPorts and Homebrew.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://www.gnu.org/software/bash/" rel="nofollow"&gt;GNU Bash&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href="http://www.zsh.org/" rel="nofollow"&gt;Zsh&lt;/a&gt;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;You may use Translate Shell from any Unix shell of your choice (bash, zsh, ksh, tcsh, fish, etc.); however, the wrapper script requires either &lt;strong&gt;bash&lt;/strong&gt; or &lt;strong&gt;zsh&lt;/strong&gt; installed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-recommended-dependencies" class="anchor" aria-hidden="true" href="#recommended-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Recommended Dependencies&lt;/h3&gt;
+&lt;p&gt;These dependencies are optional, but strongly recommended for full functionality:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://curl.haxx.se/" rel="nofollow"&gt;curl&lt;/a&gt;&lt;/strong&gt; with &lt;strong&gt;OpenSSL&lt;/strong&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://fribidi.org/" rel="nofollow"&gt;GNU FriBidi&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;an implementation of the Unicode Bidirectional Algorithm (bidi)&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;required for displaying text in Right-to-Left scripts (e.g. Arabic, Hebrew)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://www.mplayerhq.hu/" rel="nofollow"&gt;mplayer&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="http://mpv.io/" rel="nofollow"&gt;mpv&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="http://mpg123.org/" rel="nofollow"&gt;mpg123&lt;/a&gt;&lt;/strong&gt;, or &lt;strong&gt;&lt;a href="http://espeak.sourceforge.net/" rel="nofollow"&gt;eSpeak&lt;/a&gt;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;required for the Text-to-Speech functionality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://www.greenwoodsoftware.com/less/" rel="nofollow"&gt;less&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/more.html" rel="nofollow"&gt;more&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href="http://www.jedsoft.org/most/" rel="nofollow"&gt;most&lt;/a&gt;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;required for terminal paging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://utopia.knoware.nl/~hlub/uck/rlwrap/#rlwrap" rel="nofollow"&gt;rlwrap&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;a GNU readline wrapper&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;required for readline-style editing and history in the interactive shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://aspell.net/" rel="nofollow"&gt;aspell&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href="http://hunspell.github.io/" rel="nofollow"&gt;hunspell&lt;/a&gt;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;required for spell checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-environment-and-fonts" class="anchor" aria-hidden="true" href="#environment-and-fonts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Environment and Fonts&lt;/h3&gt;
+&lt;p&gt;It is a must to have corresponding fonts for the language(s) / script(s) you wish to display in your terminal. See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Writing-Systems-and-Fonts#unicode-fonts"&gt;wiki: Writing Systems and Fonts&lt;/a&gt;&lt;/strong&gt; for more details on scripts and recommended Unicode fonts.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-try-it-out" class="anchor" aria-hidden="true" href="#try-it-out"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Try It Out!&lt;/h2&gt;
+&lt;p&gt;Start an interactive shell and translate anything you input into your native language: (in &lt;strong&gt;bash&lt;/strong&gt; or &lt;strong&gt;zsh&lt;/strong&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gawk -f &amp;lt;(curl -Ls git.io/translate) -- -shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(in &lt;strong&gt;fish&lt;/strong&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ gawk -f (curl -Ls git.io/translate | psub) -- -shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-option-1-direct-download" class="anchor" aria-hidden="true" href="#option-1-direct-download"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Option #1. Direct Download&lt;/h3&gt;
+&lt;p&gt;Download &lt;a href="http://git.io/trans" rel="nofollow"&gt;the self-contained executable&lt;/a&gt; and place it into your path. It's everything you need.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ wget git.io/trans
+$ chmod +x ./trans
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is a &lt;a href="https://www.soimort.org/translate-shell/trans.sig" rel="nofollow"&gt;GPG signature&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-option-2-from-a-package-manager" class="anchor" aria-hidden="true" href="#option-2-from-a-package-manager"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Option #2. From A Package Manager&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-using-antigen-recommended-for-zsh-users" class="anchor" aria-hidden="true" href="#using-antigen-recommended-for-zsh-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using &lt;a href="https://github.com/zsh-users/antigen"&gt;Antigen&lt;/a&gt; (Recommended for Zsh users)&lt;/h4&gt;
+&lt;p&gt;Add the following line to your &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;antigen bundle soimort/translate-shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-using-your-favorite-package-manager" class="anchor" aria-hidden="true" href="#using-your-favorite-package-manager"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using your favorite package manager&lt;/h4&gt;
+&lt;p&gt;See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Distros"&gt;wiki: Distros&lt;/a&gt;&lt;/strong&gt; on how to install from a specific package manager on your distro.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-option-3-from-git-recommended-for-seasoned-hackers" class="anchor" aria-hidden="true" href="#option-3-from-git-recommended-for-seasoned-hackers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Option #3. From Git (Recommended for seasoned hackers)&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/soimort/translate-shell
+$ cd translate-shell/
+$ make
+$ [sudo] make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In case you have only zsh but not bash in your system, build with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make TARGET=zsh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The default &lt;code&gt;PREFIX&lt;/code&gt; of installation is &lt;code&gt;/usr/local&lt;/code&gt;. To install the program to somewhere else (e.g. &lt;code&gt;/usr&lt;/code&gt;, &lt;code&gt;~/.local&lt;/code&gt;), use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ [sudo] make PREFIX=/usr install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started-by-examples" class="anchor" aria-hidden="true" href="#getting-started-by-examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started by Examples&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-translate-a-word" class="anchor" aria-hidden="true" href="#translate-a-word"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate a Word&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-from-any-language-to-your-language" class="anchor" aria-hidden="true" href="#from-any-language-to-your-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From any language to your language&lt;/h4&gt;
+&lt;p&gt;Google Translate can identify the language of the source text automatically, and Translate Shell by default translates the source text into the language of your &lt;code&gt;locale&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans vorto
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-from-any-language-to-one-or-more-specific-languages" class="anchor" aria-hidden="true" href="#from-any-language-to-one-or-more-specific-languages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From any language to one or more specific languages&lt;/h4&gt;
+&lt;p&gt;Translate a word into French:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :fr word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Translate a word into Chinese and Japanese: (use a plus sign "&lt;code&gt;+&lt;/code&gt;" as the delimiter)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :zh+ja word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, equals sign ("&lt;code&gt;=&lt;/code&gt;") can be used in place of the colon ("&lt;code&gt;:&lt;/code&gt;"). Note that in some shells (e.g. zsh), equals signs may be interpreted differently, therefore the argument specifying languages needs to be protected:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans {=zh+ja} word
+$ trans '=zh+ja' word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also use the &lt;code&gt;-target&lt;/code&gt; (&lt;code&gt;-t&lt;/code&gt;) option to specify the target language(s):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -t zh+ja word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With the &lt;code&gt;-t&lt;/code&gt; option, the name of the language may also be used instead of the language code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -t japanese word
+$ trans -t 日本語 word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-from-a-specific-language" class="anchor" aria-hidden="true" href="#from-a-specific-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From a specific language&lt;/h4&gt;
+&lt;p&gt;Google Translate may wrongly identify the source text as some other language than you expected:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans 手紙
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In that case, you need to specify its language explicitly:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans ja: 手紙
+$ trans zh: 手紙
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also use the &lt;code&gt;-source&lt;/code&gt; (&lt;code&gt;-s&lt;/code&gt;) option to specify the source language:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -s ja 手紙
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-translate-multiple-words-or-a-phrase" class="anchor" aria-hidden="true" href="#translate-multiple-words-or-a-phrase"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate Multiple Words or a Phrase&lt;/h3&gt;
+&lt;p&gt;Translate each word alone:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans en:zh word processor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Put words into one argument, and translate them as a whole:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans en:zh "word processor"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-translate-a-sentence" class="anchor" aria-hidden="true" href="#translate-a-sentence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate a Sentence&lt;/h3&gt;
+&lt;p&gt;Translating a sentence is much the same like translating a phrase; you can just quote the sentence into one argument:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :zh "To-morrow, and to-morrow, and to-morrow,"
+$ trans :zh 'To-morrow, and to-morrow, and to-morrow,'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is also possible to translate multi-line sentences:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :zh "Creeps in this petty pace from day to day,
+&amp;gt; To the last syllable of recorded time;
+&amp;gt; And all our yesterdays have lighted fools
+&amp;gt; The way to dusty death."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To avoid punctuation marks (e.g. "&lt;code&gt;!&lt;/code&gt;") or other special characters being interpreted by the shell, use &lt;em&gt;single quotes&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :zh 'Out, out, brief candle!'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are some cases though, you may still want to use &lt;em&gt;double quotes&lt;/em&gt;: (e.g. the sentence contains a single quotation mark "&lt;code&gt;'&lt;/code&gt;")&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :zh "Life's but a walking shadow, a poor player"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, use the &lt;code&gt;-join-sentence&lt;/code&gt; (&lt;code&gt;-j&lt;/code&gt;) option to treat all arguments as one sentence so that quotes can be omitted:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -j :zh Life\'s but a walking shadow, a poor player
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-brief-mode" class="anchor" aria-hidden="true" href="#brief-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Brief Mode&lt;/h3&gt;
+&lt;p&gt;By default, Translate Shell displays translations in a verbose manner. If you prefer to see only the most relevant translation, there is a brief mode available using the &lt;code&gt;-brief&lt;/code&gt; (&lt;code&gt;-b&lt;/code&gt;) option:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -b :fr "Saluton, Mondo"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In brief mode, phonetic notation (if any) is not shown by default. To enable this, put an at sign "&lt;code&gt;@&lt;/code&gt;" in front of the language code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -b :@ja "Saluton, Mondo"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-dictionary-mode" class="anchor" aria-hidden="true" href="#dictionary-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dictionary Mode&lt;/h3&gt;
+&lt;p&gt;Google Translate can be used as a dictionary. When translating a word and the target language is the same as the source language, the dictionary entry of the word is shown:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :en word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To enable dictionary mode no matter whether the source language and the target language are identical, use the &lt;code&gt;-dictionary&lt;/code&gt; (&lt;code&gt;-d&lt;/code&gt;) option.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -d fr: mot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Not every language supported by Google Translate has provided dictionary data. See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Languages"&gt;wiki: Languages&lt;/a&gt;&lt;/strong&gt; to find out which language(s) has dictionary support.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-language-identification" class="anchor" aria-hidden="true" href="#language-identification"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language Identification&lt;/h3&gt;
+&lt;p&gt;Use the &lt;code&gt;-identify&lt;/code&gt; (&lt;code&gt;-id&lt;/code&gt;) option to identify the language of the text:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -id 言葉
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-text-to-speech" class="anchor" aria-hidden="true" href="#text-to-speech"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Text-to-Speech&lt;/h3&gt;
+&lt;p&gt;Use the &lt;code&gt;-play&lt;/code&gt; (&lt;code&gt;-p&lt;/code&gt;) option to listen to the translation:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -b -p :ja "Saluton, Mondo"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use the &lt;code&gt;-speak&lt;/code&gt; (&lt;code&gt;-sp&lt;/code&gt;) option to listen to the original text:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -sp "你好，世界"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-terminal-paging" class="anchor" aria-hidden="true" href="#terminal-paging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Terminal Paging&lt;/h3&gt;
+&lt;p&gt;Sometimes the content of translation can be too much for display in one screen. Use the &lt;code&gt;-view&lt;/code&gt; (&lt;code&gt;-v&lt;/code&gt;) option to view the translation in a terminal pager such as &lt;code&gt;less&lt;/code&gt; or &lt;code&gt;more&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -d -v word
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-right-to-left-rtl-languages" class="anchor" aria-hidden="true" href="#right-to-left-rtl-languages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Right-to-Left (RTL) Languages&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Right-to-left" rel="nofollow"&gt;Right-to-Left (RTL) languages&lt;/a&gt; are well supported via &lt;a href="http://fribidi.org/" rel="nofollow"&gt;GNU FriBidi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The program will automatically adjust the screen width for padding when displaying right-to-left languages. Alternatively, you may use the &lt;code&gt;-width&lt;/code&gt; (&lt;code&gt;-w&lt;/code&gt;) option to specify the screen width:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -b -w 40 :he "Saluton, Mondo"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Languages"&gt;wiki: Languages&lt;/a&gt;&lt;/strong&gt; to find out which language(s) uses a Right-to-Left writing system.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-pipeline-input-and-output" class="anchor" aria-hidden="true" href="#pipeline-input-and-output"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pipeline, Input and Output&lt;/h3&gt;
+&lt;p&gt;If no source text is given in command-line arguments, the program will read from standard input, or from the file specified by the &lt;code&gt;-input&lt;/code&gt; (&lt;code&gt;-i&lt;/code&gt;) option:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ echo "Saluton, Mondo" | trans -b :fr
+$ trans -b -i input.txt :fr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Translations are written to standard output, or to the file specified by the &lt;code&gt;-output&lt;/code&gt; (&lt;code&gt;-o&lt;/code&gt;) option:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ echo "Saluton, Mondo" | trans -b -o output.txt :fr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-translate-a-file" class="anchor" aria-hidden="true" href="#translate-a-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate a File&lt;/h3&gt;
+&lt;p&gt;Instead of using the &lt;code&gt;-input&lt;/code&gt; option, a &lt;a href="http://en.wikipedia.org/wiki/File_URI_scheme" rel="nofollow"&gt;file URI scheme&lt;/a&gt; (&lt;code&gt;file://&lt;/code&gt; followed by the file name) can be used as a command-line argument:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :fr file://input.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Brief mode is used when translating from file URI schemes.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-translate-a-web-page" class="anchor" aria-hidden="true" href="#translate-a-web-page"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translate a Web Page&lt;/h3&gt;
+&lt;p&gt;To translate a web page, an http(s) URI scheme can be used as an argument:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans :fr http://www.w3.org/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A browser session will open for viewing the translation (via Google Translate's web interface). To specify your web browser of choice, use the &lt;code&gt;-browser&lt;/code&gt; option:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -browser firefox :fr http://www.w3.org/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-language-details" class="anchor" aria-hidden="true" href="#language-details"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language Details&lt;/h3&gt;
+&lt;p&gt;Use the &lt;code&gt;-list&lt;/code&gt; (&lt;code&gt;-L&lt;/code&gt;) option to view details of one or more languages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -L fr
+$ trans -L de+en
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some basic information of the language will be displayed: its English name and endonym (language name in the language itself), language family, writing system, canonical Google Translate code and ISO 639-3 code.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-interactive-translate-shell-repl" class="anchor" aria-hidden="true" href="#interactive-translate-shell-repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interactive Translate Shell (REPL)&lt;/h3&gt;
+&lt;p&gt;Start an interactive shell using the &lt;code&gt;-shell&lt;/code&gt; (or &lt;code&gt;-interactive&lt;/code&gt;, &lt;code&gt;-I&lt;/code&gt;) option:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may specify the source language and the target language(s) before starting an interactive shell:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ trans -shell en:fr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may also change these settings during an interactive session. See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/REPL"&gt;wiki: REPL&lt;/a&gt;&lt;/strong&gt; for more advanced usage of the interactive Translate Shell.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;For more details on command-line options, see the man page &lt;strong&gt;&lt;a href="https://www.soimort.org/translate-shell/trans.1.html" rel="nofollow"&gt;trans(1)&lt;/a&gt;&lt;/strong&gt; or use &lt;code&gt;trans -M&lt;/code&gt; in a terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Usage:  trans [OPTIONS] [SOURCES]:[TARGETS] [TEXT]...
+
+Information options:
+    -V, -version
+        Print version and exit.
+    -H, -help
+        Print help message and exit.
+    -M, -man
+        Show man page and exit.
+    -T, -reference
+        Print reference table of languages and exit.
+    -R, -reference-english
+        Print reference table of languages (in English names) and exit.
+    -L CODES, -list CODES
+        Print details of languages and exit.
+    -S, -list-engines
+        List available translation engines and exit.
+    -U, -upgrade
+        Check for upgrade of this program.
+
+Translator options:
+    -e ENGINE, -engine ENGINE
+        Specify the translation engine to use.
+
+Display options:
+    -verbose
+        Verbose mode. (default)
+    -b, -brief
+        Brief mode.
+    -d, -dictionary
+        Dictionary mode.
+    -identify
+        Language identification.
+    -show-original Y/n
+        Show original text or not.
+    -show-original-phonetics Y/n
+        Show phonetic notation of original text or not.
+    -show-translation Y/n
+        Show translation or not.
+    -show-translation-phonetics Y/n
+        Show phonetic notation of translation or not.
+    -show-prompt-message Y/n
+        Show prompt message or not.
+    -show-languages Y/n
+        Show source and target languages or not.
+    -show-original-dictionary y/N
+        Show dictionary entry of original text or not.
+    -show-dictionary Y/n
+        Show dictionary entry of translation or not.
+    -show-alternatives Y/n
+        Show alternative translations or not.
+    -w NUM, -width NUM
+        Specify the screen width for padding.
+    -indent NUM
+        Specify the size of indent (number of spaces).
+    -theme FILENAME
+        Specify the theme to use.
+    -no-theme
+        Do not use any other theme than default.
+    -no-ansi
+        Do not use ANSI escape codes.
+    -no-autocorrect
+        Do not autocorrect. (if defaulted by the translation engine)
+    -no-bidi
+        Do not convert bidirectional texts.
+    -bidi
+        Always convert bidirectional texts.
+    -no-warn
+        Do not write warning messages to stderr.
+    -dump
+        Print raw API response instead.
+
+Audio options:
+    -p, -play
+        Listen to the translation.
+    -speak
+        Listen to the original text.
+    -n VOICE, -narrator VOICE
+        Specify the narrator, and listen to the translation.
+    -player PROGRAM
+        Specify the audio player to use, and listen to the translation.
+    -no-play
+        Do not listen to the translation.
+    -no-translate
+        Do not translate anything when using -speak.
+    -download-audio
+        Download the audio to the current directory.
+    -download-audio-as FILENAME
+        Download the audio to the specified file.
+
+Terminal paging and browsing options:
+    -v, -view
+        View the translation in a terminal pager.
+    -pager PROGRAM
+        Specify the terminal pager to use, and view the translation.
+    -no-view, -no-pager
+        Do not view the translation in a terminal pager.
+    -browser PROGRAM
+        Specify the web browser to use.
+    -no-browser
+        Do not open the web browser.
+
+Networking options:
+    -x HOST:PORT, -proxy HOST:PORT
+        Use HTTP proxy on given port.
+    -u STRING, -user-agent STRING
+        Specify the User-Agent to identify as.
+    -4, -ipv4, -inet4-only
+        Connect only to IPv4 addresses.
+    -6, -ipv6, -inet6-only
+        Connect only to IPv6 addresses.
+
+Interactive shell options:
+    -I, -interactive, -shell
+        Start an interactive shell.
+    -E, -emacs
+        Start the GNU Emacs front-end for an interactive shell.
+    -no-rlwrap
+        Do not invoke rlwrap when starting an interactive shell.
+
+I/O options:
+    -i FILENAME, -input FILENAME
+        Specify the input file.
+    -o FILENAME, -output FILENAME
+        Specify the output file.
+
+Language preference options:
+    -l CODE, -hl CODE, -lang CODE
+        Specify your home language.
+    -s CODES, -sl CODES, -source CODES, -from CODES
+        Specify the source language(s), joined by '+'.
+    -t CODES, -tl CODES, -target CODES, -to CODES
+        Specify the target language(s), joined by '+'.
+
+Text preprocessing options:
+    -j, -join-sentence
+        Treat all arguments as one single sentence.
+
+Other options:
+    -no-init
+        Do not load any initialization script.
+
+See the man page trans(1) for more information.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-code-list" class="anchor" aria-hidden="true" href="#code-list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code List&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;trans -R&lt;/code&gt; or &lt;code&gt;trans -T&lt;/code&gt; to view the reference table in a terminal.&lt;/p&gt;
+&lt;p&gt;For more details on languages and corresponding codes, see &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Languages"&gt;wiki: Languages&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Code&lt;/th&gt;
+&lt;th align="center"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Code&lt;/th&gt;
+&lt;th align="center"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Afrikaans_language" rel="nofollow"&gt;Afrikaans&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Afrikaans&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;af&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hebrew_language" rel="nofollow"&gt;Hebrew&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;עִבְרִית&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;he&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Portuguese_language" rel="nofollow"&gt;Portuguese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Português&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;pt&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Albanian_language" rel="nofollow"&gt;Albanian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Shqip&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sq&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hill_Mari" rel="nofollow"&gt;Hill Mari&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Кырык мары&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mrj&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Punjabi_language" rel="nofollow"&gt;Punjabi&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ਪੰਜਾਬੀ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;pa&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Amharic_language" rel="nofollow"&gt;Amharic&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;አማርኛ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;am&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hindi_language" rel="nofollow"&gt;Hindi&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;हिन्दी&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;hi&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Quer%C3%A9taro_Otomi" rel="nofollow"&gt;Querétaro Otomi&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Hñąñho&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;otq&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Arabic_language" rel="nofollow"&gt;Arabic&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;العربية&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ar&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hmong_language" rel="nofollow"&gt;Hmong&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Hmoob&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;hmn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Romanian_language" rel="nofollow"&gt;Romanian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Română&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ro&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Armenian_language" rel="nofollow"&gt;Armenian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Հայերեն&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;hy&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hmong_Daw" rel="nofollow"&gt;Hmong Daw&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Hmoob Daw&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mww&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Russian_language" rel="nofollow"&gt;Russian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Русский&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ru&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Azerbaijani_language" rel="nofollow"&gt;Azerbaijani&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Azərbaycanca&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;az&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hungarian_language" rel="nofollow"&gt;Hungarian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Magyar&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;hu&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Samoan_language" rel="nofollow"&gt;Samoan&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Gagana Sāmoa&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sm&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Bashkir_language" rel="nofollow"&gt;Bashkir&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;башҡорт теле&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ba&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Icelandic_language" rel="nofollow"&gt;Icelandic&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Íslenska&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;is&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Scots_Gaelic" rel="nofollow"&gt;Scots Gaelic&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Gàidhlig&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;gd&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Basque_language" rel="nofollow"&gt;Basque&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Euskara&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;eu&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Igbo_language" rel="nofollow"&gt;Igbo&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Igbo&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ig&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Serbian_(Cyrillic)" rel="nofollow"&gt;Serbian (Cyrillic)&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;српски&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sr-Cyrl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Belarusian_language" rel="nofollow"&gt;Belarusian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;беларуская&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;be&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Indonesian_language" rel="nofollow"&gt;Indonesian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Bahasa Indonesia&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;id&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Serbian_(Latin)" rel="nofollow"&gt;Serbian (Latin)&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;srpski&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sr-Latn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Bengali_language" rel="nofollow"&gt;Bengali&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;বাংলা&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;bn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Irish_language" rel="nofollow"&gt;Irish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Gaeilge&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ga&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Sesotho_language" rel="nofollow"&gt;Sesotho&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Sesotho&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;st&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Bosnian_language" rel="nofollow"&gt;Bosnian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Bosanski&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;bs&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Italian_language" rel="nofollow"&gt;Italian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Italiano&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;it&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Shona_language" rel="nofollow"&gt;Shona&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;chiShona&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Bulgarian_language" rel="nofollow"&gt;Bulgarian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;български&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;bg&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Japanese_language" rel="nofollow"&gt;Japanese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;日本語&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ja&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Sindhi_language" rel="nofollow"&gt;Sindhi&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;سنڌي&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sd&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Cantonese_language" rel="nofollow"&gt;Cantonese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;粵語&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;yue&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Javanese_language" rel="nofollow"&gt;Javanese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Basa Jawa&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;jv&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Sinhala_language" rel="nofollow"&gt;Sinhala&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;සිංහල&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;si&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Catalan_language" rel="nofollow"&gt;Catalan&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Català&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ca&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Kannada_language" rel="nofollow"&gt;Kannada&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ಕನ್ನಡ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;kn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Slovak_language" rel="nofollow"&gt;Slovak&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Slovenčina&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sk&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Cebuano_language" rel="nofollow"&gt;Cebuano&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Cebuano&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ceb&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Kazakh_language" rel="nofollow"&gt;Kazakh&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Қазақ тілі&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;kk&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Slovenian_language" rel="nofollow"&gt;Slovenian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Slovenščina&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Chichewa_language" rel="nofollow"&gt;Chichewa&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Nyanja&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ny&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Khmer_language" rel="nofollow"&gt;Khmer&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ភាសាខ្មែរ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;km&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Somali_language" rel="nofollow"&gt;Somali&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Soomaali&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;so&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Chinese_Simplified" rel="nofollow"&gt;Chinese Simplified&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;简体中文&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;zh-CN&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Klingon_language" rel="nofollow"&gt;Klingon&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;tlhIngan Hol&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tlh&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Spanish_language" rel="nofollow"&gt;Spanish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Español&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;es&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Chinese_Traditional" rel="nofollow"&gt;Chinese Traditional&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;正體中文&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;zh-TW&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Klingon_(pIqaD)" rel="nofollow"&gt;Klingon (pIqaD)&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt; &lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tlh-Qaak&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Sundanese_language" rel="nofollow"&gt;Sundanese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Basa Sunda&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;su&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Corsican_language" rel="nofollow"&gt;Corsican&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Corsu&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;co&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Korean_language" rel="nofollow"&gt;Korean&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;한국어&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ko&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Swahili_language" rel="nofollow"&gt;Swahili&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Kiswahili&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sw&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Croatian_language" rel="nofollow"&gt;Croatian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Hrvatski&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;hr&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Kurdish_language" rel="nofollow"&gt;Kurdish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Kurdî&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ku&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Swedish_language" rel="nofollow"&gt;Swedish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Svenska&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;sv&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Czech_language" rel="nofollow"&gt;Czech&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Čeština&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;cs&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Kyrgyz_language" rel="nofollow"&gt;Kyrgyz&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Кыргызча&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ky&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Tahitian_language" rel="nofollow"&gt;Tahitian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Reo Tahiti&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ty&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Danish_language" rel="nofollow"&gt;Danish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Dansk&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;da&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Lao_language" rel="nofollow"&gt;Lao&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ລາວ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;lo&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Tajik_language" rel="nofollow"&gt;Tajik&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Тоҷикӣ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tg&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Dutch_language" rel="nofollow"&gt;Dutch&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Nederlands&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;nl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Latin_language" rel="nofollow"&gt;Latin&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Latina&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;la&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Tamil_language" rel="nofollow"&gt;Tamil&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;தமிழ்&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ta&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Eastern_Mari" rel="nofollow"&gt;Eastern Mari&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Олык марий&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mhr&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Latvian_language" rel="nofollow"&gt;Latvian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Latviešu&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;lv&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Tatar_language" rel="nofollow"&gt;Tatar&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;татарча&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tt&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Emoji_language" rel="nofollow"&gt;Emoji&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Emoji&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;emj&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Lithuanian_language" rel="nofollow"&gt;Lithuanian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Lietuvių&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;lt&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Telugu_language" rel="nofollow"&gt;Telugu&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;తెలుగు&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;te&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/English_language" rel="nofollow"&gt;English&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;English&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;en&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Luxembourgish_language" rel="nofollow"&gt;Luxembourgish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Lëtzebuergesch&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;lb&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Thai_language" rel="nofollow"&gt;Thai&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ไทย&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;th&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Esperanto_language" rel="nofollow"&gt;Esperanto&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Esperanto&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;eo&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Macedonian_language" rel="nofollow"&gt;Macedonian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Македонски&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mk&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Tongan_language" rel="nofollow"&gt;Tongan&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Lea faka-Tonga&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;to&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Estonian_language" rel="nofollow"&gt;Estonian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Eesti&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;et&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Malagasy_language" rel="nofollow"&gt;Malagasy&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Malagasy&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mg&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Turkish_language" rel="nofollow"&gt;Turkish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Türkçe&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tr&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Fijian_language" rel="nofollow"&gt;Fijian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Vosa Vakaviti&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;fj&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Malay_language" rel="nofollow"&gt;Malay&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Bahasa Melayu&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ms&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Udmurt_language" rel="nofollow"&gt;Udmurt&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;удмурт&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;udm&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Filipino_language" rel="nofollow"&gt;Filipino&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Tagalog&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;tl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Malayalam_language" rel="nofollow"&gt;Malayalam&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;മലയാളം&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ml&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Ukrainian_language" rel="nofollow"&gt;Ukrainian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Українська&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;uk&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Finnish_language" rel="nofollow"&gt;Finnish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Suomi&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;fi&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Maltese_language" rel="nofollow"&gt;Maltese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Malti&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mt&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Urdu_language" rel="nofollow"&gt;Urdu&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;اُردُو&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ur&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/French_language" rel="nofollow"&gt;French&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Français&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;fr&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Maori_language" rel="nofollow"&gt;Maori&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Māori&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mi&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Uzbek_language" rel="nofollow"&gt;Uzbek&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Oʻzbek tili&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;uz&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Frisian_language" rel="nofollow"&gt;Frisian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Frysk&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;fy&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Marathi_language" rel="nofollow"&gt;Marathi&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;मराठी&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mr&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Vietnamese_language" rel="nofollow"&gt;Vietnamese&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Tiếng Việt&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;vi&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Galician_language" rel="nofollow"&gt;Galician&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Galego&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;gl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Mongolian_language" rel="nofollow"&gt;Mongolian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Монгол&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;mn&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Welsh_language" rel="nofollow"&gt;Welsh&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Cymraeg&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;cy&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Georgian_language" rel="nofollow"&gt;Georgian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ქართული&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ka&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Myanmar_language" rel="nofollow"&gt;Myanmar&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;မြန်မာစာ&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;my&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Xhosa_language" rel="nofollow"&gt;Xhosa&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;isiXhosa&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;xh&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/German_language" rel="nofollow"&gt;German&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Deutsch&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;de&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Nepali_language" rel="nofollow"&gt;Nepali&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;नेपाली&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ne&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Yiddish_language" rel="nofollow"&gt;Yiddish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ייִדיש&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;yi&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Greek_language" rel="nofollow"&gt;Greek&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Ελληνικά&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;el&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Norwegian_language" rel="nofollow"&gt;Norwegian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Norsk&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;no&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Yoruba_language" rel="nofollow"&gt;Yoruba&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Yorùbá&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;yo&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Gujarati_language" rel="nofollow"&gt;Gujarati&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ગુજરાતી&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;gu&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Papiamento_language" rel="nofollow"&gt;Papiamento&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Papiamentu&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;pap&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Yucatec_Maya" rel="nofollow"&gt;Yucatec Maya&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Màaya T'àan&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;yua&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Haitian_Creole" rel="nofollow"&gt;Haitian Creole&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Kreyòl Ayisyen&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ht&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Pashto_language" rel="nofollow"&gt;Pashto&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;پښتو&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Zulu_language" rel="nofollow"&gt;Zulu&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;isiZulu&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;zu&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hausa_language" rel="nofollow"&gt;Hausa&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Hausa&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;ha&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Persian_language" rel="nofollow"&gt;Persian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;فارسی&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;fa&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Hawaiian_language" rel="nofollow"&gt;Hawaiian&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;ʻŌlelo Hawaiʻi&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;haw&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Polish_language" rel="nofollow"&gt;Polish&lt;/a&gt;&lt;/strong&gt; &lt;br&gt; &lt;strong&gt;Polski&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;&lt;code&gt;pl&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-wiki" class="anchor" aria-hidden="true" href="#wiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wiki&lt;/h2&gt;
+&lt;p&gt;Lists of all languages, writing systems and fonts for reference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Languages"&gt;Languages&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Writing-Systems-and-Fonts"&gt;Writing Systems and Fonts&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following pages demonstrate the advanced usage of &lt;strong&gt;Translate Shell&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/REPL"&gt;REPL&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Text-Editor-Integration"&gt;Text Editor Integration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Narrator-Selection"&gt;Narrator Selection&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Configuration"&gt;Configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Themes"&gt;Themes&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/AppleScript"&gt;AppleScript&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find out whether your Linux distribution has included &lt;strong&gt;Translate Shell&lt;/strong&gt; in its official repository. If not, contribute one:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/Distros"&gt;Distros&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Frequently Asked Questions, historical stuff, AWK coding style, etc.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/FAQ"&gt;FAQ&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/History"&gt;History&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/wiki/AWK-Style-Guide"&gt;AWK Style Guide&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-reporting-bugs--contributing" class="anchor" aria-hidden="true" href="#reporting-bugs--contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reporting Bugs / Contributing&lt;/h2&gt;
+&lt;p&gt;Please review the &lt;a href="https://github.com/soimort/translate-shell/blob/stable/CONTRIBUTING.md"&gt;guidelines for contributing&lt;/a&gt; before reporting an issue or sending a pull request.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;This is free and unencumbered software released into the public domain. See &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/blob/stable/LICENSE"&gt;LICENSE&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href="https://github.com/soimort/translate-shell/blob/stable/WAIVER"&gt;WAIVER&lt;/a&gt;&lt;/strong&gt; for details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>soimort</author><guid isPermaLink="false">https://github.com/soimort/translate-shell</guid><pubDate>Tue, 12 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
