@@ -1,2 +1,1212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: CoffeeScript, Today</title><link>https://github.com/trending/coffeescript?since=daily</link><description>The top repositories on GitHub for coffeescript, measured daily</description><pubDate>Tue, 12 Nov 2019 01:08:33 GMT</pubDate><lastBuildDate>Tue, 12 Nov 2019 01:08:33 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in CoffeeScript, Today today</title><pubDate>Tue, 12 Nov 2019 01:08:33 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: CoffeeScript, Today</title><link>https://github.com/trending/coffeescript?since=daily</link><description>The top repositories on GitHub for coffeescript, measured daily</description><pubDate>Wed, 13 Nov 2019 01:06:20 GMT</pubDate><lastBuildDate>Wed, 13 Nov 2019 01:06:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>philc/vimium #1 in CoffeeScript, Today</title><link>https://github.com/philc/vimium</link><description>&lt;p&gt;&lt;i&gt;The hacker's browser.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-vimium---the-hackers-browser" class="anchor" aria-hidden="true" href="#vimium---the-hackers-browser"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vimium - The Hacker's Browser&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/philc/vimium" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/188e8cd8f55a136a0392e85563217a7123fdc8bf/68747470733a2f2f7472617669732d63692e6f72672f7068696c632f76696d69756d2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/philc/vimium.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimium is a Chrome extension that provides keyboard-based navigation and control of the web in the spirit of
+the Vim editor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installation instructions:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can install the stable version of Vimium from the
+&lt;a href="https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb" rel="nofollow"&gt;Chrome Extensions Gallery&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please see
+&lt;a href="CONTRIBUTING.md#installing-from-source"&gt;CONTRIBUTING.md&lt;/a&gt;
+for instructions on how you can install Vimium from source.&lt;/p&gt;
+&lt;p&gt;The Options page can be reached via a link on the help dialog (type &lt;code&gt;?&lt;/code&gt;) or via the button next to Vimium on
+the Chrome Extensions page (&lt;code&gt;chrome://extensions&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-keyboard-bindings" class="anchor" aria-hidden="true" href="#keyboard-bindings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Keyboard Bindings&lt;/h2&gt;
+&lt;p&gt;Modifier keys are specified as &lt;code&gt;&amp;lt;c-x&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;m-x&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;lt;a-x&amp;gt;&lt;/code&gt; for ctrl+x, meta+x, and alt+x
+respectively. For shift+x and ctrl-shift-x, just type &lt;code&gt;X&lt;/code&gt; and &lt;code&gt;&amp;lt;c-X&amp;gt;&lt;/code&gt;. See the next section for how to customize these bindings.&lt;/p&gt;
+&lt;p&gt;Once you have Vimium installed, you can see this list of key bindings at any time by typing &lt;code&gt;?&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Navigating the current page:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;?       show the help dialog for a list of all available keys
+h       scroll left
+j       scroll down
+k       scroll up
+l       scroll right
+gg      scroll to top of the page
+G       scroll to bottom of the page
+d       scroll down half a page
+u       scroll up half a page
+f       open a link in the current tab
+F       open a link in a new tab
+r       reload
+gs      view source
+i       enter insert mode -- all commands will be ignored until you hit Esc to exit
+yy      copy the current url to the clipboard
+yf      copy a link url to the clipboard
+gf      cycle forward to the next frame
+gF      focus the main/top frame
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Navigating to new pages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;o       Open URL, bookmark, or history entry
+O       Open URL, bookmark, history entry in a new tab
+b       Open bookmark
+B       Open bookmark in a new tab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using find:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/       enter find mode
+          -- type your search query and hit enter to search, or Esc to cancel
+n       cycle forward to the next find match
+N       cycle backward to the previous find match
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For advanced usage, see &lt;a href="https://github.com/philc/vimium/wiki/Find-Mode"&gt;regular expressions&lt;/a&gt; on the wiki.&lt;/p&gt;
+&lt;p&gt;Navigating your history:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;H       go back in history
+L       go forward in history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Manipulating tabs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;J, gT   go one tab left
+K, gt   go one tab right
+g0      go to the first tab
+g$      go to the last tab
+^       visit the previously-visited tab
+t       create tab
+yt      duplicate current tab
+x       close current tab
+X       restore closed tab (i.e. unwind the 'x' command)
+T       search through your open tabs
+W       move current tab to new window
+&amp;lt;a-p&amp;gt;   pin/unpin current tab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using marks:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ma, mA  set local mark "a" (global mark "A")
+`a, `A  jump to local mark "a" (global mark "A")
+``      jump back to the position before the previous jump
+          -- that is, before the previous gg, G, n, N, / or `a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Additional advanced browsing commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;]], [[  Follow the link labeled 'next' or '&amp;gt;' ('previous' or '&amp;lt;')
+          - helpful for browsing paginated sites
+&amp;lt;a-f&amp;gt;   open multiple links in a new tab
+gi      focus the first (or n-th) text input box on the page
+gu      go up one level in the URL hierarchy
+gU      go up to root of the URL hierarchy
+ge      edit the current URL
+gE      edit the current URL and open in a new tab
+zH      scroll all the way left
+zL      scroll all the way right
+v       enter visual mode; use p/P to paste-and-go, use y to yank
+V       enter visual line mode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Vimium supports command repetition so, for example, hitting &lt;code&gt;5t&lt;/code&gt; will open 5 tabs in rapid succession. &lt;code&gt;&amp;lt;Esc&amp;gt;&lt;/code&gt; (or
+&lt;code&gt;&amp;lt;c-[&amp;gt;&lt;/code&gt;) will clear any partial commands in the queue and will also exit insert and find modes.&lt;/p&gt;
+&lt;p&gt;There are some advanced commands which aren't documented here; refer to the help dialog (type &lt;code&gt;?&lt;/code&gt;) for a full
+list.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-custom-key-mappings" class="anchor" aria-hidden="true" href="#custom-key-mappings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Key Mappings&lt;/h2&gt;
+&lt;p&gt;You may remap or unmap any of the default key bindings in the "Custom key mappings" on the options page.&lt;/p&gt;
+&lt;p&gt;Enter one of the following key mapping commands per line:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;map key command&lt;/code&gt;: Maps a key to a Vimium command. Overrides Chrome's default behavior (if any).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unmap key&lt;/code&gt;: Unmaps a key and restores Chrome's default behavior (if any).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unmapAll&lt;/code&gt;: Unmaps all bindings. This is useful if you want to completely wipe Vimium's defaults and start
+from scratch with your own setup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;map &amp;lt;c-d&amp;gt; scrollPageDown&lt;/code&gt; maps ctrl+d to scrolling the page down. Chrome's default behavior of bringing up
+a bookmark dialog is suppressed.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;map r reload&lt;/code&gt; maps the r key to reloading the page.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unmap &amp;lt;c-d&amp;gt;&lt;/code&gt; removes any mapping for ctrl+d and restores Chrome's default behavior.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unmap r&lt;/code&gt; removes any mapping for the r key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Available Vimium commands can be found via the "Show available commands" link
+near the key mapping box on the options page. The command name appears to the
+right of the description in parenthesis.&lt;/p&gt;
+&lt;p&gt;You can add comments to key mappings by starting a line with &lt;code&gt;"&lt;/code&gt; or &lt;code&gt;#&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The following special keys are available for mapping:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-*&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;a-*&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;m-*&amp;gt;&lt;/code&gt; for ctrl, alt, and meta (command on Mac) respectively with any key. Replace &lt;code&gt;*&lt;/code&gt;
+with the key of choice.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;left&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;right&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;up&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;down&amp;gt;&lt;/code&gt; for the arrow keys.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;f1&amp;gt;&lt;/code&gt; through &lt;code&gt;&amp;lt;f12&amp;gt;&lt;/code&gt; for the function keys.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;space&amp;gt;&lt;/code&gt; for the space key.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;enter&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;delete&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;backspace&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;insert&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;home&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;end&amp;gt;&lt;/code&gt; for the corresponding non-printable keys (version 1.62 onwards).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shifts are automatically detected so, for example, &lt;code&gt;&amp;lt;c-&amp;amp;&amp;gt;&lt;/code&gt; corresponds to ctrl+shift+7 on an English keyboard.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-more-documentation" class="anchor" aria-hidden="true" href="#more-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More documentation&lt;/h2&gt;
+&lt;p&gt;Many of the more advanced or involved features are documented on
+&lt;a href="https://github.com/philc/vimium/wiki"&gt;Vimium's GitHub wiki&lt;/a&gt;. Also
+see the &lt;a href="https://github.com/philc/vimium/wiki/FAQ"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please see &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-firefox-support" class="anchor" aria-hidden="true" href="#firefox-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Firefox Support&lt;/h2&gt;
+&lt;p&gt;There is an &lt;em&gt;experimental&lt;/em&gt; port of Vimium on Firefox &lt;a href="https://addons.mozilla.org/en-GB/firefox/addon/vimium-ff/" rel="nofollow"&gt;here&lt;/a&gt;.
+This is very much experimental: most features work, although some bugs and issues remain.&lt;/p&gt;
+&lt;p&gt;PRs are welcome.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-release-notes" class="anchor" aria-hidden="true" href="#release-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Release Notes&lt;/h2&gt;
+&lt;p&gt;1.64.6 (2019-05-12)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the find mode, and copying the page's URL to the clipboard, which were broken by Chrome 74+. (&lt;a href="https://github.com/philc/vimium/issues/3260"&gt;#3260&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.64.5 (2019-02-16)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix error in Chrome Store distribution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.64.4 (2019-02-16)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/philc/vimium/issues/3242"&gt;Vomnibar focus issue&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.64.3 (2018-12-26)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When yanking email addresses with &lt;code&gt;yf&lt;/code&gt;, Vimium now strips the leading &lt;code&gt;mailto:&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For custom search engines, if you use &lt;code&gt;%S&lt;/code&gt; (instead of &lt;code&gt;%s&lt;/code&gt;), then your search terms are not URI encoded.&lt;/li&gt;
+&lt;li&gt;Bug fixes (including horizontal scrolling broken).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.64.2 (2018-12-16)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Better scrolling on new Reddit &lt;del&gt;and GMail&lt;/del&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.64 (2018-08-30)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Custom search engines can now be &lt;code&gt;javascript:&lt;/code&gt; URLs (eg., search the current &lt;a href="https://github.com/philc/vimium/issues/2956#issuecomment-366509915"&gt;site&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;You can now using local marks to mark a hash/anchor.  This is particularly useful for marking labels on GMail.&lt;/li&gt;
+&lt;li&gt;For filtered hints, you can now start typing the link text before the hints have been generated.&lt;/li&gt;
+&lt;li&gt;On Twitter, expanded tweets are now scrollable.&lt;/li&gt;
+&lt;li&gt;Fix bug whereby &lt;code&gt;&amp;lt;Enter&amp;gt;&lt;/code&gt; wasn't recognised in the Vomnibar in some circumstances.&lt;/li&gt;
+&lt;li&gt;Various minor bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.63 (2018-02-16)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;reload&lt;/code&gt; command now accepts a count prefix; so &lt;code&gt;999r&lt;/code&gt; reloads all tabs (in the current window).&lt;/li&gt;
+&lt;li&gt;Better detection of click listeners for link hints.&lt;/li&gt;
+&lt;li&gt;Display version number in page popup.&lt;/li&gt;
+&lt;li&gt;The Vomnibar is now loaded on demand (not preloaded).  This should fix some issues with the dev console.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;\I&lt;/code&gt; control (case sensitivity) for find mode has been removed.  Find mode uses smartcase.&lt;/li&gt;
+&lt;li&gt;Various bug fixes.&lt;/li&gt;
+&lt;li&gt;1.63.1 (Firefox only):
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/philc/vimium/issues/2958#issuecomment-366488659"&gt;#2958&lt;/a&gt;, link hints broken for &lt;code&gt;target="_blank"&lt;/code&gt; links.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;1.63.2 (Firefox only):
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/philc/vimium/issues/2962"&gt;#2962&lt;/a&gt;, find mode broken on Firefox Quantum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;1.63.3:
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;a href="https://github.com/philc/vimium/issues/2997"&gt;#2997&lt;/a&gt;, Vimium's DOM injection breaks Google Pay site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.62 (2017-12-09)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Backup and restore Vimium options (see the very bottom of the options page, below &lt;em&gt;Advanced Options&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;It is now possible to map &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;enter&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;delete&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;insert&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;home&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;end&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;New command options for &lt;code&gt;createTab&lt;/code&gt; to create new normal and incognito windows
+(&lt;a href="https://github.com/philc/vimium/wiki/Tips-and-Tricks#creating-tabs-with-urls-and-windows"&gt;examples&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Firefox only:
+&lt;ul&gt;
+&lt;li&gt;Fix copy and paste commands.&lt;/li&gt;
+&lt;li&gt;When upgrading, you will be asked to re-validate permissions.  The only
+new permission is "copy and paste to/from clipboard" (the
+&lt;code&gt;clipboardWrite&lt;/code&gt; permission).  This is necessary to support copy/paste on
+Firefox.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Various bug fixes.&lt;/li&gt;
+&lt;li&gt;1.62.1: Swap global and local marks (1.62.1).
+In a browser, some people find global marks more useful than local marks.
+Example:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;map X Marks.activateCreateMode swap
+map Y Marks.activateGotoMode swap
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Other minor versions:
+&lt;ul&gt;
+&lt;li&gt;1.62.2: Fixes &lt;a href="https://github.com/philc/vimium/issues/2868"&gt;#2868&lt;/a&gt; (&lt;code&gt;createTab&lt;/code&gt; with multiple URLs).&lt;/li&gt;
+&lt;li&gt;1.62.4: Fixes bug affecting the enabled state, and really fix &lt;code&gt;createTab&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.61 (2017-10-27)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;em&gt;filtered hints&lt;/em&gt;, you can now use alphabetical hint characters
+instead of digits; use &lt;code&gt;&amp;lt;Shift&amp;gt;&lt;/code&gt; for hint characters.&lt;/li&gt;
+&lt;li&gt;With &lt;code&gt;map R reload hard&lt;/code&gt;, the reload command now asks Chrome to bypass its cache.&lt;/li&gt;
+&lt;li&gt;You can now map &lt;code&gt;&amp;lt;c-[&amp;gt;&lt;/code&gt; to a command (in which case it will not be treated as &lt;code&gt;Escape&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Various bug fixes, particularly for Firefox.&lt;/li&gt;
+&lt;li&gt;Minor versions:
+&lt;ul&gt;
+&lt;li&gt;1.61.1: Fix &lt;code&gt;map R reload hard&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.60 (2017-09-14)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There's a new (advanced) option to ignore the keyboard layout; this can
+be helpful for users of non-Latin keyboards.&lt;/li&gt;
+&lt;li&gt;Firefox support.  This is a work in progress; please report any issues
+&lt;a href="https://github.com/philc/vimium/issues?q=is%3Aopen+sort%3Aupdated-desc"&gt;here&lt;/a&gt;;
+see the &lt;a href="https://addons.mozilla.org/en-GB/firefox/addon/vimium-ff/" rel="nofollow"&gt;add
+on&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bug fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue affecting hint placement when the display is zoomed.&lt;/li&gt;
+&lt;li&gt;Fixed search completion for Firefox (released as 1.59.1, Firefox only).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Minor versions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.60.1: fix &lt;a href="https://github.com/philc/vimium/issues/2642"&gt;#2642&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;1.60.2: revert previous fix for HiDPI screens.  This was breaking link-hint positioning for some users.&lt;/li&gt;
+&lt;li&gt;1.60.3: &lt;a href="https://github.com/philc/vimium/pull/2649"&gt;fix&lt;/a&gt; link-hint positioning.&lt;/li&gt;
+&lt;li&gt;1.60.4: &lt;a href="https://github.com/philc/vimium/pull/2602"&gt;fix&lt;/a&gt; hints opening in new tab (Firefox only).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.59 (2017-04-07)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Features:
+&lt;ul&gt;
+&lt;li&gt;Some commands now work on PDF tabs (&lt;code&gt;J&lt;/code&gt;, &lt;code&gt;K&lt;/code&gt;, &lt;code&gt;o&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, etc.). Scrolling and other content-related commands still do not work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.58 (2017-03-08)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;createTab&lt;/code&gt; command can now open specific URLs (e.g, &lt;code&gt;map X createTab http://www.bbc.com/news&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;With pass keys defined for a site (such as GMail), you can now use Vimium's bindings again with, for example, &lt;code&gt;map \ passNextKey normal&lt;/code&gt;;
+this reactivates normal mode temporarily, but &lt;em&gt;without any pass keys&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;You can now map multi-modifier keys, for example: &lt;code&gt;&amp;lt;c-a-X&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Vimium can now do simple key mapping in some modes; see
+&lt;a href="https://github.com/philc/vimium/wiki/Tips-and-Tricks#key-mapping"&gt;here&lt;/a&gt;.
+This can be helpful with some non-English keyboards (and can also be used
+to remap &lt;code&gt;Escape&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;For &lt;em&gt;Custom key mappings&lt;/em&gt; on the options page, lines which end with &lt;code&gt;\&lt;/code&gt; are now continued on the following line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Process:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In order to provide faster bug fixes, we may in future push new releases without the noisy notification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Post-release minor fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.58.1 (2017-03-09) fix bug in &lt;code&gt;LinkHints.activateModeWithQueue&lt;/code&gt; (#2445).&lt;/li&gt;
+&lt;li&gt;1.58.2 (2017-03-19) fix key handling bug (#2453).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.57 (2016-10-01)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New commands:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;toggleMuteTab&lt;/code&gt; - mute or unmute the current tab (default binding
+&lt;code&gt;&amp;lt;a-m&amp;gt;&lt;/code&gt;), see also &lt;a href="https://github.com/philc/vimium/wiki/Tips-and-Tricks#muting-tabs"&gt;advanced usage&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Other new features:
+&lt;ul&gt;
+&lt;li&gt;You can now map &lt;code&gt;&amp;lt;backspace&amp;gt;&lt;/code&gt; to a Vimium command (e.g. &lt;code&gt;map &amp;lt;backspace&amp;gt; goBack&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;For link hints, when one hint marker is covered by another, &lt;code&gt;&amp;lt;Space&amp;gt;&lt;/code&gt; now
+rotates the stacking order.  If you use filtered hints, you'll need to
+use a modifier (e.g. &lt;code&gt;&amp;lt;c-Space&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Global marks now search for an existing matching tab by prefix (rather than exact match).
+This allows global marks to be used as quick bookmarks on sites (like Facebook, Gmail, etc)
+where the URL changes as you navigate around.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bug fixes:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/i&lt;/code&gt; can no longer hang Vimium while the page is loading.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-a-[&amp;gt;&lt;/code&gt; is no longer handled (incorrectly) as &lt;code&gt;Escape&lt;/code&gt;.  This also affects &lt;code&gt;&amp;lt;Alt-Gr-[&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;goX&lt;/code&gt; is mapped, then &lt;code&gt;go&lt;/code&gt; no longer launches the vomnibar.  This only affects three-key (or longer) bindings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.56 (2016-06-11)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vimium now works around a Chromium bug affecting users with non-standard keyboard layouts (see #2147).&lt;/li&gt;
+&lt;li&gt;Fixed a bug preventing visual line mode (&lt;code&gt;V&lt;/code&gt;) from working.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.55 (2016-05-26)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New commands:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;visitPreviousTab&lt;/code&gt; - visit the previous tab (by recency) with &lt;code&gt;^&lt;/code&gt;, or the tab before that with &lt;code&gt;2^&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;passNextKey&lt;/code&gt; - pass the next key to the page. For example, using &lt;code&gt;map &amp;lt;c-]&amp;gt; passNextKey&lt;/code&gt;, you can close
+Facebook's messenger popups with &lt;code&gt;&amp;lt;c-]&amp;gt;&amp;lt;Esc&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Link hints:
+&lt;ul&gt;
+&lt;li&gt;Now work across all frames in the tab.&lt;/li&gt;
+&lt;li&gt;Now select frames and scrollable elements.&lt;/li&gt;
+&lt;li&gt;Now accept a count prefix; &lt;code&gt;3F&lt;/code&gt; opens three new background tabs, &lt;code&gt;999F&lt;/code&gt; opens many tabs.&lt;/li&gt;
+&lt;li&gt;For filtered link hints, a new option on the settings page requires you to press &lt;code&gt;Enter&lt;/code&gt; to activate a
+link; this prevents unintentionally triggering Vimium commands with trailing keystrokes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Miscellaneous:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gg&lt;/code&gt; now accepts a &lt;code&gt;count&lt;/code&gt; prefix.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;W&lt;/code&gt; now accepts a count prefix; &lt;code&gt;3W&lt;/code&gt; moves three tabs to a new window.&lt;/li&gt;
+&lt;li&gt;With smooth scrolling, &lt;code&gt;2j&lt;/code&gt;-and-hold now gives a faster scroll than &lt;code&gt;j&lt;/code&gt;-and-hold.&lt;/li&gt;
+&lt;li&gt;You can now bind keys to a command with a defined count prefix; for example, &lt;code&gt;map d scrollDown count=4&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can now bind three-key (or longer) sequences; for example, &lt;code&gt;map abc enterInsertMode&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c-y&lt;/code&gt; and &lt;code&gt;c-e&lt;/code&gt; now scroll in visual mode.&lt;/li&gt;
+&lt;li&gt;The Vimium help dialog has been re-styled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bug fixes:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-a-[&amp;gt;&lt;/code&gt; is no longer treated as escape.&lt;/li&gt;
+&lt;li&gt;Fix icon display and memory leak due to a regression in recent Chrome versions (49+).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For web-devs only:
+&lt;ul&gt;
+&lt;li&gt;When disabled on a tab, Vimium no longer pollutes the dev console with network requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.54 (2016-01-30)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix occasional endless scrolling (#1911).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.53 (2015-09-25)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vimium now works on the new-tab page for Chrome 47.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;g0&lt;/code&gt; and &lt;code&gt;g$&lt;/code&gt; now accept count prefixes; so &lt;code&gt;2g0&lt;/code&gt; selects the second tab, and so on.&lt;/li&gt;
+&lt;li&gt;Bug fixes:
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;moveTabLeft&lt;/code&gt; and &lt;code&gt;moveTabRight&lt;/code&gt; for pinned tabs (#1814 and #1815).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.52 (2015-09-09)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search completion for selected custom search engines
+(details on the &lt;a href="https://github.com/philc/vimium/wiki/Search-Completion"&gt;wiki&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;Tab&lt;/code&gt; on an empty Vomnibar to repeat or edit recent queries
+(details on the &lt;a href="https://github.com/philc/vimium/wiki/Tips-and-Tricks#repeat-recent-vomnibar-queries"&gt;wiki&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Marks:
+&lt;ul&gt;
+&lt;li&gt;Use &lt;tt&gt;``&lt;/tt&gt; to jump back to the previous position after jump-like movements: &lt;br&gt;
+(&lt;code&gt;gg&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;N&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; and local mark movements).&lt;/li&gt;
+&lt;li&gt;Global marks are now persistent and synced.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For numeric link hints, you can now use &lt;code&gt;Tab&lt;/code&gt; and &lt;code&gt;Enter&lt;/code&gt; to select hints, and hints are ordered by the best
+match.&lt;/li&gt;
+&lt;li&gt;The Find Mode text entry box now supports editing, pasting, and better handles non-latin characters.&lt;/li&gt;
+&lt;li&gt;Vimium now works on XML pages.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.51 (2015-05-02)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug &lt;a href="https://github.com/philc/vimium/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+sort%3Aupdated-desc+is%3Aclosed+merged%3A%3E%3D2015-04-26+merged%3A%3C2015-05-02+state%3Amerged"&gt;fixes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.50 (2015-04-26)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual mode (in beta): use &lt;code&gt;v&lt;/code&gt; and then vim-like keystrokes to select text on the page. Use &lt;code&gt;y&lt;/code&gt; to yank or
+&lt;code&gt;p&lt;/code&gt; and &lt;code&gt;P&lt;/code&gt; to search with your default search engine.. Please provide feedback on Github.&lt;/li&gt;
+&lt;li&gt;Added the option to prevent pages from stealing focus from Vimium when loaded.&lt;/li&gt;
+&lt;li&gt;Many bugfixes for custom search engines, and search engines can now have a description.&lt;/li&gt;
+&lt;li&gt;Better support for frames: key exclusion rules are much improved and work within frames; the Vomnibar is
+always activated in the main frame; and a new command (&lt;code&gt;gF&lt;/code&gt;) focuses the main frame.&lt;/li&gt;
+&lt;li&gt;Find mode now has history. Use the up arrow to select previous searches.&lt;/li&gt;
+&lt;li&gt;Ctrl and Shift when using link hints changes the tab in which links are opened in (reinstated feature).&lt;/li&gt;
+&lt;li&gt;Focus input (&lt;code&gt;gi&lt;/code&gt;) remembers previously-visited inputs.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.49 (2014-12-16)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An option to toggle smooth scrolling.&lt;/li&gt;
+&lt;li&gt;Make Vimium work on older versions of Chrome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.46, 1.47, 1.48 (2014-12-15)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Site-specific excluded keys: you can disable some Vimium key bindings on sites like gmail.com, so you can use the key bindings provided by the site itself.&lt;/li&gt;
+&lt;li&gt;Smooth scrolling.&lt;/li&gt;
+&lt;li&gt;The Vomnibar now orders tabs by recency. Use this to quickly switch between your most recently-used tabs.&lt;/li&gt;
+&lt;li&gt;New commands: "close tabs to the left", "close tabs to the right", "close all other tabs".&lt;/li&gt;
+&lt;li&gt;Usability improvements.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.45 (2014-07-20)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vimium's settings are now synced across computers.&lt;/li&gt;
+&lt;li&gt;New commands: "open link in new tab and focus", "move tab left", "move tab right", "pin/unpin tab".&lt;/li&gt;
+&lt;li&gt;Vomnibar can now use &lt;a href="https://github.com/philc/vimium/wiki/Search-Engines"&gt;search engine shortcuts&lt;/a&gt;, similar to Chrome's Omnibar.&lt;/li&gt;
+&lt;li&gt;Due to significant ranking improvements, Vomnibar's search results are now even more helpful.&lt;/li&gt;
+&lt;li&gt;When reopening a closed tab, its history is now preserved.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.44 (2013-11-06)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for recent versions of Chromium.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.43 (2013-05-18)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Relevancy improvements to the Vomnibar's domain &amp;amp; history search.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;gU&lt;/code&gt;, which goes to the root of the current URL.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;yt&lt;/code&gt;, which duplicates the current tab.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;W&lt;/code&gt;, which moves the current tab to a new window.&lt;/li&gt;
+&lt;li&gt;Added marks for saving and jumping to sections of a page. &lt;code&gt;mX&lt;/code&gt; to set a mark and &lt;code&gt; `X&lt;/code&gt; to return to it.&lt;/li&gt;
+&lt;li&gt;Added "LinkHints.activateModeToOpenIncognito", currently an advanced, unbound command.&lt;/li&gt;
+&lt;li&gt;Disallowed repeat tab closings, since this causes trouble for many people.&lt;/li&gt;
+&lt;li&gt;Update our Chrome APIs so Vimium works on Chrome 28+.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.42 (2012-11-03)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.41 (2012-10-27)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.40 (2012-10-27)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;li&gt;Added options for search engines and regex find.&lt;/li&gt;
+&lt;li&gt;Pressing unmapped keys in hints mode now deactivates the mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.39 (2012-09-09)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.38 (2012-09-08)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;O&lt;/code&gt; now opens Vomnibar results in a new tab. &lt;code&gt;B&lt;/code&gt; does the same for bookmarks only.&lt;/li&gt;
+&lt;li&gt;Add a browser icon to quickly add sites to Vimium's exclude list.&lt;/li&gt;
+&lt;li&gt;Restyle options page.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gi&lt;/code&gt; now launches a new mode that allows the user to tab through the input elements on the page.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.37 (2012-07-07)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select the first result by default in Vomnibar tab and bookmark modes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.36 (2012-07-07)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; brings up a bookmark-only Vomnibar.&lt;/li&gt;
+&lt;li&gt;Better support for some bookmarklets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.35 (2012-07-05)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.34 (2012-07-03)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A bug fix for bookmarklets in Vomnibar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.33 (2012-07-02)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Vomnibar, which allows you to open sites from history, bookmarks, and tabs using Vimium's UI. Type &lt;code&gt;o&lt;/code&gt; to try it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.32 (2012-03-05)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More tweaks to the next / previous link-detection algorithm.&lt;/li&gt;
+&lt;li&gt;Minor bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.31 (2012-02-28)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve style of link hints, and use fewer characters for hints.&lt;/li&gt;
+&lt;li&gt;Add an option to hide the heads up display (HUD). Notably, the HUD obscures Facebook Chat's textbox.&lt;/li&gt;
+&lt;li&gt;Detection and following of next / previous links has been improved.&lt;/li&gt;
+&lt;li&gt;Addition of &lt;code&gt;g0&lt;/code&gt; and &lt;code&gt;g$&lt;/code&gt; commands, for switching tabs.&lt;/li&gt;
+&lt;li&gt;Addition of &lt;code&gt;p&lt;/code&gt;/&lt;code&gt;P&lt;/code&gt; commands for URL pasting.&lt;/li&gt;
+&lt;li&gt;A new find mode which optionally supports case sensitivity and regular expressions.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.30 (2011-12-04)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for image maps in link hints.&lt;/li&gt;
+&lt;li&gt;Counts now work with forward &amp;amp; backward navigation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tab&lt;/code&gt; &amp;amp; &lt;code&gt;shift-tab&lt;/code&gt; to navigate bookmarks dialog.&lt;/li&gt;
+&lt;li&gt;An alternate link hints mode: type the title of a link to select it. You can enable it in Vimium's Advanced Preferences.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.29 (2012-07-30)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yf&lt;/code&gt; to copy a link hint url to the clipboard.&lt;/li&gt;
+&lt;li&gt;Scatter link hints to prevent clustering on dense sites.&lt;/li&gt;
+&lt;li&gt;Don't show insert mode notification unless you specifically hit &lt;code&gt;i&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Remove zooming functionality now that Chrome does it all natively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.28 (2011-06-29)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for opening bookmarks (&lt;code&gt;b&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Support for contenteditable text boxes.&lt;/li&gt;
+&lt;li&gt;Speed improvements and bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.27 (2011-03-24)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improvements and bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.26 (2011-02-17)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-d&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;c-f&amp;gt;&lt;/code&gt; and related are no longer bound by default. You can rebind them on the options page.&lt;/li&gt;
+&lt;li&gt;Faster link hinting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.22, 1.23, 1.24, 1.25 (2011-02-10)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some sites are now excluded by default.&lt;/li&gt;
+&lt;li&gt;View source (&lt;code&gt;gs&lt;/code&gt;) now opens in a new tab.&lt;/li&gt;
+&lt;li&gt;Support for browsing paginated sites using &lt;code&gt;]]&lt;/code&gt; and &lt;code&gt;[[&lt;/code&gt; to go forward and backward respectively.&lt;/li&gt;
+&lt;li&gt;Many of the less-used commands are now marked as "advanced" and hidden in the help dialog by default, so
+that the core command set is more focused and approachable.&lt;/li&gt;
+&lt;li&gt;Improvements to link hinting.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.21 (2010-10-24)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Critical bug fix for an excluded URLs regression due to frame support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.20 (2010-10-24)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In link hints mode, holding down the shift key will now toggle between opening in the current tab and
+opening in a new tab.&lt;/li&gt;
+&lt;li&gt;Two new commands (&lt;code&gt;zH&lt;/code&gt; and &lt;code&gt;zL&lt;/code&gt;) to scroll to the left and right edges of the page.&lt;/li&gt;
+&lt;li&gt;A new command (&lt;code&gt;gi&lt;/code&gt;) to focus the first (or n-th) visible text input.&lt;/li&gt;
+&lt;li&gt;A new command (&lt;code&gt;&amp;lt;a-f&amp;gt;&lt;/code&gt;) to open up multiple links at a time in new tabs.&lt;/li&gt;
+&lt;li&gt;Frame support.&lt;/li&gt;
+&lt;li&gt;More robust support for non-US keyboard layouts.&lt;/li&gt;
+&lt;li&gt;Numerous bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.19 (2010-06-29)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A critical bug fix for development channel Chromium.&lt;/li&gt;
+&lt;li&gt;Vimium icons for the Chrome extensions panel and other places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.18 (2010-06-22)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vimium now runs on pages with file:/// and ftp:///&lt;/li&gt;
+&lt;li&gt;The Options page is now linked from the Help dialog.&lt;/li&gt;
+&lt;li&gt;Arrow keys and function keys can now be mapped using &amp;lt;left&amp;gt;, &amp;lt;right&amp;gt;, &amp;lt;up&amp;gt;, &amp;lt;down&amp;gt;,
+&amp;lt;f1&amp;gt;, &amp;lt;f2&amp;gt;, etc. in the mappings interface.&lt;/li&gt;
+&lt;li&gt;There is a new command &lt;code&gt;goUp&lt;/code&gt; (mapped to &lt;code&gt;gu&lt;/code&gt; by default) that will go up one level in the URL hierarchy.
+For example: from &lt;a href="https://vimium.github.io/foo/bar" rel="nofollow"&gt;https://vimium.github.io/foo/bar&lt;/a&gt; to &lt;a href="https://vimium.github.io/foo" rel="nofollow"&gt;https://vimium.github.io/foo&lt;/a&gt;. At the moment, &lt;code&gt;goUp&lt;/code&gt;
+does not support command repetition.&lt;/li&gt;
+&lt;li&gt;Bug fixes and optimizations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.17 (2010-04-18)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;u&lt;/code&gt; now restores tabs that were closed by the mouse or with native shortcuts. Tabs are also restored in
+their prior position.&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;unmapAll&lt;/code&gt; command in the key mappings interface to remove all default mappings.&lt;/li&gt;
+&lt;li&gt;Link hints are now faster and more reliable.&lt;/li&gt;
+&lt;li&gt;Bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.16 (2010-03-09)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for configurable key mappings under Advanced Options.&lt;/li&gt;
+&lt;li&gt;A help dialog which shows all currently bound keyboard shortcuts. Type &lt;code&gt;?&lt;/code&gt; to see it.&lt;/li&gt;
+&lt;li&gt;Bug fixes related to key stroke handling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.15 (2010-01-31)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make the CSS used by the link hints configurable. It's under Advanced Options.&lt;/li&gt;
+&lt;li&gt;Add a notification linking to the changelog when Vimium is updated in the background.&lt;/li&gt;
+&lt;li&gt;Link-hinting performance improvements and bug fixes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+D&lt;/code&gt; and &lt;code&gt;Ctrl+U&lt;/code&gt; now scroll by 1/2 page instead of a fixed amount, to mirror Vim's behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.14 (2010-01-21)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a bug introduced in 1.13 that prevented excluded URLs from being saved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.13 (2010-01-21)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-f&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;c-b&amp;gt;&lt;/code&gt; are now mapped to scroll a full page up or down respectively.&lt;/li&gt;
+&lt;li&gt;Bug fixes related to entering insert mode when the page first loads, and when focusing Flash embeds.&lt;/li&gt;
+&lt;li&gt;Added command listing to the Options page for easy reference.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt; &amp;amp; &lt;code&gt;K&lt;/code&gt; have reversed for tab switching: &lt;code&gt;J&lt;/code&gt; goes left and &lt;code&gt;K&lt;/code&gt; goes right.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-[&amp;gt;&lt;/code&gt; is now equivalent to &lt;code&gt;Esc&lt;/code&gt;, to match the behavior of VIM.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;c-e&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;c-y&amp;gt;&lt;/code&gt; are now mapped to scroll down and up respectively.&lt;/li&gt;
+&lt;li&gt;The characters used for link hints are now configurable under Advanced Options.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.11, 1.12 (2010-01-08)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Commands &lt;code&gt;gt&lt;/code&gt; &amp;amp; &lt;code&gt;gT&lt;/code&gt; to move to the next &amp;amp; previous tab.&lt;/li&gt;
+&lt;li&gt;Command &lt;code&gt;yy&lt;/code&gt; to yank (copy) the current tab's url to the clipboard.&lt;/li&gt;
+&lt;li&gt;Better Linux support.&lt;/li&gt;
+&lt;li&gt;Fix for &lt;code&gt;Shift+F&lt;/code&gt; link hints.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Esc&lt;/code&gt; now clears the keyQueue. So, for example, hitting &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;Esc&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt; will no longer scroll the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.1 (2010-01-03)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A nicer looking settings page.&lt;/li&gt;
+&lt;li&gt;An exclusion list that allows you to define URL patterns for which Vimium will be disabled (e.g.
+http*://mail.google.com/*).&lt;/li&gt;
+&lt;li&gt;Vimium-interpreted keystrokes are no longer sent to the page.&lt;/li&gt;
+&lt;li&gt;Better Windows support.&lt;/li&gt;
+&lt;li&gt;Various miscellaneous bug fixes and UI improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright (c) Phil Crosby, Ilya Sukhar. See MIT-LICENSE.txt for details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>philc</author><guid isPermaLink="false">https://github.com/philc/vimium</guid><pubDate>Wed, 13 Nov 2019 00:01:00 GMT</pubDate></item><item><title>cypress-io/cypress #2 in CoffeeScript, Today</title><link>https://github.com/cypress-io/cypress</link><description>&lt;p&gt;&lt;i&gt;Fast, easy and reliable testing for anything that runs in a browser.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://cloud.githubusercontent.com/assets/1268976/20607953/d7ae489c-b24a-11e6-9cc4-91c6c74c5e88.png"&gt;&lt;img src="https://cloud.githubusercontent.com/assets/1268976/20607953/d7ae489c-b24a-11e6-9cc4-91c6c74c5e88.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://on.cypress.io" rel="nofollow"&gt;Documentation&lt;/a&gt; |
+  &lt;a href="https://on.cypress.io/changelog" rel="nofollow"&gt;Changelog&lt;/a&gt; |
+  &lt;a href="https://on.cypress.io/roadmap" rel="nofollow"&gt;Roadmap&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3 align="center"&gt;&lt;a id="user-content---the-web-has-evolved-finally-testing-has-too" class="anchor" aria-hidden="true" href="#--the-web-has-evolved-finally-testing-has-too"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  The web has evolved. Finally, testing has too.
+&lt;/h3&gt;
+&lt;p align="center"&gt;
+  Fast, easy and reliable testing for anything that runs in a browser.
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://www.npmjs.com/package/cypress" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/e23204b86e18fa9cd4b1d01a9b05d8ab5598bd58/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f637970726573732e737667" alt="npm" data-canonical-src="https://img.shields.io/npm/dm/cypress.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://gitter.im/cypress-io/cypress" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/d2e2be10017f31702c39fe23256bad84069aac33/68747470733a2f2f696d672e736869656c64732e696f2f6769747465722f726f6f6d2f637970726573732d696f2f637970726573732e737667" alt="Gitter chat" data-canonical-src="https://img.shields.io/gitter/room/cypress-io/cypress.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+    &lt;a href="https://stackshare.io/cypress" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/655420ebe73ef7290aae3926f4fb3b26965fe7bf/68747470733a2f2f696d672e737461636b73686172652e696f2f6d6973632f666f6c6c6f772d6f6e2d737461636b73686172652d62616467652e737667" alt="StackShare" data-canonical-src="https://img.stackshare.io/misc/follow-on-stackshare-badge.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-what-is-cypress" class="anchor" aria-hidden="true" href="#what-is-cypress"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Cypress?&lt;/h2&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://player.vimeo.com/video/237527670" rel="nofollow"&gt;
+    &lt;img alt="Why Cypress Video" src="https://user-images.githubusercontent.com/1271364/31739717-dbdff0ee-b41c-11e7-9b16-bfa1b6ac1814.png" width="75%" height="75%" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://badge.fury.io/js/cypress" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/eeac3804665f2c05dfaf1d18dff2722db530cde0/68747470733a2f2f62616467652e667572792e696f2f6a732f637970726573732e737667" alt="npm version" data-canonical-src="https://badge.fury.io/js/cypress.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Install Cypress for Mac, Linux, or Windows, then &lt;a href="https://docs.cypress.io/guides/getting-started/installing-cypress.html" rel="nofollow"&gt;get started&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;npm install cypress --save-dev&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1271364/31740846-7bf607f0-b420-11e7-855f-41c996040d31.gif"&gt;&lt;img src="https://user-images.githubusercontent.com/1271364/31740846-7bf607f0-b420-11e7-855f-41c996040d31.gif" alt="installing-cli e1693232" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://circleci.com/gh/cypress-io/cypress/tree/develop" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/15515068bfddf8b6ca3cfa2a8d68610f7743269d/68747470733a2f2f636972636c6563692e636f6d2f67682f637970726573732d696f2f637970726573732f747265652f646576656c6f702e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/cypress-io/cypress/tree/develop.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt; - &lt;code&gt;develop&lt;/code&gt; branch&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://circleci.com/gh/cypress-io/cypress/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8cc98111df0fb083489e32f685646d5d711efe1d/68747470733a2f2f636972636c6563692e636f6d2f67682f637970726573732d696f2f637970726573732f747265652f6d61737465722e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/cypress-io/cypress/tree/master.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt; - &lt;code&gt;master&lt;/code&gt; branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please see our &lt;a href="/CONTRIBUTING.md"&gt;Contributing Guideline&lt;/a&gt; which explains repo organization, linting, testing, and other steps.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/cypress-io/cypress/blob/master/LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/6a40b4913be1852a0fe4a896c5912412202f9169/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d677265656e2e737667" alt="license" data-canonical-src="https://img.shields.io/badge/license-MIT-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This project is licensed under the terms of the &lt;a href="/LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-badges" class="anchor" aria-hidden="true" href="#badges"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Badges&lt;/h2&gt;
+&lt;p&gt;Let the world know your project is using Cypress.io to test with this cool badge&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cypress.io" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9d907bd614d48c42a199fc644f5b9c4c842918e3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f637970726573732e696f2d74657374732d677265656e2e7376673f7374796c653d666c61742d737175617265" alt="badge" data-canonical-src="https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>cypress-io</author><guid isPermaLink="false">https://github.com/cypress-io/cypress</guid><pubDate>Wed, 13 Nov 2019 00:02:00 GMT</pubDate></item><item><title>overleaf/overleaf #3 in CoffeeScript, Today</title><link>https://github.com/overleaf/overleaf</link><description>&lt;p&gt;&lt;i&gt;A web-based collaborative LaTeX editor&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 align="center"&gt;&lt;a id="user-content-----" class="anchor" aria-hidden="true" href="#----"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  &lt;br&gt;
+  &lt;a href="https://www.overleaf.com" rel="nofollow"&gt;&lt;img src="doc/logo.png" alt="Overleaf" width="300" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h4 align="center"&gt;&lt;a id="user-content-an-open-source-online-real-time-collaborative-latex-editor" class="anchor" aria-hidden="true" href="#an-open-source-online-real-time-collaborative-latex-editor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;An open-source online real-time collaborative LaTeX editor.&lt;/h4&gt;
+&lt;p align="center"&gt;
+  &lt;a href="#key-features"&gt;Key Features&lt;/a&gt; •
+  &lt;a href="https://github.com/overleaf/overleaf/wiki"&gt;Wiki&lt;/a&gt; •
+  &lt;a href="https://www.sharelatex.com/i/university/onsite" rel="nofollow"&gt;Server Pro&lt;/a&gt; •
+  &lt;a href="#contributing"&gt;Contributing&lt;/a&gt; •
+  &lt;a href="https://www.overleaf.com/for/enterprises" rel="nofollow"&gt;Mailing List&lt;/a&gt; •
+  &lt;a href="#authors"&gt;Authors&lt;/a&gt; •
+  &lt;a href="#license"&gt;License&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.overleaf.com" rel="nofollow"&gt;&lt;img src="doc/screenshot.png" alt="Overleaf" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-key-features" class="anchor" aria-hidden="true" href="#key-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key Features&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.overleaf.com" rel="nofollow"&gt;Overleaf&lt;/a&gt; is an open-source online real-time collaborative LaTeX editor. We run a hosted version at &lt;a href="http://www.overleaf.com" rel="nofollow"&gt;http://www.overleaf.com&lt;/a&gt;, but you can also run your own local version, and contribute to the development of Overleaf.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href="https://www.overleaf.com/university/onsite.html" rel="nofollow"&gt;If you want help installing and maintaining Overleaf at your university or workplace, we offer an officially supported version called Overleaf Server Pro. It also comes with extra security and admin features. Click here to find out more!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-keeping-up-to-date" class="anchor" aria-hidden="true" href="#keeping-up-to-date"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Keeping up to date&lt;/h2&gt;
+&lt;p&gt;Sign up to the &lt;a href="https://mailchi.mp/overleaf.com/community-edition-and-server-pro" rel="nofollow"&gt;mailing list&lt;/a&gt; to get updates on Overleaf Releases and development&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;We have detailed installation instructions in our wiki:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide"&gt;Overleaf Quick Start Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-upgrading" class="anchor" aria-hidden="true" href="#upgrading"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Upgrading&lt;/h2&gt;
+&lt;p&gt;If you are upgrading from a previous version of Overleaf, please see the &lt;a href="https://github.com/overleaf/overleaf/wiki/Home"&gt;Release Notes section on the Wiki&lt;/a&gt; for all of the versions between your current version and the version you are upgrading to.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-repositories" class="anchor" aria-hidden="true" href="#other-repositories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other repositories&lt;/h2&gt;
+&lt;p&gt;This repository does not contain any code. It acts a wrapper and toolkit for managing the many different Overleaf  services. These each run as their own Node.js process and have their own Github repository. These are all downloaded and set up when you run &lt;code&gt;grunt install&lt;/code&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Service&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/web"&gt;web&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The front facing web server that serves all the HTML pages, CSS and JavaScript to the client. Also contains a lot of logic around creating and editing projects, and account management.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/document-updater"&gt;document-updater&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Processes updates that come in from the editor when users modify documents. Ensures that the updates are applied in the right order, and that only one operation is modifying the document at a time. Also caches the documents in redis for very fast but persistent modifications.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/clsi"&gt;CLSI&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The Common LaTeX Service Interface (CLSI) which provides an API for compiling LaTeX documents.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/docstore"&gt;docstore&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;An API for performing CRUD (Create, Read, Update and Delete) operations on text files stored in Overleaf.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/real-time"&gt;real-time&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The websocket process clients connect to.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/filestore"&gt;filestore&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;An API for performing CRUD (Create, Read, Update and Delete) operations on binary files (like images) stored in Overleaf.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/track-changes"&gt;track-changes&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;An API for compressing and storing the updates applied to a document, and then rendering a diff of the changes between any two time points.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/chat"&gt;chat&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The backend API for storing and fetching chat messages.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/tags"&gt;tags&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The backend API for managing project tags (folders).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/overleaf/spelling"&gt;spelling&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;An API for running server-side spelling checking on Overleaf documents.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/overleaf/overleaf/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING&lt;/a&gt; file for information on contributing to the development of Overleaf. See &lt;a href="https://github.com/overleaf/overleaf/wiki/Developer-Guidelines"&gt;our wiki&lt;/a&gt; for information on setting up a development environment and how to recompile and run Overleaf after modifications.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-authors" class="anchor" aria-hidden="true" href="#authors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authors&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.overleaf.com/about" rel="nofollow"&gt;The Overleaf Team&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The code in this repository is released under the GNU AFFERO GENERAL PUBLIC LICENSE, version 3. A copy can be found in the &lt;code&gt;LICENSE&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Copyright (c) Overleaf, 2014-2019.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>overleaf</author><guid isPermaLink="false">https://github.com/overleaf/overleaf</guid><pubDate>Wed, 13 Nov 2019 00:03:00 GMT</pubDate></item><item><title>jashkenas/coffeescript #4 in CoffeeScript, Today</title><link>https://github.com/jashkenas/coffeescript</link><description>&lt;p&gt;&lt;i&gt;Unfancy JavaScript&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;pre&gt;&lt;code&gt;      @@@@@@@                @@@@  @@@@@
+     @@@@@@@@@@              @@@   @@@                                           {
+    @@@@     @@              @@@   @@@                                        }   }   {
+   @@@@          @@@@@@@    @@@   @@@     @@@@@@    @@@@@@                   {   {  }  }
+  @@@@          @@@   @@  @@@@@  @@@@@@  @@@   @@  @@@@  @@                   }   }{  {
+  @@@@         @@@@   @@   @@@    @@@   @@@   @@@ @@@   @@@                  {  }{  }  }
+  @@@@        @@@@    @@   @@@    @@@   @@@@@@@@  @@@@@@@@                  { }{ }{  { }
+  @@@@@       @@@@   @@    @@@    @@@   @@@       @@@                     {  { } { } { }  }
+   @@@@@@@@@@ @@@@@@@@    @@@    @@@    @@@@@@@@  @@@@@@@@                 { }   { }   { }
+      @@@@@               @@@    @@@      @@@@@     @@@@@           @@@@@@   { }   { }    @@@@@@@
+                         @@@    @@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @@@@@@            @@@    @@@                                @@ @@@@@@@@@@@@@@@@@@@@@@@@@@
+   @@@@    @@          @@@   @@@@                                @@   @@@@@@@@@@@@@@@@@@@@@@@@
+   @@@@   @@@                       @@                  @@@@     @@@   @@@@@@@@@@@@@@@@@@@@@
+   @@@@@          @@@@@   @@  @@   @@@     @@@@@@@     @@@@@      @@@    @@@@@@@@@@@@@@@@@@
+     @@@@@      @@@  @@@ @@@@@@@@         @@@@  @@@@  @@@@@@@       @@@   @@@@@@@@@@@@@@@@
+       @@@@@   @@@       @@@@     @@@@    @@@    @@@   @@@                 @@@@@@@@@@@@@@
+ @@@@@  @@@@  @@@@      @@@@      @@@@   @@@@   @@@@  @@@@
+@@@     @@@@  @@@       @@@@     @@@@    @@@    @@@@  @@@@
+@@@     @@@@  @@@@     @@@@      @@@@   @@@@   @@@@  @@@@
+ @@@@@@@@@     @@@@@@  @@@@       @@@@  @@@@@@@@@    @@@@
+                                       @@@          @@@@
+                                      @@@
+                                      @@@
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;CoffeeScript is a little language that compiles into JavaScript.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Once you have Node.js installed:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Install locally for a project:&lt;/span&gt;
+npm install --save-dev coffeescript
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Install globally to execute .coffee files anywhere:&lt;/span&gt;
+npm install --global coffeescript&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Execute a script:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;coffee /path/to/script.coffee&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Compile a script:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;coffee -c /path/to/script.coffee&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For documentation, usage, and examples, see: &lt;a href="https://coffeescript.org/" rel="nofollow"&gt;https://coffeescript.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To suggest a feature or report a bug: &lt;a href="https://github.com/jashkenas/coffeescript/issues"&gt;https://github.com/jashkenas/coffeescript/issues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you’d like to chat, drop by #coffeescript on Freenode IRC.&lt;/p&gt;
+&lt;p&gt;The source repository: &lt;a href="https://github.com/jashkenas/coffeescript.git"&gt;https://github.com/jashkenas/coffeescript.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Changelog: &lt;a href="https://coffeescript.org/#changelog" rel="nofollow"&gt;https://coffeescript.org/#changelog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our lovely and talented contributors are listed here: &lt;a href="https://github.com/jashkenas/coffeescript/contributors"&gt;https://github.com/jashkenas/coffeescript/contributors&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jashkenas</author><guid isPermaLink="false">https://github.com/jashkenas/coffeescript</guid><pubDate>Wed, 13 Nov 2019 00:04:00 GMT</pubDate></item><item><title>sparanoid/chinese-copywriting-guidelines #5 in CoffeeScript, Today</title><link>https://github.com/sparanoid/chinese-copywriting-guidelines</link><description>&lt;p&gt;&lt;i&gt;Chinese copywriting guidelines for better written communication／中文文案排版指北&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-中文文案排版指北" class="anchor" aria-hidden="true" href="#中文文案排版指北"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;中文文案排版指北&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://crowdin.com/project/chinese-copywriting-guidelines" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dcf13e984856ad8971afc795a97237114dfc3a33/68747470733a2f2f64333232637174353834626f346f2e636c6f756466726f6e742e6e65742f6368696e6573652d636f707977726974696e672d67756964656c696e65732f6c6f63616c697a65642e737667" alt="Crowdin" data-canonical-src="https://d322cqt584bo4o.cloudfront.net/chinese-copywriting-guidelines/localized.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://greenkeeper.io/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cbc8e309c35106810f6fe84382c0ad21e00d6752/68747470733a2f2f6261646765732e677265656e6b65657065722e696f2f73706172616e6f69642f6368696e6573652d636f707977726974696e672d67756964656c696e65732e737667" alt="Greenkeeper badge" data-canonical-src="https://badges.greenkeeper.io/sparanoid/chinese-copywriting-guidelines.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://david-dm.org/sparanoid/chinese-copywriting-guidelines#info=devDependencies" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/51e16ccf8020da3ea9eb7d3f605e038b28f31604/68747470733a2f2f64617669642d646d2e6f72672f73706172616e6f69642f6368696e6573652d636f707977726974696e672d67756964656c696e65732f6465762d7374617475732e737667" alt="devDependency Status" data-canonical-src="https://david-dm.org/sparanoid/chinese-copywriting-guidelines/dev-status.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://sparanoid.com/note/chinese-copywriting-guidelines/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ca8d98861808daa64b528511dab38d739a08d899/68747470733a2f2f64333439637a746e6c75707375662e636c6f756466726f6e742e6e65742f616d73662d62616467652e737667" alt="Built with Almace Scaffolding" data-canonical-src="https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;統一中文文案、排版的相關用法，降低團隊成員之間的溝通成本，增強網站氣質。&lt;/p&gt;
+&lt;p&gt;Other languages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="README.en-US.md"&gt;English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="README.md"&gt;Chinese Traditional&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="README.zh-CN.md"&gt;Chinese Simplified&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mzlogin/chinese-copywriting-guidelines"&gt;Chinese Simplified&lt;/a&gt;（外部連結）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-目次" class="anchor" aria-hidden="true" href="#目次"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;目次&lt;/h2&gt;
+&lt;p&gt;{:.no_toc}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TOC
+{:toc}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-空格" class="anchor" aria-hidden="true" href="#空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;空格&lt;/h2&gt;
+&lt;p&gt;「有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能把遺產留給自己的貓。畢竟愛情跟書寫都需要適時地留白。&lt;/p&gt;
+&lt;p&gt;與大家共勉之。」——&lt;a href="https://github.com/vinta/pangu.js"&gt;vinta/paranoid-auto-spacing&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-中英文之間需要增加空格" class="anchor" aria-hidden="true" href="#中英文之間需要增加空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;中英文之間需要增加空格&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 LeanCloud 上，數據存儲是圍繞 &lt;code&gt;AVObject&lt;/code&gt; 進行的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在LeanCloud上，數據存儲是圍繞&lt;code&gt;AVObject&lt;/code&gt;進行的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 LeanCloud上，數據存儲是圍繞&lt;code&gt;AVObject&lt;/code&gt; 進行的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;完整的正確用法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 LeanCloud 上，數據儲存是圍繞 &lt;code&gt;AVObject&lt;/code&gt; 進行的。每個 &lt;code&gt;AVObject&lt;/code&gt; 都包含了與 JSON 兼容的 key-value 對應的數據。數據是 schema-free 的，你不需要在每個 &lt;code&gt;AVObject&lt;/code&gt; 上提前指定存在哪些键，只要直接設定對應的 key-value 即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例外：「豆瓣FM」等產品名詞，按照官方所定義的格式書寫。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-中文與數字之間需要增加空格" class="anchor" aria-hidden="true" href="#中文與數字之間需要增加空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;中文與數字之間需要增加空格&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去買菜花了 5000 元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去買菜花了 5000元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天出去買菜花了5000元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-數字與單位之間需要增加空格" class="anchor" aria-hidden="true" href="#數字與單位之間需要增加空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;數字與單位之間需要增加空格&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我家的光纖入屋寬頻有 10 Gbps，SSD 一共有 20 TB。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我家的光纖入屋寬頻有 10Gbps，SSD 一共有 20TB。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例外：度／百分比與數字之間不需要增加空格：&lt;/p&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天是 233° 的高溫。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新 MacBook Pro 有 15% 的 CPU 性能提升。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天是 233 ° 的高溫。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新 MacBook Pro 有 15 % 的 CPU 性能提升。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-全形標點與其他字符之間不加空格" class="anchor" aria-hidden="true" href="#全形標點與其他字符之間不加空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;全形標點與其他字符之間不加空格&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;剛剛買了一部 iPhone，好開心！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;剛剛買了一部 iPhone ，好開心！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;剛剛買了一部 iPhone， 好開心！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-text-spacing-to-the-rescue" class="anchor" aria-hidden="true" href="#text-spacing-to-the-rescue"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;text-spacing&lt;/code&gt; to the rescue?&lt;/h3&gt;
+&lt;p&gt;CSS Text Module Level 4 的 &lt;a href="https://www.w3.org/TR/css-text-4/#text-spacing-property" rel="nofollow"&gt;&lt;code&gt;text-spacing&lt;/code&gt;&lt;/a&gt; 和 Microsoft 的 &lt;a href="https://msdn.microsoft.com/library/ms531164(v=vs.85).aspx" rel="nofollow"&gt;&lt;code&gt;-ms-text-autospace&lt;/code&gt;&lt;/a&gt; 可以實現自動為中英文之間增加空白。不過目前並未普及，另外在其他應用場景，例如 macOS、iOS、Windows 等用戶介面目前并不存在這個特性，所以請繼續保持隨手加空格的習慣。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-標點符號" class="anchor" aria-hidden="true" href="#標點符號"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;標點符號&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-不重複使用標點符號" class="anchor" aria-hidden="true" href="#不重複使用標點符號"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;不重複使用標點符號&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;德國隊竟然戰勝了巴西隊！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;她竟然對你說「喵」？！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;德國隊竟然戰勝了巴西隊！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;德國隊竟然戰勝了巴西隊！！！！！！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;她竟然對你說「喵」？？！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;她竟然對你說「喵」？！？！？？！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-全形和半形" class="anchor" aria-hidden="true" href="#全形和半形"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;全形和半形&lt;/h2&gt;
+&lt;p&gt;不明白什麼是全形（全角）與半形（半角）符號？請查看維基百科詞條『&lt;a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2" rel="nofollow"&gt;全形和半形&lt;/a&gt;』。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-使用全形中文標點" class="anchor" aria-hidden="true" href="#使用全形中文標點"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;使用全形中文標點&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;嗨！你知道嘛？今天前台的小妹跟我說「喵」了哎！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;核磁共振成像（NMRI）是什麼原理都不知道？JFGI！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;嗨! 你知道嘛? 今天前台的小妹跟我說 "喵" 了哎!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;嗨!你知道嘛?今天前台的小妹跟我說"喵"了哎!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;核磁共振成像 (NMRI) 是什麼原理都不知道? JFGI!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;核磁共振成像(NMRI)是什麼原理都不知道?JFGI!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-數字使用半形字符" class="anchor" aria-hidden="true" href="#數字使用半形字符"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;數字使用半形字符&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這件蛋糕只賣 1000 元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這件蛋糕只賣 １０００ 元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例外：在設計稿、宣傳海報中如出現極少量數字的情形時，為方便文字對齊，是可以使用全形數字的。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-遇到完整的英文整句特殊名詞其內容使用半形標點" class="anchor" aria-hidden="true" href="#遇到完整的英文整句特殊名詞其內容使用半形標點"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;遇到完整的英文整句、特殊名詞，其內容使用半形標點&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;賈伯斯那句話是怎麼說的？「Stay hungry, stay foolish.」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推薦你閱讀《Hackers &amp;amp; Painters: Big Ideas from the Computer Age》，非常的有趣。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;賈伯斯那句話是怎麼說的？「Stay hungry，stay foolish。」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推薦你閱讀《Hackers＆Painters：Big Ideas from the Computer Age》，非常的有趣。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-名詞" class="anchor" aria-hidden="true" href="#名詞"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;名詞&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-專有名詞使用正確的大小寫" class="anchor" aria-hidden="true" href="#專有名詞使用正確的大小寫"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;專有名詞使用正確的大小寫&lt;/h3&gt;
+&lt;p&gt;大小寫相關用法原屬於英文書寫範疇，不屬於本 wiki 討論內容，在這裡只對部分易錯用法進行簡述。&lt;/p&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 GitHub 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 GitHub、Foursquare、Microsoft Corporation、Google、Facebook, Inc.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 github 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 GITHUB 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 Github 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 gitHub 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 gｲんĤЦ8 登錄&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 github、foursquare、microsoft corporation、google、facebook, inc.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 GITHUB、FOURSQUARE、MICROSOFT CORPORATION、GOOGLE、FACEBOOK, INC.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 Github、FourSquare、MicroSoft Corporation、Google、FaceBook, Inc.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 gitHub、fourSquare、microSoft Corporation、google、faceBook, Inc.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們的客戶有 gｲんĤЦ8、ｷouЯƧquﾑгє、๓เςг๏ร๏Ŧt ς๏гק๏гคtเ๏ภn、900913、ƒ4ᄃëв๏๏к, IПᄃ.。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意：當網頁中需要配合整體視覺風格而出現全部大寫／小寫的情形，HTML 中請使用標準的大小寫規範進行書寫；並通過 &lt;code&gt;text-transform: uppercase;&lt;/code&gt;／&lt;code&gt;text-transform: lowercase;&lt;/code&gt; 對表現形式進行定義。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-不要使用不道地的縮寫" class="anchor" aria-hidden="true" href="#不要使用不道地的縮寫"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;不要使用不道地的縮寫&lt;/h3&gt;
+&lt;p&gt;正確：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們需要一位熟悉 JavaScript、HTML5，至少理解一種框架（如 Backbone.js、AngularJS、React 等）的前端開發者。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;錯誤：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我們需要一位熟悉 Js、h5，至少理解一種框架（如 backbone、angular、RJS 等）的 FED。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-爭議" class="anchor" aria-hidden="true" href="#爭議"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;爭議&lt;/h2&gt;
+&lt;p&gt;以下用法略帶有個人色彩，即：無論是否遵循下述規則，從語法的角度來講都是&lt;strong&gt;正確&lt;/strong&gt;的。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-鏈接之間增加空格" class="anchor" aria-hidden="true" href="#鏈接之間增加空格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;鏈接之間增加空格&lt;/h3&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;請 &lt;a href="#"&gt;提交一个 issue&lt;/a&gt; 並分配给相關同事。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;訪問我們網站的最新動態，請 &lt;a href="#"&gt;點擊這裡&lt;/a&gt; 進行訂閱！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;對比用法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;請&lt;a href="#"&gt;提交一个 issue&lt;/a&gt; 並分配给相關同事。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;訪問我們網站的最新動態，請&lt;a href="#"&gt;點擊這裡&lt;/a&gt;進行訂閱！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-簡體中文使用直角引號" class="anchor" aria-hidden="true" href="#簡體中文使用直角引號"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;簡體中文使用直角引號&lt;/h3&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「老師，『有條不紊』的『紊』是什麼意思？」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;對比用法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“老師，‘有條不紊’的‘紊’是什麼意思？”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-工具" class="anchor" aria-hidden="true" href="#工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;工具&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;倉庫&lt;/th&gt;
+&lt;th&gt;語言&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/vinta/paranoid-auto-spacing"&gt;vinta/paranoid-auto-spacing&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;JavaScript&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/huei90/pangu.node"&gt;huei90/pangu.node&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Node.js&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/huacnlee/auto-correct"&gt;huacnlee/auto-correct&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/sparanoid/space-lover"&gt;sparanoid/space-lover&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PHP (WordPress)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/NauxLiu/auto-correct"&gt;nauxliu/auto-correct&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PHP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/jxlwqq/chinese-typesetting"&gt;jxlwqq/chinese-typesetting&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PHP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/hotoo/pangu.vim"&gt;hotoo/pangu.vim&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Vim&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/sparanoid/grunt-auto-spacing"&gt;sparanoid/grunt-auto-spacing&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Node.js (Grunt)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk"&gt;hjiang/scripts/add-space-between-latin-and-cjk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/hustcc/hint"&gt;hustcc/hint&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/studygolang/autocorrect"&gt;studygolang/autocorrect&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Go&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-誰在這樣做" class="anchor" aria-hidden="true" href="#誰在這樣做"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;誰在這樣做？&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;網站&lt;/th&gt;
+&lt;th&gt;文案&lt;/th&gt;
+&lt;th&gt;UGC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.apple.com/cn/" rel="nofollow"&gt;Apple 中國&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.apple.com/hk/" rel="nofollow"&gt;Apple 香港&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.apple.com/tw/" rel="nofollow"&gt;Apple 台灣&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/zh-cn/" rel="nofollow"&gt;Microsoft 中國&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/zh-hk/" rel="nofollow"&gt;Microsoft 香港&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.microsoft.com/zh-tw/" rel="nofollow"&gt;Microsoft 台灣&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://leancloud.cn/" rel="nofollow"&gt;LeanCloud&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://www.v2ex.com/" rel="nofollow"&gt;V2EX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://apple4us.com/" rel="nofollow"&gt;Apple4us&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://ruby-china.org/" rel="nofollow"&gt;Ruby China&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;標題達成&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://phphub.org/" rel="nofollow"&gt;PHPHub&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;標題達成&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://sspai.com/" rel="nofollow"&gt;少數派&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-參考文獻" class="anchor" aria-hidden="true" href="#參考文獻"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;參考文獻&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.thoughtco.com/guidelines-for-using-capital-letters-1691724" rel="nofollow"&gt;Guidelines for Using Capital Letters - ThoughtCo.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Letter_case" rel="nofollow"&gt;Letter case - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.oxforddictionaries.com/grammar/punctuation" rel="nofollow"&gt;Punctuation - Oxford Dictionaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://owl.english.purdue.edu/owl/section/1/6/" rel="nofollow"&gt;Punctuation - The Purdue OWL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wikihow.com/Use-English-Punctuation-Correctly" rel="nofollow"&gt;How to Use English Punctuation Correctly - wikiHow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zh.opensuse.org/index.php?title=Help:%E6%A0%BC%E5%BC%8F" rel="nofollow"&gt;格式 - openSUSE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2" rel="nofollow"&gt;全形和半形 - 維基百科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E5%BC%95%E8%99%9F" rel="nofollow"&gt;引號 - 維基百科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%96%91%E5%95%8F%E9%A9%9A%E5%98%86%E8%99%9F" rel="nofollow"&gt;疑問驚嘆號 - 維基百科&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>sparanoid</author><guid isPermaLink="false">https://github.com/sparanoid/chinese-copywriting-guidelines</guid><pubDate>Wed, 13 Nov 2019 00:05:00 GMT</pubDate></item></channel></rss>
