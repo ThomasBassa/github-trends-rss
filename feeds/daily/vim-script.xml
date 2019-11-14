@@ -1,2 +1,1233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Vim script, Today</title><link>https://github.com/trending/vim-script?since=daily</link><description>The top repositories on GitHub for vim-script, measured daily</description><pubDate>Wed, 13 Nov 2019 01:06:21 GMT</pubDate><lastBuildDate>Wed, 13 Nov 2019 01:06:21 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Vim script, Today today</title><pubDate>Wed, 13 Nov 2019 01:06:21 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Vim script, Today</title><link>https://github.com/trending/vim-script?since=daily</link><description>The top repositories on GitHub for vim-script, measured daily</description><pubDate>Thu, 14 Nov 2019 01:06:13 GMT</pubDate><lastBuildDate>Thu, 14 Nov 2019 01:06:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>fatih/vim-go #1 in Vim script, Today</title><link>https://github.com/fatih/vim-go</link><description>&lt;p&gt;&lt;i&gt;Go development plugin for Vim&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-vim-go-" class="anchor" aria-hidden="true" href="#vim-go-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim-go &lt;a href="https://travis-ci.org/fatih/vim-go" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/439ea3a95ba73ab9ef9e4c560159ee272ce10b5c/687474703a2f2f696d672e736869656c64732e696f2f7472617669732f66617469682f76696d2d676f2e7376673f7374796c653d666c61742d737175617265" alt="Build Status" data-canonical-src="http://img.shields.io/travis/fatih/vim-go.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="assets/vim-go.png"&gt;&lt;img src="assets/vim-go.png" alt="Vim-go logo" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;p&gt;This plugin adds Go language support for Vim, with the following main features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compile your package with &lt;code&gt;:GoBuild&lt;/code&gt;, install it with &lt;code&gt;:GoInstall&lt;/code&gt; or test it
+with &lt;code&gt;:GoTest&lt;/code&gt;. Run a single test with &lt;code&gt;:GoTestFunc&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Quickly execute your current file(s) with &lt;code&gt;:GoRun&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Improved syntax highlighting and folding.&lt;/li&gt;
+&lt;li&gt;Debug programs with integrated &lt;code&gt;delve&lt;/code&gt; support with &lt;code&gt;:GoDebugStart&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Completion support via &lt;code&gt;gocode&lt;/code&gt; and &lt;code&gt;gopls&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gofmt&lt;/code&gt; or &lt;code&gt;goimports&lt;/code&gt; on save keeps the cursor position and undo history.&lt;/li&gt;
+&lt;li&gt;Go to symbol/declaration with &lt;code&gt;:GoDef&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Look up documentation with &lt;code&gt;:GoDoc&lt;/code&gt; or &lt;code&gt;:GoDocBrowser&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Easily import packages via &lt;code&gt;:GoImport&lt;/code&gt;, remove them via &lt;code&gt;:GoDrop&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Precise type-safe renaming of identifiers with &lt;code&gt;:GoRename&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;See which code is covered by tests with &lt;code&gt;:GoCoverage&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Add or remove tags on struct fields with &lt;code&gt;:GoAddTags&lt;/code&gt; and &lt;code&gt;:GoRemoveTags&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Call &lt;code&gt;gometalinter&lt;/code&gt; with &lt;code&gt;:GoMetaLinter&lt;/code&gt; to invoke all possible linters
+(&lt;code&gt;golint&lt;/code&gt;, &lt;code&gt;vet&lt;/code&gt;, &lt;code&gt;errcheck&lt;/code&gt;, &lt;code&gt;deadcode&lt;/code&gt;, etc.) and put the result in the
+quickfix or location list.&lt;/li&gt;
+&lt;li&gt;Lint your code with &lt;code&gt;:GoLint&lt;/code&gt;, run your code through &lt;code&gt;:GoVet&lt;/code&gt; to catch static
+errors, or make sure errors are checked with &lt;code&gt;:GoErrCheck&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Advanced source analysis tools utilizing &lt;code&gt;guru&lt;/code&gt;, such as &lt;code&gt;:GoImplements&lt;/code&gt;,
+&lt;code&gt;:GoCallees&lt;/code&gt;, and &lt;code&gt;:GoReferrers&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;... and many more! Please see &lt;a href="doc/vim-go.txt"&gt;doc/vim-go.txt&lt;/a&gt; for more
+information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;vim-go requires at least Vim 8.0.1453 or Neovim 0.3.1.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/fatih/vim-go/releases/latest"&gt;&lt;strong&gt;latest stable release&lt;/strong&gt;&lt;/a&gt; is the
+recommended version to use. If you choose to use the master branch instead,
+please do so with caution; it is a &lt;em&gt;development&lt;/em&gt; branch.&lt;/p&gt;
+&lt;p&gt;vim-go follows the standard runtime path structure. Below are some helper lines
+for popular package managers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://vimhelp.appspot.com/repeat.txt.html#packages" rel="nofollow"&gt;Vim 8 packages&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tpope/vim-pathogen"&gt;Pathogen&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Plugin 'fatih/vim-go'&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You will also need to install all the necessary binaries. vim-go makes it easy
+to install all of them by providing a command, &lt;code&gt;:GoInstallBinaries&lt;/code&gt;, which will
+&lt;code&gt;go get&lt;/code&gt; all the required binaries.&lt;/p&gt;
+&lt;p&gt;Check out the Install section in &lt;a href="doc/vim-go.txt"&gt;the documentation&lt;/a&gt; for more
+detailed instructions (&lt;code&gt;:help go-install&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;The full documentation can be found at &lt;a href="doc/vim-go.txt"&gt;doc/vim-go.txt&lt;/a&gt;. You can
+display it from within Vim with &lt;code&gt;:help vim-go&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Depending on your installation method, you may have to generate the plugin's
+&lt;a href="http://vimhelp.appspot.com/helphelp.txt.html#%3Ahelptags" rel="nofollow"&gt;&lt;code&gt;help tags&lt;/code&gt;&lt;/a&gt;
+manually (e.g. &lt;code&gt;:helptags ALL&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We also have an &lt;a href="https://github.com/fatih/vim-go/wiki"&gt;official vim-go tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-faq-and-troubleshooting" class="anchor" aria-hidden="true" href="#faq-and-troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FAQ and troubleshooting&lt;/h2&gt;
+&lt;p&gt;The FAQ and troubleshooting tips are in the documentation and can be quickly
+accessed using &lt;code&gt;:help go-troubleshooting&lt;/code&gt;. If you believe you've found a bug or
+shortcoming in vim-go that is neither addressed by help nor in &lt;a href="https://github.com/fatih/vim-go/issues"&gt;existing
+issues&lt;/a&gt;, please open an issue with
+clear reproduction steps. &lt;code&gt;:GoReportGitHubIssue&lt;/code&gt; can be used pre-populate a lot
+of the information needed when creating a new issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The BSD 3-Clause License - see &lt;a href="LICENSE"&gt;&lt;code&gt;LICENSE&lt;/code&gt;&lt;/a&gt; for more details&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>fatih</author><guid isPermaLink="false">https://github.com/fatih/vim-go</guid><pubDate>Thu, 14 Nov 2019 00:01:00 GMT</pubDate></item><item><title>tpope/vim-pathogen #2 in Vim script, Today</title><link>https://github.com/tpope/vim-pathogen</link><description>&lt;p&gt;&lt;i&gt;pathogen.vim: manage your runtimepath&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body markdown" data-path="README.markdown"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-pathogenvim" class="anchor" aria-hidden="true" href="#pathogenvim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pathogen.vim&lt;/h1&gt;
+&lt;p&gt;Manage your &lt;code&gt;'runtimepath'&lt;/code&gt; with ease.  In practical terms, pathogen.vim
+makes it super easy to install plugins and runtime files in their own
+private directories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For new users, I recommend using Vim's built-in package management
+instead.&lt;/strong&gt;  &lt;code&gt;:help packages&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Install to &lt;code&gt;~/.vim/autoload/pathogen.vim&lt;/code&gt;.
+Or copy and paste the following into your terminal/shell:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;amp;&amp;amp; \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you're using Windows, change all occurrences of &lt;code&gt;~/.vim&lt;/code&gt; to &lt;code&gt;~\vimfiles&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-runtime-path-manipulation" class="anchor" aria-hidden="true" href="#runtime-path-manipulation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Runtime Path Manipulation&lt;/h2&gt;
+&lt;p&gt;Add this to your vimrc:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execute pathogen#infect()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you're brand new to Vim and lacking a vimrc, &lt;code&gt;vim ~/.vimrc&lt;/code&gt; and paste
+in the following super-minimal example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execute pathogen#infect()
+syntax on
+filetype plugin indent on
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now any plugins you wish to install can be extracted to a subdirectory
+under &lt;code&gt;~/.vim/bundle&lt;/code&gt;, and they will be added to the &lt;code&gt;'runtimepath'&lt;/code&gt;.
+Observe:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/.vim/bundle &amp;amp;&amp;amp; \
+git clone https://github.com/tpope/vim-sensible.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now &lt;a href="https://github.com/tpope/vim-sensible"&gt;sensible.vim&lt;/a&gt; is installed.
+If you really want to get crazy, you could set it up as a submodule in
+whatever repository you keep your dot files in.  I don't like to get
+crazy.&lt;/p&gt;
+&lt;p&gt;If you don't like the directory name &lt;code&gt;bundle&lt;/code&gt;, you can pass a runtime relative
+glob as an argument:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execute pathogen#infect('stuff/{}')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;{}&lt;/code&gt; indicates where the expansion should occur.&lt;/p&gt;
+&lt;p&gt;You can also pass an absolute path instead.  I keep the plugins I maintain under &lt;code&gt;~/src&lt;/code&gt;, and this is how I add them:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execute pathogen#infect('bundle/{}', '~/src/vim/bundle/{}')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Normally to generate documentation, Vim expects you to run &lt;code&gt;:helptags&lt;/code&gt;
+on each directory with documentation (e.g., &lt;code&gt;:helptags ~/.vim/doc&lt;/code&gt;).
+Provided with pathogen.vim is a &lt;code&gt;:Helptags&lt;/code&gt; command that does this on
+every directory in your &lt;code&gt;'runtimepath'&lt;/code&gt;.  If you really want to get
+crazy, you could even invoke &lt;code&gt;Helptags&lt;/code&gt; in your vimrc.  I don't like to
+get crazy.&lt;/p&gt;
+&lt;p&gt;Finally, pathogen.vim has a rich API that can manipulate &lt;code&gt;'runtimepath'&lt;/code&gt;
+and other comma-delimited path options in ways most people will never
+need to do.  If you're one of those edge cases, look at the source.
+It's well documented.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-native-vim-package-management" class="anchor" aria-hidden="true" href="#native-vim-package-management"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Native Vim Package Management&lt;/h2&gt;
+&lt;p&gt;Vim 8 includes support for package management in a manner similar to
+pathogen.vim.  If you'd like to transition to this native support,
+pathogen.vim can help.  Calling &lt;code&gt;pathogen#infect()&lt;/code&gt; on an older version of Vim
+will supplement the &lt;code&gt;bundle/{}&lt;/code&gt; default with &lt;code&gt;pack/{}/start/{}&lt;/code&gt;, effectively
+backporting a subset of the new native functionality.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-runtime-file-editing" class="anchor" aria-hidden="true" href="#runtime-file-editing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Runtime File Editing&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;:Vopen&lt;/code&gt;, &lt;code&gt;:Vedit&lt;/code&gt;, &lt;code&gt;:Vsplit&lt;/code&gt;, &lt;code&gt;:Vvsplit&lt;/code&gt;, &lt;code&gt;:Vtabedit&lt;/code&gt;, &lt;code&gt;:Vpedit&lt;/code&gt;, and
+&lt;code&gt;:Vread&lt;/code&gt; have all moved to &lt;a href="https://github.com/tpope/vim-scriptease"&gt;scriptease.vim&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-faq" class="anchor" aria-hidden="true" href="#faq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FAQ&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can I put pathogen.vim in a submodule like all my other plugins?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sure, stick it under &lt;code&gt;~/.vim/bundle&lt;/code&gt;, and prepend the following to your
+vimrc:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;runtime bundle/vim-pathogen/autoload/pathogen.vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if your bundles are somewhere other than &lt;code&gt;~/.vim&lt;/code&gt; (say, &lt;code&gt;~/src/vim&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source ~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Will you accept these 14 pull requests adding a &lt;code&gt;.gitignore&lt;/code&gt; for
+&lt;code&gt;tags&lt;/code&gt; so I don't see untracked changes in my dot files repository?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;No, but I'll teach you how to ignore &lt;code&gt;tags&lt;/code&gt; globally:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global core.excludesfile '~/.cvsignore'
+echo tags &amp;gt;&amp;gt; ~/.cvsignore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While any filename will work, I've chosen to follow the ancient
+tradition of &lt;code&gt;.cvsignore&lt;/code&gt; because utilities like rsync use it, too.
+Clever, huh?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What about Vimballs?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you really must use one:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:e name.vba
+:!mkdir ~/.vim/bundle/name
+:UseVimball ~/.vim/bundle/name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why don't my plugins load when I use Vim sessions?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Vim sessions default to capturing all global options, which includes the
+&lt;code&gt;'runtimepath'&lt;/code&gt; that pathogen.vim manipulates.  This can cause other problems
+too, so I recommend turning that behavior off:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set sessionoptions-=options
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;If your &lt;a href="http://stopwritingramblingcommitmessages.com/" rel="nofollow"&gt;commit message sucks&lt;/a&gt;,
+I'm not going to accept your pull request.  I've explained very politely
+dozens of times that
+&lt;a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" rel="nofollow"&gt;my general guidelines&lt;/a&gt;
+are absolute rules on my own repositories, so I may lack the energy to
+explain it to you yet another time.  And please, if I ask you to change
+something, &lt;code&gt;git commit --amend&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Beyond that, don't be shy about asking before patching.  What takes you
+hours might take me minutes simply because I have both domain knowledge
+and a perverse knowledge of Vim script so vast that many would consider
+it a symptom of mental illness.  On the flip side, some ideas I'll
+reject no matter how good the implementation is.  "Send a patch" is an
+edge case answer in my book.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-self-promotion" class="anchor" aria-hidden="true" href="#self-promotion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self-Promotion&lt;/h2&gt;
+&lt;p&gt;Like pathogen.vim?  Follow the repository on
+&lt;a href="https://github.com/tpope/vim-pathogen"&gt;GitHub&lt;/a&gt; and vote for it on
+&lt;a href="http://www.vim.org/scripts/script.php?script_id=2332" rel="nofollow"&gt;vim.org&lt;/a&gt;.  And if
+you're feeling especially charitable, follow &lt;a href="http://tpo.pe/" rel="nofollow"&gt;tpope&lt;/a&gt; on
+&lt;a href="http://twitter.com/tpope" rel="nofollow"&gt;Twitter&lt;/a&gt; and
+&lt;a href="https://github.com/tpope"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright (c) Tim Pope.  Distributed under the same terms as Vim itself.
+See &lt;code&gt;:help license&lt;/code&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>tpope</author><guid isPermaLink="false">https://github.com/tpope/vim-pathogen</guid><pubDate>Thu, 14 Nov 2019 00:02:00 GMT</pubDate></item><item><title>junegunn/vim-plug #3 in Vim script, Today</title><link>https://github.com/junegunn/vim-plug</link><description>&lt;p&gt;&lt;i&gt;:hibiscus: Minimalist Vim Plugin Manager&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="" class="anchor" aria-hidden="true" href="#"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.png"&gt;&lt;img src="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.png" height="75" alt="vim-plug" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://travis-ci.org/junegunn/vim-plug" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8eb12d9521d9a2d8694d8cecd167589c72163050/68747470733a2f2f7472617669732d63692e6f72672f6a756e6567756e6e2f76696d2d706c75672e7376673f6272616e63683d6d6173746572" alt="travis-ci" data-canonical-src="https://travis-ci.org/junegunn/vim-plug.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A minimalist Vim plugin manager.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif"&gt;&lt;img src="https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif" height="450" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-pros" class="anchor" aria-hidden="true" href="#pros"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pros.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Easier to setup: Single file. No boilerplate code required.&lt;/li&gt;
+&lt;li&gt;Easier to use: Concise, intuitive syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/junegunn/i/master/vim-plug/40-in-4.gif" rel="nofollow"&gt;Super-fast&lt;/a&gt; parallel installation/update
+(with any of &lt;code&gt;+job&lt;/code&gt;, &lt;code&gt;+python&lt;/code&gt;, &lt;code&gt;+python3&lt;/code&gt;, &lt;code&gt;+ruby&lt;/code&gt;, or &lt;a href="http://neovim.org/" rel="nofollow"&gt;Neovim&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Creates shallow clones to minimize disk space usage and download time&lt;/li&gt;
+&lt;li&gt;On-demand loading for &lt;a href="https://github.com/junegunn/vim-startuptime-benchmark#result"&gt;faster startup time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Can review and rollback updates&lt;/li&gt;
+&lt;li&gt;Branch/tag/commit support&lt;/li&gt;
+&lt;li&gt;Post-update hooks&lt;/li&gt;
+&lt;li&gt;Support for externally managed plugins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" rel="nofollow"&gt;Download plug.vim&lt;/a&gt;
+and put it in the "autoload" directory.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-vim" class="anchor" aria-hidden="true" href="#vim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vim&lt;/h4&gt;
+&lt;h6&gt;&lt;a id="user-content-unix" class="anchor" aria-hidden="true" href="#unix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Unix&lt;/h6&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;curl -fLo &lt;span class="pl-k"&gt;~&lt;/span&gt;/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can automate the process by putting the command in your Vim configuration
+file as suggested &lt;a href="https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h6&gt;&lt;a id="user-content-windows-powershell" class="anchor" aria-hidden="true" href="#windows-powershell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows (PowerShell)&lt;/h6&gt;
+&lt;div class="highlight highlight-source-powershell"&gt;&lt;pre&gt;md ~\vimfiles\autoload
+&lt;span class="pl-smi"&gt;$uri&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;New-Object&lt;/span&gt; Net.WebClient).DownloadFile(
+  &lt;span class="pl-smi"&gt;$uri&lt;/span&gt;&lt;span class="pl-k"&gt;,&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;$ExecutionContext&lt;span class="pl-smi"&gt;.SessionState.Path.GetUnresolvedProviderPathFromPSPath&lt;/span&gt;&lt;/span&gt;(
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~\vimfiles\autoload\plug.vim&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  )
+)&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-neovim" class="anchor" aria-hidden="true" href="#neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Neovim&lt;/h4&gt;
+&lt;h6&gt;&lt;a id="user-content-unix-1" class="anchor" aria-hidden="true" href="#unix-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Unix&lt;/h6&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;curl -fLo &lt;span class="pl-k"&gt;~&lt;/span&gt;/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;/pre&gt;&lt;/div&gt;
+&lt;h6&gt;&lt;a id="user-content-windows-powershell-1" class="anchor" aria-hidden="true" href="#windows-powershell-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows (PowerShell)&lt;/h6&gt;
+&lt;div class="highlight highlight-source-powershell"&gt;&lt;pre&gt;md ~\AppData\Local\nvim\autoload
+&lt;span class="pl-smi"&gt;$uri&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;New-Object&lt;/span&gt; Net.WebClient).DownloadFile(
+  &lt;span class="pl-smi"&gt;$uri&lt;/span&gt;&lt;span class="pl-k"&gt;,&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;$ExecutionContext&lt;span class="pl-smi"&gt;.SessionState.Path.GetUnresolvedProviderPathFromPSPath&lt;/span&gt;&lt;/span&gt;(
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~\AppData\Local\nvim\autoload\plug.vim&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  )
+)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://github.com/junegunn/vim-plug/wiki/tutorial"&gt;tutorial&lt;/a&gt; page to learn the basics of vim-plug&lt;/li&gt;
+&lt;li&gt;See &lt;a href="https://github.com/junegunn/vim-plug/wiki/tips"&gt;tips&lt;/a&gt; and &lt;a href="https://github.com/junegunn/vim-plug/wiki/faq"&gt;FAQ&lt;/a&gt; pages for common problems and questions&lt;/li&gt;
+&lt;li&gt;See &lt;a href="https://github.com/junegunn/vim-plug/wiki/requirements"&gt;requirements&lt;/a&gt; page for debugging information &amp;amp; tested configurations&lt;/li&gt;
+&lt;li&gt;Create an &lt;a href="https://github.com/junegunn/vim-plug/issues/new"&gt;issue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Add a vim-plug section to your &lt;code&gt;~/.vimrc&lt;/code&gt; (or &lt;code&gt;stdpath('config') . '/init.vim'&lt;/code&gt; for Neovim)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Begin the section with &lt;code&gt;call plug#begin()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;List the plugins with &lt;code&gt;Plug&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;call plug#end()&lt;/code&gt; to update &lt;code&gt;&amp;amp;runtimepath&lt;/code&gt; and initialize plugin system
+&lt;ul&gt;
+&lt;li&gt;Automatically executes &lt;code&gt;filetype plugin indent on&lt;/code&gt; and &lt;code&gt;syntax enable&lt;/code&gt;.
+You can revert the settings after the call. e.g. &lt;code&gt;filetype indent off&lt;/code&gt;, &lt;code&gt;syntax off&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a id="user-content-example" class="anchor" aria-hidden="true" href="#example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example&lt;/h4&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Specify a directory for plugins&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; - For Neovim: stdpath('data') . '/plugged'&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; - Avoid using standard Vim directory names like 'plugin'&lt;/span&gt;
+&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;plug#begin&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~/.vim/plugged&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Make sure you use single quotes&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Shorthand notation; fetches https://github.com/junegunn/vim-easy-align&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/vim-easy-align&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Any valid git URL is allowed&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;https://github.com/junegunn/vim-github-dashboard.git&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Multiple Plug commands can be written in a single line using | separators&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;SirVer/ultisnips&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; | Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;honza/vim-snippets&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; On-demand loading&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;scrooloose/nerdtree&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;on&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;:  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;NERDTreeToggle&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tpope/vim-fireplace&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;for&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;clojure&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Using a non-master branch&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rdnetto/YCM-Generator&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;branch&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;stable&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Using a tagged release; wildcard allowed (requires git 1.9.2 or above)&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fatih/vim-go&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tag&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Plugin options&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;nsf/gocode&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tag&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;v.20150303&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rtp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Plugin outside ~/.vim/plugged with post-update hook&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/fzf&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dir&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~/.fzf&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;./install --all&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Unmanaged plugin (manually installed and updated)&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~/my-prototype-plugin&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Initialize plugin system&lt;/span&gt;
+&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;plug#end&lt;/span&gt;()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Reload .vimrc and &lt;code&gt;:PlugInstall&lt;/code&gt; to install plugins.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-commands" class="anchor" aria-hidden="true" href="#commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugInstall [name ...] [#threads]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Install plugins&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugUpdate [name ...] [#threads]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Install or update plugins&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugClean[!]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Remove unlisted plugins (bang version will clean without prompt)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugUpgrade&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Upgrade vim-plug itself&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugStatus&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Check the status of plugins&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugDiff&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Examine changes from the previous update and the pending changes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PlugSnapshot[!] [output path]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Generate script for restoring the current snapshot of the plugins&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;&lt;a id="user-content-plug-options" class="anchor" aria-hidden="true" href="#plug-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;Plug&lt;/code&gt; options&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Option&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;branch&lt;/code&gt;/&lt;code&gt;tag&lt;/code&gt;/&lt;code&gt;commit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Branch/tag/commit of the repository to use&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;rtp&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Subdirectory that contains Vim plugin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dir&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Custom directory for the plugin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;as&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Use different name for the plugin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;do&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Post-update hook (string or funcref)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;on&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;On-demand loading: Commands or &lt;code&gt;&amp;lt;Plug&amp;gt;&lt;/code&gt;-mappings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;for&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;On-demand loading: File types&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;frozen&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Do not update unless explicitly specified&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;&lt;a id="user-content-global-options" class="anchor" aria-hidden="true" href="#global-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Global options&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_threads&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;Default number of threads to use&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_timeout&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;60&lt;/td&gt;
+&lt;td&gt;Time limit of each task in seconds (&lt;em&gt;Ruby &amp;amp; Python&lt;/em&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_retries&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Number of retries in case of timeout (&lt;em&gt;Ruby &amp;amp; Python&lt;/em&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_shallow&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Use shallow clone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_window&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vertical topleft new&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Command to open plug window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_pwindow&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;above 12new&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Command to open preview window in &lt;code&gt;PlugDiff&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;g:plug_url_format&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;https://git::@github.com/%s.git&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;printf&lt;/code&gt; format to build repo URL (Only applies to the subsequent &lt;code&gt;Plug&lt;/code&gt; commands)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;&lt;a id="user-content-keybindings" class="anchor" aria-hidden="true" href="#keybindings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Keybindings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;D&lt;/code&gt; - &lt;code&gt;PlugDiff&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;S&lt;/code&gt; - &lt;code&gt;PlugStatus&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;R&lt;/code&gt; - Retry failed update or installation tasks&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;U&lt;/code&gt; - Update plugins in the selected range&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q&lt;/code&gt; - Close the window&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PlugStatus&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;L&lt;/code&gt; - Load plugin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:PlugDiff&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;X&lt;/code&gt; - Revert the update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-example-a-small-sensible-vim-configuration" class="anchor" aria-hidden="true" href="#example-a-small-sensible-vim-configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example: A small &lt;a href="https://github.com/tpope/vim-sensible"&gt;sensible&lt;/a&gt; Vim configuration&lt;/h3&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;plug#begin&lt;/span&gt;()
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tpope/vim-sensible&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;plug#end&lt;/span&gt;()&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-on-demand-loading-of-plugins" class="anchor" aria-hidden="true" href="#on-demand-loading-of-plugins"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On-demand loading of plugins&lt;/h3&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; NERD tree will be loaded on the first invocation of NERDTreeToggle command&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;scrooloose/nerdtree&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;on&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;NERDTreeToggle&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Multiple commands&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/vim-github-dashboard&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;on&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;GHDashboard&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;GHActivity&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;] }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Loaded when clojure file is opened&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tpope/vim-fireplace&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;for&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;clojure&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Multiple file types&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;kovisoft/paredit&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;for&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;clojure&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;scheme&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;] }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; On-demand loading on both conditions&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/vader.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,  { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;on&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Vader&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;for&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;vader&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Code to execute when the plugin is lazily loaded on demand&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/goyo.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;for&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;markdown&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+&lt;span class="pl-c1"&gt;autocmd&lt;/span&gt;&lt;span class="pl-k"&gt;!&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; goyo.&lt;span class="pl-c1"&gt;vim&lt;/span&gt; &lt;span class="pl-c1"&gt;echom&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Goyo is now loaded!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;for&lt;/code&gt; option is generally not needed as most plugins for specific file types
+usually don't have too much code in &lt;code&gt;plugin&lt;/code&gt; directory. You might want to
+examine the output of &lt;code&gt;vim --startuptime&lt;/code&gt; before applying the option.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-post-update-hooks" class="anchor" aria-hidden="true" href="#post-update-hooks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Post-update hooks&lt;/h3&gt;
+&lt;p&gt;There are some plugins that require extra steps after installation or update.
+In that case, use &lt;code&gt;do&lt;/code&gt; option to describe the task to be performed.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Shougo/vimproc.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;make&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ycm-core/YouCompleteMe&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;./install.py&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If the value starts with &lt;code&gt;:&lt;/code&gt;, it will be recognized as a Vim command.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;fatih/vim-go&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;:GoInstallBinaries&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you need more control, you can pass a reference to a Vim function that
+takes a single argument.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;function&lt;/span&gt;&lt;span class="pl-k"&gt;!&lt;/span&gt; &lt;span class="pl-en"&gt;BuildYCM&lt;/span&gt;(info)
+&lt;span class="pl-c"&gt;  &lt;span class="pl-c"&gt;"&lt;/span&gt; info is a dictionary with 3 fields&lt;/span&gt;
+&lt;span class="pl-c"&gt;  &lt;span class="pl-c"&gt;"&lt;/span&gt; - name:   name of the plugin&lt;/span&gt;
+&lt;span class="pl-c"&gt;  &lt;span class="pl-c"&gt;"&lt;/span&gt; - status: 'installed', 'updated', or 'unchanged'&lt;/span&gt;
+&lt;span class="pl-c"&gt;  &lt;span class="pl-c"&gt;"&lt;/span&gt; - force:  set on PlugInstall! or PlugUpdate!&lt;/span&gt;
+  &lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;a:&lt;/span&gt;info&lt;/span&gt;.status &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;installed&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;||&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;a:&lt;/span&gt;info&lt;/span&gt;.force
+    &lt;span class="pl-k"&gt;!&lt;/span&gt;./install.&lt;span class="pl-c1"&gt;py&lt;/span&gt;
+  &lt;span class="pl-k"&gt;endif&lt;/span&gt;
+&lt;span class="pl-k"&gt;endfunction&lt;/span&gt;
+
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ycm-core/YouCompleteMe&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-k"&gt;function&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;BuildYCM&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;) }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Both forms of post-update hook are executed inside the directory of the plugin
+and only run when the repository has changed, but you can force it to run
+unconditionally with the bang-versions of the commands: &lt;code&gt;PlugInstall!&lt;/code&gt; and
+&lt;code&gt;PlugUpdate!&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Make sure to escape BARs and double-quotes when you write &lt;code&gt;do&lt;/code&gt; option inline
+as they are mistakenly recognized as command separator or the start of the
+trailing comment.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/fzf&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;yes \| ./install&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But you can avoid the escaping if you extract the inline specification using a
+variable (or any Vimscript expression) as follows:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;fzf_install&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;yes | ./install&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;junegunn/fzf&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, { &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;do&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;fzf_install&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-pluginstall-and-plugupdate" class="anchor" aria-hidden="true" href="#pluginstall-and-plugupdate"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;PlugInstall!&lt;/code&gt; and &lt;code&gt;PlugUpdate!&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The installer takes the following steps when installing/updating a plugin:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git clone&lt;/code&gt; or &lt;code&gt;git fetch&lt;/code&gt; from its origin&lt;/li&gt;
+&lt;li&gt;Check out branch, tag, or commit and optionally &lt;code&gt;git merge&lt;/code&gt; remote branch&lt;/li&gt;
+&lt;li&gt;If the plugin was updated (or installed for the first time)
+&lt;ol&gt;
+&lt;li&gt;Update submodules&lt;/li&gt;
+&lt;li&gt;Execute post-update hooks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The commands with &lt;code&gt;!&lt;/code&gt; suffix ensure that all steps are run unconditionally.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-articles" class="anchor" aria-hidden="true" href="#articles"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Articles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://junegunn.kr/2013/09/writing-my-own-vim-plugin-manager" rel="nofollow"&gt;Writing my own Vim plugin manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://junegunn.kr/2014/07/vim-plugins-and-startup-time" rel="nofollow"&gt;Vim plugins and startup time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href="http://junegunn.kr/2013/09/thoughts-on-vim-plugin-dependency" rel="nofollow"&gt;Thoughts on Vim plugin dependency&lt;/a&gt;&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Support for Plugfile has been removed since 0.5.0&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-collaborators" class="anchor" aria-hidden="true" href="#collaborators"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Collaborators&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/janlazo"&gt;Jan Edmund Lazo&lt;/a&gt; - Windows support&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/starcraftman"&gt;Jeremy Pallats&lt;/a&gt; - Python installer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h3&gt;
+&lt;p&gt;MIT&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>junegunn</author><guid isPermaLink="false">https://github.com/junegunn/vim-plug</guid><pubDate>Thu, 14 Nov 2019 00:03:00 GMT</pubDate></item><item><title>VundleVim/Vundle.vim #4 in Vim script, Today</title><link>https://github.com/VundleVim/Vundle.vim</link><description>&lt;p&gt;&lt;i&gt;Vundle, the plug-in manager for Vim&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-help-maintain-vundle" class="anchor" aria-hidden="true" href="#help-maintain-vundle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim/issues/383"&gt;Help Maintain Vundle&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#quick-start"&gt;Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#docs"&gt;Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#changelog"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#people-using-vundle"&gt;People Using Vundle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributors"&gt;Contributors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#inspiration--ideas"&gt;Inspiration &amp;amp; Ideas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#also"&gt;Also&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#todo"&gt;TODO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; is short for &lt;em&gt;Vim bundle&lt;/em&gt; and is a &lt;a href="http://www.vim.org" rel="nofollow"&gt;Vim&lt;/a&gt; plugin manager.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; allows you to...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keep track of and &lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L126-L233"&gt;configure&lt;/a&gt; your plugins right in the &lt;code&gt;.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L234-L254"&gt;install&lt;/a&gt; configured plugins (a.k.a. scripts/bundle)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L255-L265"&gt;update&lt;/a&gt; configured plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L266-L295"&gt;search&lt;/a&gt; by name all available &lt;a href="http://vim-scripts.org/vim/scripts.html" rel="nofollow"&gt;Vim scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L303-L318"&gt;clean&lt;/a&gt; unused plugins up&lt;/li&gt;
+&lt;li&gt;run the above actions in a &lt;em&gt;single keypress&lt;/em&gt; with &lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L319-L360"&gt;interactive mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; automatically...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;manages the &lt;a href="http://vimdoc.sourceforge.net/htmldoc/options.html#%27runtimepath%27" rel="nofollow"&gt;runtime path&lt;/a&gt; of your installed scripts&lt;/li&gt;
+&lt;li&gt;regenerates &lt;a href="http://vimdoc.sourceforge.net/htmldoc/helphelp.html#:helptags" rel="nofollow"&gt;help tags&lt;/a&gt; after installing and updating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; is undergoing an &lt;a href="https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L372-L396"&gt;interface change&lt;/a&gt;, please stay up to date to get latest changes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/VundleVim/Vundle.vim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/35cceb45f80e59526a51dd369a1cad814eadc9da/68747470733a2f2f6261646765732e6769747465722e696d2f56756e646c6556696d2f56756e646c652e76696d2e737667" alt="Gitter-chat" data-canonical-src="https://badges.gitter.im/VundleVim/Vundle.vim.svg" style="max-width:100%;"&gt;&lt;/a&gt; for discussion and support.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bc559468e6623d18947ced1ef353f68f6116e45a/687474703a2f2f692e696d6775722e636f6d2f527565683743632e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/bc559468e6623d18947ced1ef353f68f6116e45a/687474703a2f2f692e696d6775722e636f6d2f527565683743632e706e67" alt="Vundle-installer" data-canonical-src="http://i.imgur.com/Rueh7Cc.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction:&lt;/p&gt;
+&lt;p&gt;Installation requires &lt;a href="http://git-scm.com" rel="nofollow"&gt;Git&lt;/a&gt; and triggers &lt;a href="http://gitref.org/creating/#clone" rel="nofollow"&gt;&lt;code&gt;git clone&lt;/code&gt;&lt;/a&gt; for each configured repository to &lt;code&gt;~/.vim/bundle/&lt;/code&gt; by default.
+Curl is required for search.&lt;/p&gt;
+&lt;p&gt;If you are using Windows, go directly to &lt;a href="https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows"&gt;Windows setup&lt;/a&gt;. If you run into any issues, please consult the &lt;a href="https://github.com/VundleVim/Vundle.vim/wiki"&gt;FAQ&lt;/a&gt;.
+See &lt;a href="https://github.com/VundleVim/Vundle.vim/wiki/Tips-and-Tricks"&gt;Tips&lt;/a&gt; for some advanced configurations.&lt;/p&gt;
+&lt;p&gt;Using non-POSIX shells, such as the popular Fish shell, requires additional setup. Please check the &lt;a href="https://github.com/VundleVim/Vundle.vim/wiki"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set up &lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configure Plugins:&lt;/p&gt;
+&lt;p&gt;Put this at the top of your &lt;code&gt;.vimrc&lt;/code&gt; to use Vundle. Remove plugins you don't need, they are for illustration purposes.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;set&lt;/span&gt; &lt;span class="pl-c1"&gt;nocompatible&lt;/span&gt;&lt;span class="pl-c"&gt;              &lt;span class="pl-c"&gt;"&lt;/span&gt; be iMproved, required&lt;/span&gt;
+&lt;span class="pl-c1"&gt;filetype&lt;/span&gt; &lt;span class="pl-c1"&gt;off&lt;/span&gt;&lt;span class="pl-c"&gt;                  &lt;span class="pl-c"&gt;"&lt;/span&gt; required&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; set the runtime path to include Vundle and initialize&lt;/span&gt;
+&lt;span class="pl-c1"&gt;set&lt;/span&gt; &lt;span class="pl-c1"&gt;rtp&lt;/span&gt;&lt;span class="pl-k"&gt;+=&lt;/span&gt;&lt;span class="pl-c1"&gt;~/.vim/bundle/Vundle.vim&lt;/span&gt;
+&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;vundle#begin&lt;/span&gt;()
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; alternatively, pass a path where Vundle should install plugins&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;call vundle#begin('~/some/path/here')&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; let Vundle manage Vundle, required&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Plugin&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;VundleVim/Vundle.vim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; The following are examples of different formats supported.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Keep Plugin commands between vundle#begin/end.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; plugin on GitHub repo&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Plugin&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;tpope/vim-fugitive&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; plugin from http://vim-scripts.org/vim/scripts.html&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Plugin 'L9'&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Git plugin not hosted on GitHub&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Plugin&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;git://git.wincent.com/command-t.git&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; git repos on your local machine (i.e. when working on your own plugin)&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Plugin&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;file:///home/gmarik/path/to/plugin&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; The sparkup vim script is in a subdirectory of this repo called vim.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Pass the path to set the runtimepath properly.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Plugin&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rstacruz/sparkup&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, {&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rtp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;vim/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;}
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Install L9 and avoid a Naming conflict if you've already installed a&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; different version somewhere else.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Plugin 'ascenator/L9', {'name': 'newL9'}&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; All of your Plugins must be added before the following line&lt;/span&gt;
+&lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;vundle#end&lt;/span&gt;()&lt;span class="pl-c"&gt;            &lt;span class="pl-c"&gt;"&lt;/span&gt; required&lt;/span&gt;
+&lt;span class="pl-c1"&gt;filetype&lt;/span&gt; &lt;span class="pl-c1"&gt;plugin&lt;/span&gt; &lt;span class="pl-c1"&gt;indent&lt;/span&gt; &lt;span class="pl-c1"&gt;on&lt;/span&gt;&lt;span class="pl-c"&gt;    &lt;span class="pl-c"&gt;"&lt;/span&gt; required&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; To ignore plugin indent changes, instead use:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;filetype plugin on&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Brief help&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; :PluginList       - lists configured plugins&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; :PluginSearch foo - searches for foo; append `!` to refresh local cache&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; see :h vundle for more details or wiki for FAQ&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Put your non-Plugin stuff after this line&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Plugins:&lt;/p&gt;
+&lt;p&gt;Launch &lt;code&gt;vim&lt;/code&gt; and run &lt;code&gt;:PluginInstall&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To install from command line: &lt;code&gt;vim +PluginInstall +qall&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(optional) For those using the fish shell: add &lt;code&gt;set shell=/bin/bash&lt;/code&gt; to your &lt;code&gt;.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-docs" class="anchor" aria-hidden="true" href="#docs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docs&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/VundleVim/Vundle.vim/blob/master/doc/vundle.txt"&gt;&lt;code&gt;:h vundle&lt;/code&gt;&lt;/a&gt; Vimdoc for more details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/VundleVim/Vundle.vim/blob/master/changelog.md"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-people-using-vundle" class="anchor" aria-hidden="true" href="#people-using-vundle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;People Using Vundle&lt;/h2&gt;
+&lt;p&gt;see &lt;a href="https://github.com/VundleVim/Vundle.vim/wiki/Examples"&gt;Examples&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributors" class="anchor" aria-hidden="true" href="#contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;see &lt;a href="https://github.com/VundleVim/Vundle.vim/graphs/contributors"&gt;Vundle contributors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-inspiration--ideas" class="anchor" aria-hidden="true" href="#inspiration--ideas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inspiration &amp;amp; Ideas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://github.com/tpope/vim-pathogen/"&gt;pathogen.vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/bundler/bundler"&gt;Bundler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://github.com/bronson"&gt;Scott Bronson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-also" class="anchor" aria-hidden="true" href="#also"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vundle was developed and tested with &lt;a href="http://www.vim.org" rel="nofollow"&gt;Vim&lt;/a&gt; 7.3 on OS X, Linux and Windows&lt;/li&gt;
+&lt;li&gt;Vundle tries to be as &lt;a href="http://en.wikipedia.org/wiki/KISS_principle" rel="nofollow"&gt;KISS&lt;/a&gt; as possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-todo" class="anchor" aria-hidden="true" href="#todo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TODO&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt; is a work in progress, so any ideas and patches are appreciated.&lt;/p&gt;
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; activate newly added bundles on &lt;code&gt;.vimrc&lt;/code&gt; reload or after &lt;code&gt;:PluginInstall&lt;/code&gt;&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; use preview window for search results&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; Vim documentation&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; put Vundle in &lt;code&gt;bundles/&lt;/code&gt; too (will fix Vundle help)&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; tests&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; improve error handling&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; allow specifying revision/version?&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; handle dependencies&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; show description in search results&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; search by description as well&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; make it rock!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>VundleVim</author><guid isPermaLink="false">https://github.com/VundleVim/Vundle.vim</guid><pubDate>Thu, 14 Nov 2019 00:04:00 GMT</pubDate></item><item><title>macvim-dev/macvim #5 in Vim script, Today</title><link>https://github.com/macvim-dev/macvim</link><description>&lt;p&gt;&lt;i&gt;Vim - the text editor - for Mac OS X&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;Vim - the text editor - for Mac OS X&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MacVim homepage &lt;a href="https://macvim-dev.github.io/macvim" rel="nofollow"&gt;https://macvim-dev.github.io/macvim&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the latest version from &lt;a href="https://github.com/macvim-dev/macvim/releases/latest"&gt;Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim README: &lt;a href="README_vim.md"&gt;README_vim.md&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Travis CI &lt;a href="https://travis-ci.com/macvim-dev/macvim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a793120c6d4c7c64dfa620d4b590e22b32a86a6e/68747470733a2f2f7472617669732d63692e636f6d2f6d616376696d2d6465762f6d616376696d2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.com/macvim-dev/macvim.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Packaged in &lt;a href="https://repology.org/metapackage/macvim/versions" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c7dcdc0a2f986de487c81bf7d8186326b14f7fad/68747470733a2f2f7265706f6c6f67792e6f72672f62616467652f76657273696f6e2d666f722d7265706f2f686f6d65627265772f6d616376696d2e737667" alt="Homebrew package" data-canonical-src="https://repology.org/badge/version-for-repo/homebrew/macvim.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://repology.org/metapackage/macvim/versions" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/046db5b62288ba32988e2ea712ec737df71cf0d2/68747470733a2f2f7265706f6c6f67792e6f72672f62616467652f76657273696f6e2d666f722d7265706f2f6d6163706f7274732f6d616376696d2e737667" alt="MacPorts package" data-canonical-src="https://repology.org/badge/version-for-repo/macports/macvim.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>macvim-dev</author><guid isPermaLink="false">https://github.com/macvim-dev/macvim</guid><pubDate>Thu, 14 Nov 2019 00:05:00 GMT</pubDate></item><item><title>neovim/neovim #6 in Vim script, Today</title><link>https://github.com/neovim/neovim</link><description>&lt;p&gt;&lt;i&gt;Vim-fork focused on extensibility and usability&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://neovim.io" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png" alt="Neovim" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/neovim/neovim/wiki"&gt;Wiki&lt;/a&gt; |
+&lt;a href="https://neovim.io/doc" rel="nofollow"&gt;Documentation&lt;/a&gt; |
+&lt;a href="https://gitter.im/neovim/neovim" rel="nofollow"&gt;Chat/Discussion&lt;/a&gt; |
+&lt;a href="https://twitter.com/Neovim" rel="nofollow"&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/neovim/neovim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4ae883a40da36ec54b61cdc90a202be7d479938b/68747470733a2f2f7472617669732d63692e6f72672f6e656f76696d2f6e656f76696d2e7376673f6272616e63683d6d6173746572" alt="Travis build status" data-canonical-src="https://travis-ci.org/neovim/neovim.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/neovim/neovim/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/765b8f2fa3c9d35e5b9a2b1eec022664c3ded03c/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f757264716a72696b35753532316661632f6272616e63682f6d61737465723f7376673d74727565" alt="AppVeyor build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/urdqjrik5u521fac/branch/master?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codecov.io/gh/neovim/neovim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d164c547ae645eb6c337136499cdc8d970412dbc/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f6e656f76696d2f6e656f76696d2e737667" alt="Codecov coverage" data-canonical-src="https://img.shields.io/codecov/c/github/neovim/neovim.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://scan.coverity.com/projects/2227" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/298688ea36ec02e81c1652a28a9bc73d3f8077d8/68747470733a2f2f7363616e2e636f7665726974792e636f6d2f70726f6a656374732f323232372f62616467652e737667" alt="Coverity Scan analysis" data-canonical-src="https://scan.coverity.com/projects/2227/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://neovim.io/doc/reports/clang" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5d95f05d82c2324906e4a2fb9c965e169ec94f55/68747470733a2f2f6e656f76696d2e696f2f646f632f7265706f7274732f636c616e672f62616467652e737667" alt="Clang analysis" data-canonical-src="https://neovim.io/doc/reports/clang/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://neovim.io/doc/reports/pvs/PVS-studio.html.d" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d38e422483d49e5668f5eacd1a1bd0de9650122d/68747470733a2f2f6e656f76696d2e696f2f646f632f7265706f7274732f7076732f62616467652e737667" alt="PVS-Studio analysis" data-canonical-src="https://neovim.io/doc/reports/pvs/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://repology.org/metapackage/neovim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/85f2d3c291cba0d6d9aee65a54ffe7a90843dbd9/68747470733a2f2f7265706f6c6f67792e6f72672f62616467652f74696e792d7265706f732f6e656f76696d2e737667" alt="Packages" data-canonical-src="https://repology.org/badge/tiny-repos/neovim.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://buildd.debian.org/neovim" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/54185923c78bfbe8a3323b0d175585f89923b341/68747470733a2f2f6261646765732e64656269616e2e6e65742f6261646765732f64656269616e2f74657374696e672f6e656f76696d2f76657273696f6e2e737667" alt="Debian CI" data-canonical-src="https://badges.debian.net/badges/debian/testing/neovim/version.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/neovim/neovim/releases/"&gt;&lt;img src="https://camo.githubusercontent.com/1030ce55cd509e8acadde31d00775e8be3de1f16/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f6e656f76696d2f6e656f76696d2f746f74616c2e7376673f6d61784167653d32353932303031" alt="Downloads" data-canonical-src="https://img.shields.io/github/downloads/neovim/neovim/total.svg?maxAge=2592001" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Neovim is a project that seeks to aggressively refactor Vim in order to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simplify maintenance and encourage &lt;a href="CONTRIBUTING.md"&gt;contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Split the work between multiple developers&lt;/li&gt;
+&lt;li&gt;Enable &lt;a href="https://github.com/neovim/neovim/wiki/Related-projects#gui"&gt;advanced UIs&lt;/a&gt; without modifications to the core&lt;/li&gt;
+&lt;li&gt;Maximize &lt;a href="https://github.com/neovim/neovim/wiki/Plugin-UI-architecture"&gt;extensibility&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/neovim/neovim/wiki/Introduction"&gt;Introduction&lt;/a&gt; wiki page and &lt;a href="https://neovim.io/roadmap/" rel="nofollow"&gt;Roadmap&lt;/a&gt;
+for more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Modern &lt;a href="https://github.com/neovim/neovim/wiki/Related-projects#gui"&gt;GUIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/neovim/neovim/wiki/Related-projects#api-clients"&gt;API access&lt;/a&gt;
+from any language including C/C++, C#, Clojure, D, Elixir, Go, Haskell, Java,
+JavaScript/Node.js, Julia, Lisp, Lua, Perl, Python, Racket, Ruby, Rust&lt;/li&gt;
+&lt;li&gt;Embedded, scriptable &lt;a href="https://neovim.io/doc/user/nvim_terminal_emulator.html" rel="nofollow"&gt;terminal emulator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Asynchronous &lt;a href="https://github.com/neovim/neovim/pull/2247"&gt;job control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/neovim/neovim/pull/2506"&gt;Shared data (shada)&lt;/a&gt; among multiple editor instances&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/neovim/neovim/pull/3470"&gt;XDG base directories&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;Compatible with most Vim plugins, including Ruby and Python plugins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://neovim.io/doc/user/vim_diff.html#nvim-features" rel="nofollow"&gt;&lt;code&gt;:help nvim-features&lt;/code&gt;&lt;/a&gt; for the full list!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-install-from-package" class="anchor" aria-hidden="true" href="#install-from-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install from package&lt;/h2&gt;
+&lt;p&gt;Pre-built packages for Windows, macOS, and Linux are found on the
+&lt;a href="https://github.com/neovim/neovim/releases/"&gt;Releases&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-package"&gt;Managed packages&lt;/a&gt; are in Homebrew, &lt;a href="https://packages.debian.org/testing/neovim" rel="nofollow"&gt;Debian&lt;/a&gt;, &lt;a href="http://packages.ubuntu.com/search?keywords=neovim" rel="nofollow"&gt;Ubuntu&lt;/a&gt;, &lt;a href="https://apps.fedoraproject.org/packages/neovim" rel="nofollow"&gt;Fedora&lt;/a&gt;, &lt;a href="https://www.archlinux.org/packages/?q=neovim" rel="nofollow"&gt;Arch Linux&lt;/a&gt;,
+&lt;a href="https://packages.gentoo.org/packages/app-editors/neovim" rel="nofollow"&gt;Gentoo&lt;/a&gt;, and more!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-install-from-source" class="anchor" aria-hidden="true" href="#install-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install from source&lt;/h2&gt;
+&lt;p&gt;The build is CMake-based, but a Makefile is provided as a convenience.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install to a non-default location:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make CMAKE_INSTALL_PREFIX=/full/path/
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To skip bundled (&lt;code&gt;third-party/*&lt;/code&gt;) dependencies:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the dependencies using a package manager.
+&lt;pre&gt;&lt;code&gt;sudo apt install gperf luajit luarocks libuv1-dev libluajit-5.1-dev libunibilium-dev libmsgpack-dev libtermkey-dev libvterm-dev libutf8proc-dev
+sudo luarocks build mpack
+sudo luarocks build lpeg
+sudo luarocks build inspect
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;Build with &lt;code&gt;USE_BUNDLED=OFF&lt;/code&gt;:
+&lt;pre&gt;&lt;code&gt;make CMAKE_BUILD_TYPE=RelWithDebInfo USE_BUNDLED=OFF
+sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To inspect the build, these CMake features are useful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cmake --build build --target help&lt;/code&gt; lists all build targets.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;build/CMakeCache.txt&lt;/code&gt; (or &lt;code&gt;cmake -LAH build/&lt;/code&gt;) contains the resolved values of all CMake variables.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;build/compile_commands.json&lt;/code&gt; shows the full compiler invocations for each translation unit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/neovim/neovim/wiki/Building-Neovim"&gt;Building Neovim&lt;/a&gt; wiki page for details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-transitioning-from-vim" class="anchor" aria-hidden="true" href="#transitioning-from-vim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Transitioning from Vim&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://neovim.io/doc/user/nvim.html#nvim-from-vim" rel="nofollow"&gt;&lt;code&gt;:help nvim-from-vim&lt;/code&gt;&lt;/a&gt; for instructions.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-project-layout" class="anchor" aria-hidden="true" href="#project-layout"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project layout&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;├─ ci/              build automation
+├─ cmake/           build scripts
+├─ runtime/         user plugins/docs
+├─ src/nvim/        application source code (see src/nvim/README.md)
+│  ├─ api/          API subsystem
+│  ├─ eval/         VimL subsystem
+│  ├─ event/        event-loop subsystem
+│  ├─ generators/   code generation (pre-compilation)
+│  ├─ lib/          generic data structures
+│  ├─ lua/          Lua subsystem
+│  ├─ msgpack_rpc/  RPC subsystem
+│  ├─ os/           low-level platform code
+│  └─ tui/          built-in UI
+├─ third-party/     CMake subproject to build dependencies
+└─ test/            tests (see test/README.md)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Neovim is licensed under the terms of the Apache 2.0 license, except for
+parts that were contributed under the Vim license.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Contributions committed before &lt;a href="https://github.com/neovim/neovim/commit/b17d9691a24099c9210289f16afb1a498a89d803"&gt;b17d96&lt;/a&gt; remain under the Vim
+license.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Contributions committed after &lt;a href="https://github.com/neovim/neovim/commit/b17d9691a24099c9210289f16afb1a498a89d803"&gt;b17d96&lt;/a&gt; are licensed under
+Apache 2.0 unless those contributions were copied from Vim (identified in
+the commit logs by the &lt;code&gt;vim-patch&lt;/code&gt; token).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;code&gt;LICENSE&lt;/code&gt; for details.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Vim is Charityware.  You can use and copy it as much as you like, but you are
+encouraged to make a donation for needy children in Uganda.  Please see the
+kcc section of the vim docs or visit the ICCF web site, available at these URLs:
+
+        http://iccf-holland.org/
+        http://www.vim.org/iccf/
+        http://www.iccf.nl/
+
+You can also sponsor the development of Vim.  Vim sponsors can vote for
+features.  The money goes to Uganda anyway.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>neovim</author><guid isPermaLink="false">https://github.com/neovim/neovim</guid><pubDate>Thu, 14 Nov 2019 00:06:00 GMT</pubDate></item><item><title>vimwiki/vimwiki #7 in Vim script, Today</title><link>https://github.com/vimwiki/vimwiki</link><description>&lt;p&gt;&lt;i&gt;Personal Wiki for Vim&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-vimwiki-a-personal-wiki-for-vim" class="anchor" aria-hidden="true" href="#vimwiki-a-personal-wiki-for-vim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VimWiki: A Personal Wiki For Vim&lt;/h1&gt;
+&lt;p&gt;&lt;a href="README-cn.md"&gt;中文&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#intro"&gt;Intro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-using-vim-packages-since-vim-741528"&gt;VIM Packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-using-pathogen"&gt;Pathogen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-using-vim-plug"&gt;Vim-Plug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation-using-vundle"&gt;Vundle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-markup"&gt;Basic Markup&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#lists"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#key-bindings"&gt;Key Bindings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#commands"&gt;Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#changing-wiki-syntax"&gt;Changing Wiki Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#helping-vimwiki"&gt;Helping VimWiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/vimwiki/vimwiki/wiki"&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-intro" class="anchor" aria-hidden="true" href="#intro"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Intro&lt;/h2&gt;
+&lt;p&gt;VimWiki is a personal wiki for Vim -- a number of linked text files that have
+their own syntax highlighting.&lt;/p&gt;
+&lt;p&gt;With VimWiki you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organize notes and ideas&lt;/li&gt;
+&lt;li&gt;Manage to-do lists&lt;/li&gt;
+&lt;li&gt;Write documentation&lt;/li&gt;
+&lt;li&gt;Maintain a diary&lt;/li&gt;
+&lt;li&gt;Export everything to HTML&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To do a quick start press &lt;code&gt;&amp;lt;Leader&amp;gt;ww&lt;/code&gt; (this is usually &lt;code&gt;\ww&lt;/code&gt;) to go to your
+index wiki file. By default it is located in &lt;code&gt;~/vimwiki/index.wiki&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Feed it with the following example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+= My knowledge base =
+    * Tasks -- things to be done _yesterday_!!!
+    * Project Gutenberg -- good books are power.
+    * Scratchpad -- various temporary stuff.
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Place your cursor on &lt;code&gt;Tasks&lt;/code&gt; and press Enter to create a link. Once pressed,
+&lt;code&gt;Tasks&lt;/code&gt; will become &lt;code&gt;[[Tasks]]&lt;/code&gt; -- a VimWiki link. Press Enter again to
+open it. Edit the file, save it, and then press Backspace to jump back to your
+index.&lt;/p&gt;
+&lt;p&gt;A VimWiki link can be constructed from more than one word. Just visually
+select the words to be linked and press Enter. Try it with &lt;code&gt;Project Gutenberg&lt;/code&gt;.
+The result should look something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+= My knowledge base =
+    * [[Tasks]] -- things to be done _yesterday_!!!
+    * [[Project Gutenberg]] -- good books are power.
+    * Scratchpad -- various temporary stuff.
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-screenshots" class="anchor" aria-hidden="true" href="#screenshots"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/lists.png"&gt;&lt;img src="doc/lists.png" alt="Lists View" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc/entries.png"&gt;&lt;img src="doc/entries.png" alt="Entries View" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc/todos.png"&gt;&lt;img src="doc/todos.png" alt="Todos View" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc/wiki.png"&gt;&lt;img src="doc/wiki.png" alt="Wiki View" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Make sure you have these settings in your vimrc file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;set&lt;/span&gt; &lt;span class="pl-c1"&gt;nocompatible&lt;/span&gt;
+&lt;span class="pl-c1"&gt;filetype&lt;/span&gt; &lt;span class="pl-c1"&gt;plugin&lt;/span&gt; &lt;span class="pl-c1"&gt;on&lt;/span&gt;
+&lt;span class="pl-c1"&gt;syntax&lt;/span&gt; &lt;span class="pl-c1"&gt;on&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Without them VimWiki will not work properly.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-installation-using-vim-packages-since-vim-741528" class="anchor" aria-hidden="true" href="#installation-using-vim-packages-since-vim-741528"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using &lt;a href="http://vimhelp.appspot.com/repeat.txt.html#packages" rel="nofollow"&gt;Vim packages&lt;/a&gt; (since Vim 7.4.1528)&lt;/h4&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/vimwiki/vimwiki.git &lt;span class="pl-k"&gt;~&lt;/span&gt;/.vim/pack/plugins/start/vimwiki
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-installation-using-pathogen" class="anchor" aria-hidden="true" href="#installation-using-pathogen"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using &lt;a href="http://www.vim.org/scripts/script.php?script_id=2332" rel="nofollow"&gt;Pathogen&lt;/a&gt;&lt;/h4&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/.vim
+mkdir bundle
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; bundle
+git clone https://github.com/vimwiki/vimwiki.git
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-installation-using-vim-plug" class="anchor" aria-hidden="true" href="#installation-using-vim-plug"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using &lt;a href="https://github.com/junegunn/vim-plug"&gt;Vim-Plug&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Add the following to the plugin-configuration in your vimrc:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;vimwiki/vimwiki&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run &lt;code&gt;:PlugInstall&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-installation-using-vundle" class="anchor" aria-hidden="true" href="#installation-using-vundle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using &lt;a href="https://github.com/VundleVim/Vundle.vim"&gt;Vundle&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Add &lt;code&gt;Plugin 'vimwiki/vimwiki'&lt;/code&gt; to your vimrc file and run&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;vim +PluginInstall +qall
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or download the &lt;a href="https://github.com/vimwiki/vimwiki/archive/master.zip"&gt;zip
+archive&lt;/a&gt; and extract it
+in &lt;code&gt;~/.vim/bundle/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then launch Vim, run &lt;code&gt;:Helptags&lt;/code&gt; and then &lt;code&gt;:help vimwiki&lt;/code&gt; to verify it was
+installed.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-basic-markup" class="anchor" aria-hidden="true" href="#basic-markup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Markup&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;= Header1 =
+== Header2 ==
+=== Header3 ===
+
+
+*bold* -- bold text
+_italic_ -- italic text
+
+[[wiki link]] -- wiki link
+[[wiki link|description]] -- wiki link with description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-lists" class="anchor" aria-hidden="true" href="#lists"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lists:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;* bullet list item 1
+    - bullet list item 2
+    - bullet list item 3
+        * bullet list item 4
+        * bullet list item 5
+* bullet list item 6
+* bullet list item 7
+    - bullet list item 8
+    - bullet list item 9
+
+1. numbered list item 1
+2. numbered list item 2
+    a) numbered list item 3
+    b) numbered list item 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For other syntax elements, see &lt;code&gt;:h vimwiki-syntax&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-key-bindings" class="anchor" aria-hidden="true" href="#key-bindings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key bindings&lt;/h2&gt;
+&lt;p&gt;Normal mode:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Leader&amp;gt;ww&lt;/code&gt; -- Open default wiki index file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Leader&amp;gt;wt&lt;/code&gt; -- Open default wiki index file in a new tab.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Leader&amp;gt;ws&lt;/code&gt; -- Select and open wiki index file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Leader&amp;gt;wd&lt;/code&gt; -- Delete wiki file you are in.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Leader&amp;gt;wr&lt;/code&gt; -- Rename wiki file you are in.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Enter&amp;gt;&lt;/code&gt; -- Follow/Create wiki link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Shift-Enter&amp;gt;&lt;/code&gt; -- Split and follow/create wiki link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Ctrl-Enter&amp;gt;&lt;/code&gt; -- Vertical split and follow/create wiki link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Backspace&amp;gt;&lt;/code&gt; -- Go back to parent(previous) wiki link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Tab&amp;gt;&lt;/code&gt; -- Find next wiki link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Shift-Tab&amp;gt;&lt;/code&gt; -- Find previous wiki link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more keys, see &lt;code&gt;:h vimwiki-mappings&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-commands" class="anchor" aria-hidden="true" href="#commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:Vimwiki2HTML&lt;/code&gt; -- Convert current wiki link to HTML&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:VimwikiAll2HTML&lt;/code&gt; -- Convert all your wiki links to HTML&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:help vimwiki-commands&lt;/code&gt; -- list all commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:help vimwiki&lt;/code&gt; -- General vimwiki help docs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-changing-wiki-syntax" class="anchor" aria-hidden="true" href="#changing-wiki-syntax"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changing Wiki Syntax&lt;/h2&gt;
+&lt;p&gt;VimWiki currently ships with 3 syntaxes: VimWiki (default), Markdown
+(markdown), and MediaWiki (media)&lt;/p&gt;
+&lt;p&gt;If you would prefer to use either Markdown or MediaWiki syntaxes, set the
+following option in your .vimrc:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;vimwiki_list&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;path&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~/vimwiki/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+                      &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;syntax&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;markdown&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ext&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;.md&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;}]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Have a question?&lt;/strong&gt;&lt;br&gt;
+Visit the IRC channel &lt;a href="https://webchat.freenode.net/?channels=#vimwiki" rel="nofollow"&gt;&lt;code&gt;#vimwiki&lt;/code&gt;&lt;/a&gt; on Freenode (&lt;a href="https://webchat.freenode.net/?channels=#vimwiki" rel="nofollow"&gt;webchat&lt;/a&gt;, also synced to Matrix/Riot: &lt;code&gt;#vimwiki:matrix.org&lt;/code&gt;) or post to the &lt;a href="https://groups.google.com/forum/#!forum/vimwiki" rel="nofollow"&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-helping-vimwiki" class="anchor" aria-hidden="true" href="#helping-vimwiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Helping VimWiki&lt;/h2&gt;
+&lt;p&gt;VimWiki has a lot of users but only very few recurring developers or people
+helping the community. Your help is therefore appreciated. Everyone can help!
+See &lt;a href="https://github.com/vimwiki/vimwiki/issues/625"&gt;#625&lt;/a&gt; for information on
+how you can help.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;MIT License&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2008-2010 Maxim Kim
+2013-2017 Daniel Schemala&lt;/p&gt;
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+&lt;p&gt;The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.&lt;/p&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>vimwiki</author><guid isPermaLink="false">https://github.com/vimwiki/vimwiki</guid><pubDate>Thu, 14 Nov 2019 00:07:00 GMT</pubDate></item><item><title>Yggdroot/indentLine #8 in Vim script, Today</title><link>https://github.com/Yggdroot/indentLine</link><description>&lt;p&gt;&lt;i&gt;A vim plugin to display the indention levels with thin vertical lines&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-indentline" class="anchor" aria-hidden="true" href="#indentline"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;indentLine&lt;/h1&gt;
+&lt;p&gt;This plugin is used for displaying thin vertical lines at each indentation level for code indented with spaces. For code indented with tabs I think there is no need to support it, because you can use &lt;code&gt;:set list lcs=tab:\|\ (here is a space)&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;This plugin takes advantage of the newly provided &lt;code&gt;conceal&lt;/code&gt; feature in Vim 7.3, so this plugin will not work with lower versions of Vim.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;If you are using VIM version 8 or higher you can use its built-in package management; see &lt;code&gt;:help packages&lt;/code&gt; for more information. Just run these commands in your terminal:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/Yggdroot/indentLine.git &lt;span class="pl-k"&gt;~&lt;/span&gt;/.vim/pack/vendor/start/indentLint
+vim -u NONE -c &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;helptags  ~/.vim/pack/vendor/start/indentLint/doc&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; -c &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;q&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Otherwise, these are some of the other options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To install the plugin just put the plugin files in your &lt;code&gt;~/.vim&lt;/code&gt; (Linux) or &lt;code&gt;~/vimfiles&lt;/code&gt; (Windows).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you use a plugin manager you can put the whole directory into your &lt;code&gt;~/.vim/bundle/&lt;/code&gt; directory (&lt;a href="https://github.com/tpope/vim-pathogen"&gt;Pathogen&lt;/a&gt;) or add the line &lt;code&gt;Plugin 'Yggdroot/indentLine'&lt;/code&gt; to your &lt;code&gt;.vimrc&lt;/code&gt; (&lt;a href="https://github.com/gmarik/vundle"&gt;Vundle&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-customization" class="anchor" aria-hidden="true" href="#customization"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customization&lt;/h2&gt;
+&lt;p&gt;To apply customization, apply the variable definitions to your &lt;code&gt;.vimrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change Character Color&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;indentLine will overwrite 'conceal' color with grey by default. If you want to highlight conceal color with your colorscheme, disable by:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_setColors&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can customize conceal color by:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Vim&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_color_term&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;239&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; GVim&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_color_gui&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;#A4E57E&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; none X terminal&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_color_tty_light&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;7&lt;/span&gt;&lt;span class="pl-c"&gt; &lt;span class="pl-c"&gt;"&lt;/span&gt; (default: 4)&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_color_dark&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-c"&gt; &lt;span class="pl-c"&gt;"&lt;/span&gt; (default: 2)&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Background (Vim, GVim)&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_bgcolor_term&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;202&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_bgcolor_gui&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;#FF5F00&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Change Indent Char&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vim and GVim&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_char&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;c&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;where &lt;code&gt;'c'&lt;/code&gt; can be any ASCII character. You can also use one of &lt;code&gt;¦&lt;/code&gt;, &lt;code&gt;┆&lt;/code&gt;, &lt;code&gt;│&lt;/code&gt;, &lt;code&gt;⎸&lt;/code&gt;, or &lt;code&gt;▏&lt;/code&gt; to display more beautiful lines. However, these characters will only work with files whose encoding is UTF-8.&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_char_list&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;|&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;¦&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;┆&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;┊&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;each indent level has a distinct character.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change Conceal Behaviour&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This plugin enables the Vim &lt;code&gt;conceal&lt;/code&gt; feature which automatically hides stretches of text based on syntax highlighting. This setting will apply to all syntax items.&lt;/p&gt;
+&lt;p&gt;For example, users utilizing the built in json.vim syntax file will no longer see quotation marks in their JSON files.&lt;/p&gt;
+&lt;p&gt;indentLine will overwrite your "concealcursor" and "conceallevel" with default value:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_concealcursor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;inc&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_conceallevel&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can customize these settings, but the plugin will not function if &lt;code&gt;conceallevel&lt;/code&gt; is not set to 1 or 2.&lt;/p&gt;
+&lt;p&gt;If you want to keep your conceal setting, put this line to your vim dotfile:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_setConceal&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See the &lt;a href="http://vimdoc.sourceforge.net/htmldoc/version7.html#new-conceal" rel="nofollow"&gt;VIM Reference Manual&lt;/a&gt; for more information on the &lt;code&gt;conceal&lt;/code&gt; feature.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disable by default&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;indentLine_enabled&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-commands" class="anchor" aria-hidden="true" href="#commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Commands&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;:IndentLinesToggle&lt;/code&gt; toggles lines on and off.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-font-patching" class="anchor" aria-hidden="true" href="#font-patching"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Font patching&lt;/h3&gt;
+&lt;p&gt;If you find all the standard unicode and ASCII characters too obtrusive, you might consider patching your font with the &lt;a href="glyph/indentLine-dotted-guide.eps"&gt;indentLine-dotted-guide.eps&lt;/a&gt; glyph provided.  &lt;a href="http://fontforge.github.io/" rel="nofollow"&gt;FontForge&lt;/a&gt; makes the process amazingly simple:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install FontForge.&lt;/li&gt;
+&lt;li&gt;Locate and open your terminal/gVim font.&lt;/li&gt;
+&lt;li&gt;Open the font in FontForge, choose &lt;strong&gt;Goto&lt;/strong&gt; from the &lt;strong&gt;View&lt;/strong&gt; menu and select &lt;em&gt;Private Use Area&lt;/em&gt; from the drop down box.&lt;/li&gt;
+&lt;li&gt;In the private use area, locate a blank spot for the glyph. Make a note of the code, e.g. &lt;code&gt;U+E0A3&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Double-click the selected code point to open the font drawing tool.&lt;/li&gt;
+&lt;li&gt;From the &lt;strong&gt;File&lt;/strong&gt; menu, select &lt;strong&gt;Import...&lt;/strong&gt; and locate the &lt;em&gt;indentLine-dotted-guide.eps&lt;/em&gt; file.&lt;/li&gt;
+&lt;li&gt;Once imported, choose &lt;strong&gt;File&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Generate Fonts&lt;/strong&gt; and choose a location and file type for the new font.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once completed, your new font will contain the more subtle dotted guide and all you have to do is set that glyph to &lt;code&gt;g:indentLine_char&lt;/code&gt; in your &lt;code&gt;.vimrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-self-promotion" class="anchor" aria-hidden="true" href="#self-promotion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self promotion&lt;/h2&gt;
+&lt;p&gt;If you think this script is helpful, follow the &lt;a href="https://github.com/Yggdroot/indentLine"&gt;GitHub repository&lt;/a&gt;, and don't forget to vote for it on Vim.org! (&lt;a href="http://www.vim.org/scripts/script.php?script_id=4354" rel="nofollow"&gt;vimscript #4354&lt;/a&gt;).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-screenshots" class="anchor" aria-hidden="true" href="#screenshots"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshots&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-vertical-bars" class="anchor" aria-hidden="true" href="#vertical-bars"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vertical bars&lt;/h3&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/77b20e2e707ac1d85fd8bc12f16b5b7b7e72e186/687474703a2f2f692e696d6775722e636f6d2f4b566930542e6a7067"&gt;&lt;img src="https://camo.githubusercontent.com/77b20e2e707ac1d85fd8bc12f16b5b7b7e72e186/687474703a2f2f692e696d6775722e636f6d2f4b566930542e6a7067" alt="Screenshot" data-canonical-src="http://i.imgur.com/KVi0T.jpg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-patched-font" class="anchor" aria-hidden="true" href="#patched-font"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Patched font&lt;/h3&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8e0f6822f859a9a8a7069219f6816174a4737f8e/687474703a2f2f692e696d6775722e636f6d2f325a41376f615a2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/8e0f6822f859a9a8a7069219f6816174a4737f8e/687474703a2f2f692e696d6775722e636f6d2f325a41376f615a2e706e67" alt="Screenshot" data-canonical-src="http://i.imgur.com/2ZA7oaZ.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-leading-spaces" class="anchor" aria-hidden="true" href="#leading-spaces"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Leading Spaces&lt;/h3&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/73a4b5e80ee0364c8f5e7e2b8f1af309c79ce739/687474703a2f2f692e696d6775722e636f6d2f744c596b6237392e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/73a4b5e80ee0364c8f5e7e2b8f1af309c79ce739/687474703a2f2f692e696d6775722e636f6d2f744c596b6237392e706e67" alt="Screenshot" data-canonical-src="http://i.imgur.com/tLYkb79.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/704f183f97df23ba5c21dc238b81069644d5cd7c/687474703a2f2f692e696d6775722e636f6d2f303741747272732e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/704f183f97df23ba5c21dc238b81069644d5cd7c/687474703a2f2f692e696d6775722e636f6d2f303741747272732e706e67" alt="Screenshot" data-canonical-src="http://i.imgur.com/07Atrrs.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MIT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Yggdroot</author><guid isPermaLink="false">https://github.com/Yggdroot/indentLine</guid><pubDate>Thu, 14 Nov 2019 00:08:00 GMT</pubDate></item><item><title>ryanoasis/vim-devicons #9 in Vim script, Today</title><link>https://github.com/ryanoasis/vim-devicons</link><description>&lt;p&gt;&lt;i&gt;Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 align="center"&gt;&lt;a id="user-content---" class="anchor" aria-hidden="true" href="#--"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v0.10.x/branding-logo-3.svg?sanitize=true"&gt;&lt;img src="https://raw.githubusercontent.com/wiki/ryanoasis/vim-devicons/screenshots/v0.10.x/branding-logo-3.svg?sanitize=true" alt="VimDevIcons - Add Icons to Your Plugins" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align="center"&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/330d6e8687d8e07682f2373dacefd27b50863809/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f7279616e6f617369732f76696d2d64657669636f6e732e7376673f7374796c653d666f722d7468652d6261646765"&gt;&lt;img src="https://camo.githubusercontent.com/330d6e8687d8e07682f2373dacefd27b50863809/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f7279616e6f617369732f76696d2d64657669636f6e732e7376673f7374796c653d666f722d7468652d6261646765" alt="version" data-canonical-src="https://img.shields.io/github/release/ryanoasis/vim-devicons.svg?style=for-the-badge" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/325d5d8ea5585d3591f3a2258268da38a160efd1/68747470733a2f2f696d672e736869656c64732e696f2f6769747465722f726f6f6d2f6e776a732f6e772e6a732e7376673f7374796c653d666f722d7468652d6261646765"&gt;&lt;img src="https://camo.githubusercontent.com/325d5d8ea5585d3591f3a2258268da38a160efd1/68747470733a2f2f696d672e736869656c64732e696f2f6769747465722f726f6f6d2f6e776a732f6e772e6a732e7376673f7374796c653d666f722d7468652d6261646765" alt="chat on gitter" data-canonical-src="https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/da43ed1cc43c927683e9657363e784d545b6a252/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532306f662d636f6e647563742d6666363962342e7376673f7374796c653d666f722d7468652d6261646765"&gt;&lt;img src="https://camo.githubusercontent.com/da43ed1cc43c927683e9657363e784d545b6a252/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532306f662d636f6e647563742d6666363962342e7376673f7374796c653d666f722d7468652d6261646765" alt="code of conduct" data-canonical-src="https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/96e40c13c6c39d67d9395e995c89c1bdd96b555c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d64617461253341696d616765253246706e672533426261736536342532436956424f5277304b47676f414141414e5355684555674141414341414141416743414d414141424570497247414141435746424d56455858576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b6f32466557434141414141585253546c4d41514f62595a674141414146695330644541496746485567414141414a6345685a637741414932384141434e76415458384225324673414141414864456c4e5251666842514d424d434c41665638354141414169306c455156513479324e67494259737a6b506d4a63354f525a45394467454a714e786d6d505325324234334141346835423554497762443525324248466e6f4b436f585953424d4249573743463065417843686f504d3441525848423447435a45494b4b413848253246436f5745314c41774942664256703677514131445068567a4d4a4d63796767435675717847492532464c685759365a3651504b6f4b37486d486b447744777859433867774d645344707258697a3650486a705178554267434c4466493747584e68356741414141424a52553545726b4a676767253344253344"&gt;&lt;img src="https://camo.githubusercontent.com/96e40c13c6c39d67d9395e995c89c1bdd96b555c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d64617461253341696d616765253246706e672533426261736536342532436956424f5277304b47676f414141414e5355684555674141414341414141416743414d414141424570497247414141435746424d56455858576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b7258576b6f32466557434141414141585253546c4d41514f62595a674141414146695330644541496746485567414141414a6345685a637741414932384141434e76415458384225324673414141414864456c4e5251666842514d424d434c41665638354141414169306c455156513479324e67494259737a6b506d4a63354f525a45394467454a714e786d6d505325324234334141346835423554497762443525324248466e6f4b436f585953424d4249573743463065417843686f504d3441525848423447435a45494b4b413848253246436f5745314c41774942664256703677514131445068567a4d4a4d63796767435675717847492532464c685759365a3651504b6f4b37486d486b447744777859433867774d645344707258697a3650486a705178554267434c4466493747584e68356741414141424a52553545726b4a676767253344253344" alt="prs welcome" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&amp;amp;logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAACWFBMVEXXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWkrXWko2FeWCAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAI28AACNvATX8B%2FsAAAAHdElNRQfhBQMBMCLAfV85AAAAi0lEQVQ4y2NgIBYszkPmJc5ORZE9DgEJqNxmmPS%2B43AA4h5B5TIwbD5%2BHFnoKCoXYSBMBIW7CF0eAxChoPM4ARXHB4GCZEIKKA8H%2FCoWE1LAwIBfBVp6wQA1DPhVzMJMcyggCVuqxGI%2FLhWY6Z6QPKoK7HmHkDwDwxYC8gwMdSDprXiz6PHjpQxUBgCLDfI7GXNh5gAAAABJRU5ErkJggg%3D%3D" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Supports plugins such as &lt;a href="https://github.com/scrooloose/nerdtree"&gt;NERDTree&lt;/a&gt;, &lt;a href="https://github.com/vim-airline/vim-airline"&gt;vim-airline&lt;/a&gt;, &lt;a href="https://github.com/ctrlpvim/ctrlp.vim"&gt;CtrlP&lt;/a&gt;, &lt;a href="https://github.com/powerline/powerline"&gt;powerline&lt;/a&gt;, &lt;a href="https://github.com/Shougo/denite.nvim"&gt;denite&lt;/a&gt;, &lt;a href="https://github.com/Shougo/unite.vim"&gt;unite&lt;/a&gt;, &lt;a href="https://github.com/itchyny/lightline.vim"&gt;lightline.vim&lt;/a&gt;, &lt;a href="https://github.com/mhinz/vim-startify"&gt;vim-startify&lt;/a&gt;, &lt;a href="https://github.com/Shougo/vimfiler.vim"&gt;vimfiler&lt;/a&gt;, &lt;a href="https://github.com/bagrat/vim-buffet"&gt;vim-buffet&lt;/a&gt; and &lt;a href="https://github.com/tpope/vim-flagship"&gt;flagship&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 align="center"&gt;&lt;a id="user-content----1" class="anchor" aria-hidden="true" href="#---1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/ryanoasis/vim-devicons/wiki/screenshots/v0.10.x/overall-screenshot.png"&gt;&lt;img src="https://github.com/ryanoasis/vim-devicons/wiki/screenshots/v0.10.x/overall-screenshot.png" alt="vim-devicons overall screenshot" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href="https://github.com/ryanoasis/vim-devicons/wiki/screenshots"&gt;Screenshots&lt;/a&gt; for more.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adds filetype glyphs (icons) to various vim plugins.&lt;/li&gt;
+&lt;li&gt;Customizable and extendable glyphs settings.&lt;/li&gt;
+&lt;li&gt;Supports a wide range of file type extensions.&lt;/li&gt;
+&lt;li&gt;Supports popular full filenames, like &lt;code&gt;.gitignore&lt;/code&gt;, &lt;code&gt;node_modules&lt;/code&gt;, &lt;code&gt;.vimrc&lt;/code&gt;, and many more.&lt;/li&gt;
+&lt;li&gt;Supports byte order marker (BOM).&lt;/li&gt;
+&lt;li&gt;Works with patched fonts, especially &lt;a href="https://github.com/ryanoasis/nerd-fonts"&gt;Nerd Fonts&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href="https://github.com/ryanoasis/vim-devicons/wiki/Detailed-Features"&gt;Detailed Features&lt;/a&gt; for more.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href="https://github.com/ryanoasis/vim-devicons/wiki/Extra-Configuration"&gt;Configuration&lt;/a&gt; for a list of configuration and customization options.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install a &lt;a href="https://github.com/ryanoasis/nerd-fonts#font-installation"&gt;Nerd Font compatible font&lt;/a&gt; or &lt;a href="https://github.com/ryanoasis/nerd-fonts#font-patcher"&gt;patch your own&lt;/a&gt;. Then set your terminal font (or &lt;code&gt;guifont&lt;/code&gt; if you are using GUI version of Vim).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the Vim plugin with your favorite plugin manager, e.g. &lt;a href="https://github.com/junegunn/vim-plug"&gt;vim-plug&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;Plug &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ryanoasis/vim-devicons&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Always load the vim-devicons as the very last one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configure Vim&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;set&lt;/span&gt; &lt;span class="pl-c1"&gt;encoding&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;UTF&lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;8&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No need to set explicitly under Neovim: always uses UTF-8 as the default encoding.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href="https://github.com/ryanoasis/vim-devicons/wiki/Installation"&gt;Installation&lt;/a&gt; for detailed setup instructions&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Use &lt;code&gt;:help devicons&lt;/code&gt; for further configuration.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-developers" class="anchor" aria-hidden="true" href="#developers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developers&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="DEVELOPER.md"&gt;DEVELOPER&lt;/a&gt; for how to use the API.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/ryanoasis/vim-devicons/wiki/FAQ-&amp;amp;-Troubleshooting"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-code-of-conduct" class="anchor" aria-hidden="true" href="#code-of-conduct"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="CODE_OF_CONDUCT.md"&gt;Code of Conduct&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This project has adopted a Code of Conduct that we expect project participants to adhere to. Check out &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&lt;/a&gt; for further details.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-contributing-guide" class="anchor" aria-hidden="true" href="#contributing-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="CONTRIBUTING.md"&gt;Contributing Guide&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Read our &lt;a href="CONTRIBUTING.md"&gt;contributing&lt;/a&gt; guide to learn about how to send pull requests, creating issues properly.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-promotion" class="anchor" aria-hidden="true" href="#promotion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Promotion&lt;/h3&gt;
+&lt;p&gt;You can help us by simply giving a star or voting on vim.org. It will ensure continued development going forward.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Star this repository &lt;a href="https://github.com/ryanoasis/vim-devicons"&gt;on GitHub&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Vote for it &lt;a href="http://www.vim.org/scripts/script.php?script_id=5114" rel="nofollow"&gt;on vim.org&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-acknowledgments" class="anchor" aria-hidden="true" href="#acknowledgments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgments&lt;/h2&gt;
+&lt;p&gt;Thanks goes to these people for inspiration and helping with sending PRs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/vim-airline/vim-airline"&gt;vim-airline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/scrooloose/nerdtree"&gt;nerdtree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Xuyuanp/nerdtree-git-plugin"&gt;nerdtree-git-plugin&lt;/a&gt; by &lt;a href="https://github.com/Xuyuanp"&gt;@Xuyuanp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://atom.io/themes/seti-ui" rel="nofollow"&gt;seti-ui&lt;/a&gt; by &lt;a href="https://github.com/jesseweed"&gt;@jesseweed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://vorillaz.github.io/devicons" rel="nofollow"&gt;devicons&lt;/a&gt; by &lt;a href="https://github.com/vorillaz"&gt;@vorillaz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/benatespina/development.svg.icons"&gt;development.svg.icons&lt;/a&gt; by &lt;a href="https://github.com/benatespina"&gt;@benatespina&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://learnvimscriptthehardway.stevelosh.com/" rel="nofollow"&gt;Learn Vimscript the Hard Way&lt;/a&gt; book by &lt;a href="http://stevelosh.com/" rel="nofollow"&gt;Steve Losh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;All &lt;a href="https://github.com/ryanoasis/vim-devicons/graphs/contributors"&gt;contributors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="LICENSE"&gt;MIT&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ryanoasis</author><guid isPermaLink="false">https://github.com/ryanoasis/vim-devicons</guid><pubDate>Thu, 14 Nov 2019 00:09:00 GMT</pubDate></item><item><title>junegunn/limelight.vim #10 in Vim script, Today</title><link>https://github.com/junegunn/limelight.vim</link><description>&lt;p&gt;&lt;i&gt;:flashlight: All the world's indeed a stage and we are merely players&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-limelightvim-" class="anchor" aria-hidden="true" href="#limelightvim-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;limelight.vim &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/15926c946645b7cbb01e5ec268332d1ae152918f/68747470733a2f2f7472617669732d63692e6f72672f6a756e6567756e6e2f6c696d656c696768742e76696d2e7376673f6272616e63683d6d6173746572"&gt;&lt;img src="https://camo.githubusercontent.com/15926c946645b7cbb01e5ec268332d1ae152918f/68747470733a2f2f7472617669732d63692e6f72672f6a756e6567756e6e2f6c696d656c696768742e76696d2e7376673f6272616e63683d6d6173746572" alt="travis-ci" data-canonical-src="https://travis-ci.org/junegunn/limelight.vim.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Hyperfocus-writing in Vim.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/fa4e9321be0b4a565ae84a66bae36e97545c101b/68747470733a2f2f7261772e6769746875622e636f6d2f6a756e6567756e6e2f692f6d61737465722f6c696d656c696768742e676966"&gt;&lt;img src="https://camo.githubusercontent.com/fa4e9321be0b4a565ae84a66bae36e97545c101b/68747470733a2f2f7261772e6769746875622e636f6d2f6a756e6567756e6e2f692f6d61737465722f6c696d656c696768742e676966" alt="" data-canonical-src="https://raw.github.com/junegunn/i/master/limelight.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Best served with &lt;a href="https://github.com/junegunn/goyo.vim"&gt;Goyo.vim&lt;/a&gt;.
+Works on 256-color terminal or on GVim.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Limelight [0.0 ~ 1.0]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Turn Limelight on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Limelight!&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Turn Limelight off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Limelight!! [0.0 ~ 1.0]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Toggle Limelight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-limelight-for-a-selected-range" class="anchor" aria-hidden="true" href="#limelight-for-a-selected-range"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limelight for a selected range&lt;/h3&gt;
+&lt;p&gt;You can invoke &lt;code&gt;:Limelight&lt;/code&gt; for a visual range. There are also &lt;code&gt;&amp;lt;Plug&amp;gt;&lt;/code&gt;
+mappings for normal and visual mode for the purpose.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;nmap&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;l&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Plug&amp;gt;&lt;/span&gt;(Limelight)
+&lt;span class="pl-c1"&gt;xmap&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Leader&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;l&lt;/span&gt; &lt;span class="pl-c1"&gt;&amp;lt;Plug&amp;gt;&lt;/span&gt;(Limelight)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h3&gt;
+&lt;p&gt;For some color schemes, Limelight may not be able to calculate the color for
+dimming down the surrounding paragraphs. In that case, you need to define
+&lt;code&gt;g:limelight_conceal_ctermfg&lt;/code&gt; or &lt;code&gt;g:limelight_conceal_guifg&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Color name (:help cterm-colors) or ANSI code&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_conceal_ctermfg&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;gray&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_conceal_ctermfg&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;240&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Color name (:help gui-colors) or RGB color&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_conceal_guifg&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;DarkGray&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_conceal_guifg&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;#777777&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;span class="pl-c1"&gt; Default:&lt;/span&gt; 0.5&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_default_coefficient&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.7&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Number of preceding/following paragraphs to include (default: 0)&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_paragraph_span&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Beginning/end of paragraph&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;   When there's no empty line between the paragraphs&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;   and each paragraph starts with indentation&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_bop&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;^\s&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_eop&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;\ze\n^\s&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt; Highlighting priority (default: 10)&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;   Set it to -1 not to overrule hlsearch&lt;/span&gt;
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;limelight_priority&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;-1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-goyovim-integration" class="anchor" aria-hidden="true" href="#goyovim-integration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Goyo.vim integration&lt;/h2&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;autocmd&lt;/span&gt;&lt;span class="pl-k"&gt;!&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; GoyoEnter Limelight
+&lt;span class="pl-c1"&gt;autocmd&lt;/span&gt;&lt;span class="pl-k"&gt;!&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; GoyoLeave Limelight&lt;span class="pl-k"&gt;!&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-acknowledgement" class="anchor" aria-hidden="true" href="#acknowledgement"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgement&lt;/h2&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/Cutuchiqueno"&gt;@Cutuchiqueno&lt;/a&gt; for &lt;a href="https://github.com/junegunn/goyo.vim/issues/34"&gt;suggesting
+the idea&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;MIT&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>junegunn</author><guid isPermaLink="false">https://github.com/junegunn/limelight.vim</guid><pubDate>Thu, 14 Nov 2019 00:10:00 GMT</pubDate></item></channel></rss>

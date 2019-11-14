@@ -1,2 +1,1045 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: R, This week</title><link>https://github.com/trending/r?since=weekly</link><description>The top repositories on GitHub for r, measured weekly</description><pubDate>Wed, 13 Nov 2019 01:06:28 GMT</pubDate><lastBuildDate>Wed, 13 Nov 2019 01:06:28 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in R, This week today</title><pubDate>Wed, 13 Nov 2019 01:06:28 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: R, This week</title><link>https://github.com/trending/r?since=weekly</link><description>The top repositories on GitHub for r, measured weekly</description><pubDate>Thu, 14 Nov 2019 01:06:13 GMT</pubDate><lastBuildDate>Thu, 14 Nov 2019 01:06:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>tylermorganwall/rayshader #1 in R, This week</title><link>https://github.com/tylermorganwall/rayshader</link><description>&lt;p&gt;&lt;i&gt;R Package for 2D and 3D mapping and data visualization&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rayshader" class="anchor" aria-hidden="true" href="#rayshader"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rayshader&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/raylogosmall.png"&gt;&lt;img src="man/figures/raylogosmall.png" align="right" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/smallhobart.gif"&gt;&lt;img src="man/figures/smallhobart.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;rayshader&lt;/strong&gt; is an open source package for producing 2D and 3D data
+visualizations in R. &lt;strong&gt;rayshader&lt;/strong&gt; uses elevation data in a base R
+matrix and a combination of raytracing, spherical texture mapping,
+overlays, and ambient occlusion to generate beautiful topographic 2D and
+3D maps. In addition to maps, &lt;strong&gt;rayshader&lt;/strong&gt; also allows the user to
+translate &lt;strong&gt;ggplot2&lt;/strong&gt; objects into beautiful 3D data visualizations.&lt;/p&gt;
+&lt;p&gt;The models can be rotated and examined interactively or the camera
+movement can be scripted to create animations. The user can also create
+a cinematic depth of field post-processing effect to direct the user’s
+focus to important regions in the figure. The 3D models can also be
+exported to a 3D-printable format with a built-in STL export function.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; To install the latest version from Github:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; install.packages("devtools")&lt;/span&gt;
+&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tylermorganwall/rayshader&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-functions" class="anchor" aria-hidden="true" href="#functions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Functions&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/smallfeature.png"&gt;&lt;img src="man/figures/smallfeature.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rayshader has seven functions related to mapping:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ray_shade&lt;/code&gt; uses user specified light directions to calculate a
+global shadow map for an elevation matrix. By default, this also
+scales the light intensity at each point by the dot product of the
+mean ray direction and the surface normal (also implemented in
+function &lt;code&gt;lamb_shade&lt;/code&gt;, this can be turned off by setting
+&lt;code&gt;lambert=FALSE&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sphere_shade&lt;/code&gt; maps an RGB texture to a hillshade by spherical
+mapping. A texture can be generated with the &lt;code&gt;create_texture&lt;/code&gt;
+function, or loaded from an image. &lt;code&gt;sphere_shade&lt;/code&gt; also includes 7
+built-in palettes: “imhof1”, “imhof2”, “imhof3”,
+imhof4“,”desert“,”bw“,”unicorn".&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;create_texture&lt;/code&gt; programmatically creates texture maps given five
+colors: a highlight, a shadow, a left fill light, a right fill
+light, and a center color for flat areas. The user can also
+optionally specify the colors at the corners, but &lt;code&gt;create_texture&lt;/code&gt;
+will interpolate those if they aren’t given.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ambient_shade&lt;/code&gt; creates an ambient occlusion shadow layer, darkening
+areas that have less scattered light from the atmosphere. This
+results in valleys being darker than flat areas and ridges.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lamb_shade&lt;/code&gt; uses a single user specified light direction to
+calculate a local shadow map based on the dot product between the
+surface normal and the light direction for an elevation matrix.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add_shadow&lt;/code&gt; takes two of the shadow maps above and combines them,
+scaling the second one (or, if the second is an RGB array, the
+matrix) as specified by the user.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add_overlay&lt;/code&gt; takes a 3 or 4-layer RGB/RGBA array and overlays it on
+the current map. If the map includes transparency, this is taken
+into account when overlaying the image. Otherwise, the user can
+specify a single color that will be marked as completely
+transparent, or set the full overlay as partly transparent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rayshader also has three functions to detect and add water to maps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;detect_water&lt;/code&gt; uses a flood-fill algorithm to detect bodies of water
+of a user-specified minimum area.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add_water&lt;/code&gt; uses the output of &lt;code&gt;detect_water&lt;/code&gt; to add a water color
+to the map. The user can input their own color, or pass the name of
+one of the pre-defined palettes from &lt;code&gt;sphere_shade&lt;/code&gt; to get a
+matching hue.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render_water&lt;/code&gt; adds a 3D tranparent water layer to 3D maps, after
+the rgl device has already been created. This can either add to a
+map that does not already have a water layer, or replace an existing
+water layer on the map.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also included are two functions to add additional effects and
+information to your 3D visualizations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;render_depth&lt;/code&gt; generates a depth of field effect for the 3D map. The
+user can specify the focal distance, focal length, and f-stop of the
+camera, as well as aperture shape and bokeh intensity. This either
+plots the image to the local device, or saves it to a file if given
+a filename.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render_label&lt;/code&gt; adds a text label to the &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; coordinate of
+the map at a specified altitude &lt;code&gt;z&lt;/code&gt; (in units of the matrix). The
+altitude can either be specified relative to the elevation at that
+point (the default), or absolutely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And four functions to display and save your visualizations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plot_map&lt;/code&gt; Plots the current map. Accepts either a matrix or an
+array.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;write_png&lt;/code&gt; Writes the current map to disk with a user-specified
+filename.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;plot_3d&lt;/code&gt; Creates a 3D map, given a texture and an elevation matrix.
+You can customize the appearance of the map, as well as add a
+user-defined water level.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render_snapshot&lt;/code&gt; Saves an image of the current 3D view to disk (if
+given a filename), or plots the 3D view to the current device
+(useful for including images in R Markdown files).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;render_movie&lt;/code&gt; Creates and saves a mp4 file of the camera rotating
+around the 3D scene by either using a built-in orbit or by using one
+provided by the user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, rayshader has a single function to generate 3D plots using
+ggplot2 objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plot_gg&lt;/code&gt; Takes a ggplot2 object (or a list of two ggplot2 objects)
+and uses the fill or color aesthetic to transform the plot into a 3D
+surface. You can pass any of the arguments used to specify the
+camera and the background/shadow colors in &lt;code&gt;plot_3d()&lt;/code&gt;, and
+manipulate the displayed 3D plot using &lt;code&gt;render_camera()&lt;/code&gt; and
+&lt;code&gt;render_depth()&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these functions are designed to be used with the magrittr pipe
+&lt;code&gt;%&amp;gt;%&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Rayshader can be used for two purposes: both creating hillshaded maps
+and 3D data visualizations plots. First, let’s look at rayshader’s
+mapping capabilities. For the latter, scroll below.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-mapping-with-rayshader" class="anchor" aria-hidden="true" href="#mapping-with-rayshader"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mapping with rayshader&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;rayshader&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;Here, I load a map with the raster package.&lt;/span&gt;
+&lt;span class="pl-v"&gt;loadzip&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; tempfile() 
+download.file(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://tylermw.com/data/dem_01.tif.zip&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-smi"&gt;loadzip&lt;/span&gt;)
+&lt;span class="pl-v"&gt;localtif&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-e"&gt;raster&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;raster(unzip(&lt;span class="pl-smi"&gt;loadzip&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;dem_01.tif&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+unlink(&lt;span class="pl-smi"&gt;loadzip&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;And convert it to a matrix:&lt;/span&gt;
+&lt;span class="pl-v"&gt;elmat&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; raster_to_matrix(&lt;span class="pl-smi"&gt;localtif&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;We use another one of rayshader's built-in textures:&lt;/span&gt;
+&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_map()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_basicmapping-1.png"&gt;&lt;img src="man/figures/README_basicmapping-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;sphere_shade can shift the sun direction:&lt;/span&gt;
+&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;sunangle&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_map()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_basicmapping-2.png"&gt;&lt;img src="man/figures/README_basicmapping-2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;detect_water and add_water adds a water layer to the map:&lt;/span&gt;
+&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_map()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_basicmapping-3.png"&gt;&lt;img src="man/figures/README_basicmapping-3.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;And we can add a raytraced layer from that sun direction as well:&lt;/span&gt;
+&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ray_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;)) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_map()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_basicmapping-4.png"&gt;&lt;img src="man/figures/README_basicmapping-4.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;And here we add an ambient occlusion shadow layer, which models &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;lighting from atmospheric scattering:&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ray_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;)) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ambient_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;)) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_map()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_basicmapping-5.png"&gt;&lt;img src="man/figures/README_basicmapping-5.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rayshader also supports 3D mapping by passing a texture map (either
+external or one produced by rayshader) into the &lt;code&gt;plot_3d&lt;/code&gt; function.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ray_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;), &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ambient_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_3d(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;135&lt;/span&gt;, &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.75&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;))
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-d-1.png"&gt;&lt;img src="man/figures/README_three-d-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also render using the built-in pathtracer, powered by
+&lt;a href="https://www.rayrender.net" rel="nofollow"&gt;rayrender&lt;/a&gt;. Simply replace
+&lt;code&gt;render_snapshot()&lt;/code&gt; with &lt;code&gt;render_highquality()&lt;/code&gt;. When
+&lt;code&gt;render_highquality()&lt;/code&gt; is called, there’s no need to pre-compute the
+shadows with any of the &lt;code&gt;_shade()&lt;/code&gt; functions, so we remove those:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_3d(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;135&lt;/span&gt;, &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.75&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;))
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_highquality()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-dhq-1.png"&gt;&lt;img src="man/figures/README_three-dhq-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also easily add a water layer by setting &lt;code&gt;water = TRUE&lt;/code&gt; in
+&lt;code&gt;plot_3d()&lt;/code&gt; (and setting &lt;code&gt;waterdepth&lt;/code&gt; if the water level is not 0), or
+by using the function &lt;code&gt;render_water()&lt;/code&gt; after the 3D map has been
+rendered. You can customize the appearance and transparancy of the water
+layer via function arguments. Here’s an example using
+bathymetric/topographic data of Monterey Bay, CA (included with
+rayshader):&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-v"&gt;montshadow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; ray_shade(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;lambert&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;)
+&lt;span class="pl-v"&gt;montamb&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; ambient_shade(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;)
+&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    sphere_shade(&lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;imhof1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    add_shadow(&lt;span class="pl-smi"&gt;montshadow&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    add_shadow(&lt;span class="pl-smi"&gt;montamb&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    plot_3d(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, 
+            &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.75&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;water&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;waterdepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;wateralpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;watercolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lightblue&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;waterlinecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;white&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinealpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-d-water-1.png"&gt;&lt;img src="man/figures/README_three-d-water-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Water is also supported in &lt;code&gt;render_highquality()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    sphere_shade(&lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;imhof1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    plot_3d(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;70&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;, 
+            &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;, 
+            &lt;span class="pl-v"&gt;water&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;waterdepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;wateralpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;watercolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lightblue&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;waterlinecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;white&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinealpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_highquality(&lt;span class="pl-v"&gt;lightdirection&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;lightaltitude&lt;/span&gt;  &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;clamp_value&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, 
+                   &lt;span class="pl-v"&gt;samples&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;200&lt;/span&gt;, &lt;span class="pl-v"&gt;clear&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/unnamed-chunk-2-1.png"&gt;&lt;img src="man/figures/unnamed-chunk-2-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rayshader also has map shapes other than rectangular included &lt;code&gt;c("hex", "circle")&lt;/code&gt;, and you can customize the map into any shape you want by
+setting the areas you do not want to display to &lt;code&gt;NA&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;))
+&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    sphere_shade(&lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;imhof1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    add_shadow(&lt;span class="pl-smi"&gt;montshadow&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    add_shadow(&lt;span class="pl-smi"&gt;montamb&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    plot_3d(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;water&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;waterdepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;wateralpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;watercolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lightblue&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;waterlinecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;white&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinealpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;baseshape&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;circle&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)
+
+&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    sphere_shade(&lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;imhof1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    add_shadow(&lt;span class="pl-smi"&gt;montshadow&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    add_shadow(&lt;span class="pl-smi"&gt;montamb&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    plot_3d(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;45&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;water&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;waterdepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;wateralpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;watercolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lightblue&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;waterlinecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;white&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinealpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;baseshape&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hex&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-d-shapes-1.png"&gt;&lt;img src="man/figures/README_three-d-shapes-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Adding text labels is done with the &lt;code&gt;render_label()&lt;/code&gt; function, which
+also allows you to customize the line type, color, and size along with
+the font:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    sphere_shade(&lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;imhof1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+    add_shadow(&lt;span class="pl-smi"&gt;montshadow&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    add_shadow(&lt;span class="pl-smi"&gt;montamb&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    plot_3d(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;100&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;water&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;waterdepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;white&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;waterlinealpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;,
+            &lt;span class="pl-v"&gt;wateralpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;watercolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lightblue&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+render_label(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;350&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;240&lt;/span&gt;, &lt;span class="pl-v"&gt;z&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4000&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;text&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Moss Landing&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;textsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-v"&gt;linewidth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;)
+render_label(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;220&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;330&lt;/span&gt;, &lt;span class="pl-v"&gt;z&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;6000&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;text&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Santa Cruz&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;textcolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;darkred&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;linecolor&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;darkred&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;textsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-v"&gt;linewidth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;)
+render_label(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;130&lt;/span&gt;, &lt;span class="pl-v"&gt;z&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4000&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;text&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Monterey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;dashed&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;textsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-v"&gt;linewidth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;)
+render_label(&lt;span class="pl-smi"&gt;montereybay&lt;/span&gt;, &lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;130&lt;/span&gt;, &lt;span class="pl-v"&gt;z&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;50&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;text&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Monterey Canyon&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;relativez&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;, &lt;span class="pl-v"&gt;textsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-v"&gt;linewidth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-d-labels-1.png"&gt;&lt;img src="man/figures/README_three-d-labels-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also apply a post-processing effect to the 3D maps to render
+maps with depth of field with the &lt;code&gt;render_depth()&lt;/code&gt; function:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;elmat&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  sphere_shade(&lt;span class="pl-v"&gt;texture&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_water(detect_water(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;desert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ray_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;), &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  add_shadow(ambient_shade(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;), &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  plot_3d(&lt;span class="pl-smi"&gt;elmat&lt;/span&gt;, &lt;span class="pl-v"&gt;zscale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;225&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;25&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.3&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_depth(&lt;span class="pl-v"&gt;focus&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;, &lt;span class="pl-v"&gt;focallength&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;200&lt;/span&gt;, &lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_three-d-depth-1.png"&gt;&lt;img src="man/figures/README_three-d-depth-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-3d-plotting-with-rayshader-and-ggplot2" class="anchor" aria-hidden="true" href="#3d-plotting-with-rayshader-and-ggplot2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3D plotting with rayshader and ggplot2&lt;/h2&gt;
+&lt;p&gt;Rayshader can also be used to make 3D plots out of ggplot2 objects using
+the &lt;code&gt;plot_gg()&lt;/code&gt; function. Here, I turn a color density plot into a 3D
+density plot. &lt;code&gt;plot_gg()&lt;/code&gt; detects that the user mapped the &lt;code&gt;fill&lt;/code&gt;
+aesthetic to color and uses that information to project the figure into
+3D.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;ggplot2&lt;/span&gt;)
+&lt;span class="pl-v"&gt;ggdiamonds&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; ggplot(&lt;span class="pl-smi"&gt;diamonds&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  stat_density_2d(aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;x&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;depth&lt;/span&gt;, &lt;span class="pl-v"&gt;fill&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; stat(&lt;span class="pl-smi"&gt;nlevel&lt;/span&gt;)), 
+                  &lt;span class="pl-v"&gt;geom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;polygon&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;n&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;, &lt;span class="pl-v"&gt;bins&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;contour&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  facet_wrap(&lt;span class="pl-smi"&gt;clarity&lt;/span&gt;&lt;span class="pl-k"&gt;~&lt;/span&gt;.) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_fill_viridis_c(&lt;span class="pl-v"&gt;option&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;A&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;))
+
+plot_gg(&lt;span class="pl-smi"&gt;ggdiamonds&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;raytrace&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;, &lt;span class="pl-v"&gt;preview&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)
+plot_gg(&lt;span class="pl-smi"&gt;ggdiamonds&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;multicore&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;scale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;250&lt;/span&gt;, 
+        &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.7&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;800&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;))
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_ggplots-1.png"&gt;&lt;img src="man/figures/README_ggplots-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rayshader will automatically ignore lines and other elements that should
+not be mapped to 3D. Here’s a contour plot of the &lt;code&gt;volcano&lt;/code&gt; dataset.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;reshape2&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;Contours and other lines will automatically be ignored. Here is the volcano dataset:&lt;/span&gt;
+
+&lt;span class="pl-v"&gt;ggvolcano&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;volcano&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+  melt() %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+  ggplot() &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_tile(aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;Var1&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;Var2&lt;/span&gt;, &lt;span class="pl-v"&gt;fill&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;value&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_contour(aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;Var1&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;Var2&lt;/span&gt;, &lt;span class="pl-v"&gt;z&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;value&lt;/span&gt;), &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;black&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_x_continuous(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;X&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;expand&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;0&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_y_continuous(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Y&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;expand&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;0&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_fill_gradientn(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Z&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;colours&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; terrain.colors(&lt;span class="pl-c1"&gt;10&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  coord_fixed()
+
+par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;))
+plot_gg(&lt;span class="pl-smi"&gt;ggvolcano&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;7&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;, &lt;span class="pl-v"&gt;raytrace&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;, &lt;span class="pl-v"&gt;preview&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 1861 rows containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;plot_gg(&lt;span class="pl-smi"&gt;ggvolcano&lt;/span&gt;, &lt;span class="pl-v"&gt;multicore&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;raytrace&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;7&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;, 
+        &lt;span class="pl-v"&gt;scale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1400&lt;/span&gt;, &lt;span class="pl-c1"&gt;866&lt;/span&gt;), &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 1861 rows containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_ggplots_2-1.png"&gt;&lt;img src="man/figures/README_ggplots_2-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rayshader also detects when the user passes the &lt;code&gt;color&lt;/code&gt; aesthetic, and
+maps those values to 3D. If both &lt;code&gt;color&lt;/code&gt; and &lt;code&gt;fill&lt;/code&gt; are passed, however,
+rayshader will default to &lt;code&gt;fill&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-v"&gt;mtplot&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; ggplot(&lt;span class="pl-smi"&gt;mtcars&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt; 
+  geom_point(aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;mpg&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;disp&lt;/span&gt;, &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;cyl&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt; 
+  scale_color_continuous(&lt;span class="pl-v"&gt;limits&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;8&lt;/span&gt;))
+
+par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;))
+plot_gg(&lt;span class="pl-smi"&gt;mtplot&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;3.5&lt;/span&gt;, &lt;span class="pl-v"&gt;raytrace&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;, &lt;span class="pl-v"&gt;preview&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)
+
+plot_gg(&lt;span class="pl-smi"&gt;mtplot&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;3.5&lt;/span&gt;, &lt;span class="pl-v"&gt;multicore&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;800&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;), 
+        &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.85&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;35&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;30&lt;/span&gt;, &lt;span class="pl-v"&gt;sunangle&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;225&lt;/span&gt;, &lt;span class="pl-v"&gt;soliddepth&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;100&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_ggplots_3-1.png"&gt;&lt;img src="man/figures/README_ggplots_3-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Utilize combinations of line color and fill to create different effects.
+Here is a terraced hexbin plot, created by mapping the line colors of
+the hexagons to black.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-v"&gt;a&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;data.frame&lt;/span&gt;(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.9&lt;/span&gt;), &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.2&lt;/span&gt;))
+&lt;span class="pl-v"&gt;b&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;data.frame&lt;/span&gt;(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;14.5&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.9&lt;/span&gt;), &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;14.5&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.9&lt;/span&gt;))
+&lt;span class="pl-v"&gt;c&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;data.frame&lt;/span&gt;(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;9.5&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.9&lt;/span&gt;), &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rnorm(&lt;span class="pl-c1"&gt;20000&lt;/span&gt;, &lt;span class="pl-c1"&gt;15.5&lt;/span&gt;, &lt;span class="pl-c1"&gt;1.9&lt;/span&gt;))
+&lt;span class="pl-v"&gt;data&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rbind(&lt;span class="pl-smi"&gt;a&lt;/span&gt;, &lt;span class="pl-smi"&gt;b&lt;/span&gt;, &lt;span class="pl-smi"&gt;c&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;Lines&lt;/span&gt;
+&lt;span class="pl-v"&gt;pp&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; ggplot(&lt;span class="pl-smi"&gt;data&lt;/span&gt;, aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;x&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;y&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_hex(&lt;span class="pl-v"&gt;bins&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;, &lt;span class="pl-v"&gt;size&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;black&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_fill_viridis_c(&lt;span class="pl-v"&gt;option&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;))
+plot_gg(&lt;span class="pl-smi"&gt;pp&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;, &lt;span class="pl-v"&gt;scale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;, &lt;span class="pl-v"&gt;raytrace&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;, &lt;span class="pl-v"&gt;preview&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)
+plot_gg(&lt;span class="pl-smi"&gt;pp&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;, &lt;span class="pl-v"&gt;scale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;, &lt;span class="pl-v"&gt;multicore&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;, &lt;span class="pl-c1"&gt;800&lt;/span&gt;))
+render_camera(&lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;70&lt;/span&gt;, &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.5&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;130&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;35&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_snapshot(&lt;span class="pl-v"&gt;clear&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_ggplots_4-1.png"&gt;&lt;img src="man/figures/README_ggplots_4-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also use the &lt;code&gt;render_depth()&lt;/code&gt; function to direct the viewer’s
+focus to a important areas in the figure.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;par(&lt;span class="pl-v"&gt;mfrow&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;))
+plot_gg(&lt;span class="pl-smi"&gt;pp&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;, &lt;span class="pl-v"&gt;scale&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;, &lt;span class="pl-v"&gt;multicore&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;TRUE&lt;/span&gt;, &lt;span class="pl-v"&gt;windowsize&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; c(&lt;span class="pl-c1"&gt;1200&lt;/span&gt;, &lt;span class="pl-c1"&gt;960&lt;/span&gt;),
+        &lt;span class="pl-v"&gt;fov&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;70&lt;/span&gt;, &lt;span class="pl-v"&gt;zoom&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.4&lt;/span&gt;, &lt;span class="pl-v"&gt;theta&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;330&lt;/span&gt;, &lt;span class="pl-v"&gt;phi&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;40&lt;/span&gt;)
+Sys.sleep(&lt;span class="pl-c1"&gt;0.2&lt;/span&gt;)
+render_depth(&lt;span class="pl-v"&gt;focus&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.68&lt;/span&gt;, &lt;span class="pl-v"&gt;focallength&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;200&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README_ggplots_5-1.png"&gt;&lt;img src="man/figures/README_ggplots_5-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>tylermorganwall</author><guid isPermaLink="false">https://github.com/tylermorganwall/rayshader</guid><pubDate>Thu, 14 Nov 2019 00:01:00 GMT</pubDate></item><item><title>rstudio/shiny #2 in R, This week</title><link>https://github.com/rstudio/shiny</link><description>&lt;p&gt;&lt;i&gt;Easy interactive web applications with R&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-shiny" class="anchor" aria-hidden="true" href="#shiny"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Shiny&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Travis:&lt;/em&gt; &lt;a href="https://travis-ci.org/rstudio/shiny" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/55b2c8437cdf8912002070a3f1f0942f9ba127e9/68747470733a2f2f7472617669732d63692e6f72672f7273747564696f2f7368696e792e7376673f6272616e63683d6d6173746572" alt="Travis Build Status" data-canonical-src="https://travis-ci.org/rstudio/shiny.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;AppVeyor:&lt;/em&gt; &lt;a href="https://ci.appveyor.com/project/rstudio/shiny" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f50fc2225d7ab779094fa2898d36bdc6821a0ede/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f7273747564696f2f7368696e793f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/rstudio/shiny?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Shiny is a new package from RStudio that makes it incredibly easy to build interactive web applications with R.&lt;/p&gt;
+&lt;p&gt;For an introduction and examples, visit the &lt;a href="http://shiny.rstudio.com/" rel="nofollow"&gt;Shiny Dev Center&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have general questions about using Shiny, please use the &lt;a href="https://community.rstudio.com" rel="nofollow"&gt;RStudio Community website&lt;/a&gt;. For bug reports, please use the &lt;a href="https://github.com/rstudio/shiny/issues"&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Build useful web applications with only a few lines of code—no JavaScript required.&lt;/li&gt;
+&lt;li&gt;Shiny applications are automatically "live" in the same way that spreadsheets are live. Outputs change instantly as users modify inputs, without requiring a reload of the browser.&lt;/li&gt;
+&lt;li&gt;Shiny user interfaces can be built entirely using R, or can be written directly in HTML, CSS, and JavaScript for more flexibility.&lt;/li&gt;
+&lt;li&gt;Works in any R environment (Console R, Rgui for Windows or Mac, ESS, StatET, RStudio, etc.).&lt;/li&gt;
+&lt;li&gt;Attractive default UI theme based on &lt;a href="http://getbootstrap.com/" rel="nofollow"&gt;Bootstrap&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A highly customizable slider widget with built-in support for animation.&lt;/li&gt;
+&lt;li&gt;Prebuilt output widgets for displaying plots, tables, and printed output of R objects.&lt;/li&gt;
+&lt;li&gt;Fast bidirectional communication between the web browser and R using the &lt;a href="https://github.com/rstudio/httpuv"&gt;httpuv&lt;/a&gt; package.&lt;/li&gt;
+&lt;li&gt;Uses a &lt;a href="http://en.wikipedia.org/wiki/Reactive_programming" rel="nofollow"&gt;reactive&lt;/a&gt; programming model that eliminates messy event handling code, so you can focus on the code that really matters.&lt;/li&gt;
+&lt;li&gt;Develop and redistribute your own Shiny widgets that other developers can easily drop into their own applications (coming soon!).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To install the stable version from CRAN, simply run the following from an R console:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shiny&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To install the latest development builds directly from GitHub, run this instead:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; (&lt;span class="pl-k"&gt;!&lt;/span&gt;require(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;devtools&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+  install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;devtools&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rstudio/shiny&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;To learn more we highly recommend you check out the &lt;a href="http://shiny.rstudio.com/tutorial/" rel="nofollow"&gt;Shiny Tutorial&lt;/a&gt;. The tutorial explains the framework in-depth, walks you through building a simple application, and includes extensive annotated examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-bootstrap-3-migration" class="anchor" aria-hidden="true" href="#bootstrap-3-migration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bootstrap 3 migration&lt;/h2&gt;
+&lt;p&gt;Shiny versions 0.10.2.2 and below used the Bootstrap 2 web framework. After 0.10.2.2, Shiny switched to Bootstrap 3. For most users, the upgrade should be seamless. However, if you have have customized your HTML-generating code to use features specific to Bootstrap 2, you may need to update your code to work with Bootstrap 3.&lt;/p&gt;
+&lt;p&gt;If you do not wish to update your code at this time, you can use the &lt;a href="https://github.com/rstudio/shinybootstrap2"&gt;shinybootstrap2&lt;/a&gt; package for backward compatibility.&lt;/p&gt;
+&lt;p&gt;If you prefer to install an older version of Shiny, you can do it using the devtools package:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_version(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shiny&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;version&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;0.10.2.2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-development-notes" class="anchor" aria-hidden="true" href="#development-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development notes&lt;/h2&gt;
+&lt;p&gt;The Javascript code in Shiny is minified using tools that run on Node.js. See the tools/ directory for more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-guidelines-for-contributing" class="anchor" aria-hidden="true" href="#guidelines-for-contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Guidelines for contributing&lt;/h2&gt;
+&lt;p&gt;We welcome contributions to the &lt;strong&gt;shiny&lt;/strong&gt; package. Please see our &lt;a href="https://github.com/rstudio/shiny/blob/master/.github/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; file for detailed guidelines of how to contribute.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The shiny package as a whole is licensed under the GPLv3. See the &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt; file for more details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rstudio</author><guid isPermaLink="false">https://github.com/rstudio/shiny</guid><pubDate>Thu, 14 Nov 2019 00:02:00 GMT</pubDate></item><item><title>satijalab/seurat #3 in R, This week</title><link>https://github.com/satijalab/seurat</link><description>&lt;p&gt;&lt;i&gt;R toolkit for single cell genomics&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.com/satijalab/seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b4198e3101857fb90f7a1c9ece82ef77a3c24d4b/68747470733a2f2f7472617669732d63692e636f6d2f736174696a616c61622f7365757261742e737667" alt="Build Status" data-canonical-src="https://travis-ci.com/satijalab/seurat.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/satijalab/seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f3f97cad37286f12acbb7868bffc4119c0e6d75b/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f736174696a616c61622f7365757261743f7376673d74727565" alt="AppVeyor build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/satijalab/seurat?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=Seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3f41aaffd0745b04e91bef2deb22c61155581231/68747470733a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f536575726174" alt="CRAN Version" data-canonical-src="https://www.r-pkg.org/badges/version/Seurat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cran.r-project.org/package=Seurat" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3de70c3ddcccdf931f9ad808e71008c3185033a5/68747470733a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f536575726174" alt="CRAN Downloads" data-canonical-src="https://cranlogs.r-pkg.org/badges/Seurat" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-seurat-v311" class="anchor" aria-hidden="true" href="#seurat-v311"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Seurat v3.1.1&lt;/h1&gt;
+&lt;p&gt;Seurat is an R toolkit for single cell genomics, developed and maintained by the Satija Lab at NYGC.&lt;/p&gt;
+&lt;p&gt;Instructions, documentation, and tutorials can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://satijalab.org/seurat" rel="nofollow"&gt;https://satijalab.org/seurat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seurat is also hosted on GitHub, you can view and clone the repository at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/satijalab/seurat"&gt;https://github.com/satijalab/seurat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Seurat has been successfully installed on Mac OS X, Linux, and Windows, using the devtools package to install directly from GitHub&lt;/p&gt;
+&lt;p&gt;Improvements and new features will be added on a regular basis, please contact &lt;a href="mailto:seuratpackage@gmail.com"&gt;seuratpackage@gmail.com&lt;/a&gt; with any questions or if you would like to contribute&lt;/p&gt;
+&lt;p&gt;Version History&lt;/p&gt;
+&lt;p&gt;August 20, 2019&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 3.1&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for SCTransform integration workflows&lt;/li&gt;
+&lt;li&gt;Integration speed ups: reference-based integration + reciprocal PCA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;April 12, 2019&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 3.0&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Preprint published describing new methods for identifying anchors across single-cell datasets&lt;/li&gt;
+&lt;li&gt;Restructured Seurat object with native support for multimodal data&lt;/li&gt;
+&lt;li&gt;Parallelization support via future&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;July 20, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.4&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Java dependency removed and functionality rewritten in Rcpp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;March 22, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.3&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;New utility functions&lt;/li&gt;
+&lt;li&gt;Speed and efficiency improvments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;January 10, 2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.2&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for multiple-dataset alignment with RunMultiCCA and AlignSubspace&lt;/li&gt;
+&lt;li&gt;New methods for evaluating alignment performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;October 12, 2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.1&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Support for using MAST and DESeq2 packages for differential expression testing in FindMarkers&lt;/li&gt;
+&lt;li&gt;Support for multi-modal single-cell data via @assay slot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;July 26, 2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 2.0&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Preprint released for integrated analysis of scRNA-seq across conditions, technologies and species&lt;/li&gt;
+&lt;li&gt;Significant restructuring of code to support clarity and dataset exploration&lt;/li&gt;
+&lt;li&gt;Methods for scoring gene expression and cell-cycle phase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;October 4, 2016&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 1.4 released&lt;/li&gt;
+&lt;li&gt;Changes:
+&lt;ul&gt;
+&lt;li&gt;Improved tools for cluster evaluation/visualizations&lt;/li&gt;
+&lt;li&gt;Methods for combining and adding to datasets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;August 22, 2016:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version 1.3 released&lt;/li&gt;
+&lt;li&gt;Changes :
+&lt;ul&gt;
+&lt;li&gt;Improved clustering approach - see FAQ for details&lt;/li&gt;
+&lt;li&gt;All functions support sparse matrices&lt;/li&gt;
+&lt;li&gt;Methods for removing unwanted sources of variation&lt;/li&gt;
+&lt;li&gt;Consistent function names&lt;/li&gt;
+&lt;li&gt;Updated visualizations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;May 21, 2015:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drop-Seq manuscript published. Version 1.2 released&lt;/li&gt;
+&lt;li&gt;Changes :
+&lt;ul&gt;
+&lt;li&gt;Added support for spectral t-SNE and density clustering&lt;/li&gt;
+&lt;li&gt;New visualizations - including pcHeatmap, dot.plot, and feature.plot&lt;/li&gt;
+&lt;li&gt;Expanded package documentation, reduced import package burden&lt;/li&gt;
+&lt;li&gt;Seurat code is now hosted on GitHub, enables easy install through devtools&lt;/li&gt;
+&lt;li&gt;Small bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;April 13, 2015:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spatial mapping manuscript published. Version 1.1 released (initial release)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>satijalab</author><guid isPermaLink="false">https://github.com/satijalab/seurat</guid><pubDate>Thu, 14 Nov 2019 00:03:00 GMT</pubDate></item><item><title>topepo/caret #4 in R, This week</title><link>https://github.com/topepo/caret</link><description>&lt;p&gt;&lt;i&gt;caret (Classification And Regression Training) R package that contains misc functions for training and plotting classification and regression models&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/topepo/caret" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/135c7095c6b437e925eef7cd0030fa439d80c5ae/68747470733a2f2f7472617669732d63692e6f72672f746f7065706f2f63617265742e7376673f746f7065706f3d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/topepo/caret.svg?topepo=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://coveralls.io/r/topepo/caret?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0019523c8c4a73dbcd1258a56b076b6cd7662d17/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f746f7065706f2f63617265742f62616467652e7376673f6272616e63683d6d6173746572" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/topepo/caret/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://cran.r-project.org/web/packages/caret" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8982694c1e5e5310c145880661044d6944319181/687474703a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f6361726574" alt="CRAN_Status_Badge" data-canonical-src="http://www.r-pkg.org/badges/version/caret" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://cran.rstudio.com/package=caret" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9a433e75299df3548b2fda6d0ddb7b3d77270436/687474703a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f6361726574" alt="Downloads" data-canonical-src="http://cranlogs.r-pkg.org/badges/caret" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-classification-and-regression-training" class="anchor" aria-hidden="true" href="#classification-and-regression-training"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Classification and Regression Training&lt;/h1&gt;
+&lt;p&gt;Miscellaneous functions for training and plotting classification and regression models.  Detailed documentation is at &lt;a href="http://topepo.github.io/caret/index.html" rel="nofollow"&gt;http://topepo.github.io/caret/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-install-the-current-release-from-cran" class="anchor" aria-hidden="true" href="#install-the-current-release-from-cran"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install the current release from CRAN:&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;caret&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-install-the-development-version-from-github" class="anchor" aria-hidden="true" href="#install-the-development-version-from-github"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install the development version from GitHub:&lt;/h2&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;topepo/caret/pkg/caret&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>topepo</author><guid isPermaLink="false">https://github.com/topepo/caret</guid><pubDate>Thu, 14 Nov 2019 00:04:00 GMT</pubDate></item><item><title>rmcelreath/rethinking #5 in R, This week</title><link>https://github.com/rmcelreath/rethinking</link><description>&lt;p&gt;&lt;i&gt;Statistical Rethinking course and book package&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rethinking" class="anchor" aria-hidden="true" href="#rethinking"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rethinking&lt;/h1&gt;
+&lt;p&gt;This R package accompanies a course and book on Bayesian data analysis (McElreath 2016. Statistical Rethinking. CRC Press.). It contains tools for conducting both MAP estimation and Hamiltonian Monte Carlo (through RStan - mc-stan.org). These tools force the user to specify the model as a list of explicit distributional assumptions. This is more tedious than typical formula-based tools, but it is also much more flexible and powerful.&lt;/p&gt;
+&lt;p&gt;For example, a simple Gaussian model could be specified with this list of formulas:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu ~ dnorm( 0 , 10 ),
+    sigma ~ dcauchy( 0 , 1 )
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first formula in the list is the likelihood; the second is the prior for &lt;code&gt;mu&lt;/code&gt;; the third is the prior for &lt;code&gt;sigma&lt;/code&gt; (implicitly a half-Cauchy, due to positive constraint on &lt;code&gt;sigma&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-installation" class="anchor" aria-hidden="true" href="#quick-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Installation&lt;/h2&gt;
+&lt;p&gt;You can find a manual with expanded installation and usage instructions here: &lt;code&gt;http://xcelab.net/rm/software/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here's the brief verison.&lt;/p&gt;
+&lt;p&gt;You'll need to install &lt;code&gt;rstan&lt;/code&gt; first. Go to &lt;code&gt;http://mc-stan.org&lt;/code&gt; and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at &lt;code&gt;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&lt;/code&gt; are quite thorough. Obey them, and you'll likely succeed.&lt;/p&gt;
+&lt;p&gt;Then you can install &lt;code&gt;rethinking&lt;/code&gt; from within R using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(c("coda","mvtnorm","devtools","loo"))
+library(devtools)
+devtools::install_github("rmcelreath/rethinking")
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If there are any problems, they likely arise when trying to install &lt;code&gt;rstan&lt;/code&gt;, so the &lt;code&gt;rethinking&lt;/code&gt; package has little to do with it. See the manual linked above for some hints about getting &lt;code&gt;rstan&lt;/code&gt; installed. But always consult the RStan section of the website at &lt;code&gt;mc-stan.org&lt;/code&gt; for the latest information on RStan.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-map-estimation" class="anchor" aria-hidden="true" href="#map-estimation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MAP estimation&lt;/h2&gt;
+&lt;p&gt;To use maximum a posteriori (MAP) fitting:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(rethinking)
+
+f &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu ~ dnorm( 0 , 10 ),
+    sigma ~ dcauchy( 0 , 1 )
+)
+
+fit &amp;lt;- map( 
+    f , 
+    data=list(y=c(-1,1)) , 
+    start=list(mu=0,sigma=1)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The object &lt;code&gt;fit&lt;/code&gt; holds the result. For a summary of marginal posterior distributions, use &lt;code&gt;summary(fit)&lt;/code&gt; or &lt;code&gt;precis(fit)&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      Mean StdDev  2.5% 97.5%
+mu    0.00   0.59 -1.16  1.16
+sigma 0.84   0.33  0.20  1.48
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-hamiltonian-monte-carlo-estimation" class="anchor" aria-hidden="true" href="#hamiltonian-monte-carlo-estimation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hamiltonian Monte Carlo estimation&lt;/h2&gt;
+&lt;p&gt;The same formula list can be compiled into a Stan (mc-stan.org) model:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;fit.stan &amp;lt;- map2stan( 
+    f , 
+    data=list(y=c(-1,1)) , 
+    start=list(mu=0,sigma=1)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;start&lt;/code&gt; list is optional, provided a prior is defined for every parameter. In that case, &lt;code&gt;map2stan&lt;/code&gt; will automatically sample from each prior to get starting values for the chains.  The chain runs automatically, provided &lt;code&gt;rstan&lt;/code&gt; is installed. The &lt;code&gt;plot&lt;/code&gt; method will display trace plots for the chains.&lt;/p&gt;
+&lt;p&gt;The Stan code can be accessed by using &lt;code&gt;stancode(fit.stan)&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;data{
+    int&amp;lt;lower=1&amp;gt; N;
+    real y[N];
+}
+parameters{
+    real mu;
+    real&amp;lt;lower=0&amp;gt; sigma;
+}
+model{
+    mu ~ normal( 0 , 10 );
+    sigma ~ cauchy( 0 , 1 );
+    y ~ normal( mu , sigma );
+}
+generated quantities{
+    real dev;
+    dev &amp;lt;- 0;
+    dev &amp;lt;- dev + (-2)*normal_log( y , mu , sigma );
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To run multiple chains in parallel on multiple cores, use the &lt;code&gt;cores&lt;/code&gt; argument:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;fit.stan &amp;lt;- map2stan( 
+    f , 
+    data=list(y=c(-1,1)) , 
+    start=list(mu=0,sigma=1) ,
+    chains=4 , cores=4 , iter=2000 , warmup=1000
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;parallel&lt;/code&gt; package is used here, relying upon &lt;code&gt;mclapply&lt;/code&gt; (Mac, UNIX) or &lt;code&gt;parLapply&lt;/code&gt; (Windows). It is best to run parallel operations in the Terminal/Command Prompt, as GUI interfaces sometimes crash when forking processes.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-posterior-prediction" class="anchor" aria-hidden="true" href="#posterior-prediction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Posterior prediction&lt;/h2&gt;
+&lt;p&gt;Both &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;map2stan&lt;/code&gt; model fits can be post-processed to produce posterior distributions of any linear models and posterior predictive distributions.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;link&lt;/code&gt; is used to compute values of any linear models over samples from the posterior distribution.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sim&lt;/code&gt; is used to simulate posterior predictive distributions, simulating outcomes over samples from the posterior distribution of parameters. See &lt;code&gt;?link&lt;/code&gt; and &lt;code&gt;?sim&lt;/code&gt; for details.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;postcheck&lt;/code&gt; automatically computes posterior predictive (retrodictive?) checks for each case used to fit a model.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-multilevel-model-formulas" class="anchor" aria-hidden="true" href="#multilevel-model-formulas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multilevel model formulas&lt;/h2&gt;
+&lt;p&gt;While &lt;code&gt;map&lt;/code&gt; is limited to fixed effects models for the most part, &lt;code&gt;map2stan&lt;/code&gt; can specify multilevel models, even quite complex ones. For example, a simple varying intercepts model looks like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f2 &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + aj[group],
+    aj[group] ~ dnorm( 0 , sigma_group ),
+    a ~ dnorm( 0 , 10 ),
+    sigma ~ dcauchy( 0 , 1 ),
+    sigma_group ~ dcauchy( 0 , 1 )
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with varying slopes as well:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f3 &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + aj[group] + (b + bj[group])*x,
+    c(aj,bj)[group] ~ dmvnorm( 0 , Sigma_group ),
+    a ~ dnorm( 0 , 10 ),
+    b ~ dnorm( 0 , 1 ),
+    sigma ~ dcauchy( 0 , 1 ),
+    Sigma_group ~ inv_wishart( 3 , diag(2) )
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-nice-covariance-priors" class="anchor" aria-hidden="true" href="#nice-covariance-priors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nice covariance priors&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;inv_wishart&lt;/code&gt; prior in the model just above is conventional, but not appealing. Since Stan does not use Gibbs sampling, there is no advantage to the &lt;code&gt;inv_wishart&lt;/code&gt; prior.
+To escape these conventional priors, &lt;code&gt;map2stan&lt;/code&gt; supports decomposition of covariance matrices into vectors of standard deviations and a correlation matrix, such that priors can be specified independently for each:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f4 &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + aj[group] + (b + bj[group])*x,
+    c(aj,bj)[group] ~ dmvnorm2( 0 , sigma_group , Rho_group ),
+    a ~ dnorm( 0 , 10 ),
+    b ~ dnorm( 0 , 1 ),
+    sigma ~ dcauchy( 0 , 1 ),
+    sigma_group ~ dcauchy( 0 , 1 ),
+    Rho_group ~ dlkjcorr(2)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-non-centered-parameterization" class="anchor" aria-hidden="true" href="#non-centered-parameterization"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Non-centered parameterization&lt;/h1&gt;
+&lt;p&gt;Here is a non-centered parameterization that moves the scale parameters in the varying effects prior to the linear model, which is often more efficient for sampling:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f4u &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + zaj[group]*sigma_group[1] + 
+         (b + zbj[group]*sigma_group[2])*x,
+    c(zaj,zbj)[group] ~ dmvnorm( 0 , Rho_group ),
+    a ~ dnorm( 0 , 10 ),
+    b ~ dnorm( 0 , 1 ),
+    sigma ~ dcauchy( 0 , 1 ),
+    sigma_group ~ dcauchy( 0 , 1 ),
+    Rho_group ~ dlkjcorr(2)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Chapter 13 of the book provides a lot more detail on this issue.&lt;/p&gt;
+&lt;p&gt;We can take this strategy one step further and remove the correlation matrix, &lt;code&gt;Rho_group&lt;/code&gt;, from the prior as well.  &lt;code&gt;map2stan&lt;/code&gt; facilitates this form via the &lt;code&gt;dmvnormNC&lt;/code&gt; density, which uses an internal Cholesky decomposition of the correlation matrix to build the varying effects. Here is the previous varying slopes model, now with the non-centered notation:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f4nc &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + aj[group] + (b + bj[group])*x,
+    c(aj,bj)[group] ~ dmvnormNC( sigma_group , Rho_group ),
+    a ~ dnorm( 0 , 10 ),
+    b ~ dnorm( 0 , 1 ),
+    sigma ~ dcauchy( 0 , 1 ),
+    sigma_group ~ dcauchy( 0 , 1 ),
+    Rho_group ~ dlkjcorr(2)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Internally, a Cholesky factor &lt;code&gt;L_Rho_group&lt;/code&gt; is used to perform sampling. It will appear in the returned samples, in addition to &lt;code&gt;Rho_group&lt;/code&gt;, which is constructed from it.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-semi-automated-bayesian-imputation" class="anchor" aria-hidden="true" href="#semi-automated-bayesian-imputation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semi-automated Bayesian imputation&lt;/h2&gt;
+&lt;p&gt;It is possible to code simple Bayesian imputations. For example, let's simulate a simple regression with missing predictor values:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N &amp;lt;- 100
+N_miss &amp;lt;- 10
+x &amp;lt;- rnorm( N )
+y &amp;lt;- rnorm( N , 2*x , 1 )
+x[ sample(1:N,size=N_miss) ] &amp;lt;- NA
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That removes 10 &lt;code&gt;x&lt;/code&gt; values. Then the &lt;code&gt;map2stan&lt;/code&gt; formula list just defines a distribution for &lt;code&gt;x&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;f5 &amp;lt;- alist(
+    y ~ dnorm( mu , sigma ),
+    mu &amp;lt;- a + b*x,
+    x ~ dnorm( mu_x, sigma_x ),
+    a ~ dnorm( 0 , 100 ),
+    b ~ dnorm( 0  , 10 ),
+    mu_x ~ dnorm( 0 , 100 ),
+    sigma_x ~ dcauchy(0,2),
+    sigma ~ dcauchy(0,2)
+)
+m5 &amp;lt;- map2stan( f5 , data=list(y=y,x=x) )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What &lt;code&gt;map2stan&lt;/code&gt; does is notice the missing values, see the distribution assigned to the variable with the missing values, build the Stan code that uses a mix of observed and estimated &lt;code&gt;x&lt;/code&gt; values in the regression. See the &lt;code&gt;stancode(m5)&lt;/code&gt; for details of the implementation.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-gaussian-process" class="anchor" aria-hidden="true" href="#gaussian-process"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gaussian process&lt;/h2&gt;
+&lt;p&gt;A basic Gaussian process can be specified with the &lt;code&gt;GPL2&lt;/code&gt; distribution label. This implies a multivariate Gaussian with a covariance matrix defined by the ordinary L2 norm distance function:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;k(i,j) = eta^2 * exp( -rho^2 * D(i,j)^2 ) + ifelse(i==j,sigma^2,0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;D&lt;/code&gt; is a matrix of pairwise distances. To use this convention in, for example, a spatial autocorrelation model:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(rethinking)
+data(Kline2)
+d &amp;lt;- Kline2
+data(islandsDistMatrix)
+d$society &amp;lt;- 1:10
+mGP &amp;lt;- map2stan(
+    alist(
+        total_tools ~ dpois( mu ),
+        log(mu) &amp;lt;- a + aj[society],
+        a ~ dnorm(0,10),
+        aj[society] ~ GPL2( Dmat , etasq , rhosq , 0.01 ),
+        etasq ~ dcauchy(0,1),
+        rhosq ~ dcauchy(0,1)
+    ),
+    data=list(
+        total_tools=d$total_tools,
+        society=d$society,
+        Dmat=islandsDistMatrix),
+    constraints=list(
+        etasq="lower=0",
+        rhosq="lower=0"
+    ),
+    warmup=1000 , iter=5000 , chains=4 )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the use of the &lt;code&gt;constraints&lt;/code&gt; list to pass custom parameter constraints to Stan. This example is explored in more detail in the book.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-information-criteria" class="anchor" aria-hidden="true" href="#information-criteria"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Information criteria&lt;/h2&gt;
+&lt;p&gt;Both &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;map2stan&lt;/code&gt; provide DIC and WAIC. Well, in most cases they do. In truth, both tools are flexible enough that you can specify models for which neither DIC nor WAIC can be correctly calculated. But for ordinary GLMs and GLMMs, it works. See the R help &lt;code&gt;?WAIC&lt;/code&gt;. A convenience function &lt;code&gt;compare&lt;/code&gt; summarizes information criteria comparisons, including standard errors for WAIC.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ensemble&lt;/code&gt; computes &lt;code&gt;link&lt;/code&gt; and &lt;code&gt;sim&lt;/code&gt; output for an ensemble of models, each weighted by its Akaike weight, as computed from WAIC.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rmcelreath</author><guid isPermaLink="false">https://github.com/rmcelreath/rethinking</guid><pubDate>Thu, 14 Nov 2019 00:05:00 GMT</pubDate></item><item><title>jennybc/gapminder #6 in R, This week</title><link>https://github.com/jennybc/gapminder</link><description>&lt;p&gt;&lt;i&gt;Excerpt from the Gapminder data, as an R data package and in plain text delimited form&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#gapminder"&gt;gapminder&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#install-and-test-drive"&gt;Install and test drive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#color-schemes-for-countries-and-continents"&gt;Color schemes for countries and continents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-to-use-color-scheme-in-ggplot2"&gt;How to use color scheme in &lt;code&gt;ggplot2&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-to-use-color-scheme-in-base-graphics"&gt;How to use color scheme in base graphics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#iso-3166-1-country-codes"&gt;ISO 3166-1 country codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#what-is-gapminder-good-for"&gt;What is &lt;code&gt;gapminder&lt;/code&gt; good for?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-this-sausage-was-made"&gt;How this sausage was made&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#plain-text-delimited-files"&gt;Plain text delimited files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#citation"&gt;Citation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://doi.org/10.5281/zenodo.594018" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c0fb03aa5d91b8534bfaf3d32dc93d242e195449/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e3539343031382e737667" alt="DOI" data-canonical-src="https://zenodo.org/badge/DOI/10.5281/zenodo.594018.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://cran.r-project.org/package=gapminder" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d8c4a0781e32fdb5baf456279478f609c807dd54/687474703a2f2f7777772e722d706b672e6f72672f6261646765732f76657273696f6e2f6761706d696e646572" alt="CRAN version" data-canonical-src="http://www.r-pkg.org/badges/version/gapminder" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/88860352b3e2674b76939d30e1049189b6dba8b5/687474703a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f6772616e642d746f74616c2f6761706d696e646572"&gt;&lt;img src="https://camo.githubusercontent.com/88860352b3e2674b76939d30e1049189b6dba8b5/687474703a2f2f6372616e6c6f67732e722d706b672e6f72672f6261646765732f6772616e642d746f74616c2f6761706d696e646572" alt="" data-canonical-src="http://cranlogs.r-pkg.org/badges/grand-total/gapminder" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-gapminder" class="anchor" aria-hidden="true" href="#gapminder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gapminder&lt;/h1&gt;
+&lt;p&gt;Excerpt from the &lt;a href="http://www.gapminder.org/data/" rel="nofollow"&gt;Gapminder&lt;/a&gt; data. The
+main object in this package is the &lt;code&gt;gapminder&lt;/code&gt; data frame or “tibble”.
+There are other goodies, such as the data in tab delimited form, a
+larger unfiltered dataset, premade color schemes for the countries and
+continents, and ISO 3166-1 country codes.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;gapminder&lt;/code&gt; data frames include six variables, (&lt;a href="http://www.gapminder.org/data/documentation/" rel="nofollow"&gt;Gapminder.org
+documentation page&lt;/a&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;variable&lt;/th&gt;
+&lt;th align="left"&gt;meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;country&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;continent&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;year&lt;/td&gt;
+&lt;td align="left"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;lifeExp&lt;/td&gt;
+&lt;td align="left"&gt;life expectancy at birth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;pop&lt;/td&gt;
+&lt;td align="left"&gt;total population&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;gdpPercap&lt;/td&gt;
+&lt;td align="left"&gt;per-capita GDP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Per-capita GDP (Gross domestic product) is given in units of
+&lt;a href="http://en.wikipedia.org/wiki/Geary%E2%80%93Khamis_dollar" rel="nofollow"&gt;international
+dollars&lt;/a&gt;, “a
+hypothetical unit of currency that has the same purchasing power parity
+that the U.S. dollar had in the United States at a given point in time”
+– 2005, in this case.&lt;/p&gt;
+&lt;p&gt;Package contains two main data frames or tibbles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gapminder&lt;/code&gt;: 12 rows for each country (1952, 1955, …, 2007). It’s a
+subset of …&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gapminder_unfiltered&lt;/code&gt;: more lightly filtered and therefore about
+twice as many rows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note: this package exists for the purpose of teaching and making code
+examples. It is an excerpt of data found in specific spreadsheets on
+Gapminder.org circa 2010. It is not a definitive source of socioeconomic
+data and I don’t update it. Use other data sources if it’s important to
+have the current best estimate of these statistics.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-install-and-test-drive" class="anchor" aria-hidden="true" href="#install-and-test-drive"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install and test drive&lt;/h3&gt;
+&lt;p&gt;Install &lt;code&gt;gapminder&lt;/code&gt; from CRAN:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;install.packages(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can install &lt;code&gt;gapminder&lt;/code&gt; from GitHub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-e"&gt;devtools&lt;/span&gt;&lt;span class="pl-k"&gt;::&lt;/span&gt;install_github(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;jennybc/gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Load it and test drive with some data aggregation and plotting:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+aggregate(&lt;span class="pl-smi"&gt;lifeExp&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt; &lt;span class="pl-smi"&gt;continent&lt;/span&gt;, &lt;span class="pl-smi"&gt;gapminder&lt;/span&gt;, &lt;span class="pl-smi"&gt;median&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   continent lifeExp&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1    Africa 47.7920&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2  Americas 67.0480&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3      Asia 61.7915&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4    Europe 72.2410&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5   Oceania 73.6650&lt;/span&gt;
+
+library(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;dplyr&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    filter(&lt;span class="pl-smi"&gt;year&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-c1"&gt;2007&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    group_by(&lt;span class="pl-smi"&gt;continent&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+    summarise(&lt;span class="pl-v"&gt;lifeExp&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; median(&lt;span class="pl-smi"&gt;lifeExp&lt;/span&gt;))
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 5 x 2&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   continent lifeExp&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;fct&amp;gt;       &amp;lt;dbl&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Africa       52.9&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 Americas     72.9&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 Asia         72.4&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4 Europe       78.6&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5 Oceania      80.7&lt;/span&gt;
+    
+library(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ggplot2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+ggplot(&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt;, aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;continent&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;lifeExp&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_boxplot(&lt;span class="pl-v"&gt;outlier.colour&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hotpink&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_jitter(&lt;span class="pl-v"&gt;position&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; position_jitter(&lt;span class="pl-v"&gt;width&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;), &lt;span class="pl-v"&gt;alpha&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;4&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README-test-drive-1.png"&gt;&lt;img src="man/figures/README-test-drive-1.png" width="100%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-color-schemes-for-countries-and-continents" class="anchor" aria-hidden="true" href="#color-schemes-for-countries-and-continents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Color schemes for countries and continents&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;country_colors&lt;/code&gt; and &lt;code&gt;continent_colors&lt;/code&gt; are provided as character
+vectors where elements are hex colors and the names are countries or
+continents.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;head(&lt;span class="pl-smi"&gt;country_colors&lt;/span&gt;, &lt;span class="pl-c1"&gt;4&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;          Nigeria            Egypt         Ethiopia Congo, Dem. Rep. &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;        "#7F3B08"        "#833D07"        "#873F07"        "#8B4107"&lt;/span&gt;
+head(&lt;span class="pl-smi"&gt;continent_colors&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;    Africa  Americas      Asia    Europe   Oceania &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; "#7F3B08" "#A50026" "#40004B" "#276419" "#313695"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/gapminder-color-scheme-ggplot2.png"&gt;&lt;img src="man/figures/gapminder-color-scheme-ggplot2.png" width="100%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The country scheme is available in this repo as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="data-raw/gapminder-color-scheme-ggplot2.png"&gt;PNG&lt;/a&gt; or
+&lt;a href="data-raw/gapminder-color-scheme-base.pdf"&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="inst/extdata/continent-colors.tsv"&gt;&lt;code&gt;continent-colors.tsv&lt;/code&gt;&lt;/a&gt; and
+&lt;a href="inst/extdata/country-colors.tsv"&gt;&lt;code&gt;country-colors.tsv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-use-color-scheme-in-ggplot2" class="anchor" aria-hidden="true" href="#how-to-use-color-scheme-in-ggplot2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use color scheme in &lt;code&gt;ggplot2&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Provide &lt;code&gt;country_colors&lt;/code&gt; to &lt;code&gt;scale_color_manual()&lt;/code&gt; like so:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;...&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; scale_color_manual(&lt;span class="pl-v"&gt;values&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;country_colors&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-k"&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ggplot2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+ggplot(subset(&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt;, &lt;span class="pl-smi"&gt;continent&lt;/span&gt; &lt;span class="pl-k"&gt;!=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Oceania&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;),
+       aes(&lt;span class="pl-v"&gt;x&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;year&lt;/span&gt;, &lt;span class="pl-v"&gt;y&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;lifeExp&lt;/span&gt;, &lt;span class="pl-v"&gt;group&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;country&lt;/span&gt;, &lt;span class="pl-v"&gt;color&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;country&lt;/span&gt;)) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  geom_line(&lt;span class="pl-v"&gt;lwd&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-v"&gt;show.legend&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FALSE&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt; facet_wrap(&lt;span class="pl-k"&gt;~&lt;/span&gt; &lt;span class="pl-smi"&gt;continent&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  scale_color_manual(&lt;span class="pl-v"&gt;values&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;country_colors&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt;
+  theme_bw() &lt;span class="pl-k"&gt;+&lt;/span&gt; theme(&lt;span class="pl-v"&gt;strip.text&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; element_text(&lt;span class="pl-v"&gt;size&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; rel(&lt;span class="pl-c1"&gt;1.1&lt;/span&gt;)))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README-demo-country-colors-ggplot2-1.png"&gt;&lt;img src="man/figures/README-demo-country-colors-ggplot2-1.png" width="100%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-use-color-scheme-in-base-graphics" class="anchor" aria-hidden="true" href="#how-to-use-color-scheme-in-base-graphics"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use color scheme in base graphics&lt;/h3&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; for convenience, integrate the country colors into the data.frame&lt;/span&gt;
+&lt;span class="pl-smi"&gt;gap_with_colors&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt;
+  &lt;span class="pl-k"&gt;data.frame&lt;/span&gt;(&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt;,
+             &lt;span class="pl-v"&gt;cc&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; I(&lt;span class="pl-smi"&gt;country_colors&lt;/span&gt;[match(&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt;&lt;span class="pl-k"&gt;$&lt;/span&gt;&lt;span class="pl-smi"&gt;country&lt;/span&gt;,
+                                         names(&lt;span class="pl-smi"&gt;country_colors&lt;/span&gt;))]))
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; bubble plot, focus just on Africa and Europe in 2007&lt;/span&gt;
+&lt;span class="pl-smi"&gt;keepers&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt; with(&lt;span class="pl-smi"&gt;gap_with_colors&lt;/span&gt;,
+                &lt;span class="pl-smi"&gt;continent&lt;/span&gt; &lt;span class="pl-k"&gt;%in%&lt;/span&gt; c(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Africa&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Europe&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;&amp;amp;&lt;/span&gt; &lt;span class="pl-smi"&gt;year&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-c1"&gt;2007&lt;/span&gt;)
+plot(&lt;span class="pl-smi"&gt;lifeExp&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt; &lt;span class="pl-smi"&gt;gdpPercap&lt;/span&gt;, &lt;span class="pl-smi"&gt;gap_with_colors&lt;/span&gt;,
+     &lt;span class="pl-v"&gt;subset&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;keepers&lt;/span&gt;, &lt;span class="pl-v"&gt;log&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;x&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;pch&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;21&lt;/span&gt;,
+     &lt;span class="pl-v"&gt;cex&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; sqrt(&lt;span class="pl-smi"&gt;gap_with_colors&lt;/span&gt;&lt;span class="pl-k"&gt;$&lt;/span&gt;&lt;span class="pl-smi"&gt;pop&lt;/span&gt;[&lt;span class="pl-smi"&gt;keepers&lt;/span&gt;]&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;pi&lt;/span&gt;)&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;1500&lt;/span&gt;,
+     &lt;span class="pl-v"&gt;bg&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-smi"&gt;gap_with_colors&lt;/span&gt;&lt;span class="pl-k"&gt;$&lt;/span&gt;&lt;span class="pl-smi"&gt;cc&lt;/span&gt;[&lt;span class="pl-smi"&gt;keepers&lt;/span&gt;])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="man/figures/README-demo-country-colors-base-1.png"&gt;&lt;img src="man/figures/README-demo-country-colors-base-1.png" width="100%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-iso-3166-1-country-codes" class="anchor" aria-hidden="true" href="#iso-3166-1-country-codes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ISO 3166-1 country codes&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;country_codes&lt;/code&gt; data frame provides ISO 3166-1 country codes for all
+the countries in the &lt;code&gt;gapminder&lt;/code&gt; and &lt;code&gt;gapminder_unfiltered&lt;/code&gt; data frames.
+This can be used to practice joining or merging.&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;library(&lt;span class="pl-smi"&gt;dplyr&lt;/span&gt;)
+
+&lt;span class="pl-smi"&gt;gapminder&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+ filter(&lt;span class="pl-smi"&gt;year&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-c1"&gt;2007&lt;/span&gt;, &lt;span class="pl-smi"&gt;country&lt;/span&gt; &lt;span class="pl-k"&gt;%in%&lt;/span&gt; c(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Kenya&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Peru&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Syria&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;%
+ select(&lt;span class="pl-smi"&gt;country&lt;/span&gt;, &lt;span class="pl-smi"&gt;continent&lt;/span&gt;) %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% 
+ left_join(&lt;span class="pl-smi"&gt;country_codes&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; Warning: Column `country` joining factor and character vector, coercing&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; into character vector&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; # A tibble: 3 x 4&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   country continent iso_alpha iso_num&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;fct&amp;gt;     &amp;lt;chr&amp;gt;       &amp;lt;int&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1 Kenya   Africa    KEN           404&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2 Peru    Americas  PER           604&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3 Syria   Asia      SYR           760&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-what-is-gapminder-good-for" class="anchor" aria-hidden="true" href="#what-is-gapminder-good-for"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is &lt;code&gt;gapminder&lt;/code&gt; good for?&lt;/h3&gt;
+&lt;p&gt;I have used this excerpt in &lt;a href="http://stat545-ubc.github.io" rel="nofollow"&gt;STAT 545&lt;/a&gt;
+since 2008 and, more recently, in &lt;a href="http://jennybc.github.io/2014-05-12-ubc/" rel="nofollow"&gt;R-flavored Software Carpentry
+Workshops&lt;/a&gt; and a &lt;a href="https://github.com/jennybc/ggplot2-tutorial"&gt;&lt;code&gt;ggplot2&lt;/code&gt;
+tutorial&lt;/a&gt;. &lt;code&gt;gapminder&lt;/code&gt; is
+very useful for teaching novices data wrangling and visualization in R.&lt;/p&gt;
+&lt;p&gt;Description:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1704 observations; fills a size niche between &lt;code&gt;iris&lt;/code&gt; (150 rows) and
+the likes of &lt;code&gt;diamonds&lt;/code&gt; (54K rows)&lt;/li&gt;
+&lt;li&gt;6 variables
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;country&lt;/code&gt; a factor with 142 levels&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;continent&lt;/code&gt;, a factor with 5 levels&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;year&lt;/code&gt;: going from 1952 to 2007 in increments of 5 years&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pop&lt;/code&gt;: population&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gdpPercap&lt;/code&gt;: GDP per capita&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lifeExp&lt;/code&gt;: life expectancy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are 12 rows for each country in &lt;code&gt;gapminder&lt;/code&gt;, i.e. complete data
+for 1952, 1955, …, 2007.&lt;/p&gt;
+&lt;p&gt;The two factors provide opportunities to demonstrate factor handling, in
+aggregation and visualization, for factors with very few and very many
+levels.&lt;/p&gt;
+&lt;p&gt;The four quantitative variables are generally quite correlated with each
+other and these trends have interesting relationships to &lt;code&gt;country&lt;/code&gt; and
+&lt;code&gt;continent&lt;/code&gt;, so you will find that simple plots and aggregations tell a
+reasonable story and are not completely boring.&lt;/p&gt;
+&lt;p&gt;Visualization of the temporal trends in life expectancy, by country, is
+particularly rewarding, since there are several countries with sharp
+drops due to political upheaval. This then motivates more systematic
+investigations via data aggregation to proactively identify all
+countries whose data exhibits certain properties.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-how-this-sausage-was-made" class="anchor" aria-hidden="true" href="#how-this-sausage-was-made"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How this sausage was made&lt;/h3&gt;
+&lt;blockquote lang="en"&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;Data cleaning code cannot be clean. It's a sort of sin eater.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;— Stat Fact (@StatFact)
+&lt;a href="https://twitter.com/StatFact/status/492753200190341120" rel="nofollow"&gt;July
+25, 2014&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The &lt;a href="data-raw/"&gt;&lt;code&gt;data-raw&lt;/code&gt;&lt;/a&gt; directory contains the Excel spreadsheets
+downloaded from &lt;a href="http://www.gapminder.org" rel="nofollow"&gt;Gapminder&lt;/a&gt; in 2008 and 2009
+and all the scripts necessary to create everything in this package, in
+raw and “compiled notebook” form.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-plain-text-delimited-files" class="anchor" aria-hidden="true" href="#plain-text-delimited-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plain text delimited files&lt;/h3&gt;
+&lt;p&gt;If you want to practice importing from file, various tab delimited files
+are included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="inst/extdata/gapminder.tsv"&gt;&lt;code&gt;gapminder.tsv&lt;/code&gt;&lt;/a&gt;: the same dataset
+available via &lt;code&gt;library("gapminder"); gapminder&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="inst/extdata/gapminder-unfiltered.tsv"&gt;&lt;code&gt;gapminder-unfiltered.tsv&lt;/code&gt;&lt;/a&gt;:
+the larger dataset available via &lt;code&gt;library("gapminder"); gapminder_unfiltered&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="inst/extdata/continent-colors.tsv"&gt;&lt;code&gt;continent-colors.tsv&lt;/code&gt;&lt;/a&gt; and
+&lt;a href="inst/extdata/country-colors.tsv"&gt;&lt;code&gt;country-colors.tsv&lt;/code&gt;&lt;/a&gt;: color
+schemes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here in the source, these delimited files can be found:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in the &lt;a href="inst/extdata/"&gt;&lt;code&gt;inst/extdata/&lt;/code&gt;&lt;/a&gt; sub-directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you’ve installed the &lt;code&gt;gapminder&lt;/code&gt; package they can be found locally
+and used like
+so:&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;gap_tsv&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt; system.file(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;extdata&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder.tsv&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;package&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-smi"&gt;gap_tsv&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt; read.delim(&lt;span class="pl-smi"&gt;gap_tsv&lt;/span&gt;)
+str(&lt;span class="pl-smi"&gt;gap_tsv&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 'data.frame':    1704 obs. of  6 variables:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ country  : Factor w/ 142 levels "Afghanistan",..: 1 1 1 1 1 1 1 1 1 1 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ continent: Factor w/ 5 levels "Africa","Americas",..: 3 3 3 3 3 3 3 3 3 3 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ year     : int  1952 1957 1962 1967 1972 1977 1982 1987 1992 1997 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ lifeExp  : num  28.8 30.3 32 34 36.1 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ pop      : int  8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ gdpPercap: num  779 821 853 836 740 ...&lt;/span&gt;
+&lt;span class="pl-smi"&gt;gap_tsv&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Bhutan did not make the cut because data for only 8 years :(&lt;/span&gt;
+  filter(&lt;span class="pl-smi"&gt;country&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Bhutan&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; [1] country   continent year      lifeExp   pop       gdpPercap&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; &amp;lt;0 rows&amp;gt; (or 0-length row.names)&lt;/span&gt;
+
+&lt;span class="pl-smi"&gt;gap_bigger_tsv&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt;
+  system.file(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;extdata&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder-unfiltered.tsv&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;package&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-smi"&gt;gap_bigger_tsv&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;-&lt;/span&gt; read.delim(&lt;span class="pl-smi"&gt;gap_bigger_tsv&lt;/span&gt;)
+str(&lt;span class="pl-smi"&gt;gap_bigger_tsv&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 'data.frame':    3313 obs. of  6 variables:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ country  : Factor w/ 187 levels "Afghanistan",..: 1 1 1 1 1 1 1 1 1 1 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ continent: Factor w/ 6 levels "Africa","Americas",..: 3 3 3 3 3 3 3 3 3 3 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ year     : int  1952 1957 1962 1967 1972 1977 1982 1987 1992 1997 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ lifeExp  : num  28.8 30.3 32 34 36.1 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ pop      : int  8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;  $ gdpPercap: num  779 821 853 836 740 ...&lt;/span&gt;
+&lt;span class="pl-smi"&gt;gap_bigger_tsv&lt;/span&gt; %&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;% &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Bhutan IS here though! :)&lt;/span&gt;
+  filter(&lt;span class="pl-smi"&gt;country&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Bhutan&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   country continent year lifeExp     pop gdpPercap&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 1  Bhutan      Asia 1972  41.837 1087991  807.6226&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 2  Bhutan      Asia 1977  44.708 1205659  816.3102&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 3  Bhutan      Asia 1982  47.872 1333704  946.8130&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 4  Bhutan      Asia 1987  50.717 1490857 1494.2901&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 5  Bhutan      Asia 1992  54.471 1673428 1904.1795&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 6  Bhutan      Asia 1997  58.929 1876236 2561.5077&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 7  Bhutan      Asia 2002  63.458 2094176 3256.0193&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; 8  Bhutan      Asia 2007  65.625 2327849 4744.6400&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Gapminder’s data is released under the Creative Commons Attribution 3.0
+Unported license. See their &lt;a href="https://docs.google.com/document/pub?id=1POd-pBMc5vDXAmxrpGjPLaCSDSWuxX6FLQgq5DhlUhM" rel="nofollow"&gt;terms of
+use&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-citation" class="anchor" aria-hidden="true" href="#citation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Citation&lt;/h2&gt;
+&lt;p&gt;Run this command to get info on how to cite this package. If you’ve
+installed gapminder from CRAN, the year will be populated and populated
+correctly (unlike below).&lt;/p&gt;
+&lt;div class="highlight highlight-source-r"&gt;&lt;pre&gt;citation(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;gapminder&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; To cite package 'gapminder' in publications use:&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   Jennifer Bryan (NA). gapminder: Data from Gapminder.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   https://github.com/jennybc/gapminder,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   http://www.gapminder.org/data/,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   https://doi.org/10.5281/zenodo.594018.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; A BibTeX entry for LaTeX users is&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; &lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   @Manual{,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;     title = {gapminder: Data from Gapminder},&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;     author = {Jennifer Bryan},&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;     note = {https://github.com/jennybc/gapminder,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; http://www.gapminder.org/data/,&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt; https://doi.org/10.5281/zenodo.594018},&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt;&amp;gt;   }&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jennybc</author><guid isPermaLink="false">https://github.com/jennybc/gapminder</guid><pubDate>Thu, 14 Nov 2019 00:06:00 GMT</pubDate></item></channel></rss>

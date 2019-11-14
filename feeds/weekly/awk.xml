@@ -1,2 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Awk, This week</title><link>https://github.com/trending/awk?since=weekly</link><description>The top repositories on GitHub for awk, measured weekly</description><pubDate>Wed, 13 Nov 2019 01:06:18 GMT</pubDate><lastBuildDate>Wed, 13 Nov 2019 01:06:18 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Awk, This week today</title><pubDate>Wed, 13 Nov 2019 01:06:18 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Awk, This week</title><link>https://github.com/trending/awk?since=weekly</link><description>The top repositories on GitHub for awk, measured weekly</description><pubDate>Thu, 14 Nov 2019 01:06:13 GMT</pubDate><lastBuildDate>Thu, 14 Nov 2019 01:06:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>dumblob/mysql2sqlite #1 in Awk, This week</title><link>https://github.com/dumblob/mysql2sqlite</link><description>&lt;p&gt;&lt;i&gt;Converts MySQL dump to SQLite3 compatible dump&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-mysql2sqlite" class="anchor" aria-hidden="true" href="#mysql2sqlite"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;mysql2sqlite&lt;/h1&gt;
+&lt;p&gt;Converts MySQL dump to SQLite3 compatible dump (including MySQL &lt;code&gt;KEY xxxxx&lt;/code&gt; statements from the &lt;code&gt;CREATE&lt;/code&gt; block).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Dump MySQL DB&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mysqldump --skip-extended-insert --compact [options]... DB_name &amp;gt; dump_mysql.sql
+# or
+#mysqldump --no-data -u root -pmyPassword [options]... DB_name &amp;gt; dump_mysql.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Convert the dump to SQLite3 DB&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./mysql2sqlite dump_mysql.sql | sqlite3 mysqlite3.db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;The script is written in &lt;em&gt;awk&lt;/em&gt; (tested with gawk, but should work with original awk, and the lightning fast mawk) and shall be fully POSIX compliant.&lt;/p&gt;
+&lt;p&gt;It's originally based on the newest fork (&lt;a href="https://gist.github.com/bign8/9055981/05e65fd90c469c5eaa730823910c0c5f9de40ab4"&gt;https://gist.github.com/bign8/9055981/05e65fd90c469c5eaa730823910c0c5f9de40ab4&lt;/a&gt;) of the original &lt;code&gt;mysql2sqlite.sh&lt;/code&gt; (&lt;a href="https://gist.github.com/esperlu/943776/be469f0a0ab8962350f3c5ebe8459218b915f817"&gt;https://gist.github.com/esperlu/943776/be469f0a0ab8962350f3c5ebe8459218b915f817&lt;/a&gt;) with the following patches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix the non-standard &lt;code&gt;COMMENT&lt;/code&gt; field statement removal&lt;/li&gt;
+&lt;li&gt;ignore &lt;code&gt;CREATE DATABASE&lt;/code&gt; statements (&lt;code&gt;USE&lt;/code&gt; statements were already ignored)&lt;/li&gt;
+&lt;li&gt;add support for multiple-record &lt;code&gt;INSERT INTO VALUES&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;revise support for lower-case SQL statements&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;AUTO_INCREMENT&lt;/code&gt; handling&lt;/li&gt;
+&lt;li&gt;trim hexadecimal values longer than 16 characters and issue a warning about it&lt;/li&gt;
+&lt;li&gt;add identifier case sensitivity warning in case &lt;code&gt;IF NOT EXISTS&lt;/code&gt; or &lt;code&gt;TEMPORARY&lt;/code&gt; has been detected (on unix sqlite3 treats temporary table name &lt;code&gt;FILES&lt;/code&gt; the same as &lt;code&gt;files&lt;/code&gt;; in other words, sqlite3 doesn't issue any warning about cross-collisions between &lt;code&gt;TABLE&lt;/code&gt; and &lt;code&gt;TEMPORARY TABLE&lt;/code&gt; identifiers)&lt;/li&gt;
+&lt;li&gt;replace &lt;code&gt;COLLATE xxx_xxxx_xx&lt;/code&gt; statements with &lt;code&gt;COLLATE BINARY&lt;/code&gt; (&lt;a href="https://gist.github.com/4levels/0d5da65bf9d70479fbe3/d0ac3d295dc5e2f72411ad06c07a22931368a1b7"&gt;https://gist.github.com/4levels/0d5da65bf9d70479fbe3/d0ac3d295dc5e2f72411ad06c07a22931368a1b7&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;handle &lt;code&gt;CONSTRAINT FOREIGN KEY&lt;/code&gt; (&lt;a href="https://gist.github.com/BastienDurel/7f413d13d7b858aef31c/922be110d011b9da340ae545372214b597ad7b84"&gt;https://gist.github.com/BastienDurel/7f413d13d7b858aef31c/922be110d011b9da340ae545372214b597ad7b84&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to &lt;strong&gt;contribute&lt;/strong&gt; (preferably by issuing a pull request)!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;MIT&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-history" class="anchor" aria-hidden="true" href="#history"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;History&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@esperlu created initial version in 2011 as gist on GitHub&lt;/li&gt;
+&lt;li&gt;many different contributors forked the gist and made wildly varying changes, because @esperlu stopped working on it and didn't respond&lt;/li&gt;
+&lt;li&gt;@dumblob took over in Aug 2015 and applied the most important patches from all the forks as well as many his own patches tested on Drupal DB&lt;/li&gt;
+&lt;li&gt;@dumblob added the MIT license under assumption, that the original gist was released into public domain, because despite significant changes, it wasn't clean room engineering.&lt;/li&gt;
+&lt;li&gt;2016-05-11 17:32 UTC+2 &lt;a href="https://github.com/dumblob/mysql2sqlite/issues/2"&gt;@esperlu declared&lt;/a&gt; MIT as a fitting license (also retrospectively) and the &lt;a href="https://gist.github.com/esperlu/943776"&gt;original gist&lt;/a&gt; as deprecated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dumblob</author><guid isPermaLink="false">https://github.com/dumblob/mysql2sqlite</guid><pubDate>Thu, 14 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>

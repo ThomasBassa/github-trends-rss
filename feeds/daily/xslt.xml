@@ -1,2 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: XSLT, Today</title><link>https://github.com/trending/xslt?since=daily</link><description>The top repositories on GitHub for xslt, measured daily</description><pubDate>Wed, 13 Nov 2019 01:06:18 GMT</pubDate><lastBuildDate>Wed, 13 Nov 2019 01:06:18 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in XSLT, Today today</title><pubDate>Wed, 13 Nov 2019 01:06:18 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: XSLT, Today</title><link>https://github.com/trending/xslt?since=daily</link><description>The top repositories on GitHub for xslt, measured daily</description><pubDate>Thu, 14 Nov 2019 01:06:15 GMT</pubDate><lastBuildDate>Thu, 14 Nov 2019 01:06:15 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>WindowsDeviceManagement/MMAT #1 in XSLT, Today</title><link>https://github.com/WindowsDeviceManagement/MMAT</link><description>&lt;p&gt;&lt;i&gt;MDM Migration Analysis Tool&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-mmat-mdm-migration-analysis-tool" class="anchor" aria-hidden="true" href="#mmat-mdm-migration-analysis-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MMAT-MDM Migration Analysis Tool&lt;/h1&gt;
+&lt;p&gt;Microsoft created the MDM Migration Analysis Tool – aka MMAT  - to help.&lt;br&gt;
+MMAT will determine which Group Policies have been set for a target user/computer and cross-reference against its built-in list of supported MDM policies.&lt;br&gt;
+MMAT will then generate both XML and HTML reports indicating the level of support for each Group Policy in terms of MDM equivalents.&lt;/p&gt;
+&lt;p&gt;MMAT version 2.0 contains the following changes: three new columns were added  - MDM CSP Name, MDM CSP setting URI, and Windows OS Version. There are additional supported settings including Security and Windows Firewall settings.&lt;/p&gt;
+&lt;p&gt;To run this tool follow the instructions below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install Remote Server Administration Tools.&lt;/p&gt;
+&lt;p&gt;Windows 7 - &lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=7887" rel="nofollow"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=7887&lt;/a&gt;
+Important Note: After the RSA tool is installed, corresponding features have to be enabled manually on Win7, which is different from newer Windows versions where the features are turned on by default after installation.
+For enable corresponding features:
+Complete all installation steps in the wizard, and then click Finish to exit the wizard when installation is finished.
+Click Start, click Control Panel, and then click Programs.
+In the Programs and Features area, click Turn Windows features on or off.
+If you are prompted by User Account Control to enable the Windows Features dialog box to open, click Continue.
+In the Windows Features dialog box, expand Remote Server Administration Tools.
+Select the remote management tools that you want to install.
+Click OK.
+Configure the Start menu to display the Administration Tools shortcut, if it is not already there.
+Right-click Start, and then click Properties.
+On the Start Menu tab, click Customize.
+In the Customize Start Menu dialog box, scroll down to System Administrative Tools, and then select Display on the All Programs menu and the Start menu. Click OK. Shortcuts for snap-ins installed by Remote Server Administration Tools for Windows 7 with SP1 are added to the Administrative Tools list on the Start menu.
+Here is more detailed about installation instruction--&amp;gt; &lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=7887&amp;amp;fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True" rel="nofollow"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=7887&amp;amp;fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windows 8 - &lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=28972" rel="nofollow"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=28972&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Window 8.1 - &lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=39296" rel="nofollow"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=39296&lt;/a&gt;
+Note: The installation may be stuck on “Searching for updates on this computer”. You can follow the solution on Appendix-A on "MDM Migration Analysis Tool Instructions.pdf".
+The basic idea is to extract the CAB file from the exe and install manually from command line.&lt;/p&gt;
+&lt;p&gt;Windows 10 - &lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=45520" rel="nofollow"&gt;https://www.microsoft.com/en-us/download/details.aspx?id=45520&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install this MMAT tool zipped Folder to your PC and unzip the folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a PowerShell Window running as an Admin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change directory to MMAT-master folder which contains all the scripts and exe inside.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run the following scripts:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+$VerbosePreference="Continue"
+./Invoke-MdmMigrationAnalysisTool.ps1 -collectGPOReports -runAnalysisTool&lt;/p&gt;
+&lt;ol start="6"&gt;
+&lt;li&gt;When Invoke-MdmMigrationAnalysisTool.ps1 is completed,it will generate:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;MDMMigrationAnalysis.xml: XML report containing information about policies for the target user and computer and how they map, if at all, to MDM.&lt;/p&gt;
+&lt;p&gt;MDMMigrationAnalysis.html: HTML representation of the XML report.&lt;/p&gt;
+&lt;p&gt;MdmMigrationAnalysisTool.log: A log file with more details about the MMAT run.&lt;/p&gt;
+&lt;p&gt;See "MDM Migration Analysis Tool Instructions.pdf" in this folder for more details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>WindowsDeviceManagement</author><guid isPermaLink="false">https://github.com/WindowsDeviceManagement/MMAT</guid><pubDate>Thu, 14 Nov 2019 00:01:00 GMT</pubDate></item><item><title>irandom/docs #2 in XSLT, Today</title><link>https://github.com/irandom/docs</link><description>&lt;p&gt;&lt;i&gt;Стиль библиографии для Word по ГОСТ Р ИСО 7.0.5 2008&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-docs" class="anchor" aria-hidden="true" href="#docs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;docs&lt;/h1&gt;
+&lt;p&gt;Здесь можно найти реализацию стиля библиографии по ГОСТ Р ИСО 7.0.5 2008 для Microsoft Word 2010/2013/2016.&lt;/p&gt;
+&lt;p&gt;Инструкции по установке и способы исправления частых ошибок у пользователей — в посте &lt;a href="http://det-random.livejournal.com/28819.html" rel="nofollow"&gt;http://det-random.livejournal.com/28819.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>irandom</author><guid isPermaLink="false">https://github.com/irandom/docs</guid><pubDate>Thu, 14 Nov 2019 00:02:00 GMT</pubDate></item></channel></rss>
