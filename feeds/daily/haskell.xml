@@ -1,2 +1,797 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Fri, 15 Nov 2019 01:05:51 GMT</pubDate><lastBuildDate>Fri, 15 Nov 2019 01:05:51 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Haskell, Today today</title><pubDate>Fri, 15 Nov 2019 01:05:51 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Sat, 16 Nov 2019 01:04:48 GMT</pubDate><lastBuildDate>Sat, 16 Nov 2019 01:04:48 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>github/semantic #1 in Haskell, Today</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; is a Haskell library and command line tool for parsing, analyzing, and comparing source code.&lt;/p&gt;
+&lt;p&gt;In a hurry? Check out our documentation of &lt;a href="docs/examples.md"&gt;example uses for the &lt;code&gt;semantic&lt;/code&gt; command line tool&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Table of Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#language-support"&gt;Language support&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#development"&gt;Development&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#technology-and-architecture"&gt;Technology and architecture&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#licensing"&gt;Licensing&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Run &lt;code&gt;semantic --help&lt;/code&gt; for complete list of up-to-date options.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-parse" class="anchor" aria-hidden="true" href="#parse"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parse&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic parse ([--sexpression] | [--json] | [--json-graph] | [--symbols]
+                      | [--dot] | [--show] | [--quiet]) [FILES...]
+  Generate parse trees for path(s)
+
+Available options:
+  --sexpression            Output s-expression parse trees (default)
+  --json                   Output JSON parse trees
+  --json-graph             Output JSON adjacency list
+  --symbols                Output JSON symbol list
+  --dot                    Output DOT graph parse trees
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --quiet                  Don't produce output, but show timing stats
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-diff" class="anchor" aria-hidden="true" href="#diff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diff&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic diff ([--sexpression] | [--json] | [--json-graph] | [--toc] |
+                     [--dot] | [--show]) [FILE_A] [FILE_B]
+  Compute changes between paths
+
+Available options:
+  --sexpression            Output s-expression diff tree (default)
+  --json                   Output JSON diff trees
+  --json-graph             Output JSON diff trees
+  --toc                    Output JSON table of contents diff summary
+  --dot                    Output the diff as a DOT graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-graph" class="anchor" aria-hidden="true" href="#graph"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic graph ([--imports] | [--calls]) [--packages] ([--dot] | [--json]
+                      | [--show]) ([--root DIR] [--exclude-dir DIR]
+                      DIR:LANGUAGE | FILE | --language ARG (FILES... | --stdin))
+  Compute a graph for a directory or from a top-level entry point module
+
+Available options:
+  --imports                Compute an import graph (default)
+  --calls                  Compute a call graph
+  --packages               Include a vertex for the package, with edges from it
+                           to each module
+  --dot                    Output in DOT graph format (default)
+  --json                   Output JSON graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --root DIR               Root directory of project. Optional, defaults to
+                           entry file/directory.
+  --exclude-dir DIR        Exclude a directory (e.g. vendor)
+  --language ARG           The language for the analysis.
+  --stdin                  Read a list of newline-separated paths to analyze
+                           from stdin.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-language-support" class="anchor" aria-hidden="true" href="#language-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language support&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Priority&lt;/th&gt;
+&lt;th align="left"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Parse&lt;/th&gt;
+&lt;th align="center"&gt;Assign&lt;/th&gt;
+&lt;th align="center"&gt;Diff&lt;/th&gt;
+&lt;th align="center"&gt;ToC&lt;/th&gt;
+&lt;th align="center"&gt;Symbols&lt;/th&gt;
+&lt;th align="center"&gt;Import graph&lt;/th&gt;
+&lt;th align="center"&gt;Call graph&lt;/th&gt;
+&lt;th align="center"&gt;Control flow graph&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Ruby&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;JavaScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td align="left"&gt;TypeScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td align="left"&gt;Python&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td align="left"&gt;Go&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;PHP&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Java&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSON&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSX&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Haskell&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Markdown&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt; — Supported&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt; — Partial support&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt; — Under development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; requires at least GHC 8.6.4 and Cabal 2.4. We strongly recommend using &lt;a href="https://www.haskell.org/ghcup/" rel="nofollow"&gt;&lt;code&gt;ghcup&lt;/code&gt;&lt;/a&gt; to sandbox GHC versions, as GHC packages installed through your OS's package manager may not install statically-linked versions of the GHC boot libraries.&lt;/p&gt;
+&lt;p&gt;We use &lt;code&gt;cabal's&lt;/code&gt; &lt;a href="https://www.haskell.org/cabal/users-guide/nix-local-build-overview.html" rel="nofollow"&gt;Nix-style local builds&lt;/a&gt; for development. To get started quickly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone git@github.com:github/semantic.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; semantic
+script/bootstrap
+cabal v2-build
+cabal v2-test
+cabal v2-run semantic -- --help&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;stack&lt;/code&gt; as a build tool is not officially supported; there is an unofficial &lt;a href="https://gist.github.com/jkachmar/f200caee83280f1f25e9cfa2dd2b16bb"&gt;&lt;code&gt;stack.yaml&lt;/code&gt;&lt;/a&gt; available, though we cannot make guarantees as to its stability.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-technology-and-architecture" class="anchor" aria-hidden="true" href="#technology-and-architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technology and architecture&lt;/h2&gt;
+&lt;p&gt;Architecturally, &lt;code&gt;semantic&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reads blobs.&lt;/li&gt;
+&lt;li&gt;Generates parse trees for those blobs with &lt;a href="https://github.com/tree-sitter/tree-sitter"&gt;tree-sitter&lt;/a&gt; (an incremental parsing system for programming tools).&lt;/li&gt;
+&lt;li&gt;Assigns those trees into a generalized representation of syntax.&lt;/li&gt;
+&lt;li&gt;Performs analysis, computes diffs, or just returns parse trees.&lt;/li&gt;
+&lt;li&gt;Renders output in one of many supported formats.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Semantic leverages a number of interesting algorithms and techniques:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Myers' algorithm (SES) as described in the paper &lt;a href="http://www.xmailserver.org/diff2.pdf" rel="nofollow"&gt;&lt;em&gt;An O(ND) Difference Algorithm and Its Variations&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RWS as described in the paper &lt;a href="https://db.in.tum.de/~finis/papers/RWS-Diff.pdf" rel="nofollow"&gt;&lt;em&gt;RWS-Diff: Flexible and Efficient Change Detection in Hierarchical Data&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open unions and &lt;a href="http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf" rel="nofollow"&gt;data types à la carte&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An implementation of &lt;a href="https://plum-umd.github.io/abstracting-definitional-interpreters/" rel="nofollow"&gt;Abstracting Definitional Interpreters&lt;/a&gt; extended to work with an à la carte representation of syntax terms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributions" class="anchor" aria-hidden="true" href="#contributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h2&gt;
+&lt;p&gt;Contributions are welcome!  Please see our &lt;a href="CONTRIBUTING.md"&gt;contribution
+guidelines&lt;/a&gt; and our &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&lt;/a&gt; for
+details on how to participate in our community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;Semantic is licensed under the &lt;a href="LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Sat, 16 Nov 2019 00:01:00 GMT</pubDate></item><item><title>purescript/purescript #2 in Haskell, Today</title><link>https://github.com/purescript/purescript</link><description>&lt;p&gt;&lt;i&gt;A strongly-typed language that compiles to JavaScript&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="http://purescript.org" rel="nofollow"&gt;&lt;img src="logo.png" alt="PureScript" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A small strongly typed programming language with expressive types that compiles to JavaScript, written in and inspired by Haskell.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://hackage.haskell.org/package/purescript" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/65eee210087673ce43767ef205145f4ddb37cdfe/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f707572657363726970742e737667" alt="Hackage" data-canonical-src="https://img.shields.io/hackage/v/purescript.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="http://travis-ci.org/purescript/purescript" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5ded54cb98fe3375b06254262e6cebe157eecefc/68747470733a2f2f6170692e7472617669732d63692e6f72672f707572657363726970742f707572657363726970742e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://api.travis-ci.org/purescript/purescript.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-language-info" class="anchor" aria-hidden="true" href="#language-info"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language info&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://purescript.org" rel="nofollow"&gt;PureScript home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/purescript/purescript/releases"&gt;Releases &amp;amp; changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/purescript/purescript/blob/master/CONTRIBUTING.md"&gt;Contributing to PureScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-resources" class="anchor" aria-hidden="true" href="#resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://leanpub.com/purescript/read" rel="nofollow"&gt;PureScript book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/purescript/documentation"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://try.purescript.org" rel="nofollow"&gt;Try PureScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pursuit.purescript.org/" rel="nofollow"&gt;Pursuit Package Index&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-help" class="anchor" aria-hidden="true" href="#help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Help!&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://functionalprogramming.slack.com/" rel="nofollow"&gt;#purescript @ FP Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discourse.purescript.org/" rel="nofollow"&gt;PureScript Language Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/tagged/purescript" rel="nofollow"&gt;PureScript on StackOverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>purescript</author><guid isPermaLink="false">https://github.com/purescript/purescript</guid><pubDate>Sat, 16 Nov 2019 00:02:00 GMT</pubDate></item><item><title>koalaman/shellcheck #3 in Haskell, Today</title><link>https://github.com/koalaman/shellcheck</link><description>&lt;p&gt;&lt;i&gt;ShellCheck, a static analysis tool for shell scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/koalaman/shellcheck" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9e97f328fa055534e41ae29a7d69e7798d549a7/68747470733a2f2f7472617669732d63692e6f72672f6b6f616c616d616e2f7368656c6c636865636b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/koalaman/shellcheck.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-shellcheck---a-shell-script-static-analysis-tool" class="anchor" aria-hidden="true" href="#shellcheck---a-shell-script-static-analysis-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ShellCheck - A shell script static analysis tool&lt;/h1&gt;
+&lt;p&gt;ShellCheck is a GPLv3 tool that gives warnings and suggestions for bash/sh shell scripts:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/terminal.png"&gt;&lt;img src="doc/terminal.png" alt="Screenshot of a terminal showing problematic shell script lines highlighted" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of ShellCheck are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To point out and clarify typical beginner's syntax issues that cause a shell
+to give cryptic error messages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To point out and clarify typical intermediate level semantic problems that
+cause a shell to behave strangely and counter-intuitively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To point out subtle caveats, corner cases and pitfalls that may cause an
+advanced user's otherwise working script to fail under future circumstances.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="README.md#user-content-gallery-of-bad-code"&gt;the gallery of bad code&lt;/a&gt; for examples of what ShellCheck can help you identify!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#how-to-use"&gt;How to use&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#on-the-web"&gt;On the web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#from-your-terminal"&gt;From your terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#in-your-editor"&gt;In your editor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#in-your-build-or-test-suites"&gt;In your build or test suites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installing"&gt;Installing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compiling-from-source"&gt;Compiling from source&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#installing-cabal"&gt;Installing Cabal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compiling-shellcheck"&gt;Compiling ShellCheck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#running-tests"&gt;Running tests&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gallery-of-bad-code"&gt;Gallery of bad code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#quoting"&gt;Quoting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conditionals"&gt;Conditionals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#frequently-misused-commands"&gt;Frequently misused commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#common-beginners-mistakes"&gt;Common beginner's mistakes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#style"&gt;Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#data-and-typing-errors"&gt;Data and typing errors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#robustness"&gt;Robustness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#portability"&gt;Portability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#miscellaneous"&gt;Miscellaneous&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#testimonials"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#ignoring-issues"&gt;Ignoring issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reporting-bugs"&gt;Reporting bugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#copyright"&gt;Copyright&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#other-resources"&gt;Other Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use&lt;/h2&gt;
+&lt;p&gt;There are a number of ways to use ShellCheck!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-on-the-web" class="anchor" aria-hidden="true" href="#on-the-web"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On the web&lt;/h3&gt;
+&lt;p&gt;Paste a shell script on &lt;a href="https://www.shellcheck.net" rel="nofollow"&gt;https://www.shellcheck.net&lt;/a&gt; for instant feedback.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.shellcheck.net" rel="nofollow"&gt;ShellCheck.net&lt;/a&gt; is always synchronized to the latest git commit, and is the easiest way to give ShellCheck a go. Tell your friends!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-from-your-terminal" class="anchor" aria-hidden="true" href="#from-your-terminal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From your terminal&lt;/h3&gt;
+&lt;p&gt;Run &lt;code&gt;shellcheck yourscript&lt;/code&gt; in your terminal for instant output, as seen above.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-in-your-editor" class="anchor" aria-hidden="true" href="#in-your-editor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In your editor&lt;/h3&gt;
+&lt;p&gt;You can see ShellCheck suggestions directly in a variety of editors.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vim, through &lt;a href="https://github.com/w0rp/ale"&gt;ALE&lt;/a&gt;, &lt;a href="https://github.com/neomake/neomake"&gt;Neomake&lt;/a&gt;, or &lt;a href="https://github.com/scrooloose/syntastic"&gt;Syntastic&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/vim-syntastic.png"&gt;&lt;img src="doc/vim-syntastic.png" alt="Screenshot of Vim showing inlined shellcheck feedback" style="max-width:100%;"&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Emacs, through &lt;a href="https://github.com/flycheck/flycheck"&gt;Flycheck&lt;/a&gt; or &lt;a href="https://github.com/federicotdn/flymake-shellcheck"&gt;Flymake&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/emacs-flycheck.png"&gt;&lt;img src="doc/emacs-flycheck.png" alt="Screenshot of emacs showing inlined shellcheck feedback" style="max-width:100%;"&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sublime, through &lt;a href="https://github.com/SublimeLinter/SublimeLinter-shellcheck"&gt;SublimeLinter&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atom, through &lt;a href="https://github.com/AtomLinter/linter-shellcheck"&gt;Linter&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VSCode, through &lt;a href="https://github.com/timonwong/vscode-shellcheck"&gt;vscode-shellcheck&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Most other editors, through &lt;a href="shellcheck.1.md#user-content-formats"&gt;GCC error compatibility&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-in-your-build-or-test-suites" class="anchor" aria-hidden="true" href="#in-your-build-or-test-suites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In your build or test suites&lt;/h3&gt;
+&lt;p&gt;While ShellCheck is mostly intended for interactive use, it can easily be added to builds or test suites.
+It makes canonical use of exit codes, so you can just add a &lt;code&gt;shellcheck&lt;/code&gt; command as part of the process.&lt;/p&gt;
+&lt;p&gt;For example, in a Makefile:&lt;/p&gt;
+&lt;div class="highlight highlight-source-makefile"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;check-scripts&lt;/span&gt;:
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Fail if any of these files have warnings&lt;/span&gt;
+    shellcheck myscripts/*.sh&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or in a Travis CI &lt;code&gt;.travis.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;script&lt;/span&gt;:
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Fail if any of these files have warnings&lt;/span&gt;
+  - &lt;span class="pl-s"&gt;shellcheck myscripts/*.sh&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Services and platforms that have ShellCheck pre-installed and ready to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://travis-ci.org/" rel="nofollow"&gt;Travis CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codacy.com/" rel="nofollow"&gt;Codacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeclimate.com/" rel="nofollow"&gt;Code Climate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codefactor.io/" rel="nofollow"&gt;Code Factor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Services and platforms with third party plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sonarqube.org/" rel="nofollow"&gt;SonarQube&lt;/a&gt; through &lt;a href="https://github.com/emerald-squad/sonar-shellcheck-plugin"&gt;sonar-shellcheck-plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most other services, including &lt;a href="https://about.gitlab.com/" rel="nofollow"&gt;GitLab&lt;/a&gt;, let you install
+ShellCheck yourself, either through the system's package manager (see &lt;a href="#installing"&gt;Installing&lt;/a&gt;),
+or by downloading and unpacking a &lt;a href="#installing-the-shellcheck-binary"&gt;binary release&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It's a good idea to manually install a specific ShellCheck version regardless. This avoids
+any surprise build breaks when a new version with new warnings is published.&lt;/p&gt;
+&lt;p&gt;For customized filtering or reporting, ShellCheck can output simple JSON, CheckStyle compatible XML,
+GCC compatible warnings as well as human readable text (with or without ANSI colors). See the
+&lt;a href="https://github.com/koalaman/shellcheck/wiki/Integration"&gt;Integration&lt;/a&gt; wiki page for more documentation.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
+&lt;p&gt;The easiest way to install ShellCheck locally is through your package manager.&lt;/p&gt;
+&lt;p&gt;On systems with Cabal (installs to &lt;code&gt;~/.cabal/bin&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cabal update
+cabal install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On systems with Stack (installs to &lt;code&gt;~/.local/bin&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;stack update
+stack install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Debian based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Arch Linux based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -S shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or get the dependency free &lt;a href="https://aur.archlinux.org/packages/shellcheck-static/" rel="nofollow"&gt;shellcheck-static&lt;/a&gt; from the AUR.&lt;/p&gt;
+&lt;p&gt;On Gentoo based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;emerge --ask shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On EPEL based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum -y install epel-release
+yum install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Fedora based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dnf install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On FreeBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg install hs-ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On OS X with homebrew:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On OpenBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg_add shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On openSUSE&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;zypper in ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or use OneClickInstall - &lt;a href="https://software.opensuse.org/package/ShellCheck" rel="nofollow"&gt;https://software.opensuse.org/package/ShellCheck&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On Solus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eopkg install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Windows (via &lt;a href="https://chocolatey.org/packages/shellcheck" rel="nofollow"&gt;chocolatey&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;C:\&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; choco install shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or Windows (via &lt;a href="http://scoop.sh" rel="nofollow"&gt;scoop&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;C:\&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; scoop install shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From Snap Store:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;snap install --channel=edge shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From Docker Hub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker run --rm -v &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$PWD&lt;/span&gt;:/mnt&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; koalaman/shellcheck:stable myscript
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Or :v0.4.7 for that version, or :latest for daily builds&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or use &lt;code&gt;koalaman/shellcheck-alpine&lt;/code&gt; if you want a larger Alpine Linux based image to extend. It works exactly like a regular Alpine image, but has shellcheck preinstalled.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can download pre-compiled binaries for the latest release here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.x86_64.tar.xz" rel="nofollow"&gt;Linux, x86_64&lt;/a&gt; (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.armv6hf.tar.xz" rel="nofollow"&gt;Linux, armv6hf&lt;/a&gt;, i.e. Raspberry Pi (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.armv6hf.tar.xz" rel="nofollow"&gt;Linux, aarch64&lt;/a&gt; aka ARM64 (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://shellcheck.storage.googleapis.com/shellcheck-stable.darwin.x86_64.tar.xz" rel="nofollow"&gt;MacOS, x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.zip" rel="nofollow"&gt;Windows, x86&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;or see the &lt;a href="https://shellcheck.storage.googleapis.com/index.html" rel="nofollow"&gt;storage bucket listing&lt;/a&gt; for checksums, older versions and the latest daily builds.&lt;/p&gt;
+&lt;p&gt;Distro packages already come with a &lt;code&gt;man&lt;/code&gt; page. If you are building from source, it can be installed with:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;pandoc -s -f markdown-smart -t man shellcheck.1.md -o shellcheck.1&lt;/span&gt;
+&lt;span class="pl-c1"&gt;sudo mv shellcheck.1 /usr/share/man/man1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-travis-ci" class="anchor" aria-hidden="true" href="#travis-ci"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Travis CI&lt;/h3&gt;
+&lt;p&gt;Travis CI has now integrated ShellCheck by default, so you don't need to manually install it.&lt;/p&gt;
+&lt;p&gt;If you still want to do so in order to upgrade at your leisure or ensure you're
+using the latest release, follow the steps below to install a binary version.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installing-a-pre-compiled-binary" class="anchor" aria-hidden="true" href="#installing-a-pre-compiled-binary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing a pre-compiled binary&lt;/h3&gt;
+&lt;p&gt;The pre-compiled binaries come in &lt;code&gt;tar.xz&lt;/code&gt; files. To decompress them, make sure
+&lt;code&gt;xz&lt;/code&gt; is installed.
+On Debian/Ubuntu/Mint, you can &lt;code&gt;apt install xz-utils&lt;/code&gt;.
+On Redhat/Fedora/CentOS, &lt;code&gt;yum -y install xz&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A simple installer may do something like:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;scversion=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stable&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; or "v0.4.7", or "latest"&lt;/span&gt;
+wget -qO- &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://storage.googleapis.com/shellcheck/shellcheck-&lt;span class="pl-smi"&gt;${scversion?}&lt;/span&gt;.linux.x86_64.tar.xz&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; tar -xJv
+cp &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shellcheck-&lt;span class="pl-smi"&gt;${scversion}&lt;/span&gt;/shellcheck&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; /usr/bin/
+shellcheck --version&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-compiling-from-source" class="anchor" aria-hidden="true" href="#compiling-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling from source&lt;/h2&gt;
+&lt;p&gt;This section describes how to build ShellCheck from a source directory. ShellCheck is written in Haskell and requires 2GB of RAM to compile.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installing-cabal" class="anchor" aria-hidden="true" href="#installing-cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Cabal&lt;/h3&gt;
+&lt;p&gt;ShellCheck is built and packaged using Cabal. Install the package &lt;code&gt;cabal-install&lt;/code&gt; from your system's package manager (with e.g. &lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;brew&lt;/code&gt;, &lt;code&gt;emerge&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, or &lt;code&gt;zypper&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;On MacOS (OS X), you can do a fast install of Cabal using brew, which takes a couple of minutes instead of more than 30 minutes if you try to compile it from source.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ brew install cabal-install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On MacPorts, the package is instead called &lt;code&gt;hs-cabal-install&lt;/code&gt;, while native Windows users should install the latest version of the Haskell platform from &lt;a href="https://www.haskell.org/platform/" rel="nofollow"&gt;https://www.haskell.org/platform/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Verify that &lt;code&gt;cabal&lt;/code&gt; is installed and update its dependency list with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-compiling-shellcheck" class="anchor" aria-hidden="true" href="#compiling-shellcheck"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling ShellCheck&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git clone&lt;/code&gt; this repository, and &lt;code&gt;cd&lt;/code&gt; to the ShellCheck source directory to build/install:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if you intend to run the tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal install --enable-tests
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will compile ShellCheck and install it to your &lt;code&gt;~/.cabal/bin&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;Add this directory to your &lt;code&gt;PATH&lt;/code&gt; (for bash, add this to your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; PATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$HOME&lt;/span&gt;/.cabal/bin:&lt;span class="pl-smi"&gt;$PATH&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Log out and in again, and verify that your PATH is set up correctly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ which shellcheck
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.cabal/bin/shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On native Windows, the &lt;code&gt;PATH&lt;/code&gt; should already be set up, but the system
+may use a legacy codepage. In &lt;code&gt;cmd.exe&lt;/code&gt;, &lt;code&gt;powershell.exe&lt;/code&gt; and Powershell ISE,
+make sure to use a TrueType font, not a Raster font, and set the active
+codepage to UTF-8 (65001) with &lt;code&gt;chcp&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;chcp&lt;/span&gt; &lt;span class="pl-c1"&gt;65001&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Powershell ISE, you may need to additionally update the output encoding:&lt;/p&gt;
+&lt;div class="highlight highlight-source-powershell"&gt;&lt;pre&gt;[&lt;span class="pl-k"&gt;Console&lt;/span&gt;]::OutputEncoding &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-k"&gt;System.Text.Encoding&lt;/span&gt;]::UTF8&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;To run the unit test suite:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-gallery-of-bad-code" class="anchor" aria-hidden="true" href="#gallery-of-bad-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gallery of bad code&lt;/h2&gt;
+&lt;p&gt;So what kind of things does ShellCheck look for? Here is an incomplete list of detected issues.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-quoting" class="anchor" aria-hidden="true" href="#quoting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quoting&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize several types of incorrect quoting:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$1&lt;/span&gt;                           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted variables&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -name &lt;span class="pl-k"&gt;*&lt;/span&gt;.ogg                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted find/grep patterns&lt;/span&gt;
+rm &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~/my file.txt&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Quoted tilde expansion&lt;/span&gt;
+v=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--verbose="true"&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; cmd &lt;span class="pl-smi"&gt;$v&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Literal quotes in variables&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;*.ogg&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Incorrectly quoted 'for' loops&lt;/span&gt;
+touch &lt;span class="pl-smi"&gt;$@&lt;/span&gt;                          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted $@&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Don&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;t forget to restart&lt;span class="pl-k"&gt;!&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;   # Singlequote closed by apostrophe&lt;/span&gt;
+&lt;span class="pl-s"&gt;echo &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;Don&lt;span class="pl-cce"&gt;\'&lt;/span&gt;t try this at home&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;    # Attempting to escape &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Path is $PATH&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variables in single quotes&lt;/span&gt;
+&lt;span class="pl-c1"&gt;trap&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;echo Took &lt;span class="pl-smi"&gt;${SECONDS}&lt;/span&gt;s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; 0    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Prematurely expanded trap&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-conditionals" class="anchor" aria-hidden="true" href="#conditionals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conditionals&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize many types of incorrect test statements.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;[[ n &lt;span class="pl-k"&gt;!=&lt;/span&gt; 0 ]]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Constant test expressions&lt;/span&gt;
+[[ &lt;span class="pl-k"&gt;-e&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;.mpg ]]                    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Existence checks of globs&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$foo&lt;/span&gt;&lt;span class="pl-k"&gt;==&lt;/span&gt;0 ]]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Always true due to missing spaces&lt;/span&gt;
+[[ &lt;span class="pl-k"&gt;-n&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$foo&lt;/span&gt; &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]]                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Always true due to literals&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$foo&lt;/span&gt; &lt;span class="pl-k"&gt;=~&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;fo+&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]]               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Quoted regex in =~&lt;/span&gt;
+[ foo &lt;span class="pl-k"&gt;=~&lt;/span&gt; re ]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unsupported [ ] operators&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$1&lt;/span&gt; &lt;span class="pl-k"&gt;-eq&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shellcheck&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Numerical comparison of strings&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$n&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-smi"&gt;$m&lt;/span&gt; ]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; &amp;amp;&amp;amp; in [ .. ]&lt;/span&gt;
+[ grep -q foo file ]              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Command without $(..)&lt;/span&gt;
+[[ &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$$&lt;/span&gt;file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;.jpg ]]           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comparisons that can't succeed&lt;/span&gt;
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;((&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;lt &lt;span class="pl-c1"&gt;2&lt;/span&gt; &lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Using test operators in ((..))&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-frequently-misused-commands" class="anchor" aria-hidden="true" href="#frequently-misused-commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frequently misused commands&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize instances where commands are used incorrectly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;grep &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*foo*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; file                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Globs in regex contexts&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -exec foo {} &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; bar {} &lt;span class="pl-cce"&gt;\;&lt;/span&gt;  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Prematurely terminated find -exec&lt;/span&gt;
+sudo &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Var=42&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; /etc/profile &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Redirecting sudo&lt;/span&gt;
+&lt;span class="pl-k"&gt;time&lt;/span&gt; --format=%s sleep 10         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Passing time(1) flags to time builtin&lt;/span&gt;
+&lt;span class="pl-k"&gt;while&lt;/span&gt; &lt;span class="pl-c1"&gt;read&lt;/span&gt; h&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; ssh &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$h&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; uptime  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Commands eating while loop input&lt;/span&gt;
+&lt;span class="pl-c1"&gt;alias&lt;/span&gt; archive=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mv $1 /backup&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Defining aliases with arguments&lt;/span&gt;
+tr -cd &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;[a-zA-Z0-9]&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; [] around ranges in tr&lt;/span&gt;
+&lt;span class="pl-c1"&gt;exec&lt;/span&gt; foo&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Done!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Misused 'exec'&lt;/span&gt;
+find -name &lt;span class="pl-cce"&gt;\*&lt;/span&gt;.bak -o -name &lt;span class="pl-cce"&gt;\*&lt;/span&gt;~ -delete  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Implicit precedence in find&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; find . -exec foo &amp;gt; bar \;       # Redirections in find&lt;/span&gt;
+&lt;span class="pl-en"&gt;f&lt;/span&gt;() { whoami&lt;span class="pl-k"&gt;;&lt;/span&gt; }; sudo f           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; External use of internal functions&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-common-beginners-mistakes" class="anchor" aria-hidden="true" href="#common-beginners-mistakes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common beginner's mistakes&lt;/h3&gt;
+&lt;p&gt;ShellCheck recognizes many common beginner's syntax errors:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;var = 42                          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Spaces around = in assignments&lt;/span&gt;
+&lt;span class="pl-smi"&gt;$foo&lt;/span&gt;=42                           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; $ in assignments&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; ...             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; $ in for loop variables&lt;/span&gt;
+var&lt;span class="pl-smi"&gt;$n&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrong indirect assignment&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;${var&lt;span class="pl-smi"&gt;$n&lt;/span&gt;}&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrong indirect reference&lt;/span&gt;
+var=(1, 2, 3)                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comma separated arrays&lt;/span&gt;
+array=( [index] = value )         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Incorrect index initialization&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt;[14]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Missing {} in array references&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Argument 10 is &lt;span class="pl-smi"&gt;$1&lt;/span&gt;0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Positional parameter misreference&lt;/span&gt;
+&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;myfunction&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;then&lt;/span&gt; ..&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;fi&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrapping commands in $()&lt;/span&gt;
+&lt;span class="pl-k"&gt;else&lt;/span&gt; &lt;span class="pl-k"&gt;if&lt;/span&gt; othercondition&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;then&lt;/span&gt; ..   &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Using 'else if'&lt;/span&gt;
+f&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-en"&gt;f&lt;/span&gt;() { &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hello world; }     # Using function before definition&lt;/span&gt;
+&lt;span class="pl-s"&gt;[ false ]                         # 'false' being true&lt;/span&gt;
+&lt;span class="pl-s"&gt;if ( -f file )                    # Using (..) instead of test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-style" class="anchor" aria-hidden="true" href="#style"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Style&lt;/h3&gt;
+&lt;p&gt;ShellCheck can make suggestions to improve style:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;[[ &lt;span class="pl-k"&gt;-z&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;find /tmp &lt;span class="pl-k"&gt;|&lt;/span&gt; grep mpg&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt; ]]  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use grep -q instead&lt;/span&gt;
+a &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log&lt;span class="pl-k"&gt;;&lt;/span&gt; b &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log&lt;span class="pl-k"&gt;;&lt;/span&gt; c &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use a redirection block instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;The time is &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;`&lt;/span&gt;date&lt;span class="pl-pds"&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use $() instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; dir&lt;span class="pl-k"&gt;;&lt;/span&gt; process &lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; ..&lt;span class="pl-k"&gt;;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use subshells instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; $[1+2]                       &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use standard $((..)) instead of old $[]&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$((&lt;/span&gt;&lt;span class="pl-smi"&gt;$RANDOM&lt;/span&gt; &lt;span class="pl-k"&gt;%&lt;/span&gt; &lt;span class="pl-c1"&gt;6&lt;/span&gt;&lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Don't use $ on variables in $((..))&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;date&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Useless use of echo&lt;/span&gt;
+cat file &lt;span class="pl-k"&gt;|&lt;/span&gt; grep foo               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Useless use of cat&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-data-and-typing-errors" class="anchor" aria-hidden="true" href="#data-and-typing-errors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data and typing errors&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize issues related to data and typing:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;args=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$@&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Assigning arrays to strings&lt;/span&gt;
+files=(foo bar)&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$files&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Referencing arrays as strings&lt;/span&gt;
+&lt;span class="pl-k"&gt;declare&lt;/span&gt; -A arr=(foo bar)          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Associative arrays without index&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;%s\n&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Arguments: &lt;span class="pl-smi"&gt;$@&lt;/span&gt;.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Concatenating strings and arrays&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$#&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; 2 ]]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comparing numbers as strings&lt;/span&gt;
+var=World&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; var      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unused lowercase variables&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unassigned lowercase variables&lt;/span&gt;
+cmd &lt;span class="pl-k"&gt;|&lt;/span&gt; &lt;span class="pl-c1"&gt;read&lt;/span&gt; bar&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$bar&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Assignments in subshells&lt;/span&gt;
+cat foo &lt;span class="pl-k"&gt;|&lt;/span&gt; cp bar                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Piping to commands that don't read&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;%s: %s\n&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; foo             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Mismatches in printf argument count&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-robustness" class="anchor" aria-hidden="true" href="#robustness"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Robustness&lt;/h3&gt;
+&lt;p&gt;ShellCheck can make suggestions for improving the robustness of a script:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rm -rf &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$STEAMROOT&lt;/span&gt;/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;*&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Catastrophic rm&lt;/span&gt;
+touch ./-l&lt;span class="pl-k"&gt;;&lt;/span&gt; ls &lt;span class="pl-k"&gt;*&lt;/span&gt;                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Globs that could become options&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -exec sh -c &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;a &amp;amp;&amp;amp; b {}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-cce"&gt;\;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Find -exec shell injection&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variables in printf format&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;ls &lt;span class="pl-k"&gt;*&lt;/span&gt;.txt&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Iterating over ls output&lt;/span&gt;
+&lt;span class="pl-k"&gt;export&lt;/span&gt; MYVAR=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;cmd&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Masked exit codes&lt;/span&gt;
+&lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-smi"&gt;$version&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; 2.&lt;span class="pl-k"&gt;*&lt;/span&gt;) &lt;span class="pl-c1"&gt;:&lt;/span&gt;;; 2.6.&lt;span class="pl-k"&gt;*&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Shadowed case branches&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-portability" class="anchor" aria-hidden="true" href="#portability"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portability&lt;/h3&gt;
+&lt;p&gt;ShellCheck will warn when using features not supported by the shebang. For example, if you set the shebang to &lt;code&gt;#!/bin/sh&lt;/code&gt;, ShellCheck will warn about portability issues similar to &lt;code&gt;checkbashisms&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; {1..&lt;span class="pl-smi"&gt;$n&lt;/span&gt;}                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh, but not bash/dash/sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; {1..10}                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh and bash, but not dash/sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; -n 42                       &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh, bash and dash, undefined in sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;trap&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;exit 42&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; sigint            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable signal spec&lt;/span&gt;
+cmd &lt;span class="pl-k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; file                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable redirection operator&lt;/span&gt;
+&lt;span class="pl-c1"&gt;read&lt;/span&gt; foo &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt; /dev/tcp/host/22      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable intercepted files&lt;/span&gt;
+&lt;span class="pl-en"&gt;foo-bar&lt;/span&gt;() { ..&lt;span class="pl-k"&gt;;&lt;/span&gt; }                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Undefined/unsupported function name&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$UID&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; 0 ]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variable undefined in dash/sh&lt;/span&gt;
+&lt;span class="pl-k"&gt;local&lt;/span&gt; var=value                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; local is undefined in sh&lt;/span&gt;
+&lt;span class="pl-k"&gt;time&lt;/span&gt; sleep 1 &lt;span class="pl-k"&gt;|&lt;/span&gt; sleep 5           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Undefined uses of 'time'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-miscellaneous" class="anchor" aria-hidden="true" href="#miscellaneous"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Miscellaneous&lt;/h3&gt;
+&lt;p&gt;ShellCheck recognizes a menagerie of other issues:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;PS1=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;\e[0;32m\$\e[0m &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; PS1 colors not in \[..\]&lt;/span&gt;
+PATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$PATH&lt;/span&gt;:~/bin&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Literal tilde in $PATH&lt;/span&gt;
+rm “file”                         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unicode quotes&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello world&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Carriage return / DOS line endings&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; hello &lt;span class="pl-cce"&gt;\ &lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Trailing spaces after \&lt;/span&gt;
+var=42 &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt;                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Expansion of inlined environment&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#!&lt;/span&gt;/bin/bash -x -e                 # Common shebang errors&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$((&lt;/span&gt;n&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;180&lt;/span&gt;&lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-c1"&gt;100&lt;/span&gt;&lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unnecessary loss of precision&lt;/span&gt;
+ls &lt;span class="pl-k"&gt;*&lt;/span&gt;[:digit:].txt                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Bad character class globs&lt;/span&gt;
+sed &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;s/foo/bar/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; file &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; file      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Redirecting to input&lt;/span&gt;
+&lt;span class="pl-k"&gt;while&lt;/span&gt; &lt;span class="pl-c1"&gt;getopts&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;a&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; f&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; &lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-smi"&gt;$f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;b&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unhandled getopts flags&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-testimonials" class="anchor" aria-hidden="true" href="#testimonials"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testimonials&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At first you're like "shellcheck is awesome" but then you're like "wtf are we still using bash"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Alexander Tarasikov,
+&lt;a href="https://twitter.com/astarasikov/status/568825996532707330" rel="nofollow"&gt;via Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-ignoring-issues" class="anchor" aria-hidden="true" href="#ignoring-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ignoring issues&lt;/h2&gt;
+&lt;p&gt;Issues can be ignored via environmental variable, command line, individually or globally within a file:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/Ignore"&gt;https://github.com/koalaman/shellcheck/wiki/Ignore&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reporting-bugs" class="anchor" aria-hidden="true" href="#reporting-bugs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reporting bugs&lt;/h2&gt;
+&lt;p&gt;Please use the GitHub issue tracker for any bugs or feature suggestions:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/koalaman/shellcheck/issues"&gt;https://github.com/koalaman/shellcheck/issues&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please submit patches to code or documentation as GitHub pull requests! Check
+out the &lt;a href="https://github.com/koalaman/shellcheck/wiki/DevGuide"&gt;DevGuide&lt;/a&gt; on the
+ShellCheck Wiki.&lt;/p&gt;
+&lt;p&gt;Contributions must be licensed under the GNU GPLv3.
+The contributor retains the copyright.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;ShellCheck is licensed under the GNU General Public License, v3. A copy of this license is included in the file &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Copyright 2012-2019, &lt;a href="https://github.com/koalaman/"&gt;Vidar 'koala_man' Holen&lt;/a&gt; and contributors.&lt;/p&gt;
+&lt;p&gt;Happy ShellChecking!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-resources" class="anchor" aria-hidden="true" href="#other-resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The wiki has &lt;a href="https://github.com/koalaman/shellcheck/wiki/Checks"&gt;long form descriptions&lt;/a&gt; for each warning, e.g. &lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2221"&gt;SC2221&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;ShellCheck does not attempt to enforce any kind of formatting or indenting style, so also check out &lt;a href="https://github.com/mvdan/sh"&gt;shfmt&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>koalaman</author><guid isPermaLink="false">https://github.com/koalaman/shellcheck</guid><pubDate>Sat, 16 Nov 2019 00:03:00 GMT</pubDate></item><item><title>i-am-tom/haskell-exercises #4 in Haskell, Today</title><link>https://github.com/i-am-tom/haskell-exercises</link><description>&lt;p&gt;&lt;i&gt;A little course to learn about some of the more obscure GHC extensions.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ghc-exercises-" class="anchor" aria-hidden="true" href="#ghc-exercises-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GHC exercises &lt;g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png"&gt;🚀&lt;/g-emoji&gt;&lt;/h1&gt;
+&lt;p&gt;OK, you know your &lt;strong&gt;monoids&lt;/strong&gt; from your &lt;strong&gt;monads&lt;/strong&gt;. You know how to write a
+terminal application or two. What's next? What are these language extensions
+that keep being mentioned? How "type-safe" can you &lt;em&gt;really&lt;/em&gt; be?&lt;/p&gt;
+&lt;p&gt;This repository, I hope, will provide some &lt;strong&gt;stepping stones&lt;/strong&gt;. We'll go
+through extensions one at a time, and build up a richer vocabulary for talking
+about Haskell programs, and look to move our assertions up into types, where
+they can be verified at compile time.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-what-this-isnt" class="anchor" aria-hidden="true" href="#what-this-isnt"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What this &lt;em&gt;isn't&lt;/em&gt;.&lt;/h2&gt;
+&lt;p&gt;This is a deep dive into GHC extensions, the power that each one gives us, and
+how we can combine extensions to achieve very strong guarantees at
+compile-time. This is &lt;em&gt;not&lt;/em&gt; based around concepts; there won't be sections on
+"dependently-typed programming", or "generic programming", though these
+concepts will turn up throughout as we dig deeper into the extensions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you're interested in something more project-based, I absolutely, 1000%
+recommend &lt;a href="https://leanpub.com/thinking-with-types" rel="nofollow"&gt;Thinking with Types&lt;/a&gt;,
+written by &lt;a href="https://github.com/isovector"&gt;Sandy Maguire&lt;/a&gt;. It is a
+&lt;strong&gt;fantastic&lt;/strong&gt; resource, and one on which I already rely when explaining
+concepts to others.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-contents" class="anchor" aria-hidden="true" href="#contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;GADTs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FlexibleInstances&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KindSignatures&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DataKinds&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RankNTypes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TypeFamilies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ConstraintKinds&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PolyKinds&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MultiParamTypeClasses&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FunctionalDependencies&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Assuming you have &lt;a href="https://www.haskell.org/cabal/" rel="nofollow"&gt;Cabal&lt;/a&gt; or
+&lt;a href="https://docs.haskellstack.org/en/stable/README/" rel="nofollow"&gt;Stack&lt;/a&gt; setup, you should be
+able to navigate to any of the &lt;code&gt;exercise*&lt;/code&gt; directories, and run your usual
+commands:&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-repl" class="anchor" aria-hidden="true" href="#repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Repl&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ stack repl
+$ cabal new-repl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-build" class="anchor" aria-hidden="true" href="#build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ stack build
+$ cabal new-build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It's going to make it a lot easier to iterate through the exercises if you
+&lt;code&gt;cabal install ghcid&lt;/code&gt; or &lt;code&gt;stack install ghcid&lt;/code&gt;. Just as above, once this is
+done, you can navigate to the exercise directory and run it with your preferred
+repl command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ghcid -c "stack repl"
+$ ghcid -c "cabal new-repl"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>i-am-tom</author><guid isPermaLink="false">https://github.com/i-am-tom/haskell-exercises</guid><pubDate>Sat, 16 Nov 2019 00:04:00 GMT</pubDate></item><item><title>MaxOw/RuneSlayer #5 in Haskell, Today</title><link>https://github.com/MaxOw/RuneSlayer</link><description>&lt;p&gt;&lt;i&gt;RPG languages learning tool&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-about-runeslayer" class="anchor" aria-hidden="true" href="#about-runeslayer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About RuneSlayer&lt;/h1&gt;
+&lt;p&gt;The general idea of RuneSlayer is to take the dopamine cycle/quick
+gratification/addiction forming mechanisms that are often employed in computer
+games (especially in the RPG genre) and use them for good, in the context of
+natural languages learning. In a more concrete terms it will look like this:
+your character will acquire "Runes" each representing a factoid in the data set
+you are learning. You will answer question about these Runes and for correct
+answers you will be rewarded with RP (Runic Points) and increase in the mastery
+of that Rune. The Runic Points are needed to attack enemies and perform other
+tasks (like maybe enchanting weapons, et c.) Once you master enough Runes you
+will be able to learn more and also get some skill points to make your character
+stronger.&lt;/p&gt;
+&lt;p&gt;The grand idea is to shorten the action-reward duration to increase motivation
+when studying. When you are learning a natural language The Reward (being fluent
+in that language) is very long time away and it's hard to use it to sustain the
+motivation to preform the necessary tasks to achieve it, that is repeated study
+sessions. Here you will have very short sessions (answering a handful of
+questions) that you can control the duration of (how much RP you need) and that
+you will need to do to almost immediately be granted a reward (progressing
+further in the game, your character becoming stronger, et c.).&lt;/p&gt;
+&lt;p&gt;Obviously I don't believe that you could introduce this game to someone who just
+wants to play a game and that he will accidentally learn a language. This is to
+be rather a tool for people who already are in the mind to learn a language and
+can use it as a crutch, to turn the pain of studying into pleasure of gaming
+(and maybe even a small addiction, like many a game tend to be)&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/MaxOw/RuneSlayer-media0/master/screenshoot0_cropped.png"&gt;&lt;img src="https://raw.githubusercontent.com/MaxOw/RuneSlayer-media0/master/screenshoot0_cropped.png" alt="Gameplay Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The graphics is currently put together from open art I've found around the web.
+Ideally I'd like to commission an artist to create art in a darker and more
+realistic style, but it is what is is for now. (Coincidentally if you'd like to
+hire/contract me, let me know, since I could use some currency now. I can
+program in Haskell and do other "computer things", I can also juggle, so you
+know, great value for your money).&lt;/p&gt;
+&lt;p&gt;Current version (0.1) is more of a demo, showcasing the vision of this a bit and
+there isn't really more then 5 minutes of gameplay there (and even that is
+a stretch). You start with 5 Runes (characters from hiragana a Japanese
+syllabary, as an example for now) there is a short tutorial, you can kill some
+enemies and get some items from chests distributed around the island, and that's
+it.&lt;/p&gt;
+&lt;p&gt;There is quite a bit of core things to do still, some major things need to be
+optimized, and so forth, but I feel like enough of the ground work is laid down
+now to showcase this. So here we are.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-setting-things-up" class="anchor" aria-hidden="true" href="#setting-things-up"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting things up&lt;/h1&gt;
+&lt;p&gt;Currently I have only tested this on linux, and I still haven't setup CI to
+produce binaries yet, so you'll going to have to build it yourself.&lt;/p&gt;
+&lt;p&gt;First you'll going to have to install nix if you don't have it already:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl https://nixos.org/nix/install | sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then clone this repo &amp;amp; submodules:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone --recursive https://github.com/MaxOw/RuneSlayer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And build it with &lt;code&gt;nix-build&lt;/code&gt; (when running this command for the first time,
+even with binary caches this will probably take a while so go make yourself some
+coffee / read some news).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ nix-build
+$ result/bin/RuneSlayer # to run it
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively if you'd like to enter development environment:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ nix-shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal configure; cabal build
+$ dist/build/RuneSlayer/RuneSlayer # to run it
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h1&gt;
+&lt;p&gt;Copyright (c) 2018-2019, Maksymilian Owsianny&lt;/p&gt;
+&lt;p&gt;All rights reserved.&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>MaxOw</author><guid isPermaLink="false">https://github.com/MaxOw/RuneSlayer</guid><pubDate>Sat, 16 Nov 2019 00:05:00 GMT</pubDate></item></channel></rss>
