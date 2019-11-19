@@ -1,2 +1,835 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: TeX, This week</title><link>https://github.com/trending/tex?since=weekly</link><description>The top repositories on GitHub for tex, measured weekly</description><pubDate>Mon, 18 Nov 2019 01:06:44 GMT</pubDate><lastBuildDate>Mon, 18 Nov 2019 01:06:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in TeX, This week today</title><pubDate>Mon, 18 Nov 2019 01:06:44 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: TeX, This week</title><link>https://github.com/trending/tex?since=weekly</link><description>The top repositories on GitHub for tex, measured weekly</description><pubDate>Tue, 19 Nov 2019 01:07:13 GMT</pubDate><lastBuildDate>Tue, 19 Nov 2019 01:07:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>exacity/deeplearningbook-chinese #1 in TeX, This week</title><link>https://github.com/exacity/deeplearningbook-chinese</link><description>&lt;p&gt;&lt;i&gt;Deep Learning Book Chinese Translation&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-deep-learning-中文翻译" class="anchor" aria-hidden="true" href="#deep-learning-中文翻译"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deep Learning 中文翻译&lt;/h1&gt;
+&lt;p&gt;在众多网友的帮助和校对下，中文版终于出版了。尽管还有很多问题，但至少90%的内容是可读的，并且是准确的。
+我们尽可能地保留了原书&lt;a href="http://www.deeplearningbook.org/" rel="nofollow"&gt;Deep Learning&lt;/a&gt;中的意思并保留原书的语句。&lt;/p&gt;
+&lt;p&gt;然而我们水平有限，我们无法消除众多读者的方差。我们仍需要大家的建议和帮助，一起减小翻译的偏差。&lt;/p&gt;
+&lt;p&gt;大家所要做的就是阅读，然后汇总你的建议，提issue（最好不要一个一个地提）。如果你确定你的建议不需要商量，可以直接发起PR。&lt;/p&gt;
+&lt;p&gt;对应的翻译者：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第1、4、7、10、14、20章及第12.4、12.5节由 @swordyork 负责&lt;/li&gt;
+&lt;li&gt;第2、5、8、11、15、18章由 @liber145 负责&lt;/li&gt;
+&lt;li&gt;第3、6、9章由 @KevinLee1110 负责&lt;/li&gt;
+&lt;li&gt;第13、16、17、19章及第12.1至12.3节由 @futianfan 负责&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-面向的读者" class="anchor" aria-hidden="true" href="#面向的读者"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;面向的读者&lt;/h2&gt;
+&lt;p&gt;请直接下载&lt;a href="https://github.com/exacity/deeplearningbook-chinese/releases/download/v0.5-beta/dlbook_cn_v0.5-beta.pdf"&gt;PDF&lt;/a&gt;阅读。
+不打算提供EPUB等格式，如有需要请自行修改。&lt;/p&gt;
+&lt;p&gt;这一版准确性已经有所提高，读者可以以中文版为主、英文版为辅来阅读学习，但我们仍建议研究者阅读&lt;a href="http://www.deeplearningbook.org/" rel="nofollow"&gt;原版&lt;/a&gt;。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-出版及开源原因" class="anchor" aria-hidden="true" href="#出版及开源原因"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;出版及开源原因&lt;/h2&gt;
+&lt;p&gt;本书由人民邮电出版社出版，如果你觉得中文版PDF对你有所帮助，希望你能支持下纸质正版书籍。
+如果你觉得中文版不行，希望你能多提建议。非常感谢各位！
+纸质版也会进一步更新，需要大家更多的建议和意见，一起完善中文版。&lt;/p&gt;
+&lt;p&gt;纸质版目前在人民邮电出版社的异步社区出售，见&lt;a href="http://www.epubit.com.cn/book/details/4278" rel="nofollow"&gt;地址&lt;/a&gt;。
+价格不低，但看了样本之后，我们认为物有所值。
+注意，我们不会通过媒体进行宣传，希望大家先看电子版内容，再判断是否购买纸质版。&lt;/p&gt;
+&lt;p&gt;以下是开源的具体原因：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我们不是文学工作者，不专职翻译。单靠我们，无法给出今天的翻译，众多网友都给我们提出了宝贵的建议，因此开源帮了很大的忙。出版社会给我们稿费（我们也不知道多少，可能2万左右），我们也不好意思自己用，商量之后觉得捐出是最合适的，以所有贡献过的网友的名义（我们把稿费捐给了杉树公益，用于4名贵州高中生三年的生活费，见&lt;a href="https://github.com/exacity/deeplearningbook-chinese/blob/master/donation.pdf"&gt;捐赠情况&lt;/a&gt;）。&lt;/li&gt;
+&lt;li&gt;PDF电子版对于技术类书籍来说是很重要的，随时需要查询，拿着纸质版到处走显然不合适。国外很多技术书籍都有对应的电子版（虽然不一定是正版），而国内的几乎没有。个人认为这是出版社或者作者认为国民素质还没有高到主动为知识付费的境界，所以不愿意"泄露"电子版。时代在进步，我们也需要改变。特别是翻译作品普遍质量不高的情况下，要敢为天下先。&lt;/li&gt;
+&lt;li&gt;深度学习发展太快，日新月异，所以我们希望大家更早地学到相关的知识。我觉得原作者开放PDF电子版也有类似的考虑，也就是先阅读后付费。我们认为中国人口素质已经足够高，懂得为知识付费。当然这不是付给我们的，是付给出版社的，出版社再付给原作者。我们不希望中文版的销量因PDF电子版的存在而下滑。出版社只有值回了版权才能在以后引进更多的优秀书籍。我们这个开源翻译先例也不会成为一个反面案例，以后才会有更多的PDF电子版。&lt;/li&gt;
+&lt;li&gt;开源也涉及版权问题，出于版权原因，我们不再更新此初版PDF文件，请大家以最终的纸质版为准。（但源码会一直更新）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-致谢" class="anchor" aria-hidden="true" href="#致谢"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;致谢&lt;/h2&gt;
+&lt;p&gt;我们有3个类别的校对人员。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;负责人也就是对应的翻译者。&lt;/li&gt;
+&lt;li&gt;简单阅读，对语句不通顺或难以理解的地方提出修改意见。&lt;/li&gt;
+&lt;li&gt;中英对比，进行中英对应阅读，排除少翻错翻的情况。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所有校对建议都保存在各章的&lt;code&gt;annotations.txt&lt;/code&gt;文件中。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;章节&lt;/th&gt;
+&lt;th&gt;负责人&lt;/th&gt;
+&lt;th&gt;简单阅读&lt;/th&gt;
+&lt;th&gt;中英对比&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter1_introduction/" rel="nofollow"&gt;第一章 前言&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;lc, @SiriusXDJ, @corenel, @NeutronT&lt;/td&gt;
+&lt;td&gt;@linzhp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter2_linear_algebra/" rel="nofollow"&gt;第二章 线性代数&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;@SiriusXDJ, @angrymidiao&lt;/td&gt;
+&lt;td&gt;@badpoem&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter3_probability_and_information_theory/" rel="nofollow"&gt;第三章 概率与信息论&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@KevinLee1110&lt;/td&gt;
+&lt;td&gt;@SiriusXDJ&lt;/td&gt;
+&lt;td&gt;@kkpoker, @Peiyan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter4_numerical_computation/" rel="nofollow"&gt;第四章 数值计算&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;@zhangyafeikimi&lt;/td&gt;
+&lt;td&gt;@hengqujushi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter5_machine_learning_basics/" rel="nofollow"&gt;第五章 机器学习基础&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;@wheaio, @huangpingchun&lt;/td&gt;
+&lt;td&gt;@fairmiracle, @linzhp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter6_deep_feedforward_networks/" rel="nofollow"&gt;第六章 深度前馈网络&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@KevinLee1110&lt;/td&gt;
+&lt;td&gt;David_Chow, @linzhp, @sailordiary&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter7_regularization/" rel="nofollow"&gt;第七章 深度学习中的正则化&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@NBZCC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter8_optimization_for_training_deep_models/" rel="nofollow"&gt;第八章 深度模型中的优化&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;@happynoom, @codeVerySlow&lt;/td&gt;
+&lt;td&gt;@huangpingchun&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter9_convolutional_networks/" rel="nofollow"&gt;第九章 卷积网络&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@KevinLee1110&lt;/td&gt;
+&lt;td&gt;@zhaoyu611, @corenel&lt;/td&gt;
+&lt;td&gt;@zhiding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter10_sequence_modeling_rnn/" rel="nofollow"&gt;第十章 序列建模：循环和递归网络&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;lc&lt;/td&gt;
+&lt;td&gt;@zhaoyu611, @yinruiqing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter11_practical_methodology/" rel="nofollow"&gt;第十一章 实践方法论&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter12_applications/" rel="nofollow"&gt;第十二章 应用&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork, @futianfan&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@corenel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter13_linear_factor_models/" rel="nofollow"&gt;第十三章 线性因子模型&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@futianfan&lt;/td&gt;
+&lt;td&gt;@cloudygoose&lt;/td&gt;
+&lt;td&gt;@ZhiweiYang&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter14_autoencoders/" rel="nofollow"&gt;第十四章 自编码器&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@Seaball, @huangpingchun&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter15_representation_learning/" rel="nofollow"&gt;第十五章 表示学习&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;@cnscottzheng&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter16_structured_probabilistic_modelling/" rel="nofollow"&gt;第十六章 深度学习中的结构化概率模型&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@futianfan&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter17_monte_carlo_methods/" rel="nofollow"&gt;第十七章 蒙特卡罗方法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@futianfan&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@sailordiary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter18_confronting_the_partition_function/" rel="nofollow"&gt;第十八章 面对配分函数&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@liber145&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@tankeco&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter19_approximate_inference/" rel="nofollow"&gt;第十九章 近似推断&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@futianfan&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@sailordiary, @hengqujushi, huanghaojun&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://exacity.github.io/deeplearningbook-chinese/Chapter20_deep_generative_models/" rel="nofollow"&gt;第二十章 深度生成模型&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;@swordyork&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;参考文献&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;@pkuwwt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;我们会在纸质版正式出版的时候，在书中致谢，正式感谢各位作出贡献的同学！&lt;/p&gt;
+&lt;p&gt;还有很多同学提出了不少建议，我们都列在此处。&lt;/p&gt;
+&lt;p&gt;@tttwwy @tankeco @fairmiracle @GageGao @huangpingchun @MaHongP @acgtyrant @yanhuibin315 @Buttonwood @titicacafz
+@weijy026a @RuiZhang1993 @zymiboxpay @xingkongliang @oisc @tielei @yuduowu @Qingmu @HC-2016 @xiaomingabc
+@bengordai @Bojian @JoyFYan @minoriwww @khty2000 @gump88 @zdx3578 @PassStory @imwebson @wlbksy @roachsinai @Elvinczp
+@endymecy name:YUE-DaJiong @9578577 @linzhp @cnscottzheng @germany-zhu  @zhangyafeikimi @showgood163 @gump88
+@kangqf @NeutronT @badpoem @kkpoker @Seaball @wheaio @angrymidiao @ZhiweiYang @corenel @zhaoyu611 @SiriusXDJ @dfcv24 EmisXXY
+FlyingFire vsooda @friskit-china @poerin @ninesunqian @JiaqiYao @Sofring @wenlei @wizyoung @imageslr @@indam @XuLYC
+@zhouqingping @freedomRen @runPenguin @pkuwwt @wuqi @tjliupeng @neo0801 @jt827859032 @demolpc @fishInAPool
+@xiaolangyuxin @jzj1993 @whatbeg LongXiaJun jzd&lt;/p&gt;
+&lt;p&gt;如有遗漏，请务必通知我们，可以发邮件至&lt;code&gt;echo c3dvcmQueW9ya0BnbWFpbC5jb20K | base64 --decode&lt;/code&gt;。
+这是我们必须要感谢的，所以不要不好意思。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-todo" class="anchor" aria-hidden="true" href="#todo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TODO&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;排版&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-注意" class="anchor" aria-hidden="true" href="#注意"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;注意&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;各种问题或者建议可以提issue，建议使用中文。&lt;/li&gt;
+&lt;li&gt;由于版权问题，我们不能将图片和bib上传，请见谅。&lt;/li&gt;
+&lt;li&gt;Due to copyright issues, we would not upload figures and the bib file.&lt;/li&gt;
+&lt;li&gt;可用于学习研究目的，不得用于任何商业行为。谢谢！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-markdown格式" class="anchor" aria-hidden="true" href="#markdown格式"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown格式&lt;/h2&gt;
+&lt;p&gt;这种格式确实比较重要，方便查阅，也方便索引。初步转换后，生成网页，具体见&lt;a href="https://exacity.github.io/deeplearningbook-chinese" rel="nofollow"&gt;deeplearningbook-chinese&lt;/a&gt;。
+注意，这种转换没有把图放进去，也不会放图。目前使用单个&lt;a href="scripts/convert2md.sh"&gt;脚本&lt;/a&gt;，基于latex文件转换，以后可能会更改但原则是不直接修改&lt;a href="docs/_posts"&gt;md文件&lt;/a&gt;。
+需要的同学可以自行修改&lt;a href="scripts/convert2md.sh"&gt;脚本&lt;/a&gt;。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-html格式" class="anchor" aria-hidden="true" href="#html格式"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTML格式&lt;/h2&gt;
+&lt;p&gt;读者可以使用&lt;a href="https://github.com/coolwanglu/pdf2htmlEX"&gt;pdf2htmlEX&lt;/a&gt;进行转换，直接将PDF转换为HTML。&lt;/p&gt;
+&lt;p&gt;Updating.....&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>exacity</author><guid isPermaLink="false">https://github.com/exacity/deeplearningbook-chinese</guid><pubDate>Tue, 19 Nov 2019 00:01:00 GMT</pubDate></item><item><title>lib-pku/libpku #2 in TeX, This week</title><link>https://github.com/lib-pku/libpku</link><description>&lt;p&gt;&lt;i&gt;贵校课程资料民间整理&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-libpku---贵校课程资料民间整理" class="anchor" aria-hidden="true" href="#libpku---贵校课程资料民间整理"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;libpku - 贵校课程资料民间整理&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-preface" class="anchor" aria-hidden="true" href="#preface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preface&lt;/h2&gt;
+&lt;p&gt;（引用自 &lt;a href="https://github.com/QSCTech/zju-icicles"&gt;QSCTech/zju-icicles&lt;/a&gt; ）&lt;/p&gt;
+&lt;p&gt;来到一所大学，从第一次接触许多课，直到一门一门完成，这个过程中我们时常收集起许多资料和情报。&lt;/p&gt;
+&lt;p&gt;有些是需要在网上搜索的电子书，每次见到一门新课程，Google 一下教材名称，有的可以立即找到，有的却是要花费许多眼力；有些是历年试卷或者 A4 纸，前人精心收集制作，抱着能对他人有用的想法公开，却需要在各个群或者私下中摸索以至于从学长手中代代相传；有些是上完一门课才恍然领悟的技巧，原来这门课重点如此，当初本可以更轻松地完成得更好……&lt;/p&gt;
+&lt;p&gt;我也曾很努力地收集各种课程资料，但到最后，某些重要信息的得到却往往依然是纯属偶然。这种状态时常令我感到后怕与不安。我也曾在课程结束后终于有了些许方法与总结，但这些想法无处诉说，最终只能把花费时间与精力才换来的经验耗散在了漫漫的遗忘之中。&lt;/p&gt;
+&lt;p&gt;我为这一年一年，这么多人孤军奋战的重复劳动感到不平。&lt;/p&gt;
+&lt;p&gt;我希望能够将这些隐晦的、不确定的、口口相传的资料和经验，变为公开的、易于获取的和大家能够共同完善、积累的共享资料。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我希望只要是前人走过的弯路，后人就不必再走。&lt;/strong&gt; 这是我的信念，也是我建立这个项目的原因。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;使用方法：访问 &lt;a href="https://lib-pku.github.io/" rel="nofollow"&gt;https://lib-pku.github.io/&lt;/a&gt; ，点击资料链接即可下载。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://minhaskamal.github.io/DownGit/#/home" rel="nofollow"&gt;https://minhaskamal.github.io/DownGit/#/home&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contribution" class="anchor" aria-hidden="true" href="#contribution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribution&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;欢迎贡献！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;欢迎贡献！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;欢迎贡献！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;——因为很重要所以说了三遍&lt;/p&gt;
+&lt;p&gt;Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！&lt;/p&gt;
+&lt;p&gt;来自大家的关注、维护和贡献，才是让这个攻略继续存在的动力~&lt;/p&gt;
+&lt;p&gt;对于课程的评价可写在对应课程文件夹的 &lt;code&gt;README.md&lt;/code&gt; 中。如果想上传课件（请确保无版权问题），推荐使用 PDF 格式，避免系统差。&lt;/p&gt;
+&lt;p&gt;由于本项目体积很大，故推荐采用在 &lt;strong&gt;GitHub Web 端直接上传&lt;/strong&gt; 的方式，具体操作如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先 Fork 本项目&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;上传文件到已有文件夹：打开对应文件夹，点击绿色 Download 按钮旁的 upload，上传你的文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上传文件到新文件夹：打开任意文件夹，点击绿色 Download 按钮旁的 upload，&lt;strong&gt;把浏览器地址栏中文件夹名称改为你想要新建的文件夹名称，然后回车&lt;/strong&gt;，上传你的文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;提交 PR：Fork 本项目，然后在 GitHub 网页端点击 Upload File 上传文件，发起 PR 即可。留意一下项目的文件组织喔。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;或者也可以直接附加在 &lt;strong&gt;Issue&lt;/strong&gt; 中，由维护者进行添加。&lt;/p&gt;
+&lt;p&gt;或者也可以发送邮件至 &lt;strong&gt;&lt;a href="mailto:libpku@protonmail.com"&gt;libpku@protonmail.com&lt;/a&gt;&lt;/strong&gt; ，由维护者进行添加。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-disclaimer" class="anchor" aria-hidden="true" href="#disclaimer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;这不是北京大学图书馆。
+我们也不对项目中信息的准确性或真实性做任何承诺。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果有侵权情况，麻烦您发送必要的信息至 &lt;a href="mailto:libpku@protonmail.com"&gt;libpku@protonmail.com&lt;/a&gt; ，带来不便还请您谅解。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;资料来自网络，相关权利由原作者所有，这个 repo 仅用于收集现有资料。&lt;/p&gt;
+&lt;p&gt;当然，我们不会为收集到的资料收费，或是尝试收取捐赠。&lt;/p&gt;
+&lt;p&gt;我们只是尝试为后来的同学节省一些时间。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-related-works" class="anchor" aria-hidden="true" href="#related-works"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related Works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/QSCTech/zju-icicles"&gt;浙江大学课程攻略共享计划&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/martinwu42/project-hover"&gt;气垫船计划——免费、去中心化的北京大学往年题资料库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/EECS-PKU-XSB/Shared-learning-materials"&gt;北京大学信科学生会学术部资料库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tongtzeho/PKUCourse"&gt;北大计算机课程大作业&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/PKUanonym/REKCARC-TSC-UHT"&gt;清华大学计算机系课程攻略&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zjdx1998/seucourseshare"&gt;东南大学课程共享计划&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/USTC-Resource/USTC-Course"&gt;中国科学技术大学计算机学院课程资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/CoolPhilChen/SJTU-Courses/"&gt;上海交通大学课程资料分享&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sysuexam/SYSU-Exam"&gt;中山大学课程资料分享&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/idealclover/NJU-Review-Materials"&gt;南京大学课程复习资料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/CooperNiu/ZZU-Courses-Resource"&gt;郑州大学课程复习资料&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(more to be added....)&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>lib-pku</author><guid isPermaLink="false">https://github.com/lib-pku/libpku</guid><pubDate>Tue, 19 Nov 2019 00:02:00 GMT</pubDate></item><item><title>posquit0/Awesome-CV #3 in TeX, This week</title><link>https://github.com/posquit0/Awesome-CV</link><description>&lt;p&gt;&lt;i&gt;:page_facing_up: Awesome CV is LaTeX template for your outstanding job application&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 align="center"&gt;&lt;a id="user-content-------------awesome-cv" class="anchor" aria-hidden="true" href="#------------awesome-cv"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV Documentation"&gt;
+    &lt;img alt="AwesomeCV" src="https://github.com/posquit0/Awesome-CV/raw/master/icon.png" width="200px" height="200px" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;br&gt;
+  Awesome CV
+&lt;/h1&gt;
+&lt;p align="center"&gt;
+  LaTeX template for your outstanding job application
+&lt;/p&gt;
+&lt;div align="center"&gt;
+  &lt;a href="https://www.paypal.me/posquit0" rel="nofollow"&gt;
+    &lt;img alt="Donate" src="https://camo.githubusercontent.com/abbdd7bf97ae7919db5962b255f40aded5189c4f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d50617950616c2d626c75652e737667" data-canonical-src="https://img.shields.io/badge/Donate-PayPal-blue.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://circleci.com/gh/posquit0/Awesome-CV" rel="nofollow"&gt;
+    &lt;img alt="CircleCI" src="https://camo.githubusercontent.com/d42593802854990d35ca42943e478dd35d6c64c9/68747470733a2f2f636972636c6563692e636f6d2f67682f706f7371756974302f417765736f6d652d43562e7376673f7374796c653d736869656c64" data-canonical-src="https://circleci.com/gh/posquit0/Awesome-CV.svg?style=shield" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf" rel="nofollow"&gt;
+    &lt;img alt="Example Resume" src="https://camo.githubusercontent.com/836d3a9f44da3462e5c47b6c58bf066bffbaf739/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f726573756d652d7064662d677265656e2e737667" data-canonical-src="https://img.shields.io/badge/resume-pdf-green.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/cv.pdf" rel="nofollow"&gt;
+    &lt;img alt="Example CV" src="https://camo.githubusercontent.com/8afab53a91bc30d0da18a9ea0cc70f2d0a1571df/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f63762d7064662d677265656e2e737667" data-canonical-src="https://img.shields.io/badge/cv-pdf-green.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf" rel="nofollow"&gt;
+    &lt;img alt="Example Coverletter" src="https://camo.githubusercontent.com/ce88ed0c1af9e5611df67818460447b69572ae9d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f7665726c65747465722d7064662d677265656e2e737667" data-canonical-src="https://img.shields.io/badge/coverletter-pdf-green.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;h2&gt;&lt;a id="user-content-what-is-awesome-cv" class="anchor" aria-hidden="true" href="#what-is-awesome-cv"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Awesome CV?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Awesome CV&lt;/strong&gt; is LaTeX template for a &lt;strong&gt;CV(Curriculum Vitae)&lt;/strong&gt;, &lt;strong&gt;Résumé&lt;/strong&gt; or &lt;strong&gt;Cover Letter&lt;/strong&gt; inspired by &lt;a href="https://www.sharelatex.com/templates/cv-or-resume/fancy-cv" rel="nofollow"&gt;Fancy CV&lt;/a&gt;. It is easy to customize your own template, especially since it is really written by a clean, semantic markup.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-donate" class="anchor" aria-hidden="true" href="#donate"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Donate&lt;/h2&gt;
+&lt;p&gt;Please help keep this project alive! Donations are welcome and will go towards further development of this project.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PayPal: paypal.me/posquit0
+BTC: 1Je3DxJVM2a9nTVPNo55SfQwpmxA6N2KKb
+BCH: 1Mg1wG7PwHGrHYSWS67TsGSjo5GHEVbF16
+ETH: 0x77ED9B4659F80205E9B9C9FB1E26EDB9904AFCC7
+QTUM: QZT7D6m3QtTTqp7s4ZWAwLtGDsoHMMaM8E
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Thank you for your support!&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-preview" class="anchor" aria-hidden="true" href="#preview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preview&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-résumé" class="anchor" aria-hidden="true" href="#résumé"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Résumé&lt;/h4&gt;
+&lt;p&gt;You can see &lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf" rel="nofollow"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Page. 1&lt;/th&gt;
+&lt;th align="center"&gt;Page. 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-0.png" alt="Résumé" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-1.png" alt="Résumé" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;&lt;a id="user-content-cover-letter" class="anchor" aria-hidden="true" href="#cover-letter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cover Letter&lt;/h4&gt;
+&lt;p&gt;You can see &lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf" rel="nofollow"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Without Sections&lt;/th&gt;
+&lt;th align="center"&gt;With Sections&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-0.png" alt="Cover Letter(Traditional)" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf" rel="nofollow"&gt;&lt;img src="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-1.png" alt="Cover Letter(Awesome)" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.overleaf.com/latex/templates/awesome-cv/tvmzpvdjfqxp" rel="nofollow"&gt;&lt;strong&gt;Edit Résumé on OverLeaf.com&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/pfzzjspkthbk" rel="nofollow"&gt;&lt;strong&gt;Edit Cover Letter on OverLeaf.com&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note:&lt;/em&gt; Above services do not guarantee up-to-date source code of Awesome CV&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to Use&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;A full TeX distribution is assumed.  &lt;a href="http://tex.stackexchange.com/q/55437" rel="nofollow"&gt;Various distributions for different operating systems (Windows, Mac, *nix) are available&lt;/a&gt; but TeX Live is recommended.
+You can &lt;a href="http://tex.stackexchange.com/q/1092" rel="nofollow"&gt;install TeX from upstream&lt;/a&gt; (recommended; most up-to-date) or use &lt;code&gt;sudo apt-get install texlive-full&lt;/code&gt; if you really want that.  (It's generally a few years behind.)&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h4&gt;
+&lt;p&gt;At a command prompt, run&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ xelatex {your-cv}.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This should result in the creation of &lt;code&gt;{your-cv}.pdf&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-credit" class="anchor" aria-hidden="true" href="#credit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credit&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.latex-project.org" rel="nofollow"&gt;&lt;strong&gt;LaTeX&lt;/strong&gt;&lt;/a&gt; is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/furl/latex-fontawesome"&gt;&lt;strong&gt;LaTeX FontAwesome&lt;/strong&gt;&lt;/a&gt; is bindings for FontAwesome icons to be used in XeLaTeX.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/google/roboto"&gt;&lt;strong&gt;Roboto&lt;/strong&gt;&lt;/a&gt; is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/adobe-fonts/source-sans-pro"&gt;&lt;strong&gt;Source Sans Pro&lt;/strong&gt;&lt;/a&gt; is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contact" class="anchor" aria-hidden="true" href="#contact"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contact&lt;/h2&gt;
+&lt;p&gt;You are free to take my &lt;code&gt;.tex&lt;/code&gt; file and modify it to create your own resume. Please don't use my resume for anything else without my permission, though!&lt;/p&gt;
+&lt;p&gt;If you have any questions, feel free to join me at &lt;code&gt;#posquit0&lt;/code&gt; on Freenode and ask away. Click &lt;a href="https://kiwiirc.com/client/irc.freenode.net/posquit0" rel="nofollow"&gt;here&lt;/a&gt; to connect.&lt;/p&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-see-also" class="anchor" aria-hidden="true" href="#see-also"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See Also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/posquit0/hugo-awesome-identity"&gt;Awesome Identity&lt;/a&gt; - A single-page Hugo theme to introduce yourself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>posquit0</author><guid isPermaLink="false">https://github.com/posquit0/Awesome-CV</guid><pubDate>Tue, 19 Nov 2019 00:03:00 GMT</pubDate></item><item><title>HarisIqbal88/PlotNeuralNet #4 in TeX, This week</title><link>https://github.com/HarisIqbal88/PlotNeuralNet</link><description>&lt;p&gt;&lt;i&gt;Latex code for making neural networks diagrams&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-plotneuralnet" class="anchor" aria-hidden="true" href="#plotneuralnet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PlotNeuralNet&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://doi.org/10.5281/zenodo.2526396" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/89c8c312f40c2d237b2319aececd5740a147b11c/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e323532363339362e737667" alt="DOI" data-canonical-src="https://zenodo.org/badge/DOI/10.5281/zenodo.2526396.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Latex code for drawing neural networks for reports and presentation. Have a look into examples to see how they are made. Additionally, lets consolidate any improvements that you make and fix any bugs to help more people with this code.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the following packages on Ubuntu.
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu 16.04&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-latex-extra
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu 18.04.2
+Base on this &lt;a href="https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d"&gt;website&lt;/a&gt;, please install the following packages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-fonts-recommended
+sudo apt-get install texlive-fonts-extra
+sudo apt-get install texlive-latex-extra
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Execute the example as followed.
+&lt;pre&gt;&lt;code&gt;cd pyexamples/
+bash ../tikzmake.sh test_simple
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-todo" class="anchor" aria-hidden="true" href="#todo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TODO&lt;/h2&gt;
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; Python interface&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Add easy legend functionality&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Add more layer shapes like TruncatedPyramid, 2DSheet etc&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Add examples for RNN and likes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-latex-usage" class="anchor" aria-hidden="true" href="#latex-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Latex usage&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="examples"&gt;&lt;code&gt;examples&lt;/code&gt;&lt;/a&gt; directory for usage.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-python-usage" class="anchor" aria-hidden="true" href="#python-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Python usage&lt;/h2&gt;
+&lt;p&gt;First, create a new directory and a new Python file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir my_project
+$ cd my_project
+vim my_arch.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add the following code to your new file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-python"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; sys
+sys.path.append(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;../&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+&lt;span class="pl-k"&gt;from&lt;/span&gt; pycore.tikzeng &lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; defined your arch&lt;/span&gt;
+arch &lt;span class="pl-k"&gt;=&lt;/span&gt; [
+    to_head( &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;..&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; ),
+    to_cor(),
+    to_begin(),
+    to_Conv(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;conv1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;512&lt;/span&gt;, &lt;span class="pl-c1"&gt;64&lt;/span&gt;, &lt;span class="pl-v"&gt;offset&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(0,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;to&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(0,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;64&lt;/span&gt;, &lt;span class="pl-v"&gt;depth&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;64&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;2&lt;/span&gt; ),
+    to_Pool(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;pool1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;offset&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(0,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;to&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(conv1-east)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;),
+    to_Conv(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;conv2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;128&lt;/span&gt;, &lt;span class="pl-c1"&gt;64&lt;/span&gt;, &lt;span class="pl-v"&gt;offset&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(1,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;to&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(pool1-east)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;32&lt;/span&gt;, &lt;span class="pl-v"&gt;depth&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;32&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;2&lt;/span&gt; ),
+    to_connection( &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;pool1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;conv2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;),
+    to_Pool(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;pool2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;offset&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(0,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;to&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(conv2-east)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;height&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;28&lt;/span&gt;, &lt;span class="pl-v"&gt;depth&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;28&lt;/span&gt;, &lt;span class="pl-v"&gt;width&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt;),
+    to_SoftMax(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;soft1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;10&lt;/span&gt; ,&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(3,0,0)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(pool1-east)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-v"&gt;caption&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;SOFT&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;  ),
+    to_connection(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;pool2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;soft1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;),
+    to_end()
+    ]
+
+&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;():
+    namefile &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;str&lt;/span&gt;(sys.argv[&lt;span class="pl-c1"&gt;0&lt;/span&gt;]).split(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;.&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)[&lt;span class="pl-c1"&gt;0&lt;/span&gt;]
+    to_generate(arch, namefile &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;.tex&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; )
+
+&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-c1"&gt;__name__&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;__main__&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;:
+    main()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, run the program as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bash ../tikzmake.sh my_arch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Following are some network representations:&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/17570785/50308846-c2231880-049c-11e9-8763-3daa1024de78.png"&gt;&lt;img src="https://user-images.githubusercontent.com/17570785/50308846-c2231880-049c-11e9-8763-3daa1024de78.png" width="85%" height="85%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6 align="center"&gt;&lt;a id="user-content-fcn-8" class="anchor" aria-hidden="true" href="#fcn-8"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FCN-8&lt;/h6&gt;
+&lt;p align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/17570785/50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png"&gt;&lt;img src="https://user-images.githubusercontent.com/17570785/50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png" width="85%" height="85%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6 align="center"&gt;&lt;a id="user-content-fcn-32" class="anchor" aria-hidden="true" href="#fcn-32"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FCN-32&lt;/h6&gt;
+&lt;p align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/17570785/50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png"&gt;&lt;img src="https://user-images.githubusercontent.com/17570785/50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png" width="85%" height="85%" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6 align="center"&gt;&lt;a id="user-content-holistically-nested-edge-detection" class="anchor" aria-hidden="true" href="#holistically-nested-edge-detection"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Holistically-Nested Edge Detection&lt;/h6&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>HarisIqbal88</author><guid isPermaLink="false">https://github.com/HarisIqbal88/PlotNeuralNet</guid><pubDate>Tue, 19 Nov 2019 00:04:00 GMT</pubDate></item><item><title>billryan/resume #5 in TeX, This week</title><link>https://github.com/billryan/resume</link><description>&lt;p&gt;&lt;i&gt;An elegant \LaTeX\ résumé template&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-résumé" class="anchor" aria-hidden="true" href="#résumé"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Résumé&lt;/h1&gt;
+&lt;p&gt;Hit branch &lt;a href="https://github.com/billryan/resume/tree/zh_CN"&gt;zh_CN&lt;/a&gt; if you want a Simplified Chinese résumé.&lt;/p&gt;
+&lt;p&gt;中文用户请前往 &lt;a href="https://github.com/billryan/resume/tree/zh_CN"&gt;zh_CN&lt;/a&gt; 分支。&lt;/p&gt;
+&lt;p&gt;An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Inspired by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/zachscrivena/simple-resume-cv"&gt;zachscrivena/simple-resume-cv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ctan.org/pkg/res" rel="nofollow"&gt;res&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jianxu.net/en/files/JianXu_CV.pdf" rel="nofollow"&gt;JianXu's CV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html" rel="nofollow"&gt;paciorek's CV/Resume template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html" rel="nofollow"&gt;How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to further customize or extend&lt;/li&gt;
+&lt;li&gt;Full support for unicode characters (e.g. CJK) with \XeLaTeX\&lt;/li&gt;
+&lt;li&gt;Perfect Simplified Chinese fonts supported with Adobefonts&lt;/li&gt;
+&lt;li&gt;FontAwesome 4.6.3 support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fork this repository&lt;/li&gt;
+&lt;li&gt;Add information about you directly in GitHub&lt;/li&gt;
+&lt;li&gt;Compile TeX file to PDF with &lt;a href="https://latexonline.cc/" rel="nofollow"&gt;LaTeX.Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Can also use Overleaf for online compilation (&lt;a href="https://www.overleaf.com/" rel="nofollow"&gt;https://www.overleaf.com/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-sample-output" class="anchor" aria-hidden="true" href="#sample-output"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sample Output&lt;/h3&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png"&gt;&lt;img src="https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png" alt="English" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1292567/62409351-3f546580-b608-11e9-9f6d-d232a68c5451.png"&gt;&lt;img src="https://user-images.githubusercontent.com/1292567/62409351-3f546580-b608-11e9-9f6d-d232a68c5451.png" alt="English with photo" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1292567/62409352-3fecfc00-b608-11e9-8d9e-76243ca3052a.png"&gt;&lt;img src="https://user-images.githubusercontent.com/1292567/62409352-3fecfc00-b608-11e9-8d9e-76243ca3052a.png" alt="简体中文" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/billryan/resume/files/3463503/resume.pdf"&gt;English PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/billryan/resume/files/3463501/resume_photo.pdf"&gt;English with photo PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/billryan/resume/files/3463502/resume-zh_CN.pdf"&gt;简体中文 PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit in ShareLaTeX online - &lt;a href="https://www.sharelatex.com/templates/556b27cf0d23e5a8117053d9" rel="nofollow"&gt;https://www.sharelatex.com/templates/556b27cf0d23e5a8117053d9&lt;/a&gt;, &lt;strong&gt;no TeX software install!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Compile tex on your Computer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you only need a résumé in English or have installed Adobe Simplified Chinese on your OS, &lt;strong&gt;It would be better to clone only the master branch,&lt;/strong&gt; since the Simplified Chinese fonts files are too large.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/billryan/resume.git --branch master --depth 1 --single-branch &amp;lt;folder&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://opensource.org/licenses/MIT" rel="nofollow"&gt;The MIT License (MIT)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyrighted fonts are not subjected to this License.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>billryan</author><guid isPermaLink="false">https://github.com/billryan/resume</guid><pubDate>Tue, 19 Nov 2019 00:05:00 GMT</pubDate></item><item><title>matze/mtheme #6 in TeX, This week</title><link>https://github.com/matze/mtheme</link><description>&lt;p&gt;&lt;i&gt;A modern LaTeX Beamer theme&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-metropolis" class="anchor" aria-hidden="true" href="#metropolis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Metropolis&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NOTICES FOR VERSION 1.0&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The package and theme name changed from &lt;em&gt;m&lt;/em&gt; to &lt;em&gt;metropolis&lt;/em&gt;!&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;title format&lt;/code&gt; values have been restructured. Please refer to the
+&lt;a href="http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf" rel="nofollow"&gt;manual&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Metropolis is a simple, modern Beamer theme suitable for anyone to use. It tries
+to minimize noise and maximize space for content; the only visual flourish it
+offers is an (optional) progress bar added to each slide. The core design
+principles of the theme were described in a blog post
+&lt;a href="http://bloerg.net/2014/09/20/a-modern-beamer-theme.html" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Not convinced? Have a look at the &lt;a href="http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/demo/demo.pdf" rel="nofollow"&gt;demo slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/da754cd10b8a0c20144d0fa848a347698ff7a197/687474703a2f2f692e696d6775722e636f6d2f4278753532667a2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/da754cd10b8a0c20144d0fa848a347698ff7a197/687474703a2f2f692e696d6775722e636f6d2f4278753532667a2e706e67" alt="Sample" data-canonical-src="http://i.imgur.com/Bxu52fz.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To install a stable version of this theme, please refer to update instructions
+of your TeX distribution. Metropolis is on &lt;a href="http://ctan.org/pkg/beamertheme-metropolis" rel="nofollow"&gt;CTAN&lt;/a&gt; since December
+2014 thus it is part of MikTeX and will be part of TeX Live 2016.&lt;/p&gt;
+&lt;p&gt;Installing Metropolis from source, like any Beamer theme, involves four easy
+steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Download the source&lt;/strong&gt; with a &lt;code&gt;git clone&lt;/code&gt; of the &lt;a href="https://github.com/matze/mtheme"&gt;Metropolis repository&lt;/a&gt;
+or as a &lt;a href="https://github.com/matze/mtheme/archive/master.zip"&gt;zip archive&lt;/a&gt; of
+the latest development version.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compile the style files&lt;/strong&gt; by running &lt;code&gt;make sty&lt;/code&gt; inside the downloaded
+directory. (Or run LaTeX directly on &lt;code&gt;source/metropolistheme.ins&lt;/code&gt;.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Move the resulting &lt;code&gt;*.sty&lt;/code&gt; files&lt;/strong&gt; to the folder containing your
+presentation. To use Metropolis with many presentations, run &lt;code&gt;make install&lt;/code&gt;
+or move the &lt;code&gt;*.sty&lt;/code&gt; files to a folder in your TeX path instead (might require
+&lt;code&gt;sudo&lt;/code&gt; rights).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use the theme for your presentation&lt;/strong&gt; by declaring &lt;code&gt;\usetheme{metropolis}&lt;/code&gt; in
+the preamble of your Beamer document.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For best results&lt;/strong&gt; install Mozilla's &lt;a href="https://github.com/bBoxType/FiraSans"&gt;Fira Sans&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;The following code shows a minimal example of a Beamer presentation using
+Metropolis.&lt;/p&gt;
+&lt;div class="highlight highlight-text-tex-latex"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;\documentclass&lt;/span&gt;{&lt;span class="pl-c1"&gt;beamer&lt;/span&gt;}
+&lt;span class="pl-c1"&gt;\usetheme&lt;/span&gt;{metropolis}           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;%&lt;/span&gt; Use metropolis theme&lt;/span&gt;
+&lt;span class="pl-c1"&gt;\title&lt;/span&gt;{A minimal example}
+&lt;span class="pl-c1"&gt;\date&lt;/span&gt;{&lt;span class="pl-c1"&gt;\today&lt;/span&gt;}
+&lt;span class="pl-c1"&gt;\author&lt;/span&gt;{Matthias Vogelgesang}
+&lt;span class="pl-c1"&gt;\institute&lt;/span&gt;{Centre for Modern Beamer Themes}
+&lt;span class="pl-c1"&gt;\begin&lt;/span&gt;{&lt;span class="pl-smi"&gt;document&lt;/span&gt;}
+  &lt;span class="pl-c1"&gt;\maketitle&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;\section&lt;/span&gt;{&lt;span class="pl-en"&gt;First Section&lt;/span&gt;}
+  &lt;span class="pl-c1"&gt;\begin&lt;/span&gt;{&lt;span class="pl-smi"&gt;frame&lt;/span&gt;}{First Frame}
+    Hello, world!
+  &lt;span class="pl-c1"&gt;\end&lt;/span&gt;{&lt;span class="pl-smi"&gt;frame&lt;/span&gt;}
+&lt;span class="pl-c1"&gt;\end&lt;/span&gt;{&lt;span class="pl-smi"&gt;document&lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Detailed information on using Metropolis can be found in the &lt;a href="http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf" rel="nofollow"&gt;manual&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For an alternative dark color theme, please have a look at Ross Churchley's
+excellent &lt;a href="https://github.com/rchurchley/beamercolortheme-owl"&gt;owl&lt;/a&gt; theme.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The theme itself is licensed under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"&gt;Creative Commons Attribution-ShareAlike
+4.0 International License&lt;/a&gt;. This
+means that if you change the theme and re-distribute it, you &lt;em&gt;must&lt;/em&gt; retain the
+copyright notice header and license it under the same CC-BY-SA license. This
+does not affect the presentation that you create with the theme.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>matze</author><guid isPermaLink="false">https://github.com/matze/mtheme</guid><pubDate>Tue, 19 Nov 2019 00:06:00 GMT</pubDate></item><item><title>x-magus/ThesisUESTC #7 in TeX, This week</title><link>https://github.com/x-magus/ThesisUESTC</link><description>&lt;p&gt;&lt;i&gt;ThesisUESTC-电子科技大学毕业论文模板&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-thesisuestc-电子科技大学毕业论文模板" class="anchor" aria-hidden="true" href="#thesisuestc-电子科技大学毕业论文模板"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ThesisUESTC-电子科技大学毕业论文模板&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7b6278f421992dfe994ba3e8a8d3e5293774ec77/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4c50504c2d626c7565"&gt;&lt;img src="https://camo.githubusercontent.com/7b6278f421992dfe994ba3e8a8d3e5293774ec77/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4c50504c2d626c7565" alt="" data-canonical-src="https://img.shields.io/badge/license-LPPL-blue" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6eeb9de6910b1ae9bb8e4378620e8792c404d498/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f782d6d616775732f5468657369735545535443"&gt;&lt;img src="https://camo.githubusercontent.com/6eeb9de6910b1ae9bb8e4378620e8792c404d498/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f782d6d616775732f5468657369735545535443" alt="" data-canonical-src="https://img.shields.io/github/last-commit/x-magus/ThesisUESTC" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a88786e4d6ed1aa39a243feb90fef48fd4fc6c48/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f782d6d616775732f5468657369735545535443"&gt;&lt;img src="https://camo.githubusercontent.com/a88786e4d6ed1aa39a243feb90fef48fd4fc6c48/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f782d6d616775732f5468657369735545535443" alt="" data-canonical-src="https://img.shields.io/github/issues/x-magus/ThesisUESTC" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ThesisUESTC&lt;/strong&gt;提供用于排版电子科技大学毕业论文的LaTeX模板类，旨在帮助电子科技大学的毕业生高效地完成毕业论文的写作。模板提供各种方便的命令，自动化地排版论文的各个部分，使毕业论文轻易地满足学校的格式要求。为了支持更好的字体效果，模板基于XeLaTeX编写，并且放弃对CTeX的依赖，使模板更加稳定。&lt;/p&gt;
+&lt;p&gt;模板由电子科技大学物理电子学院2014级硕士研究生王稳编写，由于在毕业论文写作中遇到各种问题，希望有一个理想的解决方案，所以决定写一个模板出来。祝愿此项目能继续发展，解决各位同学毕业论文写作中的困难。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-使用方法" class="anchor" aria-hidden="true" href="#使用方法"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;使用方法&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-基本环境" class="anchor" aria-hidden="true" href="#基本环境"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;基本环境&lt;/h3&gt;
+&lt;p&gt;使用模板需要系统安装任意一种TeX环境，如&lt;a href="http://mirror.ctan.org/systems/texlive/Images/" rel="nofollow"&gt;TeXLive&lt;/a&gt;、&lt;a href="https://www.tug.org/mactex/mactex-download.html" rel="nofollow"&gt;MacTeX&lt;/a&gt;和&lt;a href="https://miktex.org/download" rel="nofollow"&gt;MiKTeX&lt;/a&gt;（都自动带有XeLaTeX引擎，但是不推荐CTeX），安装有SimSun和SimHei字体（其实就是宋体和黑体）以及Times New Roman英文字体。字体方面也可以像在线编辑环境那样指定所使用的字体文件。在MacOS下编译会自动识别操作系统，使用Songti SC和STHeiti字体，但需要启用&lt;code&gt;--shell-escape&lt;/code&gt;编译选项。&lt;/p&gt;
+&lt;p&gt;模板采用LaTeX类的形式封装，导入模板只需要把thesis-uestc.cls文件放在文档所在目录，在文档开头使用&lt;code&gt;\documentclass{thesis-uestc}&lt;/code&gt;命令将文档的类设置成thesis-uestc即可。使用BibTeX录入参考文献还需要&lt;code&gt;thesis-uestc.bst&lt;/code&gt;风格定义文件。&lt;/p&gt;
+&lt;p&gt;模板类有bachelor、master、promaster和doctor四个选项，对应本科、硕士、专业硕士和博士的毕业论文，默认选项为&lt;code&gt;master&lt;/code&gt;。文档内容的书写参考范例&lt;code&gt;main.tex&lt;/code&gt;。英语使用者可以选择&lt;code&gt;english&lt;/code&gt;选项，模版会按照英语论文的格式排版。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-文档编译" class="anchor" aria-hidden="true" href="#文档编译"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;文档编译&lt;/h3&gt;
+&lt;p&gt;编译文档请使用XeLaTeX引擎。模版提供latexmk设置文件用于自动编译。将命令行工作目录切换到项目文件夹下，执行&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;latexmk main.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;命令即可自动调用相关程序进行编译，处理各种文件依赖并自动预览。执行&lt;code&gt;latexmk -c&lt;/code&gt;命令清理所有缓存文件。&lt;/p&gt;
+&lt;p&gt;编译多文件结构的文档将文件名替换成&lt;code&gt;main_multifile.tex&lt;/code&gt;即可。使用TeXstudio、Texmaker或WinEdt等编辑环境请将编译引擎设置成latexmk，如果在Windows平台下使用MiKTeX还需要安装&lt;a href="http://strawberryperl.com/" rel="nofollow"&gt;Perl语言解释器&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;手动编译的话执行&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;xelatex main.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;命令即可，若文档内部有交叉引用或录入参考文献则需要编译两次。&lt;/p&gt;
+&lt;p&gt;使用BibTeX录入参考文献需要先运行一次xelatex，运行一次bibtex，再运行两次xelatex。使用BibTeX录入攻读学位期间的研究成果的情况下还需要额外运行一次&lt;code&gt;bibtex accomplish.aux&lt;/code&gt;。所以完整地编译包含两个BibTeX文献列表（一个是参考文献，一个是攻读学位期间的研究成果）的文档需要按顺序运行以下命令：&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;xelatex main.tex
+bibtex main.aux
+bibtex accomplish.aux
+xelatex main.tex
+xelatex main.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;使用Overleaf在线编辑只需打开发布在Overleaf Gallery里的&lt;a href="https://www.overleaf.com/latex/templates/uestc-thesis-template/nwpkhtrtjhrg" rel="nofollow"&gt;模板&lt;/a&gt;，点击OPEN AS TEMPLATE即可使用，在线自动编译和预览。Overleaf模板唯一的区别在于直接使用放置在项目根目录的字体文件。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-论文写作指南" class="anchor" aria-hidden="true" href="#论文写作指南"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;论文写作指南&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-论文封面" class="anchor" aria-hidden="true" href="#论文封面"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;论文封面&lt;/h3&gt;
+&lt;p&gt;论文封面和扉页由&lt;code&gt;\makecover&lt;/code&gt;命令添加，可以显示论文题目，作者，指导老师等。模版不会生成英文扉页和独创性声明，这两页包括中文封面最后正式提交时会由文印中心统一提供，无论自己排版的封面是否符合格式要求。已经包含的封面也不会影响任何前期的审核。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-中英文摘要" class="anchor" aria-hidden="true" href="#中英文摘要"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;中英文摘要&lt;/h3&gt;
+&lt;p&gt;中英文摘要应包含在&lt;code&gt;chineseabstract&lt;/code&gt;和&lt;code&gt;englishabstract&lt;/code&gt;环境中，对应的关键字使用&lt;code&gt;\chinesekeyword&lt;/code&gt;和&lt;code&gt;\englishkeyword&lt;/code&gt;命令添加，并包含在相应的环境中。模板自动设置页眉和页脚，其中中文摘要标题中间空一格，页眉不空格。依照学校的格式说明，模板自动根据摘要结束所在的页数决定是否再空一页。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-论文目录" class="anchor" aria-hidden="true" href="#论文目录"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;论文目录&lt;/h3&gt;
+&lt;p&gt;论文目录由命令&lt;code&gt;\thesistableofcontents&lt;/code&gt;添加，并且自动处理标题，页眉以及缩进等问题。依照学校的格式说明，模板自动根据目录结束所在的页数决定是否再空一页。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-绪论" class="anchor" aria-hidden="true" href="#绪论"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;绪论&lt;/h3&gt;
+&lt;p&gt;绪论是毕业论文的第一章，由于格式特殊（其实主要是页眉中间没有空格）由单独一个命令&lt;code&gt;\thesischapterexordium&lt;/code&gt;开始。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-论文主体" class="anchor" aria-hidden="true" href="#论文主体"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;论文主体&lt;/h3&gt;
+&lt;p&gt;论文主体的写作参考一般的LaTeX教程（如中文版的&lt;a href="https://www.ctan.org/pkg/lshort-zh-cn" rel="nofollow"&gt;lshort&lt;/a&gt;），可以自由添加章节，章节内添加所需要的内容，分小节，插入公式、表格和图片。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-数学环境" class="anchor" aria-hidden="true" href="#数学环境"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;数学环境&lt;/h3&gt;
+&lt;p&gt;数学环境的字体加粗可以使用&lt;code&gt;\mathbf&lt;/code&gt;或者&lt;code&gt;\bm&lt;/code&gt;命令，使用斜体粗体的符号。由于 Times New Roman 字体的拉丁字母字形修长，偶尔会出现字符粘连的情况。这种情况下可以使用占位符波浪号调整距离，如&lt;code&gt;$f^{~l}$&lt;/code&gt;和&lt;code&gt;$\hat{f~}$&lt;/code&gt;。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-致谢" class="anchor" aria-hidden="true" href="#致谢"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;致谢&lt;/h3&gt;
+&lt;p&gt;致谢部分由命令&lt;code&gt;\thesisacknowledgement&lt;/code&gt;开始，实际上是开始了一个无编号的章节。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-参考文献" class="anchor" aria-hidden="true" href="#参考文献"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;参考文献&lt;/h3&gt;
+&lt;p&gt;使用BibTeX录入参考文献由&lt;code&gt;\thesisloadbibliography&lt;/code&gt;命令导入数据库，参考文献风格自动设置为&lt;code&gt;thesis-uestc&lt;/code&gt;。当参考文献数目超过100时，可以使用&lt;code&gt;large&lt;/code&gt;选项调整编号的宽度，如&lt;code&gt;\thesisloadbibliography[large]{reference}&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;在这个命令之前使用&lt;code&gt;\nocite{*}&lt;/code&gt;命令会在文档中列出数据库中的所有条目，无论是否引用，其他情况下只列出引用过的条目。有些编辑器会识别&lt;code&gt;\bibliography&lt;/code&gt;命令导入的数据库文件，并提供更好的编辑支持，所以模板也支持原生的&lt;code&gt;\bibliography&lt;/code&gt;命令导入文献列表，只需要导入之前指定参考文献风格（&lt;code&gt;\bibliographystyle{thesis-uestc}&lt;/code&gt;）即可。&lt;/p&gt;
+&lt;p&gt;参考文献的在文中的引用分两种：在原文中作句法成分的为直接引用，使用&lt;code&gt;\cite&lt;/code&gt;命令，否则为&lt;code&gt;\citing&lt;/code&gt;命令，在文中文献编号显示为上标。模版的文献条目处理兼容 IEEE Xplore 和 ScienceDirect 的引用格式，还有其他主流的数据库。获得参考文献条目信息只需要在对应的文章页面点击下载引用的按钮（在 IEEE Xplore 中按钮在PDF下载旁边一个向下的箭头；在 ScienceDirect 中为文章标题上面的 Export 链接），选择BibTeX格式，将文本复制到 bib 文件即可。&lt;/p&gt;
+&lt;p&gt;当引用中文文献，而文献作者超过三位时，后面的作者想使用“等”字省略，可以在文章条目添加语言选项&lt;code&gt;language = {zh}&lt;/code&gt;。模版会自动按照中文的习惯处理作者信息。&lt;/p&gt;
+&lt;p&gt;手动录入参考文献使用&lt;code&gt;thesisbibliography&lt;/code&gt;环境，在环境中使用&lt;code&gt;\bibitem&lt;/code&gt;命令添加文献条目。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-附录" class="anchor" aria-hidden="true" href="#附录"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;附录&lt;/h3&gt;
+&lt;p&gt;附录部分由命令&lt;code&gt;\thesisappendix&lt;/code&gt;开始，之后每一章都会被当作是一个附录，使用大写拉丁字母编号。如果只需要单独一个附录则使用&lt;code&gt;\thesissingleappendix&lt;/code&gt;命令，在后面添加小节，附录本身没有编号。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-攻读学位期间取得的成果" class="anchor" aria-hidden="true" href="#攻读学位期间取得的成果"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;攻读学位期间取得的成果&lt;/h3&gt;
+&lt;p&gt;手动添加使用&lt;code&gt;\bibitem&lt;/code&gt;命令将文章条目列在&lt;code&gt;thesisaccomplish&lt;/code&gt;环境下，方法与参考文献相同。使用BibTeX录入研究成果由&lt;code&gt;\thesisloadaccomplish&lt;/code&gt;命令导入文献列表，参考文献风格自动设置为&lt;code&gt;thesis-uestc&lt;/code&gt;。此命令没有可选参数，自动在文档中列出数据库中的所有条目。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-外文资料原文及译文" class="anchor" aria-hidden="true" href="#外文资料原文及译文"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;外文资料原文及译文&lt;/h3&gt;
+&lt;p&gt;本科毕业论文要求翻译一篇外文资料，资料原文应由命令&lt;code&gt;\thesistranslationoriginal&lt;/code&gt;开始，资料译文由命&lt;code&gt;\thesistranslationchinese&lt;/code&gt;开始。为了书写方便可以继续分小节，但是这部分中的小节不会在目录中显示。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-插入图片和表格" class="anchor" aria-hidden="true" href="#插入图片和表格"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;插入图片和表格&lt;/h3&gt;
+&lt;p&gt;插入图片使用&lt;code&gt;figure&lt;/code&gt;环境，自动调整图片前后的间距。插入表格使用&lt;code&gt;table&lt;/code&gt;环境，自动调整表格前后的间距和默认的字体大小。&lt;/p&gt;
+&lt;p&gt;图片文件可以统一放在&lt;code&gt;./pic&lt;/code&gt;目录下。具体插入图片和表格的代码参考范例&lt;code&gt;main.tex&lt;/code&gt;。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-定理环境" class="anchor" aria-hidden="true" href="#定理环境"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;定理环境&lt;/h3&gt;
+&lt;p&gt;数学定理请使用模板提供的定义（definition）、公理（axiom）、证明（proof）、定理（theorem）、推论（corollary）、命题（proposition）、引理（lemma）和例子（example）环境。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-算法描述" class="anchor" aria-hidden="true" href="#算法描述"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;算法描述&lt;/h3&gt;
+&lt;p&gt;算法描述使用&lt;code&gt;algorithm&lt;/code&gt;环境，具体写法请参考范例&lt;code&gt;main.tex&lt;/code&gt;或&lt;code&gt;chapter\c3.tex&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;模板类自动加载&lt;code&gt;algorithm2e&lt;/code&gt;宏包，详细的用法请参考&lt;a href="https://www.ctan.org/pkg/algorithm2e" rel="nofollow"&gt;algorithm2e宏包文档&lt;/a&gt;。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-枚举环境和脚注" class="anchor" aria-hidden="true" href="#枚举环境和脚注"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;枚举环境和脚注&lt;/h3&gt;
+&lt;p&gt;枚举使用标准的&lt;code&gt;enumerate&lt;/code&gt;、&lt;code&gt;itemize&lt;/code&gt;以及&lt;code&gt;description&lt;/code&gt;环境。脚注使用标准的&lt;code&gt;\footnote&lt;/code&gt;命令插入。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-其他命令" class="anchor" aria-hidden="true" href="#其他命令"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;其他命令&lt;/h3&gt;
+&lt;p&gt;模版提供一些有用的命令方便论文写作，其中包含一些常见的汉语字符：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令名称&lt;/th&gt;
+&lt;th&gt;字符&lt;/th&gt;
+&lt;th&gt;Unicode 编号&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\chinesecolon&lt;/td&gt;
+&lt;td&gt;：&lt;/td&gt;
+&lt;td&gt;FF1A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chinesespace&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chineseperiod&lt;/td&gt;
+&lt;td&gt;。&lt;/td&gt;
+&lt;td&gt;3002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chinesequestion&lt;/td&gt;
+&lt;td&gt;？&lt;/td&gt;
+&lt;td&gt;FF1F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chineseexclamation&lt;/td&gt;
+&lt;td&gt;！&lt;/td&gt;
+&lt;td&gt;FF01&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chinesecomma&lt;/td&gt;
+&lt;td&gt;，&lt;/td&gt;
+&lt;td&gt;FF0C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chinesesemicolon&lt;/td&gt;
+&lt;td&gt;；&lt;/td&gt;
+&lt;td&gt;FF1B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chineseleftparenthesis&lt;/td&gt;
+&lt;td&gt;（&lt;/td&gt;
+&lt;td&gt;FF08&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\chineserightparenthesis&lt;/td&gt;
+&lt;td&gt;）&lt;/td&gt;
+&lt;td&gt;FF09&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;另外&lt;code&gt;\blankpage&lt;/code&gt;命令可以强制生成一页空白。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-分割文件" class="anchor" aria-hidden="true" href="#分割文件"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;分割文件&lt;/h3&gt;
+&lt;p&gt;模板提供的样例（&lt;code&gt;main.tex&lt;/code&gt;）将所有内容写在同一个文档里，使用者认为必要可以将各个章节写在不同的子文件内，使用&lt;code&gt;\input&lt;/code&gt;命令统一包含。&lt;/p&gt;
+&lt;p&gt;模版提供另一个多文件的范例（&lt;code&gt;main_multifile.tex&lt;/code&gt;），执行相应的命令即可自动编译：&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;latexmk main_multifile.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中每个文件对应独立的章（参见&lt;code&gt;chapter/template.tex&lt;/code&gt;）、摘要、致谢等（见&lt;code&gt;misc/&lt;/code&gt;）。分割的文件使用&lt;code&gt;\input&lt;/code&gt;命令包含到主文档内（参见&lt;code&gt;main_multifile.tex&lt;/code&gt;）。所有需要使用的宏包在主文件中导入，编译方法保持不变。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-图表目录和缩略词" class="anchor" aria-hidden="true" href="#图表目录和缩略词"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;图表目录和缩略词&lt;/h3&gt;
+&lt;p&gt;图目录、表目录和缩略词表分别对应&lt;code&gt;\thesisfigurelist&lt;/code&gt;，&lt;code&gt;\thesistablelist&lt;/code&gt;，&lt;code&gt;\thesisglossarylist&lt;/code&gt;命令，这些列表不会出现在目录里。&lt;/p&gt;
+&lt;p&gt;缩略词表使用&lt;code&gt;glossaries&lt;/code&gt;宏包实现。定义缩略词使用&lt;code&gt;\newglossaryentry{&amp;lt;label&amp;gt;}{&amp;lt;description&amp;gt;}&lt;/code&gt;命令，例如：&lt;/p&gt;
+&lt;div class="highlight highlight-text-tex-latex"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;\newglossaryentry&lt;/span&gt;{Linux}
+{
+  name=Linux,
+  description={is a generic term referring to the family of Unix-like
+    computer operating systems that use the Linux kernel},
+  plural=Linuces
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;或者&lt;code&gt;\newacronym[description=&amp;lt;chinese&amp;gt;]{&amp;lt;label&amp;gt;}{&amp;lt;abbrv&amp;gt;}{&amp;lt;full&amp;gt;}&lt;/code&gt;命令，例如：&lt;/p&gt;
+&lt;div class="highlight highlight-text-tex-latex"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;\newacronym&lt;/span&gt;[description=逻辑卷管理器]{lvm}{LVM}{Logical Volume Manager}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;正文中引用缩略词时，使用&lt;code&gt;glossaries&lt;/code&gt;宏包提供的&lt;code&gt;\gls&lt;/code&gt;、&lt;code&gt;\Gls&lt;/code&gt;（首字母大写）或&lt;code&gt;\glspl&lt;/code&gt;（复数形式）等命令引用缩略词的&lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;。
+具体使用方法参考&lt;a href="https://www.ctan.org/tex-archive/macros/latex/contrib/glossaries/" rel="nofollow"&gt;glossaries宏包文档&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;手动编译包含有缩略词表的文档，执行&lt;code&gt;xelatex&lt;/code&gt;编译命令后需要执行&lt;code&gt;makeglossaries main&lt;/code&gt;（注意没有.tex后缀）创建缩略词索引，再执行&lt;code&gt;xelatex&lt;/code&gt;命令完成编译。所以手动编译一个包含参考文献、研究成果、缩略词表的完整文档命令为：&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;xelatex main.tex
+bibtex main.aux
+bibtex accomplish.aux
+makeglossaries main
+xelatex main.tex
+xelatex main.tex&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;推荐使用latexmk命令进行编译，自动处理以上的问题。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-技术交流" class="anchor" aria-hidden="true" href="#技术交流"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;技术交流&lt;/h2&gt;
+&lt;p&gt;如果希望使用QQ即时交流可加成电LaTeX模板交流群（926297104）。验证信息请回答问题，不要空置。由于作者不怎么访问清水河畔论坛，如有问题请在项目Issue模块提出，或者邮件联系作者（&lt;a href="mailto:wwzvd@mst.edu"&gt;wwzvd@mst.edu&lt;/a&gt;）。类模板完全由作者手动编写，并非由代码工具生成，相对容易修改和阅读。在此欢迎高阶的使用者分享更好的写法，提出改进的建议。&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="./pic/technical_contact.jpg"&gt;&lt;img src="./pic/technical_contact.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>x-magus</author><guid isPermaLink="false">https://github.com/x-magus/ThesisUESTC</guid><pubDate>Tue, 19 Nov 2019 00:07:00 GMT</pubDate></item><item><title>jankapunkt/latexcv #8 in TeX, This week</title><link>https://github.com/jankapunkt/latexcv</link><description>&lt;p&gt;&lt;i&gt;:necktie: A collection of cv and resume templates written in LaTeX. Leave an issue if your language is not supported!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 align="center"&gt;&lt;a id="user-content-------latex-cv-and-resume-collection" class="anchor" aria-hidden="true" href="#------latex-cv-and-resume-collection"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="./logo.svg"&gt;&lt;img alt="latexcv icon" src="./logo.svg" height="300px" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;br&gt;
+  LaTex CV and Resume Collection
+&lt;/h1&gt;
+&lt;div align="center"&gt;
+  &lt;a href="https://travis-ci.org/jankapunkt/latexcv" title="Build Status" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/ffad8302ce75d436ccc4853c6dfefa3076e043d1/68747470733a2f2f7472617669732d63692e6f72672f6a616e6b6170756e6b742f6c6174657863762e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/jankapunkt/latexcv.svg?branch=master" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="http://www.repostatus.org/#active" title="Project Status: Active – The project has reached a stable, usable state and is being actively developed." rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/31267b3e96ca20997396b88f7c44233710fcc637/687474703a2f2f7777772e7265706f7374617475732e6f72672f6261646765732f6c61746573742f6163746976652e737667" alt="Project Status: Active" data-canonical-src="http://www.repostatus.org/badges/latest/active.svg" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://gitlicense.com/license/jankapunkt/latexcv" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/46b6b39a537ec67952f8016a9d1f9637f65fac63/68747470733a2f2f6769746c6963656e73652e636f6d2f62616467652f6a616e6b6170756e6b742f6c617465786376" alt="GitLicense" data-canonical-src="https://gitlicense.com/badge/jankapunkt/latexcv" style="max-width:100%;"&gt;
+  &lt;/a&gt;	
+&lt;/div&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p align="center"&gt;
+&lt;g-emoji class="g-emoji" alias="necktie" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f454.png"&gt;👔&lt;/g-emoji&gt; A collection of simple and easy to use, yet powerful LaTeX templates for CVs and resumes. All of them are self designed and self implemented and not copied from template collections.
+&lt;/p&gt;
+&lt;p&gt;
+Now with support for Chinese, Japanese and Korean character encoding. Setup is only two lines of code! Read more &lt;a href="docs/cjk/README.md"&gt;here&lt;/a&gt;.
+&lt;/p&gt;	
+&lt;br&gt;
+&lt;div align="center"&gt;
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;&lt;tr&gt;
+		&lt;th&gt;Classic&lt;/th&gt;
+		&lt;th&gt;Modern&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td width="50%"&gt;
+			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/classic.png"&gt;&lt;img src="docs/media/classic.png" alt="Classic CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td width="50%"&gt;
+			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/modern.png"&gt;&lt;img src="docs/media/modern.png" alt="Modern CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;&lt;tr&gt;
+		&lt;th&gt;Infographics&lt;/th&gt;
+		&lt;th&gt;Two Columns&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td width="50%"&gt;
+			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/infographics.png"&gt;&lt;img src="docs/media/infographics.png" alt="Infographics CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td width="50%"&gt;
+			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/two_column.png"&gt;&lt;img src="docs/media/two_column.png" alt="Two Column CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+       	&lt;th&gt;Sidebar&lt;/th&gt;
+       	&lt;th&gt;Row Layout&lt;/th&gt;
+    &lt;/tr&gt;
+    	&lt;tr&gt;	
+    		&lt;td width="50%"&gt;
+    			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/sidebar.png"&gt;&lt;img src="docs/media/sidebar.png" alt="Sidebar CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+    		&lt;/td&gt;
+    		&lt;td width="50%"&gt;
+    		    &lt;a target="_blank" rel="noopener noreferrer" href="docs/media/rows.png"&gt;&lt;img src="docs/media/rows.png" alt="Row-Layout CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;/td&gt;    	
+    	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+       	&lt;th&gt;Sidebar Left&lt;/th&gt;
+       	&lt;th&gt;More coming soon...&lt;/th&gt;
+    &lt;/tr&gt;
+    	&lt;tr&gt;	
+    		&lt;td width="50%"&gt;
+    			&lt;a target="_blank" rel="noopener noreferrer" href="docs/media/sidebarleft.png"&gt;&lt;img src="docs/media/sidebarleft.png" alt="Left sidebar CV example preview" style="max-width:100%;"&gt;&lt;/a&gt;
+    		&lt;/td&gt;
+    		&lt;td width="50%"&gt;
+    			&lt;h4&gt;&lt;a id="user-content-your-idea-for-a-new-template" class="anchor" aria-hidden="true" href="#your-idea-for-a-new-template"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Your idea for a new template.&lt;/h4&gt;
+            &lt;/td&gt;    	
+    	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Great first impression&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Point out with a progressive layout. Give decision makers and HR only the most important information about you on one single page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beginner friendly&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pick a template, replace the content, compile, done. If that's not enough you can easily customize colors, fonts and layout. The templates are documented directly in the code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Minimal environment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You need a minimal tex-live distribution to compile the templates. No XeTeX or LuaTeX required. No other SDKs or environments required.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-build" class="anchor" aria-hidden="true" href="#how-to-build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to build?&lt;/h2&gt;
+&lt;p&gt;The following guide just briefly describes the requirements and build procedure as there are many ways to install a LaTeX distribution on various OS. Please create an issue, if this part is not helpful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build Requirements&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You will need some minimal Texlive distrubution (The full texlive distribution is nearly 2GB large but you will need only a part of it). A good starting point is here: &lt;a href="https://www.latex-project.org/get/#tex-distributions" rel="nofollow"&gt;https://www.latex-project.org/get/#tex-distributions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you want to install texlive from tug.org instead, you can use this guide: &lt;a href="https://tug.org/texlive/" rel="nofollow"&gt;https://tug.org/texlive/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Users of various Linux distrubutions can also install texlive from their repositories.&lt;/p&gt;
+&lt;p&gt;This repo also contains a &lt;code&gt;texlive.profile&lt;/code&gt; file in the project root, that can be used to install the minimum required texlive packages when manually installing texlive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build Procedure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clone or download this project.&lt;/li&gt;
+&lt;li&gt;Change to a template folder, which contains a &lt;code&gt;main.tex&lt;/code&gt; file do&lt;/li&gt;
+&lt;li&gt;Edit the &lt;code&gt;main.tex&lt;/code&gt; according to your CV credentials, optionally change settings and colors etc.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;pdflatex&lt;/code&gt; (build/compile)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;main.pdf&lt;/code&gt; should show the output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contribution" class="anchor" aria-hidden="true" href="#contribution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribution&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Contributors are very welcome&lt;/strong&gt;. You want to contribute? Awesome! Please check the &lt;a href="https://github.com/jankapunkt/latexcv/blob/master/CONTRIBUTING.md"&gt;contribution guidelines&lt;/a&gt; first to make it a success.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The MIT License (MIT)&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2014-2019 Jan Küster&lt;/p&gt;
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jankapunkt</author><guid isPermaLink="false">https://github.com/jankapunkt/latexcv</guid><pubDate>Tue, 19 Nov 2019 00:08:00 GMT</pubDate></item></channel></rss>
