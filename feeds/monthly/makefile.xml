@@ -1,2 +1,552 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Makefile, This month</title><link>https://github.com/trending/makefile?since=monthly</link><description>The top repositories on GitHub for makefile, measured monthly</description><pubDate>Tue, 19 Nov 2019 01:07:13 GMT</pubDate><lastBuildDate>Tue, 19 Nov 2019 01:07:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Makefile, This month today</title><pubDate>Tue, 19 Nov 2019 01:07:13 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Makefile, This month</title><link>https://github.com/trending/makefile?since=monthly</link><description>The top repositories on GitHub for makefile, measured monthly</description><pubDate>Wed, 20 Nov 2019 01:08:47 GMT</pubDate><lastBuildDate>Wed, 20 Nov 2019 01:08:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>golang-standards/project-layout #1 in Makefile, This month</title><link>https://github.com/golang-standards/project-layout</link><description>&lt;p&gt;&lt;i&gt;Standard Go Project Layout&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-standard-go-project-layout" class="anchor" aria-hidden="true" href="#standard-go-project-layout"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Standard Go Project Layout&lt;/h1&gt;
+&lt;p&gt;This is a basic layout for Go application projects. It's not an official standard defined by the core Go dev team; however, it is a set of common historical and emerging project layout patterns in the Go ecosystem. Some of these patterns are more popular than others. It also has a number of small enhancements along with several supporting directories common to any large enough real world application.&lt;/p&gt;
+&lt;p&gt;If you are trying to learn Go or if you are building a PoC or a toy project for yourself this project layout is an overkill. Start with something really simple (a single &lt;code&gt;main.go&lt;/code&gt; file is more than enough). As your project grows keep in mind that it'll be important to make sure your code is well structured otherwise you'll end up with a messy code with lots of hidden dependencies and global state. When you have more people working on the project you'll need even more structure. That's when it's important to introduce a common way to manage packages/libraries. When you have an open source project or when you know other projects import the code from your project repository that's when it's important to have private (aka &lt;code&gt;internal&lt;/code&gt;) packages and code. Clone the repository, keep what you need and delete everything else! Just because it's there it doesn't mean you have to use it all. None of these patterns are used in every single project. Even the &lt;code&gt;vendor&lt;/code&gt; pattern is not universal.&lt;/p&gt;
+&lt;p&gt;Note that &lt;a href="https://github.com/golang/go/wiki/Modules"&gt;&lt;code&gt;Go modules&lt;/code&gt;&lt;/a&gt; and the related capabilities will have an impact on your project layout. The repo will be updated to include &lt;code&gt;Go modules&lt;/code&gt; once it's fully enabled by default. In the meantime, feel free to add your thoughts and ideas in &lt;a href="https://github.com/golang-standards/project-layout/issues/18"&gt;&lt;code&gt;this&lt;/code&gt;&lt;/a&gt; Github issue.&lt;/p&gt;
+&lt;p&gt;This project layout is intentionally generic and it doesn't try to impose a specific Go package structure.&lt;/p&gt;
+&lt;p&gt;This is a community effort. Open an issue if you see a new pattern or if you think one of the existing patterns needs to be updated.&lt;/p&gt;
+&lt;p&gt;If you need help with naming, formatting and style start by running &lt;a href="https://golang.org/cmd/gofmt/" rel="nofollow"&gt;&lt;code&gt;gofmt&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/golang/lint"&gt;&lt;code&gt;golint&lt;/code&gt;&lt;/a&gt;. Also make sure to read these Go code style guidelines and recommendations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://talks.golang.org/2014/names.slide" rel="nofollow"&gt;https://talks.golang.org/2014/names.slide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://golang.org/doc/effective_go.html#names" rel="nofollow"&gt;https://golang.org/doc/effective_go.html#names&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.golang.org/package-names" rel="nofollow"&gt;https://blog.golang.org/package-names&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/golang/go/wiki/CodeReviewComments"&gt;https://github.com/golang/go/wiki/CodeReviewComments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rakyll.org/style-packages" rel="nofollow"&gt;Style guideline for Go packages&lt;/a&gt; (rakyll/JBD)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2" rel="nofollow"&gt;&lt;code&gt;Go Project Layout&lt;/code&gt;&lt;/a&gt; for additional background information.&lt;/p&gt;
+&lt;p&gt;More about naming and organizing packages as well as other code structure recommendations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=PTE4VJIdHPg" rel="nofollow"&gt;GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=MzTcsI6tn-0" rel="nofollow"&gt;GopherCon Russia 2018: Ashley McNamara + Brian Ketelsen - Go best practices.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ltqV6pDKZD8" rel="nofollow"&gt;GopherCon 2017: Edward Muller - Go Anti-Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=oL6JBUk6tj0" rel="nofollow"&gt;GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-go-directories" class="anchor" aria-hidden="true" href="#go-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Go Directories&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-cmd" class="anchor" aria-hidden="true" href="#cmd"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/cmd&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Main applications for this project.&lt;/p&gt;
+&lt;p&gt;The directory name for each application should match the name of the executable you want to have (e.g., &lt;code&gt;/cmd/myapp&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Don't put a lot of code in the application directory. If you think the code can be imported and used in other projects, then it should live in the &lt;code&gt;/pkg&lt;/code&gt; directory. If the code is not reusable or if you don't want others to reuse it, put that code in the &lt;code&gt;/internal&lt;/code&gt; directory. You'll be surprised what others will do, so be explicit about your intentions!&lt;/p&gt;
+&lt;p&gt;It's common to have a small &lt;code&gt;main&lt;/code&gt; function that imports and invokes the code from the &lt;code&gt;/internal&lt;/code&gt; and &lt;code&gt;/pkg&lt;/code&gt; directories and nothing else.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="cmd/README.md"&gt;&lt;code&gt;/cmd&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-internal" class="anchor" aria-hidden="true" href="#internal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/internal&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself. See the Go 1.4 &lt;a href="https://golang.org/doc/go1.4#internalpackages" rel="nofollow"&gt;&lt;code&gt;release notes&lt;/code&gt;&lt;/a&gt; for more details. Note that you are not limited to the top level &lt;code&gt;internal&lt;/code&gt; directory. You can have more than one &lt;code&gt;internal&lt;/code&gt; directory at any level of your project tree.&lt;/p&gt;
+&lt;p&gt;You can optionally add a bit of extra structure to your internal packages to separate your shared and non-shared internal code. It's not required (especially for smaller projects), but it's nice to have visual clues showing the intended package use. Your actual application code can go in the &lt;code&gt;/internal/app&lt;/code&gt; directory (e.g., &lt;code&gt;/internal/app/myapp&lt;/code&gt;) and the code shared by those apps in the &lt;code&gt;/internal/pkg&lt;/code&gt; directory (e.g., &lt;code&gt;/internal/pkg/myprivlib&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-pkg" class="anchor" aria-hidden="true" href="#pkg"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/pkg&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Library code that's ok to use by external applications (e.g., &lt;code&gt;/pkg/mypubliclib&lt;/code&gt;). Other projects will import these libraries expecting them to work, so think twice before you put something here :-) Note that the &lt;code&gt;internal&lt;/code&gt; directory is a better way to ensure your private packages are not importable because it's enforced by Go. The &lt;code&gt;/pkg&lt;/code&gt; directory is still a good way to explicitly communicate that the code in that directory is safe for use by others. The &lt;a href="https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/" rel="nofollow"&gt;&lt;code&gt;I'll take pkg over internal&lt;/code&gt;&lt;/a&gt; blog post by Travis Jeffery provides a good overview of the &lt;code&gt;pkg&lt;/code&gt; and &lt;code&gt;internal&lt;/code&gt; directories and when it might make sense to use them.&lt;/p&gt;
+&lt;p&gt;It's also a way to group Go code in one place when your root directory contains lots of non-Go components and directories making it easier to run various Go tools (as mentioned in these talks: &lt;a href="https://www.youtube.com/watch?v=PTE4VJIdHPg" rel="nofollow"&gt;&lt;code&gt;Best Practices for Industrial Programming&lt;/code&gt;&lt;/a&gt; from GopherCon EU 2018, &lt;a href="https://www.youtube.com/watch?v=oL6JBUk6tj0" rel="nofollow"&gt;GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps&lt;/a&gt; and &lt;a href="https://www.youtube.com/watch?v=3gQa1LWwuzk" rel="nofollow"&gt;GoLab 2018 - Massimiliano Pippi - Project layout patterns in Go&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="pkg/README.md"&gt;&lt;code&gt;/pkg&lt;/code&gt;&lt;/a&gt; directory if you want to see which popular Go repos use this project layout pattern. This is a common layout pattern, but it's not universally accepted and some in the Go community don't recommend it.&lt;/p&gt;
+&lt;p&gt;Ok not to use it if your app project is really small and where an extra level of nesting doesn't add much value (unless you really want to :-)). Think about it when it's getting big enough and your root directory gets pretty busy (especially if you have a lot of non-Go app components).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-vendor" class="anchor" aria-hidden="true" href="#vendor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/vendor&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Application dependencies (managed manually or by your favorite dependency management tool like the new built-in, but still experimental, &lt;a href="https://github.com/golang/go/wiki/Modules"&gt;&lt;code&gt;modules&lt;/code&gt;&lt;/a&gt; feature).&lt;/p&gt;
+&lt;p&gt;Don't commit your application dependencies if you are building a library.&lt;/p&gt;
+&lt;p&gt;Note that since &lt;a href="https://golang.org/doc/go1.13#modules" rel="nofollow"&gt;&lt;code&gt;1.13&lt;/code&gt;&lt;/a&gt; Go also enabled the module proxy feature (using &lt;a href="https://proxy.golang.org" rel="nofollow"&gt;&lt;code&gt;https://proxy.golang.org&lt;/code&gt;&lt;/a&gt; as their module proxy server by default). Read more about it &lt;a href="https://blog.golang.org/module-mirror-launch" rel="nofollow"&gt;&lt;code&gt;here&lt;/code&gt;&lt;/a&gt; to see if it fits all of your requirements and constraints. If it does, then you won't need the &lt;code&gt;vendor&lt;/code&gt; directory at all.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-service-application-directories" class="anchor" aria-hidden="true" href="#service-application-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Service Application Directories&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-api" class="anchor" aria-hidden="true" href="#api"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/api&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;OpenAPI/Swagger specs, JSON schema files, protocol definition files.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="api/README.md"&gt;&lt;code&gt;/api&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-web-application-directories" class="anchor" aria-hidden="true" href="#web-application-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web Application Directories&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-web" class="anchor" aria-hidden="true" href="#web"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/web&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Web application specific components: static web assets, server side templates and SPAs.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-common-application-directories" class="anchor" aria-hidden="true" href="#common-application-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common Application Directories&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-configs" class="anchor" aria-hidden="true" href="#configs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/configs&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Configuration file templates or default configs.&lt;/p&gt;
+&lt;p&gt;Put your &lt;code&gt;confd&lt;/code&gt; or &lt;code&gt;consul-template&lt;/code&gt; template files here.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-init" class="anchor" aria-hidden="true" href="#init"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/init&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;System init (systemd, upstart, sysv) and process manager/supervisor (runit, supervisord) configs.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-scripts" class="anchor" aria-hidden="true" href="#scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/scripts&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Scripts to perform various build, install, analysis, etc operations.&lt;/p&gt;
+&lt;p&gt;These scripts keep the root level Makefile small and simple (e.g., &lt;a href="https://github.com/hashicorp/terraform/blob/master/Makefile"&gt;&lt;code&gt;https://github.com/hashicorp/terraform/blob/master/Makefile&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="scripts/README.md"&gt;&lt;code&gt;/scripts&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-build" class="anchor" aria-hidden="true" href="#build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/build&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Packaging and Continuous Integration.&lt;/p&gt;
+&lt;p&gt;Put your cloud (AMI), container (Docker), OS (deb, rpm, pkg) package configurations and scripts in the &lt;code&gt;/build/package&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;Put your CI (travis, circle, drone) configurations and scripts in the &lt;code&gt;/build/ci&lt;/code&gt; directory. Note that some of the CI tools (e.g., Travis CI) are very picky about the location of their config files. Try putting the config files in the &lt;code&gt;/build/ci&lt;/code&gt; directory linking them to the location where the CI tools expect them (when possible).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-deployments" class="anchor" aria-hidden="true" href="#deployments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/deployments&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, mesos, terraform, bosh).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-test" class="anchor" aria-hidden="true" href="#test"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/test&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Additional external test apps and test data. Feel free to structure the &lt;code&gt;/test&lt;/code&gt; directory anyway you want. For bigger projects it makes sense to have a data subdirectory. For example, you can have &lt;code&gt;/test/data&lt;/code&gt; or &lt;code&gt;/test/testdata&lt;/code&gt; if you need Go to ignore what's in that directory. Note that Go will also ignore directories or files that begin with "." or "_", so you have more flexibility in terms of how you name your test data directory.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="test/README.md"&gt;&lt;code&gt;/test&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-directories" class="anchor" aria-hidden="true" href="#other-directories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other Directories&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-docs" class="anchor" aria-hidden="true" href="#docs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/docs&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Design and user documents (in addition to your godoc generated documentation).&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="docs/README.md"&gt;&lt;code&gt;/docs&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-tools" class="anchor" aria-hidden="true" href="#tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/tools&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Supporting tools for this project. Note that these tools can import code from the &lt;code&gt;/pkg&lt;/code&gt; and &lt;code&gt;/internal&lt;/code&gt; directories.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="tools/README.md"&gt;&lt;code&gt;/tools&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/examples&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Examples for your applications and/or public libraries.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="examples/README.md"&gt;&lt;code&gt;/examples&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-third_party" class="anchor" aria-hidden="true" href="#third_party"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/third_party&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;External helper tools, forked code and other 3rd party utilities (e.g., Swagger UI).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-githooks" class="anchor" aria-hidden="true" href="#githooks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/githooks&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Git hooks.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-assets" class="anchor" aria-hidden="true" href="#assets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/assets&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Other assets to go along with your repository (images, logos, etc).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-website" class="anchor" aria-hidden="true" href="#website"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/website&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This is the place to put your project's website data if you are not using Github pages.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="website/README.md"&gt;&lt;code&gt;/website&lt;/code&gt;&lt;/a&gt; directory for examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-directories-you-shouldnt-have" class="anchor" aria-hidden="true" href="#directories-you-shouldnt-have"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Directories You Shouldn't Have&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-src" class="anchor" aria-hidden="true" href="#src"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;/src&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Some Go projects do have a &lt;code&gt;src&lt;/code&gt; folder, but it usually happens when the devs came from the Java world where it's a common pattern. If you can help yourself try not to adopt this Java pattern. You really don't want your Go code or Go projects to look like Java :-)&lt;/p&gt;
+&lt;p&gt;Don't confuse the project level &lt;code&gt;/src&lt;/code&gt; directory with the &lt;code&gt;/src&lt;/code&gt; directory Go uses for its workspaces as described in &lt;a href="https://golang.org/doc/code.html" rel="nofollow"&gt;&lt;code&gt;How to Write Go Code&lt;/code&gt;&lt;/a&gt;. The &lt;code&gt;$GOPATH&lt;/code&gt; environment variable points to your (current) workspace (by default it points to &lt;code&gt;$HOME/go&lt;/code&gt; on non-windows systems). This workspace includes the top level &lt;code&gt;/pkg&lt;/code&gt;, &lt;code&gt;/bin&lt;/code&gt; and &lt;code&gt;/src&lt;/code&gt; directories. Your actual project ends up being a sub-directory under &lt;code&gt;/src&lt;/code&gt;, so if you have the &lt;code&gt;/src&lt;/code&gt; directory in your project the project path will look like this: &lt;code&gt;/some/path/to/workspace/src/your_project/src/your_code.go&lt;/code&gt;. Note that with Go 1.11 it's possible to have your project outside of your &lt;code&gt;GOPATH&lt;/code&gt;, but it still doesn't mean it's a good idea to use this layout pattern.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-badges" class="anchor" aria-hidden="true" href="#badges"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Badges&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://goreportcard.com/" rel="nofollow"&gt;Go Report Card&lt;/a&gt; - It will scan your code with &lt;code&gt;gofmt&lt;/code&gt;, &lt;code&gt;go vet&lt;/code&gt;, &lt;code&gt;gocyclo&lt;/code&gt;, &lt;code&gt;golint&lt;/code&gt;, &lt;code&gt;ineffassign&lt;/code&gt;, &lt;code&gt;license&lt;/code&gt; and &lt;code&gt;misspell&lt;/code&gt;. Replace &lt;code&gt;github.com/golang-standards/project-layout&lt;/code&gt; with your project reference.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://godoc.org" rel="nofollow"&gt;GoDoc&lt;/a&gt; - It will provide online version of your GoDoc generated documentation. Change the link to point to your project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Release - It will show the latest release number for your project. Change the github link to point to your project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://goreportcard.com/report/github.com/golang-standards/project-layout" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/76ae5cf1f35c33600184fc07370a007efab09b13/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f676f6c616e672d7374616e64617264732f70726f6a6563742d6c61796f75743f7374796c653d666c61742d737175617265" alt="Go Report Card" data-canonical-src="https://goreportcard.com/badge/github.com/golang-standards/project-layout?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://godoc.org/github.com/golang-standards/project-layout" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ac30242392a5470effdd2b008d7be055b6f6f8d6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f676f646f632d7265666572656e63652d626c75652e7376673f7374796c653d666c61742d737175617265" alt="Go Doc" data-canonical-src="https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/golang-standards/project-layout/releases/latest"&gt;&lt;img src="https://camo.githubusercontent.com/21ec77f51096b4c302f8666ee16e81a58a264cc9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f676f6c616e672d7374616e64617264732f70726f6a6563742d6c61796f75742e7376673f7374796c653d666c61742d737175617265" alt="Release" data-canonical-src="https://img.shields.io/github/release/golang-standards/project-layout.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notes&lt;/h2&gt;
+&lt;p&gt;A more opinionated project template with sample/reusable configs, scripts and code is a WIP.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>golang-standards</author><guid isPermaLink="false">https://github.com/golang-standards/project-layout</guid><pubDate>Wed, 20 Nov 2019 00:01:00 GMT</pubDate></item><item><title>buildroot/buildroot #2 in Makefile, This month</title><link>https://github.com/buildroot/buildroot</link><description>&lt;p&gt;&lt;i&gt;Buildroot, making embedded Linux easy. Note that this is not the official repository, but only a mirror. The official Git repository is at http://git.buildroot.net/buildroot/. Do not open issues or file pull requests here.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Buildroot is a simple, efficient and easy-to-use tool to generate embedded
+Linux systems through cross-compilation.
+
+The documentation can be found in docs/manual. You can generate a text
+document with 'make manual-text' and read output/docs/manual/manual.text.
+Online documentation can be found at &lt;a href="http://buildroot.org/docs.html" rel="nofollow"&gt;http://buildroot.org/docs.html&lt;/a&gt;
+
+To build and use the buildroot stuff, do the following:
+
+1) run 'make menuconfig'
+2) select the target architecture and the packages you wish to compile
+3) run 'make'
+4) wait while it compiles
+5) find the kernel, bootloader, root filesystem, etc. in output/images
+
+You do not need to be root to build or run buildroot.  Have fun!
+
+Buildroot comes with a basic configuration for a number of boards. Run
+'make list-defconfigs' to view the list of provided configurations.
+
+Please feed suggestions, bug reports, insults, and bribes back to the
+buildroot mailing list: buildroot@buildroot.org
+You can also find us on #buildroot on Freenode IRC.
+
+If you would like to contribute patches, please read
+&lt;a href="https://buildroot.org/manual.html#submitting-patches" rel="nofollow"&gt;https://buildroot.org/manual.html#submitting-patches&lt;/a&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>buildroot</author><guid isPermaLink="false">https://github.com/buildroot/buildroot</guid><pubDate>Wed, 20 Nov 2019 00:02:00 GMT</pubDate></item><item><title>frida/frida #3 in Makefile, This month</title><link>https://github.com/frida/frida</link><description>&lt;p&gt;&lt;i&gt;Clone this repo to build Frida&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-frida" class="anchor" aria-hidden="true" href="#frida"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frida&lt;/h1&gt;
+&lt;p&gt;Dynamic instrumentation toolkit for developers, reverse-engineers, and security
+researchers. Learn more at &lt;a href="https://www.frida.re/" rel="nofollow"&gt;www.frida.re&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-two-ways-to-install" class="anchor" aria-hidden="true" href="#two-ways-to-install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Two ways to install&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-1-install-from-prebuilt-binaries" class="anchor" aria-hidden="true" href="#1-install-from-prebuilt-binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Install from prebuilt binaries&lt;/h2&gt;
+&lt;p&gt;This is the recommended way to get started. All you need to do is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install frida-tools # CLI tools
+pip install frida       # Python bindings
+npm install frida       # Node.js bindings
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may also download pre-built binaries for various operating systems from
+Frida's &lt;a href="https://github.com/frida/frida/releases"&gt;releases&lt;/a&gt; page on GitHub.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-2-build-your-own-binaries" class="anchor" aria-hidden="true" href="#2-build-your-own-binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Build your own binaries&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h3&gt;
+&lt;p&gt;For running the Frida CLI tools, i.e. &lt;code&gt;frida&lt;/code&gt;, &lt;code&gt;frida-ls-devices&lt;/code&gt;, &lt;code&gt;frida-ps&lt;/code&gt;,
+&lt;code&gt;frida-kill&lt;/code&gt;, &lt;code&gt;frida-trace&lt;/code&gt;, and &lt;code&gt;frida-discover&lt;/code&gt;, you need Python plus a
+few packages:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip3 install colorama prompt-toolkit pygments
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-linux" class="anchor" aria-hidden="true" href="#linux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-macos-and-ios" class="anchor" aria-hidden="true" href="#macos-and-ios"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;macOS and iOS&lt;/h3&gt;
+&lt;p&gt;First make a trusted code-signing certificate. You can use the guide at
+&lt;a href="https://sourceware.org/gdb/wiki/PermissionsDarwin" rel="nofollow"&gt;https://sourceware.org/gdb/wiki/PermissionsDarwin&lt;/a&gt; in the sections
+"Create a certificate in the System Keychain" and "Trust the certificate
+for code signing". You can use the name &lt;code&gt;frida-cert&lt;/code&gt; instead of &lt;code&gt;gdb-cert&lt;/code&gt;
+if you'd like.&lt;/p&gt;
+&lt;p&gt;Next export the name of the created certificate to the environment variables
+&lt;code&gt;MAC_CERTID&lt;/code&gt; and &lt;code&gt;IOS_CERTID&lt;/code&gt;, and run &lt;code&gt;make&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export MAC_CERTID=frida-cert
+export IOS_CERTID=frida-cert
+make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To ensure that macOS accepts the newly created certificate, restart the
+&lt;code&gt;taskgated&lt;/code&gt; daemon:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo killall taskgated
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-windows" class="anchor" aria-hidden="true" href="#windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;frida.sln
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Requires Visual Studio 2017.)&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://www.frida.re/docs/building/" rel="nofollow"&gt;https://www.frida.re/docs/building/&lt;/a&gt;
+for details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-learn-more" class="anchor" aria-hidden="true" href="#learn-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learn more&lt;/h2&gt;
+&lt;p&gt;Have a look at our &lt;a href="https://www.frida.re/docs/home/" rel="nofollow"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>frida</author><guid isPermaLink="false">https://github.com/frida/frida</guid><pubDate>Wed, 20 Nov 2019 00:03:00 GMT</pubDate></item><item><title>openwrt/packages #4 in Makefile, This month</title><link>https://github.com/openwrt/packages</link><description>&lt;p&gt;&lt;i&gt;Community maintained packages for OpenWrt. Documentation for submitting pull requests is in CONTRIBUTING.md&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-openwrt-packages-feed" class="anchor" aria-hidden="true" href="#openwrt-packages-feed"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OpenWrt packages feed&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-description" class="anchor" aria-hidden="true" href="#description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
+&lt;p&gt;This is the OpenWrt "packages"-feed containing community-maintained build scripts, options and patches for applications, modules and libraries used within OpenWrt.&lt;/p&gt;
+&lt;p&gt;Installation of pre-built packages is handled directly by the &lt;strong&gt;opkg&lt;/strong&gt; utility within your running OpenWrt system or by using the &lt;a href="https://openwrt.org/docs/guide-developer/obtain.firmware.sdk" rel="nofollow"&gt;OpenWrt SDK&lt;/a&gt; on a build system.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;This repository is intended to be layered on-top of an OpenWrt buildroot. If you do not have an OpenWrt buildroot installed, see the documentation at: &lt;a href="https://openwrt.org/docs/guide-developer/build-system/install-buildsystem" rel="nofollow"&gt;OpenWrt Buildroot – Installation&lt;/a&gt; on the OpenWrt support site.&lt;/p&gt;
+&lt;p&gt;This feed is enabled by default. To install all its package definitions, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./scripts/feeds update packages
+./scripts/feeds install -a -p packages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt; file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-package-guidelines" class="anchor" aria-hidden="true" href="#package-guidelines"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Package Guidelines&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; file.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>openwrt</author><guid isPermaLink="false">https://github.com/openwrt/packages</guid><pubDate>Wed, 20 Nov 2019 00:04:00 GMT</pubDate></item><item><title>ccrisan/motioneyeos #5 in Makefile, This month</title><link>https://github.com/ccrisan/motioneyeos</link><description>&lt;p&gt;&lt;i&gt;A Video Surveillance OS For Single-board Computers&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;strong&gt;motionEyeOS&lt;/strong&gt; is a Linux distribution that turns your single board computer into a video surveillance system. Check out the &lt;a href="https://github.com/ccrisan/motioneyeos/wiki"&gt;wiki&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://recordnotfound.com/motioneyeos-ccrisan-2430" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3b55deea8208b707465daffcb02adfbc19c81fa3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f726174696e672d3425324225323073746172732d627269676874677265656e2e737667" data-canonical-src="https://img.shields.io/badge/rating-4%2B%20stars-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow us on facebook: &lt;a href="https://www.facebook.com/motioneyeos" rel="nofollow"&gt;https://www.facebook.com/motioneyeos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can support the development of motionEyeOS by making a small donation.
+&lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business=ccrisan%40gmail%2ecom&amp;amp;lc=US&amp;amp;item_name=motionEyeOS&amp;amp;no_note=0&amp;amp;currency_code=USD&amp;amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bce14c8e2e39ba0464551b34602b4c60c182526b/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e6174655f4c472e676966" alt="[paypal]" data-canonical-src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ccrisan</author><guid isPermaLink="false">https://github.com/ccrisan/motioneyeos</guid><pubDate>Wed, 20 Nov 2019 00:05:00 GMT</pubDate></item><item><title>zh-google-styleguide/zh-google-styleguide #6 in Makefile, This month</title><link>https://github.com/zh-google-styleguide/zh-google-styleguide</link><description>&lt;p&gt;&lt;i&gt;Google 开源项目风格指南 (中文版)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-google-开源项目风格指南-中文版" class="anchor" aria-hidden="true" href="#google-开源项目风格指南-中文版"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Google 开源项目风格指南 (中文版)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;在线文档托管在 ReadTheDocs : &lt;a href="http://zh-google-styleguide.readthedocs.org/" rel="nofollow"&gt;在线阅读最新版本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;中文风格指南 GitHub 托管地址：&lt;a href="https://github.com/zh-google-styleguide/zh-google-styleguide"&gt;zh-google-styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;
+&lt;p&gt;Note&lt;/p&gt;
+&lt;p&gt;声明.&lt;/p&gt;
+&lt;p&gt;本项目并非 Google 官方项目, 而是由国内程序员凭热情创建和维护.&lt;/p&gt;
+&lt;p&gt;如果你关注的是 Google 官方英文版, 请移步 &lt;a href="https://github.com/google/styleguide"&gt;Google Style Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;每个较大的开源项目都有自己的风格指南: 关于如何为该项目编写代码的一系列约定 (有时候会比较武断).
+当所有代码均保持一致的风格, 在理解大型代码库时更为轻松.&lt;/p&gt;
+&lt;p&gt;"风格" 的含义涵盖范围广, 从 "变量使用驼峰格式 (camelCase)" 到 "决不使用全局变量" 再到 "决不使用异常".
+英文版项目维护的是在 Google 使用的编程风格指南. 如果你正在修改的项目源自 Google, 你可能会被引导至
+英文版项目页面, 以了解项目所使用的风格.&lt;/p&gt;
+&lt;p&gt;我们已经发布了五份 &lt;strong&gt;中文版&lt;/strong&gt; 的风格指南:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-cpp-styleguide/" rel="nofollow"&gt;Google C++ 风格指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/" rel="nofollow"&gt;Google Objective-C 风格指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-python-styleguide/" rel="nofollow"&gt;Google Python 风格指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md"&gt;Google JSON 风格指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-shell-styleguide/" rel="nofollow"&gt;Google Shell 风格指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;中文版项目采用 reStructuredText 纯文本标记语法, 并使用 Sphinx 生成 HTML / CHM / PDF 等文档格式.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;英文版项目还包含 &lt;a href="https://github.com/google/styleguide/tree/gh-pages/cpplint"&gt;cpplint&lt;/a&gt; - 一个用来帮助适应风格准则的工具, 以及 &lt;a href="https://raw.githubusercontent.com/google/styleguide/gh-pages/google-c-style.el" rel="nofollow"&gt;google-c-style.el&lt;/a&gt;, Google 风格的 Emacs 配置文件.&lt;/li&gt;
+&lt;li&gt;另外, 招募志愿者翻译 &lt;a href="http://google.github.io/styleguide/javascriptguide.xml" rel="nofollow"&gt;JavaScript Style Guide&lt;/a&gt; 以及 &lt;a href="http://google.github.io/styleguide/xmlstyle.html" rel="nofollow"&gt;XML Document Format Style Guide&lt;/a&gt;, 有意者请联系 &lt;a href="https://github.com/yangyubo"&gt;Yang.Y&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>zh-google-styleguide</author><guid isPermaLink="false">https://github.com/zh-google-styleguide/zh-google-styleguide</guid><pubDate>Wed, 20 Nov 2019 00:06:00 GMT</pubDate></item><item><title>LibreELEC/LibreELEC.tv #7 in Makefile, This month</title><link>https://github.com/LibreELEC/LibreELEC.tv</link><description>&lt;p&gt;&lt;i&gt;Just enough OS for KODI&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-libreelec" class="anchor" aria-hidden="true" href="#libreelec"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LibreELEC&lt;/h1&gt;
+&lt;p&gt;LibreELEC is a 'Just enough OS' Linux distribution for running the award-winning &lt;a href="https://kodi.tv" rel="nofollow"&gt;Kodi&lt;/a&gt; software on popular mediacentre hardware. LibreELEC is a conservative fork of the popular &lt;a href="http://openelec.tv" rel="nofollow"&gt;OpenELEC&lt;/a&gt; project with a stronger focus on pre-release testing and post-release change management. Further information on the project can be found on the &lt;a href="https://libreelec.tv" rel="nofollow"&gt;LibreELEC website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Issues &amp;amp; Support&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Please report issues via the &lt;a href="https://forum.libreelec.tv/forum-35.html" rel="nofollow"&gt;LibreELEC forum: Bug Reports&lt;/a&gt;. Please ask support questions in the &lt;a href="https://forum.libreelec.tv/forum-3.html" rel="nofollow"&gt;LibreELEC forum: Help &amp;amp; Support&lt;/a&gt; or ask a member of project staff in the #libreelec IRC channel on Freenode.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Donations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Contributions towards current project funding goals can be sent via PayPal to &lt;a href="mailto:donations@libreelec.tv"&gt;donations@libreelec.tv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;LibreELEC original code is released under &lt;a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="nofollow"&gt;GPLv2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Copyright&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As LibreELEC includes code from many upstream projects it includes many copyright owners. LibreELEC makes NO claim of copyright on any upstream code. However all original LibreELEC authored code is copyright LibreELEC.tv. Patches to upstream code have the same license as the upstream project, unless specified otherwise. For a complete copyright list please checkout the source code to examine license headers. Unless expressly stated otherwise all code submitted to the LibreELEC project (in any form) is licensed under &lt;a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="nofollow"&gt;GPLv2&lt;/a&gt; and copyright is donated to LibreELEC.tv. This approach allows the project to stay manageable in the long term by giving us freedom to maintain the code as part of the whole without the management overhead of preserving contact with every submitter, e.g. GPLv3. You are absolutely free to retain copyright. To retain copyright simply add a copyright header to each submitted code page. If you submit code that is not your own work it is your responsibility to place a header stating the copyright.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>LibreELEC</author><guid isPermaLink="false">https://github.com/LibreELEC/LibreELEC.tv</guid><pubDate>Wed, 20 Nov 2019 00:07:00 GMT</pubDate></item><item><title>actions/aws #8 in Makefile, This month</title><link>https://github.com/actions/aws</link><description>&lt;p&gt;&lt;i&gt;GitHub Actions for interacting with AWS&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-github-actions-for-aws" class="anchor" aria-hidden="true" href="#github-actions-for-aws"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GitHub Actions for AWS&lt;/h1&gt;
+&lt;p&gt;This repository contains GitHub Actions for Amazon Web Services, for performing common tasks such as using EKS, as well as a generic cli for doing arbitrary actions with the AWS commandline client.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Usage information for individual commands can be found in their respective directories.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="LICENSE"&gt;MIT&lt;/a&gt;. Please see additional information in each subdirectory.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>actions</author><guid isPermaLink="false">https://github.com/actions/aws</guid><pubDate>Wed, 20 Nov 2019 00:08:00 GMT</pubDate></item><item><title>shadowsocks/openwrt-shadowsocks #9 in Makefile, This month</title><link>https://github.com/shadowsocks/openwrt-shadowsocks</link><description>&lt;p&gt;&lt;i&gt;Shadowsocks-libev for OpenWrt/LEDE&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-shadowsocks-libev-for-openwrt" class="anchor" aria-hidden="true" href="#shadowsocks-libev-for-openwrt"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Shadowsocks-libev for OpenWrt&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/shadowsocks/openwrt-shadowsocks/releases/latest"&gt;&lt;img src="https://camo.githubusercontent.com/6ddb0af032e835ff9519238a2865bc7d0636dfcb/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f736861646f77736f636b732f6f70656e7772742d736861646f77736f636b732e737667" alt="Download" data-canonical-src="https://img.shields.io/github/release/shadowsocks/openwrt-shadowsocks.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-简介" class="anchor" aria-hidden="true" href="#简介"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;简介&lt;/h2&gt;
+&lt;p&gt;本项目是 &lt;a href="https://github.com/shadowsocks/shadowsocks-libev"&gt;shadowsocks-libev&lt;/a&gt; 在 OpenWrt 上的移植&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-特性" class="anchor" aria-hidden="true" href="#特性"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;特性&lt;/h2&gt;
+&lt;p&gt;软件包只包含 &lt;a href="https://github.com/shadowsocks/shadowsocks-libev"&gt;shadowsocks-libev&lt;/a&gt; 的可执行文件, 可与 &lt;a href="https://github.com/shadowsocks/luci-app-shadowsocks"&gt;luci-app-shadowsocks&lt;/a&gt; 搭配使用&lt;br&gt;
+可编译两种版本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;shadowsocks-libev&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;客户端/
+└── usr/
+    └── bin/
+        ├── ss-local       // 提供 SOCKS 代理
+        ├── ss-redir       // 提供透明代理, 从 v2.2.0 开始支持 UDP
+        └── ss-tunnel      // 提供端口转发, 可用于 DNS 查询
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shadowsocks-libev-server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;服务端/
+└── usr/
+    └── bin/
+        └── ss-server      // 服务端可执行文件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-编译" class="anchor" aria-hidden="true" href="#编译"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;编译&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;从 OpenWrt 的 &lt;a href="https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk" rel="nofollow"&gt;SDK&lt;/a&gt; 编译&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; 以 ar71xx 平台为例&lt;/span&gt;
+tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; OpenWrt-SDK-ar71xx-&lt;span class="pl-k"&gt;*&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; 添加 feeds&lt;/span&gt;
+git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; 获取 shadowsocks-libev Makefile&lt;/span&gt;
+git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; 选择要编译的包 Network -&amp;gt; shadowsocks-libev&lt;/span&gt;
+make menuconfig
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; 开始编译&lt;/span&gt;
+make package/shadowsocks-libev/compile V=99&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-配置" class="anchor" aria-hidden="true" href="#配置"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;配置&lt;/h2&gt;
+&lt;p&gt;软件包本身并不包含配置文件, 配置文件内容为 JSON 格式, 支持的键:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;键名&lt;/th&gt;
+&lt;th&gt;数据类型&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;server&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;服务器地址, 可以是 IP 或者域名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;server_port&lt;/td&gt;
+&lt;td&gt;整数值&lt;/td&gt;
+&lt;td&gt;服务器端口号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;local_address&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;本地绑定的 IP 地址, 默认 &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;local_port&lt;/td&gt;
+&lt;td&gt;整数值&lt;/td&gt;
+&lt;td&gt;本地绑定的端口号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;password&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;服务端设置的密码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;method&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;加密方式, &lt;a href="https://github.com/shadowsocks/luci-app-shadowsocks/wiki/Encrypt-method"&gt;详情参考&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;timeout&lt;/td&gt;
+&lt;td&gt;整数值&lt;/td&gt;
+&lt;td&gt;超时时间（秒）, 默认 60&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;plugin&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;插件名称, eg: &lt;code&gt;obfs-local&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;plugin_opts&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;td&gt;插件参数, eg: &lt;code&gt;obfs=http;obfs-host=www.bing.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fast_open&lt;/td&gt;
+&lt;td&gt;布尔值&lt;/td&gt;
+&lt;td&gt;是否启用 &lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/TCP-Fast-Open"&gt;TCP Fast Open&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nofile&lt;/td&gt;
+&lt;td&gt;整数值&lt;/td&gt;
+&lt;td&gt;设置 Linux ulimit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mode&lt;/td&gt;
+&lt;td&gt;枚举值&lt;/td&gt;
+&lt;td&gt;转发模式, 可用值: [&lt;code&gt;tcp_only&lt;/code&gt;, &lt;code&gt;udp_only&lt;/code&gt;, &lt;code&gt;tcp_and_udp&lt;/code&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mptcp&lt;/td&gt;
+&lt;td&gt;布尔值&lt;/td&gt;
+&lt;td&gt;是否启用 &lt;a href="https://www.multipath-tcp.org/" rel="nofollow"&gt;Multipath TCP&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reuse_port&lt;/td&gt;
+&lt;td&gt;布尔值&lt;/td&gt;
+&lt;td&gt;是否启用端口复用, 需要内核版本大于 3.9.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>shadowsocks</author><guid isPermaLink="false">https://github.com/shadowsocks/openwrt-shadowsocks</guid><pubDate>Wed, 20 Nov 2019 00:09:00 GMT</pubDate></item><item><title>NVIDIA/nvidia-docker #10 in Makefile, This month</title><link>https://github.com/NVIDIA/nvidia-docker</link><description>&lt;p&gt;&lt;i&gt;Build and run Docker containers leveraging NVIDIA GPUs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-nvidia-container-toolkit" class="anchor" aria-hidden="true" href="#nvidia-container-toolkit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NVIDIA Container Toolkit&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/NVIDIA/nvidia-docker/master/LICENSE" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/947e35337aefc19edf1e7b2291cdd38db51c7634/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f4e56494449412f6e76696469612d646f636b65723f7374796c653d666c61742d737175617265" alt="GitHub license" data-canonical-src="https://img.shields.io/github/license/NVIDIA/nvidia-docker?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/NVIDIA/nvidia-docker/wiki"&gt;&lt;img src="https://camo.githubusercontent.com/f5a31264bc6293d531cbfd740d272756f5deb24d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63756d656e746174696f6e2d77696b692d626c75652e7376673f7374796c653d666c61742d737175617265" alt="Documentation" data-canonical-src="https://img.shields.io/badge/documentation-wiki-blue.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://nvidia.github.io/nvidia-docker" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0c76d00ab50414072a971ec3b7471657230f53c0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7061636b616765732d7265706f7369746f72792d6239353665382e7376673f7374796c653d666c61742d737175617265" alt="Package repository" data-canonical-src="https://img.shields.io/badge/packages-repository-b956e8.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://cloud.githubusercontent.com/assets/3028125/12213714/5b208976-b632-11e5-8406-38d379ec46aa.png"&gt;&lt;img src="https://cloud.githubusercontent.com/assets/3028125/12213714/5b208976-b632-11e5-8406-38d379ec46aa.png" alt="nvidia-gpu-docker" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The NVIDIA Container Toolkit allows users to build and run GPU accelerated Docker containers. The toolkit includes a container runtime &lt;a href="https://github.com/NVIDIA/libnvidia-container"&gt;library&lt;/a&gt; and utilities to automatically configure containers to leverage NVIDIA GPUs. Full documentation and frequently asked questions are available on the &lt;a href="https://github.com/NVIDIA/nvidia-docker/wiki"&gt;repository wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Make sure you have installed the &lt;a href="https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver"&gt;NVIDIA driver&lt;/a&gt; and Docker 19.03 for your Linux distribution&lt;/strong&gt;
+&lt;strong&gt;Note that you do not need to install the CUDA toolkit on the host, but the driver needs to be installed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Note that with the release of Docker 19.03, usage of nvidia-docker2 packages are deprecated since NVIDIA GPUs are now natively supported as devices in the Docker runtime.
+If you are an existing user of the nvidia-docker2 packages, review the instructions in the &lt;a href="https://github.com/NVIDIA/nvidia-docker/tree/master#upgrading-with-nvidia-docker2-deprecated"&gt;“Upgrading with nvidia-docker2” section&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For first-time users of Docker 19.03 and GPUs, continue with the instructions for getting started below.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-ubuntu-16041804-debian-jessiestretchbuster" class="anchor" aria-hidden="true" href="#ubuntu-16041804-debian-jessiestretchbuster"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ubuntu 16.04/18.04, Debian Jessie/Stretch/Buster&lt;/h3&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Add the package repositories&lt;/span&gt;
+$ distribution=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;. /etc/os-release&lt;span class="pl-k"&gt;;&lt;/span&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$ID$VERSION_ID&lt;/span&gt;&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;
+$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey &lt;span class="pl-k"&gt;|&lt;/span&gt; sudo apt-key add -
+$ curl -s -L https://nvidia.github.io/nvidia-docker/&lt;span class="pl-smi"&gt;$distribution&lt;/span&gt;/nvidia-docker.list &lt;span class="pl-k"&gt;|&lt;/span&gt; sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+$ sudo apt-get update &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install -y nvidia-container-toolkit
+$ sudo systemctl restart docker&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-centos-7-docker-ce-rhel-7475-docker-ce-amazon-linux-12" class="anchor" aria-hidden="true" href="#centos-7-docker-ce-rhel-7475-docker-ce-amazon-linux-12"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CentOS 7 (docker-ce), RHEL 7.4/7.5 (docker-ce), Amazon Linux 1/2&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+$ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.repo | sudo tee /etc/yum.repos.d/nvidia-docker.repo
+
+$ sudo yum install -y nvidia-container-toolkit
+$ sudo systemctl restart docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-opensuse-leap-151-docker-ce" class="anchor" aria-hidden="true" href="#opensuse-leap-151-docker-ce"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;openSUSE Leap 15.1 (docker-ce)&lt;/h4&gt;
+&lt;p&gt;Since openSUSE Leap 15.1 still has Docker 18.06, you have two options:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1&lt;/strong&gt;: use the &lt;code&gt;Virtualization:containers&lt;/code&gt; repository to fetch a more recent version of Docker&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;# &lt;span class="pl-s1"&gt;Upgrade Docker to 19.03+ first:&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;zypper ar https://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_15.1/Virtualization:containers.repo&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;zypper install --allow-vendor-change &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;docker &amp;gt;= 19.03&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; accept the new signature&lt;/span&gt;&lt;/span&gt;
+
+# &lt;span class="pl-s1"&gt;Add the package repositories&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;distribution=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;. /etc/os-release&lt;span class="pl-k"&gt;;&lt;/span&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$ID$VERSION_ID&lt;/span&gt;&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;zypper ar https://nvidia.github.io/nvidia-docker/&lt;span class="pl-smi"&gt;$distribution&lt;/span&gt;/nvidia-docker.repo&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;sudo zypper install -y nvidia-container-toolkit&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;sudo systemctl restart docker&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Option 2&lt;/strong&gt;: stay with the deprecated &lt;code&gt;nvidia-docker2&lt;/code&gt; package for now (see also below)&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;# &lt;span class="pl-s1"&gt;Add the package repositories&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;distribution=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;. /etc/os-release&lt;span class="pl-k"&gt;;&lt;/span&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$ID$VERSION_ID&lt;/span&gt;&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;zypper ar https://nvidia.github.io/nvidia-docker/&lt;span class="pl-smi"&gt;$distribution&lt;/span&gt;/nvidia-docker.repo&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;sudo zypper install -y nvidia-docker2  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; accept the overwrite of /etc/docker/daemon.json&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;sudo systemctl restart docker&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;#### Test nvidia-smi with the latest official CUDA image
+$ docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
+
+# Start a GPU enabled container on two GPUs
+$ docker run --gpus 2 nvidia/cuda:9.0-base nvidia-smi
+
+# Starting a GPU enabled container on specific GPUs
+$ docker run --gpus '"device=1,2"' nvidia/cuda:9.0-base nvidia-smi
+$ docker run --gpus '"device=UUID-ABCDEF,1"' nvidia/cuda:9.0-base nvidia-smi
+
+# Specifying a capability (graphics, compute, ...) for my container
+# Note this is rarely if ever used this way
+$ docker run --gpus all,capabilities=utility nvidia/cuda:9.0-base nvidia-smi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-rhel-docker" class="anchor" aria-hidden="true" href="#rhel-docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RHEL Docker&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note that RHEL's fork of Docker is no longer supported on RHEL8.&lt;/em&gt;
+&lt;em&gt;Note that for powerpc you will have to install the nvidia-container-runtime-hook&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;RHEL's fork of docker doesn't support the --gpus option, in this case you should still install
+the nvidia-container-toolkit package but you will have to use the old interface. e.g:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Add the package repositories&lt;/span&gt;
+$ distribution=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;. /etc/os-release&lt;span class="pl-k"&gt;;&lt;/span&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$ID$VERSION_ID&lt;/span&gt;&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;
+$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey &lt;span class="pl-k"&gt;|&lt;/span&gt; sudo apt-key add -
+$ curl -s -L https://nvidia.github.io/nvidia-docker/&lt;span class="pl-smi"&gt;$distribution&lt;/span&gt;/nvidia-docker.list &lt;span class="pl-k"&gt;|&lt;/span&gt; sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; On x86&lt;/span&gt;
+$ sudo apt-get update &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install -y nvidia-container-toolkit
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; On PPC&lt;/span&gt;
+$ sudo apt-get update &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install -y nvidia-container-runtime-hook
+$ sudo systemctl restart docker
+
+$ docker run -e NVIDIA_VISIBLE_DEVICES=all nvidia/cuda:9.0-base nvidia-smi&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;More information on the environment variables are available &lt;a href="https://github.com/NVIDIA/nvidia-container-runtime#environment-variables-oci-spec"&gt;on this page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-upgrading-with-nvidia-docker2-deprecated" class="anchor" aria-hidden="true" href="#upgrading-with-nvidia-docker2-deprecated"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Upgrading with nvidia-docker2 (Deprecated)&lt;/h2&gt;
+&lt;p&gt;If you are running an old version of docker (&amp;lt; 19.03) check the instructions on installing the &lt;a href="https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)"&gt;&lt;code&gt;nvidia-docker2&lt;/code&gt;&lt;/a&gt; package which supports Docker &amp;gt;= 1.12.
+If you already have the old package installed (nvidia-docker2), updating to the latest Docker version (&amp;gt;= 19.03) will still work and will  give you access to the new CLI options for supporting GPUs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# On debian based distributions: Ubuntu / Debian
+$ sudo apt-get update
+$ sudo apt-get --only-upgrade install docker-ce nvidia-docker2
+$ sudo systemctl restart docker
+
+# On RPM based distributions: Centos / RHEL / Amazon Linux
+$ sudo yum upgrade -y nvidia-docker2
+$ sudo systemctl restart docker
+
+# All of the following options will continue working
+$ docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
+$ docker run --runtime nvidia nvidia/cuda:9.0-base nvidia-smi
+$ nvidia-docker run nvidia/cuda:9.0-base nvidia-smi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that in the future, nvidia-docker2 packages will no longer be supported.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Friday September 20th:
+We changed the gpgkey, the new fingerprint is: &lt;code&gt;BC02 13EE FC50 D046 F1CE  0208 6128 B5C2 36CD EE96&lt;/code&gt;
+We will add a webpage on docs.nvidia.com listing the keys and their fingerprints.
+In the future we will publish a keyring package. This will allow automatic updates to the repository keys.
+Future updates to the keys will be communicated in advance. We apologize for any inconvenience caused by the unexpected change to the keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-issues-and-contributing" class="anchor" aria-hidden="true" href="#issues-and-contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Issues and Contributing&lt;/h2&gt;
+&lt;p&gt;&lt;a href="CONTRIBUTING.md"&gt;Checkout the Contributing document!&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Please let us know by &lt;a href="https://github.com/NVIDIA/nvidia-docker/issues/new"&gt;filing a new issue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can contribute by opening a &lt;a href="https://help.github.com/articles/using-pull-requests/"&gt;pull request&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>NVIDIA</author><guid isPermaLink="false">https://github.com/NVIDIA/nvidia-docker</guid><pubDate>Wed, 20 Nov 2019 00:10:00 GMT</pubDate></item><item><title>MartinHeinz/go-project-blueprint #11 in Makefile, This month</title><link>https://github.com/MartinHeinz/go-project-blueprint</link><description>&lt;p&gt;&lt;i&gt;Blueprint/Boilerplate For Golang Projects&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-blueprintboilerplate-for-golang-projects" class="anchor" aria-hidden="true" href="#blueprintboilerplate-for-golang-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blueprint/Boilerplate For Golang Projects&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.com/MartinHeinz/go-project-blueprint" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4ab2dea57b2250739514c3e83c3b158571bb6217/68747470733a2f2f7472617669732d63692e636f6d2f4d617274696e4865696e7a2f676f2d70726f6a6563742d626c75657072696e742e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.com/MartinHeinz/go-project-blueprint.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://sonarcloud.io/dashboard?id=MartinHeinz_go-project-blueprint" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/969874013a400ce50f558f7d99754f9b9b4bd364/68747470733a2f2f736f6e6172636c6f75642e696f2f6170692f70726f6a6563745f6261646765732f6d6561737572653f70726f6a6563743d4d617274696e4865696e7a5f676f2d70726f6a6563742d626c75657072696e74266d65747269633d7371616c655f726174696e67" alt="Maintainability Rating" data-canonical-src="https://sonarcloud.io/api/project_badges/measure?project=MartinHeinz_go-project-blueprint&amp;amp;metric=sqale_rating" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codeclimate.com/github/MartinHeinz/go-project-blueprint/test_coverage" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/99688618d1654d444fefa0536febc217a52581b8/68747470733a2f2f6170692e636f6465636c696d6174652e636f6d2f76312f6261646765732f65633765626566653633363039393834636235632f746573745f636f766572616765" alt="Test Coverage" data-canonical-src="https://api.codeclimate.com/v1/badges/ec7ebefe63609984cb5c/test_coverage" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://goreportcard.com/report/github.com/MartinHeinz/go-project-blueprint" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/42fbb7625e58a708602acc4b698adc9cc304697f/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f4d617274696e4865696e7a2f676f2d70726f6a6563742d626c75657072696e74" alt="Go Report Card" data-canonical-src="https://goreportcard.com/badge/github.com/MartinHeinz/go-project-blueprint" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-blog-posts---more-information-about-this-repo" class="anchor" aria-hidden="true" href="#blog-posts---more-information-about-this-repo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blog Posts - More Information About This Repo&lt;/h2&gt;
+&lt;p&gt;You can find more information about this project/repository and how to use it in following blog posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://towardsdatascience.com/ultimate-setup-for-your-next-golang-project-1cc989ad2a96?source=friends_link&amp;amp;sk=2be68bb1ae993c17afc7d5c39a8be909" rel="nofollow"&gt;Ultimate Setup for Your Next Golang Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://towardsdatascience.com/setting-up-github-package-registry-with-docker-and-golang-7a75a2533139?source=friends_link&amp;amp;sk=0c5d6868219d828511627456604394e6" rel="nofollow"&gt;Setting up GitHub Package Registry with Docker and Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://towardsdatascience.com/building-restful-apis-in-golang-e3fe6e3f8f95?source=friends_link&amp;amp;sk=8069b4cf34194bdbe73c0e58f37ac334" rel="nofollow"&gt;Building RESTful APIs in Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://towardsdatascience.com/setting-up-swagger-docs-for-golang-api-8d0442263641?source=friends_link&amp;amp;sk=224695e91ff6867e3718095f85880b79" rel="nofollow"&gt;Setting Up Swagger Docs for Golang API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-setting-up" class="anchor" aria-hidden="true" href="#setting-up"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting Up&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace All Occurrences of &lt;code&gt;martinheinz/go-project-blueprint&lt;/code&gt; with your username repository name&lt;/li&gt;
+&lt;li&gt;Replace All Occurrences of &lt;code&gt;blueprint&lt;/code&gt; with your desired image name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-adding-new-librariesdependencies" class="anchor" aria-hidden="true" href="#adding-new-librariesdependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding New Libraries/Dependencies&lt;/h3&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;go mod vendor&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-github-registry" class="anchor" aria-hidden="true" href="#using-github-registry"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using GitHub Registry&lt;/h3&gt;
+&lt;p&gt;Create and Push:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker login docker.pkg.github.com -u &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;USERNAME&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; -p &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;GITHUB_TOKEN&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;
+docker build -t  docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; make container&lt;/span&gt;
+docker push docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; make push&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pull and Run:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker pull docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest
+docker run docker.pkg.github.com/martinheinz/go-project-blueprint/blueprint:latest&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-setup-new-sonarcloud-project" class="anchor" aria-hidden="true" href="#setup-new-sonarcloud-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup new SonarCloud Project&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;On &lt;em&gt;SonarCloud&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Click &lt;em&gt;Plus&lt;/em&gt; Sign in Upper Right Corner&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Analyze New Project&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;GitHub app configuration&lt;/em&gt; link&lt;/li&gt;
+&lt;li&gt;Configure SonarCloud&lt;/li&gt;
+&lt;li&gt;Select Repository and Save&lt;/li&gt;
+&lt;li&gt;Go Back to Analyze Project&lt;/li&gt;
+&lt;li&gt;Tick Newly Added Repository&lt;/li&gt;
+&lt;li&gt;Click Set Up&lt;/li&gt;
+&lt;li&gt;Click Configure with Travis&lt;/li&gt;
+&lt;li&gt;Copy the Command to Encrypt the Travis Token&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;travis encrypt --com &amp;lt;TOKEN_YOU_COPPIED&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Populate the &lt;code&gt;secure&lt;/code&gt; Field in &lt;code&gt;.travis.yml&lt;/code&gt; with outputted string&lt;/li&gt;
+&lt;li&gt;Follow steps to populate your &lt;code&gt;sonar-project.properties&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Push&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On Travis CI:
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;DOCKER_USERNAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;DOCKER_PASSWORD&lt;/code&gt; to Your GitHub Registry Token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-setup-codeclimate" class="anchor" aria-hidden="true" href="#setup-codeclimate"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup CodeClimate&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href="https://codeclimate.com/github/repos/new" rel="nofollow"&gt;https://codeclimate.com/github/repos/new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Repository&lt;/li&gt;
+&lt;li&gt;Go to Test Coverage Tab&lt;/li&gt;
+&lt;li&gt;Copy Test Reporter ID&lt;/li&gt;
+&lt;li&gt;Go to Travis and Open Settings for Your Repository&lt;/li&gt;
+&lt;li&gt;Add Environment Variable: name: &lt;code&gt;CC_TEST_REPORTER_ID&lt;/code&gt;, value: &lt;em&gt;Copied from CodeClimate&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>MartinHeinz</author><guid isPermaLink="false">https://github.com/MartinHeinz/go-project-blueprint</guid><pubDate>Wed, 20 Nov 2019 00:11:00 GMT</pubDate></item></channel></rss>

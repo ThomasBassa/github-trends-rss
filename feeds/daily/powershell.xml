@@ -1,1409 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: PowerShell, Today</title><link>https://github.com/trending/powershell?since=daily</link><description>The top repositories on GitHub for powershell, measured daily</description><pubDate>Tue, 19 Nov 2019 01:07:03 GMT</pubDate><lastBuildDate>Tue, 19 Nov 2019 01:07:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>fireeye/flare-vm #1 in PowerShell, Today</title><link>https://github.com/fireeye/flare-vm</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;pre&gt;&lt;code&gt;  ______ _               _____  ______   __      ____  __ 
- |  ____| |        /\   |  __ \|  ____|  \ \    / /  \/  |
- | |__  | |       /  \  | |__) | |__ _____\ \  / /| \  / |
- |  __| | |      / /\ \ |  _  /|  __|______\ \/ / | |\/| |
- | |    | |____ / ____ \| | \ \| |____      \  /  | |  | |
- |_|    |______/_/    \_\_|  \_\______|      \/   |_|  |_|
-                    
-  ________________________________________________________
-                       Developed by                     
-                   flarevm@fireeye.com
-      FLARE (FireEye Labs Advanced Reverse Engineering)  
-  ________________________________________________________ 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p align="center"&gt;
-  &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/fireeye/flare-vm/blob/master/flarevm.png?raw=true"&gt;&lt;img width="300" height="300" src="https://github.com/fireeye/flare-vm/raw/master/flarevm.png?raw=true" alt="FLARE VM" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;/p&gt;                  
-&lt;p&gt;Welcome to FLARE VM - a fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.&lt;/p&gt;
-&lt;p&gt;Please see &lt;a href="https://www.fireeye.com/blog/threat-research/2018/11/flare-vm-update.html" rel="nofollow"&gt;https://www.fireeye.com/blog/threat-research/2018/11/flare-vm-update.html&lt;/a&gt; for a blog on installing FLARE VM.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-update" class="anchor" aria-hidden="true" href="#update"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Update&lt;/h1&gt;
-&lt;p&gt;Starting with version 2.0, FLARE VM has introduced &lt;strong&gt;breaking changes&lt;/strong&gt; with previous versions. A fresh installation in a clean Virtual Machine is recommended.&lt;/p&gt;
-&lt;p&gt;Starting with version 2.0, FLARE VM uses the following environment variables:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TOOL_LIST_DIR&lt;/code&gt;: The default value is set to &lt;em&gt;&lt;code&gt;%PROGRAMDATA%&lt;/code&gt;&lt;/em&gt;&lt;code&gt;\Microsoft\Windows\Start Menu\Programs\FLARE&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TOOL_LIST_SHORTCUT&lt;/code&gt;: The default value is set to &lt;em&gt;&lt;code&gt;%USERPROFILE%&lt;/code&gt;&lt;/em&gt;&lt;code&gt;\Desktop\FLARE.lnk&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The installer script sets those environment variables automatically. If there are issues during installation, please verify that those environment variables are set correctly.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-installation-install-script" class="anchor" aria-hidden="true" href="#installation-install-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation (Install Script)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Create and configure a new Windows Virtual Machine
-&lt;ul&gt;
-&lt;li&gt;Ensure VM is updated completely. You may have to check for updates, reboot, and check again until no more remain&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Take a snapshot of your machine!&lt;/li&gt;
-&lt;li&gt;Download and copy &lt;code&gt;install.ps1&lt;/code&gt; on your newly configured machine.&lt;/li&gt;
-&lt;li&gt;Open PowerShell as an Administrator&lt;/li&gt;
-&lt;li&gt;Enable script execution by running the following command:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Set-ExecutionPolicy Unrestricted&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Finally, execute the installer script as follows:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.\install.ps1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;You can also pass your password as an argument: &lt;code&gt;.\install.ps1 -password &amp;lt;password&amp;gt;&lt;/code&gt;
-``&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The script will set up the Boxstarter environment and proceed to download and install the FLARE VM environment. You will be prompted for the Administrator password in order to automate host restarts during installation.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-customizing-packages" class="anchor" aria-hidden="true" href="#customizing-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customizing packages&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;NOTE&lt;/em&gt;: By customizing your own packages list, you will NOT automatically get the newly added packages by simply running &lt;code&gt;cup all&lt;/code&gt;. You can always manually install a new package by using &lt;code&gt;cinst&lt;/code&gt; or &lt;code&gt;choco install&lt;/code&gt; command.&lt;/li&gt;
-&lt;li&gt;For a list of available packages to use, please refer to the following &lt;a href="https://github.com/fireeye/flare-vm/packages.csv"&gt;URL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Create and configure a new Windows Virtual Machine.&lt;/li&gt;
-&lt;li&gt;Take your initial snapshot before installing FLARE VM&lt;/li&gt;
-&lt;li&gt;Download and copy &lt;a href="https://github.com/fireeye/flare-vm/blob/master/install.ps1"&gt;&lt;code&gt;install.ps1&lt;/code&gt;&lt;/a&gt; on to your new VM&lt;/li&gt;
-&lt;li&gt;Download and copy &lt;a href="https://github.com/fireeye/flare-vm/blob/master/profile.json"&gt;&lt;code&gt;profile.json&lt;/code&gt;&lt;/a&gt; on to your new VM&lt;/li&gt;
-&lt;li&gt;Download and copy &lt;a href="https://github.com/fireeye/flare-vm/tree/master/flarevm.installer.flare"&gt;&lt;code&gt;flarevm.installer.flare&lt;/code&gt;&lt;/a&gt; directory on to your new VM&lt;/li&gt;
-&lt;li&gt;Modify the &lt;code&gt;profile.json&lt;/code&gt; file:
-&lt;ul&gt;
-&lt;li&gt;Most of the fields within &lt;code&gt;env&lt;/code&gt; data should be left unchanged.&lt;/li&gt;
-&lt;li&gt;Modify the &lt;code&gt;packages&lt;/code&gt; list in the &lt;code&gt;JSON&lt;/code&gt; file to only include the packages you would like to install. Please refer to the following &lt;a href="https://github.com/fireeye/flare-vm/packages.csv"&gt;URL&lt;/a&gt; for a full list of packages available&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Open &lt;code&gt;PowerShell&lt;/code&gt; as an Administrator&lt;/li&gt;
-&lt;li&gt;Enable script execution by running the following command:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Set-ExecutionPolicy unrestricted&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Finally, execute the installer by providing &lt;code&gt;profile.json&lt;/code&gt; using the &lt;code&gt;-profile_file&lt;/code&gt; switch, assuming &lt;code&gt;profile.json&lt;/code&gt;, &lt;code&gt;install.ps1&lt;/code&gt; and &lt;code&gt;flarevm.installer.flare&lt;/code&gt; are all in the same directory:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.\install.ps1 -profile_file profile.json&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Optionally, you can also pass the following flags:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-password &amp;lt;current_user_password&amp;gt;&lt;/code&gt;: Use the specified password instead of prompting user&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-installation-manually" class="anchor" aria-hidden="true" href="#installation-manually"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation (Manually)&lt;/h1&gt;
-&lt;p&gt;First, install BoxStarter. All commands are expected to be executed with Administrator privileges.&lt;/p&gt;
-&lt;p&gt;If you are using PowerShell v2:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Set-ExecutionPolicy Unrestricted
-iex ((New-Object System.Net.WebClient).DownloadString('http://boxstarter.org/bootstrapper.ps1')); get-boxstarter -Force
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And PowerShell v3 or newest:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Set-ExecutionPolicy Unrestricted
-. { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, you can deploy FLARE VM environment as follows&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/fireeye/flare-vm/master/install.ps1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;NOTE: The old installation method using the webinstaller link is now deprecated.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-installing-a-new-package" class="anchor" aria-hidden="true" href="#installing-a-new-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing a new package&lt;/h1&gt;
-&lt;p&gt;FLARE VM uses the chocolatey public and custom FLARE package repositories. It is easy to install a new package. For example, enter the following command as Administrator to deploy x64dbg on your system:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cinst x64dbg
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;&lt;a id="user-content-staying-up-to-date" class="anchor" aria-hidden="true" href="#staying-up-to-date"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Staying up to date&lt;/h1&gt;
-&lt;p&gt;Type the following command to update all of the packages to the most recent version:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cup all
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;&lt;a id="user-content-malware-analysis-with-flare-vm" class="anchor" aria-hidden="true" href="#malware-analysis-with-flare-vm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Malware Analysis with FLARE VM&lt;/h1&gt;
-&lt;p&gt;For an example malware analysis session using FLARE VM, please see the blog at &lt;a href="https://www.fireeye.com/blog/threat-research/2017/07/flare-vm-the-windows-malware.html" rel="nofollow"&gt;https://www.fireeye.com/blog/threat-research/2017/07/flare-vm-the-windows-malware.html&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The installation instructions referenced in the above blog post are outdated. For installation instructions, follow the steps outlined in the blog &lt;a href="https://www.fireeye.com/blog/threat-research/2018/11/flare-vm-update.html" rel="nofollow"&gt;https://www.fireeye.com/blog/threat-research/2018/11/flare-vm-update.html&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;&lt;a id="user-content-installed-tools" class="anchor" aria-hidden="true" href="#installed-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installed Tools&lt;/h1&gt;
-&lt;h2&gt;&lt;a id="user-content-android" class="anchor" aria-hidden="true" href="#android"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Android&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;dex2jar&lt;/li&gt;
-&lt;li&gt;apktool&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-debuggers" class="anchor" aria-hidden="true" href="#debuggers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debuggers&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;flare-qdb&lt;/li&gt;
-&lt;li&gt;scdbg&lt;/li&gt;
-&lt;li&gt;OllyDbg + OllyDump + OllyDumpEx&lt;/li&gt;
-&lt;li&gt;OllyDbg2 + OllyDumpEx&lt;/li&gt;
-&lt;li&gt;x64dbg&lt;/li&gt;
-&lt;li&gt;WinDbg + OllyDumpex + pykd&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-decompilers" class="anchor" aria-hidden="true" href="#decompilers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Decompilers&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;RetDec&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-delphi" class="anchor" aria-hidden="true" href="#delphi"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Delphi&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Interactive Delphi Reconstructor (IDR)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-developer-tools" class="anchor" aria-hidden="true" href="#developer-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developer Tools&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VC Build Tools&lt;/li&gt;
-&lt;li&gt;NASM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-disassemblers" class="anchor" aria-hidden="true" href="#disassemblers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Disassemblers&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Ghidra&lt;/li&gt;
-&lt;li&gt;IDA Free (5.0 &amp;amp; 7.0)&lt;/li&gt;
-&lt;li&gt;Binary Ninja Demo&lt;/li&gt;
-&lt;li&gt;radare2&lt;/li&gt;
-&lt;li&gt;Cutter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-net" class="anchor" aria-hidden="true" href="#net"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.NET&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;de4dot&lt;/li&gt;
-&lt;li&gt;Dot Net String Decoder (DNSD)&lt;/li&gt;
-&lt;li&gt;dnSpy&lt;/li&gt;
-&lt;li&gt;DotPeek&lt;/li&gt;
-&lt;li&gt;ILSpy&lt;/li&gt;
-&lt;li&gt;RunDotNetDll&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-flash" class="anchor" aria-hidden="true" href="#flash"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flash&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;FFDec&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-forensic" class="anchor" aria-hidden="true" href="#forensic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Forensic&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Volatility&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-hex-editors" class="anchor" aria-hidden="true" href="#hex-editors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hex Editors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;FileInsight&lt;/li&gt;
-&lt;li&gt;HxD&lt;/li&gt;
-&lt;li&gt;010 Editor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-java" class="anchor" aria-hidden="true" href="#java"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Java&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;JD-GUI&lt;/li&gt;
-&lt;li&gt;Bytecode-Viewer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-networking" class="anchor" aria-hidden="true" href="#networking"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Networking&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;FakeNet-NG&lt;/li&gt;
-&lt;li&gt;ncat&lt;/li&gt;
-&lt;li&gt;nmap&lt;/li&gt;
-&lt;li&gt;Wireshark&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-office" class="anchor" aria-hidden="true" href="#office"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Office&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Offvis&lt;/li&gt;
-&lt;li&gt;OfficeMalScanner&lt;/li&gt;
-&lt;li&gt;oledump.py&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-pdf" class="anchor" aria-hidden="true" href="#pdf"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PDF&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;PDFiD&lt;/li&gt;
-&lt;li&gt;PDFParser&lt;/li&gt;
-&lt;li&gt;PDFStreamDumper&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-pe" class="anchor" aria-hidden="true" href="#pe"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PE&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;PEiD&lt;/li&gt;
-&lt;li&gt;ExplorerSuite (CFF Explorer)&lt;/li&gt;
-&lt;li&gt;PEview&lt;/li&gt;
-&lt;li&gt;DIE&lt;/li&gt;
-&lt;li&gt;PeStudio&lt;/li&gt;
-&lt;li&gt;PEBear&lt;/li&gt;
-&lt;li&gt;ResourceHacker&lt;/li&gt;
-&lt;li&gt;LordPE&lt;/li&gt;
-&lt;li&gt;PPEE(puppy)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-pentest" class="anchor" aria-hidden="true" href="#pentest"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pentest&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;MetaSploit&lt;/li&gt;
-&lt;li&gt;Windows binaries from Kali Linux&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-text-editors" class="anchor" aria-hidden="true" href="#text-editors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Text Editors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SublimeText3&lt;/li&gt;
-&lt;li&gt;Notepad++&lt;/li&gt;
-&lt;li&gt;Vim&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-visual-basic" class="anchor" aria-hidden="true" href="#visual-basic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Visual Basic&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VBDecompiler&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-web" class="anchor" aria-hidden="true" href="#web"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;BurpSuite Free Edition&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-utilities" class="anchor" aria-hidden="true" href="#utilities"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Utilities&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;FLOSS&lt;/li&gt;
-&lt;li&gt;HashCalc&lt;/li&gt;
-&lt;li&gt;HashMyFiles&lt;/li&gt;
-&lt;li&gt;Checksum&lt;/li&gt;
-&lt;li&gt;7-Zip&lt;/li&gt;
-&lt;li&gt;Far Manager&lt;/li&gt;
-&lt;li&gt;Putty&lt;/li&gt;
-&lt;li&gt;Wget&lt;/li&gt;
-&lt;li&gt;RawCap&lt;/li&gt;
-&lt;li&gt;UPX&lt;/li&gt;
-&lt;li&gt;RegShot&lt;/li&gt;
-&lt;li&gt;Process Hacker&lt;/li&gt;
-&lt;li&gt;Sysinternals Suite&lt;/li&gt;
-&lt;li&gt;API Monitor&lt;/li&gt;
-&lt;li&gt;SpyStudio&lt;/li&gt;
-&lt;li&gt;Shellcode Launcher&lt;/li&gt;
-&lt;li&gt;Cygwin&lt;/li&gt;
-&lt;li&gt;Unxutils&lt;/li&gt;
-&lt;li&gt;Malcode Analyst Pack (MAP)&lt;/li&gt;
-&lt;li&gt;XORSearch&lt;/li&gt;
-&lt;li&gt;XORStrings&lt;/li&gt;
-&lt;li&gt;Yara&lt;/li&gt;
-&lt;li&gt;CyberChef&lt;/li&gt;
-&lt;li&gt;KernelModeDriverLoader&lt;/li&gt;
-&lt;li&gt;Process Dump&lt;/li&gt;
-&lt;li&gt;Exe2Aut&lt;/li&gt;
-&lt;li&gt;Innounp&lt;/li&gt;
-&lt;li&gt;InnoExtract&lt;/li&gt;
-&lt;li&gt;UniExtract2&lt;/li&gt;
-&lt;li&gt;Hollows-Hunter&lt;/li&gt;
-&lt;li&gt;PE-sieve&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-python-modules-tools" class="anchor" aria-hidden="true" href="#python-modules-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Python, Modules, Tools&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Py2ExeDecompiler&lt;/li&gt;
-&lt;li&gt;Python 2.7
-&lt;ul&gt;
-&lt;li&gt;hexdump&lt;/li&gt;
-&lt;li&gt;pefile&lt;/li&gt;
-&lt;li&gt;winappdbg&lt;/li&gt;
-&lt;li&gt;pycryptodome&lt;/li&gt;
-&lt;li&gt;vivisect&lt;/li&gt;
-&lt;li&gt;binwalk&lt;/li&gt;
-&lt;li&gt;capstone-windows&lt;/li&gt;
-&lt;li&gt;unicorn&lt;/li&gt;
-&lt;li&gt;oletools&lt;/li&gt;
-&lt;li&gt;olefile&lt;/li&gt;
-&lt;li&gt;unpy2exe&lt;/li&gt;
-&lt;li&gt;uncompyle6&lt;/li&gt;
-&lt;li&gt;pycrypto&lt;/li&gt;
-&lt;li&gt;pyftpdlib&lt;/li&gt;
-&lt;li&gt;pyasn1&lt;/li&gt;
-&lt;li&gt;pyOpenSSL&lt;/li&gt;
-&lt;li&gt;ldapdomaindump&lt;/li&gt;
-&lt;li&gt;pyreadline&lt;/li&gt;
-&lt;li&gt;flask&lt;/li&gt;
-&lt;li&gt;networkx&lt;/li&gt;
-&lt;li&gt;requests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Python 3.7
-&lt;ul&gt;
-&lt;li&gt;binwalk&lt;/li&gt;
-&lt;li&gt;unpy2exe&lt;/li&gt;
-&lt;li&gt;uncompyle6&lt;/li&gt;
-&lt;li&gt;StringSifter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-other" class="anchor" aria-hidden="true" href="#other"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VC Redistributable Modules (2005, 2008, 2010, 2012, 2013, 2015, 2017)&lt;/li&gt;
-&lt;li&gt;.NET Framework versions 4.6.2 and 4.7.2&lt;/li&gt;
-&lt;li&gt;Practical Malware Analysis Labs&lt;/li&gt;
-&lt;li&gt;Google Chrome&lt;/li&gt;
-&lt;li&gt;Cmder Mini&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-legal-notice" class="anchor" aria-hidden="true" href="#legal-notice"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Legal Notice&lt;/h1&gt;
-&lt;pre&gt;This download configuration script is provided to assist cyber security analysts
-in creating handy and versatile toolboxes for malware analysis environments. It
-provides a convenient interface for them to obtain a useful set of analysis
-tools directly from their original sources. Installation and use of this script
-is subject to the Apache 2.0 License.
- 
-You as a user of this script must review, accept and comply with the license
-terms of each downloaded/installed package listed below. By proceeding with the
-installation, you are accepting the license terms of each package, and
-acknowledging that your use of each package will be subject to its respective
-license terms.
-
-List of package licenses:
-
-http://exeinfo.atwebpages.com
-http://go.microsoft.com/fwlink/?LinkID=251960
-http://jd.benow.ca/
-http://msdn.microsoft.com/en-US/cc300389.aspx
-http://ntinfo.biz
-https://www.sublimetext.com
-http://opensource.org/licenses/MIT
-http://progress-tools.x10.mx/dnsd.html
-http://sandsprite.com/CodeStuff/scdbg_manual/MANUAL_EN.html
-http://sandsprite.com/iDef/MAP/
-http://sandsprite.com/iDef/SysAnalyzer/
-http://sandsprite.com/tools.php?id=17
-http://svn.code.sf.net/p/processhacker/code/2.x/trunk/LICENSE.txt
-http://technet.microsoft.com/en-us/sysinternals/bb469936
-http://upx.sourceforge.net/upx-license.html
-http://vimdoc.sourceforge.net/htmldoc/uganda.html
-http://whiteboard.nektra.com/spystudio/spystudio_license
-http://wjradburn.com/software/
-http://www.7-zip.org/license.txt
-http://www.angusj.com/resourcehacker/
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
-http://www.gnu.org/copyleft/gpl.html
-http://www.gnu.org/licenses/gpl-2.0.html
-http://www.novirusthanks.org/products/kernel-mode-driver-loader/
-http://www.ntcore.com/exsuite.php
-http://wjradburn.com/software/
-http://www.ollydbg.de/download.htm
-http://www.ollydbg.de/version2.html
-http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-http://www.radare.org/r/license.html
-http://www.rohitab.com/apimonitor
-http://www.slavasoft.com/hashcalc/license-agreement.htm
-http://www.techworld.com/download/portable-applications/microsoft-offvis-11-3214034/
-https://blog.didierstevens.com/programs/pdf-tools/
-https://blog.didierstevens.com/programs/xorsearch/
-https://bytecodeviewer.com/
-https://cdn.rawgit.com/iggi131/packages/master/RawCap/license.txt
-https://docs.binary.ninja/about/license/#demo-license
-https://docs.binary.ninja/about/license/index.html#demo-license
-https://github.com/0xd4d/de4dot/blob/master/LICENSE.de4dot.txt
-https://github.com/0xd4d/dnSpy
-https://github.com/0xd4d/dnSpy/blob/master/dnSpy/dnSpy/LicenseInfo/GPLv3.txt
-https://github.com/FarGroup/FarManager/blob/master/LICENSE
-https://github.com/clinicallyinane/shellcode_launcher/
-https://github.com/enkomio/RunDotNetDll/blob/master/LICENSE.TXT
-https://github.com/fireeye/flare-fakenet-ng
-https://github.com/fireeye/flare-floss
-https://github.com/fireeye/flare-qdb
-https://github.com/fireeye/flare-vm
-https://github.com/icsharpcode/ILSpy/blob/master/README.txt
-https://github.com/icsharpcode/ILSpy/blob/master/doc/license.txt
-https://github.com/java-decompiler/jd-gui/blob/master/LICENSE
-https://github.com/mikesiko/PracticalMalwareAnalysis-Labs
-https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE
-https://github.com/radareorg/cutter
-https://github.com/x64dbg/x64dbg/blob/development/LICENSE
-https://github.com/x64dbg/x64dbgpy/blob/v25/LICENSE
-https://hshrzd.wordpress.com/pe-bear/
-https://github.com/hasherezade/hollows_hunter/blob/master/LICENSE
-https://github.com/hasherezade/pe-sieve/blob/master/LICENSE
-https://metasploit.com/
-https://mh-nexus.de/en/hxd/license.php
-https://nmap.org/ncat/
-https://portswigger.net/burp
-https://raw.githubusercontent.com/IntelliTect/Licenses/master/WindowsManagementFramework.txt
-https://raw.githubusercontent.com/chocolatey/choco/master/LICENSE
-https://raw.githubusercontent.com/ferventcoder/checksum/master/LICENSE
-https://retdec.com/
-https://svn.nmap.org/nmap/COPYING
-https://www.7-zip.org/
-https://www.free-decompiler.com/flash/license/
-https://www.gnu.org/copyleft/gpl.html
-https://www.hex-rays.com/products/ida/support/download_freeware.shtml
-https://www.jetbrains.com/decompiler/download/license.html
-https://www.kali.org/about-us/
-https://www.mcafee.com/hk/downloads/free-tools/fileinsight.aspx
-https://www.microsoft.com/en-us/download/details.aspx?id=44266
-https://www.nirsoft.net/utils/hash_my_files.html
-https://www.openssl.org/source/license.html
-https://www.python.org/download/releases/2.7/license
-https://docs.python.org/3/license.html
-https://www.sweetscape.com/010editor/manual/License.htm
-https://www.vb-decompiler.org/license.htm
-http://kpnc.org/idr32/en/
-https://www.vim.org/about.php
-https://www.winitor.com
-https://raw.githubusercontent.com/NationalSecurityAgency/ghidra/master/LICENSE
-https://www.mzrst.com/
-https://raw.githubusercontent.com/dscharrer/innoextract/master/LICENSE
-http://innounp.sourceforge.net/
-https://www.visualstudio.com/en-us/support/legal/mt644918
-http://repo.or.cz/w/nasm.git/blob_plain/HEAD:/LICENSE
-https://blog.didierstevens.com/programs/oledump-py/
-https://lessmsi.activescott.com/
-https://cert.at/downloads/software/bytehist_en.html
-https://github.com/ReFirmLabs/binwalk
-https://github.com/fireeye/SilkETW
-https://github.com/fireeye/stringsifter
-&lt;/pre&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>fireeye</author><guid isPermaLink="false">https://github.com/fireeye/flare-vm</guid><pubDate>Tue, 19 Nov 2019 00:01:00 GMT</pubDate></item><item><title>microsoft/WSLab #2 in PowerShell, Today</title><link>https://github.com/microsoft/WSLab</link><description>&lt;p&gt;&lt;i&gt;Windows Server rapid lab deployment scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://youtu.be/u7d6Go8weBc" rel="nofollow"&gt;&lt;img src="/Screenshots/S2DSimulations_presentation_thumb.png" alt="WSLab in MVPDays" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://youtu.be/5IX9OLEk50Q" rel="nofollow"&gt;&lt;img src="/Screenshots/WSLab_Datacenter_Simulation_presentation_thumb.png" alt="WSLab in CDCGernabt" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#project-description"&gt;Project Description&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#videos"&gt;Videos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#howto"&gt;HowTo&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#step-1-download-required-files-prerequisites"&gt;Step 1 Download required files (prerequisites)&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#scripts"&gt;Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#windows-server-2016"&gt;Windows Server 2016&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#or-windows-server-2019"&gt;or Windows Server 2019&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#or-windows-server-insider-preview"&gt;or Windows Server Insider Preview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#optionally-you-can-download-scvmm-2019-files"&gt;Optionally you can download SCVMM 2019 files&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-2-create-folder-and-unzip-scripts-there"&gt;Step 2 Create folder and Unzip scripts there&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-3-optional-check-the-labconfigps1"&gt;Step 3 (Optional) Check the LabConfig.ps1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-4-right-click-and-run-with-powershell-1_prereqps1"&gt;Step 4 Right-click and run with PowerShell 1_Prereq.ps1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-5-optional-copy-scvmm-files-or-your-tools-to-toolsvhd-folder"&gt;Step 5 (optional) Copy SCVMM files (or your tools) to toolsVHD folder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-6-right-click-and-run-with-powershell-2_createparentdisksps1"&gt;Step 6 Right-click and run with PowerShell 2_CreateParentDisks.ps1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-7-right-click-and-run-with-powershell-deployps1"&gt;Step 7 Right-click and run with PowerShell Deploy.ps1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-8-continue-with-s2d-hyperconverged-scenario"&gt;Step 8 Continue with S2D Hyperconverged Scenario&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-9-cleanup-lab-with-cleanupps1"&gt;Step 9 Cleanup lab with Cleanup.ps1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#step-10-try-different-scenarios"&gt;Step 10 Try different scenarios&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#tips-and-tricks"&gt;Tips and tricks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#known-issues"&gt;Known issues&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#so-what-is-it-good-for"&gt;So what is it good for?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1&gt;&lt;a id="user-content-project-description" class="anchor" aria-hidden="true" href="#project-description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Description&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Deployment Automation of Windows Server labs on WS2016/Windows10 Hyper-V&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Simply deploy your lab just with these scripts and ISO file.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Lab can run LAB on Windows 10, Windows Server 2016 (both Core and GUI) or even in &lt;a href="/Scenarios/Running%20WSLab%20in%20Azure"&gt;Azure VM&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Major differentiator is that once hydrated (first 2 scripts), deploy takes ~5 minutes. Cleanup is ~10s.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Options for setting up a Windows Server 2016-based lab are simpler than other available lab automation systems as the project is based on Powershell scripts rather than XML or DSC configuration files.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Scripts are not intentionally doing everything. You can spend nice time studying scenarios.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This solution is used in Microsoft Premier Workshop for Software Defined Storage, Hyper-V and System Center VMM. If you have Premier Contract, contact your TAM and our trainers can deliver this workshop for you.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Follow &lt;a href="https://twitter.com/search?f=tweets&amp;amp;vertical=default&amp;amp;q=%23wslab" rel="nofollow"&gt;#wslab&lt;/a&gt; hash tag to get latest news.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Check &lt;a href="https://github.com/Microsoft/WSLab/tree/master/Scenarios"&gt;this&lt;/a&gt; page for end to end scenarios!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-videos" class="anchor" aria-hidden="true" href="#videos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Videos&lt;/h1&gt;
-&lt;p&gt;Note: Some videos may be a bit outdated as there is continuous innovation going on in the scripts.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/705A-mCvzUc" rel="nofollow"&gt;1 Prereq and Create Parent disks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/cAOCcTjlkm4" rel="nofollow"&gt;2 Basic S2D Scenario Walkthrough&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/qX42Yj6_dSA" rel="nofollow"&gt;3 LabConfig.ps1 deep dive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/Rj_uhDN0tN4" rel="nofollow"&gt;4 Windows Server Insider and Honolulu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/NTrncW2omSY" rel="nofollow"&gt;5 Virtual Machine Manager 1711 and Windows Server 1709&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/Gd9_rzePrhI" rel="nofollow"&gt;6 S2D Disaster recovery - one node OS lost&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/uTzXEFVd16o" rel="nofollow"&gt;7 S2D Disaster recovery - all nodes OS lost&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/K81qLv7lLuE" rel="nofollow"&gt;8 S2D Bare metal deployment with SCVMM&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-howto" class="anchor" aria-hidden="true" href="#howto"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HowTo&lt;/h1&gt;
-&lt;h2&gt;&lt;a id="user-content-step-1-download-required-files-prerequisites" class="anchor" aria-hidden="true" href="#step-1-download-required-files-prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 1 Download required files (prerequisites)&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-scripts" class="anchor" aria-hidden="true" href="#scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scripts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Microsoft/WSLab/blob/master/scripts.zip?raw=true"&gt;Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-windows-server-2016" class="anchor" aria-hidden="true" href="#windows-server-2016"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows Server 2016&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016" rel="nofollow"&gt;ISO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.catalog.update.microsoft.com/Search.aspx?q=2019%20Cumulative%20Update%20for%20Windows%20Server%202016%20for%20x64-based%20Systems" rel="nofollow"&gt;Latest Cumulative Update&lt;/a&gt; for Windows Server 2016 and &lt;a href="http://aka.ms/2016ssu" rel="nofollow"&gt;Servicing Stack Update&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-or-windows-server-2019" class="anchor" aria-hidden="true" href="#or-windows-server-2019"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;or Windows Server 2019&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019" rel="nofollow"&gt;ISO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=Cumulative%20Update%20for%20Windows%20Server%202019%20for%20x64-based%20Systems%20" rel="nofollow"&gt;Latest Cumulative Update&lt;/a&gt; for Windows Server 2019 and &lt;a href="http://aka.ms/2019ssu" rel="nofollow"&gt;Servicing Stack Update&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-or-windows-server-insider-preview" class="anchor" aria-hidden="true" href="#or-windows-server-insider-preview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;or Windows Server Insider Preview&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver" rel="nofollow"&gt;LTSC ISO&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;NOTE: There is no LTSC available yet. In 17744 was a bug, so during deployment process DC creation takes forewer. Workaround is to just log in as corp\Administrator to DC and it magically finishes.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-optionally-you-can-download-scvmm-2019-files" class="anchor" aria-hidden="true" href="#optionally-you-can-download-scvmm-2019-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Optionally you can download SCVMM 2019 files&lt;/h3&gt;
-&lt;p&gt;Note: watch entire process how to deploy SCVMM &lt;a href="https://youtu.be/NTrncW2omSY?list=PLf9T7wfY_JD2UpjLXoYNcnu4rc1JSPfqE" rel="nofollow"&gt;here&lt;/a&gt; (bit outdated)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install" rel="nofollow"&gt;ADK 1809 and ADKwinPE 1809&lt;/a&gt; Note: you need to run adksetup.exe and download all files and place it to tools disk. Not just setup.exe. Same applies to adkwinpesetup.exe.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-release" rel="nofollow"&gt;SCVMM 2019&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2017-rtm" rel="nofollow"&gt;SQL 2017&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-step-2-create-folder-and-unzip-scripts-there" class="anchor" aria-hidden="true" href="#step-2-create-folder-and-unzip-scripts-there"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 2 Create folder and Unzip scripts there&lt;/h2&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/ScriptsExtracted.png"&gt;&lt;img src="/Screenshots/ScriptsExtracted.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-3-optional-check-the-labconfigps1" class="anchor" aria-hidden="true" href="#step-3-optional-check-the-labconfigps1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 3 (Optional) Check the LabConfig.ps1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Edit LabConfig.ps1 to specify the lab setup that you require (such as different domain name, Domain Admin name...). This script file documents the available configuration options. (The default script will generate a lab with a Windows Server 2016 DataCenter Domain Controller and 4 Windows Server 2016 Core servers ready to be set up with Storage Spaces Direct.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Default Labconfig&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/LabConfig.png"&gt;&lt;img src="/Screenshots/LabConfig.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Default Labconfig with collapsed sections (ctrl+M)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/LabConfigCollapsed.png"&gt;&lt;img src="/Screenshots/LabConfigCollapsed.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Advanced LabConfig (deleted lines 1-16)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/LabConfigAdvanced.png"&gt;&lt;img src="/Screenshots/LabConfigAdvanced.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-4-right-click-and-run-with-powershell-1_prereqps1" class="anchor" aria-hidden="true" href="#step-4-right-click-and-run-with-powershell-1_prereqps1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 4 Right-click and run with PowerShell 1_Prereq.ps1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;1_Prereq.ps1 will create a folder structure and will download necessary files from the internet.&lt;/li&gt;
-&lt;li&gt;If your server does not have an internet connection, run this on an internet connected machine, copy created files over ,and run 1_prereq.ps1 again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/1_Prereq.png"&gt;&lt;img src="/Screenshots/1_Prereq.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/1_PrereqResult1.png"&gt;&lt;img src="/Screenshots/1_PrereqResult1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: Tools folder created&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/1_PrereqResult2.png"&gt;&lt;img src="/Screenshots/1_PrereqResult2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CreateParentDisk tool, DSC modules and ToolsVHD folder&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/ToolsCreateParentDisk.png"&gt;&lt;img src="/Screenshots/ToolsCreateParentDisk.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-5-optional-copy-scvmm-files-or-your-tools-to-toolsvhd-folder" class="anchor" aria-hidden="true" href="#step-5-optional-copy-scvmm-files-or-your-tools-to-toolsvhd-folder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 5 (optional) Copy SCVMM files (or your tools) to toolsVHD folder&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;If you modified labconfig.ps1 in Step 3 to deploy SCVMM, populate the &lt;code&gt;temp\ToolsVHD\SCVMM&lt;/code&gt; folder. If you downloaded SCVMM trial, run the exe file to extract it. Extract SCVMM Update Rollups (extract MSP files from cabs).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can copy your favorite tools to ToolsVHD, that's always mounted to DC, or to any machine in the lab.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;SCVMM Folders in ToolsVHD folder&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/ToolsVHDFolderSCVMM1.png"&gt;&lt;img src="/Screenshots/ToolsVHDFolderSCVMM1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/ToolsVHDFolderSCVMM2.png"&gt;&lt;img src="/Screenshots/ToolsVHDFolderSCVMM2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-6-right-click-and-run-with-powershell-2_createparentdisksps1" class="anchor" aria-hidden="true" href="#step-6-right-click-and-run-with-powershell-2_createparentdisksps1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 6 Right-click and run with PowerShell 2_CreateParentDisks.ps1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;2_CreateParentDisks.ps1 will check if you have Hyper-V installed, it will prompt you for Windows Server ISO file, and it will ask for packages (provide Cumulative Update and Servicing Stack Update). After, it will hydrate parent disks and Domain Controller.&lt;/li&gt;
-&lt;li&gt;A Domain controller is provisioned using DSC. Requires time to deploy, but after that you do not need to run this step anymore as DC is saved, and returned to previous state before deploy step.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisks.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisks.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ISO Prompt&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksISOPrompt.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksISOPrompt.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MSU Prompt&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksMSUPrompt.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksMSUPrompt.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: Script finished&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksResultCleanup3.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksResultCleanup3.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: Script cleanup unnecessary folders - before&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksResultCleanup2.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksResultCleanup2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: Script cleanup unnecessary folders - after&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksResultCleanup4.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksResultCleanup4.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: Parent disks are created&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksResultParentDisks.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksResultParentDisks.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result: DC, thats imported during deploy, is Created&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/2_CreateParentDisksResultDC.png"&gt;&lt;img src="/Screenshots/2_CreateParentDisksResultDC.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-7-right-click-and-run-with-powershell-deployps1" class="anchor" aria-hidden="true" href="#step-7-right-click-and-run-with-powershell-deployps1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 7 Right-click and run with PowerShell Deploy.ps1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Deploy.ps1 will deploy servers specified by Labconfig.ps1. By default, it will deploy servers for S2D Hyperconverged &lt;a href="https://github.com/Microsoft/WSLab/tree/master/Scenarios"&gt;scenario&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/Deploy.png"&gt;&lt;img src="/Screenshots/Deploy.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/DeployResultOverview.png"&gt;&lt;img src="/Screenshots/DeployResultOverview.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-8-continue-with-s2d-hyperconverged-scenario" class="anchor" aria-hidden="true" href="#step-8-continue-with-s2d-hyperconverged-scenario"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 8 Continue with S2D Hyperconverged Scenario&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Microsoft/WSLab/tree/master/Scenarios/S2D%20Hyperconverged"&gt;S2D Hyperconverged Scenario page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;You will be guided to deploy 4 Node Storage Spaces Direct cluster.&lt;/li&gt;
-&lt;li&gt;Note: scenario is completely separate script. You use it when logged into DC. Spend time observing what it does as you can easily learn from it. If you are not in rush, run it line by line in PowerShell or PowerShell ISE and use a GUI to observe changes to understand what is happening.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-step-9-cleanup-lab-with-cleanupps1" class="anchor" aria-hidden="true" href="#step-9-cleanup-lab-with-cleanupps1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 9 Cleanup lab with Cleanup.ps1&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VMs and switch are identified using prefix defined in LabConfig.&lt;/li&gt;
-&lt;li&gt;All VMs\Switches with prefix are listed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/Cleanup.png"&gt;&lt;img src="/Screenshots/Cleanup.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/Cleanup1.png"&gt;&lt;img src="/Screenshots/Cleanup1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/Cleanup2.png"&gt;&lt;img src="/Screenshots/Cleanup2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-step-10-try-different-scenarios" class="anchor" aria-hidden="true" href="#step-10-try-different-scenarios"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step 10 Try different scenarios&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Microsoft/WSLab/tree/master/Scenarios/"&gt;Scenarios page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Just replace LabConfig and Deploy again (takes 5-10 minutes to spin up new VMs).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-tips-and-tricks" class="anchor" aria-hidden="true" href="#tips-and-tricks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tips and tricks&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;In the tools folder, CreateParentDisk.ps1 script is created. You can use this anytime to create additional parent disks (such as Server with GUI or Windows 10). Just right-click and run with PowerShell&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/Screenshots/ToolsCreateParentDisk.png"&gt;&lt;img src="/Screenshots/ToolsCreateParentDisk.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If you want to run scripts on Server Core, modify labconfig and use ServerISOFolder and ClientISOFolder variables (MSUs are optional).&lt;/li&gt;
-&lt;li&gt;Disable Defender during CreateParentDisks as AMSI is scanning scripts and utilizing the CPU. (Takes twice more time to create parent disks).&lt;/li&gt;
-&lt;li&gt;Every script is creating a transcript file. You can look for issues there.&lt;/li&gt;
-&lt;li&gt;If you want internet connection, just specify Internet=$true in Labconfig.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-known-issues" class="anchor" aria-hidden="true" href="#known-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Known issues&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;DISM does not work on Cluster Shared Volumes.&lt;/li&gt;
-&lt;li&gt;When waiting on DC to come online, the script throws red errors by design. There is nothing to worry about.&lt;/li&gt;
-&lt;li&gt;DISM may throw errors on NTFS volumes. Just build the lab again in different folder.&lt;/li&gt;
-&lt;li&gt;Sometimes if all machines are started at once, some are not domain joined. Just cleanup and deploy again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;&lt;a id="user-content-so-what-is-it-good-for" class="anchor" aria-hidden="true" href="#so-what-is-it-good-for"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;So what is it good for?&lt;/h1&gt;
-&lt;p&gt;Simulations such as&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;how to script against servers&lt;/li&gt;
-&lt;li&gt;how to automate configuration&lt;/li&gt;
-&lt;li&gt;what will happen when I run this and that command&lt;/li&gt;
-&lt;li&gt;how change drive in S2D cluster&lt;/li&gt;
-&lt;li&gt;what will happen when one node goes down&lt;/li&gt;
-&lt;li&gt;testing new features before pushing to production&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><guid isPermaLink="false">https://github.com/microsoft/WSLab</guid><pubDate>Tue, 19 Nov 2019 00:02:00 GMT</pubDate></item><item><title>k8gege/K8tools #3 in PowerShell, Today</title><link>https://github.com/k8gege/K8tools</link><description>&lt;p&gt;&lt;i&gt;K8工具合集(内网渗透/提权工具/远程溢出/漏洞利用/扫描工具/密码破解/免杀工具/Exploit/APT/0day/Shellcode/Payload/priviledge/BypassUAC/OverFlow/WebShell/PenTest) Web GetShell Exploit(Struts2/Zimbra/Weblogic/Tomcat/Apache/Jboss/DotNetNuke/zabbix)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-k8tools-20191111" class="anchor" aria-hidden="true" href="#k8tools-20191111"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;K8tools 20191111&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/k8gege"&gt;&lt;img src="https://camo.githubusercontent.com/e0158a552cfb7005b85b0beb92634c7556323db1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f417574686f722d6b38676567652d626c756576696f6c6574" alt="Author" data-canonical-src="https://img.shields.io/badge/Author-k8gege-blueviolet" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/k8gege/K8tools/issues"&gt;&lt;img src="https://camo.githubusercontent.com/dc5374913ed9d2f41e9a487ee583281a2c39465c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6b38676567652f4b38746f6f6c73" alt="GitHub issues" data-canonical-src="https://img.shields.io/github/issues/k8gege/K8tools" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/k8gege/K8tools/stargazers"&gt;&lt;img src="https://camo.githubusercontent.com/a7effb5ec84f7c47bfc1cab9cef152302e52f625/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6b38676567652f4b38746f6f6c73" alt="Github Stars" data-canonical-src="https://img.shields.io/github/stars/k8gege/K8tools" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/k8gege/K8tools/network/members"&gt;&lt;img src="https://camo.githubusercontent.com/7ddaa3ca62941d31cb8ae4ef9f393719993f8a7f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f6b38676567652f4b38746f6f6c73" alt="GitHub forks" data-canonical-src="https://img.shields.io/github/forks/k8gege/K8tools" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/k8gege/K8tools/blob/master/LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/f7aff7a83ac9cd970656634bc777985e4eb79207/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6b38676567652f4b38746f6f6c73" alt="GitHub license" data-canonical-src="https://img.shields.io/github/license/k8gege/K8tools" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;
-声明: 工具仅供安全研究或授权渗透，非法用途后果自负。&lt;br&gt;
-下载: &lt;a href="https://github.com/k8gege/K8tools"&gt;https://github.com/k8gege/K8tools&lt;/a&gt;&lt;br&gt;
-&lt;p&gt;PS: 不定期更新,文件比较大，可按需下载。工具有BUG或建议可直接Github上留言&lt;br&gt;
-提权工具均可在远控Cmd或WebShell运行，大部份经过修改编译兼容性稳定性更好&lt;br&gt;
-注意：不保证永久有效,喜欢自行保存。&lt;br&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-综合工具" class="anchor" aria-hidden="true" href="#综合工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;综合工具&lt;/h3&gt;
-[+] 扫描工具 Ladon 5.5 大型内网渗透扫描神器内置39个功能,支持Cobalt Strike&lt;br&gt;
-[+] 扫描工具 K8Cscan5.4 大型内网渗透扫描器内置30个功能,支持Cobalt Strike&lt;br&gt;
-[+] 综合工具 K8飞刀Final.rar&lt;br&gt;
-[+] K8data.mdb K8飞刀漏洞数据库20190402&lt;br&gt;
-[+] K8expList.txt K8飞刀漏洞利用列表&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-提权工具" class="anchor" aria-hidden="true" href="#提权工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;提权工具&lt;/h3&gt;
-[+] 提权工具 CVE-2019-0803.exe Win32k漏洞提权工具&lt;br&gt;
-[+] 提权工具 iislpe.exe  IIS全版本提权(仅限IIS帐户、服务帐户)&lt;br&gt;
-[+] 提权工具 pr.exe pr有参版 pr0无参版（巴西烤肉:国内10年所说的PR或IIS6提权）&lt;br&gt;
-[+] 提权工具 k8uac_20181125[K8].rar 目前还支持全版本WIN7-Win10&lt;br&gt;
-[+] 提权工具 bypassUAC_Win7_10[K8team].rar  13还是15年？Win10打补丁失效&lt;br&gt;
-[+] 提权工具 bypassUACexe_0419[K8].rar  13年的吧 打补丁的WIN7好像不支持了&lt;br&gt;
-[+] 提权工具 Lpk提权_K8.rar   DLLHijack&lt;br&gt;
-[+] 提权工具 Usp10提权_K8.rar  DLLHijack&lt;br&gt;
-[+] 提权工具 MS11-046.exe &lt;br&gt;
-[+] 提权工具 MS11-080.exe &lt;br&gt;
-[+] 提权工具 MS14-068 EXP域内提权神器.rar&lt;br&gt;
-[+] 提权工具 MS15-010提权[K8team]_20150603.rar&lt;br&gt;
-[+] 提权工具 MS15-051提权 CVE-2015-1701_20150525[K8].rar&lt;br&gt;
-[+] 提权工具 MS15-077提权工具[K8].rar&lt;br&gt;
-[+] 提权工具 MS16-016提权EXP[K8].rar&lt;br&gt;
-[+] 提权工具 Windows Win32k.sys EPATHOBJ 0day Exploit 提权工具 [K8team].rar&lt;br&gt;
-[+] 提权工具  k8downexec.mof&lt;br&gt;
-[+] 提权工具  k8zzz.rar SMB溢出 支持执行自定义exe程序&lt;br&gt;
-[+] 提权工具  udf.dll MYSQL udf提权DLL&lt;br&gt;
-[+] 提权工具  ws2help提权_K8.rar&lt;br&gt;
-[+] 提权工具  卡巴6.0.2.614提权.exe&lt;br&gt;
-[+] 提权工具  小红伞 Avira avipbb.sys 提权Exploit_1024[K8].rar&lt;br&gt;
-[+] 提权工具  提权Admin2SystemRun_0419[K8].rar&lt;br&gt;
-[+] 提权工具  提权GetTrustedInstaller_0419[K8].rar&lt;br&gt;
-[+] 提权工具  降权System2AdminRun_0419[K8].rar&lt;br&gt;
-[+] 提权工具  无NET添加用户提权_20140511[K8].rar&lt;br&gt;
-[+] 提权工具 K8_VBS提权脚本免杀生成器.rar&lt;br&gt;
-[+] 进程注入 DLL注入进程工具过UAC&lt;br&gt;
-[+] 提权工具 NV显卡提权NVexploit.rar&lt;br&gt;
-[+] 提权工具 net2.0day.exe&lt;br&gt;
-[+] 提权工具 K8dllhijack.rar DLL却持测试工具&lt;br&gt;
-[+] 提权工具 Invoke-MS16-032.ps1&lt;br&gt;
-[+] Apache 2.2.1.4 mod_isapi exploit.rar&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-漏洞利用" class="anchor" aria-hidden="true" href="#漏洞利用"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;漏洞利用&lt;/h3&gt;
-[+] 漏洞利用 K8飞刀-EXPLOIT内含20个程序EXP（Drupal、Joomla、Wordpress、Vbulletin、Xampp、Zimbra、ThinkPHP、Magento、Discuz）&lt;br&gt;
-[+] 漏洞利用 K8_Struts2_EXP (S2-045、devMode、S2-037、S2-032、S2-020、S2-019、S2-016、S2-013、S2-009、S2-005)&lt;br&gt;
-[+] 漏洞检测 Ladon POC Moudle CVE-2019-11043 (PHP-FPM + Ngnix)&lt;br&gt;
-[+] 漏洞利用 cve-2019-0604 SharePoint RCE exploit&lt;br&gt;
-[+] 漏洞利用 K8_JbossExp.exe Jboss Jmx-console exploit&lt;br&gt;
-[+] 漏洞利用 K8 DotNetNuke DNNspot Store =3.0 GetShell exploit.rar&lt;br&gt;
-[+] 漏洞利用 CVE-2018-2628 Weblogic GetShell EXPLOIT&lt;br&gt;
-[+] 漏洞利用 ColdFusion 8 LFI EXP&lt;br&gt;
-[+] 漏洞利用 K8_TomcatExp_1124[K.8].rar&lt;br&gt;
-[+] 漏洞利用 WordPress 4.2 XSS 0day 20150429[K.8].rar&lt;br&gt;
-[+] 漏洞利用 k8_zabbix_exp_20160820[K.8].rar&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-漏洞利用-1" class="anchor" aria-hidden="true" href="#漏洞利用-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;漏洞利用&lt;/h3&gt;
-[+] 漏洞利用 K8飞刀-EXPLOIT内含20个程序EXP（Drupal、Joomla、Wordpress、Vbulletin、Xampp、Zimbra、ThinkPHP、Magento、Discuz）&lt;br&gt;
-[+] 漏洞利用 K8_Struts2_EXP (S2-045、devMode、S2-037、S2-032、S2-020、S2-019、S2-016、S2-013、S2-009、S2-005)&lt;br&gt;
-[+] 漏洞利用 K8 DotNetNuke DNNspot Store =3.0 GetShell exploit.rar&lt;br&gt;
-[+] 漏洞利用 CVE-2018-2628 Weblogic GetShell EXPLOIT&lt;br&gt;
-[+] 漏洞利用 ColdFusion 8 LFI EXP&lt;br&gt;
-[+] 漏洞利用 K8_TomcatExp_1124[K.8].rar&lt;br&gt;
-[+] 漏洞利用 WordPress 4.2 XSS 0day 20150429[K.8].rar&lt;br&gt;
-[+] 漏洞利用 k8_zabbix_exp_20160820[K.8].rar&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-漏洞利用-2" class="anchor" aria-hidden="true" href="#漏洞利用-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;漏洞利用&lt;/h3&gt;
-[+] 漏洞利用 K8飞刀-EXPLOIT内含20个程序EXP（Drupal、Joomla、Wordpress、Vbulletin、Xampp、Zimbra、ThinkPHP、Magento、Discuz）&lt;br&gt;
-[+] 漏洞利用 K8_Struts2_EXP (S2-045、devMode、S2-037、S2-032、S2-020、S2-019、S2-016、S2-013、S2-009、S2-005)&lt;br&gt;
-[+] 漏洞利用 K8 DotNetNuke DNNspot Store =3.0 GetShell exploit.rar&lt;br&gt;
-[+] 漏洞利用 CVE-2018-2628 Weblogic GetShell EXPLOIT&lt;br&gt;
-[+] 漏洞利用 ColdFusion 8 LFI EXP&lt;br&gt;
-[+] 漏洞利用 K8_TomcatExp_1124[K.8].rar&lt;br&gt;
-[+] 漏洞利用 WordPress 4.2 XSS 0day 20150429[K.8].rar&lt;br&gt;
-[+] 漏洞利用 k8_zabbix_exp_20160820[K.8].rar&lt;br&gt;
-[+] 漏洞利用 K8_Ecshop_Exploit&lt;br&gt;
-[+] 漏洞利用 Magento 1.7.0.2 漏洞EXP_20150624[K.8].rar&lt;br&gt;
-[+] 漏洞利用 K8COOKIE.rar Cookie注入工具&lt;br&gt;
-[+] 漏洞利用 Jboss_invoke_Exp_k8.rar MSF脚本&lt;br&gt;
-[+] 漏洞利用 DB_Owner_GetShell_K8.rar MSSQL DB权限拿SHELL工具&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-挂马工具" class="anchor" aria-hidden="true" href="#挂马工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;挂马工具&lt;/h3&gt;
-[+] 挂马工具 K8domainVBS.exe K8域控植入脚本生成器&lt;br&gt;
-[+] 挂马工具 K8ARPTool.rar 内网ARP工具批量挂马&lt;br&gt;
-[+] 挂马工具 CHM网马生成器.exe&lt;br&gt;
-[+] 0day漏洞 K8飞刀内置5个0day漏洞利用(Word漏洞\IE神洞\WVS\RAR)&lt;br&gt;
-[+] 0day漏洞 [视频]BT5 MSF JAVA 0day CVE-2013-0422 Exploit Demo By K8team.rar&lt;br&gt;
-[+] 0day漏洞 [视频]Hacking Team Flash 0day样本(Firefox IE)完美触发_20150707[K8].rar&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-漏洞环境" class="anchor" aria-hidden="true" href="#漏洞环境"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;漏洞环境&lt;/h3&gt;
-[+] 漏洞环境 K8-ASP注入漏洞环境.rar&lt;br&gt;
-[+] 漏洞环境 k8bbs(php+mysql)注入漏洞环境.rar&lt;br&gt;
-[+] 漏洞环境 K8 SQL强化练习工具V1.0_20190301[K8].rar&lt;br&gt;
-[+] 漏洞环境 K8迷你ASP服务器.exe 绿色一键启动&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-免杀工具" class="anchor" aria-hidden="true" href="#免杀工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;免杀工具&lt;/h3&gt;
-[+] 免杀工具 scrunBase64 ShellCode免杀加载器(CS &amp;amp; MSF)&lt;br&gt;
-[+] 免杀工具 scrunBase32 ShellCode免杀加载器(CS &amp;amp; MSF)&lt;br&gt;
-[+] 免杀工具 scrun.exe &amp;amp; scrun.py ShellCode免杀加载器(CS &amp;amp; MSF)&lt;br&gt;
-[+] 免杀工具 K8_SC_ENCODE(CS &amp;amp; Msf免杀工具).rar&lt;br&gt;
-[+] 测试工具 K8shellcodeLoader.exe Shellcode测试&lt;br&gt;
-[+] 免杀工具 K8随机免杀花指令生成器V2.0.exe&lt;br&gt;
-[+] 免杀工具 K8数字签名添加器.exe&lt;br&gt;
-[+] 捆绑工具 K8免杀系统自带捆绑器加强版V2.0.EXE&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-远控后门" class="anchor" aria-hidden="true" href="#远控后门"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;远控后门&lt;/h3&gt;
-[+] 远控后门 K8_Gh0st_Bin.rar 不免杀漏洞测试上线用&lt;br&gt;
-[+] 远控后门 TeamServer.exe  CS中转Win版,无需Kali下生成cobaltstrike.store文件&lt;br&gt;
-[+] 远控后门 QQ远控 ClientKey 利用工具.rar 不免杀18年仍然可用19年未测估计也还行&lt;br&gt;
-[+] 远控后门 vncdoor.exe  VNC后门可正反向&lt;br&gt;
-[+] 远控后门 k8_SSH_Manage.exe 渗透专用SSH(执行完后立即销毁会话,不像putty保存会话常暴露IP)&lt;br&gt;
-[+] 连接工具 sshcmd.exe   渗透专用SSH(执行完后立即销毁会话,同时清除连接IP)&lt;br&gt;
-[+] 连接工具 sshshell.exe 交互式SSH类似putty保持会话(目标显示IP一直连着)&lt;br&gt;
-[+] 远控后门 K8手机远控电脑V1.1_20121020[K.8].rar&lt;br&gt;
-[+] 远控后门 JspShellExec CMD下JSP一句话连接工具&lt;br&gt;
-[+] 捆绑工具 K8_rarBind.rar RAR捆绑工具&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-嗅探工具" class="anchor" aria-hidden="true" href="#嗅探工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;嗅探工具&lt;/h3&gt;
-[+] 嗅探工具 K8getPC.py 内网存活主机探测(无需端口\无视防火墙)&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-扫描工具" class="anchor" aria-hidden="true" href="#扫描工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;扫描工具&lt;/h3&gt;
-[+] 扫描工具 K8Cscan5.0.rar 大型内网渗透扫描器内置22个功能,支持Cobalt Strike&lt;br&gt;
-[+] 扫描工具 K8PortScan开源跨平台大型网络端口扫描器(Bin: Windows/Kali/SUSE)&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle WebLogicScan.rar Weblogic通用GetShell&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle CiscoScan.rar Cisco思科探测插件&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle OSScan2.rar 系统版本探测插件2&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle PortScan.cs 端口扫描插件源码&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件&lt;br&gt;
-[+] 扫描插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件&lt;br&gt;
-[+] 扫描工具 K8Cscan for SameWeb.rar C段旁站扫描工具&lt;br&gt;
-[+] 扫描工具 K8Cscan for SubDomain.rar 子域名扫描工具&lt;br&gt;
-[+] 扫描工具 cping3.0.rar 大型内外网渗透主机扫描工具&lt;br&gt;
-[+] 扫描工具 K8_C段旁注工具6.0&lt;br&gt;
-[+] 扫描工具 s加强版.exe&lt;br&gt;
-[+] 扫描工具 K8openssl批量 Bat版.rar&lt;br&gt;
-[+] 扫描工具 K8破壳SMTP Bat版.rar&lt;br&gt;
-[+] 扫描工具 WPdetection.exe WordPress站点信息获取&lt;br&gt;
-[+] 扫描工具 K8-S2批量.rar Struts2批量工具&lt;br&gt;
-[+] 扫描工具 smbcheck.exe MS17-010漏洞检测，cping、cscan批量专用&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-数据库" class="anchor" aria-hidden="true" href="#数据库"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;数据库&lt;/h3&gt;
-[+] 脱库工具 K8mysqlCmd.rar Mysql数据库免驱连接工具&lt;br&gt;
-[+] 脱库工具 K8_mysql脱裤20170114(千万).php&lt;br&gt;
-[+] 脱库工具 K8Packwebshell.aspx 整站打包工具&lt;br&gt;
-[+] 脱库工具 K8outSQL.aspx MSSQL导库工具&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-加密解密" class="anchor" aria-hidden="true" href="#加密解密"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;加密解密&lt;/h3&gt;
-[+] K8飞刀里大量加密解密算法、编码解码、SQL注入、XSS等&lt;br&gt;
-[+] 密码破解 SharpWeb.exe 浏览器帐密读取工具(Firefox/Chorme/IE)&lt;br&gt;
-[+] 密码破解 laZagne.exe 本地密码检索工具(支持XP/2003)&lt;br&gt;
-[+] 密码破解 sshtest.exe SSH密码登陆测试可结合Cscan进行批量破解&lt;br&gt;
-[+] 嗅探工具 k8ftpsniffer.py FTP&lt;br&gt;
-[+] 密码破解 K8_DNN_Password_Decrypt_20161110.rar dotnetnuke密码解密工具&lt;br&gt;
-[+] 密码破解 Invoke-Mimikatz.ps1  Mimikatz 20181209 &lt;br&gt;
-[+] 密码破解 mz.exe    Mimikatz-2.1.1-20181209 X86 一键版&lt;br&gt;
-[+] 密码破解 mz64.exe  Mimikatz-2.1.1-20181209 X64 一键版&lt;br&gt;
-[+] 密码破解 K8_FTP爆破PHP脚本20151010.rar 内网渗透用&lt;br&gt;
-[+] 密码破解 K8_Mysql爆破PHP脚本20151009.rar 内网渗透用&lt;br&gt;
-[+] 密码破解 K8_ipcscan 爆破IPC自动种马工具+教程.rar&lt;br&gt;
-[+] 密码破解 weblogic密码解密工具(exe &amp;amp; jar)&lt;br&gt;
-[+] 密码破解 K8fuckVNC.rar k8vncpwd.exe VNC密码解密工具&lt;br&gt;
-[+] 密码破解 K8getTeamViewPWD_20150705[K.8].rar&lt;br&gt;
-[+] 密码破解 K8正方密码解密工具_20150801[K.8].rar&lt;br&gt;
-[+] 密码破解 getBrowserPWD_1124[K.8].rar  Firefox\Ghrome 浏览器密码读取工具&lt;br&gt;
-[+] 密码破解 getvpnpwd.exe VPN、ADSL宽带帐密读取工具(仅限XP、2003)&lt;br&gt;
-[+] 密码破解 GetPassword_x64.rar GetPwd_K8.rar 一键获取明文&lt;br&gt;
-[+] 密码破解 K8_FuckOneShell 一句话密码爆破秒破10万&lt;br&gt;
-[+] 加密解密 K8Base32_Decode_20161110.rar&lt;br&gt;
-[+] 斛密工具 k8ungzip.exe GZIP 用于提取0day网马Powershell执行PAYLOAD&lt;br&gt;
-[+] 密码破解 K8FTP密码破解器V2.0_20190301[K8].rar&lt;br&gt;
-[+] 密码破解 K8Access数据库密码读取器_20190301[K8].rar&lt;br&gt;
-[+] 加密工具 K8_FileHideImg.exe 任意文件隐藏至图片工具&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-安全辅助" class="anchor" aria-hidden="true" href="#安全辅助"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;安全辅助&lt;/h3&gt;
-[+] 安全工具 K8木马病毒后门监视器V3.0.rar 捆绑后门木马释放路径、Shell上传路径查看&lt;br&gt;
-[+] 安全工具 K8进程拦截.rar (比方说访问网页浏览器调用外站EXE执行说明0day来了,而且可防止木马运行)&lt;br&gt;
-[+] 安全工具 K8驱动防止WebShell提权工具.rar (就是说无法通过WEBSHELL执行任意命令,就算有签名的EXE也不行)&lt;br&gt;
-[+] 辅助工具 K8注册表跳转.exe&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-转发代理" class="anchor" aria-hidden="true" href="#转发代理"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;转发代理&lt;/h3&gt;
-[+] 端口转发 PortTran.rar  .NET端口转发工具&lt;br&gt;
-[+] 端口转发 K8PortMap.exe D7端口映射工具&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-webshell" class="anchor" aria-hidden="true" href="#webshell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;WebShell&lt;/h3&gt;
-[+] 转换工具 k8exe2bat.exe 任意文件转Bat工具(WebShell无法上传EXE解决方案)&lt;br&gt;
-[+] 上传工具 K8upload_1125[K8].rar 新型小马上传工具支持任意文件(内置asp\php\jsp小马)&lt;br&gt;
-[+] 连接工具 K8一句话ASP木马客户端加强程序版.exe&lt;br&gt;
-[+] WebShell k8cmd.ascx&lt;br&gt;
-[+] WebShell k8cmd.pl&lt;br&gt;
-[+] WebShell k8cmd.py&lt;br&gt;
-[+] WebShell k8飞刀CMD.jsp&lt;br&gt;
-[+] WebShell K8飞刀A专用UA一句话木马.asp&lt;br&gt;
-[+] WebShell K8飞刀PHP-专用UA一句话木马.php&lt;br&gt;
-[+] WebShell K8飞刀专用UA一句话木马.asxp&lt;br&gt;
-[+] WebShell shellcode.aspx &lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-硬件渗透" class="anchor" aria-hidden="true" href="#硬件渗透"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;硬件渗透&lt;/h3&gt;
-[+]BadUSB K8飞刀  内含有大量Teensy渗透功能脚本自行研究&lt;br&gt;
-[+]BadUSB Teensy 兼容所有Windows和Linux系统下载者.ino&lt;br&gt;
-&lt;h3&gt;&lt;a id="user-content-其它工具" class="anchor" aria-hidden="true" href="#其它工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;其它工具&lt;/h3&gt;
-[+]教程录制 K8屏幕录像 高压缩率版_20190301[K8].rar&lt;br&gt;
-[+]系统美化 K8文件夹个性设置工具.exe&lt;br&gt;
-[+]系统美化 K8个性桌面右键菜单.exe&lt;br&gt;
-[+]搜索工具 K8吉他谱搜索工具_20190301[K8].rar&lt;br&gt;
-[+]系统美化 图标提取器.exe&lt;br&gt;
-[+]系统美化 k8cmd.exe&lt;br&gt;
-[+]辅助工具 K8侠盗猎车4外挂.exe&lt;br&gt;
-[+]辅助工具 K8迅雷、快车、旋风地址互换工具.exe&lt;br&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>k8gege</author><guid isPermaLink="false">https://github.com/k8gege/K8tools</guid><pubDate>Tue, 19 Nov 2019 00:03:00 GMT</pubDate></item><item><title>LIS/LISAv2 #4 in PowerShell, Today</title><link>https://github.com/LIS/LISAv2</link><description>&lt;p&gt;&lt;i&gt;Microsoft Linux Test Automation Framework on multi-platforms&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-linux-integration-services-automation-lisa-version-2" class="anchor" aria-hidden="true" href="#linux-integration-services-automation-lisa-version-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux Integration Services Automation (LISA), version 2&lt;/h1&gt;
-&lt;p&gt;Nov 2018&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h3&gt;
-&lt;p&gt;LISAv2 is the one-stop automation solution implemented by PowerShell scripts, Linux BASH scripts and Python scripts for verifying Linux image/kernel on below platforms:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Microsoft Azure&lt;/li&gt;
-&lt;li&gt;Microsoft Azure Stack&lt;/li&gt;
-&lt;li&gt;Microsoft Hyper-V&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;LISAv2 includes below test suite categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Functional tests&lt;/li&gt;
-&lt;li&gt;Performance tests&lt;/li&gt;
-&lt;li&gt;Stress tests&lt;/li&gt;
-&lt;li&gt;Test suites developed by Open Source communities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-prerequisite" class="anchor" aria-hidden="true" href="#prerequisite"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;You must have a Windows Machine (Host) with PowerShell (v5.0 and above) as test driver. It should be Windows Server for localhost, or any Windows system including Windows 10 for remote host access case.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You must be connected to Internet.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You download 3rd party software in Tools folder. If you are using secure blob in Azure Storage Account or UNC path, you can add a tag &lt;a href="https://myownsecretlocation.blob.core.windows.net/binarytools" rel="nofollow"&gt;https://myownsecretlocation.blob.core.windows.net/binarytools&lt;/a&gt; in the secret xml file.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;7za.exe&lt;/li&gt;
-&lt;li&gt;dos2unix.exe&lt;/li&gt;
-&lt;li&gt;gawk&lt;/li&gt;
-&lt;li&gt;jq&lt;/li&gt;
-&lt;li&gt;plink.exe&lt;/li&gt;
-&lt;li&gt;pscp.exe&lt;/li&gt;
-&lt;li&gt;kvp_client32&lt;/li&gt;
-&lt;li&gt;kvp_client64&lt;/li&gt;
-&lt;li&gt;nc.exe&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start="4"&gt;
-&lt;li&gt;
-&lt;p&gt;For running Azure tests, you must have a valid Windows Azure Subscription.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For running Hyper-V tests, the resource requirements are:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Hyper-V role enabled&lt;/li&gt;
-&lt;li&gt;At least 8 GB of memory on the Host - Most of LISAv2 tests will create and start Virtual Machines (Guests) with 3.5 GB of memory assigned&lt;/li&gt;
-&lt;li&gt;1 External vSwitch in Hyper-V Manager/Virtual Switch Manager. This vSwitch will be named 'External' and must have an internet connection. For Hyper-V NETWORK tests you need 2 more vSwitch types created: Internal and Private. These 2 vSwitches will have the naming also 'Internal' and 'Private'.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start="6"&gt;
-&lt;li&gt;
-&lt;p&gt;For running WSL tests, you must enable WSL on the test server&lt;/p&gt;
-&lt;p&gt;a. Open Powershell as Administrator and run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;b. Restart your computer when prompted.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;&lt;a id="user-content-download-latest-azure-powershell" class="anchor" aria-hidden="true" href="#download-latest-azure-powershell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download Latest Azure PowerShell&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Download Web Platform Installer from &lt;a href="http://go.microsoft.com/fwlink/p/?linkid=320376&amp;amp;clcid=0x409" rel="nofollow"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Start Web Platform Installer and select Azure PowerShell (required 6.3.0 or above) and proceed for Azure PowerShell Installation.&lt;/li&gt;
-&lt;li&gt;Install the Azure Powershell Az module &lt;a href="https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-2.6.0" rel="nofollow"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;&lt;a id="user-content-authenticate-your-test-driver-machine-with-your-azure-subscription" class="anchor" aria-hidden="true" href="#authenticate-your-test-driver-machine-with-your-azure-subscription"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authenticate Your Test Driver Machine with Your Azure Subscription&lt;/h3&gt;
-&lt;h4&gt;&lt;a id="user-content-azure-ad-method" class="anchor" aria-hidden="true" href="#azure-ad-method"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Azure AD method&lt;/h4&gt;
-&lt;p&gt;This creates a 12 Hours temporary session in PowerShell. In that session, you are allowed to run Windows Azure Cmdlets to control / use your subscription.&lt;/p&gt;
-&lt;p&gt;After 12 hours you will be asked to enter username and password of your subscription again.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-service-principal-method" class="anchor" aria-hidden="true" href="#service-principal-method"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Service Principal method&lt;/h4&gt;
-&lt;p&gt;Refer to this URL &lt;a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal" rel="nofollow"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-prepare-vhd-for-your-test" class="anchor" aria-hidden="true" href="#prepare-vhd-for-your-test"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prepare VHD for Your Test&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Applicable if you are uploading your own Linux VHD to Azure for test.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A VHD with Linux OS must be made compatible to work in Hyper-V environment. This includes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Linux Integration Services. If not available, at least KVP daemon must be running. Without KVP daemon running, the framework will not be able to obtain an IP address from the guest.&lt;/li&gt;
-&lt;li&gt;Windows Azure Linux Agent (for testing in Azure environment only)&lt;/li&gt;
-&lt;li&gt;SSH, and the SSH daemon configured to start on boot.&lt;/li&gt;
-&lt;li&gt;Port 22 open in the firewall&lt;/li&gt;
-&lt;li&gt;A regular user account on the guest OS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;"root" user cannot be used in the test configuration&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Please follow the steps mentioned at &lt;a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic" rel="nofollow"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-launch-test-suite" class="anchor" aria-hidden="true" href="#launch-test-suite"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Launch Test Suite&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Clone this automation code to your test driver by:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   git clone https://github.com/LIS/LISAv2.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use a secret file or update the .\XML\GlobalConfigurations.xml manually for preparatory work:&lt;/p&gt;
-&lt;p&gt;2.1 Update below subscription info using created service principal, can use &lt;a href="https://github.com/LIS/LISAv2/blob/master/Utilities/CreateServicePrincipal.ps1"&gt;this script&lt;/a&gt; to create service principal
-If run test case in location eastasia, create a standard and premium storage account under the test subscription in eastasia, and replace storage account names in secrets file
-if run against other region, add new sections like &lt;/p&gt;
-&lt;div class="highlight highlight-text-xml"&gt;&lt;pre&gt;    &amp;lt;&lt;span class="pl-ent"&gt;secrets&lt;/span&gt;&amp;gt;
-        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;Not mandatory&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionName&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionName&lt;/span&gt;&amp;gt;
-        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;Below four sections are mandatory when test against Azure platform&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionID&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionID&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalTenantID&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalTenantID&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalClientID&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalClientID&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalKey&lt;/span&gt;&amp;gt;&amp;lt;&lt;span class="pl-ent"&gt;SubscriptionServicePrincipalKey&lt;/span&gt;&amp;gt;
-        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;Download needed tools from the blob&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;blobStorageLocation&lt;/span&gt;&amp;gt; &amp;lt;/&lt;span class="pl-ent"&gt;blobStorageLocation&lt;/span&gt;&amp;gt;
-        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;VMs Credential&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;linuxTestUsername&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;linuxTestUsername&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;linuxTestPassword&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;linuxTestPassword&lt;/span&gt;&amp;gt;
-        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;Database info for upload results&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;DatabaseServer&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DatabaseServer&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;DatabaseUser&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DatabaseUser&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;DatabasePassword&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DatabasePassword&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;DatabaseName&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DatabaseName&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;RegionAndStorageAccounts&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;eastasia&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;StandardStorage&lt;/span&gt;&amp;gt;HERE&amp;lt;/&lt;span class="pl-ent"&gt;StandardStorage&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;PremiumStorage&lt;/span&gt;&amp;gt;HERE&amp;lt;/&lt;span class="pl-ent"&gt;PremiumStorage&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;eastasia&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;westus&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;StandardStorage&lt;/span&gt;&amp;gt;HERE&amp;lt;/&lt;span class="pl-ent"&gt;StandardStorage&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;PremiumStorage&lt;/span&gt;&amp;gt;HERE&amp;lt;/&lt;span class="pl-ent"&gt;PremiumStorage&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;westus&lt;/span&gt;&amp;gt;
-            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;Other locations sections&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-        &amp;lt;/&lt;span class="pl-ent"&gt;RegionAndStorageAccounts&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span class="pl-ent"&gt;secrets&lt;/span&gt;&amp;gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;2.2 Update the .\XML\GlobalConfigurations.xml file with your Azure subscription information or Hyper-V host information:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; Go to Global &amp;gt; Azure/HyperV and update following fields:
-
-     a. SubscriptionID
-     b. SubscriptionName (Optional)
-     c. ManagementEndpoint
-     d. Environment (For Azure PublicCloud, use `AzureCloud`)
-     e. ARMStorageAccount
-
- Example:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class="highlight highlight-text-xml"&gt;&lt;pre&gt;    &amp;lt;&lt;span class="pl-ent"&gt;Azure&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;Subscription&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionID&lt;/span&gt;&amp;gt;2cd20493-0000-1111-2222-0123456789ab&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionID&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;SubscriptionName&lt;/span&gt;&amp;gt;YOUR_SUBSCRIPTION_NAME&amp;lt;/&lt;span class="pl-ent"&gt;SubscriptionName&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;ManagementEndpoint&lt;/span&gt;&amp;gt;https://management.core.windows.net&amp;lt;/&lt;span class="pl-ent"&gt;ManagementEndpoint&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;Environment&lt;/span&gt;&amp;gt;AzureCloud&amp;lt;/&lt;span class="pl-ent"&gt;Environment&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;ARMStorageAccount&lt;/span&gt;&amp;gt;ExistingStorage_Standard&amp;lt;/&lt;span class="pl-ent"&gt;ARMStorageAccount&lt;/span&gt;&amp;gt;
-        &amp;lt;/&lt;span class="pl-ent"&gt;Subscription&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span class="pl-ent"&gt;Azure&lt;/span&gt;&amp;gt;
-    &amp;lt;&lt;span class="pl-ent"&gt;HyperV&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;Hosts&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;ServerName can be localhost or Hyper-V host name&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;localhost&amp;lt;/&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;VHDs_Destination_Path&amp;lt;/&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;If run test against 2 hosts, set ServerName as another host computer name&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;lis-01&amp;lt;/&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;
-                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;If run test against 2 hosts, DestinationOsVHDPath is mandatory&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;D:\vhd&amp;lt;/&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-        &amp;lt;/&lt;span class="pl-ent"&gt;Hosts&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span class="pl-ent"&gt;HyperV&lt;/span&gt;&amp;gt;
-    &amp;lt;&lt;span class="pl-ent"&gt;WSL&lt;/span&gt;&amp;gt;
-        &amp;lt;&lt;span class="pl-ent"&gt;Hosts&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;The name of the WSL host, which can be local or remote &lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;localhost&amp;lt;/&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;
-                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt;The destination path to extract the distro package on the WSL host&lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-            &amp;lt;&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;localhost&amp;lt;/&lt;span class="pl-ent"&gt;ServerName&lt;/span&gt;&amp;gt;
-                &amp;lt;&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span class="pl-ent"&gt;DestinationOsVHDPath&lt;/span&gt;&amp;gt;
-            &amp;lt;/&lt;span class="pl-ent"&gt;Host&lt;/span&gt;&amp;gt;
-        &amp;lt;/&lt;span class="pl-ent"&gt;Hosts&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span class="pl-ent"&gt;WSL&lt;/span&gt;&amp;gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;There are two ways to run LISAv2 tests:&lt;/p&gt;
-&lt;p&gt;a. Provide all parameters to Run-LisaV2.ps1&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "&amp;lt;Region location&amp;gt;" -RGIdentifier "&amp;lt;Identifier of the resource group&amp;gt;" [-ARMImageName "&amp;lt;publisher offer SKU version&amp;gt;" | -OsVHD "&amp;lt;VHD from storage account&amp;gt;" ] [[-TestCategory "&amp;lt;Test Catogry from Jenkins pipeline&amp;gt;" | -TestArea "&amp;lt;Test Area from Jenkins pipeline&amp;gt;"]* | -TestTag "&amp;lt;A Tag from Jenkins pipeline&amp;gt;" | -TestNames "&amp;lt;Test cases separated by comma&amp;gt;"]
- Basic Azure platform example:
- .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "westus" -RGIdentifier "deployment" -ARMImageName "canonical ubuntuserver 18.04-lts Latest" -TestNames "VERIFY-DEPLOYMENT-PROVISION"
- Azure platform using secret file:
- .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "westus" -RGIdentifier "deployment" -ARMImageName "canonical ubuntuserver 18.04-lts Latest" -TestNames "VERIFY-DEPLOYMENT-PROVISION" -XMLSecretFile "E:\AzureCredential.xml"
-
- .\Run-LisaV2.ps1 -TestPlatform "HyperV" [-TestLocation "ServerName"] -RGIdentifier "&amp;lt;Identifier of the vm group&amp;gt;" -OsVHD "&amp;lt;local or UNC path or downloadable URL of VHD&amp;gt;" [[-TestCategory "&amp;lt;Test Catogry from Jenkins pipeline&amp;gt;" | -TestArea "&amp;lt;Test Area from Jenkins pipeline&amp;gt;"]* | -TestTag "&amp;lt;A Tag from Jenkins pipeline&amp;gt;" | -TestNames "&amp;lt;Test cases separated by comma&amp;gt;"]
- HyperV platform examples:
- .\Run-LisaV2.ps1 -TestPlatform "HyperV" -RGIdentifier "ntp" -OsVHD 'E:\vhd\ubuntu_18_04.vhd' -TestNames "TIMESYNC-NTP"
- .\Run-LisaV2.ps1 -TestPlatform "HyperV" -RGIdentifier "ntp" -OsVHD 'http://www.somewebsite.com/vhds/ubuntu_18_04.vhd' -TestNames "TIMESYNC-NTP"
-
- .\Run-LisaV2.ps1 -TestPlatform "WSL" [-TestLocation "&amp;lt;WSL host name&amp;gt;"] -RGIdentifier "&amp;lt;Identifier for the test run&amp;gt;" -OsVHD "&amp;lt;local path or public URL&amp;gt;" [-DestinationOsVHDPath "&amp;lt;destination path on WSL host&amp;gt;"] [[-TestCategory "&amp;lt;Test Catogry from Jenkins pipeline&amp;gt;" | -TestArea "&amp;lt;Test Area from Jenkins pipeline&amp;gt;"]* | -TestTag "&amp;lt;A Tag from Jenkins pipeline&amp;gt;" | -TestNames "&amp;lt;Test cases separated by comma&amp;gt;"]
-  WSL platform example:
- .\Run-LisaV2.ps1 -TestPlatform WSL -TestLocation "localhost" -RGIdentifier 'ubuntuwsl' -TestNames "VERIFY-BOOT-ERROR-WARNINGS" -OsVHD 'https://aka.ms/wsl-ubuntu-1804' -DestinationOsVHDPath "D:\test"
-
- Custom Parameters example:
- .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "&amp;lt;Region location&amp;gt;" -RGIdentifier "&amp;lt;Identifier of the resource group&amp;gt;" [-ARMImageName "&amp;lt;publisher offer SKU version&amp;gt;" | -OsVHD "&amp;lt;VHD from storage account&amp;gt;" ] [[-TestCategory "&amp;lt;Test Catogry from Jenkins pipeline&amp;gt;" | -TestArea "&amp;lt;Test Area from Jenkins pipeline&amp;gt;"]* | -TestTag "&amp;lt;A Tag from Jenkins pipeline&amp;gt;" | -TestNames "&amp;lt;Test cases separated by comma&amp;gt;"] -CustomParameters "TiPCluster=&amp;lt;cluster name&amp;gt; | TipSessionId=&amp;lt;Test in Production ID&amp;gt; |  DiskType=Managed/Unmanaged | Networking=SRIOV/Synthetic | ImageType=Specialized/Generalized | OSType=Windows/Linux"
- Nested Azure VM example:
- .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "westus" -RGIdentifier "deployment" -ARMImageName "MicrosoftWindowsServer WindowsServer 2016-Datacenter latest" -TestNames "NESTED-HYPERV-NTTTCP-DIFFERENT-L1-PUBLIC-BRIDGE" -CustomeParameters "OSType=Windows"
-
- Multiple override virtual machine size example:
- .\Run-LisaV2.ps1 -TestPlatform "Azure" -TestLocation "westus" -RGIdentifier "deployment" -ARMImageName "canonical ubuntuserver 18.04-lts Latest" -TestNames "VERIFY-DEPLOYMENT-PROVISION" -OverrideVMSize "Standard_A2,Standard_DS1_v2"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;b. Provide parameters in .\XML\TestParameters.xml.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; .\Run-LisaV2.ps1 -TestParameters .\XML\TestParameters.xml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note: Please refer .\XML\TestParameters.xml file for more details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;&lt;a id="user-content-more-information" class="anchor" aria-hidden="true" href="#more-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More Information&lt;/h3&gt;
-&lt;p&gt;For more details, please refer to the documents &lt;a href="https://github.com/LIS/LISAv2/blob/master/Documents/How-to-use.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Contact: &lt;a href="mailto:lisasupport@microsoft.com"&gt;lisasupport@microsoft.com&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>LIS</author><guid isPermaLink="false">https://github.com/LIS/LISAv2</guid><pubDate>Tue, 19 Nov 2019 00:04:00 GMT</pubDate></item><item><title>Sycnex/Windows10Debloater #5 in PowerShell, Today</title><link>https://github.com/Sycnex/Windows10Debloater</link><description>&lt;p&gt;&lt;i&gt;Script to remove Windows 10 bloatware.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-windows10debloater" class="anchor" aria-hidden="true" href="#windows10debloater"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows10Debloater&lt;/h1&gt;
-&lt;p&gt;Script/Utility/Application to debloat Windows 10&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-how-to-run-the-windows10debloaterps1-and-the-windows10debloaterguips1-files" class="anchor" aria-hidden="true" href="#how-to-run-the-windows10debloaterps1-and-the-windows10debloaterguips1-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Run the Windows10Debloater.ps1 and the Windows10DebloaterGUI.ps1 files&lt;/h1&gt;
-&lt;p&gt;There are different methods of running the PowerShell script. The methods are as follows:&lt;/p&gt;
-&lt;p&gt;First Method:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the .zip file on the main page of the github and extract the .zip file to your desired location&lt;/li&gt;
-&lt;li&gt;Once extracted, open PowerShell (or PowerShell ISE) as an Administrator&lt;/li&gt;
-&lt;li&gt;Enable PowerShell execution
-&lt;code&gt;Set-ExecutionPolicy Unrestricted -Force&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;On the prompt, change to the directory where you extracted the files:
-e.g. - cd c:\temp&lt;/li&gt;
-&lt;li&gt;Next, to run either script, enter in the following:
-e.g. - .\Windows10DebloaterGUI.ps1&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Second Method:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the .zip file on the main page of the github and extract the .zip file to your desired location&lt;/li&gt;
-&lt;li&gt;Right click the PowerShell file that you'd like to run and click on "Run With PowerShell"&lt;/li&gt;
-&lt;li&gt;This will allow the script to run without having to do the above steps but Powershell will ask if you're sure you want to run this script.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Remember this script NEEDS to be run as admin in order to function properly.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-how-to-run-the-windows10sysprepdebloaterps1-file" class="anchor" aria-hidden="true" href="#how-to-run-the-windows10sysprepdebloaterps1-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Run the Windows10SysPrepDebloater.ps1 file&lt;/h1&gt;
-&lt;p&gt;For the WindowsSysPrepDebloater.ps1 file, there are a couple of paramters that you can run so that you can specify which functions are used. The parameters are:
--SysPrep, -Debloat.&lt;/p&gt;
-&lt;p&gt;To run this with parameters, do the following:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the .zip file on the main page of the github and extract the .zip file to your desired location&lt;/li&gt;
-&lt;li&gt;Once extracted, open PowerShell (or PowerShell ISE) as an Administrator&lt;/li&gt;
-&lt;li&gt;On the prompt, change to the directory where you extracted the files:
-e.g. - cd c:\temp&lt;/li&gt;
-&lt;li&gt;Next, to run either script, enter in the following:
-e.g. - .\Windows10SysPrepDebloater.ps1 -Sysprep, -Debloat -Privacy&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1&gt;&lt;a id="user-content-sysprep-interactive-and-gui-application" class="anchor" aria-hidden="true" href="#sysprep-interactive-and-gui-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sysprep, Interactive, and GUI Application&lt;/h1&gt;
-&lt;p&gt;There are now 3 versions of my Windows10Debloater - There is an interactive version, a GUI app version, and a pure silent version.&lt;/p&gt;
-&lt;p&gt;Windows10SysPrepDebloater.ps1 - The silent version now utilizes the switch parameters: -Sysprep, -Debloat -Privacy. The silent version can be useful for deploying MDT Images/sysprepping or any other way you deploy Windows 10. This will work to remove the bloatware during the deployment process.&lt;/p&gt;
-&lt;p&gt;Windows10Debloater.ps1 - This interactive version is what it implies - a Windows10Debloater script with interactive prompts. This one should not be used for deployments that require a silent script with optional parameters. This script gives you choices with prompts as it runs so that you can make the choices of what the script does.&lt;/p&gt;
-&lt;p&gt;Windows10DebloaterGUI.ps1 There is now a GUI Application named Windows10DebloaterGUI.ps1 with buttons to perform all of the functions that the scripts do. This is better for the average user who does not want to work with code, or if you'd prefer to just see an application screen.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-switch-parameters" class="anchor" aria-hidden="true" href="#switch-parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Switch Parameters&lt;/h1&gt;
-&lt;p&gt;There are 3 switch parameters in the Windows10SysPrepDebloater.ps1 script.&lt;/p&gt;
-&lt;p&gt;The first one is -SysPrep, which runs the command within a function: get-appxpackage | remove-appxpackage. This is useful since some administrators need that command to run first in order for machines to be able to properly provision the apps for removal.&lt;/p&gt;
-&lt;p&gt;The second switch parameter is -Debloat, which does as it suggests. It runs the following functions: Start-Debloat, Remove-Keys, and Protect-Privacy.&lt;/p&gt;
-&lt;p&gt;Remove-Keys removes registry keys leftover that are associated with the bloatware apps listed above, but not removed during the Start-Debloat function.&lt;/p&gt;
-&lt;p&gt;Third, Protect-Privacy adds and/or changes registry keys to stop some telemetry functions, stops Cortana from being used as your Search Index, disables "unneccessary" scheduled tasks, and more.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-this-script-will-remove-the-bloatware-from-windows-10-when-using-remove-appxpackageremove-appxprovisionedpackage-and-then-delete-specific-registry-keys-that-are-were-not-removed-beforehand-for-best-results-this-script-should-be-ran-before-a-user-profile-is-configured-otherwise-you-will-likely-see-that-apps-that-should-have-been-removed-will-remain-and-if-they-are-removed-you-will-find-broken-tiles-on-the-start-menu" class="anchor" aria-hidden="true" href="#this-script-will-remove-the-bloatware-from-windows-10-when-using-remove-appxpackageremove-appxprovisionedpackage-and-then-delete-specific-registry-keys-that-are-were-not-removed-beforehand-for-best-results-this-script-should-be-ran-before-a-user-profile-is-configured-otherwise-you-will-likely-see-that-apps-that-should-have-been-removed-will-remain-and-if-they-are-removed-you-will-find-broken-tiles-on-the-start-menu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This script will remove the bloatware from Windows 10 when using Remove-AppXPackage/Remove-AppXProvisionedPackage, and then delete specific registry keys that are were not removed beforehand. For best results, this script should be ran before a user profile is configured, otherwise you will likely see that apps that should have been removed will remain, and if they are removed you will find broken tiles on the start menu.&lt;/h1&gt;
-&lt;p&gt;These registry keys are:&lt;/p&gt;
-&lt;p&gt;EclipseManager,
-ActiproSoftwareLLC,
-Microsoft.PPIProjection,
-Microsoft.XboxGameCallableUI&lt;/p&gt;
-&lt;p&gt;You can choose to either 'Debloat' or 'Revert'. Depending on your choice, either one will run specific code to either debloat your Windows 10 machine.&lt;/p&gt;
-&lt;p&gt;The Debloat switch choice runs the following functions:&lt;/p&gt;
-&lt;p&gt;Debloat,
-Remove-Keys,
-Protect-Privacy,
-Stop-EdgePDF (If chosen)&lt;/p&gt;
-&lt;p&gt;The Revert switch choice runs the following functions:&lt;/p&gt;
-&lt;p&gt;Revert-Changes,
-Enable-EdgePDF&lt;/p&gt;
-&lt;p&gt;The Revert option reinstalls the bloatware and changes your registry keys back to default.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-the-scheduled-tasks-that-are-disabled-are" class="anchor" aria-hidden="true" href="#the-scheduled-tasks-that-are-disabled-are"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The scheduled tasks that are disabled are:&lt;/h1&gt;
-&lt;p&gt;XblGameSaveTaskLogon,
-XblGameSaveTask,
-Consolidator,
-UsbCeip,
-DmClient&lt;/p&gt;
-&lt;p&gt;These scheduled tasks that are disabled have absolutely no impact on the function of the OS.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-bloatware-that-is-removed" class="anchor" aria-hidden="true" href="#bloatware-that-is-removed"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bloatware that is removed:&lt;/h1&gt;
-&lt;p&gt;3DBuilder,
-Appconnector,
-Bing Finance,
-Bing News,
-Bing Sports,
-Bing Weather,
-Fresh Paint,
-Get started,
-Microsoft Office Hub,
-Microsoft Solitaire Collection,
-Microsoft Sticky Notes,
-OneNote,
-OneConnect,
-People,
-Skype for Desktop,
-Alarms,
-Camera,
-Maps,
-Phone,
-SoundRecorder,
-XboxApp,
-Zune Music,
-Zune Video,
-Windows communications apps,
-Minecraft,
-PowerBI,
-Network Speed Test,
-Phone,
-Messaging,
-Office Sway,
-Windows Feedback Hub,
-Bing Food And Drink,
-Bing Travel,
-Bing Health And Fitness,
-Windows Reading List,
-Twitter,
-Pandora,
-Flipboard,
-Shazam,
-CandyCrush,
-CandyCrushSoda,
-King apps,
-iHeartRadio,
-Netflix,
-DrawboardPDF,
-PicsArt-PhotoStudio,
-FarmVille 2 Country Escape,
-TuneInRadio,
-Asphalt8,
-NYT Crossword,
-CyberLink MediaSuite Essentials,
-Facebook,
-Royal Revolt 2,
-Caesars Slots Free Casino,
-March of Empires,
-Phototastic Collage,
-Autodesk SketchBook,
-Duolingo,
-EclipseManager,
-ActiproSoftware,
-BioEnrollment,
-Windows Feedback,
-Xbox Game CallableUI,
-Xbox Identity Provider, and
-ContactSupport.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-quick-download-link" class="anchor" aria-hidden="true" href="#quick-download-link"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick download link&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h1&gt;
-&lt;p&gt;Thank you to a60wattfish, abulgatz, xsisbest, Damian, Vikingat-RAGE, and Reddit user /u/GavinEke for some of the suggestions and fixes that I have placed into my scripts. You all have done a fantastic job!&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>Sycnex</author><guid isPermaLink="false">https://github.com/Sycnex/Windows10Debloater</guid><pubDate>Tue, 19 Nov 2019 00:05:00 GMT</pubDate></item><item><title>mantvydasb/RedTeam-Tactics-and-Techniques #6 in PowerShell, Today</title><link>https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques</link><description>&lt;p&gt;&lt;i&gt;Red Teaming Tactics and Techniques&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-what-is-this" class="anchor" aria-hidden="true" href="#what-is-this"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is this?&lt;/h1&gt;
-&lt;p&gt;This is publicly accessible personal notes at &lt;a href="https://ired.team" rel="nofollow"&gt;https://ired.team&lt;/a&gt; about my pentesting / red teaming experiments in a controlled environment that involve playing with various tools and techniques used by penetration testers,  red teams and advanced adversaries.&lt;/p&gt;
-&lt;p&gt;{% hint style="warning" %}
-Do not take everything or anything for granted nor expect the notes to be very detailed or covering the techniques or the artifacts they produce in full and always consult additional resources.
-{% endhint %}&lt;/p&gt;
-&lt;p&gt;The following sub-pages of this page will explore some of the common offensive security techniques involving gaining code execution, lateral movement, persistence and more. This is my way of learning things - I learn by doing, repeating and taking notes.&lt;/p&gt;
-&lt;p&gt;Most of these techniques are discovered by other security researchers and I do not claim their ownership. I try to reference the sources I use the best I can, but if you think I've missed something, please get in touch and I will fix it immediately.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-the-goal" class="anchor" aria-hidden="true" href="#the-goal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Goal&lt;/h2&gt;
-&lt;p&gt;The goal of this project is simple - read other researchers work, execute some common/uncommon attacking techniques in a lab environment and:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;understand how the attacks can be performed&lt;/li&gt;
-&lt;li&gt;write code to further the understanding of some of the tools and techniques&lt;/li&gt;
-&lt;li&gt;see what most common artifacts the techniques leave behind&lt;/li&gt;
-&lt;li&gt;try out various industry tools and become more profficient in using them&lt;/li&gt;
-&lt;li&gt;take notes for future reference&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-social" class="anchor" aria-hidden="true" href="#social"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Social&lt;/h2&gt;
-&lt;p&gt;Follow me on twitter:&lt;/p&gt;
-&lt;p&gt;{% embed url="&lt;a href="https://twitter.com/spotheplanet" rel="nofollow"&gt;https://twitter.com/spotheplanet&lt;/a&gt;" %}&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>mantvydasb</author><guid isPermaLink="false">https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques</guid><pubDate>Tue, 19 Nov 2019 00:06:00 GMT</pubDate></item><item><title>threatexpress/red-team-scripts #7 in PowerShell, Today</title><link>https://github.com/threatexpress/red-team-scripts</link><description>&lt;p&gt;&lt;i&gt;A collection of Red Team focused tools, scripts, and notes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-red-team-scripts" class="anchor" aria-hidden="true" href="#red-team-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Red Team Scripts&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.
-Related tool release blog posts can be found at &lt;a href="http://threatexpress.com" rel="nofollow"&gt;Threat Express&lt;/a&gt; an Information Security and Red Teaming Blog&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-situational-awareness" class="anchor" aria-hidden="true" href="#situational-awareness"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Situational Awareness&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Perform situational awareness on a local host or domain upon initial compromise.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-enumeratecna" class="anchor" aria-hidden="true" href="#enumeratecna"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;enumerate.cna&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Cobalt Strike Aggressor script function and alias to perform some rudimentary Windows host enumeration with Beacon built-in commands (i.e. no Powershell, binary calls, or process injection). Additionally, adds a basic &lt;code&gt;enumerate&lt;/code&gt; alias for Linux based systems in SSH sessions.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-invoke-hostenum" class="anchor" aria-hidden="true" href="#invoke-hostenum"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;Invoke-HostEnum&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Andrew Chiles (@andrewchiles) with code by harmj0y, Joe Bialek, rvrsh3ll, Beau Bullock, Tim Medin&lt;/p&gt;
-&lt;p&gt;A PowerShell v2.0 compatible script comprised of multiple system enumeration / situational awareness techniques collected over time. If system is a member of a Windows domain, it can also perform limited domain enumeration with the -Domain switch. However, domain enumeration is significantly limited with the intention that PowerView or BoodHound could also be used.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Enumerated Information:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OS Details, Hostname, Uptime, Installdate&lt;/li&gt;
-&lt;li&gt;Installed Applications and Patches&lt;/li&gt;
-&lt;li&gt;Network Adapter Configuration, Network Shares, Connections, Routing Table, DNS Cache&lt;/li&gt;
-&lt;li&gt;Running Processes and Installed Services&lt;/li&gt;
-&lt;li&gt;Interesting Registry Entries&lt;/li&gt;
-&lt;li&gt;Local Users, Groups, Administrators&lt;/li&gt;
-&lt;li&gt;Personal Security Product Status&lt;/li&gt;
-&lt;li&gt;Interesting file locations and keyword searches via file indexing&lt;/li&gt;
-&lt;li&gt;Interesting Windows Logs (User logins)&lt;/li&gt;
-&lt;li&gt;Basic Domain enumeration (users, groups, trusts, domain controllers, account policy, SPNs)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Privilege Escalation&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Optionally performs Privilege Escalation functions from PowerUp in the PowerSploit project.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Empire 2.0 Integration&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Use the accompanying hostenum.py script to include Invoke-HostEnum as post-exploitation situational awarness module in Empire. Both files need to be copied to the appropriate locations in Empire.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Credits:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Several functions are inspired or pulled directly from the following projects and are referenced in the code where applicable:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/dafthack/HostRecon/master/HostRecon.ps1" rel="nofollow"&gt;Invoke-HostRecon&lt;/a&gt; by Beau Bullock&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/Get-ComputerDetails.ps1"&gt;Get-ComputerDetails&lt;/a&gt; from Joe Bialek in PowerSploit&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Get-BrowserData.ps1"&gt;Get-BrowserInformation&lt;/a&gt; by rvrsh3ll&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/nidem/kerberoast"&gt;Get-UserSPNS&lt;/a&gt; by Tim Medin&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1"&gt;PowerUp&lt;/a&gt; by @harmj0y&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
-&lt;p&gt;Refer to the help and comments in each script for detailed usage information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
-&lt;p&gt;This project and all individual scripts are under the BSD 3-Clause license&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-links" class="anchor" aria-hidden="true" href="#links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://threatexpress.com" rel="nofollow"&gt;threatexpress.com&lt;/a&gt;
-&lt;a href="http://threatexpress.com/blogs/2018/hostenum-updates-usage/" rel="nofollow"&gt;http://threatexpress.com/blogs/2018/hostenum-updates-usage/&lt;/a&gt;
-&lt;a href="http://threatexpress.com/blogs/2017/invoke-hostenum/" rel="nofollow"&gt;http://threatexpress.com/blogs/2017/invoke-hostenum/&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>threatexpress</author><guid isPermaLink="false">https://github.com/threatexpress/red-team-scripts</guid><pubDate>Tue, 19 Nov 2019 00:07:00 GMT</pubDate></item><item><title>411Hall/JAWS #8 in PowerShell, Today</title><link>https://github.com/411Hall/JAWS</link><description>&lt;p&gt;&lt;i&gt;JAWS - Just Another Windows (Enum) Script&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-jaws---just-another-windows-enum-script" class="anchor" aria-hidden="true" href="#jaws---just-another-windows-enum-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JAWS - Just Another Windows (Enum) Script&lt;/h1&gt;
-&lt;p&gt;JAWS is PowerShell script designed to help penetration testers (and CTFers) quickly identify potential privilege escalation vectors on Windows systems. It is written using PowerShell 2.0 so 'should' run on every Windows version since Windows 7.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage:&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Run from within CMD shell and write out to file.&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;CMD C:\temp&amp;gt; powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFilename JAWS-Enum.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Run from within CMD shell and write out to screen.&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;CMD C:\temp&amp;gt; powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Run from within PS Shell and write out to file.&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;PS C:\temp&amp;gt; .\jaws-enum.ps1 -OutputFileName Jaws-Enum.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-current-features" class="anchor" aria-hidden="true" href="#current-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Current Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Network Information (interfaces, arp, netstat)&lt;/li&gt;
-&lt;li&gt;Firewall Status and Rules&lt;/li&gt;
-&lt;li&gt;Running Processes&lt;/li&gt;
-&lt;li&gt;Files and Folders with Full Control or Modify Access&lt;/li&gt;
-&lt;li&gt;Mapped Drives&lt;/li&gt;
-&lt;li&gt;Potentially Interesting Files&lt;/li&gt;
-&lt;li&gt;Unquoted Service Paths&lt;/li&gt;
-&lt;li&gt;Recent Documents&lt;/li&gt;
-&lt;li&gt;System Install Files&lt;/li&gt;
-&lt;li&gt;AlwaysInstallElevated Registry Key Check&lt;/li&gt;
-&lt;li&gt;Stored Credentials&lt;/li&gt;
-&lt;li&gt;Installed Applications&lt;/li&gt;
-&lt;li&gt;Potentially Vulnerable Services&lt;/li&gt;
-&lt;li&gt;MuiCache Files&lt;/li&gt;
-&lt;li&gt;Scheduled Tasks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-known-issues" class="anchor" aria-hidden="true" href="#known-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Known Issues&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Output for firewall rules can sometimes be clipped.&lt;/li&gt;
-&lt;li&gt;When running from within a shell the script doesnt always tell you its finished.&lt;/li&gt;
-&lt;li&gt;When running within some PowerShell reverse shells the running menu isnt shown.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-to-do" class="anchor" aria-hidden="true" href="#to-do"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add full directory listing with user defined depth&lt;/li&gt;
-&lt;li&gt;Read SAM file permissions&lt;/li&gt;
-&lt;li&gt;Improve output&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>411Hall</author><guid isPermaLink="false">https://github.com/411Hall/JAWS</guid><pubDate>Tue, 19 Nov 2019 00:08:00 GMT</pubDate></item><item><title>dotnet/format #9 in PowerShell, Today</title><link>https://github.com/dotnet/format</link><description>&lt;p&gt;&lt;i&gt;Home for the dotnet-format command&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-dotnet-format" class="anchor" aria-hidden="true" href="#dotnet-format"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dotnet-format&lt;/h2&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/9797472/61659851-6bbdc880-ac7d-11e9-95f7-d30c7de1a18a.png"&gt;&lt;img width="480" alt="dotnet-format" src="https://user-images.githubusercontent.com/9797472/61659851-6bbdc880-ac7d-11e9-95f7-d30c7de1a18a.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.nuget.org/packages/dotnet-format" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5c780ef98c23e98f8161ab41f9b782c2c5de4152/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f646f746e65742d666f726d61742e737667" alt="Nuget" data-canonical-src="https://img.shields.io/nuget/v/dotnet-format.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://dotnet.myget.org/feed/format/package/nuget/dotnet-format" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3b95743dba3ea56c306ec154b490649779d027bf/68747470733a2f2f696d672e736869656c64732e696f2f646f746e65742e6d796765742f666f726d61742f767072652f646f746e65742d666f726d61742e7376673f6c6162656c3d6d79676574" alt="MyGet" data-canonical-src="https://img.shields.io/dotnet.myget/format/vpre/dotnet-format.svg?label=myget" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Branch&lt;/th&gt;
-&lt;th align="center"&gt;Windows (Debug)&lt;/th&gt;
-&lt;th align="center"&gt;Windows (Release)&lt;/th&gt;
-&lt;th align="center"&gt;Linux (Debug)&lt;/th&gt;
-&lt;th align="center"&gt;Linux (Release)&lt;/th&gt;
-&lt;th align="center"&gt;Localization (Debug)&lt;/th&gt;
-&lt;th align="center"&gt;Localization (Release)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://github.com/dotnet/format/tree/master"&gt;master&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6fb6b4669486f23d20b6aae6910ffca0044e26c8/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d57696e646f777326636f6e66696775726174696f6e3d6465627567266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Windows&amp;amp;configuration=debug&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/77820ee6216b60fe77cfb8146e9127c1d7ed7871/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d57696e646f777326636f6e66696775726174696f6e3d72656c65617365266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Windows&amp;amp;configuration=release&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6467afc2160c0bf4f00b23a4e8b3715a46ad66be/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d4c696e757826636f6e66696775726174696f6e3d6465627567266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Linux&amp;amp;configuration=debug&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d59501804fb2705673e6f551b14a48258ebabf99/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d4c696e757826636f6e66696775726174696f6e3d72656c65617365266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Linux&amp;amp;configuration=release&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cbe77022d9cb2576f49b06d7e7ccf26ca2beeb0c/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d57696e646f77735f5370616e69736826636f6e66696775726174696f6e3d6465627567266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Windows_Spanish&amp;amp;configuration=debug&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td align="center"&gt;&lt;a href="https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc06dc53cc666e7c07f6abbaa281b92cc333bc06/68747470733a2f2f6465762e617a7572652e636f6d2f646e63656e672f7075626c69632f5f617069732f6275696c642f7374617475732f646f746e65742f666f726d61742f646f746e65742e666f726d61743f6272616e63684e616d653d6d6173746572266a6f624e616d653d57696e646f77735f5370616e69736826636f6e66696775726174696f6e3d72656c65617365266c6162656c3d6275696c64" alt="Build Status" data-canonical-src="https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&amp;amp;jobName=Windows_Spanish&amp;amp;configuration=release&amp;amp;label=build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;code&gt;dotnet-format&lt;/code&gt; is a code formatter for &lt;code&gt;dotnet&lt;/code&gt; that applies style preferences to a project or solution. Preferences will be read from an &lt;code&gt;.editorconfig&lt;/code&gt; file, if present, otherwise a default set of preferences will be used. At this time &lt;code&gt;dotnet-format&lt;/code&gt; is able to format C# and Visual Basic projects with a subset of &lt;a href="https://github.com/dotnet/format/wiki/Supported-.editorconfig-options"&gt;supported .editorconfig options&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-how-to-install" class="anchor" aria-hidden="true" href="#how-to-install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Install&lt;/h3&gt;
-&lt;p&gt;The &lt;code&gt;dotnet-format&lt;/code&gt; nuget package is &lt;a href="https://www.nuget.org/packages/dotnet-format/" rel="nofollow"&gt;published to nuget.org&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can install the tool using the following command.&lt;/p&gt;
-&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;dotnet tool install -g dotnet-format&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;&lt;a id="user-content-installing-development-builds" class="anchor" aria-hidden="true" href="#installing-development-builds"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Development Builds&lt;/h4&gt;
-&lt;p&gt;Development builds of &lt;code&gt;dotnet-format&lt;/code&gt; are being hosted on myget. You can visit the &lt;a href="https://dotnet.myget.org/feed/format/package/nuget/dotnet-format" rel="nofollow"&gt;dotnet-format myget page&lt;/a&gt; to get the latest version number.&lt;/p&gt;
-&lt;p&gt;You can install the tool using the following command.&lt;/p&gt;
-&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;dotnet tool install -g dotnet-format --version 3.0.5-prerelease.19203.5 --add-source https://dotnet.myget.org/F/format/api/v3/index.json&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Use&lt;/h3&gt;
-&lt;p&gt;By default &lt;code&gt;dotnet-format&lt;/code&gt; will look in the current directory for a project or solution file and use that as the workspace to format. If more than one project or solution file is present in the current directory you will need to specify the workspace to format using the &lt;code&gt;-w&lt;/code&gt; option. You can control how verbose the output will be by using the &lt;code&gt;-v&lt;/code&gt; option.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Usage:
-  dotnet-format [options]
-
-Options:
-  -f, --folder       The folder to operate on. Cannot be used with the `--workspace` option.
-  -w, --workspace    The solution or project file to operate on. If a file is not specified, the command will search
-                     the current directory for one.
-  -v, --verbosity    Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and
-                     diag[nostic]
-  --dry-run          Format files, but do not save changes to disk.
-  --check            Terminates with a non-zero exit code if any files were formatted.
-  --files            A comma separated list of relative file paths to format. All files are formatted if empty.
-  --version          Display version information
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Add &lt;code&gt;format&lt;/code&gt; after &lt;code&gt;dotnet&lt;/code&gt; and before the command arguments that you want to run:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Examples&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Formats the project or solution in the current directory.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt; -f &amp;lt;folder&amp;gt;&lt;/td&gt;
-&lt;td&gt;Formats a particular folder and subfolders.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt; -w &amp;lt;workspace&amp;gt;&lt;/td&gt;
-&lt;td&gt;Formats a specific project or solution.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt; -v diag&lt;/td&gt;
-&lt;td&gt;Formats with very verbose logging.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt; --files Programs.cs,Utility\Logging.cs&lt;/td&gt;
-&lt;td&gt;Formats the files Program.cs and Utility\Logging.cs&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;dotnet &lt;strong&gt;format&lt;/strong&gt; --check --dry-run&lt;/td&gt;
-&lt;td&gt;Formats but does not save. Returns a non-zero exit code if any files would have been changed.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3&gt;&lt;a id="user-content-how-to-uninstall" class="anchor" aria-hidden="true" href="#how-to-uninstall"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Uninstall&lt;/h3&gt;
-&lt;p&gt;You can uninstall the tool using the following command.&lt;/p&gt;
-&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;dotnet tool uninstall -g dotnet-format&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-how-to-build-from-source" class="anchor" aria-hidden="true" href="#how-to-build-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Build From Source&lt;/h3&gt;
-&lt;p&gt;You can build and package the tool using the following commands. The instructions assume that you are in the root of the repository.&lt;/p&gt;
-&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;build -pack&lt;/span&gt;
-# &lt;span class="pl-s1"&gt;The final line from the build will &lt;span class="pl-c1"&gt;read&lt;/span&gt; something like&lt;/span&gt;
-# &lt;span class="pl-s1"&gt;Successfully created package &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;..\artifacts\packages\Debug\Shipping\dotnet-format.3.0.0-dev.nupkg&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.&lt;/span&gt;
-# &lt;span class="pl-s1"&gt;Use the value that is &lt;span class="pl-k"&gt;in&lt;/span&gt; the form &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;`&lt;/span&gt;3.0.0-dev&lt;span class="pl-pds"&gt;`&lt;/span&gt;&lt;/span&gt; as the version &lt;span class="pl-k"&gt;in&lt;/span&gt; the next command.&lt;/span&gt;
-&lt;span class="pl-c1"&gt;dotnet tool install --add-source .\artifacts\packages\Debug\Shipping -g dotnet-format --version &amp;lt;version&amp;gt;&lt;/span&gt;
-&lt;span class="pl-c1"&gt;dotnet format&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note: On macOS and Linux, &lt;code&gt;.\artifacts&lt;/code&gt; will need be switched to &lt;code&gt;./artifacts&lt;/code&gt; to accommodate for the different slash directions.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>dotnet</author><guid isPermaLink="false">https://github.com/dotnet/format</guid><pubDate>Tue, 19 Nov 2019 00:09:00 GMT</pubDate></item><item><title>OPS-E2E-PPE/E2E_Contribution_DocfxV3 #10 in PowerShell, Today</title><link>https://github.com/OPS-E2E-PPE/E2E_Contribution_DocfxV3</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-microsoft-open-source-code-of-conduct" class="anchor" aria-hidden="true" href="#microsoft-open-source-code-of-conduct"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microsoft Open Source Code of Conduct&lt;/h2&gt;
-&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;.
-For more information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact &lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional questions or comments.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>OPS-E2E-PPE</author><guid isPermaLink="false">https://github.com/OPS-E2E-PPE/E2E_Contribution_DocfxV3</guid><pubDate>Tue, 19 Nov 2019 00:10:00 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: PowerShell, Today</title><link>https://github.com/trending/powershell?since=daily</link><description>The top repositories on GitHub for powershell, measured daily</description><pubDate>Wed, 20 Nov 2019 01:08:47 GMT</pubDate><lastBuildDate>Wed, 20 Nov 2019 01:08:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in PowerShell, Today today</title><pubDate>Wed, 20 Nov 2019 01:08:47 GMT</pubDate></item></channel></rss>
