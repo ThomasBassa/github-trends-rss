@@ -1,2 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Puppet, Today</title><link>https://github.com/trending/puppet?since=daily</link><description>The top repositories on GitHub for puppet, measured daily</description><pubDate>Sat, 23 Nov 2019 01:05:38 GMT</pubDate><lastBuildDate>Sat, 23 Nov 2019 01:05:38 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Puppet, Today today</title><pubDate>Sat, 23 Nov 2019 01:05:38 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Puppet, Today</title><link>https://github.com/trending/puppet?since=daily</link><description>The top repositories on GitHub for puppet, measured daily</description><pubDate>Sun, 24 Nov 2019 01:05:07 GMT</pubDate><lastBuildDate>Sun, 24 Nov 2019 01:05:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>thias/puppet-sysctl #1 in Puppet, Today</title><link>https://github.com/thias/puppet-sysctl</link><description>&lt;p&gt;&lt;i&gt;Puppet module to manage sysctl parameters&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-puppet-sysctl" class="anchor" aria-hidden="true" href="#puppet-sysctl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;puppet-sysctl&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Manage sysctl variable values. All changes are immediately applied, as well as
+configured to become persistent. Tested on Red Hat Enterprise Linux 6 and 7.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sysctl&lt;/code&gt; : Definition to manage sysctl variables by setting a value.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sysctl::base&lt;/code&gt;: Base class (included from the definition).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For persistence to work, your Operating System needs to support looking for
+sysctl configuration inside &lt;code&gt;/etc/sysctl.d/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You may optionally enable purging of the &lt;code&gt;/etc/sysctl.d/&lt;/code&gt; directory, so that
+all files which are not (or no longer) managed by this module will be removed.&lt;/p&gt;
+&lt;p&gt;Beware that for the purge to work, you need to either have at least one
+sysctl definition call left for the node, or include &lt;code&gt;sysctl::base&lt;/code&gt; manually.&lt;/p&gt;
+&lt;p&gt;You may also force a value to &lt;code&gt;ensure =&amp;gt; absent&lt;/code&gt;, which will always work.&lt;/p&gt;
+&lt;p&gt;For the few original settings in the main &lt;code&gt;/etc/sysctl.conf&lt;/code&gt; file, the value is
+also replaced so that running &lt;code&gt;sysctl -p&lt;/code&gt; doesn't revert any change made by
+puppet.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Enable IP forwarding globally :&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;sysctl&lt;/span&gt; { &lt;span class="pl-en"&gt;'net.ipv4.ip_forward'&lt;/span&gt;: &lt;span class="pl-c1"&gt;value &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Set a value for maximum number of connections per UNIX socket :&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;sysctl&lt;/span&gt; { &lt;span class="pl-en"&gt;'net.core.somaxconn'&lt;/span&gt;: &lt;span class="pl-c1"&gt;value &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;65536&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure we don't have any explicit value set for swappiness, typically
+because it was set at some point but no longer needs to be. The original
+value for existing nodes won't be reset until the next reboot :&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;sysctl&lt;/span&gt; { &lt;span class="pl-en"&gt;'vm.swappiness'&lt;/span&gt;: &lt;span class="pl-c1"&gt;ensure &lt;/span&gt;=&amp;gt; &lt;span class="pl-c1"&gt;absent&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If the order in which the files get applied is important, you can set it by
+using a file name prefix, which could also be set globally from &lt;code&gt;site.pp&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;Sysctl { &lt;span class="pl-c1"&gt;prefix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;60&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To enable purging of settings, you can use hiera to set the &lt;code&gt;sysctl::base&lt;/code&gt;
+&lt;code&gt;$purge&lt;/code&gt; parameter :&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;---
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; sysctl&lt;/span&gt;
+&lt;span class="pl-ent"&gt;sysctl::base::purge&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-hiera" class="anchor" aria-hidden="true" href="#hiera"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hiera&lt;/h2&gt;
+&lt;p&gt;It is also possible to manage all sysctl keys using hiera, through the
+&lt;code&gt;$values&lt;/code&gt; parameter of the &lt;code&gt;sysctl::base&lt;/code&gt; class. If sysctl values are spread
+across different hiera locations, it's also possible to merge all of them
+instead of having only the last one applied, by setting the
+&lt;code&gt;$hiera_merge_values&lt;/code&gt; parameter to true.&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;sysctl::base::values&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;net.ipv4.ip_forward&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;value&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;net.core.somaxconn&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;value&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;65536&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;vm.swappiness&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;ensure&lt;/span&gt;: &lt;span class="pl-s"&gt;absent&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-original-etcsysctld-entries" class="anchor" aria-hidden="true" href="#original-etcsysctld-entries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Original /etc/sysctl.d entries&lt;/h2&gt;
+&lt;p&gt;When purging, puppet might want to remove files from &lt;code&gt;/etc/sysctl.d/&lt;/code&gt; which
+have not been created by puppet, but need to be present. It's possible to
+set the same values for the same keys using puppet, but if the file comes from
+an OS package which gets updated, it might re-appear when the package gets
+updated. To work around this issue, it's possible to simply manage an
+identical file with this module. Example :&lt;/p&gt;
+&lt;div class="highlight highlight-source-puppet"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;package&lt;/span&gt; { &lt;span class="pl-en"&gt;'libvirt'&lt;/span&gt;: &lt;span class="pl-c1"&gt;ensure &lt;/span&gt;=&amp;gt; installed } -&amp;gt;
+&lt;span class="pl-k"&gt;sysctl&lt;/span&gt; { &lt;span class="pl-en"&gt;'libvirtd'&lt;/span&gt;:
+  &lt;span class="pl-c1"&gt;suffix &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;source &lt;/span&gt;=&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;puppet:///modules/&lt;span class="pl-smi"&gt;${module_name}&lt;/span&gt;/libvirtd.sysctl&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>thias</author><guid isPermaLink="false">https://github.com/thias/puppet-sysctl</guid><pubDate>Sun, 24 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
