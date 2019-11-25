@@ -1,2 +1,1121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Sun, 24 Nov 2019 01:05:05 GMT</pubDate><lastBuildDate>Sun, 24 Nov 2019 01:05:05 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Emacs Lisp, Today today</title><pubDate>Sun, 24 Nov 2019 01:05:05 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Mon, 25 Nov 2019 01:06:47 GMT</pubDate><lastBuildDate>Mon, 25 Nov 2019 01:06:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>emacs-mirror/emacs #1 in Emacs Lisp, Today</title><link>https://github.com/emacs-mirror/emacs</link><description>&lt;p&gt;&lt;i&gt;Mirror of GNU Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Copyright (C) 2001-2019 Free Software Foundation, Inc.
+See the end of the file for license conditions.
+
+
+This directory tree holds version 27.0.50 of GNU Emacs, the extensible,
+customizable, self-documenting real-time display editor.
+
+The file INSTALL in this directory says how to build and install GNU
+Emacs on various systems, once you have unpacked or checked out the
+entire Emacs file tree.
+
+See the file etc/NEWS for information on new features and other
+user-visible changes in recent versions of Emacs.
+
+The file etc/PROBLEMS contains information on many common problems that
+occur in building, installing and running Emacs.
+
+The file CONTRIBUTE contains information on contributing to Emacs as a
+developer.
+
+You may encounter bugs in this release.  If you do, please report
+them; your bug reports are valuable contributions to the FSF, since
+they allow us to notice and fix problems on machines we don't have, or
+in code we don't use often.  Please send bug reports to the mailing
+list bug-gnu-emacs@gnu.org.  If possible, use M-x report-emacs-bug.
+
+See the "Bugs" section of the Emacs manual for more information on how
+to report bugs.  (The file 'BUGS' in this directory explains how you
+can find and read that section using the Info files that come with
+Emacs.)  For a list of mailing lists related to Emacs, see
+&amp;lt;&lt;a href="https://savannah.gnu.org/mail/?group=emacs" rel="nofollow"&gt;https://savannah.gnu.org/mail/?group=emacs&lt;/a&gt;&amp;gt;.  For the complete
+list of GNU mailing lists, see &amp;lt;&lt;a href="https://lists.gnu.org/" rel="nofollow"&gt;https://lists.gnu.org/&lt;/a&gt;&amp;gt;.
+
+The 'etc' subdirectory contains several other files, named in capital
+letters, which you might consider looking at when installing GNU
+Emacs.
+
+The file 'configure' is a shell script to acclimate Emacs to the
+oddities of your processor and operating system.  It creates the file
+'Makefile' (a script for the 'make' program), which automates the
+process of building and installing Emacs.  See INSTALL for more
+detailed information.
+
+The file 'configure.ac' is the input used by the autoconf program to
+construct the 'configure' script.
+
+The shell script 'autogen.sh' generates 'configure' and other files by
+running Autoconf (which in turn uses GNU m4), and configures files in
+the .git subdirectory if you are using Git.  If you want to use it,
+you will need to install recent versions of these build tools.  This
+should be needed only if you edit files like 'configure.ac' that
+specify Emacs's autobuild procedure.
+
+The file 'Makefile.in' is a template used by 'configure' to create
+'Makefile'.
+
+The file 'make-dist' is a shell script to build a distribution tar
+file from the current Emacs tree, containing only those files
+appropriate for distribution.  If you make extensive changes to Emacs,
+this script will help you distribute your version to others.
+
+There are several subdirectories:
+
+'src'       holds the C code for Emacs (the Emacs Lisp interpreter and
+            its primitives, the redisplay code, and some basic editing
+            functions).
+'lisp'      holds the Emacs Lisp code for Emacs (most everything else).
+'leim'      holds the original source files for the generated files
+            in lisp/leim.  These form the library of Emacs input methods,
+            required to type international characters that can't be
+            directly produced by your keyboard.
+'lib'       holds source code for libraries used by Emacs and its utilities
+'lib-src'   holds the source code for some utility programs for use by or
+            with Emacs, like movemail and etags.
+'lwlib'     holds the sources of the Lucid Widget Library used on X.
+'oldXMenu'  source files from X11R2 XMenu library, used in non-toolkit builds.
+'etc'       holds miscellaneous architecture-independent data files Emacs
+            uses, like the tutorial text and tool bar images.
+            The contents of the 'lisp', 'leim', 'info', and 'doc'
+            subdirectories are architecture-independent too.
+'info'      holds the Info documentation tree for Emacs.
+'doc/emacs' holds the source code for the Emacs Manual.  If you modify the
+            manual sources, you will need the 'makeinfo' program to produce
+            an updated manual.  'makeinfo' is part of the GNU Texinfo
+            package; you need a suitably recent version of Texinfo.
+'doc/lispref'   holds the source code for the Emacs Lisp reference manual.
+'doc/lispintro' holds the source code for the Introduction to Programming
+                in Emacs Lisp manual.
+'msdos'     holds configuration files for compiling Emacs under MS-DOS.
+'nextstep'  holds instructions and some other files for compiling the
+            Nextstep port of Emacs, for GNUstep and macOS Cocoa.
+'nt'        holds code and documentation for building Emacs on MS-Windows.
+'test'      holds tests for various aspects of Emacs's functionality.
+'modules'   holds the modhelp.py helper script.
+'admin'     holds files used by Emacs developers, and Unicode data files.
+'build-aux' holds auxiliary files used during the build.
+'m4'        holds Autoconf macros used for generating the configure script.
+
+   Building Emacs on non-Posix platforms requires tools that aren't part
+of the standard distribution of the OS.  The platform-specific README
+files and installation instructions should list the required tools.
+
+
+NOTE ON COPYRIGHT YEARS
+
+In copyright notices where the copyright holder is the Free Software
+Foundation, then where a range of years appears, this is an inclusive
+range that applies to every year in the range.  For example: 2005-2008
+represents the years 2005, 2006, 2007, and 2008.
+
+
+This file is part of GNU Emacs.
+
+GNU Emacs is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+GNU Emacs is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs.  If not, see &amp;lt;&lt;a href="https://www.gnu.org/licenses/" rel="nofollow"&gt;https://www.gnu.org/licenses/&lt;/a&gt;&amp;gt;.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>emacs-mirror</author><guid isPermaLink="false">https://github.com/emacs-mirror/emacs</guid><pubDate>Mon, 25 Nov 2019 00:01:00 GMT</pubDate></item><item><title>hlissner/doom-emacs #2 in Emacs Lisp, Today</title><link>https://github.com/hlissner/doom-emacs</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration for the stubborn martian vimmer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="http://doomemacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/d38622bbeea8e0a3a1c42e21d2839363d21b4627/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f646f6f6d2d656d6163732e7376673f6c6162656c3d72656c6561736526636f6c6f723d6f72616e6765" alt="Made with Doom Emacs" data-canonical-src="https://img.shields.io/github/tag/hlissner/doom-emacs.svg?label=release&amp;amp;color=orange" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://emacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/145199dd89d8ed47968846fe8dcdde64b838ffab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6164655f666f722d456d6163735f32362e312b2d626c756576696f6c65742e737667" alt="Made for Emacs 26.1+" data-canonical-src="https://img.shields.io/badge/Made_for-Emacs_26.1+-blueviolet.svg" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://github.com/hlissner/doom-emacs/actions"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/workflows/CI/badge.svg" alt="Build status: develop" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/48087b2da5b43d9130b73e6e8ad3e7b42caa3330/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d626c75652e7376673f6c6f676f3d646973636f7264266c6162656c3d6a6f696e" alt="Join our discord server" align="right" data-canonical-src="https://img.shields.io/badge/Discord-blue.svg?logo=discord&amp;amp;label=join" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png"&gt;&lt;img src="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png" alt="Doom Emacs Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;b&gt;&lt;a href="/../../tree/screenshots"&gt;Screenshots&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/getting_started.org"&gt;Get started&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/contributing.org"&gt;Contribute&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/index.org"&gt;Documentation&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/faq.org"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quick start&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/hlissner/doom-emacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d/bin/doom install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what-is-doom-emacs"&gt;What is Doom Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dooms-mantras"&gt;Doom's mantras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#community"&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-what-is-doom-emacs" class="anchor" aria-hidden="true" href="#what-is-doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Doom Emacs&lt;/h1&gt;
+&lt;a href="http://ultravioletbat.deviantart.com/art/Yay-Evil-111710573" rel="nofollow"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/raw/screenshots/cacochan.png" align="right" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;p&gt;It is a story as old as time. A stubborn, shell-dwelling, and melodramatic
+vimmer -- envious of the features of modern text editors -- spirals into despair
+before succumbing to the &lt;a href="https://github.com/emacs-evil/evil"&gt;dark side&lt;/a&gt;. This is his config.&lt;/p&gt;
+&lt;p&gt;Doom is a configuration for &lt;a href="https://www.gnu.org/software/emacs/" rel="nofollow"&gt;GNU Emacs&lt;/a&gt;
+designed to make Emacs faster and easier to customize. It can serve as framework
+for your own configuration or a resource for fellow Emacs enthusiasts who want
+to learn more about our favorite OS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dooms-mantras" class="anchor" aria-hidden="true" href="#dooms-mantras"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom's mantras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gotta go fast.&lt;/strong&gt; Startup and run-time performance are high priorities.
+Expensive functionality (built-in or in plugins) is modified and optimized
+toward this end, otherwise, they must be opt-in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Close to metal.&lt;/strong&gt; There's less between you and vanilla Emacs, by design.
+There's less to grok. Modules should be syntactically sweet and backend logic
+explicit and abstraction-light. The code itself ought to be designed as if
+grokking it were part of the user experience; and it is!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Opinionated, but not stubborn.&lt;/strong&gt; Doom is a bundle of reasonable defaults
+and curated opinions, but you aren't stuck with it. Use as little or as much
+of it as you like. Use it as-is as a complete Emacs distribution; disable
+everything and use it as a baseline for your own; or anywhere in between.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Your system, your rules.&lt;/strong&gt; There are more ways to set up your programming
+environment than there are dislikes on Youtube Rewind '18, so Doom and its
+plugins promise not to &lt;em&gt;automatically&lt;/em&gt; (and definitely not &lt;em&gt;silently&lt;/em&gt;) install
+system dependencies. This means fonts, packages and programs. &lt;code&gt;doom doctor&lt;/code&gt;
+will tell you what's missing though!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A curated set of sane defaults for all packages, all (major) OSes, and Emacs
+itself.&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; programming languages. Too many to list. Includes syntax
+highlighting, linters/checker integration, inline code evaluation, code
+completion (where possible), REPLs, documentation lookups, snippets, and more!&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; tools, like docker, pass, ansible, terraform, and more.&lt;/li&gt;
+&lt;li&gt;Minimalistic good looks inspired by modern editors.&lt;/li&gt;
+&lt;li&gt;A modular architecture for a more organized Emacs configuration.&lt;/li&gt;
+&lt;li&gt;A custom elisp library to help you simplify your config.&lt;/li&gt;
+&lt;li&gt;A declarative &lt;a href="core/autoload/packages.el"&gt;package management system&lt;/a&gt; (powered by
+&lt;a href="https://github.com/raxod502/straight.el"&gt;straight.el&lt;/a&gt;) with a command line interface. Install packages
+from anywhere, not just (M)ELPA.&lt;/li&gt;
+&lt;li&gt;Vim-emulation powered by &lt;a href="https://github.com/emacs-evil/evil"&gt;evil-mode&lt;/a&gt;, including ports of
+popular vim plugins and functionality.&lt;/li&gt;
+&lt;li&gt;A Spacemacs-esque &lt;a href="modules/config/default/+evil-bindings.el"&gt;keybinding scheme&lt;/a&gt;, centered around leader
+and localleader prefix keys (&lt;kbd&gt;SPC&lt;/kbd&gt; and &lt;kbd&gt;SPC&lt;/kbd&gt;&lt;kbd&gt;m&lt;/kbd&gt;, by
+default).&lt;/li&gt;
+&lt;li&gt;A rule-based &lt;a href="modules/ui/popup/README.org"&gt;popup management system&lt;/a&gt; that dictates how
+temporary or disposable buffers are displayed (and disposed of).&lt;/li&gt;
+&lt;li&gt;Automatic indentation detection and &lt;a href="http://editorconfig.org/" rel="nofollow"&gt;editorconfig&lt;/a&gt;
+integration. Let someone else argue about tabs vs &lt;strong&gt;_*&lt;strong&gt;spaces&lt;/strong&gt;*_&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Project-management tools and framework-specific minor modes with their own
+snippets libraries.&lt;/li&gt;
+&lt;li&gt;Project search (and replace) utilities, powered by
+&lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the_silver_searcher&lt;/a&gt; or &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Isolated and persistent workspaces (also substitutes for vim tabs).&lt;/li&gt;
+&lt;li&gt;An environment variables file generator and loader, so that Emacs can
+perfectly inherit your shell configuration.&lt;/li&gt;
+&lt;li&gt;Everything is optional!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;a Discord server&lt;/a&gt;! Hop on and say hi!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Encountered strange behavior or an error? Here are some things to try before you
+shoot off that bug report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom refresh&lt;/code&gt;. This ensures Doom is properly set up and its autoloads
+files are up-to-date.&lt;/li&gt;
+&lt;li&gt;If you have byte-compiled your config (with &lt;code&gt;bin/doom compile&lt;/code&gt;), see if
+&lt;code&gt;bin/doom clean&lt;/code&gt; makes the issue go away. Never debug issues with a
+byte-compiled config, it will make your job harder.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom doctor&lt;/code&gt; to detect common issues in your development environment.&lt;/li&gt;
+&lt;li&gt;Search Doom's issue tracker for mention of any error messages you've received.&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/faq.org"&gt;Visit our FAQ&lt;/a&gt; to see if your issue is listed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If all else fails, &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;file that bug report&lt;/a&gt;! Please include the
+behavior you've observed, the behavior you expected, and any error messages or
+warnings logged to the *Messages* buffer (can be opened with &lt;kbd&gt;SPC h
+e&lt;/kbd&gt; or &lt;code&gt;M-x view-echo-area-messages&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It's a great help if you included a backtrace with errors, i.e. &lt;code&gt;M-x toggle-debug-on-error&lt;/code&gt; then recreating the error(s).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Doom (and my Emacs work in general) is a labor of love and incurable madness,
+done on my spare time. If you'd like to support my work, there are many things
+you can do to help; I welcome any contribution!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I love pull requests and bug reports. Check out the &lt;a href="docs/contributing.org"&gt;Contributing
+Guidelines&lt;/a&gt; to find out how you can help out.&lt;/li&gt;
+&lt;li&gt;I welcome Elisp pointers! Don't hesitate to &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;tell me my Elisp-fu
+sucks&lt;/a&gt; (but please tell me why).&lt;/li&gt;
+&lt;li&gt;Hop on &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;our Discord server&lt;/a&gt; and say hi! Help others out, hang out
+or talk to me about Emacs, or gamedev, or programming, machine learning,
+physics, pixel art, anime, gaming -- anything you like. Nourish this lonely
+soul!&lt;/li&gt;
+&lt;li&gt;If you'd like to support my work financially, consider buying me a drink
+through &lt;a href="https://liberapay.com/hlissner/donate" rel="nofollow"&gt;liberapay&lt;/a&gt; or &lt;a href="https://paypal.me/henriklissner/10" rel="nofollow"&gt;paypal&lt;/a&gt;. Donations are a
+great help. My work here contends with studies, ventures in indie gamedev, and
+my freelance work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/doom-emacs</guid><pubDate>Mon, 25 Nov 2019 00:02:00 GMT</pubDate></item><item><title>hlissner/emacs-doom-themes #3 in Emacs Lisp, Today</title><link>https://github.com/hlissner/emacs-doom-themes</link><description>&lt;p&gt;&lt;i&gt;An opinionated pack of modern color-themes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a918642e7742aa7f5aae9e686f48e79bd1a96cb0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6c6162656c3d72656c65617365267374796c653d666c61742d737175617265"&gt;&lt;img src="https://camo.githubusercontent.com/a918642e7742aa7f5aae9e686f48e79bd1a96cb0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6c6162656c3d72656c65617365267374796c653d666c61742d737175617265" alt="Release tag" data-canonical-src="https://img.shields.io/github/tag/hlissner/emacs-doom-themes.svg?label=release&amp;amp;style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://melpa.org/#/doom-themes" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/621f359fdf4553c5252a571785de56a85d53010b/687474703a2f2f6d656c70612e6f72672f7061636b616765732f646f6f6d2d7468656d65732d62616467652e7376673f7374796c653d666c61742d737175617265" alt="MELPA" data-canonical-src="http://melpa.org/packages/doom-themes-badge.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/hlissner/emacs-doom-themes" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/987575e312ca7a4f68f417530468a5f6e190cccf/68747470733a2f2f7472617669732d63692e6f72672f686c6973736e65722f656d6163732d646f6f6d2d7468656d65732e7376673f6272616e63683d6d6173746572267374796c653d666c61742d737175617265" alt="Build Status" data-canonical-src="https://travis-ci.org/hlissner/emacs-doom-themes.svg?branch=master&amp;amp;style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="./LICENSE"&gt;&lt;img src="https://camo.githubusercontent.com/95e854794a291423fe200ec681d09ed63f9fadd1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d677265656e2e7376673f7374796c653d666c61742d737175617265" alt="MIT" data-canonical-src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-doom-themes" class="anchor" aria-hidden="true" href="#doom-themes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;doom-themes&lt;/h1&gt;
+&lt;p&gt;DOOM Themes is an opinionated UI plugin and pack of themes extracted from my
+&lt;a href="https://github.com/hlissner/.emacs.d"&gt;emacs.d&lt;/a&gt;, inspired by some of my favorite color themes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots"&gt;See the screenshots.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#theme-list"&gt;Theme list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#install"&gt;Install&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#doom-emacs"&gt;Doom Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manually"&gt;Manually&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#common-issues"&gt;Common Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contribute"&gt;Contribute&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-theme-list" class="anchor" aria-hidden="true" href="#theme-list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Theme list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Flagship themes
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-one&lt;/code&gt;: doom-themes' flagship theme, inspired by &lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s One Dark themes&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-one-light&lt;/code&gt;: light version of doom-one (thanks to &lt;a href="https://github.com/ztlevi"&gt;ztlevi&lt;/a&gt;)&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-vibrant&lt;/code&gt;: a slightly more vibrant version of &lt;code&gt;doom-one&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Additional themes
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-acario-dark&lt;/code&gt;: an original dark theme (thanks to &lt;a href="https://github.com/gagbo"&gt;gagbo&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-acario-light&lt;/code&gt;: an original light theme (thanks to &lt;a href="https://github.com/gagbo"&gt;gagbo&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-city-lights&lt;/code&gt;: based on Atom's &lt;a href="http://citylights.xyz/" rel="nofollow"&gt;City lights&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-challenger-deep&lt;/code&gt;: based on Vim's &lt;a href="https://github.com/challenger-deep-theme/vim"&gt;Challenger deep&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-dracula&lt;/code&gt;: an implementation of &lt;a href="https://draculatheme.com/" rel="nofollow"&gt;Dracula&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-fairy-floss&lt;/code&gt;: a candy colored Sublime theme by &lt;a href="https://sailorhg.github.io/fairyfloss/" rel="nofollow"&gt;sailorhg&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-gruvbox&lt;/code&gt;: adapted from Mohretz's &lt;a href="https://github.com/morhetz/gruvbox"&gt;Gruvbox&lt;/a&gt; (thanks to &lt;a href="https://github.com/JongW"&gt;JongW&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-Iosvkem&lt;/code&gt;: adapted from &lt;a href="https://github.com/neutaaaaan/iosvkem"&gt;Iosvkem&lt;/a&gt; (thanks to &lt;a href="https://github.com/neutaaaaan"&gt;neutaaaaan&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-laserwave&lt;/code&gt;: an clean 80's synthwave / outrun theme inspired by VS Code's &lt;a href="https://github.com/Jaredk3nt/laserwave"&gt;laserwave&lt;/a&gt; (thanks to &lt;a href="https://github.com/hyakt"&gt;hyakt&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-molokai&lt;/code&gt;: based on Textmate's monokai&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-moonlight&lt;/code&gt; ported from VS Code's &lt;a href="https://github.com/atomiks/moonlight-vscode-theme"&gt;Moonlight Theme&lt;/a&gt; (thanks to &lt;a href="https://github.com/Brettm12345"&gt;Brettm12345&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-nord-light&lt;/code&gt;: light variant of &lt;a href="https://www.nordtheme.com/" rel="nofollow"&gt;Nord&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-nova&lt;/code&gt;: adapted from &lt;a href="https://trevordmiller.com/projects/nova" rel="nofollow"&gt;Nova&lt;/a&gt; (thanks to &lt;a href="https://github.com/bigardone"&gt;bigardone&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-oceanic-next&lt;/code&gt;: adapted from &lt;a href="https://github.com/voronianski/oceanic-next-color-scheme"&gt;Oceanic Next&lt;/a&gt; theme (thanks to &lt;a href="https://github.com/juanwolf"&gt;juanwolf&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-opera&lt;/code&gt;: an original dark theme (thanks to &lt;a href="https://github.com/jwintz"&gt;jwintz&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-opera-light&lt;/code&gt;: an original light theme (thanks to &lt;a href="https://github.com/jwintz"&gt;jwintz&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-outrun-electric&lt;/code&gt;: a neon colored theme inspired in VS Code's &lt;a href="https://github.com/samrap/outrun-theme-vscode"&gt;Outrun Electric&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-palenight&lt;/code&gt; adapted from &lt;a href="https://github.com/equinusocio/vsc-material-theme"&gt;Material Themes&lt;/a&gt; (thanks to &lt;a href="https://github.com/Brettm12345"&gt;Brettm12345&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-peacock&lt;/code&gt;: based on Peacock from &lt;a href="http://daylerees.github.io/" rel="nofollow"&gt;daylerees' themes&lt;/a&gt; (thanks to &lt;a href="https://github.com/teesloane"&gt;teesloane&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-snazzy&lt;/code&gt;: a dark theme inspired in Atom's &lt;a href="https://github.com/sindresorhus/hyper-snazzy"&gt;Hyper Snazzy&lt;/a&gt; (thanks to &lt;a href="https://github.com/ar1a"&gt;ar1a&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-solarized-dark&lt;/code&gt;: dark variant of &lt;a href="http://ethanschoonover.com/solarized" rel="nofollow"&gt;Solarized&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-solarized-light&lt;/code&gt;: light variant of &lt;a href="http://ethanschoonover.com/solarized" rel="nofollow"&gt;Solarized&lt;/a&gt; (thanks to &lt;a href="https://github.com/fuxialexander"&gt;fuxialexander&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-sourcerer&lt;/code&gt;: based on &lt;a href="https://github.com/xero/sourcerer.vim"&gt;Sourcerer&lt;/a&gt; (thanks to &lt;a href="https://github.com/defphil"&gt;defphil&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-spacegrey&lt;/code&gt;: &lt;a href="http://kkga.github.io/spacegray/" rel="nofollow"&gt;I'm sure you've heard of it&lt;/a&gt; (thanks to &lt;a href="https://github.com/teesloane"&gt;teesloane&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-tomorrow-day&lt;/code&gt;: &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow&lt;/a&gt;'s light variant (thanks to &lt;a href="https://github.com/emacswatcher"&gt;emacswatcher&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-tomorrow-night&lt;/code&gt;: one of the dark variants of &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow&lt;/a&gt; (thanks to &lt;a href="https://github.com/emacswatcher"&gt;emacswatcher&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""&gt; &lt;code&gt;doom-wilmersdorf&lt;/code&gt;: port of Ian Pan's &lt;a href="https://github.com/ianpan870102/wilmersdorf-emacs-theme"&gt;Wilmersdorf&lt;/a&gt; (thanks to &lt;a href="https://github.com/ema2159"&gt;ema2159&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; &lt;code&gt;doom-mono-dark&lt;/code&gt; / &lt;code&gt;doom-mono-light&lt;/code&gt;: a minimalistic, monochromatic theme&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="task-list-item"&gt;
+&lt;p&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; &lt;code&gt;doom-tron&lt;/code&gt;: based on Tron Legacy from &lt;a href="http://daylerees.github.io/" rel="nofollow"&gt;daylerees' themes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;(doom-themes-visual-bell-config)&lt;/code&gt;: flash the mode-line when the Emacs bell
+rings (i.e. an error occurs).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;(doom-themes-neotree-config)&lt;/code&gt;: a &lt;a href="https://github.com/jaypei/emacs-neotree"&gt;neotree&lt;/a&gt; theme that takes after &lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s
+file drawer, and is simpler than the built in icon theme in neotree
+(&lt;a href="/../screenshots/doom-one.png"&gt;screenshot&lt;/a&gt;, &lt;a href="https://github.com/hlissner/emacs-doom-themes/wiki"&gt;more details&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;This requires &lt;code&gt;all-the-icons&lt;/code&gt;' fonts to be installed: &lt;code&gt;M-x all-the-icons-install-fonts&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;(doom-themes-treemacs-config)&lt;/code&gt;: two &lt;a href="https://github.com/Alexander-Miller/treemacs"&gt;treemacs&lt;/a&gt; icon themes, one that takes after
+&lt;a href="http://atom.io" rel="nofollow"&gt;Atom&lt;/a&gt;'s, and a second more colorful implementation (WIP).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;(doom-themes-org-config)&lt;/code&gt;: corrects and improves some of org-mode's native
+fontification.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Re-set &lt;code&gt;org-todo' &amp;amp; &lt;/code&gt;org-headline-done' faces to make them respect
+underlying faces (i.e. don't override the :height or :background of
+underlying faces).&lt;/li&gt;
+&lt;li&gt;Make statistic cookies respect underlying faces.&lt;/li&gt;
+&lt;li&gt;Fontify item bullets (make them stand out)&lt;/li&gt;
+&lt;li&gt;Fontify item checkboxes (and when they're marked done), like TODOs that
+are marked done.&lt;/li&gt;
+&lt;li&gt;Fontify dividers/separators (5+ dashes)&lt;/li&gt;
+&lt;li&gt;Fontify #hashtags and @at-tags, for personal convenience; see
+&lt;code&gt;doom-org-special-tags&lt;/code&gt; to disable this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resources that may interest you:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To get dimmed sidebars and brighter source buffers (like in the
+&lt;a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots"&gt;screenshots&lt;/a&gt;), see &lt;a href="https://github.com/hlissner/emacs-solaire-mode"&gt;solaire-mode&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;To get line number highlighting for &lt;code&gt;nlinum&lt;/code&gt;, set
+&lt;code&gt;nlinum-highlight-current-line&lt;/code&gt; to non-nil (or see &lt;a href="https://melpa.org/#/hlinum" rel="nofollow"&gt;hlinum&lt;/a&gt; for &lt;code&gt;linum&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AnthonyDiGirolamo"&gt;AnthonyDiGirolamo&lt;/a&gt; added doom-one (&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes/raw/master/screenshots/airline-doom-one-theme.png"&gt;screenshot&lt;/a&gt;) and
+doom-molokai (&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes/raw/master/screenshots/airline-doom-molokai-theme.png"&gt;screenshot&lt;/a&gt;) skins to
+&lt;a href="https://github.com/AnthonyDiGirolamo/airline-themes"&gt;airline-themes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I'm working on making my modeline more accessible. In the meantime, check
+out &lt;a href="https://github.com/hlissner/.emacs.d/blob/master/modules/ui/doom-modeline/config.el"&gt;my mode-line configuration&lt;/a&gt; in my &lt;a href="https://github.com/hlissner/.emacs.d"&gt;emacs.d&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-doom-emacs" class="anchor" aria-hidden="true" href="#doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom Emacs&lt;/h3&gt;
+&lt;p&gt;The built-in &lt;code&gt;:ui doom&lt;/code&gt; module installs &lt;code&gt;doom-themes&lt;/code&gt; for you, and loads
+&lt;code&gt;doom-one&lt;/code&gt; by default. You can change the theme by changing the &lt;code&gt;doom-theme&lt;/code&gt;
+variable from &lt;code&gt;~/.doom.d/config.el&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; doom-theme &lt;span class="pl-c1"&gt;'doom-city-lights&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or by loading it manually:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;load-theme&lt;/span&gt; &lt;span class="pl-c1"&gt;'doom-city-lights&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-manually" class="anchor" aria-hidden="true" href="#manually"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manually&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;doom-themes&lt;/code&gt; is available on MELPA.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/raxod502/straight.el"&gt;Straight&lt;/a&gt; users can install it with
+&lt;code&gt;M-x straight-use-package RET doom-themes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;And package.el users: &lt;code&gt;M-x package-install RET doom-themes&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is a example configuration for &lt;code&gt;doom-theme&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; doom-themes
+  &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Global settings (defaults)&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; doom-themes-enable-bold &lt;span class="pl-c1"&gt;t&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; if nil, bold is universally disabled&lt;/span&gt;
+        doom-themes-enable-italic &lt;span class="pl-c1"&gt;t&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; if nil, italics is universally disabled&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;load-theme&lt;/span&gt; &lt;span class="pl-c1"&gt;'doom-one&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Enable flashing mode-line on errors&lt;/span&gt;
+  (doom-themes-visual-bell-config)
+  
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Enable custom neotree theme (all-the-icons must be installed!)&lt;/span&gt;
+  (doom-themes-neotree-config)
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; or for treemacs users&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; doom-themes-treemacs-theme &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;doom-colors&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; use the colorful treemacs theme&lt;/span&gt;
+  (doom-themes-treemacs-config)
+  
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Corrects (and improves) org-mode's native fontification.&lt;/span&gt;
+  (doom-themes-org-config))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://github.com/hlissner/emacs-doom-themes/wiki"&gt;The wiki contains details for customizing the neotree theme&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-common-issues" class="anchor" aria-hidden="true" href="#common-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common Issues&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you use &lt;code&gt;nlinum&lt;/code&gt; or &lt;code&gt;linum&lt;/code&gt; in org-mode, the larger headline sizes in some
+themes &lt;a href="https://github.com/hlissner/emacs-doom-themes/issues/86"&gt;could bleed into the line numbers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fix this by setting :height explicitly for your line number plugins, after
+you've loaded the theme. e.g.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;let&lt;/span&gt; ((height (&lt;span class="pl-c1"&gt;face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'default&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt;)))
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; for all linum/nlinum users&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'linum&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height)
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; only for &lt;span class="pl-smi"&gt;`linum-relative'&lt;/span&gt; users:&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'linum-relative-current-face&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height)
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; only for &lt;span class="pl-smi"&gt;`nlinum-relative'&lt;/span&gt; users:&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;set-face-attribute&lt;/span&gt; &lt;span class="pl-c1"&gt;'nlinum-relative-current-face&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:height&lt;/span&gt; height))&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h2&gt;
+&lt;p&gt;I welcome contributions of any kind, be they pull requests, bug reports or elisp
+pointers. Additional theme and plugin support requests are welcome too.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/emacs-doom-themes</guid><pubDate>Mon, 25 Nov 2019 00:03:00 GMT</pubDate></item><item><title>syl20bnr/spacemacs #4 in Emacs Lisp, Today</title><link>https://github.com/syl20bnr/spacemacs</link><description>&lt;p&gt;&lt;i&gt;A community-driven Emacs distribution - The best editor is neither Emacs nor Vim,  it's Emacs *and* Vim!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a name="user-content-top"&gt;&lt;/a&gt;
+&lt;a href="http://spacemacs.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8f5ee1d9b7278ed2c63f1f89e9a583ec59b52b6b/68747470733a2f2f63646e2e7261776769742e636f6d2f73796c3230626e722f73706163656d6163732f343432643032353737396461326636326663383663323038323730333639373731346462363531342f6173736574732f73706163656d6163732d62616467652e737667" alt="Made with Spacemacs" data-canonical-src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="http://www.twitter.com/spacemacs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7cf10772eb6ccebe92d678c452a971e6e2778653/687474703a2f2f692e696d6775722e636f6d2f7458536f5468462e706e67" alt="Twitter" align="right" data-canonical-src="http://i.imgur.com/tXSoThF.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/doc/img/title2.png"&gt;&lt;img src="/doc/img/title2.png" alt="Spacemacs" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/DOCUMENTATION#orgheadline5" rel="nofollow"&gt;philosophy&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/DOCUMENTATION#orgheadline8" rel="nofollow"&gt;for whom?&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/DOCUMENTATION#orgheadline7" rel="nofollow"&gt;screenshots&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/DOCUMENTATION.html" rel="nofollow"&gt;documentation&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="CONTRIBUTING.org"&gt;contribute&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/DOCUMENTATION#achievements" rel="nofollow"&gt;achievements&lt;/a&gt;&lt;/b&gt;
+|
+&lt;b&gt;&lt;a href="http://spacemacs.org/doc/FAQ" rel="nofollow"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+&lt;a href="https://gitter.im/syl20bnr/spacemacs?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/80bf7c9122b2d8f4dbadfc434c9074c1754267ae/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e20436861742e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/Join Chat.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/syl20bnr/spacemacs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b724760fb5fb9a3cc9dcb3ed5fca8d102d076062/68747470733a2f2f7472617669732d63692e6f72672f73796c3230626e722f73706163656d6163732e737667" alt="Build Status" data-canonical-src="https://travis-ci.org/syl20bnr/spacemacs.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=ESFVNPKP4Y742" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/516248018619132b396881c0b21749c34d6ccfbd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617970616c2d446f6e6174652d626c75652e737667" alt="Donate" data-canonical-src="https://img.shields.io/badge/Paypal-Donate-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://shop.spreadshirt.com/spacemacs-shop" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f1b306f89bf6fade603509713a098316a4948ef2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53686f702d542d2d5368697274732d626c75652e737667" alt="Donate" data-canonical-src="https://img.shields.io/badge/Shop-T--Shirts-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://www.slant.co/topics/12/~what-are-the-best-programming-text-editors" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2e66996b76fc392f4936160dc3f627f663d1a68a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536c616e742d5265636f6d6d656e642d6666363962342e737667" alt="Recommend it" data-canonical-src="https://img.shields.io/badge/Slant-Recommend-ff69b4.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quick Install:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#documentation"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#emacs"&gt;Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#linux-distros"&gt;Linux distros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#macos"&gt;macOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windows"&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#install"&gt;Install&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#default-installation"&gt;Default installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#alternate-installations"&gt;Alternate installations&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#modify-home-environment-variable"&gt;Modify HOME environment variable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#modify-spacemacs-start-directory-variable"&gt;Modify spacemacs-start-directory variable&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#spacemacs-logo"&gt;Spacemacs logo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#update"&gt;Update&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#automatic-update-on-master-branch"&gt;Automatic update (on master branch)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manual-update-on-master-branch"&gt;Manual update (on master branch)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#on-develop-branch"&gt;On develop branch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#revert-to-a-specific-version"&gt;Revert to a specific version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#quotes"&gt;Quotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributions"&gt;Contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#communities"&gt;Communities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#supporting-spacemacs"&gt;Supporting Spacemacs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Spacemacs is a new way to experience Emacs -- a sophisticated and
+polished set-up focused on ergonomics, mnemonics and consistency.&lt;/p&gt;
+&lt;p&gt;Just clone it, launch it, then press the space bar to explore the
+interactive list of carefully-chosen key bindings. You can also press
+the home buffer's &lt;code&gt;[?]&lt;/code&gt; button for some great first key bindings to
+try.&lt;/p&gt;
+&lt;p&gt;Spacemacs can be used naturally by both Emacs and Vim users -- you can
+even mix the two editing styles. Switching easily between input styles
+makes Spacemacs a great tool for pair-programming.&lt;/p&gt;
+&lt;p&gt;Spacemacs is currently in beta, and contributions are very welcome.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/img/spacemacs-python.png"&gt;&lt;img src="doc/img/spacemacs-python.png" alt="spacemacs_python" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Great documentation:&lt;/strong&gt; access documentation in Emacs with
+&lt;kbd&gt;SPC h SPC&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful GUI:&lt;/strong&gt; you'll love the distraction free UI and its functional
+mode-line.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excellent ergonomics:&lt;/strong&gt; all the key bindings are accessible by pressing
+the &lt;kbd&gt;space bar&lt;/kbd&gt; or &lt;kbd&gt;alt-m&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mnemonic key bindings:&lt;/strong&gt; commands have mnemonic prefixes like
+&lt;kbd&gt;SPC b&lt;/kbd&gt; for all the buffer commands or &lt;kbd&gt;SPC p&lt;/kbd&gt; for the
+project commands.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Batteries included:&lt;/strong&gt; discover hundreds of ready-to-use packages nicely
+organised in configuration layers following a set of
+&lt;a href="http://spacemacs.org/doc/CONVENTIONS" rel="nofollow"&gt;conventions&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;Comprehensive documentation is available for each layer by pressing
+&lt;kbd&gt;SPC h SPC&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;You can also check the &lt;a href="http://spacemacs.org/doc/DOCUMENTATION" rel="nofollow"&gt;general documentation&lt;/a&gt;,
+&lt;a href="http://spacemacs.org/doc/QUICK_START" rel="nofollow"&gt;quick start guide&lt;/a&gt; and the &lt;a href="http://spacemacs.org/doc/FAQ" rel="nofollow"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
+&lt;p&gt;If you need help, ask your question in the &lt;a href="https://gitter.im/syl20bnr/spacemacs" rel="nofollow"&gt;Gitter Chat&lt;/a&gt; and a member of the
+community will help you out.&lt;/p&gt;
+&lt;p&gt;If you prefer IRC, connect to the &lt;a href="https://irc.gitter.im/" rel="nofollow"&gt;Gitter Chat IRC server&lt;/a&gt; and join the
+&lt;code&gt;#syl20bnr/spacemacs&lt;/code&gt; channel.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-emacs" class="anchor" aria-hidden="true" href="#emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emacs&lt;/h2&gt;
+&lt;p&gt;Spacemacs requires Emacs 24.4 or above. The development version of Emacs (at the
+time of writing, this is 25.2) is not &lt;em&gt;officially&lt;/em&gt; supported, but should
+nevertheless be expected to work.&lt;/p&gt;
+&lt;p&gt;Some modes require third-party tools that you'll have to install via your
+favorite package manager.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-linux-distros" class="anchor" aria-hidden="true" href="#linux-distros"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux distros&lt;/h3&gt;
+&lt;p&gt;Install Emacs from the package manager of your Linux distribution.&lt;/p&gt;
+&lt;p&gt;You should install the "emacs" package, not the "xemacs" package.
+XEmacs is an old fork of Emacs. The X in its name is unrelated to X11.
+Both Emacs and XEmacs have graphical support.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Ubuntu LTS 12.04 and 14.04 repositories have only Emacs 24.3
+available. You have to &lt;a href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html" rel="nofollow"&gt;build from source&lt;/a&gt; Emacs 24.4 or greater,
+as Spacemacs won't work with 24.3. The same may be true for other distributions
+as well.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-macos" class="anchor" aria-hidden="true" href="#macos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;macOS&lt;/h3&gt;
+&lt;p&gt;The recommended way of installing Emacs on macOS is using &lt;a href="http://brew.sh" rel="nofollow"&gt;homebrew&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ brew tap d12frosted/emacs-plus
+$ brew install emacs-plus
+$ brew linkapps emacs-plus&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; these homebrew commands will install GNU Emacs, and link it to your
+&lt;code&gt;/Applications&lt;/code&gt; directory. You still need to run the &lt;code&gt;git clone&lt;/code&gt; mentioned at
+the start of this file. That will populate your &lt;code&gt;~/.emacs.d&lt;/code&gt; directory, which is
+what transforms a regular GNU Emacs into Spacemacs.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; the proposed &lt;code&gt;emacs-plus&lt;/code&gt; tap is identical to the &lt;code&gt;emacs&lt;/code&gt; formulae, it
+just builds GNU Emacs with support of several features by default along with
+providing Spacemacs icon.
+See &lt;a href="https://github.com/d12frosted/homebrew-emacs-plus"&gt;emacs-plus&lt;/a&gt; for more
+information.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: to have the title bar match your theme background color,
+consider using instead:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ brew install emacs-plus --HEAD --with-natural-title-bars&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; after you have completed the &lt;a href="#install"&gt;install process&lt;/a&gt; below, it is
+also recommended to add the &lt;a href="http://spacemacs.org/layers/+os/osx/README.html" rel="nofollow"&gt;osx layer&lt;/a&gt; to your &lt;a href="http://spacemacs.org/doc/DOCUMENTATION#orgheadline45" rel="nofollow"&gt;dotfile&lt;/a&gt;. Install
+instructions are available in the &lt;a href="http://spacemacs.org/layers/+os/osx/README.html" rel="nofollow"&gt;osx layer&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; if the powerline separators on the spaceline are a different (less
+saturated) color than the rest of the line, you can add following snippet to
+&lt;code&gt;dotspacemacs/user-config&lt;/code&gt; in your &lt;code&gt;.spacemacs&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; ns-use-srgb-colorspace &lt;span class="pl-c1"&gt;nil&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Keep in mind that this is not ideal solution as it affects all colours in Emacs.
+Another option is to use different powerline separator. For example, &lt;code&gt;alternate&lt;/code&gt;
+and &lt;code&gt;bar&lt;/code&gt; diminishes the difference. And using &lt;code&gt;utf-8&lt;/code&gt; separator makes it go
+away completely without the need to change colour space. In order to change
+powerline separator put following snippet in &lt;code&gt;dotspacemacs/user-config&lt;/code&gt;.&lt;/p&gt;
+&lt;pre lang="eslip"&gt;&lt;code&gt;(setq powerline-default-separator 'utf-8)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more information about powerline separators, please refer to appropriate
+section in &lt;a href="http://spacemacs.org/doc/DOCUMENTATION" rel="nofollow"&gt;Documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-windows" class="anchor" aria-hidden="true" href="#windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows&lt;/h3&gt;
+&lt;p&gt;You can download good quality builds from the &lt;a href="http://emacsbinw64.sourceforge.net/" rel="nofollow"&gt;emacs-w64 project&lt;/a&gt;.
+It is recommended to install the most recent &lt;a href="https://sourceforge.net/projects/emacsbinw64/files/release/" rel="nofollow"&gt;stable build&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Be sure to declare a environment variable named &lt;code&gt;HOME&lt;/code&gt; pointing to your user
+directory &lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;. Then you can clone Spacemacs in this directory.&lt;/p&gt;
+&lt;p&gt;Sometimes you'll get the following error when you first start Emacs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The directory ~/.emacs.d/server is unsafe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To fix it change the owner of the directory &lt;code&gt;~/.emacs.d/server&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;from Properties select the Tab “Security”,&lt;/li&gt;
+&lt;li&gt;select the button “Advanced”,&lt;/li&gt;
+&lt;li&gt;select the Tab “Owner”&lt;/li&gt;
+&lt;li&gt;change the owner to your account name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Source: &lt;a href="http://stackoverflow.com/questions/885793/emacs-error-when-calling-server-start" rel="nofollow"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For efficient searches we recommend to install &lt;code&gt;pt&lt;/code&gt; (&lt;a href="https://github.com/monochromegane/the_platinum_searcher"&gt;the platinum searcher&lt;/a&gt;).
+&lt;code&gt;pt&lt;/code&gt; version 1.7.7 or higher is required.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-default-installation" class="anchor" aria-hidden="true" href="#default-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Default installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If you have an existing Emacs configuration, back it up first:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Don't forget to backup and &lt;em&gt;remove&lt;/em&gt; &lt;code&gt;~/.emacs&lt;/code&gt; file otherwise Spacemacs
+&lt;strong&gt;WILL NOT&lt;/strong&gt; load since that file prevents Emacs from loading the proper
+initialization file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the repository:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/syl20bnr/spacemacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;master&lt;/code&gt; is the stable branch and it is &lt;em&gt;immutable&lt;/em&gt;, &lt;strong&gt;DO NOT&lt;/strong&gt; make any
+modification to it or you will break the update mechanism. If you want to
+fork Spacemacs safely use the &lt;code&gt;develop&lt;/code&gt; branch where you handle the update
+manually.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Optional) Install the &lt;a href="https://github.com/adobe-fonts/source-code-pro"&gt;Source Code Pro&lt;/a&gt; font.&lt;/p&gt;
+&lt;p&gt;If you are running in terminal you'll also need to change font settings of
+your terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Launch Emacs. Spacemacs will automatically install the packages it requires.
+If you get an error regarding package downloads then you may try to disable
+the HTTPS protocol by starting Emacs with&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;emacs --insecure&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can set the &lt;code&gt;dotspacemacs-elpa-https&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt; in your dotfile to
+remove the need to start Emacs with &lt;code&gt;--insecure&lt;/code&gt; argument. You may wish to
+clear out your &lt;code&gt;.emacs.d/elpa&lt;/code&gt; directory before doing this, so that any
+corrupted packages you may have downloaded will be re-installed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restart Emacs to complete the installation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If the mode-line turns red then be sure to consult the &lt;a href="http://spacemacs.org/doc/FAQ" rel="nofollow"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-alternate-installations" class="anchor" aria-hidden="true" href="#alternate-installations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alternate installations&lt;/h2&gt;
+&lt;p&gt;It may be useful to clone Spacemacs outside Emacs dotdirectory &lt;code&gt;~/.emacs.d&lt;/code&gt; so
+you can try Spacemacs without replacing completely our own configuration.
+There is currently two possibilities to support alternative location for
+Spacemacs configuration.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-modify-home-environment-variable" class="anchor" aria-hidden="true" href="#modify-home-environment-variable"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modify HOME environment variable&lt;/h3&gt;
+&lt;p&gt;This solution is ideal to quickly try Spacemacs without compromising your
+existing configuration.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;mkdir &lt;span class="pl-k"&gt;~&lt;/span&gt;/spacemacs
+git clone https://github.com/syl20bnr/spacemacs.git &lt;span class="pl-k"&gt;~&lt;/span&gt;/spacemacs/.emacs.d
+HOME=&lt;span class="pl-k"&gt;~&lt;/span&gt;/spacemacs emacs&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: If you're on Fish shell, you will need to modify the last command to: &lt;code&gt;env HOME=$HOME/spacemacs emacs&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-modify-spacemacs-start-directory-variable" class="anchor" aria-hidden="true" href="#modify-spacemacs-start-directory-variable"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modify spacemacs-start-directory variable&lt;/h3&gt;
+&lt;p&gt;This solution is better suited to "embed" Spacemacs into your own configuration.
+Say you cloned Spacemacs in &lt;code&gt;~/.emacs.d/spacemacs/&lt;/code&gt; then drop these lines in
+&lt;code&gt;~/.emacs.d/init.el&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; spacemacs-start-directory &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~/.emacs.d/spacemacs/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;load-file&lt;/span&gt; (&lt;span class="pl-c1"&gt;concat&lt;/span&gt; spacemacs-start-directory &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;init.el&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-spacemacs-logo" class="anchor" aria-hidden="true" href="#spacemacs-logo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spacemacs logo&lt;/h2&gt;
+&lt;p&gt;For Ubuntu users, follow this guide to
+&lt;a href="http://splendidabacus.com/posts/2015/03/spacemacs-unity-icon/" rel="nofollow"&gt;change the logo in Unity&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For Mac users, you need to &lt;a href="https://github.com/nashamri/spacemacs-logo"&gt;download the .icns version of the logo&lt;/a&gt;,
+then &lt;a href="http://www.idownloadblog.com/2014/07/16/how-to-change-app-icon-mac/" rel="nofollow"&gt;change the logo on Dock&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-update" class="anchor" aria-hidden="true" href="#update"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Update&lt;/h1&gt;
+&lt;p&gt;Spacemacs has a built-in notification of a new version when you are on the
+&lt;code&gt;master&lt;/code&gt; branch. If you are on the &lt;code&gt;develop&lt;/code&gt; branch then you'll have to
+update Spacemacs manually by updating your repository.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-automatic-update-on-master-branch" class="anchor" aria-hidden="true" href="#automatic-update-on-master-branch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Automatic update (on master branch)&lt;/h2&gt;
+&lt;p&gt;When a new version is available a little arrow appears in the mode-line.&lt;/p&gt;
+&lt;p&gt;Its color depends on the number of versions available since your last update.
+Green means that your current version is recent, orange and red mean that your
+current version is older.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/img/powerline-update.png"&gt;&lt;img src="doc/img/powerline-update.png" alt="powerline_update" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click on the arrow to update Spacemacs to the last version.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-manual-update-on-master-branch" class="anchor" aria-hidden="true" href="#manual-update-on-master-branch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manual update (on master branch)&lt;/h2&gt;
+&lt;p&gt;(Remove the angle brackets when typing the lines below into your shell.)&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git fetch
+git reset --hard &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;tag version which you are updating to&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-on-develop-branch" class="anchor" aria-hidden="true" href="#on-develop-branch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On develop branch&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Update Emacs packages by clicking (press &lt;code&gt;RET&lt;/code&gt;) on the &lt;code&gt;[Update Packages]&lt;/code&gt; link of
+the starting page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close Emacs and update the git repository:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git pull --rebase&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Restart Emacs to complete the upgrade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-revert-to-a-specific-version" class="anchor" aria-hidden="true" href="#revert-to-a-specific-version"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Revert to a specific version&lt;/h2&gt;
+&lt;p&gt;To revert to a specific version you just have to checkout the corresponding
+branch, for instance to revert to the last &lt;code&gt;0.103&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git checkout origin/release-0.103&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;After you update, either manually, or automatically, you are advised to update
+your packages by clicking the &lt;code&gt;[Update Packages]&lt;/code&gt; button on the Spacemacs Home
+Buffer.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-quotes" class="anchor" aria-hidden="true" href="#quotes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quotes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/syl20bnr/spacemacs?at=568e627a0cdaaa62045a7df6" rel="nofollow"&gt;Quote&lt;/a&gt; by &lt;a href="https://github.com/ashnur"&gt;ashnur&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;«I feel that spacemacs is an aircraft carrier and I am playing table tennis on the deck as a freerider.»
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/syl20bnr/spacemacs?at=5768456c6577f032450cfedb" rel="nofollow"&gt;Quote&lt;/a&gt; by &lt;a href="https://github.com/deuill"&gt;deuill&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;«I LOVE SPACEMACS AND MAGIT
+
+ That is all»
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-contributions" class="anchor" aria-hidden="true" href="#contributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h1&gt;
+&lt;p&gt;Spacemacs is a community-driven project, it needs &lt;em&gt;you&lt;/em&gt; to keep it up to
+date and propose great and useful configuration for all the things!&lt;/p&gt;
+&lt;p&gt;Before contributing be sure to consult the
+&lt;a href="CONTRIBUTING.org"&gt;contribution guidelines&lt;/a&gt; and &lt;a href="http://spacemacs.org/doc/CONVENTIONS" rel="nofollow"&gt;conventions&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-communities" class="anchor" aria-hidden="true" href="#communities"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Communities&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://gitter.im/syl20bnr/spacemacs" rel="nofollow"&gt;Gitter Chat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://emacs.stackexchange.com/questions/tagged/spacemacs" rel="nofollow"&gt;Stack Exchange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/spacemacs" rel="nofollow"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h1&gt;
+&lt;p&gt;The license is GPLv3 for all parts specific to Spacemacs, this includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the initialization and core files&lt;/li&gt;
+&lt;li&gt;all the layer files&lt;/li&gt;
+&lt;li&gt;the documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the packages shipped in this repository you can refer to the files header.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/nashamri/spacemacs-logo"&gt;Spacemacs logo&lt;/a&gt; by &lt;a href="https://github.com/nashamri"&gt;Nasser Alshammari&lt;/a&gt; released under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"&gt;Creative Commons Attribution-ShareAlike 4.0 International License.&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-supporting-spacemacs" class="anchor" aria-hidden="true" href="#supporting-spacemacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supporting Spacemacs&lt;/h1&gt;
+&lt;p&gt;The best way to support Spacemacs is to contribute to it either by reporting
+bugs, helping the community on the &lt;a href="https://gitter.im/syl20bnr/spacemacs" rel="nofollow"&gt;Gitter Chat&lt;/a&gt; or sending pull requests.&lt;/p&gt;
+&lt;p&gt;You can show your love for the project by getting cool Spacemacs t-shirts, mugs
+and more in the &lt;a href="https://shop.spreadshirt.com/spacemacs-shop" rel="nofollow"&gt;Spacemacs Shop&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to show your support financially you can contribute to &lt;a href="https://salt.bountysource.com/teams/spacemacs" rel="nofollow"&gt;Bountysource&lt;/a&gt; or buy a drink for the
+maintainer by clicking on the &lt;a href="#top"&gt;Paypal badge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you used spacemacs in a project and you want to show that fact, you can use
+the spacemacs badge: &lt;a href="http://spacemacs.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8f5ee1d9b7278ed2c63f1f89e9a583ec59b52b6b/68747470733a2f2f63646e2e7261776769742e636f6d2f73796c3230626e722f73706163656d6163732f343432643032353737396461326636326663383663323038323730333639373731346462363531342f6173736574732f73706163656d6163732d62616467652e737667" alt="Built with Spacemacs" data-canonical-src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For Markdown:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[![Built with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)](http://spacemacs.org)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href="http://spacemacs.org"&amp;gt;&amp;lt;img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For Org-mode:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>syl20bnr</author><guid isPermaLink="false">https://github.com/syl20bnr/spacemacs</guid><pubDate>Mon, 25 Nov 2019 00:04:00 GMT</pubDate></item><item><title>ch11ng/exwm #5 in Emacs Lisp, Today</title><link>https://github.com/ch11ng/exwm</link><description>&lt;p&gt;&lt;i&gt;Emacs X Window Manager&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-emacs-x-window-manager" class="anchor" aria-hidden="true" href="#emacs-x-window-manager"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emacs X Window Manager&lt;/h1&gt;
+&lt;p&gt;EXWM (Emacs X Window Manager) is a full-featured tiling X window manager
+for Emacs built on top of &lt;a href="https://github.com/ch11ng/xelb"&gt;XELB&lt;/a&gt;.
+It features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fully keyboard-driven operations&lt;/li&gt;
+&lt;li&gt;Hybrid layout modes (tiling &amp;amp; stacking)&lt;/li&gt;
+&lt;li&gt;Dynamic workspace support&lt;/li&gt;
+&lt;li&gt;ICCCM/EWMH compliance&lt;/li&gt;
+&lt;li&gt;(Optional) RandR (multi-monitor) support&lt;/li&gt;
+&lt;li&gt;(Optional) Builtin system tray&lt;/li&gt;
+&lt;li&gt;(Optional) Builtin input method&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please check out the
+&lt;a href="https://github.com/ch11ng/exwm/wiki/Screenshots"&gt;screenshots&lt;/a&gt;
+to get an overview of what EXWM is capable of,
+and the &lt;a href="https://github.com/ch11ng/exwm/wiki"&gt;user guide&lt;/a&gt;
+for a detailed explanation of its usage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you install EXWM from source, it's recommended to install
+XELB also from source (otherwise install both from GNU ELPA).&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ch11ng</author><guid isPermaLink="false">https://github.com/ch11ng/exwm</guid><pubDate>Mon, 25 Nov 2019 00:05:00 GMT</pubDate></item><item><title>clojure-emacs/cider #6 in Emacs Lisp, Today</title><link>https://github.com/clojure-emacs/cider</link><description>&lt;p&gt;&lt;i&gt;The Clojure Interactive Development Environment that Rocks for Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7cea4fbf053aa9c4f9eafd6167065c828928a56c/68747470733a2f2f7261772e6769746875622e636f6d2f636c6f6a7572652d656d6163732f63696465722f6d61737465722f6c6f676f2f63696465722d6c6f676f2d773634302e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/7cea4fbf053aa9c4f9eafd6167065c828928a56c/68747470733a2f2f7261772e6769746875622e636f6d2f636c6f6a7572652d656d6163732f63696465722f6d61737465722f6c6f676f2f63696465722d6c6f676f2d773634302e706e67" alt="CIDER Logo" data-canonical-src="https://raw.github.com/clojure-emacs/cider/master/logo/cider-logo-w640.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1ba3411d21f0105e0df26c7e29aa214578d377b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c5f332d677265656e2e737667" alt="License GPL 3" data-canonical-src="https://img.shields.io/badge/license-GPL_3-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://melpa.org/#/cider" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1b0fdf055ff3a1ca9f822217fa3098e4b416f25f/687474703a2f2f6d656c70612e6f72672f7061636b616765732f63696465722d62616467652e737667" alt="MELPA" data-canonical-src="http://melpa.org/packages/cider-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stable.melpa.org/#/cider" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a0eda14a92f95440f17799b1f53b2c591c8e40f0/687474703a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f63696465722d62616467652e737667" alt="MELPA Stable" data-canonical-src="http://stable.melpa.org/packages/cider-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/clojure-emacs/cider" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b1c0d1e5f532cfd461d1d182926c29b0757fd33/68747470733a2f2f636972636c6563692e636f6d2f67682f636c6f6a7572652d656d6163732f63696465722e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/clojure-emacs/cider.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CIDER is the &lt;strong&gt;C&lt;/strong&gt;lojure(Script) &lt;strong&gt;I&lt;/strong&gt;nteractive &lt;strong&gt;D&lt;/strong&gt;evelopment &lt;strong&gt;E&lt;/strong&gt;nvironment
+that &lt;strong&gt;R&lt;/strong&gt;ocks!&lt;/p&gt;
+&lt;p&gt;CIDER extends Emacs with support for interactive programming in Clojure. The
+features are centered around &lt;code&gt;cider-mode&lt;/code&gt;, an Emacs minor-mode that complements
+&lt;a href="https://github.com/clojure-emacs/clojure-mode"&gt;clojure-mode&lt;/a&gt;. While &lt;code&gt;clojure-mode&lt;/code&gt; supports editing Clojure source files,
+&lt;code&gt;cider-mode&lt;/code&gt; adds support for interacting with a running Clojure process for
+compilation, debugging, definition and documentation lookup, running tests and
+so on.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="#open-collective-backers"&gt;&lt;img src="https://camo.githubusercontent.com/3d69fcd247c1cde1718eb591ffef93a9e9425cc1/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b6572732f62616467652e737667" alt="OpenCollective" data-canonical-src="https://opencollective.com/cider/backers/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="#open-collective-sponsors"&gt;&lt;img src="https://camo.githubusercontent.com/96fedc99e1564657a77fa51e4a1d856b56eef2e3/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f72732f62616467652e737667" alt="OpenCollective" data-canonical-src="https://opencollective.com/cider/sponsors/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.patreon.com/bbatsov" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/451cb702b2e60e29c1a84aa24a17a1a8d313639e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70617472656f6e2d646f6e6174652d6f72616e67652e737667" alt="Patreon" data-canonical-src="https://img.shields.io/badge/patreon-donate-orange.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=GRQKNBM6P8VRQ" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e14c85b542e06215f7e56c0763333ef1e9b9f9b7/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e6174655f534d2e676966" alt="Paypal" data-canonical-src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please consider &lt;a href="#funding"&gt;supporting financially its ongoing development&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;The instructions that follow are meant to get you from zero to a running CIDER
+REPL in under 5 minutes.  See the
+&lt;a href="https://docs.cider.mx" rel="nofollow"&gt;user manual&lt;/a&gt; for (way) more
+details.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;p&gt;The recommended way to install CIDER is via &lt;code&gt;package.el&lt;/code&gt; - the built-in package
+manager in Emacs.&lt;/p&gt;
+&lt;p&gt;CIDER is available on the two major &lt;code&gt;package.el&lt;/code&gt; community
+maintained repos -
+&lt;a href="http://stable.melpa.org" rel="nofollow"&gt;MELPA Stable&lt;/a&gt;
+and &lt;a href="http://melpa.org" rel="nofollow"&gt;MELPA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can install CIDER with the following command:&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;M-x&lt;/kbd&gt; &lt;code&gt;package-install&lt;/code&gt; &lt;kbd&gt;RET&lt;/kbd&gt; &lt;code&gt;cider&lt;/code&gt; &lt;kbd&gt;RET&lt;/kbd&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-launch-an-nrepl-server-and-client-from-emacs" class="anchor" aria-hidden="true" href="#launch-an-nrepl-server-and-client-from-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Launch an nREPL server and client from Emacs&lt;/h3&gt;
+&lt;p&gt;Simply open in Emacs a file belonging to your &lt;code&gt;lein&lt;/code&gt; or &lt;code&gt;boot&lt;/code&gt; project (like
+&lt;code&gt;foo.clj&lt;/code&gt;) and type &lt;kbd&gt;M-x&lt;/kbd&gt; &lt;code&gt;cider-jack-in&lt;/code&gt;. This will start an nREPL
+server with all the project dependencies loaded in and CIDER will automatically
+connect to it.&lt;/p&gt;
+&lt;p&gt;Alternatively you can use &lt;kbd&gt;C-u M-x&lt;/kbd&gt; &lt;code&gt;cider-jack-in&lt;/code&gt; to specify the name
+of a &lt;code&gt;lein&lt;/code&gt; or &lt;code&gt;boot&lt;/code&gt; project, without having to visit any file in it.&lt;/p&gt;
+&lt;p&gt;In Clojure(Script) buffers the command &lt;code&gt;cider-jack-in&lt;/code&gt; is bound to
+&lt;kbd&gt;C-c C-x (C-)j&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-connect-to-a-running-nrepl-server" class="anchor" aria-hidden="true" href="#connect-to-a-running-nrepl-server"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Connect to a running nREPL server&lt;/h3&gt;
+&lt;p&gt;You can go to your project's directory in a terminal and type there
+(assuming you're using Leiningen that is):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ lein repl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or with Boot:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ boot repl -s wait
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively you can start nREPL either manually or by the facilities provided
+by your project's build tool (Gradle, Maven, etc).&lt;/p&gt;
+&lt;p&gt;After you get your nREPL server running go back to Emacs.  Typing there &lt;kbd&gt;M-x&lt;/kbd&gt;
+&lt;code&gt;cider-connect&lt;/code&gt; will allow you to connect to the running nREPL server.&lt;/p&gt;
+&lt;p&gt;In Clojure(Script) buffers the command &lt;code&gt;cider-connect&lt;/code&gt; is bound to
+&lt;kbd&gt;C-c C-x (C-)c (C-)j&lt;/kbd&gt; and the command &lt;code&gt;cider-connect-cljs&lt;/code&gt; is bound to
+&lt;kbd&gt;C-c C-x (C-)c (C-)s&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-diving-deeper" class="anchor" aria-hidden="true" href="#diving-deeper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diving Deeper&lt;/h2&gt;
+&lt;p&gt;CIDER packs a ton of functionality and you really want to be familiar with it,
+so you can fully empower your workflow. The best way to get acquainted with all
+available features is to go over the entire
+&lt;a href="https://docs.cider.mx/" rel="nofollow"&gt;CIDER manual&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you're into video lessons, you might also check out
+this &lt;a href="https://www.youtube.com/watch?v=aYA4AAjLfT0" rel="nofollow"&gt;intro to CIDER demo&lt;/a&gt; as well.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;An extensive changelog is available &lt;a href="CHANGELOG.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-team" class="anchor" aria-hidden="true" href="#team"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Team&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-the-core-team" class="anchor" aria-hidden="true" href="#the-core-team"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Core Team&lt;/h3&gt;
+&lt;p&gt;The direction of the project is being stewarded by the CIDER core team. This
+group of long-term contributors manage releases, evaluate pull-requests, and
+does a lot of the groundwork on major new features.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bbatsov"&gt;Bozhidar Batsov&lt;/a&gt; (author &amp;amp; head maintainer)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/vspinu"&gt;Vitalie Spinu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cichli"&gt;Michael Griffiths&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/expez"&gt;Lars Andersen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-cider-alumni" class="anchor" aria-hidden="true" href="#cider-alumni"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CIDER Alumni&lt;/h3&gt;
+&lt;p&gt;In addition, we'd like to extend a special thanks the following retired CIDER
+core team members. Lovingly known as The Alumni:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kingtim"&gt;Tim King&lt;/a&gt; (original author)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy"&gt;Phil Hagelberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hugoduncan"&gt;Hugo Duncan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/purcell"&gt;Steve Purcell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/malabarba"&gt;Artur Malabarba&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jeffvalk"&gt;Jeff Valk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-release-policy" class="anchor" aria-hidden="true" href="#release-policy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Release policy&lt;/h2&gt;
+&lt;p&gt;We’re following &lt;a href="http://semver.org/" rel="nofollow"&gt;SemVer&lt;/a&gt; (as much as one can be
+following it when the major version is 0). At this point bumps of the
+minor (second) version number are considered major releases and always
+include new features or significant changes to existing features. API
+compatibility between major releases is not a (big) concern (although we try
+to break the API rarely and only for a good reason).&lt;/p&gt;
+&lt;p&gt;The development cycle for the next major
+release starts immediately after the previous one has been
+shipped. Bugfix/point releases (if any) address only serious bugs and
+never contain new features.&lt;/p&gt;
+&lt;p&gt;The versions of CIDER and &lt;code&gt;cider-nrepl&lt;/code&gt; are always kept in sync. If you're
+tracking the &lt;code&gt;master&lt;/code&gt; branch of CIDER, you should also be tracking the &lt;code&gt;master&lt;/code&gt;
+branch of &lt;code&gt;cider-nrepl&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-logo" class="anchor" aria-hidden="true" href="#logo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Logo&lt;/h2&gt;
+&lt;p&gt;CIDER's logo was created by &lt;a href="https://github.com/tapeinosyne"&gt;@tapeinosyne&lt;/a&gt;. You can find
+the logo in various formats
+&lt;a href="https://github.com/clojure-emacs/cider/tree/master/logo"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The logo is licensed under a
+&lt;a href="http://creativecommons.org/licenses/by-nc/4.0/deed.en_GB" rel="nofollow"&gt;Creative Commons Attribution-NonCommercial 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-homepage" class="anchor" aria-hidden="true" href="#homepage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Homepage&lt;/h2&gt;
+&lt;p&gt;CIDER's homepage &lt;a href="https://cider.mx" rel="nofollow"&gt;https://cider.mx&lt;/a&gt; is in the &lt;code&gt;gh-pages&lt;/code&gt; branch of this repository and is deployed
+automatically when changes are made to it.&lt;/p&gt;
+&lt;p&gt;It's just a single &lt;code&gt;index.html&lt;/code&gt; file and a bit of Bootstrap 4. Contributions to it are very welcome!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-funding" class="anchor" aria-hidden="true" href="#funding"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Funding&lt;/h2&gt;
+&lt;p&gt;While CIDER is free software and will always be, the project would benefit immensely from some funding.
+Raising a monthly budget of a couple of thousand dollars would make it possible to pay people to work on
+certain complex features, fund other development related stuff (e.g. hardware, conference trips) and so on.
+Raising a monthly budget of over $5000 would open the possibility of someone working full-time on the project
+which would speed up the pace of development significantly.&lt;/p&gt;
+&lt;p&gt;We welcome both individual and corporate sponsors! We also offer a wide array of funding channels to account
+for your preferences (although currently &lt;a href="https://opencollective.com/cider" rel="nofollow"&gt;Open Collective&lt;/a&gt; is our preferred funding platform).&lt;/p&gt;
+&lt;p&gt;If you're working in a company that's making significant use of CIDER we'd appreciate it if you suggest to your company
+to become a CIDER sponsor.&lt;/p&gt;
+&lt;p&gt;You can support the development of CIDER, &lt;a href="https://github.com/clojure-emacs/clojure-mode"&gt;clojure-mode&lt;/a&gt; and &lt;a href="https://github.com/clojure-emacs/inf-clojure"&gt;inf-clojure&lt;/a&gt; via
+&lt;a href="https://opencollective.com/cider" rel="nofollow"&gt;Open Collective&lt;/a&gt;,
+&lt;a href="https://salt.bountysource.com/teams/cider" rel="nofollow"&gt;Salt&lt;/a&gt;,
+&lt;a href="https://www.patreon.com/bbatsov" rel="nofollow"&gt;Patreon&lt;/a&gt; and
+&lt;a href="https://www.paypal.me/bbatsov" rel="nofollow"&gt;PayPal&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-open-collective-backers" class="anchor" aria-hidden="true" href="#open-collective-backers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Open Collective Backers&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/cider/backer/0/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/98a0535f5b90550c441143dca7c6e0a8d17eecd8/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/0/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/1/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/77f2a96327ca4d49c370b24aadba681b3a38b473/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/1/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/2/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/09753c3702c80a5fc31ad01bd39abd6554bab491/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/2/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/3/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ef1c42097d583f817cbb7df26e66ec467e2252db/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/3/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/4/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/710f0a13fccc6cff5a00f41dd9780a237bb8d506/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/4/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/5/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/664830cf75058f42a332438c59a380df389edc98/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/5/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/6/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6356f238ec29ce2b28de712a2e5ba517ad4eac2a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/6/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/7/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8885758025d83d45380f00830211f781e296dc9a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/7/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/8/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/34be1d3945e942a23501ac32d083389eb372eb7e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/8/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/9/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/33e8b33b408e94fe16e711e72324bbd41a6c6893/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/9/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/10/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5bc9b3ca77f21e843656625137812e80945c4e84/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/10/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/11/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ef20622b41e34f6dafa683e858552cdcd5c23b93/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/11/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/12/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7173ffaaa72b75416c19fed3026fd82c9e1372d9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/12/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/13/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c7aa9e2047b2f9e2d2a1737e67aa769557e4c610/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/13/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/14/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3cc889ecc6731bcc7062252043112e63f216b86d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/14/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/15/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/22caa74fe79775d83f9c548cb10cd9ce60c2e086/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/15/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/16/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b1925131d7c63ef9066fe25d73b1b24d94da7437/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/16/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/17/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e4b8ff154bcfe46a1cd2f154778fc4ec30ac0273/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/17/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/18/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/07aa177b7b3f4e3142337eb46c2bd5efc89555d9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/18/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/19/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3366184fac166cc611ec0a554288757f4fbf8dff/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f31392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/19/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/20/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2883accf50f5e0fcf236fc1b2ec02a27a75ced12/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/20/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/21/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/81526ae6339da8a29ae24cfe2de7de05dbb7f6fa/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/21/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/22/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f08b4ee44fdf00dde1c893f662d0f0ccaeb2f895/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/22/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/23/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/85e3381f710921060ce92f993cf823f2340fa2f7/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/23/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/24/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f87bffa2529b7ed4898052b24ae7eec3d2fd639c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/24/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/25/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f3203276b4e558739c7c966d9c3e223df4cf085a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/25/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/26/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c3209c3ba6e3e404c9a5b257a35ab52ddeacc2c9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/26/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/27/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b2d78a09ba27b086e23d952440e3ddcb66b8ba2a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/27/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/28/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8f00790c9ed11f55cbafe458499eeac7165e7e3c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/28/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/backer/29/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/631c694cb4a418a89e03530edd04187d5e1f4199/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f6261636b65722f32392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/backer/29/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-open-collective-sponsors" class="anchor" aria-hidden="true" href="#open-collective-sponsors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Open Collective Sponsors&lt;/h3&gt;
+&lt;p&gt;Become a sponsor and get your logo on our README on Github with a link to your
+site. [&lt;a href="https://opencollective.com/cider#sponsor" rel="nofollow"&gt;Become a sponsor&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/cider/sponsor/0/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/932ca2ad9f22e867ce639f06539ae7ed96b8e0ce/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/0/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/1/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bb7e3a3f617677a59d7e35d4073e09883e654163/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/1/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/2/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f1ef8db5dc6b5f6f06cda3921775a2cfadb70bb8/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/2/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/3/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ca59f072d53750b0c385079282d821f80fc1443a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/3/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/4/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c4503bef60e7b6bee46cce22045cfde5932ff3e8/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/4/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/5/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d494aac1f8210486402aedc218c2bca327996287/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/5/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/6/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b33b67ff280b559fcf82aaeb0842976e4083d1f2/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/6/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/7/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/422a22256f94a4204c113875dde2a99215762f38/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/7/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/8/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7e1cc127afdcbae3bb9c3066cee544d0ad91089e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/8/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/9/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2d3fd89a720a6c5da621511623c1243cda73d2b9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/9/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/10/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9cfc01eec33c7f1150d7772e641ee3b992515412/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/10/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/11/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d58b507ed5a99b066c9904fa4f101aecfe19225b/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/11/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/12/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b8236a1b8a73cd419545af3358543293f08aa3e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/12/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/13/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e390c5d7ba7b62113d4142827df5475b2c416670/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/13/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/14/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e1b5e9be69a3593e90b378dd259dbd15f362c3be/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/14/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/15/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dfc134b4d40ec4eedc64e710151d2fb86fbb32d8/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/15/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/16/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/27f53a783f4d6988464306275a015e70a19ca70b/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/16/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/17/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0052f49428e6c4d70b958190f0a8852892034ccf/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/17/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/18/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8efc1f37b06bb54aaa6e2e8a199f1ad9b0f43bc6/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/18/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/19/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/62ddad07800407fe252065d0934563e96ea9129c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f31392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/19/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/20/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7be5a96d134bc715dc561026fdd0ca3d5425af02/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32302f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/20/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/21/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bb6e628c4fd9456675598230fbef20a3fab4e42c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32312f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/21/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/22/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/720d8153d6efcb61f152a8b4e43354cb4ca2d7b7/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32322f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/22/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/23/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2db7ee2d1e9047fe9c86c292135cefe375733985/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32332f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/23/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/24/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1beba145577040b83e0ad435b84b77f5f6874051/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32342f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/24/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/25/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/103abd070a9215576c85ed7fd2e36e18e9550d1d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32352f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/25/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/26/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/41fb9e57e25ed99538c94672a8ccacd93b0d372d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32362f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/26/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/27/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/99e02e2be351af57ba340c9b3c23f0f48a0d6d4c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32372f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/27/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/28/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2d75c7cbb3aabb0cc531fcbe6719d6270ee38fb0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32382f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/28/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/cider/sponsor/29/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7fa940e03c9d8a69ff0c6e4577b95423c7182b99/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f63696465722f73706f6e736f722f32392f6176617461722e737667" data-canonical-src="https://opencollective.com/cider/sponsor/29/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2012-2019 Tim King, Phil Hagelberg, Bozhidar Batsov, Artur Malabarba and
+&lt;a href="https://github.com/clojure-emacs/cider/contributors"&gt;contributors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Distributed under the GNU General Public License, version 3&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>clojure-emacs</author><guid isPermaLink="false">https://github.com/clojure-emacs/cider</guid><pubDate>Mon, 25 Nov 2019 00:06:00 GMT</pubDate></item><item><title>rust-lang/rust-mode #7 in Emacs Lisp, Today</title><link>https://github.com/rust-lang/rust-mode</link><description>&lt;p&gt;&lt;i&gt;Emacs configuration for Rust&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://melpa.org/#/rust-mode" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/980ee3afab2d90e63ecaca31b87c6fb1085bdc4d/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f727573742d6d6f64652d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/rust-mode-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-emacs-mode-for-editing-rust-source-code" class="anchor" aria-hidden="true" href="#emacs-mode-for-editing-rust-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emacs mode for editing Rust source code&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#melpa"&gt;Melpa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#straight"&gt;straight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manual-installation"&gt;Manual Installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#indentation"&gt;Indentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rustfmt"&gt;rustfmt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tests"&gt;Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#lsp"&gt;LSP&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#eglot"&gt;eglot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#lsp-mode"&gt;lsp-mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#other-useful-packages"&gt;Other useful packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-melpa" class="anchor" aria-hidden="true" href="#melpa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Melpa&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;rust-mode&lt;/code&gt; makes editing &lt;a href="http://rust-lang.org" rel="nofollow"&gt;Rust&lt;/a&gt; code with Emacs
+enjoyable. It requires Emacs 24 or later.
+The package is available on MELPA. Add this to your init.el.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;require&lt;/span&gt; &lt;span class="pl-c1"&gt;'package&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'package-archives&lt;/span&gt;
+             '(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;melpa&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://melpa.org/packages/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;package-initialize&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;package-refresh-contents&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can install &lt;code&gt;rust-mode&lt;/code&gt; with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;M-x package-install rust-mode&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And put this in your config to load rust-mode automatically:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;(require 'rust-mode)&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-straight" class="anchor" aria-hidden="true" href="#straight"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;straight&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/raxod502/straight.el#install-packages"&gt;straight.el&lt;/a&gt; clones each of your packages directly from its source. There are good additional &lt;a href="https://github.crookster.org/switching-to-straight.el-from-emacs-26-builtin-package.el/" rel="nofollow"&gt;installation instructions&lt;/a&gt; for moving your package management from package.el to straight.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-manual-installation" class="anchor" aria-hidden="true" href="#manual-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manual Installation&lt;/h2&gt;
+&lt;p&gt;Add this to your init.el:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'load-path&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/path/to/rust-mode/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;autoload&lt;/span&gt; &lt;span class="pl-c1"&gt;'rust-mode&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rust-mode&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-indentation" class="anchor" aria-hidden="true" href="#indentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Indentation&lt;/h1&gt;
+&lt;p&gt;The Rust style guide recommends spaces for indentation; to follow the
+recommendation add this to your init.el:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'rust-mode-hook&lt;/span&gt;
+          (&lt;span class="pl-k"&gt;lambda&lt;/span&gt; () (&lt;span class="pl-k"&gt;setq&lt;/span&gt; indent-tabs-mode &lt;span class="pl-c1"&gt;nil&lt;/span&gt;)))&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-rustfmt" class="anchor" aria-hidden="true" href="#rustfmt"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rustfmt&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;rust-format-buffer&lt;/code&gt; function will format your code with
+&lt;a href="https://github.com/rust-lang/rustfmt"&gt;rustfmt&lt;/a&gt; if installed. By default,
+this is bound to &lt;code&gt;C-c C-f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Placing &lt;code&gt;(setq rust-format-on-save t)&lt;/code&gt; in your init.el will enable automatic
+running of &lt;code&gt;rust-format-buffer&lt;/code&gt; when you save a buffer.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tests&lt;/h1&gt;
+&lt;p&gt;The file &lt;code&gt;rust-mode-tests.el&lt;/code&gt; contains tests that can be run via
+&lt;a href="http://www.gnu.org/software/emacs/manual/html_node/ert/index.html" rel="nofollow"&gt;ERT&lt;/a&gt;.
+You can use &lt;code&gt;run_rust_emacs_tests.sh&lt;/code&gt; to run them in batch mode, if
+you set the environment variable EMACS to a program that runs emacs.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-lsp" class="anchor" aria-hidden="true" href="#lsp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LSP&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-eglot" class="anchor" aria-hidden="true" href="#eglot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eglot&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/joaotavora/eglot#connecting-automatically"&gt;Installation instructions&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lsp-mode" class="anchor" aria-hidden="true" href="#lsp-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lsp-mode&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/emacs-lsp/lsp-mode#installation"&gt;Installation instructions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can find more information in the &lt;a href="https://github.com/emacs-lsp/lsp-mode/wiki/Rust"&gt;lsp-mode wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-other-useful-packages" class="anchor" aria-hidden="true" href="#other-useful-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other useful packages&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kwrooijen/cargo.el"&gt;cargo.el&lt;/a&gt; Emacs Minor Mode for Cargo, Rust's Package Manager&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/racer-rust/emacs-racer"&gt;emacs-racer&lt;/a&gt; Racer support for Emacs&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/brotzeit/rustic"&gt;rustic&lt;/a&gt; Rust development environment for Emacs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rust-lang</author><guid isPermaLink="false">https://github.com/rust-lang/rust-mode</guid><pubDate>Mon, 25 Nov 2019 00:07:00 GMT</pubDate></item></channel></rss>
