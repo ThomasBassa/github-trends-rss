@@ -1,2 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Cuda, Today</title><link>https://github.com/trending/cuda?since=daily</link><description>The top repositories on GitHub for cuda, measured daily</description><pubDate>Wed, 27 Nov 2019 01:05:16 GMT</pubDate><lastBuildDate>Wed, 27 Nov 2019 01:05:16 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Cuda, Today today</title><pubDate>Wed, 27 Nov 2019 01:05:16 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Cuda, Today</title><link>https://github.com/trending/cuda?since=daily</link><description>The top repositories on GitHub for cuda, measured daily</description><pubDate>Thu, 28 Nov 2019 01:06:34 GMT</pubDate><lastBuildDate>Thu, 28 Nov 2019 01:06:34 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>SeanNaren/warp-ctc #1 in Cuda, Today</title><link>https://github.com/SeanNaren/warp-ctc</link><description>&lt;p&gt;&lt;i&gt;Pytorch Bindings for warp-ctc&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-pytorch-bindings-for-warp-ctc" class="anchor" aria-hidden="true" href="#pytorch-bindings-for-warp-ctc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PyTorch bindings for Warp-ctc&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/SeanNaren/warp-ctc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b3189676e6ff17b50fac8410862701c8bf7790b6/68747470733a2f2f7472617669732d63692e6f72672f5365616e4e6172656e2f776172702d6374632e7376673f6272616e63683d7079746f7263685f62696e64696e6773" alt="Build Status" data-canonical-src="https://travis-ci.org/SeanNaren/warp-ctc.svg?branch=pytorch_bindings" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is an extension onto the original repo found &lt;a href="https://github.com/baidu-research/warp-ctc"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/pytorch/pytorch#installation"&gt;PyTorch&lt;/a&gt; v0.4.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;WARP_CTC_PATH&lt;/code&gt; should be set to the location of a built WarpCTC
+(i.e. &lt;code&gt;libwarpctc.so&lt;/code&gt;).  This defaults to &lt;code&gt;../build&lt;/code&gt;, so from within a
+new warp-ctc clone you could build WarpCTC like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/SeanNaren/warp-ctc.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; warp-ctc
+mkdir build&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; build
+cmake ..
+make&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now install the bindings:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; pytorch_binding
+python setup.py install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you try the above and get a dlopen error on OSX with anaconda3 (as recommended by pytorch):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; ../pytorch_binding
+python setup.py install
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; ../build
+cp libwarpctc.dylib /Users/&lt;span class="pl-smi"&gt;$WHOAMI&lt;/span&gt;/anaconda3/lib&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will resolve the library not loaded error. This can be easily modified to work with other python installs if needed.&lt;/p&gt;
+&lt;p&gt;Example to use the bindings below.&lt;/p&gt;
+&lt;div class="highlight highlight-source-python"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; torch
+&lt;span class="pl-k"&gt;from&lt;/span&gt; warpctc_pytorch &lt;span class="pl-k"&gt;import&lt;/span&gt; CTCLoss
+ctc_loss &lt;span class="pl-k"&gt;=&lt;/span&gt; CTCLoss()
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; expected shape of seqLength x batchSize x alphabet_size&lt;/span&gt;
+probs &lt;span class="pl-k"&gt;=&lt;/span&gt; torch.FloatTensor([[[&lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;], [&lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.6&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;, &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;]]]).transpose(&lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;).contiguous()
+labels &lt;span class="pl-k"&gt;=&lt;/span&gt; torch.IntTensor([&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;])
+label_sizes &lt;span class="pl-k"&gt;=&lt;/span&gt; torch.IntTensor([&lt;span class="pl-c1"&gt;2&lt;/span&gt;])
+probs_sizes &lt;span class="pl-k"&gt;=&lt;/span&gt; torch.IntTensor([&lt;span class="pl-c1"&gt;2&lt;/span&gt;])
+probs.requires_grad_(&lt;span class="pl-c1"&gt;True&lt;/span&gt;)  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; tells autograd to compute gradients for probs&lt;/span&gt;
+cost &lt;span class="pl-k"&gt;=&lt;/span&gt; ctc_loss(probs, labels, probs_sizes, label_sizes)
+cost.backward()&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;CTCLoss(size_average=False, length_average=False)
+    # size_average (bool): normalize the loss by the batch size (default: False)
+    # length_average (bool): normalize the loss by the total number of frames in the batch. If True, supersedes size_average (default: False)
+
+forward(acts, labels, act_lens, label_lens)
+    # acts: Tensor of (seqLength x batch x outputDim) containing output activations from network (before softmax)
+    # labels: 1 dimensional Tensor containing all the targets of the batch in one large sequence
+    # act_lens: Tensor of size (batch) containing size of each output sequence from the network
+    # label_lens: Tensor of (batch) containing label length of each example
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>SeanNaren</author><guid isPermaLink="false">https://github.com/SeanNaren/warp-ctc</guid><pubDate>Thu, 28 Nov 2019 00:01:00 GMT</pubDate></item></channel></rss>
