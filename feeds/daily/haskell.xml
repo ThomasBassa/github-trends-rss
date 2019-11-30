@@ -1,559 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Fri, 29 Nov 2019 01:05:06 GMT</pubDate><lastBuildDate>Fri, 29 Nov 2019 01:05:06 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>facebook/duckling #1 in Haskell, Today</title><link>https://github.com/facebook/duckling</link><description>&lt;p&gt;&lt;i&gt;Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/duckling/raw/master/logo.png"&gt;&lt;img src="https://github.com/facebook/duckling/raw/master/logo.png" alt="Duckling Logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-duckling-" class="anchor" aria-hidden="true" href="#duckling-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Duckling &lt;a href="https://travis-ci.org/facebook/duckling" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc026295c990c04b7941234a5f2e2d3a32e0b317/68747470733a2f2f7472617669732d63692e6f72672f66616365626f6f6b2f6475636b6c696e672e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/facebook/duckling.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Duckling is a Haskell library that parses text into structured data.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;"the first Tuesday of October"
-=&amp;gt; {"value":"2017-10-03T00:00:00.000-07:00","grain":"day"}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
-&lt;p&gt;A Haskell environment is required. We recommend using
-&lt;a href="https://haskell-lang.org/get-started" rel="nofollow"&gt;stack&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On macOS you'll need to install PCRE development headers.
-The easiest way to do that is with &lt;a href="https://brew.sh/" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install pcre
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If that doesn't help, try running &lt;code&gt;brew doctor&lt;/code&gt; and fix
-the issues it finds.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
-&lt;p&gt;To compile and run the binary:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack build
-$ stack exec duckling-example-exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The first time you run it, it will download all required packages.&lt;/p&gt;
-&lt;p&gt;This runs a basic HTTP server. Example request:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ curl -XPOST http://0.0.0.0:8000/parse --data 'locale=en_GB&amp;amp;text=tomorrow at eight'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See &lt;code&gt;exe/ExampleMain.hs&lt;/code&gt; for an example on how to integrate Duckling in your
-project.
-If your backend doesn't run Haskell or if you don't want to spin your own Duckling server, you can directly use &lt;a href="https://wit.ai" rel="nofollow"&gt;wit.ai&lt;/a&gt;'s built-in entities.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-supported-dimensions" class="anchor" aria-hidden="true" href="#supported-dimensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported dimensions&lt;/h2&gt;
-&lt;p&gt;Duckling supports many languages, but most don't support all dimensions yet
-(&lt;strong&gt;we need your help!&lt;/strong&gt;).
-Please look into &lt;a href="https://github.com/facebook/duckling/blob/master/Duckling/Dimensions"&gt;this directory&lt;/a&gt; for language-specific support.&lt;/p&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Sat, 30 Nov 2019 01:04:05 GMT</pubDate><lastBuildDate>Sat, 30 Nov 2019 01:04:05 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>agda/agda #1 in Haskell, Today</title><link>https://github.com/agda/agda</link><description>&lt;p&gt;&lt;i&gt;Agda is a dependently typed programming language / interactive theorem prover.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-agda-2" class="anchor" aria-hidden="true" href="#agda-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Agda 2&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://hackage.haskell.org/package/Agda" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9048ae35fa410df17a3424f305829758ae92f51/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f416764612e7376673f6c6162656c3d4861636b616765" alt="Hackage version" data-canonical-src="https://img.shields.io/hackage/v/Agda.svg?label=Hackage" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.stackage.org/package/Agda" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9f88ff79ffa487f05b7a6b5316beafe9d174f02d/68747470733a2f2f7777772e737461636b6167652e6f72672f7061636b6167652f416764612f62616467652f6c74733f6c6162656c3d537461636b616765" alt="Stackage version" data-canonical-src="https://www.stackage.org/package/Agda/badge/lts?label=Stackage" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/agda/agda" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e044f602cbc729bd25dcf40c5b3dab9ff10b9a33/68747470733a2f2f7472617669732d63692e6f72672f616764612f616764612e7376673f6272616e63683d6d6173746572" alt="Travis Status" data-canonical-src="https://travis-ci.org/agda/agda.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/agda/agda/workflows/stack%20build/badge.svg"&gt;&lt;img src="https://github.com/agda/agda/workflows/stack%20build/badge.svg" alt="Stack Build Status via GH Actions" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/gallais/agda" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3a431ee88796239ee20eb0ff21eb76302af31756/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f78366c696c6e32646f6c3062673471772f6272616e63682f6d61737465723f7376673d74727565" alt="Appveyor Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/x6liln2dol0bg4qw/branch/master?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://agda.readthedocs.io/en/latest/?badge=latest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1d7b94ef1f0376a13376b32e1bd02c1bca17242e/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f616764612f62616467652f3f76657273696f6e3d6c6174657374" alt="Documentation Status" data-canonical-src="https://readthedocs.org/projects/agda/badge/?version=latest" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note that this README is only about Agda, not its standard
+library. See the &lt;a href="http://wiki.portal.chalmers.se/agda/pmwiki.php" rel="nofollow"&gt;Agda Wiki&lt;/a&gt; for information about the
+library.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://agda.readthedocs.io" rel="nofollow"&gt;User manual&lt;/a&gt;
+(per-commit pdf can be downloaded from the
+&lt;a href="https://github.com/agda/agda/actions?query=workflow%3A%22User+Manual%22"&gt;github actions&lt;/a&gt; page)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/agda/agda/blob/master/CHANGELOG.md"&gt;CHANGELOG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://agda.readthedocs.io/en/latest/getting-started/prerequisites.html" rel="nofollow"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://agda.readthedocs.io/en/latest/getting-started/installation.html" rel="nofollow"&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://agda.readthedocs.io/en/latest/getting-started/quick-guide.html" rel="nofollow"&gt;Quick guide to editing, type checking and compiling Agda
+code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing-to-agda" class="anchor" aria-hidden="true" href="#contributing-to-agda"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing to Agda&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Contribution how-to: &lt;a href="https://github.com/agda/agda/blob/master/HACKING.md"&gt;&lt;code&gt;HACKING&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/andreasabel/haskell-style-guide/blob/master/haskell-style.md"&gt;Haskell style-guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>agda</author><guid isPermaLink="false">https://github.com/agda/agda</guid><pubDate>Sat, 30 Nov 2019 00:01:00 GMT</pubDate></item><item><title>input-output-hk/cardano-node #2 in Haskell, Today</title><link>https://github.com/input-output-hk/cardano-node</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://buildkite.com/input-output-hk/cardano-node" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/45e2829fa9779c5d597c33b249da7cd1c7415e26/68747470733a2f2f62616467652e6275696c646b6974652e636f6d2f61393738636262346465663730313862653364306130303431323764613335366634646233326631633331386331613438612e737667" alt="Build Status" data-canonical-src="https://badge.buildkite.com/a978cbb4def7018be3d0a004127da356f4db32f1c318c1a48a.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-cardano-node" class="anchor" aria-hidden="true" href="#cardano-node"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cardano-node&lt;/h1&gt;
+&lt;p&gt;Integration of the &lt;a href="https://github.com/input-output-hk/cardano-ledger"&gt;ledger&lt;/a&gt;,
+&lt;a href="https://github.com/input-output-hk/ouroboros-network/tree/master/ouroboros-consensus"&gt;consensus&lt;/a&gt;,
+&lt;a href="https://github.com/input-output-hk/ouroboros-network/tree/master/ouroboros-network"&gt;networking&lt;/a&gt;
+and &lt;a href="https://github.com/input-output-hk/cardano-shell"&gt;node shell&lt;/a&gt;
+repositories.
+&lt;a href="https://github.com/input-output-hk/iohk-monitoring-framework"&gt;Logging&lt;/a&gt; is
+provided as
+a &lt;a href="https://github.com/input-output-hk/cardano-shell/blob/master/app/Cardano/Shell/Features/Logging.hs"&gt;feature&lt;/a&gt;
+by the node shell to the other packages.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>input-output-hk</author><guid isPermaLink="false">https://github.com/input-output-hk/cardano-node</guid><pubDate>Sat, 30 Nov 2019 00:02:00 GMT</pubDate></item><item><title>github/semantic #3 in Haskell, Today</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; is a Haskell library and command line tool for parsing, analyzing, and comparing source code.&lt;/p&gt;
+&lt;p&gt;In a hurry? Check out our documentation of &lt;a href="docs/examples.md"&gt;example uses for the &lt;code&gt;semantic&lt;/code&gt; command line tool&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Dimension&lt;/th&gt;
-&lt;th&gt;Example input&lt;/th&gt;
-&lt;th&gt;Example value output&lt;/th&gt;
+&lt;th align="left"&gt;Table of Contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;AmountOfMoney&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"42€"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":42,"type":"value","unit":"EUR"}&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;CreditCardNumber&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"4111-1111-1111-1111"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"4111111111111111","issuer":"visa"}&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="#language-support"&gt;Language support&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Distance&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"6 miles"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":6,"type":"value","unit":"mile"}&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="#development"&gt;Development&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Duration&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"3 mins"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":3,"minute":3,"unit":"minute","normalized":{"value":180,"unit":"second"}}&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="#technology-and-architecture"&gt;Technology and architecture&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Email&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"&lt;a href="mailto:duckling-team@fb.com"&gt;duckling-team@fb.com&lt;/a&gt;"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"duckling-team@fb.com"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Numeral&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"eighty eight"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":88,"type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Ordinal&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"33rd"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":33,"type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;PhoneNumber&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"+1 (650) 123-4567"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"(+1) 6501234567"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Quantity&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"3 cups of sugar"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":3,"type":"value","product":"sugar","unit":"cup"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Temperature&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"80F"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":80,"type":"value","unit":"fahrenheit"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Time&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"today at 9am"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"values":[{"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}],"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Url&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"&lt;a href="https://api.wit.ai/message?q=hi" rel="nofollow"&gt;https://api.wit.ai/message?q=hi&lt;/a&gt;"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"https://api.wit.ai/message?q=hi","domain":"api.wit.ai"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Volume&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"4 gallons"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":4,"type":"value","unit":"gallon"}&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="#licensing"&gt;Licensing&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="https://github.com/facebook/duckling/blob/master/exe/CustomDimensionExample.hs"&gt;Custom dimensions&lt;/a&gt; are also supported.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-extending-duckling" class="anchor" aria-hidden="true" href="#extending-duckling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extending Duckling&lt;/h2&gt;
-&lt;p&gt;To regenerate the classifiers and run the test suite:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack build :duckling-regen-exe &amp;amp;&amp;amp; stack exec duckling-regen-exe &amp;amp;&amp;amp; stack test
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It's important to regenerate the classifiers after updating the code and before
-running the test suite.&lt;/p&gt;
-&lt;p&gt;To extend Duckling's support for a dimension in a given language, typically 4
-files need to be updated:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Rules.hs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Corpus.hs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/Dimensions/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt; (if not already present in &lt;code&gt;Duckling/Dimensions/Common.hs&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/Rules/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To add a new language:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Make sure that the language code used follows the &lt;a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" rel="nofollow"&gt;ISO-639-1 standard&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The first dimension to implement is &lt;code&gt;Numeral&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/24d3f199768be970149412c95b1c1bf5d76f8240"&gt;this example&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To add a new locale:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There should be a need for diverging rules between the locale and the language.&lt;/li&gt;
-&lt;li&gt;Make sure that the locale code is a valid &lt;a href="https://www.iso.org/obp/ui/#search/code/" rel="nofollow"&gt;ISO3166 alpha2 country code&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/1ab5f447d2635fe6d48887a501d333a52adff5b9"&gt;this example&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Rules have a name, a pattern and a production.
-Patterns are used to perform character-level matching (regexes on input) and
-concept-level matching (predicates on tokens).
-Productions are arbitrary functions that take a list of tokens and return a new
-token.&lt;/p&gt;
-&lt;p&gt;The corpus (resp. negative corpus) is a list of examples that should (resp.
-shouldn't) parse. The reference time for the corpus is Tuesday Feb 12, 2013 at
-4:30am.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Duckling.Debug&lt;/code&gt; provides a few debugging tools:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack repl --no-load
-&amp;gt; :l Duckling.Debug
-&amp;gt; debug (makeLocale EN $ Just US) "in two minutes" [This Time]
-in|within|after &amp;lt;duration&amp;gt; (in two minutes)
--- regex (in)
--- &amp;lt;integer&amp;gt; &amp;lt;unit-of-duration&amp;gt; (two minutes)
--- -- integer (0..19) (two)
--- -- -- regex (two)
--- -- minute (grain) (minutes)
--- -- -- regex (minutes)
-[Entity {dim = "time", body = "in two minutes", value = RVal Time (TimeValue (SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})) [SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})] Nothing), start = 0, end = 14}]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
-&lt;p&gt;Duckling is BSD-licensed.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>facebook</author><guid isPermaLink="false">https://github.com/facebook/duckling</guid><pubDate>Fri, 29 Nov 2019 00:01:00 GMT</pubDate></item><item><title>input-output-hk/cardano-sl #2 in Haskell, Today</title><link>https://github.com/input-output-hk/cardano-sl</link><description>&lt;p&gt;&lt;i&gt;Cryptographic currency implementing Ouroboros PoS protocol&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-cardano-sl" class="anchor" aria-hidden="true" href="#cardano-sl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cardano SL&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://buildkite.com/input-output-hk/cardano-sl" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fd699349046cd265aefe3bb9e9f3b2b9fa06ef72/68747470733a2f2f62616467652e6275696c646b6974652e636f6d2f39633331343164323132313466663365613935643061333861306531646162353962323036313539643238343164656534342e7376673f6272616e63683d6d6173746572" alt="Build status" data-canonical-src="https://badge.buildkite.com/9c3141d21214ff3ea95d0a38a0e1dab59b206159d2841dee44.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://ci.appveyor.com/project/input-output/cardano-sl" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/beb1ab0fd471e0b31b40f4617458349d43c219ba/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f696e7075742d6f75747075742d686b2f63617264616e6f2d736c3f6272616e63683d6d6173746572267376673d74727565" alt="Windows build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/input-output-hk/cardano-sl?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/input-output-hk/cardano-sl/releases"&gt;&lt;img src="https://camo.githubusercontent.com/43693eedfe9068b4d08fec1562b3d82c7f94152f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f696e7075742d6f75747075742d686b2f63617264616e6f2d736c2e737667" alt="Release" data-canonical-src="https://img.shields.io/github/release/input-output-hk/cardano-sl.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-what-is-cardano-sl" class="anchor" aria-hidden="true" href="#what-is-cardano-sl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Cardano SL?&lt;/h2&gt;
-&lt;p&gt;Cardano SL (or Cardano Settlement Layer) is a cryptographic currency designed
-and developed by &lt;a href="https://iohk.io/team" rel="nofollow"&gt;IOHK&lt;/a&gt;. Please read &lt;a href="https://cardanodocs.com/introduction/" rel="nofollow"&gt;Cardano SL Introduction&lt;/a&gt;
-for more information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-supported-platforms" class="anchor" aria-hidden="true" href="#supported-platforms"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Platforms&lt;/h2&gt;
-&lt;p&gt;Please see &lt;a href="https://cardanodocs.com/installation/" rel="nofollow"&gt;Cardano SL Installation&lt;/a&gt; for more
-information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-building-cardano-sl-from-source-code" class="anchor" aria-hidden="true" href="#building-cardano-sl-from-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Cardano SL from Source Code&lt;/h2&gt;
-&lt;p&gt;Please see &lt;a href="https://cardanodocs.com/for-contributors/building-from-source/" rel="nofollow"&gt;this guide&lt;/a&gt; for
-more information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-for-contributors" class="anchor" aria-hidden="true" href="#for-contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;For Contributors&lt;/h2&gt;
-&lt;p&gt;Please see &lt;a href="https://github.com/input-output-hk/cardano-sl/blob/develop/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;
-for more information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
-&lt;p&gt;Please see &lt;a href="https://github.com/input-output-hk/cardano-sl/blob/master/LICENSE"&gt;LICENSE&lt;/a&gt; for
-more information.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>input-output-hk</author><guid isPermaLink="false">https://github.com/input-output-hk/cardano-sl</guid><pubDate>Fri, 29 Nov 2019 00:02:00 GMT</pubDate></item><item><title>unfog-io/unfog-cli #3 in Haskell, Today</title><link>https://github.com/unfog-io/unfog-cli</link><description>&lt;p&gt;&lt;i&gt;A simple task and time manager.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content--unfogcli-" class="anchor" aria-hidden="true" href="#-unfogcli-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;⌚ Unfog.cli &lt;a href="https://travis-ci.org/unfog-io/unfog-cli" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/68c0733a10c9bf7d2a9cf173a8996eee08717f98/68747470733a2f2f7472617669732d63692e6f72672f756e666f672d696f2f756e666f672d636c692e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/unfog-io/unfog-cli.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;A simple task and time manager, written in &lt;a href="https://www.haskell.org" rel="nofollow"&gt;Haskell&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493813-cd07d980-0eb3-11ea-911d-8d3e3f493b70.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493813-cd07d980-0eb3-11ea-911d-8d3e3f493b70.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of contents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#from-binaries"&gt;From binaries&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#from-sources"&gt;From sources&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#create"&gt;Create&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#read"&gt;Show&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#list"&gt;List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#update"&gt;Update&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#toggle"&gt;Toggle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#done"&gt;Done&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#delete"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#context"&gt;Context&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#worktime"&gt;Worktime&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#options"&gt;Options&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#json"&gt;JSON&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/unfog-io/unfog-cli/blob/master/CHANGELOG.md#changelog"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#credits"&gt;Credits&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-from-binaries" class="anchor" aria-hidden="true" href="#from-binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From binaries&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;curl -sSL https://raw.githubusercontent.com/unfog-io/unfog-cli/master/install.sh &lt;span class="pl-k"&gt;|&lt;/span&gt; sh&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;Note: Linux, OSX and Windows are supported. See the &lt;a href="https://github.com/unfog-io/unfog-cli/releases"&gt;releases
-section&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-from-sources" class="anchor" aria-hidden="true" href="#from-sources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From sources&lt;/h3&gt;
-&lt;p&gt;First you need to install
-&lt;a href="https://docs.haskellstack.org/en/stable/README/" rel="nofollow"&gt;stack&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;curl -sSL https://get.haskellstack.org/ &lt;span class="pl-k"&gt;|&lt;/span&gt; sh&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Then build from git:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/unfog-io/unfog-cli.git unfog &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; unfog
-stack install&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-create" class="anchor" aria-hidden="true" href="#create"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create&lt;/h3&gt;
-&lt;p&gt;To create a task, you need:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A description&lt;/li&gt;
-&lt;li&gt;A list of tags &lt;em&gt;(optional)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog create &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;desc&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;1&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;2&amp;gt;&lt;/span&gt; ...&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493623-1145aa80-0eb1-11ea-8e34-f14bb3c831bc.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493623-1145aa80-0eb1-11ea-8e34-f14bb3c831bc.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: a tag should always start by &lt;code&gt;+&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-show" class="anchor" aria-hidden="true" href="#show"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Show&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog show &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493650-6ed9f700-0eb1-11ea-99f7-77bee937ec3c.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493650-6ed9f700-0eb1-11ea-99f7-77bee937ec3c.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-list" class="anchor" aria-hidden="true" href="#list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;List&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog list&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493551-338af880-0eb0-11ea-90fa-5c3c2f7783d4.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493551-338af880-0eb0-11ea-90fa-5c3c2f7783d4.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-update" class="anchor" aria-hidden="true" href="#update"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Update&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog update &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;desc&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;1&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;-tag&lt;span class="pl-k"&gt;2&amp;gt;&lt;/span&gt; ...&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-toggle" class="anchor" aria-hidden="true" href="#toggle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Toggle&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog start &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;
-unfog stop &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;
-unfog toggle &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493665-b2346580-0eb1-11ea-8cd4-46f3df331f5a.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493665-b2346580-0eb1-11ea-8cd4-46f3df331f5a.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-done" class="anchor" aria-hidden="true" href="#done"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Done&lt;/h3&gt;
-&lt;p&gt;Mark as done a task will remove it from the main list by adding a special tag &lt;code&gt;done&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog &lt;span class="pl-k"&gt;done&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;Note: done tasks can be listed by enabling the &lt;a href="#context"&gt;&lt;code&gt;done&lt;/code&gt; context&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-delete" class="anchor" aria-hidden="true" href="#delete"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Delete&lt;/h3&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog delete &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;id&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-context" class="anchor" aria-hidden="true" href="#context"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Context&lt;/h3&gt;
-&lt;p&gt;Filters tasks by the given tags. Once set up:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You will see only tasks containing at least one tag of your context&lt;/li&gt;
-&lt;li&gt;When you &lt;a href="#create"&gt;create&lt;/a&gt; a task, all tags in your context will be assigned
-to it&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog context &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;1&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;2&amp;gt;&lt;/span&gt; ...&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The special context &lt;code&gt;done&lt;/code&gt; allows you to see done tasks:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog context &lt;span class="pl-k"&gt;done&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493746-c88ef100-0eb2-11ea-9dc2-c17dc7b4b8e4.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493746-c88ef100-0eb2-11ea-9dc2-c17dc7b4b8e4.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: normal contexts (+tags) and special contexts can be used together.&lt;/em&gt;
-&lt;em&gt;Note: giving an empty (or invalid) context will clear it.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-worktime" class="anchor" aria-hidden="true" href="#worktime"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Worktime&lt;/h3&gt;
-&lt;p&gt;Shows the total worktime spent on tasks belonging to the given context, grouped
-by days. An empty context will show the worktime of all your tasks:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;unfog wtime &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;1&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;+tag&lt;span class="pl-k"&gt;2&amp;gt;&lt;/span&gt; ...&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493775-2ae7f180-0eb3-11ea-88a3-a59eb088830e.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493775-2ae7f180-0eb3-11ea-88a3-a59eb088830e.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-json" class="anchor" aria-hidden="true" href="#json"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JSON&lt;/h3&gt;
-&lt;p&gt;By adding the &lt;code&gt;--json&lt;/code&gt; option, the output will be printed in JSON format:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  "ok": 0 | 1,
-  "data": String | Task | [Task] | Worktime
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;Task {
-  id: Int
-  ref: Int
-  pos: Int
-  desc: String
-  tags: [String]
-  active: 0 | 1
-  done: 0 | 1
-  wtime: WtimeRecord
-}
+&lt;p&gt;Run &lt;code&gt;semantic --help&lt;/code&gt; for complete list of up-to-date options.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-parse" class="anchor" aria-hidden="true" href="#parse"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parse&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic parse ([--sexpression] | [--json] | [--json-graph] | [--symbols]
+                      | [--dot] | [--show] | [--quiet]) [FILES...]
+  Generate parse trees for path(s)
 
-Worktime {
-  total: WtimeRecord,
-  wtimes: [{
-    date: String (day)
-    wtime: WtimeRecord,
-  }]
-}
+Available options:
+  --sexpression            Output s-expression parse trees (default)
+  --json                   Output JSON parse trees
+  --json-graph             Output JSON adjacency list
+  --symbols                Output JSON symbol list
+  --dot                    Output DOT graph parse trees
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --quiet                  Don't produce output, but show timing stats
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-diff" class="anchor" aria-hidden="true" href="#diff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diff&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic diff ([--sexpression] | [--json] | [--json-graph] | [--toc] |
+                     [--dot] | [--show]) [FILE_A] [FILE_B]
+  Compute changes between paths
 
-WtimeRecord {
-  approx: String (worktime approximation)
-  human: String (full worktime)
-  micro: Int (worktime in micro seconds)
-}
+Available options:
+  --sexpression            Output s-expression diff tree (default)
+  --json                   Output JSON diff trees
+  --json-graph             Output JSON diff trees
+  --toc                    Output JSON table of contents diff summary
+  --dot                    Output the diff as a DOT graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/10437171/69493950-e14cd600-0eb5-11ea-9804-1095e6deb73e.png"&gt;&lt;img src="https://user-images.githubusercontent.com/10437171/69493950-e14cd600-0eb5-11ea-9804-1095e6deb73e.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is useful to create user interafaces. Here the list of current implementations:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-graph" class="anchor" aria-hidden="true" href="#graph"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic graph ([--imports] | [--calls]) [--packages] ([--dot] | [--json]
+                      | [--show]) ([--root DIR] [--exclude-dir DIR]
+                      DIR:LANGUAGE | FILE | --language ARG (FILES... | --stdin))
+  Compute a graph for a directory or from a top-level entry point module
+
+Available options:
+  --imports                Compute an import graph (default)
+  --calls                  Compute a call graph
+  --packages               Include a vertex for the package, with edges from it
+                           to each module
+  --dot                    Output in DOT graph format (default)
+  --json                   Output JSON graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --root DIR               Root directory of project. Optional, defaults to
+                           entry file/directory.
+  --exclude-dir DIR        Exclude a directory (e.g. vendor)
+  --language ARG           The language for the analysis.
+  --stdin                  Read a list of newline-separated paths to analyze
+                           from stdin.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-language-support" class="anchor" aria-hidden="true" href="#language-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language support&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Priority&lt;/th&gt;
+&lt;th align="left"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Parse&lt;/th&gt;
+&lt;th align="center"&gt;Assign&lt;/th&gt;
+&lt;th align="center"&gt;Diff&lt;/th&gt;
+&lt;th align="center"&gt;ToC&lt;/th&gt;
+&lt;th align="center"&gt;Symbols&lt;/th&gt;
+&lt;th align="center"&gt;Import graph&lt;/th&gt;
+&lt;th align="center"&gt;Call graph&lt;/th&gt;
+&lt;th align="center"&gt;Control flow graph&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Ruby&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;JavaScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td align="left"&gt;TypeScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td align="left"&gt;Python&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td align="left"&gt;Go&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;PHP&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Java&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSON&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSX&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Haskell&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Markdown&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/unfog-io/unfog-vim"&gt;Unfog.vim&lt;/a&gt; for Vim/Neovim&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt; — Supported&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt; — Partial support&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt; — Under development&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
-&lt;p&gt;Git commit messages follow the &lt;a href="https://gist.github.com/stephenparish/9941e89d80e2bc58a153"&gt;Angular
-Convention&lt;/a&gt;, but
-contain only a subject.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use imperative, present tense: “change” not “changed” nor
-“changes”&lt;br&gt;Don't capitalize first letter&lt;br&gt;No dot (.) at the end&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Code should be as clean as possible, variables and functions use the camel case
-convention. A line should never contain more than &lt;code&gt;80&lt;/code&gt; characters.&lt;/p&gt;
-&lt;p&gt;Tests should be added for each new functionality. Be sure to run tests before
-proposing a pull request.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; requires at least GHC 8.6.4 and Cabal 2.4. We strongly recommend using &lt;a href="https://www.haskell.org/ghcup/" rel="nofollow"&gt;&lt;code&gt;ghcup&lt;/code&gt;&lt;/a&gt; to sandbox GHC versions, as GHC packages installed through your OS's package manager may not install statically-linked versions of the GHC boot libraries.&lt;/p&gt;
+&lt;p&gt;We use &lt;code&gt;cabal's&lt;/code&gt; &lt;a href="https://www.haskell.org/cabal/users-guide/nix-local-build-overview.html" rel="nofollow"&gt;Nix-style local builds&lt;/a&gt; for development. To get started quickly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone git@github.com:github/semantic.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; semantic
+script/bootstrap
+cabal v2-build
+cabal v2-test
+cabal v2-run semantic -- --help&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;stack&lt;/code&gt; as a build tool is not officially supported; there is an unofficial &lt;a href="https://gist.github.com/jkachmar/f200caee83280f1f25e9cfa2dd2b16bb"&gt;&lt;code&gt;stack.yaml&lt;/code&gt;&lt;/a&gt; available, though we cannot make guarantees as to its stability.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-technology-and-architecture" class="anchor" aria-hidden="true" href="#technology-and-architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technology and architecture&lt;/h2&gt;
+&lt;p&gt;Architecturally, &lt;code&gt;semantic&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reads blobs.&lt;/li&gt;
+&lt;li&gt;Generates parse trees for those blobs with &lt;a href="https://github.com/tree-sitter/tree-sitter"&gt;tree-sitter&lt;/a&gt; (an incremental parsing system for programming tools).&lt;/li&gt;
+&lt;li&gt;Assigns those trees into a generalized representation of syntax.&lt;/li&gt;
+&lt;li&gt;Performs analysis, computes diffs, or just returns parse trees.&lt;/li&gt;
+&lt;li&gt;Renders output in one of many supported formats.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Semantic leverages a number of interesting algorithms and techniques:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/soywod/kronos.vim"&gt;Kronos&lt;/a&gt;, the unfog predecessor&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://taskwarrior.org" rel="nofollow"&gt;Taskwarrior&lt;/a&gt;, a task manager&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://taskwarrior.org/docs/timewarrior" rel="nofollow"&gt;Timewarrior&lt;/a&gt;, a time tracker&lt;/li&gt;
+&lt;li&gt;Myers' algorithm (SES) as described in the paper &lt;a href="http://www.xmailserver.org/diff2.pdf" rel="nofollow"&gt;&lt;em&gt;An O(ND) Difference Algorithm and Its Variations&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RWS as described in the paper &lt;a href="https://db.in.tum.de/~finis/papers/RWS-Diff.pdf" rel="nofollow"&gt;&lt;em&gt;RWS-Diff: Flexible and Efficient Change Detection in Hierarchical Data&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open unions and &lt;a href="http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf" rel="nofollow"&gt;data types à la carte&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An implementation of &lt;a href="https://plum-umd.github.io/abstracting-definitional-interpreters/" rel="nofollow"&gt;Abstracting Definitional Interpreters&lt;/a&gt; extended to work with an à la carte representation of syntax terms.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>unfog-io</author><guid isPermaLink="false">https://github.com/unfog-io/unfog-cli</guid><pubDate>Fri, 29 Nov 2019 00:03:00 GMT</pubDate></item><item><title>diku-dk/futhark #4 in Haskell, Today</title><link>https://github.com/diku-dk/futhark</link><description>&lt;p&gt;&lt;i&gt;:boom::computer::boom: A data-parallel functional programming language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content--the-futhark-programming-language" class="anchor" aria-hidden="true" href="#-the-futhark-programming-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a target="_blank" rel="noopener noreferrer" href="assets/logo.svg"&gt;&lt;img src="assets/logo.svg" height="50px" style="max-width:100%;"&gt;&lt;/a&gt; The Futhark Programming Language&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://gitter.im/futhark-lang/Lobby?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e46b9686401faf3c84544ae5b6abdf098fe22c3b/68747470733a2f2f6261646765732e6769747465722e696d2f6675746861726b2d6c616e672f4c6f6262792e737667" alt="Join the chat at https://gitter.im/futhark-lang/Lobby" data-canonical-src="https://badges.gitter.im/futhark-lang/Lobby.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://travis-ci.org/diku-dk/futhark" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3ae15c2e57ce147e2c71e5f82a86a03579c93716/68747470733a2f2f7472617669732d63692e6f72672f64696b752d646b2f6675746861726b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/diku-dk/futhark.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://dev.azure.com/futhark/futhark/_build/latest?definitionId=1&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3aeea2f6cd09a44d4b3e2f85d99dc2715bd943ce/68747470733a2f2f6465762e617a7572652e636f6d2f6675746861726b2f6675746861726b2f5f617069732f6275696c642f7374617475732f64696b752d646b2e6675746861726b3f6272616e63684e616d653d6d6173746572" alt="Build Status" data-canonical-src="https://dev.azure.com/futhark/futhark/_apis/build/status/diku-dk.futhark?branchName=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Futhark is a purely functional data-parallel programming language.
-Its optimising compiler is able to compile it to typically very
-performant GPU code.  The language and compiler is developed at
-&lt;a href="http://diku.dk" rel="nofollow"&gt;DIKU&lt;/a&gt; at the University of Copenhagen, originally as
-part of the &lt;a href="http://hiperfit.dk" rel="nofollow"&gt;HIPERFIT centre&lt;/a&gt;.  The language and
-compiler is quite stable, and suitable for practical programming.&lt;/p&gt;
-&lt;p&gt;For more information, see &lt;a href="http://futhark-lang.org" rel="nofollow"&gt;the website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There also exists a book, &lt;a href="https://futhark-book.readthedocs.io/en/latest/" rel="nofollow"&gt;Parallel Programming in Futhark&lt;/a&gt;, that serves as an extensive introduction and guide.&lt;/p&gt;
-&lt;p&gt;Also see the &lt;a href="http://futhark.readthedocs.io" rel="nofollow"&gt;compiler and language
-documentation&lt;/a&gt; and the &lt;a href="https://futhark-lang.org/docs" rel="nofollow"&gt;basis library
-documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://futhark.readthedocs.io/en/latest/installation.html" rel="nofollow"&gt;Installation instructions here.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://repology.org/project/futhark/versions" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7e38452735b4ec7d731ebf49e27f9997f923dd76/68747470733a2f2f7265706f6c6f67792e6f72672f62616467652f766572746963616c2d616c6c7265706f732f6675746861726b2e737667" alt="Packaging status" data-canonical-src="https://repology.org/badge/vertical-allrepos/futhark.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h1&gt;
-&lt;p&gt;To compile a Futhark program to sequential C:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;futhark c prog.fut -o prog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or maybe OpenCL:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;futhark opencl prog.fut -o prog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And then run it:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;./prog &amp;lt; prog.input
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To interpret a Futhark program:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;futhark run prog.fut &amp;lt; prog.input
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;&lt;a id="user-content-hacking" class="anchor" aria-hidden="true" href="#hacking"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hacking&lt;/h1&gt;
-&lt;p&gt;We try to make use of Github issues for organising our work.  Issues
-tagged with
-&lt;a href="https://github.com/diku-dk/futhark/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"&gt;good first issue&lt;/a&gt;
-do not require deep knowledge of the code base.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h1&gt;
-&lt;p&gt;Run &lt;code&gt;futhark test tests&lt;/code&gt; to check how well we're doing.  Use &lt;code&gt;futhark test -t&lt;/code&gt; if you're in a hurry and only want to check that all the
-tests type-check.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>diku-dk</author><guid isPermaLink="false">https://github.com/diku-dk/futhark</guid><pubDate>Fri, 29 Nov 2019 00:04:00 GMT</pubDate></item><item><title>jgm/pandoc #5 in Haskell, Today</title><link>https://github.com/jgm/pandoc</link><description>&lt;p&gt;&lt;i&gt;Universal markup converter&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;
-&lt;h1&gt;&lt;a id="user-content-pandoc" class="anchor" aria-hidden="true" href="#pandoc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pandoc&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/jgm/pandoc/releases"&gt;&lt;img src="https://camo.githubusercontent.com/411f0ac7f05102f79a830ffdeb2ba4f087a667e9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6a676d2f70616e646f632e7376673f6c6162656c3d63757272656e742b72656c65617365" alt="github release" data-canonical-src="https://img.shields.io/github/release/jgm/pandoc.svg?label=current+release" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="http://hackage.haskell.org/package/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4d03bb9489bd54187b8486c245dbc084d041e13f/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f70616e646f632e7376673f6c6162656c3d6861636b616765" alt="hackage release" data-canonical-src="https://img.shields.io/hackage/v/pandoc.svg?label=hackage" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="http://brewformulas.org/Pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/08d2230b9e9e2cbb12ea775d1bac8f50fd4275e8/68747470733a2f2f696d672e736869656c64732e696f2f686f6d65627265772f762f70616e646f632e737667" alt="homebrew" data-canonical-src="https://img.shields.io/homebrew/v/pandoc.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="http://stackage.org/lts/package/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/44b5a4bcb04e663394157a419be74ff590f74ced/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f70616e646f632f62616467652f6c7473" alt="stackage LTS package" data-canonical-src="http://stackage.org/package/pandoc/badge/lts" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://circleci.com/gh/jgm/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aedf8f0e0910d305ec01f09e62cdd2932308fc8a/68747470733a2f2f636972636c6563692e636f6d2f67682f6a676d2f70616e646f632e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/jgm/pandoc.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://github.com/jgm/pandoc/actions"&gt;&lt;img src="https://github.com/jgm/pandoc/workflows/CI%20tests/badge.svg" alt="CI tests" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://www.gnu.org/licenses/gpl.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/768ccc754b99092765bcf90953180fa0a2b7f3f0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c76322b2d6c69676874677261792e737667" alt="license" data-canonical-src="https://img.shields.io/badge/license-GPLv2+-lightgray.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://groups.google.com/forum/#!forum/pandoc-discuss" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/065ea70a67e226da3fb10642858cfd74f1a8307e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70616e646f632d646973637573732d7265642e7376673f7374796c653d736f6369616c" alt="pandoc-discuss on google groups" data-canonical-src="https://img.shields.io/badge/pandoc-discuss-red.svg?style=social" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-the-universal-markup-converter" class="anchor" aria-hidden="true" href="#the-universal-markup-converter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The universal markup converter&lt;/h2&gt;
-&lt;p&gt;Pandoc is a &lt;a href="http://haskell.org" rel="nofollow"&gt;Haskell&lt;/a&gt; library for converting from
-one markup format to another, and a command-line tool that uses this
-library. It can convert &lt;em&gt;from&lt;/em&gt;&lt;/p&gt;
-&lt;div id="user-content-input-formats"&gt;
+&lt;h2&gt;&lt;a id="user-content-contributions" class="anchor" aria-hidden="true" href="#contributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h2&gt;
+&lt;p&gt;Contributions are welcome!  Please see our &lt;a href="CONTRIBUTING.md"&gt;contribution
+guidelines&lt;/a&gt; and our &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&lt;/a&gt; for
+details on how to participate in our community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;Semantic is licensed under the &lt;a href="LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Sat, 30 Nov 2019 00:03:00 GMT</pubDate></item><item><title>commercialhaskell/stack #4 in Haskell, Today</title><link>https://github.com/commercialhaskell/stack</link><description>&lt;p&gt;&lt;i&gt;The Haskell Tool Stack&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-the-haskell-tool-stack" class="anchor" aria-hidden="true" href="#the-haskell-tool-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Haskell Tool Stack&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.azure.com/commercialhaskell/stack/_build/latest?definitionId=1?branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/af4cca4edf474a6f58facb78f28c458582e3cd91/68747470733a2f2f6465762e617a7572652e636f6d2f636f6d6d65726369616c6861736b656c6c2f737461636b2f5f617069732f6275696c642f7374617475732f636f6d6d65726369616c6861736b656c6c2e737461636b3f6272616e63684e616d653d6d6173746572" alt="Build Status" data-canonical-src="https://dev.azure.com/commercialhaskell/stack/_apis/build/status/commercialhaskell.stack?branchName=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/commercialhaskell/stack/releases"&gt;&lt;img src="https://camo.githubusercontent.com/949c785e33be7450335e66fe7a388030b897d225/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f636f6d6d65726369616c6861736b656c6c2f737461636b2e737667" alt="Release" data-canonical-src="https://img.shields.io/github/release/commercialhaskell/stack.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/commercialhaskell/stack?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5accf8346d42c7a8ca7adafc9ee28535907a4ed1/68747470733a2f2f6261646765732e6769747465722e696d2f636f6d6d65726369616c6861736b656c6c2f737461636b2e737667" alt="Join the chat at https://gitter.im/commercialhaskell/stack" data-canonical-src="https://badges.gitter.im/commercialhaskell/stack.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stack is a cross-platform program for developing Haskell projects. It is intended for Haskellers both new and experienced.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="http://haskellstack.org" rel="nofollow"&gt;haskellstack.org&lt;/a&gt; or the &lt;a href="./doc"&gt;doc&lt;/a&gt; directory for more
+information.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-subsystem-maintainers" class="anchor" aria-hidden="true" href="#subsystem-maintainers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Subsystem maintainers&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;commonmark&lt;/code&gt; (&lt;a href="http://commonmark.org" rel="nofollow"&gt;CommonMark&lt;/a&gt; Markdown)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;creole&lt;/code&gt; (&lt;a href="http://www.wikicreole.org/wiki/Creole1.0" rel="nofollow"&gt;Creole 1.0&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docbook&lt;/code&gt; (&lt;a href="http://docbook.org" rel="nofollow"&gt;DocBook&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docx&lt;/code&gt; (&lt;a href="https://en.wikipedia.org/wiki/Office_Open_XML" rel="nofollow"&gt;Word docx&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dokuwiki&lt;/code&gt; (&lt;a href="https://www.dokuwiki.org/dokuwiki" rel="nofollow"&gt;DokuWiki markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;epub&lt;/code&gt; (&lt;a href="http://idpf.org/epub" rel="nofollow"&gt;EPUB&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fb2&lt;/code&gt;
-(&lt;a href="http://www.fictionbook.org/index.php/Eng:XML_Schema_Fictionbook_2.1" rel="nofollow"&gt;FictionBook2&lt;/a&gt;
-e-book)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gfm&lt;/code&gt; (&lt;a href="https://help.github.com/articles/github-flavored-markdown/"&gt;GitHub-Flavored
-Markdown&lt;/a&gt;),
-or the deprecated and less accurate &lt;code&gt;markdown_github&lt;/code&gt;; use
-&lt;a href="#markdown-variants"&gt;&lt;code&gt;markdown_github&lt;/code&gt;&lt;/a&gt; only if you need extensions
-not supported in &lt;a href="#markdown-variants"&gt;&lt;code&gt;gfm&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;haddock&lt;/code&gt; (&lt;a href="https://www.haskell.org/haddock/doc/html/ch03s08.html" rel="nofollow"&gt;Haddock
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;html&lt;/code&gt; (&lt;a href="http://www.w3.org/html/" rel="nofollow"&gt;HTML&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ipynb&lt;/code&gt; (&lt;a href="https://nbformat.readthedocs.io/en/latest/" rel="nofollow"&gt;Jupyter
-notebook&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;jats&lt;/code&gt; (&lt;a href="https://jats.nlm.nih.gov" rel="nofollow"&gt;JATS&lt;/a&gt; XML)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;json&lt;/code&gt; (JSON version of native AST)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;latex&lt;/code&gt; (&lt;a href="http://latex-project.org" rel="nofollow"&gt;LaTeX&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown&lt;/code&gt; (&lt;a href="#pandocs-markdown"&gt;Pandoc’s Markdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_mmd&lt;/code&gt;
-(&lt;a href="http://fletcherpenney.net/multimarkdown/" rel="nofollow"&gt;MultiMarkdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_phpextra&lt;/code&gt; (&lt;a href="https://michelf.ca/projects/php-markdown/extra/" rel="nofollow"&gt;PHP Markdown
-Extra&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_strict&lt;/code&gt; (original unextended
-&lt;a href="http://daringfireball.net/projects/markdown/" rel="nofollow"&gt;Markdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt; (&lt;a href="https://www.mediawiki.org/wiki/Help:Formatting" rel="nofollow"&gt;MediaWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;man&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_man.7.html" rel="nofollow"&gt;roff
-man&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;muse&lt;/code&gt; (&lt;a href="https://amusewiki.org/library/manual" rel="nofollow"&gt;Muse&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;native&lt;/code&gt; (native Haskell)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;odt&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/OpenDocument" rel="nofollow"&gt;ODT&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;opml&lt;/code&gt; (&lt;a href="http://dev.opml.org/spec2.html" rel="nofollow"&gt;OPML&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;org&lt;/code&gt; (&lt;a href="http://orgmode.org" rel="nofollow"&gt;Emacs Org mode&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rst&lt;/code&gt;
-(&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" rel="nofollow"&gt;reStructuredText&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;t2t&lt;/code&gt; (&lt;a href="http://txt2tags.org" rel="nofollow"&gt;txt2tags&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;textile&lt;/code&gt; (&lt;a href="http://redcloth.org/textile" rel="nofollow"&gt;Textile&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tikiwiki&lt;/code&gt; (&lt;a href="https://doc.tiki.org/Wiki-Syntax-Text#The_Markup_Language_Wiki-Syntax" rel="nofollow"&gt;TikiWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;twiki&lt;/code&gt; (&lt;a href="http://twiki.org/cgi-bin/view/TWiki/TextFormattingRules" rel="nofollow"&gt;TWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vimwiki&lt;/code&gt; (&lt;a href="https://vimwiki.github.io" rel="nofollow"&gt;Vimwiki&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;GHCJS - &lt;a href="https://github.com/matchwood"&gt;Matchwood&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;It can convert &lt;em&gt;to&lt;/em&gt;&lt;/p&gt;
-&lt;div id="user-content-output-formats"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;asciidoc&lt;/code&gt; (&lt;a href="http://www.methods.co.nz/asciidoc/" rel="nofollow"&gt;AsciiDoc&lt;/a&gt;) or
-&lt;code&gt;asciidoctor&lt;/code&gt; (&lt;a href="https://asciidoctor.org/" rel="nofollow"&gt;AsciiDoctor&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;beamer&lt;/code&gt; (&lt;a href="https://ctan.org/pkg/beamer" rel="nofollow"&gt;LaTeX beamer&lt;/a&gt; slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;commonmark&lt;/code&gt; (&lt;a href="http://commonmark.org" rel="nofollow"&gt;CommonMark&lt;/a&gt; Markdown)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;context&lt;/code&gt; (&lt;a href="http://www.contextgarden.net/" rel="nofollow"&gt;ConTeXt&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docbook&lt;/code&gt; or &lt;code&gt;docbook4&lt;/code&gt; (&lt;a href="http://docbook.org" rel="nofollow"&gt;DocBook&lt;/a&gt; 4)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docbook5&lt;/code&gt; (DocBook 5)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docx&lt;/code&gt; (&lt;a href="https://en.wikipedia.org/wiki/Office_Open_XML" rel="nofollow"&gt;Word docx&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dokuwiki&lt;/code&gt; (&lt;a href="https://www.dokuwiki.org/dokuwiki" rel="nofollow"&gt;DokuWiki markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;epub&lt;/code&gt; or &lt;code&gt;epub3&lt;/code&gt; (&lt;a href="http://idpf.org/epub" rel="nofollow"&gt;EPUB&lt;/a&gt; v3 book)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;epub2&lt;/code&gt; (EPUB v2)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fb2&lt;/code&gt;
-(&lt;a href="http://www.fictionbook.org/index.php/Eng:XML_Schema_Fictionbook_2.1" rel="nofollow"&gt;FictionBook2&lt;/a&gt;
-e-book)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gfm&lt;/code&gt; (&lt;a href="https://help.github.com/articles/github-flavored-markdown/"&gt;GitHub-Flavored
-Markdown&lt;/a&gt;),
-or the deprecated and less accurate &lt;code&gt;markdown_github&lt;/code&gt;; use
-&lt;a href="#markdown-variants"&gt;&lt;code&gt;markdown_github&lt;/code&gt;&lt;/a&gt; only if you need extensions
-not supported in &lt;a href="#markdown-variants"&gt;&lt;code&gt;gfm&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;haddock&lt;/code&gt; (&lt;a href="https://www.haskell.org/haddock/doc/html/ch03s08.html" rel="nofollow"&gt;Haddock
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;html&lt;/code&gt; or &lt;code&gt;html5&lt;/code&gt; (&lt;a href="http://www.w3.org/html/" rel="nofollow"&gt;HTML&lt;/a&gt;,
-i.e. &lt;a href="http://www.w3.org/TR/html5/" rel="nofollow"&gt;HTML5&lt;/a&gt;/XHTML &lt;a href="https://www.w3.org/TR/html-polyglot/" rel="nofollow"&gt;polyglot
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;html4&lt;/code&gt; (&lt;a href="http://www.w3.org/TR/xhtml1/" rel="nofollow"&gt;XHTML&lt;/a&gt; 1.0 Transitional)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;icml&lt;/code&gt; (&lt;a href="http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/idml/idml-cookbook.pdf" rel="nofollow"&gt;InDesign
-ICML&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ipynb&lt;/code&gt; (&lt;a href="https://nbformat.readthedocs.io/en/latest/" rel="nofollow"&gt;Jupyter
-notebook&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;jats&lt;/code&gt; (&lt;a href="https://jats.nlm.nih.gov" rel="nofollow"&gt;JATS&lt;/a&gt; XML)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;jira&lt;/code&gt;
-(&lt;a href="https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all" rel="nofollow"&gt;Jira&lt;/a&gt;
-wiki markup)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;json&lt;/code&gt; (JSON version of native AST)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;latex&lt;/code&gt; (&lt;a href="http://latex-project.org" rel="nofollow"&gt;LaTeX&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;man&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_man.7.html" rel="nofollow"&gt;roff
-man&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown&lt;/code&gt; (&lt;a href="#pandocs-markdown"&gt;Pandoc’s Markdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_mmd&lt;/code&gt;
-(&lt;a href="http://fletcherpenney.net/multimarkdown/" rel="nofollow"&gt;MultiMarkdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_phpextra&lt;/code&gt; (&lt;a href="https://michelf.ca/projects/php-markdown/extra/" rel="nofollow"&gt;PHP Markdown
-Extra&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;markdown_strict&lt;/code&gt; (original unextended
-&lt;a href="http://daringfireball.net/projects/markdown/" rel="nofollow"&gt;Markdown&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt; (&lt;a href="https://www.mediawiki.org/wiki/Help:Formatting" rel="nofollow"&gt;MediaWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ms&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_ms.7.html" rel="nofollow"&gt;roff
-ms&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;muse&lt;/code&gt; (&lt;a href="https://amusewiki.org/library/manual" rel="nofollow"&gt;Muse&lt;/a&gt;),&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;native&lt;/code&gt; (native Haskell),&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;odt&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/OpenDocument" rel="nofollow"&gt;OpenOffice text
-document&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;opml&lt;/code&gt; (&lt;a href="http://dev.opml.org/spec2.html" rel="nofollow"&gt;OPML&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;opendocument&lt;/code&gt; (&lt;a href="http://opendocument.xml.org" rel="nofollow"&gt;OpenDocument&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;org&lt;/code&gt; (&lt;a href="http://orgmode.org" rel="nofollow"&gt;Emacs Org mode&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pdf&lt;/code&gt; (&lt;a href="https://www.adobe.com/pdf/" rel="nofollow"&gt;PDF&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;plain&lt;/code&gt; (plain text),&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pptx&lt;/code&gt;
-(&lt;a href="https://en.wikipedia.org/wiki/Microsoft_PowerPoint" rel="nofollow"&gt;PowerPoint&lt;/a&gt;
-slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rst&lt;/code&gt;
-(&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" rel="nofollow"&gt;reStructuredText&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rtf&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/Rich_Text_Format" rel="nofollow"&gt;Rich Text
-Format&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;texinfo&lt;/code&gt; (&lt;a href="http://www.gnu.org/software/texinfo/" rel="nofollow"&gt;GNU Texinfo&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;textile&lt;/code&gt; (&lt;a href="http://redcloth.org/textile" rel="nofollow"&gt;Textile&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;slideous&lt;/code&gt; (&lt;a href="http://goessner.net/articles/slideous/" rel="nofollow"&gt;Slideous&lt;/a&gt; HTML
-and JavaScript slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;slidy&lt;/code&gt; (&lt;a href="http://www.w3.org/Talks/Tools/Slidy/" rel="nofollow"&gt;Slidy&lt;/a&gt; HTML and
-JavaScript slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dzslides&lt;/code&gt; (&lt;a href="http://paulrouget.com/dzslides/" rel="nofollow"&gt;DZSlides&lt;/a&gt; HTML5 +
-JavaScript slide show),&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;revealjs&lt;/code&gt; (&lt;a href="http://lab.hakim.se/reveal-js/" rel="nofollow"&gt;reveal.js&lt;/a&gt; HTML5 +
-JavaScript slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;s5&lt;/code&gt; (&lt;a href="http://meyerweb.com/eric/tools/s5/" rel="nofollow"&gt;S5&lt;/a&gt; HTML and JavaScript
-slide show)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tei&lt;/code&gt; (&lt;a href="https://github.com/TEIC/TEI-Simple"&gt;TEI Simple&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;xwiki&lt;/code&gt; (&lt;a href="https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/" rel="nofollow"&gt;XWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;zimwiki&lt;/code&gt; (&lt;a href="http://zim-wiki.org/manual/Help/Wiki_Syntax.html" rel="nofollow"&gt;ZimWiki
-markup&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;the path of a custom lua writer, see &lt;a href="#custom-writers"&gt;Custom
-writers&lt;/a&gt; below&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Pandoc can also produce PDF output via LaTeX, Groff ms, or HTML.&lt;/p&gt;
-&lt;p&gt;Pandoc’s enhanced version of Markdown includes syntax for tables,
-definition lists, metadata blocks, footnotes, citations, math, and much
-more. See the User’s Manual below under &lt;a href="https://pandoc.org/MANUAL.html#pandocs-markdown" rel="nofollow"&gt;Pandoc’s
-Markdown&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pandoc has a modular design: it consists of a set of readers, which
-parse text in a given format and produce a native representation of the
-document (an &lt;em&gt;abstract syntax tree&lt;/em&gt; or AST), and a set of writers, which
-convert this native representation into a target format. Thus, adding an
-input or output format requires only adding a reader or writer. Users
-can also run custom pandoc filters to modify the intermediate AST (see
-the documentation for &lt;a href="https://pandoc.org/filters.html" rel="nofollow"&gt;filters&lt;/a&gt; and
-&lt;a href="https://pandoc.org/lua-filters.html" rel="nofollow"&gt;lua filters&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Because pandoc’s intermediate representation of a document is less
-expressive than many of the formats it converts between, one should not
-expect perfect conversions between every format and every other. Pandoc
-attempts to preserve the structural elements of a document, but not
-formatting details such as margin size. And some document elements, such
-as complex tables, may not fit into pandoc’s simple document model.
-While conversions from pandoc’s Markdown to all formats aspire to be
-perfect, conversions from formats more expressive than pandoc’s Markdown
-can be expected to be lossy.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
-&lt;p&gt;Here’s &lt;a href="INSTALL.md"&gt;how to install pandoc&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
-&lt;p&gt;Pandoc’s website contains a full &lt;a href="https://pandoc.org/MANUAL.html" rel="nofollow"&gt;User’s
-Guide&lt;/a&gt;. It is also available
-&lt;a href="MANUAL.txt"&gt;here&lt;/a&gt; as pandoc-flavored Markdown. The website also
-contains some &lt;a href="https://pandoc.org/demos.html" rel="nofollow"&gt;examples of the use of
-pandoc&lt;/a&gt; and a limited &lt;a href="https://pandoc.org/try" rel="nofollow"&gt;online
-demo&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
-&lt;p&gt;Pull requests, bug reports, and feature requests are welcome. Please
-make sure to read &lt;a href="CONTRIBUTING.md"&gt;the contributor guidelines&lt;/a&gt; before
-opening a new issue.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
-&lt;p&gt;© 2006-2018 John MacFarlane (&lt;a href="mailto:jgm@berkeley.edu"&gt;jgm@berkeley.edu&lt;/a&gt;). Released under the
-&lt;a href="http://www.gnu.org/copyleft/gpl.html" title="GNU General Public License" rel="nofollow"&gt;GPL&lt;/a&gt;,
-version 2 or greater. This software carries no warranty of any kind.
-(See COPYRIGHT for full copyright and warranty notices.)&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>jgm</author><guid isPermaLink="false">https://github.com/jgm/pandoc</guid><pubDate>Fri, 29 Nov 2019 00:05:00 GMT</pubDate></item><item><title>kadena-io/chainweb-node #6 in Haskell, Today</title><link>https://github.com/kadena-io/chainweb-node</link><description>&lt;p&gt;&lt;i&gt;Chainweb: A Proof-of-Work Parallel-Chain Architecture for Massive Throughput&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+&lt;p&gt;NOTE: GHCJS support is considered experimental. In Stack 2.0, we are
+removing support for building GHCJS itself; links will be added to
+this README for information on separate tools. Issues on GHCJS may be
+closed as not supported, and the next major Stack release may remove
+GHCJS support entirely.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>commercialhaskell</author><guid isPermaLink="false">https://github.com/commercialhaskell/stack</guid><pubDate>Sat, 30 Nov 2019 00:04:00 GMT</pubDate></item><item><title>kadena-io/chainweb-node #5 in Haskell, Today</title><link>https://github.com/kadena-io/chainweb-node</link><description>&lt;p&gt;&lt;i&gt;Chainweb: A Proof-of-Work Parallel-Chain Architecture for Massive Throughput&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
 &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f97c9564e91b84a0be97290582a4570f5635b632/68747470733a2f2f692e696d6775722e636f6d2f62415a464147462e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/f97c9564e91b84a0be97290582a4570f5635b632/68747470733a2f2f692e696d6775722e636f6d2f62415a464147462e706e67" width="450" height="243" alt="Kadena" title="Kadena" data-canonical-src="https://i.imgur.com/bAZFAGF.png" style="max-width:100%;"&gt;&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
@@ -714,4 +484,95 @@ implementing applications such as miners and transaction management tools.&lt;/p
 &lt;p&gt;For a detailed description of the Kadena architecture,
 &lt;a href="docs/Architecture.md"&gt;see here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/Overview.png"&gt;&lt;img src="docs/Overview.png" alt="Architecture Overview" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>kadena-io</author><guid isPermaLink="false">https://github.com/kadena-io/chainweb-node</guid><pubDate>Fri, 29 Nov 2019 00:06:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>kadena-io</author><guid isPermaLink="false">https://github.com/kadena-io/chainweb-node</guid><pubDate>Sat, 30 Nov 2019 00:05:00 GMT</pubDate></item><item><title>tweag/ormolu #6 in Haskell, Today</title><link>https://github.com/tweag/ormolu</link><description>&lt;p&gt;&lt;i&gt;A formatter for Haskell source code&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ormolu" class="anchor" aria-hidden="true" href="#ormolu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ormolu&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://opensource.org/licenses/BSD-3-Clause" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f3f0ebe1e33a4ef905a6720f536d5052abef2969/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d425344332d627269676874677265656e2e737667" alt="License BSD3" data-canonical-src="https://img.shields.io/badge/license-BSD3-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://hackage.haskell.org/package/ormolu" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aedf070fb7fd28f4e4aee1475dd75a87fa9ffcf5/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f6f726d6f6c752e7376673f7374796c653d666c6174" alt="Hackage" data-canonical-src="https://img.shields.io/hackage/v/ormolu.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/nightly/package/ormolu" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4ae5f9d1bb150eb3333f14ab70e1bc36d8c72191/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f6f726d6f6c752f62616467652f6e696768746c79" alt="Stackage Nightly" data-canonical-src="http://stackage.org/package/ormolu/badge/nightly" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/lts/package/ormolu" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c98a96af56a0c69067b112494cc958828c70443a/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f6f726d6f6c752f62616467652f6c7473" alt="Stackage LTS" data-canonical-src="http://stackage.org/package/ormolu/badge/lts" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/tweag/ormolu/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5a391e6bf592d492fe6ba7d8430c156cc61a7f64/68747470733a2f2f636972636c6563692e636f6d2f67682f74776561672f6f726d6f6c752f747265652f6d61737465722e7376673f7374796c653d73766726636972636c652d746f6b656e3d63666433376133393236353536316562343465363038663937636639353363623261333934633033" alt="CircleCI" data-canonical-src="https://circleci.com/gh/tweag/ormolu/tree/master.svg?style=svg&amp;amp;circle-token=cfd37a39265561eb44e608f97cf953cb2a394c03" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ormolu is a formatter for Haskell source code. The project was created with
+the following goals in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using GHC's own parser to avoid parsing problems caused by
+&lt;a href="https://hackage.haskell.org/package/haskell-src-exts" rel="nofollow"&gt;&lt;code&gt;haskell-src-exts&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Let some whitespace be programmable. The layout of the input influences
+the layout choices in the output. This means that the choices between
+single-line/multi-line layouts in each particular situation are made by
+the user, not by an algorithm. This makes the implementation simpler and
+leaves some control to the user while still guaranteeing that the
+formatted code is stylistically consistent.&lt;/li&gt;
+&lt;li&gt;Writing code in such a way so it's easy to modify and maintain.&lt;/li&gt;
+&lt;li&gt;Implementing one “true” formatting style which admits no configuration.&lt;/li&gt;
+&lt;li&gt;That formatting style aims to result in minimal diffs while still
+remaining very close to “conventional” Haskell formatting people use.&lt;/li&gt;
+&lt;li&gt;Choose a style compatible with modern dialects of Haskell. As new Haskell
+extensions enter broad use, we may change the style to accomodate them.&lt;/li&gt;
+&lt;li&gt;Idempotence: formatting already formatted code doesn't change it.&lt;/li&gt;
+&lt;li&gt;Be well-tested and robust to the point that it can be used in large
+projects without exposing unfortunate, disappointing bugs here and there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-building" class="anchor" aria-hidden="true" href="#building"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building&lt;/h2&gt;
+&lt;p&gt;The easiest way to build the project is with Nix:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;nix-build -A ormolu&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or with &lt;code&gt;cabal-install&lt;/code&gt; from the Nix shell:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;nix-shell --run &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal new-build&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively, &lt;code&gt;stack&lt;/code&gt; could be used with a &lt;code&gt;stack.yaml&lt;/code&gt; file as follows.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat stack.yaml&lt;/span&gt;
+&lt;span class="pl-c1"&gt;resolver: lts-14.3&lt;/span&gt;
+&lt;span class="pl-c1"&gt;packages:&lt;/span&gt;
+&lt;span class="pl-c1"&gt;- '.'&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;stack build&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To use Ormolu directly from GitHub with Nix, this snippet may come in handy:&lt;/p&gt;
+&lt;div class="highlight highlight-source-nix"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;# This overlay adds Ormolu straight from GitHub.&lt;/span&gt;
+&lt;span class="pl-smi"&gt;self&lt;/span&gt;: &lt;span class="pl-smi"&gt;super&lt;/span&gt;:
+
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-e"&gt;source&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;super&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;fetchFromGitHub&lt;/span&gt; {
+      &lt;span class="pl-e"&gt;owner&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;tweag&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-e"&gt;repo&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ormolu&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-e"&gt;rev&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;de279d80122b287374d4ed87c7b630db1f157642&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;; &lt;span class="pl-c"&gt;# update as necessary&lt;/span&gt;
+      &lt;span class="pl-e"&gt;sha256&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;0qrxfk62ww6b60ha9sqcgl4nb2n5fhf66a65wszjngwkybwlzmrv&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;; &lt;span class="pl-c"&gt;# as well&lt;/span&gt;
+    };
+    &lt;span class="pl-e"&gt;ormolu&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;import&lt;/span&gt; &lt;span class="pl-v"&gt;source&lt;/span&gt; { &lt;span class="pl-e"&gt;pkgs&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;self&lt;/span&gt;; };
+&lt;span class="pl-k"&gt;in&lt;/span&gt; {
+  &lt;span class="pl-e"&gt;haskell&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;super&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;haskell&lt;/span&gt; &lt;span class="pl-k"&gt;//&lt;/span&gt; {
+    &lt;span class="pl-e"&gt;packages&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;super&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;haskell&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;packages&lt;/span&gt; &lt;span class="pl-k"&gt;//&lt;/span&gt; {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-mi"&gt;&lt;span class="pl-pse"&gt;${&lt;/span&gt;&lt;span class="pl-v"&gt;ormolu&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;ormoluCompiler&lt;/span&gt;&lt;span class="pl-pse"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;super&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;haskell&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;packages&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-mi"&gt;&lt;span class="pl-pse"&gt;${&lt;/span&gt;&lt;span class="pl-v"&gt;ormolu&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;ormoluCompiler&lt;/span&gt;&lt;span class="pl-pse"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;override&lt;/span&gt; {
+        &lt;span class="pl-e"&gt;overrides&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-v"&gt;ormolu&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-v"&gt;ormoluOverlay&lt;/span&gt;;
+      };
+    };
+  };
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;The following will print the formatted output to the standard output.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;ormolu Module.hs&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add &lt;code&gt;--mode inplace&lt;/code&gt; to replace the contents of the input file with the
+formatted output.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;ormolu --mode inplace Module.hs&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-current-limitations" class="anchor" aria-hidden="true" href="#current-limitations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Current limitations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Does not handle CPP (wontfix, see &lt;a href="https://github.com/tweag/ormolu/blob/master/DESIGN.md#cpp"&gt;the design document&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Input modules should be parsable by Haddock, which is a bit stricter
+criterion than just being valid Haskell modules.&lt;/li&gt;
+&lt;li&gt;Various minor idempotence issues, most of them are related to comments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-editor-integration" class="anchor" aria-hidden="true" href="#editor-integration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Editor integration&lt;/h2&gt;
+&lt;p&gt;We know of the following editor integrations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/vyorkin/ormolu.el"&gt;Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=sjurmillidahl.ormolu-vscode" rel="nofollow"&gt;VS Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-running-on-hackage" class="anchor" aria-hidden="true" href="#running-on-hackage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running on Hackage&lt;/h2&gt;
+&lt;p&gt;It's possible to try Ormolu on arbitrary packages from Hackage. For that
+execute (from the root of the cloned repo):&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;nix-build -A hackage.&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;package&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then inspect &lt;code&gt;result/log.txt&lt;/code&gt; for possible problems. The derivation will
+also contain formatted &lt;code&gt;.hs&lt;/code&gt; files for inspection and original inputs with
+&lt;code&gt;.hs-original&lt;/code&gt; extension (those are with CPP dropped, exactly what is fed
+into Ormolu).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/tweag/ormolu/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/tweag/ormolu/blob/master/LICENSE.md"&gt;LICENSE.md&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Copyright © 2018–present Tweag I/O&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>tweag</author><guid isPermaLink="false">https://github.com/tweag/ormolu</guid><pubDate>Sat, 30 Nov 2019 00:06:00 GMT</pubDate></item></channel></rss>
