@@ -1,2 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Julia, Today</title><link>https://github.com/trending/julia?since=daily</link><description>The top repositories on GitHub for julia, measured daily</description><pubDate>Sun, 01 Dec 2019 01:05:53 GMT</pubDate><lastBuildDate>Sun, 01 Dec 2019 01:05:53 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Julia, Today today</title><pubDate>Sun, 01 Dec 2019 01:05:53 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Julia, Today</title><link>https://github.com/trending/julia?since=daily</link><description>The top repositories on GitHub for julia, measured daily</description><pubDate>Mon, 02 Dec 2019 01:06:09 GMT</pubDate><lastBuildDate>Mon, 02 Dec 2019 01:06:09 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>FluxML/model-zoo #1 in Julia, Today</title><link>https://github.com/FluxML/model-zoo</link><description>&lt;p&gt;&lt;i&gt;Please do not feed the models&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-flux-model-zoo" class="anchor" aria-hidden="true" href="#flux-model-zoo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flux Model Zoo&lt;/h1&gt;
+&lt;p&gt;This repository contains various demonstrations of the &lt;a href="http://fluxml.github.io/" rel="nofollow"&gt;Flux&lt;/a&gt; machine learning library. Any of these may freely be used as a starting point for your own models.&lt;/p&gt;
+&lt;p&gt;The models are broadly categorised into the folders &lt;a href="/vision"&gt;vision&lt;/a&gt; (e.g. large convolutional neural networks (CNNs)), &lt;a href="/text"&gt;text&lt;/a&gt; (e.g. various recurrent neural networks (RNNs) and natural language processing (NLP) models), &lt;a href="/games"&gt;games&lt;/a&gt; (Reinforcement Learning / RL). See the READMEs of respective models for more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Each folder is its own &lt;a href="https://julialang.github.io/Pkg.jl/latest/#Using-someone-else's-project-1" rel="nofollow"&gt;Julia project&lt;/a&gt;, which lists the packages you need to run the models. You can run the models by opening Julia in the project folder and running&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using Pkg; Pkg.activate("."); Pkg.instantiate()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to install all needed packages. Then you can run the model code with &lt;code&gt;include("script.jl")&lt;/code&gt; or by running the script line-by-line. More details are available in the README for each model.&lt;/p&gt;
+&lt;p&gt;Models with a &lt;code&gt;cuda&lt;/code&gt; folder can be loaded with NVIDIA GPU support, if you have a CUDA installed.&lt;/p&gt;
+&lt;div class="highlight highlight-source-julia"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;using&lt;/span&gt; Pkg; Pkg&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-c1"&gt;activate&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cuda&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;); Pkg&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-c1"&gt;instantiate&lt;/span&gt;()
+&lt;span class="pl-k"&gt;using&lt;/span&gt; CuArrays&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-gitpod-online-ide" class="anchor" aria-hidden="true" href="#gitpod-online-ide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gitpod Online IDE&lt;/h3&gt;
+&lt;p&gt;Each model can be used in &lt;a href="https://www.gitpod.io/" rel="nofollow"&gt;Gitpod&lt;/a&gt;, just &lt;a href="https://gitpod.io/#https://github.com/FluxML/model-zoo" rel="nofollow"&gt;open the repository by gitpod&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-consideration" class="anchor" aria-hidden="true" href="#consideration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Consideration:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Based on &lt;a href="https://www.gitpod.io/pricing/" rel="nofollow"&gt;Gitpod's policies&lt;/a&gt;, free access is limited.&lt;/li&gt;
+&lt;li&gt;All of your work will place in the Gitpod's cloud.&lt;/li&gt;
+&lt;li&gt;It isn't an officially maintained feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;We welcome contributions of new models. They should be in a folder with a project and manifest file, to pin all relevant packages, as well as a README to explain what the model is about, how to run it, and what results it achieves (if applicable). If possible models should not depend directly on GPU functionality, but ideally should be CPU/GPU agnostic.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-model-listing" class="anchor" aria-hidden="true" href="#model-listing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model Listing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vision
+&lt;ul&gt;
+&lt;li&gt;MNIST
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="vision/mnist/mlp.jl"&gt;Simple multi-layer perceptron&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="vision/mnist/conv.jl"&gt;Simple ConvNets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="vision/mnist/autoencoder.jl"&gt;Simple Auto-Encoder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="vision/mnist/vae.jl"&gt;Variational Auto-Encoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="vision/cifar10"&gt;VGG 16/19 on CIFAR10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="vision/cppn"&gt;CPPN&lt;/a&gt; (&lt;a href="http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/" rel="nofollow"&gt;Blog&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Text
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="text/char-rnn"&gt;CharRNN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="text/lang-detection"&gt;Character-level language detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="text/phonemes"&gt;Seq2Seq phoneme detection on CMUDict&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="text/treebank"&gt;Recursive net on IMDB sentiment treebank&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Other
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="other/diffeq"&gt;Differential Equations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="other/bitstring-parity"&gt;BitString Parity Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="other/housing/housing.jl"&gt;MLP on housing data&lt;/a&gt; (low level API)&lt;/li&gt;
+&lt;li&gt;&lt;a href="other/fizzbuzz/fizzbuzz.jl"&gt;FizzBuzz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="other/meta-learning/MetaLearning.jl"&gt;Meta-Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="other/iris/iris.jl"&gt;Logistic Regression Iris&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>FluxML</author><guid isPermaLink="false">https://github.com/FluxML/model-zoo</guid><pubDate>Mon, 02 Dec 2019 00:01:00 GMT</pubDate></item></channel></rss>
