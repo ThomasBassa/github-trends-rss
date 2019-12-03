@@ -1,2 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Mon, 02 Dec 2019 01:06:06 GMT</pubDate><lastBuildDate>Mon, 02 Dec 2019 01:06:06 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Erlang, Today today</title><pubDate>Mon, 02 Dec 2019 01:06:06 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Tue, 03 Dec 2019 01:05:09 GMT</pubDate><lastBuildDate>Tue, 03 Dec 2019 01:05:09 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>ninenines/cowboy #1 in Erlang, Today</title><link>https://github.com/ninenines/cowboy</link><description>&lt;p&gt;&lt;i&gt;Small, fast, modern HTTP server for Erlang/OTP.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body asciidoc" data-path="README.asciidoc"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-cowboy" class="anchor" aria-hidden="true" href="#cowboy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cowboy&lt;/h1&gt;
+&lt;div id="user-content-preamble"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy is a small, fast and modern HTTP server for Erlang/OTP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-goals"&gt;&lt;a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Goals&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy aims to provide a &lt;strong&gt;complete&lt;/strong&gt; HTTP stack in a &lt;strong&gt;small&lt;/strong&gt; code base.
+It is optimized for &lt;strong&gt;low latency&lt;/strong&gt; and &lt;strong&gt;low memory usage&lt;/strong&gt;, in part
+because it uses &lt;strong&gt;binary strings&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy provides &lt;strong&gt;routing&lt;/strong&gt; capabilities, selectively dispatching requests
+to handlers written in Erlang.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Because it uses Ranch for managing connections, Cowboy can easily be
+&lt;strong&gt;embedded&lt;/strong&gt; in any other application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy is &lt;strong&gt;clean&lt;/strong&gt; and &lt;strong&gt;well tested&lt;/strong&gt; Erlang code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-online-documentation"&gt;&lt;a id="user-content-online-documentation" class="anchor" aria-hidden="true" href="#online-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Online documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/cowboy/2.6/guide" rel="nofollow"&gt;User guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/cowboy/2.6/manual" rel="nofollow"&gt;Function reference&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-offline-documentation"&gt;&lt;a id="user-content-offline-documentation" class="anchor" aria-hidden="true" href="#offline-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Offline documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;While still online, run &lt;code&gt;make docs&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User guide available in &lt;code&gt;doc/&lt;/code&gt; in PDF and HTML formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Function reference man pages available in &lt;code&gt;doc/man3/&lt;/code&gt; and &lt;code&gt;doc/man7/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;make install-docs&lt;/code&gt; to install man pages on your system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Full documentation in Asciidoc available in &lt;code&gt;doc/src/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples available in &lt;code&gt;examples/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-getting-help"&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Official IRC Channel: #ninenines on irc.freenode.net&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/ninenines/cowboy/issues"&gt;Issues tracker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/services" rel="nofollow"&gt;Commercial Support&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</description><author>ninenines</author><guid isPermaLink="false">https://github.com/ninenines/cowboy</guid><pubDate>Tue, 03 Dec 2019 00:01:00 GMT</pubDate></item><item><title>seth/ej #2 in Erlang, Today</title><link>https://github.com/seth/ej</link><description>&lt;p&gt;&lt;i&gt;Helper module for working with Erlang terms representing JSON&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body org" data-path="README.org"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ej-helps-you-work-with-erlang-terms-representing-json" class="anchor" aria-hidden="true" href="#ej-helps-you-work-with-erlang-terms-representing-json"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ej helps you work with Erlang terms representing JSON&lt;/h1&gt;
+&lt;p&gt;The ej module makes it easier to work with Erlang terms representing
+  &lt;a href="http://json.org" rel="nofollow"&gt;JSON&lt;/a&gt; in the format returned by &lt;a href="https://github.com/davisp/jiffy"&gt;jiffy&lt;/a&gt;, &lt;a href="https://github.com/mochi/mochiweb"&gt;mochijson2&lt;/a&gt;, or &lt;a href="https://github.com/benoitc/ejson"&gt;ejson&lt;/a&gt;.  You can use
+  &lt;code&gt;ej:get/2&lt;/code&gt; to walk an object and return a particular value, &lt;code&gt;ej:set/3&lt;/code&gt;
+  to update a value within an object, or &lt;code&gt;ej:delete/2&lt;/code&gt; to remove a value
+  from an object.&lt;/p&gt;
+&lt;p&gt;In ej, paths into JSON objects are expressed using a tuple of keys
+  like so:&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Javascript&lt;/td&gt;&lt;td&gt;ej&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;code&gt;Obj.author.name.first&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;ej:get({"author", "name", "first"}, Obj)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;To get started using ej, see &lt;a href="ej by example"&gt;ej by example&lt;/a&gt; below.&lt;/p&gt;
+&lt;p&gt;ej also provides a means of validating a JSON object according to a
+  specification you provide. This feature is useful if you need to
+  process JSON request bodies. As a brief example, here’s a
+  specification for a JSON object describing a person and their favorite
+  foods:&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;{[
+  {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;, {&lt;span class="pl-c1"&gt;string_match&lt;/span&gt;, &lt;span class="pl-en"&gt;regex_for&lt;/span&gt;(&lt;span class="pl-c1"&gt;name&lt;/span&gt;)}},
+  {{&lt;span class="pl-c1"&gt;opt&lt;/span&gt;, &amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;nick_name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;}, {&lt;span class="pl-c1"&gt;string_match&lt;/span&gt;, &lt;span class="pl-en"&gt;regex_for&lt;/span&gt;(&lt;span class="pl-c1"&gt;name&lt;/span&gt;)}},
+  {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;foods&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;, {&lt;span class="pl-c1"&gt;array_map&lt;/span&gt;, &lt;span class="pl-c1"&gt;string&lt;/span&gt;}}
+ ]}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ej is independent of the library used for JSON serialization and
+  has no dependencies.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-ej-by-example" class="anchor" aria-hidden="true" href="#ej-by-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ej by example&lt;/h2&gt;
+&lt;p&gt;ej is best explained by example.  Consider the following JSON data
+  (borrowed from &lt;a href="http://www.json.org/example.html" rel="nofollow"&gt;http://www.json.org/example.html&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;menu&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;File&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;popup&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;menuitem&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; [
+      {&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;New&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;CreateNewDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},
+      {&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Open&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;OpenDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},
+      {&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Close&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;CloseDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}
+    ]
+  }
+}}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;mochijson2:decode/1&lt;/code&gt; translates the JSON into Erlang terms like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;{&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,
+ [{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;menu&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,
+   {&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,
+    [{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+     {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;File&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+     {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;popup&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,
+      {&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,
+       [{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;menuitem&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,
+         [{&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,[{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;New&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+                   {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;CreateNewDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;}]},
+          {&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,[{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Open&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+                   {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;OpenDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;}]},
+          {&lt;span class="pl-c1"&gt;struct&lt;/span&gt;,[{&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Close&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+                   {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;onclick&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;CloseDoc()&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;}]}]}]}}]}}]}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And here’s ej in action:&lt;/p&gt;
+&lt;pre lang="txt"&gt;% specify the path you want to access as a tuple of keys (you can use
+% strings or binaries)
+4&amp;gt; ej:get({"menu", "value"}, Obj).
+&amp;lt;&amp;lt;"File"&amp;gt;&amp;gt;
+
+% you can access list elements by index
+&amp;gt; ej:get({"menu", "popup", "menuitem", 2, "onclick"}, Obj).
+&amp;lt;&amp;lt;"OpenDoc()"&amp;gt;&amp;gt;
+
+% The atoms 'first' and 'last' can be used for lists as well
+&amp;gt; ej:get({"menu", "popup", "menuitem", first, "value"}, Obj).  
+&amp;lt;&amp;lt;"New"&amp;gt;&amp;gt;
+
+% you can filter a list of objects by specifying a property (key/value
+% pair) to match on:
+ej:get({"menu", "popup", "menuitem", {select, {"value", "New"}}}, Obj).
+
+% set a value
+Obj2 = ej:set({"menu", "id"}, Obj, &amp;lt;&amp;lt;"abc123"&amp;gt;&amp;gt;).
+
+% add a value
+Obj3 = ej:set({"menu", "new_key"}, Obj, &amp;lt;&amp;lt;"something"&amp;gt;&amp;gt;).
+
+% add a value to a list
+NewItem = {struct,[{&amp;lt;&amp;lt;"value"&amp;gt;&amp;gt;,&amp;lt;&amp;lt;"Save"&amp;gt;&amp;gt;}, {&amp;lt;&amp;lt;"onclick"&amp;gt;&amp;gt;,&amp;lt;&amp;lt;"SaveDoc()"&amp;gt;&amp;gt;}]}.
+Obj4 = ej:set({"menu", "popup", "menuitem", new}, Obj, NewItem).
+
+&lt;/pre&gt;
+&lt;p&gt;The idea for this helper module was inspired by &lt;a href="http://groups.google.com/group/erlang-programming/browse_thread/thread/7af6f99e740df979/97c50c0df25502cd?lnk=gst&amp;amp;q=Javascript+parse+transform#97c50c0df25502cd" rel="nofollow"&gt;this thread on the
+  Erlang Questions&lt;/a&gt; mailing list and, in particular, by the reply from
+  Richard O’Keefe.  Additional motivation from the very similar helper
+  module &lt;code&gt;struct&lt;/code&gt; included in the &lt;a href="http://beebole.com/en/blog/erlang/tutorial-web-application-erlang/" rel="nofollow"&gt;sticky notes example application&lt;/a&gt; from
+  the folks at BeeBole.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;THANKS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Christopher Brown&lt;/li&gt;
+  &lt;li&gt;Christopher Maier&lt;/li&gt;
+  &lt;li&gt;John Keiser&lt;/li&gt;
+  &lt;li&gt;Sebastian Probst Eide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-build-status" class="anchor" aria-hidden="true" href="#build-status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build status&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b387a07fc2c86f213fb522c226fbd22ec5b3a9d2/68747470733a2f2f7472617669732d63692e6f72672f736574682f656a2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/b387a07fc2c86f213fb522c226fbd22ec5b3a9d2/68747470733a2f2f7472617669732d63692e6f72672f736574682f656a2e706e67" alt="https://travis-ci.org/seth/ej.png" data-canonical-src="https://travis-ci.org/seth/ej.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;ej is available under the Apache License, Version 2.0.&lt;/p&gt;
+&lt;pre&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>seth</author><guid isPermaLink="false">https://github.com/seth/ej</guid><pubDate>Tue, 03 Dec 2019 00:02:00 GMT</pubDate></item></channel></rss>
