@@ -1,2 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: PostScript, This week</title><link>https://github.com/trending/postscript?since=weekly</link><description>The top repositories on GitHub for postscript, measured weekly</description><pubDate>Tue, 03 Dec 2019 01:05:07 GMT</pubDate><lastBuildDate>Tue, 03 Dec 2019 01:05:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in PostScript, This week today</title><pubDate>Tue, 03 Dec 2019 01:05:07 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: PostScript, This week</title><link>https://github.com/trending/postscript?since=weekly</link><description>The top repositories on GitHub for postscript, measured weekly</description><pubDate>Wed, 04 Dec 2019 01:05:11 GMT</pubDate><lastBuildDate>Wed, 04 Dec 2019 01:05:11 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>django/djangoproject.com #1 in PostScript, This week</title><link>https://github.com/django/djangoproject.com</link><description>&lt;p&gt;&lt;i&gt;Source code to djangoproject.com&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-djangoprojectcom-source-code" class="anchor" aria-hidden="true" href="#djangoprojectcom-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;djangoproject.com source code&lt;/h1&gt;
+&lt;a href="https://travis-ci.org/django/djangoproject.com" rel="nofollow"&gt;&lt;img alt="https://travis-ci.org/django/djangoproject.com.svg?branch=master" src="https://camo.githubusercontent.com/40ca50388527dc90d30a56d77694e7a0cb98f389/68747470733a2f2f7472617669732d63692e6f72672f646a616e676f2f646a616e676f70726f6a6563742e636f6d2e7376673f6272616e63683d6d6173746572" data-canonical-src="https://travis-ci.org/django/djangoproject.com.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://coveralls.io/r/django/djangoproject.com?branch=master" rel="nofollow"&gt;&lt;img alt="https://coveralls.io/repos/django/djangoproject.com/badge.svg?branch=master" src="https://camo.githubusercontent.com/64c468fd43744215227e4d81d1e81cd63d97eed2/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f646a616e676f2f646a616e676f70726f6a6563742e636f6d2f62616467652e7376673f6272616e63683d6d6173746572" data-canonical-src="https://coveralls.io/repos/django/djangoproject.com/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;p&gt;To run locally, do the usual:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Create a Python 3.5 virtualenv&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install dependencies:&lt;/p&gt;
+&lt;pre&gt;pip install -r requirements/dev.txt
+npm install
+&lt;/pre&gt;
+&lt;p&gt;Alternatively use the make task:&lt;/p&gt;
+&lt;pre&gt;make install
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Make a directory to store the project's data (MEDIA_ROOT, DOC_BUILDS_ROOT,
+etc.). We'll use ~/.djangoproject for example purposes.&lt;/p&gt;
+&lt;p&gt;Create a 'secrets.json' file in a directory named 'conf' in that directory,
+containing something like:&lt;/p&gt;
+&lt;pre&gt;{ "secret_key": "xyz",
+  "superfeedr_creds": ["any@email.com", "some_string"],
+  "db_host": "localhost",
+  "db_password": "secret",
+  "trac_db_host": "localhost",
+  "trac_db_password": "secret" }
+&lt;/pre&gt;
+&lt;p&gt;Add export DJANGOPROJECT_DATA_DIR=~/.djangoproject (without the backticks)
+to your ~/.bashrc (or ~/.zshrc if you're using zsh) file and then run
+source ~/.bashrc (or source ~/.zshrc) to load the changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create databases:&lt;/p&gt;
+&lt;pre&gt;createuser -d djangoproject --superuser
+createdb -O djangoproject djangoproject
+createuser -d code.djangoproject --superuser
+createdb -O code.djangoproject code.djangoproject
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Setting up database access&lt;/p&gt;
+&lt;p&gt;If you are using the default postgres configuration, chances are you will
+have to give a password for the newly created users in order to be able to
+use them for Django:&lt;/p&gt;
+&lt;pre&gt;psql
+ALTER USER djangoproject WITH PASSWORD 'secret';
+ALTER USER "code.djangoproject" WITH PASSWORD 'secret';
+\d
+&lt;/pre&gt;
+&lt;p&gt;(Use the same passwords as the ones you've used in your secrets.json file)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create tables:&lt;/p&gt;
+&lt;pre&gt;psql -d code.djangoproject &amp;lt; tracdb/trac.sql
+
+./manage.py migrate
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create a superuser:&lt;/p&gt;
+&lt;pre&gt;./manage.py createsuperuser
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Populate the www and docs hostnames in the django.contrib.sites app:&lt;/p&gt;
+&lt;pre&gt;./manage.py loaddata dev_sites
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For docs:&lt;/p&gt;
+&lt;pre&gt;./manage.py loaddata doc_releases
+./manage.py update_docs
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For dashboard:&lt;/p&gt;
+&lt;p&gt;To load the latest dashboard categories and metrics:&lt;/p&gt;
+&lt;pre&gt;./manage.py loaddata dashboard_production_metrics
+&lt;/pre&gt;
+&lt;p&gt;Alternatively, to load a full set of sample data (takes a few minutes):&lt;/p&gt;
+&lt;pre&gt;./manage.py loaddata dashboard_example_data
+&lt;/pre&gt;
+&lt;p&gt;Finally, make sure the loaded metrics have at least one data point (this
+makes API calls to the URLs from the metrics objects loaded above and may
+take some time depending on the metrics chosen):&lt;/p&gt;
+&lt;pre&gt;./manage.py update_metrics
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Point the &lt;code&gt;www.djangoproject.localhost&lt;/code&gt;, &lt;code&gt;docs.djangoproject.localhost&lt;/code&gt;,
+and &lt;code&gt;dashboard.djangoproject.localhost&lt;/code&gt; hostnames with your &lt;code&gt;/etc/hosts&lt;/code&gt;
+file to &lt;code&gt;localhost&lt;/code&gt;/&lt;code&gt;127.0.0.1&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;127.0.0.1  docs.djangoproject.localhost www.djangoproject.localhost dashboard.djangoproject.localhost
+&lt;/pre&gt;
+&lt;p&gt;This is unnecessary with some browsers (e.g. Opera and Chromium/Chrome) as
+they handle localhost subdomains automatically.&lt;/p&gt;
+&lt;p&gt;If you're on Mac OS and don't feel like editing the &lt;code&gt;/etc/hosts&lt;/code&gt; file
+manually, there is a great preference pane called &lt;a href="https://github.com/specialunderwear/Hosts.prefpane"&gt;Hosts.prefpane&lt;/a&gt;. On
+Ubuntu there is a &lt;a href="https://help.ubuntu.com/community/NetworkAdmin" rel="nofollow"&gt;built-in network admin&lt;/a&gt; GUI to do the same. Remember
+both require admin privileges, just like you'd need when editing
+&lt;code&gt;/etc/hosts&lt;/code&gt; with your favorite editor.&lt;/p&gt;
+&lt;p&gt;If you don't have admin rights but have an internet connection, you can use a
+service like &lt;a href="http://xip.io" rel="nofollow"&gt;xip.io&lt;/a&gt;. In that case you'll also have to
+update ALLOWED_HOSTS in djangoproject/settings/dev.py as well as the
+content of the django_site table in your database.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Compile the CSS (only the source SCSS files are stored in the repository):&lt;/p&gt;
+&lt;pre&gt;make compile-scss
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Finally run the server:&lt;/p&gt;
+&lt;pre&gt;make run
+&lt;/pre&gt;
+&lt;p&gt;This runs both the main site ("www") as well as the
+docs and dashboard site in the same process.
+Open &lt;a href="http://www.djangoproject.localhost:8000/" rel="nofollow"&gt;http://www.djangoproject.localhost:8000/&lt;/a&gt;,
+&lt;a href="http://docs.djangoproject.localhost:8000/" rel="nofollow"&gt;http://docs.djangoproject.localhost:8000/&lt;/a&gt;,
+or &lt;a href="http://dashboard.djangoproject.localhost:8000/" rel="nofollow"&gt;http://dashboard.djangoproject.localhost:8000/&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a name="user-content-running-the-tests"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-running-the-tests" class="anchor" aria-hidden="true" href="#running-the-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running the tests&lt;/h2&gt;
+&lt;p&gt;We use &lt;a href="https://travis-ci.org/" rel="nofollow"&gt;Travis-CI&lt;/a&gt; for continuous testing and
+&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; pull request integration. If you're familiar
+with those systems you should not have any problems writing tests.&lt;/p&gt;
+&lt;p&gt;Our test results can be found here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="https://travis-ci.org/django/djangoproject.com" rel="nofollow"&gt;https://travis-ci.org/django/djangoproject.com&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;For local development don't hesitate to install
+&lt;a href="https://tox.readthedocs.io/" rel="nofollow"&gt;tox&lt;/a&gt; to run the website's test suite.&lt;/p&gt;
+&lt;p&gt;Then in the root directory (next to the &lt;code&gt;manage.py&lt;/code&gt; file) run:&lt;/p&gt;
+&lt;pre&gt;tox
+&lt;/pre&gt;
+&lt;p&gt;Behind the scenes this will run the usual &lt;code&gt;./manage.py test&lt;/code&gt; management
+command with a preset list of apps that we want to test as well as
+&lt;a href="https://flake8.readthedocs.io/" rel="nofollow"&gt;flake8&lt;/a&gt; for code quality checks. We
+collect test coverage data as part of that tox run, to show the result
+simply run:&lt;/p&gt;
+&lt;pre&gt;coverage report
+&lt;/pre&gt;
+&lt;p&gt;or for a HTML-based report:&lt;/p&gt;
+&lt;pre&gt;coverage html
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;(Optional)&lt;/strong&gt; In case you're using an own virtualenv you can also run the
+tests manually using the &lt;code&gt;test&lt;/code&gt; task of the &lt;code&gt;Makefile&lt;/code&gt;. Don't forget to
+install the test requirements with the following command first though:&lt;/p&gt;
+&lt;pre&gt;pip install -r requirements/tests.txt
+&lt;/pre&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;pre&gt;make test
+&lt;/pre&gt;
+&lt;p&gt;or simply the usual test management command:&lt;/p&gt;
+&lt;pre&gt;./manage.py test [list of app labels]
+&lt;/pre&gt;
+&lt;a name="user-content-supported-browsers"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-browsers" class="anchor" aria-hidden="true" href="#supported-browsers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported browsers&lt;/h2&gt;
+&lt;p&gt;The goal of the site is to target various levels of browsers, depending on
+their ability to use the technologies in use on the site, such as HTML5, CSS3,
+SVG, webfonts.&lt;/p&gt;
+&lt;p&gt;We're following &lt;a href="https://wiki.mozilla.org/Support/Browser_Support" rel="nofollow"&gt;Mozilla's example&lt;/a&gt;
+when it comes to categorize browser support.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Desktop browsers, except as noted below, are &lt;strong&gt;A grade&lt;/strong&gt;, meaning that
+everything needs to work.&lt;/li&gt;
+&lt;li&gt;IE &amp;lt; 11 is &lt;strong&gt;not supported&lt;/strong&gt; (based on Microsoft's support).&lt;/li&gt;
+&lt;li&gt;Mobile browsers should be considered &lt;strong&gt;B grade&lt;/strong&gt; as well.
+Mobile Safari, Firefox on Android and the Android Browser should support
+the responsive styles as much as possible but some degredation can't be
+prevented due to the limited screen size and other platform restrictions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a name="user-content-file-locations"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-file-locations" class="anchor" aria-hidden="true" href="#file-locations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;File locations&lt;/h2&gt;
+&lt;p&gt;Static files such as CSS, JavaScript or image files can be found in the
+&lt;code&gt;djangoproject/static&lt;/code&gt; subdirectory.&lt;/p&gt;
+&lt;p&gt;Templates can be found in the &lt;code&gt;djangoproject/templates&lt;/code&gt; subdirectory.&lt;/p&gt;
+&lt;a name="user-content-styles"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-styles" class="anchor" aria-hidden="true" href="#styles"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Styles&lt;/h2&gt;
+&lt;p&gt;CSS is written in &lt;a href="http://sass-lang.com/" rel="nofollow"&gt;Scss&lt;/a&gt; and compiled via
+&lt;a href="http://libsass.org/" rel="nofollow"&gt;Libsass&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Run the following to compile the Scss files to CSS:&lt;/p&gt;
+&lt;pre&gt;make compile-scss-debug
+&lt;/pre&gt;
+&lt;p&gt;Alternatively you can also run the following command in a separate shell
+to continuously watch for changes to the Scss files and automatically compile
+to CSS:&lt;/p&gt;
+&lt;pre&gt;make watch-scss
+&lt;/pre&gt;
+&lt;a name="user-content-running-all-at-once"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-running-all-at-once" class="anchor" aria-hidden="true" href="#running-all-at-once"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running all at once&lt;/h2&gt;
+&lt;p&gt;Optionally you can use a tool like &lt;a href="https://github.com/ddollar/foreman"&gt;Foreman&lt;/a&gt;
+to run all process at once:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the site (similar to &lt;a href="http://www.djangoproject.com" rel="nofollow"&gt;www.djangoproject.com&lt;/a&gt;) on &lt;a href="http://0.0.0.0:8000/" rel="nofollow"&gt;http://0.0.0.0:8000/&lt;/a&gt; to be used
+with the modified /etc/hosts file (see above)&lt;/li&gt;
+&lt;li&gt;the &lt;code&gt;make&lt;/code&gt; task to automatically compile the SASS files to CSS files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is great during development. Assuming you're using Foreman simply run:&lt;/p&gt;
+&lt;pre&gt;foreman start
+&lt;/pre&gt;
+&lt;p&gt;If you just want to run one of the processes defined above use the
+&lt;code&gt;run&lt;/code&gt; subcommand like so:&lt;/p&gt;
+&lt;pre&gt;foreman run web
+&lt;/pre&gt;
+&lt;p&gt;That'll just run the www server.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;code&gt;Procfile&lt;/code&gt; file for all the process names.&lt;/p&gt;
+&lt;a name="user-content-javascript-libraries"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-javascript-libraries" class="anchor" aria-hidden="true" href="#javascript-libraries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JavaScript libraries&lt;/h2&gt;
+&lt;p&gt;This project uses &lt;a href="https://bower.io/" rel="nofollow"&gt;Bower&lt;/a&gt; to manage JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;At any time, you can run it to install a new library (e.g., &lt;code&gt;jquery-ui&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;npm run bower install jquery-ui --save
+&lt;/pre&gt;
+&lt;p&gt;or check if there are newer versions of the libraries that we use:&lt;/p&gt;
+&lt;pre&gt;npm run bower ls
+&lt;/pre&gt;
+&lt;p&gt;If you need to update an existing library, the easiest way is to change the
+version requirement in &lt;code&gt;bower.json&lt;/code&gt; and then to run
+&lt;code&gt;npm run bower install&lt;/code&gt; again.&lt;/p&gt;
+&lt;p&gt;We commit the libraries to the repository, so if you add, update, or remove a
+library from &lt;code&gt;bower.json&lt;/code&gt;, you will need to commit the changes in
+&lt;code&gt;djangoproject/static&lt;/code&gt; too.&lt;/p&gt;
+&lt;a name="user-content-documentation-search"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation-search" class="anchor" aria-hidden="true" href="#documentation-search"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation search&lt;/h2&gt;
+&lt;p&gt;When running &lt;code&gt;./manage.py update_docs&lt;/code&gt; to build all documents it will also
+automatically index every document it builds in the search engine as well.
+In case you've already built the documents and would like to reindex the
+search index run the command:&lt;/p&gt;
+&lt;pre&gt;./manage.py update_index
+&lt;/pre&gt;
+&lt;p&gt;This is also the right command to run when you work on the search feature
+itself. You can pass the &lt;code&gt;-d&lt;/code&gt; option to try to drop the search index
+first before indexing all the documents.&lt;/p&gt;
+&lt;a name="user-content-updating-metrics-from-production"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-updating-metrics-from-production" class="anchor" aria-hidden="true" href="#updating-metrics-from-production"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updating metrics from production&lt;/h2&gt;
+&lt;p&gt;The business logic for dashboard metrics is edited via the admin interface and
+contained in the models in the &lt;code&gt;dashboard&lt;/code&gt; app (other than &lt;code&gt;Dataum&lt;/code&gt;, which
+contains the data itself). From time to time, those metrics should be extracted
+from a copy of the production database and saved to the
+&lt;code&gt;dashboard/fixtures/dashboard_production_metrics.json&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;To update this file, run:&lt;/p&gt;
+&lt;pre&gt;./manage.py dumpdata dashboard --exclude dashboard.Datum --indent=4 &amp;gt; dashboard_production_metrics.json
+&lt;/pre&gt;
+&lt;a name="user-content-translation"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-translation" class="anchor" aria-hidden="true" href="#translation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translation&lt;/h2&gt;
+&lt;p&gt;We're using Transifex to help manage the translation process. The
+&lt;code&gt;requirements/dev.txt&lt;/code&gt; file will install the Transifex client.&lt;/p&gt;
+&lt;p&gt;Before using the command-line Transifex client, create &lt;code&gt;~/.transifexrc&lt;/code&gt;
+according to the instructions at
+&lt;a href="https://docs.transifex.com/client/client-configuration" rel="nofollow"&gt;https://docs.transifex.com/client/client-configuration&lt;/a&gt;. You'll need to be a
+member of the Django team in the &lt;a href="https://www.transifex.com/django/" rel="nofollow"&gt;Django&lt;/a&gt; organization at Transifex. For
+information on how to join, please see the &lt;a href="https://docs.djangoproject.com/en/dev/internals/contributing/localizing/#translations" rel="nofollow"&gt;Translations&lt;/a&gt;
+section of the documentation on contributing to and localizing Django.&lt;/p&gt;
+&lt;p&gt;Since this repo hosts three separate sites, our &lt;code&gt;.po&lt;/code&gt; files are organized by
+website domain. At the moment, we have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dashboard/locale/&lt;/code&gt; contains the translation files for
+&lt;a href="https://dashboard.djangoproject.com" rel="nofollow"&gt;https://dashboard.djangoproject.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docs/locale/&lt;/code&gt; contains the translation files for
+&lt;a href="https://docs.djangoproject.com" rel="nofollow"&gt;https://docs.djangoproject.com&lt;/a&gt; (only for the strings in this repository;
+translation of the documentation itself is handled elsewhere)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locale/&lt;/code&gt; contains the translation files for &lt;a href="https://www.djangoproject.com" rel="nofollow"&gt;https://www.djangoproject.com&lt;/a&gt;
+(including strings from all apps other than &lt;code&gt;dashboard&lt;/code&gt; and &lt;code&gt;docs&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; To keep this working properly, note that any templates for the
+&lt;code&gt;dashboard&lt;/code&gt; and &lt;code&gt;docs&lt;/code&gt; apps &lt;strong&gt;must&lt;/strong&gt; be placed in the
+&lt;code&gt;&amp;lt;app name&amp;gt;/templates/docs/&lt;/code&gt; directory for their respective app, &lt;strong&gt;not&lt;/strong&gt; in
+the &lt;code&gt;djangoproject/templates/&lt;/code&gt; directory.&lt;/p&gt;
+&lt;a name="user-content-updating-messages-on-transifex"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-updating-messages-on-transifex" class="anchor" aria-hidden="true" href="#updating-messages-on-transifex"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updating messages on Transifex&lt;/h3&gt;
+&lt;p&gt;When there are changes to the messages in the code or templates, a member of
+the translations team will need to update Transifex as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Regenerate the English (only) .po file:&lt;/p&gt;
+&lt;pre&gt;python manage.py makemessages -l en
+&lt;/pre&gt;
+&lt;p&gt;(Never update alternate language .po files using makemessages. We'll update
+the English file, upload it to Transifex, then later pull the .po files with
+translations down from Transifex.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Push the updated source file to Transifex:&lt;/p&gt;
+&lt;pre&gt;tx push -s
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Commit and push the changes to github:&lt;/p&gt;
+&lt;pre&gt;git commit -m "Updated messages" locale/en/LC_MESSAGES/*
+git push
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a name="user-content-updating-translations-from-transifex"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-updating-translations-from-transifex" class="anchor" aria-hidden="true" href="#updating-translations-from-transifex"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updating translations from Transifex&lt;/h3&gt;
+&lt;p&gt;Anytime translations on Transifex have been updated, someone should update
+our translation files as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Review the translations in Transifex and add to the space-delimited
+&lt;code&gt;LANGUAGES&lt;/code&gt; list in &lt;code&gt;update-translations.sh&lt;/code&gt; any new languages that have
+reached 100% translation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pull the updated translation files:&lt;/p&gt;
+&lt;pre&gt;./update-translations.sh
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;git diff&lt;/code&gt; to see if any translations have actually changed. If not,
+you can just revert the .po file changes and stop here.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Compile the messages:&lt;/p&gt;
+&lt;pre&gt;python manage.py compilemessages
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the test suite one more time:&lt;/p&gt;
+&lt;pre&gt;python manage.py test
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Commit and push the changes to GitHub:&lt;/p&gt;
+&lt;pre&gt;git commit -m "Updated translations" locale/*/LC_MESSAGES/*
+git push
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a name="user-content-running-locally-with-docker"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-running-locally-with-docker" class="anchor" aria-hidden="true" href="#running-locally-with-docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running Locally with Docker&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Build the images:&lt;/p&gt;
+&lt;pre&gt;docker-compose build
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spin up the containers:&lt;/p&gt;
+&lt;pre&gt;docker-compose up
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;View the site at &lt;a href="http://localhost:8000/" rel="nofollow"&gt;http://localhost:8000/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the tests:&lt;/p&gt;
+&lt;pre&gt;docker-compose exec web tox
+docker-compose exec web python manage.py test
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>django</author><guid isPermaLink="false">https://github.com/django/djangoproject.com</guid><pubDate>Wed, 04 Dec 2019 00:01:00 GMT</pubDate></item></channel></rss>
