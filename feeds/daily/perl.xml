@@ -1,2 +1,566 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Perl, Today</title><link>https://github.com/trending/perl?since=daily</link><description>The top repositories on GitHub for perl, measured daily</description><pubDate>Sat, 07 Dec 2019 01:04:17 GMT</pubDate><lastBuildDate>Sat, 07 Dec 2019 01:04:17 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Perl, Today today</title><pubDate>Sat, 07 Dec 2019 01:04:17 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Perl, Today</title><link>https://github.com/trending/perl?since=daily</link><description>The top repositories on GitHub for perl, measured daily</description><pubDate>Sun, 08 Dec 2019 01:07:54 GMT</pubDate><lastBuildDate>Sun, 08 Dec 2019 01:07:54 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>addy-dclxvi/i3-starterpack #1 in Perl, Today</title><link>https://github.com/addy-dclxvi/i3-starterpack</link><description>&lt;p&gt;&lt;i&gt;A simple guide (and example of configuration) to install i3 &amp; its and essentials packages, then make them look eye candy.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;A simple guide (and example of configuration) to install i3 and its and essentials packages and make them look eye candy,
+or at least make them not ugly &lt;g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png"&gt;😁&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;p&gt;Example configuration in this repo is pretty simple, minimal, and easy to be understood, without reducing the usability.
+Only contains about 140 lines of i3 configuration, pretty stock without any custom script, custom packages, and custom patch.
+This is my daily i3 configuration by the way.
+And this configuration only use packages that available on most Distros main repository.
+So You don't need AUR, PPA, xbps-src, or sudo make install.&lt;/p&gt;
+&lt;p&gt;I'm using Debian, with i3 stock metapackages (i3wm, i3bar, i3status, i3lock, i3-sensible-terminal, and i3-dmenu-desktop), so does this guide.
+Hence I name this repo &lt;em&gt;i3-starterpack&lt;/em&gt;.
+So, the installation guide here will use Debian command &amp;amp; package name. &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-preview" class="anchor" aria-hidden="true" href="#preview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preview&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-clean.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-clean.jpg" alt="clean" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;strong&gt;Clean&lt;/strong&gt;, without any opened app. Only i3bar is visible. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-rofi.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-rofi.jpg" alt="rofi" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;strong&gt;Rofi&lt;/strong&gt;, my favourite dmenu alternative for launching apps. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-fullscreen.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-fullscreen.jpg" alt="fullscreen" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;strong&gt;Fullscreen&lt;/strong&gt;, when I write this guide using Vim inside URxvt. Vanilla i3, so has no gaps. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-splitscreen.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-splitscreen.jpg" alt="splitscreen" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;strong&gt;Splitscreen&lt;/strong&gt;, I open ncmpcpp music player on the right. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-floating.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-floating.jpg" alt="floating" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+&lt;strong&gt;Floating&lt;/strong&gt;, for show-off. &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-disclaimer" class="anchor" aria-hidden="true" href="#disclaimer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;I'm not a Pro. I just started learning Linux one year ago. And I'm not an IT guy. So, probably this guide will have some mistakes.
+I hope You would correct me instead of insult me &lt;g-emoji class="g-emoji" alias="cry" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png"&gt;😢&lt;/g-emoji&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reason" class="anchor" aria-hidden="true" href="#reason"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reason&lt;/h2&gt;
+&lt;p&gt;I've got frequently questioned, "How to make my desktop looks like yours?".
+I don't know why they ask it to me, my desktop doesn't even look nice.
+So, I only answer "What DE do You use? Have You tried window manager? You can use Google to find some guide". &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;And the frequent reply..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"I have been following the guide I found, but my desktop still doesn't like yours". &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Different level of reply..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"I don't know what is my DE. It's default on my Parrot Security."&lt;/li&gt;
+&lt;li&gt;"DE? What is DE? Btw, I use Kali Linux. Have You watched Mr.Robot?" &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And my other reason writing this guide is, most of i3 guides I found on internet are just to install i3 and make it usable only.
+Not how to de-uglify it &lt;g-emoji class="g-emoji" alias="stuck_out_tongue" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f61b.png"&gt;😛&lt;/g-emoji&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-why-i3" class="anchor" aria-hidden="true" href="#why-i3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why i3?&lt;/h2&gt;
+&lt;p&gt;i3 is (arguably) the most easiest tiling window manager to learn and configure.
+And i3 has a really good documentation, including example command and troubleshooting.
+The community is also quite large. You will easily get more customization examples.
+So, I really recommend You to start from i3 if You want learn Linux customization.
+After You can handle i3, You can try more advanced window managers.
+i3 is my first tiling window manager by the way &lt;g-emoji class="g-emoji" alias="relaxed" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/263a.png"&gt;☺️&lt;/g-emoji&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-why-not-i3-gaps" class="anchor" aria-hidden="true" href="#why-not-i3-gaps"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why Not i3-gaps?&lt;/h2&gt;
+&lt;p&gt;As I previously said, I prefer to use packages those are available on main repository.
+As far as I know i3-gaps package is only available on Arch, Void, Solus, and Alpine repository.
+And do You know? Airblader the i3-gaps developer himself doesn't use gaps!
+My whole life is a lie &lt;g-emoji class="g-emoji" alias="confounded" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f616.png"&gt;😖&lt;/g-emoji&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;At least a working Desktop Environtment or Window Manager (I'm sure You already have it).
+Why? Just to make sure already have some essential packages like Xorg, Display Manager, Sound Mixer, Network Manager, etc.&lt;/li&gt;
+&lt;li&gt;My recommendation is start from Xfce. It's quite minimal for a Desktop Environtment. And We can use some of its useful components later.
+Like file manager, text editor, power manager, clipman, task manager, or maybe its settings daemon.&lt;/li&gt;
+&lt;li&gt;Willing to learn, patience, and ability to use Google for fixing problems.&lt;/li&gt;
+&lt;li&gt;Not give up easily. 100 times error, 100 times revert, 100 times retry every single day until three years in a row can break your limiter &lt;g-emoji class="g-emoji" alias="laughing" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f606.png"&gt;😆&lt;/g-emoji&gt;&lt;/li&gt;
+&lt;li&gt;Some great musics for companion.
+I recommend You to listen &lt;a href="https://www.youtube.com/playlist?list=PL0tX8IvlqTFtpB-H5g_xDK2SXuDkixjva" rel="nofollow"&gt;Scenes from a Memory&lt;/a&gt; album by Dream Theater.&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="coffee" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png"&gt;☕️&lt;/g-emoji&gt; &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;First, install i3 of course&lt;/strong&gt; &lt;br&gt;
+&lt;code&gt;sudo apt-get install i3&lt;/code&gt; &lt;br&gt;
+It will give You i3-wm, dunst, i3lock, i3status, and suckless-tools.
+If i3-wm, dunst, i3lock, i3status, and suckless-tools are not installed automatically, just install them manually. &lt;br&gt;
+&lt;code&gt;sudo apt-get install i3-wm dunst i3lock i3status suckless-tools&lt;/code&gt; &lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Then install some additional packages to make your desktop enjoyable&lt;/strong&gt; &lt;br&gt;
+&lt;code&gt;sudo apt-get install compton hsetroot rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-explanations-of-additional-packages" class="anchor" aria-hidden="true" href="#explanations-of-additional-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Explanations of Additional Packages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Compton is a compositor to provide some desktop effects like shadow, transparency, fade, and transiton.&lt;/li&gt;
+&lt;li&gt;Hsetroot is a wallpaper handler. i3 has no wallpaper handler by default.&lt;/li&gt;
+&lt;li&gt;URxvt is a lightweight terminal emulator, part of &lt;em&gt;i3-sensible-terminal&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Xsel is a program to access X clipboard. We need it to make copy-paste in URxvt available. Hit Alt+C to copy, and Alt+V to paste.&lt;/li&gt;
+&lt;li&gt;Rofi is a program launcher, similar with dmenu but with more options.&lt;/li&gt;
+&lt;li&gt;Noto Sans and M+ are my favourite fonts used in my configuration.&lt;/li&gt;
+&lt;li&gt;Xsettingsd is a simple settings daemon to load fontconfig and some other options. Without this, fonts would look rasterized in some applications.&lt;/li&gt;
+&lt;li&gt;LXAppearance is used for changing GTK theme icons, fonts, and some other preferences.&lt;/li&gt;
+&lt;li&gt;Scrot is for taking screenshoot. I use it in my configuration for Print Screen button.
+I set my Print Screen button to take screenshoot using scrot, then automatically open it using Viewnior image viewer. &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-copying-configurations" class="anchor" aria-hidden="true" href="#copying-configurations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copying Configurations&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/addy-dclxvi/i3-starterpack.git&lt;/code&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Or if You don't have git package installed, and have no willing to install it.
+Just use download as zip button on the top-right of this page, then extract it.
+After that, Open &lt;em&gt;i3-starterpack&lt;/em&gt; folder. Then copy the configurations to your home.
+I mean if it's on &lt;em&gt;i3-starterpack/.config/i3/config&lt;/em&gt;, copy it to &lt;em&gt;~/.config/i3/&lt;/em&gt;.
+If the folder doesn't exist on your home, just make it.
+Do the same with all of the files inside &lt;em&gt;i3-starterpack&lt;/em&gt; folder.
+My dotfiles contains font, so refresh your fontconfig cache &lt;code&gt;fc-cache -fv&lt;/code&gt; after You copy the font. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; You can deploy this repository recursively using
+&lt;code&gt;git clone https://github.com/addy-dclxvi/i3-starterpack.git &amp;amp;&amp;amp; cp -a i3-starterpack/. ~&lt;/code&gt;
+but I recommend You to copy the configuration files one by one to make yourself have more control.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-inspect-and-edit-the-configurations-files" class="anchor" aria-hidden="true" href="#inspect-and-edit-the-configurations-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inspect and Edit The Configurations Files&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;~/.config/i3/config&lt;/strong&gt; &lt;br&gt;
+This is the main configuration file of i3 window manager. Contains keybinding, autostart, colors, and window rules.
+I suggest You to leave it default for now. I will explain it later. &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~/.config/i3status/config&lt;/strong&gt; &lt;br&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-i3bar.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-i3bar.jpg" alt="i3bar" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;
+This is the statusline configuration for i3bar, bottom right part of i3bar. I set it to load many module by default.
+It looks like christmast tree. So, I suggest You to disable some module You don't need. &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;order += "load"
+order += "cpu_temperature 0"
+#order += "disk /"
+#order += "disk /home"
+#order += "ethernet enp1s0"
+order += "wireless wlp2s0"
+order += "volume master"
+#order += "battery 1"
+order += "tztime local"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can comment out the module You want to disable. For example I disable the disk, ethernet, and battery. &lt;br&gt;
+Then now You have to configure the variable. Don't forget to change both in &lt;em&gt;order&lt;/em&gt; list and in function list. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 31 July 2018&lt;/strong&gt; : And remember, i3status supports Pango Markup. Not many customization options, but still interesting.
+Here is my current i3status customization (I remove the lines I don't use instead comment them out). &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;general {
+        output_format = "i3bar"
+        colors = false
+        markup = pango
+        interval = 1
+}
+
+order += "cpu_temperature 0"
+order += "load"
+order += "disk /"
+order += "wireless wlp2s0"
+order += "volume master"
+order += "tztime local"
+
+cpu_temperature 0 {
+        format = "&amp;lt;span background='#ff5555'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %degrees °C &amp;lt;/span&amp;gt;"
+        path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+load {
+        format = "&amp;lt;span background='#50fa7b'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %5min Load &amp;lt;/span&amp;gt;"
+}
+
+disk "/" {
+        format = "&amp;lt;span background='#f1fa8c'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %free Free &amp;lt;/span&amp;gt;"
+}
+
+wireless wlp2s0 {
+        format_up = "&amp;lt;span background='#bd93f9'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %essid &amp;lt;/span&amp;gt;"
+        format_down = "&amp;lt;span background='#bd93f9'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; Disconnected &amp;lt;/span&amp;gt;"
+}
+
+volume master {
+        format = "&amp;lt;span background='#ff79c6'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %volume &amp;lt;/span&amp;gt;"
+        format_muted = "&amp;lt;span background='#ff79c6'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; Muted &amp;lt;/span&amp;gt;"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+tztime local {
+		format = "&amp;lt;span background='#8be9fd'&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;span background='#e5e9f0'&amp;gt; %time &amp;lt;/span&amp;gt;"
+		format_time = "%a %-d %b %H:%M"
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The result looks like this &lt;br&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-i3bar-style.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/master/preview-i3bar-style.jpg" alt="i3bar" style="max-width:100%;"&gt;&lt;/a&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-i3status-variables" class="anchor" aria-hidden="true" href="#i3status-variables"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;i3status Variables&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My wireless interface is &lt;em&gt;wlp2s0&lt;/em&gt; and my ethernet adapter is &lt;em&gt;enp1s0&lt;/em&gt;, You can find yours by &lt;code&gt;/sbin/iwconfig&lt;/code&gt; or &lt;code&gt;iwconfig&lt;/code&gt; command.&lt;/li&gt;
+&lt;li&gt;My battery id is &lt;em&gt;BAT1&lt;/em&gt;, You can find yours by &lt;code&gt;ls /sys/class/power_supply/&lt;/code&gt; command.&lt;/li&gt;
+&lt;li&gt;My volume mixer is Alsa, probably also work for You. If not, You can see the manual page to configure PulseAudio.&lt;/li&gt;
+&lt;li&gt;To use CPU temperature, You need your CPU temperature path.
+If &lt;code&gt;/sys/class/thermal/thermal_zone0/temp&lt;/code&gt; doesn't work try &lt;code&gt;/sys/devices/platform/coretemp.0/temp1_input&lt;/code&gt;. Still doesn't work? Ask Google &lt;g-emoji class="g-emoji" alias="yum" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png"&gt;😋&lt;/g-emoji&gt;&lt;/li&gt;
+&lt;li&gt;You can add more module, just read the manual page &lt;code&gt;man i3status&lt;/code&gt;. &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-launching-i3" class="anchor" aria-hidden="true" href="#launching-i3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Launching i3&lt;/h2&gt;
+&lt;p&gt;Logout your current session. Then login again with i3 session. &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-some-cheatsheet" class="anchor" aria-hidden="true" href="#some-cheatsheet"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Some Cheatsheet&lt;/h2&gt;
+&lt;p&gt;My keybind is pretty weird, I'm more focus on easy to memorize &lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Super + Shift + D&lt;/strong&gt; Launch dmenu&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + D&lt;/strong&gt; Launch dmenu alternative called Rofi&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Enter&lt;/strong&gt; Launch i3-sensible-terminal, URxvt in this case&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Arrow&lt;/strong&gt; Change focused window, if You have two or more windows in the workspace&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Shift + Arrow&lt;/strong&gt; Send focused window to another edge of the screen, if You have two or more windows in the workspace&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + H&lt;/strong&gt; and &lt;strong&gt;Super + V&lt;/strong&gt; Change split direction to horizontal or vertical&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + S&lt;/strong&gt; Change split direction, if You already have splitted windows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Space&lt;/strong&gt; Float the window, hit it again to back to tiling mode&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + 1-6&lt;/strong&gt; Switch to workspace 1-6&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Shift + 1-6&lt;/strong&gt; Send the focused window to workspace 1-6&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Control + Alt + Left/Right&lt;/strong&gt; Switch to previous or next workspace. Only works if You have 2 workspace opened&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + R&lt;/strong&gt; Resize mode. In resize mode, hit Arrow keys to do resizing. Hit Enter to back to normal mode&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + C&lt;/strong&gt; or &lt;strong&gt;Alt + F4&lt;/strong&gt; Close window&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Q&lt;/strong&gt; Quit i3wm&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + L&lt;/strong&gt; Lockscreen. To unlock, type your user password then hit Enter&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super + Shift + R&lt;/strong&gt; Fully reload the configuration file. Hit this after do some modifications in the config file&lt;/li&gt;
+&lt;li&gt;More keybind look on the configuration file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-now-what" class="anchor" aria-hidden="true" href="#now-what"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Now What??&lt;/h2&gt;
+&lt;p&gt;Do some mess with the configuration file of course.
+Maybe change some keybind, autostart apps, window rules, and more You can find on
+&lt;a href="https://i3wm.org/docs/userguide.html" rel="nofollow"&gt;i3 official documentations&lt;/a&gt;.
+And remember, my configuration is probably not suitable for You. So, I recommend You to change it.
+Also, make yourself getting used with keybinds. It will activate your Ultra Instict. &lt;g-emoji class="g-emoji" alias="joy" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png"&gt;😂&lt;/g-emoji&gt;  &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#change volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%+
+bindsym XF86AudioMute exec amixer set Master toggle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use Amixer to change my volume. If it doesn't work for You, change it with Pactl, Pamixer, or anything else.
+Just ask Google how to control volume via command line. &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# common apps keybinds
+bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
+bindsym $super+l exec i3lock -i ~/.wallpaper.png
+bindsym $super+Shift+w exec firefox
+bindsym $super+Shift+f exec thunar;workspace 3;focus
+bindsym $super+Shift+g exec geany
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I set keybind to launch my frequently used apps, you can remove what You don't need.
+And add what do You need. Note : i3lock need png image &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# music control
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use Mpd for music daemon, control it using Mpc, and use ncmpcpp music player as frontend.
+If You are not using it, I recommend You to remove it.
+Because it has a chance to intercept your music player global keybind hotkeys.
+Or maybe You can try &lt;code&gt;playerctl&lt;/code&gt;. It's the common way to control media, and supported by a lot of popular media player. &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#autostart
+exec --no-startup-id hsetroot -center ~/.wallpaper.png
+exec --no-startup-id xsettingsd &amp;amp;
+exec --no-startup-id compton -b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Maybe You want to add some programs to your autostart, like network manager applet, clipboard manager, power manager, conky, and some goodies.
+Probably your network manager applet is nm-applet. So, if want to use it, add &lt;code&gt;exec --no-startup-id nm-applet&lt;/code&gt;.
+It will be loaded on next login. I don't put it on my autostart, because usually I only launch it from terminal when I want to switch SSID.
+And if You come from Xfce maybe You want use its setting daemon.
+Replace &lt;code&gt;exec --no-startup-id xsettingsd &amp;amp;&lt;/code&gt; with &lt;code&gt;exec --no-startup-id xfsettingsd &amp;amp;&lt;/code&gt;.
+You will have some Xfce advantage, like mouse settings, appearance settings (LXAppearance will be overiden by this),
+font settings, and some other advantage. But it will cost a thing, slightly reduce the performance. &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# window rules, you can find the window class using xprop
+for_window [class=".*"] border pixel 4
+assign [class=URxvt] 1
+assign [class=Firefox|Transmission-gtk] 2
+assign [class=Thunar|File-roller] 3
+assign [class=Geany|Evince|Gucharmap|Soffice|libreoffice*] 4
+assign [class=Audacity|Vlc|mpv|Ghb|Xfburn|Gimp*|Inkscape] 5
+assign [class=Lxappearance|System-config-printer.py|Lxtask|GParted|Pavucontrol|Exo-helper*|Lxrandr|Arandr] 6
+for_window [class=Viewnior|feh|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
+for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
+for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's my window rules. I use it to group apps on several workspace.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Workspace 1 for Terminals&lt;/li&gt;
+&lt;li&gt;Workspace 2 for Web&lt;/li&gt;
+&lt;li&gt;Workspace 3 for File Manager&lt;/li&gt;
+&lt;li&gt;Workspace 4 for Office&lt;/li&gt;
+&lt;li&gt;Workspace 5 for Multimedia&lt;/li&gt;
+&lt;li&gt;Workspace 6 for Settings &lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And I set some apps to launch in floating mode. You can make your own rules of course.
+Maybe my window rules isn't efficient for You. My workspaces are only six, and it's more than enough for me. &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# panel
+bar {
+    colors {
+    background #2f343f
+    statusline #2f343f
+    separator #4b5262
+
+    # colour of border, background, and text
+    focused_workspace   #2f343f #bf616a #d8dee8
+    active_workspace    #2f343f #2f343f #d8dee8
+    inactive_workspace  #2f343f #2f343f #d8dee8
+    urgent_workspace    #2f343f #ebcb8b #2f343f
+    }
+    status_command i3status
+}   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's my panel colour. I set it has a black background, with white color for workspace name.
+Active workspace is highlighted by red colour, and urgent workspace will be highlighted with yellow colour.
+If one of your workspaces is highlighted with yellow colour, it means that workspace needs an attention.
+You can modify it by yourself of course. &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# colour of border, background, text, indicator, and child_border
+client.focused          #bf616a #2f343f #d8dee8 #bf616a #d8dee8
+client.focused_inactive #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.unfocused        #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.urgent           #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.placeholder      #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.background       #2f343f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's my settings of window border colour.
+I set the focused window border to white, and unfocused window border to black.
+On focused window, the red border means splitting direction.
+If the red border is on the right, that means if You launch a new window on that workspace, it will be launched on the right of current focused window.
+You can change the splitting direction to bottom using &lt;strong&gt;Super + V&lt;/strong&gt;. If You want to split to right again, hit &lt;strong&gt;Super + H&lt;/strong&gt;.
+If You unsatisfied with it, just modify it &lt;g-emoji class="g-emoji" alias="wink" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png"&gt;😉&lt;/g-emoji&gt; &lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thats-for-now" class="anchor" aria-hidden="true" href="#thats-for-now"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;That's For Now&lt;/h2&gt;
+&lt;p&gt;I think, this is quite enough for a starter. You can improve it by yourself. &lt;br&gt;
+Thanks for reading! &lt;g-emoji class="g-emoji" alias="blush" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png"&gt;😊&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>addy-dclxvi</author><guid isPermaLink="false">https://github.com/addy-dclxvi/i3-starterpack</guid><pubDate>Sun, 08 Dec 2019 00:01:00 GMT</pubDate></item><item><title>hcymysql/mysql_monitor #2 in Perl, Today</title><link>https://github.com/hcymysql/mysql_monitor</link><description>&lt;p&gt;&lt;i&gt;MySQL Monitor面向研发人员图形可视化监控工具&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-mysql-monitor面向研发人员图形可视化监控工具" class="anchor" aria-hidden="true" href="#mysql-monitor面向研发人员图形可视化监控工具"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MySQL Monitor面向研发人员图形可视化监控工具&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-简介" class="anchor" aria-hidden="true" href="#简介"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;简介：&lt;/h1&gt;
+&lt;p&gt;目前常用开源监控工具有nagios，zabbix，grafana，但这些是面向专业DBA使用的，而对于业务研发人员来说，没有专业的MySQL理论知识，并且上述监控工具均为纯英文界面，交互不直观，那么多的监控指标，你知道有哪些是研发最关心的吗？&lt;/p&gt;
+&lt;p&gt;所以每次都是DBA通知研发，系统哪块出了问题，这样的效率其实是低下的，我是希望把监控这块东西定制化，做成开发一眼就能看懂的指标项，纯中文页面，清爽直观，简约而不简单，出了问题报警信息直接第一时间推送给研发，效率会大大提升，同时也减少了DBA作为中间人传话的作用（传达室大爷角色）。&lt;/p&gt;
+&lt;p&gt;参考了天兔Lepus的UI风格，目前采集了数据库连接数（具体连接了哪些应用程序IP，账号统计）、QPS/TPS、索引使用率统计，同步复制状态/延迟监控。可实现微信和邮件报警。&lt;/p&gt;
+&lt;p&gt;1、MySQL状态监控
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/MySQL%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/MySQL%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、点击活动连接数，可以查看具体的连接数统计信息
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E8%BF%9E%E6%8E%A5%E6%95%B0%E8%AF%A6%E6%83%85.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E8%BF%9E%E6%8E%A5%E6%95%B0%E8%AF%A6%E6%83%85.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3、点击图表，可以查看历史曲线图
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E5%8E%86%E5%8F%B2%E6%9B%B2%E7%BA%BF%E5%9B%BE.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E5%8E%86%E5%8F%B2%E6%9B%B2%E7%BA%BF%E5%9B%BE.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4、主从复制状态监控&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/MySQL%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E7%9B%91%E6%8E%A7.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/MySQL%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E7%9B%91%E6%8E%A7.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;5、微信报警&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E5%BE%AE%E4%BF%A1%E6%8A%A5%E8%AD%A6.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E5%BE%AE%E4%BF%A1%E6%8A%A5%E8%AD%A6.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;6、邮件报警&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E9%82%AE%E4%BB%B6%E5%91%8A%E8%AD%A6.png"&gt;&lt;img src="https://raw.githubusercontent.com/hcymysql/mysql_monitor/master/%E9%82%AE%E4%BB%B6%E5%91%8A%E8%AD%A6.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一、环境搭建&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-yum-install-httpd-mysql-php-mysqlnd--y" class="anchor" aria-hidden="true" href="#yum-install-httpd-mysql-php-mysqlnd--y"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;yum install httpd mysql php-mysqlnd -y&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-yum-install-python-simplejson--y" class="anchor" aria-hidden="true" href="#yum-install-python-simplejson--y"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;yum install python-simplejson -y&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-service-httpd-start" class="anchor" aria-hidden="true" href="#service-httpd-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;service httpd start&lt;/h1&gt;
+&lt;p&gt;把&lt;a href="https://github.com/hcymysql/mysql_monitor/archive/master.zip%E5%AE%89%E8%A3%85%E5%8C%85%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%88%B0"&gt;https://github.com/hcymysql/mysql_monitor/archive/master.zip安装包解压缩到&lt;/a&gt;
+/var/www/html/目录下&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-cd-varwwwhtmlmysql_monitor" class="anchor" aria-hidden="true" href="#cd-varwwwhtmlmysql_monitor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cd /var/www/html/mysql_monitor/&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-chmod-755-mailsendemail" class="anchor" aria-hidden="true" href="#chmod-755-mailsendemail"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;chmod 755 ./mail/sendEmail&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-chmod-755-weixinwechatpy" class="anchor" aria-hidden="true" href="#chmod-755-weixinwechatpy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;chmod 755 ./weixin/wechat.py&lt;/h1&gt;
+&lt;p&gt;（注：邮件和微信报警调用的第三方工具，所以这里要赋予可执行权限755）&lt;/p&gt;
+&lt;p&gt;二、MySQL Monitor监控工具搭建&lt;/p&gt;
+&lt;p&gt;1、导入MySQL Monitor监控工具表结构（sql_db库）&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-cd--varwwwhtmlmysql_monitor" class="anchor" aria-hidden="true" href="#cd--varwwwhtmlmysql_monitor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cd  /var/www/html/mysql_monitor/&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-mysql---uroot---p123456----mysql_monitor_schemasql" class="anchor" aria-hidden="true" href="#mysql---uroot---p123456----mysql_monitor_schemasql"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;mysql  -uroot  -p123456  &amp;lt;  mysql_monitor_schema.sql&lt;/h1&gt;
+&lt;p&gt;2、录入被监控主机的信息&lt;/p&gt;
+&lt;p&gt;mysql&amp;gt;insert  into
+&lt;code&gt;mysql_status_info&lt;/code&gt;(&lt;code&gt;id&lt;/code&gt;,&lt;code&gt;ip&lt;/code&gt;,&lt;code&gt;dbname&lt;/code&gt;,&lt;code&gt;user&lt;/code&gt;,&lt;code&gt;pwd&lt;/code&gt;,&lt;code&gt;port&lt;/code&gt;,&lt;code&gt;monitor&lt;/code&gt;,&lt;code&gt;send_mail&lt;/code&gt;,&lt;code&gt;sen d_mail_to_list&lt;/code&gt;,&lt;code&gt;send_weixin&lt;/code&gt;,&lt;code&gt;send_weixin_to_list&lt;/code&gt;,&lt;code&gt;alarm_threads_running&lt;/code&gt;,&lt;code&gt;thresh old_alarm_threads_running&lt;/code&gt;,&lt;code&gt;alarm_repl_status&lt;/code&gt;,&lt;code&gt;threshold_warning_repl_delay&lt;/code&gt;)
+values
+(1,'127.0.0.1','sql_db','admin','hechunyang',3306,1,1,'&lt;a href="mailto:chunyang_he@139.com"&gt;chunyang_he@139.com&lt;/a&gt;,chu
+&lt;a href="mailto:nyang_he@126.com"&gt;nyang_he@126.com&lt;/a&gt;',1,'hechunyang',NULL,NULL,NULL,NULL);&lt;/p&gt;
+&lt;p&gt;注，以下字段可以按照需求变更：&lt;/p&gt;
+&lt;p&gt;ip字段含义：输入被监控MySQL的IP地址&lt;/p&gt;
+&lt;p&gt;dbname字段含义：输入被监控MySQL的数据库名&lt;/p&gt;
+&lt;p&gt;user字段含义：输入被监控MySQL的用户名（最好给ALL管理员权限）&lt;/p&gt;
+&lt;p&gt;pwd字段含义：输入被监控MySQL的密码&lt;/p&gt;
+&lt;p&gt;port字段含义：输入被监控MySQL的端口号&lt;/p&gt;
+&lt;p&gt;monitor字段含义：0为关闭监控（也不采集数据，直接跳过）;1为开启监控（采集数据）&lt;/p&gt;
+&lt;p&gt;send_mail字段含义：0为关闭邮件报警;1为开启邮件报警&lt;/p&gt;
+&lt;p&gt;send_mail_to_list字段含义：邮件人列表&lt;/p&gt;
+&lt;p&gt;send_weixin字段含义：0为关闭微信报警;1为开启微信报警&lt;/p&gt;
+&lt;p&gt;send_weixin_to_list字段含义：微信公众号&lt;/p&gt;
+&lt;p&gt;threshold_alarm_threads_running字段含义：设置连接数阀值（单位个）&lt;/p&gt;
+&lt;p&gt;threshold_warning_repl_delay字段含义：设置主从复制延迟阀值（单位秒）&lt;/p&gt;
+&lt;p&gt;3、修改conn.php配置文件&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-vim-varwwwhtmlmysql_monitorconnphp" class="anchor" aria-hidden="true" href="#vim-varwwwhtmlmysql_monitorconnphp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim /var/www/html/mysql_monitor/conn.php&lt;/h1&gt;
+&lt;p&gt;$con = mysqli_connect("127.0.0.1","admin","hechunyang","sql_db","3306") or die("数据库链接错误".mysql_error());&lt;/p&gt;
+&lt;p&gt;改成你的MySQL Monitor监控工具表结构（sql_db库）连接信息&lt;/p&gt;
+&lt;p&gt;4、修改邮件报警信息&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-cd-varwwwhtmlmysql_monitormail" class="anchor" aria-hidden="true" href="#cd-varwwwhtmlmysql_monitormail"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cd /var/www/html/mysql_monitor/mail/&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-vim-mailphp" class="anchor" aria-hidden="true" href="#vim-mailphp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim mail.php&lt;/h1&gt;
+&lt;p&gt;system("./mail/sendEmail -f &lt;a href="mailto:chunyang_he@139.com"&gt;chunyang_he@139.com&lt;/a&gt; -t '{$this-&amp;gt;send_mail_to_list}' -s
+smtp.139.com:25 -u '{$this-&amp;gt;alarm_subject}' -o message-charset=utf8 -o message-content-type=html -m '报警信息：&lt;br&gt;{$this-&amp;gt;alarm_info}' -xu &lt;a href="mailto:chunyang_he@139.com"&gt;chunyang_he@139.com&lt;/a&gt; -xp
+'123456' -o tls=no");&lt;/p&gt;
+&lt;p&gt;改成你的发件人地址，账号密码，里面的变量不用修改。&lt;/p&gt;
+&lt;p&gt;5、修改微信报警信息&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-cd-varwwwhtmlmysql_monitorweixin" class="anchor" aria-hidden="true" href="#cd-varwwwhtmlmysql_monitorweixin"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cd /var/www/html/mysql_monitor/weixin/&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-vim-wechatpy" class="anchor" aria-hidden="true" href="#vim-wechatpy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim wechat.py&lt;/h1&gt;
+&lt;p&gt;微信企业号设置移步
+&lt;a href="https://github.com/X-Mars/Zabbix-Alert-WeChat/blob/master/README.md"&gt;https://github.com/X-Mars/Zabbix-Alert-WeChat/blob/master/README.md&lt;/a&gt; 看此教程配置。&lt;/p&gt;
+&lt;p&gt;6、定时任务每分钟抓取一次&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-crontab--l" class="anchor" aria-hidden="true" href="#crontab--l"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crontab -l&lt;/h1&gt;
+&lt;p&gt;*/1 * * * * cd /var/www/html/mysql_monitor/; /usr/bin/php
+/var/www/html/mysql_monitor/check_mysql_repl.php &amp;gt; /dev/null 2 &amp;gt;&amp;amp;1&lt;/p&gt;
+&lt;p&gt;*/1 * * * * cd /var/www/html/mysql_monitor/; /usr/bin/php
+/var/www/html/mysql_monitor/check_mysql_status.php &amp;gt; /dev/null 2 &amp;gt;&amp;amp;1&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-check_mysql_statusphp用来采集被监控端mysql状态信息和触发报警" class="anchor" aria-hidden="true" href="#check_mysql_statusphp用来采集被监控端mysql状态信息和触发报警"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;check_mysql_status.php（用来采集被监控端MySQL状态信息和触发报警）&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-check_mysql_replphp用来采集被监控端mysql主从复制信息和触发报警" class="anchor" aria-hidden="true" href="#check_mysql_replphp用来采集被监控端mysql主从复制信息和触发报警"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;check_mysql_repl.php（用来采集被监控端MySQL主从复制信息和触发报警）&lt;/h1&gt;
+&lt;p&gt;7、更改页面自动刷新频率&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-vim-mysql_status_monitorphp" class="anchor" aria-hidden="true" href="#vim-mysql_status_monitorphp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim mysql_status_monitor.php&lt;/h1&gt;
+&lt;h1&gt;&lt;a id="user-content-vim-mysql_repl_monitorphp" class="anchor" aria-hidden="true" href="#vim-mysql_repl_monitorphp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim mysql_repl_monitor.php&lt;/h1&gt;
+&lt;p&gt;http-equiv="refresh" content="600"&lt;/p&gt;
+&lt;p&gt;默认页面每600秒自动刷新一次。&lt;/p&gt;
+&lt;p&gt;8、页面访问&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yourIP/mysql_monitor/mysql_status_monitor.php" rel="nofollow"&gt;http://yourIP/mysql_monitor/mysql_status_monitor.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yourIP/mysql_monitor/mysql_repl_monitor.php" rel="nofollow"&gt;http://yourIP/mysql_monitor/mysql_repl_monitor.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;加一个超链接，可方便地接入你们的自动化运维平台里。&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hcymysql</author><guid isPermaLink="false">https://github.com/hcymysql/mysql_monitor</guid><pubDate>Sun, 08 Dec 2019 00:02:00 GMT</pubDate></item><item><title>audreyt/lingua-sinica-perlyuyan #3 in Perl, Today</title><link>https://github.com/audreyt/lingua-sinica-perlyuyan</link><description>&lt;p&gt;&lt;i&gt;Perl in Classical Chinese in Perl&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;NAME
+    Lingua::Sinica::PerlYuYan - 中書珨 - Perl in Classical Chinese in Perl
+
+VERSION
+    our $VERSION = 1257439830.94865; # 2009年11月 6日 周五 00時50分39秒 CST
+
+SYNOPSIS
+        # The Sieve of Eratosthenes - 埃拉托斯芬篩法
+        use Lingua::Sinica::PerlYuYan;
+
+          用籌兮用嚴。井涸兮無礙
+        。印曰最高矣  又道數然哉。
+        。截起吾純風  賦小入大合。
+        。習予吾陣地  並二至純風。
+        。當起段賦取  加陣地合始。
+        。陣地賦篩始  繫繫此雜段。
+        。終陣地兮印  正道次標哉。
+        。輸空接段點  列終註泰來。
+
+DESCRIPTION
+    This module makes it possible to write Perl programs in Classical
+    Chinese poetry in Perl.
+
+    說此經者，能以珨文言文珨。
+
+    (If one *has* to ask "Why?", please refer to Lingua::Romana::Perligata
+    for related information.)
+
+    (闕譯，以待來者。)
+
+    This module uses the single-character property of Chinese to
+    disambiguate between keywords, so one may elide whitespaces much like in
+    real Chinese writings.
+
+    The vocabulary is in the 文言 (literary text) mode, not the common 白話
+    (spoken text) mode with multisyllabic words.
+
+    "Lingua::Sinica::PerlYuYan::translate()" (or simply as "譯()") translates
+    a string containing English programs into Chinese.
+
+SEE ALSO
+    Filter::Simple::Compile, Lingua::Romana::Perligata
+
+CC0 1.0 Universal
+    To the extent possible under law, 唐鳳 has waived all copyright and
+    related or neighboring rights to Lingua-Sinica-PerlYuYan.
+
+    This work is published from Taiwan.
+
+    &amp;lt;&lt;a href="http://creativecommons.org/publicdomain/zero/1.0" rel="nofollow"&gt;http://creativecommons.org/publicdomain/zero/1.0&lt;/a&gt;&amp;gt;
+
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>audreyt</author><guid isPermaLink="false">https://github.com/audreyt/lingua-sinica-perlyuyan</guid><pubDate>Sun, 08 Dec 2019 00:03:00 GMT</pubDate></item><item><title>lanker/format_twidge #4 in Perl, Today</title><link>https://github.com/lanker/format_twidge</link><description>&lt;p&gt;&lt;i&gt;Formats the output from twidge, a command-line twitter/identica client (https://github.com/jgoerzen/twidge)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body " data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Simple perl script that formats the output from twidge
+(&lt;a href="https://github.com/jgoerzen/twidge"&gt;https://github.com/jgoerzen/twidge&lt;/a&gt;). Use it with twidge's --long option.
+
+Example of usage:
+$ twidge lsrecent -l | format_twidge.pl
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>lanker</author><guid isPermaLink="false">https://github.com/lanker/format_twidge</guid><pubDate>Sun, 08 Dec 2019 00:04:00 GMT</pubDate></item><item><title>duckduckgo/smarter-encryption #5 in Perl, Today</title><link>https://github.com/duckduckgo/smarter-encryption</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-duckduckgo-smarter-encryption" class="anchor" aria-hidden="true" href="#duckduckgo-smarter-encryption"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DuckDuckGo Smarter Encryption&lt;/h1&gt;
+&lt;p&gt;DuckDuckGo Smarter Encryption is a large list of web sites that we know support HTTPS.  The list is automatically generated and updated by using the crawler in this repository.&lt;/p&gt;
+&lt;p&gt;For more information about where the list is being used and how it compares to other solutions, see our blog post &lt;a href="https://spreadprivacy.com/duckduckgo-smarter-encryption" rel="nofollow"&gt;Your Connection is Secure with DuckDuckGo Smarter Encryption&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This software is licensed under the terms of the Apache License, Version 2.0 (see &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt;). Copyright (c) 2019 &lt;a href="https://duckduckgo.com" rel="nofollow"&gt;Duck Duck Go, Inc.&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="CONTRIBUTING.md"&gt;Contributing&lt;/a&gt; for more information about &lt;a href="CONTRIBUTING.md#reporting-bugs"&gt;Reporting bugs&lt;/a&gt; and &lt;a href="CONTRIBUTING.md#getting-started"&gt;Getting Started&lt;/a&gt; with the crawler.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-just-want-the-list" class="anchor" aria-hidden="true" href="#just-want-the-list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Just want the list?&lt;/h2&gt;
+&lt;p&gt;The list we use (as a result of running this code) is &lt;a href="http://staticcdn.duckduckgo.com/https/smarter_encryption_latest.tgz" rel="nofollow"&gt;publicly available&lt;/a&gt; under the &lt;a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow"&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you'd like to license the list for commercial use, &lt;a href="https://help.duckduckgo.com/duckduckgo-help-pages/company/contact-us/" rel="nofollow"&gt;please reach out&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-questions-or-help-with-other-duckduckgo-things" class="anchor" aria-hidden="true" href="#questions-or-help-with-other-duckduckgo-things"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Questions or help with other DuckDuckGo things?&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://duck.co/help" rel="nofollow"&gt;DuckDuckGo Help Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>duckduckgo</author><guid isPermaLink="false">https://github.com/duckduckgo/smarter-encryption</guid><pubDate>Sun, 08 Dec 2019 00:05:00 GMT</pubDate></item><item><title>mojolicious/mojo #6 in Perl, Today</title><link>https://github.com/mojolicious/mojo</link><description>&lt;p&gt;&lt;i&gt;:sparkles: Mojolicious - Perl real-time web framework&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+  &lt;a href="https://mojolicious.org" rel="nofollow"&gt;
+    &lt;img src="https://camo.githubusercontent.com/817e4f8596b800349f882298a170a8b3741db39d/68747470733a2f2f7261772e6769746875622e636f6d2f6d6f6a6f6c6963696f75732f6d6f6a6f2f6d61737465722f6c69622f4d6f6a6f6c6963696f75732f7265736f75726365732f7075626c69632f6d6f6a6f2f6c6f676f2e706e673f7261773d74727565" data-canonical-src="https://raw.github.com/mojolicious/mojo/master/lib/Mojolicious/resources/public/mojo/logo.png?raw=true" style="max-width:100%;"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content--" class="anchor" aria-hidden="true" href="#-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://travis-ci.com/mojoliocus/mojo" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7908a8dfa2d70cc217ff0cf3c24d1243e45d9355/68747470733a2f2f7472617669732d63692e636f6d2f6d6f6a6f6c6963696f75732f6d6f6a6f2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.com/mojolicious/mojo.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://ci.appveyor.com/project/kraih73737/mojo" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/241ea84f1d4e751c2620647e164b90213f8b7246/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f623734386568636866736434656461633f7376673d74727565" alt="Windows build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/b748ehchfsd4edac?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Mojolicious is a fresh take on Perl web development, based on years of
+experience developing the Catalyst framework, and utilizing the latest
+web standards and technologies. You can get started with your project
+quickly, with a framework that grows with your needs.&lt;/p&gt;
+&lt;p&gt;The Mojo stack provides a consistent set of components that can be used in
+any project. The guides cover most aspects of using the framework and the
+components have comprehensive reference documentation. Mojolicious is a
+real-time web framework, which allows a new class of web applications
+using WebSockets and having long-running requests without blocking.&lt;/p&gt;
+&lt;p&gt;Join us now, and be a part of a friendly and knowledgeable community of
+developers!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;An amazing &lt;strong&gt;real-time web framework&lt;/strong&gt;, allowing you to easily grow single
+file prototypes into well-structured MVC web applications.
+&lt;ul&gt;
+&lt;li&gt;Powerful out of the box with RESTful routes, plugins, commands, Perl-ish
+templates, content negotiation, session management, form validation,
+testing framework, static file server, CGI/&lt;a href="http://plackperl.org" rel="nofollow"&gt;PSGI&lt;/a&gt;
+detection, first class Unicode support and much more for you to
+discover.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A powerful &lt;strong&gt;web development toolkit&lt;/strong&gt;, that you can use for all kinds of
+applications, independently of the web framework.
+&lt;ul&gt;
+&lt;li&gt;Full stack HTTP and WebSocket client/server implementation with IPv6, TLS,
+SNI, IDNA, HTTP/SOCKS5 proxy, UNIX domain socket, Comet (long polling),
+Promises/A+, keep-alive, connection pooling, timeout, cookie, multipart,
+and gzip compression support.&lt;/li&gt;
+&lt;li&gt;Built-in non-blocking I/O web server, supporting multiple event loops as
+well as optional pre-forking and hot deployment, perfect for building
+highly scalable web services.&lt;/li&gt;
+&lt;li&gt;JSON and HTML/XML parser with CSS selector support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Very clean, portable and object-oriented pure-Perl API with no hidden
+magic and no requirements besides Perl 5.26.0 (versions as old as 5.10.1
+can be used too, but may require additional CPAN modules to be installed)&lt;/li&gt;
+&lt;li&gt;Fresh code based upon years of experience developing
+&lt;a href="http://www.catalystframework.org" rel="nofollow"&gt;Catalyst&lt;/a&gt;, free and open source.&lt;/li&gt;
+&lt;li&gt;Hundreds of 3rd party
+&lt;a href="https://metacpan.org/requires/distribution/Mojolicious" rel="nofollow"&gt;extensions&lt;/a&gt; and
+high quality spin-off projects like the
+&lt;a href="https://metacpan.org/pod/Minion" rel="nofollow"&gt;Minion&lt;/a&gt; job queue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;All you need is a one-liner, it takes less than a minute.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We recommend the use of a &lt;a href="http://perlbrew.pl" rel="nofollow"&gt;Perlbrew&lt;/a&gt; environment.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;These three lines are a whole web application.&lt;/p&gt;
+&lt;div class="highlight highlight-source-perl"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;use&lt;/span&gt; Mojolicious::Lite;
+
+get &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;text&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;I ♥ Mojolicious!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;};
+
+app&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;start;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To run this example with the built-in development web server just put the
+code into a file and start it with &lt;code&gt;morbo&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ morbo hello.pl
+Server available at http://127.0.0.1:3000
+
+$ curl http://127.0.0.1:3000/
+I ♥ Mojolicious!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-duct-tape-for-the-html5-web" class="anchor" aria-hidden="true" href="#duct-tape-for-the-html5-web"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Duct tape for the HTML5 web&lt;/h2&gt;
+&lt;p&gt;Use all the latest Perl and HTML features in beautiful single file
+prototypes like this one, and
+&lt;a href="https://mojolicious.org/perldoc/Mojolicious/Guides/Growing#Differences" rel="nofollow"&gt;grow&lt;/a&gt;
+them easily into well-structured &lt;strong&gt;Model-View-Controller&lt;/strong&gt; web applications.&lt;/p&gt;
+&lt;div class="highlight highlight-source-perl"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;use&lt;/span&gt; Mojolicious::Lite -signatures;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Render template "index.html.ep" from the DATA section&lt;/span&gt;
+get &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;sub&lt;/span&gt; (&lt;span class="pl-smi"&gt;$c&lt;/span&gt;) {
+  &lt;span class="pl-smi"&gt;$c&lt;/span&gt;&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;render(&lt;span class="pl-c1"&gt;template&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;index&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;);
+};
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; WebSocket service used by the template to extract the title from a website&lt;/span&gt;
+websocket &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/title&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;sub&lt;/span&gt; (&lt;span class="pl-smi"&gt;$c&lt;/span&gt;) {
+  &lt;span class="pl-smi"&gt;$c&lt;/span&gt;&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;on(&lt;span class="pl-c1"&gt;message&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;sub&lt;/span&gt; (&lt;span class="pl-smi"&gt;$c&lt;/span&gt;, &lt;span class="pl-smi"&gt;$msg&lt;/span&gt;) {
+    &lt;span class="pl-k"&gt;my&lt;/span&gt; &lt;span class="pl-smi"&gt;$title&lt;/span&gt; = &lt;span class="pl-smi"&gt;$c&lt;/span&gt;&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;ua&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;get(&lt;span class="pl-smi"&gt;$msg&lt;/span&gt;)&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;result&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;dom&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;at(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;title&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;text;
+    &lt;span class="pl-smi"&gt;$c&lt;/span&gt;&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="pl-c1"&gt;send&lt;/span&gt;(&lt;span class="pl-smi"&gt;$title&lt;/span&gt;);
+  });
+};
+
+app&lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;start;
+&lt;span class="pl-c1"&gt;__DATA__&lt;/span&gt;&lt;span class="pl-c"&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;@@ index.html.ep&lt;/span&gt;
+&lt;span class="pl-c"&gt;% my $url = url_for 'title';&lt;/span&gt;
+&lt;span class="pl-c"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class="pl-c"&gt;  var ws = new WebSocket('&amp;lt;%= $url-&amp;gt;to_abs %&amp;gt;');&lt;/span&gt;
+&lt;span class="pl-c"&gt;  ws.onmessage = function (event) { document.body.innerHTML += event.data };&lt;/span&gt;
+&lt;span class="pl-c"&gt;  ws.onopen    = function (event) { ws.send('https://mojolicious.org') };&lt;/span&gt;
+&lt;span class="pl-c"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-want-to-know-more" class="anchor" aria-hidden="true" href="#want-to-know-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Want to know more?&lt;/h2&gt;
+&lt;p&gt;Take a look at our excellent &lt;a href="https://mojolicious.org/perldoc" rel="nofollow"&gt;documentation&lt;/a&gt;!&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>mojolicious</author><guid isPermaLink="false">https://github.com/mojolicious/mojo</guid><pubDate>Sun, 08 Dec 2019 00:06:00 GMT</pubDate></item><item><title>rjbs/Email-Sender #7 in Perl, Today</title><link>https://github.com/rjbs/Email-Sender</link><description>&lt;p&gt;&lt;i&gt;a perl library for sending email&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;This repo does not have a README.&lt;/i&gt;&lt;/p&gt;</description><author>rjbs</author><guid isPermaLink="false">https://github.com/rjbs/Email-Sender</guid><pubDate>Sun, 08 Dec 2019 00:07:00 GMT</pubDate></item></channel></rss>

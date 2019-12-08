@@ -1,2 +1,807 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Verilog, This month</title><link>https://github.com/trending/verilog?since=monthly</link><description>The top repositories on GitHub for verilog, measured monthly</description><pubDate>Sat, 07 Dec 2019 01:04:23 GMT</pubDate><lastBuildDate>Sat, 07 Dec 2019 01:04:23 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Verilog, This month today</title><pubDate>Sat, 07 Dec 2019 01:04:23 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Verilog, This month</title><link>https://github.com/trending/verilog?since=monthly</link><description>The top repositories on GitHub for verilog, measured monthly</description><pubDate>Sun, 08 Dec 2019 01:07:59 GMT</pubDate><lastBuildDate>Sun, 08 Dec 2019 01:07:59 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>cliffordwolf/picorv32 #1 in Verilog, This month</title><link>https://github.com/cliffordwolf/picorv32</link><description>&lt;p&gt;&lt;i&gt;PicoRV32 - A Size-Optimized RISC-V CPU&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-picorv32---a-size-optimized-risc-v-cpu" class="anchor" aria-hidden="true" href="#picorv32---a-size-optimized-risc-v-cpu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PicoRV32 - A Size-Optimized RISC-V CPU&lt;/h1&gt;
+&lt;p&gt;PicoRV32 is a CPU core that implements the &lt;a href="http://riscv.org/" rel="nofollow"&gt;RISC-V RV32IMC Instruction Set&lt;/a&gt;.
+It can be configured as RV32E, RV32I, RV32IC, RV32IM, or RV32IMC core, and optionally
+contains a built-in interrupt controller.&lt;/p&gt;
+&lt;p&gt;Tools (gcc, binutils, etc..) can be obtained via the &lt;a href="https://riscv.org/software-status/" rel="nofollow"&gt;RISC-V Website&lt;/a&gt;.
+The examples bundled with PicoRV32 expect various RV32 toolchains to be installed in &lt;code&gt;/opt/riscv32i[m][c]&lt;/code&gt;. See
+the &lt;a href="#building-a-pure-rv32i-toolchain"&gt;build instructions below&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;PicoRV32 is free and open hardware licensed under the &lt;a href="http://en.wikipedia.org/wiki/ISC_license" rel="nofollow"&gt;ISC license&lt;/a&gt;
+(a license that is similar in terms to the MIT license or the 2-clause BSD license).&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#features-and-typical-applications"&gt;Features and Typical Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#files-in-this-repository"&gt;Files in this Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#verilog-module-parameters"&gt;Verilog Module Parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cycles-per-instruction-performance"&gt;Cycles per Instruction Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#picorv32-native-memory-interface"&gt;PicoRV32 Native Memory Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#pico-co-processor-interface-pcpi"&gt;Pico Co-Processor Interface (PCPI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#custom-instructions-for-irq-handling"&gt;Custom Instructions for IRQ Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building-a-pure-rv32i-toolchain"&gt;Building a pure RV32I Toolchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linking-binaries-with-newlib-for-picorv32"&gt;Linking binaries with newlib for PicoRV32&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#evaluation-timing-and-utilization-on-xilinx-7-series-fpgas"&gt;Evaluation: Timing and Utilization on Xilinx 7-Series FPGAs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features-and-typical-applications" class="anchor" aria-hidden="true" href="#features-and-typical-applications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features and Typical Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Small (750-2000 LUTs in 7-Series Xilinx Architecture)&lt;/li&gt;
+&lt;li&gt;High f&lt;sub&gt;max&lt;/sub&gt; (250-450 MHz on 7-Series Xilinx FPGAs)&lt;/li&gt;
+&lt;li&gt;Selectable native memory interface or AXI4-Lite master&lt;/li&gt;
+&lt;li&gt;Optional IRQ support (using a simple custom ISA)&lt;/li&gt;
+&lt;li&gt;Optional Co-Processor Interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This CPU is meant to be used as auxiliary processor in FPGA designs and ASICs. Due
+to its high f&lt;sub&gt;max&lt;/sub&gt; it can be integrated in most existing designs without crossing
+clock domains. When operated on a lower frequency, it will have a lot of timing
+slack and thus can be added to a design without compromising timing closure.&lt;/p&gt;
+&lt;p&gt;For even smaller size it is possible disable support for registers &lt;code&gt;x16&lt;/code&gt;..&lt;code&gt;x31&lt;/code&gt; as
+well as &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and &lt;code&gt;RDINSTRET[H]&lt;/code&gt; instructions, turning the
+processor into an RV32E core.&lt;/p&gt;
+&lt;p&gt;Furthermore it is possible to choose between a dual-port and a single-port
+register file implementation. The former provides better performance while
+the latter results in a smaller core.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: In architectures that implement the register file in dedicated memory
+resources, such as many FPGAs, disabling the 16 upper registers and/or
+disabling the dual-port register file may not further reduce the core size.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The core exists in three variations: &lt;code&gt;picorv32&lt;/code&gt;, &lt;code&gt;picorv32_axi&lt;/code&gt; and &lt;code&gt;picorv32_wb&lt;/code&gt;.
+The first provides a simple native memory interface, that is easy to use in simple
+environments. &lt;code&gt;picorv32_axi&lt;/code&gt; provides an AXI-4 Lite Master interface that can
+easily be integrated with existing systems that are already using the AXI
+standard. &lt;code&gt;picorv32_wb&lt;/code&gt; provides a Wishbone master interface.&lt;/p&gt;
+&lt;p&gt;A separate core &lt;code&gt;picorv32_axi_adapter&lt;/code&gt; is provided to bridge between the native
+memory interface and AXI4. This core can be used to create custom cores that
+include one or more PicoRV32 cores together with local RAM, ROM, and
+memory-mapped peripherals, communicating with each other using the native
+interface, and communicating with the outside world via AXI4.&lt;/p&gt;
+&lt;p&gt;The optional IRQ feature can be used to react to events from the outside, implement
+fault handlers, or catch instructions from a larger ISA and emulate them in
+software.&lt;/p&gt;
+&lt;p&gt;The optional Pico Co-Processor Interface (PCPI) can be used to implement
+non-branching instructions in an external coprocessor. Implementations
+of PCPI cores that implement the M Standard Extension instructions
+&lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; and &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; are included in this package.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-files-in-this-repository" class="anchor" aria-hidden="true" href="#files-in-this-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Files in this Repository&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-readmemd" class="anchor" aria-hidden="true" href="#readmemd"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;README.md&lt;/h4&gt;
+&lt;p&gt;You are reading it right now.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-picorv32v" class="anchor" aria-hidden="true" href="#picorv32v"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;picorv32.v&lt;/h4&gt;
+&lt;p&gt;This Verilog file contains the following Verilog modules:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Module&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The PicoRV32 CPU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_axi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The version of the CPU with AXI4-Lite interface&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_axi_adapter&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Adapter from PicoRV32 Memory Interface to AXI4-Lite&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_wb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The version of the CPU with Wishbone Master interface&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_mul&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A PCPI core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A version of &lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt; using a single cycle multiplier&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_div&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A PCPI core that implements the &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instructions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Simply copy this file into your project.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-makefile-and-testbenches" class="anchor" aria-hidden="true" href="#makefile-and-testbenches"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Makefile and testbenches&lt;/h4&gt;
+&lt;p&gt;A basic test environment. Run &lt;code&gt;make test&lt;/code&gt; to run the standard test bench (&lt;code&gt;testbench.v&lt;/code&gt;)
+in the standard configurations. There are other test benches and configurations. See
+the &lt;code&gt;test_*&lt;/code&gt; make target in the Makefile for details.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;make test_ez&lt;/code&gt; to run &lt;code&gt;testbench_ez.v&lt;/code&gt;, a very simple test bench that does
+not require an external firmware .hex file. This can be useful in environments
+where the RISC-V compiler toolchain is not available.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: The test bench is using Icarus Verilog. However, Icarus Verilog 0.9.7
+(the latest release at the time of writing) has a few bugs that prevent the
+test bench from running. Upgrade to the latest github master of Icarus Verilog
+to run the test bench.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-firmware" class="anchor" aria-hidden="true" href="#firmware"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;firmware/&lt;/h4&gt;
+&lt;p&gt;A simple test firmware. This runs the basic tests from &lt;code&gt;tests/&lt;/code&gt;, some C code, tests IRQ
+handling and the multiply PCPI core.&lt;/p&gt;
+&lt;p&gt;All the code in &lt;code&gt;firmware/&lt;/code&gt; is in the public domain. Simply copy whatever you can use.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;tests/&lt;/h4&gt;
+&lt;p&gt;Simple instruction-level tests from &lt;a href="https://github.com/riscv/riscv-tests"&gt;riscv-tests&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-dhrystone" class="anchor" aria-hidden="true" href="#dhrystone"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dhrystone/&lt;/h4&gt;
+&lt;p&gt;Another simple test firmware that runs the Dhrystone benchmark.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-picosoc" class="anchor" aria-hidden="true" href="#picosoc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;picosoc/&lt;/h4&gt;
+&lt;p&gt;A simple example SoC using PicoRV32 that can execute code directly from a
+memory mapped SPI flash.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-scripts" class="anchor" aria-hidden="true" href="#scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;scripts/&lt;/h4&gt;
+&lt;p&gt;Various scripts and examples for different (synthesis) tools and hardware architectures.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-verilog-module-parameters" class="anchor" aria-hidden="true" href="#verilog-module-parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verilog Module Parameters&lt;/h2&gt;
+&lt;p&gt;The following Verilog module parameters can be used to configure the PicoRV32
+core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_counters-default--1" class="anchor" aria-hidden="true" href="#enable_counters-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_COUNTERS (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for the &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and
+&lt;code&gt;RDINSTRET[H]&lt;/code&gt; instructions. This instructions will cause a hardware
+trap (like any other unsupported instruction) if &lt;code&gt;ENABLE_COUNTERS&lt;/code&gt; is set to zero.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Strictly speaking the &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and &lt;code&gt;RDINSTRET[H]&lt;/code&gt;
+instructions are not optional for an RV32I core. But chances are they are not
+going to be missed after the application code has been debugged and profiled.
+This instructions are optional for an RV32E core.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_counters64-default--1" class="anchor" aria-hidden="true" href="#enable_counters64-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_COUNTERS64 (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for the &lt;code&gt;RDCYCLEH&lt;/code&gt;, &lt;code&gt;RDTIMEH&lt;/code&gt;, and &lt;code&gt;RDINSTRETH&lt;/code&gt;
+instructions. If this parameter is set to 0, and &lt;code&gt;ENABLE_COUNTERS&lt;/code&gt; is set to 1,
+then only the &lt;code&gt;RDCYCLE&lt;/code&gt;, &lt;code&gt;RDTIME&lt;/code&gt;, and &lt;code&gt;RDINSTRET&lt;/code&gt; instructions are available.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_regs_16_31-default--1" class="anchor" aria-hidden="true" href="#enable_regs_16_31-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_REGS_16_31 (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for registers the &lt;code&gt;x16&lt;/code&gt;..&lt;code&gt;x31&lt;/code&gt;. The RV32E ISA
+excludes this registers. However, the RV32E ISA spec requires a hardware trap
+for when code tries to access this registers. This is not implemented in PicoRV32.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_regs_dualport-default--1" class="anchor" aria-hidden="true" href="#enable_regs_dualport-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_REGS_DUALPORT (default = 1)&lt;/h4&gt;
+&lt;p&gt;The register file can be implemented with two or one read ports. A dual ported
+register file improves performance a bit, but can also increase the size of
+the core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-latched_mem_rdata-default--0" class="anchor" aria-hidden="true" href="#latched_mem_rdata-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LATCHED_MEM_RDATA (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 if the &lt;code&gt;mem_rdata&lt;/code&gt; is kept stable by the external circuit after a
+transaction. In the default configuration the PicoRV32 core only expects the
+&lt;code&gt;mem_rdata&lt;/code&gt; input to be valid in the cycle with &lt;code&gt;mem_valid &amp;amp;&amp;amp; mem_ready&lt;/code&gt; and
+latches the value internally.&lt;/p&gt;
+&lt;p&gt;This parameter is only available for the &lt;code&gt;picorv32&lt;/code&gt; core. In the
+&lt;code&gt;picorv32_axi&lt;/code&gt; and &lt;code&gt;picorv32_wb&lt;/code&gt; core this is implicitly set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_stage_shift-default--1" class="anchor" aria-hidden="true" href="#two_stage_shift-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_STAGE_SHIFT (default = 1)&lt;/h4&gt;
+&lt;p&gt;By default shift operations are performed in two stages: first shifts in units
+of 4 bits and then shifts in units of 1 bit. This speeds up shift operations,
+but adds additional hardware. Set this parameter to 0 to disable the two-stage
+shift to further reduce the size of the core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-barrel_shifter-default--0" class="anchor" aria-hidden="true" href="#barrel_shifter-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BARREL_SHIFTER (default = 0)&lt;/h4&gt;
+&lt;p&gt;By default shift operations are performed by successively shifting by a
+small amount (see &lt;code&gt;TWO_STAGE_SHIFT&lt;/code&gt; above). With this option set, a barrel
+shifter is used instead.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_cycle_compare-default--0" class="anchor" aria-hidden="true" href="#two_cycle_compare-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_CYCLE_COMPARE (default = 0)&lt;/h4&gt;
+&lt;p&gt;This relaxes the longest data path a bit by adding an additional FF stage
+at the cost of adding an additional clock cycle delay to the conditional
+branch instructions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Enabling this parameter will be most effective when retiming (aka
+"register balancing") is enabled in the synthesis flow.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_cycle_alu-default--0" class="anchor" aria-hidden="true" href="#two_cycle_alu-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_CYCLE_ALU (default = 0)&lt;/h4&gt;
+&lt;p&gt;This adds an additional FF stage in the ALU data path, improving timing
+at the cost of an additional clock cycle for all instructions that use
+the ALU.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Enabling this parameter will be most effective when retiming (aka
+"register balancing") is enabled in the synthesis flow.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-compressed_isa-default--0" class="anchor" aria-hidden="true" href="#compressed_isa-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;COMPRESSED_ISA (default = 0)&lt;/h4&gt;
+&lt;p&gt;This enables support for the RISC-V Compressed Instruction Set.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-catch_misalign-default--1" class="anchor" aria-hidden="true" href="#catch_misalign-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CATCH_MISALIGN (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable the circuitry for catching misaligned memory
+accesses.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-catch_illinsn-default--1" class="anchor" aria-hidden="true" href="#catch_illinsn-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CATCH_ILLINSN (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable the circuitry for catching illegal instructions.&lt;/p&gt;
+&lt;p&gt;The core will still trap on &lt;code&gt;EBREAK&lt;/code&gt; instructions with this option
+set to 0. With IRQs enabled, an &lt;code&gt;EBREAK&lt;/code&gt; normally triggers an IRQ 1. With
+this option set to 0, an &lt;code&gt;EBREAK&lt;/code&gt; will trap the processor without
+triggering an interrupt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_pcpi-default--0" class="anchor" aria-hidden="true" href="#enable_pcpi-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_PCPI (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to enable the Pico Co-Processor Interface (PCPI).&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_mul-default--0" class="anchor" aria-hidden="true" href="#enable_mul-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_MUL (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_mul&lt;/code&gt;
+core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_fast_mul-default--0" class="anchor" aria-hidden="true" href="#enable_fast_mul-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_FAST_MUL (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt;
+core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;p&gt;If both ENABLE_MUL and ENABLE_FAST_MUL are set then the ENABLE_MUL setting
+will be ignored and the fast multiplier core will be instantiated.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_div-default--0" class="anchor" aria-hidden="true" href="#enable_div-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_DIV (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_div&lt;/code&gt;
+core that implements the &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq-default--0" class="anchor" aria-hidden="true" href="#enable_irq-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to enable IRQs. (see "Custom Instructions for IRQ Handling" below
+for a discussion of IRQs)&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq_qregs-default--1" class="anchor" aria-hidden="true" href="#enable_irq_qregs-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ_QREGS (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable support for the &lt;code&gt;getq&lt;/code&gt; and &lt;code&gt;setq&lt;/code&gt; instructions. Without
+the q-registers, the irq return address will be stored in x3 (gp) and the IRQ
+bitmask in x4 (tp), the global pointer and thread pointer registers according
+to the RISC-V ABI.  Code generated from ordinary C code will not interact with
+those registers.&lt;/p&gt;
+&lt;p&gt;Support for q-registers is always disabled when ENABLE_IRQ is set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq_timer-default--1" class="anchor" aria-hidden="true" href="#enable_irq_timer-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ_TIMER (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable support for the &lt;code&gt;timer&lt;/code&gt; instruction.&lt;/p&gt;
+&lt;p&gt;Support for the timer is always disabled when ENABLE_IRQ is set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_trace-default--0" class="anchor" aria-hidden="true" href="#enable_trace-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_TRACE (default = 0)&lt;/h4&gt;
+&lt;p&gt;Produce an execution trace using the &lt;code&gt;trace_valid&lt;/code&gt; and &lt;code&gt;trace_data&lt;/code&gt; output ports.
+For a demontration of this feature run &lt;code&gt;make test_vcd&lt;/code&gt; to create a trace file
+and then run &lt;code&gt;python3 showtrace.py testbench.trace firmware/firmware.elf&lt;/code&gt; to decode
+it.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-regs_init_zero-default--0" class="anchor" aria-hidden="true" href="#regs_init_zero-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REGS_INIT_ZERO (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to initialize all registers to zero (using a Verilog &lt;code&gt;initial&lt;/code&gt; block).
+This can be useful for simulation or formal verification.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-masked_irq-default--32h-0000_0000" class="anchor" aria-hidden="true" href="#masked_irq-default--32h-0000_0000"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MASKED_IRQ (default = 32'h 0000_0000)&lt;/h4&gt;
+&lt;p&gt;A 1 bit in this bitmask corresponds to a permanently disabled IRQ.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-latched_irq-default--32h-ffff_ffff" class="anchor" aria-hidden="true" href="#latched_irq-default--32h-ffff_ffff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LATCHED_IRQ (default = 32'h ffff_ffff)&lt;/h4&gt;
+&lt;p&gt;A 1 bit in this bitmask indicates that the corresponding IRQ is "latched", i.e.
+when the IRQ line is high for only one cycle, the interrupt will be marked as
+pending and stay pending until the interrupt handler is called (aka "pulse
+interrupts" or "edge-triggered interrupts").&lt;/p&gt;
+&lt;p&gt;Set a bit in this bitmask to 0 to convert an interrupt line to operate
+as "level sensitive" interrupt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-progaddr_reset-default--32h-0000_0000" class="anchor" aria-hidden="true" href="#progaddr_reset-default--32h-0000_0000"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROGADDR_RESET (default = 32'h 0000_0000)&lt;/h4&gt;
+&lt;p&gt;The start address of the program.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-progaddr_irq-default--32h-0000_0010" class="anchor" aria-hidden="true" href="#progaddr_irq-default--32h-0000_0010"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROGADDR_IRQ (default = 32'h 0000_0010)&lt;/h4&gt;
+&lt;p&gt;The start address of the interrupt handler.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-stackaddr-default--32h-ffff_ffff" class="anchor" aria-hidden="true" href="#stackaddr-default--32h-ffff_ffff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;STACKADDR (default = 32'h ffff_ffff)&lt;/h4&gt;
+&lt;p&gt;When this parameter has a value different from 0xffffffff, then register &lt;code&gt;x2&lt;/code&gt; (the
+stack pointer) is initialized to this value on reset. (All other registers remain
+uninitialized.) Note that the RISC-V calling convention requires the stack pointer
+to be aligned on 16 bytes boundaries (4 bytes for the RV32I soft float calling
+convention).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-cycles-per-instruction-performance" class="anchor" aria-hidden="true" href="#cycles-per-instruction-performance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cycles per Instruction Performance&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A short reminder: This core is optimized for size and f&lt;sub&gt;max&lt;/sub&gt;, not performance.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unless stated otherwise, the following numbers apply to a PicoRV32 with
+ENABLE_REGS_DUALPORT active and connected to a memory that can accommodate
+requests within one clock cycle.&lt;/p&gt;
+&lt;p&gt;The average Cycles per Instruction (CPI) is approximately 4, depending on the mix of
+instructions in the code. The CPI numbers for the individual instructions can
+be found in the table below. The column "CPI (SP)" contains the CPI numbers for
+a core built without ENABLE_REGS_DUALPORT.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Instruction&lt;/th&gt;
+&lt;th align="right"&gt;CPI&lt;/th&gt;
+&lt;th align="right"&gt;CPI (SP)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;direct jump (jal)&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ALU reg + immediate&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ALU reg + reg&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;branch (not taken)&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;memory load&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;memory store&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;branch (taken)&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;indirect jump (jalr)&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift operations&lt;/td&gt;
+&lt;td align="right"&gt;4-14&lt;/td&gt;
+&lt;td align="right"&gt;4-15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When &lt;code&gt;ENABLE_MUL&lt;/code&gt; is activated, then a &lt;code&gt;MUL&lt;/code&gt; instruction will execute
+in 40 cycles and a &lt;code&gt;MULH[SU|U]&lt;/code&gt; instruction will execute in 72 cycles.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;ENABLE_DIV&lt;/code&gt; is activated, then a &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instruction will
+execute in 40 cycles.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;BARREL_SHIFTER&lt;/code&gt; is activated, a shift operation takes as long as
+any other ALU operation.&lt;/p&gt;
+&lt;p&gt;The following dhrystone benchmark results are for a core with enabled
+&lt;code&gt;ENABLE_FAST_MUL&lt;/code&gt;, &lt;code&gt;ENABLE_DIV&lt;/code&gt;, and &lt;code&gt;BARREL_SHIFTER&lt;/code&gt; options.&lt;/p&gt;
+&lt;p&gt;Dhrystone benchmark results: 0.516 DMIPS/MHz (908 Dhrystones/Second/MHz)&lt;/p&gt;
+&lt;p&gt;For the Dhrystone benchmark the average CPI is 4.100.&lt;/p&gt;
+&lt;p&gt;Without using the look-ahead memory interface (usually required for max
+clock speed), this results drop to 0.305 DMIPS/MHz and 5.232 CPI.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-picorv32-native-memory-interface" class="anchor" aria-hidden="true" href="#picorv32-native-memory-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PicoRV32 Native Memory Interface&lt;/h2&gt;
+&lt;p&gt;The native memory interface of PicoRV32 is a simple valid-ready interface
+that can run one memory transfer at a time:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        mem_valid
+output        mem_instr
+input         mem_ready
+
+output [31:0] mem_addr
+output [31:0] mem_wdata
+output [ 3:0] mem_wstrb
+input  [31:0] mem_rdata
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The core initiates a memory transfer by asserting &lt;code&gt;mem_valid&lt;/code&gt;. The valid
+signal stays high until the peer asserts &lt;code&gt;mem_ready&lt;/code&gt;. All core outputs
+are stable over the &lt;code&gt;mem_valid&lt;/code&gt; period. If the memory transfer is an
+instruction fetch, the core asserts &lt;code&gt;mem_instr&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-read-transfer" class="anchor" aria-hidden="true" href="#read-transfer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Read Transfer&lt;/h4&gt;
+&lt;p&gt;In a read transfer &lt;code&gt;mem_wstrb&lt;/code&gt; has the value 0 and &lt;code&gt;mem_wdata&lt;/code&gt; is unused.&lt;/p&gt;
+&lt;p&gt;The memory reads the address &lt;code&gt;mem_addr&lt;/code&gt; and makes the read value available on
+&lt;code&gt;mem_rdata&lt;/code&gt; in the cycle &lt;code&gt;mem_ready&lt;/code&gt; is high.&lt;/p&gt;
+&lt;p&gt;There is no need for an external wait cycle. The memory read can be implemented
+asynchronously with &lt;code&gt;mem_ready&lt;/code&gt; going high in the same cycle as &lt;code&gt;mem_valid&lt;/code&gt;, or
+&lt;code&gt;mem_ready&lt;/code&gt; being tied to constant 1.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-write-transfer" class="anchor" aria-hidden="true" href="#write-transfer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Write Transfer&lt;/h4&gt;
+&lt;p&gt;In a write transfer &lt;code&gt;mem_wstrb&lt;/code&gt; is not 0 and &lt;code&gt;mem_rdata&lt;/code&gt; is unused. The memory
+write the data at &lt;code&gt;mem_wdata&lt;/code&gt; to the address &lt;code&gt;mem_addr&lt;/code&gt; and acknowledges the
+transfer by asserting &lt;code&gt;mem_ready&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The 4 bits of &lt;code&gt;mem_wstrb&lt;/code&gt; are write enables for the four bytes in the addressed
+word. Only the 8 values &lt;code&gt;0000&lt;/code&gt;, &lt;code&gt;1111&lt;/code&gt;, &lt;code&gt;1100&lt;/code&gt;, &lt;code&gt;0011&lt;/code&gt;, &lt;code&gt;1000&lt;/code&gt;, &lt;code&gt;0100&lt;/code&gt;, &lt;code&gt;0010&lt;/code&gt;,
+and &lt;code&gt;0001&lt;/code&gt; are possible, i.e. no write, write 32 bits, write upper 16 bits,
+write lower 16, or write a single byte respectively.&lt;/p&gt;
+&lt;p&gt;There is no need for an external wait cycle. The memory can acknowledge the
+write immediately  with &lt;code&gt;mem_ready&lt;/code&gt; going high in the same cycle as
+&lt;code&gt;mem_valid&lt;/code&gt;, or &lt;code&gt;mem_ready&lt;/code&gt; being tied to constant 1.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-look-ahead-interface" class="anchor" aria-hidden="true" href="#look-ahead-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Look-Ahead Interface&lt;/h4&gt;
+&lt;p&gt;The PicoRV32 core also provides a "Look-Ahead Memory Interface" that provides
+all information about the next memory transfer one clock cycle earlier than the
+normal interface.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        mem_la_read
+output        mem_la_write
+output [31:0] mem_la_addr
+output [31:0] mem_la_wdata
+output [ 3:0] mem_la_wstrb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the clock cycle before &lt;code&gt;mem_valid&lt;/code&gt; goes high, this interface will output a
+pulse on &lt;code&gt;mem_la_read&lt;/code&gt; or &lt;code&gt;mem_la_write&lt;/code&gt; to indicate the start of a read or
+write transaction in the next clock cycle.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: The signals &lt;code&gt;mem_la_read&lt;/code&gt;, &lt;code&gt;mem_la_write&lt;/code&gt;, and &lt;code&gt;mem_la_addr&lt;/code&gt; are driven
+by combinatorial circuits within the PicoRV32 core. It might be harder to
+achieve timing closure with the look-ahead interface than with the normal
+memory interface described above.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-pico-co-processor-interface-pcpi" class="anchor" aria-hidden="true" href="#pico-co-processor-interface-pcpi"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pico Co-Processor Interface (PCPI)&lt;/h2&gt;
+&lt;p&gt;The Pico Co-Processor Interface (PCPI) can be used to implement non-branching
+instructions in external cores:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        pcpi_valid
+output [31:0] pcpi_insn
+output [31:0] pcpi_rs1
+output [31:0] pcpi_rs2
+input         pcpi_wr
+input  [31:0] pcpi_rd
+input         pcpi_wait
+input         pcpi_ready
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When an unsupported instruction is encountered and the PCPI feature is
+activated (see ENABLE_PCPI above), then &lt;code&gt;pcpi_valid&lt;/code&gt; is asserted, the
+instruction word itself is output on &lt;code&gt;pcpi_insn&lt;/code&gt;, the &lt;code&gt;rs1&lt;/code&gt; and &lt;code&gt;rs2&lt;/code&gt;
+fields are decoded and the values in those registers are output
+on &lt;code&gt;pcpi_rs1&lt;/code&gt; and &lt;code&gt;pcpi_rs2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;An external PCPI core can then decode the instruction, execute it, and assert
+&lt;code&gt;pcpi_ready&lt;/code&gt; when execution of the instruction is finished. Optionally a
+result value can be written to &lt;code&gt;pcpi_rd&lt;/code&gt; and &lt;code&gt;pcpi_wr&lt;/code&gt; asserted. The
+PicoRV32 core will then decode the &lt;code&gt;rd&lt;/code&gt; field of the instruction and
+write the value from &lt;code&gt;pcpi_rd&lt;/code&gt; to the respective register.&lt;/p&gt;
+&lt;p&gt;When no external PCPI core acknowledges the instruction within 16 clock
+cycles, then an illegal instruction exception is raised and the respective
+interrupt handler is called. A PCPI core that needs more than a couple of
+cycles to execute an instruction, should assert &lt;code&gt;pcpi_wait&lt;/code&gt; as soon as
+the instruction has been decoded successfully and keep it asserted until
+it asserts &lt;code&gt;pcpi_ready&lt;/code&gt;. This will prevent the PicoRV32 core from raising
+an illegal instruction exception.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-custom-instructions-for-irq-handling" class="anchor" aria-hidden="true" href="#custom-instructions-for-irq-handling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Instructions for IRQ Handling&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note: The IRQ handling features in PicoRV32 do not follow the RISC-V
+Privileged ISA specification. Instead a small set of very simple custom
+instructions is used to implement IRQ handling with minimal hardware
+overhead.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The following custom instructions are only supported when IRQs are enabled
+via the &lt;code&gt;ENABLE_IRQ&lt;/code&gt; parameter (see above).&lt;/p&gt;
+&lt;p&gt;The PicoRV32 core has a built-in interrupt controller with 32 interrupt inputs. An
+interrupt can be triggered by asserting the corresponding bit in the &lt;code&gt;irq&lt;/code&gt;
+input of the core.&lt;/p&gt;
+&lt;p&gt;When the interrupt handler is started, the &lt;code&gt;eoi&lt;/code&gt; End Of Interrupt (EOI) signals
+for the handled interrupts go high. The &lt;code&gt;eoi&lt;/code&gt; signals go low again when the
+interrupt handler returns.&lt;/p&gt;
+&lt;p&gt;The IRQs 0-2 can be triggered internally by the following built-in interrupt sources:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="right"&gt;IRQ&lt;/th&gt;
+&lt;th&gt;Interrupt Source&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;0&lt;/td&gt;
+&lt;td&gt;Timer Interrupt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;1&lt;/td&gt;
+&lt;td&gt;EBREAK/ECALL or Illegal Instruction&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;2&lt;/td&gt;
+&lt;td&gt;BUS Error (Unalign Memory Access)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This interrupts can also be triggered by external sources, such as co-processors
+connected via PCPI.&lt;/p&gt;
+&lt;p&gt;The core has 4 additional 32-bit registers &lt;code&gt;q0 .. q3&lt;/code&gt; that are used for IRQ
+handling. When the IRQ handler is called, the register &lt;code&gt;q0&lt;/code&gt; contains the return
+address and &lt;code&gt;q1&lt;/code&gt; contains a bitmask of all IRQs to be handled. This means one
+call to the interrupt handler needs to service more than one IRQ when more than
+one bit is set in &lt;code&gt;q1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When support for compressed instructions is enabled, then the LSB of q0 is set
+when the interrupted instruction is a compressed instruction. This can be used if
+the IRQ handler wants to decode the interrupted instruction.&lt;/p&gt;
+&lt;p&gt;Registers &lt;code&gt;q2&lt;/code&gt; and &lt;code&gt;q3&lt;/code&gt; are uninitialized and can be used as temporary storage
+when saving/restoring register values in the IRQ handler.&lt;/p&gt;
+&lt;p&gt;All of the following instructions are encoded under the &lt;code&gt;custom0&lt;/code&gt; opcode. The f3
+and rs2 fields are ignored in all this instructions.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="firmware/custom_ops.S"&gt;firmware/custom_ops.S&lt;/a&gt; for GNU assembler macros that
+implement mnemonics for this instructions.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="firmware/start.S"&gt;firmware/start.S&lt;/a&gt; for an example implementation of an
+interrupt handler assembler wrapper, and &lt;a href="firmware/irq.c"&gt;firmware/irq.c&lt;/a&gt; for
+the actual interrupt handler.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-getq-rd-qs" class="anchor" aria-hidden="true" href="#getq-rd-qs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;getq rd, qs&lt;/h4&gt;
+&lt;p&gt;This instruction copies the value from a q-register to a general-purpose
+register.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000000 ----- 000XX --- XXXXX 0001011
+f7      rs2   qs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;getq x5, q2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-setq-qd-rs" class="anchor" aria-hidden="true" href="#setq-qd-rs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;setq qd, rs&lt;/h4&gt;
+&lt;p&gt;This instruction copies the value from a general-purpose register to a
+q-register.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000001 ----- XXXXX --- 000XX 0001011
+f7      rs2   rs    f3  qd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;setq q2, x5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-retirq" class="anchor" aria-hidden="true" href="#retirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;retirq&lt;/h4&gt;
+&lt;p&gt;Return from interrupt. This instruction copies the value from &lt;code&gt;q0&lt;/code&gt;
+to the program counter and re-enables interrupts.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000010 ----- 00000 --- 00000 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;retirq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-maskirq" class="anchor" aria-hidden="true" href="#maskirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;maskirq&lt;/h4&gt;
+&lt;p&gt;The "IRQ Mask" register contains a bitmask of masked (disabled) interrupts.
+This instruction writes a new value to the irq mask register and reads the old
+value.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000011 ----- XXXXX --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;maskirq x1, x2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The processor starts with all interrupts disabled.&lt;/p&gt;
+&lt;p&gt;An illegal instruction or bus error while the illegal instruction or bus error
+interrupt is disabled will cause the processor to halt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-waitirq" class="anchor" aria-hidden="true" href="#waitirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;waitirq&lt;/h4&gt;
+&lt;p&gt;Pause execution until an interrupt becomes pending. The bitmask of pending IRQs
+is written to &lt;code&gt;rd&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000100 ----- 00000 --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;waitirq x1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-timer" class="anchor" aria-hidden="true" href="#timer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;timer&lt;/h4&gt;
+&lt;p&gt;Reset the timer counter to a new value. The counter counts down clock cycles and
+triggers the timer interrupt when transitioning from 1 to 0. Setting the
+counter to zero disables the timer. The old value of the counter is written to
+&lt;code&gt;rd&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000101 ----- XXXXX --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;timer x1, x2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-building-a-pure-rv32i-toolchain" class="anchor" aria-hidden="true" href="#building-a-pure-rv32i-toolchain"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building a pure RV32I Toolchain&lt;/h2&gt;
+&lt;p&gt;TL;DR: Run the following commands to build the complete toolchain:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make download-tools
+make -j$(nproc) build-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The default settings in the &lt;a href="https://github.com/riscv/riscv-tools"&gt;riscv-tools&lt;/a&gt; build
+scripts will build a compiler, assembler and linker that can target any RISC-V ISA,
+but the libraries are built for RV32G and RV64G targets. Follow the instructions
+below to build a complete toolchain (including libraries) that target a pure RV32I
+CPU.&lt;/p&gt;
+&lt;p&gt;The following commands will build the RISC-V GNU toolchain and libraries for a
+pure RV32I target, and install it in &lt;code&gt;/opt/riscv32i&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Ubuntu packages needed:
+sudo apt-get install autoconf automake autotools-dev curl libmpc-dev \
+        libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo \
+    gperf libtool patchutils bc zlib1g-dev git libexpat1-dev
+
+sudo mkdir /opt/riscv32i
+sudo chown $USER /opt/riscv32i
+
+git clone https://github.com/riscv/riscv-gnu-toolchain riscv-gnu-toolchain-rv32i
+cd riscv-gnu-toolchain-rv32i
+git checkout 411d134
+git submodule update --init --recursive
+
+mkdir build; cd build
+../configure --with-arch=rv32i --prefix=/opt/riscv32i
+make -j$(nproc)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The commands will all be named using the prefix &lt;code&gt;riscv32-unknown-elf-&lt;/code&gt;, which
+makes it easy to install them side-by-side with the regular riscv-tools (those
+are using the name prefix &lt;code&gt;riscv64-unknown-elf-&lt;/code&gt; by default).&lt;/p&gt;
+&lt;p&gt;Alternatively you can simply use one of the following make targets from PicoRV32's
+Makefile to build a &lt;code&gt;RV32I[M][C]&lt;/code&gt; toolchain. You still need to install all
+prerequisites, as described above. Then run any of the following commands in the
+PicoRV32 source directory:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Command&lt;/th&gt;
+&lt;th align="left"&gt;Install Directory&lt;/th&gt;
+&lt;th align="left"&gt;ISA&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32i-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32i/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32I&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32ic-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32ic/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IC&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32im-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32im/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IM&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32imc-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32imc/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IMC&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Or simply run &lt;code&gt;make -j$(nproc) build-tools&lt;/code&gt; to build and install all four tool chains.&lt;/p&gt;
+&lt;p&gt;By default calling any of those make targets will (re-)download the toolchain
+sources. Run &lt;code&gt;make download-tools&lt;/code&gt; to download the sources to &lt;code&gt;/var/cache/distfiles/&lt;/code&gt;
+once in advance.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: These instructions are for git rev 411d134 (2018-02-14) of riscv-gnu-toolchain.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-linking-binaries-with-newlib-for-picorv32" class="anchor" aria-hidden="true" href="#linking-binaries-with-newlib-for-picorv32"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linking binaries with newlib for PicoRV32&lt;/h2&gt;
+&lt;p&gt;The tool chains (see last section for install instructions) come with a version of
+the newlib C standard library.&lt;/p&gt;
+&lt;p&gt;Use the linker script &lt;a href="firmware/riscv.ld"&gt;firmware/riscv.ld&lt;/a&gt; for linking binaries
+against the newlib library. Using this linker script will create a binary that
+has its entry point at 0x10000. (The default linker script does not have a static
+entry point, thus a proper ELF loader would be needed that can determine the
+entry point at runtime while loading the program.)&lt;/p&gt;
+&lt;p&gt;Newlib comes with a few syscall stubs. You need to provide your own implementation
+of those syscalls and link your program with this implementation, overwriting the
+default stubs from newlib. See &lt;code&gt;syscalls.c&lt;/code&gt; in &lt;a href="scripts/cxxdemo/"&gt;scripts/cxxdemo/&lt;/a&gt;
+for an example of how to do that.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-evaluation-timing-and-utilization-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#evaluation-timing-and-utilization-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Evaluation: Timing and Utilization on Xilinx 7-Series FPGAs&lt;/h2&gt;
+&lt;p&gt;The following evaluations have been performed with Vivado 2017.3.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-timing-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#timing-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Timing on Xilinx 7-Series FPGAs&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;picorv32_axi&lt;/code&gt; module with enabled &lt;code&gt;TWO_CYCLE_ALU&lt;/code&gt; has been placed and
+routed for Xilinx Artix-7T, Kintex-7T, Virtex-7T, Kintex UltraScale, and Virtex
+UltraScale devices in all speed grades. A binary search is used to find the
+shortest clock period for which the design meets timing.&lt;/p&gt;
+&lt;p&gt;See &lt;code&gt;make table.txt&lt;/code&gt; in &lt;a href="scripts/vivado/"&gt;scripts/vivado/&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Device&lt;/th&gt;
+&lt;th align="left"&gt;Device&lt;/th&gt;
+&lt;th align="center"&gt;Speedgrade&lt;/th&gt;
+&lt;th align="right"&gt;Clock Period (Freq.)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7k70t-fbg676-2&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.4 ns (416 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7k70t-fbg676-3&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.2 ns (454 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7v585t-ffg1761-2&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.3 ns (434 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7v585t-ffg1761-3&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.2 ns (454 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcku035-fbva676-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.0 ns (500 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcku035-fbva676-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.8 ns (555 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcvu065-ffvc1517-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.1 ns (476 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcvu065-ffvc1517-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.0 ns (500 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcku3p-ffva676-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;1.4 ns (714 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcku3p-ffva676-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.3 ns (769 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcvu3p-ffvc1517-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;1.5 ns (666 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcvu3p-ffvc1517-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.4 ns (714 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;&lt;a id="user-content-utilization-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#utilization-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Utilization on Xilinx 7-Series FPGAs&lt;/h4&gt;
+&lt;p&gt;The following table lists the resource utilization in area-optimized synthesis
+for the following three cores:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (small):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module without counter instructions,
+without two-stage shifts, with externally latched &lt;code&gt;mem_rdata&lt;/code&gt;, and without
+catching of misaligned memory accesses and illegal instructions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (regular):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module in its default configuration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (large):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module with enabled PCPI, IRQ, MUL,
+DIV, BARREL_SHIFTER, and COMPRESSED_ISA features.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;code&gt;make area&lt;/code&gt; in &lt;a href="scripts/vivado/"&gt;scripts/vivado/&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Core Variant&lt;/th&gt;
+&lt;th align="right"&gt;Slice LUTs&lt;/th&gt;
+&lt;th align="right"&gt;LUTs as Memory&lt;/th&gt;
+&lt;th align="right"&gt;Slice Registers&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (small)&lt;/td&gt;
+&lt;td align="right"&gt;761&lt;/td&gt;
+&lt;td align="right"&gt;48&lt;/td&gt;
+&lt;td align="right"&gt;442&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (regular)&lt;/td&gt;
+&lt;td align="right"&gt;917&lt;/td&gt;
+&lt;td align="right"&gt;48&lt;/td&gt;
+&lt;td align="right"&gt;583&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (large)&lt;/td&gt;
+&lt;td align="right"&gt;2019&lt;/td&gt;
+&lt;td align="right"&gt;88&lt;/td&gt;
+&lt;td align="right"&gt;1085&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>cliffordwolf</author><guid isPermaLink="false">https://github.com/cliffordwolf/picorv32</guid><pubDate>Sun, 08 Dec 2019 00:01:00 GMT</pubDate></item><item><title>analogdevicesinc/hdl #2 in Verilog, This month</title><link>https://github.com/analogdevicesinc/hdl</link><description>&lt;p&gt;&lt;i&gt;HDL libraries and projects&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-hdl-reference-designs" class="anchor" aria-hidden="true" href="#hdl-reference-designs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HDL Reference Designs&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.analog.com/en/index.html" rel="nofollow"&gt;Analog Devices Inc.&lt;/a&gt; HDL libraries and projects for various reference design and prototyping systems.
+This repository contains HDL code (Verilog or VHDL) and the required Tcl scripts to create and build a specific FPGA
+example design using Xilinx and/or Intel tool chain.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-support" class="anchor" aria-hidden="true" href="#support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support&lt;/h2&gt;
+&lt;p&gt;The HDL is provided "AS IS", support is only provided on &lt;a href="https://ez.analog.com/community/fpga" rel="nofollow"&gt;EngineerZone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you feel you can not, or do not want to ask questions on &lt;a href="https://ez.analog.com/community/fpga" rel="nofollow"&gt;EngineerZone&lt;/a&gt;, you should not use or look at the HDL found in this repository. Just like you have the freedom and rights to use this software in your products (with the obligations found in individual licenses) and get support on &lt;a href="https://ez.analog.com/community/fpga" rel="nofollow"&gt;EngineerZone&lt;/a&gt;, you have the freedom and rights not to use this software and get datasheet level support from traditional ADI contacts that you may have.&lt;/p&gt;
+&lt;p&gt;There is no free replacement for consulting services. If you have questions that are best handed one-on-one engagement, and are time sensitive, consider hiring a consultant. If you want to find a consultant who is familar with the HDL found in this repository - ask on &lt;a href="https://ez.analog.com/community/fpga" rel="nofollow"&gt;EngineerZone&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;This repository supports reference designs for different &lt;a href="../master/projects"&gt;Analog Devices boards&lt;/a&gt; based on &lt;a href="../master/projects/common"&gt;Intel and Xilinx FPGA development boards&lt;/a&gt; or standalone.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.xilinx.com/support/download.html" rel="nofollow"&gt;Vivado Design Suite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.altera.com/downloads/download-center.html" rel="nofollow"&gt;Quartus Prime Design Suite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please make sure that you have the &lt;a href="https://github.com/analogdevicesinc/hdl/releases"&gt;required&lt;/a&gt; tool version.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-build-a-project" class="anchor" aria-hidden="true" href="#how-to-build-a-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to build a project&lt;/h3&gt;
+&lt;p&gt;For building a project (generate a bitstream), you have to use the &lt;a href="https://www.gnu.org/software/make/" rel="nofollow"&gt;GNU Make tool&lt;/a&gt;. If you're a
+Windows user please checkout &lt;a href="https://wiki.analog.com/resources/fpga/docs/build#windows_environment_setup" rel="nofollow"&gt;this page&lt;/a&gt;, to see how you can install this tool.&lt;/p&gt;
+&lt;p&gt;To build a project, checkout the &lt;a href="https://github.com/analogdevicesinc/hdl/releases"&gt;latest release&lt;/a&gt;, after that just &lt;strong&gt;cd&lt;/strong&gt; to the
+project that you want to build and run make:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; [~]cd projects/fmcomms2/zc706
+ [~]make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A more comprehensive build guide can be found under the following link:
+&lt;a href="https://wiki.analog.com/resources/fpga/docs/build" rel="nofollow"&gt;https://wiki.analog.com/resources/fpga/docs/build&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-software" class="anchor" aria-hidden="true" href="#software"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software&lt;/h2&gt;
+&lt;p&gt;In general all the projects have no-OS (baremetal) and a Linux support. See &lt;a href="https://github.com/analogdevicesinc/no-OS"&gt;no-OS&lt;/a&gt; or &lt;a href="https://github.com/analogdevicesinc/Linux"&gt;Linux&lt;/a&gt; for
+more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-which-branch-should-i-use" class="anchor" aria-hidden="true" href="#which-branch-should-i-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Which branch should I use?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to use the most stable code base, always use the &lt;a href="https://github.com/analogdevicesinc/hdl/releases"&gt;latest release branch&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to use the greatest and latest, check out the master branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;In this HDL repository, there are many different and unique modules, consisting
+of various HDL (Verilog or VHDL) components. The individual modules are
+developed independently, and may be accompanied by separate and unique license
+terms.&lt;/p&gt;
+&lt;p&gt;The user should read each of these license terms, and understand the
+freedoms and responsibilities that he or she has by using this source/core.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="../master/LICENSE"&gt;LICENSE&lt;/a&gt; for more details. The separate license files
+cab be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="../master/LICENSE_ADIBSD"&gt;LICENSE_ADIBSD&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="../master/LICENSE_GPL2"&gt;LICENSE_GPL2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="../master/LICENSE_LGPL"&gt;LICENSE_LGPL&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-comprehensive-user-guide" class="anchor" aria-hidden="true" href="#comprehensive-user-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Comprehensive user guide&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://wiki.analog.com/resources/fpga/docs/hdl" rel="nofollow"&gt;HDL User Guide&lt;/a&gt; for a more detailed guide.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>analogdevicesinc</author><guid isPermaLink="false">https://github.com/analogdevicesinc/hdl</guid><pubDate>Sun, 08 Dec 2019 00:02:00 GMT</pubDate></item></channel></rss>
