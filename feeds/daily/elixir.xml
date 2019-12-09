@@ -1,2 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Elixir, Today</title><link>https://github.com/trending/elixir?since=daily</link><description>The top repositories on GitHub for elixir, measured daily</description><pubDate>Sun, 08 Dec 2019 01:08:00 GMT</pubDate><lastBuildDate>Sun, 08 Dec 2019 01:08:00 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Elixir, Today today</title><pubDate>Sun, 08 Dec 2019 01:08:00 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Elixir, Today</title><link>https://github.com/trending/elixir?since=daily</link><description>The top repositories on GitHub for elixir, measured daily</description><pubDate>Mon, 09 Dec 2019 01:05:42 GMT</pubDate><lastBuildDate>Mon, 09 Dec 2019 01:05:42 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>elixir-ecto/ecto #1 in Elixir, Today</title><link>https://github.com/elixir-ecto/ecto</link><description>&lt;p&gt;&lt;i&gt;A toolkit for data mapping and language integrated query&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/elixir-ecto/ecto/raw/master/guides/images/logo.png"&gt;&lt;img width="250" src="https://github.com/elixir-ecto/ecto/raw/master/guides/images/logo.png" alt="Ecto" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://github.com/elixir-ecto/ecto/actions"&gt;&lt;img src="https://github.com/elixir-ecto/ecto/workflows/CI/badge.svg" alt="Build Status" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ecto is a toolkit for data mapping and language integrated query for Elixir. Here is an example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; In your config/config.exs file&lt;/span&gt;
+config &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;, &lt;span class="pl-c1"&gt;ecto_repos:&lt;/span&gt; [&lt;span class="pl-en"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;]
+
+config &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;, &lt;span class="pl-en"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;database:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ecto_simple&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;username:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postgres&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;password:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postgres&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;hostname:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;port:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;5432&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; In your application code&lt;/span&gt;
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;otp_app:&lt;/span&gt; &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;adapter:&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Adapters&lt;/span&gt;.&lt;span class="pl-en"&gt;Postgres&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Weather&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Schema&lt;/span&gt;
+
+  schema &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;weather&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:city&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Defaults to type :string&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:temp_lo&lt;/span&gt;, &lt;span class="pl-c1"&gt;:integer&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:temp_hi&lt;/span&gt;, &lt;span class="pl-c1"&gt;:integer&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:prcp&lt;/span&gt;,    &lt;span class="pl-c1"&gt;:float&lt;/span&gt;, &lt;span class="pl-c1"&gt;default:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.0&lt;/span&gt;
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;App&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Query&lt;/span&gt;
+  &lt;span class="pl-k"&gt;alias&lt;/span&gt; &lt;span class="pl-en"&gt;Sample&lt;/span&gt;.{&lt;span class="pl-en"&gt;Weather&lt;/span&gt;, &lt;span class="pl-en"&gt;Repo&lt;/span&gt;}
+
+  &lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;keyword_query&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    query &lt;span class="pl-k"&gt;=&lt;/span&gt;
+      from w &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-en"&gt;Weather&lt;/span&gt;,
+           &lt;span class="pl-c1"&gt;where:&lt;/span&gt; w.prcp &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-k"&gt;or&lt;/span&gt; is_nil(w.prcp),
+           &lt;span class="pl-c1"&gt;select:&lt;/span&gt; w
+
+    &lt;span class="pl-en"&gt;Repo&lt;/span&gt;.all(query)
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;pipe_query&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    &lt;span class="pl-en"&gt;Weather&lt;/span&gt;
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; where(&lt;span class="pl-c1"&gt;city:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Kraków&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; order_by(&lt;span class="pl-c1"&gt;:temp_lo&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; limit(&lt;span class="pl-c1"&gt;10&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;Repo&lt;/span&gt;.all
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ecto is commonly used to interact with databases, such as Postgres and MySQL via &lt;a href="http://hexdocs.pm/ecto_sql" rel="nofollow"&gt;Ecto.Adapters.SQL&lt;/a&gt; (&lt;a href="https://github.com/elixir-ecto/ecto_sql"&gt;source code&lt;/a&gt;). Ecto is also commonly used to map data from any source into Elixir structs, regardless if they are backed by a database or not.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="http://hexdocs.pm/ecto/getting-started.html" rel="nofollow"&gt;getting started guide&lt;/a&gt; and the &lt;a href="http://hexdocs.pm/ecto" rel="nofollow"&gt;online documentation&lt;/a&gt; for more information. Other resources available are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://pragprog.com/book/wmecto/programming-ecto" rel="nofollow"&gt;Programming Ecto&lt;/a&gt;, by Darin Wilson and Eric Meadows-Jönsson, which guides you from fundamentals up to advanced concepts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://pages.plataformatec.com.br/the-little-ecto-cookbook" rel="nofollow"&gt;The Little Ecto Cookbook&lt;/a&gt;, a free ebook by Plataformatec, which is a curation of the existing Ecto guides with some extra contents&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;You need to add both Ecto and the database adapter as a dependency to your &lt;code&gt;mix.exs&lt;/code&gt; file. The supported databases and their adapters are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Database&lt;/th&gt;
+&lt;th align="left"&gt;Ecto Adapter&lt;/th&gt;
+&lt;th align="left"&gt;Dependencies&lt;/th&gt;
+&lt;th align="left"&gt;Ecto 3.0 compatible?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PostgreSQL&lt;/td&gt;
+&lt;td align="left"&gt;Ecto.Adapters.Postgres&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="http://github.com/elixir-ecto/postgrex"&gt;postgrex&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MySQL&lt;/td&gt;
+&lt;td align="left"&gt;Ecto.Adapters.MyXQL&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="http://github.com/elixir-ecto/myxql"&gt;myxql&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MSSQL&lt;/td&gt;
+&lt;td align="left"&gt;MssqlEcto&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="https://github.com/findmypast-oss/mssql_ecto"&gt;mssql_ecto&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MSSQL&lt;/td&gt;
+&lt;td align="left"&gt;Tds.Ecto&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="https://github.com/livehelpnow/tds_ecto"&gt;tds_ecto&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;SQLite    &lt;/td&gt;
+&lt;td align="left"&gt;Sqlite.Ecto2        &lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto"&gt;ecto&lt;/a&gt; + &lt;a href="https://github.com/scouten/sqlite_ecto2"&gt;sqlite_ecto2&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Mnesia    &lt;/td&gt;
+&lt;td align="left"&gt;EctoMnesia.Adapter   &lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto"&gt;ecto&lt;/a&gt; + &lt;a href="https://github.com/Nebo15/ecto_mnesia"&gt;ecto_mnesia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For example, if you want to use PostgreSQL, add to your &lt;code&gt;mix.exs&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;defp&lt;/span&gt; &lt;span class="pl-en"&gt;deps&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  [
+    {&lt;span class="pl-c1"&gt;:ecto_sql&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~&amp;gt; 3.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},
+    {&lt;span class="pl-c1"&gt;:postgrex&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;gt;= 0.0.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}
+  ]
+&lt;span class="pl-k"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run &lt;code&gt;mix deps.get&lt;/code&gt; in your shell to fetch the dependencies. If you want to use another database, just choose the proper dependency from the table above.&lt;/p&gt;
+&lt;p&gt;Finally, in the repository definition, you will need to specify the &lt;code&gt;adapter:&lt;/code&gt; respective to the chosen dependency. For PostgreSQL it is:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;MyApp&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;otp_app:&lt;/span&gt; &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;adapter:&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Adapters&lt;/span&gt;.&lt;span class="pl-en"&gt;Postgres&lt;/span&gt;,
+  &lt;span class="pl-k"&gt;..&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-versions" class="anchor" aria-hidden="true" href="#supported-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Versions&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Branch&lt;/th&gt;
+&lt;th&gt;Support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;v3.1&lt;/td&gt;
+&lt;td&gt;Bug fixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v3.0&lt;/td&gt;
+&lt;td&gt;Security patches only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.2&lt;/td&gt;
+&lt;td&gt;Security patches only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.1&lt;/td&gt;
+&lt;td&gt;Unsupported from 10/2018&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.0&lt;/td&gt;
+&lt;td&gt;Unsupported from 08/2017&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v1.1&lt;/td&gt;
+&lt;td&gt;Unsupported from 03/2018&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v1.0&lt;/td&gt;
+&lt;td&gt;Unsupported from 05/2017&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;With the version 3.0, Ecto has become API stable. This means no more new features, although we will continue providing bug fixes and updates. For everyone running Ecto in production, rest assured that Ecto will continue to be a well maintained project with the same production quality and polish that our users are familiar with.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-important-links" class="anchor" aria-hidden="true" href="#important-links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Important links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hexdocs.pm/ecto" rel="nofollow"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/elixir-ecto" rel="nofollow"&gt;Mailing list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/elixir-ecto/ecto/tree/master/examples"&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;Clone the repo and fetch its dependencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/elixir-ecto/ecto.git
+$ cd ecto
+$ mix deps.get
+$ mix test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that &lt;code&gt;mix test&lt;/code&gt; does not run the tests in the &lt;code&gt;integration_test&lt;/code&gt; folder. To run integration tests, you can clone &lt;code&gt;ecto_sql&lt;/code&gt; in a sibling directory and then run its integration tests with the &lt;code&gt;ECTO_PATH&lt;/code&gt; environment variable pointing to your Ecto checkout:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd ..
+$ git clone https://github.com/elixir-ecto/ecto_sql.git
+$ cd ecto_sql
+$ ECTO_PATH=../ecto mix test.all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright-and-license" class="anchor" aria-hidden="true" href="#copyright-and-license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright and License&lt;/h2&gt;
+&lt;p&gt;"Ecto" and the Ecto logo are Copyright (c) 2013 Plataformatec.&lt;/p&gt;
+&lt;p&gt;The Ecto logo was designed by &lt;a href="http://www.danewesolko.com" rel="nofollow"&gt;Dane Wesolko&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The source code is under the Apache License 2.0.&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2013 Plataformatec&lt;/p&gt;
+&lt;p&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at &lt;a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>elixir-ecto</author><guid isPermaLink="false">https://github.com/elixir-ecto/ecto</guid><pubDate>Mon, 09 Dec 2019 00:01:00 GMT</pubDate></item><item><title>phoenixframework/phoenix_live_view #2 in Elixir, Today</title><link>https://github.com/phoenixframework/phoenix_live_view</link><description>&lt;p&gt;&lt;i&gt;Rich, real-time user experiences with server-rendered HTML&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-phoenix-liveview" class="anchor" aria-hidden="true" href="#phoenix-liveview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Phoenix LiveView&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/phoenixframework/phoenix_live_view/workflows/CI/badge.svg"&gt;&lt;img src="https://github.com/phoenixframework/phoenix_live_view/workflows/CI/badge.svg" alt="Actions Status" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Phoenix LiveView enables rich, real-time user experiences with server-rendered HTML. For more information, &lt;a href="https://dockyard.com/blog/2018/12/12/phoenix-liveview-interactive-real-time-apps-no-need-to-write-javascript" rel="nofollow"&gt;see the initial announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Currently LiveView is under active development and we are focused on getting a stable and solid initial version out. For this reason, we will be accepting only bug reports in the issues tracker for now. We will open the issues tracker for features after the current milestone is ironed out.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-learning" class="anchor" aria-hidden="true" href="#learning"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learning&lt;/h2&gt;
+&lt;p&gt;As official guides are being developed, see our existing
+comprehensive docs and examples to get up to speed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hexdocs.pm/phoenix_live_view" rel="nofollow"&gt;Phoenix.LiveView docs for Elixir and JavaScript usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/phoenixframework/phoenix_live_view/blob/master/lib/phoenix_live_view/test/live_view_test.ex"&gt;Phoenix.LiveViewTest for testing docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/chrismccord/phoenix_live_view_example"&gt;LiveView example repo&lt;/a&gt; with a handful of examples from Weather widgets, autocomplete search, and games like Snake or Pacman&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;There are currently two methods for installing LiveView. For projects that
+require more stability, it is recommended that you install using the
+&lt;a href="https://hexdocs.pm/phoenix_live_view/installation.html" rel="nofollow"&gt;installation guide on HexDocs&lt;/a&gt;.
+If you want to use the latest features, you should follow the instructions
+given in the markdown file &lt;a href="guides/introduction/installation.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-browser-support" class="anchor" aria-hidden="true" href="#browser-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Browser Support&lt;/h2&gt;
+&lt;p&gt;All current Chrome, Safari, Firefox, and MS Edge are supported.
+IE11 support is available with the following polyfills:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;npm install --save --prefix assets mdn-polyfills url-search-params-polyfill formdata-polyfill child-replace-with-polyfill classlist-polyfill&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; assets/js/app.js&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/CustomEvent&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/String.prototype.startsWith&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/Array.from&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/NodeList.prototype.forEach&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/Element.prototype.closest&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mdn-polyfills/Element.prototype.matches&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;child-replace-with-polyfill&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;url-search-params-polyfill&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;formdata-polyfill&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;classlist-polyfill&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;import&lt;/span&gt; {&lt;span class="pl-smi"&gt;Socket&lt;/span&gt;} &lt;span class="pl-k"&gt;from&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;phoenix&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;LiveSocket&lt;/span&gt; &lt;span class="pl-k"&gt;from&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;phoenix_live_view&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>phoenixframework</author><guid isPermaLink="false">https://github.com/phoenixframework/phoenix_live_view</guid><pubDate>Mon, 09 Dec 2019 00:02:00 GMT</pubDate></item><item><title>asciinema/asciinema-server #3 in Elixir, Today</title><link>https://github.com/asciinema/asciinema-server</link><description>&lt;p&gt;&lt;i&gt;Web app for hosting asciicasts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-asciinema-web-app" class="anchor" aria-hidden="true" href="#asciinema-web-app"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;asciinema web app&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/asciinema/asciinema.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a86271a48600b8d4cbf3ee43a24d3c0c882b8bd4/68747470733a2f2f7472617669732d63692e6f72672f61736369696e656d612f61736369696e656d612d7365727665722e7376673f6272616e63683d646576656c6f70" alt="Build Status" data-canonical-src="https://travis-ci.org/asciinema/asciinema-server.svg?branch=develop" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codeclimate.com/github/asciinema/asciinema.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6677f23739de81cddf336431570f0d56ff8c8fb1/68747470733a2f2f636f6465636c696d6174652e636f6d2f6769746875622f61736369696e656d612f61736369696e656d612e6f72672f6261646765732f6770612e737667" alt="Code Climate" data-canonical-src="https://codeclimate.com/github/asciinema/asciinema.org/badges/gpa.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;asciinema is a free and open source solution for recording terminal sessions
+and sharing them on the web.&lt;/p&gt;
+&lt;p&gt;This repository contains the source code of asciinema hosting web app, which
+runs at &lt;a href="https://asciinema.org" rel="nofollow"&gt;asciinema.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the source code of asciinema terminal recorder
+at &lt;a href="https://github.com/asciinema/asciinema"&gt;asciinema/asciinema&lt;/a&gt;, and the source
+code of asciinema web player
+at &lt;a href="https://github.com/asciinema/asciinema-player"&gt;asciinema/asciinema-player&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-setting-up-your-own-asciinema-web-app-instance" class="anchor" aria-hidden="true" href="#setting-up-your-own-asciinema-web-app-instance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up your own asciinema web app instance&lt;/h2&gt;
+&lt;p&gt;asciinema terminal recorder uses &lt;a href="https://asciinema.org" rel="nofollow"&gt;asciinema.org&lt;/a&gt; as its
+default host for the recordings. It's free, public service (all uploaded
+recordings are &lt;strong&gt;private by default&lt;/strong&gt; though).&lt;/p&gt;
+&lt;p&gt;If you're not comfortable with uploading your terminal sessions to
+asciinema.org, or your company's policy prevents you from doing that, you can
+set up your own instance for private use. See
+our &lt;a href="https://github.com/asciinema/asciinema-server/blob/master/docs/INSTALL.md"&gt;asciinema web app install guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you have your instance running, point asciinema recorder to it by setting
+API URL in &lt;code&gt;~/.config/asciinema/config&lt;/code&gt; file as follows:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[api]&lt;/span&gt;
+&lt;span class="pl-k"&gt;url&lt;/span&gt; = https://your.asciinema.host&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively, you can set &lt;code&gt;ASCIINEMA_API_URL&lt;/code&gt; environment variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ASCIINEMA_API_URL=https://your.asciinema.host asciinema rec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Check out our &lt;a href="http://asciinema.org/contributing" rel="nofollow"&gt;Contributing&lt;/a&gt; page, which
+describes multiple ways you can help this project.&lt;/p&gt;
+&lt;p&gt;If you decide to contribute with the code then please
+read &lt;a href="https://github.com/asciinema/asciinema-server/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;, which covers submitting bugs,
+requesting new features, preparing your code for a pull request, etc.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-security" class="anchor" aria-hidden="true" href="#security"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Security&lt;/h2&gt;
+&lt;p&gt;We're serious about the security of this web app and the user data it manages.
+If you find anything that looks like a potential vulnerability please
+read on
+&lt;a href="https://github.com/asciinema/asciinema-server/blob/master/CONTRIBUTING.md#reporting-security-issues"&gt;how to report a security issue&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-authors" class="anchor" aria-hidden="true" href="#authors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authors&lt;/h2&gt;
+&lt;p&gt;asciinema is developed by &lt;a href="http://ku1ik.com" rel="nofollow"&gt;Marcin Kulik&lt;/a&gt; with the help of
+many great open source contributors.&lt;/p&gt;
+&lt;p&gt;For a complete list of the many individuals that contributed to the project,
+please refer to
+&lt;a href="https://github.com/asciinema/asciinema-server/contributors"&gt;GitHub's list of contributors&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright © 2011-2019 Marcin Kulik. See LICENSE for details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>asciinema</author><guid isPermaLink="false">https://github.com/asciinema/asciinema-server</guid><pubDate>Mon, 09 Dec 2019 00:03:00 GMT</pubDate></item><item><title>enpedasi/Mojiex #4 in Elixir, Today</title><link>https://github.com/enpedasi/Mojiex</link><description>&lt;p&gt;&lt;i&gt;Japanese strings - Wide/Half "Kana" characters Conversion Library for Elixir&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-mojiex" class="anchor" aria-hidden="true" href="#mojiex"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mojiex&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/enpedasi/mojiex" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b6a5f571de05e4479af8121874c22e3fb406aa79/68747470733a2f2f7472617669732d63692e6f72672f656e7065646173692f4d6f6a6965782e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/enpedasi/Mojiex.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Japanese strings - Wide/Half "Kana" characters Conversion Library for Elixir lang&lt;/p&gt;
+&lt;p&gt;全角半角変換ライブラリ&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;deps&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  [
+    {&lt;span class="pl-c1"&gt;:mojiex&lt;/span&gt;, &lt;span class="pl-c1"&gt;github:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;enpedasi/mojiex&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},    
+  ]
+&lt;span class="pl-k"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;Mojiex&lt;/span&gt;.convert(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ＡＢＣＤ　０１２３４あいうアイウABCD 01234ｱｲｳ&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,{&lt;span class="pl-c1"&gt;:hk&lt;/span&gt;, &lt;span class="pl-c1"&gt;:zk&lt;/span&gt;})
+&lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;Mojiex&lt;/span&gt;.convert({&lt;span class="pl-c1"&gt;:kk&lt;/span&gt;, &lt;span class="pl-c1"&gt;:hg&lt;/span&gt;})
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ＡＢＣＤ　０１２３４あいうあいうABCD 01234あいう&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;            &lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Mojiex.convert( &lt;code&gt;source string&lt;/code&gt;,  {&lt;code&gt;from&lt;/code&gt;, &lt;code&gt;to&lt;/code&gt; })&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;combination of {&lt;code&gt;from&lt;/code&gt;, &lt;code&gt;to&lt;/code&gt; }&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;atom&lt;/th&gt;
+&lt;th&gt;kind&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;atom&lt;/th&gt;
+&lt;th&gt;kind&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;:zk&lt;/td&gt;
+&lt;td&gt;全角カタカナ&lt;/td&gt;
+&lt;td&gt;↔&lt;/td&gt;
+&lt;td&gt;:hk&lt;/td&gt;
+&lt;td&gt;半角カタカナ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;:ze&lt;/td&gt;
+&lt;td&gt;全角英数&lt;/td&gt;
+&lt;td&gt;↔&lt;/td&gt;
+&lt;td&gt;:he&lt;/td&gt;
+&lt;td&gt;半角英数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;:he&lt;/td&gt;
+&lt;td&gt;ひらがな&lt;/td&gt;
+&lt;td&gt;↔&lt;/td&gt;
+&lt;td&gt;:kk&lt;/td&gt;
+&lt;td&gt;カタカナ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;:zs&lt;/td&gt;
+&lt;td&gt;全角SPACE&lt;/td&gt;
+&lt;td&gt;↔&lt;/td&gt;
+&lt;td&gt;:hs&lt;/td&gt;
+&lt;td&gt;半角SPACE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright(c) 2018 enpedasi
+Licensed under the MIT license.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>enpedasi</author><guid isPermaLink="false">https://github.com/enpedasi/Mojiex</guid><pubDate>Mon, 09 Dec 2019 00:04:00 GMT</pubDate></item></channel></rss>

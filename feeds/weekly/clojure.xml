@@ -1,2 +1,629 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Clojure, This week</title><link>https://github.com/trending/clojure?since=weekly</link><description>The top repositories on GitHub for clojure, measured weekly</description><pubDate>Sun, 08 Dec 2019 01:08:00 GMT</pubDate><lastBuildDate>Sun, 08 Dec 2019 01:08:00 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Clojure, This week today</title><pubDate>Sun, 08 Dec 2019 01:08:00 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Clojure, This week</title><link>https://github.com/trending/clojure?since=weekly</link><description>The top repositories on GitHub for clojure, measured weekly</description><pubDate>Mon, 09 Dec 2019 01:05:37 GMT</pubDate><lastBuildDate>Mon, 09 Dec 2019 01:05:37 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>fulcrologic/fulcro-rad #1 in Clojure, This week</title><link>https://github.com/fulcrologic/fulcro-rad</link><description>&lt;p&gt;&lt;i&gt;Fulcro Rapid Application Development (EXPERIMENTAL)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body adoc" data-path="README.adoc"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-fulcro-rapid-application-development-tools" class="anchor" aria-hidden="true" href="#fulcro-rapid-application-development-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fulcro Rapid Application Development Tools&lt;/h1&gt;
+&lt;div id="user-content-preamble"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;This library is currently in an experimental phase. It should &lt;strong&gt;not&lt;/strong&gt; be used in any kind of production
+system unless you feel ok about forking it and maintaining the fork.  Once the ideas have
+stabilized then I may do an official release with stable documentation and APIs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;See the &lt;a href="https://youtu.be/jkx9F-RIFiY" rel="nofollow"&gt;YouTube Video&lt;/a&gt; for a demonstration of a working prototype.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;HELP WANTED: This project is more ambitious than my time will allow. If you have Clojure chops and are
+interested in helping, please let me know.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-goals"&gt;&lt;a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Goals&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Here are the goals:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Build applications quickly, without serious compromises:&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Minimal Boilerplate&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easily (and gradually) escape to custom code when your needs outgrow the system’s abilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;The facets that this library are intended to address:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;OPEN model (via namespaced keywords and maps)&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All declarative constructs use open maps in CLJC so that
+library extensions can easily add capabilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Declarative data model to facilitate:&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Generated database schema (if desired) with migration management.&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Database adapter makes it possible to use any database.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Generated demand-driven server APIs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Declarative (extensible) permissions model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authentication&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Extensible system for obtaining and managing client authentication.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demand-driven authentication (login pops if a screen needs to work with data that requires auth)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Forms&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Declarative and extensible in all aspects: validation, rendering, permissions, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for graph-based forms (nested forms with relations)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automatic logic for complete data management Create/Update/Delete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integration with permissions (authorization)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ability to generate UI with ability to incrementally override.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pluggable UI generation system: Support web, native, etc., from a single declaration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reports&lt;/p&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Input parameters&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pretty much everything from "Forms", but for read-only display.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Completely generated output, with ability to incrementally override.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-ideas"&gt;&lt;a id="user-content-ideas" class="anchor" aria-hidden="true" href="#ideas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ideas&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A state machine to manage auth context.  For example, you have auth in a google domain, a
+facebook domain, and your company’s domain.  Perhaps SSO gives you that, or perhaps you
+have to auth against each in some way.  The idea is that the system can send events
+to the auth state machine to verify (before running a full-stack query or making a mutation
+button visible) that there is sufficient context for the request to succeed.  The query and mutation
+can both imply what is being manipulated (the graph query could cross all three for example). So,
+the UI routing and visibility could be tied to sending an event to the auth context machine with
+a request to send &lt;strong&gt;back&lt;/strong&gt; an event to the calling context when the auth is complete.  The auth systems
+then run in parallel with the application logic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A given cluster of UI, using the co-located query, establishes a top-level context (e.g. &lt;code&gt;:account/id&lt;/code&gt;),
+and subqueries are joined via the graph query itself.  Pathom is used to traverse this for data needs,
+but it is also traversed to derive the auth needs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A cluster of UI also establishes path-based contexts (e.g. &lt;code&gt;[account-id, mailbox, message-id]&lt;/code&gt;) where a component
+rendering the message is able to know the mailbox and account (accumulate identities along a UI path). This means
+the composition of components can be used to easily establish what is &lt;strong&gt;reachable&lt;/strong&gt; from a given location in the UI.
+For example: say you’re in an email with a message ID, and you know that a message ID has a sender email, and
+you know there is a resolver that can take an email address and turn that
+that into a starting context for youtube videos posted by that person. This is already a feature of Pathom, but
+it could be used &lt;strong&gt;at development time&lt;/strong&gt; to do things like error checking, code completion, etc., and at
+runtime to do things like mentioned in the prior point (resolve auth necessary to do something like use the
+GitHub API).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;The dynamic routing support allows us to make it possible to assemble most of a CRUD app with HTML5
+routing, dynamic code loading (splitting), and arbitrary linkage of navigation with very little code.
+Customizing the "chrome" of autogenerated things could also be declarative/pluggable, so that UI could even
+be emitted (and customized) for web + native from the same declarations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-development"&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;
+&lt;div&gt;Warning&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+These steps are not authoritative across time. This project is in dynamic flux.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Basically you will generally need to do something along the lines of:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;npm install
+shadow-cljs server  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; follow instructions to get to URL of browser-based control panel to start builds&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; in another terminal&lt;/span&gt;
+clj -A:dev          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; to get a REPL for running server stuff&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;See the current example source middleware for additional instructions. The &lt;code&gt;development.clj&lt;/code&gt; ns will typically
+have startup helpers, and the config generally has the app at &lt;code&gt;&lt;a href="http://localhost:3000" rel="nofollow"&gt;http://localhost:3000&lt;/a&gt;&lt;/code&gt; after a server is started.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3 id="user-content-setup"&gt;&lt;a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h3&gt;
+&lt;div&gt;
+&lt;p&gt;For any contributors wanting to run this, please see:
+&lt;a href="https://docs.datomic.com/on-prem/storage.html#sql-database" rel="nofollow"&gt;Datomic SQL
+database&lt;/a&gt; to provision a postgres database for Datomic. If you don’t
+want to use postgres, you can pass a custom Datomic url atop the
+&lt;code&gt;Makefile&lt;/code&gt;. Then follow these steps:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install datomic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Supply the necessary variables at the top of the &lt;code&gt;Makefile&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the matching datomic peer dependency in &lt;code&gt;deps.edn&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;foreman&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;gem install foreman&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3 id="user-content-startup"&gt;&lt;a id="user-content-startup" class="anchor" aria-hidden="true" href="#startup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Startup&lt;/h3&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Start up all the necessary proceses:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;foreman start Procfile.dev&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to the nrepl server using your repl client, Emacs Cider is
+supported.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the repl, load in the dev code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;This is done so that any compilation exceptions are thrown at runtime,
+instead of startup time which would make the repl crash.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;If some code won’t compile, you can fix the issue and just try running
+&lt;code&gt;(dev)&lt;/code&gt; again.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-en"&gt;dev&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If all code is loaded, run &lt;code&gt;(go)&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;development=&amp;gt; (&lt;span class="pl-en"&gt;go&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The system is started, visit
+&lt;a href="http://localhost:3000/index.html" rel="nofollow"&gt;localhost:3000/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you make any changes to the clj side or in the configs, refresh
+the namesaces and reset the system:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;development=&amp;gt; (&lt;span class="pl-en"&gt;reset&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some dir-locals are configured for emacs. The system will also reset
+when running &lt;code&gt;M-x cider-ns-refresh&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</description><author>fulcrologic</author><guid isPermaLink="false">https://github.com/fulcrologic/fulcro-rad</guid><pubDate>Mon, 09 Dec 2019 00:01:00 GMT</pubDate></item><item><title>technomancy/leiningen #2 in Clojure, This week</title><link>https://github.com/technomancy/leiningen</link><description>&lt;p&gt;&lt;i&gt;Automate Clojure projects without setting your hair on fire.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-leiningen" class="anchor" aria-hidden="true" href="#leiningen"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Leiningen&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/technomancy/leiningen" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b07cc601d0126c225a5ab9c7b1205f43cbdb66e6/68747470733a2f2f636972636c6563692e636f6d2f67682f746563686e6f6d616e63792f6c65696e696e67656e2e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/technomancy/leiningen.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c5f1d6488d4b2f4583fab13f6fac10afd4a069c2/68747470733a2f2f6c65696e696e67656e2e6f72672f696d672f6c65696e696e67656e2e6a7067"&gt;&lt;img src="https://camo.githubusercontent.com/c5f1d6488d4b2f4583fab13f6fac10afd4a069c2/68747470733a2f2f6c65696e696e67656e2e6f72672f696d672f6c65696e696e67656e2e6a7067" alt="Leiningen logo" title="The man himself" align="right" data-canonical-src="https://leiningen.org/img/leiningen.jpg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Leiningen!" he shouted. "You're insane! They're not creatures you can
+fight—they're an elemental—an 'act of God!' Ten miles long, two
+miles wide—ants, nothing but ants! And every single one of them a
+fiend from hell..."&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;from &lt;a href="http://www.classicshorts.com/stories/lvta.html" rel="nofollow"&gt;Leiningen Versus the Ants&lt;/a&gt; by Carl Stephenson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Leiningen is for automating Clojure projects without setting your hair on fire.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;If your preferred
+&lt;a href="https://github.com/technomancy/leiningen/wiki/Packaging"&gt;package manager&lt;/a&gt;
+offers a recent version of Leiningen, try that first as long as it has version 2.x.&lt;/p&gt;
+&lt;p&gt;Leiningen installs itself on the first run of the &lt;code&gt;lein&lt;/code&gt; shell script; there is no
+separate install script.  Follow these instructions to install Leiningen manually:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure you have Java installed; OpenJDK version 8 is recommended at this time.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein" rel="nofollow"&gt;Download the &lt;code&gt;lein&lt;/code&gt; script from the &lt;code&gt;stable&lt;/code&gt; branch&lt;/a&gt;
+of this project.&lt;/li&gt;
+&lt;li&gt;Place it on your &lt;code&gt;$PATH&lt;/code&gt;. (&lt;code&gt;~/bin&lt;/code&gt; is a good choice if it is on your path.)&lt;/li&gt;
+&lt;li&gt;Set it to be executable. (&lt;code&gt;chmod +x ~/bin/lein&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Run it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Windows users can use the above script in the Linux subsystem or try
+&lt;a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat" rel="nofollow"&gt;the batch file&lt;/a&gt; or
+&lt;a href="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.ps1" rel="nofollow"&gt;Powershell version&lt;/a&gt;
+instead.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-basic-usage" class="anchor" aria-hidden="true" href="#basic-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Usage&lt;/h2&gt;
+&lt;p&gt;The
+&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md"&gt;tutorial&lt;/a&gt;
+has a detailed walk-through of the steps involved in creating a new
+project, but here are the commonly-used tasks:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ lein new [TEMPLATE] NAME # generate a new project skeleton
+
+$ lein test [TESTS] # run the tests in the TESTS namespaces, or all tests
+
+$ lein repl # launch an interactive REPL session
+
+$ lein run -m my.namespace # run the -main function of a namespace
+
+$ lein uberjar # package the project and dependencies as standalone jar
+
+$ lein deploy clojars # publish the project to Clojars as a library
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use &lt;code&gt;lein help&lt;/code&gt; to see a complete list. &lt;code&gt;lein help $TASK&lt;/code&gt; shows the
+usage for a specific task.&lt;/p&gt;
+&lt;p&gt;You can also chain tasks together in a single command by using the
+&lt;code&gt;do&lt;/code&gt; task with comma-separated tasks:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ lein do clean, test foo.test-core, jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Most tasks need to be run from somewhere inside a project directory to
+work, but some (&lt;code&gt;new&lt;/code&gt;, &lt;code&gt;help&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;version&lt;/code&gt;, and &lt;code&gt;repl&lt;/code&gt;) may
+run from anywhere.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;project.clj&lt;/code&gt; file in the project root should look like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defproject&lt;/span&gt; &lt;span class="pl-e"&gt;myproject&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;0.5.0-SNAPSHOT&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:description&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;A project for doing things.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:license&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Eclipse Public License 1.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:url&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;http://github.com/technomancy/myproject&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:dependencies&lt;/span&gt; [[org.clojure/clojure &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1.8.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]]
+  &lt;span class="pl-c1"&gt;:plugins&lt;/span&gt; [[lein-tar &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;3.2.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;lein new&lt;/code&gt; task generates a project skeleton with an appropriate
+starting point from which you can work. See the
+&lt;a href="https://github.com/technomancy/leiningen/blob/stable/sample.project.clj"&gt;sample.project.clj&lt;/a&gt;
+file (also available via &lt;code&gt;lein help sample&lt;/code&gt;) for a detailed listing of
+configuration options.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;project.clj&lt;/code&gt; file can be customized further with the use of
+&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/PROFILES.md"&gt;profiles&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Leiningen documentation is organized as a number of guides:&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md"&gt;Tutorial&lt;/a&gt; (start here if you are new)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/FAQ.md"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/PROFILES.md"&gt;Profiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/DEPLOY.md"&gt;Deployment &amp;amp; Distribution of Libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/sample.project.clj"&gt;Sample project.clj&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/MIXED_PROJECTS.md"&gt;Polyglot (e.g. Clojure/Java) projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/PLUGINS.md"&gt;Writing Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/TEMPLATES.md"&gt;Writing Templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/CONTRIBUTING.md"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/technomancy/leiningen/blob/stable/CONTRIBUTING.md#bootstrapping"&gt;Building Leiningen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-plugins" class="anchor" aria-hidden="true" href="#plugins"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;Leiningen supports plugins which may introduce new tasks. See
+&lt;a href="https://github.com/technomancy/leiningen/wiki/Plugins"&gt;the plugins wiki page&lt;/a&gt;
+for a full list. If a plugin is needed for successful test or build
+runs, (such as &lt;code&gt;lein-tar&lt;/code&gt;) then it should be added to &lt;code&gt;:plugins&lt;/code&gt; in
+project.clj, but if it's for your own convenience (such as
+&lt;code&gt;lein-pprint&lt;/code&gt;) then it should be added to the &lt;code&gt;:plugins&lt;/code&gt; list in the
+&lt;code&gt;:user&lt;/code&gt; profile in &lt;code&gt;~/.lein/profiles.clj&lt;/code&gt;. See the
+&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/PROFILES.md"&gt;profiles guide&lt;/a&gt;
+for details on how to add to your &lt;code&gt;:user&lt;/code&gt; profile. The
+&lt;a href="https://github.com/technomancy/leiningen/blob/stable/doc/PLUGINS.md"&gt;plugin guide&lt;/a&gt;
+explains how to write plugins.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Source Copyright © 2009-2018 Phil Hagelberg, Alex Osborne, Dan Larkin, and
+&lt;a href="https://github.com/technomancy/leiningen/contributors"&gt;contributors&lt;/a&gt;.
+Distributed under the Eclipse Public License, the same as Clojure
+uses. See the file COPYING.&lt;/p&gt;
+&lt;p&gt;Thanks to Stuart Halloway for Lancet and Tim Dysinger for convincing
+me that good builds are important.&lt;/p&gt;
+&lt;p&gt;Images Copyright © 2010 Phil Hagelberg. Distributed under the Creative
+Commons Attribution + ShareAlike
+License. &lt;a href="https://leiningen.org/img/leiningen-full.jpg" rel="nofollow"&gt;Full-size version&lt;/a&gt;
+available.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>technomancy</author><guid isPermaLink="false">https://github.com/technomancy/leiningen</guid><pubDate>Mon, 09 Dec 2019 00:02:00 GMT</pubDate></item><item><title>Bronsa/om #3 in Clojure, This week</title><link>https://github.com/Bronsa/om</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-om" class="anchor" aria-hidden="true" href="#om"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OM&lt;/h1&gt;
+&lt;p&gt;who knows&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Bronsa</author><guid isPermaLink="false">https://github.com/Bronsa/om</guid><pubDate>Mon, 09 Dec 2019 00:03:00 GMT</pubDate></item><item><title>voicerepublic/vr-logorrhoe #4 in Clojure, This week</title><link>https://github.com/voicerepublic/vr-logorrhoe</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body org" data-path="README.org"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-vr-restream" class="anchor" aria-hidden="true" href="#vr-restream"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VR &lt;b&gt;re:stream&lt;/b&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/62acf3d1cca7b1998992e86278813ec613e01ce8/68747470733a2f2f6769746c61622e636f6d2f766f69636572657075626c69632f766f69636572657075626c69635f6c6f676f7272686f652f6261646765732f6d61737465722f6275696c642e737667"&gt;&lt;img src="https://camo.githubusercontent.com/62acf3d1cca7b1998992e86278813ec613e01ce8/68747470733a2f2f6769746c61622e636f6d2f766f69636572657075626c69632f766f69636572657075626c69635f6c6f676f7272686f652f6261646765732f6d61737465722f6275696c642e737667" alt="https://gitlab.com/voicerepublic/voicerepublic_logorrhoe/badges/master/build.svg" data-canonical-src="https://gitlab.com/voicerepublic/voicerepublic_logorrhoe/badges/master/build.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-general" class="anchor" aria-hidden="true" href="#general"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;General&lt;/h2&gt;
+&lt;p&gt;This is literate documentation for the VR native streaming desktop
+  application. The stack is based on&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://clojure.org/" rel="nofollow"&gt;Clojure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/daveray/seesaw"&gt;seesaw&lt;/a&gt; [a LISPy Swing wrapper]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-audio-data-flow" class="anchor" aria-hidden="true" href="#audio-data-flow"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Audio Data Flow&lt;/h3&gt;
+&lt;pre lang="artist"&gt;+----------------------+        +--------------------+          +-------------------+
+|    Audio Input       |        |    MP3 Encoding    |          |  Web Audio Stream |
+|   Java `sampled`     +-------&amp;gt;|     shell lame     +---------&amp;gt;|      HTTP PUT     |
++----------------------+        +--------------------+          +-------------------+
+&lt;/pre&gt;
+&lt;p&gt;To be able to stream Audio date from &lt;i&gt;sampled&lt;/i&gt; over to the Shell
+  (&lt;i&gt;lame&lt;/i&gt;) and from there again to &lt;i&gt;http put&lt;/i&gt;, many options were
+  evaluated. The Clojure implementation of &lt;i&gt;clojure.java.shell&lt;/i&gt; does not
+  support creating or sustaining a stream of output, only discrete
+  steps. See &lt;a href="http://clojuredocs.org/clojure.java.shell/sh" rel="nofollow"&gt;ClojureDoc&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-alternative-options" class="anchor" aria-hidden="true" href="#alternative-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alternative options&lt;/h4&gt;
+&lt;h5&gt;&lt;a id="user-content-using-clojurejavashell2" class="anchor" aria-hidden="true" href="#using-clojurejavashell2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using &lt;i&gt;clojure.java.shell2&lt;/i&gt;&lt;/h5&gt;
+&lt;p&gt;This is the version that is currently implemented!&lt;/p&gt;
+&lt;p&gt;According to &lt;a href="https://groups.google.com/forum/#!topic/clojure-dev/A6xFhcPKdws" rel="nofollow"&gt;this discussion&lt;/a&gt; on the Clojure dev mailing list, Stuart
+  Halloway (who is very active on this mailing list) sees
+  &lt;i&gt;clojure.java.shell&lt;/i&gt; as under-powered and doesn’t want to add any more
+  effort in sustaining it’s development.&lt;/p&gt;
+&lt;p&gt;However, Marc Limotte has created &lt;i&gt;clojure.java.shell2&lt;/i&gt; which is an
+  extension of the core library and supports various non-breaking
+  additions.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-encoding-in-discrete-steps" class="anchor" aria-hidden="true" href="#encoding-in-discrete-steps"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Encoding in discrete steps&lt;/h5&gt;
+&lt;p&gt;This has several obvious downsides. For example that it would create
+  multiple MP3 blobs, each with it’s own header. Also synchronization
+  between sending those blobs would be hard.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-monkey-patching-clojurejavashell" class="anchor" aria-hidden="true" href="#monkey-patching-clojurejavashell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Monkey Patching &lt;i&gt;clojure.java.shell&lt;/i&gt;&lt;/h5&gt;
+&lt;p&gt;I tried, but got stuck with deadlocks. I didn’t continue down that
+  path, because other people have spent more time on doing this right
+  (see below).&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-using-the-conch-library-for-shelling-out-asynchronously" class="anchor" aria-hidden="true" href="#using-the-conch-library-for-shelling-out-asynchronously"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using the &lt;a href="https://github.com/Raynes/conch"&gt;Conch Library&lt;/a&gt; for shelling out asynchronously&lt;/h5&gt;
+&lt;p&gt;This one was a good contender, however it was dropped in favor of
+  &lt;i&gt;clojure.java.shell2&lt;/i&gt;. The reasons being that &lt;i&gt;shell2&lt;/i&gt; feels more
+  idiomatic and that Conch isn’t being actively developed
+  anymore. &lt;i&gt;shell2&lt;/i&gt; hasn’t seen a commit even longer, but is based on
+  the Clojure core lib &lt;i&gt;clojure.java.shell&lt;/i&gt; which gives it some
+  additional credibility.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-using-java-processbuilder" class="anchor" aria-hidden="true" href="#using-java-processbuilder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Java ProcessBuilder&lt;/h5&gt;
+&lt;p&gt;Java has a Class for creating and managing Sub-Processes called
+  &lt;a href="http://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html" rel="nofollow"&gt;ProcessBuilder&lt;/a&gt;. I did some initial tests, but &lt;i&gt;shell2&lt;/i&gt; prevailed.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-icecast" class="anchor" aria-hidden="true" href="#icecast"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Icecast&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-stats" class="anchor" aria-hidden="true" href="#stats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stats&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://0.0.0.0/admin/stats.xml" rel="nofollow"&gt;http://0.0.0.0/admin/stats.xml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://0.0.0.0/status-json.xsl" rel="nofollow"&gt;http://0.0.0.0/status-json.xsl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-protocol" class="anchor" aria-hidden="true" href="#protocol"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Protocol&lt;/h3&gt;
+&lt;p&gt;Reverse engineered streaming of Ogg Vorbis files:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;client/put&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;http://52.58.65.224/4609&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            {
+             &lt;span class="pl-c1"&gt;:basic-auth&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;source&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;thisisagoodpassword&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]
+             &lt;span class="pl-c1"&gt;:body&lt;/span&gt; (&lt;span class="pl-en"&gt;clojure.java.io/file&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/home/munen/src/voicerepublic_icecast_tests/manual_put/test.ogg&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+             &lt;span class="pl-c1"&gt;:headers&lt;/span&gt; {
+                       &lt;span class="pl-c1"&gt;:user-agent&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;vr_shout/0.2.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-bitrate&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;128&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:content-type&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;application/ogg&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-name&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;VR Server Name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-genre&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Rock&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-title&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;VR Title&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-url&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://voicerepublic.com&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-private&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-public&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-description&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;VR Server Description&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       &lt;span class="pl-c1"&gt;:ice-audio-info&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ice-samplerate=44100;ice-bitrate=128;ice-channels=2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                       }
+             })
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-to-dos" class="anchor" aria-hidden="true" href="#to-dos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To-dos&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-implementation-notes" class="anchor" aria-hidden="true" href="#implementation-notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Implementation Notes&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-finding-available-audio-input-devices" class="anchor" aria-hidden="true" href="#finding-available-audio-input-devices"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finding available audio input devices&lt;/h3&gt;
+&lt;p&gt;Note: It would be possible to check for LINE_IN and MICROPHONE
+  directly using
+  (AudioSystem/isLineSupported Port$Info/LINE_IN)
+  and
+  (AudioSystem/getLine Port$Info/LINE_IN)
+  However, this does not always return a line with said capability
+  (seen in Debian 8). Therefore, we’re using the method to request a
+  line via the Mixer.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-why-streaming-mp3-and-not-vorbis" class="anchor" aria-hidden="true" href="#why-streaming-mp3-and-not-vorbis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why streaming MP3 and not Vorbis?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://svn.xiph.org/trunk/vorbis-java/" rel="nofollow"&gt;vorbis-java&lt;/a&gt; is the official Java lib from Xiph, the creators of Ogg
+  Vorbis. It has example source and even a port of the libshout lib.&lt;/p&gt;
+&lt;p&gt;Unfortunately, though, it hasn’t been updated since 2007, is still in
+  Beta and not available from Maven. For a manual install, package the
+  Class files with &lt;b&gt;jar cf something.jar [files]&lt;/b&gt; and then create a
+  local Maven Repo for Leiningen:
+  &lt;a href="http://www.elangocheran.com/blog/2013/03/installing-jar-files-locally-for-leiningen-2/" rel="nofollow"&gt;http://www.elangocheran.com/blog/2013/03/installing-jar-files-locally-for-leiningen-2/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-libshout-java" class="anchor" aria-hidden="true" href="#libshout-java"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;libshout-java&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/OlegKunitsyn/libshout-java"&gt;libshout-java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h4&gt;
+&lt;p&gt;Note that putting a Jar into &lt;b&gt;/lib&lt;/b&gt; or using &lt;b&gt;:resource-paths&lt;/b&gt; in
+  project.clj doesn’t seem to be the way to go since Leiningen 2.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-os-x" class="anchor" aria-hidden="true" href="#os-x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OS X&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-checkout-libshout-java" class="anchor" aria-hidden="true" href="#checkout-libshout-java"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Checkout libshout-java&lt;/h6&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone git@github.com:poochiethecat/libshout-java.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; libshout-java
+brew install ./libshout.rb
+mvn install
+cp ./target/libshout-java.so &lt;span class="pl-k"&gt;~&lt;/span&gt;/src/voicerepublic_logorrhoe/target/libshout-java.so&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;&lt;a id="user-content-debian" class="anchor" aria-hidden="true" href="#debian"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debian&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-checkout-libshout-java-1" class="anchor" aria-hidden="true" href="#checkout-libshout-java-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Checkout libshout-java&lt;/h6&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;apt-get install git libshout3-dev maven
+git clone https://github.com/OlegKunitsyn/libshout-java.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; libshout-java&lt;/pre&gt;&lt;/div&gt;
+&lt;h6&gt;&lt;a id="user-content-fix-a-test-otherwise-it-will-not-install" class="anchor" aria-hidden="true" href="#fix-a-test-otherwise-it-will-not-install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fix a test (otherwise it will not install)&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fix the test &lt;i&gt;testVersion()&lt;/i&gt; in
+    &lt;i&gt;src/test/java/com/gmail/kunicins/olegs/libshout/LibshoutTest.java&lt;/i&gt; to
+    check for your installed version of libshout&lt;/li&gt;
+  &lt;li&gt;It’s tested and working with version 2.3.1&lt;/li&gt;
+  &lt;li&gt;Find your version via&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;apt-cache show libshout3-dev &lt;span class="pl-k"&gt;|&lt;/span&gt; ag version &lt;span class="pl-k"&gt;|&lt;/span&gt; egrep -o &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2.[0-9].[0-9]&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Then install the library to your local maven repository so that
+    `lein deps` can find it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;mvn install&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;&lt;a id="user-content-move-this-compiled-library-to-a-http-repo-so-that-not-every-user-has-to-install-it-to-a-local-repo" class="anchor" aria-hidden="true" href="#move-this-compiled-library-to-a-http-repo-so-that-not-every-user-has-to-install-it-to-a-local-repo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Move this compiled Library to a HTTP repo so that not every user has to install it to a local repo&lt;/h5&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-package-for-os-x" class="anchor" aria-hidden="true" href="#package-for-os-x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Package for OS X&lt;/h3&gt;
+&lt;p&gt;To start of packaging the Java Swing GUI for OS X, let’s pack the
+  whole app inside of a stand alone jar.&lt;/p&gt;
+&lt;p&gt;To create a standalone Java Application through Leiningen, the main
+  class of the program has to be put into &lt;b&gt;project.clj&lt;/b&gt; as the value of
+  the &lt;b&gt;:main&lt;/b&gt; key. For this class to be available during the build
+  process, &lt;b&gt;(:gen-class)&lt;/b&gt; has to be called within the &lt;b&gt;(ns)&lt;/b&gt; declaration
+  of the responsible Clojure file. Documentation on how to achieve this
+  can be found &lt;a href="http://asymmetrical-view.com/2010/06/08/building-standalone-jars-wtih-leiningen.html" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; lein compile&lt;/span&gt;
+lein uberjar&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When curious, try starting the jar manually&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;java -jar target/clojure_desktop_app_demo-0.1.0-SNAPSHOT-standalone.jar&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The resulting JAR file is ready to be packaged into a Mac OS X
+  Installer.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-by-hand" class="anchor" aria-hidden="true" href="#by-hand"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;By hand&lt;/h4&gt;
+&lt;p&gt;This is more for testing purposes since you will still need the JRE
+  installed.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rm -rf /tmp/vr-restream /tmp/vr-restream.dmg
+mkdir /tmp/vr-restream
+cp target/&lt;span class="pl-k"&gt;*&lt;/span&gt;standalone.jar /tmp/vr-restream/vr-restream.jar
+ln -s /Applications /tmp/vr-restream/Applications
+hdiutil create -srcfolder /tmp/vr-restream /tmp/vr-restream.dmg&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-using-the-javapackager-tool" class="anchor" aria-hidden="true" href="#using-the-javapackager-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using the &lt;i&gt;javapackager&lt;/i&gt; tool&lt;/h4&gt;
+&lt;p&gt;The following script is based on &lt;a href="http://centerkey.com/mac/java/" rel="nofollow"&gt;this&lt;/a&gt; tutorial.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; target
+rm -rf &lt;span class="pl-k"&gt;*&lt;/span&gt;iconset
+rm -rf package deploy
+rm vr-restream.dmg
+mkdir vr-restream.iconset
+sips -z 128 128 ../resources/img/logo.png --out vr-restream.iconset/icon_128x128.png
+iconutil --convert icns vr-restream.iconset
+mkdir -p package/macosx
+cp vr-restream.icns package/macosx
+jdk=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;/usr/libexec/java_home&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-smi"&gt;$jdk&lt;/span&gt;/bin/javapackager -version
+&lt;span class="pl-smi"&gt;$jdk&lt;/span&gt;/bin/javapackager -deploy -native dmg \
+   -srcfiles vr_logorrhoe-0.1.0-SNAPSHOT-standalone.jar -appclass vr_logorrhoe.core -name vr-restream \
+   -outdir deploy -outfile vr-restream -v&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: If something needs to be packed into the .dmg file, this would
+  be a way. In this example a config value is changed inside a file: For
+  that, let’s mount the .dmg file in RW mode, use sed to change the
+  config file value and then create a new .dmg file that’s again RO.
+  This process has been inspired by:
+  &lt;a href="http://www.macenterprise.org/articles/creativewaysofusingshadowfiles" rel="nofollow"&gt;http://www.macenterprise.org/articles/creativewaysofusingshadowfiles&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Step 1: Eject the volume that has been mounted by javapackager&lt;/span&gt;
+hdiutil detach /Volumes/vr-restream
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Step 2: Attach the read-only image with a shadow option&lt;/span&gt;
+hdiutil attach -owners on deploy/bundles/vr-restream-1.0.dmg -shadow
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Step 3: Mutate inside the image what needs mutating&lt;/span&gt;
+sed -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; -e &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;s/app.classpath=/app.classpath=vr_logorrhoe-0.1.0-SNAPSHOT-standalone.jar/g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; /Volumes/vr-restream/vr-restream.app/Contents/Java/vr-restream.cfg
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Step 4: Detach the currently attached image&lt;/span&gt;
+hdiutil detach /Volumes/vr-restream
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Step 5: Convert the image back to read-only, in the process creating a new image&lt;/span&gt;
+hdiutil convert -format UDZO -o vr-restream.dmg deploy/bundles/vr-restream-1.0.dmg -shadow
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After a good while (there’s code signing going on), you will find a
+  dmg file sitting in the deploy/bundles directory.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2016 Voice Republic Media AG&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-bundled-software" class="anchor" aria-hidden="true" href="#bundled-software"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bundled software&lt;/h3&gt;
+&lt;p&gt;This project bundles the &lt;a href="http://lame.sourceforge.net/" rel="nofollow"&gt;LAME Encoder&lt;/a&gt;. LAME is under the
+  LGPL. Since it has been bundled in binary form and has not been
+  modified, it is allowed to distribute it within this project
+  without releasing the source of the project itself.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>voicerepublic</author><guid isPermaLink="false">https://github.com/voicerepublic/vr-logorrhoe</guid><pubDate>Mon, 09 Dec 2019 00:04:00 GMT</pubDate></item></channel></rss>
