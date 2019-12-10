@@ -1,2 +1,461 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Objective-C++, This month</title><link>https://github.com/trending/objective-c++?since=monthly</link><description>The top repositories on GitHub for objective-c++, measured monthly</description><pubDate>Mon, 09 Dec 2019 01:05:40 GMT</pubDate><lastBuildDate>Mon, 09 Dec 2019 01:05:40 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Objective-C++, This month today</title><pubDate>Mon, 09 Dec 2019 01:05:40 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Objective-C++, This month</title><link>https://github.com/trending/objective-c++?since=monthly</link><description>The top repositories on GitHub for objective-c++, measured monthly</description><pubDate>Tue, 10 Dec 2019 01:05:29 GMT</pubDate><lastBuildDate>Tue, 10 Dec 2019 01:05:29 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>facebook/pop #1 in Objective-C++, This month</title><link>https://github.com/facebook/pop</link><description>&lt;p&gt;&lt;i&gt;An extensible iOS and OS X animation library, useful for physics-based interactions.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/pop/blob/master/Images/pop.gif?raw=true"&gt;&lt;img src="https://github.com/facebook/pop/raw/master/Images/pop.gif?raw=true" alt="pop" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pop is an extensible animation engine for iOS, tvOS, and OS X. In addition to basic static animations, it supports spring and decay dynamic animations, making it useful for building realistic, physics-based interactions. The API allows quick integration with existing Objective-C or Swift codebases and enables the animation of any property on any object. It's a mature and well-tested framework that drives all the animations and transitions in &lt;a href="https://en.wikipedia.org/wiki/Facebook_Paper" rel="nofollow"&gt;Paper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/facebook/pop" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9930e41ff58d33e1975e2790e45b25aa0910b357/68747470733a2f2f7472617669732d63692e6f72672f66616365626f6f6b2f706f702e737667" alt="Build Status" data-canonical-src="https://travis-ci.org/facebook/pop.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Pop is available on &lt;a href="http://cocoapods.org" rel="nofollow"&gt;CocoaPods&lt;/a&gt;. Just add the following to your project Podfile:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ruby"&gt;&lt;pre&gt;pod &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pop&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;~&amp;gt; 1.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bugs are first fixed in master and then made available via a designated release. If you tend to live on the bleeding edge, you can use Pop from master with the following Podfile entry:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ruby"&gt;&lt;pre&gt;pod &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pop&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;:git&lt;/span&gt; =&amp;gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;https://github.com/facebook/pop.git&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-framework-manual" class="anchor" aria-hidden="true" href="#framework-manual"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Framework (manual)&lt;/h3&gt;
+&lt;p&gt;By adding the project to your project and adding pop.embedded framework to the Embedded Binaries section on the General tab of your app's target, you can set up pop in seconds! This also enables &lt;code&gt;@import pop&lt;/code&gt; syntax with header modules.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: because of some awkward limitations with Xcode, embedded binaries must share the same name as the module and must have &lt;code&gt;.framework&lt;/code&gt; as an extension. This means that you'll see three pop.frameworks when adding embedded binaries (one for OS X, one for tvOS, and one for iOS). You'll need to be sure to add the right one; they appear identically in the list but note the list is populated in order of targets. You can verify the correct one was chosen by checking the path next to the framework listed, in the format &lt;code&gt;&amp;lt;configuration&amp;gt;-&amp;lt;platform&amp;gt;&lt;/code&gt; (e.g. &lt;code&gt;Debug-iphoneos&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="Images/EmbeddedBinaries.png?raw=true"&gt;&lt;img src="Images/EmbeddedBinaries.png?raw=true" alt="Embedded Binaries" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note 2&lt;/strong&gt;: this method does not currently play nicely with workspaces. Since targets can only depend on and embed products from other targets in the same project, it only works when pop.xcodeproj is added as a subproject to the current target's project. Otherwise, you'll need to manually set the build ordering in the scheme and copy in the product.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-static-library-manual" class="anchor" aria-hidden="true" href="#static-library-manual"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Static Library (manual)&lt;/h3&gt;
+&lt;p&gt;Alternatively, you can add the project to your workspace and adopt the provided configuration files or manually copy the files under the pop subdirectory into your project. If installing manually, ensure the C++ standard library is also linked by including &lt;code&gt;-lc++&lt;/code&gt; to your project linker flags.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Pop adopts the Core Animation explicit animation programming model. Use by including the following import:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c" class="anchor" aria-hidden="true" href="#objective-c"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;#&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;&lt;/span&gt;pop/POP.h&lt;span class="pl-pds"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or if you're using the embedded framework:&lt;/p&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;@import pop;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift" class="anchor" aria-hidden="true" href="#swift"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-en"&gt;pop&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-start-stop--update" class="anchor" aria-hidden="true" href="#start-stop--update"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Start, Stop &amp;amp; Update&lt;/h3&gt;
+&lt;p&gt;To start an animation, add it to the object you wish to animate:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-1" class="anchor" aria-hidden="true" href="#objective-c-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPSpringAnimation *anim = [POPSpringAnimation &lt;span class="pl-c1"&gt;animation&lt;/span&gt;];
+...
+[layer &lt;span class="pl-c1"&gt;pop_addAnimation:&lt;/span&gt;anim &lt;span class="pl-c1"&gt;forKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-1" class="anchor" aria-hidden="true" href="#swift-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;POPSpringAnimation&lt;/span&gt;()
+&lt;span class="pl-k"&gt;...&lt;/span&gt;
+layer.&lt;span class="pl-c1"&gt;pop_add&lt;/span&gt;(anim, &lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To stop an animation, remove it from the object referencing the key specified on start:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-2" class="anchor" aria-hidden="true" href="#objective-c-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;[layer &lt;span class="pl-c1"&gt;pop_removeAnimationForKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-2" class="anchor" aria-hidden="true" href="#swift-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;layer.&lt;span class="pl-c1"&gt;pop_removeAnimation&lt;/span&gt;(&lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The key can also be used to query for the existence of an animation. Updating the toValue of a running animation can provide the most seamless way to change course:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-3" class="anchor" aria-hidden="true" href="#objective-c-3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;anim = [layer &lt;span class="pl-c1"&gt;pop_animationForKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];
+&lt;span class="pl-k"&gt;if&lt;/span&gt; (anim) {
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt; update to value to new destination &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+  anim.&lt;span class="pl-smi"&gt;toValue&lt;/span&gt; = @(&lt;span class="pl-c1"&gt;42.0&lt;/span&gt;);
+} &lt;span class="pl-k"&gt;else&lt;/span&gt; {
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt; create and start a new animation &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+  ....
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-3" class="anchor" aria-hidden="true" href="#swift-3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; layer.&lt;span class="pl-c1"&gt;pop_animation&lt;/span&gt;(&lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;myKey&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;as?&lt;/span&gt; POPSpringAnimation {
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt; update to value to new destination &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+    anim.&lt;span class="pl-smi"&gt;toValue&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;42.0&lt;/span&gt;
+} &lt;span class="pl-k"&gt;else&lt;/span&gt; {
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;/*&lt;/span&gt; create and start a new animation &lt;span class="pl-c"&gt;*/&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-k"&gt;....&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;While a layer was used in the above examples, the Pop interface is implemented as a category addition on NSObject. Any NSObject or subclass can be animated.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-types" class="anchor" aria-hidden="true" href="#types"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Types&lt;/h3&gt;
+&lt;p&gt;There are four concrete animation types: spring, decay, basic and custom.&lt;/p&gt;
+&lt;p&gt;Spring animations can be used to give objects a delightful bounce. In this example, we use a spring animation to animate a layer's bounds from its current value to (0, 0, 400, 400):&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-4" class="anchor" aria-hidden="true" href="#objective-c-4"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPSpringAnimation *anim = [POPSpringAnimation &lt;span class="pl-c1"&gt;animationWithPropertyNamed:&lt;/span&gt;&lt;span class="pl-c1"&gt;kPOPLayerBounds&lt;/span&gt;];
+anim.toValue = [&lt;span class="pl-c1"&gt;NSValue&lt;/span&gt; &lt;span class="pl-c1"&gt;valueWithCGRect:&lt;/span&gt;&lt;span class="pl-c1"&gt;CGRectMake&lt;/span&gt;(&lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;400&lt;/span&gt;, &lt;span class="pl-c1"&gt;400&lt;/span&gt;)];
+[layer &lt;span class="pl-c1"&gt;pop_addAnimation:&lt;/span&gt;anim &lt;span class="pl-c1"&gt;forKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;size&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-4" class="anchor" aria-hidden="true" href="#swift-4"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;POPSpringAnimation&lt;/span&gt;(&lt;span class="pl-c1"&gt;propertyNamed&lt;/span&gt;: kPOPLayerBounds) {
+    anim.&lt;span class="pl-smi"&gt;toValue&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;NSValue&lt;/span&gt;(&lt;span class="pl-c1"&gt;cgRect&lt;/span&gt;: &lt;span class="pl-c1"&gt;CGRect&lt;/span&gt;(&lt;span class="pl-c1"&gt;x&lt;/span&gt;: &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;y&lt;/span&gt;: &lt;span class="pl-c1"&gt;0&lt;/span&gt;, &lt;span class="pl-c1"&gt;width&lt;/span&gt;: &lt;span class="pl-c1"&gt;400&lt;/span&gt;, &lt;span class="pl-c1"&gt;height&lt;/span&gt;: &lt;span class="pl-c1"&gt;400&lt;/span&gt;))
+    layer.&lt;span class="pl-c1"&gt;pop_add&lt;/span&gt;(anim, &lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;size&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Decay animations can be used to gradually slow an object to a halt. In this example, we decay a layer's positionX from it's current value and velocity 1000pts per second:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-5" class="anchor" aria-hidden="true" href="#objective-c-5"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPDecayAnimation *anim = [POPDecayAnimation &lt;span class="pl-c1"&gt;animationWithPropertyNamed:&lt;/span&gt;&lt;span class="pl-c1"&gt;kPOPLayerPositionX&lt;/span&gt;];
+anim.velocity = @(&lt;span class="pl-c1"&gt;1000&lt;/span&gt;.);
+[layer &lt;span class="pl-c1"&gt;pop_addAnimation:&lt;/span&gt;anim &lt;span class="pl-c1"&gt;forKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;slide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-5" class="anchor" aria-hidden="true" href="#swift-5"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;POPDecayAnimation&lt;/span&gt;(&lt;span class="pl-c1"&gt;propertyNamed&lt;/span&gt;: kPOPLayerPositionX) {
+    anim.&lt;span class="pl-smi"&gt;velocity&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1000.0&lt;/span&gt;
+    layer.&lt;span class="pl-c1"&gt;pop_add&lt;/span&gt;(anim, &lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;slide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Basic animations can be used to interpolate values over a specified time period. To use an ease-in ease-out animation to animate a view's alpha from 0.0 to 1.0 over the default duration:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-6" class="anchor" aria-hidden="true" href="#objective-c-6"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPBasicAnimation *anim = [POPBasicAnimation &lt;span class="pl-c1"&gt;animationWithPropertyNamed:&lt;/span&gt;&lt;span class="pl-c1"&gt;kPOPViewAlpha&lt;/span&gt;];
+anim.timingFunction = [CAMediaTimingFunction &lt;span class="pl-c1"&gt;functionWithName:&lt;/span&gt;&lt;span class="pl-c1"&gt;kCAMediaTimingFunctionEaseInEaseOut&lt;/span&gt;];
+anim.fromValue = @(&lt;span class="pl-c1"&gt;0.0&lt;/span&gt;);
+anim.toValue = @(&lt;span class="pl-c1"&gt;1.0&lt;/span&gt;);
+[view &lt;span class="pl-c1"&gt;pop_addAnimation:&lt;/span&gt;anim &lt;span class="pl-c1"&gt;forKey:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;fade&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-6" class="anchor" aria-hidden="true" href="#swift-6"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;POPBasicAnimation&lt;/span&gt;(&lt;span class="pl-c1"&gt;propertyNamed&lt;/span&gt;: kPOPViewAlpha) {
+    anim.&lt;span class="pl-smi"&gt;timingFunction&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;CAMediaTimingFunction&lt;/span&gt;(&lt;span class="pl-c1"&gt;name&lt;/span&gt;: kCAMediaTimingFunctionEaseInEaseOut)
+    anim.&lt;span class="pl-smi"&gt;fromValue&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.0&lt;/span&gt;
+    anim.&lt;span class="pl-smi"&gt;toValue&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1.0&lt;/span&gt;
+    view.&lt;span class="pl-c1"&gt;pop_add&lt;/span&gt;(anim, &lt;span class="pl-c1"&gt;forKey&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;fade&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;POPCustomAnimation&lt;/code&gt; makes creating custom animations and transitions easier by handling CADisplayLink and associated time-step management. See header for more details.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-properties" class="anchor" aria-hidden="true" href="#properties"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Properties&lt;/h3&gt;
+&lt;p&gt;The property animated is specified by the &lt;code&gt;POPAnimatableProperty&lt;/code&gt; class. In this example we create a spring animation and explicitly set the animatable property corresponding to &lt;code&gt;-[CALayer bounds]&lt;/code&gt;:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-7" class="anchor" aria-hidden="true" href="#objective-c-7"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPSpringAnimation *anim = [POPSpringAnimation &lt;span class="pl-c1"&gt;animation&lt;/span&gt;];
+anim.property = [POPAnimatableProperty &lt;span class="pl-c1"&gt;propertyWithName:&lt;/span&gt;&lt;span class="pl-c1"&gt;kPOPLayerBounds&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-7" class="anchor" aria-hidden="true" href="#swift-7"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; anim &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;POPSpringAnimation&lt;/span&gt;()
+&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; property &lt;span class="pl-k"&gt;=&lt;/span&gt; POPAnimatableProperty.&lt;span class="pl-c1"&gt;property&lt;/span&gt;(&lt;span class="pl-c1"&gt;withName&lt;/span&gt;: kPOPLayerBounds) &lt;span class="pl-k"&gt;as?&lt;/span&gt; POPAnimatableProperty {
+    anim.&lt;span class="pl-smi"&gt;property&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; property
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The framework provides many common layer and view animatable properties out of box. You can animate a custom property by creating a new instance of the class. In this example, we declare a custom volume property:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-8" class="anchor" aria-hidden="true" href="#objective-c-8"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;prop = [POPAnimatableProperty &lt;span class="pl-c1"&gt;propertyWithName:&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;com.foo.radio.volume&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;initializer:&lt;/span&gt;^(POPMutableAnimatableProperty *prop) {
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; read value&lt;/span&gt;
+  prop.&lt;span class="pl-smi"&gt;readBlock&lt;/span&gt; = ^(&lt;span class="pl-c1"&gt;id&lt;/span&gt; obj, &lt;span class="pl-c1"&gt;CGFloat&lt;/span&gt; values[]) {
+    values[&lt;span class="pl-c1"&gt;0&lt;/span&gt;] = [obj &lt;span class="pl-c1"&gt;volume&lt;/span&gt;];
+  };
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; write value&lt;/span&gt;
+  prop.&lt;span class="pl-smi"&gt;writeBlock&lt;/span&gt; = ^(&lt;span class="pl-c1"&gt;id&lt;/span&gt; obj, &lt;span class="pl-k"&gt;const&lt;/span&gt; &lt;span class="pl-c1"&gt;CGFloat&lt;/span&gt; values[]) {
+    [obj &lt;span class="pl-c1"&gt;setVolume:&lt;/span&gt;values[&lt;span class="pl-c1"&gt;0&lt;/span&gt;]];
+  };
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; dynamics threshold&lt;/span&gt;
+  prop.&lt;span class="pl-smi"&gt;threshold&lt;/span&gt; = &lt;span class="pl-c1"&gt;0.01&lt;/span&gt;;
+}];
+
+anim.property = prop;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-8" class="anchor" aria-hidden="true" href="#swift-8"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; prop &lt;span class="pl-k"&gt;=&lt;/span&gt; POPAnimatableProperty.&lt;span class="pl-c1"&gt;property&lt;/span&gt;(&lt;span class="pl-c1"&gt;withName&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;com.foo.radio.volume&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;initializer&lt;/span&gt;: { prop &lt;span class="pl-k"&gt;in&lt;/span&gt;
+    &lt;span class="pl-k"&gt;guard&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; prop &lt;span class="pl-k"&gt;=&lt;/span&gt; prop &lt;span class="pl-k"&gt;else&lt;/span&gt; {
+        &lt;span class="pl-k"&gt;return&lt;/span&gt;
+    }
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; read value&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;/span&gt;    prop.&lt;span class="pl-smi"&gt;readBlock&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; { obj, values &lt;span class="pl-k"&gt;in&lt;/span&gt;
+        &lt;span class="pl-k"&gt;guard&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; obj &lt;span class="pl-k"&gt;=&lt;/span&gt; obj &lt;span class="pl-k"&gt;as?&lt;/span&gt; Volumeable, &lt;span class="pl-k"&gt;let&lt;/span&gt; values &lt;span class="pl-k"&gt;=&lt;/span&gt; values &lt;span class="pl-k"&gt;else&lt;/span&gt; {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt;
+        }
+
+        values[&lt;span class="pl-c1"&gt;0&lt;/span&gt;] &lt;span class="pl-k"&gt;=&lt;/span&gt; obj.&lt;span class="pl-smi"&gt;volume&lt;/span&gt;
+    }
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; write value&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;/span&gt;    prop.&lt;span class="pl-smi"&gt;writeBlock&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; { obj, values &lt;span class="pl-k"&gt;in&lt;/span&gt;
+        &lt;span class="pl-k"&gt;guard&lt;/span&gt; &lt;span class="pl-k"&gt;var&lt;/span&gt; obj &lt;span class="pl-k"&gt;=&lt;/span&gt; obj &lt;span class="pl-k"&gt;as?&lt;/span&gt; Volumeable, &lt;span class="pl-k"&gt;let&lt;/span&gt; values &lt;span class="pl-k"&gt;=&lt;/span&gt; values &lt;span class="pl-k"&gt;else&lt;/span&gt; {
+            &lt;span class="pl-k"&gt;return&lt;/span&gt;
+        }
+
+        obj.&lt;span class="pl-smi"&gt;volume&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; values[&lt;span class="pl-c1"&gt;0&lt;/span&gt;]
+    }
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; dynamics threshold&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;/span&gt;    prop.&lt;span class="pl-smi"&gt;threshold&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.01&lt;/span&gt;
+}) &lt;span class="pl-k"&gt;as?&lt;/span&gt; POPAnimatableProperty {
+    anim.&lt;span class="pl-smi"&gt;property&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; prop
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For a complete listing of provided animatable properties, as well more information on declaring custom properties see &lt;code&gt;POPAnimatableProperty.h&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-debugging" class="anchor" aria-hidden="true" href="#debugging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debugging&lt;/h3&gt;
+&lt;p&gt;Here are a few tips when debugging. Pop obeys the Simulator's Toggle Slow Animations setting. Try enabling it to slow down animations and more easily observe interactions.&lt;/p&gt;
+&lt;p&gt;Consider naming your animations. This will allow you to more easily identify them when referencing them, either via logging or in the debugger:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-9" class="anchor" aria-hidden="true" href="#objective-c-9"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;anim.name = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;@"&lt;/span&gt;springOpen&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-9" class="anchor" aria-hidden="true" href="#swift-9"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;anim.&lt;span class="pl-smi"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;springOpen&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Each animation comes with an associated tracer. The tracer allows you to record all animation-related events, in a fast and efficient manner, allowing you to query and analyze them after animation completion. The below example starts the tracer and configures it to log all events on animation completion:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-objective-c-10" class="anchor" aria-hidden="true" href="#objective-c-10"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Objective-C&lt;/h4&gt;
+&lt;div class="highlight highlight-source-objc"&gt;&lt;pre&gt;POPAnimationTracer *tracer = anim.tracer;
+tracer.shouldLogAndResetOnCompletion = &lt;span class="pl-c1"&gt;YES&lt;/span&gt;;
+[tracer &lt;span class="pl-c1"&gt;start&lt;/span&gt;];&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swift-10" class="anchor" aria-hidden="true" href="#swift-10"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift&lt;/h4&gt;
+&lt;div class="highlight highlight-source-swift"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-k"&gt;let&lt;/span&gt; tracer &lt;span class="pl-k"&gt;=&lt;/span&gt; anim.&lt;span class="pl-smi"&gt;tracer&lt;/span&gt; {
+    tracer.&lt;span class="pl-smi"&gt;shouldLogAndResetOnCompletion&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+    tracer.&lt;span class="pl-c1"&gt;start&lt;/span&gt;()
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See &lt;code&gt;POPAnimationTracer.h&lt;/code&gt; for more details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h2&gt;
+&lt;p&gt;Pop has extensive unit test coverage. To install test dependencies, navigate to the root pop directory and type:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;pod install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Assuming CocoaPods is installed, this will include the necessary OCMock dependency to the unit test targets.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-scenekit" class="anchor" aria-hidden="true" href="#scenekit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SceneKit&lt;/h2&gt;
+&lt;p&gt;Due to SceneKit requiring iOS 8 and OS X 10.9, POP's SceneKit extensions aren't provided out of box. Unfortunately, &lt;a href="https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html" rel="nofollow"&gt;weakly linked frameworks&lt;/a&gt; cannot be used due to issues mentioned in the &lt;a href="https://developer.apple.com/library/ios/releasenotes/DeveloperTools/RN-Xcode/Chapters/xc6_release_notes.html" rel="nofollow"&gt;Xcode 6.1 Release Notes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To remedy this, you can easily opt-in to use SceneKit! Simply add this to the Preprocessor Macros section of your Xcode Project:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;POP_USE_SCENEKIT=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-resources" class="anchor" aria-hidden="true" href="#resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Resources&lt;/h2&gt;
+&lt;p&gt;A collection of links to external resources that may prove valuable:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hfossli/aggeometrykit-pop"&gt;AGGeometryKit+POP - Animating Quadrilaterals with Pop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html" rel="nofollow"&gt;Apple – Core Animation Programming Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://iosdevtips.co/post/84571595353/replicating-uiscrollviews-deceleration-with-facebook" rel="nofollow"&gt;iOS Development Tips – UIScrollView-like deceleration with Pop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/callmeed/pop-playground"&gt;Pop Playground – Repository of Pop animation examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://victorbaro.com/2014/05/pop-playground-playing-with-facebooks-framework/" rel="nofollow"&gt;Pop Playground 2 – Playing with Facebook's framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/matthewcheok/POP-MCAnimate"&gt;POP-MCAnimate – Concise syntax for the Pop animation framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/schneiderandre/popping"&gt;Popping - Great examples in one project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://facebook.github.io/rebound/" rel="nofollow"&gt;Rebound – Spring Animations for Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tapity.com/tutorial-getting-started-with-pop/" rel="nofollow"&gt;Tapity Tutorial – Getting Started with Pop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/facebook/tweaks"&gt;Tweaks – Easily adjust parameters for iOS apps in development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/maxmyers/FacebookPop"&gt;POP Tutorial in 5 steps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/victorBaro/VBFPopFlatButton"&gt;VBFPopFlatButton – Flat animatable button, using Pop to transition between states&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See the CONTRIBUTING file for how to help out.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Pop is released under a BSD License. See LICENSE file for details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>facebook</author><guid isPermaLink="false">https://github.com/facebook/pop</guid><pubDate>Tue, 10 Dec 2019 00:01:00 GMT</pubDate></item><item><title>KhronosGroup/MoltenVK #2 in Objective-C++, This month</title><link>https://github.com/KhronosGroup/MoltenVK</link><description>&lt;p&gt;&lt;i&gt;MoltenVK is an implementation of the high-performance, industry-standard Vulkan graphics and compute API, that runs on Apple's Metal graphics framework, bringing Vulkan to iOS and macOS.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="https://github.com/KhronosGroup/MoltenVK" title="MoltenVK"&gt;
+	&lt;img src="Docs/images/MoltenVK-Logo-Banner.png" alt="MoltenVK" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;h1&gt;&lt;a id="user-content-moltenvk" class="anchor" aria-hidden="true" href="#moltenvk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MoltenVK&lt;/h1&gt;
+&lt;p&gt;Copyright (c) 2014-2019 &lt;a href="http://www.brenwill.com" rel="nofollow"&gt;The Brenwill Workshop Ltd.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This document is written in &lt;a href="http://en.wikipedia.org/wiki/Markdown" rel="nofollow"&gt;Markdown&lt;/a&gt; format.
+For best results, use a Markdown reader.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/KhronosGroup/MoltenVK" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b3553b3ce6da1fd4a4286dd48b0d1e338f303592/68747470733a2f2f7472617669732d63692e6f72672f4b68726f6e6f7347726f75702f4d6f6c74656e564b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/KhronosGroup/MoltenVK.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#developing_vulkan"&gt;Developing Vulkan Applications on macOS and iOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#intro"&gt;Introduction to &lt;strong&gt;MoltenVK&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#install"&gt;Fetching &lt;strong&gt;MoltenVK&lt;/strong&gt; Source Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building"&gt;Building &lt;strong&gt;MoltenVK&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#demos"&gt;Running the &lt;strong&gt;MoltenVK&lt;/strong&gt; Demo Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using"&gt;Using &lt;strong&gt;MoltenVK&lt;/strong&gt; in Your Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compliance"&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; and &lt;em&gt;Vulkan&lt;/em&gt; Compliance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#issues"&gt;Reporting Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing to &lt;strong&gt;MoltenVK&lt;/strong&gt; Development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-developing-vulkan-applications-for-macos-and-ios" class="anchor" aria-hidden="true" href="#developing-vulkan-applications-for-macos-and-ios"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-developing_vulkan"&gt;&lt;/a&gt;
+Developing Vulkan Applications for macOS and iOS&lt;/h2&gt;
+&lt;p&gt;The recommended method for developing a &lt;em&gt;Vulkan&lt;/em&gt; application for &lt;em&gt;macOS&lt;/em&gt; is to use the
+&lt;a href="https://vulkan.lunarg.com/sdk/home" rel="nofollow"&gt;&lt;em&gt;Vulkan SDK&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Vulkan SDK&lt;/em&gt; includes a  &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime library for &lt;em&gt;macOS&lt;/em&gt;. &lt;em&gt;Vulkan&lt;/em&gt; is a layered
+architecture that allows applications to add additional functionality without modifying the
+application itself. The &lt;em&gt;Validation Layers&lt;/em&gt; included in the &lt;em&gt;Vulkan SDK&lt;/em&gt; are an essential debugging
+tool for application developers because they identify inappropriate use of the &lt;em&gt;Vulkan API&lt;/em&gt;.
+If you are developing a &lt;em&gt;Vulkan&lt;/em&gt; application for &lt;em&gt;macOS&lt;/em&gt;, it is highly recommended that you use the
+&lt;a href="https://vulkan.lunarg.com/sdk/home" rel="nofollow"&gt;&lt;em&gt;Vulkan SDK&lt;/em&gt;&lt;/a&gt; and the &lt;strong&gt;MoltenVK&lt;/strong&gt; library included in it.&lt;/p&gt;
+&lt;p&gt;If you are developing a &lt;em&gt;Vulkan&lt;/em&gt; application for &lt;em&gt;iOS&lt;/em&gt;, or are developing a &lt;em&gt;Vulkan&lt;/em&gt; application for
+&lt;em&gt;macOS&lt;/em&gt; and want to use a different &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime library than provided in the &lt;em&gt;macOS Vulkan SDK&lt;/em&gt;,
+you can use this document to learn how to build a &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime library from source code.&lt;/p&gt;
+&lt;p&gt;To learn how to integrate the &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime library into a game or application,
+see the &lt;a href="Docs/MoltenVK_Runtime_UserGuide.md"&gt;&lt;code&gt;MoltenVK_Runtime_UserGuide.md &lt;/code&gt;&lt;/a&gt;
+document in the &lt;code&gt;Docs&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-introduction-to-moltenvk" class="anchor" aria-hidden="true" href="#introduction-to-moltenvk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-intro"&gt;&lt;/a&gt;
+Introduction to MoltenVK&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; is a driver-level implementation of the &lt;a href="https://www.khronos.org/vulkan" rel="nofollow"&gt;&lt;em&gt;Vulkan 1.0&lt;/em&gt;&lt;/a&gt;
+graphics and compute API, that runs on Apple's &lt;a href="https://developer.apple.com/metal" rel="nofollow"&gt;&lt;em&gt;Metal&lt;/em&gt;&lt;/a&gt;
+graphics and compute framework on both &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;macOS&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; allows you to use the &lt;em&gt;Vulkan&lt;/em&gt; graphics and compute API to develop modern,
+cross-platform, high-performance graphical games and applications, and to run them across
+many platforms, including both &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;macOS&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Metal&lt;/em&gt; uses a different shading language, the &lt;em&gt;Metal Shading Language (MSL)&lt;/em&gt;, than
+&lt;em&gt;Vulkan&lt;/em&gt;, which uses &lt;em&gt;SPIR-V&lt;/em&gt;. &lt;strong&gt;MoltenVK&lt;/strong&gt; automatically converts your &lt;em&gt;SPIR-V&lt;/em&gt; shaders
+to their &lt;em&gt;MSL&lt;/em&gt; equivalents.&lt;/p&gt;
+&lt;p&gt;To provide &lt;em&gt;Vulkan&lt;/em&gt; capability to the &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;macOS&lt;/em&gt; platforms, &lt;strong&gt;MoltenVK&lt;/strong&gt; uses &lt;em&gt;Apple's&lt;/em&gt;
+publicly available API's, including &lt;em&gt;Metal&lt;/em&gt;. &lt;strong&gt;MoltenVK&lt;/strong&gt; does &lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt; use any private or
+undocumented API calls or features, so your app will be compatible with all standard distribution
+channels, including &lt;em&gt;Apple's App Store&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime package contains two products:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; is a driver-level implementation of the &lt;a href="https://www.khronos.org/vulkan" rel="nofollow"&gt;&lt;em&gt;Vulkan 1.0&lt;/em&gt;&lt;/a&gt;
+graphics and compute API.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVKShaderConverter&lt;/strong&gt; converts &lt;em&gt;SPIR-V&lt;/em&gt; shader code to &lt;em&gt;Metal Shading Language (MSL)&lt;/em&gt;
+shader code, and converts &lt;em&gt;GLSL&lt;/em&gt; shader source code to &lt;em&gt;SPIR-V&lt;/em&gt; shader code and/or
+&lt;em&gt;Metal Shading Language (MSL)&lt;/em&gt; shader code. The &lt;em&gt;SPIR-V&lt;/em&gt; converter is included in the
+&lt;strong&gt;MoltenVK&lt;/strong&gt; runtime to automatically convert &lt;em&gt;SPIR-V&lt;/em&gt; shaders to their &lt;em&gt;MSL&lt;/em&gt; equivalents.
+In addition, both the &lt;em&gt;SPIR-V&lt;/em&gt; and &lt;em&gt;GLSL&lt;/em&gt; converters can be be packaged into a stand-alone
+command-line &lt;em&gt;macOS&lt;/em&gt; tool for converting shaders at development time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-fetching-moltenvk-source-code" class="anchor" aria-hidden="true" href="#fetching-moltenvk-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-install"&gt;&lt;/a&gt;
+Fetching &lt;strong&gt;MoltenVK&lt;/strong&gt; Source Code&lt;/h2&gt;
+&lt;p&gt;To fetch &lt;strong&gt;MoltenVK&lt;/strong&gt; source code, clone this &lt;code&gt;MoltenVK&lt;/code&gt; repository, and then run the
+&lt;code&gt;fetchDependencies&lt;/code&gt; script to retrieve and build several external open-source libraries
+on which &lt;strong&gt;MoltenVK&lt;/strong&gt; relies:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure you have &lt;code&gt;cmake&lt;/code&gt; and &lt;code&gt;python3&lt;/code&gt; installed:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; brew install cmake
+ brew install python3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For faster dependency builds, you can also optionally install &lt;code&gt;ninja&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; brew install ninja
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the &lt;code&gt;MoltenVK&lt;/code&gt; repository:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; git clone https://github.com/KhronosGroup/MoltenVK.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Retrieve and build the external libraries:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; cd MoltenVK
+ ./fetchDependencies
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more information about the external open-source libraries used by &lt;strong&gt;MoltenVK&lt;/strong&gt;,
+see the &lt;a href="ExternalRevisions/README.md"&gt;&lt;code&gt;ExternalRevisions/README.md&lt;/code&gt;&lt;/a&gt; document.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-moltenvk" class="anchor" aria-hidden="true" href="#building-moltenvk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-building"&gt;&lt;/a&gt;
+Building &lt;strong&gt;MoltenVK&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;During building, &lt;strong&gt;MoltenVK&lt;/strong&gt; references the latest &lt;em&gt;Apple SDK&lt;/em&gt; frameworks. To access these frameworks,
+and to avoid build errors, be sure to use the latest publicly available version of &lt;em&gt;Xcode&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/em&gt; To support &lt;code&gt;IOSurfaces&lt;/code&gt; on &lt;em&gt;iOS&lt;/em&gt;, &lt;strong&gt;MoltenVK&lt;/strong&gt;, and any app that uses &lt;strong&gt;MoltenVK&lt;/strong&gt;,
+must be built with a minimum &lt;strong&gt;iOS Deployment Target&lt;/strong&gt; (aka &lt;code&gt;IPHONEOS_DEPLOYMENT_TARGET &lt;/code&gt;) build
+setting of &lt;code&gt;iOS 11.0&lt;/code&gt; or greater.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once built, the &lt;strong&gt;MoltenVK&lt;/strong&gt; libraries can be run on &lt;em&gt;iOS&lt;/em&gt; or &lt;em&gt;macOS&lt;/em&gt; devices that support &lt;em&gt;Metal&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At runtime, &lt;strong&gt;MoltenVK&lt;/strong&gt; requires at least &lt;em&gt;macOS 10.11&lt;/em&gt; or &lt;em&gt;iOS 9&lt;/em&gt; (or &lt;em&gt;iOS 11&lt;/em&gt; if using &lt;code&gt;IOSurfaces&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Information on &lt;em&gt;macOS&lt;/em&gt; devices that are compatible with &lt;em&gt;Metal&lt;/em&gt; can be found in
+&lt;a href="http://www.idownloadblog.com/2015/06/22/how-to-find-mac-el-capitan-metal-compatible" rel="nofollow"&gt;this article&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Information on &lt;em&gt;iOS&lt;/em&gt; devices that are compatible with &lt;em&gt;Metal&lt;/em&gt; can be found in
+&lt;a href="https://developer.apple.com/library/content/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/HardwareGPUInformation/HardwareGPUInformation.html" rel="nofollow"&gt;this article&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;MoltenVKPackaging.xcodeproj&lt;/code&gt; &lt;em&gt;Xcode&lt;/em&gt; project contains targets and schemes to build
+and package the entire &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime distribution package, or to build individual
+&lt;strong&gt;MoltenVK&lt;/strong&gt; or &lt;strong&gt;MoltenVKShaderConverter&lt;/strong&gt; components.&lt;/p&gt;
+&lt;p&gt;To build a &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime distribution package, suitable for testing and integrating into an app,
+open &lt;code&gt;MoltenVKPackaging.xcodeproj&lt;/code&gt; in &lt;em&gt;Xcode&lt;/em&gt;, and use one of the following &lt;em&gt;Xcode Schemes&lt;/em&gt;, depending
+on whether you want a &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;Debug&lt;/em&gt;&lt;/strong&gt; configuration, and whether you want to build for both
+the &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;macOS&lt;/em&gt; platforms, or just one platform (in &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; configuration):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MoltenVK Package&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MoltenVK Package (Debug)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MoltenVK Package (iOS only)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MoltenVK Package (macOS only)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these&lt;code&gt;MoltenVKPackaging.xcodeproj&lt;/code&gt; &lt;em&gt;Xcode&lt;/em&gt; project &lt;em&gt;Schemes&lt;/em&gt; puts the resulting packages in the
+&lt;code&gt;Package&lt;/code&gt; directory, creating it if necessary. This directory contains separate &lt;code&gt;Release&lt;/code&gt; and &lt;code&gt;Debug&lt;/code&gt;
+directories, holding the most recent &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Debug&lt;/em&gt;&lt;/strong&gt; builds, respectively.&lt;/p&gt;
+&lt;p&gt;A separate &lt;code&gt;Latest&lt;/code&gt; directory links to  the most recent build, regardless of whether it was a &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt;
+or &lt;strong&gt;&lt;em&gt;Debug&lt;/em&gt;&lt;/strong&gt; build. Effectively, the &lt;code&gt;Package/Latest&lt;/code&gt; directory points to whichever of the &lt;code&gt;Package/Release&lt;/code&gt;
+or &lt;code&gt;Package/Debug&lt;/code&gt; directories was most recently updated.&lt;/p&gt;
+&lt;p&gt;With this packaging structure, you can follow the &lt;a href="#using"&gt;instructions below&lt;/a&gt; to link your application
+to the &lt;strong&gt;MoltenVK&lt;/strong&gt; libraries and frameworks in the &lt;code&gt;Package/Latest&lt;/code&gt; directory, to provide the flexibility
+to test your app with either a &lt;strong&gt;&lt;em&gt;Debug&lt;/em&gt;&lt;/strong&gt; build, or a higher-performance &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; build.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-from-the-command-line" class="anchor" aria-hidden="true" href="#building-from-the-command-line"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from the Command Line&lt;/h3&gt;
+&lt;p&gt;If you prefer to build &lt;strong&gt;MoltenVK&lt;/strong&gt; from the command line, or to include the activity in a larger build script,
+you can do so using the following command within the &lt;code&gt;MoltenVK&lt;/code&gt; repository folder, and identifying one of the
+&lt;em&gt;Xcode Schemes&lt;/em&gt; from the list above. For example, the following command will build &lt;strong&gt;MoltenVK&lt;/strong&gt; in the
+&lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; configuration for both &lt;em&gt;macOS&lt;/em&gt; and &lt;em&gt;iOS&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcodebuild -quiet -project MoltenVKPackaging.xcodeproj -scheme "MoltenVK Package" build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternately, you can use the basic &lt;code&gt;Makefile&lt;/code&gt; in the &lt;code&gt;MoltenVK&lt;/code&gt; repository folder to build &lt;strong&gt;MoltenVK&lt;/strong&gt;
+in the &lt;strong&gt;&lt;em&gt;Release&lt;/em&gt;&lt;/strong&gt; configuration from the command line. The following &lt;code&gt;make&lt;/code&gt; targets are provided:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make
+make all
+make macos
+make ios
+make clean
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;install&lt;/code&gt; target will copy the most recently built &lt;em&gt;macOS&lt;/em&gt; &lt;code&gt;MoltenVK.framework&lt;/code&gt; into
+the &lt;code&gt;/Library/Frameworks&lt;/code&gt; folder of your computer. Since &lt;code&gt;/Library/Frameworks&lt;/code&gt; is protected,
+you will generally need to run it as &lt;code&gt;sudo make install&lt;/code&gt; and enter your password.&lt;/p&gt;
+&lt;p&gt;The default &lt;code&gt;make&lt;/code&gt; command with no arguments is the same as &lt;code&gt;make all&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;make&lt;/code&gt; targets all require that &lt;em&gt;Xcode&lt;/em&gt; is installed on your system.&lt;/p&gt;
+&lt;p&gt;Building from the command line creates the same &lt;code&gt;Package&lt;/code&gt; folder structure described above when building
+from within &lt;em&gt;Xcode&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-within-a-larger-external-build-environment" class="anchor" aria-hidden="true" href="#building-within-a-larger-external-build-environment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Within a Larger External Build Environment&lt;/h3&gt;
+&lt;p&gt;If you build &lt;strong&gt;MoltenVK&lt;/strong&gt; as part of a larger build environment, that does not use the scripts or &lt;em&gt;Xcode&lt;/em&gt;
+projects provided by &lt;strong&gt;MoltenVK&lt;/strong&gt;, you may be interested in certain build options designed to allow you to
+customize the use of &lt;strong&gt;MoltenVK&lt;/strong&gt; within your custom build environment. These options are not available
+in the default &lt;strong&gt;MoltenVK&lt;/strong&gt; build environment described in the previous sections.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MoltenVKShaderConverter&lt;/code&gt; uses the &lt;code&gt;SPIRV-Tools&lt;/code&gt; external library to log SPIR-V code for diagnostics.
+If this is not useful to you, you can define the &lt;code&gt;MVK_EXCLUDE_SPIRV_TOOLS&lt;/code&gt; when building the
+&lt;code&gt;MoltenVKShaderConverter&lt;/code&gt; code base, and &lt;strong&gt;MoltenVK&lt;/strong&gt; will not attempt to use code from the &lt;code&gt;SPIRV-Tools&lt;/code&gt;
+repository. In this way, you will not need to retrieve or build the &lt;code&gt;SPIRV-Tools&lt;/code&gt; repository, or link to
+a &lt;code&gt;SPIRV-Tools&lt;/code&gt; external library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-running-the-moltenvk-demo-applications" class="anchor" aria-hidden="true" href="#running-the-moltenvk-demo-applications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-demos"&gt;&lt;/a&gt;
+Running the &lt;strong&gt;MoltenVK&lt;/strong&gt; Demo Applications&lt;/h2&gt;
+&lt;p&gt;Once you have compiled and built the &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime distribution package from this &lt;strong&gt;MoltenVK&lt;/strong&gt; repository,
+as described in the &lt;a href="#building"&gt;Building &lt;strong&gt;MoltenVK&lt;/strong&gt;&lt;/a&gt; section, you can explore how &lt;strong&gt;MoltenVK&lt;/strong&gt; provides &lt;em&gt;Vulkan&lt;/em&gt;
+support on &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;macOS&lt;/em&gt; by investigating and running the demo applications that are included in &lt;strong&gt;MoltenVK&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;MoltenVK&lt;/strong&gt; demo apps are located in the &lt;code&gt;Demos&lt;/code&gt; folder. Each demo app is available as an &lt;em&gt;Xcode&lt;/em&gt; project.
+To review and run the included demo apps, open the &lt;code&gt;Demos/Demos.xcworkspace&lt;/code&gt; workspace in &lt;em&gt;Xcode&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Please read the &lt;a href="Demos/README.md"&gt;&lt;code&gt;Demos/README.md&lt;/code&gt;&lt;/a&gt; document for a description of each demo app, and instructions
+on running the demo apps. Several of the demo apps allow you to explore a variety of &lt;em&gt;Vulkan&lt;/em&gt; features by modifying
+&lt;em&gt;Xcode&lt;/em&gt; build settings. Additional demos can be downloaded and built from external repositories, as described in the
+&lt;a href="Demos/README.md"&gt;&lt;code&gt;Demos/README.md&lt;/code&gt;&lt;/a&gt; document&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-using-moltenvk-in-your-application" class="anchor" aria-hidden="true" href="#using-moltenvk-in-your-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-using"&gt;&lt;/a&gt;
+Using &lt;strong&gt;MoltenVK&lt;/strong&gt; in Your Application&lt;/h2&gt;
+&lt;p&gt;Once you have compiled and built the &lt;strong&gt;MoltenVK&lt;/strong&gt; runtime distribution package from this &lt;strong&gt;MoltenVK&lt;/strong&gt; repository,
+as described in the &lt;a href="#building"&gt;Building &lt;strong&gt;MoltenVK&lt;/strong&gt;&lt;/a&gt; section, follow the instructions in the Installation
+section of the &lt;a href="Docs/MoltenVK_Runtime_UserGuide.md#install"&gt;&lt;code&gt;Docs/MoltenVK_Runtime_UserGuide.md&lt;/code&gt;&lt;/a&gt; document
+in the &lt;code&gt;Docs&lt;/code&gt; directory, to link the &lt;strong&gt;MoltenVK&lt;/strong&gt; libraries and frameworks to your application.&lt;/p&gt;
+&lt;p&gt;The runtime distribution package in the &lt;code&gt;Package/Latest&lt;/code&gt; directory is a stand-alone package, and you can copy
+the contents of that directory out of this &lt;strong&gt;MoltenVK&lt;/strong&gt; repository into your own application building environment.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-compliance"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-moltenvk-and-vulkan-compliance" class="anchor" aria-hidden="true" href="#moltenvk-and-vulkan-compliance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; and &lt;em&gt;Vulkan&lt;/em&gt; Compliance&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; is designed to be a &lt;em&gt;Vulkan 1.0&lt;/em&gt; driver that runs on &lt;em&gt;macOS&lt;/em&gt; and &lt;em&gt;iOS&lt;/em&gt; platforms by mapping &lt;em&gt;Vulkan&lt;/em&gt;
+capability to native &lt;em&gt;Metal&lt;/em&gt; capability.&lt;/p&gt;
+&lt;p&gt;The fundamental design and development goal of &lt;strong&gt;MoltenVK&lt;/strong&gt; is to provide this capability in a way that
+is both maximally compliant with the &lt;em&gt;Vulkan 1.0&lt;/em&gt; specification, and maximally  performant.&lt;/p&gt;
+&lt;p&gt;Such compliance and performance is inherently affected by the capability available through &lt;em&gt;Metal&lt;/em&gt;, as the
+native driver on &lt;em&gt;macOS&lt;/em&gt; and &lt;em&gt;iOS&lt;/em&gt; platforms. &lt;em&gt;Vulkan&lt;/em&gt; compliance may fall into one of the following categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Direct mapping between &lt;em&gt;Vulkan&lt;/em&gt; capabilities and &lt;em&gt;Metal&lt;/em&gt; capabilities. Within &lt;strong&gt;MoltenVK&lt;/strong&gt;, almost all capability
+is the result of this type of direct mapping.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Synthesized compliance through alternate implementation. A very small amount of capability is provided using
+this mechanism, such as via an extra render or compute shader stage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Non-compliance. This appears where the capabilities of &lt;em&gt;Vulkan&lt;/em&gt; and &lt;em&gt;Metal&lt;/em&gt; are sufficiently different, that
+there is no practical, or reasonably performant, mechanism to implement a &lt;em&gt;Vulkan&lt;/em&gt; capability in &lt;em&gt;Metal&lt;/em&gt;.
+Because of design differences between &lt;em&gt;Vulkan&lt;/em&gt; and &lt;em&gt;Metal&lt;/em&gt;, a very small amount of capability falls into this
+category, and at present &lt;strong&gt;MoltenVK&lt;/strong&gt; is &lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt; fully compliant with the &lt;em&gt;Vulkan&lt;/em&gt; specification. A list of
+known limitations is documented in the &lt;a href="Docs/MoltenVK_Runtime_UserGuide.md#limitations"&gt;&lt;code&gt;MoltenVK_Runtime_UserGuide.md&lt;/code&gt;&lt;/a&gt;
+document in the &lt;code&gt;Docs&lt;/code&gt; directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;strong&gt;MoltenVK&lt;/strong&gt; development team welcomes you to &lt;a href="https://github.com/KhronosGroup/MoltenVK/issues"&gt;post Issues&lt;/a&gt;
+of non-compliance, and engage in discussions about how compliance can be improved, and non-compliant features can
+be implemented or worked around.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; is a key component of the &lt;a href="https://www.khronos.org/vulkan/portability-initiative" rel="nofollow"&gt;&lt;em&gt;Khronos Vulkan Portability Initiative&lt;/em&gt;&lt;/a&gt;,
+whose intention is to provide specifications, resources, and tools to allow developers to understand and design
+their &lt;em&gt;Vulkan&lt;/em&gt; apps for maximum cross-platform compatibility and portability, including on platforms, such as
+&lt;em&gt;macOS&lt;/em&gt; and &lt;em&gt;iOS&lt;/em&gt;, where a native &lt;em&gt;Vulkan&lt;/em&gt; driver is not available.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-issues"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reporting-issues" class="anchor" aria-hidden="true" href="#reporting-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reporting Issues&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you encounter an issue with the behaviour of &lt;strong&gt;MoltenVK&lt;/strong&gt;, you can report it in the
+&lt;a href="https://github.com/KhronosGroup/MoltenVK/issues"&gt;&lt;em&gt;MoltenVK Issues List&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you encounter an issue with the &lt;em&gt;Vulkan SDK&lt;/em&gt;, including the &lt;em&gt;Validation Layers&lt;/em&gt;, you can report it in the
+&lt;a href="https://vulkan.lunarg.com/issue/home" rel="nofollow"&gt;&lt;em&gt;Vulkan SDK Issues List&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you explore &lt;strong&gt;MoltenVK&lt;/strong&gt; and determine that it does not meet your requirements at this time, we would appreciate
+hearing why that is so, on the &lt;a href="https://github.com/KhronosGroup/MoltenVK/issues"&gt;&lt;em&gt;MoltenVK Issues List&lt;/em&gt;&lt;/a&gt;.
+The goal of &lt;strong&gt;MoltenVK&lt;/strong&gt; is to increase the value of &lt;em&gt;Vulkan&lt;/em&gt; as a true cross-platform ecosystem, by providing
+&lt;em&gt;Vulkan&lt;/em&gt; on &lt;em&gt;Apple&lt;/em&gt; platforms. Hearing why this is currently not working for you will help us in that goal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-contributing"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing-to-moltenvk-development" class="anchor" aria-hidden="true" href="#contributing-to-moltenvk-development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing to &lt;strong&gt;MoltenVK&lt;/strong&gt; Development&lt;/h2&gt;
+&lt;p&gt;As a public open-source project, &lt;strong&gt;MoltenVK&lt;/strong&gt; benefits from code contributions from a wide range of developers,
+and we encourage you to get involved and contribute code to this &lt;strong&gt;MoltenVK&lt;/strong&gt; repository.&lt;/p&gt;
+&lt;p&gt;To contribute your code, submit a &lt;a href="https://github.com/KhronosGroup/MoltenVK/pulls"&gt;Pull Request&lt;/a&gt;
+to this repository. The first time you do this, you will be asked to agree to the &lt;strong&gt;MoltenVK&lt;/strong&gt;
+&lt;a href="https://cla-assistant.io/KhronosGroup/MoltenVK" rel="nofollow"&gt;Contributor License Agreement&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;MoltenVK&lt;/strong&gt; is licensed under the Apache 2.0 license. All new source code files should include a
+copyright header at the top, containing your authorship copyright and the Apache 2.0 licensing stub.
+You may copy the text from an existing source code file as a template.&lt;/p&gt;
+&lt;p&gt;The Apache 2.0 license guarantees that code in the &lt;strong&gt;MoltenVK&lt;/strong&gt; repository is free of Intellectual Property
+encumbrances. In submitting code to this repository, you are agreeing that the code is free of any Intellectual
+Property claims.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-memory-management" class="anchor" aria-hidden="true" href="#memory-management"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Memory Management&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Metal&lt;/em&gt;, and other &lt;em&gt;Objective-C&lt;/em&gt; objects in &lt;em&gt;Apple's SDK&lt;/em&gt; frameworks, use reference counting for memory management.
+When instantiating &lt;em&gt;Objective-C&lt;/em&gt; objects, it is important that you do not rely on implied &lt;em&gt;autorelease pools&lt;/em&gt; to do
+memory management for you. Because many &lt;em&gt;Vulkan&lt;/em&gt; games and apps may be ported from other platforms, they will
+typically not include autorelease pools in their threading models.&lt;/p&gt;
+&lt;p&gt;Avoid the use of the &lt;code&gt;autorelease&lt;/code&gt; method, or any object creation methods that imply use of &lt;code&gt;autorelease&lt;/code&gt;,
+(eg- &lt;code&gt;[NSString stringWithFormat: ]&lt;/code&gt;, etc). Instead, favour object creation methods that return a retained object
+(eg- &lt;code&gt;[[NSString alloc] initWithFormat: ]&lt;/code&gt;, etc), and manually track and release those objects. If you need to use
+autoreleased objects, wrap code blocks in an &lt;code&gt;@autoreleasepool {...}&lt;/code&gt; block.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-code-formatting" class="anchor" aria-hidden="true" href="#code-formatting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Formatting&lt;/h3&gt;
+&lt;p&gt;When contributing code, please honour the code formatting style found in existing &lt;strong&gt;MoltenVK&lt;/strong&gt; source code.
+In future, this will formally be enforced using &lt;code&gt;clang-format&lt;/code&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>KhronosGroup</author><guid isPermaLink="false">https://github.com/KhronosGroup/MoltenVK</guid><pubDate>Tue, 10 Dec 2019 00:02:00 GMT</pubDate></item></channel></rss>
