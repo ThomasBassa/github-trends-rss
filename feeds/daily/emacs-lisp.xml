@@ -1,2 +1,364 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Wed, 11 Dec 2019 01:06:14 GMT</pubDate><lastBuildDate>Wed, 11 Dec 2019 01:06:14 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Emacs Lisp, Today today</title><pubDate>Wed, 11 Dec 2019 01:06:14 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Thu, 12 Dec 2019 01:06:13 GMT</pubDate><lastBuildDate>Thu, 12 Dec 2019 01:06:13 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>emacs-mirror/emacs #1 in Emacs Lisp, Today</title><link>https://github.com/emacs-mirror/emacs</link><description>&lt;p&gt;&lt;i&gt;Mirror of GNU Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="" data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;Copyright (C) 2001-2019 Free Software Foundation, Inc.
+See the end of the file for license conditions.
+
+
+This directory tree holds version 27.0.50 of GNU Emacs, the extensible,
+customizable, self-documenting real-time display editor.
+
+The file INSTALL in this directory says how to build and install GNU
+Emacs on various systems, once you have unpacked or checked out the
+entire Emacs file tree.
+
+See the file etc/NEWS for information on new features and other
+user-visible changes in recent versions of Emacs.
+
+The file etc/PROBLEMS contains information on many common problems that
+occur in building, installing and running Emacs.
+
+The file CONTRIBUTE contains information on contributing to Emacs as a
+developer.
+
+You may encounter bugs in this release.  If you do, please report
+them; your bug reports are valuable contributions to the FSF, since
+they allow us to notice and fix problems on machines we don't have, or
+in code we don't use often.  Please send bug reports to the mailing
+list bug-gnu-emacs@gnu.org.  If possible, use M-x report-emacs-bug.
+
+See the "Bugs" section of the Emacs manual for more information on how
+to report bugs.  (The file 'BUGS' in this directory explains how you
+can find and read that section using the Info files that come with
+Emacs.)  For a list of mailing lists related to Emacs, see
+&amp;lt;&lt;a href="https://savannah.gnu.org/mail/?group=emacs" rel="nofollow"&gt;https://savannah.gnu.org/mail/?group=emacs&lt;/a&gt;&amp;gt;.  For the complete
+list of GNU mailing lists, see &amp;lt;&lt;a href="https://lists.gnu.org/" rel="nofollow"&gt;https://lists.gnu.org/&lt;/a&gt;&amp;gt;.
+
+The 'etc' subdirectory contains several other files, named in capital
+letters, which you might consider looking at when installing GNU
+Emacs.
+
+The file 'configure' is a shell script to acclimate Emacs to the
+oddities of your processor and operating system.  It creates the file
+'Makefile' (a script for the 'make' program), which automates the
+process of building and installing Emacs.  See INSTALL for more
+detailed information.
+
+The file 'configure.ac' is the input used by the autoconf program to
+construct the 'configure' script.
+
+The shell script 'autogen.sh' generates 'configure' and other files by
+running Autoconf (which in turn uses GNU m4), and configures files in
+the .git subdirectory if you are using Git.  If you want to use it,
+you will need to install recent versions of these build tools.  This
+should be needed only if you edit files like 'configure.ac' that
+specify Emacs's autobuild procedure.
+
+The file 'Makefile.in' is a template used by 'configure' to create
+'Makefile'.
+
+The file 'make-dist' is a shell script to build a distribution tar
+file from the current Emacs tree, containing only those files
+appropriate for distribution.  If you make extensive changes to Emacs,
+this script will help you distribute your version to others.
+
+There are several subdirectories:
+
+'src'       holds the C code for Emacs (the Emacs Lisp interpreter and
+            its primitives, the redisplay code, and some basic editing
+            functions).
+'lisp'      holds the Emacs Lisp code for Emacs (most everything else).
+'leim'      holds the original source files for the generated files
+            in lisp/leim.  These form the library of Emacs input methods,
+            required to type international characters that can't be
+            directly produced by your keyboard.
+'lib'       holds source code for libraries used by Emacs and its utilities
+'lib-src'   holds the source code for some utility programs for use by or
+            with Emacs, like movemail and etags.
+'lwlib'     holds the sources of the Lucid Widget Library used on X.
+'oldXMenu'  source files from X11R2 XMenu library, used in non-toolkit builds.
+'etc'       holds miscellaneous architecture-independent data files Emacs
+            uses, like the tutorial text and tool bar images.
+            The contents of the 'lisp', 'leim', 'info', and 'doc'
+            subdirectories are architecture-independent too.
+'info'      holds the Info documentation tree for Emacs.
+'doc/emacs' holds the source code for the Emacs Manual.  If you modify the
+            manual sources, you will need the 'makeinfo' program to produce
+            an updated manual.  'makeinfo' is part of the GNU Texinfo
+            package; you need a suitably recent version of Texinfo.
+'doc/lispref'   holds the source code for the Emacs Lisp reference manual.
+'doc/lispintro' holds the source code for the Introduction to Programming
+                in Emacs Lisp manual.
+'msdos'     holds configuration files for compiling Emacs under MS-DOS.
+'nextstep'  holds instructions and some other files for compiling the
+            Nextstep port of Emacs, for GNUstep and macOS Cocoa.
+'nt'        holds code and documentation for building Emacs on MS-Windows.
+'test'      holds tests for various aspects of Emacs's functionality.
+'modules'   holds the modhelp.py helper script.
+'admin'     holds files used by Emacs developers, and Unicode data files.
+'build-aux' holds auxiliary files used during the build.
+'m4'        holds Autoconf macros used for generating the configure script.
+
+   Building Emacs on non-Posix platforms requires tools that aren't part
+of the standard distribution of the OS.  The platform-specific README
+files and installation instructions should list the required tools.
+
+
+NOTE ON COPYRIGHT YEARS
+
+In copyright notices where the copyright holder is the Free Software
+Foundation, then where a range of years appears, this is an inclusive
+range that applies to every year in the range.  For example: 2005-2008
+represents the years 2005, 2006, 2007, and 2008.
+
+
+This file is part of GNU Emacs.
+
+GNU Emacs is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+GNU Emacs is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs.  If not, see &amp;lt;&lt;a href="https://www.gnu.org/licenses/" rel="nofollow"&gt;https://www.gnu.org/licenses/&lt;/a&gt;&amp;gt;.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>emacs-mirror</author><guid isPermaLink="false">https://github.com/emacs-mirror/emacs</guid><pubDate>Thu, 12 Dec 2019 00:01:00 GMT</pubDate></item><item><title>bbatsov/projectile #2 in Emacs Lisp, Today</title><link>https://github.com/bbatsov/projectile</link><description>&lt;p&gt;&lt;i&gt;Project Interaction Library for Emacs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1ba3411d21f0105e0df26c7e29aa214578d377b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c5f332d677265656e2e737667" alt="License GPL 3" data-canonical-src="https://img.shields.io/badge/license-GPL_3-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://melpa.org/#/projectile" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0e90708b9c315c9786d078cbf46c05fc3133924f/687474703a2f2f6d656c70612e6f72672f7061636b616765732f70726f6a656374696c652d62616467652e737667" alt="MELPA" data-canonical-src="http://melpa.org/packages/projectile-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stable.melpa.org/#/projectile" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/828b1b4081f34ea857ec4119962e616e9a9d723b/687474703a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f70726f6a656374696c652d62616467652e737667" alt="MELPA Stable" data-canonical-src="http://stable.melpa.org/packages/projectile-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/bbatsov/projectile" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c8892d7c0feb3d33d66ea003f96e4b0ac52bf9f6/68747470733a2f2f7472617669732d63692e6f72672f62626174736f762f70726f6a656374696c652e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/bbatsov/projectile.png?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.patreon.com/bbatsov" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/451cb702b2e60e29c1a84aa24a17a1a8d313639e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70617472656f6e2d646f6e6174652d6f72616e67652e737667" alt="Patreon" data-canonical-src="https://img.shields.io/badge/patreon-donate-orange.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-synopsis" class="anchor" aria-hidden="true" href="#synopsis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Projectile&lt;/strong&gt; is a project interaction library for Emacs. Its goal is to
+provide a nice set of features operating on a project level without
+introducing external dependencies (when feasible). For instance -
+finding project files has a portable implementation written in pure
+Emacs Lisp without the use of GNU &lt;code&gt;find&lt;/code&gt; (but for performance sake an
+indexing mechanism backed by external commands exists as well).&lt;/p&gt;
+&lt;p&gt;Projectile tries to be practical - portability is great, but if some
+external tools could speed up some task substantially and the tools
+are available, Projectile will leverage them.&lt;/p&gt;
+&lt;p&gt;This library provides easy project management and navigation. The
+concept of a project is pretty basic - just a folder containing
+special file. Currently &lt;code&gt;git&lt;/code&gt;, &lt;code&gt;mercurial&lt;/code&gt;, &lt;code&gt;darcs&lt;/code&gt; and &lt;code&gt;bazaar&lt;/code&gt; repos
+are considered projects by default. So are &lt;code&gt;lein&lt;/code&gt;, &lt;code&gt;maven&lt;/code&gt;, &lt;code&gt;sbt&lt;/code&gt;,
+&lt;code&gt;scons&lt;/code&gt;, &lt;code&gt;rebar&lt;/code&gt; and &lt;code&gt;bundler&lt;/code&gt; projects. If you want to mark a folder
+manually as a project just create an empty &lt;code&gt;.projectile&lt;/code&gt; file in
+it. Some of Projectile's features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jump to a file in project&lt;/li&gt;
+&lt;li&gt;jump to files at point in project&lt;/li&gt;
+&lt;li&gt;jump to a directory in project&lt;/li&gt;
+&lt;li&gt;jump to a file in a directory&lt;/li&gt;
+&lt;li&gt;jump to a project buffer&lt;/li&gt;
+&lt;li&gt;jump to a test in project&lt;/li&gt;
+&lt;li&gt;toggle between files with same names but different extensions (e.g. &lt;code&gt;.h&lt;/code&gt; &amp;lt;-&amp;gt; &lt;code&gt;.c/.cpp&lt;/code&gt;, &lt;code&gt;Gemfile&lt;/code&gt; &amp;lt;-&amp;gt; &lt;code&gt;Gemfile.lock&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;toggle between code and its test (e.g. &lt;code&gt;main.service.js&lt;/code&gt; &amp;lt;-&amp;gt; &lt;code&gt;main.service.spec.js&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;jump to recently visited files in the project&lt;/li&gt;
+&lt;li&gt;switch between projects you have worked on&lt;/li&gt;
+&lt;li&gt;kill all project buffers&lt;/li&gt;
+&lt;li&gt;replace in project&lt;/li&gt;
+&lt;li&gt;multi-occur in project buffers&lt;/li&gt;
+&lt;li&gt;grep in project&lt;/li&gt;
+&lt;li&gt;regenerate project etags or gtags (requires &lt;a href="https://github.com/leoliu/ggtags"&gt;ggtags&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;visit project in dired&lt;/li&gt;
+&lt;li&gt;run make in a project with a single key chord&lt;/li&gt;
+&lt;li&gt;check for dirty repositories&lt;/li&gt;
+&lt;li&gt;toggle read-only mode for the entire project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's a glimpse of Projectile in action:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/screenshots/projectile.png"&gt;&lt;img src="doc/screenshots/projectile.png" alt="Projectile Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can support my work on Projectile via
+&lt;a href="https://www.paypal.me/bbatsov" rel="nofollow"&gt;PayPal&lt;/a&gt;,
+&lt;a href="https://www.patreon.com/bbatsov" rel="nofollow"&gt;Patreon&lt;/a&gt; and
+&lt;a href="https://salt.bountysource.com/teams/projectile" rel="nofollow"&gt;Salt&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;The instructions that follow are meant to get you from zero to a running Projectile setup
+in a minute.  See the
+&lt;a href="https://docs.projectile.mx" rel="nofollow"&gt;official manual&lt;/a&gt; for (way) more
+details.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;package.el&lt;/code&gt; is the built-in package manager in Emacs.&lt;/p&gt;
+&lt;p&gt;Projectile is available on the two major &lt;code&gt;package.el&lt;/code&gt; community
+maintained repos -
+&lt;a href="http://stable.melpa.org" rel="nofollow"&gt;MELPA Stable&lt;/a&gt;
+and &lt;a href="http://melpa.org" rel="nofollow"&gt;MELPA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can install Projectile with the following command:&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;M-x&lt;/kbd&gt; &lt;code&gt;package-install&lt;/code&gt; &lt;kbd&gt;[RET]&lt;/kbd&gt; &lt;code&gt;projectile&lt;/code&gt; &lt;kbd&gt;[RET]&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;Alternatively, users of Debian 9 or later or Ubuntu 16.04 or later may
+simply &lt;code&gt;apt-get install elpa-projectile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally add this to your Emacs config:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(projectile-mode &lt;span class="pl-c1"&gt;+1&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; projectile-mode-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;s-p&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'projectile-command-map&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; projectile-mode-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c p&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'projectile-command-map&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Those keymap prefixes are just a suggestion. Feel free to put there whatever works best for you.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-basic-usage" class="anchor" aria-hidden="true" href="#basic-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Usage&lt;/h3&gt;
+&lt;p&gt;Enable &lt;code&gt;projectile-mode&lt;/code&gt;, open a file in one of your projects and type a command such as &lt;kbd&gt;C-c p f&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;See the user manual for more details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-caveats" class="anchor" aria-hidden="true" href="#caveats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Caveats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Some operations like search (grep) depend (presently) on external
+utilities such as &lt;code&gt;find&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-known-issues" class="anchor" aria-hidden="true" href="#known-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Known issues&lt;/h2&gt;
+&lt;p&gt;Check out the project's
+&lt;a href="https://github.com/bbatsov/projectile/issues?sort=created&amp;amp;direction=desc&amp;amp;state=open"&gt;issue list&lt;/a&gt;
+a list of unresolved issues. By the way - feel free to fix any of them
+and sent me a pull request. :-)&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributors" class="anchor" aria-hidden="true" href="#contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;Here's a &lt;a href="https://github.com/bbatsov/projectile/contributors"&gt;list&lt;/a&gt; of all the people who have contributed to the
+development of Projectile.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;A fairly extensive changelog is available &lt;a href="CHANGELOG.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2011-2019 Bozhidar Batsov and
+&lt;a href="https://github.com/bbatsov/projectile/contributors"&gt;contributors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Distributed under the GNU General Public License, version 3&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>bbatsov</author><guid isPermaLink="false">https://github.com/bbatsov/projectile</guid><pubDate>Thu, 12 Dec 2019 00:02:00 GMT</pubDate></item><item><title>hlissner/doom-emacs #3 in Emacs Lisp, Today</title><link>https://github.com/hlissner/doom-emacs</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration for the stubborn martian vimmer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="http://doomemacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/d38622bbeea8e0a3a1c42e21d2839363d21b4627/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f646f6f6d2d656d6163732e7376673f6c6162656c3d72656c6561736526636f6c6f723d6f72616e6765" alt="Made with Doom Emacs" data-canonical-src="https://img.shields.io/github/tag/hlissner/doom-emacs.svg?label=release&amp;amp;color=orange" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://emacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/145199dd89d8ed47968846fe8dcdde64b838ffab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6164655f666f722d456d6163735f32362e312b2d626c756576696f6c65742e737667" alt="Made for Emacs 26.1+" data-canonical-src="https://img.shields.io/badge/Made_for-Emacs_26.1+-blueviolet.svg" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://github.com/hlissner/doom-emacs/actions"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/workflows/CI/badge.svg" alt="Build status: develop" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/48087b2da5b43d9130b73e6e8ad3e7b42caa3330/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d626c75652e7376673f6c6f676f3d646973636f7264266c6162656c3d6a6f696e" alt="Join our discord server" align="right" data-canonical-src="https://img.shields.io/badge/Discord-blue.svg?logo=discord&amp;amp;label=join" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png"&gt;&lt;img src="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png" alt="Doom Emacs Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;b&gt;&lt;a href="/../../tree/screenshots"&gt;Screenshots&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/getting_started.org"&gt;Get started&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/contributing.org"&gt;Contribute&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/index.org"&gt;Documentation&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/faq.org"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quick start&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/hlissner/doom-emacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d/bin/doom install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what-is-doom-emacs"&gt;What is Doom Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dooms-mantras"&gt;Doom's mantras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#community"&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-what-is-doom-emacs" class="anchor" aria-hidden="true" href="#what-is-doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Doom Emacs&lt;/h1&gt;
+&lt;a href="http://ultravioletbat.deviantart.com/art/Yay-Evil-111710573" rel="nofollow"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/raw/screenshots/cacochan.png" align="right" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;p&gt;It is a story as old as time. A stubborn, shell-dwelling, and melodramatic
+vimmer -- envious of the features of modern text editors -- spirals into despair
+before succumbing to the &lt;a href="https://github.com/emacs-evil/evil"&gt;dark side&lt;/a&gt;. This is his config.&lt;/p&gt;
+&lt;p&gt;Doom is a configuration for &lt;a href="https://www.gnu.org/software/emacs/" rel="nofollow"&gt;GNU Emacs&lt;/a&gt;
+designed to make Emacs faster and easier to customize. It can serve as framework
+for your own configuration or a resource for fellow Emacs enthusiasts who want
+to learn more about our favorite OS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dooms-mantras" class="anchor" aria-hidden="true" href="#dooms-mantras"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom's mantras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gotta go fast.&lt;/strong&gt; Startup and run-time performance are high priorities.
+Expensive functionality (built-in or in plugins) is modified and optimized
+toward this end, otherwise, they must be opt-in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Close to metal.&lt;/strong&gt; There's less between you and vanilla Emacs, by design.
+There's less to grok. Modules should be syntactically sweet and backend logic
+explicit and abstraction-light. The code itself ought to be designed as if
+grokking it were part of the user experience; and it is!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Opinionated, but not stubborn.&lt;/strong&gt; Doom is a bundle of reasonable defaults
+and curated opinions, but you aren't stuck with it. Use as little or as much
+of it as you like. Use it as-is as a complete Emacs distribution; disable
+everything and use it as a baseline for your own; or anywhere in between.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Your system, your rules.&lt;/strong&gt; There are more ways to set up your programming
+environment than there are dislikes on Youtube Rewind '18, so Doom and its
+plugins promise not to &lt;em&gt;automatically&lt;/em&gt; (and definitely not &lt;em&gt;silently&lt;/em&gt;) install
+system dependencies. This means fonts, packages and programs. &lt;code&gt;doom doctor&lt;/code&gt;
+will tell you what's missing though!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A curated set of sane defaults for all packages, all (major) OSes, and Emacs
+itself.&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; programming languages. Too many to list. Includes syntax
+highlighting, linters/checker integration, inline code evaluation, code
+completion (where possible), REPLs, documentation lookups, snippets, and more!&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; tools, like docker, pass, ansible, terraform, and more.&lt;/li&gt;
+&lt;li&gt;Minimalistic good looks inspired by modern editors.&lt;/li&gt;
+&lt;li&gt;A modular architecture for a more organized Emacs configuration.&lt;/li&gt;
+&lt;li&gt;A custom elisp library to help you simplify your config.&lt;/li&gt;
+&lt;li&gt;A declarative &lt;a href="core/autoload/packages.el"&gt;package management system&lt;/a&gt; (powered by
+&lt;a href="https://github.com/raxod502/straight.el"&gt;straight.el&lt;/a&gt;) with a command line interface. Install packages
+from anywhere, not just (M)ELPA.&lt;/li&gt;
+&lt;li&gt;Vim-emulation powered by &lt;a href="https://github.com/emacs-evil/evil"&gt;evil-mode&lt;/a&gt;, including ports of
+popular vim plugins and functionality.&lt;/li&gt;
+&lt;li&gt;A Spacemacs-esque &lt;a href="modules/config/default/+evil-bindings.el"&gt;keybinding scheme&lt;/a&gt;, centered around leader
+and localleader prefix keys (&lt;kbd&gt;SPC&lt;/kbd&gt; and &lt;kbd&gt;SPC&lt;/kbd&gt;&lt;kbd&gt;m&lt;/kbd&gt;, by
+default).&lt;/li&gt;
+&lt;li&gt;A rule-based &lt;a href="modules/ui/popup/README.org"&gt;popup management system&lt;/a&gt; that dictates how
+temporary or disposable buffers are displayed (and disposed of).&lt;/li&gt;
+&lt;li&gt;Automatic indentation detection and &lt;a href="http://editorconfig.org/" rel="nofollow"&gt;editorconfig&lt;/a&gt;
+integration. Let someone else argue about tabs vs &lt;strong&gt;_*&lt;strong&gt;spaces&lt;/strong&gt;*_&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Project-management tools and framework-specific minor modes with their own
+snippets libraries.&lt;/li&gt;
+&lt;li&gt;Project search (and replace) utilities, powered by
+&lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the_silver_searcher&lt;/a&gt; or &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Isolated and persistent workspaces (also substitutes for vim tabs).&lt;/li&gt;
+&lt;li&gt;An environment variables file generator and loader, so that Emacs can
+perfectly inherit your shell configuration.&lt;/li&gt;
+&lt;li&gt;Everything is optional!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;a Discord server&lt;/a&gt;! Hop on and say hi!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Encountered strange behavior or an error? Here are some things to try before you
+shoot off that bug report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom refresh&lt;/code&gt;. This ensures Doom is properly set up and its autoloads
+files are up-to-date.&lt;/li&gt;
+&lt;li&gt;If you have byte-compiled your config (with &lt;code&gt;bin/doom compile&lt;/code&gt;), see if
+&lt;code&gt;bin/doom clean&lt;/code&gt; makes the issue go away. Never debug issues with a
+byte-compiled config, it will make your job harder.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom doctor&lt;/code&gt; to detect common issues in your development environment.&lt;/li&gt;
+&lt;li&gt;Search Doom's issue tracker for mention of any error messages you've received.&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/faq.org"&gt;Visit our FAQ&lt;/a&gt; to see if your issue is listed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If all else fails, &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;file that bug report&lt;/a&gt;! Please include the
+behavior you've observed, the behavior you expected, and any error messages or
+warnings logged to the *Messages* buffer (can be opened with &lt;kbd&gt;SPC h
+e&lt;/kbd&gt; or &lt;code&gt;M-x view-echo-area-messages&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It's a great help if you included a backtrace with errors, i.e. &lt;code&gt;M-x toggle-debug-on-error&lt;/code&gt; then recreating the error(s).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Doom (and my Emacs work in general) is a labor of love and incurable madness,
+done on my spare time. If you'd like to support my work, there are many things
+you can do to help; I welcome any contribution!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I love pull requests and bug reports. Check out the &lt;a href="docs/contributing.org"&gt;Contributing
+Guidelines&lt;/a&gt; to find out how you can help out.&lt;/li&gt;
+&lt;li&gt;I welcome Elisp pointers! Don't hesitate to &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;tell me my Elisp-fu
+sucks&lt;/a&gt; (but please tell me why).&lt;/li&gt;
+&lt;li&gt;Hop on &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;our Discord server&lt;/a&gt; and say hi! Help others out, hang out
+or talk to me about Emacs, or gamedev, or programming, machine learning,
+physics, pixel art, anime, gaming -- anything you like. Nourish this lonely
+soul!&lt;/li&gt;
+&lt;li&gt;If you'd like to support my work financially, consider buying me a drink
+through &lt;a href="https://liberapay.com/hlissner/donate" rel="nofollow"&gt;liberapay&lt;/a&gt; or &lt;a href="https://paypal.me/henriklissner/10" rel="nofollow"&gt;paypal&lt;/a&gt;. Donations are a
+great help. My work here contends with studies, ventures in indie gamedev, and
+my freelance work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/doom-emacs</guid><pubDate>Thu, 12 Dec 2019 00:03:00 GMT</pubDate></item><item><title>nelhage/elisp #4 in Emacs Lisp, Today</title><link>https://github.com/nelhage/elisp</link><description>&lt;p&gt;&lt;i&gt;nelhage's emacs configuration&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;This repo does not have a README.&lt;/i&gt;&lt;/p&gt;</description><author>nelhage</author><guid isPermaLink="false">https://github.com/nelhage/elisp</guid><pubDate>Thu, 12 Dec 2019 00:04:00 GMT</pubDate></item></channel></rss>
