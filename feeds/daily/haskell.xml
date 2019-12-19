@@ -1,2 +1,1235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Thu, 19 Dec 2019 04:42:03 GMT</pubDate><lastBuildDate>Thu, 19 Dec 2019 04:42:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Haskell, Today today</title><pubDate>Thu, 19 Dec 2019 04:42:03 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Thu, 19 Dec 2019 04:55:52 GMT</pubDate><lastBuildDate>Thu, 19 Dec 2019 04:55:52 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>facebook/duckling #1 in Haskell, Today</title><link>https://github.com/facebook/duckling</link><description>&lt;p&gt;&lt;i&gt;Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/duckling/raw/master/logo.png"&gt;&lt;img src="https://github.com/facebook/duckling/raw/master/logo.png" alt="Duckling Logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-duckling-" class="anchor" aria-hidden="true" href="#duckling-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Duckling &lt;a href="https://travis-ci.org/facebook/duckling" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc026295c990c04b7941234a5f2e2d3a32e0b317/68747470733a2f2f7472617669732d63692e6f72672f66616365626f6f6b2f6475636b6c696e672e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/facebook/duckling.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Duckling is a Haskell library that parses text into structured data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;"the first Tuesday of October"
+=&amp;gt; {"value":"2017-10-03T00:00:00.000-07:00","grain":"day"}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;A Haskell environment is required. We recommend using
+&lt;a href="https://haskell-lang.org/get-started" rel="nofollow"&gt;stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On macOS you'll need to install PCRE development headers.
+The easiest way to do that is with &lt;a href="https://brew.sh/" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install pcre
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If that doesn't help, try running &lt;code&gt;brew doctor&lt;/code&gt; and fix
+the issues it finds.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;To compile and run the binary:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack build
+$ stack exec duckling-example-exe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first time you run it, it will download all required packages.&lt;/p&gt;
+&lt;p&gt;This runs a basic HTTP server. Example request:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl -XPOST http://0.0.0.0:8000/parse --data 'locale=en_GB&amp;amp;text=tomorrow at eight'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;code&gt;exe/ExampleMain.hs&lt;/code&gt; for an example on how to integrate Duckling in your
+project.
+If your backend doesn't run Haskell or if you don't want to spin your own Duckling server, you can directly use &lt;a href="https://wit.ai" rel="nofollow"&gt;wit.ai&lt;/a&gt;'s built-in entities.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-dimensions" class="anchor" aria-hidden="true" href="#supported-dimensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported dimensions&lt;/h2&gt;
+&lt;p&gt;Duckling supports many languages, but most don't support all dimensions yet
+(&lt;strong&gt;we need your help!&lt;/strong&gt;).
+Please look into &lt;a href="https://github.com/facebook/duckling/blob/master/Duckling/Dimensions"&gt;this directory&lt;/a&gt; for language-specific support.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Dimension&lt;/th&gt;
+&lt;th&gt;Example input&lt;/th&gt;
+&lt;th&gt;Example value output&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;AmountOfMoney&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"42€"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":42,"type":"value","unit":"EUR"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;CreditCardNumber&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"4111-1111-1111-1111"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"4111111111111111","issuer":"visa"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Distance&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"6 miles"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":6,"type":"value","unit":"mile"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Duration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"3 mins"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":3,"minute":3,"unit":"minute","normalized":{"value":180,"unit":"second"}}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Email&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"&lt;a href="mailto:duckling-team@fb.com"&gt;duckling-team@fb.com&lt;/a&gt;"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"duckling-team@fb.com"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Numeral&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"eighty eight"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":88,"type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ordinal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"33rd"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":33,"type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PhoneNumber&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"+1 (650) 123-4567"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"(+1) 6501234567"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Quantity&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"3 cups of sugar"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":3,"type":"value","product":"sugar","unit":"cup"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Temperature&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"80F"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":80,"type":"value","unit":"fahrenheit"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Time&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"today at 9am"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"values":[{"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}],"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Url&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"&lt;a href="https://api.wit.ai/message?q=hi" rel="nofollow"&gt;https://api.wit.ai/message?q=hi&lt;/a&gt;"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"https://api.wit.ai/message?q=hi","domain":"api.wit.ai"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Volume&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"4 gallons"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":4,"type":"value","unit":"gallon"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="https://github.com/facebook/duckling/blob/master/exe/CustomDimensionExample.hs"&gt;Custom dimensions&lt;/a&gt; are also supported.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-extending-duckling" class="anchor" aria-hidden="true" href="#extending-duckling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extending Duckling&lt;/h2&gt;
+&lt;p&gt;To regenerate the classifiers and run the test suite:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack build :duckling-regen-exe &amp;amp;&amp;amp; stack exec duckling-regen-exe &amp;amp;&amp;amp; stack test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It's important to regenerate the classifiers after updating the code and before
+running the test suite.&lt;/p&gt;
+&lt;p&gt;To extend Duckling's support for a dimension in a given language, typically 4
+files need to be updated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Rules.hs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Corpus.hs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/Dimensions/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt; (if not already present in &lt;code&gt;Duckling/Dimensions/Common.hs&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/Rules/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To add a new language:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure that the language code used follows the &lt;a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" rel="nofollow"&gt;ISO-639-1 standard&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The first dimension to implement is &lt;code&gt;Numeral&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/24d3f199768be970149412c95b1c1bf5d76f8240"&gt;this example&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To add a new locale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There should be a need for diverging rules between the locale and the language.&lt;/li&gt;
+&lt;li&gt;Make sure that the locale code is a valid &lt;a href="https://www.iso.org/obp/ui/#search/code/" rel="nofollow"&gt;ISO3166 alpha2 country code&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/1ab5f447d2635fe6d48887a501d333a52adff5b9"&gt;this example&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rules have a name, a pattern and a production.
+Patterns are used to perform character-level matching (regexes on input) and
+concept-level matching (predicates on tokens).
+Productions are arbitrary functions that take a list of tokens and return a new
+token.&lt;/p&gt;
+&lt;p&gt;The corpus (resp. negative corpus) is a list of examples that should (resp.
+shouldn't) parse. The reference time for the corpus is Tuesday Feb 12, 2013 at
+4:30am.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Duckling.Debug&lt;/code&gt; provides a few debugging tools:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack repl --no-load
+&amp;gt; :l Duckling.Debug
+&amp;gt; debug (makeLocale EN $ Just US) "in two minutes" [This Time]
+in|within|after &amp;lt;duration&amp;gt; (in two minutes)
+-- regex (in)
+-- &amp;lt;integer&amp;gt; &amp;lt;unit-of-duration&amp;gt; (two minutes)
+-- -- integer (0..19) (two)
+-- -- -- regex (two)
+-- -- minute (grain) (minutes)
+-- -- -- regex (minutes)
+[Entity {dim = "time", body = "in two minutes", value = RVal Time (TimeValue (SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})) [SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})] Nothing), start = 0, end = 14}]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Duckling is BSD-licensed.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>facebook</author><guid isPermaLink="false">https://github.com/facebook/duckling</guid><pubDate>Thu, 19 Dec 2019 00:01:00 GMT</pubDate></item><item><title>koalaman/shellcheck #2 in Haskell, Today</title><link>https://github.com/koalaman/shellcheck</link><description>&lt;p&gt;&lt;i&gt;ShellCheck, a static analysis tool for shell scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/koalaman/shellcheck" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9e97f328fa055534e41ae29a7d69e7798d549a7/68747470733a2f2f7472617669732d63692e6f72672f6b6f616c616d616e2f7368656c6c636865636b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/koalaman/shellcheck.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-shellcheck---a-shell-script-static-analysis-tool" class="anchor" aria-hidden="true" href="#shellcheck---a-shell-script-static-analysis-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ShellCheck - A shell script static analysis tool&lt;/h1&gt;
+&lt;p&gt;ShellCheck is a GPLv3 tool that gives warnings and suggestions for bash/sh shell scripts:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/terminal.png"&gt;&lt;img src="doc/terminal.png" alt="Screenshot of a terminal showing problematic shell script lines highlighted" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of ShellCheck are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To point out and clarify typical beginner's syntax issues that cause a shell
+to give cryptic error messages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To point out and clarify typical intermediate level semantic problems that
+cause a shell to behave strangely and counter-intuitively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To point out subtle caveats, corner cases and pitfalls that may cause an
+advanced user's otherwise working script to fail under future circumstances.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="README.md#user-content-gallery-of-bad-code"&gt;the gallery of bad code&lt;/a&gt; for examples of what ShellCheck can help you identify!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#how-to-use"&gt;How to use&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#on-the-web"&gt;On the web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#from-your-terminal"&gt;From your terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#in-your-editor"&gt;In your editor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#in-your-build-or-test-suites"&gt;In your build or test suites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installing"&gt;Installing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compiling-from-source"&gt;Compiling from source&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#installing-cabal"&gt;Installing Cabal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compiling-shellcheck"&gt;Compiling ShellCheck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#running-tests"&gt;Running tests&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gallery-of-bad-code"&gt;Gallery of bad code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#quoting"&gt;Quoting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conditionals"&gt;Conditionals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#frequently-misused-commands"&gt;Frequently misused commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#common-beginners-mistakes"&gt;Common beginner's mistakes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#style"&gt;Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#data-and-typing-errors"&gt;Data and typing errors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#robustness"&gt;Robustness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#portability"&gt;Portability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#miscellaneous"&gt;Miscellaneous&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#testimonials"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#ignoring-issues"&gt;Ignoring issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reporting-bugs"&gt;Reporting bugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#copyright"&gt;Copyright&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#other-resources"&gt;Other Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use&lt;/h2&gt;
+&lt;p&gt;There are a number of ways to use ShellCheck!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-on-the-web" class="anchor" aria-hidden="true" href="#on-the-web"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;On the web&lt;/h3&gt;
+&lt;p&gt;Paste a shell script on &lt;a href="https://www.shellcheck.net" rel="nofollow"&gt;https://www.shellcheck.net&lt;/a&gt; for instant feedback.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.shellcheck.net" rel="nofollow"&gt;ShellCheck.net&lt;/a&gt; is always synchronized to the latest git commit, and is the easiest way to give ShellCheck a go. Tell your friends!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-from-your-terminal" class="anchor" aria-hidden="true" href="#from-your-terminal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From your terminal&lt;/h3&gt;
+&lt;p&gt;Run &lt;code&gt;shellcheck yourscript&lt;/code&gt; in your terminal for instant output, as seen above.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-in-your-editor" class="anchor" aria-hidden="true" href="#in-your-editor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In your editor&lt;/h3&gt;
+&lt;p&gt;You can see ShellCheck suggestions directly in a variety of editors.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vim, through &lt;a href="https://github.com/w0rp/ale"&gt;ALE&lt;/a&gt;, &lt;a href="https://github.com/neomake/neomake"&gt;Neomake&lt;/a&gt;, or &lt;a href="https://github.com/scrooloose/syntastic"&gt;Syntastic&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/vim-syntastic.png"&gt;&lt;img src="doc/vim-syntastic.png" alt="Screenshot of Vim showing inlined shellcheck feedback" style="max-width:100%;"&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Emacs, through &lt;a href="https://github.com/flycheck/flycheck"&gt;Flycheck&lt;/a&gt; or &lt;a href="https://github.com/federicotdn/flymake-shellcheck"&gt;Flymake&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/emacs-flycheck.png"&gt;&lt;img src="doc/emacs-flycheck.png" alt="Screenshot of emacs showing inlined shellcheck feedback" style="max-width:100%;"&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sublime, through &lt;a href="https://github.com/SublimeLinter/SublimeLinter-shellcheck"&gt;SublimeLinter&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atom, through &lt;a href="https://github.com/AtomLinter/linter-shellcheck"&gt;Linter&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VSCode, through &lt;a href="https://github.com/timonwong/vscode-shellcheck"&gt;vscode-shellcheck&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Most other editors, through &lt;a href="shellcheck.1.md#user-content-formats"&gt;GCC error compatibility&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-in-your-build-or-test-suites" class="anchor" aria-hidden="true" href="#in-your-build-or-test-suites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In your build or test suites&lt;/h3&gt;
+&lt;p&gt;While ShellCheck is mostly intended for interactive use, it can easily be added to builds or test suites.
+It makes canonical use of exit codes, so you can just add a &lt;code&gt;shellcheck&lt;/code&gt; command as part of the process.&lt;/p&gt;
+&lt;p&gt;For example, in a Makefile:&lt;/p&gt;
+&lt;div class="highlight highlight-source-makefile"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;check-scripts&lt;/span&gt;:
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Fail if any of these files have warnings&lt;/span&gt;
+    shellcheck myscripts/*.sh&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or in a Travis CI &lt;code&gt;.travis.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;script&lt;/span&gt;:
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Fail if any of these files have warnings&lt;/span&gt;
+  - &lt;span class="pl-s"&gt;shellcheck myscripts/*.sh&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Services and platforms that have ShellCheck pre-installed and ready to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://travis-ci.org/" rel="nofollow"&gt;Travis CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codacy.com/" rel="nofollow"&gt;Codacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeclimate.com/" rel="nofollow"&gt;Code Climate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codefactor.io/" rel="nofollow"&gt;Code Factor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Services and platforms with third party plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sonarqube.org/" rel="nofollow"&gt;SonarQube&lt;/a&gt; through &lt;a href="https://github.com/emerald-squad/sonar-shellcheck-plugin"&gt;sonar-shellcheck-plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most other services, including &lt;a href="https://about.gitlab.com/" rel="nofollow"&gt;GitLab&lt;/a&gt;, let you install
+ShellCheck yourself, either through the system's package manager (see &lt;a href="#installing"&gt;Installing&lt;/a&gt;),
+or by downloading and unpacking a &lt;a href="#installing-a-pre-compiled-binary"&gt;binary release&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It's a good idea to manually install a specific ShellCheck version regardless. This avoids
+any surprise build breaks when a new version with new warnings is published.&lt;/p&gt;
+&lt;p&gt;For customized filtering or reporting, ShellCheck can output simple JSON, CheckStyle compatible XML,
+GCC compatible warnings as well as human readable text (with or without ANSI colors). See the
+&lt;a href="https://github.com/koalaman/shellcheck/wiki/Integration"&gt;Integration&lt;/a&gt; wiki page for more documentation.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
+&lt;p&gt;The easiest way to install ShellCheck locally is through your package manager.&lt;/p&gt;
+&lt;p&gt;On systems with Cabal (installs to &lt;code&gt;~/.cabal/bin&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cabal update
+cabal install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On systems with Stack (installs to &lt;code&gt;~/.local/bin&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;stack update
+stack install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Debian based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Arch Linux based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -S shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or get the dependency free &lt;a href="https://aur.archlinux.org/packages/shellcheck-static/" rel="nofollow"&gt;shellcheck-static&lt;/a&gt; from the AUR.&lt;/p&gt;
+&lt;p&gt;On Gentoo based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;emerge --ask shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On EPEL based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum -y install epel-release
+yum install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Fedora based distros:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dnf install ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On FreeBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg install hs-ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On OS X with homebrew:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On OpenBSD:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg_add shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On openSUSE&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;zypper in ShellCheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or use OneClickInstall - &lt;a href="https://software.opensuse.org/package/ShellCheck" rel="nofollow"&gt;https://software.opensuse.org/package/ShellCheck&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On Solus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eopkg install shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Windows (via &lt;a href="https://chocolatey.org/packages/shellcheck" rel="nofollow"&gt;chocolatey&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;C:\&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; choco install shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or Windows (via &lt;a href="http://scoop.sh" rel="nofollow"&gt;scoop&lt;/a&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;C:\&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; scoop install shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From Snap Store:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;snap install --channel=edge shellcheck
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From Docker Hub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker run --rm -v &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$PWD&lt;/span&gt;:/mnt&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; koalaman/shellcheck:stable myscript
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Or :v0.4.7 for that version, or :latest for daily builds&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or use &lt;code&gt;koalaman/shellcheck-alpine&lt;/code&gt; if you want a larger Alpine Linux based image to extend. It works exactly like a regular Alpine image, but has shellcheck preinstalled.&lt;/p&gt;
+&lt;p&gt;Using the &lt;a href="https://nixos.org/nix" rel="nofollow"&gt;nix package manager&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;nix-env -iA nixpkgs.shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively, you can download pre-compiled binaries for the latest release here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.x86_64.tar.xz" rel="nofollow"&gt;Linux, x86_64&lt;/a&gt; (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.armv6hf.tar.xz" rel="nofollow"&gt;Linux, armv6hf&lt;/a&gt;, i.e. Raspberry Pi (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.armv6hf.tar.xz" rel="nofollow"&gt;Linux, aarch64&lt;/a&gt; aka ARM64 (statically linked)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://shellcheck.storage.googleapis.com/shellcheck-stable.darwin.x86_64.tar.xz" rel="nofollow"&gt;MacOS, x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://storage.googleapis.com/shellcheck/shellcheck-stable.zip" rel="nofollow"&gt;Windows, x86&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;or see the &lt;a href="https://shellcheck.storage.googleapis.com/index.html" rel="nofollow"&gt;storage bucket listing&lt;/a&gt; for checksums, older versions and the latest daily builds.&lt;/p&gt;
+&lt;p&gt;Distro packages already come with a &lt;code&gt;man&lt;/code&gt; page. If you are building from source, it can be installed with:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;pandoc -s -f markdown-smart -t man shellcheck.1.md -o shellcheck.1&lt;/span&gt;
+&lt;span class="pl-c1"&gt;sudo mv shellcheck.1 /usr/share/man/man1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-travis-ci" class="anchor" aria-hidden="true" href="#travis-ci"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Travis CI&lt;/h3&gt;
+&lt;p&gt;Travis CI has now integrated ShellCheck by default, so you don't need to manually install it.&lt;/p&gt;
+&lt;p&gt;If you still want to do so in order to upgrade at your leisure or ensure you're
+using the latest release, follow the steps below to install a binary version.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installing-a-pre-compiled-binary" class="anchor" aria-hidden="true" href="#installing-a-pre-compiled-binary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing a pre-compiled binary&lt;/h3&gt;
+&lt;p&gt;The pre-compiled binaries come in &lt;code&gt;tar.xz&lt;/code&gt; files. To decompress them, make sure
+&lt;code&gt;xz&lt;/code&gt; is installed.
+On Debian/Ubuntu/Mint, you can &lt;code&gt;apt install xz-utils&lt;/code&gt;.
+On Redhat/Fedora/CentOS, &lt;code&gt;yum -y install xz&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A simple installer may do something like:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;scversion=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stable&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; or "v0.4.7", or "latest"&lt;/span&gt;
+wget -qO- &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://storage.googleapis.com/shellcheck/shellcheck-&lt;span class="pl-smi"&gt;${scversion?}&lt;/span&gt;.linux.x86_64.tar.xz&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; tar -xJv
+cp &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shellcheck-&lt;span class="pl-smi"&gt;${scversion}&lt;/span&gt;/shellcheck&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; /usr/bin/
+shellcheck --version&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-compiling-from-source" class="anchor" aria-hidden="true" href="#compiling-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling from source&lt;/h2&gt;
+&lt;p&gt;This section describes how to build ShellCheck from a source directory. ShellCheck is written in Haskell and requires 2GB of RAM to compile.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installing-cabal" class="anchor" aria-hidden="true" href="#installing-cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Cabal&lt;/h3&gt;
+&lt;p&gt;ShellCheck is built and packaged using Cabal. Install the package &lt;code&gt;cabal-install&lt;/code&gt; from your system's package manager (with e.g. &lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;brew&lt;/code&gt;, &lt;code&gt;emerge&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, or &lt;code&gt;zypper&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;On MacOS (OS X), you can do a fast install of Cabal using brew, which takes a couple of minutes instead of more than 30 minutes if you try to compile it from source.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ brew install cabal-install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On MacPorts, the package is instead called &lt;code&gt;hs-cabal-install&lt;/code&gt;, while native Windows users should install the latest version of the Haskell platform from &lt;a href="https://www.haskell.org/platform/" rel="nofollow"&gt;https://www.haskell.org/platform/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Verify that &lt;code&gt;cabal&lt;/code&gt; is installed and update its dependency list with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-compiling-shellcheck" class="anchor" aria-hidden="true" href="#compiling-shellcheck"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling ShellCheck&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git clone&lt;/code&gt; this repository, and &lt;code&gt;cd&lt;/code&gt; to the ShellCheck source directory to build/install:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or if you intend to run the tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal install --enable-tests
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will compile ShellCheck and install it to your &lt;code&gt;~/.cabal/bin&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;Add this directory to your &lt;code&gt;PATH&lt;/code&gt; (for bash, add this to your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; PATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$HOME&lt;/span&gt;/.cabal/bin:&lt;span class="pl-smi"&gt;$PATH&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Log out and in again, and verify that your PATH is set up correctly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ which shellcheck
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.cabal/bin/shellcheck&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On native Windows, the &lt;code&gt;PATH&lt;/code&gt; should already be set up, but the system
+may use a legacy codepage. In &lt;code&gt;cmd.exe&lt;/code&gt;, &lt;code&gt;powershell.exe&lt;/code&gt; and Powershell ISE,
+make sure to use a TrueType font, not a Raster font, and set the active
+codepage to UTF-8 (65001) with &lt;code&gt;chcp&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;chcp&lt;/span&gt; &lt;span class="pl-c1"&gt;65001&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Powershell ISE, you may need to additionally update the output encoding:&lt;/p&gt;
+&lt;div class="highlight highlight-source-powershell"&gt;&lt;pre&gt;[&lt;span class="pl-k"&gt;Console&lt;/span&gt;]::OutputEncoding &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-k"&gt;System.Text.Encoding&lt;/span&gt;]::UTF8&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;To run the unit test suite:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-gallery-of-bad-code" class="anchor" aria-hidden="true" href="#gallery-of-bad-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gallery of bad code&lt;/h2&gt;
+&lt;p&gt;So what kind of things does ShellCheck look for? Here is an incomplete list of detected issues.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-quoting" class="anchor" aria-hidden="true" href="#quoting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quoting&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize several types of incorrect quoting:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$1&lt;/span&gt;                           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted variables&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -name &lt;span class="pl-k"&gt;*&lt;/span&gt;.ogg                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted find/grep patterns&lt;/span&gt;
+rm &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~/my file.txt&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Quoted tilde expansion&lt;/span&gt;
+v=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--verbose="true"&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; cmd &lt;span class="pl-smi"&gt;$v&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Literal quotes in variables&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;*.ogg&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Incorrectly quoted 'for' loops&lt;/span&gt;
+touch &lt;span class="pl-smi"&gt;$@&lt;/span&gt;                          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unquoted $@&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Don&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;t forget to restart&lt;span class="pl-k"&gt;!&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;   # Singlequote closed by apostrophe&lt;/span&gt;
+&lt;span class="pl-s"&gt;echo &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;Don&lt;span class="pl-cce"&gt;\'&lt;/span&gt;t try this at home&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;    # Attempting to escape &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Path is $PATH&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variables in single quotes&lt;/span&gt;
+&lt;span class="pl-c1"&gt;trap&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;echo Took &lt;span class="pl-smi"&gt;${SECONDS}&lt;/span&gt;s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; 0    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Prematurely expanded trap&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-conditionals" class="anchor" aria-hidden="true" href="#conditionals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conditionals&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize many types of incorrect test statements.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;[[ n &lt;span class="pl-k"&gt;!=&lt;/span&gt; 0 ]]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Constant test expressions&lt;/span&gt;
+[[ &lt;span class="pl-k"&gt;-e&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;.mpg ]]                    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Existence checks of globs&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$foo&lt;/span&gt;&lt;span class="pl-k"&gt;==&lt;/span&gt;0 ]]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Always true due to missing spaces&lt;/span&gt;
+[[ &lt;span class="pl-k"&gt;-n&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$foo&lt;/span&gt; &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]]                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Always true due to literals&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$foo&lt;/span&gt; &lt;span class="pl-k"&gt;=~&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;fo+&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]]               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Quoted regex in =~&lt;/span&gt;
+[ foo &lt;span class="pl-k"&gt;=~&lt;/span&gt; re ]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unsupported [ ] operators&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$1&lt;/span&gt; &lt;span class="pl-k"&gt;-eq&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;shellcheck&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ]           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Numerical comparison of strings&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$n&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-smi"&gt;$m&lt;/span&gt; ]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; &amp;amp;&amp;amp; in [ .. ]&lt;/span&gt;
+[ grep -q foo file ]              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Command without $(..)&lt;/span&gt;
+[[ &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$$&lt;/span&gt;file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;==&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;.jpg ]]           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comparisons that can't succeed&lt;/span&gt;
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;((&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;lt &lt;span class="pl-c1"&gt;2&lt;/span&gt; &lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Using test operators in ((..))&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-frequently-misused-commands" class="anchor" aria-hidden="true" href="#frequently-misused-commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frequently misused commands&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize instances where commands are used incorrectly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;grep &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*foo*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; file                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Globs in regex contexts&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -exec foo {} &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; bar {} &lt;span class="pl-cce"&gt;\;&lt;/span&gt;  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Prematurely terminated find -exec&lt;/span&gt;
+sudo &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Var=42&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; /etc/profile &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Redirecting sudo&lt;/span&gt;
+&lt;span class="pl-k"&gt;time&lt;/span&gt; --format=%s sleep 10         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Passing time(1) flags to time builtin&lt;/span&gt;
+&lt;span class="pl-k"&gt;while&lt;/span&gt; &lt;span class="pl-c1"&gt;read&lt;/span&gt; h&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; ssh &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$h&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; uptime  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Commands eating while loop input&lt;/span&gt;
+&lt;span class="pl-c1"&gt;alias&lt;/span&gt; archive=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;mv $1 /backup&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Defining aliases with arguments&lt;/span&gt;
+tr -cd &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;[a-zA-Z0-9]&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; [] around ranges in tr&lt;/span&gt;
+&lt;span class="pl-c1"&gt;exec&lt;/span&gt; foo&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Done!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Misused 'exec'&lt;/span&gt;
+find -name &lt;span class="pl-cce"&gt;\*&lt;/span&gt;.bak -o -name &lt;span class="pl-cce"&gt;\*&lt;/span&gt;~ -delete  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Implicit precedence in find&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; find . -exec foo &amp;gt; bar \;       # Redirections in find&lt;/span&gt;
+&lt;span class="pl-en"&gt;f&lt;/span&gt;() { whoami&lt;span class="pl-k"&gt;;&lt;/span&gt; }; sudo f           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; External use of internal functions&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-common-beginners-mistakes" class="anchor" aria-hidden="true" href="#common-beginners-mistakes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common beginner's mistakes&lt;/h3&gt;
+&lt;p&gt;ShellCheck recognizes many common beginner's syntax errors:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;var = 42                          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Spaces around = in assignments&lt;/span&gt;
+&lt;span class="pl-smi"&gt;$foo&lt;/span&gt;=42                           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; $ in assignments&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; ...             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; $ in for loop variables&lt;/span&gt;
+var&lt;span class="pl-smi"&gt;$n&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrong indirect assignment&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;${var&lt;span class="pl-smi"&gt;$n&lt;/span&gt;}&lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrong indirect reference&lt;/span&gt;
+var=(1, 2, 3)                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comma separated arrays&lt;/span&gt;
+array=( [index] = value )         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Incorrect index initialization&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt;[14]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Missing {} in array references&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Argument 10 is &lt;span class="pl-smi"&gt;$1&lt;/span&gt;0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Positional parameter misreference&lt;/span&gt;
+&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;myfunction&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;then&lt;/span&gt; ..&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;fi&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Wrapping commands in $()&lt;/span&gt;
+&lt;span class="pl-k"&gt;else&lt;/span&gt; &lt;span class="pl-k"&gt;if&lt;/span&gt; othercondition&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;then&lt;/span&gt; ..   &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Using 'else if'&lt;/span&gt;
+f&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-en"&gt;f&lt;/span&gt;() { &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hello world; }     # Using function before definition&lt;/span&gt;
+&lt;span class="pl-s"&gt;[ false ]                         # 'false' being true&lt;/span&gt;
+&lt;span class="pl-s"&gt;if ( -f file )                    # Using (..) instead of test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-style" class="anchor" aria-hidden="true" href="#style"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Style&lt;/h3&gt;
+&lt;p&gt;ShellCheck can make suggestions to improve style:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;[[ &lt;span class="pl-k"&gt;-z&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;find /tmp &lt;span class="pl-k"&gt;|&lt;/span&gt; grep mpg&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt; ]]  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use grep -q instead&lt;/span&gt;
+a &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log&lt;span class="pl-k"&gt;;&lt;/span&gt; b &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log&lt;span class="pl-k"&gt;;&lt;/span&gt; c &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; log      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use a redirection block instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;The time is &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;`&lt;/span&gt;date&lt;span class="pl-pds"&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use $() instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; dir&lt;span class="pl-k"&gt;;&lt;/span&gt; process &lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; ..&lt;span class="pl-k"&gt;;&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use subshells instead&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; $[1+2]                       &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Use standard $((..)) instead of old $[]&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$((&lt;/span&gt;&lt;span class="pl-smi"&gt;$RANDOM&lt;/span&gt; &lt;span class="pl-k"&gt;%&lt;/span&gt; &lt;span class="pl-c1"&gt;6&lt;/span&gt;&lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Don't use $ on variables in $((..))&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;date&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Useless use of echo&lt;/span&gt;
+cat file &lt;span class="pl-k"&gt;|&lt;/span&gt; grep foo               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Useless use of cat&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-data-and-typing-errors" class="anchor" aria-hidden="true" href="#data-and-typing-errors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data and typing errors&lt;/h3&gt;
+&lt;p&gt;ShellCheck can recognize issues related to data and typing:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;args=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$@&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Assigning arrays to strings&lt;/span&gt;
+files=(foo bar)&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$files&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Referencing arrays as strings&lt;/span&gt;
+&lt;span class="pl-k"&gt;declare&lt;/span&gt; -A arr=(foo bar)          &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Associative arrays without index&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;%s\n&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Arguments: &lt;span class="pl-smi"&gt;$@&lt;/span&gt;.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Concatenating strings and arrays&lt;/span&gt;
+[[ &lt;span class="pl-smi"&gt;$#&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; 2 ]]                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Comparing numbers as strings&lt;/span&gt;
+var=World&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; var      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unused lowercase variables&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unassigned lowercase variables&lt;/span&gt;
+cmd &lt;span class="pl-k"&gt;|&lt;/span&gt; &lt;span class="pl-c1"&gt;read&lt;/span&gt; bar&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$bar&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Assignments in subshells&lt;/span&gt;
+cat foo &lt;span class="pl-k"&gt;|&lt;/span&gt; cp bar                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Piping to commands that don't read&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;%s: %s\n&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; foo             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Mismatches in printf argument count&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-robustness" class="anchor" aria-hidden="true" href="#robustness"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Robustness&lt;/h3&gt;
+&lt;p&gt;ShellCheck can make suggestions for improving the robustness of a script:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rm -rf &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$STEAMROOT&lt;/span&gt;/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;*&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Catastrophic rm&lt;/span&gt;
+touch ./-l&lt;span class="pl-k"&gt;;&lt;/span&gt; ls &lt;span class="pl-k"&gt;*&lt;/span&gt;                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Globs that could become options&lt;/span&gt;
+find &lt;span class="pl-c1"&gt;.&lt;/span&gt; -exec sh -c &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;a &amp;amp;&amp;amp; b {}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-cce"&gt;\;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Find -exec shell injection&lt;/span&gt;
+&lt;span class="pl-c1"&gt;printf&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;             &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variables in printf format&lt;/span&gt;
+&lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-smi"&gt;f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;ls &lt;span class="pl-k"&gt;*&lt;/span&gt;.txt&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Iterating over ls output&lt;/span&gt;
+&lt;span class="pl-k"&gt;export&lt;/span&gt; MYVAR=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;cmd&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;              &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Masked exit codes&lt;/span&gt;
+&lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-smi"&gt;$version&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; 2.&lt;span class="pl-k"&gt;*&lt;/span&gt;) &lt;span class="pl-c1"&gt;:&lt;/span&gt;;; 2.6.&lt;span class="pl-k"&gt;*&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Shadowed case branches&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-portability" class="anchor" aria-hidden="true" href="#portability"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portability&lt;/h3&gt;
+&lt;p&gt;ShellCheck will warn when using features not supported by the shebang. For example, if you set the shebang to &lt;code&gt;#!/bin/sh&lt;/code&gt;, ShellCheck will warn about portability issues similar to &lt;code&gt;checkbashisms&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;echo&lt;/span&gt; {1..&lt;span class="pl-smi"&gt;$n&lt;/span&gt;}                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh, but not bash/dash/sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; {1..10}                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh and bash, but not dash/sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; -n 42                       &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Works in ksh, bash and dash, undefined in sh&lt;/span&gt;
+&lt;span class="pl-c1"&gt;trap&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;exit 42&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; sigint            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable signal spec&lt;/span&gt;
+cmd &lt;span class="pl-k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; file                      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable redirection operator&lt;/span&gt;
+&lt;span class="pl-c1"&gt;read&lt;/span&gt; foo &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt; /dev/tcp/host/22      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unportable intercepted files&lt;/span&gt;
+&lt;span class="pl-en"&gt;foo-bar&lt;/span&gt;() { ..&lt;span class="pl-k"&gt;;&lt;/span&gt; }                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Undefined/unsupported function name&lt;/span&gt;
+[ &lt;span class="pl-smi"&gt;$UID&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; 0 ]                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Variable undefined in dash/sh&lt;/span&gt;
+&lt;span class="pl-k"&gt;local&lt;/span&gt; var=value                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; local is undefined in sh&lt;/span&gt;
+&lt;span class="pl-k"&gt;time&lt;/span&gt; sleep 1 &lt;span class="pl-k"&gt;|&lt;/span&gt; sleep 5           &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Undefined uses of 'time'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-miscellaneous" class="anchor" aria-hidden="true" href="#miscellaneous"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Miscellaneous&lt;/h3&gt;
+&lt;p&gt;ShellCheck recognizes a menagerie of other issues:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;PS1=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;\e[0;32m\$\e[0m &lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; PS1 colors not in \[..\]&lt;/span&gt;
+PATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$PATH&lt;/span&gt;:~/bin&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Literal tilde in $PATH&lt;/span&gt;
+rm “file”                         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unicode quotes&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello world&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;                &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Carriage return / DOS line endings&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; hello &lt;span class="pl-cce"&gt;\ &lt;/span&gt;                     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Trailing spaces after \&lt;/span&gt;
+var=42 &lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-smi"&gt;$var&lt;/span&gt;                  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Expansion of inlined environment&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#!&lt;/span&gt;/bin/bash -x -e                 # Common shebang errors&lt;/span&gt;
+&lt;span class="pl-c1"&gt;echo&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$((&lt;/span&gt;n&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;180&lt;/span&gt;&lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;span class="pl-c1"&gt;100&lt;/span&gt;&lt;span class="pl-pds"&gt;))&lt;/span&gt;&lt;/span&gt;               &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unnecessary loss of precision&lt;/span&gt;
+ls &lt;span class="pl-k"&gt;*&lt;/span&gt;[:digit:].txt                 &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Bad character class globs&lt;/span&gt;
+sed &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;s/foo/bar/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; file &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; file      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Redirecting to input&lt;/span&gt;
+&lt;span class="pl-k"&gt;while&lt;/span&gt; &lt;span class="pl-c1"&gt;getopts&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;a&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; f&lt;span class="pl-k"&gt;;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt; &lt;span class="pl-k"&gt;case&lt;/span&gt; &lt;span class="pl-smi"&gt;$f&lt;/span&gt; &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;b&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Unhandled getopts flags&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-testimonials" class="anchor" aria-hidden="true" href="#testimonials"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testimonials&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At first you're like "shellcheck is awesome" but then you're like "wtf are we still using bash"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Alexander Tarasikov,
+&lt;a href="https://twitter.com/astarasikov/status/568825996532707330" rel="nofollow"&gt;via Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-ignoring-issues" class="anchor" aria-hidden="true" href="#ignoring-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ignoring issues&lt;/h2&gt;
+&lt;p&gt;Issues can be ignored via environmental variable, command line, individually or globally within a file:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/Ignore"&gt;https://github.com/koalaman/shellcheck/wiki/Ignore&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reporting-bugs" class="anchor" aria-hidden="true" href="#reporting-bugs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reporting bugs&lt;/h2&gt;
+&lt;p&gt;Please use the GitHub issue tracker for any bugs or feature suggestions:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/koalaman/shellcheck/issues"&gt;https://github.com/koalaman/shellcheck/issues&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please submit patches to code or documentation as GitHub pull requests! Check
+out the &lt;a href="https://github.com/koalaman/shellcheck/wiki/DevGuide"&gt;DevGuide&lt;/a&gt; on the
+ShellCheck Wiki.&lt;/p&gt;
+&lt;p&gt;Contributions must be licensed under the GNU GPLv3.
+The contributor retains the copyright.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;ShellCheck is licensed under the GNU General Public License, v3. A copy of this license is included in the file &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Copyright 2012-2019, &lt;a href="https://github.com/koalaman/"&gt;Vidar 'koala_man' Holen&lt;/a&gt; and contributors.&lt;/p&gt;
+&lt;p&gt;Happy ShellChecking!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-resources" class="anchor" aria-hidden="true" href="#other-resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The wiki has &lt;a href="https://github.com/koalaman/shellcheck/wiki/Checks"&gt;long form descriptions&lt;/a&gt; for each warning, e.g. &lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2221"&gt;SC2221&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;ShellCheck does not attempt to enforce any kind of formatting or indenting style, so also check out &lt;a href="https://github.com/mvdan/sh"&gt;shfmt&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>koalaman</author><guid isPermaLink="false">https://github.com/koalaman/shellcheck</guid><pubDate>Thu, 19 Dec 2019 00:02:00 GMT</pubDate></item><item><title>digital-asset/ghcide #3 in Haskell, Today</title><link>https://github.com/digital-asset/ghcide</link><description>&lt;p&gt;&lt;i&gt;A library for building Haskell IDE tooling&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ghcide---a-library-for-building-haskell-ide-tooling" class="anchor" aria-hidden="true" href="#ghcide---a-library-for-building-haskell-ide-tooling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;ghcide&lt;/code&gt; - A library for building Haskell IDE tooling&lt;/h1&gt;
+&lt;p&gt;Note: &lt;code&gt;ghcide&lt;/code&gt; was previously called &lt;code&gt;hie-core&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Our vision is that you should build an IDE by combining:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png"&gt;&lt;img src="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png" alt="vscode" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; for determining where your files are, what are their dependencies, what extensions are enabled and so on;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ghcide&lt;/code&gt; (i.e. this library) for defining how to type check, when to type check, and producing diagnostic messages;&lt;/li&gt;
+&lt;li&gt;A bunch of plugins that haven't yet been written, e.g. &lt;a href="https://github.com/ndmitchell/hlint"&gt;&lt;code&gt;hie-hlint&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/tweag/ormolu"&gt;&lt;code&gt;hie-ormolu&lt;/code&gt;&lt;/a&gt;, to choose which features you want;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alanz/haskell-lsp"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; for sending those messages to a &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;Language Server Protocol (LSP)&lt;/a&gt; server;&lt;/li&gt;
+&lt;li&gt;An extension for your editor. We provide a &lt;a href="https://code.visualstudio.com/api" rel="nofollow"&gt;VS Code extension&lt;/a&gt; as &lt;code&gt;extension&lt;/code&gt; in this directory, although the components work in other LSP editors too (see below for instructions using Emacs).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are more details about our approach &lt;a href="https://4ta.uk/p/shaking-up-the-ide" rel="nofollow"&gt;in this blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ghcide&lt;/code&gt; already exports the following features via the lsp protocol:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;LSP name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Display error messages (parse errors, typecheck errors, etc.) and enabled warnings.&lt;/td&gt;
+&lt;td&gt;diagnostics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Go to definition in local package&lt;/td&gt;
+&lt;td&gt;definition&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Display type and source module of values&lt;/td&gt;
+&lt;td&gt;hover&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Remove redundant imports, replace suggested typos for values and module imports, fill type holes, insert missing type signatures, add suggested ghc extensions&lt;/td&gt;
+&lt;td&gt;codeAction (quickfix)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-using-it" class="anchor" aria-hidden="true" href="#using-it"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using it&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-install-ghcide" class="anchor" aria-hidden="true" href="#install-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-with-nix" class="anchor" aria-hidden="true" href="#with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Nix&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://github.com/hercules-ci/ghcide-nix"&gt;See ghcide-nix repository&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-with-cabal-or-stack" class="anchor" aria-hidden="true" href="#with-cabal-or-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Cabal or Stack&lt;/h4&gt;
+&lt;p&gt;First install the &lt;code&gt;ghcide&lt;/code&gt; binary using &lt;code&gt;stack&lt;/code&gt; or &lt;code&gt;cabal&lt;/code&gt;, e.g.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git clone https://github.com/digital-asset/ghcide.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd ghcide&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cabal install&lt;/code&gt; or &lt;code&gt;stack install&lt;/code&gt; (and make sure &lt;code&gt;~/.local/bin&lt;/code&gt; is on your &lt;code&gt;$PATH&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It's important that &lt;code&gt;ghcide&lt;/code&gt; is compiled with the same compiler you use to build your projects.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-test-ghcide" class="anchor" aria-hidden="true" href="#test-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Next, check that &lt;code&gt;ghcide&lt;/code&gt; is capable of loading your code. Change to the project directory and run &lt;code&gt;ghcide&lt;/code&gt;, which will try and load everything using the same code as the IDE, but in a way that's much easier to understand. For example, taking the example of &lt;a href="https://github.com/ndmitchell/shake"&gt;&lt;code&gt;shake&lt;/code&gt;&lt;/a&gt;, running &lt;code&gt;ghcide&lt;/code&gt; gives some error messages and warnings before reporting at the end:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Files that failed:&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Main.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Model.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Test.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Util.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\output\docs\Main.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\output\docs\Part_Architecture_md.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Completed (152 worked, 6 failed)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Of the 158 files in Shake, as of this moment, 152 can be loaded by the IDE, but 6 can't (error messages for the reasons they can't be loaded are given earlier). The failing files are all prototype work or test output, meaning I can confidently use Shake.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;ghcide&lt;/code&gt; executable mostly relies on &lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; to do the difficult work of setting up your GHC environment. If it doesn't work, see &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;the &lt;code&gt;hie-bios&lt;/code&gt; manual&lt;/a&gt; to get it working. My default fallback is to figure it out by hand and create a &lt;code&gt;direct&lt;/code&gt; style &lt;a href="https://github.com/ndmitchell/shake/blob/master/hie.yaml"&gt;&lt;code&gt;hie.yaml&lt;/code&gt;&lt;/a&gt; listing the command line arguments to load the project.&lt;/p&gt;
+&lt;p&gt;If you can't get &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, see &lt;a href="docs/Setup.md"&gt;this setup troubleshooting guide&lt;/a&gt;. Once you have got &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, the next step is to pick which editor to integrate with.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-vs-code" class="anchor" aria-hidden="true" href="#using-with-vs-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with VS Code&lt;/h3&gt;
+&lt;p&gt;You can install the VSCode extension from the &lt;a href="https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.ghcide" rel="nofollow"&gt;VSCode
+marketplace&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-atom" class="anchor" aria-hidden="true" href="#using-with-atom"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Atom&lt;/h3&gt;
+&lt;p&gt;You can follow the &lt;a href="https://github.com/moodmosaic/ide-haskell-ghcide#readme"&gt;instructions&lt;/a&gt; to install with &lt;code&gt;apm&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-emacs" class="anchor" aria-hidden="true" href="#using-with-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Emacs&lt;/h3&gt;
+&lt;p&gt;If you don't already have &lt;a href="https://melpa.org/#/" rel="nofollow"&gt;MELPA&lt;/a&gt; package installation configured, visit MELPA &lt;a href="https://melpa.org/#/getting-started" rel="nofollow"&gt;getting started&lt;/a&gt; page to get set up. Then, install &lt;a href="https://melpa.org/#/use-package" rel="nofollow"&gt;&lt;code&gt;use-package&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now you have a choice of two different Emacs packages which can be used to communicate with the &lt;code&gt;ghcide&lt;/code&gt; LSP server:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lsp-ui&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eglot&lt;/code&gt; (requires Emacs 26.1+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In each case, you can enable support by adding the shown lines to your &lt;code&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-lsp-ui" class="anchor" aria-hidden="true" href="#lsp-ui"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lsp-ui&lt;/h4&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; LSP&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; flycheck
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:init&lt;/span&gt;
+  (global-flycheck-mode &lt;span class="pl-c1"&gt;t&lt;/span&gt;))
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; yasnippet
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-mode
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:hook&lt;/span&gt; (&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; lsp)
+  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-ui
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp-ui-mode)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-haskell
+ &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+ &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+ (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-path-hie &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+ (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-args-hie '())
+ &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Comment/uncomment this line to see interactions between lsp client/server.&lt;/span&gt;
+ &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;(setq lsp-log-io t)&lt;/span&gt;
+)&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-eglot" class="anchor" aria-hidden="true" href="#eglot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eglot&lt;/h4&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; eglot
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'eglot-server-programs&lt;/span&gt; '(&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; (&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))))&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-vimneovim" class="anchor" aria-hidden="true" href="#using-with-vimneovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Vim/Neovim&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-languageclient-neovim" class="anchor" aria-hidden="true" href="#languageclient-neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LanguageClient-neovim&lt;/h4&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Add this to your vim config:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_rootMarkers&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*.cabal&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;stack.yaml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_serverCommands&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rust&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rls&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Refer to &lt;code&gt;:he LanguageClient&lt;/code&gt; for more details on usage and configuration.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-vim-lsp" class="anchor" aria-hidden="true" href="#vim-lsp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim-lsp&lt;/h4&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/prabirshrestha/vim-lsp"&gt;vim-lsp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Add this to your vim config:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;au&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; lsp_setup &lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;lsp#register_server&lt;/span&gt;({
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;cmd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: {server_info&lt;span class="pl-k"&gt;-&lt;/span&gt;&amp;gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/your/path/to/ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]},
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;whitelist&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;})&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To verify it works move your cursor over a symbol and run &lt;code&gt;:LspHover&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cocnvim" class="anchor" aria-hidden="true" href="#cocnvim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;coc.nvim&lt;/h3&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/neoclide/coc.nvim"&gt;coc.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ]
+    }
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here's a nice article on setting up neovim and coc: &lt;a href="http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/" rel="nofollow"&gt;Vim and Haskell in
+2019&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-spacevim" class="anchor" aria-hidden="true" href="#spacevim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SpaceVim&lt;/h3&gt;
+&lt;p&gt;In the &lt;code&gt;autocomplete&lt;/code&gt; layer, add the &lt;code&gt;autocomplete_method&lt;/code&gt; option to force the use of &lt;code&gt;coc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-toml"&gt;&lt;pre&gt;[[&lt;span class="pl-en"&gt;layers&lt;/span&gt;]]
+  &lt;span class="pl-smi"&gt;name&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;autocomplete&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-smi"&gt;auto-completion-return-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;complete&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-smi"&gt;auto-completion-tab-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;smart&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  [&lt;span class="pl-en"&gt;options&lt;/span&gt;]
+    &lt;span class="pl-smi"&gt;autocomplete_method&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;coc&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stack&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;exec&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ]
+    }
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This example above describes a setup in which &lt;code&gt;ghcide&lt;/code&gt; is installed
+using &lt;code&gt;stack install ghcide&lt;/code&gt; within a project.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-hacking-on-ghcide" class="anchor" aria-hidden="true" href="#hacking-on-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hacking on ghcide&lt;/h2&gt;
+&lt;p&gt;To build and work on &lt;code&gt;ghcide&lt;/code&gt; itself, you can use Stack or cabal, e.g.,
+running &lt;code&gt;stack test&lt;/code&gt; will execute the test suite.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-the-extension" class="anchor" aria-hidden="true" href="#building-the-extension"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building the extension&lt;/h3&gt;
+&lt;p&gt;For development, you can also the VSCode extension from this repository (see
+&lt;a href="https://code.visualstudio.com/docs/setup/mac" rel="nofollow"&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt; for details on adding
+&lt;code&gt;code&lt;/code&gt; to your &lt;code&gt;$PATH&lt;/code&gt;):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cd extension/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm ci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm run vscepackage&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code --install-extension ghcide-0.0.1.vsix&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now opening a &lt;code&gt;.hs&lt;/code&gt; file should work with &lt;code&gt;ghcide&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-history-and-relationship-to-other-haskell-ides" class="anchor" aria-hidden="true" href="#history-and-relationship-to-other-haskell-ides"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;History and relationship to other Haskell IDE's&lt;/h2&gt;
+&lt;p&gt;The code behind &lt;code&gt;ghcide&lt;/code&gt; was originally developed by &lt;a href="https://digitalasset.com/" rel="nofollow"&gt;Digital Asset&lt;/a&gt; as part of the &lt;a href="https://github.com/digital-asset/daml"&gt;DAML programming language&lt;/a&gt;. DAML is a smart contract language targeting distributed-ledger runtimes, based on &lt;a href="https://www.haskell.org/ghc/" rel="nofollow"&gt;GHC&lt;/a&gt; with custom language extensions. The DAML programming language has &lt;a href="https://webide.daml.com/" rel="nofollow"&gt;an IDE&lt;/a&gt;, and work was done to separate off a reusable Haskell-only IDE (what is now &lt;code&gt;ghcide&lt;/code&gt;) which the &lt;a href="https://github.com/digital-asset/daml/tree/master/compiler/damlc"&gt;DAML IDE then builds upon&lt;/a&gt;. Since that time, there have been various &lt;a href="https://github.com/digital-asset/ghcide/graphs/contributors"&gt;non-Digital Asset contributors&lt;/a&gt;, in addition to continued investment by Digital Asset. All contributions require a &lt;a href="https://cla.digitalasset.com/digital-asset/ghcide" rel="nofollow"&gt;Contributor License Agreement&lt;/a&gt; that states you license the code under the &lt;a href="LICENSE"&gt;Apache License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Haskell community &lt;a href="https://github.com/DanielG/ghc-mod"&gt;has&lt;/a&gt; &lt;a href="https://github.com/chrisdone/intero"&gt;various&lt;/a&gt; &lt;a href="https://github.com/rikvdkleij/intellij-haskell"&gt;IDE&lt;/a&gt; &lt;a href="http://leksah.org/" rel="nofollow"&gt;choices&lt;/a&gt;, but the one that has been gathering momentum is &lt;a href="https://github.com/haskell/haskell-ide-engine#readme"&gt;&lt;code&gt;haskell-ide-engine&lt;/code&gt;&lt;/a&gt;. Our project owes a debt of gratitude to the &lt;code&gt;haskell-ide-engine&lt;/code&gt;. We reuse libraries from their ecosystem, including &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; (a likely future environment setup layer in &lt;code&gt;haskell-ide-engine&lt;/code&gt;), &lt;a href="https://github.com/alanz/haskell-lsp#readme"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/bubba/lsp-test#readme"&gt;&lt;code&gt;lsp-test&lt;/code&gt;&lt;/a&gt; (the &lt;code&gt;haskell-ide-engine&lt;/code&gt; &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;LSP protocol&lt;/a&gt; pieces). We make heavy use of their contributions to GHC itself, in particular the work to make GHC take string buffers rather than files. While &lt;code&gt;ghcide&lt;/code&gt; is not a part of &lt;code&gt;haskell-ide-engine&lt;/code&gt;, we feel it &lt;em&gt;could&lt;/em&gt; form the core of a future version - but such decisions are up to the &lt;code&gt;haskell-ide-engine&lt;/code&gt; contributors.&lt;/p&gt;
+&lt;p&gt;The best summary of the architecture of &lt;code&gt;ghcide&lt;/code&gt; is available &lt;a href="https://www.youtube.com/watch?v=cijsaeWNf2E&amp;amp;list=PLxxF72uPfQVRdAsvj7THoys-nVj-oc4Ss" rel="nofollow"&gt;this talk&lt;/a&gt; (&lt;a href="https://ndmitchell.com/downloads/slides-making_a_haskell_ide-07_sep_2019.pdf" rel="nofollow"&gt;slides&lt;/a&gt;), given at &lt;a href="https://munihac.de/2019.html" rel="nofollow"&gt;MuniHac 2019&lt;/a&gt;. However, since that talk the project has renamed from &lt;code&gt;hie-core&lt;/code&gt; to &lt;code&gt;ghcide&lt;/code&gt;, and the repo has moved to &lt;a href="https://github.com/digital-asset/ghcide/"&gt;this location&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>digital-asset</author><guid isPermaLink="false">https://github.com/digital-asset/ghcide</guid><pubDate>Thu, 19 Dec 2019 00:03:00 GMT</pubDate></item><item><title>github/semantic #4 in Haskell, Today</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; is a Haskell library and command line tool for parsing, analyzing, and comparing source code.&lt;/p&gt;
+&lt;p&gt;In a hurry? Check out our documentation of &lt;a href="docs/examples.md"&gt;example uses for the &lt;code&gt;semantic&lt;/code&gt; command line tool&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Table of Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#language-support"&gt;Language support&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#development"&gt;Development&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#technology-and-architecture"&gt;Technology and architecture&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="#licensing"&gt;Licensing&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Run &lt;code&gt;semantic --help&lt;/code&gt; for complete list of up-to-date options.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-parse" class="anchor" aria-hidden="true" href="#parse"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parse&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic parse ([--sexpression] | [--json] | [--json-graph] | [--symbols]
+                      | [--dot] | [--show] | [--quiet]) [FILES...]
+  Generate parse trees for path(s)
+
+Available options:
+  --sexpression            Output s-expression parse trees (default)
+  --json                   Output JSON parse trees
+  --json-graph             Output JSON adjacency list
+  --symbols                Output JSON symbol list
+  --dot                    Output DOT graph parse trees
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --quiet                  Don't produce output, but show timing stats
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-diff" class="anchor" aria-hidden="true" href="#diff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Diff&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic diff ([--sexpression] | [--json] | [--json-graph] | [--toc] |
+                     [--dot] | [--show]) [FILE_A] [FILE_B]
+  Compute changes between paths
+
+Available options:
+  --sexpression            Output s-expression diff tree (default)
+  --json                   Output JSON diff trees
+  --json-graph             Output JSON diff trees
+  --toc                    Output JSON table of contents diff summary
+  --dot                    Output the diff as a DOT graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-graph" class="anchor" aria-hidden="true" href="#graph"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Usage: semantic graph ([--imports] | [--calls]) [--packages] ([--dot] | [--json]
+                      | [--show]) ([--root DIR] [--exclude-dir DIR]
+                      DIR:LANGUAGE | FILE | --language ARG (FILES... | --stdin))
+  Compute a graph for a directory or from a top-level entry point module
+
+Available options:
+  --imports                Compute an import graph (default)
+  --calls                  Compute a call graph
+  --packages               Include a vertex for the package, with edges from it
+                           to each module
+  --dot                    Output in DOT graph format (default)
+  --json                   Output JSON graph
+  --show                   Output using the Show instance (debug only, format
+                           subject to change without notice)
+  --root DIR               Root directory of project. Optional, defaults to
+                           entry file/directory.
+  --exclude-dir DIR        Exclude a directory (e.g. vendor)
+  --language ARG           The language for the analysis.
+  --stdin                  Read a list of newline-separated paths to analyze
+                           from stdin.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-language-support" class="anchor" aria-hidden="true" href="#language-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Language support&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;Priority&lt;/th&gt;
+&lt;th align="left"&gt;Language&lt;/th&gt;
+&lt;th align="center"&gt;Parse&lt;/th&gt;
+&lt;th align="center"&gt;Assign&lt;/th&gt;
+&lt;th align="center"&gt;Diff&lt;/th&gt;
+&lt;th align="center"&gt;ToC&lt;/th&gt;
+&lt;th align="center"&gt;Symbols&lt;/th&gt;
+&lt;th align="center"&gt;Import graph&lt;/th&gt;
+&lt;th align="center"&gt;Call graph&lt;/th&gt;
+&lt;th align="center"&gt;Control flow graph&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;1&lt;/td&gt;
+&lt;td align="left"&gt;Ruby&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;2&lt;/td&gt;
+&lt;td align="left"&gt;JavaScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;3&lt;/td&gt;
+&lt;td align="left"&gt;TypeScript&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;4&lt;/td&gt;
+&lt;td align="left"&gt;Python&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;td align="left"&gt;Go&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;PHP&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Java&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSON&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;JSX&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Haskell&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Markdown&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt;&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt;N/A&lt;/td&gt;
+&lt;td align="center"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png"&gt;✅&lt;/g-emoji&gt; — Supported&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="large_orange_diamond" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f536.png"&gt;🔶&lt;/g-emoji&gt; — Partial support&lt;/li&gt;
+&lt;li&gt;&lt;g-emoji class="g-emoji" alias="construction" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png"&gt;🚧&lt;/g-emoji&gt; — Under development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; requires at least GHC 8.8.1 and Cabal 3.0. We strongly recommend using &lt;a href="https://www.haskell.org/ghcup/" rel="nofollow"&gt;&lt;code&gt;ghcup&lt;/code&gt;&lt;/a&gt; to sandbox GHC versions, as GHC packages installed through your OS's package manager may not install statically-linked versions of the GHC boot libraries. &lt;code&gt;semantic&lt;/code&gt; currently builds only on Unix systems; users of other operating systems may wish to use the &lt;a href="https://github.com/github/semantic/packages/11609"&gt;Docker images&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We use &lt;code&gt;cabal's&lt;/code&gt; &lt;a href="https://www.haskell.org/cabal/users-guide/nix-local-build-overview.html" rel="nofollow"&gt;Nix-style local builds&lt;/a&gt; for development. To get started quickly:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone git@github.com:github/semantic.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; semantic
+script/bootstrap
+cabal v2-build
+cabal v2-test
+cabal v2-run semantic -- --help&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;stack&lt;/code&gt; as a build tool is not officially supported; there is an unofficial &lt;a href="https://gist.github.com/jkachmar/f200caee83280f1f25e9cfa2dd2b16bb"&gt;&lt;code&gt;stack.yaml&lt;/code&gt;&lt;/a&gt; available, though we cannot make guarantees as to its stability.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-technology-and-architecture" class="anchor" aria-hidden="true" href="#technology-and-architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technology and architecture&lt;/h2&gt;
+&lt;p&gt;Architecturally, &lt;code&gt;semantic&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reads blobs.&lt;/li&gt;
+&lt;li&gt;Generates parse trees for those blobs with &lt;a href="https://github.com/tree-sitter/tree-sitter"&gt;tree-sitter&lt;/a&gt; (an incremental parsing system for programming tools).&lt;/li&gt;
+&lt;li&gt;Assigns those trees into a generalized representation of syntax.&lt;/li&gt;
+&lt;li&gt;Performs analysis, computes diffs, or just returns parse trees.&lt;/li&gt;
+&lt;li&gt;Renders output in one of many supported formats.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Semantic leverages a number of interesting algorithms and techniques:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Myers' algorithm (SES) as described in the paper &lt;a href="http://www.xmailserver.org/diff2.pdf" rel="nofollow"&gt;&lt;em&gt;An O(ND) Difference Algorithm and Its Variations&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RWS as described in the paper &lt;a href="https://db.in.tum.de/~finis/papers/RWS-Diff.pdf" rel="nofollow"&gt;&lt;em&gt;RWS-Diff: Flexible and Efficient Change Detection in Hierarchical Data&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open unions and &lt;a href="http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf" rel="nofollow"&gt;data types à la carte&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An implementation of &lt;a href="https://plum-umd.github.io/abstracting-definitional-interpreters/" rel="nofollow"&gt;Abstracting Definitional Interpreters&lt;/a&gt; extended to work with an à la carte representation of syntax terms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributions" class="anchor" aria-hidden="true" href="#contributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h2&gt;
+&lt;p&gt;Contributions are welcome!  Please see our &lt;a href="CONTRIBUTING.md"&gt;contribution
+guidelines&lt;/a&gt; and our &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&lt;/a&gt; for
+details on how to participate in our community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;Semantic is licensed under the &lt;a href="LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Thu, 19 Dec 2019 00:04:00 GMT</pubDate></item><item><title>smallhadroncollider/taskell #5 in Haskell, Today</title><link>https://github.com/smallhadroncollider/taskell</link><description>&lt;p&gt;&lt;i&gt;Command-line Kanban board/task manager with support for Trello boards and GitHub projects&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-taskell" class="anchor" aria-hidden="true" href="#taskell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Taskell&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/smallhadroncollider/taskell" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fd6113b6cb438b77fd8a1ed4ed3c571c865ad2f3/68747470733a2f2f7472617669732d63692e6f72672f736d616c6c686164726f6e636f6c6c696465722f7461736b656c6c2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/smallhadroncollider/taskell.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A CLI kanban board/task manager for Mac and Linux&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Per project task lists&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt; style key-bindings&lt;/li&gt;
+&lt;li&gt;Stored using Markdown&lt;/li&gt;
+&lt;li&gt;Clean diffs for easy version control&lt;/li&gt;
+&lt;li&gt;Support for sub-tasks and due dates&lt;/li&gt;
+&lt;li&gt;Trello board imports&lt;/li&gt;
+&lt;li&gt;GitHub project imports&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.buymeacoffee.com/shc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/031fc5a134cdca5ae3460822aba371e63f794233/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f6f72616e67655f696d672e706e67" alt="Buy Me A Coffee" data-canonical-src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow &lt;a href="https://twitter.com/taskellcli" rel="nofollow"&gt;@taskellcli&lt;/a&gt; on Twitter for updates&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3220fc6b739792fce338f774405c17dffc1e2042/68747470733a2f2f7461736b656c6c2e6170702f696d672f64656d6f2e676966"&gt;&lt;img src="https://camo.githubusercontent.com/3220fc6b739792fce338f774405c17dffc1e2042/68747470733a2f2f7461736b656c6c2e6170702f696d672f64656d6f2e676966" alt="Demo" data-canonical-src="https://taskell.app/img/demo.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-contents" class="anchor" aria-hidden="true" href="#contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#using-taskell"&gt;Using Taskell&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#options"&gt;Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#storage"&gt;Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#importing-trello-boards"&gt;Importing Trello Boards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#importing-github-projects"&gt;Importing GitHub Projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuration"&gt;Configuration&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#controls"&gt;Controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#theming"&gt;Theming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#roadmap"&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-homebrew-mac" class="anchor" aria-hidden="true" href="#homebrew-mac"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Homebrew (Mac)&lt;/h3&gt;
+&lt;p&gt;You can install Taskell on your Mac using &lt;a href="https://brew.sh" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew install taskell&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are usually bottles (binaries) available. If these are not available for your computer, Homebrew will build Taskell from scratch, which can take a while, particularly on older machines. Occasionally the build fails the first time, but usually works on a second attempt.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-debianubuntu" class="anchor" aria-hidden="true" href="#debianubuntu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debian/Ubuntu&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/smallhadroncollider/taskell/releases"&gt;A &lt;code&gt;.deb&lt;/code&gt; package is available for Debian/Ubuntu&lt;/a&gt;. Download it and install with &lt;code&gt;dpkg -i &amp;lt;package-name&amp;gt;&lt;/code&gt;. You may also need to install the &lt;code&gt;libtinfo5&lt;/code&gt; package (&lt;code&gt;sudo apt install libtinfo5&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-fedora" class="anchor" aria-hidden="true" href="#fedora"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fedora&lt;/h3&gt;
+&lt;p&gt;Not officially supported, but try running &lt;code&gt;sudo dnf install ncurses-compat-libs&lt;/code&gt; then download and run the binary as described below. If that doesn't work you may need to build from scratch (&lt;a href="#cabal"&gt;Cabal&lt;/a&gt;/&lt;a href="#stack"&gt;Stack&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-binaries" class="anchor" aria-hidden="true" href="#binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Binaries&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/smallhadroncollider/taskell/releases"&gt;A binary is available for Mac and Debian/Ubuntu&lt;/a&gt;. Download it and copy it to a directory in your &lt;code&gt;$PATH&lt;/code&gt; (e.g. &lt;code&gt;/usr/local/bin&lt;/code&gt; or &lt;code&gt;/usr/bin&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cabal" class="anchor" aria-hidden="true" href="#cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cabal&lt;/h3&gt;
+&lt;p&gt;You can install Taskell with &lt;code&gt;cabal&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;cabal install taskell&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure you run &lt;code&gt;cabal update&lt;/code&gt; if you haven't run it recently.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-stack" class="anchor" aria-hidden="true" href="#stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stack&lt;/h3&gt;
+&lt;p&gt;If none of the above options work you can build taskell using &lt;a href="https://docs.haskellstack.org/en/stable/README/" rel="nofollow"&gt;Stack&lt;/a&gt;. First &lt;a href="https://docs.haskellstack.org/en/stable/README/#how-to-install" rel="nofollow"&gt;install Stack on your machine&lt;/a&gt;. Then clone the repo and run &lt;code&gt;stack build &amp;amp;&amp;amp; stack install&lt;/code&gt;: this will build taskell and then install it in &lt;code&gt;~/.local/bin&lt;/code&gt; (so make sure that directory is in your &lt;code&gt;$PATH&lt;/code&gt;). Building from scratch can take a long time and occasionally doesn't work the first time (if this happens try running it again).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-using-taskell" class="anchor" aria-hidden="true" href="#using-taskell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Taskell&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;taskell&lt;/code&gt;: will use &lt;code&gt;taskell.md&lt;/code&gt; in the pwd - offers to create if not found&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;taskell filename.md&lt;/code&gt;: will use &lt;code&gt;filename.md&lt;/code&gt; in the pwd - offers to create if not found&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-h&lt;/code&gt;: show help&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-v&lt;/code&gt;: show version number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t &amp;lt;trello-board-id&amp;gt;&lt;/code&gt;: import a Trello board (&lt;a href="#importing-trello-boards"&gt;see below&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-g &amp;lt;github-project-id&amp;gt;&lt;/code&gt;: import a GitHub project (&lt;a href="#importing-github-projects"&gt;see below&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-tips" class="anchor" aria-hidden="true" href="#tips"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tips&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;If you're using a simple two-column "To Do" and "Done" then use the space bar to mark an item as complete while staying in the "To Do" list. If you're using a more complicated column setup then you will want to use &lt;code&gt;H&lt;/code&gt;/&lt;code&gt;L&lt;/code&gt; to move tasks between columns.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-storage" class="anchor" aria-hidden="true" href="#storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storage&lt;/h3&gt;
+&lt;p&gt;By default stores in a &lt;code&gt;taskell.md&lt;/code&gt; file in the working directory:&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;##&lt;/span&gt; To &lt;span class="pl-k"&gt;Do&lt;/span&gt;
+
+- &lt;span class="pl-k"&gt;Do&lt;/span&gt; this
+
+&lt;span class="pl-c1"&gt;##&lt;/span&gt; Done
+
+- &lt;span class="pl-k"&gt;Do&lt;/span&gt; That&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-importing-trello-boards" class="anchor" aria-hidden="true" href="#importing-trello-boards"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Importing Trello Boards&lt;/h3&gt;
+&lt;p&gt;Taskell includes the ability to fetch a Trello board and store it as local taskell file.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-authentication" class="anchor" aria-hidden="true" href="#authentication"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h4&gt;
+&lt;p&gt;Before fetching a Trello board, you'll need to create an access token and store it in &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, &lt;a href="https://trello.com/1/authorize?expiration=never&amp;amp;name=taskell&amp;amp;scope=read&amp;amp;response_type=token&amp;amp;key=80dbcf6f88f62cc5639774e13342c20b" rel="nofollow"&gt;get a Trello token&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then add it to &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[trello]&lt;/span&gt;
+&lt;span class="pl-k"&gt;token&lt;/span&gt; = &amp;lt;your-trello-access-token&amp;gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can revoke access tokens &lt;a href="https://trello.com/my/account" rel="nofollow"&gt;on Trello&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-fetching" class="anchor" aria-hidden="true" href="#fetching"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetching&lt;/h4&gt;
+&lt;p&gt;Running the following would pull down the Trello board with the ID "TRe1l0iD" into a file named &lt;code&gt;trello.md&lt;/code&gt; and then open taskell with that file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -t TRe1l0iD trello.md&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure you have permission to view the Trello board, otherwise you'll get an error.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-limitations" class="anchor" aria-hidden="true" href="#limitations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limitations&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a one-off procedure: it effectively imports a Trello board to taskell&lt;/li&gt;
+&lt;li&gt;Currently imports:
+&lt;ul&gt;
+&lt;li&gt;Lists&lt;/li&gt;
+&lt;li&gt;Cards&lt;/li&gt;
+&lt;li&gt;Card descriptions&lt;/li&gt;
+&lt;li&gt;Card due dates&lt;/li&gt;
+&lt;li&gt;Card checklists (merged into one list per card)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-importing-github-projects" class="anchor" aria-hidden="true" href="#importing-github-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Importing GitHub Projects&lt;/h3&gt;
+&lt;p&gt;Taskell includes the ability to fetch a GitHub project and store it as local taskell file.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-authentication-1" class="anchor" aria-hidden="true" href="#authentication-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h4&gt;
+&lt;p&gt;Before fetching a GitHub board, you'll need to create a person access token and store it in &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, &lt;a href="https://github.com/settings/tokens/new"&gt;get a GitHub personal access token&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure to tick the &lt;code&gt;repo&lt;/code&gt; scope&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then add it to &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[github]&lt;/span&gt;
+&lt;span class="pl-k"&gt;token&lt;/span&gt; = &amp;lt;your-github-personal-access-token&amp;gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can delete personal access tokens &lt;a href="https://github.com/settings/tokens/"&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-fetching-1" class="anchor" aria-hidden="true" href="#fetching-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetching&lt;/h4&gt;
+&lt;p&gt;Projects can belong to &lt;a href="#organisations"&gt;organisations&lt;/a&gt; or to &lt;a href="#repositories"&gt;individual repositories&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Make sure you have permission to view the GitHub project, otherwise you'll get an error.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6e2885ffe24f1539b0fc13666786a07a119d8b64/68747470733a2f2f7461736b656c6c2e6170702f696d672f6769746875622e676966"&gt;&lt;img src="https://camo.githubusercontent.com/6e2885ffe24f1539b0fc13666786a07a119d8b64/68747470733a2f2f7461736b656c6c2e6170702f696d672f6769746875622e676966" alt="GitHub Demo" data-canonical-src="https://taskell.app/img/github.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-organisations" class="anchor" aria-hidden="true" href="#organisations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Organisations&lt;/h5&gt;
+&lt;p&gt;To import a project for an organisation called "test-org" you would use the following:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -g orgs/test-org github.md&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This would then show you a list of possible projects to import. Enter the number of the project you wish to import.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-repositories" class="anchor" aria-hidden="true" href="#repositories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Repositories&lt;/h5&gt;
+&lt;p&gt;To import a project for the repository "test-repo" for the user "test-user":&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -g repos/test-user/test-repo github.md&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This would then show you a list of possible projects to import. Enter the number of the project you with to import.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-limitations-1" class="anchor" aria-hidden="true" href="#limitations-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limitations&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a one-off procedure: it effectively imports a GitHub project to taskell&lt;/li&gt;
+&lt;li&gt;Currently imports:
+&lt;ul&gt;
+&lt;li&gt;Columns&lt;/li&gt;
+&lt;li&gt;Cards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Taskell uses the &lt;a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html" rel="nofollow"&gt;XDG Base Directory Specification&lt;/a&gt;, so it will look for an &lt;code&gt;$XDG_CONFIG_HOME&lt;/code&gt; environmental variable and create a directory named &lt;code&gt;taskell&lt;/code&gt; inside it. If this variable is not found it will create the &lt;code&gt;taskell&lt;/code&gt; directory in &lt;code&gt;~/.config/&lt;/code&gt;.  (If you've been using Taskell since &amp;lt;= 1.3.5 then it will be in a &lt;code&gt;~/.taskell&lt;/code&gt; directory, feel free to move this to the XDG directory.)&lt;/p&gt;
+&lt;p&gt;Taskell has a &lt;code&gt;config.ini&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[general]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the default filename to create/look for&lt;/span&gt;
+&lt;span class="pl-k"&gt;filename&lt;/span&gt; = taskell.md
+
+&lt;span class="pl-en"&gt;[layout]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the width of a column&lt;/span&gt;
+&lt;span class="pl-k"&gt;column_width&lt;/span&gt; = 30
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the padding of a column&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; for both sides, so 3 would give a gap of 6 between two columns&lt;/span&gt;
+&lt;span class="pl-k"&gt;column_padding&lt;/span&gt; = 3
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the icon to use when a task has a description&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the default icon may not display on all systems&lt;/span&gt;
+&lt;span class="pl-k"&gt;description_indicator&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;≡&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-en"&gt;[markdown]&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a title line with&lt;/span&gt;
+&lt;span class="pl-k"&gt;title&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;##&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a task line with&lt;/span&gt;
+&lt;span class="pl-k"&gt;task&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a sub-task line with&lt;/span&gt;
+&lt;span class="pl-k"&gt;subtask&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;    *&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure that the values in the &lt;code&gt;[markdown]&lt;/code&gt; section are surrounded by &lt;strong&gt;double&lt;/strong&gt;-quotes.&lt;/p&gt;
+&lt;p&gt;If you always use sub-tasks, an alternative setup for &lt;code&gt;[markdown]&lt;/code&gt; might be:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[markdown]&lt;/span&gt;
+&lt;span class="pl-k"&gt;title&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;##&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; each task is a header&lt;/span&gt;
+&lt;span class="pl-k"&gt;task&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;###&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; subtasks are list items under the header&lt;/span&gt;
+&lt;span class="pl-k"&gt;subtask&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: currently if you change your &lt;code&gt;[markdown]&lt;/code&gt; settings any older files stored with different settings will not be readable.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-controls" class="anchor" aria-hidden="true" href="#controls"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Controls&lt;/h3&gt;
+&lt;p&gt;You can edit keyboard bindings in the &lt;code&gt;bindings.ini&lt;/code&gt; config file.&lt;/p&gt;
+&lt;p&gt;The default bindings can be found in &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/templates/bindings.ini"&gt;&lt;code&gt;bindings.ini&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Available special keys: &lt;code&gt;&amp;lt;Space&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Enter&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Backspace&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Left&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Right&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Up&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Down&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;On a Mac you can use the &lt;code&gt;alt&lt;/code&gt; characters: e.g. &lt;code&gt;quit = œ&lt;/code&gt; is equivalent to &lt;code&gt;alt+q&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You shouldn't try to assign the &lt;code&gt;1&lt;/code&gt;-&lt;code&gt;9&lt;/code&gt; keys, as it will not overwrite the default behaviour.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-theming" class="anchor" aria-hidden="true" href="#theming"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Theming&lt;/h3&gt;
+&lt;p&gt;You can edit Taskell's colour-scheme by editing &lt;code&gt;theme.ini&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[other]&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; list title&lt;/span&gt;
+&lt;span class="pl-k"&gt;title.fg&lt;/span&gt; = green
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; status bar&lt;/span&gt;
+&lt;span class="pl-k"&gt;statusBar.bg&lt;/span&gt; = magenta
+&lt;span class="pl-k"&gt;statusBar.fg&lt;/span&gt; = black
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; current list title&lt;/span&gt;
+&lt;span class="pl-k"&gt;titleCurrent.fg&lt;/span&gt; = blue
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; current task&lt;/span&gt;
+&lt;span class="pl-k"&gt;taskCurrent.fg&lt;/span&gt; = magenta&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also change the background and default text colour:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[default]&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the app background colour&lt;/span&gt;
+&lt;span class="pl-k"&gt;default.bg&lt;/span&gt; = brightBlack
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the app text colour&lt;/span&gt;
+&lt;span class="pl-k"&gt;default.fg&lt;/span&gt; = white&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The available colours are: &lt;code&gt;black&lt;/code&gt;, &lt;code&gt;red&lt;/code&gt;, &lt;code&gt;green&lt;/code&gt;, &lt;code&gt;yellow&lt;/code&gt;, &lt;code&gt;blue&lt;/code&gt;, &lt;code&gt;magenta&lt;/code&gt;, &lt;code&gt;cyan&lt;/code&gt;, &lt;code&gt;white&lt;/code&gt;, &lt;code&gt;brightBlack&lt;/code&gt;, &lt;code&gt;brightRed&lt;/code&gt;, &lt;code&gt;brightGreen&lt;/code&gt;, &lt;code&gt;brightYellow&lt;/code&gt;, &lt;code&gt;brightBlue&lt;/code&gt;, &lt;code&gt;brightMagenta&lt;/code&gt;, &lt;code&gt;brightCyan&lt;/code&gt;, &lt;code&gt;brightWhite&lt;/code&gt;, or &lt;code&gt;default&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-roadmap" class="anchor" aria-hidden="true" href="#roadmap"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Roadmap&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/smallhadroncollider/taskell/blob/develop/roadmap.md"&gt;roadmap.md&lt;/a&gt; for planned features&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h3&gt;
+&lt;p&gt;Please check the &lt;a href="https://github.com/smallhadroncollider/taskell/blob/develop/roadmap.md"&gt;roadmap.md&lt;/a&gt; before adding any bugs/feature requests to Issues.&lt;/p&gt;
+&lt;p&gt;Anyone is welcome to contribute to the project, but please read through &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; and make sure that you agree with the &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/CODE_OF_CONDUCT.md"&gt;Code of Conduct&lt;/a&gt; before getting involved.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;Built using &lt;a href="https://github.com/jtdaugherty/brick"&gt;Brick&lt;/a&gt;. Thanks to &lt;a href="https://github.com/jtdaugherty"&gt;Jonathan Daugherty&lt;/a&gt; for answering all my questions and pointing me in the right direction. Also thanks to &lt;a href="https://github.com/leighman"&gt;Jack Leigh&lt;/a&gt; and &lt;a href="https://github.com/ThomWright"&gt;Thom Wright&lt;/a&gt; for helping me get started. Also thanks to &lt;a href="https://github.com/katjad"&gt;Katja Durrani&lt;/a&gt; for submitting Taskell to &lt;a href="https://github.com/Homebrew/homebrew-core"&gt;&lt;code&gt;homebrew-core&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>smallhadroncollider</author><guid isPermaLink="false">https://github.com/smallhadroncollider/taskell</guid><pubDate>Thu, 19 Dec 2019 00:05:00 GMT</pubDate></item></channel></rss>
