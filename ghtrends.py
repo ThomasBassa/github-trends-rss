@@ -165,9 +165,8 @@ def get_langs_and_periods(tree):
     """Parse a document tree created by html.fromstring
     into a set of Language tuples and a list of Period dicts"""
     #Modifed from https://github.com/ryotarai/github_trends_rss/blob/master/lambda/functions/crawl/main.py
-    menu_lists = tree.cssselect("div.select-menu-list")
-    lang_list = menu_lists[0].cssselect("a")
-    period_list = menu_lists[1].cssselect("a")
+    lang_list = tree.cssselect("div#languages-menuitems a")
+    period_list = tree.cssselect("details#select-menu-date a")
 
     #The language list contains duplicates-- use a set to avoid that
     languages = set()
