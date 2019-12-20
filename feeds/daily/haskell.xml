@@ -1,162 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Thu, 19 Dec 2019 04:55:52 GMT</pubDate><lastBuildDate>Thu, 19 Dec 2019 04:55:52 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>facebook/duckling #1 in Haskell, Today</title><link>https://github.com/facebook/duckling</link><description>&lt;p&gt;&lt;i&gt;Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/duckling/raw/master/logo.png"&gt;&lt;img src="https://github.com/facebook/duckling/raw/master/logo.png" alt="Duckling Logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-duckling-" class="anchor" aria-hidden="true" href="#duckling-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Duckling &lt;a href="https://travis-ci.org/facebook/duckling" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc026295c990c04b7941234a5f2e2d3a32e0b317/68747470733a2f2f7472617669732d63692e6f72672f66616365626f6f6b2f6475636b6c696e672e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/facebook/duckling.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Duckling is a Haskell library that parses text into structured data.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;"the first Tuesday of October"
-=&amp;gt; {"value":"2017-10-03T00:00:00.000-07:00","grain":"day"}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
-&lt;p&gt;A Haskell environment is required. We recommend using
-&lt;a href="https://haskell-lang.org/get-started" rel="nofollow"&gt;stack&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On macOS you'll need to install PCRE development headers.
-The easiest way to do that is with &lt;a href="https://brew.sh/" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install pcre
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If that doesn't help, try running &lt;code&gt;brew doctor&lt;/code&gt; and fix
-the issues it finds.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
-&lt;p&gt;To compile and run the binary:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack build
-$ stack exec duckling-example-exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The first time you run it, it will download all required packages.&lt;/p&gt;
-&lt;p&gt;This runs a basic HTTP server. Example request:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ curl -XPOST http://0.0.0.0:8000/parse --data 'locale=en_GB&amp;amp;text=tomorrow at eight'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See &lt;code&gt;exe/ExampleMain.hs&lt;/code&gt; for an example on how to integrate Duckling in your
-project.
-If your backend doesn't run Haskell or if you don't want to spin your own Duckling server, you can directly use &lt;a href="https://wit.ai" rel="nofollow"&gt;wit.ai&lt;/a&gt;'s built-in entities.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-supported-dimensions" class="anchor" aria-hidden="true" href="#supported-dimensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported dimensions&lt;/h2&gt;
-&lt;p&gt;Duckling supports many languages, but most don't support all dimensions yet
-(&lt;strong&gt;we need your help!&lt;/strong&gt;).
-Please look into &lt;a href="https://github.com/facebook/duckling/blob/master/Duckling/Dimensions"&gt;this directory&lt;/a&gt; for language-specific support.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Dimension&lt;/th&gt;
-&lt;th&gt;Example input&lt;/th&gt;
-&lt;th&gt;Example value output&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;AmountOfMoney&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"42€"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":42,"type":"value","unit":"EUR"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;CreditCardNumber&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"4111-1111-1111-1111"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"4111111111111111","issuer":"visa"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Distance&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"6 miles"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":6,"type":"value","unit":"mile"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Duration&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"3 mins"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":3,"minute":3,"unit":"minute","normalized":{"value":180,"unit":"second"}}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Email&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"&lt;a href="mailto:duckling-team@fb.com"&gt;duckling-team@fb.com&lt;/a&gt;"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"duckling-team@fb.com"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Numeral&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"eighty eight"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":88,"type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Ordinal&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"33rd"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":33,"type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;PhoneNumber&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"+1 (650) 123-4567"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"(+1) 6501234567"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Quantity&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"3 cups of sugar"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":3,"type":"value","product":"sugar","unit":"cup"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Temperature&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"80F"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":80,"type":"value","unit":"fahrenheit"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Time&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"today at 9am"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"values":[{"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}],"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Url&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"&lt;a href="https://api.wit.ai/message?q=hi" rel="nofollow"&gt;https://api.wit.ai/message?q=hi&lt;/a&gt;"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":"https://api.wit.ai/message?q=hi","domain":"api.wit.ai"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;Volume&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;"4 gallons"&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{"value":4,"type":"value","unit":"gallon"}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;a href="https://github.com/facebook/duckling/blob/master/exe/CustomDimensionExample.hs"&gt;Custom dimensions&lt;/a&gt; are also supported.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-extending-duckling" class="anchor" aria-hidden="true" href="#extending-duckling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extending Duckling&lt;/h2&gt;
-&lt;p&gt;To regenerate the classifiers and run the test suite:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack build :duckling-regen-exe &amp;amp;&amp;amp; stack exec duckling-regen-exe &amp;amp;&amp;amp; stack test
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It's important to regenerate the classifiers after updating the code and before
-running the test suite.&lt;/p&gt;
-&lt;p&gt;To extend Duckling's support for a dimension in a given language, typically 4
-files need to be updated:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Rules.hs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Corpus.hs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/Dimensions/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt; (if not already present in &lt;code&gt;Duckling/Dimensions/Common.hs&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Duckling/Rules/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To add a new language:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Make sure that the language code used follows the &lt;a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" rel="nofollow"&gt;ISO-639-1 standard&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The first dimension to implement is &lt;code&gt;Numeral&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/24d3f199768be970149412c95b1c1bf5d76f8240"&gt;this example&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To add a new locale:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There should be a need for diverging rules between the locale and the language.&lt;/li&gt;
-&lt;li&gt;Make sure that the locale code is a valid &lt;a href="https://www.iso.org/obp/ui/#search/code/" rel="nofollow"&gt;ISO3166 alpha2 country code&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/1ab5f447d2635fe6d48887a501d333a52adff5b9"&gt;this example&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Rules have a name, a pattern and a production.
-Patterns are used to perform character-level matching (regexes on input) and
-concept-level matching (predicates on tokens).
-Productions are arbitrary functions that take a list of tokens and return a new
-token.&lt;/p&gt;
-&lt;p&gt;The corpus (resp. negative corpus) is a list of examples that should (resp.
-shouldn't) parse. The reference time for the corpus is Tuesday Feb 12, 2013 at
-4:30am.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Duckling.Debug&lt;/code&gt; provides a few debugging tools:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ stack repl --no-load
-&amp;gt; :l Duckling.Debug
-&amp;gt; debug (makeLocale EN $ Just US) "in two minutes" [This Time]
-in|within|after &amp;lt;duration&amp;gt; (in two minutes)
--- regex (in)
--- &amp;lt;integer&amp;gt; &amp;lt;unit-of-duration&amp;gt; (two minutes)
--- -- integer (0..19) (two)
--- -- -- regex (two)
--- -- minute (grain) (minutes)
--- -- -- regex (minutes)
-[Entity {dim = "time", body = "in two minutes", value = RVal Time (TimeValue (SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})) [SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})] Nothing), start = 0, end = 14}]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
-&lt;p&gt;Duckling is BSD-licensed.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>facebook</author><guid isPermaLink="false">https://github.com/facebook/duckling</guid><pubDate>Thu, 19 Dec 2019 00:01:00 GMT</pubDate></item><item><title>koalaman/shellcheck #2 in Haskell, Today</title><link>https://github.com/koalaman/shellcheck</link><description>&lt;p&gt;&lt;i&gt;ShellCheck, a static analysis tool for shell scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/koalaman/shellcheck" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9e97f328fa055534e41ae29a7d69e7798d549a7/68747470733a2f2f7472617669732d63692e6f72672f6b6f616c616d616e2f7368656c6c636865636b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/koalaman/shellcheck.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, Today</title><link>https://github.com/trending/haskell?since=daily</link><description>The top repositories on GitHub for haskell, measured daily</description><pubDate>Fri, 20 Dec 2019 01:08:24 GMT</pubDate><lastBuildDate>Fri, 20 Dec 2019 01:08:24 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>koalaman/shellcheck #1 in Haskell, Today</title><link>https://github.com/koalaman/shellcheck</link><description>&lt;p&gt;&lt;i&gt;ShellCheck, a static analysis tool for shell scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/koalaman/shellcheck" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9e97f328fa055534e41ae29a7d69e7798d549a7/68747470733a2f2f7472617669732d63692e6f72672f6b6f616c616d616e2f7368656c6c636865636b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/koalaman/shellcheck.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;&lt;a id="user-content-shellcheck---a-shell-script-static-analysis-tool" class="anchor" aria-hidden="true" href="#shellcheck---a-shell-script-static-analysis-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ShellCheck - A shell script static analysis tool&lt;/h1&gt;
 &lt;p&gt;ShellCheck is a GPLv3 tool that gives warnings and suggestions for bash/sh shell scripts:&lt;/p&gt;
 &lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/terminal.png"&gt;&lt;img src="doc/terminal.png" alt="Screenshot of a terminal showing problematic shell script lines highlighted" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -531,212 +374,469 @@ The contributor retains the copyright.&lt;/p&gt;
 &lt;li&gt;The wiki has &lt;a href="https://github.com/koalaman/shellcheck/wiki/Checks"&gt;long form descriptions&lt;/a&gt; for each warning, e.g. &lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2221"&gt;SC2221&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;ShellCheck does not attempt to enforce any kind of formatting or indenting style, so also check out &lt;a href="https://github.com/mvdan/sh"&gt;shfmt&lt;/a&gt;!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>koalaman</author><guid isPermaLink="false">https://github.com/koalaman/shellcheck</guid><pubDate>Thu, 19 Dec 2019 00:02:00 GMT</pubDate></item><item><title>digital-asset/ghcide #3 in Haskell, Today</title><link>https://github.com/digital-asset/ghcide</link><description>&lt;p&gt;&lt;i&gt;A library for building Haskell IDE tooling&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ghcide---a-library-for-building-haskell-ide-tooling" class="anchor" aria-hidden="true" href="#ghcide---a-library-for-building-haskell-ide-tooling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;ghcide&lt;/code&gt; - A library for building Haskell IDE tooling&lt;/h1&gt;
-&lt;p&gt;Note: &lt;code&gt;ghcide&lt;/code&gt; was previously called &lt;code&gt;hie-core&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Our vision is that you should build an IDE by combining:&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png"&gt;&lt;img src="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png" alt="vscode" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; for determining where your files are, what are their dependencies, what extensions are enabled and so on;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ghcide&lt;/code&gt; (i.e. this library) for defining how to type check, when to type check, and producing diagnostic messages;&lt;/li&gt;
-&lt;li&gt;A bunch of plugins that haven't yet been written, e.g. &lt;a href="https://github.com/ndmitchell/hlint"&gt;&lt;code&gt;hie-hlint&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/tweag/ormolu"&gt;&lt;code&gt;hie-ormolu&lt;/code&gt;&lt;/a&gt;, to choose which features you want;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/alanz/haskell-lsp"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; for sending those messages to a &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;Language Server Protocol (LSP)&lt;/a&gt; server;&lt;/li&gt;
-&lt;li&gt;An extension for your editor. We provide a &lt;a href="https://code.visualstudio.com/api" rel="nofollow"&gt;VS Code extension&lt;/a&gt; as &lt;code&gt;extension&lt;/code&gt; in this directory, although the components work in other LSP editors too (see below for instructions using Emacs).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are more details about our approach &lt;a href="https://4ta.uk/p/shaking-up-the-ide" rel="nofollow"&gt;in this blog post&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;ghcide&lt;/code&gt; already exports the following features via the lsp protocol:&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>koalaman</author><guid isPermaLink="false">https://github.com/koalaman/shellcheck</guid><pubDate>Fri, 20 Dec 2019 00:01:00 GMT</pubDate></item><item><title>elm/compiler #2 in Haskell, Today</title><link>https://github.com/elm/compiler</link><description>&lt;p&gt;&lt;i&gt;Compiler for Elm, a functional language for reliable webapps.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-elm" class="anchor" aria-hidden="true" href="#elm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Elm&lt;/h1&gt;
+&lt;p&gt;A delightful language for reliable webapps.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href="http://elm-lang.org/" rel="nofollow"&gt;Home Page&lt;/a&gt;, &lt;a href="http://elm-lang.org/try" rel="nofollow"&gt;Try Online&lt;/a&gt;, or &lt;a href="http://guide.elm-lang.org/" rel="nofollow"&gt;The Official Guide&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="sparkles" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png"&gt;✨&lt;/g-emoji&gt; &lt;a href="https://guide.elm-lang.org/install/elm.html" rel="nofollow"&gt;Install&lt;/a&gt; &lt;g-emoji class="g-emoji" alias="sparkles" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png"&gt;✨&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;p&gt;For multiple versions, previous versions, and uninstallation, see the instructions &lt;a href="https://github.com/elm/compiler/blob/master/installers/README.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;&lt;a id="user-content-help" class="anchor" aria-hidden="true" href="#help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Help&lt;/h2&gt;
+&lt;p&gt;If you are stuck, ask around on &lt;a href="http://elmlang.herokuapp.com/" rel="nofollow"&gt;the Elm slack channel&lt;/a&gt;. Folks are friendly and happy to help with questions!&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>elm</author><guid isPermaLink="false">https://github.com/elm/compiler</guid><pubDate>Fri, 20 Dec 2019 00:02:00 GMT</pubDate></item><item><title>facebook/duckling #3 in Haskell, Today</title><link>https://github.com/facebook/duckling</link><description>&lt;p&gt;&lt;i&gt;Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/duckling/raw/master/logo.png"&gt;&lt;img src="https://github.com/facebook/duckling/raw/master/logo.png" alt="Duckling Logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-duckling-" class="anchor" aria-hidden="true" href="#duckling-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Duckling &lt;a href="https://travis-ci.org/facebook/duckling" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc026295c990c04b7941234a5f2e2d3a32e0b317/68747470733a2f2f7472617669732d63692e6f72672f66616365626f6f6b2f6475636b6c696e672e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/facebook/duckling.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Duckling is a Haskell library that parses text into structured data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;"the first Tuesday of October"
+=&amp;gt; {"value":"2017-10-03T00:00:00.000-07:00","grain":"day"}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;A Haskell environment is required. We recommend using
+&lt;a href="https://haskell-lang.org/get-started" rel="nofollow"&gt;stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On macOS you'll need to install PCRE development headers.
+The easiest way to do that is with &lt;a href="https://brew.sh/" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install pcre
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If that doesn't help, try running &lt;code&gt;brew doctor&lt;/code&gt; and fix
+the issues it finds.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;To compile and run the binary:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack build
+$ stack exec duckling-example-exe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first time you run it, it will download all required packages.&lt;/p&gt;
+&lt;p&gt;This runs a basic HTTP server. Example request:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl -XPOST http://0.0.0.0:8000/parse --data 'locale=en_GB&amp;amp;text=tomorrow at eight'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;code&gt;exe/ExampleMain.hs&lt;/code&gt; for an example on how to integrate Duckling in your
+project.
+If your backend doesn't run Haskell or if you don't want to spin your own Duckling server, you can directly use &lt;a href="https://wit.ai" rel="nofollow"&gt;wit.ai&lt;/a&gt;'s built-in entities.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-dimensions" class="anchor" aria-hidden="true" href="#supported-dimensions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported dimensions&lt;/h2&gt;
+&lt;p&gt;Duckling supports many languages, but most don't support all dimensions yet
+(&lt;strong&gt;we need your help!&lt;/strong&gt;).
+Please look into &lt;a href="https://github.com/facebook/duckling/blob/master/Duckling/Dimensions"&gt;this directory&lt;/a&gt; for language-specific support.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Feature&lt;/th&gt;
-&lt;th&gt;LSP name&lt;/th&gt;
+&lt;th&gt;Dimension&lt;/th&gt;
+&lt;th&gt;Example input&lt;/th&gt;
+&lt;th&gt;Example value output&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Display error messages (parse errors, typecheck errors, etc.) and enabled warnings.&lt;/td&gt;
-&lt;td&gt;diagnostics&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;AmountOfMoney&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"42€"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":42,"type":"value","unit":"EUR"}&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Go to definition in local package&lt;/td&gt;
-&lt;td&gt;definition&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;CreditCardNumber&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"4111-1111-1111-1111"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"4111111111111111","issuer":"visa"}&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Display type and source module of values&lt;/td&gt;
-&lt;td&gt;hover&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Distance&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"6 miles"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":6,"type":"value","unit":"mile"}&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Remove redundant imports, replace suggested typos for values and module imports, fill type holes, insert missing type signatures, add suggested ghc extensions&lt;/td&gt;
-&lt;td&gt;codeAction (quickfix)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Duration&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"3 mins"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":3,"minute":3,"unit":"minute","normalized":{"value":180,"unit":"second"}}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Email&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"&lt;a href="mailto:duckling-team@fb.com"&gt;duckling-team@fb.com&lt;/a&gt;"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"duckling-team@fb.com"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Numeral&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"eighty eight"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":88,"type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ordinal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"33rd"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":33,"type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;PhoneNumber&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"+1 (650) 123-4567"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"(+1) 6501234567"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Quantity&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"3 cups of sugar"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":3,"type":"value","product":"sugar","unit":"cup"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Temperature&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"80F"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":80,"type":"value","unit":"fahrenheit"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Time&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"today at 9am"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"values":[{"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}],"value":"2016-12-14T09:00:00.000-08:00","grain":"hour","type":"value"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Url&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"&lt;a href="https://api.wit.ai/message?q=hi" rel="nofollow"&gt;https://api.wit.ai/message?q=hi&lt;/a&gt;"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":"https://api.wit.ai/message?q=hi","domain":"api.wit.ai"}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Volume&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;"4 gallons"&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{"value":4,"type":"value","unit":"gallon"}&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2&gt;&lt;a id="user-content-using-it" class="anchor" aria-hidden="true" href="#using-it"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using it&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-install-ghcide" class="anchor" aria-hidden="true" href="#install-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
-&lt;h4&gt;&lt;a id="user-content-with-nix" class="anchor" aria-hidden="true" href="#with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Nix&lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://github.com/hercules-ci/ghcide-nix"&gt;See ghcide-nix repository&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-with-cabal-or-stack" class="anchor" aria-hidden="true" href="#with-cabal-or-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Cabal or Stack&lt;/h4&gt;
-&lt;p&gt;First install the &lt;code&gt;ghcide&lt;/code&gt; binary using &lt;code&gt;stack&lt;/code&gt; or &lt;code&gt;cabal&lt;/code&gt;, e.g.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;git clone https://github.com/digital-asset/ghcide.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd ghcide&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cabal install&lt;/code&gt; or &lt;code&gt;stack install&lt;/code&gt; (and make sure &lt;code&gt;~/.local/bin&lt;/code&gt; is on your &lt;code&gt;$PATH&lt;/code&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;It's important that &lt;code&gt;ghcide&lt;/code&gt; is compiled with the same compiler you use to build your projects.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-test-ghcide" class="anchor" aria-hidden="true" href="#test-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Next, check that &lt;code&gt;ghcide&lt;/code&gt; is capable of loading your code. Change to the project directory and run &lt;code&gt;ghcide&lt;/code&gt;, which will try and load everything using the same code as the IDE, but in a way that's much easier to understand. For example, taking the example of &lt;a href="https://github.com/ndmitchell/shake"&gt;&lt;code&gt;shake&lt;/code&gt;&lt;/a&gt;, running &lt;code&gt;ghcide&lt;/code&gt; gives some error messages and warnings before reporting at the end:&lt;/p&gt;
-&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Files that failed:&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\model\Main.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\model\Model.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\model\Test.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\model\Util.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\output\docs\Main.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt; * .\output\docs\Part_Architecture_md.hs&lt;/span&gt;
-&lt;span class="pl-c1"&gt;Completed (152 worked, 6 failed)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Of the 158 files in Shake, as of this moment, 152 can be loaded by the IDE, but 6 can't (error messages for the reasons they can't be loaded are given earlier). The failing files are all prototype work or test output, meaning I can confidently use Shake.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;ghcide&lt;/code&gt; executable mostly relies on &lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; to do the difficult work of setting up your GHC environment. If it doesn't work, see &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;the &lt;code&gt;hie-bios&lt;/code&gt; manual&lt;/a&gt; to get it working. My default fallback is to figure it out by hand and create a &lt;code&gt;direct&lt;/code&gt; style &lt;a href="https://github.com/ndmitchell/shake/blob/master/hie.yaml"&gt;&lt;code&gt;hie.yaml&lt;/code&gt;&lt;/a&gt; listing the command line arguments to load the project.&lt;/p&gt;
-&lt;p&gt;If you can't get &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, see &lt;a href="docs/Setup.md"&gt;this setup troubleshooting guide&lt;/a&gt;. Once you have got &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, the next step is to pick which editor to integrate with.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-using-with-vs-code" class="anchor" aria-hidden="true" href="#using-with-vs-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with VS Code&lt;/h3&gt;
-&lt;p&gt;You can install the VSCode extension from the &lt;a href="https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.ghcide" rel="nofollow"&gt;VSCode
-marketplace&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-using-with-atom" class="anchor" aria-hidden="true" href="#using-with-atom"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Atom&lt;/h3&gt;
-&lt;p&gt;You can follow the &lt;a href="https://github.com/moodmosaic/ide-haskell-ghcide#readme"&gt;instructions&lt;/a&gt; to install with &lt;code&gt;apm&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-using-with-emacs" class="anchor" aria-hidden="true" href="#using-with-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Emacs&lt;/h3&gt;
-&lt;p&gt;If you don't already have &lt;a href="https://melpa.org/#/" rel="nofollow"&gt;MELPA&lt;/a&gt; package installation configured, visit MELPA &lt;a href="https://melpa.org/#/getting-started" rel="nofollow"&gt;getting started&lt;/a&gt; page to get set up. Then, install &lt;a href="https://melpa.org/#/use-package" rel="nofollow"&gt;&lt;code&gt;use-package&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now you have a choice of two different Emacs packages which can be used to communicate with the &lt;code&gt;ghcide&lt;/code&gt; LSP server:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/facebook/duckling/blob/master/exe/CustomDimensionExample.hs"&gt;Custom dimensions&lt;/a&gt; are also supported.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-extending-duckling" class="anchor" aria-hidden="true" href="#extending-duckling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extending Duckling&lt;/h2&gt;
+&lt;p&gt;To regenerate the classifiers and run the test suite:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack build :duckling-regen-exe &amp;amp;&amp;amp; stack exec duckling-regen-exe &amp;amp;&amp;amp; stack test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It's important to regenerate the classifiers after updating the code and before
+running the test suite.&lt;/p&gt;
+&lt;p&gt;To extend Duckling's support for a dimension in a given language, typically 4
+files need to be updated:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;lsp-ui&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;eglot&lt;/code&gt; (requires Emacs 26.1+)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Rules.hs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/&amp;lt;Dimension&amp;gt;/&amp;lt;Lang&amp;gt;/Corpus.hs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/Dimensions/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt; (if not already present in &lt;code&gt;Duckling/Dimensions/Common.hs&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duckling/Rules/&amp;lt;Lang&amp;gt;.hs&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In each case, you can enable support by adding the shown lines to your &lt;code&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-lsp-ui" class="anchor" aria-hidden="true" href="#lsp-ui"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lsp-ui&lt;/h4&gt;
-&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; LSP&lt;/span&gt;
-(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; flycheck
-  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
-  &lt;span class="pl-c1"&gt;:init&lt;/span&gt;
-  (global-flycheck-mode &lt;span class="pl-c1"&gt;t&lt;/span&gt;))
-(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; yasnippet
-  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
-(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-mode
-  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
-  &lt;span class="pl-c1"&gt;:hook&lt;/span&gt; (&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; lsp)
-  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp)
-(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-ui
-  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
-  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp-ui-mode)
-(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-haskell
- &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
- &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
- (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-path-hie &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
- (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-args-hie '())
- &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Comment/uncomment this line to see interactions between lsp client/server.&lt;/span&gt;
- &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;(setq lsp-log-io t)&lt;/span&gt;
-)&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;&lt;a id="user-content-eglot" class="anchor" aria-hidden="true" href="#eglot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eglot&lt;/h4&gt;
-&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; eglot
-  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
-  &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
-  (&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'eglot-server-programs&lt;/span&gt; '(&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; (&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))))&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-using-with-vimneovim" class="anchor" aria-hidden="true" href="#using-with-vimneovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Vim/Neovim&lt;/h3&gt;
-&lt;h4&gt;&lt;a id="user-content-languageclient-neovim" class="anchor" aria-hidden="true" href="#languageclient-neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LanguageClient-neovim&lt;/h4&gt;
-&lt;p&gt;Install &lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Add this to your vim config:&lt;/p&gt;
-&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_rootMarkers&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*.cabal&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;stack.yaml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
-&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_serverCommands&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rust&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rls&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Refer to &lt;code&gt;:he LanguageClient&lt;/code&gt; for more details on usage and configuration.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-vim-lsp" class="anchor" aria-hidden="true" href="#vim-lsp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim-lsp&lt;/h4&gt;
-&lt;p&gt;Install &lt;a href="https://github.com/prabirshrestha/vim-lsp"&gt;vim-lsp&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Add this to your vim config:&lt;/p&gt;
-&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;au&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; lsp_setup &lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;lsp#register_server&lt;/span&gt;({
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;cmd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: {server_info&lt;span class="pl-k"&gt;-&lt;/span&gt;&amp;gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/your/path/to/ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]},
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;whitelist&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
-    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;})&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;To verify it works move your cursor over a symbol and run &lt;code&gt;:LspHover&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-cocnvim" class="anchor" aria-hidden="true" href="#cocnvim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;coc.nvim&lt;/h3&gt;
-&lt;p&gt;Install &lt;a href="https://github.com/neoclide/coc.nvim"&gt;coc.nvim&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
-&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
-  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
-    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ],
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ],
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ]
-    }
-  }
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Here's a nice article on setting up neovim and coc: &lt;a href="http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/" rel="nofollow"&gt;Vim and Haskell in
-2019&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-spacevim" class="anchor" aria-hidden="true" href="#spacevim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SpaceVim&lt;/h3&gt;
-&lt;p&gt;In the &lt;code&gt;autocomplete&lt;/code&gt; layer, add the &lt;code&gt;autocomplete_method&lt;/code&gt; option to force the use of &lt;code&gt;coc&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-toml"&gt;&lt;pre&gt;[[&lt;span class="pl-en"&gt;layers&lt;/span&gt;]]
-  &lt;span class="pl-smi"&gt;name&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;autocomplete&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
-  &lt;span class="pl-smi"&gt;auto-completion-return-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;complete&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  &lt;span class="pl-smi"&gt;auto-completion-tab-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;smart&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  [&lt;span class="pl-en"&gt;options&lt;/span&gt;]
-    &lt;span class="pl-smi"&gt;autocomplete_method&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;coc&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
-&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
-  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
-    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stack&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;exec&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ],
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ],
-      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-      ]
-    }
-  }
-}&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This example above describes a setup in which &lt;code&gt;ghcide&lt;/code&gt; is installed
-using &lt;code&gt;stack install ghcide&lt;/code&gt; within a project.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-hacking-on-ghcide" class="anchor" aria-hidden="true" href="#hacking-on-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hacking on ghcide&lt;/h2&gt;
-&lt;p&gt;To build and work on &lt;code&gt;ghcide&lt;/code&gt; itself, you can use Stack or cabal, e.g.,
-running &lt;code&gt;stack test&lt;/code&gt; will execute the test suite.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-building-the-extension" class="anchor" aria-hidden="true" href="#building-the-extension"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building the extension&lt;/h3&gt;
-&lt;p&gt;For development, you can also the VSCode extension from this repository (see
-&lt;a href="https://code.visualstudio.com/docs/setup/mac" rel="nofollow"&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt; for details on adding
-&lt;code&gt;code&lt;/code&gt; to your &lt;code&gt;$PATH&lt;/code&gt;):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;cd extension/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;npm ci&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;npm run vscepackage&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;code --install-extension ghcide-0.0.1.vsix&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Now opening a &lt;code&gt;.hs&lt;/code&gt; file should work with &lt;code&gt;ghcide&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-history-and-relationship-to-other-haskell-ides" class="anchor" aria-hidden="true" href="#history-and-relationship-to-other-haskell-ides"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;History and relationship to other Haskell IDE's&lt;/h2&gt;
-&lt;p&gt;The code behind &lt;code&gt;ghcide&lt;/code&gt; was originally developed by &lt;a href="https://digitalasset.com/" rel="nofollow"&gt;Digital Asset&lt;/a&gt; as part of the &lt;a href="https://github.com/digital-asset/daml"&gt;DAML programming language&lt;/a&gt;. DAML is a smart contract language targeting distributed-ledger runtimes, based on &lt;a href="https://www.haskell.org/ghc/" rel="nofollow"&gt;GHC&lt;/a&gt; with custom language extensions. The DAML programming language has &lt;a href="https://webide.daml.com/" rel="nofollow"&gt;an IDE&lt;/a&gt;, and work was done to separate off a reusable Haskell-only IDE (what is now &lt;code&gt;ghcide&lt;/code&gt;) which the &lt;a href="https://github.com/digital-asset/daml/tree/master/compiler/damlc"&gt;DAML IDE then builds upon&lt;/a&gt;. Since that time, there have been various &lt;a href="https://github.com/digital-asset/ghcide/graphs/contributors"&gt;non-Digital Asset contributors&lt;/a&gt;, in addition to continued investment by Digital Asset. All contributions require a &lt;a href="https://cla.digitalasset.com/digital-asset/ghcide" rel="nofollow"&gt;Contributor License Agreement&lt;/a&gt; that states you license the code under the &lt;a href="LICENSE"&gt;Apache License&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The Haskell community &lt;a href="https://github.com/DanielG/ghc-mod"&gt;has&lt;/a&gt; &lt;a href="https://github.com/chrisdone/intero"&gt;various&lt;/a&gt; &lt;a href="https://github.com/rikvdkleij/intellij-haskell"&gt;IDE&lt;/a&gt; &lt;a href="http://leksah.org/" rel="nofollow"&gt;choices&lt;/a&gt;, but the one that has been gathering momentum is &lt;a href="https://github.com/haskell/haskell-ide-engine#readme"&gt;&lt;code&gt;haskell-ide-engine&lt;/code&gt;&lt;/a&gt;. Our project owes a debt of gratitude to the &lt;code&gt;haskell-ide-engine&lt;/code&gt;. We reuse libraries from their ecosystem, including &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; (a likely future environment setup layer in &lt;code&gt;haskell-ide-engine&lt;/code&gt;), &lt;a href="https://github.com/alanz/haskell-lsp#readme"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/bubba/lsp-test#readme"&gt;&lt;code&gt;lsp-test&lt;/code&gt;&lt;/a&gt; (the &lt;code&gt;haskell-ide-engine&lt;/code&gt; &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;LSP protocol&lt;/a&gt; pieces). We make heavy use of their contributions to GHC itself, in particular the work to make GHC take string buffers rather than files. While &lt;code&gt;ghcide&lt;/code&gt; is not a part of &lt;code&gt;haskell-ide-engine&lt;/code&gt;, we feel it &lt;em&gt;could&lt;/em&gt; form the core of a future version - but such decisions are up to the &lt;code&gt;haskell-ide-engine&lt;/code&gt; contributors.&lt;/p&gt;
-&lt;p&gt;The best summary of the architecture of &lt;code&gt;ghcide&lt;/code&gt; is available &lt;a href="https://www.youtube.com/watch?v=cijsaeWNf2E&amp;amp;list=PLxxF72uPfQVRdAsvj7THoys-nVj-oc4Ss" rel="nofollow"&gt;this talk&lt;/a&gt; (&lt;a href="https://ndmitchell.com/downloads/slides-making_a_haskell_ide-07_sep_2019.pdf" rel="nofollow"&gt;slides&lt;/a&gt;), given at &lt;a href="https://munihac.de/2019.html" rel="nofollow"&gt;MuniHac 2019&lt;/a&gt;. However, since that talk the project has renamed from &lt;code&gt;hie-core&lt;/code&gt; to &lt;code&gt;ghcide&lt;/code&gt;, and the repo has moved to &lt;a href="https://github.com/digital-asset/ghcide/"&gt;this location&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>digital-asset</author><guid isPermaLink="false">https://github.com/digital-asset/ghcide</guid><pubDate>Thu, 19 Dec 2019 00:03:00 GMT</pubDate></item><item><title>github/semantic #4 in Haskell, Today</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
+&lt;p&gt;To add a new language:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure that the language code used follows the &lt;a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" rel="nofollow"&gt;ISO-639-1 standard&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The first dimension to implement is &lt;code&gt;Numeral&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/24d3f199768be970149412c95b1c1bf5d76f8240"&gt;this example&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To add a new locale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There should be a need for diverging rules between the locale and the language.&lt;/li&gt;
+&lt;li&gt;Make sure that the locale code is a valid &lt;a href="https://www.iso.org/obp/ui/#search/code/" rel="nofollow"&gt;ISO3166 alpha2 country code&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href="https://github.com/facebook/duckling/commit/1ab5f447d2635fe6d48887a501d333a52adff5b9"&gt;this example&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rules have a name, a pattern and a production.
+Patterns are used to perform character-level matching (regexes on input) and
+concept-level matching (predicates on tokens).
+Productions are arbitrary functions that take a list of tokens and return a new
+token.&lt;/p&gt;
+&lt;p&gt;The corpus (resp. negative corpus) is a list of examples that should (resp.
+shouldn't) parse. The reference time for the corpus is Tuesday Feb 12, 2013 at
+4:30am.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Duckling.Debug&lt;/code&gt; provides a few debugging tools:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ stack repl --no-load
+&amp;gt; :l Duckling.Debug
+&amp;gt; debug (makeLocale EN $ Just US) "in two minutes" [This Time]
+in|within|after &amp;lt;duration&amp;gt; (in two minutes)
+-- regex (in)
+-- &amp;lt;integer&amp;gt; &amp;lt;unit-of-duration&amp;gt; (two minutes)
+-- -- integer (0..19) (two)
+-- -- -- regex (two)
+-- -- minute (grain) (minutes)
+-- -- -- regex (minutes)
+[Entity {dim = "time", body = "in two minutes", value = RVal Time (TimeValue (SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})) [SimpleValue (InstantValue {vValue = 2013-02-12 04:32:00 -0200, vGrain = Second})] Nothing), start = 0, end = 14}]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Duckling is BSD-licensed.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>facebook</author><guid isPermaLink="false">https://github.com/facebook/duckling</guid><pubDate>Fri, 20 Dec 2019 00:03:00 GMT</pubDate></item><item><title>glguy/advent2019 #4 in Haskell, Today</title><link>https://github.com/glguy/advent2019</link><description>&lt;p&gt;&lt;i&gt;Advent of Code 2019 solutions&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-advent-of-code-2019" class="anchor" aria-hidden="true" href="#advent-of-code-2019"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advent of Code 2019&lt;/h1&gt;
+&lt;p&gt;These are my Advent of Code 2019 solutions. I try to focus on making clean and documented Haskell solutions to each puzzle.&lt;/p&gt;
+&lt;p&gt;We'll be chatting about AoC on IRC all December. You can find AoC discussion on &lt;a href="https://freenode.net" rel="nofollow"&gt;freenode&lt;/a&gt;'s &lt;code&gt;##adventofcode&lt;/code&gt; and &lt;code&gt;#haskell&lt;/code&gt; (&lt;a href="https://webchat.freenode.net/#haskell,##adventofcode" rel="nofollow"&gt;webchat&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building" class="anchor" aria-hidden="true" href="#building"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building&lt;/h2&gt;
+&lt;p&gt;I recommend installing &lt;code&gt;ghc&lt;/code&gt; with &lt;code&gt;ghcup&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl https://get-ghcup.haskell.org -sSf | sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I'm using &lt;code&gt;GHC 8.8.1&lt;/code&gt; this year&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ghcup install 8.8.1
+$ ghcup set     8.8.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;cabal-install-3&lt;/code&gt; is the best way to get things built&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal update
+$ cabal build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-running-solutions" class="anchor" aria-hidden="true" href="#running-solutions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running solutions&lt;/h2&gt;
+&lt;p&gt;All the solutions take an optional command line argument that can be an input file name or &lt;code&gt;-&lt;/code&gt; to read the input from &lt;code&gt;stdin&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cabal run Day01
+...
+3188480
+4779847
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-intcode-interpreter" class="anchor" aria-hidden="true" href="#intcode-interpreter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Intcode Interpreter&lt;/h2&gt;
+&lt;p&gt;A few of my solutions rely on a common Intcode interpreter: &lt;a href="https://github.com/glguy/advent2019/blob/master/common/Advent/Intcode.hs"&gt;Intcode.hs&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-common-libraries-used" class="anchor" aria-hidden="true" href="#common-libraries-used"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Common libraries used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;containers&lt;/strong&gt; - Almost all of the solutions will benefit from having access to &lt;code&gt;Map&lt;/code&gt; and &lt;code&gt;Set&lt;/code&gt; types from this package.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;megaparsec&lt;/strong&gt; - Each problem features a simple text-file format input. Parser combinators make it easy to define the simple parser needed to consume these inputs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;doctest&lt;/strong&gt; - Having checked examples in the documentation makes it easier to understand what code does and easy to add unit tests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>glguy</author><guid isPermaLink="false">https://github.com/glguy/advent2019</guid><pubDate>Fri, 20 Dec 2019 00:04:00 GMT</pubDate></item><item><title>simonmichael/hledger #5 in Haskell, Today</title><link>https://github.com/simonmichael/hledger</link><description>&lt;p&gt;&lt;i&gt;easy-to-use command-line/curses/web plaintext accounting tool; a modern and largely compatible Haskell rewrite of Ledger&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-hledger" class="anchor" aria-hidden="true" href="#hledger"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hledger&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-lightweight-portable-dependable-accounting-tools" class="anchor" aria-hidden="true" href="#lightweight-portable-dependable-accounting-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lightweight, portable, dependable accounting tools&lt;/h2&gt;
+&lt;p&gt;hledger is a computer program for easily tracking money, time, or other commodities,
+on unix, mac and windows (and web-capable mobile devices, to some extent).&lt;/p&gt;
+&lt;p&gt;It is first a command-line tool, but there are also terminal and
+web interfaces, and a Haskell library
+(&lt;a href="http://hackage.haskell.org/package/hledger-lib" rel="nofollow"&gt;http://hackage.haskell.org/package/hledger-lib&lt;/a&gt;) for building your own
+programs and scripts (hledger is written in Haskell).  hledger was
+inspired by and is largely compatible with Ledger.  hledger is free
+software available under the GNU General Public License v3+.&lt;/p&gt;
+&lt;p&gt;hledger aims to help both computer experts and regular folks
+to gain clarity and control in their finances and time management,
+but currently it is a bit more suited to techies.
+I use it every day to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;track spending and income&lt;/li&gt;
+&lt;li&gt;see time reports by day/week/month/project&lt;/li&gt;
+&lt;li&gt;get accurate numbers for client billing and tax filing&lt;/li&gt;
+&lt;li&gt;track invoices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Though limited in features, hledger is lightweight, usable and reliable.
+For some, it is a simpler, less distracting, more future-proof alternative to Quicken or GnuCash.&lt;/p&gt;
+&lt;p&gt;For more, see &lt;a href="http://hledger.org" rel="nofollow"&gt;http://hledger.org&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-support" class="anchor" aria-hidden="true" href="#support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-backers" class="anchor" aria-hidden="true" href="#backers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Backers&lt;/h3&gt;
+&lt;p&gt;Support us with a monthly donation and help us continue our activities. [&lt;a href="https://opencollective.com/hledger#backer" rel="nofollow"&gt;Become a backer&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/hledger/backer/0/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/36e8032748cebdffa7614066a92955f420236a37/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/0/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/1/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/39f81d24d76ba778831bef0dfa83e76916ed9908/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/1/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/2/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/02ef0d549547f05220ff38c468d4351da7b8adfb/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/2/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/3/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/11fbd45f7c90e590a562f1d1b8caac4979632dc5/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/3/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/4/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6ee1e5c5380e204c8a3f1fa1fbef4f9f58ab4c2a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/4/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/5/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9745f24dafba54c58f3a9c1be8de77a9d4ff6f8a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/5/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/6/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d2a9983c90641a9c38a1a7f1a9c44d5241300094/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/6/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/7/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d13b83d2100bcb56e0756ffaf832de31e68c8f30/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/7/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/8/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/21d08f2fa449bc07828b9bf95042ac8b60423b06/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/8/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/9/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1aa419407cddf56b03390c508eee456439622865/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/9/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/10/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3185746dc35f25078f38a4eb57dfafe6fa386fab/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/10/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/11/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/050bec798e06572e09e724417f7ab5ef829fd777/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/11/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/12/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9e7a151d135b49c445355feb727b0f88dadc386f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/12/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/13/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/41f87a06d31f81700fecc4d70662c6f961193db5/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/13/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/14/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/484c117d99a19dee8872822ca643d138b7b1d7cf/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/14/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/15/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/72278c12f5eb772f83adc9b39b2f6bca70aa02a9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/15/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/16/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/70cbf50cfcbfd1f8f46d09c0cf74cd59fdaff3c3/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/16/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/17/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/105504db2a1c1d8c7f9e8092ce94b7b81b9f907e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/17/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/18/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/53bc5fc541d29467714b4d7a470b6f0e62cfe048/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/18/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/19/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/46d2d30035addc9c0cabebef5f7581716f76b4a2/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f31392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/19/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/20/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e022f542b0f1d2506f71b4ac99c5691fdf860f36/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/20/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/21/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/71cb21f4f55f9a55b4284e1eba68ccff2b5e0f0d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/21/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/22/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/06672c7ae052f1e83c50188073761c9dcdb6d7d3/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/22/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/23/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3c40c0f90eccdcfe841ab9de9e8164a72b633a44/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/23/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/24/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/16b790b4b25fa69d581dc3bb07428b68645fa620/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/24/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/25/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/60d4882e43b1a1b92e064dac0e65125ef3cc38f3/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/25/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/26/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6c4509315ac6ac559c0a8a9c87a2d2a7cbbdbd4c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/26/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/27/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e13a4458af7864d09b46fd48d522a9d74698b702/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/27/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/28/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/75a493b6e0409390eacd084fa411917f251a076e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/28/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/backer/29/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/57afc64258af32f495b028367bbade5ce2686a48/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b65722f32392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/backer/29/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-sponsors" class="anchor" aria-hidden="true" href="#sponsors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sponsors&lt;/h3&gt;
+&lt;p&gt;Become a sponsor and get your logo on our README on Github with a link to your site. [&lt;a href="https://opencollective.com/hledger#sponsor" rel="nofollow"&gt;Become a sponsor&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/hledger/sponsor/0/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dddc7798403cc0dd74956abf23c3bf25347ac1bd/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/0/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/1/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ea1019033b323bfb5f205705cd058d89017e4999/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/1/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/2/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/66954a7e1f24306327f441c7082b0dadbb65ed25/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/2/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/3/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/698d476284f89feeb805c42af5acbc3dbb93283d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/3/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/4/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dd132d35423146b2d1d6b0ca25fcf24ab5e82b52/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/4/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/5/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b9d7f86fd708a6525415465dea1b6ec3bb641fed/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/5/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/6/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/23b5e1383d8e7de276626c194db14f7327346b73/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/6/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/7/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/236c3452efb6599d3074cace51fe43ed258cfa7f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/7/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/8/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/14c7d009a81967540c81f1b5fc35f24a0f530670/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/8/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/9/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/61c7235a6e9e3291d7d534e166de133362153774/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/9/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/10/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9c9511ebb20328a5e081f0d045ad2351acea2577/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/10/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/11/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2fd2243623f35d6564e90af61b075c4987613026/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/11/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/12/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6737d70f40bf494d4e7eddb34d6ebd337f3b79bd/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/12/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/13/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/327967ffce44812ee23ecd622c894e23e0867672/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/13/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/14/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c0ed4cbbc251816036040bc67bd9dee9a080d0e1/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/14/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/15/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b849304bcd55171f9f42102f56ba5e518d19478a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/15/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/16/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/90d91ec64b3d17944cf24c3a6d53b6be9922f6f3/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/16/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/17/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bd07666db5586ba2507c02e4b98460bf9c482472/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/17/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/18/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ace49e739573e6998de9f4b4d4ac50fe08bd2f4c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/18/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/19/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/65131c60284c43e1f2d21ea3ddf7431cb8b5e488/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f31392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/19/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/20/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/58a03db67ea68af562c851846345d466a5fc1b9a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32302f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/20/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/21/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7f88d6391f5f511b3d0b50a8e1ef1fcb1d983ec0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32312f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/21/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/22/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5bd7a120fe4a1c6c192b0aeb55e48eeb3b3e5ddc/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32322f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/22/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/23/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dff7f1efb8e5cd6e24e622719f980f57d5a80090/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32332f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/23/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/24/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a3b15f31f8f5082544ba3dcf8e056fecf5c838f9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32342f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/24/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/25/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/319443143f5189ea2d698b7aea35c73ba32340a5/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32352f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/25/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/26/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5461578f0414ff0d00d07114b6cbcab76ffe0fed/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32362f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/26/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/27/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e34f84fab08f9a29ef22a42dc26d00940a09a86f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32372f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/27/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/28/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9d558638a8e23cd5a8eaf88387d8b16c0fa37145/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32382f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/28/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/hledger/sponsor/29/website" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ce2205c1eef07cfd06d556a8f1b4fbfee4815dce/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f722f32392f6176617461722e737667" data-canonical-src="https://opencollective.com/hledger/sponsor/29/avatar.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/16f1064fb9baa196048804c6f6b248c05a7e5a7e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c76332b2d627269676874677265656e2e737667" alt="license" data-canonical-src="https://img.shields.io/badge/license-GPLv3+-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#backers"&gt;&lt;img src="https://camo.githubusercontent.com/b09e2432845af8827434aeeff6de95af3752c1bc/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f6261636b6572732f62616467652e737667" alt="OpenCollective" data-canonical-src="https://opencollective.com/hledger/backers/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="#sponsors"&gt;&lt;img src="https://camo.githubusercontent.com/fd304bc15a49b088a0a1ce0a787a070164ddcef2/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f686c65646765722f73706f6e736f72732f62616467652e737667" alt="OpenCollective" data-canonical-src="https://opencollective.com/hledger/sponsors/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/simonmichael/hledger/issues?q=label:bounty"&gt;&lt;img src="https://camo.githubusercontent.com/b2cb80afd0295c9acbe4f99253a5bbca06ad5c5b/68747470733a2f2f6170692e626f756e7479736f757263652e636f6d2f62616467652f7465616d3f7465616d5f69643d3735393739267374796c653d626f756e746965735f7265636569766564" alt="bountysource" data-canonical-src="https://api.bountysource.com/badge/team?team_id=75979&amp;amp;style=bounties_received" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://bugs.hledger.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/432338b1755abb005416243d7e5f14bb1a390e7c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f73696d6f6e6d69636861656c2f686c65646765722e737667" alt="github issues" data-canonical-src="https://img.shields.io/github/issues/simonmichael/hledger.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://hackage.haskell.org/package/hledger" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/59b30dfce448a6158913ea3a3191c8fd68881444/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f686c65646765722e7376673f6c6162656c3d6861636b61676526636f6c6f72423d677265656e" alt="on hackage" data-canonical-src="https://img.shields.io/hackage/v/hledger.svg?label=hackage&amp;amp;colorB=green" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/nightly/package/hledger" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/11d47e248af77100fef0bc96a0ae83f3518af9d8/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f686c65646765722f62616467652f6e696768746c79" alt="on stackage nightly" data-canonical-src="http://stackage.org/package/hledger/badge/nightly" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/lts/package/hledger" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5b94befa3f111e9d49fccb9fa0f21895ddd623e6/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f686c65646765722f62616467652f6c7473" alt="on stackage lts" data-canonical-src="http://stackage.org/package/hledger/badge/lts" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/lts-7/package/hledger" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a438ecb85ad1bd8f7c83bd759d22ea99973869ea/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f686c65646765722f62616467652f6c74732d37" alt="on stackage lts 7" data-canonical-src="http://stackage.org/package/hledger/badge/lts-7" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/simonmichael/hledger/builds" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ec8426e5a3bd2697505ce0ce247cc715c849635d/68747470733a2f2f7472617669732d63692e6f72672f73696d6f6e6d69636861656c2f686c65646765722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/simonmichael/hledger.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/simonmichael/hledger/history" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1d8a76dac5192204269719eef5afa5915bc39495/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f3576656a773077356e356967647234323f7376673d74727565" alt="Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/5vejw0w5n5igdr42?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://packdeps.haskellers.com/feed?needle=hledger-lib" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7e9529faf998c36ebed6b649c3a8b41191194dee/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652d646570732f762f686c65646765722d6c69622e7376673f6c6162656c3d686c65646765722d6c69622b626f756e6473" alt="" data-canonical-src="https://img.shields.io/hackage-deps/v/hledger-lib.svg?label=hledger-lib+bounds" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://packdeps.haskellers.com/feed?needle=hledger" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/93bbe55632ac63f0b952dbdd7a0d95f6b6ad770f/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652d646570732f762f686c65646765722e7376673f6c6162656c3d686c65646765722b626f756e6473" alt="" data-canonical-src="https://img.shields.io/hackage-deps/v/hledger.svg?label=hledger+bounds" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://packdeps.haskellers.com/feed?needle=hledger-ui" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/92a06edcbb653267e045271ee0af24e85528f59c/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652d646570732f762f686c65646765722d75692e7376673f6c6162656c3d686c65646765722d75692b626f756e6473" alt="" data-canonical-src="https://img.shields.io/hackage-deps/v/hledger-ui.svg?label=hledger-ui+bounds" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://packdeps.haskellers.com/feed?needle=hledger-web" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/63342c45ec021cac16078061fd7c64e096e44269/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652d646570732f762f686c65646765722d7765622e7376673f6c6162656c3d686c65646765722d7765622b626f756e6473" alt="" data-canonical-src="https://img.shields.io/hackage-deps/v/hledger-web.svg?label=hledger-web+bounds" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>simonmichael</author><guid isPermaLink="false">https://github.com/simonmichael/hledger</guid><pubDate>Fri, 20 Dec 2019 00:05:00 GMT</pubDate></item><item><title>kadena-io/chainweb-node #6 in Haskell, Today</title><link>https://github.com/kadena-io/chainweb-node</link><description>&lt;p&gt;&lt;i&gt;Chainweb: A Proof-of-Work Parallel-Chain Architecture for Massive Throughput&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f97c9564e91b84a0be97290582a4570f5635b632/68747470733a2f2f692e696d6775722e636f6d2f62415a464147462e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/f97c9564e91b84a0be97290582a4570f5635b632/68747470733a2f2f692e696d6775722e636f6d2f62415a464147462e706e67" width="450" height="243" alt="Kadena" title="Kadena" data-canonical-src="https://i.imgur.com/bAZFAGF.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-kadena-public-blockchain" class="anchor" aria-hidden="true" href="#kadena-public-blockchain"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kadena Public Blockchain&lt;/h1&gt;
+&lt;p&gt;Kadena is a fast, secure, and scalable blockchain using the Chainweb consensus
+protocol. Chainweb is a braided, parallelized Proof Of Work consensus mechanism
+that improves throughput and scalability while maintaining the security and
+integrity found in Bitcoin.&lt;/p&gt;
+&lt;p&gt;Read our &lt;a href="https://www.kadena.io/whitepapers" rel="nofollow"&gt;whitepapers&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_029c9991469e4565a7c334dd716345f4.pdf" rel="nofollow"&gt;Chainweb: A Proof-of-Work Parallel-Chain Architecture for Massive Throughput&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://d31d887a-c1e0-47c2-aa51-c69f9f998b07.filesusr.com/ugd/86a16f_3b2d0c58179d4edd9df6df4d55d61dda.pdf" rel="nofollow"&gt;Agent-based Simulations of Blockchain Protocols illustrated via Kadena's &lt;em&gt;Chainweb&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For additional information, press, and development inquires, please refer to the Kadena &lt;a href="https://kadena.io" rel="nofollow"&gt;website&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#chainweb-wiki"&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installing-chainweb"&gt;Installing Chainweb&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#linux-users"&gt;Instructions for Linux Users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mac-users"&gt;Instructions for Mac Users&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuring-and-running-a-chainweb-node"&gt;Configuring and Running a Chainweb Node&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mine-for-a-chainweb-network"&gt;Mining for a Chainweb Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#chainweb-design"&gt;Chainweb Design&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#component-structure"&gt;Component Structure Details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#architecture-overview"&gt;Architecture Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-wiki" class="anchor" aria-hidden="true" href="#wiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wiki&lt;/h2&gt;
+&lt;p&gt;The Chainweb wiki serves as a source of information that receives regular
+updates. You can find the chainweb Wiki
+&lt;a href="https://github.com/kadena-io/chainweb-node/wiki/"&gt;here&lt;/a&gt;, including a list of
+frequently asked questions regarding network information, how to explore blocks,
+diagnosing error messages, and more
+&lt;a href="https://github.com/kadena-io/chainweb-node/wiki/Chainweb-FAQ"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have additions or comments, please submit a pull request or raise an issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing-chainweb" class="anchor" aria-hidden="true" href="#installing-chainweb"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Chainweb&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-linux-users" class="anchor" aria-hidden="true" href="#linux-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux Users&lt;/h3&gt;
+&lt;p&gt;The binaries can be found &lt;a href="https://github.com/kadena-io/chainweb-node/releases"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-apt-based-distributions" class="anchor" aria-hidden="true" href="#apt-based-distributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apt-based distributions&lt;/h4&gt;
+&lt;p&gt;If you are on Ubuntu, Debian, CentOS or any other Apt-based distribution, you
+will need to install rocksdb with the following command:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sudo apt-get update&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sudo apt-get install -y librocksdb-dev zlib1g-dev libtinfo-dev libsqlite3-dev libz3-dev z3&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If this is not available, then please view the &lt;a href="https://rocksdb.org/" rel="nofollow"&gt;Rocksdb&lt;/a&gt;
+site for alternative modes of installation.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-other-distributions" class="anchor" aria-hidden="true" href="#other-distributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other distributions&lt;/h4&gt;
+&lt;p&gt;For all other distributions not using Apt (RHEL, Gentoo, Arch, etc), please
+consult your distro's repositories for &lt;code&gt;librocksdb5.8&lt;/code&gt;, &lt;code&gt;tinfo&lt;/code&gt;, &lt;code&gt;zlib&lt;/code&gt;, &lt;code&gt;z3&lt;/code&gt;
+and install with its preferred package manager, or follow the alternative modes
+of installation described in &lt;a href="https://rocksdb.org/" rel="nofollow"&gt;Rocksdb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At this point, you are ready to &lt;a href="#running-a-chainweb-node"&gt;run a Chainweb node&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-mac-users" class="anchor" aria-hidden="true" href="#mac-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mac Users&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-getting-the-dependencies" class="anchor" aria-hidden="true" href="#getting-the-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Dependencies&lt;/h4&gt;
+&lt;p&gt;Using the &lt;code&gt;brew&lt;/code&gt; package manager, issue the following commands to download Chainweb's dependencies&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew update
+brew install z3
+brew install sqlite
+brew install rocksdb&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-building-from-source" class="anchor" aria-hidden="true" href="#building-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from Source&lt;/h4&gt;
+&lt;p&gt;Chainweb is a &lt;a href="https://www.haskell.org/" rel="nofollow"&gt;Haskell&lt;/a&gt; project, and can be built in
+several ways.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-getting-the-code" class="anchor" aria-hidden="true" href="#getting-the-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Code&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Homebrew: &lt;code&gt;brew install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/downloads" rel="nofollow"&gt;Installer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get the code, you can go &lt;a href="https://github.com/kadena-io/chainweb-node/releases/tag/1.0"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You have the code, now let's pick a build tool.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-building-with-nix" class="anchor" aria-hidden="true" href="#building-with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building with Nix&lt;/h5&gt;
+&lt;p&gt;The fastest way to build and run chainweb is to use the Nix package manager
+which has binary caching capabilities that allow you to download pre-built
+binaries for everything needed by Chainweb. For detailed instructions see &lt;a href="https://github.com/kadena-io/pact/wiki/Building-Kadena-Projects"&gt;our
+wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When the build is finished, you can run chainweb with the following command:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./result/ghc/chainweb/bin/chainweb-node&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;&lt;a id="user-content-building-with-stack" class="anchor" aria-hidden="true" href="#building-with-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building with Stack&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-dependencies-1" class="anchor" aria-hidden="true" href="#dependencies-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;stack &amp;gt;= 1.9&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Mac (Homebrew): &lt;code&gt;brew install haskell-stack&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;General &lt;a href="https://docs.haskellstack.org/en/stable/README/" rel="nofollow"&gt;Linux / Mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(You may also need to install &lt;code&gt;zlib&lt;/code&gt;, &lt;code&gt;openssl&lt;/code&gt;, and &lt;code&gt;sqlite&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Stack is a Haskell build tool that manages compiler and dependency versions for
+you. It's easy to install and use.&lt;/p&gt;
+&lt;p&gt;To build a &lt;code&gt;chainweb-node&lt;/code&gt; binary:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack build&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will compile a runnable version of &lt;code&gt;chainweb-node&lt;/code&gt;, which you can run via:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack &lt;span class="pl-c1"&gt;exec&lt;/span&gt; -- chainweb-node&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively, &lt;code&gt;stack install&lt;/code&gt; will install the binary to &lt;code&gt;~/.local/bin/&lt;/code&gt;, which
+you may need to add to your path. Then, you can call &lt;code&gt;chainweb-node&lt;/code&gt; as-is.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-building-with-cabal" class="anchor" aria-hidden="true" href="#building-with-cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building with Cabal&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-dependencies-2" class="anchor" aria-hidden="true" href="#dependencies-2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ghc &amp;gt;= 8.4&lt;/code&gt; (Haskell compiler) and &lt;code&gt;cabal &amp;gt;= 2.2&lt;/code&gt; (Haskell build-tool)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.haskell.org/ghcup/" rel="nofollow"&gt;Linux / Mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(You may also need to install &lt;code&gt;zlib&lt;/code&gt;, &lt;code&gt;openssl&lt;/code&gt;, and &lt;code&gt;sqlite&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Cabal is the original build tool for Haskell. You will need a version of GHC
+installed on your machine to use it.&lt;/p&gt;
+&lt;p&gt;To build a &lt;code&gt;chainweb-node&lt;/code&gt; binary:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Only necessary if you haven't done this recently.&lt;/span&gt;
+cabal new-update
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Build the project.&lt;/span&gt;
+cabal new-build&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To install a runnable binary to &lt;code&gt;~/.cabal/bin/&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;cabal new-install&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-configuring-and-running-a-chainweb-node" class="anchor" aria-hidden="true" href="#configuring-and-running-a-chainweb-node"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuring and Running a Chainweb Node&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This section assumes you've installed the &lt;code&gt;chainweb-node&lt;/code&gt; binary&lt;/strong&gt; somewhere
+sensible, or otherwise have a simple way to refer to it.&lt;/p&gt;
+&lt;p&gt;To configure your node, please use our &lt;a href="./minimal-config.yaml"&gt;minimal node
+configuration&lt;/a&gt;. You need to update only one section,
+&lt;code&gt;hostaddress&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;hostaddress&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;hostname&lt;/span&gt;: &lt;span class="pl-s"&gt;your-public-ip-or-domain&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;port&lt;/span&gt;: &lt;span class="pl-c1"&gt;443&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You will have to perform Port Forwarding if your machine is behind a
+router.&lt;/p&gt;
+&lt;p&gt;Then, to run your node:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;chainweb-node --config-file=minimal-config.yaml&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-mine-for-a-chainweb-network" class="anchor" aria-hidden="true" href="#mine-for-a-chainweb-network"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mine for a Chainweb Network&lt;/h2&gt;
+&lt;p&gt;Detailed mining instructions can be found in our &lt;a href="https://github.com/kadena-io/chainweb-miner/blob/master/README.org"&gt;Mining Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-chainweb-design" class="anchor" aria-hidden="true" href="#chainweb-design"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Chainweb Design&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-component-structure" class="anchor" aria-hidden="true" href="#component-structure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Component Structure&lt;/h3&gt;
+&lt;p&gt;The production components are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chainweb&lt;/code&gt; library: It provides the implementation for the different
+components of a chainweb-node.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chainweb-node&lt;/code&gt;: An application that runs a Chainweb node. It maintains copies
+of a number of chains from a given Chainweb instance. It provides interfaces
+(command-line and RPC) for directly interacting with the Chainweb or for
+implementing applications such as miners and transaction management tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chainweb-miner&lt;/code&gt;: A stand-alone Mining Client.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chainweb-tests&lt;/code&gt;: A test suite for the Chainweb library and chainweb-node.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-architecture-overview" class="anchor" aria-hidden="true" href="#architecture-overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture Overview&lt;/h3&gt;
+&lt;p&gt;For a detailed description of the Kadena architecture,
+&lt;a href="docs/Architecture.md"&gt;see here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/Overview.png"&gt;&lt;img src="docs/Overview.png" alt="Architecture Overview" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>kadena-io</author><guid isPermaLink="false">https://github.com/kadena-io/chainweb-node</guid><pubDate>Fri, 20 Dec 2019 00:06:00 GMT</pubDate></item><item><title>github/semantic #7 in Haskell, Today</title><link>https://github.com/github/semantic</link><description>&lt;p&gt;&lt;i&gt;Parsing, analyzing, and comparing source code across many languages&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-semantic" class="anchor" aria-hidden="true" href="#semantic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Semantic&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;semantic&lt;/code&gt; is a Haskell library and command line tool for parsing, analyzing, and comparing source code.&lt;/p&gt;
 &lt;p&gt;In a hurry? Check out our documentation of &lt;a href="docs/examples.md"&gt;example uses for the &lt;code&gt;semantic&lt;/code&gt; command line tool&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
@@ -1004,232 +1104,4 @@ guidelines&lt;/a&gt; and our &lt;a href="CODE_OF_CONDUCT.md"&gt;code of conduct&
 details on how to participate in our community.&lt;/p&gt;
 &lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
 &lt;p&gt;Semantic is licensed under the &lt;a href="LICENSE"&gt;MIT license&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Thu, 19 Dec 2019 00:04:00 GMT</pubDate></item><item><title>smallhadroncollider/taskell #5 in Haskell, Today</title><link>https://github.com/smallhadroncollider/taskell</link><description>&lt;p&gt;&lt;i&gt;Command-line Kanban board/task manager with support for Trello boards and GitHub projects&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-taskell" class="anchor" aria-hidden="true" href="#taskell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Taskell&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://travis-ci.org/smallhadroncollider/taskell" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fd6113b6cb438b77fd8a1ed4ed3c571c865ad2f3/68747470733a2f2f7472617669732d63692e6f72672f736d616c6c686164726f6e636f6c6c696465722f7461736b656c6c2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/smallhadroncollider/taskell.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A CLI kanban board/task manager for Mac and Linux&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Per project task lists&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vim&lt;/code&gt; style key-bindings&lt;/li&gt;
-&lt;li&gt;Stored using Markdown&lt;/li&gt;
-&lt;li&gt;Clean diffs for easy version control&lt;/li&gt;
-&lt;li&gt;Support for sub-tasks and due dates&lt;/li&gt;
-&lt;li&gt;Trello board imports&lt;/li&gt;
-&lt;li&gt;GitHub project imports&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://www.buymeacoffee.com/shc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/031fc5a134cdca5ae3460822aba371e63f794233/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f6f72616e67655f696d672e706e67" alt="Buy Me A Coffee" data-canonical-src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Follow &lt;a href="https://twitter.com/taskellcli" rel="nofollow"&gt;@taskellcli&lt;/a&gt; on Twitter for updates&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3220fc6b739792fce338f774405c17dffc1e2042/68747470733a2f2f7461736b656c6c2e6170702f696d672f64656d6f2e676966"&gt;&lt;img src="https://camo.githubusercontent.com/3220fc6b739792fce338f774405c17dffc1e2042/68747470733a2f2f7461736b656c6c2e6170702f696d672f64656d6f2e676966" alt="Demo" data-canonical-src="https://taskell.app/img/demo.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;&lt;a id="user-content-contents" class="anchor" aria-hidden="true" href="#contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#using-taskell"&gt;Using Taskell&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#options"&gt;Options&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#storage"&gt;Storage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#importing-trello-boards"&gt;Importing Trello Boards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#importing-github-projects"&gt;Importing GitHub Projects&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#configuration"&gt;Configuration&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#controls"&gt;Controls&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#theming"&gt;Theming&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#roadmap"&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-homebrew-mac" class="anchor" aria-hidden="true" href="#homebrew-mac"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Homebrew (Mac)&lt;/h3&gt;
-&lt;p&gt;You can install Taskell on your Mac using &lt;a href="https://brew.sh" rel="nofollow"&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew install taskell&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are usually bottles (binaries) available. If these are not available for your computer, Homebrew will build Taskell from scratch, which can take a while, particularly on older machines. Occasionally the build fails the first time, but usually works on a second attempt.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-debianubuntu" class="anchor" aria-hidden="true" href="#debianubuntu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debian/Ubuntu&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/smallhadroncollider/taskell/releases"&gt;A &lt;code&gt;.deb&lt;/code&gt; package is available for Debian/Ubuntu&lt;/a&gt;. Download it and install with &lt;code&gt;dpkg -i &amp;lt;package-name&amp;gt;&lt;/code&gt;. You may also need to install the &lt;code&gt;libtinfo5&lt;/code&gt; package (&lt;code&gt;sudo apt install libtinfo5&lt;/code&gt;).&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-fedora" class="anchor" aria-hidden="true" href="#fedora"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fedora&lt;/h3&gt;
-&lt;p&gt;Not officially supported, but try running &lt;code&gt;sudo dnf install ncurses-compat-libs&lt;/code&gt; then download and run the binary as described below. If that doesn't work you may need to build from scratch (&lt;a href="#cabal"&gt;Cabal&lt;/a&gt;/&lt;a href="#stack"&gt;Stack&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-binaries" class="anchor" aria-hidden="true" href="#binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Binaries&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://github.com/smallhadroncollider/taskell/releases"&gt;A binary is available for Mac and Debian/Ubuntu&lt;/a&gt;. Download it and copy it to a directory in your &lt;code&gt;$PATH&lt;/code&gt; (e.g. &lt;code&gt;/usr/local/bin&lt;/code&gt; or &lt;code&gt;/usr/bin&lt;/code&gt;).&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-cabal" class="anchor" aria-hidden="true" href="#cabal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cabal&lt;/h3&gt;
-&lt;p&gt;You can install Taskell with &lt;code&gt;cabal&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;cabal install taskell&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Make sure you run &lt;code&gt;cabal update&lt;/code&gt; if you haven't run it recently.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-stack" class="anchor" aria-hidden="true" href="#stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stack&lt;/h3&gt;
-&lt;p&gt;If none of the above options work you can build taskell using &lt;a href="https://docs.haskellstack.org/en/stable/README/" rel="nofollow"&gt;Stack&lt;/a&gt;. First &lt;a href="https://docs.haskellstack.org/en/stable/README/#how-to-install" rel="nofollow"&gt;install Stack on your machine&lt;/a&gt;. Then clone the repo and run &lt;code&gt;stack build &amp;amp;&amp;amp; stack install&lt;/code&gt;: this will build taskell and then install it in &lt;code&gt;~/.local/bin&lt;/code&gt; (so make sure that directory is in your &lt;code&gt;$PATH&lt;/code&gt;). Building from scratch can take a long time and occasionally doesn't work the first time (if this happens try running it again).&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-using-taskell" class="anchor" aria-hidden="true" href="#using-taskell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Taskell&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;taskell&lt;/code&gt;: will use &lt;code&gt;taskell.md&lt;/code&gt; in the pwd - offers to create if not found&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;taskell filename.md&lt;/code&gt;: will use &lt;code&gt;filename.md&lt;/code&gt; in the pwd - offers to create if not found&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-h&lt;/code&gt;: show help&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-v&lt;/code&gt;: show version number&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-t &amp;lt;trello-board-id&amp;gt;&lt;/code&gt;: import a Trello board (&lt;a href="#importing-trello-boards"&gt;see below&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-g &amp;lt;github-project-id&amp;gt;&lt;/code&gt;: import a GitHub project (&lt;a href="#importing-github-projects"&gt;see below&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;a id="user-content-tips" class="anchor" aria-hidden="true" href="#tips"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tips&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;If you're using a simple two-column "To Do" and "Done" then use the space bar to mark an item as complete while staying in the "To Do" list. If you're using a more complicated column setup then you will want to use &lt;code&gt;H&lt;/code&gt;/&lt;code&gt;L&lt;/code&gt; to move tasks between columns.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-storage" class="anchor" aria-hidden="true" href="#storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storage&lt;/h3&gt;
-&lt;p&gt;By default stores in a &lt;code&gt;taskell.md&lt;/code&gt; file in the working directory:&lt;/p&gt;
-&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;##&lt;/span&gt; To &lt;span class="pl-k"&gt;Do&lt;/span&gt;
-
-- &lt;span class="pl-k"&gt;Do&lt;/span&gt; this
-
-&lt;span class="pl-c1"&gt;##&lt;/span&gt; Done
-
-- &lt;span class="pl-k"&gt;Do&lt;/span&gt; That&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;a id="user-content-importing-trello-boards" class="anchor" aria-hidden="true" href="#importing-trello-boards"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Importing Trello Boards&lt;/h3&gt;
-&lt;p&gt;Taskell includes the ability to fetch a Trello board and store it as local taskell file.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-authentication" class="anchor" aria-hidden="true" href="#authentication"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h4&gt;
-&lt;p&gt;Before fetching a Trello board, you'll need to create an access token and store it in &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;First, &lt;a href="https://trello.com/1/authorize?expiration=never&amp;amp;name=taskell&amp;amp;scope=read&amp;amp;response_type=token&amp;amp;key=80dbcf6f88f62cc5639774e13342c20b" rel="nofollow"&gt;get a Trello token&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then add it to &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[trello]&lt;/span&gt;
-&lt;span class="pl-k"&gt;token&lt;/span&gt; = &amp;lt;your-trello-access-token&amp;gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can revoke access tokens &lt;a href="https://trello.com/my/account" rel="nofollow"&gt;on Trello&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-fetching" class="anchor" aria-hidden="true" href="#fetching"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetching&lt;/h4&gt;
-&lt;p&gt;Running the following would pull down the Trello board with the ID "TRe1l0iD" into a file named &lt;code&gt;trello.md&lt;/code&gt; and then open taskell with that file.&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -t TRe1l0iD trello.md&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Make sure you have permission to view the Trello board, otherwise you'll get an error.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-limitations" class="anchor" aria-hidden="true" href="#limitations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limitations&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;This is a one-off procedure: it effectively imports a Trello board to taskell&lt;/li&gt;
-&lt;li&gt;Currently imports:
-&lt;ul&gt;
-&lt;li&gt;Lists&lt;/li&gt;
-&lt;li&gt;Cards&lt;/li&gt;
-&lt;li&gt;Card descriptions&lt;/li&gt;
-&lt;li&gt;Card due dates&lt;/li&gt;
-&lt;li&gt;Card checklists (merged into one list per card)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-importing-github-projects" class="anchor" aria-hidden="true" href="#importing-github-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Importing GitHub Projects&lt;/h3&gt;
-&lt;p&gt;Taskell includes the ability to fetch a GitHub project and store it as local taskell file.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-authentication-1" class="anchor" aria-hidden="true" href="#authentication-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h4&gt;
-&lt;p&gt;Before fetching a GitHub board, you'll need to create a person access token and store it in &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;First, &lt;a href="https://github.com/settings/tokens/new"&gt;get a GitHub personal access token&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Make sure to tick the &lt;code&gt;repo&lt;/code&gt; scope&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then add it to &lt;code&gt;~/.taskell/config.ini&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[github]&lt;/span&gt;
-&lt;span class="pl-k"&gt;token&lt;/span&gt; = &amp;lt;your-github-personal-access-token&amp;gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can delete personal access tokens &lt;a href="https://github.com/settings/tokens/"&gt;on GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-fetching-1" class="anchor" aria-hidden="true" href="#fetching-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetching&lt;/h4&gt;
-&lt;p&gt;Projects can belong to &lt;a href="#organisations"&gt;organisations&lt;/a&gt; or to &lt;a href="#repositories"&gt;individual repositories&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Make sure you have permission to view the GitHub project, otherwise you'll get an error.&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6e2885ffe24f1539b0fc13666786a07a119d8b64/68747470733a2f2f7461736b656c6c2e6170702f696d672f6769746875622e676966"&gt;&lt;img src="https://camo.githubusercontent.com/6e2885ffe24f1539b0fc13666786a07a119d8b64/68747470733a2f2f7461736b656c6c2e6170702f696d672f6769746875622e676966" alt="GitHub Demo" data-canonical-src="https://taskell.app/img/github.gif" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h5&gt;&lt;a id="user-content-organisations" class="anchor" aria-hidden="true" href="#organisations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Organisations&lt;/h5&gt;
-&lt;p&gt;To import a project for an organisation called "test-org" you would use the following:&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -g orgs/test-org github.md&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This would then show you a list of possible projects to import. Enter the number of the project you wish to import.&lt;/p&gt;
-&lt;h5&gt;&lt;a id="user-content-repositories" class="anchor" aria-hidden="true" href="#repositories"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Repositories&lt;/h5&gt;
-&lt;p&gt;To import a project for the repository "test-repo" for the user "test-user":&lt;/p&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;taskell -g repos/test-user/test-repo github.md&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This would then show you a list of possible projects to import. Enter the number of the project you with to import.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-limitations-1" class="anchor" aria-hidden="true" href="#limitations-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limitations&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;This is a one-off procedure: it effectively imports a GitHub project to taskell&lt;/li&gt;
-&lt;li&gt;Currently imports:
-&lt;ul&gt;
-&lt;li&gt;Columns&lt;/li&gt;
-&lt;li&gt;Cards&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
-&lt;p&gt;Taskell uses the &lt;a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html" rel="nofollow"&gt;XDG Base Directory Specification&lt;/a&gt;, so it will look for an &lt;code&gt;$XDG_CONFIG_HOME&lt;/code&gt; environmental variable and create a directory named &lt;code&gt;taskell&lt;/code&gt; inside it. If this variable is not found it will create the &lt;code&gt;taskell&lt;/code&gt; directory in &lt;code&gt;~/.config/&lt;/code&gt;.  (If you've been using Taskell since &amp;lt;= 1.3.5 then it will be in a &lt;code&gt;~/.taskell&lt;/code&gt; directory, feel free to move this to the XDG directory.)&lt;/p&gt;
-&lt;p&gt;Taskell has a &lt;code&gt;config.ini&lt;/code&gt; file:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[general]&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the default filename to create/look for&lt;/span&gt;
-&lt;span class="pl-k"&gt;filename&lt;/span&gt; = taskell.md
-
-&lt;span class="pl-en"&gt;[layout]&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the width of a column&lt;/span&gt;
-&lt;span class="pl-k"&gt;column_width&lt;/span&gt; = 30
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the padding of a column&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; for both sides, so 3 would give a gap of 6 between two columns&lt;/span&gt;
-&lt;span class="pl-k"&gt;column_padding&lt;/span&gt; = 3
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the icon to use when a task has a description&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the default icon may not display on all systems&lt;/span&gt;
-&lt;span class="pl-k"&gt;description_indicator&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;≡&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class="pl-en"&gt;[markdown]&lt;/span&gt;
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a title line with&lt;/span&gt;
-&lt;span class="pl-k"&gt;title&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;##&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a task line with&lt;/span&gt;
-&lt;span class="pl-k"&gt;task&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the markdown to start a sub-task line with&lt;/span&gt;
-&lt;span class="pl-k"&gt;subtask&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;    *&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Make sure that the values in the &lt;code&gt;[markdown]&lt;/code&gt; section are surrounded by &lt;strong&gt;double&lt;/strong&gt;-quotes.&lt;/p&gt;
-&lt;p&gt;If you always use sub-tasks, an alternative setup for &lt;code&gt;[markdown]&lt;/code&gt; might be:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[markdown]&lt;/span&gt;
-&lt;span class="pl-k"&gt;title&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;##&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; each task is a header&lt;/span&gt;
-&lt;span class="pl-k"&gt;task&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;###&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; subtasks are list items under the header&lt;/span&gt;
-&lt;span class="pl-k"&gt;subtask&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: currently if you change your &lt;code&gt;[markdown]&lt;/code&gt; settings any older files stored with different settings will not be readable.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-controls" class="anchor" aria-hidden="true" href="#controls"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Controls&lt;/h3&gt;
-&lt;p&gt;You can edit keyboard bindings in the &lt;code&gt;bindings.ini&lt;/code&gt; config file.&lt;/p&gt;
-&lt;p&gt;The default bindings can be found in &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/templates/bindings.ini"&gt;&lt;code&gt;bindings.ini&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Available special keys: &lt;code&gt;&amp;lt;Space&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Enter&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Backspace&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Left&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Right&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Up&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Down&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;On a Mac you can use the &lt;code&gt;alt&lt;/code&gt; characters: e.g. &lt;code&gt;quit = œ&lt;/code&gt; is equivalent to &lt;code&gt;alt+q&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You shouldn't try to assign the &lt;code&gt;1&lt;/code&gt;-&lt;code&gt;9&lt;/code&gt; keys, as it will not overwrite the default behaviour.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-theming" class="anchor" aria-hidden="true" href="#theming"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Theming&lt;/h3&gt;
-&lt;p&gt;You can edit Taskell's colour-scheme by editing &lt;code&gt;theme.ini&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[other]&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; list title&lt;/span&gt;
-&lt;span class="pl-k"&gt;title.fg&lt;/span&gt; = green
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; status bar&lt;/span&gt;
-&lt;span class="pl-k"&gt;statusBar.bg&lt;/span&gt; = magenta
-&lt;span class="pl-k"&gt;statusBar.fg&lt;/span&gt; = black
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; current list title&lt;/span&gt;
-&lt;span class="pl-k"&gt;titleCurrent.fg&lt;/span&gt; = blue
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; current task&lt;/span&gt;
-&lt;span class="pl-k"&gt;taskCurrent.fg&lt;/span&gt; = magenta&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;You can also change the background and default text colour:&lt;/p&gt;
-&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-en"&gt;[default]&lt;/span&gt;
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the app background colour&lt;/span&gt;
-&lt;span class="pl-k"&gt;default.bg&lt;/span&gt; = brightBlack
-
-&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; the app text colour&lt;/span&gt;
-&lt;span class="pl-k"&gt;default.fg&lt;/span&gt; = white&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The available colours are: &lt;code&gt;black&lt;/code&gt;, &lt;code&gt;red&lt;/code&gt;, &lt;code&gt;green&lt;/code&gt;, &lt;code&gt;yellow&lt;/code&gt;, &lt;code&gt;blue&lt;/code&gt;, &lt;code&gt;magenta&lt;/code&gt;, &lt;code&gt;cyan&lt;/code&gt;, &lt;code&gt;white&lt;/code&gt;, &lt;code&gt;brightBlack&lt;/code&gt;, &lt;code&gt;brightRed&lt;/code&gt;, &lt;code&gt;brightGreen&lt;/code&gt;, &lt;code&gt;brightYellow&lt;/code&gt;, &lt;code&gt;brightBlue&lt;/code&gt;, &lt;code&gt;brightMagenta&lt;/code&gt;, &lt;code&gt;brightCyan&lt;/code&gt;, &lt;code&gt;brightWhite&lt;/code&gt;, or &lt;code&gt;default&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;&lt;a id="user-content-roadmap" class="anchor" aria-hidden="true" href="#roadmap"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Roadmap&lt;/h2&gt;
-&lt;p&gt;See &lt;a href="https://github.com/smallhadroncollider/taskell/blob/develop/roadmap.md"&gt;roadmap.md&lt;/a&gt; for planned features&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h3&gt;
-&lt;p&gt;Please check the &lt;a href="https://github.com/smallhadroncollider/taskell/blob/develop/roadmap.md"&gt;roadmap.md&lt;/a&gt; before adding any bugs/feature requests to Issues.&lt;/p&gt;
-&lt;p&gt;Anyone is welcome to contribute to the project, but please read through &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; and make sure that you agree with the &lt;a href="https://github.com/smallhadroncollider/taskell/blob/master/CODE_OF_CONDUCT.md"&gt;Code of Conduct&lt;/a&gt; before getting involved.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;&lt;a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h2&gt;
-&lt;p&gt;Built using &lt;a href="https://github.com/jtdaugherty/brick"&gt;Brick&lt;/a&gt;. Thanks to &lt;a href="https://github.com/jtdaugherty"&gt;Jonathan Daugherty&lt;/a&gt; for answering all my questions and pointing me in the right direction. Also thanks to &lt;a href="https://github.com/leighman"&gt;Jack Leigh&lt;/a&gt; and &lt;a href="https://github.com/ThomWright"&gt;Thom Wright&lt;/a&gt; for helping me get started. Also thanks to &lt;a href="https://github.com/katjad"&gt;Katja Durrani&lt;/a&gt; for submitting Taskell to &lt;a href="https://github.com/Homebrew/homebrew-core"&gt;&lt;code&gt;homebrew-core&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>smallhadroncollider</author><guid isPermaLink="false">https://github.com/smallhadroncollider/taskell</guid><pubDate>Thu, 19 Dec 2019 00:05:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>github</author><guid isPermaLink="false">https://github.com/github/semantic</guid><pubDate>Fri, 20 Dec 2019 00:07:00 GMT</pubDate></item></channel></rss>
