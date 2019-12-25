@@ -1,126 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: TSQL, This month</title><link>https://github.com/trending/tsql?since=monthly</link><description>The top repositories on GitHub for tsql, measured monthly</description><pubDate>Tue, 24 Dec 2019 01:08:22 GMT</pubDate><lastBuildDate>Tue, 24 Dec 2019 01:08:22 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>jOOQ/jOOQ #1 in TSQL, This month</title><link>https://github.com/jOOQ/jOOQ</link><description>&lt;p&gt;&lt;i&gt;jOOQ is the best way to write SQL in Java&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-jooqs-reason-for-being---compared-to-jpa" class="anchor" aria-hidden="true" href="#jooqs-reason-for-being---compared-to-jpa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ's reason for being - compared to JPA&lt;/h1&gt;
-&lt;p&gt;Java and SQL have come a long way. SQL is an "ancient", yet established and well-understood technology. Java is a legacy too, although its platform JVM allows for many new and contemporary languages built on top of it. Yet, after all these years, libraries dealing with the interface between SQL and Java have come and gone, leaving JPA to be a standard that is accepted only with doubts, short of any surviving options.&lt;/p&gt;
-&lt;p&gt;So far, there had been only few database abstraction frameworks or libraries, that truly respected SQL as a first class citizen among languages. Most frameworks, including the industry standards JPA, EJB, Hibernate, JDO, Criteria Query, and many others try to hide SQL itself, minimising its scope to things called JPQL, HQL, JDOQL and various other inferior query languages&lt;/p&gt;
-&lt;p&gt;jOOQ has come to fill this gap.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-jooqs-reason-of-being---compared-to-linq" class="anchor" aria-hidden="true" href="#jooqs-reason-of-being---compared-to-linq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ's reason of being - compared to LINQ&lt;/h1&gt;
-&lt;p&gt;Other platforms incorporate ideas such as LINQ (with LINQ-to-SQL), or Scala's SLICK, or also Java's QueryDSL to better integrate querying as a concept into their respective language. By querying, they understand querying of arbitrary targets, such as SQL, XML, Collections and other heterogeneous data stores. jOOQ claims that this is going the wrong way too.&lt;/p&gt;
-&lt;p&gt;In more advanced querying use-cases (more than simple CRUD and the occasional JOIN), people will want to profit from the expressivity of SQL. Due to the relational nature of SQL, this is quite different from what object-oriented and partially functional languages such as C#, Scala, or Java can offer.&lt;/p&gt;
-&lt;p&gt;It is very hard to formally express and validate joins and the ad-hoc table expression types they create. It gets even harder when you want support for more advanced table expressions, such as pivot tables, unnested cursors, or just arbitrary projections from derived tables. With a very strong object-oriented typing model, these features will probably stay out of scope.&lt;/p&gt;
-&lt;p&gt;In essence, the decision of creating an API that looks like SQL or one that looks like C#, Scala, Java is a definite decision in favour of one or the other platform. While it will be easier to evolve SLICK in similar ways as LINQ (or QueryDSL in the Java world), SQL feature scope that clearly communicates its underlying intent will be very hard to add, later on (e.g. how would you model Oracle's partitioned outer join syntax? How would you model ANSI/ISO SQL:1999 grouping sets? How can you support scalar subquery caching? etc...).&lt;/p&gt;
-&lt;p&gt;jOOQ has come to fill this gap.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-jooq-is-different" class="anchor" aria-hidden="true" href="#jooq-is-different"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ is different&lt;/h1&gt;
-&lt;p&gt;SQL was never meant to be abstracted. To be confined in the narrow boundaries of heavy mappers, hiding the beauty and simplicity of relational data. SQL was never meant to be object-oriented. SQL was never meant to be anything other than... SQL!&lt;/p&gt;
-&lt;p&gt;For more details please visit &lt;a href="https://www.jooq.org" rel="nofollow"&gt;jooq.org&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Follow jOOQ on &lt;a href="https://twitter.com/JavaOOQ" rel="nofollow"&gt;Twitter&lt;/a&gt; and &lt;a href="https://blog.jooq.org" rel="nofollow"&gt;the jOOQ blog&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>jOOQ</author><guid isPermaLink="false">https://github.com/jOOQ/jOOQ</guid><pubDate>Tue, 24 Dec 2019 00:01:00 GMT</pubDate></item><item><title>OSGeo/PROJ #2 in TSQL, This month</title><link>https://github.com/OSGeo/PROJ</link><description>&lt;p&gt;&lt;i&gt;PROJ - Cartographic Projections and Coordinate Transformations Library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-proj" class="anchor" aria-hidden="true" href="#proj"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROJ&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://travis-ci.com/OSGeo/PROJ" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c8a2b453f23427e38bd909855f8c9a1c92ed9713/68747470733a2f2f7472617669732d63692e636f6d2f4f5347656f2f50524f4a2e7376673f6272616e63683d6d6173746572" alt="Travis Status" data-canonical-src="https://travis-ci.com/OSGeo/PROJ.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://ci.appveyor.com/project/OSGeo/PROJ?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aa631aa8bab384760949f03e42edafba0ce8bfea/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f4f5347656f2f50524f4a3f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/OSGeo/PROJ?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://coveralls.io/github/OSGeo/PROJ?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8b94ea6e1cc76a3aa89c412b516dae40db484f2a/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f4f5347656f2f50524f4a2f62616467652e7376673f6272616e63683d6d6173746572" alt="Coveralls Status" data-canonical-src="https://coveralls.io/repos/github/OSGeo/PROJ/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="https://gitter.im/OSGeo/proj.4" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/51e081f735b459a1d12c3eaf3a0f0c0ae7003d62/68747470733a2f2f6261646765732e6769747465722e696d2f4f5347656f2f70726f6a2e342e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/OSGeo/proj.4.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="http://lists.osgeo.org/mailman/listinfo/proj" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7ee52d9ae4c6581edc0936c4f733cc0b836dd56e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50524f4a2d6d61696c696e672532306c6973742d3465623839392e737667" alt="Mailing List" data-canonical-src="https://img.shields.io/badge/PROJ-mailing%20list-4eb899.svg" style="max-width:100%;"&gt;&lt;/a&gt;
-&lt;a href="code-of-conduct.md"&gt;&lt;img src="https://camo.githubusercontent.com/8315e511f8eb4651470540d6951fd05099251fc5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f6e7472696275746f72253230436f76656e616e742d76312e3425323061646f707465642d6666363962342e737667" alt="Contributor Covenant" data-canonical-src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;PROJ is a generic coordinate transformation software, that transforms
-coordinates from one coordinate reference system (CRS) to another.
-This includes cartographic projections as well as geodetic transformations.&lt;/p&gt;
-&lt;p&gt;For more information on the PROJ project please see the web page at:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://proj.org/" rel="nofollow"&gt;https://proj.org/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The PROJ mailing list can be found at:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://lists.osgeo.org/mailman/listinfo/proj/" rel="nofollow"&gt;https://lists.osgeo.org/mailman/listinfo/proj/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;See the NEWS file for changes between versions.&lt;/p&gt;
-&lt;p&gt;The following command line utilities are included in the PROJ package:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;proj&lt;/code&gt;: for cartographic projection of geodetic coordinates&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cs2cs&lt;/code&gt;: for transformation from one CRS to another CRS.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;geod&lt;/code&gt;: for geodesic (great circle) computations.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cct&lt;/code&gt;: for generic Coordinate Conversions and Transformations.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gie&lt;/code&gt;: the Geospatial Integrity Investigation Environment.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;projinfo&lt;/code&gt;: for geodetic object and coordinate operation queries&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;More information on the utilities can be found on the &lt;a href="https://proj.org/apps" rel="nofollow"&gt;PROJ website&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-&lt;h3&gt;&lt;a id="user-content-build-dependencies" class="anchor" aria-hidden="true" href="#build-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build dependencies&lt;/h3&gt;
-&lt;p&gt;PROJ requires C and C++11 compilers.
-It also requires SQLite3 (headers, library and executable).  The minimum
-version of SQLite3 required is 3.11&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-building-with-cmake" class="anchor" aria-hidden="true" href="#building-with-cmake"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building with CMake&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;cd proj
-mkdir build
-cd build
-cmake ..
-cmake --build .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On Windows, one may need to specify generator:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmake -G "Visual Studio 15 2017" ..
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If the SQLite3 dependency is installed in a custom location, specify the
-paths to the include directory and the library:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmake -DSQLITE3_INCLUDE_DIR=/opt/SQLite/include -DSQLITE3_LIBRARY=/opt/SQLite/lib/libsqlite3.so ..
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Tests are run with&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ctest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The test suite requires that the proj-datumgrid package is installed
-in &lt;code&gt;PROJ_LIB&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-building-on-unixlinux" class="anchor" aria-hidden="true" href="#building-on-unixlinux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building on Unix/Linux&lt;/h3&gt;
-&lt;p&gt;FSF's configuration procedure is used to ease installation of the
-PROJ system.&lt;/p&gt;
-&lt;p&gt;The default destination path prefix for installed files is &lt;code&gt;/usr/local&lt;/code&gt;.
-Results from the installation script will be placed into subdirectories
-&lt;code&gt;bin&lt;/code&gt;, &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;lib&lt;/code&gt;, &lt;code&gt;man/man1&lt;/code&gt; and &lt;code&gt;man/man3&lt;/code&gt;.
-If this default path prefix is proper, then execute:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;./configure
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the note below if you are building PROJ directly from the git repository.&lt;/p&gt;
-&lt;p&gt;If another path prefix is required, then execute:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;./configure --prefix=/my/path
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In either case, the directory of the prefix path must exist and be
-writable by the installer.
-After executing configure, execute:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;make
-make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The install target will create, if necessary, all required sub-directories.&lt;/p&gt;
-&lt;p&gt;Tests are run with&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;make check
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The test suite requires that the proj-datumgrid package is installed
-in &lt;code&gt;PROJ_LIB&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;&lt;a id="user-content-building-from-the-git-repository" class="anchor" aria-hidden="true" href="#building-from-the-git-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from the git repository&lt;/h4&gt;
-&lt;p&gt;If you are building from the git repository you have to first run&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;./autogen.sh
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;which will generate a configure script that can be used as described above.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-distribution-files-and-format" class="anchor" aria-hidden="true" href="#distribution-files-and-format"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Distribution files and format&lt;/h3&gt;
-&lt;p&gt;Sources are distributed in one or more files.  The principle elements
-of the system are stored in a compressed tar file named &lt;code&gt;proj-x.y.z.tar.gz&lt;/code&gt; where
-"x" will indicate the major release number, "y" indicates the minor release
-number, and "z" indicates the patch number of the release.&lt;/p&gt;
-&lt;p&gt;In addition to the PROJ software package, distributions of datum
-conversion grid files and PROJ parameter files are also available.
-The grid package is distributed under the name &lt;code&gt;proj-datumgrid-x.y.zip&lt;/code&gt;,
-where "x" is the major release version and "y" is the minor release
-version numbers. Similarly regional packages are distributed. The
-regional packages contain resources that are not essential to the
-functionality of PROJ but still of value to users in the region
-specific to the package. All grids that were in proj-datumgrids-1.6
-remain in proj-datumgrids-1.7; the regional datumgrid files contain
-grids for datums not previously supported (prior to PROJ 5.0.0).&lt;/p&gt;
-&lt;p&gt;The resource packages can be downloaded from the &lt;a href="https://proj.org/download.html" rel="nofollow"&gt;PROJ website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;More info on the contents of the various resource packages can be
-found at the
-&lt;a href="https://github.com/OSGeo/proj-datumgrid"&gt;proj-datumgrid GitHub repository&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The resource file packages should be extracted to &lt;code&gt;PROJ_LIB&lt;/code&gt;
-where PROJ will find them after installation. The default location of
-&lt;code&gt;PROJ_LIB&lt;/code&gt; on UNIX-based systems is &lt;code&gt;/usr/local/share/proj&lt;/code&gt; but it may
-be changed to a different directory. On Windows you have to define
-&lt;code&gt;PROJ_LIB&lt;/code&gt; yourself.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-citing-proj-in-publications" class="anchor" aria-hidden="true" href="#citing-proj-in-publications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Citing PROJ in publications&lt;/h3&gt;
-&lt;p&gt;See &lt;a href="CITATION"&gt;CITATION&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>OSGeo</author><guid isPermaLink="false">https://github.com/OSGeo/PROJ</guid><pubDate>Tue, 24 Dec 2019 00:02:00 GMT</pubDate></item><item><title>BrentOzarULTD/SQL-Server-First-Responder-Kit #3 in TSQL, This month</title><link>https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit</link><description>&lt;p&gt;&lt;i&gt;sp_Blitz, sp_BlitzCache, sp_BlitzFirst, sp_BlitzIndex, and other SQL Server scripts for health checks and performance tuning.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-sql-server-first-responder-kit" class="anchor" aria-hidden="true" href="#sql-server-first-responder-kit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SQL Server First Responder Kit&lt;/h1&gt;
+<rss version="2.0"><channel><title>GitHub Trending: TSQL, This month</title><link>https://github.com/trending/tsql?since=monthly</link><description>The top repositories on GitHub for tsql, measured monthly</description><pubDate>Wed, 25 Dec 2019 01:07:11 GMT</pubDate><lastBuildDate>Wed, 25 Dec 2019 01:07:11 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution #1 in TSQL, This month</title><link>https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-dp-200-implementing-an-azure-data-solution" class="anchor" aria-hidden="true" href="#dp-200-implementing-an-azure-data-solution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DP-200-Implementing-an-Azure-Data-Solution&lt;/h1&gt;
+&lt;p&gt;During this course, the first and the last lab of the course are group exercises that involve discussion to help provide context for the labs that the students will take. The last lab provides the opportunity for the students to reflect on what they have achieved and what they have overcome to achieve the delivery of requirements from the case study in the labs. The rest of the labs are hands on implementing Azure data platform capabilities to meet AdventureWorks business requirements.&lt;/p&gt;
+&lt;p&gt;The following is a summary of the lab objectives for each module:&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-1---azure-for-the-data-engineer" class="anchor" aria-hidden="true" href="#lab-1---azure-for-the-data-engineer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 1 - Azure for the Data Engineer&lt;/h2&gt;
+&lt;p&gt;The students will take the information gained in the lessons and from the case study to scope out the deliverables for a digital transformation project within AdventureWorks. They will first identify how the evolving use of data has presented new opportunities for the organization. The students will also explore which Azure Data Platform services can be used to address the business needs and define the tasks that will be performed by the data engineer. Finally, students will finalize the data engineering deliverables for AdventureWorks.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-2---working-with-data-storage" class="anchor" aria-hidden="true" href="#lab-2---working-with-data-storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 2 - Working with Data Storage&lt;/h2&gt;
+&lt;p&gt;In this lab, the students will be able to determine the appropriate storage type to implement against a given set of business and technical requirements. They will be able to create Azure storage accounts and Data Lake Storage account and explain the difference between Data Lake Storage version 1 and version 2. They will also be able to demonstrate how to perform data loads into the data storage of choice.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-3---enabling-team-based-data-science-with-azure-databricks" class="anchor" aria-hidden="true" href="#lab-3---enabling-team-based-data-science-with-azure-databricks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 3 - Enabling Team Based Data Science with Azure Databricks&lt;/h2&gt;
+&lt;p&gt;By the end of this lab the student will be able to explain why Azure Databricks can be used to help in Data Science projects. The students will provision and Azure Databricks instance and will then create a workspace that will be used to perform a simple data preparation task from a Data Lake Store Gen II store. Finally, the student will perform a walk-through of performing transformations using Azure Databricks.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-4---building-globally-distributed-databases-with-cosmos-db" class="anchor" aria-hidden="true" href="#lab-4---building-globally-distributed-databases-with-cosmos-db"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 4 - Building Globally Distributed Databases with Cosmos DB&lt;/h2&gt;
+&lt;p&gt;The students will be able to describe and demonstrate the capabilities that Azure Cosmos DB can bring to an organization. They will be able to create a Cosmos DB instance and show how to upload and query data through a portal and through a .Net application. They will then be able to demonstrate how to enable global scale of the Cosmos DB database.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-5---working-with-relational-data-stores-in-the-cloud" class="anchor" aria-hidden="true" href="#lab-5---working-with-relational-data-stores-in-the-cloud"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 5 - Working with Relational Data Stores in the Cloud&lt;/h2&gt;
+&lt;p&gt;The students will be able to provision an Azure SQL Database and Azure Synapse Analytics to be able to issue queries against one of the instances that are created. They will be also be able to integrate Azure Synapse Analytics with a number of other Data platform technologies and use PolyBase to load data from one data source into a data warehouse.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-6---performing-real-time-analytics-with-stream-analytics" class="anchor" aria-hidden="true" href="#lab-6---performing-real-time-analytics-with-stream-analytics"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 6 - Performing Real-Time Analytics with Stream Analytics&lt;/h2&gt;
+&lt;p&gt;The students will be able to describe what data streams are and how event processing works and choose an appropriate data stream ingestion technology for the AdventureWorks case study. They will provision the chosen ingestion technology and integrate this with Stream Analytics to create a solution that works with streaming data.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-7---orchestrating-data-movement-with-azure-data-factory" class="anchor" aria-hidden="true" href="#lab-7---orchestrating-data-movement-with-azure-data-factory"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 7 - Orchestrating Data Movement with Azure Data Factory&lt;/h2&gt;
+&lt;p&gt;In this module, students will learn how Azure Data factory can be used to orchestrate the data movement from a wide range of data platform technologies. They will be able to explain the capabilities of the technology and be able to set up an end to end data pipeline that ingests data from SQL Database and load the data into SQL Data Warehouse. The student will also demonstrate how to call a compute resource.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-8---securing-azure-data-platforms" class="anchor" aria-hidden="true" href="#lab-8---securing-azure-data-platforms"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 8 - Securing Azure Data Platforms&lt;/h2&gt;
+&lt;p&gt;The students will be able to describe and document the different approaches to security that can be taken to provide defence in depth. This will involve the student documenting the security that has been set up so far in the course. It will also enable the students to identify any gaps in security that may exists for AdventureWorks.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-lab-9---monitoring-and-troubleshooting-data-storage-and-processing" class="anchor" aria-hidden="true" href="#lab-9---monitoring-and-troubleshooting-data-storage-and-processing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 9 - Monitoring and Troubleshooting Data Storage and Processing&lt;/h2&gt;
+&lt;p&gt;The students will be able to define a broad monitoring solution that can help them monitor issues that can occur in their data estate. The student will then experience common data storage issues and data processing issue that can occur in cloud data solution. Finally they will implement a disaster recovery approach for a Data Platform technology.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>MicrosoftLearning</author><guid isPermaLink="false">https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution</guid><pubDate>Wed, 25 Dec 2019 00:01:00 GMT</pubDate></item><item><title>BrentOzarULTD/SQL-Server-First-Responder-Kit #2 in TSQL, This month</title><link>https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit</link><description>&lt;p&gt;&lt;i&gt;sp_Blitz, sp_BlitzCache, sp_BlitzFirst, sp_BlitzIndex, and other SQL Server scripts for health checks and performance tuning.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-sql-server-first-responder-kit" class="anchor" aria-hidden="true" href="#sql-server-first-responder-kit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SQL Server First Responder Kit&lt;/h1&gt;
 &lt;p&gt;&lt;a name="user-content-header1"&gt;&lt;/a&gt;
 &lt;a href="https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit/blob/master/LICENSE.md"&gt;&lt;img src="https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667" alt="licence badge" data-canonical-src="https://img.shields.io/badge/license-MIT-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
 &lt;a href="https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit/stargazers"&gt;&lt;img src="https://camo.githubusercontent.com/48e714d6a304efa786cf7baba39dfd1a6f48d8b0/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4272656e744f7a6172554c54442f53514c2d5365727665722d46697273742d526573706f6e6465722d4b69742e737667" alt="stars badge" data-canonical-src="https://img.shields.io/github/stars/BrentOzarULTD/SQL-Server-First-Responder-Kit.svg" style="max-width:100%;"&gt;&lt;/a&gt;
@@ -496,37 +396,214 @@ sp_Blitz @SkipChecksDatabase &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span cl
 &lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
 &lt;p&gt;&lt;a href="LICENSE.md"&gt;The SQL Server First Responder Kit uses the MIT License.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="#header1"&gt;&lt;em&gt;Back to top&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>BrentOzarULTD</author><guid isPermaLink="false">https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit</guid><pubDate>Tue, 24 Dec 2019 00:03:00 GMT</pubDate></item><item><title>dr5hn/countries-states-cities-database #4 in TSQL, This month</title><link>https://github.com/dr5hn/countries-states-cities-database</link><description>&lt;p&gt;&lt;i&gt;All Countries, Cities, States with ISO2, ISO3, Country Code, Phone Code, Capital and Currency [countries.json, country.json, city.json, cities.json, state.json, states.json] [Linked with Each Other By ID] [Countries-States-Cities-database] &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-countries-states-cities-database-json--sql--php-export-json-script" class="anchor" aria-hidden="true" href="#countries-states-cities-database-json--sql--php-export-json-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Countries States Cities Database (JSON + SQL + PHP Export JSON Script)&lt;/h1&gt;
-&lt;p&gt;Full Database of city state country available in JSON &amp;amp; SQL Format
-All Countries, States &amp;amp; Cities are Covered &amp;amp; Populated with Different Combinations &amp;amp; Versions.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>BrentOzarULTD</author><guid isPermaLink="false">https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit</guid><pubDate>Wed, 25 Dec 2019 00:02:00 GMT</pubDate></item><item><title>OSGeo/PROJ #3 in TSQL, This month</title><link>https://github.com/OSGeo/PROJ</link><description>&lt;p&gt;&lt;i&gt;PROJ - Cartographic Projections and Coordinate Transformations Library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-proj" class="anchor" aria-hidden="true" href="#proj"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROJ&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.com/OSGeo/PROJ" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c8a2b453f23427e38bd909855f8c9a1c92ed9713/68747470733a2f2f7472617669732d63692e636f6d2f4f5347656f2f50524f4a2e7376673f6272616e63683d6d6173746572" alt="Travis Status" data-canonical-src="https://travis-ci.com/OSGeo/PROJ.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/OSGeo/PROJ?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aa631aa8bab384760949f03e42edafba0ce8bfea/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f4f5347656f2f50524f4a3f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/OSGeo/PROJ?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://coveralls.io/github/OSGeo/PROJ?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8b94ea6e1cc76a3aa89c412b516dae40db484f2a/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f4f5347656f2f50524f4a2f62616467652e7376673f6272616e63683d6d6173746572" alt="Coveralls Status" data-canonical-src="https://coveralls.io/repos/github/OSGeo/PROJ/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/OSGeo/proj.4" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/51e081f735b459a1d12c3eaf3a0f0c0ae7003d62/68747470733a2f2f6261646765732e6769747465722e696d2f4f5347656f2f70726f6a2e342e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/OSGeo/proj.4.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://lists.osgeo.org/mailman/listinfo/proj" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7ee52d9ae4c6581edc0936c4f733cc0b836dd56e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50524f4a2d6d61696c696e672532306c6973742d3465623839392e737667" alt="Mailing List" data-canonical-src="https://img.shields.io/badge/PROJ-mailing%20list-4eb899.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="code-of-conduct.md"&gt;&lt;img src="https://camo.githubusercontent.com/8315e511f8eb4651470540d6951fd05099251fc5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f6e7472696275746f72253230436f76656e616e742d76312e3425323061646f707465642d6666363962342e737667" alt="Contributor Covenant" data-canonical-src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PROJ is a generic coordinate transformation software, that transforms
+coordinates from one coordinate reference system (CRS) to another.
+This includes cartographic projections as well as geodetic transformations.&lt;/p&gt;
+&lt;p&gt;For more information on the PROJ project please see the web page at:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://proj.org/" rel="nofollow"&gt;https://proj.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The PROJ mailing list can be found at:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://lists.osgeo.org/mailman/listinfo/proj/" rel="nofollow"&gt;https://lists.osgeo.org/mailman/listinfo/proj/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the NEWS file for changes between versions.&lt;/p&gt;
+&lt;p&gt;The following command line utilities are included in the PROJ package:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;proj&lt;/code&gt;: for cartographic projection of geodetic coordinates&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cs2cs&lt;/code&gt;: for transformation from one CRS to another CRS.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;geod&lt;/code&gt;: for geodesic (great circle) computations.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cct&lt;/code&gt;: for generic Coordinate Conversions and Transformations.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gie&lt;/code&gt;: the Geospatial Integrity Investigation Environment.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;projinfo&lt;/code&gt;: for geodetic object and coordinate operation queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;More information on the utilities can be found on the &lt;a href="https://proj.org/apps" rel="nofollow"&gt;PROJ website&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-build-dependencies" class="anchor" aria-hidden="true" href="#build-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build dependencies&lt;/h3&gt;
+&lt;p&gt;PROJ requires C and C++11 compilers.
+It also requires SQLite3 (headers, library and executable).  The minimum
+version of SQLite3 required is 3.11&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-with-cmake" class="anchor" aria-hidden="true" href="#building-with-cmake"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building with CMake&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;cd proj
+mkdir build
+cd build
+cmake ..
+cmake --build .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On Windows, one may need to specify generator:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmake -G "Visual Studio 15 2017" ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the SQLite3 dependency is installed in a custom location, specify the
+paths to the include directory and the library:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmake -DSQLITE3_INCLUDE_DIR=/opt/SQLite/include -DSQLITE3_LIBRARY=/opt/SQLite/lib/libsqlite3.so ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tests are run with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ctest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The test suite requires that the proj-datumgrid package is installed
+in &lt;code&gt;PROJ_LIB&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-on-unixlinux" class="anchor" aria-hidden="true" href="#building-on-unixlinux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building on Unix/Linux&lt;/h3&gt;
+&lt;p&gt;FSF's configuration procedure is used to ease installation of the
+PROJ system.&lt;/p&gt;
+&lt;p&gt;The default destination path prefix for installed files is &lt;code&gt;/usr/local&lt;/code&gt;.
+Results from the installation script will be placed into subdirectories
+&lt;code&gt;bin&lt;/code&gt;, &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;lib&lt;/code&gt;, &lt;code&gt;man/man1&lt;/code&gt; and &lt;code&gt;man/man3&lt;/code&gt;.
+If this default path prefix is proper, then execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./configure
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the note below if you are building PROJ directly from the git repository.&lt;/p&gt;
+&lt;p&gt;If another path prefix is required, then execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./configure --prefix=/my/path
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In either case, the directory of the prefix path must exist and be
+writable by the installer.
+After executing configure, execute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The install target will create, if necessary, all required sub-directories.&lt;/p&gt;
+&lt;p&gt;Tests are run with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make check
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The test suite requires that the proj-datumgrid package is installed
+in &lt;code&gt;PROJ_LIB&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-building-from-the-git-repository" class="anchor" aria-hidden="true" href="#building-from-the-git-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from the git repository&lt;/h4&gt;
+&lt;p&gt;If you are building from the git repository you have to first run&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./autogen.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;which will generate a configure script that can be used as described above.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-distribution-files-and-format" class="anchor" aria-hidden="true" href="#distribution-files-and-format"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Distribution files and format&lt;/h3&gt;
+&lt;p&gt;Sources are distributed in one or more files.  The principle elements
+of the system are stored in a compressed tar file named &lt;code&gt;proj-x.y.z.tar.gz&lt;/code&gt; where
+"x" will indicate the major release number, "y" indicates the minor release
+number, and "z" indicates the patch number of the release.&lt;/p&gt;
+&lt;p&gt;In addition to the PROJ software package, distributions of datum
+conversion grid files and PROJ parameter files are also available.
+The grid package is distributed under the name &lt;code&gt;proj-datumgrid-x.y.zip&lt;/code&gt;,
+where "x" is the major release version and "y" is the minor release
+version numbers. Similarly regional packages are distributed. The
+regional packages contain resources that are not essential to the
+functionality of PROJ but still of value to users in the region
+specific to the package. All grids that were in proj-datumgrids-1.6
+remain in proj-datumgrids-1.7; the regional datumgrid files contain
+grids for datums not previously supported (prior to PROJ 5.0.0).&lt;/p&gt;
+&lt;p&gt;The resource packages can be downloaded from the &lt;a href="https://proj.org/download.html" rel="nofollow"&gt;PROJ website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More info on the contents of the various resource packages can be
+found at the
+&lt;a href="https://github.com/OSGeo/proj-datumgrid"&gt;proj-datumgrid GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The resource file packages should be extracted to &lt;code&gt;PROJ_LIB&lt;/code&gt;
+where PROJ will find them after installation. The default location of
+&lt;code&gt;PROJ_LIB&lt;/code&gt; on UNIX-based systems is &lt;code&gt;/usr/local/share/proj&lt;/code&gt; but it may
+be changed to a different directory. On Windows you have to define
+&lt;code&gt;PROJ_LIB&lt;/code&gt; yourself.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-citing-proj-in-publications" class="anchor" aria-hidden="true" href="#citing-proj-in-publications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Citing PROJ in publications&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="CITATION"&gt;CITATION&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>OSGeo</author><guid isPermaLink="false">https://github.com/OSGeo/PROJ</guid><pubDate>Wed, 25 Dec 2019 00:03:00 GMT</pubDate></item><item><title>jOOQ/jOOQ #4 in TSQL, This month</title><link>https://github.com/jOOQ/jOOQ</link><description>&lt;p&gt;&lt;i&gt;jOOQ is the best way to write SQL in Java&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-jooqs-reason-for-being---compared-to-jpa" class="anchor" aria-hidden="true" href="#jooqs-reason-for-being---compared-to-jpa"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ's reason for being - compared to JPA&lt;/h1&gt;
+&lt;p&gt;Java and SQL have come a long way. SQL is an "ancient", yet established and well-understood technology. Java is a legacy too, although its platform JVM allows for many new and contemporary languages built on top of it. Yet, after all these years, libraries dealing with the interface between SQL and Java have come and gone, leaving JPA to be a standard that is accepted only with doubts, short of any surviving options.&lt;/p&gt;
+&lt;p&gt;So far, there had been only few database abstraction frameworks or libraries, that truly respected SQL as a first class citizen among languages. Most frameworks, including the industry standards JPA, EJB, Hibernate, JDO, Criteria Query, and many others try to hide SQL itself, minimising its scope to things called JPQL, HQL, JDOQL and various other inferior query languages&lt;/p&gt;
+&lt;p&gt;jOOQ has come to fill this gap.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-jooqs-reason-of-being---compared-to-linq" class="anchor" aria-hidden="true" href="#jooqs-reason-of-being---compared-to-linq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ's reason of being - compared to LINQ&lt;/h1&gt;
+&lt;p&gt;Other platforms incorporate ideas such as LINQ (with LINQ-to-SQL), or Scala's SLICK, or also Java's QueryDSL to better integrate querying as a concept into their respective language. By querying, they understand querying of arbitrary targets, such as SQL, XML, Collections and other heterogeneous data stores. jOOQ claims that this is going the wrong way too.&lt;/p&gt;
+&lt;p&gt;In more advanced querying use-cases (more than simple CRUD and the occasional JOIN), people will want to profit from the expressivity of SQL. Due to the relational nature of SQL, this is quite different from what object-oriented and partially functional languages such as C#, Scala, or Java can offer.&lt;/p&gt;
+&lt;p&gt;It is very hard to formally express and validate joins and the ad-hoc table expression types they create. It gets even harder when you want support for more advanced table expressions, such as pivot tables, unnested cursors, or just arbitrary projections from derived tables. With a very strong object-oriented typing model, these features will probably stay out of scope.&lt;/p&gt;
+&lt;p&gt;In essence, the decision of creating an API that looks like SQL or one that looks like C#, Scala, Java is a definite decision in favour of one or the other platform. While it will be easier to evolve SLICK in similar ways as LINQ (or QueryDSL in the Java world), SQL feature scope that clearly communicates its underlying intent will be very hard to add, later on (e.g. how would you model Oracle's partitioned outer join syntax? How would you model ANSI/ISO SQL:1999 grouping sets? How can you support scalar subquery caching? etc...).&lt;/p&gt;
+&lt;p&gt;jOOQ has come to fill this gap.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-jooq-is-different" class="anchor" aria-hidden="true" href="#jooq-is-different"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jOOQ is different&lt;/h1&gt;
+&lt;p&gt;SQL was never meant to be abstracted. To be confined in the narrow boundaries of heavy mappers, hiding the beauty and simplicity of relational data. SQL was never meant to be object-oriented. SQL was never meant to be anything other than... SQL!&lt;/p&gt;
+&lt;p&gt;For more details please visit &lt;a href="https://www.jooq.org" rel="nofollow"&gt;jooq.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Follow jOOQ on &lt;a href="https://twitter.com/JavaOOQ" rel="nofollow"&gt;Twitter&lt;/a&gt; and &lt;a href="https://blog.jooq.org" rel="nofollow"&gt;the jOOQ blog&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jOOQ</author><guid isPermaLink="false">https://github.com/jOOQ/jOOQ</guid><pubDate>Wed, 25 Dec 2019 00:04:00 GMT</pubDate></item><item><title>rapid7/metasploitable3 #5 in TSQL, This month</title><link>https://github.com/rapid7/metasploitable3</link><description>&lt;p&gt;&lt;i&gt;Metasploitable3 is a VM that is built from the ground up with a large amount of security vulnerabilities.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-metasploitable3" class="anchor" aria-hidden="true" href="#metasploitable3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Metasploitable3&lt;/h1&gt;
+&lt;p&gt;Metasploitable3 is a VM that is built from the ground up with a large amount of security vulnerabilities. It is intended to be used as a target for testing exploits with &lt;a href="https://github.com/rapid7/metasploit-framework"&gt;metasploit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Metasploitable3 is released under a BSD-style license. See COPYING for more details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick-start&lt;/h2&gt;
+&lt;p&gt;To use the prebuilt images provided at &lt;a href="https://app.vagrantup.com/rapid7/" rel="nofollow"&gt;https://app.vagrantup.com/rapid7/&lt;/a&gt; create a new local metasploitable workspace:&lt;/p&gt;
+&lt;p&gt;Linux users:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir metasploitable3-workspace
+cd metasploitable3-workspace
+curl -O https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile &amp;amp;&amp;amp; vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Windows users:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir metasploitable3-workspace
+cd metasploitable3-workspace
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile" -OutFile "Vagrantfile"
+vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or clone this repository and build your own box.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-metasploitable-3" class="anchor" aria-hidden="true" href="#building-metasploitable-3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Metasploitable 3&lt;/h2&gt;
+&lt;p&gt;System Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS capable of running all of the required applications listed below&lt;/li&gt;
+&lt;li&gt;VT-x/AMD-V Supported Processor recommended&lt;/li&gt;
+&lt;li&gt;65 GB Available space on drive&lt;/li&gt;
+&lt;li&gt;4.5 GB RAM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.packer.io/intro/getting-started/install.html" rel="nofollow"&gt;Packer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.vagrantup.com/docs/installation/" rel="nofollow"&gt;Vagrant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/aidanns/vagrant-reload#installation"&gt;Vagrant Reload Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.virtualbox.org/wiki/Downloads" rel="nofollow"&gt;VirtualBox&lt;/a&gt;, libvirt/qemu-kvm, or vmware (paid license required)&lt;/li&gt;
+&lt;li&gt;Internet connection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-to-build-automatically" class="anchor" aria-hidden="true" href="#to-build-automatically"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To build automatically:&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Countries &lt;code&gt;countries.json OR countries.sql&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;States &lt;code&gt;states.json OR states.sql&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Cities &lt;code&gt;cities.json OR cities.sql&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Country + States &lt;code&gt;countries+states.json&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;State + Cities &lt;code&gt;states+cities.json&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Country + State + Cities &lt;code&gt;countries+states+cities.json OR world.sql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;On &lt;strong&gt;Linux/OSX&lt;/strong&gt; run &lt;code&gt;./build.sh windows2008&lt;/code&gt; to build the Windows box or &lt;code&gt;./build.sh ubuntu1404&lt;/code&gt; to build the Linux box. If /tmp is small, use &lt;code&gt;TMPDIR=/var/tmp ./build.sh ...&lt;/code&gt; to store temporary packer disk images under /var/tmp.&lt;/li&gt;
+&lt;li&gt;On &lt;strong&gt;Windows&lt;/strong&gt;, open powershell terminal and run &lt;code&gt;.\build.ps1 windows2008&lt;/code&gt; to build the Windows box or &lt;code&gt;.\build.ps1 ubuntu1404&lt;/code&gt; to build the Linux box. If no option is passed to the script i.e. &lt;code&gt;.\build.ps1&lt;/code&gt;, then both the boxes are built.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If both the boxes were successfully built, run &lt;code&gt;vagrant up&lt;/code&gt; to start both. To start any one VM, you can use:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vagrant up ub1404&lt;/code&gt; : to start the Linux box&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant up win2k8&lt;/code&gt; : to start the Windows box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When this process completes, you should be able to open the VM within VirtualBox and login. The default credentials are U: &lt;code&gt;vagrant&lt;/code&gt; and P: &lt;code&gt;vagrant&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;&lt;a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Demo&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://dr5hn.github.io/countries-states-cities-database/" rel="nofollow"&gt;https://dr5hn.github.io/countries-states-cities-database/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-insights" class="anchor" aria-hidden="true" href="#insights"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Insights&lt;/h2&gt;
-&lt;p&gt;Total Countries : 247 &lt;br&gt;
-Total States/Regions : 4,851 &lt;br&gt;
-Total Cities/Towns : 141,851 &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Last Updated On : 13th November 2019&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notes&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;This Free database does not guarantee for the complete list of world countries, states &amp;amp; cities.
-You can manually change the spelling mistakes, duplicates or add edit any records, which are incorrect.
-
-Reason behind making this repo: I ran through many websites to get perfect combination of state, city &amp;amp; countries.
-Some were with missing states, some with large filesize. So I thought to get it done on my own using PHP Script.
+&lt;h3&gt;&lt;a id="user-content-to-build-manually" class="anchor" aria-hidden="true" href="#to-build-manually"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To build manually:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone this repo and navigate to the main directory.&lt;/li&gt;
+&lt;li&gt;Build the base VM image by running &lt;code&gt;packer build --only=&amp;lt;provider&amp;gt; ./packer/templates/windows_2008_r2.json&lt;/code&gt; where &lt;code&gt;&amp;lt;provider&amp;gt;&lt;/code&gt; is your preferred virtualization platform. Currently &lt;code&gt;virtualbox-iso&lt;/code&gt;, &lt;code&gt;qemu&lt;/code&gt;, and &lt;code&gt;vmware-iso&lt;/code&gt; providers are supported. This will take a while the first time you run it since it has to download the OS installation ISO.&lt;/li&gt;
+&lt;li&gt;After the base Vagrant box is created you need to add it to your Vagrant environment. This can be done with the command &lt;code&gt;vagrant box add packer/builds/windows_2008_r2_*_0.1.0.box --name=metasploitable3-win2k8&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;vagrant plugin install vagrant-reload&lt;/code&gt; to install the reload vagrant provisioner if you haven't already.&lt;/li&gt;
+&lt;li&gt;To start the VM, run the command &lt;code&gt;vagrant up win2k8&lt;/code&gt;. This will start up the VM and run all of the installation and configuration scripts necessary to set everything up. This takes about 10 minutes.&lt;/li&gt;
+&lt;li&gt;Once this process completes, you can open up the VM within VirtualBox and login. The default credentials are U: vagrant and P: vagrant.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Videos:&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href="https://twitter.com/webpwnized" rel="nofollow"&gt;Jeremy&lt;/a&gt;, you can also follow the steps in these videos to set up Metasploitable3:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/playlist?list=PLZOToVAK85MpnjpcVtNMwmCxMZRFaY6mT" rel="nofollow"&gt;https://www.youtube.com/playlist?list=PLZOToVAK85MpnjpcVtNMwmCxMZRFaY6mT&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-ub1404-development-and-modification" class="anchor" aria-hidden="true" href="#ub1404-development-and-modification"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ub1404 Development and Modification&lt;/h3&gt;
+&lt;p&gt;Using Vagrant and a lightweight Ubuntu 14.04 vagrant cloud box image, you can quickly set up and customize ub1404 Metasploitable3 for development or customization.
+To do so, install Vagrant and a hypervisor such as VirtualBox. Then, visit the &lt;code&gt;bento/ubuntu-14.04&lt;/code&gt; page and find a version that supports
+your hypervisor. For instance, version &lt;code&gt;v201808.24.0&lt;/code&gt; is compatible with VirtualBox.&lt;/p&gt;
+&lt;p&gt;Install the vagrant virtualbox vbguest plugin:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vagrant plugin install vagrant-vbguest
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;&lt;a id="user-content-contributions--suggestions--feedbacks" class="anchor" aria-hidden="true" href="#contributions--suggestions--feedbacks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions / Suggestions / Feedbacks&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;Contibutions, Suggestions &amp;amp; Feedbacks are Most Welcome
-gadadarshan[at]gmail[dot]com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That's all Folks. Enjoy.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>dr5hn</author><guid isPermaLink="false">https://github.com/dr5hn/countries-states-cities-database</guid><pubDate>Tue, 24 Dec 2019 00:04:00 GMT</pubDate></item><item><title>nobodyiam/apollo-build-scripts #5 in TSQL, This month</title><link>https://github.com/nobodyiam/apollo-build-scripts</link><description>&lt;p&gt;&lt;i&gt;Apollo Build Scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;ul&gt;
+&lt;p&gt;Then, navigate to the &lt;code&gt;/chef/dev/ub1404&lt;/code&gt; directory in this repository. Examine the Vagrantfile there. Metasploitable ub1404 uses the vagrant &lt;code&gt;chef-solo&lt;/code&gt; provisioner.
+To this Vagrantfile, add the metasploitable chef recipes that you desire -- you can browse them in the &lt;code&gt;/chef/cookbooks/metasploitable&lt;/code&gt; folder. Or,
+add or edit your own cookbook and/or recipes there.&lt;/p&gt;
+&lt;p&gt;From the &lt;code&gt;/chef/dev/ub1404&lt;/code&gt; directory, you can run &lt;code&gt;vagrant up&lt;/code&gt; to get a development virtual ub1404 instance. After the initial &lt;code&gt;up&lt;/code&gt; build and provision,
+when you edit the chef runlist or when you edit a chef recipe, run &lt;code&gt;vagrant provision&lt;/code&gt; from the same directory. For faster development, you can comment-out
+recipes that you do not need to rerun -- but even if they are all enabled, vagrant provisioning should not take longer one or two minutes.
+Chef aims to be idempotent, so you can rerun this command often.&lt;/p&gt;
+&lt;p&gt;Consider taking a snapshot (e.g., &lt;code&gt;vagrant snapshot new fresh&lt;/code&gt;) before modifying recipes, so that you can always return to an initial state (&lt;code&gt;vagrant restore fresh&lt;/code&gt;).
+If you want a &lt;em&gt;totally&lt;/em&gt; fresh snapshot, you can do the initialization with &lt;code&gt;vagrant up --no-provision&lt;/code&gt;, then take a snapshot, followed by &lt;code&gt;vagrant provision&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-vulnerabilities" class="anchor" aria-hidden="true" href="#vulnerabilities"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vulnerabilities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/rapid7/metasploitable3/wiki/Vulnerabilities"&gt;See the wiki page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-more-information" class="anchor" aria-hidden="true" href="#more-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More Information&lt;/h2&gt;
+&lt;p&gt;The wiki has a lot more detail and serves as the main source of documentation. Please &lt;a href="https://github.com/rapid7/metasploitable3/wiki/"&gt;check it out&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The Windows portion of this project was based off of GitHub user &lt;a href="https://github.com/joefitzgerald"&gt;joefitzgerald's&lt;/a&gt; &lt;a href="https://github.com/joefitzgerald/packer-windows"&gt;packer-windows&lt;/a&gt; project.
+The Packer templates, original Vagrantfile, and installation answer files were used as the base template and built upon for the needs of this project.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rapid7</author><guid isPermaLink="false">https://github.com/rapid7/metasploitable3</guid><pubDate>Wed, 25 Dec 2019 00:05:00 GMT</pubDate></item><item><title>nobodyiam/apollo-build-scripts #6 in TSQL, This month</title><link>https://github.com/nobodyiam/apollo-build-scripts</link><description>&lt;p&gt;&lt;i&gt;Apollo Build Scripts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="#%E4%B8%80%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"&gt;一、准备工作&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#%E4%BA%8C%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"&gt;二、安装步骤&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#%E4%B8%89%E5%90%AF%E5%8A%A8apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83"&gt;三、启动Apollo配置中心&lt;/a&gt;&lt;/li&gt;
@@ -772,117 +849,424 @@ Portal started. You can visit http://localhost:8070 now&lt;span class="pl-k"&gt;
 &lt;p&gt;编辑&lt;code&gt;client/META-INF/app.properties&lt;/code&gt;，修改app.id为你新创建的app id。&lt;/p&gt;
 &lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;app.id&lt;/span&gt;=你的appId&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;运行&lt;code&gt;./demo.sh client&lt;/code&gt;启动Demo客户端即可。&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>nobodyiam</author><guid isPermaLink="false">https://github.com/nobodyiam/apollo-build-scripts</guid><pubDate>Tue, 24 Dec 2019 00:05:00 GMT</pubDate></item><item><title>rapid7/metasploitable3 #6 in TSQL, This month</title><link>https://github.com/rapid7/metasploitable3</link><description>&lt;p&gt;&lt;i&gt;Metasploitable3 is a VM that is built from the ground up with a large amount of security vulnerabilities.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-metasploitable3" class="anchor" aria-hidden="true" href="#metasploitable3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Metasploitable3&lt;/h1&gt;
-&lt;p&gt;Metasploitable3 is a VM that is built from the ground up with a large amount of security vulnerabilities. It is intended to be used as a target for testing exploits with &lt;a href="https://github.com/rapid7/metasploit-framework"&gt;metasploit&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Metasploitable3 is released under a BSD-style license. See COPYING for more details.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick-start&lt;/h2&gt;
-&lt;p&gt;To use the prebuilt images provided at &lt;a href="https://app.vagrantup.com/rapid7/" rel="nofollow"&gt;https://app.vagrantup.com/rapid7/&lt;/a&gt; create a new local metasploitable workspace:&lt;/p&gt;
-&lt;p&gt;Linux users:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mkdir metasploitable3-workspace
-cd metasploitable3-workspace
-curl -O https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile &amp;amp;&amp;amp; vagrant up
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Windows users:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mkdir metasploitable3-workspace
-cd metasploitable3-workspace
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile" -OutFile "Vagrantfile"
-vagrant up
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or clone this repository and build your own box.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-building-metasploitable-3" class="anchor" aria-hidden="true" href="#building-metasploitable-3"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Metasploitable 3&lt;/h2&gt;
-&lt;p&gt;System Requirements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OS capable of running all of the required applications listed below&lt;/li&gt;
-&lt;li&gt;VT-x/AMD-V Supported Processor recommended&lt;/li&gt;
-&lt;li&gt;65 GB Available space on drive&lt;/li&gt;
-&lt;li&gt;4.5 GB RAM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Requirements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.packer.io/intro/getting-started/install.html" rel="nofollow"&gt;Packer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.vagrantup.com/docs/installation/" rel="nofollow"&gt;Vagrant&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/aidanns/vagrant-reload#installation"&gt;Vagrant Reload Plugin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.virtualbox.org/wiki/Downloads" rel="nofollow"&gt;VirtualBox&lt;/a&gt;, libvirt/qemu-kvm, or vmware (paid license required)&lt;/li&gt;
-&lt;li&gt;Internet connection&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-to-build-automatically" class="anchor" aria-hidden="true" href="#to-build-automatically"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To build automatically:&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;On &lt;strong&gt;Linux/OSX&lt;/strong&gt; run &lt;code&gt;./build.sh windows2008&lt;/code&gt; to build the Windows box or &lt;code&gt;./build.sh ubuntu1404&lt;/code&gt; to build the Linux box. If /tmp is small, use &lt;code&gt;TMPDIR=/var/tmp ./build.sh ...&lt;/code&gt; to store temporary packer disk images under /var/tmp.&lt;/li&gt;
-&lt;li&gt;On &lt;strong&gt;Windows&lt;/strong&gt;, open powershell terminal and run &lt;code&gt;.\build.ps1 windows2008&lt;/code&gt; to build the Windows box or &lt;code&gt;.\build.ps1 ubuntu1404&lt;/code&gt; to build the Linux box. If no option is passed to the script i.e. &lt;code&gt;.\build.ps1&lt;/code&gt;, then both the boxes are built.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;If both the boxes were successfully built, run &lt;code&gt;vagrant up&lt;/code&gt; to start both. To start any one VM, you can use:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;vagrant up ub1404&lt;/code&gt; : to start the Linux box&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vagrant up win2k8&lt;/code&gt; : to start the Windows box&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;When this process completes, you should be able to open the VM within VirtualBox and login. The default credentials are U: &lt;code&gt;vagrant&lt;/code&gt; and P: &lt;code&gt;vagrant&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;&lt;a id="user-content-to-build-manually" class="anchor" aria-hidden="true" href="#to-build-manually"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To build manually:&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Clone this repo and navigate to the main directory.&lt;/li&gt;
-&lt;li&gt;Build the base VM image by running &lt;code&gt;packer build --only=&amp;lt;provider&amp;gt; ./packer/templates/windows_2008_r2.json&lt;/code&gt; where &lt;code&gt;&amp;lt;provider&amp;gt;&lt;/code&gt; is your preferred virtualization platform. Currently &lt;code&gt;virtualbox-iso&lt;/code&gt;, &lt;code&gt;qemu&lt;/code&gt;, and &lt;code&gt;vmware-iso&lt;/code&gt; providers are supported. This will take a while the first time you run it since it has to download the OS installation ISO.&lt;/li&gt;
-&lt;li&gt;After the base Vagrant box is created you need to add it to your Vagrant environment. This can be done with the command &lt;code&gt;vagrant box add packer/builds/windows_2008_r2_*_0.1.0.box --name=metasploitable3-win2k8&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;vagrant plugin install vagrant-reload&lt;/code&gt; to install the reload vagrant provisioner if you haven't already.&lt;/li&gt;
-&lt;li&gt;To start the VM, run the command &lt;code&gt;vagrant up win2k8&lt;/code&gt;. This will start up the VM and run all of the installation and configuration scripts necessary to set everything up. This takes about 10 minutes.&lt;/li&gt;
-&lt;li&gt;Once this process completes, you can open up the VM within VirtualBox and login. The default credentials are U: vagrant and P: vagrant.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Videos:&lt;/p&gt;
-&lt;p&gt;Thanks to &lt;a href="https://twitter.com/webpwnized" rel="nofollow"&gt;Jeremy&lt;/a&gt;, you can also follow the steps in these videos to set up Metasploitable3:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/playlist?list=PLZOToVAK85MpnjpcVtNMwmCxMZRFaY6mT" rel="nofollow"&gt;https://www.youtube.com/playlist?list=PLZOToVAK85MpnjpcVtNMwmCxMZRFaY6mT&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-ub1404-development-and-modification" class="anchor" aria-hidden="true" href="#ub1404-development-and-modification"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ub1404 Development and Modification&lt;/h3&gt;
-&lt;p&gt;Using Vagrant and a lightweight Ubuntu 14.04 vagrant cloud box image, you can quickly set up and customize ub1404 Metasploitable3 for development or customization.
-To do so, install Vagrant and a hypervisor such as VirtualBox. Then, visit the &lt;code&gt;bento/ubuntu-14.04&lt;/code&gt; page and find a version that supports
-your hypervisor. For instance, version &lt;code&gt;v201808.24.0&lt;/code&gt; is compatible with VirtualBox.&lt;/p&gt;
-&lt;p&gt;Install the vagrant virtualbox vbguest plugin:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vagrant plugin install vagrant-vbguest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then, navigate to the &lt;code&gt;/chef/dev/ub1404&lt;/code&gt; directory in this repository. Examine the Vagrantfile there. Metasploitable ub1404 uses the vagrant &lt;code&gt;chef-solo&lt;/code&gt; provisioner.
-To this Vagrantfile, add the metasploitable chef recipes that you desire -- you can browse them in the &lt;code&gt;/chef/cookbooks/metasploitable&lt;/code&gt; folder. Or,
-add or edit your own cookbook and/or recipes there.&lt;/p&gt;
-&lt;p&gt;From the &lt;code&gt;/chef/dev/ub1404&lt;/code&gt; directory, you can run &lt;code&gt;vagrant up&lt;/code&gt; to get a development virtual ub1404 instance. After the initial &lt;code&gt;up&lt;/code&gt; build and provision,
-when you edit the chef runlist or when you edit a chef recipe, run &lt;code&gt;vagrant provision&lt;/code&gt; from the same directory. For faster development, you can comment-out
-recipes that you do not need to rerun -- but even if they are all enabled, vagrant provisioning should not take longer one or two minutes.
-Chef aims to be idempotent, so you can rerun this command often.&lt;/p&gt;
-&lt;p&gt;Consider taking a snapshot (e.g., &lt;code&gt;vagrant snapshot new fresh&lt;/code&gt;) before modifying recipes, so that you can always return to an initial state (&lt;code&gt;vagrant restore fresh&lt;/code&gt;).
-If you want a &lt;em&gt;totally&lt;/em&gt; fresh snapshot, you can do the initialization with &lt;code&gt;vagrant up --no-provision&lt;/code&gt;, then take a snapshot, followed by &lt;code&gt;vagrant provision&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-vulnerabilities" class="anchor" aria-hidden="true" href="#vulnerabilities"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vulnerabilities&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/rapid7/metasploitable3/wiki/Vulnerabilities"&gt;See the wiki page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-more-information" class="anchor" aria-hidden="true" href="#more-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More Information&lt;/h2&gt;
-&lt;p&gt;The wiki has a lot more detail and serves as the main source of documentation. Please &lt;a href="https://github.com/rapid7/metasploitable3/wiki/"&gt;check it out&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h2&gt;
-&lt;p&gt;The Windows portion of this project was based off of GitHub user &lt;a href="https://github.com/joefitzgerald"&gt;joefitzgerald's&lt;/a&gt; &lt;a href="https://github.com/joefitzgerald/packer-windows"&gt;packer-windows&lt;/a&gt; project.
-The Packer templates, original Vagrantfile, and installation answer files were used as the base template and built upon for the needs of this project.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>rapid7</author><guid isPermaLink="false">https://github.com/rapid7/metasploitable3</guid><pubDate>Tue, 24 Dec 2019 00:06:00 GMT</pubDate></item><item><title>hiiamrohit/Countries-States-Cities-database #7 in TSQL, This month</title><link>https://github.com/hiiamrohit/Countries-States-Cities-database</link><description>&lt;p&gt;&lt;i&gt;Database &amp; Dropdown Demo&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-database" class="anchor" aria-hidden="true" href="#database"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Database&lt;/h1&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>nobodyiam</author><guid isPermaLink="false">https://github.com/nobodyiam/apollo-build-scripts</guid><pubDate>Wed, 25 Dec 2019 00:06:00 GMT</pubDate></item><item><title>hiiamrohit/Countries-States-Cities-database #7 in TSQL, This month</title><link>https://github.com/hiiamrohit/Countries-States-Cities-database</link><description>&lt;p&gt;&lt;i&gt;Database &amp; Dropdown Demo&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-database" class="anchor" aria-hidden="true" href="#database"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Database&lt;/h1&gt;
 &lt;p&gt;City state country dropdown : &lt;a href="http://lab.iamrohit.in/php_ajax_country_state_city_dropdown/" rel="nofollow"&gt;http://lab.iamrohit.in/php_ajax_country_state_city_dropdown/&lt;/a&gt;
 Download full source code: &lt;a href="http://www.iamrohit.in/tag/php-ajax-country-state-city-dropdown" rel="nofollow"&gt;http://www.iamrohit.in/tag/php-ajax-country-state-city-dropdown&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;&lt;a id="user-content-note" class="anchor" aria-hidden="true" href="#note"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Note:&lt;/h1&gt;
 &lt;p&gt;*This Free database dose not guarantee for the complete list of world countries, states and cities.&lt;/p&gt;
 &lt;p&gt;*You can manually change the spelling mistakes, or add edit any records, which are not correct.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>hiiamrohit</author><guid isPermaLink="false">https://github.com/hiiamrohit/Countries-States-Cities-database</guid><pubDate>Tue, 24 Dec 2019 00:07:00 GMT</pubDate></item><item><title>MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution #8 in TSQL, This month</title><link>https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-dp-200-implementing-an-azure-data-solution" class="anchor" aria-hidden="true" href="#dp-200-implementing-an-azure-data-solution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DP-200-Implementing-an-Azure-Data-Solution&lt;/h1&gt;
-&lt;p&gt;During this course, the first and the last lab of the course are group exercises that involve discussion to help provide context for the labs that the students will take. The last lab provides the opportunity for the students to reflect on what they have achieved and what they have overcome to achieve the delivery of requirements from the case study in the labs. The rest of the labs are hands on implementing Azure data platform capabilities to meet AdventureWorks business requirements.&lt;/p&gt;
-&lt;p&gt;The following is a summary of the lab objectives for each module:&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-1---azure-for-the-data-engineer" class="anchor" aria-hidden="true" href="#lab-1---azure-for-the-data-engineer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 1 - Azure for the Data Engineer&lt;/h2&gt;
-&lt;p&gt;The students will take the information gained in the lessons and from the case study to scope out the deliverables for a digital transformation project within AdventureWorks. They will first identify how the evolving use of data has presented new opportunities for the organization. The students will also explore which Azure Data Platform services can be used to address the business needs and define the tasks that will be performed by the data engineer. Finally, students will finalize the data engineering deliverables for AdventureWorks.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-2---working-with-data-storage" class="anchor" aria-hidden="true" href="#lab-2---working-with-data-storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 2 - Working with Data Storage&lt;/h2&gt;
-&lt;p&gt;In this lab, the students will be able to determine the appropriate storage type to implement against a given set of business and technical requirements. They will be able to create Azure storage accounts and Data Lake Storage account and explain the difference between Data Lake Storage version 1 and version 2. They will also be able to demonstrate how to perform data loads into the data storage of choice.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-3---enabling-team-based-data-science-with-azure-databricks" class="anchor" aria-hidden="true" href="#lab-3---enabling-team-based-data-science-with-azure-databricks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 3 - Enabling Team Based Data Science with Azure Databricks&lt;/h2&gt;
-&lt;p&gt;By the end of this lab the student will be able to explain why Azure Databricks can be used to help in Data Science projects. The students will provision and Azure Databricks instance and will then create a workspace that will be used to perform a simple data preparation task from a Data Lake Store Gen II store. Finally, the student will perform a walk-through of performing transformations using Azure Databricks.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-4---building-globally-distributed-databases-with-cosmos-db" class="anchor" aria-hidden="true" href="#lab-4---building-globally-distributed-databases-with-cosmos-db"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 4 - Building Globally Distributed Databases with Cosmos DB&lt;/h2&gt;
-&lt;p&gt;The students will be able to describe and demonstrate the capabilities that Azure Cosmos DB can bring to an organization. They will be able to create a Cosmos DB instance and show how to upload and query data through a portal and through a .Net application. They will then be able to demonstrate how to enable global scale of the Cosmos DB database.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-5---working-with-relational-data-stores-in-the-cloud" class="anchor" aria-hidden="true" href="#lab-5---working-with-relational-data-stores-in-the-cloud"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 5 - Working with Relational Data Stores in the Cloud&lt;/h2&gt;
-&lt;p&gt;The students will be able to provision an Azure SQL Database and Azure Synapse Analytics to be able to issue queries against one of the instances that are created. They will be also be able to integrate Azure Synapse Analytics with a number of other Data platform technologies and use PolyBase to load data from one data source into a data warehouse.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-6---performing-real-time-analytics-with-stream-analytics" class="anchor" aria-hidden="true" href="#lab-6---performing-real-time-analytics-with-stream-analytics"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 6 - Performing Real-Time Analytics with Stream Analytics&lt;/h2&gt;
-&lt;p&gt;The students will be able to describe what data streams are and how event processing works and choose an appropriate data stream ingestion technology for the AdventureWorks case study. They will provision the chosen ingestion technology and integrate this with Stream Analytics to create a solution that works with streaming data.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-7---orchestrating-data-movement-with-azure-data-factory" class="anchor" aria-hidden="true" href="#lab-7---orchestrating-data-movement-with-azure-data-factory"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 7 - Orchestrating Data Movement with Azure Data Factory&lt;/h2&gt;
-&lt;p&gt;In this module, students will learn how Azure Data factory can be used to orchestrate the data movement from a wide range of data platform technologies. They will be able to explain the capabilities of the technology and be able to set up an end to end data pipeline that ingests data from SQL Database and load the data into SQL Data Warehouse. The student will also demonstrate how to call a compute resource.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-8---securing-azure-data-platforms" class="anchor" aria-hidden="true" href="#lab-8---securing-azure-data-platforms"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 8 - Securing Azure Data Platforms&lt;/h2&gt;
-&lt;p&gt;The students will be able to describe and document the different approaches to security that can be taken to provide defence in depth. This will involve the student documenting the security that has been set up so far in the course. It will also enable the students to identify any gaps in security that may exists for AdventureWorks.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-lab-9---monitoring-and-troubleshooting-data-storage-and-processing" class="anchor" aria-hidden="true" href="#lab-9---monitoring-and-troubleshooting-data-storage-and-processing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lab 9 - Monitoring and Troubleshooting Data Storage and Processing&lt;/h2&gt;
-&lt;p&gt;The students will be able to define a broad monitoring solution that can help them monitor issues that can occur in their data estate. The student will then experience common data storage issues and data processing issue that can occur in cloud data solution. Finally they will implement a disaster recovery approach for a Data Platform technology.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>MicrosoftLearning</author><guid isPermaLink="false">https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution</guid><pubDate>Tue, 24 Dec 2019 00:08:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>hiiamrohit</author><guid isPermaLink="false">https://github.com/hiiamrohit/Countries-States-Cities-database</guid><pubDate>Wed, 25 Dec 2019 00:07:00 GMT</pubDate></item><item><title>dr5hn/countries-states-cities-database #8 in TSQL, This month</title><link>https://github.com/dr5hn/countries-states-cities-database</link><description>&lt;p&gt;&lt;i&gt;All Countries, Cities, States with ISO2, ISO3, Country Code, Phone Code, Capital and Currency [countries.json, country.json, city.json, cities.json, state.json, states.json] [Linked with Each Other By ID] [Countries-States-Cities-database] &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-countries-states-cities-database-json--sql--php-export-json-script" class="anchor" aria-hidden="true" href="#countries-states-cities-database-json--sql--php-export-json-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Countries States Cities Database (JSON + SQL + PHP Export JSON Script)&lt;/h1&gt;
+&lt;p&gt;Full Database of city state country available in JSON &amp;amp; SQL Format
+All Countries, States &amp;amp; Cities are Covered &amp;amp; Populated with Different Combinations &amp;amp; Versions.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Countries &lt;code&gt;countries.json OR countries.sql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;States &lt;code&gt;states.json OR states.sql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Cities &lt;code&gt;cities.json OR cities.sql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Country + States &lt;code&gt;countries+states.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;State + Cities &lt;code&gt;states+cities.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Country + State + Cities &lt;code&gt;countries+states+cities.json OR world.sql&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Demo&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dr5hn.github.io/countries-states-cities-database/" rel="nofollow"&gt;https://dr5hn.github.io/countries-states-cities-database/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-insights" class="anchor" aria-hidden="true" href="#insights"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Insights&lt;/h2&gt;
+&lt;p&gt;Total Countries : 247 &lt;br&gt;
+Total States/Regions : 4,851 &lt;br&gt;
+Total Cities/Towns : 141,851 &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Last Updated On : 13th November 2019&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notes&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;This Free database does not guarantee for the complete list of world countries, states &amp;amp; cities.
+You can manually change the spelling mistakes, duplicates or add edit any records, which are incorrect.
+
+Reason behind making this repo: I ran through many websites to get perfect combination of state, city &amp;amp; countries.
+Some were with missing states, some with large filesize. So I thought to get it done on my own using PHP Script.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-contributions--suggestions--feedbacks" class="anchor" aria-hidden="true" href="#contributions--suggestions--feedbacks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions / Suggestions / Feedbacks&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Contibutions, Suggestions &amp;amp; Feedbacks are Most Welcome
+gadadarshan[at]gmail[dot]com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's all Folks. Enjoy.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dr5hn</author><guid isPermaLink="false">https://github.com/dr5hn/countries-states-cities-database</guid><pubDate>Wed, 25 Dec 2019 00:08:00 GMT</pubDate></item><item><title>APIJSON/APIJSON #9 in TSQL, This month</title><link>https://github.com/APIJSON/APIJSON</link><description>&lt;p&gt;&lt;i&gt;🏆Gitee Most Valuable Project🚀A JSON Transmission Protocol and an ORM Library for automatically providing APIs and Docs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1 align="center"&gt;&lt;a id="user-content---apijson" class="anchor" aria-hidden="true" href="#--apijson"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;
+  APIJSON
+&lt;/h1&gt;
+&lt;p align="center"&gt;&lt;g-emoji class="g-emoji" alias="trophy" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c6.png"&gt;🏆&lt;/g-emoji&gt;码云最有价值开源项目&lt;br&gt;&lt;g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png"&gt;🚀&lt;/g-emoji&gt;后端接口和文档自动化，前端(客户端) 定制返回JSON的数据和结构！&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/MySQL"&gt;&lt;img src="https://camo.githubusercontent.com/c6bb0a1a56f424cc3d8fa15a0eee00bc609bc2ed/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d7953514c2d352e372532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/MySQL-5.7%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/PostgreSQL"&gt;&lt;img src="https://camo.githubusercontent.com/fae9fc9bb6f29d752f8b84a4bb40ab5978717978/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f737467726553514c2d392e352532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/PostgreSQL-9.5%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/SQLServer"&gt;&lt;img src="https://camo.githubusercontent.com/8850eae0a2949561fe4d8c005cb6e4c748a3d381/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53514c5365727665722d323031362532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/SQLServer-2016%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/Oracle"&gt;&lt;img src="https://camo.githubusercontent.com/e27732cdf5f80fcadda5e8747e6e30b62fbcf1e5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f7261636c652d31312532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Oracle-11%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/MySQL"&gt;&lt;img src="https://camo.githubusercontent.com/ac057ca5185ece14a0c25bbcf595d003fa6ea617/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f546944422d322e312532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/TiDB-2.1%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-Java-Server"&gt;&lt;img src="https://camo.githubusercontent.com/5dbd243732ac9b93d60e4de7a12a3bb17c3fd89e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176612d312e372532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Java-1.7%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/liaozb/APIJSON.NET"&gt;&lt;img src="https://camo.githubusercontent.com/a79d76ad8b137bbcd97eb28a2ead327889a2f3e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4353686172702d322e312532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/CSharp-2.1%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/qq547057827/apijson-php"&gt;&lt;img src="https://camo.githubusercontent.com/195e6c2a2a47bbe5a38721033133c8c644452252/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5048502d372e302532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/PHP-7.0%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/kevinaskin/apijson-node"&gt;&lt;img src="https://camo.githubusercontent.com/4ae86a0a078dcb93faa66d98b6ab3f7bf3433a08/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d4553362532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Node.js-ES6%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/crazytaxi824/APIJSON"&gt;&lt;img src="https://camo.githubusercontent.com/01b14bed7096d65c3e72347b2ed2bd0b567ab14c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476f2d312e31322e342532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Go-1.12.4%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/zhangchunlin/uliweb-apijson"&gt;&lt;img src="https://camo.githubusercontent.com/60fef057f2246514f17d3a69235e0bed744f84b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d332532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Python-3%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-Android"&gt;&lt;img src="https://camo.githubusercontent.com/3cf274cce8c714ed1961b07c5d4a3b8399296291/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f416e64726f69642d342e302532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Android-4.0%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-iOS"&gt;&lt;img src="https://camo.githubusercontent.com/f4625c473b799cf311f0b49a7e0acc6dfcf8712f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f694f532d372532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/iOS-7%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-JavaScript"&gt;&lt;img src="https://camo.githubusercontent.com/8f93f0940b791af6eee348992359d166ad83e430/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4553362532422d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/JavaScript-ES6%2B-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/blob/master/README-English.md"&gt;English&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/blob/master/Document.md"&gt;通用文档&lt;/a&gt;
+  &lt;a href="http://i.youku.com/apijson" rel="nofollow"&gt;视频教程&lt;/a&gt;
+  &lt;a href="http://apijson.org/auto" rel="nofollow"&gt;在线工具&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/APIJSON/master/logo.png"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/APIJSON/master/logo.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;APIJSON是一种专为API而生的 JSON网络传输协议 以及 基于这套协议实现的ORM库。&lt;br&gt;
+为 简单的增删改查、复杂的查询、简单的事务操作 提供了完全自动化的API。&lt;br&gt;
+能大幅降低开发和沟通成本，简化开发流程，缩短开发周期。&lt;br&gt;
+适合中小型前后端分离的项目，尤其是互联网创业项目和企业自用项目。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;通过自动化API，前端可以定制任何数据、任何结构！&lt;br&gt;
+大部分HTTP请求后端再也不用写接口了，更不用写文档了！&lt;br&gt;
+前端再也不用和后端沟通接口或文档问题了！再也不会被文档各种错误坑了！&lt;br&gt;
+后端再也不用为了兼容旧接口写新版接口和文档了！再也不会被前端随时随地没完没了地烦了！&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON/APIJSONisOneOfTheGVPsIn2019-small.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON/APIJSONisOneOfTheGVPsIn2019-small.jpg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-特点功能" class="anchor" aria-hidden="true" href="#特点功能"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;特点功能&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-在线解析" class="anchor" aria-hidden="true" href="#在线解析"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;在线解析&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;自动生成接口文档，清晰可读永远最新&lt;/li&gt;
+&lt;li&gt;自动校验与格式化，支持高亮和收展&lt;/li&gt;
+&lt;li&gt;自动生成各种语言代码，一键下载&lt;/li&gt;
+&lt;li&gt;自动管理与测试接口用例，一键共享&lt;/li&gt;
+&lt;li&gt;自动给请求JSON加注释，一键切换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-对于前端" class="anchor" aria-hidden="true" href="#对于前端"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;对于前端&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;不用再向后端催接口、求文档&lt;/li&gt;
+&lt;li&gt;数据和结构完全定制，要啥有啥&lt;/li&gt;
+&lt;li&gt;看请求知结果，所求即所得&lt;/li&gt;
+&lt;li&gt;可一次获取任何数据、任何结构&lt;/li&gt;
+&lt;li&gt;能去除重复数据，节省流量提高速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-对于后端" class="anchor" aria-hidden="true" href="#对于后端"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;对于后端&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;提供通用接口，大部分API不用再写&lt;/li&gt;
+&lt;li&gt;自动生成文档，不用再编写和维护&lt;/li&gt;
+&lt;li&gt;自动校验权限、自动管理版本、自动防SQL注入&lt;/li&gt;
+&lt;li&gt;开放API无需划分版本，始终保持兼容&lt;/li&gt;
+&lt;li&gt;支持增删改查、模糊搜索、正则匹配、远程函数等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_get.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_get.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  多表关联查询、结构自由组合、多个测试账号、一键共享测试用例
+&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_code.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_code.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  自动生成封装请求JSON的Android与iOS代码、一键自动生成JavaBean或解析Response的代码
+&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_doc.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_doc.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  自动保存请求记录、自动生成接口文档，可添加常用请求、快捷查看一键恢复
+&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_test.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_test.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  一键自动接口回归测试，不需要写任何代码(注解、注释等全都不要)
+&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_summary.jpg"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_Auto_summary.jpg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  一图胜前言 - 部分基础功能概览
+&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+[以下Gif图看起来比较卡，实际在手机上App运行很流畅]
+&lt;br&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_MomentList_Circle.gif"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_MomentList_Circle.gif" alt="" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_Moment_Name.gif"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_Moment_Name.gif" alt="" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_Moment_Comment.gif"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/APIJSON_App_Moment_Comment.gif" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;a id="user-content-为什么要用apijson" class="anchor" aria-hidden="true" href="#为什么要用apijson"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;为什么要用APIJSON？&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/APIJSON/wiki"&gt;前后端 关于接口的 开发、文档、联调 等 10 大痛点解析&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-快速上手" class="anchor" aria-hidden="true" href="#快速上手"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;快速上手&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-1后端部署" class="anchor" aria-hidden="true" href="#1后端部署"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1.后端部署&lt;/h4&gt;
+&lt;p&gt;可以跳过这个步骤，直接用APIJSON服务器IP地址 apijson.cn:8080 来测试接口。&lt;br&gt;
+见  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-Java-Server"&gt;APIJSON后端部署 - Java&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-2前端部署" class="anchor" aria-hidden="true" href="#2前端部署"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.前端部署&lt;/h4&gt;
+&lt;p&gt;可以跳过这个步骤，直接使用 &lt;a href="https://github.com/TommyLemon/APIAuto"&gt;APIAuto-自动化接口管理工具&lt;/a&gt; 或 下载客户端App。&lt;br&gt;
+见  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-Android"&gt;Android&lt;/a&gt;  或  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-iOS"&gt;iOS&lt;/a&gt;  或  &lt;a href="https://github.com/TommyLemon/APIJSON/tree/master/APIJSON-JavaScript"&gt;JavaScript&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-下载客户端app" class="anchor" aria-hidden="true" href="#下载客户端app"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;下载客户端App&lt;/h3&gt;
+&lt;p&gt;仿微信朋友圈动态实战项目&lt;br&gt;
+&lt;a href="http://files.cnblogs.com/files/tommylemon/APIJSONApp.apk" rel="nofollow"&gt;APIJSONApp.apk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;测试及自动生成代码工具&lt;br&gt;
+&lt;a href="http://files.cnblogs.com/files/tommylemon/APIJSONTest.apk" rel="nofollow"&gt;APIJSONTest.apk&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-使用登记" class="anchor" aria-hidden="true" href="#使用登记"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;使用登记&lt;/h3&gt;
+&lt;div&gt;
+  &lt;a href="http://www.transsion.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a546d2e152f32244493da7d193b40ce36d548a27/687474703a2f2f7777772e7472616e7373696f6e2e636f6d2f7374617469632f696d616765732f6c6f676f2e6a7067" height="90" data-canonical-src="http://www.transsion.com/static/images/logo.jpg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://shebaochina.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/12f0cc75192e6e50c908f63ac17ab6375192fbb2/687474703a2f2f73686562616f6368696e612e636f6d2f7374617469632f636e2f696d672f696e6465782f6c6f676f2e706e67" height="90" data-canonical-src="http://shebaochina.com/static/cn/img/index/logo.png" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://www.xmfish.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b7b8ff76a2435bc16b337dc73c0d38f166cb8d5c/687474703a2f2f7777772e786d666973682e636f6d2f696d616765732f6368616e656c2f7777772f665f6c6f676f2e676966" height="90" data-canonical-src="http://www.xmfish.com/images/chanel/www/f_logo.gif" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://www.xxwolo.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/70effc036bd21b538a276ab32548386a975040fe/687474703a2f2f696d672e71696368616368612e636f6d2f50726f647563742f61393137666363612d666262312d343461322d613037392d3536393835656266386639632e6a7067" height="90" data-canonical-src="http://img.qichacha.com/Product/a917fcca-fbb1-44a2-a079-56985ebf8f9c.jpg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://t-think.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/676b659364b200694c04bbee9107b2358b381be4/687474703a2f2f742d7468696e6b2e636f6d2f696d672f6c6f676f2d312e706e67" height="90" data-canonical-src="http://t-think.com/img/logo-1.png" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://www.8soo.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ab1608776255dbaaeb1d077f3d3fa809d17bf8e2/687474703a2f2f7777312e73696e61696d672e636e2f6c617267652f373536646437323967773166396e35636b757136766a323038393032697438762e6a7067" height="90" data-canonical-src="http://ww1.sinaimg.cn/large/756dd729gw1f9n5ckuq6vj208902it8v.jpg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://hh.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c6cff142c23fb22af520cf60e42dd24b0c9442b8/68747470733a2f2f7777772e393830302e636f6d2f696d672f6c6f676f2e706e673f763d3139303332323031" height="90" data-canonical-src="https://www.9800.com/img/logo.png?v=19032201" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://www.aipaipai-inc.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5643514aaace0df15247f08c91f4653bada11d18/687474703a2f2f7777772e61697061697061692d696e632e636f6d2f75706c6f616466696c652f75706c6f61642f323031393034323931333430333032392e706e67" height="90" data-canonical-src="http://www.aipaipai-inc.com/uploadfile/upload/2019042913403029.png" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://www.shulian8.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5fedc699bdb764b0109167c6054714d27f0dd130/68747470733a2f2f626f6f6b73746f72652d70726f642e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f2545352539302538452545352538462542302545392541312542352545392539442541325f30332e706e67" height="90" data-canonical-src="https://bookstore-prod.oss-cn-hangzhou.aliyuncs.com/%E5%90%8E%E5%8F%B0%E9%A1%B5%E9%9D%A2_03.png" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="http://www.hec-bang.com" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7653b995e73584d1fb39c76df087c310b472f49e/687474703a2f2f7777772e6865632d62616e672e636f6d2f6173736574732f696d616765732f6c6f676f2d3230307835302e706e67" height="90" data-canonical-src="http://www.hec-bang.com/assets/images/logo-200x50.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/APIJSON/issues/73"&gt;更多 APIJSON 使用者&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-贡献者们" class="anchor" aria-hidden="true" href="#贡献者们"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;贡献者们&lt;/h3&gt;
+&lt;div&gt;
+  &lt;a href="https://github.com/TommyLemon"&gt;&lt;img src="https://avatars1.githubusercontent.com/u/5738175?s=400&amp;amp;u=5b2f372f0c03fae8f249d2d754e38971c2e17b92&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/41"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/39320217?s=460&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/43"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/23173448?s=460&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/47"&gt;&lt;img src="https://avatars2.githubusercontent.com/u/31512287?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/70"&gt;&lt;img src="https://avatars1.githubusercontent.com/u/22228201?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/74"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/1274536?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/APIJSON/APIJSON/pull/92"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/6327228?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/APIJSON/APIJSON/pull/103"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/25990237?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/69"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/13880474?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/72"&gt;&lt;img src="https://avatars1.githubusercontent.com/u/10663804?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TommyLemon/APIJSON/pull/33"&gt;&lt;img src="https://avatars1.githubusercontent.com/u/5328313?s=460&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;br&gt;
+  &lt;a href="https://github.com/liaozb/APIJSON.NET"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/12622501?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/qq547057827/apijson-php"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/1657532?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/kevinaskin/apijson-node"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/20034891?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/TEsTsLA/apijson"&gt;&lt;img src="https://avatars2.githubusercontent.com/u/17310639?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/zhangchunlin/uliweb-apijson"&gt;&lt;img src="https://avatars0.githubusercontent.com/u/359281?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/crazytaxi824/APIJSON"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/16500384?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/luckyxiaomo/APIJSONKOTLIN"&gt;&lt;img src="https://avatars2.githubusercontent.com/u/42728605?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://gitee.com/zhiyuexin/ApiJsonByJFinal" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/58f0e53a55f4bb8a506df37b92795a456662dbeb/68747470733a2f2f6176617461722e67697465652e636f6d2f75706c6f6164732f39302f3439305f7a686979756578696e2e6a7067216176617461723130303f31333638363634343939" height="72" width="72" data-canonical-src="https://avatar.gitee.com/uploads/90/490_zhiyuexin.jpg!avatar100?1368664499" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://github.com/Airforce-1/SpringServer1.2-APIJSON"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/6212428?s=400&amp;amp;v=4" height="72" width="72" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+感谢大家的贡献。
+&lt;h3&gt;&lt;a id="user-content-我要赞赏" class="anchor" aria-hidden="true" href="#我要赞赏"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;我要赞赏&lt;/h3&gt;
+&lt;p&gt;如果你喜欢 APIJSON，感觉 APIJSON 帮助到了你，可以点右上角 ⭐Star 支持一下，谢谢 ^_^ &lt;br&gt;
+你也还可以扫描下面的二维码，赞助点服务器和域名的购买及维护费用，或者请作者喝一杯咖啡~&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/pay/WechatPay.JPG"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/pay/WechatPay.JPG" width="240" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/pay/QQPay.JPG"&gt;&lt;img src="https://raw.githubusercontent.com/TommyLemon/StaticResources/master/pay/QQPay.JPG" width="240" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果希望捐赠之后能获得相关的帮助，可以选择加入下面的付费群来取代普通捐赠，可以获得作者的直接帮助。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果在捐赠留言中备注名称，将会被记录到列表中~ 如果你也是 Github 开源作者，&lt;br&gt;
+捐赠时可以留下 Github 项目地址或者个人主页地址，链接将会被添加到列表中起到互相推广的作用。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-技术交流" class="anchor" aria-hidden="true" href="#技术交流"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;技术交流&lt;/h3&gt;
+&lt;p&gt;如果有什么问题或建议可以 &lt;a href="https://github.com/TommyLemon/APIJSON/issues"&gt;提ISSUE&lt;/a&gt; 或 加群，交流技术，分享经验。&lt;br&gt;
+如果你解决了某些bug，或者新增了一些功能，欢迎 &lt;a href="https://github.com/TommyLemon/APIJSON/pulls"&gt;贡献代码&lt;/a&gt;，感激不尽~&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-qq解决群---607020115付费" class="anchor" aria-hidden="true" href="#qq解决群---607020115付费"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QQ解决群 - 607020115（付费）&lt;/h4&gt;
+&lt;p&gt;自开群以来，还是有很多的朋友提出了很多问题，我也解决了很多问题，其中有大半问题是本库的Bug导致，也有些是使用者项目本
+身的环境问题，这花费了我大量的时间，经过我的观察和测试，到目前为止，本库的bug已经越来越少，当然不能说完全没有，但是
+已经能满足很大部分项目的需求。所以从现在起，我做出一个决定：把之前的讨论群改成解决群，并开启付费入群功能，专为解决大
+家在使用本库时遇到的问题，不管是本库bug还是特殊的项目环境导致（包含项目本身的bug）。
+我也有自己的工作和娱乐时间，只有大家理解和支持我，我才能专心的为大家解决问题。不过也不用担心，我已经建立了另一个可以免费
+进入的QQ讨论群。&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-qq讨论群---734652054免费" class="anchor" aria-hidden="true" href="#qq讨论群---734652054免费"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QQ讨论群 - 734652054（免费）&lt;/h4&gt;
+&lt;p&gt;这个群，免费进入，大家可以相互讨论本库的相关使用和出现的问题，群主也会在里面解决问题，如果提出的问题，群成员不能帮助
+解决，需要群主解决，但是要花费群主五分钟以上的时间（本库Bug除外），群主将不会解决这个问题，如果项目紧急，请付费进入解
+决群解决（不过注意，付费群中群主会很认真很努力的解决问题，但也不能保证已经能完美解决）或者转换使用其他的开源库。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-相关推荐" class="anchor" aria-hidden="true" href="#相关推荐"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;相关推荐&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://my.oschina.net/tommylemon/blog/805459" rel="nofollow"&gt;APIJSON, 让接口和文档见鬼去吧！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://my.oschina.net/tommylemon/blog/885787" rel="nofollow"&gt;仿QQ空间和微信朋友圈，高解耦高复用高灵活&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://my.oschina.net/tommylemon/blog/1574430" rel="nofollow"&gt;后端开挂:3行代码写出8个接口！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://my.oschina.net/tommylemon/blog/1576587" rel="nofollow"&gt;后端自动化版本管理，再也不用改URL了！&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://my.oschina.net/tommylemon/blog/889074" rel="nofollow"&gt;3步创建APIJSON后端新表及配置&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.csdn.net/qq_41829492/article/details/88670940" rel="nofollow"&gt;APIJSON 自动化接口和文档的快速开发神器 （一）&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-生态项目" class="anchor" aria-hidden="true" href="#生态项目"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;生态项目&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/APIAuto"&gt;APIAuto&lt;/a&gt; 自动化接口管理工具，自动生成文档与注释、自动生成代码、自动化回归测试、自动静态检查等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/vincentCheng/apijson-doc"&gt;apijson-doc&lt;/a&gt; APIJSON 官方文档，提供排版清晰、搜索方便的文档内容展示，包括设计规范、图文教程等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/ruoranw/APIJSONdocs"&gt;APIJSONdocs&lt;/a&gt; APIJSON 英文文档，提供排版清晰的文档内容展示，包括详细介绍、设计规范、使用方式等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/APIJSON/apijson.org"&gt;apijson.org&lt;/a&gt; APIJSON 官方网站，提供 APIJSON 的 功能简介、登记用户、作者与贡献者、相关链接 等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/liaozb/APIJSON.NET"&gt;APIJSON.NET&lt;/a&gt; C# 版 APIJSON ，支持 MySQL, PostgreSQL, SQL Server, Oracle, SQLite&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/qq547057827/apijson-php"&gt;apijson-php&lt;/a&gt; PHP 版 APIJSON，基于 ThinkPHP，支持 MySQL, PostgreSQL, SQL Server, Oracle 等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/kevinaskin/apijson-node"&gt;apijson-node&lt;/a&gt; Node.ts 版 APIJSON，提供 nestjs 和 typeorm 的 Demo，支持 MySQL, PostgreSQL, SQL Server, Oracle&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/TEsTsLA/apijson"&gt;apijson&lt;/a&gt; Node.ts 版 APIJSON，支持 MySQL, PostgreSQL, SQL Server, Oracle, SQLite, MariaDB, WebSQL&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/zhangchunlin/uliweb-apijson"&gt;uliweb-apijson&lt;/a&gt; Python 版 APIJSON，支持 MySQL, PostgreSQL, SQL Server, Oracle, SQLite 等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/crazytaxi824/APIJSON"&gt;APIJSON&lt;/a&gt; Go 版 APIJSON，功能开发中...&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/luckyxiaomo/APIJSONKOTLIN"&gt;APIJSONKOTLIN&lt;/a&gt; Kotlin 版 APIJSON，基础框架搭建中...&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Zerounary/APIJSONParser"&gt;APIJSONParser&lt;/a&gt; 第三方 APIJSON 解析器，将 JSON 动态解析成 SQL&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gitee.com/zhiyuexin/ApiJsonByJFinal" rel="nofollow"&gt;ApiJsonByJFinal&lt;/a&gt; 整合 APIJSON 和 JFinal 的 Demo&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Airforce-1/SpringServer1.2-APIJSON"&gt;SpringServer1.2-APIJSON&lt;/a&gt; 智慧党建服务器端，提供 上传 和 下载 文件的接口&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/APIJSON/AbsGrade"&gt;AbsGrade&lt;/a&gt; 抽象列表分级工具，支持微信朋友圈单层评论、QQ空间双层评论、百度网盘多层(无限层)文件夹等&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/APIJSON-Android-RxJava"&gt;APIJSON-Android-RxJava&lt;/a&gt; 仿微信朋友圈动态实战项目，ZBLibrary(UI) + APIJSON(HTTP) + RxJava(Data)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/Android-ZBLibrary"&gt;Android-ZBLibrary&lt;/a&gt; Android MVP快速开发框架，Demo全面，注释详细，使用简单，代码严谨&lt;/p&gt;
+&lt;p&gt;感谢热心的作者们的贡献，点 ⭐Star 支持下他们吧。&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-持续更新" class="anchor" aria-hidden="true" href="#持续更新"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;持续更新&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/TommyLemon/APIJSON/commits/master"&gt;https://github.com/TommyLemon/APIJSON/commits/master&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-码云主页" class="anchor" aria-hidden="true" href="#码云主页"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;码云主页&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://gitee.com/TommyLemon/APIJSON" rel="nofollow"&gt;https://gitee.com/TommyLemon/APIJSON&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</description><author>APIJSON</author><guid isPermaLink="false">https://github.com/APIJSON/APIJSON</guid><pubDate>Wed, 25 Dec 2019 00:09:00 GMT</pubDate></item><item><title>charlesXu86/Chatbot_CN #10 in TSQL, This month</title><link>https://github.com/charlesXu86/Chatbot_CN</link><description>&lt;p&gt;&lt;i&gt;基于金融-司法领域(兼有闲聊性质)的聊天机器人，其中的主要模块有信息抽取、NLU、NLG、知识图谱等，并且利用Django整合了前端展示,目前已经封装了nlp和kg的restful接口&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-chatbot_cn--wwwchatbotcncom" class="anchor" aria-hidden="true" href="#chatbot_cn--wwwchatbotcncom"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Chatbot_CN  (&lt;a href="http://www.chatbotcn.com" rel="nofollow"&gt;www.chatbotcn.com&lt;/a&gt;)&lt;/h1&gt;
+&lt;h4&gt;&lt;a id="user-content-项目介绍chatbot_cn" class="anchor" aria-hidden="true" href="#项目介绍chatbot_cn"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;项目介绍(Chatbot_CN)&lt;/h4&gt;
+&lt;p&gt;该项目的目的为实现闲聊的聊天机器人，目前的领域主要针对金融领域&lt;/p&gt;
+&lt;p&gt;项目共分为七个模块，具体介绍可参照各模块目录下README文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Chatbot_CN       存放项目的整理配置文件
+Chatbot_Data     存放项目的数据文件以及模型训练文件
+Chatbot_Doc      存放项目的参考文献、笔记、收集的资料等文档文件
+Chatbot_Model    项目的模型实现
+Chatbot_KG       知识图谱实现
+Chatbot_Web      页面展示
+Chatbot_Rest     RESTful接口模块 (Chatbot_Rest/README.md)
+Chatbot_RASA     rasa模块，包含部分nlu和部分任务型对话。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-各个子模块介绍" class="anchor" aria-hidden="true" href="#各个子模块介绍"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;各个子模块介绍&lt;/h4&gt;
+&lt;p&gt;如上所示，目前Chatbot_CN包括七个子模块，现做简单介绍：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1、
+2、
+3、
+4、
+5、
+6、
+7、
+8、
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-项目结构图" class="anchor" aria-hidden="true" href="#项目结构图"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;项目结构图&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;Chatbot_CN
+├───Chatbot_CN  主要存放项目主体的配置文件
+│   ├───data (内部实验数据)
+│   │   ├───Attention-Based-BiLSTM-relation-extraction
+│   │   ├───Info-extra
+│   │   ├───lecture_2
+│   │   ├───NRE
+│   │   ├───pos-tagging
+│   │   ├───QA
+│   │   └───Relation_extraction
+│   ├───example
+│   │   ├───Attention-Based-BiLSTM-relation-extraction
+│   │   ├───glove
+│   │   ├───Info-extra
+│   │   ├───lecture_1
+│   │   ├───lecture_2
+│   │   ├───lecture_3
+│   │   ├───lecture_4
+│   │   ├───NER
+│   │   ├───NLP
+│   │   ├───NRE
+│   │   ├───POS-tagging
+│   │   ├───Relation Extraction
+│   │   ├───RL
+│   │   ├───Sequence_labeling
+│   │   ├───Synonyms
+│   │   ├───syntactic
+│   │   └───Syntactic_Parsing
+│   ├───jieba_dict
+│   ├───log
+│   ├───QuestionAnswering
+│   ├───RuleMatcher
+│   ├───task_modules
+│   ├───util
+│   └───Validation
+├───Chatbot_Data 主要存放数据文件及训练好的模型
+├───Chatbot_Doc  主要存放一些文档，paper，笔记等文档文件
+│   ├───cs224n
+│   ├───note
+│   ├───paper   （paper目录）
+│   │   ├───Attention
+│   │   ├───Co-reference Resolution
+│   │   ├───DeepDive
+│   │   ├───Dialogue System
+│   │   ├───Distant-Supervision
+│   │   ├───Entity Alignment
+│   │   ├───Entity Disambiguation
+│   │   ├───Entity Linking
+│   │   ├───Info-Extra
+│   │   │   ├───entity extraction
+│   │   │   ├───event extraction
+│   │   │   ├───relation extraction
+│   │   │   └───terminology extraction
+│   │   ├───Intent Detection
+│   │   ├───kg    知识图谱
+│   │   ├───KG Embeddings
+│   │   ├───Knowledge Base Completion
+│   │   ├───mulDialogue
+│   │   ├───NER
+│   │   ├───NLG
+│   │   ├───nlp
+│   │   ├───NLU
+│   │   ├───Pinyin2Chinese
+│   │   ├───QA
+│   │   ├───Representation-Learning
+│   │   ├───RL           强化学习
+│   │   ├───RL In Dialogue
+│   │   ├───Semantic Parsing
+│   │   ├───Semantic Role Labeling
+│   │   ├───Sentiment-Analyse
+│   │   ├───Seq2Seq
+│   │   ├───Shortest Dependency Path
+│   │   ├───Slot Filling
+│   │   ├───Syntax parsing
+│   │   ├───Textual Entailment
+│   │   ├───WordRepresentation
+│   │   └───因果推断
+│   ├───pic
+│   ├───小象Chatbot课件
+│   └───知识图谱课件
+├───Chatbot_KG   知识图谱
+├───Chatbot_Model   整个项目的模型实现
+└───output
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-安装教程" class="anchor" aria-hidden="true" href="#安装教程"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;安装教程&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1、项目的依赖包请参考Chatbot_CN根目录下的requirement.txt文件。
+2、1、导入sql文件到mysql，mysql数据主要作用为项目数据表，如用户注册、登录等。sql脚本文件上传在Chatbot_Data/DATA目录下，运行项目前需要将数据导入到mysql数据库，否则会启动报错
+   步骤：1、在Chatbot_CN目录下修改settings.py文件里的数据库配置
+        2、执行sql脚本，将数据导入到本地
+3、导入数据到Neo4J，Neo4j为支持知识图谱的图数据库查询，数据也存放在Chatbot_Data/DATA目录下。导入脚本也放在该目录下。
+   步骤：1、启动图数据库，将数据复制到import目录下
+        2、导入。图数据库的部分教程以及数据的导入命令，关系查询构建请移步：Chatbot_Doc/图数据库  目录下
+        3、修改项目中的Neo4j连接。文件位置在：Chatbot_KG/util下，neo_models.py
+        4、启动图数据库。启动命令为： neo4j.bat console   （win环境下）
+4、启动mongodb。 mongodb可选
+5、启动sparql。对项目启动可选
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-启动项目" class="anchor" aria-hidden="true" href="#启动项目"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;启动项目&lt;/h3&gt;
+&lt;p&gt;启动该项目可以选用两种方式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1、命令行启动： 启动命令为：  python manage.py runserver 
+2、在pycharm里配置，debug运行项目（断点运行），这样方便调试 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-额外说明" class="anchor" aria-hidden="true" href="#额外说明"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;额外说明&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;1、由于该项目涉及到前端、后台、深度学习、模型部署等等方面的问题，目前该项目是我一个人开发维护，还有不少前端和后台的问题存在，具体在项目运行中存在的问题，请参见PROBLEM_RESOLVE.md      
+2、需要注意Linux和window上的区别。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-项目架构" class="anchor" aria-hidden="true" href="#项目架构"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;项目架构&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-項目展示" class="anchor" aria-hidden="true" href="#項目展示"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;項目展示&lt;/h4&gt;
+&lt;p&gt;登錄頁
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/login.png"&gt;&lt;img src="Chatbot_Data/image/login.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+註冊頁
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/register.png"&gt;&lt;img src="Chatbot_Data/image/register.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+首页
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/main.png"&gt;&lt;img src="Chatbot_Data/image/main.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+模型（参考图）
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/model.png"&gt;&lt;img src="Chatbot_Data/image/model.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+SPARQL查询
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/sparql.png"&gt;&lt;img src="Chatbot_Data/image/sparql.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+信息检索
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2.png"&gt;&lt;img src="Chatbot_Data/image/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-知识图谱模块" class="anchor" aria-hidden="true" href="#知识图谱模块"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;知识图谱模块&lt;/h4&gt;
+&lt;p&gt;关系查询
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/%E5%85%B3%E7%B3%BB%E6%9F%A5%E8%AF%A2.png"&gt;&lt;img src="Chatbot_Data/image/%E5%85%B3%E7%B3%BB%E6%9F%A5%E8%AF%A2.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+问答
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/%E5%86%9C%E4%B8%9A%E9%97%AE%E7%AD%94.png"&gt;&lt;img src="Chatbot_Data/image/%E5%86%9C%E4%B8%9A%E9%97%AE%E7%AD%94.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+概览
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%A6%82%E8%A7%88.png"&gt;&lt;img src="Chatbot_Data/image/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%A6%82%E8%A7%88.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-演示" class="anchor" aria-hidden="true" href="#演示"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;演示&lt;/h4&gt;
+&lt;p&gt;1、闲聊部分
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/chat_1.jpg"&gt;&lt;img src="Chatbot_Data/image/chat_1.jpg" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="Chatbot_Data/image/chat_2.jpg"&gt;&lt;img src="Chatbot_Data/image/chat_2.jpg" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、任务型&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-备注" class="anchor" aria-hidden="true" href="#备注"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;备注&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1、各个模块的说明请参考各个模块下的README文件
+2、代码会有一些冗余，不是所有代码在Chatbot运行流程中都会用上，有一些代码供学习用
+3、目前正在封装接口，这样可以将Chatbot_Model 和 Chatbot_KG模块全部以RESTful api形式对外开放，提供远程调用。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-有关paper代码复现请关注另一个开源项目" class="anchor" aria-hidden="true" href="#有关paper代码复现请关注另一个开源项目"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;有关paper代码复现请关注另一个开源项目：&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://github.com/charlesXu86/PAPER-In-CODE"&gt;https://github.com/charlesXu86/PAPER-In-CODE&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-博客-httpsblogcsdnnetq_s_y_q" class="anchor" aria-hidden="true" href="#博客-httpsblogcsdnnetq_s_y_q"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;博客 ：&lt;a href="https://blog.csdn.net/Q_S_Y_Q" rel="nofollow"&gt;https://blog.csdn.net/Q_S_Y_Q&lt;/a&gt;&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-知乎专栏聊天机器人开发实战" class="anchor" aria-hidden="true" href="#知乎专栏聊天机器人开发实战"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;知乎专栏：聊天机器人开发实战&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-qq群-聊天机器人开发实战-718607564" class="anchor" aria-hidden="true" href="#qq群-聊天机器人开发实战-718607564"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QQ群： 聊天机器人开发实战 (718607564)&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-微信公众号-聊天机器人开发实战" class="anchor" aria-hidden="true" href="#微信公众号-聊天机器人开发实战"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;微信公众号： 聊天机器人开发实战&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-域名wwwchatbotcncom-目前尚未部署" class="anchor" aria-hidden="true" href="#域名wwwchatbotcncom-目前尚未部署"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;域名：&lt;a href="http://www.chatbotcn.com" rel="nofollow"&gt;www.chatbotcn.com&lt;/a&gt; (目前尚未部署)&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-说明" class="anchor" aria-hidden="true" href="#说明"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;说明&lt;/h4&gt;
+&lt;p&gt;持续更新中。。。&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-referrence" class="anchor" aria-hidden="true" href="#referrence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Referrence&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;OpenKE
+OpenNRE
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-licenses" class="anchor" aria-hidden="true" href="#licenses"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License(s)&lt;/h2&gt;
+&lt;p&gt;Various licenses apply. Please refer to the LICENSE and NOTICE files for more
+detailed information.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>charlesXu86</author><guid isPermaLink="false">https://github.com/charlesXu86/Chatbot_CN</guid><pubDate>Wed, 25 Dec 2019 00:10:00 GMT</pubDate></item></channel></rss>

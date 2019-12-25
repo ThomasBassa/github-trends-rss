@@ -1,5 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: CMake, This week</title><link>https://github.com/trending/cmake?since=weekly</link><description>The top repositories on GitHub for cmake, measured weekly</description><pubDate>Tue, 24 Dec 2019 01:08:24 GMT</pubDate><lastBuildDate>Tue, 24 Dec 2019 01:08:24 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>ethz-asl/ceres_catkin #1 in CMake, This week</title><link>https://github.com/ethz-asl/ceres_catkin</link><description>&lt;p&gt;&lt;i&gt;This repository contains ros-catkin files and a download/make script to checkout and build ceres.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ceres-catkin-wrapper" class="anchor" aria-hidden="true" href="#ceres-catkin-wrapper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ceres catkin wrapper&lt;/h1&gt;
+<rss version="2.0"><channel><title>GitHub Trending: CMake, This week</title><link>https://github.com/trending/cmake?since=weekly</link><description>The top repositories on GitHub for cmake, measured weekly</description><pubDate>Wed, 25 Dec 2019 01:07:20 GMT</pubDate><lastBuildDate>Wed, 25 Dec 2019 01:07:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>leetal/ios-cmake #1 in CMake, This week</title><link>https://github.com/leetal/ios-cmake</link><description>&lt;p&gt;&lt;i&gt;A CMake toolchain file for iOS, watchOS and tvOS C/C++/Obj-C++ development&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;A CMake toolchain file for iOS, watchOS and tvOS development with full simulator support and toggable options!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-new" class="anchor" aria-hidden="true" href="#new"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NEW!&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The toolchain now supports the new features introduced in CMake 3.14 that allows combined (FAT libraries) to be built.
+&lt;ul&gt;
+&lt;li&gt;Please see below for the "COMBINED" options that will build a static, combined FAT library by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;IOS_PLATFORM&lt;/code&gt; argument have been renamed to &lt;code&gt;PLATFORM&lt;/code&gt; to better align with how the toolchain will be used.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IOS_PLATFORM&lt;/code&gt; argument still exists, but is deprecated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MUCH better support for Xcode generated project on CMake 3.14+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-ios-cmake" class="anchor" aria-hidden="true" href="#ios-cmake"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ios-cmake&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/leetal/ios-cmake" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dd9491b057a7ab1e23f88f947de1d17871ff2877/68747470733a2f2f7472617669732d63692e6f72672f6c656574616c2f696f732d636d616b652e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/leetal/ios-cmake.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tested with the following combinations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;XCode 5.x, iOS SDK 7&lt;/li&gt;
+&lt;li&gt;XCode 6.1.x, iOS SDK 8.1&lt;/li&gt;
+&lt;li&gt;XCode 8.2.x, iOS SDK 10.2&lt;/li&gt;
+&lt;li&gt;XCode 9.4.x, iOS SDK 11.4&lt;/li&gt;
+&lt;li&gt;XCode 10.2.x, iOS SDK 12.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-example-usage" class="anchor" aria-hidden="true" href="#example-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example usage&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: The below commands will build for 64-bit simulator only. Change the &lt;code&gt;-DPLATFORM&lt;/code&gt; to the applicable value if targeting another platform.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cd&lt;/span&gt; example/example-lib
+mkdir build
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; build
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../../ios.toolchain.cmake -DPLATFORM=OS64COMBINED
+cmake --build &lt;span class="pl-c1"&gt;.&lt;/span&gt; --config Release --target install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will build and install the library for the given IOS_PLATFORM.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "SIMULATOR" to build for iOS simulator 32 bit (i386) &lt;strong&gt;DEPRECATED&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "SIMULATOR64" (example above) to build for iOS simulator 64 bit (x86_64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "OS" to build for Device (armv7, armv7s, arm64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "OS64" to build for Device (arm64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "OS64COMBINED" to build for Device &amp;amp; Simulator (FAT lib) (arm64, x86_64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "TVOS" to build for tvOS (arm64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "TVOSCOMBINED" to build for tvOS &amp;amp; Simulator (arm64, x86_64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "SIMULATOR_TVOS" to build for tvOS Simulator (x86_64)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "WATCHOS" to build for watchOS (armv7k, arm64_32)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "WATCHOSCOMBINED" to build for watchOS &amp;amp; Simulator (armv7k, arm64_32, i386)&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;-DPLATFORM&lt;/code&gt; to "SIMULATOR_WATCHOS" to build for watchOS Simulator (i386)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-combined-options" class="anchor" aria-hidden="true" href="#combined-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;COMBINED options&lt;/h3&gt;
+&lt;p&gt;The options called *COMBINED (OS64COMBINED, TVOSCOMBINED and WATCHOSCOMBINED) will build complete FAT-libraries for
+the given platform. These FAT-libraries include slices for both device and simulator, making the distribution and
+usage of the library much more simple!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: The COMBINED options &lt;em&gt;ONLY&lt;/em&gt; work with the Xcode generator (-G Xcode).&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-additional-options" class="anchor" aria-hidden="true" href="#additional-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional Options&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;-DENABLE_BITCODE=(BOOL)&lt;/code&gt; - Enabled by default, specify FALSE or 0 to disable bitcode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-DENABLE_ARC=(BOOL)&lt;/code&gt; - Enabled by default, specify FALSE or 0 to disable ARC&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-DENABLE_VISIBILITY=(BOOL)&lt;/code&gt; - Disabled by default, specify TRUE or 1 to enable symbol visibility support&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-DENABLE_STRICT_TRY_COMPILE=(BOOL)&lt;/code&gt; - Disabled by default, specify TRUE or 1 to enable strict compiler checks (will run linker on all compiler checks whenever needed)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-DARCHS=(STRING)&lt;/code&gt; - Valid values are: armv7, armv7s, arm64, i386, x86_64, armv7k, arm64_32. By default it will build for all valid architectures based on &lt;code&gt;-DPLATFORM&lt;/code&gt; (see above)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;To combine all platforms into the same FAT-library, either build any of the "&lt;em&gt;COMBINED&lt;/em&gt;" platform types OR use the
+LIPO tool. More information on how to combine libraries with LIPO is readily available on the net.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks-to" class="anchor" aria-hidden="true" href="#thanks-to"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks To&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/natbro"&gt;natbro&lt;/a&gt; for adding tvOS support&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/MSNexploder"&gt;MSNexploder&lt;/a&gt; for adding OS64 and arm64e support&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/garryyan"&gt;garryyan&lt;/a&gt; for adding watchOS support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Notes&lt;/h2&gt;
+&lt;p&gt;Parts of the original toolchain comes from a similar project found on code.google.com&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>leetal</author><guid isPermaLink="false">https://github.com/leetal/ios-cmake</guid><pubDate>Wed, 25 Dec 2019 00:01:00 GMT</pubDate></item><item><title>conan-io/cmake-conan #2 in CMake, This week</title><link>https://github.com/conan-io/cmake-conan</link><description>&lt;p&gt;&lt;i&gt;CMake wrapper for conan C and C++ package manager&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-cmake-conan" class="anchor" aria-hidden="true" href="#cmake-conan"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cmake-conan&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://ci.appveyor.com/project/ConanCIintegration/cmake-conan/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e2f89d237a11713813ed71cb1f73fb8116f33b83/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f3079323939346c6677637077393233322f6272616e63682f6d61737465723f7376673d74727565" alt="Build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/0y2994lfwcpw9232/branch/master?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/conan-io/cmake-conan" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1eed31ea05fb41ebe9e4a92e0be57f52480b4650/68747470733a2f2f7472617669732d63692e6f72672f636f6e616e2d696f2f636d616b652d636f6e616e2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/conan-io/cmake-conan.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CMake wrapper for the Conan C and C++ package manager.&lt;/p&gt;
+&lt;p&gt;This cmake module allows to launch &lt;code&gt;conan install&lt;/code&gt; from cmake.&lt;/p&gt;
+&lt;p&gt;The branches in this repo are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;develop&lt;/strong&gt;: PR are merged to this branch. Latest state of development&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;master&lt;/strong&gt;: Latest release&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tagged releases&lt;/strong&gt;: &lt;a href="https://github.com/conan-io/cmake-conan/releases"&gt;https://github.com/conan-io/cmake-conan/releases&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You probably want to use a tagged release to ensure controlled upgrades.&lt;/p&gt;
+&lt;p&gt;You can just clone or grab the &lt;em&gt;conan.cmake&lt;/em&gt; file and put in in your project.
+Or it can be used in this way. Note the &lt;code&gt;v0.14&lt;/code&gt; tag in the URL, change it to point to your desired release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;cmake_minimum_required&lt;/span&gt;(&lt;span class="pl-k"&gt;VERSION&lt;/span&gt; 2.8)
+&lt;span class="pl-c1"&gt;project&lt;/span&gt;(myproject CXX)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Download automatically, you can also just copy the conan.cmake file&lt;/span&gt;
+&lt;span class="pl-k"&gt;if&lt;/span&gt;(&lt;span class="pl-k"&gt;NOT&lt;/span&gt; &lt;span class="pl-k"&gt;EXISTS&lt;/span&gt; &lt;span class="pl-s"&gt;"&lt;span class="pl-smi"&gt;${CMAKE_BINARY_DIR}&lt;/span&gt;/conan.cmake"&lt;/span&gt;)
+   &lt;span class="pl-c1"&gt;message&lt;/span&gt;(STATUS &lt;span class="pl-s"&gt;"Downloading conan.cmake from https://github.com/conan-io/cmake-conan"&lt;/span&gt;)
+   &lt;span class="pl-c1"&gt;file&lt;/span&gt;(&lt;span class="pl-k"&gt;DOWNLOAD&lt;/span&gt; &lt;span class="pl-s"&gt;"https://github.com/conan-io/cmake-conan/raw/v0.14/conan.cmake"&lt;/span&gt;
+                 &lt;span class="pl-s"&gt;"&lt;span class="pl-smi"&gt;${CMAKE_BINARY_DIR}&lt;/span&gt;/conan.cmake"&lt;/span&gt;)
+&lt;span class="pl-k"&gt;endif&lt;/span&gt;()
+
+&lt;span class="pl-c1"&gt;include&lt;/span&gt;(&lt;span class="pl-smi"&gt;${CMAKE_BINARY_DIR}&lt;/span&gt;/conan.cmake)
+
+conan_cmake_run(REQUIRES Hello/0.1@memsharded/testing
+                BASIC_SETUP 
+                &lt;span class="pl-k"&gt;BUILD&lt;/span&gt; missing)
+
+&lt;span class="pl-c1"&gt;add_executable&lt;/span&gt;(main main.cpp)
+&lt;span class="pl-c1"&gt;target_link_libraries&lt;/span&gt;(main &lt;span class="pl-smi"&gt;${CONAN_LIBS}&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-conan_cmake_run-options" class="anchor" aria-hidden="true" href="#conan_cmake_run-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;conan_cmake_run() options&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-requires-options" class="anchor" aria-hidden="true" href="#requires-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REQUIRES, OPTIONS&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;conan_cmake_run(REQUIRES Hello/0.1@memsharded/testing
+                         Bye/2.1@otheruser/testing
+                &lt;span class="pl-k"&gt;OPTIONS&lt;/span&gt; Pkg:shared=True
+                        OtherPkg:option=value
+                )&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Define requirements and their options. These values are written to a temporary &lt;code&gt;conanfile.py&lt;/code&gt;. If you need more advanced functionality, like conditional requirements, you can define your own &lt;code&gt;conanfile.txt&lt;/code&gt; or &lt;code&gt;conanfile.py&lt;/code&gt; and provide
+it with the &lt;code&gt;CONANFILE&lt;/code&gt; argument&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cmake_targets" class="anchor" aria-hidden="true" href="#cmake_targets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CMAKE_TARGETS&lt;/h3&gt;
+&lt;p&gt;If you want to use targets, you could do:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(REQUIRES Hello/0.1@memsharded/testing
+                BASIC_SETUP CMAKE_TARGETS
+                &lt;span class="pl-k"&gt;BUILD&lt;/span&gt; missing)
+
+&lt;span class="pl-c1"&gt;add_executable&lt;/span&gt;(main main.cpp)
+&lt;span class="pl-c1"&gt;target_link_libraries&lt;/span&gt;(main CONAN_PKG::Hello)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will do a &lt;code&gt;conan_basic_setup(TARGETS)&lt;/code&gt; for modern CMake targets definition.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-conanfile" class="anchor" aria-hidden="true" href="#conanfile"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CONANFILE&lt;/h3&gt;
+&lt;p&gt;If you want to use your own &lt;code&gt;conanfile.txt&lt;/code&gt; or &lt;code&gt;conanfile.py&lt;/code&gt; instead of generating a temporary one, you could do:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(CONANFILE conanfile.txt  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; or relative build/conanfile.txt&lt;/span&gt;
+                BASIC_SETUP CMAKE_TARGETS
+                &lt;span class="pl-k"&gt;BUILD&lt;/span&gt; missing)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The resolution of the path will be relative to the root &lt;code&gt;CMakeLists.txt&lt;/code&gt; file.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-keep_rpaths" class="anchor" aria-hidden="true" href="#keep_rpaths"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KEEP_RPATHS&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(CONANFILE conanfile.txt
+                BASIC_SETUP KEEP_RPATHS)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-no_output_dirs" class="anchor" aria-hidden="true" href="#no_output_dirs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NO_OUTPUT_DIRS&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(CONANFILE conanfile.txt
+                BASIC_SETUP NO_OUTPUT_DIRS)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pass to &lt;code&gt;conan_basic_setup(NO_OUTPUT_DIRS)&lt;/code&gt; so &lt;em&gt;conanbuildinfo.cmake&lt;/em&gt; does not change the output directories (lib, bin).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-arch" class="anchor" aria-hidden="true" href="#arch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ARCH&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(ARCH armv7)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use it to override the architecture detection and force to call conan with the provided one. The architecture should
+exist in &lt;em&gt;settings.yml&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-build_type" class="anchor" aria-hidden="true" href="#build_type"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BUILD_TYPE&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(BUILD_TYPE &lt;span class="pl-s"&gt;"None"&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use it to override the build_type detection and force to call conan with the provided one. The build type should
+exist in &lt;em&gt;settings.yml&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-profile" class="anchor" aria-hidden="true" href="#profile"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROFILE&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(PROFILE default)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use it to use the "default" (or your own profile) conan profile rather than inferring settings from CMake.
+When it is defined, the CMake automatically detected settings are not used at all,
+and are overridden by the values from the profile.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-profile_auto" class="anchor" aria-hidden="true" href="#profile_auto"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROFILE_AUTO&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(PROFILE default
+                PROFILE_AUTO build_type)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Use the CMake automatically detected value, instead of the profile one. The above
+means use the profile named "default", but override its content with the &lt;code&gt;build_type&lt;/code&gt;
+automatically detected by CMake.&lt;/p&gt;
+&lt;p&gt;The precedence for settings definition is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CMake detected &amp;lt; PROFILE &amp;lt; PROFILE_AUTO &amp;lt; Explicit ``conan_cmake_run()`` args
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;ALL&lt;/code&gt; value is used to use all detected settings from CMake, instead of the ones
+defined in the profile:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(PROFILE default
+                PROFILE_AUTO &lt;span class="pl-k"&gt;ALL&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is still useful, as the profile can have many other things defined (options, build_requires, etc).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cmake_build_type" class="anchor" aria-hidden="true" href="#cmake_build_type"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CMAKE_BUILD_TYPE&lt;/h3&gt;
+&lt;p&gt;To use the &lt;a href="http://docs.conan.io/en/latest/integrations/cmake.html#cmake-multi-configuration-environments" rel="nofollow"&gt;cmake_multi&lt;/a&gt; generator you just need to make sure &lt;code&gt;CMAKE_BUILD_TYPE&lt;/code&gt; is empty and use a CMake generator that supports multi-configuration.&lt;/p&gt;
+&lt;p&gt;If the &lt;code&gt;BUILD_TYPE&lt;/code&gt; is explictly passed to &lt;code&gt;conan_cmake_run()&lt;/code&gt;, then single configuration &lt;code&gt;cmake&lt;/code&gt; generator will be used.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-settings" class="anchor" aria-hidden="true" href="#settings"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SETTINGS&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(...
+                SETTINGS arch=armv6
+                SETTINGS cppstd=14)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-env" class="anchor" aria-hidden="true" href="#env"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENV&lt;/h3&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(...
+                &lt;span class="pl-k"&gt;ENV&lt;/span&gt; env_var=value
+                &lt;span class="pl-k"&gt;ENV&lt;/span&gt; Pkg:env_var2=value2)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Define command line environment variables. Even if with CMake it is also possible to
+directly define environment variables, with this syntax you can define environment
+variables per-package, as the above is equivalent to:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ conan install .... -e env_var=value -e Pkg:env_var2=value&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If environment variables were defined in a given profile, command line arguments
+have higher precedence, so these values would be used instead of the profiles ones.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-install_folder" class="anchor" aria-hidden="true" href="#install_folder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;INSTALL_FOLDER&lt;/h3&gt;
+&lt;p&gt;Provide the &lt;code&gt;conan install --install-folder=[folder]&lt;/code&gt; argument:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(...
+                INSTALL_FOLDER myfolder
+                )&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-generators" class="anchor" aria-hidden="true" href="#generators"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GENERATORS&lt;/h3&gt;
+&lt;p&gt;Add additional &lt;a href="https://docs.conan.io/en/latest/reference/generators.html?highlight=generator" rel="nofollow"&gt;generators&lt;/a&gt;. It may useful to add the &lt;a href="https://docs.conan.io/en/latest/mastering/virtualenv.html#virtualrunenv-generator" rel="nofollow"&gt;virtualrunenv&lt;/a&gt;-generator:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+conan_cmake_run(...
+                GENERATORS virtualrunenv)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-other-macros-and-functions" class="anchor" aria-hidden="true" href="#other-macros-and-functions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other macros and functions&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-conan_check" class="anchor" aria-hidden="true" href="#conan_check"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;conan_check()&lt;/h3&gt;
+&lt;p&gt;Checks conan availability in PATH.
+Arguments &lt;code&gt;REQUIRED&lt;/code&gt; and &lt;code&gt;VERSION&lt;/code&gt; are optional.&lt;/p&gt;
+&lt;p&gt;Example usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conan_check(VERSION 1.0.0 REQUIRED)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-conan_add_remote" class="anchor" aria-hidden="true" href="#conan_add_remote"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;conan_add_remote()&lt;/h3&gt;
+&lt;p&gt;Adds a remote.
+Arguments &lt;code&gt;URL&lt;/code&gt; and &lt;code&gt;NAME&lt;/code&gt; are required, &lt;code&gt;INDEX&lt;/code&gt; is optional.&lt;/p&gt;
+&lt;p&gt;Example usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conan_add_remote(NAME bincrafters INDEX 1
+            URL https://api.bintray.com/conan/bincrafters/public-conan)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-creating-packages" class="anchor" aria-hidden="true" href="#creating-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Creating packages&lt;/h2&gt;
+&lt;p&gt;This cmake wrapper launches conan, installing dependencies, and injecting a &lt;code&gt;conan_basic_setup()&lt;/code&gt; call. So it is for end-users only, but not necessary at all for creating packages, because conan already downloaded and installed dependencies the moment that a package needs to be built. If you are using the same CMakeLists.txt for both consuming and creating packages, consider doing something like:&lt;/p&gt;
+&lt;div class="highlight highlight-source-cmake"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;if&lt;/span&gt;(CONAN_EXPORTED) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; in conan local cache&lt;/span&gt;
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; standard conan installation, deps will be defined in conanfile.py&lt;/span&gt;
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; and not necessary to call conan again, conan is already running&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;include&lt;/span&gt;(&lt;span class="pl-smi"&gt;${CMAKE_BINARY_DIR}&lt;/span&gt;/conanbuildinfo.cmake)
+    conan_basic_setup()
+&lt;span class="pl-k"&gt;else&lt;/span&gt;() &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; in user space&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;include&lt;/span&gt;(conan.cmake)
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Make sure to use conanfile.py to define dependencies, to stay consistent&lt;/span&gt;
+    conan_cmake_run(CONANFILE conanfile.py
+                    BASIC_SETUP)
+&lt;span class="pl-k"&gt;endif&lt;/span&gt;()&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Please check the source code for other options and arguments.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-development-contributors" class="anchor" aria-hidden="true" href="#development-contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development, contributors&lt;/h2&gt;
+&lt;p&gt;There are some tests, you can run in python, with nosetests, for example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ nosetests &lt;span class="pl-c1"&gt;.&lt;/span&gt; --nocapture&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>conan-io</author><guid isPermaLink="false">https://github.com/conan-io/cmake-conan</guid><pubDate>Wed, 25 Dec 2019 00:02:00 GMT</pubDate></item><item><title>ethz-asl/ceres_catkin #3 in CMake, This week</title><link>https://github.com/ethz-asl/ceres_catkin</link><description>&lt;p&gt;&lt;i&gt;This repository contains ros-catkin files and a download/make script to checkout and build ceres.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ceres-catkin-wrapper" class="anchor" aria-hidden="true" href="#ceres-catkin-wrapper"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ceres catkin wrapper&lt;/h1&gt;
 &lt;p&gt;This repository contains catkin simple files to checkout and build ceres and its dependencies.
 In order to use the ceres covariance computation, you must use an PIC version of suitesparse:&lt;/p&gt;
 &lt;ul&gt;
@@ -12,4 +240,7 @@ In order to use the ceres covariance computation, you must use an PIC version of
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>ethz-asl</author><guid isPermaLink="false">https://github.com/ethz-asl/ceres_catkin</guid><pubDate>Tue, 24 Dec 2019 00:01:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>ethz-asl</author><guid isPermaLink="false">https://github.com/ethz-asl/ceres_catkin</guid><pubDate>Wed, 25 Dec 2019 00:03:00 GMT</pubDate></item><item><title>ethz-asl/suitesparse #4 in CMake, This week</title><link>https://github.com/ethz-asl/suitesparse</link><description>&lt;p&gt;&lt;i&gt;A catkin wrapper package for Dr. Tim Davis Suitesparse 4.2.1 (with PIC) http://faculty.cse.tamu.edu/davis/suitesparse.html&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-suitesparse" class="anchor" aria-hidden="true" href="#suitesparse"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;suitesparse&lt;/h1&gt;
+&lt;p&gt;A catkin wrapper package for Dr. Tim Davis Suitesparse 4.2.1 (with PIC) &lt;a href="http://faculty.cse.tamu.edu/davis/suitesparse.html" rel="nofollow"&gt;http://faculty.cse.tamu.edu/davis/suitesparse.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://129.132.38.183:8080/buildStatus/icon?job=suitesparse" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1e5f0d6a2f7d5b1b2f50af743a1ed8e6a9e21df8/687474703a2f2f3132392e3133322e33382e3138333a383038302f6275696c645374617475732f69636f6e3f6a6f623d7375697465737061727365" alt="Build Status" data-canonical-src="http://129.132.38.183:8080/buildStatus/icon?job=suitesparse" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ethz-asl</author><guid isPermaLink="false">https://github.com/ethz-asl/suitesparse</guid><pubDate>Wed, 25 Dec 2019 00:04:00 GMT</pubDate></item></channel></rss>
