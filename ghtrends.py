@@ -135,26 +135,35 @@ class FetchJob:
 
         self.repos = []
 
+        if session.closed:
+            print('HTTP session was closed before able to fetch '
+                    '{0.lang_name}/{0.period_name}!', self)
+            return self
+
         if self.lang_machine_name != ALL_LANG[0]:
             #Random delay to avoid choking on too many requests...
-            delay = random.randint(1, 90)
+            delay = random.randint(1, 100)
             await asyncio.sleep(delay)
 
-        tree = await get_page_tree(self.url, session)
-        #tree = await get_disk_tree(self.url)
-        articles = tree.cssselect("article.Box-row")
-        for li in articles:
-            a = li.cssselect("h1 a")[0]
-            repo_name = a.get("href")[1:] #remove the leading /
+        try:
+            tree = await get_page_tree(self.url, session)
+            #tree = await get_disk_tree(self.url)
+            articles = tree.cssselect("article.Box-row")
+            for li in articles:
+                a = li.cssselect("h1 a")[0]
+                repo_name = a.get("href")[1:] #remove the leading /
 
-            #We can get descr here, but let's use GH api instead
-            #description = ""
-            #ps = li.cssselect("p")
-            #if len(ps) > 0:
-            #    description = ps[0].text_content().strip()
-            #repo['description'] = description
+                #We can get descr here, but let's use GH api instead
+                #description = ""
+                #ps = li.cssselect("p")
+                #if len(ps) > 0:
+                #    description = ps[0].text_content().strip()
+                #repo['description'] = description
 
-            self.repos.append(repo_name)
+                self.repos.append(repo_name)
+        except aiohttp.ClientPayloadError as e:
+            print('Something went wrong fetching repos for '
+                    '{0.lang_name}/{0.period_name}: {1}', self, str(e))
 
         print('Found {0} repos for {1.lang_name}/{1.period_name}'
                 .format(len(self.repos), self))
