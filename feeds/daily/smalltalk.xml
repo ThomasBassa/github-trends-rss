@@ -1,2 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Smalltalk, Today</title><link>https://github.com/trending/smalltalk?since=daily</link><description>The top repositories on GitHub for smalltalk, measured daily</description><pubDate>Thu, 26 Dec 2019 01:12:56 GMT</pubDate><lastBuildDate>Thu, 26 Dec 2019 01:12:56 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Smalltalk, Today today</title><pubDate>Thu, 26 Dec 2019 01:12:56 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Smalltalk, Today</title><link>https://github.com/trending/smalltalk?since=daily</link><description>The top repositories on GitHub for smalltalk, measured daily</description><pubDate>Fri, 27 Dec 2019 01:02:19 GMT</pubDate><lastBuildDate>Fri, 27 Dec 2019 01:02:19 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>svenvc/zinc #1 in Smalltalk, Today</title><link>https://github.com/svenvc/zinc</link><description>&lt;p&gt;&lt;i&gt;Zinc HTTP Components is an open-source Smalltalk framework to deal with the HTTP networking protocol.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-zinc-http-components" class="anchor" aria-hidden="true" href="#zinc-http-components"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Zinc HTTP Components&lt;/h1&gt;
+&lt;p&gt;Zinc HTTP Components is an open-source Smalltalk framework
+to deal with the HTTP networking protocol.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/svenvc/zinc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5583d0b1d39f340b9d2fef90bfc4a4d0c4b6092d/68747470733a2f2f7472617669732d63692e6f72672f7376656e76632f7a696e632e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/svenvc/zinc.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Based on core classes modelling all main HTTP concepts, a full featured HTTP client and server are provided.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-api" class="anchor" aria-hidden="true" href="#api"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API&lt;/h2&gt;
+&lt;p&gt;Here are a couple of simple examples to give an impression of the API.
+You start a default (easy to reference) HTTP server with just one line of code.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;ZnServer&lt;/span&gt; &lt;span class="pl-c1"&gt;startDefaultOn:&lt;/span&gt; &lt;span class="pl-c1"&gt;1701&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can browse locally to &lt;a href="http://localhost:1701" rel="nofollow"&gt;http://localhost:1701&lt;/a&gt; - in particular have a look at the /help section and /echo - these are part of a set of demonstration handlers.&lt;/p&gt;
+&lt;p&gt;Accessing the server that we just started from code is easy too.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;ZnClient&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; 
+  &lt;span class="pl-c1"&gt;url:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZnServer&lt;/span&gt; default localUrl; 
+  &lt;span class="pl-c1"&gt;addPathSegment:&lt;/span&gt; &lt;span class="pl-c1"&gt;#echo&lt;/span&gt;; 
+  &lt;span class="pl-c1"&gt;entity:&lt;/span&gt; (&lt;span class="pl-c1"&gt;ZnEntity&lt;/span&gt; &lt;span class="pl-c1"&gt;text:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Hello&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;); 
+  post.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This builds an HTTP POST to our server's /echo handler with a simple text as resource. The server will echo information about the request it received, including the text resource that you posted.&lt;/p&gt;
+&lt;p&gt;By default, the demonstration server has a couple of handlers, mostly for testing. You can add your own, to do additions (sum two numbers), for example.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;ZnServer&lt;/span&gt; default delegate 
+  &lt;span class="pl-c1"&gt;map:&lt;/span&gt; &lt;span class="pl-c1"&gt;#adder&lt;/span&gt; &lt;span class="pl-c1"&gt;to:&lt;/span&gt; [ &lt;span class="pl-en"&gt;:request&lt;/span&gt; | | &lt;span class="pl-c1"&gt;x&lt;/span&gt; &lt;span class="pl-c1"&gt;y&lt;/span&gt; &lt;span class="pl-c1"&gt;sum&lt;/span&gt; |
+    x &lt;span class="pl-k"&gt;:=&lt;/span&gt; (request uri &lt;span class="pl-c1"&gt;queryAt:&lt;/span&gt; &lt;span class="pl-c1"&gt;#x&lt;/span&gt;) asNumber.
+    y &lt;span class="pl-k"&gt;:=&lt;/span&gt; (request uri &lt;span class="pl-c1"&gt;queryAt:&lt;/span&gt; &lt;span class="pl-c1"&gt;#y&lt;/span&gt;) asNumber.
+    sum &lt;span class="pl-k"&gt;:=&lt;/span&gt; x &lt;span class="pl-k"&gt;+&lt;/span&gt; y.
+    &lt;span class="pl-c1"&gt;ZnResponse&lt;/span&gt; &lt;span class="pl-c1"&gt;ok:&lt;/span&gt; (&lt;span class="pl-c1"&gt;ZnEntity&lt;/span&gt; &lt;span class="pl-c1"&gt;text:&lt;/span&gt; sum asString) ].&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This creates a new handler /adder that will take 2 query arguments, converts them to numbers and returns the result of adding them together.&lt;/p&gt;
+&lt;p&gt;Using the full client, we can test our new functionality.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;ZnClient&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; 
+  &lt;span class="pl-c1"&gt;url:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZnServer&lt;/span&gt; default localUrl; 
+  &lt;span class="pl-c1"&gt;addPathSegment:&lt;/span&gt; &lt;span class="pl-c1"&gt;#adder&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;queryAt:&lt;/span&gt; &lt;span class="pl-c1"&gt;#x&lt;/span&gt; &lt;span class="pl-c1"&gt;put:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;queryAt:&lt;/span&gt; &lt;span class="pl-c1"&gt;#y&lt;/span&gt; &lt;span class="pl-c1"&gt;put:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;;
+  get.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This builds an appropriate request to our /adder and executes it.
+By entering the proper URL directly, this becomes a one liner.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http://localhost:1701/adder?x=1&amp;amp;y=2&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; asUrl retrieveContents.&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Over the years, various documentation has been written about Zinc HTTP Components.
+Some of it is somewhat outdated. We list the most recent first.&lt;/p&gt;
+&lt;p&gt;The code base has decent class and method comments, as well as unit tests and examples.&lt;/p&gt;
+&lt;p&gt;The best starter documentation can be found in the
+&lt;a href="http://books.pharo.org/enterprise-pharo/" rel="nofollow"&gt;Pharo Enterprise&lt;/a&gt; book.&lt;/p&gt;
+&lt;p&gt;In particular, in the following chapters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Client/Zinc-HTTP-Client.html" rel="nofollow"&gt;Client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Server/Zinc-HTTP-Server.html" rel="nofollow"&gt;Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/WebApp/WebApp.html" rel="nofollow"&gt;WebApp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Teapot/Teapot.html" rel="nofollow"&gt;TeaPot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-Encoding-Meta/Zinc-Encoding-Meta.html" rel="nofollow"&gt;Encoding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/WebSockets/WebSockets.html" rel="nofollow"&gt;WebSockets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A live website can be found at &lt;a href="http://zn.stfx.eu" rel="nofollow"&gt;http://zn.stfx.eu&lt;/a&gt;. You can run part of this website locally.&lt;/p&gt;
+&lt;p&gt;The original &lt;a href="zinc-http-components-paper.md"&gt;Zinc HTTP Components&lt;/a&gt; paper.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="build-and-deploy-1st-webapp/build-deploy-1st-webapp.md"&gt;Building and deploying your first web app with Pharo&lt;/a&gt; tutorial.&lt;/p&gt;
+&lt;p&gt;There is a separate &lt;a href="README-gemstone.md"&gt;GemStone README&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-loading" class="anchor" aria-hidden="true" href="#loading"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Loading&lt;/h2&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://svenvc/zinc/repository&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ZincHTTPComponents&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  load.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Sven Van Caekenberghe&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/svenvc/zinc/blob/master/license.txt"&gt;MIT Licensed&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>svenvc</author><guid isPermaLink="false">https://github.com/svenvc/zinc</guid><pubDate>Fri, 27 Dec 2019 00:01:00 GMT</pubDate></item></channel></rss>

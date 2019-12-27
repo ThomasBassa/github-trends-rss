@@ -1,2 +1,1061 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Clojure, Today</title><link>https://github.com/trending/clojure?since=daily</link><description>The top repositories on GitHub for clojure, measured daily</description><pubDate>Thu, 26 Dec 2019 01:12:53 GMT</pubDate><lastBuildDate>Thu, 26 Dec 2019 01:12:53 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Clojure, Today today</title><pubDate>Thu, 26 Dec 2019 01:12:53 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Clojure, Today</title><link>https://github.com/trending/clojure?since=daily</link><description>The top repositories on GitHub for clojure, measured daily</description><pubDate>Fri, 27 Dec 2019 01:02:18 GMT</pubDate><lastBuildDate>Fri, 27 Dec 2019 01:02:18 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>borkdude/babashka #1 in Clojure, Today</title><link>https://github.com/borkdude/babashka</link><description>&lt;p&gt;&lt;i&gt;A Clojure babushka for the grey areas of Bash.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-babashka" class="anchor" aria-hidden="true" href="#babashka"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Babashka&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/borkdude/babashka/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6ae553a0a341f297fa2497b3eae63884170a458a/68747470733a2f2f636972636c6563692e636f6d2f67682f626f726b647564652f6261626173686b612f747265652f6d61737465722e7376673f7374796c653d736869656c64" alt="CircleCI" data-canonical-src="https://circleci.com/gh/borkdude/babashka/tree/master.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://clojars.org/borkdude/babashka" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/795d46ffab533f2952e22b78313a7c0ccae928e3/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f626f726b647564652f6261626173686b612e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/borkdude/babashka.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://app.slack.com/client/T03RZGPFR/CLX41ASCS" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5d32eacbaaf4d06e17885b5da976a2d0cb18238e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d6a6f696e5f636861742d627269676874677265656e2e737667" alt="project chat" data-canonical-src="https://img.shields.io/badge/slack-join_chat-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A Clojure &lt;a href="https://en.wikipedia.org/wiki/Headscarf" rel="nofollow"&gt;babushka&lt;/a&gt; for the grey areas of Bash.&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p lang="en" dir="ltr"&gt;Really enjoying Babashka. Life's too short to remember how to write Bash code. I feel liberated.&lt;br&gt; Thanks a million &lt;a href="https://github.com/borkdude"&gt;@borkdude!&lt;/a&gt;&lt;/p&gt;
+    —
+    &lt;a href="https://github.com/laheadle"&gt;@laheadle&lt;/a&gt; on Clojurians Slack
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bash &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;(&lt;/span&gt;curl -s https://raw.githubusercontent.com/borkdude/babashka/master/install&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;ls &lt;span class="pl-k"&gt;|&lt;/span&gt; bb --time -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(filter #(-&amp;gt; % io/file .isDirectory) *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;("doc" "resources" "sci" "script" "src" "target" "test")&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb took 4ms.&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-rationale" class="anchor" aria-hidden="true" href="#rationale"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;The sweet spot for babashka is executing Clojure snippets or scripts in the same
+space where you would use Bash.&lt;/p&gt;
+&lt;p&gt;As one user described it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’m quite at home in Bash most of the time, but there’s a substantial grey area of things that are too complicated to be simple in bash, but too simple to be worth writing a clj/s script for. Babashka really seems to hit the sweet spot for those cases.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast startup / low latency. This is achieved by compiling to native using &lt;a href="https://github.com/oracle/graal"&gt;GraalVM&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Familiarity and portability. Keep migration barriers between bash and Clojure as low as possible by:
+&lt;ul&gt;
+&lt;li&gt;Gradually introducing Clojure expressions to existing bash scripts&lt;/li&gt;
+&lt;li&gt;Scripts written in babashka should also be able to run on the JVM without major changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Multi-threading support similar to Clojure on the JVM&lt;/li&gt;
+&lt;li&gt;Batteries included (clojure.tools.cli, core.async, ...)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Non-goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performance&lt;/li&gt;
+&lt;li&gt;Provide a mixed Clojure/bash DSL (see portability).&lt;/li&gt;
+&lt;li&gt;Replace existing shells. Babashka is a tool you can use inside existing shells like bash and it is designed to play well with them. It does not aim to replace them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reasons why babashka may not be the right fit for your use case:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It uses &lt;a href="https://github.com/borkdude/sci"&gt;sci&lt;/a&gt; for interpreting Clojure. Sci
+implements only a subset of Clojure and is not as performant as compiled code.&lt;/li&gt;
+&lt;li&gt;External libraries are not available (although you may use &lt;code&gt;load-file&lt;/code&gt; for
+loading external scripts).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Read more about the differences with Clojure &lt;a href="#differences-with-clojure"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-status" class="anchor" aria-hidden="true" href="#status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Status&lt;/h2&gt;
+&lt;p&gt;Experimental. Breaking changes are expected to happen at this phase. Keep an eye
+on &lt;a href="CHANGES.md"&gt;CHANGES.md&lt;/a&gt; for a list of breaking changes.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;ls &lt;span class="pl-k"&gt;|&lt;/span&gt; bb -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*input*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;["LICENSE" "README.md" "bb" "doc" "pom.xml" "project.clj" "reflection.json" "resources" "script" "src" "target" "test"]&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;ls &lt;span class="pl-k"&gt;|&lt;/span&gt; bb -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(count *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;12&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(vec (dedupe *input*))&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;[1 1 1 1 2]&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;[1 2]&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(filterv :foo *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;[{:foo 1} {:bar 2}]&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;[{:foo 1}]&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(#(+ %1 %2 %3) 1 2 *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="pl-s"&gt;3&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;6&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;ls &lt;span class="pl-k"&gt;|&lt;/span&gt; bb -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(filterv #(re-find #"reflection" %) *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;["reflection.json"]&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(run! #(shell/sh "touch" (str "/tmp/test/" %)) (range 100))&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;ls /tmp/test &lt;span class="pl-k"&gt;|&lt;/span&gt; bb -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*input*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;["0" "1" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "2" "20" "21" ...]&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb -O &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(repeat "dude")&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; bb --stream &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(str *input* "rino")&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; bb -I &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(take 3 *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;("duderino" "duderino" "duderino")&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;More examples can be found in the &lt;a href="#gallery"&gt;gallery&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-brew" class="anchor" aria-hidden="true" href="#brew"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Brew&lt;/h3&gt;
+&lt;p&gt;Linux and macOS binaries are provided via brew.&lt;/p&gt;
+&lt;p&gt;Install:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install borkdude/brew/babashka
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Upgrade:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew upgrade babashka
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-arch-linux" class="anchor" aria-hidden="true" href="#arch-linux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Arch (Linux)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;babashka&lt;/code&gt; is &lt;a href="https://aur.archlinux.org/packages/babashka-bin/" rel="nofollow"&gt;available&lt;/a&gt; in the &lt;a href="https://aur.archlinux.org" rel="nofollow"&gt;Arch User Repository&lt;/a&gt;. It can be installed using your favorite &lt;a href="https://aur.archlinux.org" rel="nofollow"&gt;AUR&lt;/a&gt; helper such as
+&lt;a href="https://github.com/Jguer/yay"&gt;yay&lt;/a&gt;, &lt;a href="https://github.com/archlinuxfr/yaourt"&gt;yaourt&lt;/a&gt;, &lt;a href="https://github.com/oshazard/apacman"&gt;apacman&lt;/a&gt; and &lt;a href="https://github.com/rmarquis/pacaur"&gt;pacaur&lt;/a&gt;. Here is an example using &lt;code&gt;yay&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yay -S babashka-bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-installer-script" class="anchor" aria-hidden="true" href="#installer-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installer script&lt;/h3&gt;
+&lt;p&gt;Install via the installer script:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bash &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;(&lt;/span&gt;curl -s https://raw.githubusercontent.com/borkdude/babashka/master/install&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By default this will install into &lt;code&gt;/usr/local/bin&lt;/code&gt;. To change this, provide the directory name:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bash &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;&amp;lt;(&lt;/span&gt;curl -s https://raw.githubusercontent.com/borkdude/babashka/master/install&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt; /tmp&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-download" class="anchor" aria-hidden="true" href="#download"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download&lt;/h3&gt;
+&lt;p&gt;You may also download a binary from &lt;a href="https://github.com/borkdude/babashka/releases"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Usage: bb [ -i | -I ] [ -o | -O ] [ --stream ] [--verbose]&lt;/span&gt;
+&lt;span class="pl-c1"&gt;          [ ( --classpath | -cp ) &amp;lt;cp&amp;gt; ] [ ( --main | -m ) &amp;lt;main-namespace&amp;gt; ]&lt;/span&gt;
+&lt;span class="pl-c1"&gt;          ( -e &amp;lt;expression&amp;gt; | -f &amp;lt;file&amp;gt; | --repl | --socket-repl [&amp;lt;host&amp;gt;:]&amp;lt;port&amp;gt; )&lt;/span&gt;
+&lt;span class="pl-c1"&gt;          [ arg* ]&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;Options:&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;  --help, -h or -?   Print this help text.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --version          Print the current version of babashka.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -i                 Bind *input* to a lazy seq of lines from stdin.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -I                 Bind *input* to a lazy seq of EDN values from stdin.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -o                 Write lines to stdout.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -O                 Write EDN values to stdout.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --verbose          Print entire stacktrace in case of exception.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --stream           Stream over lines or EDN values from stdin. Combined with -i or -I *input* becomes a single value per iteration.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -e, --eval &amp;lt;expr&amp;gt;  Evaluate an expression.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -f, --file &amp;lt;path&amp;gt;  Evaluate a file.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -cp, --classpath   Classpath to use.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  -m, --main &amp;lt;ns&amp;gt;    Call the -main function from namespace with args.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --repl             Start REPL&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --socket-repl      Start socket REPL. Specify port (e.g. 1666) or host and port separated by colon (e.g. 127.0.0.1:1666).&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  --time             Print execution time before exiting.&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;If neither -e, -f, or --socket-repl are specified, then the first argument that is not parsed as a option is treated as a file if it exists, or as an expression otherwise.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Everything after that is bound to *command-line-args*.&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;clojure.core&lt;/code&gt; functions are accessible without a namespace alias.&lt;/p&gt;
+&lt;p&gt;The following namespaces are required by default and available through the
+pre-defined aliases in the &lt;code&gt;user&lt;/code&gt; namespace. You may use &lt;code&gt;require&lt;/code&gt; + &lt;code&gt;:as&lt;/code&gt;
+and/or &lt;code&gt;:refer&lt;/code&gt; on these namespaces. If not all vars are available, they are
+enumerated explicitly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;clojure.string&lt;/code&gt; aliased as &lt;code&gt;str&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clojure.set&lt;/code&gt; aliased as &lt;code&gt;set&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clojure.edn&lt;/code&gt; aliased as &lt;code&gt;edn&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;read-string&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clojure.java.shell&lt;/code&gt; aliases as &lt;code&gt;shell&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clojure.java.io&lt;/code&gt; aliased as &lt;code&gt;io&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;as-relative-path&lt;/code&gt;, &lt;code&gt;copy&lt;/code&gt;, &lt;code&gt;delete-file&lt;/code&gt;, &lt;code&gt;file&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://clojure.github.io/core.async/" rel="nofollow"&gt;&lt;code&gt;clojure.core.async&lt;/code&gt;&lt;/a&gt; aliased as
+&lt;code&gt;async&lt;/code&gt;. The &lt;code&gt;alt&lt;/code&gt; and &lt;code&gt;go&lt;/code&gt; macros are not available but &lt;code&gt;alts!!&lt;/code&gt; does work as
+it is a function.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/clojure/tools.cli"&gt;&lt;code&gt;clojure.tools.cli&lt;/code&gt;&lt;/a&gt; aliased as &lt;code&gt;tools.cli&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/clojure/data.csv"&gt;&lt;code&gt;clojure.data.csv&lt;/code&gt;&lt;/a&gt; aliased as &lt;code&gt;csv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dakrone/cheshire"&gt;&lt;code&gt;cheshire.core&lt;/code&gt;&lt;/a&gt; aliased as &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following Java classes are available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ArithmeticException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AssertionError&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Class&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Double&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Exception&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clojure.lang.ExceptionInfo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Integer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Math&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java.io.File&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java.nio.file.Files&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java.util.Base64&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;java.util.regex.Pattern&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ProcessBuilder&lt;/code&gt; (see &lt;a href="examples/process_builder.clj"&gt;example&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;System&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Thread&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More classes can be added by request. See &lt;code&gt;reflection.json&lt;/code&gt; and the &lt;code&gt;:classes&lt;/code&gt;
+option in &lt;code&gt;main.clj&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Babashka supports &lt;code&gt;import&lt;/code&gt; : &lt;code&gt;(import clojure.lang.ExceptionInfo)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Babashka supports a subset of the &lt;code&gt;ns&lt;/code&gt; form where you may use &lt;code&gt;:require&lt;/code&gt; and &lt;code&gt;:import&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;(ns foo&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  (:require [clojure.string :as str])&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  (:import clojure.lang.ExceptionInfo))&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For the unsupported parts of the ns form, you may use &lt;a href="#reader-conditionals"&gt;reader
+conditionals&lt;/a&gt; to maintain compatibility with JVM Clojure.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-input-and-output-flags" class="anchor" aria-hidden="true" href="#input-and-output-flags"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Input and output flags&lt;/h3&gt;
+&lt;p&gt;In one-liners the &lt;code&gt;*input*&lt;/code&gt; value may come in handy. It contains the input read from stdin as EDN by default. If you want to read in text, use the &lt;code&gt;-i&lt;/code&gt; flag, which binds &lt;code&gt;*input*&lt;/code&gt; to a lazy seq of lines of text. If you want to read multiple EDN values, use the &lt;code&gt;-I&lt;/code&gt; flag. The &lt;code&gt;-o&lt;/code&gt; option prints the result as lines of text. The &lt;code&gt;-O&lt;/code&gt; option prints the result as lines of EDN values.&lt;/p&gt;
+&lt;p&gt;The following table illustrates the combination of options for commands of the form&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo "{{Input}}" | bb {{Input flags}} {{Output flags}} "*input*"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Input&lt;/th&gt;
+&lt;th&gt;Input flags&lt;/th&gt;
+&lt;th&gt;Output flag&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;*input*&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;Output&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt; &lt;br&gt; &lt;code&gt;{:a 2}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hello &lt;br&gt; bye&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-i&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;("hello" "bye")&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;("hello" "bye")&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hello &lt;br&gt; bye&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-i&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-o&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;("hello" "bye")&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hello &lt;br&gt; bye&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt; &lt;br&gt; &lt;code&gt;{:a 2}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-I&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;({:a 1} {:a 2})&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;({:a 1} {:a 2})&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt; &lt;br&gt; &lt;code&gt;{:a 2}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-I&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-O&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;({:a 1} {:a 2})&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{:a 1}&lt;/code&gt; &lt;br&gt; &lt;code&gt;{:a 2}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When combined with the &lt;code&gt;--stream&lt;/code&gt; option, the expression is executed for each value in the input:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;$ echo '{&lt;span class="pl-c1"&gt;:a&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;} {&lt;span class="pl-c1"&gt;:a&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;}' | bb --stream '*input*'
+{&lt;span class="pl-c1"&gt;:a&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;}
+{&lt;span class="pl-c1"&gt;:a&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-current-file-path" class="anchor" aria-hidden="true" href="#current-file-path"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Current file path&lt;/h3&gt;
+&lt;p&gt;The var &lt;code&gt;*file*&lt;/code&gt; contains the full path of the file that is currently being
+executed:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat example.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;(prn *file*)&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;bb example.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;"/Users/borkdude/example.clj"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-command-line-arguments" class="anchor" aria-hidden="true" href="#command-line-arguments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Command-line arguments&lt;/h3&gt;
+&lt;p&gt;Command-line arguments can be retrieved using &lt;code&gt;*command-line-args*&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-additional-functions" class="anchor" aria-hidden="true" href="#additional-functions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional functions&lt;/h3&gt;
+&lt;p&gt;Additionally, babashka adds the following functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wait/wait-for-port&lt;/code&gt;. Usage:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;wait/wait-for-port&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;8080&lt;/span&gt;)
+(&lt;span class="pl-en"&gt;wait/wait-for-port&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;8080&lt;/span&gt; {&lt;span class="pl-c1"&gt;:timeout&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt; &lt;span class="pl-c1"&gt;:pause&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt;})&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Waits for TCP connection to be available on host and port. Options map supports &lt;code&gt;:timeout&lt;/code&gt; and &lt;code&gt;:pause&lt;/code&gt;. If &lt;code&gt;:timeout&lt;/code&gt; is provided and reached, &lt;code&gt;:default&lt;/code&gt;'s value (if any) is returned. The &lt;code&gt;:pause&lt;/code&gt; option determines the time waited between retries.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wait/wait-for-path&lt;/code&gt;. Usage:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;wait/wait-for-path&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/tmp/wait-path-test&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+(&lt;span class="pl-en"&gt;wait/wait-for-path&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/tmp/wait-path-test&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:timeout&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt; &lt;span class="pl-c1"&gt;:pause&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt;})&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Waits for file path to be available. Options map supports &lt;code&gt;:default&lt;/code&gt;, &lt;code&gt;:timeout&lt;/code&gt; and &lt;code&gt;:pause&lt;/code&gt;. If &lt;code&gt;:timeout&lt;/code&gt; is provided and reached, &lt;code&gt;:default&lt;/code&gt;'s value (if any) is returned. The &lt;code&gt;:pause&lt;/code&gt; option determines the time waited between retries.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sig/pipe-signal-received?&lt;/code&gt;. Usage:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;sig/pipe-signal-received?&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Returns true if &lt;code&gt;PIPE&lt;/code&gt; signal was received. Example:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;((fn [x] (println x) (when (not (sig/pipe-signal-received?)) (recur (inc x)))) 0)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;|&lt;/span&gt; head -n2&lt;/span&gt;
+&lt;span class="pl-c1"&gt;1&lt;/span&gt;
+&lt;span class="pl-c1"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-running-a-file" class="anchor" aria-hidden="true" href="#running-a-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running a file&lt;/h2&gt;
+&lt;p&gt;Scripts may be executed from a file using &lt;code&gt;-f&lt;/code&gt; or &lt;code&gt;--file&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;bb -f download_html.clj&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Files can also be loaded inline using &lt;code&gt;load-file&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;bb '(load-file "script.clj")'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Using &lt;code&gt;bb&lt;/code&gt; with a shebang also works:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#!&lt;/span&gt;/usr/bin/env bb&lt;/span&gt;
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;get-url&lt;/span&gt; [url]
+  (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Fetching url:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; url)
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; [{&lt;span class="pl-c1"&gt;:keys&lt;/span&gt; [&lt;span class="pl-c1"&gt;:exit&lt;/span&gt; &lt;span class="pl-c1"&gt;:err&lt;/span&gt; &lt;span class="pl-c1"&gt;:out&lt;/span&gt;]} (&lt;span class="pl-en"&gt;shell/sh&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;curl&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-sS&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; url)]
+    (&lt;span class="pl-k"&gt;if&lt;/span&gt; (&lt;span class="pl-en"&gt;zero?&lt;/span&gt; exit) out
+      (&lt;span class="pl-k"&gt;do&lt;/span&gt; (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ERROR:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; err)
+          (&lt;span class="pl-en"&gt;System/exit&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;)))))
+
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;write-html&lt;/span&gt; [file html]
+  (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Writing file:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; file)
+  (&lt;span class="pl-en"&gt;spit&lt;/span&gt; file html))
+
+(&lt;span class="pl-k"&gt;let&lt;/span&gt; [[url file] *command-line-args*]
+  (&lt;span class="pl-k"&gt;when&lt;/span&gt; (&lt;span class="pl-en"&gt;or&lt;/span&gt; (&lt;span class="pl-en"&gt;empty?&lt;/span&gt; url) (&lt;span class="pl-en"&gt;empty?&lt;/span&gt; file))
+    (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Usage: &amp;lt;url&amp;gt; &amp;lt;file&amp;gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+    (&lt;span class="pl-en"&gt;System/exit&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;))
+  (&lt;span class="pl-en"&gt;write-html&lt;/span&gt; file (&lt;span class="pl-en"&gt;get-url&lt;/span&gt; url)))
+
+(&lt;span class="pl-en"&gt;System/exit&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;./download_html.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Usage: &amp;lt;url&amp;gt; &amp;lt;file&amp;gt;&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;./download_html.clj https://www.clojure.org /tmp/clojure.org.html&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Fetching url: https://www.clojure.org&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Writing file: /tmp/clojure.org.html&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If &lt;code&gt;/usr/bin/env&lt;/code&gt; doesn't work for you, you can use the following workaround:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat script.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;#!/bin/sh&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;#_(&lt;/span&gt;
+&lt;span class="pl-c1"&gt;   "exec" "bb" "$0" hello "$@"&lt;/span&gt;
+&lt;span class="pl-c1"&gt;   )&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;(prn *command-line-args*)&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;./script.clj 1 2 3&lt;/span&gt;
+&lt;span class="pl-c1"&gt;("hello" "1" "2" "3")&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-preloads" class="anchor" aria-hidden="true" href="#preloads"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preloads&lt;/h2&gt;
+&lt;p&gt;The environment variable &lt;code&gt;BABASHKA_PRELOADS&lt;/code&gt; allows to define code that will be
+available in all subsequent usages of babashka.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;BABASHKA_PRELOADS='(defn foo [x] (+ x 2))'&lt;/span&gt;
+&lt;span class="pl-c1"&gt;BABASHKA_PRELOADS=$BABASHKA_PRELOADS' (defn bar [x] (* x 2))'&lt;/span&gt;
+&lt;span class="pl-c1"&gt;export BABASHKA_PRELOADS&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that you can concatenate multiple expressions. Now you can use these functions in babashka:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(-&amp;gt; (foo *input*) bar)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="pl-s"&gt;1&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also preload an entire file using &lt;code&gt;load-file&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;export BABASHKA_PRELOADS='(load-file "my_awesome_prelude.clj")'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that &lt;code&gt;*input*&lt;/code&gt; is not available in preloads.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-classpath" class="anchor" aria-hidden="true" href="#classpath"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Classpath&lt;/h2&gt;
+&lt;p&gt;Babashka accepts a &lt;code&gt;--classpath&lt;/code&gt; option that will be used to search for
+namespaces and load them:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;$ cat src/my/namespace.clj
+(&lt;span class="pl-k"&gt;ns&lt;/span&gt; &lt;span class="pl-e"&gt;my.namespace&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;-main&lt;/span&gt; [&amp;amp; _args]
+  (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello from my namespace!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+
+$ bb --classpath src --main my.namespace
+Hello from my namespace!&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that you can use the &lt;code&gt;clojure&lt;/code&gt; tool to produce classpaths and download dependencies:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat deps.edn&lt;/span&gt;
+&lt;span class="pl-c1"&gt;{:deps&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  {my_gist_script&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    {:git/url "https://gist.github.com/borkdude/263b150607f3ce03630e114611a4ef42"&lt;/span&gt;
+&lt;span class="pl-c1"&gt;     :sha "cfc761d06dfb30bb77166b45d439fe8fe54a31b8"}}}&lt;/span&gt;
+
+
+$ &lt;span class="pl-s1"&gt;CLASSPATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;clojure -Spath&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;bb --classpath &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$CLASSPATH&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; --main my-gist-script&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Hello from gist script!&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If there is no &lt;code&gt;--classpath&lt;/code&gt; argument, the &lt;code&gt;BABASHKA_CLASSPATH&lt;/code&gt; environment
+variable will be used:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; BABASHKA_CLASSPATH=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;clojure -Spath&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; BABASHKA_PRELOADS=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(require '[my-gist-script])&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;bb &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(my-gist-script/-main)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Hello from gist script!&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-parsing-command-line-arguments" class="anchor" aria-hidden="true" href="#parsing-command-line-arguments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parsing command line arguments&lt;/h2&gt;
+&lt;p&gt;Babashka ships with &lt;code&gt;clojure.tools.cli&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;require&lt;/span&gt; '[clojure.tools.cli &lt;span class="pl-c1"&gt;:refer&lt;/span&gt; [parse-opts]])
+
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;cli-options&lt;/span&gt;
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; An option with a required argument&lt;/span&gt;
+  [[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-p&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--port PORT&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Port number&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;:default&lt;/span&gt; &lt;span class="pl-c1"&gt;80&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;:parse-fn&lt;/span&gt; #(&lt;span class="pl-en"&gt;Integer/parseInt&lt;/span&gt; %)
+    &lt;span class="pl-c1"&gt;:validate&lt;/span&gt; [#(&lt;span class="pl-en"&gt;&amp;lt;&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt; % &lt;span class="pl-c1"&gt;0x10000&lt;/span&gt;) &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Must be a number between 0 and 65536&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]]
+   [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-h&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--help&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]])
+
+(&lt;span class="pl-c1"&gt;:options&lt;/span&gt; (&lt;span class="pl-en"&gt;parse-opts&lt;/span&gt; *command-line-args* cli-options))&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bb script.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;{:port 80}&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;bb script.clj -h&lt;/span&gt;
+&lt;span class="pl-c1"&gt;{:port 80, :help true}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-reader-conditionals" class="anchor" aria-hidden="true" href="#reader-conditionals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reader conditionals&lt;/h2&gt;
+&lt;p&gt;Babashka supports reader conditionals using the &lt;code&gt;:bb&lt;/code&gt; feature:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;$ cat example.clj
+#?(&lt;span class="pl-c1"&gt;:clj&lt;/span&gt; (&lt;span class="pl-k"&gt;in-ns&lt;/span&gt; 'foo) &lt;span class="pl-c1"&gt;:bb&lt;/span&gt; (&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;babashka doesn't support in-ns yet!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+
+$ ./bb example.clj
+babashka doesn't support &lt;span class="pl-k"&gt;in-ns&lt;/span&gt; yet!&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-socket-repl" class="anchor" aria-hidden="true" href="#socket-repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Socket REPL&lt;/h2&gt;
+&lt;p&gt;Start the socket REPL like this:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;bb --socket-repl 1666&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Babashka socket REPL started at localhost:1666&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can connect with your favorite socket REPL client:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;rlwrap nc 127.0.0.1 1666&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Babashka v0.0.14 REPL.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Use :repl/quit or :repl/exit to quit the REPL.&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Clojure rocks, Bash reaches.&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;bb=&amp;gt; (+ 1 2 3)&lt;/span&gt;
+&lt;span class="pl-c1"&gt;6&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb=&amp;gt; :repl/quit&lt;/span&gt;
+$&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A socket REPL client for Emacs is
+&lt;a href="https://github.com/clojure-emacs/inf-clojure"&gt;inf-clojure&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-spawning-and-killing-a-process" class="anchor" aria-hidden="true" href="#spawning-and-killing-a-process"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spawning and killing a process&lt;/h2&gt;
+&lt;p&gt;Use the &lt;code&gt;java.lang.ProcessBuilder&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;ws&lt;/span&gt; (&lt;span class="pl-en"&gt;-&amp;gt;&lt;/span&gt; (&lt;span class="pl-en"&gt;ProcessBuilder.&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;python&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-m&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;SimpleHTTPServer&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1777&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;]) (&lt;span class="pl-en"&gt;.start&lt;/span&gt;)))
+#'user/ws
+user=&amp;gt; (&lt;span class="pl-en"&gt;wait/wait-for-port&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;1777&lt;/span&gt;)
+{&lt;span class="pl-c1"&gt;:host&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;:port&lt;/span&gt; &lt;span class="pl-c1"&gt;1777&lt;/span&gt;, &lt;span class="pl-c1"&gt;:took&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;}
+user=&amp;gt; (&lt;span class="pl-en"&gt;.destroy&lt;/span&gt; ws)
+&lt;span class="pl-c1"&gt;nil&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Also see this &lt;a href="examples/process_builder.clj"&gt;example&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-async" class="anchor" aria-hidden="true" href="#async"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Async&lt;/h2&gt;
+&lt;p&gt;Apart from &lt;code&gt;future&lt;/code&gt; and &lt;code&gt;pmap&lt;/code&gt; for creating threads, you may use the &lt;code&gt;async&lt;/code&gt;
+namespace, which maps to &lt;code&gt;clojure.core.async&lt;/code&gt;, for asynchronous scripting. The
+following example shows how to get first available value from two different
+processes:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;bb '
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;async-command&lt;/span&gt; [&amp;amp; args]
+  (&lt;span class="pl-en"&gt;async/thread&lt;/span&gt; (&lt;span class="pl-en"&gt;apply&lt;/span&gt; shell/sh &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;bash&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;-c&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; args)))
+
+(&lt;span class="pl-en"&gt;-&amp;gt;&lt;/span&gt; (&lt;span class="pl-en"&gt;async/alts!!&lt;/span&gt; [(&lt;span class="pl-en"&gt;async-command&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;sleep 2 &amp;amp;&amp;amp; echo process 1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+                   (&lt;span class="pl-en"&gt;async-command&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;sleep 1 &amp;amp;&amp;amp; echo process 2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)])
+    first &lt;span class="pl-c1"&gt;:out&lt;/span&gt; str/trim println)'
+process &lt;span class="pl-c1"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-differences-with-clojure" class="anchor" aria-hidden="true" href="#differences-with-clojure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Differences with Clojure&lt;/h2&gt;
+&lt;p&gt;Babashka is implemented using the &lt;a href="https://github.com/borkdude/sci"&gt;Small Clojure
+Interpreter&lt;/a&gt;. This means that a snippet or
+script is not compiled to JVM bytecode, but executed form by form by a runtime
+which implements a subset of Clojure. Babashka is compiled to a native binary
+using &lt;a href="https://github.com/oracle/graal"&gt;GraalVM&lt;/a&gt;. It comes with a selection of
+built-in namespaces and functions from Clojure and other useful libraries. The
+data types (numbers, strings, persistent collections) are the
+same. Multi-threading is supported (&lt;code&gt;pmap&lt;/code&gt;, &lt;code&gt;future&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Differences with Clojure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A subset of Java classes are supported.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Only the &lt;code&gt;clojure.core&lt;/code&gt;, &lt;code&gt;clojure.set&lt;/code&gt;, &lt;code&gt;clojure.string&lt;/code&gt; and &lt;code&gt;clojure.walk&lt;/code&gt;
+namespaces are available from Clojure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interpretation comes with overhead. Therefore tight loops are likely slower
+than in Clojure on the JVM.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No support for unboxed types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-external-resources" class="anchor" aria-hidden="true" href="#external-resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;External resources&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-blogs" class="anchor" aria-hidden="true" href="#blogs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blogs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stuartsierra.com/2019/12/21/clojure-start-time-in-2019" rel="nofollow"&gt;Clojure Start Time in 2019&lt;/a&gt; by Stuart Sierra&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lambdaisland.com/blog/2019-12-19-advent-of-parens-19-advent-of-random-hacks" rel="nofollow"&gt;Advent of Random
+Hacks&lt;/a&gt;
+by Arne Brasseur&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lambdaisland.com/blog/2019-12-05-advent-of-parens-5-clojure-in-the-shell" rel="nofollow"&gt;Clojure in the Shell&lt;/a&gt; by Arne Brasseur&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://purelyfunctional.tv/issues/purelyfunctional-tv-newsletter-351-clojure-tool-babashka/" rel="nofollow"&gt;Clojure Tool&lt;/a&gt; by Eric Normand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-developing-babashka" class="anchor" aria-hidden="true" href="#developing-babashka"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developing Babashka&lt;/h2&gt;
+&lt;p&gt;To work on Babashka itself make sure Git submodules are checked out.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;git clone https://github.com/borkdude/babashka --recursive&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To update later on:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;git submodule update --recursive&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You need &lt;a href="https://leiningen.org/" rel="nofollow"&gt;Leiningen&lt;/a&gt;, and for building binaries you need GraalVM.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-repl" class="anchor" aria-hidden="true" href="#repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REPL&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;lein repl&lt;/code&gt; will get you a standard REPL/nREPL connection. To work on tests use &lt;code&gt;lein with-profiles +test repl&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-generate-reflectionjson-file" class="anchor" aria-hidden="true" href="#generate-reflectionjson-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generate reflection.json file&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;lein with-profiles +reflection run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-test" class="anchor" aria-hidden="true" href="#test"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test&lt;/h3&gt;
+&lt;p&gt;Test on the JVM (for development):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;script/test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Test the native version:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;BABASHKA_TEST_ENV=native script/test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-build" class="anchor" aria-hidden="true" href="#build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build&lt;/h3&gt;
+&lt;p&gt;To build this project, set &lt;code&gt;$GRAALVM_HOME&lt;/code&gt; to the GraalVM distribution directory.&lt;/p&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;script/compile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-related-projects" class="anchor" aria-hidden="true" href="#related-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://planck-repl.org/" rel="nofollow"&gt;planck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/candid82/joker"&gt;joker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dundalek/closh"&gt;closh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anmonteiro/lumo"&gt;lumo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-gallery" class="anchor" aria-hidden="true" href="#gallery"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gallery&lt;/h2&gt;
+&lt;p&gt;Here's a gallery of more useful examples. Do you have a useful example? PR
+welcome!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-delete-a-list-of-files-returned-by-a-unix-command" class="anchor" aria-hidden="true" href="#delete-a-list-of-files-returned-by-a-unix-command"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Delete a list of files returned by a Unix command&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;find . | grep conflict | bb -i '(doseq [f *input*] (.delete (io/file f)))'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-calculate-aggregate-size-of-directory" class="anchor" aria-hidden="true" href="#calculate-aggregate-size-of-directory"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Calculate aggregate size of directory&lt;/h3&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#!&lt;/span&gt;/usr/bin/env bb&lt;/span&gt;
+
+(&lt;span class="pl-en"&gt;as-&amp;gt;&lt;/span&gt; (&lt;span class="pl-en"&gt;io/file&lt;/span&gt; (&lt;span class="pl-en"&gt;or&lt;/span&gt; (&lt;span class="pl-en"&gt;first&lt;/span&gt; *command-line-args*) &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) $
+  (&lt;span class="pl-en"&gt;file-seq&lt;/span&gt; $)
+  (&lt;span class="pl-en"&gt;map&lt;/span&gt; #(&lt;span class="pl-en"&gt;.length&lt;/span&gt; %) $)
+  (&lt;span class="pl-en"&gt;reduce&lt;/span&gt; + $)
+  (&lt;span class="pl-en"&gt;/&lt;/span&gt; $ (&lt;span class="pl-en"&gt;*&lt;/span&gt; &lt;span class="pl-c1"&gt;1024&lt;/span&gt; &lt;span class="pl-c1"&gt;1024&lt;/span&gt;))
+  (&lt;span class="pl-en"&gt;println&lt;/span&gt; (&lt;span class="pl-en"&gt;str&lt;/span&gt; (&lt;span class="pl-en"&gt;int&lt;/span&gt; $) &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;M&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)))&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;dir-size&lt;/span&gt;
+&lt;span class="pl-c1"&gt;130M&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;dir-size &lt;span class="pl-k"&gt;~&lt;/span&gt;/Dropbox/bin&lt;/span&gt;
+&lt;span class="pl-c1"&gt;233M&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-shuffle-the-lines-of-a-file" class="anchor" aria-hidden="true" href="#shuffle-the-lines-of-a-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Shuffle the lines of a file&lt;/h3&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat /tmp/test.txt&lt;/span&gt;
+&lt;span class="pl-c1"&gt;1 Hello&lt;/span&gt;
+&lt;span class="pl-c1"&gt;2 Clojure&lt;/span&gt;
+&lt;span class="pl-c1"&gt;3 Babashka&lt;/span&gt;
+&lt;span class="pl-c1"&gt;4 Goodbye&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt; /tmp/test.txt bb -io &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;(shuffle *input*)&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;3 Babashka&lt;/span&gt;
+&lt;span class="pl-c1"&gt;2 Clojure&lt;/span&gt;
+&lt;span class="pl-c1"&gt;4 Goodbye&lt;/span&gt;
+&lt;span class="pl-c1"&gt;1 Hello&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-fetch-latest-github-release-tag" class="anchor" aria-hidden="true" href="#fetch-latest-github-release-tag"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetch latest Github release tag&lt;/h3&gt;
+&lt;p&gt;For converting JSON to EDN, see &lt;a href="https://github.com/borkdude/jet"&gt;jet&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;curl -s https://api.github.com/repos/borkdude/babashka/tags &lt;span class="pl-k"&gt;|&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;jet --from json --keywordize --to edn |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb '(-&amp;gt; *input* first :name (subs 1))'&lt;/span&gt;
+&lt;span class="pl-c1"&gt;"0.0.4"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-get-latest-os-specific-download-url-from-github" class="anchor" aria-hidden="true" href="#get-latest-os-specific-download-url-from-github"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get latest OS-specific download url from Github&lt;/h3&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;curl -s https://api.github.com/repos/borkdude/babashka/releases &lt;span class="pl-k"&gt;|&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;jet --from json --keywordize |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb '(-&amp;gt; *input* first :assets)' |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb '(some #(re-find #".*linux.*" (:browser_download_url %)) *input*)'&lt;/span&gt;
+&lt;span class="pl-c1"&gt;"https://github.com/borkdude/babashka/releases/download/v0.0.4/babashka-0.0.4-linux-amd64.zip"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-view-download-statistics-from-clojars" class="anchor" aria-hidden="true" href="#view-download-statistics-from-clojars"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;View download statistics from Clojars&lt;/h3&gt;
+&lt;p&gt;Contributed by &lt;a href="https://github.com/plexus"&gt;@plexus&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;curl https://clojars.org/stats/all.edn &lt;span class="pl-k"&gt;|&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb -o '(for [[[group art] counts] *input*] (str (reduce + (vals counts))  " " group "/" art))' |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;sort -rn |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;less&lt;/span&gt;
+&lt;span class="pl-c1"&gt;14113842 clojure-complete/clojure-complete&lt;/span&gt;
+&lt;span class="pl-c1"&gt;9065525 clj-time/clj-time&lt;/span&gt;
+&lt;span class="pl-c1"&gt;8504122 cheshire/cheshire&lt;/span&gt;
+&lt;span class="pl-c1"&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-portable-tree-command" class="anchor" aria-hidden="true" href="#portable-tree-command"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portable tree command&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/borkdude/babashka/blob/master/examples/tree.clj"&gt;examples/tree.clj&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;clojure -Sdeps &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;{:deps {org.clojure/tools.cli {:mvn/version "0.4.2"}}}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; examples/tree.clj src&lt;/span&gt;
+&lt;span class="pl-c1"&gt;src&lt;/span&gt;
+&lt;span class="pl-c1"&gt;└── babashka&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    ├── impl&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    │   ├── tools&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    │   │   └── cli.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;...&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;examples/tree.clj src&lt;/span&gt;
+&lt;span class="pl-c1"&gt;src&lt;/span&gt;
+&lt;span class="pl-c1"&gt;└── babashka&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    ├── impl&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    │   ├── tools&lt;/span&gt;
+&lt;span class="pl-c1"&gt;    │   │   └── cli.clj&lt;/span&gt;
+&lt;span class="pl-c1"&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-list-outdated-maven-dependencies" class="anchor" aria-hidden="true" href="#list-outdated-maven-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;List outdated maven dependencies&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/borkdude/babashka/blob/master/examples/outdated.clj"&gt;examples/outdated.clj&lt;/a&gt;.
+Inspired by an idea from &lt;a href="https://github.com/seancorfield"&gt;@seancorfield&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat /tmp/deps.edn&lt;/span&gt;
+&lt;span class="pl-c1"&gt;{:deps {cheshire {:mvn/version "5.8.1"}&lt;/span&gt;
+&lt;span class="pl-c1"&gt;        clj-http {:mvn/version "3.4.0"}}}&lt;/span&gt;
+
+$ &lt;span class="pl-s1"&gt;examples/outdated.clj /tmp/deps.edn&lt;/span&gt;
+&lt;span class="pl-c1"&gt;clj-http/clj-http can be upgraded from 3.4.0 to 3.10.0&lt;/span&gt;
+&lt;span class="pl-c1"&gt;cheshire/cheshire can be upgraded from 5.8.1 to 5.9.0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-convert-projectclj-to-depsedn" class="anchor" aria-hidden="true" href="#convert-projectclj-to-depsedn"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Convert project.clj to deps.edn&lt;/h3&gt;
+&lt;p&gt;Contributed by &lt;a href="https://github.com/plexus"&gt;@plexus&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;cat project.clj &lt;span class="pl-k"&gt;|&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;sed -e 's/#=//g' -e 's/~@//g' -e 's/~//g' |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;bb '(let [{:keys [dependencies source-paths resource-paths]} (apply hash-map (drop 3 *input*))]&lt;/span&gt;
+&lt;span class="pl-c1"&gt;  {:paths (into source-paths resource-paths)&lt;/span&gt;
+&lt;span class="pl-c1"&gt;   :deps (into {} (for [[d v] dependencies] [d {:mvn/version v}]))}) ' |&lt;/span&gt;
+&lt;span class="pl-c1"&gt;jet --pretty &amp;gt; deps.edn&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-print-current-time-in-california" class="anchor" aria-hidden="true" href="#print-current-time-in-california"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Print current time in California&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/borkdude/babashka/blob/master/examples/pst.clj"&gt;examples/pst.clj&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.adgoji.com/" rel="nofollow"&gt;adgoji&lt;/a&gt; for financial support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2019 Michiel Borkent&lt;/p&gt;
+&lt;p&gt;Distributed under the EPL License. See LICENSE.&lt;/p&gt;
+&lt;p&gt;This project contains code from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clojure, which is licensed under the same EPL License.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>borkdude</author><guid isPermaLink="false">https://github.com/borkdude/babashka</guid><pubDate>Fri, 27 Dec 2019 00:01:00 GMT</pubDate></item><item><title>clojure/clojurescript #2 in Clojure, Today</title><link>https://github.com/clojure/clojurescript</link><description>&lt;p&gt;&lt;i&gt;Clojure to JS compiler&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-what-is-clojurescript" class="anchor" aria-hidden="true" href="#what-is-clojurescript"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is ClojureScript?&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://clojurescript.org" rel="nofollow"&gt;ClojureScript&lt;/a&gt; is a compiler for &lt;a href="http://clojure.org" rel="nofollow"&gt;Clojure&lt;/a&gt; that targets JavaScript. It is designed to emit JavaScript code which is compatible with the advanced compilation mode of the &lt;a href="https://developers.google.com/closure/compiler/" rel="nofollow"&gt;Google Closure&lt;/a&gt; optimizing compiler.&lt;/p&gt;
+&lt;p&gt;Official web site: &lt;a href="http://clojurescript.org" rel="nofollow"&gt;http://clojurescript.org&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-releases-and-dependency-information" class="anchor" aria-hidden="true" href="#releases-and-dependency-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Releases and dependency information&lt;/h2&gt;
+&lt;p&gt;Latest stable release: 1.10.597&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.clojure%22%20AND%20a%3A%22clojurescript%22" rel="nofollow"&gt;All released versions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://github.com/technomancy/leiningen/"&gt;Leiningen&lt;/a&gt; dependency information:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[org.clojure/clojurescript "1.10.597"]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://maven.apache.org" rel="nofollow"&gt;Maven&lt;/a&gt; dependency information:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.clojure&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;clojurescript&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;1.10.597&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Read the &lt;a href="http://clojurescript.org/guides/quick-start" rel="nofollow"&gt;Quick Start&lt;/a&gt; guide.&lt;/li&gt;
+&lt;li&gt;Read the &lt;a href="http://clojurescript.org" rel="nofollow"&gt;Documentation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Try a &lt;a href="http://clojurescript.org/guides" rel="nofollow"&gt;tutorial&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://clojurescript.org/community/companies" rel="nofollow"&gt;Companies using ClojureScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-questions-feedback" class="anchor" aria-hidden="true" href="#questions-feedback"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Questions, Feedback?&lt;/h2&gt;
+&lt;p&gt;Please point all of your questions and feedback to the
+&lt;a href="http://groups.google.com/group/clojure" rel="nofollow"&gt;Clojure mailing list&lt;/a&gt;. There
+is a community run
+&lt;a href="http://groups.google.com/group/clojurescript" rel="nofollow"&gt;ClojureScript user mailing list&lt;/a&gt; and
+the IRC channel, &lt;code&gt;#clojurescript&lt;/code&gt; on &lt;a href="https://freenode.net/" rel="nofollow"&gt;freenode.net&lt;/a&gt;, is quite active.
+There is also a community run &lt;a href="http://clojurians.slack.com" rel="nofollow"&gt;Slack channel&lt;/a&gt;. The
+Jira bug/feature tracking application is located at
+&lt;a href="http://dev.clojure.org/jira/browse/CLJS" rel="nofollow"&gt;http://dev.clojure.org/jira/browse/CLJS&lt;/a&gt;. Before submitting issues
+please read the
+&lt;a href="https://github.com/clojure/clojurescript/wiki/Reporting-Issues"&gt;Reporting Issues&lt;/a&gt;
+page first.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-developers-welcome" class="anchor" aria-hidden="true" href="#developers-welcome"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developers Welcome&lt;/h2&gt;
+&lt;p&gt;ClojureScript operates under the same license as Clojure. All
+contributors must have a signed CA (Contributor's Agreement) and
+submit their patch via the appropriate channels. If you're interested
+in contributing to the project, please see the
+&lt;a href="http://clojure.org/contributing" rel="nofollow"&gt;contributing&lt;/a&gt; page on
+&lt;a href="http://clojure.org" rel="nofollow"&gt;clojure.org&lt;/a&gt;. For more information about working
+on the compiler and testing check the
+&lt;a href="http://github.com/clojure/clojurescript/wiki/Developers"&gt;Developer section of the wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-yourkit" class="anchor" aria-hidden="true" href="#yourkit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;YourKit&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/522ec07ba979f767228bfa281844244a64ed57b7/687474703a2f2f7777772e796f75726b69742e636f6d2f696d616765732f796b6c6f676f2e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/522ec07ba979f767228bfa281844244a64ed57b7/687474703a2f2f7777772e796f75726b69742e636f6d2f696d616765732f796b6c6f676f2e706e67" data-canonical-src="http://www.yourkit.com/images/yklogo.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;YourKit has given an open source license for their profiler, greatly simplifying the profiling of ClojureScript performance.&lt;/p&gt;
+&lt;p&gt;YourKit supports open source projects with its full-featured Java Profiler.
+YourKit, LLC is the creator of &lt;a href="http://www.yourkit.com/java/profiler/index.jsp" rel="nofollow"&gt;YourKit Java Profiler&lt;/a&gt;
+and &lt;a href="http://www.yourkit.com/.net/profiler/index.jsp" rel="nofollow"&gt;YourKit .NET Profiler&lt;/a&gt;,
+innovative and intelligent tools for profiling Java and .NET applications.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Copyright (c) Rich Hickey. All rights reserved. The use and
+distribution terms for this software are covered by the Eclipse
+Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+which can be found in the file epl-v10.html at the root of this
+distribution. By using this software in any fashion, you are
+agreeing to be bound by the terms of this license. You must
+not remove this notice, or any other, from this software.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>clojure</author><guid isPermaLink="false">https://github.com/clojure/clojurescript</guid><pubDate>Fri, 27 Dec 2019 00:02:00 GMT</pubDate></item><item><title>borkdude/sci #3 in Clojure, Today</title><link>https://github.com/borkdude/sci</link><description>&lt;p&gt;&lt;i&gt;Small Clojure Interpreter&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="logo/logo-300dpi.png"&gt;&lt;img src="logo/logo-300dpi.png" width="100px" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/borkdude/sci/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/08cd8ab8d5d58945077f30e61c25704ea421937d/68747470733a2f2f636972636c6563692e636f6d2f67682f626f726b647564652f7363692f747265652f6d61737465722e7376673f7374796c653d736869656c64" alt="CircleCI" data-canonical-src="https://circleci.com/gh/borkdude/sci/tree/master.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://clojars.org/borkdude/sci" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/80f41ff368767c16dfb2695d1f472b65677dfda6/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f626f726b647564652f7363692e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/borkdude/sci.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.npmjs.com/package/@borkdude/sci" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ed34181aef3828517d477b396728f60dd5f5f30a/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40626f726b647564652f736369" alt="NPM Project" data-canonical-src="https://img.shields.io/npm/v/@borkdude/sci" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cljdoc.org/d/borkdude/sci/CURRENT" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2f28e762ac4c9154a34ec7fcbffa8dc245d39624/68747470733a2f2f636c6a646f632e6f72672f62616467652f626f726b647564652f736369" alt="cljdoc badge" data-canonical-src="https://cljdoc.org/badge/borkdude/sci" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://app.slack.com/client/T03RZGPFR/CLX41ASCS" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5d32eacbaaf4d06e17885b5da976a2d0cb18238e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d6a6f696e5f636861742d627269676874677265656e2e737667" alt="project chat" data-canonical-src="https://img.shields.io/badge/slack-join_chat-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Small Clojure Interpreter&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p lang="en" dir="ltr"&gt;I want a limited dialect of Clojure for a single-purpose, scripted application. Sci will fit nicely.&lt;/p&gt;
+    —
+    &lt;a href="https://twitter.com/tiagoluchini/status/1193144124142211073" rel="nofollow"&gt;@tiagoluchini&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-use-from-clojurescript" class="anchor" aria-hidden="true" href="#use-from-clojurescript"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use from Clojure(Script)&lt;/h3&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;require&lt;/span&gt; '[sci.core &lt;span class="pl-c1"&gt;:as&lt;/span&gt; sci])
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc 1)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) =&amp;gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; 2&lt;/span&gt;
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc x)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'x &lt;span class="pl-c1"&gt;2&lt;/span&gt;}}) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 3&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="#Usage"&gt;More&lt;/a&gt; on how to use sci from Clojure.
+Use from &lt;a href="#use-from-javaScript"&gt;JavaScript&lt;/a&gt;. Use from &lt;a href="#use-from-java"&gt;Java&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-rationale" class="anchor" aria-hidden="true" href="#rationale"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;You want to evaluate code from user input, or use Clojure for a DSL inside
+configuration files, but &lt;code&gt;eval&lt;/code&gt; isn't safe or simply doesn't work.&lt;/p&gt;
+&lt;p&gt;This library works with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clojure on the JVM&lt;/li&gt;
+&lt;li&gt;Clojure compiled with GraalVM native&lt;/li&gt;
+&lt;li&gt;ClojureScript, even when compiled with &lt;code&gt;:advanced&lt;/code&gt;, and (as a consequence) JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is used in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/borkdude/babashka"&gt;Babashka&lt;/a&gt;. A Clojure scripting tool that plays well with Bash.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/retrogradeorbit/bootleg"&gt;Bootleg&lt;/a&gt;. An HTML templating CLI.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/liquidz/daddy"&gt;Daddy&lt;/a&gt;. A configuration management tool.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dundalek/closh"&gt;Closh&lt;/a&gt;. Bash-like shell based on Clojure. GraalVM port is work in progress.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/borkdude/jet"&gt;Jet&lt;/a&gt;. CLI to convert between JSON, EDN and Transit.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metosin/malli"&gt;Malli&lt;/a&gt;. Plain data Schemas for Clojure/Script.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-status" class="anchor" aria-hidden="true" href="#status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Status&lt;/h2&gt;
+&lt;p&gt;Experimental. Breaking changes are expected to happen at this phase.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Use as a dependency:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/borkdude/sci" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/80f41ff368767c16dfb2695d1f472b65677dfda6/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f626f726b647564652f7363692e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/borkdude/sci.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.npmjs.com/package/@borkdude/sci" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ed34181aef3828517d477b396728f60dd5f5f30a/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40626f726b647564652f736369" alt="NPM Project" data-canonical-src="https://img.shields.io/npm/v/@borkdude/sci" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-api-docs" class="anchor" aria-hidden="true" href="#api-docs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API docs&lt;/h2&gt;
+&lt;p&gt;For Clojure, see the generated &lt;a href="https://borkdude.github.io/sci/doc/codox" rel="nofollow"&gt;codox&lt;/a&gt;
+documentation. For Java, see the generated &lt;a href="https://borkdude.github.io/sci/doc/javadoc/index.html" rel="nofollow"&gt;Java
+documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Currently the only API function is &lt;code&gt;sci.core/eval-string&lt;/code&gt; which takes a string
+to evaluate and an optional options map.&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;sci&lt;/code&gt;, &lt;code&gt;defn&lt;/code&gt; does not mutate the outside world, only the evaluation
+context inside a call to &lt;code&gt;sci/eval-string&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;By default &lt;code&gt;sci&lt;/code&gt; only enables access to the pure non-side-effecting functions in
+Clojure.  More functions can be enabled, at your own risk, using &lt;code&gt;:bindings&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-k"&gt;require&lt;/span&gt; '[sci.core &lt;span class="pl-c1"&gt;:as&lt;/span&gt; sci])
+user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(println &lt;span class="pl-cce"&gt;\"&lt;/span&gt;hello&lt;span class="pl-cce"&gt;\"&lt;/span&gt;)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'println println}})
+hello
+&lt;span class="pl-c1"&gt;nil&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It is also possible to provide namespaces which can be required:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;opts&lt;/span&gt; {&lt;span class="pl-c1"&gt;:namespaces&lt;/span&gt; {'foo.bar {'println println}}})
+user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(require '[foo.bar :as lib]) (lib/println &lt;span class="pl-cce"&gt;\"&lt;/span&gt;hello&lt;span class="pl-cce"&gt;\"&lt;/span&gt;)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; opts)
+hello
+&lt;span class="pl-c1"&gt;nil&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can provide a list of allowed symbols. Using other symbols causes an exception:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc 1)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:allow&lt;/span&gt; '[inc]})
+&lt;span class="pl-c1"&gt;2&lt;/span&gt;
+user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(dec 1)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:allow&lt;/span&gt; '[inc]})
+ExceptionInfo dec is not allowed! [at line &lt;span class="pl-c1"&gt;1&lt;/span&gt;, column &lt;span class="pl-c1"&gt;2&lt;/span&gt;]  clojure.core/ex-info (&lt;span class="pl-en"&gt;core.clj:4739&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Providing a list of disallowed symbols has the opposite effect:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc 1)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:deny&lt;/span&gt; '[inc]})
+ExceptionInfo inc is not allowed! [at line &lt;span class="pl-c1"&gt;1&lt;/span&gt;, column &lt;span class="pl-c1"&gt;2&lt;/span&gt;]  clojure.core/ex-info (&lt;span class="pl-en"&gt;core.clj:4739&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Preventing forever lasting evaluation of infinite sequences can be achieved with
+&lt;code&gt;:realize-max&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(vec (range))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:realize-max&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;})
+ExceptionInfo Maximum number of elements realized: &lt;span class="pl-c1"&gt;10&lt;/span&gt; [at line &lt;span class="pl-c1"&gt;1&lt;/span&gt;, column &lt;span class="pl-c1"&gt;1&lt;/span&gt;]  clojure.core/ex-info (&lt;span class="pl-en"&gt;core.clj:4739&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The preset &lt;code&gt;:termination-safe&lt;/code&gt;, which is currently &lt;code&gt;{:deny '[loop recur trampoline] :realize-max 100}&lt;/code&gt;, is helpful for making expressions terminate:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(loop [] (recur))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:preset&lt;/span&gt; &lt;span class="pl-c1"&gt;:termination-safe&lt;/span&gt;})
+ExceptionInfo &lt;span class="pl-k"&gt;loop&lt;/span&gt; is not allowed! [at line &lt;span class="pl-c1"&gt;1&lt;/span&gt;, column &lt;span class="pl-c1"&gt;2&lt;/span&gt;]  clojure.core/ex-info (&lt;span class="pl-en"&gt;core.clj:4739&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Providing a macro as a binding can be done by providing a normal function that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;has &lt;code&gt;:sci/macro&lt;/code&gt; on the metadata set to &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;has two extra arguments at the start for &lt;code&gt;&amp;amp;form&lt;/code&gt; and &lt;code&gt;&amp;amp;env&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;user=&amp;gt; (&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;do-twice&lt;/span&gt; ^:sci/macro (&lt;span class="pl-k"&gt;fn&lt;/span&gt; [_&amp;amp;env _&amp;amp;form x] (&lt;span class="pl-en"&gt;list&lt;/span&gt; 'do x x)))
+user=&amp;gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(do-twice (f))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'do-twice do-twice 'f #(&lt;span class="pl-en"&gt;println&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)}})
+hello
+hello
+&lt;span class="pl-c1"&gt;nil&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-vars" class="anchor" aria-hidden="true" href="#vars"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vars&lt;/h2&gt;
+&lt;p&gt;Sci has a var type, distinguished from Clojure vars. In a sci program these vars
+are created with &lt;code&gt;def&lt;/code&gt; and &lt;code&gt;defn&lt;/code&gt; just like in normal Clojure:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;defn&lt;/span&gt; &lt;span class="pl-e"&gt;foo&lt;/span&gt; [] &lt;span class="pl-e"&gt;x&lt;/span&gt;)
+(&lt;span class="pl-en"&gt;foo&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 1&lt;/span&gt;
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;)
+(&lt;span class="pl-en"&gt;foo&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dynamic vars with thread-local bindings are also supported:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; ^:dynamic *x* &lt;span class="pl-c1"&gt;1&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;binding&lt;/span&gt; [*x* &lt;span class="pl-c1"&gt;10&lt;/span&gt;] x) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 10&lt;/span&gt;
+(&lt;span class="pl-k"&gt;binding&lt;/span&gt; [*x* &lt;span class="pl-c1"&gt;10&lt;/span&gt;] (&lt;span class="pl-en"&gt;set!&lt;/span&gt; x &lt;span class="pl-c1"&gt;12&lt;/span&gt;) x) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 12&lt;/span&gt;
+x &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pre-creating vars that can be used in a sci program can be done using
+&lt;code&gt;sci/new-var&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/new-var&lt;/span&gt; 'x &lt;span class="pl-c1"&gt;10&lt;/span&gt;))
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc x)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'x x}}) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 11&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To create a dynamic sci var you can set metadata or use &lt;code&gt;sci/new-dynamic-var&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;require&lt;/span&gt; '[sci.core] &lt;span class="pl-c1"&gt;:as&lt;/span&gt; sci)
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x1&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/new-var&lt;/span&gt; 'x &lt;span class="pl-c1"&gt;10&lt;/span&gt; {&lt;span class="pl-c1"&gt;:dynamic&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;}))
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(binding [*x* 12] (inc *x*))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'*x* x1}}) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 13&lt;/span&gt;
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x2&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/new-dynamic-var&lt;/span&gt; 'x &lt;span class="pl-c1"&gt;10&lt;/span&gt;))
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(binding [*x* 12] (inc *x*))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'*x* x2}}) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 13&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pre-created sci vars can also be externally rebound:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/new-dynamic-var&lt;/span&gt; 'x &lt;span class="pl-c1"&gt;10&lt;/span&gt;))
+(&lt;span class="pl-en"&gt;sci/binding&lt;/span&gt; [x &lt;span class="pl-c1"&gt;11&lt;/span&gt;] (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(inc *x*)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'*x* x2}})) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 11&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The dynamic vars &lt;code&gt;*in*&lt;/code&gt;, &lt;code&gt;*out*&lt;/code&gt;, &lt;code&gt;*err*&lt;/code&gt; in a sci program correspond to the
+dynamic sci vars &lt;code&gt;sci.core/in&lt;/code&gt;, &lt;code&gt;sci.core/out&lt;/code&gt; and &lt;code&gt;sci.core/err&lt;/code&gt; in API. These
+vars can be rebound as well:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;sw&lt;/span&gt; (&lt;span class="pl-en"&gt;java.io.StringWriter.&lt;/span&gt;))
+(&lt;span class="pl-en"&gt;sci/binding&lt;/span&gt; [sci/out sw] (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(println &lt;span class="pl-cce"&gt;\"&lt;/span&gt;hello&lt;span class="pl-cce"&gt;\"&lt;/span&gt;)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; nil&lt;/span&gt;
+(&lt;span class="pl-en"&gt;str&lt;/span&gt; sw) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; "hello\n"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A shorthand for rebinding &lt;code&gt;sci/out&lt;/code&gt; is &lt;code&gt;sci/with-out-str&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;sci/with-out-str&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(println &lt;span class="pl-cce"&gt;\"&lt;/span&gt;hello&lt;span class="pl-cce"&gt;\"&lt;/span&gt;)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; "hello\n"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-stdoud-and-stdin" class="anchor" aria-hidden="true" href="#stdoud-and-stdin"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stdoud and stdin&lt;/h2&gt;
+&lt;p&gt;To enable printing to &lt;code&gt;stdoud&lt;/code&gt; and reading from &lt;code&gt;stdin&lt;/code&gt; you can bind
+&lt;code&gt;sci.core/out&lt;/code&gt; and &lt;code&gt;sci.core/in&lt;/code&gt; to &lt;code&gt;*out*&lt;/code&gt; and &lt;code&gt;*in*&lt;/code&gt; respectively:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;sci/binding&lt;/span&gt; [sci/out *out*
+              sci/in *in*]
+  (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(print &lt;span class="pl-cce"&gt;\"&lt;/span&gt;Type your name!&lt;span class="pl-cce"&gt;\n&lt;/span&gt;&amp;gt; &lt;span class="pl-cce"&gt;\"&lt;/span&gt;)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(flush)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; [name (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(read-line)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)]
+    (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(printf &lt;span class="pl-cce"&gt;\"&lt;/span&gt;Hello %s!&lt;span class="pl-cce"&gt;\"&lt;/span&gt; name)&lt;/span&gt;
+&lt;span class="pl-s"&gt;                      (flush)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                     {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'name name}})))
+Type your name!
+&amp;gt; Michiel
+Hello Michiel!&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-futures" class="anchor" aria-hidden="true" href="#futures"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Futures&lt;/h2&gt;
+&lt;p&gt;Creating threads with &lt;code&gt;future&lt;/code&gt; and &lt;code&gt;pmap&lt;/code&gt; is disabled by default, but can be
+enabled by requiring &lt;code&gt;sci.addons&lt;/code&gt; and applying the &lt;code&gt;sci.addons/future&lt;/code&gt; function
+to the sci options:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;ns&lt;/span&gt; &lt;span class="pl-e"&gt;my.sci.app&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;:require&lt;/span&gt;
+   [sci.core &lt;span class="pl-c1"&gt;:as&lt;/span&gt; sci]
+   [sci.addons &lt;span class="pl-c1"&gt;:as&lt;/span&gt; addons]))
+
+(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;@(future (inc x))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                 (&lt;span class="pl-en"&gt;-&amp;gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'x &lt;span class="pl-c1"&gt;1&lt;/span&gt;}}
+                     (&lt;span class="pl-en"&gt;addons/future&lt;/span&gt;)))
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For conveying thread-local sci bindings to an external &lt;code&gt;future&lt;/code&gt; use
+&lt;code&gt;sci.core/future&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;ns&lt;/span&gt; &lt;span class="pl-e"&gt;my.sci.app&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;:require&lt;/span&gt;
+   [sci.core &lt;span class="pl-c1"&gt;:as&lt;/span&gt; sci]
+   [sci.addons &lt;span class="pl-c1"&gt;:as&lt;/span&gt; addons]))
+
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;x&lt;/span&gt; (&lt;span class="pl-en"&gt;sci/new-dynamic-var&lt;/span&gt; 'x &lt;span class="pl-c1"&gt;10&lt;/span&gt;))
+
+@(&lt;span class="pl-en"&gt;sci/binding&lt;/span&gt; [x &lt;span class="pl-c1"&gt;11&lt;/span&gt;]
+   (&lt;span class="pl-en"&gt;sci/future&lt;/span&gt;
+     (&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;@(future (inc x))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+                      (&lt;span class="pl-en"&gt;-&amp;gt;&lt;/span&gt; {&lt;span class="pl-c1"&gt;:bindings&lt;/span&gt; {'x @x}}
+                          (&lt;span class="pl-en"&gt;addons/future&lt;/span&gt;)))))
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; 12&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-classes" class="anchor" aria-hidden="true" href="#classes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Classes&lt;/h2&gt;
+&lt;p&gt;Adding support for classes is done via the &lt;code&gt;:classes&lt;/code&gt; option:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;sci/eval-string&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(java.util.UUID/randomUUID)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  {&lt;span class="pl-c1"&gt;:classes&lt;/span&gt; {'java.util.UUID java.util.UUID}})
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;=&amp;gt; #uuid "312ba519-37e2-4109-b164-97fb140b57b0"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To make this work with &lt;code&gt;GraalVM&lt;/code&gt; you will also need to add an entry to your
+&lt;a href="https://github.com/oracle/graal/blob/master/substratevm/REFLECTION.md"&gt;reflection
+config&lt;/a&gt;
+for this class. Also see &lt;a href="reflection.json"&gt;&lt;code&gt;reflection.json&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-feature-parity" class="anchor" aria-hidden="true" href="#feature-parity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Feature parity&lt;/h2&gt;
+&lt;p&gt;Currently the following special forms/macros are supported: &lt;code&gt;def&lt;/code&gt;, &lt;code&gt;fn&lt;/code&gt;,
+function literals (&lt;code&gt;#(inc %)&lt;/code&gt;), &lt;code&gt;defn&lt;/code&gt;, &lt;code&gt;quote&lt;/code&gt;, &lt;code&gt;do&lt;/code&gt;,&lt;code&gt;if&lt;/code&gt;, &lt;code&gt;if-let&lt;/code&gt;, &lt;code&gt;if-not&lt;/code&gt;,
+&lt;code&gt;when&lt;/code&gt;, &lt;code&gt;when-let&lt;/code&gt;, &lt;code&gt;when-not&lt;/code&gt;, &lt;code&gt;cond&lt;/code&gt;, &lt;code&gt;let&lt;/code&gt;, &lt;code&gt;letfn&lt;/code&gt;, &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;, &lt;code&gt;-&amp;gt;&lt;/code&gt;,
+&lt;code&gt;-&amp;gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;as-&amp;gt;&lt;/code&gt;, &lt;code&gt;comment&lt;/code&gt;, &lt;code&gt;loop&lt;/code&gt;, &lt;code&gt;lazy-seq&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, &lt;code&gt;doseq&lt;/code&gt;, &lt;code&gt;case&lt;/code&gt;,
+&lt;code&gt;try/catch/finally&lt;/code&gt;, &lt;code&gt;declare&lt;/code&gt;, &lt;code&gt;cond-&amp;gt;&lt;/code&gt;, &lt;code&gt;cond-&amp;gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;some-&amp;gt;&lt;/code&gt;, &lt;code&gt;require&lt;/code&gt;,
+&lt;code&gt;import&lt;/code&gt;, &lt;code&gt;in-ns&lt;/code&gt;, &lt;code&gt;ns&lt;/code&gt;, &lt;code&gt;binding&lt;/code&gt;, &lt;code&gt;with-out-str&lt;/code&gt;, &lt;code&gt;with-in-str&lt;/code&gt;, &lt;code&gt;future&lt;/code&gt;. Sci
+also supports user defined macros.&lt;/p&gt;
+&lt;p&gt;More examples of what is currently possible can be found at
+&lt;a href="https://github.com/borkdude/babashka"&gt;babashka&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you miss something, feel free to post an issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-caveats" class="anchor" aria-hidden="true" href="#caveats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Caveats&lt;/h2&gt;
+&lt;p&gt;To make the &lt;code&gt;rand-*&lt;/code&gt; functions behave well when compiling to a GraalVM native binary, use this setting:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;--initialize-at-run-time=java.lang.Math\$RandomNumberGeneratorHolder&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-use-from-javascript" class="anchor" aria-hidden="true" href="#use-from-javascript"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use from JavaScript&lt;/h2&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;const&lt;/span&gt; { &lt;span class="pl-c1"&gt;evalString&lt;/span&gt; } &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;require&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;@borkdude/sci&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;);
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;const&lt;/span&gt; &lt;span class="pl-c1"&gt;opts&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {bindings&lt;span class="pl-k"&gt;:&lt;/span&gt; {&lt;span class="pl-en"&gt;f&lt;/span&gt;&lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-k"&gt;function&lt;/span&gt;() { &lt;span class="pl-en"&gt;console&lt;/span&gt;.&lt;span class="pl-c1"&gt;log&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;); }}};
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;evalString&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;(dotimes [i 2] (f))&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, opts);
+hello
+hello&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note for JavaScript users: the JS API is similar to the Clojure one. Instead of
+symbols and keywords it expects strings. Instead of kebab-case, use
+camelCase. Read &lt;a href="#Usage"&gt;here&lt;/a&gt; how to use sci from Clojure.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-use-from-java" class="anchor" aria-hidden="true" href="#use-from-java"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use from Java&lt;/h2&gt;
+&lt;div class="highlight highlight-source-java"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;borkdude.sci.*&lt;/span&gt;;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;borkdude.sci.options.*&lt;/span&gt;;
+
+&lt;span class="pl-smi"&gt;Namespace&lt;/span&gt; fooBar &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Namespace&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;foo.bar&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
+fooBar&lt;span class="pl-k"&gt;.&lt;/span&gt;addVar(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;x&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;);
+&lt;span class="pl-smi"&gt;Options&lt;/span&gt; opts &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-smi"&gt;Options&lt;/span&gt;()&lt;span class="pl-k"&gt;.&lt;/span&gt;addNamespace(fooBar);
+&lt;span class="pl-smi"&gt;Sci&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;evalString(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;foo.bar/x&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, opts); &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; returns 1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note for Java users: the Java API for is conceptually similar to the Clojure
+one, but made more idiomatic for Java users. Check the generated &lt;a href="https://borkdude.github.io/sci/doc/javadoc/index.html" rel="nofollow"&gt;Java
+documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-test" class="anchor" aria-hidden="true" href="#test"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test&lt;/h2&gt;
+&lt;p&gt;Required: &lt;code&gt;lein&lt;/code&gt;, the &lt;code&gt;clojure&lt;/code&gt; CLI and GraalVM.&lt;/p&gt;
+&lt;p&gt;To succesfully run the GraalVM tests, you will have to compile the binary first
+with &lt;code&gt;script/compile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To run all tests:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;script/test/all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For running individual tests, see the scripts in &lt;code&gt;script/test&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.adgoji.com/" rel="nofollow"&gt;adgoji&lt;/a&gt; for financial support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2019 Michiel Borkent&lt;/p&gt;
+&lt;p&gt;Distributed under the Eclipse Public License 1.0. This project contains code
+from Clojure and ClojureScript which are also licensed under the EPL 1.0. See
+LICENSE.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>borkdude</author><guid isPermaLink="false">https://github.com/borkdude/sci</guid><pubDate>Fri, 27 Dec 2019 00:03:00 GMT</pubDate></item><item><title>juxt/crux #4 in Clojure, Today</title><link>https://github.com/juxt/crux</link><description>&lt;p&gt;&lt;i&gt;Open Time Store&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="./docs/img/crux-logo-banner.svg"&gt;&lt;img alt="Crux" src="./docs/img/crux-logo-banner.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://juxt-oss.zulipchat.com/#narrow/stream/194466-crux" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/11c063c06dacad518cf3aa987986e97ef2018727/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7a756c69702d6a6f696e5f636861742d627269676874677265656e2e737667" alt="project chat" data-canonical-src="https://img.shields.io/badge/zulip-join_chat-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Crux is an open source document database with bitemporal graph queries. Java,
+Clojure and HTTP APIs are provided.&lt;/p&gt;
+&lt;p&gt;Crux follows an &lt;em&gt;unbundled&lt;/em&gt; architectural approach, which means that it is
+assembled from highly decoupled components through the use of semi-immutable
+logs at the core of its design. Logs can currently be stored in LMDB or RocksDB
+for standalone single-node deployments, or using Kafka for clustered
+deployments. Indexes can currently be stored using LMDB or RocksDB.&lt;/p&gt;
+&lt;p&gt;Crux is built for efficient bitemporal indexing of schemaless documents, and
+this simplicity enables broad possibilities for creating layered extensions on
+top, such as to add additional transaction, query, and schema capabilities.
+Crux does not currently support SQL but it does provide an EDN-based
+&lt;a href="https://en.wikipedia.org/wiki/Datalog" rel="nofollow"&gt;Datalog&lt;/a&gt; query interface that can be
+used to express a comprehensive range of SQL-like join operations as well as
+recursive graph traversals.&lt;/p&gt;
+&lt;p&gt;Crux has been available as a &lt;em&gt;Public Alpha&lt;/em&gt; since 19&lt;sup&gt;th&lt;/sup&gt; April 2019.
+The Public Alpha period will continue until Crux is released as a Generally
+Available open source software product by JUXT later in 2019.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-circleci-build" class="anchor" aria-hidden="true" href="#circleci-build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CircleCI Build&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/juxt/crux" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cae4970dba42399cf109dcf4644992ffbc8364cc/68747470733a2f2f636972636c6563692e636f6d2f67682f6a7578742f637275782e7376673f7374796c653d73766726636972636c652d746f6b656e3d38363762383462366431623464666666333332373733663737313435373334393532396165653862" alt="CircleCI" data-canonical-src="https://circleci.com/gh/juxt/crux.svg?style=svg&amp;amp;circle-token=867b84b6d1b4dfff332773f771457349529aee8b" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-latest-release" class="anchor" aria-hidden="true" href="#latest-release"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Latest Release&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-core" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3d1041227341460ac74978787de7c48d13aff0d6/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d636f72652e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-core.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-unbundled-architecture" class="anchor" aria-hidden="true" href="#unbundled-architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Unbundled Architecture&lt;/h2&gt;
+&lt;p&gt;Crux embraces the transaction log as the central point of coordination when
+running as a distributed system. Use of a separate document log enables simple
+eviction of active and historical data to assist with technical compliance for
+information privacy regulations.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What do we have to gain from turning the database inside out? Simpler code,
+better scalability, better robustness, lower latency, and more flexibility for
+doing interesting things with data.&lt;/p&gt;
+&lt;p&gt;— Martin Kleppmann (2014)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="./docs/img/crux-node-1.svg"&gt;&lt;img alt="Unbundled Architecture Diagram" src="./docs/img/crux-node-1.svg" width="1000px" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This design makes it feasible and desirable to embed Crux nodes directly in
+your application processes, which reduces deployment complexity and eliminates
+round-trip overheads when running complex application queries.&lt;/p&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;a id="user-content-data-model" class="anchor" aria-hidden="true" href="#data-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Model&lt;/h2&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="./docs/img/crux-venn-1.svg"&gt;&lt;img alt="Document database with graph queries" src="./docs/img/crux-venn-1.svg" width="500px" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Crux is fundamentally a store of versioned EDN documents. The only requirement
+is that you specify a valid &lt;code&gt;:crux.db/id&lt;/code&gt; key which links the documents to
+their corresponding entities. The fields within these documents are
+automatically indexed as Entity-Attribute-Value triples to support efficient
+graph queries. Document versions are indexed by &lt;code&gt;valid-time&lt;/code&gt; (in addition to
+&lt;code&gt;transaction-time&lt;/code&gt;) which allows you to model updates into the past, present or
+future.&lt;/p&gt;
+&lt;p&gt;Crux supports a Datalog query interface for reading data and traversing
+relationships across all documents. Queries are executed so that the results
+are lazily streamed from the underlying indexes. Queries can be made against
+consistent point-in-time snapshots of your database from any Crux node
+connected to the same transaction log, by specifying &lt;code&gt;transaction-time&lt;/code&gt; and/or
+&lt;code&gt;valid-time&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Please visit our &lt;a href="https://juxt.pro/crux/docs/index.html" rel="nofollow"&gt;official
+documentation&lt;/a&gt; to get started with Crux.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-try-it-with-docker" class="anchor" aria-hidden="true" href="#try-it-with-docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Try it with Docker&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/juxt/crux/tree/master/docs/example/standalone_webservice"&gt;standalone webservice
+example&lt;/a&gt;
+for a demo Docker container.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-community--contact" class="anchor" aria-hidden="true" href="#community--contact"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community &amp;amp; Contact&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://juxt-oss.zulipchat.com/#narrow/stream/194466-crux" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/11c063c06dacad518cf3aa987986e97ef2018727/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7a756c69702d6a6f696e5f636861742d627269676874677265656e2e737667" alt="project chat" data-canonical-src="https://img.shields.io/badge/zulip-join_chat-brightgreen.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-3rd-party-modules" class="anchor" aria-hidden="true" href="#3rd-party-modules"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3rd Party Modules&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/avisi-apps/crux-xodus"&gt;avisi-apps/crux-xodus&lt;/a&gt; - pure-JVM
+alternative to &lt;code&gt;crux-rocksdb&lt;/code&gt; and &lt;code&gt;crux-lmdb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/avisi-apps/crux-active-objects"&gt;avisi-apps/crux-active-objects&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;TxLog implementation backed by Active Objects for use inside Atlassian
+Addons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-companies-using-crux" class="anchor" aria-hidden="true" href="#companies-using-crux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Companies using Crux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.oscaro.com" rel="nofollow"&gt;Oscaro (eCommerce)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.avisi.nl/blog/crux-our-final-database-migration" rel="nofollow"&gt;Avisi (AtlasCRM)&lt;/a&gt; - &lt;a href="https://www.avisi.nl/blog/crux-our-final-database-migration" rel="nofollow"&gt;"Crux: Our Final Database Migration"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gnurdle.github.io/HoppyResume2017.html" rel="nofollow"&gt;Gnurdle (consulting)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Yours? Let us know :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="mailto:crux@juxt.pro"&gt;crux@juxt.pro&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-repo-layout" class="anchor" aria-hidden="true" href="#repo-layout"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Repo Layout&lt;/h2&gt;
+&lt;p&gt;Crux is split across multiple projects which are maintained within this
+repository. &lt;code&gt;crux-core&lt;/code&gt; contains the main functional components of Crux along
+with interfaces for the pluggable storage components (Kafka, LMDB, RocksDB
+etc.). Implementations of these storage options are located in their own
+projects.&lt;/p&gt;
+&lt;p&gt;Project directories are published to Clojars independently so that you can
+maintain granular dependencies on precisely the individual components needed
+for your application. Alternatively you can depend on &lt;code&gt;crux-uberjar&lt;/code&gt; whilst in
+development to spend less time worrying about which parts of Crux you need now
+or in the future.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-core" class="anchor" aria-hidden="true" href="#core"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Core&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-core" class="anchor" aria-hidden="true" href="#crux-core"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-core&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-core" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3d1041227341460ac74978787de7c48d13aff0d6/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d636f72652e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-core.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cluster-node-storage" class="anchor" aria-hidden="true" href="#cluster-node-storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cluster Node storage&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-kafka" class="anchor" aria-hidden="true" href="#crux-kafka"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-kafka&lt;/h4&gt;
+&lt;p&gt;For scalability and durability.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-kafka" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ef319fed30ceafc41e5a44d86b2f8f34ca819708/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d6b61666b612e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-kafka.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-kafka-embedded" class="anchor" aria-hidden="true" href="#crux-kafka-embedded"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-kafka-embedded&lt;/h4&gt;
+&lt;p&gt;Useful for experimentation and testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-kafka-embedded" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8ef75396082dfe24a27d25b1753a4c977017f014/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d6b61666b612d656d6265646465642e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-kafka-embedded.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-local-kv-and-standalone-mode-storage" class="anchor" aria-hidden="true" href="#local-kv-and-standalone-mode-storage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Local KV and Standalone mode storage&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-lmdb" class="anchor" aria-hidden="true" href="#crux-lmdb"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-lmdb&lt;/h4&gt;
+&lt;p&gt;Better read performance for intensive querying.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-lmdb" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9d97e1e2beebae5d8f707c7cec3380aaddd3f1c1/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d6c6d64622e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-lmdb.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-rocksdb" class="anchor" aria-hidden="true" href="#crux-rocksdb"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-rocksdb&lt;/h4&gt;
+&lt;p&gt;Better write performance for heavy ingestion.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-rocksdb" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ccd2f94c8a8150220075da52f086f6a11f3bba2a/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d726f636b7364622e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-rocksdb.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;crux-rocksdb&lt;/code&gt; is a good default choice.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-http" class="anchor" aria-hidden="true" href="#http"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;HTTP&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-server" class="anchor" aria-hidden="true" href="#server"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Server&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-http-server" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/949650cd11beee13286866deeaab18de698b0fd2/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d687474702d7365727665722e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-http-server.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-client" class="anchor" aria-hidden="true" href="#client"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Client&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-http-client" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a6eac486aef6c59b536bec48f0122f7115e9e465/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d687474702d636c69656e742e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-http-client.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-additional" class="anchor" aria-hidden="true" href="#additional"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-decorators" class="anchor" aria-hidden="true" href="#crux-decorators"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-decorators&lt;/h4&gt;
+&lt;p&gt;Aggregation decorator and experimental API composition.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-decorators" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/64390238b0504d3bc454da4a438a152da7ba0cad/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d6465636f7261746f72732e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-decorators.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-rdf" class="anchor" aria-hidden="true" href="#crux-rdf"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-rdf&lt;/h4&gt;
+&lt;p&gt;Import RDF data and run a subset of SPARQL queries.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-rdf" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/863016dcf69cd97b9558009c6606101513849740/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d7264662e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-rdf.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-uberjar" class="anchor" aria-hidden="true" href="#uberjar"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Uberjar&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-crux-uberjar" class="anchor" aria-hidden="true" href="#crux-uberjar"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;crux-uberjar&lt;/h4&gt;
+&lt;p&gt;One dependency to rule them all.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://clojars.org/juxt/crux-uberjar" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/af4e6e6ed54efdcc167ba3cfef98c21c4c4a7859/68747470733a2f2f696d672e736869656c64732e696f2f636c6f6a6172732f762f6a7578742f637275782d756265726a61722e737667" alt="Clojars Project" data-canonical-src="https://img.shields.io/clojars/v/juxt/crux-uberjar.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-using-clojure" class="anchor" aria-hidden="true" href="#using-clojure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Clojure&lt;/h2&gt;
+&lt;p&gt;Please note that Clojure is not &lt;em&gt;required&lt;/em&gt; when using Crux. HTTP and Java
+APIs are also available.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-repl" class="anchor" aria-hidden="true" href="#repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REPL&lt;/h3&gt;
+&lt;p&gt;Launch a REPL using the very latest Clojars &lt;code&gt;-SNAPSHOT&lt;/code&gt; release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;clj -Sdeps &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;{:deps {juxt/crux-core {:mvn/version "RELEASE"}}}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Start a standalone in-memory (i.e. not persisted anywhere) node:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;require&lt;/span&gt; '[crux.api &lt;span class="pl-c1"&gt;:as&lt;/span&gt; crux])
+(&lt;span class="pl-k"&gt;import&lt;/span&gt; '[crux.api ICruxAPI])
+
+(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;my-node&lt;/span&gt;
+  (&lt;span class="pl-en"&gt;crux/start-node&lt;/span&gt;
+    {&lt;span class="pl-c1"&gt;:crux.node/topology&lt;/span&gt; &lt;span class="pl-c1"&gt;:crux.standalone/topology&lt;/span&gt;
+     &lt;span class="pl-c1"&gt;:crux.node/kv-store&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;crux.kv.memdb/kv&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt; see 'configuration' section of docs for LMDB/RocksDB storage options&lt;/span&gt;
+     &lt;span class="pl-c1"&gt;:crux.standalone/event-log-dir&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;data/event-log-dir-1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+     &lt;span class="pl-c1"&gt;:crux.standalone/event-log-kv-store&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;crux.kv.memdb/kv&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+     &lt;span class="pl-c1"&gt;:crux.kv/db-dir&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;data/db-dir-1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;put&lt;/code&gt; a document:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;my-document&lt;/span&gt;
+  {&lt;span class="pl-c1"&gt;:crux.db/id&lt;/span&gt; &lt;span class="pl-c1"&gt;:some/fancy-id&lt;/span&gt;
+   &lt;span class="pl-c1"&gt;:arbitrary-key&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;an untyped value&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;123&lt;/span&gt;]
+   &lt;span class="pl-c1"&gt;:nested-map&lt;/span&gt; {&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;and values&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:can-be-arbitrarily-nested&lt;/span&gt;}})
+
+(&lt;span class="pl-en"&gt;crux/submit-tx&lt;/span&gt; my-node [[&lt;span class="pl-c1"&gt;:crux.tx/put&lt;/span&gt; my-document]])&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Take an immutable snapshot of the database:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-e"&gt;my-db&lt;/span&gt; (&lt;span class="pl-en"&gt;crux/db&lt;/span&gt; my-node))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Retrieve the current version of the document:&lt;/p&gt;
+&lt;div class="highlight highlight-source-clojure"&gt;&lt;pre&gt;(&lt;span class="pl-en"&gt;crux/entity&lt;/span&gt; my-db &lt;span class="pl-c1"&gt;:some/fancy-id&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-development-uber-repl" class="anchor" aria-hidden="true" href="#development-uber-repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development "uber" REPL&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;To run a REPL that includes depedencies for all components of Crux, first build the sub-modules using &lt;code&gt;lein sub install&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Then, &lt;code&gt;cd crux-dev&lt;/code&gt; and &lt;code&gt;lein repl&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Once you've connected to the REPL, in the &lt;code&gt;user&lt;/code&gt; namespace, run &lt;code&gt;(dev)&lt;/code&gt; to load the dev namespace.&lt;/li&gt;
+&lt;li&gt;You can now &lt;code&gt;(start)&lt;/code&gt;, &lt;code&gt;(stop)&lt;/code&gt; and &lt;code&gt;(reset)&lt;/code&gt; the Crux development system (amongst other things).&lt;/li&gt;
+&lt;li&gt;You should now have a running Crux node in the &lt;code&gt;dev/node&lt;/code&gt; var - you can verify this by calling &lt;code&gt;(crux/status node)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h3&gt;
+&lt;p&gt;The recommended way of running the primary tests is &lt;code&gt;lein build&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright--license" class="anchor" aria-hidden="true" href="#copyright--license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright &amp;amp; License&lt;/h2&gt;
+&lt;p&gt;The MIT License (MIT)&lt;/p&gt;
+&lt;p&gt;Copyright © 2018-2019 JUXT LTD.&lt;/p&gt;
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:&lt;/p&gt;
+&lt;p&gt;The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.&lt;/p&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h3&gt;
+&lt;p&gt;A list of compiled dependencies and corresponding licenses is available
+&lt;a href="LICENSE-deps.adoc"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>juxt</author><guid isPermaLink="false">https://github.com/juxt/crux</guid><pubDate>Fri, 27 Dec 2019 00:04:00 GMT</pubDate></item><item><title>greglook/cljstyle #5 in Clojure, Today</title><link>https://github.com/greglook/cljstyle</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>greglook</author><guid isPermaLink="false">https://github.com/greglook/cljstyle</guid><pubDate>Fri, 27 Dec 2019 00:05:00 GMT</pubDate></item><item><title>luciodale/fork #6 in Clojure, Today</title><link>https://github.com/luciodale/fork</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>luciodale</author><guid isPermaLink="false">https://github.com/luciodale/fork</guid><pubDate>Fri, 27 Dec 2019 00:06:00 GMT</pubDate></item></channel></rss>
