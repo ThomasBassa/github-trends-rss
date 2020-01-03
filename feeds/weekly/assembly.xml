@@ -1,5 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Assembly, This week</title><link>https://github.com/trending/assembly?since=weekly</link><description>The top repositories on GitHub for assembly, measured weekly</description><pubDate>Thu, 02 Jan 2020 01:10:46 GMT</pubDate><lastBuildDate>Thu, 02 Jan 2020 01:10:46 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>bitdump/BLHeli #1 in Assembly, This week</title><link>https://github.com/bitdump/BLHeli</link><description>&lt;p&gt;&lt;i&gt;BLHeli for brushless ESC firmware&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;This tree contains BLHeli code for sensorless brushless motor electronic speed control (ESC) boards.&lt;/p&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Assembly, This week</title><link>https://github.com/trending/assembly?since=weekly</link><description>The top repositories on GitHub for assembly, measured weekly</description><pubDate>Fri, 03 Jan 2020 01:04:16 GMT</pubDate><lastBuildDate>Fri, 03 Jan 2020 01:04:16 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>dwelch67/raspberrypi #1 in Assembly, This week</title><link>https://github.com/dwelch67/raspberrypi</link><description>&lt;p&gt;&lt;i&gt;Raspberry Pi ARM based bare metal examples&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="" data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;
+The main directory examples are for the older/est pi1 boards maybe
+some attempts at newer boards.  These are retained for legacy reasons
+some folks have direct links.  They are still valid for those boards.
+The boards directory has the first attempt at solving the too many
+boards issue and that is where I recommend you go.  My third string
+attempt is I have a raspberrypi-zero and raspberrypi-three repos that
+are for those boards specifically.  Little to no verbage though, the
+rambling text is mostly in this repo.
+
+--------------
+
+This repo is getting a bit messy starting with the first released to
+the public pi and then all that came after.  I want to rework it but
+it is going slowly.  Recently started creating directories pi1, piaplus
+and so on to target the examples specifically to the different cards.
+Again that is slow going.  Likewise this README will be rewritten perhaps
+but for now...
+
+--------------
+
+This repo serves as a collection of low level examples.  No operating
+system, embedded or low level embedded or deeply embedded or bare metal,
+whatever your term is for this.
+
+I am in no way shape or form associated with the raspberry pi organization
+nor broadcom.  I just happen to own one (some) and am sharing my
+experiences.  The raspberry pi is about education, and I feel bare
+metal education is just as important as Python programming.
+
+So I started this years ago when got my first ARM11 based raspberry pi
+maybe we call that a raspberry pi 1, I dont know a good term.  But
+now there is a growing number of variations.
+
+ARM11 based (BCM2835)
+Raspberry Pi B
+Raspberry Pi B2
+Raspberry Pi A+
+Raspberry Pi B+
+Raspberry Pi Zero
+Cortex-A7 based (BCM2836)
+Raspberry Pi 2 B
+Cortex-A53 based (BCM2837)
+Raspberry Pi 3 B
+
+There is also the compute module but I dont have one of those.
+
+General differences that we care about for these examples.  The amount
+of ram varies from board to board.  The peripheral base address is
+different between the BCM2835 and BCM2836.  The BCM2835 looks for the
+file kernel.img the BCM2836 looks for kernel7.img.  The ARM11 based
+Zero is a B with stuff removed and a new layout, but they up/over
+clocked the processor from 750MHz to 1000MHz, one led on gpio 16.  The
+A+ and B+ they moved the led (or put two) on gpio 35 and 47.  The
+raspberry pi 2 is B+ like but with the different chip, supposedly the
+BCM2836 is  BCM2835 with the ARM11 core removed and replaced with
+the Cortex A7 and for the most part it appears to be.  The raspberry
+pi 3 is Cortex A8 based, 64 bit.  And they moved the LED (the leds)
+to an i2c gpio expander.
+
+As of this writing I am adding plus and pi2 versions of the examples
+as many of them are based on the early/original.  No guarantees I will
+do that, just looking at the differences between the blinker01 examples
+should show you what to do to convert these yourself.  In some cases
+I am intentionally not trying to have one code base build for all
+three with ifdefs and such, keep it simple stupid then complicate it
+as needed.  The text may say kernel.img but substitute with kernel7.img
+as needed.
+
+I still have a number of raspberry pi 2 examples to port, and now a
+bunch of examples to port to the raspberry pi 3.  The raspberry pi 3
+as of this writing, without a config.txt, is switched to 32 bit
+compatibility mode.  See the aarch64 directory for 64 bit ARM examples.
+
+From what we know so far there is a gpu on chip which:
+
+1) boots off of an on chip rom of some sort
+2) reads the sd card and looks for additional gpu specific boot files
+bootcode.bin and start.elf in the root dir of the first partition
+(fat32 formatted, loader.bin no longer used/required)
+3) in the same dir it looks for config.txt which you can do things like
+change the arm speed, or change the address where to load kernel.img,
+and many others
+4) it reads kernel.img the arm boot binary file and copies it to memory
+5) releases reset on the arm such that it runs from the address where
+the kernel.img data was written
+
+The memory is split between the GPU and the ARM, I believe the default
+is to split the memory in half.  And there are ways to change that
+split (to give the ARM more)(using config.txt).  Not going to worry
+about that here.
+
+From the ARMs perspective the kernel.img file is loaded, by default,
+to address 0x8000.  (there are ways to change that, not going to worry
+about that right now).
+
+Hardware and programming information:
+
+You will want to go here
+&lt;a href="http://elinux.org/RPi_Hardware" rel="nofollow"&gt;http://elinux.org/RPi_Hardware&lt;/a&gt;
+And the datasheet and schematic.  These are moving targets the above
+elinux link has the datasheet and errata which is important.  They
+didnt give us a full datasheet for the BCM2836 have to go with the
+BCM2835.
+You will want to go to
+&lt;a href="http://raspberrypi.org" rel="nofollow"&gt;http://raspberrypi.org&lt;/a&gt; and then the forum tab then slide down to
+the Bare Metal forum, the first (only) Sticky topic is Bare Metal
+Resources.  There are many more links there for good information.
+Also go to
+&lt;a href="http://infocenter.arm.com" rel="nofollow"&gt;http://infocenter.arm.com&lt;/a&gt; and get the Architectural Reference Manual
+and the Techincal Reference Manual for the ARM1176JZF-S (BCM2835)
+and/or the Cortex-A7 (BCM2836).
+
+Early in the BCM2835 document you see a memory map.  I am going to
+operate based on the middle map, this is how the ARM comes up.  The
+left side is the system which we dont have direct access to in that
+form, the gpu probably, not the ARM.  The ARM comes up with a memory
+space that is basically 0x40000000 bytes in size as it mentions in
+the middle chart.  The bottom of this picture shows total system
+sdram (memory) and somewhere between zero and the top of ram is a
+split between sdram for the ARM on the bottom and a chunk of that
+for the VC SDRAM, basically memory for the gpu and memory shared
+between the ARM and GPU to allow the ARM to ask the GPU to draw stuff
+on the video screen.  256MBytes is 0x10000000, and 512MBytes is
+0x20000000.  Some models of raspberry pi have 256MB, newer models have
+512MB total ram which is split between the GPU and the ARM.  Assume
+the ARM gets at least half of this.  Peripherals (uart, gpio, etc)
+are mapped into arm address space at 0x20000000.  When you see
+0x7Exxxxxx in the manual replace that with 0x20xxxxxx as your ARM
+physical address.  Experimentally I have seen the memory repeats every
+0x40000000, read 0x40008000 and you see the data from 0x8000.  From the
+Broadcom doc this looks to be giving us access to the memory with
+different caching schemes (cached, uncached, etc) depending on which
+upper address bits you use.  Most likely to allow more room for RAM
+the Raspberry Pi 2 uses a peripheral base address of 0x3Fxxxxxx instead
+of the 0x20xxxxxx.
+
+I do not normally zero out .bss or use .data so if you do this to my
+examples
+
+int x;
+fun()
+{
+  static int y;
+}
+
+dont assume x and y are zero when your program starts. Nor if you do
+this
+
+int x=5;
+fun()
+{
+  static int y=7;
+}
+
+will x=5 or y=7.
+
+See the bssdata directory for more information, you can most likely
+use the linker script to solve the problem for you since .text, .data,
+.bss, (.rodata), everything lives in ram.
+
+Nor do I use gcc libraries nor C libraries so you can build most if not
+all of my examples using a gcc cross compiler.  Basically it doesnt
+matter if you use arm-none-linux-gnueabi or arm-none-eabi.  I have not
+looked in a while but formerly codesourcery.com (now a part of Mentor
+Graphics) had a free LITE version of their toolchain which was pretty
+easy to come by.  An even easier place is here
+&lt;a href="https://launchpad.net/gcc-arm-embedded" rel="nofollow"&gt;https://launchpad.net/gcc-arm-embedded&lt;/a&gt;
+to get a cross compiler.  Building your own toolchain from gnu sources
+(binutils and gcc) is fairly straight forward see my build_gcc
+repository for a build script (Linux only but from that you might get
+other platforms to build).  And also remember that you can run linux
+on the pi and on that it has a native, not cross, gnu toolchain.
+
+As far as we know so far the Raspberry Pi is not "brickable".  Normally
+what brickable means is the processor relies on a boot flash and with
+that flash it is possible to change/erase it such that the processor will
+not boot normally.  Brickable and bricked sometimes excludes things
+like jtag or special programming headers.  From the customers perspective
+a bricked board is...bricked.  But on return to the vendor they may
+have other equipment that is able to recover the board without doing
+any soldering, perhaps plugging in jtag or some other cable on pins/pads
+they have declared as reserved.  Take apart a tv remote control or
+calculator, etc and you may see some holes or pads on the circuit board,
+for some of these devices just opening the battery case you have a view
+of some of the pcboard.  This is no doubt a programming header.  Long
+story short, so far as I know the Raspberry Pi is not brickable because
+it boots off of an sd card which we can easily remove and replace
+ourselves.  I dont know for sure, a lot more info is out about the
+GPU since I started with this, but I assume that there is some GPU code
+that boots off of an internal rom, I doubt with two on chip processors
+they created pure logic to read the sd card, wade through the filesystem
+to find a specific bootcode.bin file, load that into ram and run it.
+If that assumption is true is that on chip rom one time programmable
+or can it be erased/reprogrammed, and if the latter how lucky do we have
+to be with a broken program to erase that?  So I am not 100% sure but
+almost 100% sure the Raspberry Pi is not brickable.  This is actually
+a big deal for bare metal programming, in particular if it is your first
+platform.  With decades of experience I still make mistakes from time
+to time and brick a board, never to be recovered.
+
+To use my samples you do not need a huge sd card.  Nor do you need nor
+want to download one of the linux images, takes a while to download,
+takes a bigger sd card to use, and takes forever to write to the sd card.
+I use the firmware from &lt;a href="http://github.com/raspberrypi"&gt;http://github.com/raspberrypi&lt;/a&gt;.  The minimum
+configuration you need to get started at this level is:
+
+go to &lt;a href="https://github.com/raspberrypi"&gt;https://github.com/raspberrypi&lt;/a&gt;, you DO NOT need to download
+the repo, they have some large files in there you will not need (for
+my examples).  go to the firmware directory and then the boot directory.
+For each of these files, bootcode.bin and start.elf (NOT kernel.img,
+dont need it, too big)(loader.bin is no longer used/required).  Click
+on the file name, it will go to another page then click on View Raw and
+it will let you download the file.  For reference, I do not use nor
+have a config.txt file on my sd card.  I only have the minimum number
+of files on the sd card, bootcode.bin, start.elf and either kernel.img
+or kernel7.img (or sometimes both).
+
+My examples are basically the kernel.img file.  Not a linux kernel,
+just bare metal programs.  Since the GPU bootloader is looking for
+that file name, you use that file name.  The kernel.img file is just a
+blob that is copied to memory, dont worry about what they named it.
+
+What I do is setup the sd card with a single partition, fat32.  And
+copy the above files in the root directory.  bootcode.bin and start.elf.
+From there you take .bin files from my examples and place them on the sd
+card with the name kernel.img.  It wont take you very long to figure out
+this is going to get painful.
+
+1) power off raspi
+2) remove sd card
+3) insert sd card in reader
+4) plug reader into computer
+5) mount/wait
+6) copy binary file to kernel.img
+7) sync/wait
+8) unmount
+9) insert sd card in raspi
+10) power raspi
+11) repeat
+
+There are ways to avoid this, one is jtag, which is not as expensive
+as it used to be.  It used to be in the thousands of dollars, now it
+is under $50 and the software tools are free.  Now the raspi does have
+jtag on the arm, getting the jtag connected requires soldering on older
+of the older models, but unless you were an early adopter, you dont
+need to worry about that all the signals are on the P1 connector. How
+to use the jtag and how to hook it up is described later and in
+the armjtag sample.
+
+Another method is a bootloader, typically you use a serial port connected
+to the target processor.  That processor boots a bootloader program that
+in some way, shape, or form allows you to interact with the bootloader
+and load programs into memory (that the bootloader is not using itself)
+and then the bootloader branches/jumps to your program.  If your program
+is still being debugged and you want to try again, you reboot the processor
+the bootloader comes up and you can try again without having to move any
+sd cards, etc.  The sd card dance above is now replaced with the
+bootloader dance:
+
+1) power off raspi
+2) power on raspi
+3) type command to load and start new program
+
+Or if you solder on a reset button
+
+1) reset raspi
+2) type command to load and start new program
+
+I have working bootloader examples.  bootloader05 is currently the last
+of the xmodem based ones (that basically take a kernel.img file),
+personally I use bootloader07 which takes an intel hex formatted file
+which these examples also build.  The .bin file would be used with
+bootloader05, the .hex with bootloader07.  But you need more hardware
+(no soldering is required).  For those old enough to know what a serial
+port is, you CANNOT connect your raspberry pi directly to this port,
+you will fry the raspberry pi.  You need some sort of serial port at
+3.3V either a level shifter of some sort (transceiver like a MAX232) or
+a usb serial port where the signals are 3.3V (dont need to use RS232
+just stay at the logic level).  The solution I recommend is a non-solder
+solution:
+
+A recent purchase, experimentally white is RX and green is TX, black GND
+&lt;a href="http://www.nexuscyber.com/usb-to-ttl-serial-debug-console-cable-for-raspberry-pi" rel="nofollow"&gt;http://www.nexuscyber.com/usb-to-ttl-serial-debug-console-cable-for-raspberry-pi&lt;/a&gt;
+Sparkfun has one
+&lt;a href="https://www.sparkfun.com/products/12977" rel="nofollow"&gt;https://www.sparkfun.com/products/12977&lt;/a&gt;
+As does Adafruit
+&lt;a href="https://www.adafruit.com/products/954" rel="nofollow"&gt;https://www.adafruit.com/products/954&lt;/a&gt;
+The above, assuming you figure out rx from tx, are all you need.  The
+ones below you may need to solder or may need some jumper wires.
+
+&lt;a href="http://www.sparkfun.com/products/9873" rel="nofollow"&gt;http://www.sparkfun.com/products/9873&lt;/a&gt;
+plus some male/female wire
+&lt;a href="http://www.sparkfun.com/products/9140" rel="nofollow"&gt;http://www.sparkfun.com/products/9140&lt;/a&gt;
+
+Solutions that may involve soldering
+&lt;a href="http://www.sparkfun.com/products/718" rel="nofollow"&gt;http://www.sparkfun.com/products/718&lt;/a&gt;
+&lt;a href="http://www.sparkfun.com/products/8430" rel="nofollow"&gt;http://www.sparkfun.com/products/8430&lt;/a&gt;
+
+Or this for level shifting to a real com port.
+&lt;a href="http://www.sparkfun.com/products/449" rel="nofollow"&gt;http://www.sparkfun.com/products/449&lt;/a&gt;
+
+Or see the pitopi (pi to pi) directory.  This talks about how to take
+two raspberry pi's and connect them together.  One being the
+host/development platform (a raspberry pi running linux is a native
+arm development platform, no need to find/get/build a cross compiler)
+the other being the target that runs your bare metal programs.
+
+Lastly and perhaps the best solution IMO, is the FT4232H or FT2232H
+mini module from FTDI.  It gives you UART and JTAG for under $30.
+See the armjtag directory README for more and you will want some
+female/female wire from sparkfun or adafruit or elsewhere
+&lt;a href="https://www.sparkfun.com/products/8430" rel="nofollow"&gt;https://www.sparkfun.com/products/8430&lt;/a&gt;
+(I use these F/F wires for most projects, buy/bought the 100 pack)
+
+---- connecting to the uart pins ----
+
+On the raspberry pi, the connector with two rows of a bunch of pins is
+P1.  Starting at that corner of the board, the outside corner pin is
+pin 2.  From pin 2 heading toward the yellow rca connector the pins
+are 2, 4, 6, 8, 10.  Pin 6 connect to gnd on the usb to serial board
+pin 8 is TX out of the raspi connect that to RX on the usb to serial
+board.  Pin 10 is RX into the raspi, connect that to TX on the usb to
+serial board.  Careful not to have metal items on the usb to serial
+board touch metal items on the raspberry pi (other than the three
+connections described).  On your host computer you will want to use
+some sort of dumb terminal program, minicom, putty, etc.  Set the
+serial port (usb to serial board) to 115200 baud, 8 data bits, no
+parity, 1 stop bit.  NO flow control.  With minicom to get no flow
+control you normally have to save the config, exit minicom, then
+restart minicom and load the config in order for flow control
+changes to take effect.  Once you have a saved config you dont have
+to mess with it any more.
+
+2  outer corner
+4
+6  ground
+8  TX out
+10 RX in
+
+ground is not necessarily needed if both the raspberry pi and the
+usb to serial board are powered by the same computer (I recommend
+you do that) as they will ideally have the same ground.
+
+Read more about the bootloaders in their local README files.  Likewise
+if you interested in jtag see the armjatag README file.  Other than
+chewing up a few more GPIO pins, and another thing you have to buy, the
+jtag solution is the most powerful and useful.  My typical setup is the
+armjtag binary as kernel.img, a usb to jtag board like the amontec
+jtag-tiny and a usb to serial using minicom.
+
+Update, amontec is history their website is gone.  But you can
+get j-link (or clone) boxes from asia on ebay for around $11, so far
+I have tried them with ARM JTAG and ARM SWD.  Very pleased so far.
+
+If you can solder, the A+, B+, Zero and Pi 2 all have a pair of holes
+sometimes with the text RUN next to them.  I use buttons like this
+&lt;a href="https://www.sparkfun.com/products/97" rel="nofollow"&gt;https://www.sparkfun.com/products/97&lt;/a&gt;
+with two of the legs broken off then the others twisted and adjusted
+to fit in the holes and soldered down.
+
+As far as these samples go I recommend starting with blinker01 then
+follow the discovery of the chip into uart01, etc.
+
+The bssdata and baremetal directories attempt to explain a little
+bit about taking control of the gnu toolchain to build bare metal
+programs like these examples.  As with any bare metal programmer I have
+my ways of doing things and these two directories hopefully will show
+you some basics, get you thinking about how these tools really work,
+take the fear away from using them, as well as some comments on why
+I take the approach I take (not worrying about .bss nor .data).  Since
+the raspberry pi is from our perspective RAM based (the GPU loads our
+whole binary into memory), we dont have to deal with the things we
+would deal with on a FLASH/PROM + RAM system.  This RAM only approach
+makes life a lot easier, but leaves out some important bare metal
+experiences that you will have to find elsewhere.
+
+-----------
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>dwelch67</author><guid isPermaLink="false">https://github.com/dwelch67/raspberrypi</guid><pubDate>Fri, 03 Jan 2020 00:01:00 GMT</pubDate></item><item><title>bitdump/BLHeli #2 in Assembly, This week</title><link>https://github.com/bitdump/BLHeli</link><description>&lt;p&gt;&lt;i&gt;BLHeli for brushless ESC firmware&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;This tree contains BLHeli code for sensorless brushless motor electronic speed control (ESC) boards.&lt;/p&gt;
 &lt;p&gt;To view and use the files, click the "Clone or download" button on this page,&lt;br&gt;
 and then select "Download ZIP" to download the repository to your computer.&lt;/p&gt;
 &lt;p&gt;For flashing and configuration, download the BLHeliSuite PC software:&lt;br&gt;
@@ -10,146 +388,7 @@ and then select "Download ZIP" to download the repository to your computer.&lt;/
 &lt;p&gt;And look in the "BLHeli_32 ARM" folder for info on BLHeli_32.&lt;/p&gt;
 &lt;p&gt;October 2018,
 Steffen Skaug&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>bitdump</author><guid isPermaLink="false">https://github.com/bitdump/BLHeli</guid><pubDate>Thu, 02 Jan 2020 00:01:00 GMT</pubDate></item><item><title>chrislgarry/Apollo-11 #2 in Assembly, This week</title><link>https://github.com/chrislgarry/Apollo-11</link><description>&lt;p&gt;&lt;i&gt;Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-apollo-11" class="anchor" aria-hidden="true" href="#apollo-11"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apollo-11&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b0879e5ad3dded69a38362aacf9ec5baac73b1eb/68747470733a2f2f72617763646e2e6769746861636b2e636f6d2f616c65656e34322f6261646765732f63393234366637342f7372632f6e6173612e737667" alt="NASA" data-canonical-src="https://rawcdn.githack.com/aleen42/badges/c9246f74/src/nasa.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;g-emoji class="g-emoji" alias="crossed_flags" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f38c.png"&gt;🎌&lt;/g-emoji&gt;
-&lt;a href="README.id.md"&gt;Bahasa Indonesia&lt;/a&gt;,
-&lt;a href="README.ca.md"&gt;Català&lt;/a&gt;,
-&lt;a href="README.de.md"&gt;Deutsch&lt;/a&gt;,
-&lt;strong&gt;English&lt;/strong&gt;,
-&lt;a href="README.es.md"&gt;Español&lt;/a&gt;,
-&lt;a href="README.fr.md"&gt;Français&lt;/a&gt;,
-&lt;a href="README.it.md"&gt;Italiano&lt;/a&gt;,
-&lt;a href="README.pl.md"&gt;Polski&lt;/a&gt;,
-&lt;a href="README.pt_br.md"&gt;Português&lt;/a&gt;,
-&lt;a href="README.ru.md"&gt;Русский&lt;/a&gt;,
-&lt;a href="README.tr.md"&gt;Türkçe&lt;/a&gt;,
-&lt;a href="README.ro.md"&gt;Română&lt;/a&gt;,
-&lt;a href="README.ar.md"&gt;العربية&lt;/a&gt;,
-&lt;a href="README.hi_in.md"&gt;हिंदी&lt;/a&gt;,
-&lt;a href="README.zh_tw.md"&gt;正體中文&lt;/a&gt;,
-&lt;a href="README.zh_cn.md"&gt;简体中文&lt;/a&gt;,
-&lt;a href="README.ko_kr.md"&gt;한국어&lt;/a&gt;,
-&lt;a href="README.ja.md"&gt;日本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Original Apollo 11 guidance computer (AGC) source code for Command
-Module (Comanche055) and Lunar Module (Luminary099). Digitized by
-the folks at &lt;a href="http://www.ibiblio.org/apollo/" rel="nofollow"&gt;Virtual AGC&lt;/a&gt; and &lt;a href="http://web.mit.edu/museum/" rel="nofollow"&gt;MIT Museum&lt;/a&gt;. The goal is to be
-a repo for the original Apollo 11 source code. As such, PRs are
-welcome for any issues identified between the transcriptions in this
-repository and the original source scans for &lt;a href="http://www.ibiblio.org/apollo/ScansForConversion/Luminary099/" rel="nofollow"&gt;Luminary 099&lt;/a&gt; and
-&lt;a href="http://www.ibiblio.org/apollo/ScansForConversion/Comanche055/" rel="nofollow"&gt;Comanche 055&lt;/a&gt;, as well as any files I may have missed.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
-&lt;p&gt;Please read &lt;a href="https://github.com/chrislgarry/Apollo-11/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; before opening a pull request.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-compiling" class="anchor" aria-hidden="true" href="#compiling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling&lt;/h2&gt;
-&lt;p&gt;If you are interested in compiling the original source code, check
-out &lt;a href="https://github.com/rburkey2005/virtualagc"&gt;Virtual AGC&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-attribution" class="anchor" aria-hidden="true" href="#attribution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Attribution&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align="left"&gt; &lt;/th&gt;
-&lt;th align="left"&gt; &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Copyright&lt;/td&gt;
-&lt;td align="left"&gt;Public domain&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Comanche055&lt;/td&gt;
-&lt;td align="left"&gt;Part of the source code for Colossus 2A, the Command Module's (CM) Apollo Guidance Computer (AGC) for Apollo 11&lt;br&gt;&lt;code&gt;Assemble revision 055 of AGC program Comanche by NASA&lt;/code&gt;&lt;br&gt;&lt;code&gt;2021113-051. 10:28 APR. 1, 1969&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Luminary099&lt;/td&gt;
-&lt;td align="left"&gt;Part of the source code for Luminary 1A, the Lunar Module's (LM) Apollo Guidance Computer (AGC) for Apollo 11&lt;br&gt;&lt;code&gt;Assemble revision 001 of AGC program LYM99 by NASA&lt;/code&gt;&lt;br&gt;&lt;code&gt;2021112-061. 16:27 JUL. 14, 1969&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Assembler&lt;/td&gt;
-&lt;td align="left"&gt;yaYUL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Contact&lt;/td&gt;
-&lt;td align="left"&gt;Ron Burkey &lt;a href="mailto:info@sandroid.org"&gt;info@sandroid.org&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Website&lt;/td&gt;
-&lt;td align="left"&gt;&lt;a href="http://www.ibiblio.org/apollo" rel="nofollow"&gt;www.ibiblio.org/apollo&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Digitalization&lt;/td&gt;
-&lt;td align="left"&gt;This source code has been transcribed or otherwise adapted from digitized images of a hardcopy from the MIT Museum. The digitization was performed by Paul Fjeld, and arranged for by Deborah Douglas of the Museum. Many thanks to both.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3&gt;&lt;a id="user-content-contract-and-approvals" class="anchor" aria-hidden="true" href="#contract-and-approvals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contract and Approvals&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Derived from &lt;a href="https://github.com/chrislgarry/Apollo-11/blob/master/Comanche055/CONTRACT_AND_APPROVALS.agc"&gt;CONTRACT_AND_APPROVALS.agc&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This AGC program shall also be referred to as Colossus 2A.&lt;/p&gt;
-&lt;p&gt;This program is intended for use in the CM as specified in report &lt;code&gt;R-577&lt;/code&gt;. This program was prepared under DSR project &lt;code&gt;55-23870&lt;/code&gt;, sponsored by the Manned Spacecraft Center of The National Aeronautics and Space Administration through contract &lt;code&gt;NAS 9-4065&lt;/code&gt; with the Instrumentation Laboratory, Massachusetts Institute of Technology, Cambridge, Mass.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align="left"&gt;Submitted by&lt;/th&gt;
-&lt;th align="left"&gt;Role&lt;/th&gt;
-&lt;th align="left"&gt;Date&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Margaret H. Hamilton&lt;/td&gt;
-&lt;td align="left"&gt;Colossus Programming Leader&lt;br&gt;Apollo Guidance and Navigation&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align="left"&gt;Approved by&lt;/th&gt;
-&lt;th align="left"&gt;Role&lt;/th&gt;
-&lt;th align="left"&gt;Date&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Daniel J. Lickly&lt;/td&gt;
-&lt;td align="left"&gt;Director, Mission Program Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Fred H. Martin&lt;/td&gt;
-&lt;td align="left"&gt;Colossus Project Manager&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Norman E. Sears&lt;/td&gt;
-&lt;td align="left"&gt;Director, Mission Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Richard H. Battin&lt;/td&gt;
-&lt;td align="left"&gt;Director, Mission Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;David G. Hoag&lt;/td&gt;
-&lt;td align="left"&gt;Director&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;Ralph R. Ragan&lt;/td&gt;
-&lt;td align="left"&gt;Deputy Director&lt;br&gt;Instrumentation Laboratory&lt;/td&gt;
-&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>chrislgarry</author><guid isPermaLink="false">https://github.com/chrislgarry/Apollo-11</guid><pubDate>Thu, 02 Jan 2020 00:02:00 GMT</pubDate></item><item><title>dgryski/go-metro #3 in Assembly, This week</title><link>https://github.com/dgryski/go-metro</link><description>&lt;p&gt;&lt;i&gt;Go translation of MetroHash&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="" data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;MetroHash
-
-This package is a mechanical translation of the reference C++ code for
-MetroHash, available at &lt;a href="https://github.com/jandrewrogers/MetroHash"&gt;https://github.com/jandrewrogers/MetroHash&lt;/a&gt; 
-
-I claim no additional copyright over the original implementation.
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>dgryski</author><guid isPermaLink="false">https://github.com/dgryski/go-metro</guid><pubDate>Thu, 02 Jan 2020 00:03:00 GMT</pubDate></item><item><title>JSsixtyfour/smashremix #4 in Assembly, This week</title><link>https://github.com/JSsixtyfour/smashremix</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="txt" data-path="readme.txt"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;THIS IS ONLY FOR THOSE INTERESTED IN THE SOURCE CODE OF THE MOD. PLEASE DOWNLOAD THE RELEASE VERSION BY CLICKING THE RELEASE TAB.
+&lt;/article&gt;&lt;/div&gt;</description><author>bitdump</author><guid isPermaLink="false">https://github.com/bitdump/BLHeli</guid><pubDate>Fri, 03 Jan 2020 00:02:00 GMT</pubDate></item><item><title>JSsixtyfour/smashremix #3 in Assembly, This week</title><link>https://github.com/JSsixtyfour/smashremix</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="txt" data-path="readme.txt"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;THIS IS ONLY FOR THOSE INTERESTED IN THE SOURCE CODE OF THE MOD. PLEASE DOWNLOAD THE RELEASE VERSION BY CLICKING THE RELEASE TAB.
 =======
 The original xdelta will generate a smash rom that is compatible with our ASM code. Much of our edits are done within
 the compressed files within the rom. If you utilize a vanilla Smash 64 rom, it will not work correctly.
@@ -157,4 +396,10 @@ the compressed files within the rom. If you utilize a vanilla Smash 64 rom, it w
 You must utilize the xdelta patch to generate a good rom for Assembly.
 
 You must place your legally acquired patched ROM in the rom folder for this to work. It must be named original.z64
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>JSsixtyfour</author><guid isPermaLink="false">https://github.com/JSsixtyfour/smashremix</guid><pubDate>Thu, 02 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>JSsixtyfour</author><guid isPermaLink="false">https://github.com/JSsixtyfour/smashremix</guid><pubDate>Fri, 03 Jan 2020 00:03:00 GMT</pubDate></item><item><title>dgryski/go-metro #4 in Assembly, This week</title><link>https://github.com/dgryski/go-metro</link><description>&lt;p&gt;&lt;i&gt;Go translation of MetroHash&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="" data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;MetroHash
+
+This package is a mechanical translation of the reference C++ code for
+MetroHash, available at &lt;a href="https://github.com/jandrewrogers/MetroHash"&gt;https://github.com/jandrewrogers/MetroHash&lt;/a&gt; 
+
+I claim no additional copyright over the original implementation.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>dgryski</author><guid isPermaLink="false">https://github.com/dgryski/go-metro</guid><pubDate>Fri, 03 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>

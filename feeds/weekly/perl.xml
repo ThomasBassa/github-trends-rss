@@ -1,2 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Perl, This week</title><link>https://github.com/trending/perl?since=weekly</link><description>The top repositories on GitHub for perl, measured weekly</description><pubDate>Thu, 02 Jan 2020 01:11:02 GMT</pubDate><lastBuildDate>Thu, 02 Jan 2020 01:11:02 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Perl, This week today</title><pubDate>Thu, 02 Jan 2020 01:11:02 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Perl, This week</title><link>https://github.com/trending/perl?since=weekly</link><description>The top repositories on GitHub for perl, measured weekly</description><pubDate>Fri, 03 Jan 2020 01:04:06 GMT</pubDate><lastBuildDate>Fri, 03 Jan 2020 01:04:06 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>sullo/nikto #1 in Perl, This week</title><link>https://github.com/sullo/nikto</link><description>&lt;p&gt;&lt;i&gt;Nikto web server scanner&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-nikto" class="anchor" aria-hidden="true" href="#nikto"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nikto&lt;/h1&gt;
+&lt;p&gt;Nikto web server scanner  - &lt;a href="https://cirt.net/Nikto2" rel="nofollow"&gt;https://cirt.net/Nikto2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Full documentation - &lt;a href="https://cirt.net/nikto2-docs/" rel="nofollow"&gt;https://cirt.net/nikto2-docs/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Run as a Docker container:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/sullo/nikto.git
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; nikto
+docker build -t sullo/nikto &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Call it without arguments to display the full help&lt;/span&gt;
+docker run --rm sullo/nikto
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Basic usage&lt;/span&gt;
+docker run --rm sullo/nikto -h http://www.example.com
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; To save the report in a specific format, mount /tmp as a volume:&lt;/span&gt;
+docker run --rm -v &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;pwd&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;:/tmp sullo/nikto -h http://www.example.com -o /tmp/out.json&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Basic usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   Options:
+       -ask+               Whether to ask about submitting updates
+                               yes   Ask about each (default)
+                               no    Don't ask, don't send
+                               auto  Don't ask, just send
+       -Cgidirs+           Scan these CGI dirs: "none", "all", or values like "/cgi/ /cgi-a/"
+       -config+            Use this config file
+       -Display+           Turn on/off display outputs:
+                               1     Show redirects
+                               2     Show cookies received
+                               3     Show all 200/OK responses
+                               4     Show URLs which require authentication
+                               D     Debug output
+                               E     Display all HTTP errors
+                               P     Print progress to STDOUT
+                               S     Scrub output of IPs and hostnames
+                               V     Verbose output
+       -dbcheck           Check database and other key files for syntax errors
+       -evasion+          Encoding technique:
+                               1     Random URI encoding (non-UTF8)
+                               2     Directory self-reference (/./)
+                               3     Premature URL ending
+                               4     Prepend long random string
+                               5     Fake parameter
+                               6     TAB as request spacer
+                               7     Change the case of the URL
+                               8     Use Windows directory separator (\)
+                               A     Use a carriage return (0x0d) as a request spacer
+                               B     Use binary value 0x0b as a request spacer
+        -Format+           Save file (-o) format:
+                               csv   Comma-separated-value
+                               htm   HTML Format
+                               msf+  Log to Metasploit
+                               nbe   Nessus NBE format
+                               txt   Plain text
+                               xml   XML Format
+                               (if not specified the format will be taken from the file extension passed to -output)
+       -Help              Extended help information
+       -host+             Target host
+       -IgnoreCode        Ignore Codes--treat as negative responses
+       -id+               Host authentication to use, format is id:pass or id:pass:realm
+       -key+              Client certificate key file
+       -list-plugins      List all available plugins, perform no testing
+       -maxtime+          Maximum testing time per host
+       -mutate+           Guess additional file names:
+                               1     Test all files with all root directories
+                               2     Guess for password file names
+                               3     Enumerate user names via Apache (/~user type requests)
+                               4     Enumerate user names via cgiwrap (/cgi-bin/cgiwrap/~user type requests)
+                               5     Attempt to brute force sub-domain names, assume that the host name is the parent domain
+                               6     Attempt to guess directory names from the supplied dictionary file
+       -mutate-options    Provide information for mutates
+       -nointeractive     Disables interactive features
+       -nolookup          Disables DNS lookups
+       -nossl             Disables the use of SSL
+       -no404             Disables nikto attempting to guess a 404 page
+       -output+           Write output to this file ('.' for auto-name)
+       -Pause+            Pause between tests (seconds, integer or float)
+       -Plugins+          List of plugins to run (default: ALL)
+       -port+             Port to use (default 80)
+       -RSAcert+          Client certificate file
+       -root+             Prepend root value to all requests, format is /directory
+       -Save              Save positive responses to this directory ('.' for auto-name)
+       -ssl               Force ssl mode on port
+       -Tuning+           Scan tuning:
+                               1     Interesting File / Seen in logs
+                               2     Misconfiguration / Default File
+                               3     Information Disclosure
+                               4     Injection (XSS/Script/HTML)
+                               5     Remote File Retrieval - Inside Web Root
+                               6     Denial of Service
+                               7     Remote File Retrieval - Server Wide
+                               8     Command Execution / Remote Shell
+                               9     SQL Injection
+                               0     File Upload
+                               a     Authentication Bypass
+                               b     Software Identification
+                               c     Remote Source Inclusion
+                               x     Reverse Tuning Options (i.e., include all except specified)
+       -timeout+          Timeout for requests (default 10 seconds)
+       -Userdbs           Load only user databases, not the standard databases
+                               all   Disable standard dbs and load only user dbs
+                               tests Disable only db_tests and load udb_tests
+       -until             Run until the specified time or duration
+       -update            Update databases and plugins from CIRT.net
+       -useproxy          Use the proxy defined in nikto.conf
+       -Version           Print plugin and database versions
+       -vhost+            Virtual host (for Host header)
+              + requires a value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>sullo</author><guid isPermaLink="false">https://github.com/sullo/nikto</guid><pubDate>Fri, 03 Jan 2020 00:01:00 GMT</pubDate></item><item><title>haroonawanofficial/ReconCobra #2 in Perl, This week</title><link>https://github.com/haroonawanofficial/ReconCobra</link><description>&lt;p&gt;&lt;i&gt;Complete Automated pentest framework for Information Gathering&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENSE&lt;/h1&gt;
+&lt;p&gt;EULA&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-reconcobra" class="anchor" aria-hidden="true" href="#reconcobra"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ReconCobra&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Reconcobra is Foot printing software for Ultimate Information Gathering&lt;/li&gt;
+&lt;li&gt;Kali, Parrot OS, Black Arch, Termux, Android Led TV&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-interface" class="anchor" aria-hidden="true" href="#interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interface&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Software have 82 Options with full automation with powerful information gathering capability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8e78db70ec4743ff43ee130c00651441d6324143/68747470733a2f2f692e6962622e636f2f6e7a5436584c6b2f5265636f6e2d436f6272612d70616765312e6a7067"&gt;&lt;img src="https://camo.githubusercontent.com/8e78db70ec4743ff43ee130c00651441d6324143/68747470733a2f2f692e6962622e636f2f6e7a5436584c6b2f5265636f6e2d436f6272612d70616765312e6a7067" width="400px" data-canonical-src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cf99d206cc5c0a71e508b469b64ef3e700c2a7f7/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261312d706e672e33323337332f"&gt;&lt;img src="https://camo.githubusercontent.com/cf99d206cc5c0a71e508b469b64ef3e700c2a7f7/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261312d706e672e33323337332f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra1-png.32373/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-in-action" class="anchor" aria-hidden="true" href="#in-action"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In-Action&lt;/h1&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f11914baf6253093f3488512bdecb583aa19f940/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261322d706e672e33323338352f"&gt;&lt;img src="https://camo.githubusercontent.com/f11914baf6253093f3488512bdecb583aa19f940/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261322d706e672e33323338352f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra2-png.32385/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/810dd3eb7ed785f218ea13d623fd8e57d23d2065/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261332d706e672e33323337342f"&gt;&lt;img src="https://camo.githubusercontent.com/810dd3eb7ed785f218ea13d623fd8e57d23d2065/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261332d706e672e33323337342f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra3-png.32374/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ba48daf93bf0d32638036949fed0c56f3926f233/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261342d706e672e33323337352f"&gt;&lt;img src="https://camo.githubusercontent.com/ba48daf93bf0d32638036949fed0c56f3926f233/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261342d706e672e33323337352f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra4-png.32375/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/22d46a7000b337dca44994f18b006e25b525c124/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261352d706e672e33323337362f"&gt;&lt;img src="https://camo.githubusercontent.com/22d46a7000b337dca44994f18b006e25b525c124/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261352d706e672e33323337362f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra5-png.32376/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f11914baf6253093f3488512bdecb583aa19f940/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261322d706e672e33323338352f"&gt;&lt;img src="https://camo.githubusercontent.com/f11914baf6253093f3488512bdecb583aa19f940/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261322d706e672e33323338352f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra2-png.32385/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/129d1ab416239915987b508a11e1769f740b816b/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261362d706e672e33323337372f"&gt;&lt;img src="https://camo.githubusercontent.com/129d1ab416239915987b508a11e1769f740b816b/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261362d706e672e33323337372f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra6-png.32377/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;div align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4cd029dc911dce0c586d14e1e0f55ec2b33f5bea/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261372d706e672e33323337382f"&gt;&lt;img src="https://camo.githubusercontent.com/4cd029dc911dce0c586d14e1e0f55ec2b33f5bea/68747470733a2f2f636f646562792e6e65742f6174746163686d656e74732f636f627261372d706e672e33323337382f" width="400px" data-canonical-src="https://codeby.net/attachments/cobra7-png.32378/" style="max-width:100%;"&gt;&lt;/a&gt; 
+&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-brief-introduction" class="anchor" aria-hidden="true" href="#brief-introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Brief Introduction&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.&lt;/li&gt;
+&lt;li&gt;It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.&lt;/li&gt;
+&lt;li&gt;With the emergence of more advanced technology, cybercriminals have also found more ways to get into the system of many organizations.&lt;/li&gt;
+&lt;li&gt;ReconCobra software can audit, firewall behaviour, if it is leaking backend machines/server and replying pings, it can find internal and external networks where many software’s like erp, mail firewalls are installed, exposing servers so it do Footprinting, Scanning &amp;amp; Enumeration as much as possible of target, to discover and collect most possible informations like username, web technologies, files, endpoint, api and much more.&lt;/li&gt;
+&lt;li&gt;It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
+ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-university-course" class="anchor" aria-hidden="true" href="#university-course"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;University Course&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ReconCobra is now a part of International Hacking Trainings for OSINT&lt;/li&gt;
+&lt;li&gt;Cybersecurity365.com OSINT for Reconnaissance trainings for CEH, CISSP, Security+, ITPA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-appeared" class="anchor" aria-hidden="true" href="#appeared"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Appeared&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://codeby.net/threads/reconcobra.68782" rel="nofollow"&gt;https://codeby.net/threads/reconcobra.68782&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/" rel="nofollow"&gt;https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering" rel="nofollow"&gt;https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kelvin Security&lt;/li&gt;
+&lt;li&gt;National Cyber Services Security&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://psdrepo.blogspot.com/2019/08/codebynet_14" rel="nofollow"&gt;https://psdrepo.blogspot.com/2019/08/codebynet_14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cyber Junkies&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vaultdomain.com/reconcobrathe-ultimate-recon-software-for-information-gathering-osint/" rel="nofollow"&gt;https://vaultdomain.com/reconcobrathe-ultimate-recon-software-for-information-gathering-osint/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rdp4you&lt;/li&gt;
+&lt;li&gt;Digital Union Media in OSINT category&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-tweets" class="anchor" aria-hidden="true" href="#tweets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tweets&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Over, 1000+ Tweets about ReconCobra&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-integrations" class="anchor" aria-hidden="true" href="#integrations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Integrations&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tigerman Root Software Package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-fan-made-youtube-video" class="anchor" aria-hidden="true" href="#fan-made-youtube-video"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fan Made Youtube Video&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=kfykYEMS8YU" rel="nofollow"&gt;https://www.youtube.com/watch?v=kfykYEMS8YU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=j2DsDi43jO8" rel="nofollow"&gt;https://www.youtube.com/watch?v=j2DsDi43jO8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/MRRobotZalla/videos/769801130133298/?t=0" rel="nofollow"&gt;https://www.facebook.com/MRRobotZalla/videos/769801130133298/?t=0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-official-youtube-video" class="anchor" aria-hidden="true" href="#official-youtube-video"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Official Youtube Video&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=TupCmgzp6hg" rel="nofollow"&gt;https://www.youtube.com/watch?v=TupCmgzp6hg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-kali-installation" class="anchor" aria-hidden="true" href="#kali-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kali Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;git clone &lt;a href="https://github.com/haroonawanofficial/ReconCobra.git"&gt;https://github.com/haroonawanofficial/ReconCobra.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd Reconcobra&lt;/li&gt;
+&lt;li&gt;sudo chmod u+x *.sh&lt;/li&gt;
+&lt;li&gt;./Kali_Installer.sh&lt;/li&gt;
+&lt;li&gt;ReconCobra will integrate as system software&lt;/li&gt;
+&lt;li&gt;Dependencies will be handled automatically&lt;/li&gt;
+&lt;li&gt;Third party software(s)/dependencies/modules will be handled automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-parrot-os-installation" class="anchor" aria-hidden="true" href="#parrot-os-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parrot OS Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;git clone &lt;a href="https://github.com/haroonawanofficial/ReconCobra.git"&gt;https://github.com/haroonawanofficial/ReconCobra.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd Reconcobra&lt;/li&gt;
+&lt;li&gt;chmod u+x *.sh&lt;/li&gt;
+&lt;li&gt;Bash ParrotOS_Installer.sh&lt;/li&gt;
+&lt;li&gt;ReconCobra will integrate as system software&lt;/li&gt;
+&lt;li&gt;Dependencies will be handled automatically&lt;/li&gt;
+&lt;li&gt;Third party software(s)/dependencies/modules will be handled automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-termux-installation" class="anchor" aria-hidden="true" href="#termux-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Termux Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;git clone &lt;a href="https://github.com/haroonawanofficial/ReconCobra.git"&gt;https://github.com/haroonawanofficial/ReconCobra.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd Reconcobra&lt;/li&gt;
+&lt;li&gt;chmod u+x *.sh&lt;/li&gt;
+&lt;li&gt;pkg install proot&lt;/li&gt;
+&lt;li&gt;type: termux-chroot&lt;/li&gt;
+&lt;li&gt;./Termux_Installer.sh&lt;/li&gt;
+&lt;li&gt;./Termux_fixme.sh&lt;/li&gt;
+&lt;li&gt;Reboot your Termux&lt;/li&gt;
+&lt;li&gt;perl ReconCobraTermux.pl&lt;/li&gt;
+&lt;li&gt;Dependencies will be handled automatically for Termux&lt;/li&gt;
+&lt;li&gt;Third party software(s)/dependencies/modules will be handled automatically for Termux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-android-led-tv-installation" class="anchor" aria-hidden="true" href="#android-led-tv-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Android Led TV Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install termux&lt;/li&gt;
+&lt;li&gt;Input usb keyboard&lt;/li&gt;
+&lt;li&gt;git clone &lt;a href="https://github.com/haroonawanofficial/ReconCobra.git"&gt;https://github.com/haroonawanofficial/ReconCobra.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd Reconcobra&lt;/li&gt;
+&lt;li&gt;chmod u+x *.sh&lt;/li&gt;
+&lt;li&gt;pkg install proot&lt;/li&gt;
+&lt;li&gt;type: termux-chroot&lt;/li&gt;
+&lt;li&gt;./Termux_Installer.sh&lt;/li&gt;
+&lt;li&gt;./Termux_fixme.sh&lt;/li&gt;
+&lt;li&gt;Reboot your Termux&lt;/li&gt;
+&lt;li&gt;perl ReconCobraTermux.pl&lt;/li&gt;
+&lt;li&gt;Dependencies will be handled automatically for Termux&lt;/li&gt;
+&lt;li&gt;Third party software(s)/dependencies/modules will be handled automatically for Termux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-black-arch-installation" class="anchor" aria-hidden="true" href="#black-arch-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Black Arch Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Open issue, if error occur&lt;/li&gt;
+&lt;li&gt;git clone &lt;a href="https://github.com/haroonawanofficial/ReconCobra.git"&gt;https://github.com/haroonawanofficial/ReconCobra.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd Reconcobra&lt;/li&gt;
+&lt;li&gt;chmod u+x *.sh&lt;/li&gt;
+&lt;li&gt;./BlackArch_Installer.sh&lt;/li&gt;
+&lt;li&gt;ReconCobra will integrate as system software&lt;/li&gt;
+&lt;li&gt;Dependencies will be handled automatically&lt;/li&gt;
+&lt;li&gt;Third party software(s)/dependencies/modules will be handled automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-apis" class="anchor" aria-hidden="true" href="#apis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API(s)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Get your own API and Secret Key from censys.io for python module - named censys.py&lt;/li&gt;
+&lt;li&gt;Get your own API Keys from securitytrails.com for python module - named vasl/vasl.py&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-developer" class="anchor" aria-hidden="true" href="#developer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developer&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Haroon Awan&lt;/li&gt;
+&lt;li&gt;&lt;a href="mailto:mrharoonawan@gmail.com"&gt;mrharoonawan@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-co-developer--senior-tester" class="anchor" aria-hidden="true" href="#co-developer--senior-tester"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Co-developer &amp;amp; Senior Tester&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Arun S&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-sponsor-and-support-via-btc" class="anchor" aria-hidden="true" href="#sponsor-and-support-via-btc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sponsor and Support via BTC&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;3BuUYgEgsRuEra4GwqNVLKnDCTjLEDfptu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>haroonawanofficial</author><guid isPermaLink="false">https://github.com/haroonawanofficial/ReconCobra</guid><pubDate>Fri, 03 Jan 2020 00:02:00 GMT</pubDate></item><item><title>get-iplayer/get_iplayer #3 in Perl, This week</title><link>https://github.com/get-iplayer/get_iplayer</link><description>&lt;p&gt;&lt;i&gt;A utility for downloading TV and radio programmes from BBC iPlayer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-get_iplayer-bbc-iplayer-indexing-tool-and-pvr" class="anchor" aria-hidden="true" href="#get_iplayer-bbc-iplayer-indexing-tool-and-pvr"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;get_iplayer: BBC iPlayer Indexing Tool and PVR&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloads TV and radio programmes from BBC iPlayer/Sounds&lt;/li&gt;
+&lt;li&gt;Allows multiple programmes to be downloaded using a single command&lt;/li&gt;
+&lt;li&gt;Indexing of most available iPlayer/Sounds catch-up programmes from previous 30 days (not BBC Three, Red Button or iPlayer Exclusive)&lt;/li&gt;
+&lt;li&gt;Caching of programme index with automatic updating&lt;/li&gt;
+&lt;li&gt;Regex search on programme name&lt;/li&gt;
+&lt;li&gt;Regex search on programme description and episode title&lt;/li&gt;
+&lt;li&gt;Filter search results by channel&lt;/li&gt;
+&lt;li&gt;Direct download via programme ID or URL&lt;/li&gt;
+&lt;li&gt;PVR capability (may be used with cron or Task Scheduler)&lt;/li&gt;
+&lt;li&gt;HTTP proxy support&lt;/li&gt;
+&lt;li&gt;Perl 5.10.1+ required, plus LWP, LWP::Protocol::https, XML::LibXML and Mojolicious modules&lt;/li&gt;
+&lt;li&gt;Requires ffmpeg for conversion to MP4 and AtomicParsley for metadata tagging&lt;/li&gt;
+&lt;li&gt;Runs on Linux/BSD (Ubuntu, Fedora, OpenBSD and others), macOS (10.10+), Windows (7/8/10)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;get_iplayer can only search for programmes that were scheduled for broadcast on BBC linear services within the previous 30 days, even if some are available for more than 30 days on the iPlayer site. It may be possible to download other content directly via PID or URL, but such use is not supported.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;get_iplayer does not support downloading news/sport videos, other embedded media, archive sites, special collections, educational material, programme clips or any content other than whole episodes of programmes broadcast on BBC linear services within the previous 30 days, plus episodes of BBC Three programmes posted within the same period. It may be possible to download other content directly via PID or URL, but such use is not supported.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/get-iplayer/get_iplayer/wiki"&gt;https://github.com/get-iplayer/get_iplayer/wiki&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-support" class="anchor" aria-hidden="true" href="#support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://forums.squarepenguin.co.uk" rel="nofollow"&gt;https://forums.squarepenguin.co.uk&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/get-iplayer/get_iplayer/wiki/installation"&gt;https://github.com/get-iplayer/get_iplayer/wiki/installation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;get_iplayer --help
+get_iplayer --basic-help
+get_iplayer --long-help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;List all TV programmes (&lt;code&gt;--type=tv&lt;/code&gt; set by default):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer ".*"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Search output appears in this format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  ...
+  208:  Doctor Who: Series 7 Part 2 - 1. The Bells of Saint John, BBC One, b01rryzz
+  209:  Doctor Who: Series 7 Part 2 - 2. The Rings Of Akhaten, BBC One, b01rx0lj
+  210:  Doctor Who: Series 7 Part 2 - 3. Cold War, BBC One, b01s1cz7
+  ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Format = &lt;code&gt;&amp;lt;index&amp;gt;: &amp;lt;name&amp;gt; - &amp;lt;episode&amp;gt;, &amp;lt;channel&amp;gt;, &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all TV programmes with long descriptions:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --long ".*"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all radio programmes:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --type=radio ".*"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all TV programmes with "doctor who" in the name (matching is case-insensitive):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer "doctor who"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all TV and radio programmes with "doctor who" in the name:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --type tv,radio "doctor who"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List all BBC One programmes:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --channel="BBC One" ".*"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List Radio 4 and Radio 4 Extra programmes with "Book at Bedtime" in the title:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --type=radio --channel="Radio 4" "Book at Bedtime"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List only Radio 4 programmes with "Book at Bedtime" in the title:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --type=radio --channel="Radio 4$" "Book at Bedtime"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(The &lt;code&gt;$&lt;/code&gt; regular expression metacharacter matches "Radio 4" only at the end of the channel name, thus avoiding matches against "Radio 4 Extra")&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record TV programme number 208 (index from search results) in HD, with SD fallback if HD not available:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --get 208&lt;/code&gt; [default is to download best available]&lt;/p&gt;
+&lt;p&gt;OR&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --get 208 --tvmode=best&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record TV programme number 208 with lower resolution (704x396):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --get 208 --tvmode=good&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record TV programme number 208 and download subtitles in SubRip (SRT) format:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --get 208 --subtitles&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record multiple TV programmes (using index numbers from search results):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --get 208 209 210&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record a TV programme using its iPlayer URL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer https://www.bbc.co.uk/iplayer/episode/b01sc0wf/Doctors_Series_15_Perfect/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record a TV programme using the PID (b01sc0wf) from its iPlayer URL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b01sc0wf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record a radio programme using its Sounds URL:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer https://www.bbc.co.uk/sounds/play/b07gcv34&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record a radio programme using the PID (b07gcv34) from its Sounds URL in highest quality (320k), with fallback to lower quality if not available:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b07gcv34&lt;/code&gt; [default is to download best available]&lt;/p&gt;
+&lt;p&gt;OR&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b07gcv34 --radiomode=best&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record a radio programme using the PID (b07gcv34) from its Sounds URL with lower bit rate (96k):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b07gcv34 --radiomode=good&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record multiple radio programmes (using PIDs from Sounds URLs):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b07gcv34,b07h60ld&lt;/code&gt; [comma-separated list]&lt;/p&gt;
+&lt;p&gt;OR&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get_iplayer --pid=b07gcv34 --pid=b07h60ld&lt;/code&gt; [multiple arguments]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NOTE: Sometimes you may not be able to download a listed programme immediately after broadcast (usually available within 24hrs of airing). Some BBC programmes may not be available from iPlayer.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>get-iplayer</author><guid isPermaLink="false">https://github.com/get-iplayer/get_iplayer</guid><pubDate>Fri, 03 Jan 2020 00:03:00 GMT</pubDate></item></channel></rss>

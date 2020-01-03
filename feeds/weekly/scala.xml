@@ -1,2 +1,807 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Scala, This week</title><link>https://github.com/trending/scala?since=weekly</link><description>The top repositories on GitHub for scala, measured weekly</description><pubDate>Thu, 02 Jan 2020 01:10:47 GMT</pubDate><lastBuildDate>Thu, 02 Jan 2020 01:10:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Scala, This week today</title><pubDate>Thu, 02 Jan 2020 01:10:47 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Scala, This week</title><link>https://github.com/trending/scala?since=weekly</link><description>The top repositories on GitHub for scala, measured weekly</description><pubDate>Fri, 03 Jan 2020 01:04:14 GMT</pubDate><lastBuildDate>Fri, 03 Jan 2020 01:04:14 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>WeBankFinTech/Linkis #1 in Scala, This week</title><link>https://github.com/WeBankFinTech/Linkis</link><description>&lt;p&gt;&lt;i&gt;Linkis helps easily connect to various back-end computation/storage engines(Spark, Python, TiDB...), exposes various interfaces(REST, JDBC, Java ...), with multi-tenancy, high performance, and resource control.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-linkis" class="anchor" aria-hidden="true" href="#linkis"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linkis&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8cb994f6c4a156c623fe057fccd7fb7d7d2e8c9b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d417061636865253230322d3445423142412e737667" alt="License" data-canonical-src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;English | &lt;a href="docs/zh_CN/README.md"&gt;中文&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Linkis helps easily connect to various back-end computation/storage engines(Spark, Python, TiDB...), exposes various interfaces(REST, JDBC, Java ...), with multi-tenancy, high performance, and resource control.&lt;/p&gt;
+&lt;p&gt;Linkis connects with computation/storage engines(Spark, Hive, Python and HBase), exposes REST/WS interface, and executes multi-language jobs(SQL, Pyspark, HiveQL and Scala), as a computation middleware.&lt;/p&gt;
+&lt;p&gt;Based on the microservices architecture, Linkis provides enterprise-level features of multi-tenant isolation, resource management and access control. It also offers convenient support to manage unified variables, UDFs, functions and resource files. it is also guaranteed with sophisticated task/job lifecycle management capabilities under high-concurrency, high-performance and high-availability scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/WeBankFinTech/Linkis/blob/master/images/linkis-intro-01.png?raw=true"&gt;&lt;img src="https://github.com/WeBankFinTech/Linkis/raw/master/images/linkis-intro-01.png?raw=true" alt="linkis-intro-01" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/WeBankFinTech/Linkis/blob/master/images/linkis-intro-03.png?raw=true"&gt;&lt;img src="https://github.com/WeBankFinTech/Linkis/raw/master/images/linkis-intro-03.png?raw=true" alt="linkis-intro-03" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Based on the concept of the computation middleware architecture of Linkis, we have built a large amount of applications and systems on top of it.Currently available open-source project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/WeBankFinTech/DataSphereStudio"&gt;&lt;strong&gt;DataSphere Studio - Data Application Development&amp;amp; Management Portal&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WeBankFinTech/Qualitis"&gt;&lt;strong&gt;Qualitis - Data Quality Tool&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WeBankFinTech/Scriptis"&gt;&lt;strong&gt;Scriptis - Data Development IDE Tool&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/WeBankFinTech/Visualis"&gt;&lt;strong&gt;Visualis - Data Visualization Tool&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There will be more tools released as open-source projects, please stay tuned!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Unified Job Execution Services: A distributed REST/WebSocket service for processing scripts execution requests from user.&lt;/p&gt;
+&lt;p&gt;Available computation engines so far: Spark, Python, TiSpark, Hive and Shell.&lt;/p&gt;
+&lt;p&gt;Available languages so far: SparkSQL, Spark Scala, PySpark, R, Python, HQL and Shell.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Resource Management Services: Available for real-time control/limit of resource usage from both perspectives of amount and load for both systems and users. With dynamic charts of resource statistics, it is convenient to monitor and manage resource usage for systems and users.&lt;/p&gt;
+&lt;p&gt;Available resource types so far: Yarn queue resources, server(CPU and memory), number of concurrent instances per user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Application Management Services: Manages global user applications, including offline batch applications, interactive query applications and real-time streaming applications. Also provides powerful reusability especially for offline and interactive applications, with complete lifecycle management which automatically releases idle applications for users.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unified Storage Services: The generic IO architecture can quickly integrate with various storage systems and provide a unified invokable entrance. It is also highly integrated with most common data formats and easy to use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unified Context Services: Unite resources files of users and systems (JAR, ZIP, Properties). With unified management of arguments/variables for users, systems and engines, it is achieved that modification in random place will reflect in all the other places automatically.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Material Library: System and user-level material management, capable of sharing, transferring materials and automatic lifecycle management.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Metadata Services: Real-time display of dataset table structure and partitions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Compared with similar systems&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/en_US/images/introduction/introduction01.png"&gt;&lt;img src="docs/en_US/images/introduction/introduction01.png" alt="introduction01" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-documentations" class="anchor" aria-hidden="true" href="#documentations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentations：&lt;/h1&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch3/Linkis_Introduction.md"&gt;Linkis, make big data easier&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch1/deploy.md"&gt;Linkis Quick Deploy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch3/Linkis_Java_SDK_doc.md"&gt;Linkis Quick Start &amp;amp; Java SDK documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch3/Linkis_HTTP_API_Doc.md"&gt;HTTP APIs for frontend applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch3/Linkis_WebSocket_API_Doc.md"&gt;WebSocket APIs for frontend applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="docs/en_US/ch3/How_to_adapt_Linkis_with_a_new_computation_or_storage_engine.md"&gt;How to adapt Linkis with a new computation or storage engine&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;&lt;a id="user-content-architecture" class="anchor" aria-hidden="true" href="#architecture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Architecture：&lt;/h1&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="./docs/en_US/images/introduction/introduction02.png"&gt;&lt;img src="./docs/en_US/images/introduction/introduction02.png" alt="introduction02" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-communication" class="anchor" aria-hidden="true" href="#communication"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Communication&lt;/h2&gt;
+&lt;p&gt;If you desire immediate response, please kindly raise issues to us or scan the below QR code by WeChat and QQ to join our group:
+&lt;br&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="docs/en_US/images/introduction/introduction05.png"&gt;&lt;img src="docs/en_US/images/introduction/introduction05.png" alt="introduction05" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Linkis is under the Apache 2.0 license. See the &lt;a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"&gt;LICENSE &lt;/a&gt;file for details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>WeBankFinTech</author><guid isPermaLink="false">https://github.com/WeBankFinTech/Linkis</guid><pubDate>Fri, 03 Jan 2020 00:01:00 GMT</pubDate></item><item><title>lampepfl/dotty #2 in Scala, This week</title><link>https://github.com/lampepfl/dotty</link><description>&lt;p&gt;&lt;i&gt;Research compiler that will become Scala 3&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-dotty" class="anchor" aria-hidden="true" href="#dotty"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dotty&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://dotty-ci.epfl.ch/lampepfl/dotty" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3d1502dcc47d117fc84e52127fd5ded7d83ea5e3/687474703a2f2f646f7474792d63692e6570666c2e63682f6170692f6261646765732f6c616d706570666c2f646f7474792f7374617475732e737667" alt="Build Status" data-canonical-src="http://dotty-ci.epfl.ch/api/badges/lampepfl/dotty/status.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/lampepfl/dotty?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/lampepfl/dotty" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/lampepfl/dotty-knowledge/issues/new/choose"&gt;&lt;img src="https://camo.githubusercontent.com/8dc0fde05ec65645ffa79fbae4b5e717923bdee4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6f672d6b6e6f776c656467652d626c756576696f6c65742e737667" alt="Log Knowledge" data-canonical-src="https://img.shields.io/badge/log-knowledge-blueviolet.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dotty.epfl.ch" rel="nofollow"&gt;Homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dotty.epfl.ch/docs" rel="nofollow"&gt;Documentation&lt;/a&gt; &lt;a href="https://travis-ci.org/nicolasstucki/dotty-website-linkcheck" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8416ff9b78df9058e6e6dbe7209b1501686b1883/68747470733a2f2f7472617669732d63692e6f72672f6e69636f6c6173737475636b692f646f7474792d776562736974652d6c696e6b636865636b2e7376673f6272616e63683d6d6173746572" alt="Deadlink Status" data-canonical-src="https://travis-ci.org/nicolasstucki/dotty-website-linkcheck.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-try-it-out" class="anchor" aria-hidden="true" href="#try-it-out"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Try it out&lt;/h1&gt;
+&lt;p&gt;To try it in your project see also the &lt;a href="https://dotty.epfl.ch/#getting-started" rel="nofollow"&gt;Getting Started User Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-code-of-conduct" class="anchor" aria-hidden="true" href="#code-of-conduct"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code of Conduct&lt;/h1&gt;
+&lt;p&gt;Dotty uses the &lt;a href="https://www.scala-lang.org/conduct.html" rel="nofollow"&gt;Scala Code of Conduct&lt;/a&gt;
+for all communication and discussion. This includes both GitHub, Gitter chat and
+other more direct lines of communication such as email.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-contribute" class="anchor" aria-hidden="true" href="#how-to-contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to Contribute&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dotty.epfl.ch/docs/contributing/getting-started.html" rel="nofollow"&gt;Getting Started as Contributor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://scala-lang.org/blog/2016/10/14/dotty-errors.html" rel="nofollow"&gt;Awesome Error Messages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lampepfl/dotty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22"&gt;Issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contribute-internals-related-knowledge" class="anchor" aria-hidden="true" href="#contribute-internals-related-knowledge"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute Internals-related Knowledge&lt;/h2&gt;
+&lt;p&gt;If you know anything useful at all about Dotty, feel free to log this knowledge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lampepfl/dotty-knowledge/issues/new/choose"&gt;&lt;g-emoji class="g-emoji" alias="scroll" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dc.png"&gt;📜&lt;/g-emoji&gt;Log the Knowledge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lampepfl/dotty-knowledge/blob/master/README.md"&gt;&lt;g-emoji class="g-emoji" alias="mortar_board" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png"&gt;🎓&lt;/g-emoji&gt;More about Logging the Knowledge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In short, no need to make it pretty, particularly human-readable or give it a particular structure. Just dump the knowledge you have and we'll take it from there.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h1&gt;
+&lt;p&gt;Dotty is licensed under the &lt;a href="https://github.com/lampepfl/dotty/blob/master/LICENSE.md"&gt;3-Clause BSD License&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>lampepfl</author><guid isPermaLink="false">https://github.com/lampepfl/dotty</guid><pubDate>Fri, 03 Jan 2020 00:02:00 GMT</pubDate></item><item><title>apache/spark #3 in Scala, This week</title><link>https://github.com/apache/spark</link><description>&lt;p&gt;&lt;i&gt;Apache Spark&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-apache-spark" class="anchor" aria-hidden="true" href="#apache-spark"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache Spark&lt;/h1&gt;
+&lt;p&gt;Spark is a unified analytics engine for large-scale data processing. It provides
+high-level APIs in Scala, Java, Python, and R, and an optimized engine that
+supports general computation graphs for data analysis. It also supports a
+rich set of higher-level tools including Spark SQL for SQL and DataFrames,
+MLlib for machine learning, GraphX for graph processing,
+and Structured Streaming for stream processing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spark.apache.org/" rel="nofollow"&gt;https://spark.apache.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://amplab.cs.berkeley.edu/jenkins/job/spark-master-test-sbt-hadoop-2.7" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cd70373593f382473fbf1fb17a08856e918039d4/68747470733a2f2f616d706c61622e63732e6265726b656c65792e6564752f6a656e6b696e732f6a6f622f737061726b2d6d61737465722d746573742d7362742d6861646f6f702d322e372f62616467652f69636f6e" alt="Jenkins Build" data-canonical-src="https://amplab.cs.berkeley.edu/jenkins/job/spark-master-test-sbt-hadoop-2.7/badge/icon" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/ApacheSoftwareFoundation/spark" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d3336700f9c89f8132189f928e567a2c104503af/68747470733a2f2f696d672e736869656c64732e696f2f6170707665796f722f63692f417061636865536f667477617265466f756e646174696f6e2f737061726b2f6d61737465722e7376673f7374796c653d706c6173746963266c6f676f3d6170707665796f72" alt="AppVeyor Build" data-canonical-src="https://img.shields.io/appveyor/ci/ApacheSoftwareFoundation/spark/master.svg?style=plastic&amp;amp;logo=appveyor" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://spark-test.github.io/pyspark-coverage-site" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2aa88140c358afddfa651b98a462bd69c4af7eb8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f64796e616d69632f786d6c2e7376673f6c6162656c3d7079737061726b253230636f7665726167652675726c3d6874747073253341253246253246737061726b2d746573742e6769746875622e696f2532467079737061726b2d636f7665726167652d736974652671756572793d25324668746d6c253246626f64792532466469762535423125354425324664697625324668312532467370616e26636f6c6f72423d627269676874677265656e267374796c653d706c6173746963" alt="PySpark Coverage" data-canonical-src="https://img.shields.io/badge/dynamic/xml.svg?label=pyspark%20coverage&amp;amp;url=https%3A%2F%2Fspark-test.github.io%2Fpyspark-coverage-site&amp;amp;query=%2Fhtml%2Fbody%2Fdiv%5B1%5D%2Fdiv%2Fh1%2Fspan&amp;amp;colorB=brightgreen&amp;amp;style=plastic" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-online-documentation" class="anchor" aria-hidden="true" href="#online-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Online Documentation&lt;/h2&gt;
+&lt;p&gt;You can find the latest Spark documentation, including a programming
+guide, on the &lt;a href="https://spark.apache.org/documentation.html" rel="nofollow"&gt;project web page&lt;/a&gt;.
+This README file only contains basic setup instructions.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-spark" class="anchor" aria-hidden="true" href="#building-spark"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Spark&lt;/h2&gt;
+&lt;p&gt;Spark is built using &lt;a href="https://maven.apache.org/" rel="nofollow"&gt;Apache Maven&lt;/a&gt;.
+To build Spark and its example programs, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./build/mvn -DskipTests clean package
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(You do not need to do this if you downloaded a pre-built package.)&lt;/p&gt;
+&lt;p&gt;You can build Spark using more than one thread by using the -T option with Maven, see &lt;a href="https://cwiki.apache.org/confluence/display/MAVEN/Parallel+builds+in+Maven+3" rel="nofollow"&gt;"Parallel builds in Maven 3"&lt;/a&gt;.
+More detailed documentation is available from the project site, at
+&lt;a href="https://spark.apache.org/docs/latest/building-spark.html" rel="nofollow"&gt;"Building Spark"&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For general development tips, including info on developing Spark using an IDE, see &lt;a href="https://spark.apache.org/developer-tools.html" rel="nofollow"&gt;"Useful Developer Tools"&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-interactive-scala-shell" class="anchor" aria-hidden="true" href="#interactive-scala-shell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interactive Scala Shell&lt;/h2&gt;
+&lt;p&gt;The easiest way to start using Spark is through the Scala shell:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./bin/spark-shell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Try the following command, which should return 1,000,000,000:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;scala&amp;gt; spark.range(1000 * 1000 * 1000).count()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-interactive-python-shell" class="anchor" aria-hidden="true" href="#interactive-python-shell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interactive Python Shell&lt;/h2&gt;
+&lt;p&gt;Alternatively, if you prefer Python, you can use the Python shell:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./bin/pyspark
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And run the following command, which should also return 1,000,000,000:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; spark.range(1000 * 1000 * 1000).count()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-example-programs" class="anchor" aria-hidden="true" href="#example-programs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example Programs&lt;/h2&gt;
+&lt;p&gt;Spark also comes with several sample programs in the &lt;code&gt;examples&lt;/code&gt; directory.
+To run one of them, use &lt;code&gt;./bin/run-example &amp;lt;class&amp;gt; [params]&lt;/code&gt;. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./bin/run-example SparkPi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will run the Pi example locally.&lt;/p&gt;
+&lt;p&gt;You can set the MASTER environment variable when running examples to submit
+examples to a cluster. This can be a mesos:// or spark:// URL,
+"yarn" to run on YARN, and "local" to run
+locally with one thread, or "local[N]" to run locally with N threads. You
+can also use an abbreviated class name if the class is in the &lt;code&gt;examples&lt;/code&gt;
+package. For instance:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;MASTER=spark://host:7077 ./bin/run-example SparkPi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Many of the example programs print usage help if no params are given.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running Tests&lt;/h2&gt;
+&lt;p&gt;Testing first requires &lt;a href="#building-spark"&gt;building Spark&lt;/a&gt;. Once Spark is built, tests
+can be run using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./dev/run-tests
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please see the guidance on how to
+&lt;a href="https://spark.apache.org/developer-tools.html#individual-tests" rel="nofollow"&gt;run tests for a module, or individual tests&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is also a Kubernetes integration test, see resource-managers/kubernetes/integration-tests/README.md&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-a-note-about-hadoop-versions" class="anchor" aria-hidden="true" href="#a-note-about-hadoop-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A Note About Hadoop Versions&lt;/h2&gt;
+&lt;p&gt;Spark uses the Hadoop core library to talk to HDFS and other Hadoop-supported
+storage systems. Because the protocols have changed in different versions of
+Hadoop, you must build Spark against the same version that your cluster runs.&lt;/p&gt;
+&lt;p&gt;Please refer to the build documentation at
+&lt;a href="https://spark.apache.org/docs/latest/building-spark.html#specifying-the-hadoop-version-and-enabling-yarn" rel="nofollow"&gt;"Specifying the Hadoop Version and Enabling YARN"&lt;/a&gt;
+for detailed guidance on building for a particular distribution of Hadoop, including
+building for particular Hive and Hive Thriftserver distributions.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Please refer to the &lt;a href="https://spark.apache.org/docs/latest/configuration.html" rel="nofollow"&gt;Configuration Guide&lt;/a&gt;
+in the online documentation for an overview on how to configure Spark.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please review the &lt;a href="https://spark.apache.org/contributing.html" rel="nofollow"&gt;Contribution to Spark guide&lt;/a&gt;
+for information on how to get started contributing to the project.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>apache</author><guid isPermaLink="false">https://github.com/apache/spark</guid><pubDate>Fri, 03 Jan 2020 00:03:00 GMT</pubDate></item><item><title>databricks/Spark-The-Definitive-Guide #4 in Scala, This week</title><link>https://github.com/databricks/Spark-The-Definitive-Guide</link><description>&lt;p&gt;&lt;i&gt;Spark: The Definitive Guide's Code Repository&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-spark-the-definitive-guide" class="anchor" aria-hidden="true" href="#spark-the-definitive-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark: The Definitive Guide&lt;/h1&gt;
+&lt;p&gt;This is the central repository for all materials related to &lt;a href="http://shop.oreilly.com/product/0636920034957.do" rel="nofollow"&gt;Spark: The Definitive Guide&lt;/a&gt; by Bill Chambers and Matei Zaharia.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This repository is currently a work in progress and new material will be added over time.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3cbbd904928a5b0736e34ac76d296040a7f91d6e/68747470733a2f2f696d616765732d6e612e73736c2d696d616765732d616d617a6f6e2e636f6d2f696d616765732f492f35317a37547a492d59334c2e5f53583337395f424f312c3230342c3230332c3230305f2e6a7067"&gt;&lt;img src="https://camo.githubusercontent.com/3cbbd904928a5b0736e34ac76d296040a7f91d6e/68747470733a2f2f696d616765732d6e612e73736c2d696d616765732d616d617a6f6e2e636f6d2f696d616765732f492f35317a37547a492d59334c2e5f53583337395f424f312c3230342c3230332c3230305f2e6a7067" alt="Spark: The Definitive Guide" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/51z7TzI-Y3L._SX379_BO1,204,203,200_.jpg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-code-from-the-book" class="anchor" aria-hidden="true" href="#code-from-the-book"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code from the book&lt;/h1&gt;
+&lt;p&gt;You can find the code from the book in the &lt;code&gt;code&lt;/code&gt; subfolder where it is broken down by language and chapter.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-run-the-code" class="anchor" aria-hidden="true" href="#how-to-run-the-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to run the code&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-run-on-your-local-machine" class="anchor" aria-hidden="true" href="#run-on-your-local-machine"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Run on your local machine&lt;/h2&gt;
+&lt;p&gt;To run the example on your local machine, either pull all data in the &lt;code&gt;data&lt;/code&gt; subfolder to &lt;code&gt;/data&lt;/code&gt; on your computer or specify the path to that particular dataset on your local machine.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-run-on-databricks" class="anchor" aria-hidden="true" href="#run-on-databricks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Run on Databricks&lt;/h2&gt;
+&lt;p&gt;To run these modules on Databricks, you're going to need to do two things.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sign up for an account. You can do that &lt;a href="https://databricks.com/try-databricks" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Import individual Notebooks to run on the platform&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Databricks is a zero-management cloud platform that provides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fully managed Spark clusters&lt;/li&gt;
+&lt;li&gt;An interactive workspace for exploration and visualization&lt;/li&gt;
+&lt;li&gt;A production pipeline scheduler&lt;/li&gt;
+&lt;li&gt;A platform for powering your favorite Spark-based applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-instructions-for-importing" class="anchor" aria-hidden="true" href="#instructions-for-importing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instructions for importing&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the notebook you would like to import&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For instance, you might go to &lt;a href="https://github.com/databricks/Spark-The-Definitive-Guide/blob/master/code/A_Gentle_Introduction_to_Spark-Chapter_3_A_Tour_of_Sparks_Toolset.py"&gt;this page&lt;/a&gt;. Once you do that, you're going to need to navigate to the &lt;strong&gt;RAW&lt;/strong&gt; version of the file and save that to your Desktop. You can do that by clicking the &lt;strong&gt;Raw&lt;/strong&gt; button. &lt;em&gt;Alternatively, you could just clone the entire repository to your local desktop and navigate to the file on your computer&lt;/em&gt;.&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Upload that to Databricks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Read &lt;a href="https://docs.databricks.com/user-guide/notebooks/index.html#import-a-notebook" rel="nofollow"&gt;the instructions&lt;/a&gt; here. Simply open the Databricks workspace and go to import in a given directory. From there, navigate to the file on your computer to upload it. &lt;em&gt;Unfortunately due to a recent security upgrade, notebooks cannot be imported from external URLs. Therefore you must upload it from your computer&lt;/em&gt;.&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;You're almost ready to go!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now you just need to simply run the notebooks! All the examples run on Databricks Runtime 3.1 and above so just be sure to create a cluster with a version equal to or greater than that. Once you've created your cluster, attach the notebook.&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Replacing the data path in each notebook&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rather than you having to upload all of the data yourself, you simply have to change the path in each chapter from &lt;code&gt;/data&lt;/code&gt; to &lt;code&gt;/databricks-datasets/definitive-guide/data&lt;/code&gt;. Once you've done that, all examples should run without issue. You can use find and replace to do this very efficiently.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>databricks</author><guid isPermaLink="false">https://github.com/databricks/Spark-The-Definitive-Guide</guid><pubDate>Fri, 03 Jan 2020 00:04:00 GMT</pubDate></item><item><title>polynote/polynote #5 in Scala, This week</title><link>https://github.com/polynote/polynote</link><description>&lt;p&gt;&lt;i&gt;A better notebook for Scala (and more)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-polynote" class="anchor" aria-hidden="true" href="#polynote"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;polynote&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/polynote/polynote" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b049cfe0cf659697dd0671f5c9cec9156f040c26/68747470733a2f2f6261646765732e6769747465722e696d2f706f6c796e6f74652f706f6c796e6f74652e737667" alt="Gitter chat" data-canonical-src="https://badges.gitter.im/polynote/polynote.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/polynote/polynote/actions?query=workflow%3ABuild"&gt;&lt;img src="https://github.com/polynote/polynote/workflows/Build/badge.svg" alt="Build status" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Polynote is an experimental polyglot notebook environment. Currently, it supports Scala and Python (with or without Spark),
+SQL, and Vega.&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href="https://polynote.org" rel="nofollow"&gt;Polynote's website&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-why" class="anchor" aria-hidden="true" href="#why"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why?&lt;/h2&gt;
+&lt;p&gt;Current notebook solutions, like Jupyter and Zeppelin, are lacking in some fundamental features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Code editing&lt;/em&gt; – the code editing capabilities in most notebook tools leave plenty to be desired. Why can't a notebook
+tool have modern editing capabilities like those you'd find in an IDE? Polynote provides useful autocomplete,
+parameter hints, and more – we're planning to add even more features, like jump-to-definition.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Text editing&lt;/em&gt; – you can use the WYSIWYG editor for composing text cells, so you'll know what the text will look like as
+you're writing. TeX equations are also supported.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Multi-language support&lt;/em&gt; – Polynote allows you to mix multiple languages in one notebook, while sharing definitions
+seamlessly between them.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Runtime insight&lt;/em&gt; – Polynote tries to keep you informed of what's going on at runtime:
+&lt;ul&gt;
+&lt;li&gt;The tasks area shows you what the kernel is doing at any given time.&lt;/li&gt;
+&lt;li&gt;The symbol table shows you what variables and functions you've defined, so you don't have to scroll around to remind yourself.&lt;/li&gt;
+&lt;li&gt;Compile failures and runtime exceptions are highlighted in the editor (for supported languages), so you can see exactly what's going wrong.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>polynote</author><guid isPermaLink="false">https://github.com/polynote/polynote</guid><pubDate>Fri, 03 Jan 2020 00:05:00 GMT</pubDate></item><item><title>adobe-fonts/source-han-serif #6 in Scala, This week</title><link>https://github.com/adobe-fonts/source-han-serif</link><description>&lt;p&gt;&lt;i&gt;Source Han Serif | 思源宋体 | 思源宋體 | 源ノ明朝 | 본명조&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://github.com/adobe-fonts/source-han-serif/"&gt;English&lt;/a&gt; &lt;a href="README-CN.md"&gt;简体中文&lt;/a&gt; &lt;a href="README-TW.md"&gt;繁體中文&lt;/a&gt; &lt;a href="README-JP.md"&gt;日本語&lt;/a&gt; &lt;a href="README-KR.md"&gt;한국어&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-source-han-serif" class="anchor" aria-hidden="true" href="#source-han-serif"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Source Han Serif&lt;/h1&gt;
+&lt;p&gt;Source Han Serif is a set of OpenType/CFF Pan-CJK fonts. In addition to functional OpenType fonts, this open source project provides all of the source files that were used to build these OpenType fonts by using the AFDKO &lt;em&gt;makeotf&lt;/em&gt; and &lt;em&gt;otf2otc&lt;/em&gt; tools.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-download-the-fonts-otf-otc-super-otc-subset-otf" class="anchor" aria-hidden="true" href="#download-the-fonts-otf-otc-super-otc-subset-otf"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download the fonts (OTF, OTC, Super OTC, Subset OTF)&lt;/h2&gt;
+&lt;p&gt;Individual font resources or ZIP files for various deployment configurations are available for download:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/adobe-fonts/source-han-serif/tree/release"&gt;Latest release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To help decide which fonts to download, please refer to the Configurations section of the &lt;a href="https://github.com/adobe-fonts/source-han-serif/raw/release/SourceHanSerifReadMe.pdf"&gt;official font readme file&lt;/a&gt;. Those who are unfamiliar with GitHub are encouraged to reference the &lt;a href="https://github.com/adobe-fonts/source-han-serif/raw/release/download-guide-source-han.pdf"&gt;official Source Han download guide&lt;/a&gt;, which is provided in English, Japanese, Korean, Simplified Chinese, and Traditional Chinese.&lt;/p&gt;
+&lt;p&gt;You can also download entire &lt;a href="../../releases"&gt;releases&lt;/a&gt; that include all available configurations in a single ZIP file. The ZIP file for the &lt;a href="../../releases/latest"&gt;latest release&lt;/a&gt; is approximately 2GB.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-font-installation-instructions" class="anchor" aria-hidden="true" href="#font-installation-instructions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Font installation instructions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://support.apple.com/en-us/HT201749" rel="nofollow"&gt;macOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx" rel="nofollow"&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116"&gt;Linux/Unix-based systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-building-the-fonts-from-source" class="anchor" aria-hidden="true" href="#building-the-fonts-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building the fonts from source&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;To build the binary font files from source, you need to have installed the &lt;a href="http://www.adobe.com/devnet/opentype/afdko.html" rel="nofollow"&gt;Adobe Font Development Kit for OpenType&lt;/a&gt; (AFDKO). The AFDKO tools are widely used for font development today, and are part of most font editor applications.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-build-all-fonts" class="anchor" aria-hidden="true" href="#build-all-fonts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build all fonts&lt;/h3&gt;
+&lt;p&gt;In this repository, all necessary files are in place for building the OpenType/CFF and OpenType/CFF Collection fonts. The &lt;a href="COMMANDS.txt"&gt;COMMANDS.txt&lt;/a&gt; file provides the command lines that are used to build the OTFs and OTCs.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-involved" class="anchor" aria-hidden="true" href="#getting-involved"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Involved&lt;/h2&gt;
+&lt;p&gt;For any suggestions for changes, please &lt;a href="https://github.com/adobe-fonts/source-han-serif/issues"&gt;create a new issue&lt;/a&gt; for consideration.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-further-information" class="anchor" aria-hidden="true" href="#further-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Further information&lt;/h2&gt;
+&lt;p&gt;For information about the design and background of Source Han Serif, please refer to the &lt;a href="https://github.com/adobe-fonts/source-han-serif/raw/release/SourceHanSerifDesignGuide.pdf"&gt;design guide&lt;/a&gt; and &lt;a href="https://github.com/adobe-fonts/source-han-serif/raw/release/SourceHanSerifReadMe.pdf"&gt;official font readme file&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>adobe-fonts</author><guid isPermaLink="false">https://github.com/adobe-fonts/source-han-serif</guid><pubDate>Fri, 03 Jan 2020 00:06:00 GMT</pubDate></item><item><title>lw-lin/CoolplaySpark #7 in Scala, This week</title><link>https://github.com/lw-lin/CoolplaySpark</link><description>&lt;p&gt;&lt;i&gt;酷玩 Spark: Spark 源代码解析、Spark 类库等&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="" class="anchor" aria-hidden="true" href="#"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a target="_blank" rel="noopener noreferrer" href="coolplay_spark_logo_cn_small.png"&gt;&lt;img src="coolplay_spark_logo_cn_small.png" alt="coolplay_spark_logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;欢迎来到 Coolplay Spark（中文名：酷玩 Spark）！&lt;/p&gt;
+&lt;p&gt;Coolplay Spark 将包含 Spark 源代码解析、Spark 类库、Spark 代码等。&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-已发布的内容" class="anchor" aria-hidden="true" href="#已发布的内容"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;已发布的内容&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lw-lin/CoolplaySpark/tree/master/Structured%20Streaming%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%B3%BB%E5%88%97"&gt;Structured Streaming 源码解析系列&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Structured Streaming 是 Spark 2.x 的流数据处理系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lw-lin/CoolplaySpark/tree/master/Spark%20Streaming%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%B3%BB%E5%88%97"&gt;Spark Streaming 源码解析系列&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Spark Streaming 是 Spark 1.x 的流数据处理系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lw-lin/CoolplaySpark/tree/master/Spark%20%E8%B5%84%E6%BA%90%E9%9B%86%E5%90%88"&gt;Spark 资源集合&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;包括 Spark 技术交流（中文社群）&lt;br&gt;&lt;a target="_blank" rel="noopener noreferrer" href="Spark%20%E8%B5%84%E6%BA%90%E9%9B%86%E5%90%88/resources/wechat_spark_streaming_small_.PNG"&gt;&lt;img src="Spark%20%E8%B5%84%E6%BA%90%E9%9B%86%E5%90%88/resources/wechat_spark_streaming_small_.PNG" alt="wechat_spark_streaming_small" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spark Summit 视频等资源集合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>lw-lin</author><guid isPermaLink="false">https://github.com/lw-lin/CoolplaySpark</guid><pubDate>Fri, 03 Jan 2020 00:07:00 GMT</pubDate></item><item><title>freechipsproject/chisel3 #8 in Scala, This week</title><link>https://github.com/freechipsproject/chisel3</link><description>&lt;p&gt;&lt;i&gt;Chisel 3: A Modern Hardware Design Language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/chisel_logo.svg?sanitize=true"&gt;&lt;img src="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/chisel_logo.svg?sanitize=true" alt="Chisel 3" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-upcoming-events" class="anchor" aria-hidden="true" href="#upcoming-events"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Upcoming Events&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://events.linuxfoundation.org/chisel-community-conference/" rel="nofollow"&gt;The 3rd Chisel Community Conference (hosted by CHIPS Alliance) is happening on January 29--30, 2020!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We're &lt;a href="https://events.linuxfoundation.org/chisel-community-conference/program/cfp/" rel="nofollow"&gt;accepting talk proposals&lt;/a&gt; for through December 12th.
+(&lt;em&gt;Acceptances are rolling, so if you have travel/visa requirements, get your submissions in!&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Make sure to &lt;a href="https://events.linuxfoundation.org/chisel-community-conference/register/" rel="nofollow"&gt;register&lt;/a&gt; and attend to meet some other Chisel-ers and FIRRTL-ers!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/freechipsproject/chisel3?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/81d268d726903aa9bbe763c9e07a03bc60a6e84d/68747470733a2f2f6261646765732e6769747465722e696d2f66726565636869707370726f6a6563742f63686973656c332e737667" alt="Join the chat at https://gitter.im/freechipsproject/chisel3" data-canonical-src="https://badges.gitter.im/freechipsproject/chisel3.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/freechipsproject/chisel3/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9ba05eab9fda22a95b7c0ba2995858ca85d002f1/68747470733a2f2f636972636c6563692e636f6d2f67682f66726565636869707370726f6a6563742f63686973656c332f747265652f6d61737465722e7376673f7374796c653d736869656c64" alt="CircleCI" data-canonical-src="https://circleci.com/gh/freechipsproject/chisel3/tree/master.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/freechipsproject/chisel3/releases/latest"&gt;&lt;img src="https://camo.githubusercontent.com/da27131fb914f68e3d3aa361088746372c5ddc48/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f66726565636869707370726f6a6563742f63686973656c332e7376673f6c6162656c3d72656c65617365" alt="GitHub tag (latest SemVer)" data-canonical-src="https://img.shields.io/github/tag/freechipsproject/chisel3.svg?label=release" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.chisel-lang.org" rel="nofollow"&gt;&lt;strong&gt;Chisel&lt;/strong&gt;&lt;/a&gt; is a hardware design language that facilitates &lt;strong&gt;advanced circuit generation and design reuse for both ASIC and FPGA digital logic designs&lt;/strong&gt;.
+Chisel adds hardware construction primitives to the &lt;a href="https://www.scala-lang.org" rel="nofollow"&gt;Scala&lt;/a&gt; programming language, providing designers with the power of a modern programming language to write complex, parameterizable circuit generators that produce synthesizable Verilog.
+This generator methodology enables the creation of re-usable components and libraries, such as the FIFO queue and arbiters in the &lt;a href="https://www.chisel-lang.org/api/latest/#chisel3.util.package" rel="nofollow"&gt;Chisel Standard Library&lt;/a&gt;, raising the level of abstraction in design while retaining fine-grained control.&lt;/p&gt;
+&lt;p&gt;For more information on the benefits of Chisel see: &lt;a href="https://stackoverflow.com/questions/53007782/what-benefits-does-chisel-offer-over-classic-hardware-description-languages" rel="nofollow"&gt;"What benefits does Chisel offer over classic Hardware Description Languages?"&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Chisel is powered by &lt;a href="https://github.com/freechipsproject/firrtl"&gt;FIRRTL (Flexible Intermediate Representation for RTL)&lt;/a&gt;, a hardware compiler framework that performs optimizations of Chisel-generated circuits and supports custom user-defined circuit transformations.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-what-does-chisel-code-look-like" class="anchor" aria-hidden="true" href="#what-does-chisel-code-look-like"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What does Chisel code look like?&lt;/h2&gt;
+&lt;p&gt;Consider an FIR filter that implements a convolution operation, as depicted in this block diagram:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/fir_filter.svg?sanitize=true"&gt;&lt;img src="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/fir_filter.svg?sanitize=true" width="512" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;While Chisel provides similar base primitives as synthesizable Verilog, and &lt;em&gt;could&lt;/em&gt; be used as such:&lt;/p&gt;
+&lt;div class="highlight highlight-source-scala"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; 3-point moving average implemented in the style of a FIR filter&lt;/span&gt;
+&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MovingAverage3&lt;/span&gt;(&lt;span class="pl-v"&gt;bitWidth&lt;/span&gt;: &lt;span class="pl-en"&gt;Int&lt;/span&gt;) &lt;span class="pl-k"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;Module&lt;/span&gt; {
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;io&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;IO&lt;/span&gt;(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-en"&gt;Bundle&lt;/span&gt; {
+    &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;in&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Input&lt;/span&gt;(&lt;span class="pl-en"&gt;UInt&lt;/span&gt;(bitWidth.&lt;span class="pl-en"&gt;W&lt;/span&gt;))
+    &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;out&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Output&lt;/span&gt;(&lt;span class="pl-en"&gt;UInt&lt;/span&gt;(bitWidth.&lt;span class="pl-en"&gt;W&lt;/span&gt;))
+  })
+
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;z1&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;RegNext&lt;/span&gt;(io.in)
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;z2&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;RegNext&lt;/span&gt;(z1)
+
+  io.out &lt;span class="pl-k"&gt;:&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; (io.in &lt;span class="pl-k"&gt;*&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt; (z1 &lt;span class="pl-k"&gt;*&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;) &lt;span class="pl-k"&gt;+&lt;/span&gt; (z2 &lt;span class="pl-k"&gt;*&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;the power of Chisel comes from the ability to create generators, such as n FIR filter that is defined by the list of coefficients:&lt;/p&gt;
+&lt;div class="highlight highlight-source-scala"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Generalized FIR filter parameterized by the convolution coefficients&lt;/span&gt;
+&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;FirFilter&lt;/span&gt;(&lt;span class="pl-v"&gt;bitWidth&lt;/span&gt;: &lt;span class="pl-en"&gt;Int&lt;/span&gt;, &lt;span class="pl-v"&gt;coeffs&lt;/span&gt;: &lt;span class="pl-en"&gt;Seq&lt;/span&gt;[&lt;span class="pl-en"&gt;UInt&lt;/span&gt;]) &lt;span class="pl-k"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;Module&lt;/span&gt; {
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;io&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;IO&lt;/span&gt;(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-en"&gt;Bundle&lt;/span&gt; {
+    &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;in&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Input&lt;/span&gt;(&lt;span class="pl-en"&gt;UInt&lt;/span&gt;(bitWidth.&lt;span class="pl-en"&gt;W&lt;/span&gt;))
+    &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;out&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Output&lt;/span&gt;(&lt;span class="pl-en"&gt;UInt&lt;/span&gt;(bitWidth.&lt;span class="pl-en"&gt;W&lt;/span&gt;))
+  })
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Create the serial-in, parallel-out shift register&lt;/span&gt;
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;zs&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Reg&lt;/span&gt;(&lt;span class="pl-en"&gt;Vec&lt;/span&gt;(coeffs.length, &lt;span class="pl-en"&gt;UInt&lt;/span&gt;(bitWidth.&lt;span class="pl-en"&gt;W&lt;/span&gt;)))
+  zs(&lt;span class="pl-c1"&gt;0&lt;/span&gt;) &lt;span class="pl-k"&gt;:&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; io.in
+  &lt;span class="pl-k"&gt;for&lt;/span&gt; (i &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-k"&gt;-&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; until coeffs.length) {
+    zs(i) &lt;span class="pl-k"&gt;:&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; zs(i&lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt;)
+  }
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Do the multiplies&lt;/span&gt;
+  &lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;products&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;VecInit&lt;/span&gt;.tabulate(coeffs.length)(i &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; zs(i) &lt;span class="pl-k"&gt;*&lt;/span&gt; coeffs(i))
+
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Sum up the products&lt;/span&gt;
+  io.out &lt;span class="pl-k"&gt;:&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; products.reduce(_ &lt;span class="pl-k"&gt;+&lt;/span&gt; _)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and use and re-use them across designs:&lt;/p&gt;
+&lt;div class="highlight highlight-source-scala"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;movingAverage3Filter&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;FirFilter&lt;/span&gt;(&lt;span class="pl-c1"&gt;8&lt;/span&gt;.&lt;span class="pl-en"&gt;W&lt;/span&gt;, &lt;span class="pl-en"&gt;Seq&lt;/span&gt;(&lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;))  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; same 3-point moving average filter as before&lt;/span&gt;
+&lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;delayFilter&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;FirFilter&lt;/span&gt;(&lt;span class="pl-c1"&gt;8&lt;/span&gt;.&lt;span class="pl-en"&gt;W&lt;/span&gt;, &lt;span class="pl-en"&gt;Seq&lt;/span&gt;(&lt;span class="pl-c1"&gt;0&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;))  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; 1-cycle delay as a FIR filter&lt;/span&gt;
+&lt;span class="pl-k"&gt;val&lt;/span&gt; &lt;span class="pl-smi"&gt;triangleFilter&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;FirFilter&lt;/span&gt;(&lt;span class="pl-c1"&gt;8&lt;/span&gt;.&lt;span class="pl-en"&gt;W&lt;/span&gt;, &lt;span class="pl-en"&gt;Seq&lt;/span&gt;(&lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;3&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;, &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;span class="pl-en"&gt;U&lt;/span&gt;))  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; 5-point FIR filter with a triangle impulse response&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-bootcamp-interactive-tutorial" class="anchor" aria-hidden="true" href="#bootcamp-interactive-tutorial"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bootcamp Interactive Tutorial&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master" rel="nofollow"&gt;&lt;strong&gt;online Chisel Bootcamp&lt;/strong&gt;&lt;/a&gt; is the recommended way to get started with and learn Chisel.
+&lt;strong&gt;No setup is required&lt;/strong&gt; (it runs in the browser), nor does it assume any prior knowledge of Scala.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-build-your-own-chisel-projects" class="anchor" aria-hidden="true" href="#build-your-own-chisel-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Your Own Chisel Projects&lt;/h3&gt;
+&lt;p&gt;See &lt;a href="https://github.com/freechipsproject/chisel3/blob/master/SETUP.md"&gt;the setup instructions&lt;/a&gt; for how to set up your environment to run Chisel locally.&lt;/p&gt;
+&lt;p&gt;When you're ready to build your own circuits in Chisel, &lt;strong&gt;we recommend starting from the &lt;a href="https://github.com/freechipsproject/chisel-template"&gt;Chisel Template&lt;/a&gt; repository&lt;/strong&gt;, which provides a pre-configured project, example design, and testbench. Follow the &lt;a href="https://github.com/freechipsproject/chisel-template"&gt;chisel-template readme&lt;/a&gt; to get started.&lt;/p&gt;
+&lt;p&gt;If you insist on setting up your own project, the magic SBT lines are:&lt;/p&gt;
+&lt;div class="highlight highlight-source-scala"&gt;&lt;pre&gt;resolvers &lt;span class="pl-k"&gt;++&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;Seq&lt;/span&gt;(
+  &lt;span class="pl-en"&gt;Resolver&lt;/span&gt;.sonatypeRepo(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;snapshots&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;),
+  &lt;span class="pl-en"&gt;Resolver&lt;/span&gt;.sonatypeRepo(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;releases&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+)
+libraryDependencies &lt;span class="pl-k"&gt;+&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;edu.berkeley.cs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;chisel3&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;3.2-SNAPSHOT&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+libraryDependencies &lt;span class="pl-k"&gt;+&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;edu.berkeley.cs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;chisel-testers2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;0.1-SNAPSHOT&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-design-verification" class="anchor" aria-hidden="true" href="#design-verification"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Design Verification&lt;/h3&gt;
+&lt;p&gt;These simulation-based verification tools are available for Chisel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freechipsproject/chisel-testers"&gt;&lt;strong&gt;iotesters&lt;/strong&gt;&lt;/a&gt;, specifically &lt;a href="https://github.com/freechipsproject/chisel-testers/wiki/Using%20the%20PeekPokeTester"&gt;PeekPokeTester&lt;/a&gt;, provides constructs (&lt;code&gt;peek&lt;/code&gt;, &lt;code&gt;poke&lt;/code&gt;, &lt;code&gt;expect&lt;/code&gt;) similar to a non-synthesizable Verilog testbench.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ucb-bar/chisel-testers2"&gt;&lt;strong&gt;testers2&lt;/strong&gt;&lt;/a&gt; is an in-development replacement for PeekPokeTester, providing the same base constructs but with a streamlined interface and concurrency support with &lt;code&gt;fork&lt;/code&gt; and &lt;code&gt;join&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-useful-resources" class="anchor" aria-hidden="true" href="#useful-resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freechipsproject/chisel-cheatsheet/releases/latest/download/chisel_cheatsheet.pdf"&gt;&lt;strong&gt;Cheat Sheet&lt;/strong&gt;&lt;/a&gt;, a 2-page reference of the base Chisel syntax and libraries&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freechipsproject/chisel3/wiki"&gt;&lt;strong&gt;Wiki&lt;/strong&gt;&lt;/a&gt;, which contains various feature-specific tutorials and frequently-asked questions.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.chisel-lang.org/api/latest/chisel3/index.html" rel="nofollow"&gt;&lt;strong&gt;ScalaDoc&lt;/strong&gt;&lt;/a&gt;, a listing, description, and examples of the functionality exposed by Chisel&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitter.im/freechipsproject/chisel3" rel="nofollow"&gt;&lt;strong&gt;Gitter&lt;/strong&gt;&lt;/a&gt;, where you can ask questions or discuss anything Chisel&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.chisel-lang.org" rel="nofollow"&gt;&lt;strong&gt;Website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are migrating from Chisel2, see &lt;a href="https://www.chisel-lang.org/chisel3/chisel3-vs-chisel2.html" rel="nofollow"&gt;the migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-data-types-overview" class="anchor" aria-hidden="true" href="#data-types-overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Types Overview&lt;/h3&gt;
+&lt;p&gt;These are the base data types for defining circuit components:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/type_hierarchy.svg?sanitize=true"&gt;&lt;img src="https://raw.githubusercontent.com/freechipsproject/chisel3/master/doc/images/type_hierarchy.svg?sanitize=true" alt="Image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-developer-documentation" class="anchor" aria-hidden="true" href="#developer-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developer Documentation&lt;/h2&gt;
+&lt;p&gt;This section describes how to get started developing Chisel itself, including how to test your version locally against other projects that pull in Chisel using &lt;a href="https://www.scala-sbt.org/1.x/docs/Library-Dependencies.html" rel="nofollow"&gt;sbt's managed dependencies&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-compiling-and-testing-chisel" class="anchor" aria-hidden="true" href="#compiling-and-testing-chisel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling and Testing Chisel&lt;/h3&gt;
+&lt;p&gt;In the chisel3 repository directory compile the Chisel library:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sbt compile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the compilation succeeded, you can then run the included unit tests by invoking:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sbt test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-running-projects-against-local-chisel" class="anchor" aria-hidden="true" href="#running-projects-against-local-chisel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running Projects Against Local Chisel&lt;/h3&gt;
+&lt;p&gt;To use the development version of Chisel (&lt;code&gt;master&lt;/code&gt; branch), you will need to build from source and &lt;code&gt;publishLocal&lt;/code&gt;.
+The repository version can be found in the build.sbt file.
+As of the time of writing it was:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;version := "3.2-SNAPSHOT"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To publish your version of Chisel to the local Ivy (sbt's dependency manager) repository, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sbt publishLocal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The compiled version gets placed in &lt;code&gt;~/.ivy2/local/edu.berkeley.cs/&lt;/code&gt;.
+If you need to un-publish your local copy of Chisel, remove the directory generated in &lt;code&gt;~/.ivy2/local/edu.berkeley.cs/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In order to have your projects use this version of Chisel, you should update the &lt;code&gt;libraryDependencies&lt;/code&gt; setting in your project's build.sbt file to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;libraryDependencies += "edu.berkeley.cs" %% "chisel3" % "3.2-SNAPSHOT"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-chisel3-architecture-overview" class="anchor" aria-hidden="true" href="#chisel3-architecture-overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Chisel3 Architecture Overview&lt;/h3&gt;
+&lt;p&gt;The Chisel3 compiler consists of these main parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The frontend&lt;/strong&gt;, &lt;code&gt;chisel3.*&lt;/code&gt;, which is the publicly visible "API" of Chisel
+and what is used in Chisel RTL. These just add data to the...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Builder&lt;/strong&gt;, &lt;code&gt;chisel3.internal.Builder&lt;/code&gt;, which maintains global state
+(like the currently open Module) and contains commands, generating...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The intermediate data structures&lt;/strong&gt;, &lt;code&gt;chisel3.firrtl.*&lt;/code&gt;, which are
+syntactically very similar to Firrtl. Once the entire circuit has been
+elaborated, the top-level object (a &lt;code&gt;Circuit&lt;/code&gt;) is then passed to...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Firrtl emitter&lt;/strong&gt;, &lt;code&gt;chisel3.firrtl.Emitter&lt;/code&gt;, which turns the
+intermediate data structures into a string that can be written out into a
+Firrtl file for further processing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also included is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The standard library&lt;/strong&gt; of circuit generators, &lt;code&gt;chisel3.util.*&lt;/code&gt;. These
+contain commonly used interfaces and constructors (like &lt;code&gt;Decoupled&lt;/code&gt;, which
+wraps a signal with a ready-valid pair) as well as fully parameterizable
+circuit generators (like arbiters and multiplexors).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Driver utilities&lt;/strong&gt;, &lt;code&gt;chisel3.Driver&lt;/code&gt;, which contains compilation and test
+functions that are invoked in the standard Verilog generation and simulation
+testing infrastructure. These can also be used as part of custom flows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-which-version-should-i-use" class="anchor" aria-hidden="true" href="#which-version-should-i-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Which version should I use?&lt;/h3&gt;
+&lt;p&gt;The chisel eco-system (&lt;code&gt;chisel3&lt;/code&gt;, &lt;code&gt;firttl&lt;/code&gt;, &lt;code&gt;dsptools&lt;/code&gt;, &lt;code&gt;firrtl-interpreter&lt;/code&gt;, &lt;code&gt;treadle&lt;/code&gt;, &lt;code&gt;diagrammer&lt;/code&gt;) use a form of semantic versioning:
+major versions are identified by two leading numbers, separated by a dot (i.e., &lt;code&gt;3.2&lt;/code&gt;), minor versions by a single number following the major version, separated by a dot.
+We maintain API compatibility within a major version (i.e., &lt;code&gt;3.2.12&lt;/code&gt; should be API-compatible with &lt;code&gt;3.2.0&lt;/code&gt;), but do not guarantee API compatibility between major versions
+(i.e., APIs may change between &lt;code&gt;3.1.8&lt;/code&gt; and &lt;code&gt;3.2.0&lt;/code&gt;).
+We may introduce new definitions or add additional parameters to existing definitions in a minor release, but we do our best to maintain compatibility with previous minor releases of a major release - code that worked in &lt;code&gt;3.2.0&lt;/code&gt; should continue to work un-modified in &lt;code&gt;3.2.10&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We encourage chisel users (rather than chisel developers), to use release versions of chisel.
+The chisel web site (and GitHub repository) should indicate the current release version.
+If you encounter an issue with a released version of chisel, please file an issue on GitHub mentioning the chisel version and provide a simple test case (if possible).
+Try to reproduce the issue with the associated latest minor release (to verify that the issue hasn't been addressed).&lt;/p&gt;
+&lt;p&gt;If you're developing a chisel library (or &lt;code&gt;chisel&lt;/code&gt; itself), you'll probably want to work closer to the tip of the development trunk.
+By default, the master branches of the chisel repositories are configured to build and publish their version of the code as &lt;code&gt;Z.Y-SNAPSHOT&lt;/code&gt;.
+We try to publish an updated SNAPSHOT every two weeks.
+There is no guarantee of API compatibility between SNAPSHOT versions, but we publish date-stamped &lt;code&gt;Z.Y-yyyymmdd-SNAPSHOT&lt;/code&gt; versions which will not change.
+The code in &lt;code&gt;Z.Y-SNAPSHOT&lt;/code&gt; should match the code in the most recent &lt;code&gt;Z.Y-yyyymmdd-SNAPSHOT&lt;/code&gt; version, the differences being the chisel library dependencies:
+&lt;code&gt;Z.Y-SNAPSHOT&lt;/code&gt;s depend on &lt;code&gt;V.U-SNAPSHOT&lt;/code&gt;s and &lt;code&gt;Z.Y-yyyymmdd-SNAPSHOT&lt;/code&gt;s will depend on &lt;code&gt;V.U-yyyymmdd-SNAPSHOT&lt;/code&gt;s.
+&lt;strong&gt;NOTE&lt;/strong&gt;: Prior to the &lt;code&gt;v3.2-20191030-SNAPSHOT&lt;/code&gt; version, we used &lt;code&gt;Z.Y-mmddyy-SNAPSHOT&lt;/code&gt; to tag and name published SNAPSHOTs.&lt;/p&gt;
+&lt;p&gt;If you're developing a library (or another chisel tool), you should probably work with date-stamped SNAPSHOTs until your library or tool is ready to be published (to ensure a consistent API).
+Prior to publishing, you should verify your code against generic (no date-stamp) SNAPSHOTs, or locally published clones of the current master branches of chisel dependencies.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>freechipsproject</author><guid isPermaLink="false">https://github.com/freechipsproject/chisel3</guid><pubDate>Fri, 03 Jan 2020 00:08:00 GMT</pubDate></item><item><title>fpinscala/fpinscala #9 in Scala, This week</title><link>https://github.com/fpinscala/fpinscala</link><description>&lt;p&gt;&lt;i&gt;Code, exercises, answers, and hints to go along with the book "Functional Programming in Scala"&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/fpinscala/fpinscala" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/eda1ba73f57af016a5c2cdcd746f67cef92c0b41/68747470733a2f2f7472617669732d63692e6f72672f6670696e7363616c612f6670696e7363616c612e7376673f6272616e63683d6d6173746572" alt="Build status" data-canonical-src="https://travis-ci.org/fpinscala/fpinscala.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://gitter.im/fpinscala/fpinscala?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/fpinscala/fpinscala" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This repository contains exercises, hints, and answers for the book
+&lt;a href="http://manning.com/bjarnason/" rel="nofollow"&gt;Functional Programming in Scala&lt;/a&gt;. Along
+with the book itself, it's the closest you'll get to having your own
+private functional programming tutor without actually having one.&lt;/p&gt;
+&lt;p&gt;Here's how to use this repository:&lt;/p&gt;
+&lt;p&gt;Each chapter in the book develops a fully working library of functions
+and data types, built up through a series of exercises and example code
+given in the book text. The shell of this working library and exercise
+stubs live in
+&lt;code&gt;exercises/src/main/scala/fpinscala/&amp;lt;chapter-description&amp;gt;&lt;/code&gt;, where
+&lt;code&gt;&amp;lt;chapter-description&amp;gt;&lt;/code&gt; is a package name that corresponds to the
+chapter title (see below). When you begin working on a chapter, we
+recommend you open the exercise file(s) for that chapter, and when you
+encounter exercises, implement them in the exercises file and make sure
+they work.&lt;/p&gt;
+&lt;p&gt;If you get stuck on an exercise, let's say exercise 4 in the chapter,
+you can find hints in &lt;code&gt;answerkey/&amp;lt;chapter-description&amp;gt;/04.hint.txt&lt;/code&gt; (if
+no hints are available for a problem, the file will just have a single
+'-' as its contents) and the answer along with an explanation of the
+answer and any variations in
+&lt;code&gt;answerkey/&amp;lt;chapter-description&amp;gt;/04.answer.scala&lt;/code&gt; or
+&lt;code&gt;04.answer.markdown&lt;/code&gt;. The finished Scala modules, with all answers for
+each chapter live in
+&lt;code&gt;answers/src/main/scala/fpinscala/&amp;lt;chapter-description&amp;gt;&lt;/code&gt;. Please feel
+free to submit pull requests for alternate answers, improved hints, and
+so on, so we can make this repo the very best resource for people
+working through the book.&lt;/p&gt;
+&lt;p&gt;Chapter descriptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chapter 2: gettingstarted&lt;/li&gt;
+&lt;li&gt;Chapter 3: datastructures&lt;/li&gt;
+&lt;li&gt;Chapter 4: errorhandling&lt;/li&gt;
+&lt;li&gt;Chapter 5: laziness&lt;/li&gt;
+&lt;li&gt;Chapter 6: state&lt;/li&gt;
+&lt;li&gt;Chapter 7: parallelism&lt;/li&gt;
+&lt;li&gt;Chapter 8: testing&lt;/li&gt;
+&lt;li&gt;Chapter 9: parsing&lt;/li&gt;
+&lt;li&gt;Chapter 10: monoids&lt;/li&gt;
+&lt;li&gt;Chapter 11: monads&lt;/li&gt;
+&lt;li&gt;Chapter 12: applicative&lt;/li&gt;
+&lt;li&gt;Chapter 13: iomonad&lt;/li&gt;
+&lt;li&gt;Chapter 14: localeffects&lt;/li&gt;
+&lt;li&gt;Chapter 15: streamingio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To build the code for the first time, if on windows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ .\sbt.cmd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If on mac/linux, first make sure you have not checked out the code onto
+an encrypted file system, otherwise you will get compile errors
+regarding too long file names (one solution is to put the fpinscala repo
+on a unencrypted usb key, and symlink it into your preferred code
+location).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ chmod a+x ./sbt
+$ ./sbt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will download and launch &lt;a href="http://scala-sbt.org" rel="nofollow"&gt;sbt&lt;/a&gt;, a build tool
+for Scala. Once it is finished downloading, you'll get a prompt from
+which you can issue commands to build and interact with your code. Try
+the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; project exercises
+&amp;gt; compile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This switches to the exercises project, where your code lives, and
+compiles the code. You can also do:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; console
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to get a Scala REPL with access to your exercises, and&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To get a menu of possible main methods to execute.&lt;/p&gt;
+&lt;p&gt;To create project files for the eclipse IDE you can install the
+&lt;a href="https://github.com/typesafehub/sbteclipse"&gt;sbteclipse&lt;/a&gt;
+&lt;a href="http://scala-sbt.org" rel="nofollow"&gt;sbt&lt;/a&gt; plugin. This makes a new command available
+in &lt;a href="http://scala-sbt.org" rel="nofollow"&gt;sbt&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; eclipse
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All code in this repository is
+&lt;a href="http://opensource.org/licenses/mit-license.php" rel="nofollow"&gt;MIT-licensed&lt;/a&gt;. See the
+LICENSE file for details.&lt;/p&gt;
+&lt;p&gt;Have fun, and good luck! Also be sure to check out &lt;a href="https://github.com/fpinscala/fpinscala/wiki"&gt;the community
+wiki&lt;/a&gt; for the &lt;strong&gt;chapter
+notes&lt;/strong&gt;, links to more reading, and more.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Paul and Rúnar&lt;/em&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>fpinscala</author><guid isPermaLink="false">https://github.com/fpinscala/fpinscala</guid><pubDate>Fri, 03 Jan 2020 00:09:00 GMT</pubDate></item><item><title>akka/akka #10 in Scala, This week</title><link>https://github.com/akka/akka</link><description>&lt;p&gt;&lt;i&gt;Build highly concurrent, distributed, and resilient message-driven applications on the JVM&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-akka-" class="anchor" aria-hidden="true" href="#akka-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Akka &lt;a href="https://index.scala-lang.org/akka/akka/akka-actor" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/daa5c167ea3ca8f58e68ed88dff62778a82842e0/68747470733a2f2f696e6465782e7363616c612d6c616e672e6f72672f616b6b612f616b6b612f616b6b612d6163746f722f6c61746573742e737667" alt="Latest version" data-canonical-src="https://index.scala-lang.org/akka/akka/akka-actor/latest.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://travis-ci.org/akka/akka" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dc52832ba0357978d2f5d50a7ea216ead427290b/68747470733a2f2f7472617669732d63692e6f72672f616b6b612f616b6b612e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/akka/akka.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;We believe that writing correct concurrent &amp;amp; distributed, resilient and elastic applications is too hard.
+Most of the time it's because we are using the wrong tools and the wrong level of abstraction.&lt;/p&gt;
+&lt;p&gt;Akka is here to change that.&lt;/p&gt;
+&lt;p&gt;Using the Actor Model we raise the abstraction level and provide a better platform to build correct concurrent and scalable applications. This model is a perfect match for the principles laid out in the &lt;a href="http://www.reactivemanifesto.org/" rel="nofollow"&gt;Reactive Manifesto&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For resilience, we adopt the "Let it crash" model which the telecom industry has used with great success to build applications that self-heal and systems that never stop.&lt;/p&gt;
+&lt;p&gt;Actors also provide the abstraction for transparent distribution and the basis for truly scalable and fault-tolerant applications.&lt;/p&gt;
+&lt;p&gt;Learn more at &lt;a href="http://akka.io/" rel="nofollow"&gt;akka.io&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reference-documentation" class="anchor" aria-hidden="true" href="#reference-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference Documentation&lt;/h2&gt;
+&lt;p&gt;The reference documentation is available at &lt;a href="http://doc.akka.io" rel="nofollow"&gt;doc.akka.io&lt;/a&gt;,
+for &lt;a href="http://doc.akka.io/docs/akka/current/scala.html" rel="nofollow"&gt;Scala&lt;/a&gt; and &lt;a href="http://doc.akka.io/docs/akka/current/java.html" rel="nofollow"&gt;Java&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
+&lt;p&gt;You can join these groups and chats to discuss and ask Akka related questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Forums: &lt;a href="https://discuss.akka.io" rel="nofollow"&gt;discuss.akka.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chat room about &lt;em&gt;using&lt;/em&gt; Akka: &lt;a href="https://gitter.im/akka/akka" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f9e40f1fe5bdc832a177e1a241915b4521db7272/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769747465722533412d616b6b61253246616b6b612d626c75652e7376673f7374796c653d666c61742d737175617265" alt="gitter: akka/akka" data-canonical-src="https://img.shields.io/badge/gitter%3A-akka%2Fakka-blue.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Issue tracker: &lt;a href="https://github.com/akka/akka/issues"&gt;&lt;img src="https://camo.githubusercontent.com/b278eef1d47203c00101c53e739670458e8252b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622533412d6973737565732d626c75652e7376673f7374796c653d666c61742d737175617265" alt="github: akka/akka" data-canonical-src="https://img.shields.io/badge/github%3A-issues-blue.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition to that, you may enjoy following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="http://akka.io/news" rel="nofollow"&gt;news&lt;/a&gt; section of the page, which is updated whenever a new version is released&lt;/li&gt;
+&lt;li&gt;The &lt;a href="http://blog.akka.io" rel="nofollow"&gt;Akka Team Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/akkateam" rel="nofollow"&gt;@akkateam&lt;/a&gt; on Twitter&lt;/li&gt;
+&lt;li&gt;Questions tagged &lt;a href="http://stackoverflow.com/questions/tagged/akka" rel="nofollow"&gt;#akka on StackOverflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Projects built with Akka: &lt;a href="https://index.scala-lang.org/search?q=dependencies:akka/*" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a308ec8472732fc10c01d6004aaf761eea2a7080/68747470733a2f2f696e6465782e7363616c612d6c616e672e6f72672f636f756e742e7376673f713d646570656e64656e636965733a616b6b612f2a267375626a6563743d7363616c616465783a26636f6c6f723d626c7565267374796c653d666c61742d737175617265" alt="akka-dependency-badge" title="Built with Akka" data-canonical-src="https://index.scala-lang.org/count.svg?q=dependencies:akka/*&amp;amp;subject=scaladex:&amp;amp;color=blue&amp;amp;style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Contributions are &lt;em&gt;very&lt;/em&gt; welcome!&lt;/p&gt;
+&lt;p&gt;If you see an issue that you'd like to see fixed, the best way to make it happen is to help out by submitting a pull request implementing it.&lt;/p&gt;
+&lt;p&gt;Refer to the &lt;a href="https://github.com/akka/akka/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; file for more details about the workflow,
+and general hints on how to prepare your pull request. You can also ask for clarifications or guidance in GitHub issues directly,
+or in the akka/dev chat if a more real time communication would be of benefit.&lt;/p&gt;
+&lt;p&gt;A chat room is available for all questions related to &lt;em&gt;developing and contributing&lt;/em&gt; to Akka:
+&lt;a href="https://gitter.im/akka/dev" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0a6c1891578680ac0418fb1b4e8beb0bbb1e00a8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769747465722533412d616b6b612532466465762d626c75652e7376673f7374796c653d666c61742d737175617265" alt="gitter: akka/dev" data-canonical-src="https://img.shields.io/badge/gitter%3A-akka%2Fdev-blue.svg?style=flat-square" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Akka is Open Source and available under the Apache 2 License.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>akka</author><guid isPermaLink="false">https://github.com/akka/akka</guid><pubDate>Fri, 03 Jan 2020 00:10:00 GMT</pubDate></item><item><title>Azure/mmlspark #11 in Scala, This week</title><link>https://github.com/Azure/mmlspark</link><description>&lt;p&gt;&lt;i&gt;Microsoft Machine Learning for Apache Spark&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/0f31d64469b1c4f3dbe5e854f52bb3eb349e0ba8/68747470733a2f2f6d6d6c737061726b2e617a757265656467652e6e65742f69636f6e732f6d6d6c737061726b2e737667"&gt;&lt;img src="https://camo.githubusercontent.com/0f31d64469b1c4f3dbe5e854f52bb3eb349e0ba8/68747470733a2f2f6d6d6c737061726b2e617a757265656467652e6e65742f69636f6e732f6d6d6c737061726b2e737667" alt="MMLSpark" data-canonical-src="https://mmlspark.azureedge.net/icons/mmlspark.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-microsoft-machine-learning-for-apache-spark" class="anchor" aria-hidden="true" href="#microsoft-machine-learning-for-apache-spark"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microsoft Machine Learning for Apache Spark&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://msazure.visualstudio.com/Cognitive%20Services/_build/latest?definitionId=83120&amp;amp;branchName=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c6013b9f6e8d726998981acea8cf0c6afa87dc8d/68747470733a2f2f6d73617a7572652e76697375616c73747564696f2e636f6d2f436f676e697469766525323053657276696365732f5f617069732f6275696c642f7374617475732f417a7572652e6d6d6c737061726b3f6272616e63684e616d653d6d6173746572" alt="Build Status" data-canonical-src="https://msazure.visualstudio.com/Cognitive%20Services/_apis/build/status/Azure.mmlspark?branchName=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://codecov.io/gh/Azure/mmlspark" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3d33b1f413ba945dce11c42625c751b6e13acca3/68747470733a2f2f636f6465636f762e696f2f67682f417a7572652f6d6d6c737061726b2f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/Azure/mmlspark/branch/master/graph/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://gitter.im/Microsoft/MMLSpark?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2177ea7fddaac7ecb8a0d5ebda9e0550ec2f79fa/68747470733a2f2f6261646765732e6769747465722e696d2f4d6963726f736f66742f4d4d4c537061726b2e737667" alt="Gitter" data-canonical-src="https://badges.gitter.im/Microsoft/MMLSpark.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Azure/mmlspark/releases"&gt;&lt;img src="https://camo.githubusercontent.com/2b95bde9e35735d085f2a64e334564fddb1e792b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656c656173652d6e6f7465732d626c7565" alt="Release Notes" data-canonical-src="https://img.shields.io/badge/release-notes-blue" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://mmlspark.blob.core.windows.net/docs/1.0.0-rc1/scala/index.html#package" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9541c1e00ab17b5c0f31ab880f7da0d1dd06cff0/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d617069253230646f6373266d6573736167653d7363616c6126636f6c6f723d626c7565266c6f676f3d7363616c61" alt="Scala Docs" data-canonical-src="https://img.shields.io/static/v1?label=api%20docs&amp;amp;message=scala&amp;amp;color=blue&amp;amp;logo=scala" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://mmlspark.blob.core.windows.net/docs/1.0.0-rc1/pyspark/index.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a5ac918a682fe9c6992a7f1ab12e204964a53997/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d617069253230646f6373266d6573736167653d707974686f6e26636f6c6f723d626c7565266c6f676f3d707974686f6e" alt="PySpark Docs" data-canonical-src="https://img.shields.io/static/v1?label=api%20docs&amp;amp;message=python&amp;amp;color=blue&amp;amp;logo=python" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://arxiv.org/abs/1810.08744" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/efa888257e8261153f5ff4f426ad4893fb84badc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f61636164656d69632d70617065722d376664636637" alt="Academic Paper" data-canonical-src="https://img.shields.io/badge/academic-paper-7fdcf7" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Azure/mmlspark/releases"&gt;&lt;img src="https://camo.githubusercontent.com/14e16b347646015d0f380e887d184c59e4640b4e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657273696f6e2d312e302e302d2d7263312d626c7565" alt="Version" data-canonical-src="https://img.shields.io/badge/version-1.0.0--rc1-blue" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="#sbt"&gt;&lt;img src="https://camo.githubusercontent.com/f2134790d60abaea58ea73bbeed0e0853de9e0f5/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f69636f6e732f6261646765732f6d61737465725f76657273696f6e332e737667" alt="Snapshot Version" data-canonical-src="https://mmlspark.blob.core.windows.net/icons/badges/master_version3.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MMLSpark is an ecosystem of tools aimed towards expanding the distributed computing framework
+&lt;a href="https://github.com/apache/spark"&gt;Apache Spark&lt;/a&gt; in several new directions.
+MMLSpark adds many deep learning and data science tools to the Spark ecosystem,
+including seamless integration of Spark Machine Learning pipelines with &lt;a href="https://github.com/Microsoft/CNTK"&gt;Microsoft Cognitive Toolkit
+(CNTK)&lt;/a&gt;, &lt;a href="https://github.com/Microsoft/LightGBM"&gt;LightGBM&lt;/a&gt; and
+&lt;a href="http://www.opencv.org/" rel="nofollow"&gt;OpenCV&lt;/a&gt;. These tools enable powerful and highly-scalable predictive and analytical models
+for a variety of datasources.&lt;/p&gt;
+&lt;p&gt;MMLSpark also brings new networking capabilities to the Spark Ecosystem. With the HTTP on Spark project, users
+can embed &lt;strong&gt;any&lt;/strong&gt; web service into their SparkML models. In this vein, MMLSpark provides easy to use
+SparkML transformers for a wide variety of &lt;a href="https://azure.microsoft.com/en-us/services/cognitive-services/" rel="nofollow"&gt;Microsoft Cognitive Services&lt;/a&gt;. For production grade deployment, the Spark Serving project enables high throughput,
+sub-millisecond latency web services, backed by your Spark cluster.&lt;/p&gt;
+&lt;p&gt;MMLSpark requires Scala 2.11, Spark 2.4+, and Python 3.5+.
+See the API documentation &lt;a href="https://mmlspark.blob.core.windows.net/docs/1.0.0-rc1/scala/index.html#package" rel="nofollow"&gt;for
+Scala&lt;/a&gt; and &lt;a href="https://mmlspark.blob.core.windows.net/docs/1.0.0-rc1/pyspark/index.html" rel="nofollow"&gt;for
+PySpark&lt;/a&gt;.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;&lt;em&gt;Table of Contents&lt;/em&gt;&lt;/strong&gt;&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#notable-features"&gt;Notable features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#a-short-example"&gt;A short example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#setup-and-installation"&gt;Setup and installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#docker"&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gpu-vm-setup"&gt;GPU VM Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#spark-package"&gt;Spark package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#python"&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#databricks-cloud"&gt;Databricks cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sbt"&gt;SBT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building-from-source"&gt;Building from source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blogs-and-publications"&gt;Blogs and Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing--feedback"&gt;Contributing &amp;amp; feedback&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#other-relevant-projects"&gt;Other relevant projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h2&gt;&lt;a id="user-content-projects" class="anchor" aria-hidden="true" href="#projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Projects&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/93b3b7e4dfc1a58a5a6bdbbe67177307c9a47359/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f76772d626c75652d6461726b2d6f72616e67652e737667"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/93b3b7e4dfc1a58a5a6bdbbe67177307c9a47359/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f76772d626c75652d6461726b2d6f72616e67652e737667" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/vw-blue-dark-orange.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bfbef7ae756b550d3bd2648aed3bff7a7ceb03eb/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f636f675f73657276696365735f6f6e5f737061726b5f322e737667"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/bfbef7ae756b550d3bd2648aed3bff7a7ceb03eb/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f636f675f73657276696365735f6f6e5f737061726b5f322e737667" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/cog_services_on_spark_2.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ae54b5e5042ab39028bdf52f6fe7b42c7a475f55/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6465636973696f6e5f747265655f7265636f6c6f722e706e67"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/ae54b5e5042ab39028bdf52f6fe7b42c7a475f55/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6465636973696f6e5f747265655f7265636f6c6f722e706e67" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/decision_tree_recolor.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2a836683e4c037d1c65a09cebf680b991f3cd07e/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6d6d6c737061726b5f73657276696e675f7265636f6c6f722e737667"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/2a836683e4c037d1c65a09cebf680b991f3cd07e/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6d6d6c737061726b5f73657276696e675f7265636f6c6f722e737667" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/mmlspark_serving_recolor.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;Vowpal Wabbit on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;The Cognitive Services on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;LightGBM on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;Spark Serving&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Fast, Sparse, and Effective Text Analytics&lt;/td&gt;
+&lt;td align="center"&gt;Leverage the Microsoft Cognitive Services at Unprecedented Scales in your existing SparkML pipelines&lt;/td&gt;
+&lt;td align="center"&gt;Train Gradient Boosted Machines with LightGBM&lt;/td&gt;
+&lt;td align="center"&gt;Serve any Spark Computation as a Web Service with Sub-Millisecond Latency&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9ea135c7b4beaee0365bf05e2f35977c4f1b148e/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6d6963726f736572766963655f7265636f6c6f722e706e67"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/9ea135c7b4beaee0365bf05e2f35977c4f1b148e/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f6d6963726f736572766963655f7265636f6c6f722e706e67" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/microservice_recolor.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e706b7bfec0b1030f979a12a938b99dad9c329ce/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f64697374726962757465645f646565705f7265636f6c6f722e706e67"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/e706b7bfec0b1030f979a12a938b99dad9c329ce/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f64697374726962757465645f646565705f7265636f6c6f722e706e67" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/distributed_deep_recolor.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a27a8de5e9aede55d8565c7109b2becd20bbd5ed/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f4c494d452e737667"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/a27a8de5e9aede55d8565c7109b2becd20bbd5ed/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f4c494d452e737667" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/LIME.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th align="center"&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1b81d8cc571ba4b0e21fb975542089374ce3a72c/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f62696e64696e67732e706e67"&gt;&lt;img width="800" src="https://camo.githubusercontent.com/1b81d8cc571ba4b0e21fb975542089374ce3a72c/68747470733a2f2f6d6d6c737061726b2e626c6f622e636f72652e77696e646f77732e6e65742f67726170686963732f526561646d652f62696e64696e67732e706e67" data-canonical-src="https://mmlspark.blob.core.windows.net/graphics/Readme/bindings.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;strong&gt;HTTP on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;CNTK on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;Lime on Spark&lt;/strong&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&lt;strong&gt;Spark Binding Autogeneration&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;An Integration Between Spark and the HTTP Protocol, enabling Distributed Microservice Orchestration&lt;/td&gt;
+&lt;td align="center"&gt;Distributed Deep Learning with the Microsoft Cognitive Toolkit&lt;/td&gt;
+&lt;td align="center"&gt;Distributed, Model Agnostic, Interpretations for Classifiers&lt;/td&gt;
+&lt;td align="center"&gt;Automatically Generate Spark bindings for PySpark and SparklyR&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a deep image classifier with transfer learning (&lt;a href="notebooks/samples/DeepLearning%20-%20Flower%20Image%20Classification.ipynb" title="Deep Flower Classification"&gt;example 9&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fit a LightGBM classification or regression model on a biochemical dataset
+(&lt;a href="notebooks/samples/LightGBM%20-%20Quantile%20Regression%20for%20Drug%20Discovery.ipynb" title="Quantile Regression with LightGBM"&gt;example 3&lt;/a&gt;), to learn more check out the &lt;a href="docs/lightgbm.md"&gt;LightGBM documentation
+page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Deploy a deep network as a distributed web service with &lt;a href="docs/mmlspark-serving.md"&gt;MMLSpark
+Serving&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use web services in Spark with &lt;a href="docs/http.md"&gt;HTTP on Apache Spark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Bi-directional LSTMs from Keras for medical entity extraction
+(&lt;a href="notebooks/samples/DeepLearning%20-%20BiLSTM%20Medical%20Entity%20Extraction.ipynb" title="Medical Entity Extraction"&gt;example 8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Create a text analytics system on Amazon book reviews (&lt;a href="notebooks/samples/TextAnalytics%20-%20Amazon%20Book%20Reviews.ipynb" title="Amazon Book Reviews - TextFeaturizer"&gt;example 4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Perform distributed hyperparameter tuning to identify Breast Cancer
+(&lt;a href="notebooks/samples/HyperParameterTuning%20-%20Fighting%20Breast%20Cancer.ipynb" title="Hyperparameter Tuning with MMLSpark"&gt;example 5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Easily ingest images from HDFS into Spark &lt;code&gt;DataFrame&lt;/code&gt; (&lt;a href="notebooks/samples/DeepLearning%20-%20CIFAR10%20Convolutional%20Network.ipynb" title="CIFAR10 CNTK CNN Evaluation"&gt;example 6&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use OpenCV on Spark to manipulate images (&lt;a href="notebooks/samples/OpenCV%20-%20Pipeline%20Image%20Transformations.ipynb" title="Pipeline Image Transformations"&gt;example 7&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Train classification and regression models easily via implicit featurization
+of data (&lt;a href="notebooks/samples/Classification%20-%20Adult%20Census.ipynb" title="Adult Census Income Training"&gt;example 1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Train and evaluate a flight delay prediction system (&lt;a href="notebooks/samples/Regression%20-%20Flight%20Delays.ipynb" title="Regression Example with Flight Delay Dataset"&gt;example 2&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See our &lt;a href="notebooks/samples/"&gt;notebooks&lt;/a&gt; for all examples.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-a-short-example" class="anchor" aria-hidden="true" href="#a-short-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A short example&lt;/h2&gt;
+&lt;p&gt;Below is an excerpt from a simple example of using a pre-trained CNN to
+classify images in the CIFAR-10 dataset.  View the whole source code in notebook &lt;a href="notebooks/samples/DeepLearning%20-%20Flower%20Image%20Classification.ipynb" title="Deep Flower Classification"&gt;example 9&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-python"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;...&lt;/span&gt;
+&lt;span class="pl-k"&gt;import&lt;/span&gt; mmlspark
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Initialize CNTKModel and define input and output columns&lt;/span&gt;
+cntkModel &lt;span class="pl-k"&gt;=&lt;/span&gt; mmlspark.cntk.CNTKModel() \
+  .setInputCol(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;images&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;).setOutputCol(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;output&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) \
+  .setModelLocation(modelFile)
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Train on dataset with internal spark pipeline&lt;/span&gt;
+scoredImages &lt;span class="pl-k"&gt;=&lt;/span&gt; cntkModel.transform(imagesWithLabels)
+&lt;span class="pl-c1"&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See &lt;a href="notebooks/samples/"&gt;other sample notebooks&lt;/a&gt; as well as the MMLSpark
+documentation for &lt;a href="http://mmlspark.azureedge.net/docs/scala/" rel="nofollow"&gt;Scala&lt;/a&gt; and
+&lt;a href="http://mmlspark.azureedge.net/docs/pyspark/" rel="nofollow"&gt;PySpark&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-setup-and-installation" class="anchor" aria-hidden="true" href="#setup-and-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup and installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-spark-package" class="anchor" aria-hidden="true" href="#spark-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark package&lt;/h3&gt;
+&lt;p&gt;MMLSpark can be conveniently installed on existing Spark clusters via the
+&lt;code&gt;--packages&lt;/code&gt; option, examples:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;spark-shell --packages com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1
+pyspark --packages com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1
+spark-submit --packages com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1 MyApp.jar&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This can be used in other Spark contexts too. For example, you can use MMLSpark
+in &lt;a href="https://github.com/Azure/aztk/"&gt;AZTK&lt;/a&gt; by &lt;a href="https://github.com/Azure/aztk/wiki/PySpark-on-Azure-with-AZTK#optional-set-up-mmlspark"&gt;adding it to the
+&lt;code&gt;.aztk/spark-defaults.conf&lt;/code&gt;
+file&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-databricks" class="anchor" aria-hidden="true" href="#databricks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Databricks&lt;/h3&gt;
+&lt;p&gt;To install MMLSpark on the &lt;a href="http://community.cloud.databricks.com" rel="nofollow"&gt;Databricks
+cloud&lt;/a&gt;, create a new &lt;a href="https://docs.databricks.com/user-guide/libraries.html#libraries-from-maven-pypi-or-spark-packages" rel="nofollow"&gt;library from Maven
+coordinates&lt;/a&gt;
+in your workspace.&lt;/p&gt;
+&lt;p&gt;For the coordinates use: &lt;code&gt;com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1&lt;/code&gt;
+with the resolver: &lt;code&gt;https://mmlspark.azureedge.net/maven&lt;/code&gt;. Ensure this library is
+attached to your target cluster(s).&lt;/p&gt;
+&lt;p&gt;Finally, ensure that your Spark cluster has at least Spark 2.4 and Scala 2.11.&lt;/p&gt;
+&lt;p&gt;You can use MMLSpark in both your Scala and PySpark notebooks. To get started with our example notebooks import the following databricks archive:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://mmlspark.blob.core.windows.net/dbcs/MMLSpark%20Examples%20v1.0.0-rc1.dbc&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-docker" class="anchor" aria-hidden="true" href="#docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker&lt;/h3&gt;
+&lt;p&gt;The easiest way to evaluate MMLSpark is via our pre-built Docker container.  To
+do so, run the following command:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker run -it -p 8888:8888 -e ACCEPT_EULA=yes mcr.microsoft.com/mmlspark/release&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Navigate to &lt;a href="http://localhost:8888/" rel="nofollow"&gt;http://localhost:8888/&lt;/a&gt; in your web browser to run the sample
+notebooks.  See the &lt;a href="docs/docker.md"&gt;documentation&lt;/a&gt; for more on Docker use.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To read the EULA for using the docker image, run \
+&lt;code&gt;docker run -it -p 8888:8888 mcr.microsoft.com/mmlspark/release eula&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-gpu-vm-setup" class="anchor" aria-hidden="true" href="#gpu-vm-setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPU VM Setup&lt;/h3&gt;
+&lt;p&gt;MMLSpark can be used to train deep learning models on GPU nodes from a Spark
+application.  See the instructions for &lt;a href="docs/gpu-setup.md"&gt;setting up an Azure GPU
+VM&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-python" class="anchor" aria-hidden="true" href="#python"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Python&lt;/h3&gt;
+&lt;p&gt;To try out MMLSpark on a Python (or Conda) installation you can get Spark
+installed via pip with &lt;code&gt;pip install pyspark&lt;/code&gt;.  You can then use &lt;code&gt;pyspark&lt;/code&gt; as in
+the above example, or from python:&lt;/p&gt;
+&lt;div class="highlight highlight-source-python"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; pyspark
+spark &lt;span class="pl-k"&gt;=&lt;/span&gt; pyspark.sql.SparkSession.builder.appName(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;MyApp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) \
+            .config(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;spark.jars.packages&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) \
+            .config(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;spark.jars.repositories&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://mmlspark.azureedge.net/maven&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) \
+            .getOrCreate()
+&lt;span class="pl-k"&gt;import&lt;/span&gt; mmlspark&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-sbt" class="anchor" aria-hidden="true" href="#sbt"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SBT&lt;/h3&gt;
+&lt;p&gt;If you are building a Spark application in Scala, add the following lines to
+your &lt;code&gt;build.sbt&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-scala"&gt;&lt;pre&gt;resolvers &lt;span class="pl-k"&gt;+&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;MMLSpark&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; at &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://mmlspark.azureedge.net/maven&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+libraryDependencies &lt;span class="pl-k"&gt;+&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;com.microsoft.ml.spark&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;mmlspark&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;%&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1.0.0-rc1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-building-from-source" class="anchor" aria-hidden="true" href="#building-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from source&lt;/h3&gt;
+&lt;p&gt;MMLSpark has recently transitioned to a new build infrastructure.
+For detailed developer docs please see the &lt;a href="docs/developer-readme.md"&gt;Developer Readme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are an existing mmlspark developer, you will need to reconfigure your
+development setup. We now support platform independent development and
+better integrate with intellij and SBT.
+If you encounter issues please reach out to our support email!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-r-beta" class="anchor" aria-hidden="true" href="#r-beta"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;R (Beta)&lt;/h3&gt;
+&lt;p&gt;To try out MMLSpark using the R autogenerated wrappers &lt;a href="docs/R-setup.md"&gt;see our
+instructions&lt;/a&gt;.  Note: This feature is still under development
+and some necessary custom wrappers may be missing.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-learn-more" class="anchor" aria-hidden="true" href="#learn-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learn More&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Visit our &lt;a href="https://mmlspark.blob.core.windows.net/website/index.html" title="aka.ms/spark" rel="nofollow"&gt;new website&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Watch our keynote demos at &lt;a href="https://youtu.be/T_fs4C0aqD0?t=425" rel="nofollow"&gt;the Spark+AI Summit 2019&lt;/a&gt;, &lt;a href="https://youtu.be/N3ozCZXeOeU?t=472" rel="nofollow"&gt;the Spark+AI European Summit 2018&lt;/a&gt;, and &lt;a href="https://databricks.com/sparkaisummit/north-america/spark-summit-2018-keynotes#Intelligent-cloud" title="Developing for the Intelligent Cloud and Intelligent Edge" rel="nofollow"&gt;the Spark+AI Summit 2018&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Read &lt;a href="https://arxiv.org/abs/1804.04031" title="Flexible and Scalable Deep Learning with MMLSpark" rel="nofollow"&gt;our paper&lt;/a&gt; for a deep dive on MMLSpark.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;See how MMLSpark is used to &lt;a href="https://www.microsoft.com/en-us/ai/ai-lab-stories?activetab=pivot1:primaryr3" title="Identifying snow leopards with AI" rel="nofollow"&gt;help endangered species&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explore generative adversarial artwork in &lt;a href="https://www.microsoft.com/en-us/ai/ai-lab-stories?activetab=pivot1:primaryr4" title="Generative art at the MET" rel="nofollow"&gt;our collaboration with The MET and MIT&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explore &lt;a href="https://blogs.technet.microsoft.com/machinelearning/2018/03/05/image-data-support-in-apache-spark/" title="Image Data Support in Apache Spark" rel="nofollow"&gt;our collaboration with Apache Spark&lt;/a&gt; on image analysis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/how-to-use-mmlspark" title="How to Use Microsoft Machine Learning Library for Apache Spark" rel="nofollow"&gt;MMLSpark in Azure Machine Learning&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing--feedback" class="anchor" aria-hidden="true" href="#contributing--feedback"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing &amp;amp; feedback&lt;/h2&gt;
+&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;.  For more
+information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact
+&lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional
+questions or comments.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; for contribution guidelines.&lt;/p&gt;
+&lt;p&gt;To give feedback and/or report an issue, open a &lt;a href="https://help.github.com/articles/creating-an-issue/"&gt;GitHub
+Issue&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-relevant-projects" class="anchor" aria-hidden="true" href="#other-relevant-projects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other relevant projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/VowpalWabbit/vowpal_wabbit"&gt;Vowpal Wabbit&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/Microsoft/LightGBM"&gt;LightGBM&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/Microsoft/DMTK"&gt;DMTK: Microsoft Distributed Machine Learning Toolkit&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/Microsoft/Recommenders"&gt;Recommenders&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/alipay/jpmml-sparkml-lightgbm"&gt;JPMML-SparkML plugin for converting MMLSpark LightGBM models to
+PMML&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/Microsoft/CNTK"&gt;Microsoft Cognitive Toolkit&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview" rel="nofollow"&gt;Azure Machine Learning
+preview features&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Apache®, Apache Spark, and Spark® are either registered trademarks or
+trademarks of the Apache Software Foundation in the United States and/or other
+countries.&lt;/em&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Azure</author><guid isPermaLink="false">https://github.com/Azure/mmlspark</guid><pubDate>Fri, 03 Jan 2020 00:11:00 GMT</pubDate></item></channel></rss>

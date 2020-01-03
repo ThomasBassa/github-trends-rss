@@ -1,2 +1,896 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Haskell, This month</title><link>https://github.com/trending/haskell?since=monthly</link><description>The top repositories on GitHub for haskell, measured monthly</description><pubDate>Thu, 02 Jan 2020 01:10:45 GMT</pubDate><lastBuildDate>Thu, 02 Jan 2020 01:10:45 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Haskell, This month today</title><pubDate>Thu, 02 Jan 2020 01:10:45 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Haskell, This month</title><link>https://github.com/trending/haskell?since=monthly</link><description>The top repositories on GitHub for haskell, measured monthly</description><pubDate>Fri, 03 Jan 2020 01:04:09 GMT</pubDate><lastBuildDate>Fri, 03 Jan 2020 01:04:09 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>hadolint/hadolint #1 in Haskell, This month</title><link>https://github.com/hadolint/hadolint</link><description>&lt;p&gt;&lt;i&gt;Dockerfile linter, validate inline bash, written in Haskell&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/hadolint/hadolint" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e6d207874dc54249e9d09cbca1941c2471077aff/68747470733a2f2f7472617669732d63692e6f72672f6861646f6c696e742f6861646f6c696e742e7376673f6272616e63683d6d6173746572" alt="Linux/OSX Build Status" data-canonical-src="https://travis-ci.org/hadolint/hadolint.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/hadolint/hadolint/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/eb7cd8d4d85529cc7f47bf648a68e8031b14f52d/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f2f6769746875622f6861646f6c696e742f6861646f6c696e743f7376673d74727565266272616e63683d6d6173746572" alt="Windows Build status" data-canonical-src="https://ci.appveyor.com/api/projects/status//github/hadolint/hadolint?svg=true&amp;amp;branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://tldrlegal.com/l/gpl-3.0" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/71665acade75a335fdeb8ba3d8a5983471ff27e5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c2d2d332d626c75652e737667" alt="GPL-3 licensed" data-canonical-src="https://img.shields.io/badge/license-GPL--3-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/hadolint/hadolint/releases/latest"&gt;&lt;img src="https://camo.githubusercontent.com/620dbcfd64659be27db8b3c4849485e9b78c7a51/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6861646f6c696e742f6861646f6c696e742e737667" alt="GitHub release" data-canonical-src="https://img.shields.io/github/release/hadolint/hadolint.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href=""&gt;&lt;img src="https://camo.githubusercontent.com/ada7a5263c892948b81eb40488f10c288a5c3568/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f6861646f6c696e742f6861646f6c696e742f746f74616c2e737667" alt="Github downloads" data-canonical-src="https://img.shields.io/github/downloads/hadolint/hadolint/total.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ed1547b1b7f6060ad464d180a0c28975ba876830/68747470733a2f2f6861646f6c696e742e6769746875622e696f2f6861646f6c696e742f696d672f6361745f636f6e7461696e65722e706e67"&gt;&lt;img align="right" alt="pipecat" width="150" src="https://camo.githubusercontent.com/ed1547b1b7f6060ad464d180a0c28975ba876830/68747470733a2f2f6861646f6c696e742e6769746875622e696f2f6861646f6c696e742f696d672f6361745f636f6e7461696e65722e706e67" data-canonical-src="https://hadolint.github.io/hadolint/img/cat_container.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-haskell-dockerfile-linter" class="anchor" aria-hidden="true" href="#haskell-dockerfile-linter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Haskell Dockerfile Linter&lt;/h1&gt;
+&lt;p&gt;A smarter Dockerfile linter that helps you build &lt;a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices" rel="nofollow"&gt;best practice&lt;/a&gt; Docker
+images. The linter is parsing the Dockerfile into an AST and performs rules on
+top of the AST. It is standing on the shoulders of &lt;a href="https://github.com/koalaman/shellcheck"&gt;ShellCheck&lt;/a&gt; to lint
+the Bash code inside &lt;code&gt;RUN&lt;/code&gt; instructions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://hadolint.github.io/hadolint" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="globe_with_meridians" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f310.png"&gt;🌐&lt;/g-emoji&gt; &lt;strong&gt;Check the online version on
+hadolint.github.io/hadolint&lt;/strong&gt;&lt;/a&gt;
+&lt;a href="https://hadolint.github.io/hadolint" rel="nofollow"&gt;&lt;img src="screenshot.png" alt="Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use&lt;/h2&gt;
+&lt;p&gt;You can run &lt;code&gt;hadolint&lt;/code&gt; locally to lint your Dockerfile.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;hadolint &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;Dockerfile&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;
+hadolint --ignore DL3003 --ignore DL3006 &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;Dockerfile&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; exclude specific rules&lt;/span&gt;
+hadolint --trusted-registry my-company.com:500 &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;Dockerfile&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Warn when using untrusted FROM images&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Docker comes to the rescue to provide an easy way how to run &lt;code&gt;hadolint&lt;/code&gt; on most
+platforms.
+Just pipe your &lt;code&gt;Dockerfile&lt;/code&gt; to &lt;code&gt;docker run&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker run --rm -i hadolint/hadolint &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt; Dockerfile&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can download prebuilt binaries for OSX, Windows and Linux from the latest
+&lt;a href="https://github.com/hadolint/hadolint/releases/latest"&gt;release page&lt;/a&gt;. However, if it doesn't work for you, please fall back to
+Docker, &lt;code&gt;brew&lt;/code&gt; or source installation.&lt;/p&gt;
+&lt;p&gt;If you are on OSX you can use &lt;a href="https://brew.sh/" rel="nofollow"&gt;brew&lt;/a&gt; to install &lt;code&gt;hadolint&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew install hadolint&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On Windows you can use &lt;a href="https://github.com/lukesampson/scoop"&gt;scoop&lt;/a&gt; to install &lt;code&gt;hadolint&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-batchfile"&gt;&lt;pre&gt;scoop install hadolint&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As shown before, &lt;code&gt;hadolint&lt;/code&gt; is available as a Docker container:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker pull hadolint/hadolint&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you need a Docker container with shell access, use the Debian variant of the
+Docker image:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker pull hadolint/hadolint:latest-debian&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also build &lt;code&gt;hadolint&lt;/code&gt; locally. You need &lt;a href="https://www.haskell.org/platform/" rel="nofollow"&gt;Haskell&lt;/a&gt; and the &lt;a href="http://docs.haskellstack.org/en/stable/install_and_upgrade.html" rel="nofollow"&gt;stack&lt;/a&gt;
+build tool to build the binary.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/hadolint/hadolint
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; hadolint
+stack install&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-configure" class="anchor" aria-hidden="true" href="#configure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configure&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;hadolint&lt;/code&gt; supports specifying the ignored rules using a configuration file. The configuration
+file should be in &lt;code&gt;yaml&lt;/code&gt; format. This is one valid configuration file as an example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;ignored&lt;/span&gt;:
+  - &lt;span class="pl-s"&gt;DL3000&lt;/span&gt;
+  - &lt;span class="pl-s"&gt;SC1010&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Additionally, &lt;code&gt;hadolint&lt;/code&gt; can warn you when images from untrusted repositories are being
+used in Dockerfiles, you can append the &lt;code&gt;trustedRegistries&lt;/code&gt; keys to the configuration
+file as shown below:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;ignored&lt;/span&gt;:
+  - &lt;span class="pl-s"&gt;DL3000&lt;/span&gt;
+  - &lt;span class="pl-s"&gt;SC1010&lt;/span&gt;
+
+&lt;span class="pl-ent"&gt;trustedRegistries&lt;/span&gt;:
+  - &lt;span class="pl-s"&gt;docker.io&lt;/span&gt;
+  - &lt;span class="pl-s"&gt;my-company.com:5000&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Configuration files can be used globally or per project. By default, &lt;code&gt;hadolint&lt;/code&gt; will look for
+a configuration file in the current directory with the name &lt;code&gt;.hadolint.yaml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The global configuration file should be placed in the folder specified by &lt;code&gt;XDG_CONFIG_HOME&lt;/code&gt;,
+with the name &lt;code&gt;hadolint.yaml&lt;/code&gt;. In summary, the following locations are valid for the configuration
+file, in order or preference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$PWD/.hadolint.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$XDG_CONFIG_HOME/hadolint.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/.config/hadolint.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In windows, the &lt;code&gt;%LOCALAPPDATA%&lt;/code&gt; environment variable is used instead of &lt;code&gt;XDG_CONFIG_HOME&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Additionally, you can pass a custom configuration file in the command line with
+the &lt;code&gt;--config&lt;/code&gt; option&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;hadolint --config /path/to/config.yaml Dockerfile&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-inline-ignores" class="anchor" aria-hidden="true" href="#inline-ignores"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inline ignores&lt;/h2&gt;
+&lt;p&gt;It is also possible to ignore rules by using a special comment directly above the Dockerfile
+instruction you want to make an exception for. Ignore rule comments look like
+&lt;code&gt;# hadolint ignore=DL3001,SC1081&lt;/code&gt;. For example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-dockerfile"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; hadolint ignore=DL3006&lt;/span&gt;
+&lt;span class="pl-k"&gt;FROM&lt;/span&gt; ubuntu
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; hadolint ignore=DL3003,SC1035&lt;/span&gt;
+&lt;span class="pl-k"&gt;RUN&lt;/span&gt; cd /tmp &amp;amp;&amp;amp; echo &lt;span class="pl-s"&gt;"hello!"&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Inline ignores will only work if place directly above the instruction.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-integrations" class="anchor" aria-hidden="true" href="#integrations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Integrations&lt;/h2&gt;
+&lt;p&gt;To get most of &lt;code&gt;hadolint&lt;/code&gt; it is useful to integrate it as a check to your CI
+or to your editor to lint your &lt;code&gt;Dockerfile&lt;/code&gt; as you write it. See our
+&lt;a href="docs/INTEGRATION.md"&gt;Integration&lt;/a&gt; docs.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-rules" class="anchor" aria-hidden="true" href="#rules"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rules&lt;/h2&gt;
+&lt;p&gt;An incomplete list of implemented rules. Click on the error code to get more
+detailed information.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rules with the prefix &lt;code&gt;DL&lt;/code&gt; originate from &lt;code&gt;hadolint&lt;/code&gt;. Take a look at
+&lt;code&gt;Rules.hs&lt;/code&gt; to find the implementation of the rules.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rules with the &lt;code&gt;SC&lt;/code&gt; prefix originate from &lt;strong&gt;ShellCheck&lt;/strong&gt; (Only the most
+common rules are listed, there are dozens more)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please &lt;a href="https://github.com/hadolint/hadolint/issues/new"&gt;create an issue&lt;/a&gt; if you have an idea for a good rule.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Rule&lt;/th&gt;
+&lt;th align="left"&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3000"&gt;DL3000&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use absolute WORKDIR.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3001"&gt;DL3001&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;For some bash commands it makes no sense running them in a Docker container like ssh, vim, shutdown, service, ps, free, top, kill, mount, ifconfig.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3002"&gt;DL3002&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Last user should not be root.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3003"&gt;DL3003&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use WORKDIR to switch to a directory.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3004"&gt;DL3004&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Do not use sudo as it leads to unpredictable behavior. Use a tool like gosu to enforce root.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3005"&gt;DL3005&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Do not use apt-get upgrade or dist-upgrade.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3006"&gt;DL3006&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Always tag the version of an image explicitly.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3007"&gt;DL3007&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Using latest is prone to errors if the image will ever update. Pin the version explicitly to a release tag.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3008"&gt;DL3008&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pin versions in apt-get install.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3009"&gt;DL3009&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Delete the apt-get lists after installing something.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3010"&gt;DL3010&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use ADD for extracting archives into an image.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3011"&gt;DL3011&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Valid UNIX ports range from 0 to 65535.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3012"&gt;DL3012&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Provide an email address or URL as maintainer.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3013"&gt;DL3013&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pin versions in pip.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3014"&gt;DL3014&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use the &lt;code&gt;-y&lt;/code&gt; switch.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3015"&gt;DL3015&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Avoid additional packages by specifying --no-install-recommends.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3016"&gt;DL3016&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pin versions in &lt;code&gt;npm&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3017"&gt;DL3017&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Do not use &lt;code&gt;apk upgrade&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3018"&gt;DL3018&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pin versions in apk add. Instead of &lt;code&gt;apk add &amp;lt;package&amp;gt;&lt;/code&gt; use &lt;code&gt;apk add &amp;lt;package&amp;gt;=&amp;lt;version&amp;gt;&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3019"&gt;DL3019&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use the &lt;code&gt;--no-cache&lt;/code&gt; switch to avoid the need to use &lt;code&gt;--update&lt;/code&gt; and remove &lt;code&gt;/var/cache/apk/*&lt;/code&gt; when done installing packages.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3020"&gt;DL3020&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use &lt;code&gt;COPY&lt;/code&gt; instead of &lt;code&gt;ADD&lt;/code&gt; for files and folders.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3021"&gt;DL3021&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;COPY&lt;/code&gt; with more than 2 arguments requires the last argument to end with &lt;code&gt;/&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3022"&gt;DL3022&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;COPY --from&lt;/code&gt; should reference a previously defined &lt;code&gt;FROM&lt;/code&gt; alias&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3023"&gt;DL3023&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;COPY --from&lt;/code&gt; cannot reference its own &lt;code&gt;FROM&lt;/code&gt; alias&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3024"&gt;DL3024&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;FROM&lt;/code&gt; aliases (stage names) must be unique&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3025"&gt;DL3025&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use arguments JSON notation for CMD and ENTRYPOINT arguments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3026"&gt;DL3026&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use only an allowed registry in the FROM image&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3027"&gt;DL3027&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Do not use &lt;code&gt;apt&lt;/code&gt; as it is meant to be a end-user tool, use &lt;code&gt;apt-get&lt;/code&gt; or &lt;code&gt;apt-cache&lt;/code&gt; instead&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL3028"&gt;DL3028&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Pin versions in gem install. Instead of &lt;code&gt;gem install &amp;lt;gem&amp;gt;&lt;/code&gt; use &lt;code&gt;gem install &amp;lt;gem&amp;gt;:&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4000"&gt;DL4000&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;MAINTAINER is deprecated.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4001"&gt;DL4001&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Either use Wget or Curl but not both.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4003"&gt;DL4003&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Multiple &lt;code&gt;CMD&lt;/code&gt; instructions found.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4004"&gt;DL4004&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Multiple &lt;code&gt;ENTRYPOINT&lt;/code&gt; instructions found.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4005"&gt;DL4005&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use &lt;code&gt;SHELL&lt;/code&gt; to change the default shell.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/hadolint/hadolint/wiki/DL4006"&gt;DL4006&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Set the &lt;code&gt;SHELL&lt;/code&gt; option -o pipefail before &lt;code&gt;RUN&lt;/code&gt; with a pipe in it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1000"&gt;SC1000&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;$&lt;/code&gt; is not used specially and should therefore be escaped.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1001"&gt;SC1001&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;This &lt;code&gt;\c&lt;/code&gt; will be a regular &lt;code&gt;'c'&lt;/code&gt;  in this context.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1007"&gt;SC1007&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Remove space after &lt;code&gt;=&lt;/code&gt; if trying to assign a value (or for empty string, use &lt;code&gt;var='' ...&lt;/code&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1010"&gt;SC1010&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use semicolon or linefeed before &lt;code&gt;done&lt;/code&gt; (or quote to make it literal).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1018"&gt;SC1018&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;This is a unicode non-breaking space. Delete it and retype as space.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1035"&gt;SC1035&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;You need a space here&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1045"&gt;SC1045&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;It's not &lt;code&gt;foo &amp;amp;; bar&lt;/code&gt;, just &lt;code&gt;foo &amp;amp; bar&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1065"&gt;SC1065&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Trying to declare parameters? Don't. Use &lt;code&gt;()&lt;/code&gt; and refer to params as &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt; etc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1066"&gt;SC1066&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Don't use $ on the left side of assignments.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1068"&gt;SC1068&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Don't put spaces around the &lt;code&gt;=&lt;/code&gt; in assignments.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1077"&gt;SC1077&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;For command expansion, the tick should slant left (` vs ´).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1078"&gt;SC1078&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Did you forget to close this double-quoted string?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1079"&gt;SC1079&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;This is actually an end quote, but due to next char, it looks suspect.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1081"&gt;SC1081&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Scripts are case sensitive. Use &lt;code&gt;if&lt;/code&gt;, not &lt;code&gt;If&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1083"&gt;SC1083&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;This &lt;code&gt;{/}&lt;/code&gt; is literal. Check expression (missing &lt;code&gt;;/\n&lt;/code&gt;?) or quote it.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1086"&gt;SC1086&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Don't use &lt;code&gt;$&lt;/code&gt; on the iterator name in for loops.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1087"&gt;SC1087&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Braces are required when expanding arrays, as in &lt;code&gt;${array[idx]}&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1095"&gt;SC1095&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;You need a space or linefeed between the function name and body.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1097"&gt;SC1097&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Unexpected &lt;code&gt;==&lt;/code&gt;. For assignment, use &lt;code&gt;=&lt;/code&gt;. For comparison, use &lt;code&gt;[/[[&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1098"&gt;SC1098&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Quote/escape special characters when using &lt;code&gt;eval&lt;/code&gt;, e.g. &lt;code&gt;eval "a=(b)"&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC1099"&gt;SC1099&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;You need a space before the &lt;code&gt;#&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2002"&gt;SC2002&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Useless cat. Consider &lt;code&gt;cmd &amp;lt; file | ..&lt;/code&gt; or &lt;code&gt;cmd file | ..&lt;/code&gt; instead.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2015"&gt;SC2015&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Note that &lt;code&gt;A &amp;amp;&amp;amp; B || C&lt;/code&gt; is not if-then-else. C may run when A is true.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2026"&gt;SC2026&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;This word is outside of quotes. Did you intend to 'nest '"'single quotes'"' instead'?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2028"&gt;SC2028&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;echo&lt;/code&gt; won't expand escape sequences. Consider &lt;code&gt;printf&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2035"&gt;SC2035&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use &lt;code&gt;./*glob*&lt;/code&gt; or &lt;code&gt;-- *glob*&lt;/code&gt; so names with dashes won't become options.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2039"&gt;SC2039&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;In POSIX sh, something is undefined.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2046"&gt;SC2046&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Quote this to prevent word splitting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2086"&gt;SC2086&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Double quote to prevent globbing and word splitting.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2140"&gt;SC2140&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Word is in the form &lt;code&gt;"A"B"C"&lt;/code&gt; (B indicated). Did you mean &lt;code&gt;"ABC"&lt;/code&gt; or &lt;code&gt;"A\"B\"C"&lt;/code&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2154"&gt;SC2154&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;var is referenced but not assigned.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2155"&gt;SC2155&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Declare and assign separately to avoid masking return values.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;a href="https://github.com/koalaman/shellcheck/wiki/SC2164"&gt;SC2164&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Use &lt;code&gt;cd ... || exit&lt;/code&gt; in case &lt;code&gt;cd&lt;/code&gt; fails.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-develop" class="anchor" aria-hidden="true" href="#develop"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Develop&lt;/h2&gt;
+&lt;p&gt;If you are an experienced Haskeller we would be really thankful if you would
+tear our code apart in a review.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Clone repository&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone --recursive git@github.com:hadolint/hadolint.git&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the dependencies&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack install&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-repl" class="anchor" aria-hidden="true" href="#repl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REPL&lt;/h3&gt;
+&lt;p&gt;The easiest way to try out the parser is using the REPL.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; start the repl&lt;/span&gt;
+stack repl
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; parse instruction and look at AST representation&lt;/span&gt;
+parseString &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;FROM debian:jessie&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tests&lt;/h3&gt;
+&lt;p&gt;Run unit tests.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;stack &lt;span class="pl-c1"&gt;test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Run integration tests.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;./integration_test.sh&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-ast" class="anchor" aria-hidden="true" href="#ast"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AST&lt;/h3&gt;
+&lt;p&gt;Dockerfile syntax is fully described in the &lt;a href="http://docs.docker.com/engine/reference/builder/" rel="nofollow"&gt;Dockerfile reference&lt;/a&gt;. Just take
+a look at &lt;a href="https://www.stackage.org/haddock/nightly-2018-01-07/language-docker-2.0.1/Language-Docker-Syntax.html" rel="nofollow"&gt;Syntax.hs&lt;/a&gt; in the &lt;code&gt;language-docker&lt;/code&gt; project to see the AST definition.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-alternatives" class="anchor" aria-hidden="true" href="#alternatives"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alternatives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;RedCoolBeans/&lt;a href="https://github.com/RedCoolBeans/dockerlint/"&gt;dockerlint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;projectatomic/&lt;a href="https://github.com/projectatomic/dockerfile_lint/"&gt;dockerfile_lint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>hadolint</author><guid isPermaLink="false">https://github.com/hadolint/hadolint</guid><pubDate>Fri, 03 Jan 2020 00:01:00 GMT</pubDate></item><item><title>unisonweb/unison #2 in Haskell, This month</title><link>https://github.com/unisonweb/unison</link><description>&lt;p&gt;&lt;i&gt;A friendly programming language from the future&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="instapaper_body md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-the-unison-language" class="anchor" aria-hidden="true" href="#the-unison-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Unison language&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/unisonweb/unison" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1cf74060aa43b747ead8ff6ec02708dbdfb0b28a/68747470733a2f2f7472617669732d63692e6f72672f756e69736f6e7765622f756e69736f6e2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/unisonweb/unison.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://unisonweb.org" rel="nofollow"&gt;Unison&lt;/a&gt; is a new programming language, currently under active development. It's a modern, statically-typed purely functional language, similar to Haskell, but with a unique ability to describe entire distributed systems with a single program. Here's a simple example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-haskell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;--&lt;/span&gt; comments start with `--`&lt;/span&gt;
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;--&lt;/span&gt; alice : Node, bob : Node&lt;/span&gt;
+
+x &lt;span class="pl-k"&gt;=&lt;/span&gt; factorial &lt;span class="pl-c1"&gt;6&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Remote.&lt;/span&gt;transfer alice
+y &lt;span class="pl-k"&gt;=&lt;/span&gt; foo x &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;--&lt;/span&gt; happens on `alice` node&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Remote.&lt;/span&gt;transfer bob
+bar x y &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;--&lt;/span&gt; happens on `bob` node&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;Remote.transfer&lt;/code&gt; function introduces a "remote effect", where computation may proceed on multiple Unison nodes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;Remote.transfer alice&lt;/code&gt; transfers control of the computation to the &lt;code&gt;alice&lt;/code&gt; node.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;foo x&lt;/code&gt; call happens on the &lt;code&gt;alice&lt;/code&gt; node.&lt;/li&gt;
+&lt;li&gt;At each transfer, any required definitions (such as &lt;code&gt;foo&lt;/code&gt; and &lt;code&gt;x&lt;/code&gt;) will be dynamically deployed to the &lt;code&gt;alice&lt;/code&gt; node and cached for future use.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;Remote.transfer bob&lt;/code&gt; transfers control of the rest of the computation to the &lt;code&gt;bob&lt;/code&gt; node.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;bar x y&lt;/code&gt; computation happens on the &lt;code&gt;bob&lt;/code&gt; node. Again, any needed definitions (&lt;code&gt;bar&lt;/code&gt;, &lt;code&gt;x&lt;/code&gt;, and &lt;code&gt;y&lt;/code&gt;) will be dynamically deployed to the &lt;code&gt;bob&lt;/code&gt; node.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This dynamic transfer / deployment of arbitrary computations is possible because definitions in Unison are identified by a cryptographic hash of their content, &lt;em&gt;including the hashes of all dependencies&lt;/em&gt; (the hash is also "nameless" as it isn't affected by naming of variables). To transfer a computation, we send it to the recipient, and the recipient checks to see if the computation references any unknown hashes. Any unknown hashes are synced to the recipient before the transfer completes and the computation proceeds.&lt;/p&gt;
+&lt;p&gt;If you'd like to learn more about the project, the talk &lt;a href="https://www.youtube.com/watch?v=f6yA3t0dO-k" rel="nofollow"&gt;How to write a search engine in 15 lines of code&lt;/a&gt; has more of an introduction to the language. For a more complete overview of the syntax look at the &lt;a href="https://www.unisonweb.org/docs/language-reference" rel="nofollow"&gt;unison language reference&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since Unison isn't terribly useful in its current form, the rest of this README will focus on stuff that will be of interest for potential contributors, namely, how to build the code, and a brief tour of the (fairly small but action-packed) codebase. If you're just interested in the project and want to follow along with the progress, &lt;a href="http://unisonweb.org" rel="nofollow"&gt;unisonweb.org&lt;/a&gt; is the place to go, or you can also say hello or lurk &lt;a href="http://tiny.cc/unisonslack" rel="nofollow"&gt;in the Slack chat&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Still here? All right then! Let's get to it.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-a-brief-code-tour" class="anchor" aria-hidden="true" href="#a-brief-code-tour"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A brief code tour&lt;/h2&gt;
+&lt;p&gt;First, clone unison with &lt;code&gt;--recursive&lt;/code&gt;:
+&lt;code&gt;git clone --recursive https://github.com/unisonweb/unison.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Next, a bit of orientation. Here's the directory structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;editor-support/&lt;/code&gt; includes some very basic and probably incomplete text edit support (read: syntax highlighting)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yaks/&lt;/code&gt; has subprojects for various utilities not specific to Unison (the result of &lt;a href="https://en.wiktionary.org/wiki/yak_shaving" rel="nofollow"&gt;"yak-shaving"&lt;/a&gt;). Once mature, each of these might be moved to independent projects and published on Hackage.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parser-typechecker/&lt;/code&gt; has the meat: the Unison syntax tree, parser, typechecker, and runtime. Depends on &lt;code&gt;yaks/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-building-using-stack" class="anchor" aria-hidden="true" href="#building-using-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building using Stack&lt;/h2&gt;
+&lt;p&gt;If these instructions don't work for you or are incomplete, please file an issue.&lt;/p&gt;
+&lt;p&gt;The build uses &lt;a href="http://docs.haskellstack.org/" rel="nofollow"&gt;Stack&lt;/a&gt;. If you don't already have it installed, &lt;a href="http://docs.haskellstack.org/en/stable/README.html#how-to-install" rel="nofollow"&gt;follow the install instructions&lt;/a&gt; for your platform.  (Hint: &lt;code&gt;brew update &amp;amp;&amp;amp; brew install stack&lt;/code&gt;)&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ git clone --recursive https://github.com/unisonweb/unison.git
+$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; unison
+$ stack --version &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; we'll want to know this version if you run into trouble&lt;/span&gt;
+$ stack build &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; stack &lt;span class="pl-c1"&gt;exec&lt;/span&gt; tests &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; stack &lt;span class="pl-c1"&gt;exec&lt;/span&gt; unison&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: If you get this error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Stack looks for packages in the directories configured in the 'packages' and 'extra-deps' fields defined in your stack.yaml
+The current entry points to &amp;lt;root&amp;gt;/yaks/haskeline/ but no .cabal or package.yaml file could be found there.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then your local git repo is older than the haskeline submodule dependency; use this to get it:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git submodule init
+git submodule update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See &lt;a href="development.markdown"&gt;&lt;code&gt;development.markdown&lt;/code&gt;&lt;/a&gt; for a list of build commands you'll likely use during development.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-a-brief-tour-of-the-haskell-code" class="anchor" aria-hidden="true" href="#a-brief-tour-of-the-haskell-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A brief tour of the Haskell code&lt;/h2&gt;
+&lt;p&gt;In the &lt;code&gt;parser-typechecker/&lt;/code&gt; project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Unison.Term&lt;/code&gt; and &lt;code&gt;Unison.Type&lt;/code&gt; have the syntax trees for terms and types. In both &lt;code&gt;Term&lt;/code&gt; and &lt;code&gt;Type&lt;/code&gt;, the same pattern is used. Each defines a 'base functor' type, &lt;code&gt;F a&lt;/code&gt;, which is nonrecursive, and the actual thing we use is an &lt;em&gt;abstract binding tree&lt;/em&gt; over this base functor, an &lt;code&gt;ABT F&lt;/code&gt;. &lt;code&gt;ABT&lt;/code&gt; (for 'abstract binding tree') is defined in &lt;code&gt;Unison.ABT&lt;/code&gt;. If you aren't familiar with abstract binding trees, &lt;a href="http://semantic-domain.blogspot.com/2015/03/abstract-binding-trees.html" rel="nofollow"&gt;here is a nice blog post explaining one formulation of the idea&lt;/a&gt;, which inspired the &lt;code&gt;Unison.ABT&lt;/code&gt; module. A lot of operations on terms and types just delegate to generic &lt;code&gt;ABT&lt;/code&gt; operations.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Unison.Parsers&lt;/code&gt; has the main entry point for the parser.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Unison.Typechecker.Context&lt;/code&gt; is the implementation of the typechecker, and &lt;code&gt;Unison.Typechecker&lt;/code&gt; has the "public interface to the typechecker" and some convenience functions. There isn't a lot of code here (about 700 LOC presently), since the typechecking algorithm is pretty simple. Unlike a unification-based typechecker, where the typechecking state is an unordered bag of unification constraints and higher-rank polymorphism is usually bolted on awkwardly later, &lt;a href="http://www.mpi-sws.org/~neelk/bidir.pdf" rel="nofollow"&gt;Dunfield and Krishnaswami's algorithm&lt;/a&gt; keeps the typechecking state as a nicely tidy &lt;em&gt;ordered context&lt;/em&gt;, represented as a regular list manipulated in a stack-like fashion, and the algorithm handles higher-rank polymorphism very cleanly. They've also &lt;a href="http://semantic-domain.blogspot.com/2015/03/new-draft-sound-and-complete.html" rel="nofollow"&gt;extended this work to include features like GADTs&lt;/a&gt;, though this new algorithm hasn't been incorporated into Unison yet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>unisonweb</author><guid isPermaLink="false">https://github.com/unisonweb/unison</guid><pubDate>Fri, 03 Jan 2020 00:02:00 GMT</pubDate></item><item><title>jgm/pandoc #3 in Haskell, This month</title><link>https://github.com/jgm/pandoc</link><description>&lt;p&gt;&lt;i&gt;Universal markup converter&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;
+&lt;h1&gt;&lt;a id="user-content-pandoc" class="anchor" aria-hidden="true" href="#pandoc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pandoc&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/jgm/pandoc/releases"&gt;&lt;img src="https://camo.githubusercontent.com/411f0ac7f05102f79a830ffdeb2ba4f087a667e9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6a676d2f70616e646f632e7376673f6c6162656c3d63757272656e742b72656c65617365" alt="github release" data-canonical-src="https://img.shields.io/github/release/jgm/pandoc.svg?label=current+release" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://hackage.haskell.org/package/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4d03bb9489bd54187b8486c245dbc084d041e13f/68747470733a2f2f696d672e736869656c64732e696f2f6861636b6167652f762f70616e646f632e7376673f6c6162656c3d6861636b616765" alt="hackage release" data-canonical-src="https://img.shields.io/hackage/v/pandoc.svg?label=hackage" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://brewformulas.org/Pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/08d2230b9e9e2cbb12ea775d1bac8f50fd4275e8/68747470733a2f2f696d672e736869656c64732e696f2f686f6d65627265772f762f70616e646f632e737667" alt="homebrew" data-canonical-src="https://img.shields.io/homebrew/v/pandoc.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://stackage.org/lts/package/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/44b5a4bcb04e663394157a419be74ff590f74ced/687474703a2f2f737461636b6167652e6f72672f7061636b6167652f70616e646f632f62616467652f6c7473" alt="stackage LTS package" data-canonical-src="http://stackage.org/package/pandoc/badge/lts" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://circleci.com/gh/jgm/pandoc" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aedf8f0e0910d305ec01f09e62cdd2932308fc8a/68747470733a2f2f636972636c6563692e636f6d2f67682f6a676d2f70616e646f632e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/jgm/pandoc.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/jgm/pandoc/actions"&gt;&lt;img src="https://github.com/jgm/pandoc/workflows/CI%20tests/badge.svg" alt="CI tests" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.gnu.org/licenses/gpl.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/768ccc754b99092765bcf90953180fa0a2b7f3f0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c76322b2d6c69676874677261792e737667" alt="license" data-canonical-src="https://img.shields.io/badge/license-GPLv2+-lightgray.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://groups.google.com/forum/#!forum/pandoc-discuss" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/065ea70a67e226da3fb10642858cfd74f1a8307e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70616e646f632d646973637573732d7265642e7376673f7374796c653d736f6369616c" alt="pandoc-discuss on google groups" data-canonical-src="https://img.shields.io/badge/pandoc-discuss-red.svg?style=social" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-the-universal-markup-converter" class="anchor" aria-hidden="true" href="#the-universal-markup-converter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The universal markup converter&lt;/h2&gt;
+&lt;p&gt;Pandoc is a &lt;a href="http://haskell.org" rel="nofollow"&gt;Haskell&lt;/a&gt; library for converting from
+one markup format to another, and a command-line tool that uses this
+library. It can convert &lt;em&gt;from&lt;/em&gt;&lt;/p&gt;
+&lt;div id="user-content-input-formats"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;commonmark&lt;/code&gt; (&lt;a href="http://commonmark.org" rel="nofollow"&gt;CommonMark&lt;/a&gt; Markdown)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;creole&lt;/code&gt; (&lt;a href="http://www.wikicreole.org/wiki/Creole1.0" rel="nofollow"&gt;Creole 1.0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docbook&lt;/code&gt; (&lt;a href="http://docbook.org" rel="nofollow"&gt;DocBook&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docx&lt;/code&gt; (&lt;a href="https://en.wikipedia.org/wiki/Office_Open_XML" rel="nofollow"&gt;Word docx&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dokuwiki&lt;/code&gt; (&lt;a href="https://www.dokuwiki.org/dokuwiki" rel="nofollow"&gt;DokuWiki markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;epub&lt;/code&gt; (&lt;a href="http://idpf.org/epub" rel="nofollow"&gt;EPUB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fb2&lt;/code&gt;
+(&lt;a href="http://www.fictionbook.org/index.php/Eng:XML_Schema_Fictionbook_2.1" rel="nofollow"&gt;FictionBook2&lt;/a&gt;
+e-book)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gfm&lt;/code&gt; (&lt;a href="https://help.github.com/articles/github-flavored-markdown/"&gt;GitHub-Flavored
+Markdown&lt;/a&gt;),
+or the deprecated and less accurate &lt;code&gt;markdown_github&lt;/code&gt;; use
+&lt;a href="https://pandoc.org/MANUAL.html#markdown-variants" rel="nofollow"&gt;&lt;code&gt;markdown_github&lt;/code&gt;&lt;/a&gt;
+only if you need extensions not supported in
+&lt;a href="https://pandoc.org/MANUAL.html#markdown-variants" rel="nofollow"&gt;&lt;code&gt;gfm&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;haddock&lt;/code&gt; (&lt;a href="https://www.haskell.org/haddock/doc/html/ch03s08.html" rel="nofollow"&gt;Haddock
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;html&lt;/code&gt; (&lt;a href="http://www.w3.org/html/" rel="nofollow"&gt;HTML&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipynb&lt;/code&gt; (&lt;a href="https://nbformat.readthedocs.io/en/latest/" rel="nofollow"&gt;Jupyter
+notebook&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jats&lt;/code&gt; (&lt;a href="https://jats.nlm.nih.gov" rel="nofollow"&gt;JATS&lt;/a&gt; XML)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jira&lt;/code&gt;
+(&lt;a href="https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all" rel="nofollow"&gt;Jira&lt;/a&gt;
+wiki markup)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;json&lt;/code&gt; (JSON version of native AST)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;latex&lt;/code&gt; (&lt;a href="http://latex-project.org" rel="nofollow"&gt;LaTeX&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown&lt;/code&gt; (&lt;a href="https://pandoc.org/MANUAL.html#pandocs-markdown" rel="nofollow"&gt;Pandoc’s
+Markdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_mmd&lt;/code&gt;
+(&lt;a href="http://fletcherpenney.net/multimarkdown/" rel="nofollow"&gt;MultiMarkdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_phpextra&lt;/code&gt; (&lt;a href="https://michelf.ca/projects/php-markdown/extra/" rel="nofollow"&gt;PHP Markdown
+Extra&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_strict&lt;/code&gt; (original unextended
+&lt;a href="http://daringfireball.net/projects/markdown/" rel="nofollow"&gt;Markdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt; (&lt;a href="https://www.mediawiki.org/wiki/Help:Formatting" rel="nofollow"&gt;MediaWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;man&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_man.7.html" rel="nofollow"&gt;roff
+man&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;muse&lt;/code&gt; (&lt;a href="https://amusewiki.org/library/manual" rel="nofollow"&gt;Muse&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;native&lt;/code&gt; (native Haskell)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;odt&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/OpenDocument" rel="nofollow"&gt;ODT&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opml&lt;/code&gt; (&lt;a href="http://dev.opml.org/spec2.html" rel="nofollow"&gt;OPML&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;org&lt;/code&gt; (&lt;a href="http://orgmode.org" rel="nofollow"&gt;Emacs Org mode&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rst&lt;/code&gt;
+(&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" rel="nofollow"&gt;reStructuredText&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t2t&lt;/code&gt; (&lt;a href="http://txt2tags.org" rel="nofollow"&gt;txt2tags&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;textile&lt;/code&gt; (&lt;a href="http://redcloth.org/textile" rel="nofollow"&gt;Textile&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tikiwiki&lt;/code&gt; (&lt;a href="https://doc.tiki.org/Wiki-Syntax-Text#The_Markup_Language_Wiki-Syntax" rel="nofollow"&gt;TikiWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;twiki&lt;/code&gt; (&lt;a href="http://twiki.org/cgi-bin/view/TWiki/TextFormattingRules" rel="nofollow"&gt;TWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vimwiki&lt;/code&gt; (&lt;a href="https://vimwiki.github.io" rel="nofollow"&gt;Vimwiki&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;It can convert &lt;em&gt;to&lt;/em&gt;&lt;/p&gt;
+&lt;div id="user-content-output-formats"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;asciidoc&lt;/code&gt; (&lt;a href="http://www.methods.co.nz/asciidoc/" rel="nofollow"&gt;AsciiDoc&lt;/a&gt;) or
+&lt;code&gt;asciidoctor&lt;/code&gt; (&lt;a href="https://asciidoctor.org/" rel="nofollow"&gt;AsciiDoctor&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beamer&lt;/code&gt; (&lt;a href="https://ctan.org/pkg/beamer" rel="nofollow"&gt;LaTeX beamer&lt;/a&gt; slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;commonmark&lt;/code&gt; (&lt;a href="http://commonmark.org" rel="nofollow"&gt;CommonMark&lt;/a&gt; Markdown)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; (&lt;a href="http://www.contextgarden.net/" rel="nofollow"&gt;ConTeXt&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docbook&lt;/code&gt; or &lt;code&gt;docbook4&lt;/code&gt; (&lt;a href="http://docbook.org" rel="nofollow"&gt;DocBook&lt;/a&gt; 4)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docbook5&lt;/code&gt; (DocBook 5)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docx&lt;/code&gt; (&lt;a href="https://en.wikipedia.org/wiki/Office_Open_XML" rel="nofollow"&gt;Word docx&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dokuwiki&lt;/code&gt; (&lt;a href="https://www.dokuwiki.org/dokuwiki" rel="nofollow"&gt;DokuWiki markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;epub&lt;/code&gt; or &lt;code&gt;epub3&lt;/code&gt; (&lt;a href="http://idpf.org/epub" rel="nofollow"&gt;EPUB&lt;/a&gt; v3 book)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;epub2&lt;/code&gt; (EPUB v2)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fb2&lt;/code&gt;
+(&lt;a href="http://www.fictionbook.org/index.php/Eng:XML_Schema_Fictionbook_2.1" rel="nofollow"&gt;FictionBook2&lt;/a&gt;
+e-book)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gfm&lt;/code&gt; (&lt;a href="https://help.github.com/articles/github-flavored-markdown/"&gt;GitHub-Flavored
+Markdown&lt;/a&gt;),
+or the deprecated and less accurate &lt;code&gt;markdown_github&lt;/code&gt;; use
+&lt;a href="https://pandoc.org/MANUAL.html#markdown-variants" rel="nofollow"&gt;&lt;code&gt;markdown_github&lt;/code&gt;&lt;/a&gt;
+only if you need extensions not supported in
+&lt;a href="https://pandoc.org/MANUAL.html#markdown-variants" rel="nofollow"&gt;&lt;code&gt;gfm&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;haddock&lt;/code&gt; (&lt;a href="https://www.haskell.org/haddock/doc/html/ch03s08.html" rel="nofollow"&gt;Haddock
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;html&lt;/code&gt; or &lt;code&gt;html5&lt;/code&gt; (&lt;a href="http://www.w3.org/html/" rel="nofollow"&gt;HTML&lt;/a&gt;,
+i.e. &lt;a href="http://www.w3.org/TR/html5/" rel="nofollow"&gt;HTML5&lt;/a&gt;/XHTML &lt;a href="https://www.w3.org/TR/html-polyglot/" rel="nofollow"&gt;polyglot
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;html4&lt;/code&gt; (&lt;a href="http://www.w3.org/TR/xhtml1/" rel="nofollow"&gt;XHTML&lt;/a&gt; 1.0 Transitional)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;icml&lt;/code&gt; (&lt;a href="http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/idml/idml-cookbook.pdf" rel="nofollow"&gt;InDesign
+ICML&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipynb&lt;/code&gt; (&lt;a href="https://nbformat.readthedocs.io/en/latest/" rel="nofollow"&gt;Jupyter
+notebook&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jats&lt;/code&gt; (&lt;a href="https://jats.nlm.nih.gov" rel="nofollow"&gt;JATS&lt;/a&gt; XML)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jira&lt;/code&gt;
+(&lt;a href="https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all" rel="nofollow"&gt;Jira&lt;/a&gt;
+wiki markup)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;json&lt;/code&gt; (JSON version of native AST)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;latex&lt;/code&gt; (&lt;a href="http://latex-project.org" rel="nofollow"&gt;LaTeX&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;man&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_man.7.html" rel="nofollow"&gt;roff
+man&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown&lt;/code&gt; (&lt;a href="https://pandoc.org/MANUAL.html#pandocs-markdown" rel="nofollow"&gt;Pandoc’s
+Markdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_mmd&lt;/code&gt;
+(&lt;a href="http://fletcherpenney.net/multimarkdown/" rel="nofollow"&gt;MultiMarkdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_phpextra&lt;/code&gt; (&lt;a href="https://michelf.ca/projects/php-markdown/extra/" rel="nofollow"&gt;PHP Markdown
+Extra&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markdown_strict&lt;/code&gt; (original unextended
+&lt;a href="http://daringfireball.net/projects/markdown/" rel="nofollow"&gt;Markdown&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mediawiki&lt;/code&gt; (&lt;a href="https://www.mediawiki.org/wiki/Help:Formatting" rel="nofollow"&gt;MediaWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ms&lt;/code&gt; (&lt;a href="http://man7.org/linux/man-pages/man7/groff_ms.7.html" rel="nofollow"&gt;roff
+ms&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;muse&lt;/code&gt; (&lt;a href="https://amusewiki.org/library/manual" rel="nofollow"&gt;Muse&lt;/a&gt;),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;native&lt;/code&gt; (native Haskell),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;odt&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/OpenDocument" rel="nofollow"&gt;OpenOffice text
+document&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opml&lt;/code&gt; (&lt;a href="http://dev.opml.org/spec2.html" rel="nofollow"&gt;OPML&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opendocument&lt;/code&gt; (&lt;a href="http://opendocument.xml.org" rel="nofollow"&gt;OpenDocument&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;org&lt;/code&gt; (&lt;a href="http://orgmode.org" rel="nofollow"&gt;Emacs Org mode&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pdf&lt;/code&gt; (&lt;a href="https://www.adobe.com/pdf/" rel="nofollow"&gt;PDF&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;plain&lt;/code&gt; (plain text),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pptx&lt;/code&gt;
+(&lt;a href="https://en.wikipedia.org/wiki/Microsoft_PowerPoint" rel="nofollow"&gt;PowerPoint&lt;/a&gt;
+slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rst&lt;/code&gt;
+(&lt;a href="http://docutils.sourceforge.net/docs/ref/rst/introduction.html" rel="nofollow"&gt;reStructuredText&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rtf&lt;/code&gt; (&lt;a href="http://en.wikipedia.org/wiki/Rich_Text_Format" rel="nofollow"&gt;Rich Text
+Format&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;texinfo&lt;/code&gt; (&lt;a href="http://www.gnu.org/software/texinfo/" rel="nofollow"&gt;GNU Texinfo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;textile&lt;/code&gt; (&lt;a href="http://redcloth.org/textile" rel="nofollow"&gt;Textile&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;slideous&lt;/code&gt; (&lt;a href="http://goessner.net/articles/slideous/" rel="nofollow"&gt;Slideous&lt;/a&gt; HTML
+and JavaScript slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;slidy&lt;/code&gt; (&lt;a href="http://www.w3.org/Talks/Tools/Slidy/" rel="nofollow"&gt;Slidy&lt;/a&gt; HTML and
+JavaScript slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dzslides&lt;/code&gt; (&lt;a href="http://paulrouget.com/dzslides/" rel="nofollow"&gt;DZSlides&lt;/a&gt; HTML5 +
+JavaScript slide show),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;revealjs&lt;/code&gt; (&lt;a href="http://lab.hakim.se/reveal-js/" rel="nofollow"&gt;reveal.js&lt;/a&gt; HTML5 +
+JavaScript slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s5&lt;/code&gt; (&lt;a href="http://meyerweb.com/eric/tools/s5/" rel="nofollow"&gt;S5&lt;/a&gt; HTML and JavaScript
+slide show)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tei&lt;/code&gt; (&lt;a href="https://github.com/TEIC/TEI-Simple"&gt;TEI Simple&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xwiki&lt;/code&gt; (&lt;a href="https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/" rel="nofollow"&gt;XWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zimwiki&lt;/code&gt; (&lt;a href="http://zim-wiki.org/manual/Help/Wiki_Syntax.html" rel="nofollow"&gt;ZimWiki
+markup&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;the path of a custom lua writer, see &lt;a href="https://pandoc.org/MANUAL.html#custom-writers" rel="nofollow"&gt;Custom
+writers&lt;/a&gt; below&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Pandoc can also produce PDF output via LaTeX, Groff ms, or HTML.&lt;/p&gt;
+&lt;p&gt;Pandoc’s enhanced version of Markdown includes syntax for tables,
+definition lists, metadata blocks, footnotes, citations, math, and much
+more. See the User’s Manual below under &lt;a href="https://pandoc.org/MANUAL.html#pandocs-markdown" rel="nofollow"&gt;Pandoc’s
+Markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pandoc has a modular design: it consists of a set of readers, which
+parse text in a given format and produce a native representation of the
+document (an &lt;em&gt;abstract syntax tree&lt;/em&gt; or AST), and a set of writers, which
+convert this native representation into a target format. Thus, adding an
+input or output format requires only adding a reader or writer. Users
+can also run custom pandoc filters to modify the intermediate AST (see
+the documentation for &lt;a href="https://pandoc.org/filters.html" rel="nofollow"&gt;filters&lt;/a&gt; and
+&lt;a href="https://pandoc.org/lua-filters.html" rel="nofollow"&gt;lua filters&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Because pandoc’s intermediate representation of a document is less
+expressive than many of the formats it converts between, one should not
+expect perfect conversions between every format and every other. Pandoc
+attempts to preserve the structural elements of a document, but not
+formatting details such as margin size. And some document elements, such
+as complex tables, may not fit into pandoc’s simple document model.
+While conversions from pandoc’s Markdown to all formats aspire to be
+perfect, conversions from formats more expressive than pandoc’s Markdown
+can be expected to be lossy.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
+&lt;p&gt;Here’s &lt;a href="INSTALL.md"&gt;how to install pandoc&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Pandoc’s website contains a full &lt;a href="https://pandoc.org/MANUAL.html" rel="nofollow"&gt;User’s
+Guide&lt;/a&gt;. It is also available
+&lt;a href="MANUAL.txt"&gt;here&lt;/a&gt; as pandoc-flavored Markdown. The website also
+contains some &lt;a href="https://pandoc.org/demos.html" rel="nofollow"&gt;examples of the use of
+pandoc&lt;/a&gt; and a limited &lt;a href="https://pandoc.org/try" rel="nofollow"&gt;online
+demo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Pull requests, bug reports, and feature requests are welcome. Please
+make sure to read &lt;a href="CONTRIBUTING.md"&gt;the contributor guidelines&lt;/a&gt; before
+opening a new issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;© 2006-2018 John MacFarlane (&lt;a href="mailto:jgm@berkeley.edu"&gt;jgm@berkeley.edu&lt;/a&gt;). Released under the
+&lt;a href="http://www.gnu.org/copyleft/gpl.html" title="GNU General Public License" rel="nofollow"&gt;GPL&lt;/a&gt;,
+version 2 or greater. This software carries no warranty of any kind.
+(See COPYRIGHT for full copyright and warranty notices.)&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jgm</author><guid isPermaLink="false">https://github.com/jgm/pandoc</guid><pubDate>Fri, 03 Jan 2020 00:03:00 GMT</pubDate></item><item><title>digital-asset/ghcide #4 in Haskell, This month</title><link>https://github.com/digital-asset/ghcide</link><description>&lt;p&gt;&lt;i&gt;A library for building Haskell IDE tooling&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ghcide---a-library-for-building-haskell-ide-tooling" class="anchor" aria-hidden="true" href="#ghcide---a-library-for-building-haskell-ide-tooling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;ghcide&lt;/code&gt; - A library for building Haskell IDE tooling&lt;/h1&gt;
+&lt;p&gt;Note: &lt;code&gt;ghcide&lt;/code&gt; was previously called &lt;code&gt;hie-core&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Our vision is that you should build an IDE by combining:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png"&gt;&lt;img src="https://raw.githubusercontent.com/digital-asset/ghcide/master/img/vscode2.png" alt="vscode" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; for determining where your files are, what are their dependencies, what extensions are enabled and so on;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ghcide&lt;/code&gt; (i.e. this library) for defining how to type check, when to type check, and producing diagnostic messages;&lt;/li&gt;
+&lt;li&gt;A bunch of plugins that haven't yet been written, e.g. &lt;a href="https://github.com/ndmitchell/hlint"&gt;&lt;code&gt;hie-hlint&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/tweag/ormolu"&gt;&lt;code&gt;hie-ormolu&lt;/code&gt;&lt;/a&gt;, to choose which features you want;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alanz/haskell-lsp"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; for sending those messages to a &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;Language Server Protocol (LSP)&lt;/a&gt; server;&lt;/li&gt;
+&lt;li&gt;An extension for your editor. We provide a &lt;a href="https://code.visualstudio.com/api" rel="nofollow"&gt;VS Code extension&lt;/a&gt; as &lt;code&gt;extension&lt;/code&gt; in this directory, although the components work in other LSP editors too (see below for instructions using Emacs).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are more details about our approach &lt;a href="https://4ta.uk/p/shaking-up-the-ide" rel="nofollow"&gt;in this blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ghcide&lt;/code&gt; already exports the following features via the lsp protocol:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;LSP name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Display error messages (parse errors, typecheck errors, etc.) and enabled warnings.&lt;/td&gt;
+&lt;td&gt;diagnostics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Go to definition in local package&lt;/td&gt;
+&lt;td&gt;definition&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Display type and source module of values&lt;/td&gt;
+&lt;td&gt;hover&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Remove redundant imports, replace suggested typos for values and module imports, fill type holes, insert missing type signatures, add suggested ghc extensions&lt;/td&gt;
+&lt;td&gt;codeAction (quickfix)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-using-it" class="anchor" aria-hidden="true" href="#using-it"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using it&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-install-ghcide" class="anchor" aria-hidden="true" href="#install-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-with-nix" class="anchor" aria-hidden="true" href="#with-nix"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Nix&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://github.com/hercules-ci/ghcide-nix"&gt;See ghcide-nix repository&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-with-cabal-or-stack" class="anchor" aria-hidden="true" href="#with-cabal-or-stack"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Cabal or Stack&lt;/h4&gt;
+&lt;p&gt;First install the &lt;code&gt;ghcide&lt;/code&gt; binary using &lt;code&gt;stack&lt;/code&gt; or &lt;code&gt;cabal&lt;/code&gt;, e.g.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git clone https://github.com/digital-asset/ghcide.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd ghcide&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cabal install&lt;/code&gt; or &lt;code&gt;stack install&lt;/code&gt; (and make sure &lt;code&gt;~/.local/bin&lt;/code&gt; is on your &lt;code&gt;$PATH&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It's important that &lt;code&gt;ghcide&lt;/code&gt; is compiled with the same compiler you use to build your projects.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-test-ghcide" class="anchor" aria-hidden="true" href="#test-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test &lt;code&gt;ghcide&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Next, check that &lt;code&gt;ghcide&lt;/code&gt; is capable of loading your code. Change to the project directory and run &lt;code&gt;ghcide&lt;/code&gt;, which will try and load everything using the same code as the IDE, but in a way that's much easier to understand. For example, taking the example of &lt;a href="https://github.com/ndmitchell/shake"&gt;&lt;code&gt;shake&lt;/code&gt;&lt;/a&gt;, running &lt;code&gt;ghcide&lt;/code&gt; gives some error messages and warnings before reporting at the end:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Files that failed:&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Main.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Model.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Test.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\model\Util.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\output\docs\Main.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt; * .\output\docs\Part_Architecture_md.hs&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Completed (152 worked, 6 failed)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Of the 158 files in Shake, as of this moment, 152 can be loaded by the IDE, but 6 can't (error messages for the reasons they can't be loaded are given earlier). The failing files are all prototype work or test output, meaning I can confidently use Shake.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;ghcide&lt;/code&gt; executable mostly relies on &lt;a href="https://github.com/mpickering/hie-bios"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; to do the difficult work of setting up your GHC environment. If it doesn't work, see &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;the &lt;code&gt;hie-bios&lt;/code&gt; manual&lt;/a&gt; to get it working. My default fallback is to figure it out by hand and create a &lt;code&gt;direct&lt;/code&gt; style &lt;a href="https://github.com/ndmitchell/shake/blob/master/hie.yaml"&gt;&lt;code&gt;hie.yaml&lt;/code&gt;&lt;/a&gt; listing the command line arguments to load the project.&lt;/p&gt;
+&lt;p&gt;If you can't get &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, see &lt;a href="docs/Setup.md"&gt;this setup troubleshooting guide&lt;/a&gt;. Once you have got &lt;code&gt;ghcide&lt;/code&gt; working outside the editor, the next step is to pick which editor to integrate with.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-vs-code" class="anchor" aria-hidden="true" href="#using-with-vs-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with VS Code&lt;/h3&gt;
+&lt;p&gt;You can install the VSCode extension from the &lt;a href="https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.ghcide" rel="nofollow"&gt;VSCode
+marketplace&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-atom" class="anchor" aria-hidden="true" href="#using-with-atom"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Atom&lt;/h3&gt;
+&lt;p&gt;You can follow the &lt;a href="https://github.com/moodmosaic/ide-haskell-ghcide#readme"&gt;instructions&lt;/a&gt; to install with &lt;code&gt;apm&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-sublime-text" class="anchor" aria-hidden="true" href="#using-with-sublime-text"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Sublime Text&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href="https://packagecontrol.io/packages/LSP" rel="nofollow"&gt;LSP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Press Ctrl+Shift+P or Cmd+Shift+P in Sublime Text and search for &lt;em&gt;Preferences: LSP Settings&lt;/em&gt;, then paste these settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;{
+  "clients":
+  {
+    "ghcide":
+    {
+      "enabled"   : true,
+      "languageId": "haskell",
+      "command"   : ["ghcide", "--lsp"],
+      "scopes"    : ["source.haskell"],
+      "syntaxes"  : ["Packages/Haskell/Haskell.sublime-syntax"]
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-emacs" class="anchor" aria-hidden="true" href="#using-with-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Emacs&lt;/h3&gt;
+&lt;p&gt;If you don't already have &lt;a href="https://melpa.org/#/" rel="nofollow"&gt;MELPA&lt;/a&gt; package installation configured, visit MELPA &lt;a href="https://melpa.org/#/getting-started" rel="nofollow"&gt;getting started&lt;/a&gt; page to get set up. Then, install &lt;a href="https://melpa.org/#/use-package" rel="nofollow"&gt;&lt;code&gt;use-package&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now you have a choice of two different Emacs packages which can be used to communicate with the &lt;code&gt;ghcide&lt;/code&gt; LSP server:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lsp-ui&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eglot&lt;/code&gt; (requires Emacs 26.1+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In each case, you can enable support by adding the shown lines to your &lt;code&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-lsp-ui" class="anchor" aria-hidden="true" href="#lsp-ui"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lsp-ui&lt;/h4&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; LSP&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; flycheck
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:init&lt;/span&gt;
+  (global-flycheck-mode &lt;span class="pl-c1"&gt;t&lt;/span&gt;))
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; yasnippet
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-mode
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:hook&lt;/span&gt; (&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; lsp)
+  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-ui
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:commands&lt;/span&gt; lsp-ui-mode)
+(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; lsp-haskell
+ &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+ &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+ (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-path-hie &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+ (&lt;span class="pl-k"&gt;setq&lt;/span&gt; lsp-haskell-process-args-hie '())
+ &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Comment/uncomment this line to see interactions between lsp client/server.&lt;/span&gt;
+ &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;;(setq lsp-log-io t)&lt;/span&gt;
+)&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-eglot" class="anchor" aria-hidden="true" href="#eglot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;eglot&lt;/h4&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; eglot
+  &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'eglot-server-programs&lt;/span&gt; '(&lt;span class="pl-c1"&gt;haskell-mode&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; (&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))))&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-with-vimneovim" class="anchor" aria-hidden="true" href="#using-with-vimneovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using with Vim/Neovim&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-languageclient-neovim" class="anchor" aria-hidden="true" href="#languageclient-neovim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LanguageClient-neovim&lt;/h4&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/autozimu/LanguageClient-neovim"&gt;LanguageClient-neovim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Add this to your vim config:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_rootMarkers&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*.cabal&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;stack.yaml&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
+&lt;span class="pl-k"&gt;let&lt;/span&gt; &lt;span class="pl-smi"&gt;&lt;span class="pl-k"&gt;g:&lt;/span&gt;LanguageClient_serverCommands&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rust&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;rls&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Refer to &lt;code&gt;:he LanguageClient&lt;/code&gt; for more details on usage and configuration.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-vim-lsp" class="anchor" aria-hidden="true" href="#vim-lsp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vim-lsp&lt;/h4&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/prabirshrestha/vim-lsp"&gt;vim-lsp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Add this to your vim config:&lt;/p&gt;
+&lt;div class="highlight highlight-source-viml"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;au&lt;/span&gt; &lt;span class="pl-c1"&gt;User&lt;/span&gt; lsp_setup &lt;span class="pl-c1"&gt;call&lt;/span&gt; &lt;span class="pl-en"&gt;lsp#register_server&lt;/span&gt;({
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;cmd&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: {server_info&lt;span class="pl-k"&gt;-&lt;/span&gt;&amp;gt;[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/your/path/to/ghcide&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]},
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;whitelist&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;: [&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;],
+    &lt;span class="pl-cce"&gt;\ &lt;/span&gt;})&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To verify it works move your cursor over a symbol and run &lt;code&gt;:LspHover&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-cocnvim" class="anchor" aria-hidden="true" href="#cocnvim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;coc.nvim&lt;/h3&gt;
+&lt;p&gt;Install &lt;a href="https://github.com/neoclide/coc.nvim"&gt;coc.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ]
+    }
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here's a nice article on setting up neovim and coc: &lt;a href="http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/" rel="nofollow"&gt;Vim and Haskell in
+2019&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-spacevim" class="anchor" aria-hidden="true" href="#spacevim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SpaceVim&lt;/h3&gt;
+&lt;p&gt;In the &lt;code&gt;autocomplete&lt;/code&gt; layer, add the &lt;code&gt;autocomplete_method&lt;/code&gt; option to force the use of &lt;code&gt;coc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-toml"&gt;&lt;pre&gt;[[&lt;span class="pl-en"&gt;layers&lt;/span&gt;]]
+  &lt;span class="pl-smi"&gt;name&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;autocomplete&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-smi"&gt;auto-completion-return-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;complete&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="pl-smi"&gt;auto-completion-tab-key-behavior&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;smart&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  [&lt;span class="pl-en"&gt;options&lt;/span&gt;]
+    &lt;span class="pl-smi"&gt;autocomplete_method&lt;/span&gt; = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;coc&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add this to your coc-settings.json (which you can edit with :CocConfig):&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;languageserver&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: {
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;command&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;stack&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;args&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;exec&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ghcide&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;--lsp&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rootPatterns&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.stack.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.hie-bios&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;BUILD.bazel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;cabal.config&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;package.yaml&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ],
+      &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;filetypes&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lhs&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;haskell&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+      ]
+    }
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This example above describes a setup in which &lt;code&gt;ghcide&lt;/code&gt; is installed
+using &lt;code&gt;stack install ghcide&lt;/code&gt; within a project.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-hacking-on-ghcide" class="anchor" aria-hidden="true" href="#hacking-on-ghcide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hacking on ghcide&lt;/h2&gt;
+&lt;p&gt;To build and work on &lt;code&gt;ghcide&lt;/code&gt; itself, you can use Stack or cabal, e.g.,
+running &lt;code&gt;stack test&lt;/code&gt; will execute the test suite.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-the-extension" class="anchor" aria-hidden="true" href="#building-the-extension"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building the extension&lt;/h3&gt;
+&lt;p&gt;For development, you can also the VSCode extension from this repository (see
+&lt;a href="https://code.visualstudio.com/docs/setup/mac" rel="nofollow"&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt; for details on adding
+&lt;code&gt;code&lt;/code&gt; to your &lt;code&gt;$PATH&lt;/code&gt;):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cd extension/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm ci&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm run vscepackage&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code --install-extension ghcide-0.0.1.vsix&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now opening a &lt;code&gt;.hs&lt;/code&gt; file should work with &lt;code&gt;ghcide&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-history-and-relationship-to-other-haskell-ides" class="anchor" aria-hidden="true" href="#history-and-relationship-to-other-haskell-ides"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;History and relationship to other Haskell IDE's&lt;/h2&gt;
+&lt;p&gt;The code behind &lt;code&gt;ghcide&lt;/code&gt; was originally developed by &lt;a href="https://digitalasset.com/" rel="nofollow"&gt;Digital Asset&lt;/a&gt; as part of the &lt;a href="https://github.com/digital-asset/daml"&gt;DAML programming language&lt;/a&gt;. DAML is a smart contract language targeting distributed-ledger runtimes, based on &lt;a href="https://www.haskell.org/ghc/" rel="nofollow"&gt;GHC&lt;/a&gt; with custom language extensions. The DAML programming language has &lt;a href="https://webide.daml.com/" rel="nofollow"&gt;an IDE&lt;/a&gt;, and work was done to separate off a reusable Haskell-only IDE (what is now &lt;code&gt;ghcide&lt;/code&gt;) which the &lt;a href="https://github.com/digital-asset/daml/tree/master/compiler/damlc"&gt;DAML IDE then builds upon&lt;/a&gt;. Since that time, there have been various &lt;a href="https://github.com/digital-asset/ghcide/graphs/contributors"&gt;non-Digital Asset contributors&lt;/a&gt;, in addition to continued investment by Digital Asset. All contributions require a &lt;a href="https://cla.digitalasset.com/digital-asset/ghcide" rel="nofollow"&gt;Contributor License Agreement&lt;/a&gt; that states you license the code under the &lt;a href="LICENSE"&gt;Apache License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Haskell community &lt;a href="https://github.com/DanielG/ghc-mod"&gt;has&lt;/a&gt; &lt;a href="https://github.com/chrisdone/intero"&gt;various&lt;/a&gt; &lt;a href="https://github.com/rikvdkleij/intellij-haskell"&gt;IDE&lt;/a&gt; &lt;a href="http://leksah.org/" rel="nofollow"&gt;choices&lt;/a&gt;, but the one that has been gathering momentum is &lt;a href="https://github.com/haskell/haskell-ide-engine#readme"&gt;&lt;code&gt;haskell-ide-engine&lt;/code&gt;&lt;/a&gt;. Our project owes a debt of gratitude to the &lt;code&gt;haskell-ide-engine&lt;/code&gt;. We reuse libraries from their ecosystem, including &lt;a href="https://github.com/mpickering/hie-bios#readme"&gt;&lt;code&gt;hie-bios&lt;/code&gt;&lt;/a&gt; (a likely future environment setup layer in &lt;code&gt;haskell-ide-engine&lt;/code&gt;), &lt;a href="https://github.com/alanz/haskell-lsp#readme"&gt;&lt;code&gt;haskell-lsp&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/bubba/lsp-test#readme"&gt;&lt;code&gt;lsp-test&lt;/code&gt;&lt;/a&gt; (the &lt;code&gt;haskell-ide-engine&lt;/code&gt; &lt;a href="https://microsoft.github.io/language-server-protocol/" rel="nofollow"&gt;LSP protocol&lt;/a&gt; pieces). We make heavy use of their contributions to GHC itself, in particular the work to make GHC take string buffers rather than files. While &lt;code&gt;ghcide&lt;/code&gt; is not a part of &lt;code&gt;haskell-ide-engine&lt;/code&gt;, we feel it &lt;em&gt;could&lt;/em&gt; form the core of a future version - but such decisions are up to the &lt;code&gt;haskell-ide-engine&lt;/code&gt; contributors.&lt;/p&gt;
+&lt;p&gt;The best summary of the architecture of &lt;code&gt;ghcide&lt;/code&gt; is available &lt;a href="https://www.youtube.com/watch?v=cijsaeWNf2E&amp;amp;list=PLxxF72uPfQVRdAsvj7THoys-nVj-oc4Ss" rel="nofollow"&gt;this talk&lt;/a&gt; (&lt;a href="https://ndmitchell.com/downloads/slides-making_a_haskell_ide-07_sep_2019.pdf" rel="nofollow"&gt;slides&lt;/a&gt;), given at &lt;a href="https://munihac.de/2019.html" rel="nofollow"&gt;MuniHac 2019&lt;/a&gt;. However, since that talk the project has renamed from &lt;code&gt;hie-core&lt;/code&gt; to &lt;code&gt;ghcide&lt;/code&gt;, and the repo has moved to &lt;a href="https://github.com/digital-asset/ghcide/"&gt;this location&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>digital-asset</author><guid isPermaLink="false">https://github.com/digital-asset/ghcide</guid><pubDate>Fri, 03 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>
