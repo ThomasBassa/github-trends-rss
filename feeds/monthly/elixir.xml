@@ -1,2 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Elixir, This month</title><link>https://github.com/trending/elixir?since=monthly</link><description>The top repositories on GitHub for elixir, measured monthly</description><pubDate>Sat, 04 Jan 2020 01:10:41 GMT</pubDate><lastBuildDate>Sat, 04 Jan 2020 01:10:41 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Elixir, This month today</title><pubDate>Sat, 04 Jan 2020 01:10:41 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Elixir, This month</title><link>https://github.com/trending/elixir?since=monthly</link><description>The top repositories on GitHub for elixir, measured monthly</description><pubDate>Sun, 05 Jan 2020 01:06:48 GMT</pubDate><lastBuildDate>Sun, 05 Jan 2020 01:06:48 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>elixir-ecto/ecto #1 in Elixir, This month</title><link>https://github.com/elixir-ecto/ecto</link><description>&lt;p&gt;&lt;i&gt;A toolkit for data mapping and language integrated query&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/elixir-ecto/ecto/raw/master/guides/images/logo.png"&gt;&lt;img width="250" src="https://github.com/elixir-ecto/ecto/raw/master/guides/images/logo.png" alt="Ecto" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://github.com/elixir-ecto/ecto/actions"&gt;&lt;img src="https://github.com/elixir-ecto/ecto/workflows/CI/badge.svg" alt="Build Status" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ecto is a toolkit for data mapping and language integrated query for Elixir. Here is an example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; In your config/config.exs file&lt;/span&gt;
+config &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;, &lt;span class="pl-c1"&gt;ecto_repos:&lt;/span&gt; [&lt;span class="pl-en"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;]
+
+config &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;, &lt;span class="pl-en"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;database:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ecto_simple&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;username:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postgres&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;password:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postgres&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;hostname:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;localhost&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+  &lt;span class="pl-c1"&gt;port:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;5432&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; In your application code&lt;/span&gt;
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;otp_app:&lt;/span&gt; &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;adapter:&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Adapters&lt;/span&gt;.&lt;span class="pl-en"&gt;Postgres&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;Weather&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Schema&lt;/span&gt;
+
+  schema &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;weather&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:city&lt;/span&gt;     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Defaults to type :string&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:temp_lo&lt;/span&gt;, &lt;span class="pl-c1"&gt;:integer&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:temp_hi&lt;/span&gt;, &lt;span class="pl-c1"&gt;:integer&lt;/span&gt;
+    field &lt;span class="pl-c1"&gt;:prcp&lt;/span&gt;,    &lt;span class="pl-c1"&gt;:float&lt;/span&gt;, &lt;span class="pl-c1"&gt;default:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.0&lt;/span&gt;
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;Sample&lt;/span&gt;.&lt;span class="pl-en"&gt;App&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Query&lt;/span&gt;
+  &lt;span class="pl-k"&gt;alias&lt;/span&gt; &lt;span class="pl-en"&gt;Sample&lt;/span&gt;.{&lt;span class="pl-en"&gt;Weather&lt;/span&gt;, &lt;span class="pl-en"&gt;Repo&lt;/span&gt;}
+
+  &lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;keyword_query&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    query &lt;span class="pl-k"&gt;=&lt;/span&gt;
+      from w &lt;span class="pl-k"&gt;in&lt;/span&gt; &lt;span class="pl-en"&gt;Weather&lt;/span&gt;,
+           &lt;span class="pl-c1"&gt;where:&lt;/span&gt; w.prcp &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-k"&gt;or&lt;/span&gt; &lt;span class="pl-en"&gt;is_nil&lt;/span&gt;(w.prcp),
+           &lt;span class="pl-c1"&gt;select:&lt;/span&gt; w
+
+    &lt;span class="pl-en"&gt;Repo&lt;/span&gt;.&lt;span class="pl-en"&gt;all&lt;/span&gt;(query)
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+  &lt;span class="pl-k"&gt;def&lt;/span&gt; &lt;span class="pl-en"&gt;pipe_query&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+    &lt;span class="pl-en"&gt;Weather&lt;/span&gt;
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;where&lt;/span&gt;(&lt;span class="pl-c1"&gt;city:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Kraków&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;order_by&lt;/span&gt;(&lt;span class="pl-c1"&gt;:temp_lo&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;limit&lt;/span&gt;(&lt;span class="pl-c1"&gt;10&lt;/span&gt;)
+    &lt;span class="pl-k"&gt;|&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;Repo&lt;/span&gt;.&lt;span class="pl-en"&gt;all&lt;/span&gt;
+  &lt;span class="pl-k"&gt;end&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ecto is commonly used to interact with databases, such as Postgres and MySQL via &lt;a href="http://hexdocs.pm/ecto_sql" rel="nofollow"&gt;Ecto.Adapters.SQL&lt;/a&gt; (&lt;a href="https://github.com/elixir-ecto/ecto_sql"&gt;source code&lt;/a&gt;). Ecto is also commonly used to map data from any source into Elixir structs, regardless if they are backed by a database or not.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="http://hexdocs.pm/ecto/getting-started.html" rel="nofollow"&gt;getting started guide&lt;/a&gt; and the &lt;a href="http://hexdocs.pm/ecto" rel="nofollow"&gt;online documentation&lt;/a&gt; for more information. Other resources available are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://pragprog.com/book/wmecto/programming-ecto" rel="nofollow"&gt;Programming Ecto&lt;/a&gt;, by Darin Wilson and Eric Meadows-Jönsson, which guides you from fundamentals up to advanced concepts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://pages.plataformatec.com.br/the-little-ecto-cookbook" rel="nofollow"&gt;The Little Ecto Cookbook&lt;/a&gt;, a free ebook by Plataformatec, which is a curation of the existing Ecto guides with some extra contents&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;You need to add both Ecto and the database adapter as a dependency to your &lt;code&gt;mix.exs&lt;/code&gt; file. The supported databases and their adapters are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Database&lt;/th&gt;
+&lt;th align="left"&gt;Ecto Adapter&lt;/th&gt;
+&lt;th align="left"&gt;Dependencies&lt;/th&gt;
+&lt;th align="left"&gt;Ecto 3.0 compatible?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PostgreSQL&lt;/td&gt;
+&lt;td align="left"&gt;Ecto.Adapters.Postgres&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="http://github.com/elixir-ecto/postgrex"&gt;postgrex&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MySQL&lt;/td&gt;
+&lt;td align="left"&gt;Ecto.Adapters.MyXQL&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="http://github.com/elixir-ecto/myxql"&gt;myxql&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MSSQL&lt;/td&gt;
+&lt;td align="left"&gt;MssqlEcto&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="https://github.com/findmypast-oss/mssql_ecto"&gt;mssql_ecto&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;MSSQL&lt;/td&gt;
+&lt;td align="left"&gt;Tds.Ecto&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto_sql"&gt;ecto_sql&lt;/a&gt; + &lt;a href="https://github.com/livehelpnow/tds_ecto"&gt;tds_ecto&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;SQLite    &lt;/td&gt;
+&lt;td align="left"&gt;Sqlite.Ecto2        &lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto"&gt;ecto&lt;/a&gt; + &lt;a href="https://github.com/scouten/sqlite_ecto2"&gt;sqlite_ecto2&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Mnesia    &lt;/td&gt;
+&lt;td align="left"&gt;EctoMnesia.Adapter   &lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://github.com/elixir-ecto/ecto"&gt;ecto&lt;/a&gt; + &lt;a href="https://github.com/Nebo15/ecto_mnesia"&gt;ecto_mnesia&lt;/a&gt;&lt;/td&gt;
+&lt;td align="left"&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For example, if you want to use PostgreSQL, add to your &lt;code&gt;mix.exs&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;defp&lt;/span&gt; &lt;span class="pl-en"&gt;deps&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  [
+    {&lt;span class="pl-c1"&gt;:ecto_sql&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~&amp;gt; 3.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},
+    {&lt;span class="pl-c1"&gt;:postgrex&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&amp;gt;= 0.0.0&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}
+  ]
+&lt;span class="pl-k"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run &lt;code&gt;mix deps.get&lt;/code&gt; in your shell to fetch the dependencies. If you want to use another database, just choose the proper dependency from the table above.&lt;/p&gt;
+&lt;p&gt;Finally, in the repository definition, you will need to specify the &lt;code&gt;adapter:&lt;/code&gt; respective to the chosen dependency. For PostgreSQL it is:&lt;/p&gt;
+&lt;div class="highlight highlight-source-elixir"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;defmodule&lt;/span&gt; &lt;span class="pl-e"&gt;MyApp&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt; &lt;span class="pl-k"&gt;do&lt;/span&gt;
+  &lt;span class="pl-k"&gt;use&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Repo&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;otp_app:&lt;/span&gt; &lt;span class="pl-c1"&gt;:my_app&lt;/span&gt;,
+    &lt;span class="pl-c1"&gt;adapter:&lt;/span&gt; &lt;span class="pl-en"&gt;Ecto&lt;/span&gt;.&lt;span class="pl-en"&gt;Adapters&lt;/span&gt;.&lt;span class="pl-en"&gt;Postgres&lt;/span&gt;,
+  &lt;span class="pl-k"&gt;..&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-versions" class="anchor" aria-hidden="true" href="#supported-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Versions&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Branch&lt;/th&gt;
+&lt;th&gt;Support&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;v3.1&lt;/td&gt;
+&lt;td&gt;Bug fixes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v3.0&lt;/td&gt;
+&lt;td&gt;Security patches only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.2&lt;/td&gt;
+&lt;td&gt;Security patches only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.1&lt;/td&gt;
+&lt;td&gt;Unsupported from 10/2018&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v2.0&lt;/td&gt;
+&lt;td&gt;Unsupported from 08/2017&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v1.1&lt;/td&gt;
+&lt;td&gt;Unsupported from 03/2018&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v1.0&lt;/td&gt;
+&lt;td&gt;Unsupported from 05/2017&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;With the version 3.0, Ecto has become API stable. This means no more new features, although we will continue providing bug fixes and updates. For everyone running Ecto in production, rest assured that Ecto will continue to be a well maintained project with the same production quality and polish that our users are familiar with.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-important-links" class="anchor" aria-hidden="true" href="#important-links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Important links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hexdocs.pm/ecto" rel="nofollow"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/elixir-ecto" rel="nofollow"&gt;Mailing list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/elixir-ecto/ecto/tree/master/examples"&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;Clone the repo and fetch its dependencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/elixir-ecto/ecto.git
+$ cd ecto
+$ mix deps.get
+$ mix test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that &lt;code&gt;mix test&lt;/code&gt; does not run the tests in the &lt;code&gt;integration_test&lt;/code&gt; folder. To run integration tests, you can clone &lt;code&gt;ecto_sql&lt;/code&gt; in a sibling directory and then run its integration tests with the &lt;code&gt;ECTO_PATH&lt;/code&gt; environment variable pointing to your Ecto checkout:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd ..
+$ git clone https://github.com/elixir-ecto/ecto_sql.git
+$ cd ecto_sql
+$ ECTO_PATH=../ecto mix test.all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright-and-license" class="anchor" aria-hidden="true" href="#copyright-and-license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright and License&lt;/h2&gt;
+&lt;p&gt;"Ecto" and the Ecto logo are Copyright (c) 2013 Plataformatec.&lt;/p&gt;
+&lt;p&gt;The Ecto logo was designed by &lt;a href="http://www.danewesolko.com" rel="nofollow"&gt;Dane Wesolko&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The source code is under the Apache License 2.0.&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2013 Plataformatec&lt;/p&gt;
+&lt;p&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at &lt;a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>elixir-ecto</author><guid isPermaLink="false">https://github.com/elixir-ecto/ecto</guid><pubDate>Sun, 05 Jan 2020 00:01:00 GMT</pubDate></item><item><title>supabase/realtime #2 in Elixir, This month</title><link>https://github.com/supabase/realtime</link><description>&lt;p&gt;&lt;i&gt;Listen to your to PostgreSQL database in realtime via websockets&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-supabase-realtime" class="anchor" aria-hidden="true" href="#supabase-realtime"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supabase Realtime&lt;/h1&gt;
+&lt;p&gt;Listens to changes in a PostgreSQL Database and broadcasts them over websockets.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-status" class="anchor" aria-hidden="true" href="#status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Status&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Status: ALPHA&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This repo is still under heavy development and the documentation is still evolving. You're welcome to try it, but expect some breaking changes.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-docs" class="anchor" aria-hidden="true" href="#docs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docs&lt;/h2&gt;
+&lt;p&gt;Docs are a work in progress. Start here: [&lt;a href="https://supabase.io/docs/realtime/introduction" rel="nofollow"&gt;https://supabase.io/docs/realtime/introduction&lt;/a&gt;]&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-example" class="anchor" aria-hidden="true" href="#example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example&lt;/h2&gt;
+&lt;div class="highlight highlight-source-js"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; { &lt;span class="pl-smi"&gt;Socket&lt;/span&gt; } = &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;@supabase/realtime-js&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;var&lt;/span&gt; socket &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-en"&gt;Socket&lt;/span&gt;(&lt;span class="pl-c1"&gt;process&lt;/span&gt;.&lt;span class="pl-smi"&gt;env&lt;/span&gt;.&lt;span class="pl-c1"&gt;SOCKET_URL&lt;/span&gt;)
+&lt;span class="pl-smi"&gt;socket&lt;/span&gt;.&lt;span class="pl-en"&gt;connect&lt;/span&gt;()
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Listen to all changes in the database&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; allChanges &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;this&lt;/span&gt;.&lt;span class="pl-smi"&gt;socket&lt;/span&gt;.&lt;span class="pl-en"&gt;channel&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+  .&lt;span class="pl-c1"&gt;join&lt;/span&gt;()
+  .&lt;span class="pl-en"&gt;on&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-smi"&gt;payload&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; { &lt;span class="pl-en"&gt;console&lt;/span&gt;.&lt;span class="pl-c1"&gt;log&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Update received!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, payload) })
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Listen to all changes from the 'public' schema&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; allChanges &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;this&lt;/span&gt;.&lt;span class="pl-smi"&gt;socket&lt;/span&gt;.&lt;span class="pl-en"&gt;channel&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;public&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+  .&lt;span class="pl-c1"&gt;join&lt;/span&gt;()
+  .&lt;span class="pl-en"&gt;on&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-smi"&gt;payload&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; { &lt;span class="pl-en"&gt;console&lt;/span&gt;.&lt;span class="pl-c1"&gt;log&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Update received!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, payload) })
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; Listen to all changes from the 'users' table in the 'public' schema&lt;/span&gt;
+&lt;span class="pl-k"&gt;var&lt;/span&gt; allChanges &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;this&lt;/span&gt;.&lt;span class="pl-smi"&gt;socket&lt;/span&gt;.&lt;span class="pl-en"&gt;channel&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;public:users&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+  .&lt;span class="pl-c1"&gt;join&lt;/span&gt;()
+  .&lt;span class="pl-en"&gt;on&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-smi"&gt;payload&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; { &lt;span class="pl-en"&gt;console&lt;/span&gt;.&lt;span class="pl-c1"&gt;log&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Update received!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, payload) })
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;We welcome any issues, pull requests, and feedback. See &lt;a href="https://supabase.io/docs/-/contributing" rel="nofollow"&gt;https://supabase.io/docs/-/contributing&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;This repo is liscenced under Apache 2.0.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cainophile/cainophile"&gt;https://github.com/cainophile/cainophile&lt;/a&gt; - A lot of this implementation leveraged the work already done on Canophile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>supabase</author><guid isPermaLink="false">https://github.com/supabase/realtime</guid><pubDate>Sun, 05 Jan 2020 00:02:00 GMT</pubDate></item></channel></rss>
