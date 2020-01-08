@@ -1,2 +1,1108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Verilog, This week</title><link>https://github.com/trending/verilog?since=weekly</link><description>The top repositories on GitHub for verilog, measured weekly</description><pubDate>Tue, 07 Jan 2020 01:11:30 GMT</pubDate><lastBuildDate>Tue, 07 Jan 2020 01:11:30 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Verilog, This week today</title><pubDate>Tue, 07 Jan 2020 01:11:30 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Verilog, This week</title><link>https://github.com/trending/verilog?since=weekly</link><description>The top repositories on GitHub for verilog, measured weekly</description><pubDate>Wed, 08 Jan 2020 01:08:33 GMT</pubDate><lastBuildDate>Wed, 08 Jan 2020 01:08:33 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>T-head-Semi/wujian100_open #1 in Verilog, This week</title><link>https://github.com/T-head-Semi/wujian100_open</link><description>&lt;p&gt;&lt;i&gt;IC design and development should be faster，simpler and more reliable&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-wujian100_open" class="anchor" aria-hidden="true" href="#wujian100_open"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;wujian100_open&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;wujian100_open is a MCU base SoC. We can simulate by EDA tools and emulate by FPGA. Also we can develop the IPs and software in this platform. We wish more and more developers building the open MCU ecosystem with T-Head. IC design and development should be faster simpler and more reliable
+Directory Structure
+|--Project                //open source project work directory  
+  |--riscv_toolchain      //tool chain install directory download from t-head.cn
+  |--wujian100_open       //wujian100_open project get from github
+    |--case               //test case example for simulation
+    |--doc                //wujian100_open user guide
+    |--fpga               //FPGA script
+    |--lib                //compile script for simulation
+    |--regress            //regression result
+    |--sdk                //software design kit
+    |--soc                //Soc RTL source code
+    |--tb                 //test bench
+    |--tools              //simulation script and setup file
+    |--workdir            //simulation directory
+    |--LICENSE
+    |--README.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-get-started" class="anchor" aria-hidden="true" href="#get-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get Started&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;1. prepare a project work directory just like 'Project'
+2. cd Project
+3. git clone https://github.com/T-head-Semi/wujian100_open.git or git clone git@github.com:T-head-Semi/wujian100_open.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-download-cc-compiler" class="anchor" aria-hidden="true" href="#download-cc-compiler"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download C/C++ Compiler&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;1. prepare a tool chain install directory named 'riscv_toolchain'  // use the c shell command like 'mkdir riscv_toolchain'
+2. download the tool chain from the url https://www.t-head.cn/product/mcu-platform?spm=a2ouz.12987052.0.0.167548abiiSAQs
+3. install the tool chain to the riscv_toolchain dirctory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-get-open-source-eda-tools" class="anchor" aria-hidden="true" href="#get-open-source-eda-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get open source EDA tools&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;centos7/rhel7:  sudo yum install iverilog verilator gtkwave
+ubuntu/debian:  sudo apt-get install iverilog verilator gtkwave
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-get-ready-for-simulation" class="anchor" aria-hidden="true" href="#get-ready-for-simulation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get ready for simulation&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;1. cd wujian100_open/tools
+2. vim setup.csh then add the vcs path and license
+3. source setup.csh         //if not success you can touch a new file named setup.csh and copy the content to the new file. then source the new file
+4. cd wujian100_open/workdir
+5. if you want to use iverilog as simulation tool please execute the command '../tools/run_case -sim_tool iverilog ../case/timer/timer_test.c' or if you want to use vcs as simulation tool please execute the command '../tools/run_case -sim_tool vcs ../case/timer/timer_test.c'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-get-ready-for-fpga-bit-generation" class="anchor" aria-hidden="true" href="#get-ready-for-fpga-bit-generation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get ready for FPGA bit generation&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;1. make sure you have the synplify and license
+2. cd wujian100_open/fpga/synplify
+3. execute the synplify and load the wujian100_open_200t_3b.prj file
+4. input the command 'sdc2fdc' in synplify
+5. start the synplify
+6. after synplify generated the netlist we will use vivado for P&amp;amp;R and generated the bit file
+7. make sure you have the vivado and licese
+8. cd wujian100_open/fpga/vivado
+9. run tcl use file 'wujian100_open_200t_3b_prj.tcl'
+10. program the bit file to the fpga board
+11. enjoy the application development
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-get-the-debug-tool" class="anchor" aria-hidden="true" href="#how-to-get-the-debug-tool"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to get the debug tool&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;download from the url https://www.t-head.cn/product/mcu-platform?spm=a2ouz.12987052.0.0.167548abiiSAQs 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-get-the-ide-for-development" class="anchor" aria-hidden="true" href="#how-to-get-the-ide-for-development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to get the IDE for development&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;download from the url https://www.t-head.cn/product/mcu-platform?spm=a2ouz.12987052.0.0.167548abiiSAQs  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-use-the-sdk" class="anchor" aria-hidden="true" href="#how-to-use-the-sdk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use the sdk&lt;/h1&gt;
+&lt;p&gt;wujian100_open SDK is wujian100_open software development kit, the software follows the CSI interface specification. Through the SDK users can quickly wujian100_open test and evaluation. At the same time users can refer to the SDK integration of various commonly used components and sample procedures for application development quickly form a product solution.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SDK directory structure:
+|--sdk
+ |--csi_core 	//CSI-Core related interface definition, and interface implementation on
+                //E902.
+ |--csi_dirver  //CSI-Driver related interface definition, and peripheral Driver
+                //implementation.
+ |--csi_kernel  //CSI-Kernel related interface definition, and Rhino, FreeRTOSv8.2.3
+                //ucos-iii and other real-time operating system docking example code
+ |--libs        //Store common library implementations
+ |--projicet	//Store a variety of reference examples including benchmark test
+                //program, driver example program, rtos example program. The relevant
+                //project documents are also included.
+ |--utilites	//Store project config files.
+ |--VERSION
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;1. Download and install the CDK
+2. Open a project using CDK, for example open the hello project:
+  projects/examples/hello_world/CDK/wj100-open-hello_world.cdkproj
+3. Build the project:
+Click "project" on the toolbar,and select "build all". After successful compilation, you will see the following:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Build target ' wujian100_open-hello_world BuildSet '
+----------Building project:[ wujian100_open-hello_world - BuildSet ]----------
+make[1]: Entering directory 'D:/release/Wujian100_open-V1.0.0/Wujian100_open-V1.0.0/projects/examples/hello_world/CDK'
+make[1]: Leaving directory 'D:/release/Wujian100_open-V1.0.0/Wujian100_open-V1.0.0/projects/examples/hello_world/CDK'
+make[1]: Entering directory 'D:/release/Wujian100_open-V1.0.0/Wujian100_open-V1.0.0/projects/examples/hello_world/CDK'
+linking...
+size of target:
+   text	   data	    bss	    dec	    hex	filename
+  22680	   1628	   6660	  30968	   78f8	D:/release/Wujian100_open-V1.0.0/Wujian100_open-V1.0.0/projects/examples/hello_world/CDK/Obj/wujian100_open-hello_world.elf
+checksum value of target:  0xE2B2C769 (491,388)
+make[1]: Leaving directory 'D:/release/Wujian100_open-V1.0.0/Wujian100_open-V1.0.0/projects/examples/hello_world/CDK'
+Executing Post Build commands ...
+Done
+====0 errors, 0 warnings, total time : 20s263ms====
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;4. Run the project:
+Click "Debug" on the toolbar,and select "Start/Stop Debugger".
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-dicussion" class="anchor" aria-hidden="true" href="#dicussion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dicussion&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;If you want to discuss about the wujian100_open project. You can scan the DingDing QR code below：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5b54d5205d6f416b9829dc45e0de5629072018a7/68747470733a2f2f636f702d696d6167652d70726f642e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f6d63752f712e6a7067"&gt;&lt;img src="https://camo.githubusercontent.com/5b54d5205d6f416b9829dc45e0de5629072018a7/68747470733a2f2f636f702d696d6167652d70726f642e6f73732d636e2d68616e677a686f752e616c6979756e63732e636f6d2f6d63752f712e6a7067" alt="barcode.jpg" data-canonical-src="https://cop-image-prod.oss-cn-hangzhou.aliyuncs.com/mcu/q.jpg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-reference--and-thanks" class="anchor" aria-hidden="true" href="#reference--and-thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference  and Thanks&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;The program model of GPIO refer to the DesignWare of Synopsys 
+The program model of Timer refer to the DesignWare of Synopsys 
+The program model of WDT refer to the DesignWare of Synopsys 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>T-head-Semi</author><guid isPermaLink="false">https://github.com/T-head-Semi/wujian100_open</guid><pubDate>Wed, 08 Jan 2020 00:01:00 GMT</pubDate></item><item><title>SI-RISCV/e200_opensource #2 in Verilog, This week</title><link>https://github.com/SI-RISCV/e200_opensource</link><description>&lt;p&gt;&lt;i&gt;The Ultra-Low Power RISC Core&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-hummingbird-e203-opensource-processor-core" class="anchor" aria-hidden="true" href="#hummingbird-e203-opensource-processor-core"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hummingbird E203 Opensource Processor Core&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;This repository hosts the project for open-source hummingbird E203 RISC processor Core.&lt;/p&gt;
+&lt;p&gt;To boost the RISC-V popularity and to speed up the IoT development in China,
+we are very proud to make hummingbird E203 core open-source. It is the first open-source processor core from
+China mainland with state-of-art CPU design skills to support RISC-V instruction set.&lt;/p&gt;
+&lt;p&gt;The Hummingbird E203 core is a two-stages pipeline based ultra-low power/area implementation, makes the Hummingbird E203 as a perfect candidate for research and education of RISC-V implementation.&lt;/p&gt;
+&lt;p&gt;Welcome to visit &lt;a href="http://bbs.riscv-mcu.com/" rel="nofollow"&gt;http://bbs.riscv-mcu.com/&lt;/a&gt; to see the discussion of the Hummingbird E203.&lt;/p&gt;
+&lt;p&gt;Welcome to visit &lt;a href="http://www.riscv-mcu.com/" rel="nofollow"&gt;http://www.riscv-mcu.com/&lt;/a&gt; for more comprehensive information of availiable RISC-V MCU chips and embedded development.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usages-and-applications" class="anchor" aria-hidden="true" href="#usages-and-applications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usages and Applications&lt;/h2&gt;
+&lt;p&gt;The open-source Hummingbird E203 core can be a perferct candidate for research and education of RISC-V implementation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Hummingbird E203 core as a simple ultra-low power core and SoC, which is "蜂鸟虽小、五脏俱全", with detailed Docs and Software/FPGA Demos, hence, it will be a perfect example for lab practice in university or entry-level studying.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many people asked if this core can be commercially used, the answer is as below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;According to the Apache 2.0 license, this open-sourced core can be used in commercial way.&lt;/li&gt;
+&lt;li&gt;But the feature is not full.&lt;/li&gt;
+&lt;li&gt;The main purpose of this open-sourced core is to be used by students/university/research/
+and entry-level-beginners, hence, the commercial quality (bug-free) and
+service of this core is not not not warranted!!!&lt;/li&gt;
+&lt;li&gt;Welcome to visit &lt;a href="http://www.riscv-mcu.com/" rel="nofollow"&gt;http://www.riscv-mcu.com/&lt;/a&gt; for more comprehensive information of RISC-V core availiable for commercial usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-detailed-introduction" class="anchor" aria-hidden="true" href="#detailed-introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Detailed Introduction&lt;/h2&gt;
+&lt;p&gt;We have provided very detailed introduction and quick start-up documents to help you ramping it up.&lt;/p&gt;
+&lt;p&gt;The detailed introduction and the quick start documentation can be seen
+from &lt;a href="https://github.com/SI-RISCV/e200_opensource/tree/master/doc"&gt;https://github.com/SI-RISCV/e200_opensource/tree/master/doc&lt;/a&gt; directory.&lt;/p&gt;
+&lt;p&gt;By following the guidences from the doc, you can very easily start to use Hummingbird E203 processor core and demo SoC.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the Hummingbird E203 Core was deeply introduced in the published Book (蜂鸟E203处理器核在如下出版中文书籍中进行深入浅出的分析讲解):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;《手把手教你设计CPU：RISC-V处理器篇》（已经上市，请在京东、淘宝、当当上搜索 RISC-V关键字）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/SI-RISCV/e200_opensource/blob/master/bookpic.jpg"&gt;&lt;img src="https://github.com/SI-RISCV/e200_opensource/raw/master/bookpic.jpg" width="480" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;《RISC-V架构与嵌入式开发快速入门》（已经上市，请在京东、淘宝、当当上搜索 RISC-V关键字）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/SI-RISCV/e200_opensource/blob/master/book2pic.jpg"&gt;&lt;img src="https://github.com/SI-RISCV/e200_opensource/raw/master/book2pic.jpg" width="620" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What are you waiting for? Try it out now!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dedicated-fpga-board-and-jtag-debugger" class="anchor" aria-hidden="true" href="#dedicated-fpga-board-and-jtag-debugger"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dedicated FPGA-Board and JTAG-Debugger&lt;/h2&gt;
+&lt;p&gt;In order to easy user to study RISC-V in a quick and easy way, we have made a dedicated FPGA-Board and JTAG-Debugger.  Diagram as below:&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-蜂鸟e203专用的fpga开发板" class="anchor" aria-hidden="true" href="#蜂鸟e203专用的fpga开发板"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;蜂鸟E203专用的FPGA开发板&lt;/h4&gt;
+&lt;h4&gt;&lt;a id="user-content-nuclei-ev-kit" class="anchor" aria-hidden="true" href="#nuclei-ev-kit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nuclei EV Kit&lt;/h4&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/SI-RISCV/e200_opensource/blob/master/boards/nucleikit/pics/2-1.jpg"&gt;&lt;img src="https://github.com/SI-RISCV/e200_opensource/raw/master/boards/nucleikit/pics/2-1.jpg" width="480" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-hummingbird-ev-kit" class="anchor" aria-hidden="true" href="#hummingbird-ev-kit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hummingbird EV Kit&lt;/h4&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/SI-RISCV/e200_opensource/blob/master/boards/hbirdkit/pics/p1.jpg"&gt;&lt;img src="https://github.com/SI-RISCV/e200_opensource/raw/master/boards/hbirdkit/pics/p1.jpg" width="480" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-蜂鸟e203专用的jtag调试器" class="anchor" aria-hidden="true" href="#蜂鸟e203专用的jtag调试器"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;蜂鸟E203专用的JTAG调试器&lt;/h4&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/SI-RISCV/e200_opensource/blob/master/boards/hbirdkit/pics/p4.jpg"&gt;&lt;img src="https://github.com/SI-RISCV/e200_opensource/raw/master/boards/hbirdkit/pics/p4.jpg" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The detailed introduction and the relevant documentation can be seen from &lt;a href="https://github.com/SI-RISCV/e200_opensource/tree/master/boards"&gt;https://github.com/SI-RISCV/e200_opensource/tree/master/boards&lt;/a&gt; directory.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-release-history" class="anchor" aria-hidden="true" href="#release-history"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Release History&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-note-at-first" class="anchor" aria-hidden="true" href="#note-at-first"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Note at First:&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- Many people asked if this core can be commercially used, the answer as below:
+   * According to the Apache 2.0 license, this open-sourced core can be used in commercial way.
+   * But the feature is not full (e.g., the debug functionalities is not full, which 
+       cannot add breakpoint into the read-only region, .e.g, ROM/Flash)
+   * The main purpose of this open-sourced core is to be used by students/university/research/
+       and entry-level-beginners, hence, the commercial quality (bug-free) and
+       service of this core is not not not warranted!!! 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-sep-27-2018" class="anchor" aria-hidden="true" href="#sep-27-2018"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sep 27, 2018&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- The 4th official release with some minor fixing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-may-15-2018" class="anchor" aria-hidden="true" href="#may-15-2018"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;May 15, 2018&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- The 3rd official release, please clone this version if you want to use it
+     or reclone it (if you already cloned the earlier-test version).
+-- Compared with earlier-test version, main updates includes:
+   ---- Fixed a Typo in a source file (in rtl/e203/core/e203_exu_decocde.v) 
+   ---- Fixed a Tied-to-zero issue in source files (in rtl/e203/perips/sirv_qspi_physical_*.v) 
+          * This is original freedom-e310 chisel generated QSPI file, which have a bug in Quad-mode (the 4th data enable
+            signal was tied to zero), fix it here
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-jan-13-2018" class="anchor" aria-hidden="true" href="#jan-13-2018"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jan 13, 2018&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- The 2nd official release, please clone this version if you want to use it
+     or reclone it (if you already cloned the earlier-test version).
+-- Compared with earlier-test version, main updates includes:
+   ---- Change the default configuration (in rtl/e203/core/config.v) to 
+          * Add two stage of syncer for IRQ lines to core, not for function, but for timing
+          * Configure the ITCM and DTCM to 64KB by default
+          * Configure the Regfile as DFF based rather than latch based
+   ---- Update the SoC components and structure to make it in line with the latest SoC Spec
+          * Please check `e200_opensource/doc/HBird_OpenSource_MCU_SoC_Spec.pdf` for the details of SoC spec
+   ---- Update some internal core logics, mostly to enhance the timing and frequency, 
+        which is not matter much, please check the git history if you really care to.
+   ---- Note: This version still does not support the hardware-breakpoint yet, i.e.,
+          you cannot set the breakpoint to read-only address space (e.g., ROM, Flash).
+          But soft-break is okay, means you can use regular interactive debugger 
+          functionalities (including set breakpoint to the regular R/W address space).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-oct-13-2017" class="anchor" aria-hidden="true" href="#oct-13-2017"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Oct 13, 2017&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- The 1st official release, please clone this version if you want to use it
+     or reclone it (if you already cloned the earlier-test version).
+-- Compared with earlier-test version, main updates includes:
+   ---- Added the "A" extension for opensourced E203 core, to make it support 
+          IMAC sub-set RISC-V ISA, which is more popularly supported by current
+          toolchain.
+   ---- Updated the RTL Codes accordingly.
+   ---- Updated the Docs accordingly, please see the "revision history" in the
+          Doc from `e200_opensource/doc` directory.
+   ---- Updated verilog tb with random interrupt and bus-error insertion to make
+          more intensive. To support this, updated all the self-check tests accordingly.
+          Although the test become more intensive, the drawback is make the regression 
+          simulation running very slower, so by default now it is turned off.
+          If you want to turn on them without caring the the regression speed,
+          you can hack the tb mannually (de-comment these `force` line from `tb/tb_top.v`)
+          or add macro `ENABLE_TB_FORCE` in simulation (see the note 
+          from `vsim/bin/run.makefile`).
+   ---- Updated some other minor issues which is not matter much, please check the 
+          git history if you really care to.
+   ---- Note: This version does not support the hardware-breakpoint yet, i.e.,
+          you cannot set the breakpoint to read-only address space (e.g., ROM, Flash).
+          But soft-break is okay, means you can use regular interactive debugger 
+          functionalities (including set breakpoint to the regular R/W address space).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-sep-30-2017" class="anchor" aria-hidden="true" href="#sep-30-2017"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sep 30, 2017&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;-- The earlier-test version uploaded to github to try.
+-- NOTE:
+   ---- This is not the official release, please wait the official release which will coming
+        soon and will be recorded at here. You will see the Release History updates.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>SI-RISCV</author><guid isPermaLink="false">https://github.com/SI-RISCV/e200_opensource</guid><pubDate>Wed, 08 Jan 2020 00:02:00 GMT</pubDate></item><item><title>cliffordwolf/picorv32 #3 in Verilog, This week</title><link>https://github.com/cliffordwolf/picorv32</link><description>&lt;p&gt;&lt;i&gt;PicoRV32 - A Size-Optimized RISC-V CPU&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-picorv32---a-size-optimized-risc-v-cpu" class="anchor" aria-hidden="true" href="#picorv32---a-size-optimized-risc-v-cpu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PicoRV32 - A Size-Optimized RISC-V CPU&lt;/h1&gt;
+&lt;p&gt;PicoRV32 is a CPU core that implements the &lt;a href="http://riscv.org/" rel="nofollow"&gt;RISC-V RV32IMC Instruction Set&lt;/a&gt;.
+It can be configured as RV32E, RV32I, RV32IC, RV32IM, or RV32IMC core, and optionally
+contains a built-in interrupt controller.&lt;/p&gt;
+&lt;p&gt;Tools (gcc, binutils, etc..) can be obtained via the &lt;a href="https://riscv.org/software-status/" rel="nofollow"&gt;RISC-V Website&lt;/a&gt;.
+The examples bundled with PicoRV32 expect various RV32 toolchains to be installed in &lt;code&gt;/opt/riscv32i[m][c]&lt;/code&gt;. See
+the &lt;a href="#building-a-pure-rv32i-toolchain"&gt;build instructions below&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;PicoRV32 is free and open hardware licensed under the &lt;a href="http://en.wikipedia.org/wiki/ISC_license" rel="nofollow"&gt;ISC license&lt;/a&gt;
+(a license that is similar in terms to the MIT license or the 2-clause BSD license).&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#features-and-typical-applications"&gt;Features and Typical Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#files-in-this-repository"&gt;Files in this Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#verilog-module-parameters"&gt;Verilog Module Parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cycles-per-instruction-performance"&gt;Cycles per Instruction Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#picorv32-native-memory-interface"&gt;PicoRV32 Native Memory Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#pico-co-processor-interface-pcpi"&gt;Pico Co-Processor Interface (PCPI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#custom-instructions-for-irq-handling"&gt;Custom Instructions for IRQ Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building-a-pure-rv32i-toolchain"&gt;Building a pure RV32I Toolchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#linking-binaries-with-newlib-for-picorv32"&gt;Linking binaries with newlib for PicoRV32&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#evaluation-timing-and-utilization-on-xilinx-7-series-fpgas"&gt;Evaluation: Timing and Utilization on Xilinx 7-Series FPGAs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features-and-typical-applications" class="anchor" aria-hidden="true" href="#features-and-typical-applications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features and Typical Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Small (750-2000 LUTs in 7-Series Xilinx Architecture)&lt;/li&gt;
+&lt;li&gt;High f&lt;sub&gt;max&lt;/sub&gt; (250-450 MHz on 7-Series Xilinx FPGAs)&lt;/li&gt;
+&lt;li&gt;Selectable native memory interface or AXI4-Lite master&lt;/li&gt;
+&lt;li&gt;Optional IRQ support (using a simple custom ISA)&lt;/li&gt;
+&lt;li&gt;Optional Co-Processor Interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This CPU is meant to be used as auxiliary processor in FPGA designs and ASICs. Due
+to its high f&lt;sub&gt;max&lt;/sub&gt; it can be integrated in most existing designs without crossing
+clock domains. When operated on a lower frequency, it will have a lot of timing
+slack and thus can be added to a design without compromising timing closure.&lt;/p&gt;
+&lt;p&gt;For even smaller size it is possible disable support for registers &lt;code&gt;x16&lt;/code&gt;..&lt;code&gt;x31&lt;/code&gt; as
+well as &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and &lt;code&gt;RDINSTRET[H]&lt;/code&gt; instructions, turning the
+processor into an RV32E core.&lt;/p&gt;
+&lt;p&gt;Furthermore it is possible to choose between a dual-port and a single-port
+register file implementation. The former provides better performance while
+the latter results in a smaller core.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: In architectures that implement the register file in dedicated memory
+resources, such as many FPGAs, disabling the 16 upper registers and/or
+disabling the dual-port register file may not further reduce the core size.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The core exists in three variations: &lt;code&gt;picorv32&lt;/code&gt;, &lt;code&gt;picorv32_axi&lt;/code&gt; and &lt;code&gt;picorv32_wb&lt;/code&gt;.
+The first provides a simple native memory interface, that is easy to use in simple
+environments. &lt;code&gt;picorv32_axi&lt;/code&gt; provides an AXI-4 Lite Master interface that can
+easily be integrated with existing systems that are already using the AXI
+standard. &lt;code&gt;picorv32_wb&lt;/code&gt; provides a Wishbone master interface.&lt;/p&gt;
+&lt;p&gt;A separate core &lt;code&gt;picorv32_axi_adapter&lt;/code&gt; is provided to bridge between the native
+memory interface and AXI4. This core can be used to create custom cores that
+include one or more PicoRV32 cores together with local RAM, ROM, and
+memory-mapped peripherals, communicating with each other using the native
+interface, and communicating with the outside world via AXI4.&lt;/p&gt;
+&lt;p&gt;The optional IRQ feature can be used to react to events from the outside, implement
+fault handlers, or catch instructions from a larger ISA and emulate them in
+software.&lt;/p&gt;
+&lt;p&gt;The optional Pico Co-Processor Interface (PCPI) can be used to implement
+non-branching instructions in an external coprocessor. Implementations
+of PCPI cores that implement the M Standard Extension instructions
+&lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; and &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; are included in this package.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-files-in-this-repository" class="anchor" aria-hidden="true" href="#files-in-this-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Files in this Repository&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-readmemd" class="anchor" aria-hidden="true" href="#readmemd"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;README.md&lt;/h4&gt;
+&lt;p&gt;You are reading it right now.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-picorv32v" class="anchor" aria-hidden="true" href="#picorv32v"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;picorv32.v&lt;/h4&gt;
+&lt;p&gt;This Verilog file contains the following Verilog modules:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Module&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The PicoRV32 CPU&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_axi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The version of the CPU with AXI4-Lite interface&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_axi_adapter&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Adapter from PicoRV32 Memory Interface to AXI4-Lite&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_wb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The version of the CPU with Wishbone Master interface&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_mul&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A PCPI core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A version of &lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt; using a single cycle multiplier&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;picorv32_pcpi_div&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A PCPI core that implements the &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instructions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Simply copy this file into your project.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-makefile-and-testbenches" class="anchor" aria-hidden="true" href="#makefile-and-testbenches"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Makefile and testbenches&lt;/h4&gt;
+&lt;p&gt;A basic test environment. Run &lt;code&gt;make test&lt;/code&gt; to run the standard test bench (&lt;code&gt;testbench.v&lt;/code&gt;)
+in the standard configurations. There are other test benches and configurations. See
+the &lt;code&gt;test_*&lt;/code&gt; make target in the Makefile for details.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;make test_ez&lt;/code&gt; to run &lt;code&gt;testbench_ez.v&lt;/code&gt;, a very simple test bench that does
+not require an external firmware .hex file. This can be useful in environments
+where the RISC-V compiler toolchain is not available.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: The test bench is using Icarus Verilog. However, Icarus Verilog 0.9.7
+(the latest release at the time of writing) has a few bugs that prevent the
+test bench from running. Upgrade to the latest github master of Icarus Verilog
+to run the test bench.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-firmware" class="anchor" aria-hidden="true" href="#firmware"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;firmware/&lt;/h4&gt;
+&lt;p&gt;A simple test firmware. This runs the basic tests from &lt;code&gt;tests/&lt;/code&gt;, some C code, tests IRQ
+handling and the multiply PCPI core.&lt;/p&gt;
+&lt;p&gt;All the code in &lt;code&gt;firmware/&lt;/code&gt; is in the public domain. Simply copy whatever you can use.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;tests/&lt;/h4&gt;
+&lt;p&gt;Simple instruction-level tests from &lt;a href="https://github.com/riscv/riscv-tests"&gt;riscv-tests&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-dhrystone" class="anchor" aria-hidden="true" href="#dhrystone"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dhrystone/&lt;/h4&gt;
+&lt;p&gt;Another simple test firmware that runs the Dhrystone benchmark.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-picosoc" class="anchor" aria-hidden="true" href="#picosoc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;picosoc/&lt;/h4&gt;
+&lt;p&gt;A simple example SoC using PicoRV32 that can execute code directly from a
+memory mapped SPI flash.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-scripts" class="anchor" aria-hidden="true" href="#scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;scripts/&lt;/h4&gt;
+&lt;p&gt;Various scripts and examples for different (synthesis) tools and hardware architectures.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-verilog-module-parameters" class="anchor" aria-hidden="true" href="#verilog-module-parameters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verilog Module Parameters&lt;/h2&gt;
+&lt;p&gt;The following Verilog module parameters can be used to configure the PicoRV32
+core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_counters-default--1" class="anchor" aria-hidden="true" href="#enable_counters-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_COUNTERS (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for the &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and
+&lt;code&gt;RDINSTRET[H]&lt;/code&gt; instructions. This instructions will cause a hardware
+trap (like any other unsupported instruction) if &lt;code&gt;ENABLE_COUNTERS&lt;/code&gt; is set to zero.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Strictly speaking the &lt;code&gt;RDCYCLE[H]&lt;/code&gt;, &lt;code&gt;RDTIME[H]&lt;/code&gt;, and &lt;code&gt;RDINSTRET[H]&lt;/code&gt;
+instructions are not optional for an RV32I core. But chances are they are not
+going to be missed after the application code has been debugged and profiled.
+This instructions are optional for an RV32E core.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_counters64-default--1" class="anchor" aria-hidden="true" href="#enable_counters64-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_COUNTERS64 (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for the &lt;code&gt;RDCYCLEH&lt;/code&gt;, &lt;code&gt;RDTIMEH&lt;/code&gt;, and &lt;code&gt;RDINSTRETH&lt;/code&gt;
+instructions. If this parameter is set to 0, and &lt;code&gt;ENABLE_COUNTERS&lt;/code&gt; is set to 1,
+then only the &lt;code&gt;RDCYCLE&lt;/code&gt;, &lt;code&gt;RDTIME&lt;/code&gt;, and &lt;code&gt;RDINSTRET&lt;/code&gt; instructions are available.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_regs_16_31-default--1" class="anchor" aria-hidden="true" href="#enable_regs_16_31-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_REGS_16_31 (default = 1)&lt;/h4&gt;
+&lt;p&gt;This parameter enables support for registers the &lt;code&gt;x16&lt;/code&gt;..&lt;code&gt;x31&lt;/code&gt;. The RV32E ISA
+excludes this registers. However, the RV32E ISA spec requires a hardware trap
+for when code tries to access this registers. This is not implemented in PicoRV32.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_regs_dualport-default--1" class="anchor" aria-hidden="true" href="#enable_regs_dualport-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_REGS_DUALPORT (default = 1)&lt;/h4&gt;
+&lt;p&gt;The register file can be implemented with two or one read ports. A dual ported
+register file improves performance a bit, but can also increase the size of
+the core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-latched_mem_rdata-default--0" class="anchor" aria-hidden="true" href="#latched_mem_rdata-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LATCHED_MEM_RDATA (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 if the &lt;code&gt;mem_rdata&lt;/code&gt; is kept stable by the external circuit after a
+transaction. In the default configuration the PicoRV32 core only expects the
+&lt;code&gt;mem_rdata&lt;/code&gt; input to be valid in the cycle with &lt;code&gt;mem_valid &amp;amp;&amp;amp; mem_ready&lt;/code&gt; and
+latches the value internally.&lt;/p&gt;
+&lt;p&gt;This parameter is only available for the &lt;code&gt;picorv32&lt;/code&gt; core. In the
+&lt;code&gt;picorv32_axi&lt;/code&gt; and &lt;code&gt;picorv32_wb&lt;/code&gt; core this is implicitly set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_stage_shift-default--1" class="anchor" aria-hidden="true" href="#two_stage_shift-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_STAGE_SHIFT (default = 1)&lt;/h4&gt;
+&lt;p&gt;By default shift operations are performed in two stages: first shifts in units
+of 4 bits and then shifts in units of 1 bit. This speeds up shift operations,
+but adds additional hardware. Set this parameter to 0 to disable the two-stage
+shift to further reduce the size of the core.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-barrel_shifter-default--0" class="anchor" aria-hidden="true" href="#barrel_shifter-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BARREL_SHIFTER (default = 0)&lt;/h4&gt;
+&lt;p&gt;By default shift operations are performed by successively shifting by a
+small amount (see &lt;code&gt;TWO_STAGE_SHIFT&lt;/code&gt; above). With this option set, a barrel
+shifter is used instead.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_cycle_compare-default--0" class="anchor" aria-hidden="true" href="#two_cycle_compare-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_CYCLE_COMPARE (default = 0)&lt;/h4&gt;
+&lt;p&gt;This relaxes the longest data path a bit by adding an additional FF stage
+at the cost of adding an additional clock cycle delay to the conditional
+branch instructions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Enabling this parameter will be most effective when retiming (aka
+"register balancing") is enabled in the synthesis flow.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-two_cycle_alu-default--0" class="anchor" aria-hidden="true" href="#two_cycle_alu-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TWO_CYCLE_ALU (default = 0)&lt;/h4&gt;
+&lt;p&gt;This adds an additional FF stage in the ALU data path, improving timing
+at the cost of an additional clock cycle for all instructions that use
+the ALU.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Enabling this parameter will be most effective when retiming (aka
+"register balancing") is enabled in the synthesis flow.&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-compressed_isa-default--0" class="anchor" aria-hidden="true" href="#compressed_isa-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;COMPRESSED_ISA (default = 0)&lt;/h4&gt;
+&lt;p&gt;This enables support for the RISC-V Compressed Instruction Set.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-catch_misalign-default--1" class="anchor" aria-hidden="true" href="#catch_misalign-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CATCH_MISALIGN (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable the circuitry for catching misaligned memory
+accesses.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-catch_illinsn-default--1" class="anchor" aria-hidden="true" href="#catch_illinsn-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CATCH_ILLINSN (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable the circuitry for catching illegal instructions.&lt;/p&gt;
+&lt;p&gt;The core will still trap on &lt;code&gt;EBREAK&lt;/code&gt; instructions with this option
+set to 0. With IRQs enabled, an &lt;code&gt;EBREAK&lt;/code&gt; normally triggers an IRQ 1. With
+this option set to 0, an &lt;code&gt;EBREAK&lt;/code&gt; will trap the processor without
+triggering an interrupt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_pcpi-default--0" class="anchor" aria-hidden="true" href="#enable_pcpi-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_PCPI (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to enable the Pico Co-Processor Interface (PCPI).&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_mul-default--0" class="anchor" aria-hidden="true" href="#enable_mul-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_MUL (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_mul&lt;/code&gt;
+core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_fast_mul-default--0" class="anchor" aria-hidden="true" href="#enable_fast_mul-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_FAST_MUL (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_fast_mul&lt;/code&gt;
+core that implements the &lt;code&gt;MUL[H[SU|U]]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;p&gt;If both ENABLE_MUL and ENABLE_FAST_MUL are set then the ENABLE_MUL setting
+will be ignored and the fast multiplier core will be instantiated.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_div-default--0" class="anchor" aria-hidden="true" href="#enable_div-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_DIV (default = 0)&lt;/h4&gt;
+&lt;p&gt;This parameter internally enables PCPI and instantiates the &lt;code&gt;picorv32_pcpi_div&lt;/code&gt;
+core that implements the &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instructions. The external PCPI
+interface only becomes functional when ENABLE_PCPI is set as well.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq-default--0" class="anchor" aria-hidden="true" href="#enable_irq-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to enable IRQs. (see "Custom Instructions for IRQ Handling" below
+for a discussion of IRQs)&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq_qregs-default--1" class="anchor" aria-hidden="true" href="#enable_irq_qregs-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ_QREGS (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable support for the &lt;code&gt;getq&lt;/code&gt; and &lt;code&gt;setq&lt;/code&gt; instructions. Without
+the q-registers, the irq return address will be stored in x3 (gp) and the IRQ
+bitmask in x4 (tp), the global pointer and thread pointer registers according
+to the RISC-V ABI.  Code generated from ordinary C code will not interact with
+those registers.&lt;/p&gt;
+&lt;p&gt;Support for q-registers is always disabled when ENABLE_IRQ is set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_irq_timer-default--1" class="anchor" aria-hidden="true" href="#enable_irq_timer-default--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_IRQ_TIMER (default = 1)&lt;/h4&gt;
+&lt;p&gt;Set this to 0 to disable support for the &lt;code&gt;timer&lt;/code&gt; instruction.&lt;/p&gt;
+&lt;p&gt;Support for the timer is always disabled when ENABLE_IRQ is set to 0.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-enable_trace-default--0" class="anchor" aria-hidden="true" href="#enable_trace-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ENABLE_TRACE (default = 0)&lt;/h4&gt;
+&lt;p&gt;Produce an execution trace using the &lt;code&gt;trace_valid&lt;/code&gt; and &lt;code&gt;trace_data&lt;/code&gt; output ports.
+For a demontration of this feature run &lt;code&gt;make test_vcd&lt;/code&gt; to create a trace file
+and then run &lt;code&gt;python3 showtrace.py testbench.trace firmware/firmware.elf&lt;/code&gt; to decode
+it.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-regs_init_zero-default--0" class="anchor" aria-hidden="true" href="#regs_init_zero-default--0"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;REGS_INIT_ZERO (default = 0)&lt;/h4&gt;
+&lt;p&gt;Set this to 1 to initialize all registers to zero (using a Verilog &lt;code&gt;initial&lt;/code&gt; block).
+This can be useful for simulation or formal verification.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-masked_irq-default--32h-0000_0000" class="anchor" aria-hidden="true" href="#masked_irq-default--32h-0000_0000"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MASKED_IRQ (default = 32'h 0000_0000)&lt;/h4&gt;
+&lt;p&gt;A 1 bit in this bitmask corresponds to a permanently disabled IRQ.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-latched_irq-default--32h-ffff_ffff" class="anchor" aria-hidden="true" href="#latched_irq-default--32h-ffff_ffff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LATCHED_IRQ (default = 32'h ffff_ffff)&lt;/h4&gt;
+&lt;p&gt;A 1 bit in this bitmask indicates that the corresponding IRQ is "latched", i.e.
+when the IRQ line is high for only one cycle, the interrupt will be marked as
+pending and stay pending until the interrupt handler is called (aka "pulse
+interrupts" or "edge-triggered interrupts").&lt;/p&gt;
+&lt;p&gt;Set a bit in this bitmask to 0 to convert an interrupt line to operate
+as "level sensitive" interrupt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-progaddr_reset-default--32h-0000_0000" class="anchor" aria-hidden="true" href="#progaddr_reset-default--32h-0000_0000"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROGADDR_RESET (default = 32'h 0000_0000)&lt;/h4&gt;
+&lt;p&gt;The start address of the program.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-progaddr_irq-default--32h-0000_0010" class="anchor" aria-hidden="true" href="#progaddr_irq-default--32h-0000_0010"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PROGADDR_IRQ (default = 32'h 0000_0010)&lt;/h4&gt;
+&lt;p&gt;The start address of the interrupt handler.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-stackaddr-default--32h-ffff_ffff" class="anchor" aria-hidden="true" href="#stackaddr-default--32h-ffff_ffff"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;STACKADDR (default = 32'h ffff_ffff)&lt;/h4&gt;
+&lt;p&gt;When this parameter has a value different from 0xffffffff, then register &lt;code&gt;x2&lt;/code&gt; (the
+stack pointer) is initialized to this value on reset. (All other registers remain
+uninitialized.) Note that the RISC-V calling convention requires the stack pointer
+to be aligned on 16 bytes boundaries (4 bytes for the RV32I soft float calling
+convention).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-cycles-per-instruction-performance" class="anchor" aria-hidden="true" href="#cycles-per-instruction-performance"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cycles per Instruction Performance&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;A short reminder: This core is optimized for size and f&lt;sub&gt;max&lt;/sub&gt;, not performance.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unless stated otherwise, the following numbers apply to a PicoRV32 with
+ENABLE_REGS_DUALPORT active and connected to a memory that can accommodate
+requests within one clock cycle.&lt;/p&gt;
+&lt;p&gt;The average Cycles per Instruction (CPI) is approximately 4, depending on the mix of
+instructions in the code. The CPI numbers for the individual instructions can
+be found in the table below. The column "CPI (SP)" contains the CPI numbers for
+a core built without ENABLE_REGS_DUALPORT.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Instruction&lt;/th&gt;
+&lt;th align="right"&gt;CPI&lt;/th&gt;
+&lt;th align="right"&gt;CPI (SP)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;direct jump (jal)&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ALU reg + immediate&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ALU reg + reg&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;branch (not taken)&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;td align="right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;memory load&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;memory store&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;branch (taken)&lt;/td&gt;
+&lt;td align="right"&gt;5&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;indirect jump (jalr)&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;td align="right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift operations&lt;/td&gt;
+&lt;td align="right"&gt;4-14&lt;/td&gt;
+&lt;td align="right"&gt;4-15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When &lt;code&gt;ENABLE_MUL&lt;/code&gt; is activated, then a &lt;code&gt;MUL&lt;/code&gt; instruction will execute
+in 40 cycles and a &lt;code&gt;MULH[SU|U]&lt;/code&gt; instruction will execute in 72 cycles.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;ENABLE_DIV&lt;/code&gt; is activated, then a &lt;code&gt;DIV[U]/REM[U]&lt;/code&gt; instruction will
+execute in 40 cycles.&lt;/p&gt;
+&lt;p&gt;When &lt;code&gt;BARREL_SHIFTER&lt;/code&gt; is activated, a shift operation takes as long as
+any other ALU operation.&lt;/p&gt;
+&lt;p&gt;The following dhrystone benchmark results are for a core with enabled
+&lt;code&gt;ENABLE_FAST_MUL&lt;/code&gt;, &lt;code&gt;ENABLE_DIV&lt;/code&gt;, and &lt;code&gt;BARREL_SHIFTER&lt;/code&gt; options.&lt;/p&gt;
+&lt;p&gt;Dhrystone benchmark results: 0.516 DMIPS/MHz (908 Dhrystones/Second/MHz)&lt;/p&gt;
+&lt;p&gt;For the Dhrystone benchmark the average CPI is 4.100.&lt;/p&gt;
+&lt;p&gt;Without using the look-ahead memory interface (usually required for max
+clock speed), this results drop to 0.305 DMIPS/MHz and 5.232 CPI.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-picorv32-native-memory-interface" class="anchor" aria-hidden="true" href="#picorv32-native-memory-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PicoRV32 Native Memory Interface&lt;/h2&gt;
+&lt;p&gt;The native memory interface of PicoRV32 is a simple valid-ready interface
+that can run one memory transfer at a time:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        mem_valid
+output        mem_instr
+input         mem_ready
+
+output [31:0] mem_addr
+output [31:0] mem_wdata
+output [ 3:0] mem_wstrb
+input  [31:0] mem_rdata
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The core initiates a memory transfer by asserting &lt;code&gt;mem_valid&lt;/code&gt;. The valid
+signal stays high until the peer asserts &lt;code&gt;mem_ready&lt;/code&gt;. All core outputs
+are stable over the &lt;code&gt;mem_valid&lt;/code&gt; period. If the memory transfer is an
+instruction fetch, the core asserts &lt;code&gt;mem_instr&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-read-transfer" class="anchor" aria-hidden="true" href="#read-transfer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Read Transfer&lt;/h4&gt;
+&lt;p&gt;In a read transfer &lt;code&gt;mem_wstrb&lt;/code&gt; has the value 0 and &lt;code&gt;mem_wdata&lt;/code&gt; is unused.&lt;/p&gt;
+&lt;p&gt;The memory reads the address &lt;code&gt;mem_addr&lt;/code&gt; and makes the read value available on
+&lt;code&gt;mem_rdata&lt;/code&gt; in the cycle &lt;code&gt;mem_ready&lt;/code&gt; is high.&lt;/p&gt;
+&lt;p&gt;There is no need for an external wait cycle. The memory read can be implemented
+asynchronously with &lt;code&gt;mem_ready&lt;/code&gt; going high in the same cycle as &lt;code&gt;mem_valid&lt;/code&gt;, or
+&lt;code&gt;mem_ready&lt;/code&gt; being tied to constant 1.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-write-transfer" class="anchor" aria-hidden="true" href="#write-transfer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Write Transfer&lt;/h4&gt;
+&lt;p&gt;In a write transfer &lt;code&gt;mem_wstrb&lt;/code&gt; is not 0 and &lt;code&gt;mem_rdata&lt;/code&gt; is unused. The memory
+write the data at &lt;code&gt;mem_wdata&lt;/code&gt; to the address &lt;code&gt;mem_addr&lt;/code&gt; and acknowledges the
+transfer by asserting &lt;code&gt;mem_ready&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The 4 bits of &lt;code&gt;mem_wstrb&lt;/code&gt; are write enables for the four bytes in the addressed
+word. Only the 8 values &lt;code&gt;0000&lt;/code&gt;, &lt;code&gt;1111&lt;/code&gt;, &lt;code&gt;1100&lt;/code&gt;, &lt;code&gt;0011&lt;/code&gt;, &lt;code&gt;1000&lt;/code&gt;, &lt;code&gt;0100&lt;/code&gt;, &lt;code&gt;0010&lt;/code&gt;,
+and &lt;code&gt;0001&lt;/code&gt; are possible, i.e. no write, write 32 bits, write upper 16 bits,
+write lower 16, or write a single byte respectively.&lt;/p&gt;
+&lt;p&gt;There is no need for an external wait cycle. The memory can acknowledge the
+write immediately  with &lt;code&gt;mem_ready&lt;/code&gt; going high in the same cycle as
+&lt;code&gt;mem_valid&lt;/code&gt;, or &lt;code&gt;mem_ready&lt;/code&gt; being tied to constant 1.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-look-ahead-interface" class="anchor" aria-hidden="true" href="#look-ahead-interface"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Look-Ahead Interface&lt;/h4&gt;
+&lt;p&gt;The PicoRV32 core also provides a "Look-Ahead Memory Interface" that provides
+all information about the next memory transfer one clock cycle earlier than the
+normal interface.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        mem_la_read
+output        mem_la_write
+output [31:0] mem_la_addr
+output [31:0] mem_la_wdata
+output [ 3:0] mem_la_wstrb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the clock cycle before &lt;code&gt;mem_valid&lt;/code&gt; goes high, this interface will output a
+pulse on &lt;code&gt;mem_la_read&lt;/code&gt; or &lt;code&gt;mem_la_write&lt;/code&gt; to indicate the start of a read or
+write transaction in the next clock cycle.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: The signals &lt;code&gt;mem_la_read&lt;/code&gt;, &lt;code&gt;mem_la_write&lt;/code&gt;, and &lt;code&gt;mem_la_addr&lt;/code&gt; are driven
+by combinatorial circuits within the PicoRV32 core. It might be harder to
+achieve timing closure with the look-ahead interface than with the normal
+memory interface described above.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-pico-co-processor-interface-pcpi" class="anchor" aria-hidden="true" href="#pico-co-processor-interface-pcpi"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pico Co-Processor Interface (PCPI)&lt;/h2&gt;
+&lt;p&gt;The Pico Co-Processor Interface (PCPI) can be used to implement non-branching
+instructions in external cores:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output        pcpi_valid
+output [31:0] pcpi_insn
+output [31:0] pcpi_rs1
+output [31:0] pcpi_rs2
+input         pcpi_wr
+input  [31:0] pcpi_rd
+input         pcpi_wait
+input         pcpi_ready
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When an unsupported instruction is encountered and the PCPI feature is
+activated (see ENABLE_PCPI above), then &lt;code&gt;pcpi_valid&lt;/code&gt; is asserted, the
+instruction word itself is output on &lt;code&gt;pcpi_insn&lt;/code&gt;, the &lt;code&gt;rs1&lt;/code&gt; and &lt;code&gt;rs2&lt;/code&gt;
+fields are decoded and the values in those registers are output
+on &lt;code&gt;pcpi_rs1&lt;/code&gt; and &lt;code&gt;pcpi_rs2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;An external PCPI core can then decode the instruction, execute it, and assert
+&lt;code&gt;pcpi_ready&lt;/code&gt; when execution of the instruction is finished. Optionally a
+result value can be written to &lt;code&gt;pcpi_rd&lt;/code&gt; and &lt;code&gt;pcpi_wr&lt;/code&gt; asserted. The
+PicoRV32 core will then decode the &lt;code&gt;rd&lt;/code&gt; field of the instruction and
+write the value from &lt;code&gt;pcpi_rd&lt;/code&gt; to the respective register.&lt;/p&gt;
+&lt;p&gt;When no external PCPI core acknowledges the instruction within 16 clock
+cycles, then an illegal instruction exception is raised and the respective
+interrupt handler is called. A PCPI core that needs more than a couple of
+cycles to execute an instruction, should assert &lt;code&gt;pcpi_wait&lt;/code&gt; as soon as
+the instruction has been decoded successfully and keep it asserted until
+it asserts &lt;code&gt;pcpi_ready&lt;/code&gt;. This will prevent the PicoRV32 core from raising
+an illegal instruction exception.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-custom-instructions-for-irq-handling" class="anchor" aria-hidden="true" href="#custom-instructions-for-irq-handling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Instructions for IRQ Handling&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note: The IRQ handling features in PicoRV32 do not follow the RISC-V
+Privileged ISA specification. Instead a small set of very simple custom
+instructions is used to implement IRQ handling with minimal hardware
+overhead.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The following custom instructions are only supported when IRQs are enabled
+via the &lt;code&gt;ENABLE_IRQ&lt;/code&gt; parameter (see above).&lt;/p&gt;
+&lt;p&gt;The PicoRV32 core has a built-in interrupt controller with 32 interrupt inputs. An
+interrupt can be triggered by asserting the corresponding bit in the &lt;code&gt;irq&lt;/code&gt;
+input of the core.&lt;/p&gt;
+&lt;p&gt;When the interrupt handler is started, the &lt;code&gt;eoi&lt;/code&gt; End Of Interrupt (EOI) signals
+for the handled interrupts go high. The &lt;code&gt;eoi&lt;/code&gt; signals go low again when the
+interrupt handler returns.&lt;/p&gt;
+&lt;p&gt;The IRQs 0-2 can be triggered internally by the following built-in interrupt sources:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="right"&gt;IRQ&lt;/th&gt;
+&lt;th&gt;Interrupt Source&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;0&lt;/td&gt;
+&lt;td&gt;Timer Interrupt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;1&lt;/td&gt;
+&lt;td&gt;EBREAK/ECALL or Illegal Instruction&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="right"&gt;2&lt;/td&gt;
+&lt;td&gt;BUS Error (Unalign Memory Access)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This interrupts can also be triggered by external sources, such as co-processors
+connected via PCPI.&lt;/p&gt;
+&lt;p&gt;The core has 4 additional 32-bit registers &lt;code&gt;q0 .. q3&lt;/code&gt; that are used for IRQ
+handling. When the IRQ handler is called, the register &lt;code&gt;q0&lt;/code&gt; contains the return
+address and &lt;code&gt;q1&lt;/code&gt; contains a bitmask of all IRQs to be handled. This means one
+call to the interrupt handler needs to service more than one IRQ when more than
+one bit is set in &lt;code&gt;q1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When support for compressed instructions is enabled, then the LSB of q0 is set
+when the interrupted instruction is a compressed instruction. This can be used if
+the IRQ handler wants to decode the interrupted instruction.&lt;/p&gt;
+&lt;p&gt;Registers &lt;code&gt;q2&lt;/code&gt; and &lt;code&gt;q3&lt;/code&gt; are uninitialized and can be used as temporary storage
+when saving/restoring register values in the IRQ handler.&lt;/p&gt;
+&lt;p&gt;All of the following instructions are encoded under the &lt;code&gt;custom0&lt;/code&gt; opcode. The f3
+and rs2 fields are ignored in all this instructions.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="firmware/custom_ops.S"&gt;firmware/custom_ops.S&lt;/a&gt; for GNU assembler macros that
+implement mnemonics for this instructions.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="firmware/start.S"&gt;firmware/start.S&lt;/a&gt; for an example implementation of an
+interrupt handler assembler wrapper, and &lt;a href="firmware/irq.c"&gt;firmware/irq.c&lt;/a&gt; for
+the actual interrupt handler.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-getq-rd-qs" class="anchor" aria-hidden="true" href="#getq-rd-qs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;getq rd, qs&lt;/h4&gt;
+&lt;p&gt;This instruction copies the value from a q-register to a general-purpose
+register.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000000 ----- 000XX --- XXXXX 0001011
+f7      rs2   qs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;getq x5, q2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-setq-qd-rs" class="anchor" aria-hidden="true" href="#setq-qd-rs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;setq qd, rs&lt;/h4&gt;
+&lt;p&gt;This instruction copies the value from a general-purpose register to a
+q-register.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000001 ----- XXXXX --- 000XX 0001011
+f7      rs2   rs    f3  qd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;setq q2, x5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-retirq" class="anchor" aria-hidden="true" href="#retirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;retirq&lt;/h4&gt;
+&lt;p&gt;Return from interrupt. This instruction copies the value from &lt;code&gt;q0&lt;/code&gt;
+to the program counter and re-enables interrupts.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000010 ----- 00000 --- 00000 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;retirq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-maskirq" class="anchor" aria-hidden="true" href="#maskirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;maskirq&lt;/h4&gt;
+&lt;p&gt;The "IRQ Mask" register contains a bitmask of masked (disabled) interrupts.
+This instruction writes a new value to the irq mask register and reads the old
+value.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000011 ----- XXXXX --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;maskirq x1, x2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The processor starts with all interrupts disabled.&lt;/p&gt;
+&lt;p&gt;An illegal instruction or bus error while the illegal instruction or bus error
+interrupt is disabled will cause the processor to halt.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-waitirq" class="anchor" aria-hidden="true" href="#waitirq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;waitirq&lt;/h4&gt;
+&lt;p&gt;Pause execution until an interrupt becomes pending. The bitmask of pending IRQs
+is written to &lt;code&gt;rd&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000100 ----- 00000 --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;waitirq x1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-timer" class="anchor" aria-hidden="true" href="#timer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;timer&lt;/h4&gt;
+&lt;p&gt;Reset the timer counter to a new value. The counter counts down clock cycles and
+triggers the timer interrupt when transitioning from 1 to 0. Setting the
+counter to zero disables the timer. The old value of the counter is written to
+&lt;code&gt;rd&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0000101 ----- XXXXX --- XXXXX 0001011
+f7      rs2   rs    f3  rd    opcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;timer x1, x2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-building-a-pure-rv32i-toolchain" class="anchor" aria-hidden="true" href="#building-a-pure-rv32i-toolchain"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building a pure RV32I Toolchain&lt;/h2&gt;
+&lt;p&gt;TL;DR: Run the following commands to build the complete toolchain:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make download-tools
+make -j$(nproc) build-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The default settings in the &lt;a href="https://github.com/riscv/riscv-tools"&gt;riscv-tools&lt;/a&gt; build
+scripts will build a compiler, assembler and linker that can target any RISC-V ISA,
+but the libraries are built for RV32G and RV64G targets. Follow the instructions
+below to build a complete toolchain (including libraries) that target a pure RV32I
+CPU.&lt;/p&gt;
+&lt;p&gt;The following commands will build the RISC-V GNU toolchain and libraries for a
+pure RV32I target, and install it in &lt;code&gt;/opt/riscv32i&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Ubuntu packages needed:
+sudo apt-get install autoconf automake autotools-dev curl libmpc-dev \
+        libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo \
+    gperf libtool patchutils bc zlib1g-dev git libexpat1-dev
+
+sudo mkdir /opt/riscv32i
+sudo chown $USER /opt/riscv32i
+
+git clone https://github.com/riscv/riscv-gnu-toolchain riscv-gnu-toolchain-rv32i
+cd riscv-gnu-toolchain-rv32i
+git checkout 411d134
+git submodule update --init --recursive
+
+mkdir build; cd build
+../configure --with-arch=rv32i --prefix=/opt/riscv32i
+make -j$(nproc)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The commands will all be named using the prefix &lt;code&gt;riscv32-unknown-elf-&lt;/code&gt;, which
+makes it easy to install them side-by-side with the regular riscv-tools (those
+are using the name prefix &lt;code&gt;riscv64-unknown-elf-&lt;/code&gt; by default).&lt;/p&gt;
+&lt;p&gt;Alternatively you can simply use one of the following make targets from PicoRV32's
+Makefile to build a &lt;code&gt;RV32I[M][C]&lt;/code&gt; toolchain. You still need to install all
+prerequisites, as described above. Then run any of the following commands in the
+PicoRV32 source directory:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Command&lt;/th&gt;
+&lt;th align="left"&gt;Install Directory&lt;/th&gt;
+&lt;th align="left"&gt;ISA&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32i-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32i/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32I&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32ic-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32ic/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IC&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32im-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32im/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IM&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;code&gt;make -j$(nproc) build-riscv32imc-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;/opt/riscv32imc/&lt;/code&gt;&lt;/td&gt;
+&lt;td align="left"&gt;&lt;code&gt;RV32IMC&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Or simply run &lt;code&gt;make -j$(nproc) build-tools&lt;/code&gt; to build and install all four tool chains.&lt;/p&gt;
+&lt;p&gt;By default calling any of those make targets will (re-)download the toolchain
+sources. Run &lt;code&gt;make download-tools&lt;/code&gt; to download the sources to &lt;code&gt;/var/cache/distfiles/&lt;/code&gt;
+once in advance.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: These instructions are for git rev 411d134 (2018-02-14) of riscv-gnu-toolchain.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-linking-binaries-with-newlib-for-picorv32" class="anchor" aria-hidden="true" href="#linking-binaries-with-newlib-for-picorv32"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linking binaries with newlib for PicoRV32&lt;/h2&gt;
+&lt;p&gt;The tool chains (see last section for install instructions) come with a version of
+the newlib C standard library.&lt;/p&gt;
+&lt;p&gt;Use the linker script &lt;a href="firmware/riscv.ld"&gt;firmware/riscv.ld&lt;/a&gt; for linking binaries
+against the newlib library. Using this linker script will create a binary that
+has its entry point at 0x10000. (The default linker script does not have a static
+entry point, thus a proper ELF loader would be needed that can determine the
+entry point at runtime while loading the program.)&lt;/p&gt;
+&lt;p&gt;Newlib comes with a few syscall stubs. You need to provide your own implementation
+of those syscalls and link your program with this implementation, overwriting the
+default stubs from newlib. See &lt;code&gt;syscalls.c&lt;/code&gt; in &lt;a href="scripts/cxxdemo/"&gt;scripts/cxxdemo/&lt;/a&gt;
+for an example of how to do that.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-evaluation-timing-and-utilization-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#evaluation-timing-and-utilization-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Evaluation: Timing and Utilization on Xilinx 7-Series FPGAs&lt;/h2&gt;
+&lt;p&gt;The following evaluations have been performed with Vivado 2017.3.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-timing-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#timing-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Timing on Xilinx 7-Series FPGAs&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;picorv32_axi&lt;/code&gt; module with enabled &lt;code&gt;TWO_CYCLE_ALU&lt;/code&gt; has been placed and
+routed for Xilinx Artix-7T, Kintex-7T, Virtex-7T, Kintex UltraScale, and Virtex
+UltraScale devices in all speed grades. A binary search is used to find the
+shortest clock period for which the design meets timing.&lt;/p&gt;
+&lt;p&gt;See &lt;code&gt;make table.txt&lt;/code&gt; in &lt;a href="scripts/vivado/"&gt;scripts/vivado/&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Device&lt;/th&gt;
+&lt;th align="left"&gt;Device&lt;/th&gt;
+&lt;th align="center"&gt;Speedgrade&lt;/th&gt;
+&lt;th align="right"&gt;Clock Period (Freq.)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7k70t-fbg676-2&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.4 ns (416 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7k70t-fbg676-3&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.2 ns (454 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7v585t-ffg1761-2&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.3 ns (434 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex-7T&lt;/td&gt;
+&lt;td align="left"&gt;xc7v585t-ffg1761-3&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.2 ns (454 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcku035-fbva676-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.0 ns (500 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcku035-fbva676-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.8 ns (555 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcvu065-ffvc1517-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;2.1 ns (476 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale&lt;/td&gt;
+&lt;td align="left"&gt;xcvu065-ffvc1517-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;2.0 ns (500 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcku3p-ffva676-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;1.4 ns (714 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Kintex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcku3p-ffva676-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.3 ns (769 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcvu3p-ffvc1517-2-e&lt;/td&gt;
+&lt;td align="center"&gt;-2&lt;/td&gt;
+&lt;td align="right"&gt;1.5 ns (666 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Xilinx Virtex UltraScale+&lt;/td&gt;
+&lt;td align="left"&gt;xcvu3p-ffvc1517-3-e&lt;/td&gt;
+&lt;td align="center"&gt;-3&lt;/td&gt;
+&lt;td align="right"&gt;1.4 ns (714 MHz)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;&lt;a id="user-content-utilization-on-xilinx-7-series-fpgas" class="anchor" aria-hidden="true" href="#utilization-on-xilinx-7-series-fpgas"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Utilization on Xilinx 7-Series FPGAs&lt;/h4&gt;
+&lt;p&gt;The following table lists the resource utilization in area-optimized synthesis
+for the following three cores:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (small):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module without counter instructions,
+without two-stage shifts, with externally latched &lt;code&gt;mem_rdata&lt;/code&gt;, and without
+catching of misaligned memory accesses and illegal instructions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (regular):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module in its default configuration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PicoRV32 (large):&lt;/strong&gt; The &lt;code&gt;picorv32&lt;/code&gt; module with enabled PCPI, IRQ, MUL,
+DIV, BARREL_SHIFTER, and COMPRESSED_ISA features.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;code&gt;make area&lt;/code&gt; in &lt;a href="scripts/vivado/"&gt;scripts/vivado/&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Core Variant&lt;/th&gt;
+&lt;th align="right"&gt;Slice LUTs&lt;/th&gt;
+&lt;th align="right"&gt;LUTs as Memory&lt;/th&gt;
+&lt;th align="right"&gt;Slice Registers&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (small)&lt;/td&gt;
+&lt;td align="right"&gt;761&lt;/td&gt;
+&lt;td align="right"&gt;48&lt;/td&gt;
+&lt;td align="right"&gt;442&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (regular)&lt;/td&gt;
+&lt;td align="right"&gt;917&lt;/td&gt;
+&lt;td align="right"&gt;48&lt;/td&gt;
+&lt;td align="right"&gt;583&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;PicoRV32 (large)&lt;/td&gt;
+&lt;td align="right"&gt;2019&lt;/td&gt;
+&lt;td align="right"&gt;88&lt;/td&gt;
+&lt;td align="right"&gt;1085&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>cliffordwolf</author><guid isPermaLink="false">https://github.com/cliffordwolf/picorv32</guid><pubDate>Wed, 08 Jan 2020 00:03:00 GMT</pubDate></item><item><title>Summer-Summer/ComputerArchitectureLab #4 in Verilog, This week</title><link>https://github.com/Summer-Summer/ComputerArchitectureLab</link><description>&lt;p&gt;&lt;i&gt;This repository is used to release the Labs of Computer Architecture Course from USTC&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-computer-architecture-2019-lab" class="anchor" aria-hidden="true" href="#computer-architecture-2019-lab"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Computer Architecture 2019 Lab&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;此仓库用于发布USTC体系结构课程2019年夏季学期的实验代码和要求，同时可用于学生的意见反馈。&lt;/strong&gt;&lt;br&gt;
+实验成绩占课程成绩的40%，实验验收方式主要为课堂当面验收和实验报告的提交。&lt;br&gt;
+本学期计划实验时长为10周&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab1（4-5周）【15%】： 熟悉RISC-V指令集，完成RV32I指令集流水线CPU的设计报告；&lt;/li&gt;
+&lt;li&gt;Lab2 （第6周清明假期）（7-9周）【40%】： 配置和使用RISCV编译工具链；完成RV32I流水线CPU的Verilog代码；利用RISCV-test测试文件进行仿真和CPU功能验证&lt;/li&gt;
+&lt;li&gt;Lab3（第10周五一假期）（第11-12周）【20%】： cache设计和实现&lt;/li&gt;
+&lt;li&gt;Lab4（13-14周）【15%】： 分支预测设计与实现&lt;/li&gt;
+&lt;li&gt;Lab5（第15周）【10%】：学习使用提供的Tomasulo软件模拟器和多Cache一致性软件模拟器，并完成实验报告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/Summer-Summer/ComputerArchitectureLab/blob/master/images/CPU.PNG"&gt;&lt;img src="https://github.com/Summer-Summer/ComputerArchitectureLab/raw/master/images/CPU.PNG" alt="CPU_Modules" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-签到与补交" class="anchor" aria-hidden="true" href="#签到与补交"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;签到与补交&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;学生总数220人左右，教室容量110，每周开两次实验课，内容完全一样，&lt;strong&gt;可二选一参加&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;验收和报告&lt;strong&gt;补交&lt;/strong&gt;在&lt;strong&gt;一周内扣除20%成绩&lt;/strong&gt;，介于&lt;strong&gt;一周两周之内补交扣除40%成绩&lt;/strong&gt;，&lt;strong&gt;超过两周不予验收&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为了照顾对流水线不熟悉的学生和鼓励实验课出勤，每堂课设置签到。&lt;/strong&gt;（每次实验课开始15分钟后停止签到，实验课结束半小时前可以签离，每周两个实验时间段任选其一参加，有签到和签离就算当周满勤）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;上周和本周连续两次满勤可以申请本周实验晚交一周不做扣分处理。&lt;/strong&gt;（比如Lab2阶段一验收是第6周，如果到了第6周实验课结束了实验还没做完，如果你第5周和第6周都满勤，可以在第6周签离时向助教申请晚交一周同时不扣分。）希望对流水线和verilog不熟悉的同学可以积极参与实验课，届时有问题多问问助教，助教可以一对一讲解或者统一指导。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;签到记录不以其他方式影响成绩&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-助教统一讲解" class="anchor" aria-hidden="true" href="#助教统一讲解"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;助教统一讲解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;每周实验课的开始时间，&lt;strong&gt;助教准点（14:30或18:30）&lt;strong&gt;开始&lt;/strong&gt;本周实验指导&lt;/strong&gt;和&lt;strong&gt;下周实验内容简单介绍&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;每次讲解5-45分钟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-实验发布验收和报告" class="anchor" aria-hidden="true" href="#实验发布验收和报告"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;实验发布、验收和报告&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2019.3.17 Release Lab1&lt;/strong&gt;&lt;br&gt;
+请提交CPU设计报告 截止日期：2019.3.31&lt;br&gt;
+邮箱地址：&lt;a href="mailto:USTC_CA2019@163.com"&gt;USTC_CA2019@163.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2019.3.17 Release Lab2&lt;/strong&gt;&lt;br&gt;
+阶段一课堂验收 截止日期：2019.4.13&lt;br&gt;
+阶段二课堂验收 截止日期：2019.4.20&lt;br&gt;
+阶段三课堂验收 截止日期：2019.4.27&lt;br&gt;
+请提交实验2的实验报告 截止日期：2019.5.4&lt;br&gt;
+邮箱地址：&lt;a href="mailto:USTC_CA2019@163.com"&gt;USTC_CA2019@163.com&lt;/a&gt;&lt;br&gt;
+提交格式：Lab2-学号-姓名.rar(or .zip) 要求包括一份pdf格式实验报告和用到的源代码集合的文件夹&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2019.5.4 Release Lab3&lt;/strong&gt;&lt;br&gt;
+阶段一和阶段二课堂验收 截止日期：2019.5.18&lt;br&gt;
+请提交实验3的实验报告 截止日期：2019.5.26&lt;br&gt;
+邮箱地址：&lt;a href="mailto:USTC_CA2019@163.com"&gt;USTC_CA2019@163.com&lt;/a&gt;&lt;br&gt;
+提交格式：Lab3-学号-姓名-n.rar(or .zip) 要求包括一份pdf格式实验报告和用到的源代码集合的文件夹,n代表提交版本号，从0开始，以最大版本提交文件为准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2019.5.19 Release Lab4&lt;/strong&gt;&lt;br&gt;
+阶段一和阶段二课堂验收 截止日期：2019.6.1&lt;br&gt;
+请提交实验4的实验报告 截止日期：2019.6.8&lt;br&gt;
+邮箱地址：&lt;a href="mailto:USTC_CA2019@163.com"&gt;USTC_CA2019@163.com&lt;/a&gt;&lt;br&gt;
+提交格式：Lab4-学号-姓名-n.rar(or .zip) 要求包括一份pdf格式实验报告和用到的源代码集合的文件夹,n代表提交版本号，从0开始，以最大版本提交文件为准&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2019.5.27 Release Lab5&lt;/strong&gt;&lt;br&gt;
+请提交实验5的实验报告 截止日期：2019.6.22&lt;br&gt;
+邮箱地址：&lt;a href="mailto:USTC_CA2019@163.com"&gt;USTC_CA2019@163.com&lt;/a&gt;&lt;br&gt;
+提交格式：Lab5-学号-姓名-n.pdf 要求包括一份pdf格式实验报告,n代表提交版本号，从0开始，以最大版本提交文件为准&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-实验课安排" class="anchor" aria-hidden="true" href="#实验课安排"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;实验课安排&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab1助教答疑 （教室容量110人，无签到）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.3.21下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.3.23晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;strong&gt;lab1答案分析+Lab2预先讲解&lt;/strong&gt;（讲解大约20分钟）（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.3.28下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.3.30晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab2阶段一课堂验收时间（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.11下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.13晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab2阶段二课堂验收时间（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.18下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.20晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab2阶段三课堂验收时间（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.25下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.4.27晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab3验收时间1（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.9下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.11晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab3验收时间2（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.16下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.18晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;lab4验收时间1（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.23下午（14:30-17:00 电三楼406）&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;2019.5.25晚（18:30-21:00 电三楼406）&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lab4验收时间2（教室容量110人，&lt;strong&gt;有签到&lt;/strong&gt;）&lt;br&gt;
+2019.5.30下午（14:30-17:00 电三楼406）&lt;br&gt;
+2019.6.1晚（18:30-21:00 电三楼406）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lab4补交时间（教室容量110人，&lt;strong&gt;木有签到，最后一次啦，恭喜大家实验结束了&lt;del&gt;辛苦啦&lt;/del&gt;完结撒花~&lt;/strong&gt;）&lt;br&gt;
+2019.6.6下午（14:30-17:00 电三楼406）&lt;br&gt;
+2019.6.8晚（18:30-21:00 电三楼406）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意，端午假期内的实验课时将取消，同时不会补设实验课&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-文件夹目录" class="anchor" aria-hidden="true" href="#文件夹目录"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;文件夹目录&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1_VerilogSourceCode&lt;/strong&gt; Verilog源代码&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1_CPUCore_src CPU&lt;/strong&gt; CPU core的verilog代码&lt;br&gt;
+&lt;strong&gt;2_Simulation&lt;/strong&gt; 仿真用testBench代码&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2_BRAMInputFileGenerator&lt;/strong&gt; 脚本文件，利用汇编文件生成对应的16进制指令流文件&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3_CacheLab&lt;/strong&gt; Lab3所需的verilog代码和单元测试文件，详情见文件夹readme&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4_ProjectDesignFiles&lt;/strong&gt; 包含CPU的流水线模块设计图&lt;br&gt;
+&lt;strong&gt;5_DetailDocuments&lt;/strong&gt; 包含每次实验的具体实验要求&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6_branch_prediction&lt;/strong&gt; 包含Lab4所需要的代码&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新实验发布时会在群里面统一公告。&lt;/li&gt;
+&lt;li&gt;动手做新实验时，请先进入&lt;strong&gt;5_DetailDocuments&lt;/strong&gt;目录下，&lt;strong&gt;查找本次实验对应的文档，并根据文档完成实验和试验报告。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-change-log" class="anchor" aria-hidden="true" href="#change-log"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Change Log&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2019.3.31 因为清明假期&lt;strong&gt;Lab2延后一周&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;完善2_BRAMInputFileGenerator脚本文件，调用Utils文件夹中编译好的&lt;strong&gt;Ubuntu64bit&lt;/strong&gt;的riscv工具链，&lt;strong&gt;makefile将不需要用户自己安装riscv-tools&lt;/strong&gt;；同时删除多余的.S文件&lt;/li&gt;
+&lt;li&gt;1_VerilogSourceCode/2_Simulation/中增加利用2_BRAMInputFileGenerator处理好的&lt;strong&gt;testAll测试二进制文件(.inst 和 .data)以及对应的反汇编代码(.txt)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2019.5.1 &lt;strong&gt;五一假期&lt;/strong&gt;Lab3延后一周&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微调后续实验内容安排&lt;/strong&gt;。因为FPGA开发板的缺少，同时进一步提高和体系结构课程内容的相关度，原定烧写实验取消&lt;/li&gt;
+&lt;li&gt;2019.5.4 &lt;strong&gt;release Lab3代码和Lab3实验要求&lt;/strong&gt;，代码见新增&lt;strong&gt;3_CacheLab&lt;/strong&gt;文件夹，实验要求见更新后的&lt;strong&gt;5_DetailedDoucuents&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2019.5.19 &lt;strong&gt;release Lab4代码和Lab4实验要求&lt;/strong&gt;，代码见新增&lt;strong&gt;6_branch_prediction&lt;/strong&gt;文件夹，实验要求见更新后的&lt;strong&gt;5_DetailedDoucuents&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2019.5.27 &lt;strong&gt;release Lab5实验要求&lt;/strong&gt;（&lt;strong&gt;5_DetailedDoucuents/Lab5-多Cache一致性与Tomasulo模拟器使用.docx&lt;/strong&gt;），需要用到的软件模拟器请自行获取&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-致谢" class="anchor" aria-hidden="true" href="#致谢"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;致谢&lt;/h2&gt;
+&lt;p&gt;现在是2019年夏季学期学期初，体系结构课程实验刚刚开始了它的升级换代。&lt;br&gt;
+嵌入式系统实验室研一的同学们（部分也是体系结构课程的助教）正在努力地设计实验和提供资料。不过由于时间和能力有限，试验过程中可能存在一些问题，希望大家多多体谅，也欢迎大家在群里或者issue中提出宝贵的意见。&lt;br&gt;
+感谢ESLAB的同学们为本实验付出的努力，也感谢每一位参与实验的本科生的理解与支持。&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Summer-Summer</author><guid isPermaLink="false">https://github.com/Summer-Summer/ComputerArchitectureLab</guid><pubDate>Wed, 08 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>
