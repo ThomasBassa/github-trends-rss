@@ -1,2 +1,897 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Thu, 09 Jan 2020 01:08:10 GMT</pubDate><lastBuildDate>Thu, 09 Jan 2020 01:08:10 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Erlang, Today today</title><pubDate>Thu, 09 Jan 2020 01:08:10 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Fri, 10 Jan 2020 01:12:55 GMT</pubDate><lastBuildDate>Fri, 10 Jan 2020 01:12:55 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>erlang/otp #1 in Erlang, Today</title><link>https://github.com/erlang/otp</link><description>&lt;p&gt;&lt;i&gt;Erlang/OTP&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-erlangotp" class="anchor" aria-hidden="true" href="#erlangotp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://www.erlang.org" rel="nofollow"&gt;Erlang/OTP&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Erlang&lt;/strong&gt; is a programming language and runtime system for building massively scalable soft real-time systems with requirements on high availability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTP&lt;/strong&gt; is a set of Erlang libraries, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. &lt;a href="http://erlang.org/doc/system_architecture_intro/sys_arch_intro.html" rel="nofollow"&gt;Learn more about Erlang and OTP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://erlang.org/download/otp_versions_tree.html" rel="nofollow"&gt;Release notes&lt;/a&gt; for all OTP versions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://learnyousomeerlang.com/content" rel="nofollow"&gt;Learn how to program in Erlang&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;There are several examples &lt;a href="http://erlang.org/faq/getting_started.html" rel="nofollow"&gt;on the website&lt;/a&gt; to help you get started. The below example defines a function &lt;code&gt;world/0&lt;/code&gt; that prints "Hello, world" in the Erlang shell:&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;-&lt;span class="pl-k"&gt;module&lt;/span&gt;(&lt;span class="pl-en"&gt;hello&lt;/span&gt;).
+-&lt;span class="pl-k"&gt;export&lt;/span&gt;([&lt;span class="pl-en"&gt;world&lt;/span&gt;/&lt;span class="pl-c1"&gt;0&lt;/span&gt;]).
+
+&lt;span class="pl-en"&gt;world&lt;/span&gt;() &lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;io&lt;/span&gt;:&lt;span class="pl-en"&gt;format&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello, world&lt;span class="pl-cce"&gt;\n&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;).&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save the file as &lt;code&gt;hello.erl&lt;/code&gt; and run &lt;code&gt;erl&lt;/code&gt; to enter the Erlang shell to compile the module.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Erlang/OTP 19 [erts-8.2] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Eshell V8.2  (abort with ^G)
+1&amp;gt; c(hello).
+{ok,hello}
+2&amp;gt; hello:world().
+Hello, world
+ok
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Learn more about the Erlang syntax of &lt;a href="http://erlang.org/doc/reference_manual/modules.html" rel="nofollow"&gt;modules&lt;/a&gt;, &lt;a href="http://erlang.org/doc/reference_manual/functions.html" rel="nofollow"&gt;functions&lt;/a&gt; and &lt;a href="http://erlang.org/doc/reference_manual/expressions.html" rel="nofollow"&gt;expressions&lt;/a&gt; on &lt;a href="https://www.erlang.org" rel="nofollow"&gt;Erlang.org&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-binary-distributions" class="anchor" aria-hidden="true" href="#binary-distributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Binary Distributions&lt;/h3&gt;
+&lt;p&gt;Erlang/OTP is available as pre-built binary packages by most OS package managers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get install erlang
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-compiling-from-source" class="anchor" aria-hidden="true" href="#compiling-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling from source&lt;/h3&gt;
+&lt;p&gt;To compile Erlang from source, run the following commands. The complete building and installation instructions &lt;a href="HOWTO/INSTALL.md"&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/erlang/otp.git
+cd otp
+./otp_build autoconf
+./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can use &lt;a href="https://github.com/kerl/kerl"&gt;Kerl&lt;/a&gt;, a script that lets you easily build Erlang with a few commands.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-bug-reports" class="anchor" aria-hidden="true" href="#bug-reports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bug Reports&lt;/h2&gt;
+&lt;p&gt;Please visit &lt;a href="https://bugs.erlang.org/issues/?jql=project%20%3D%20ERL" rel="nofollow"&gt;bugs.erlang.org&lt;/a&gt; for reporting bugs. The instructions for submitting bugs reports &lt;a href="https://github.com/erlang/otp/wiki/Bug-reports"&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-security-disclosure" class="anchor" aria-hidden="true" href="#security-disclosure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Security Disclosure&lt;/h3&gt;
+&lt;p&gt;We take security bugs in Erlang/OTP seriously. Please disclose the issues regarding security by sending an email to &lt;strong&gt;erlang-security [at] erlang [dot] org&lt;/strong&gt; and not by creating a public issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;We are grateful to the community for contributing bug fixes and improvements. Read below to learn how you can take part in improving Erlang/OTP. We appreciate your help!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-contribution-guide" class="anchor" aria-hidden="true" href="#contribution-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribution Guide&lt;/h3&gt;
+&lt;p&gt;Read our &lt;a href="CONTRIBUTING.md"&gt;contribution guide&lt;/a&gt; to learn about our development process, how to propose fixes and improvements, and how to test your changes to Erlang/OTP before submitting a pull request.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-help-wanted" class="anchor" aria-hidden="true" href="#help-wanted"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Help Wanted&lt;/h3&gt;
+&lt;p&gt;We have a list of &lt;a href="https://bugs.erlang.org/issues/?jql=status%20%3D%20%22Help%20Wanted%22" rel="nofollow"&gt;Help Wanted&lt;/a&gt; bugs that we would appreciate external help from the community. This is a great place to get involved.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Erlang/OTP is released under the &lt;a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"&gt;Apache License 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;%CopyrightBegin%&lt;/p&gt;
+&lt;p&gt;Copyright Ericsson AB 2010-2017. All Rights Reserved.&lt;/p&gt;
+&lt;p&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://www.apache.org/licenses/LICENSE-2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.&lt;/p&gt;
+&lt;p&gt;%CopyrightEnd%&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-awesome-erlang" class="anchor" aria-hidden="true" href="#awesome-erlang"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Awesome-Erlang&lt;/h2&gt;
+&lt;p&gt;You can find more projects, tools and articles related to Erlang/OTP on the &lt;a href="https://github.com/drobakowski/awesome-erlang"&gt;awesome-erlang list&lt;/a&gt;. Add your project there.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>erlang</author><guid isPermaLink="false">https://github.com/erlang/otp</guid><pubDate>Fri, 10 Jan 2020 00:01:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-server #2 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-server</link><description>&lt;p&gt;&lt;i&gt;Open source multi-protocol messaging broker&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-server" class="anchor" aria-hidden="true" href="#rabbitmq-server"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Server&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://rabbitmq.com" rel="nofollow"&gt;RabbitMQ&lt;/a&gt; is a &lt;a href="https://rabbitmq.com/documentation.html" rel="nofollow"&gt;feature rich&lt;/a&gt;, multi-protocol messaging broker. It supports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AMQP 0-9-1&lt;/li&gt;
+&lt;li&gt;AMQP 1.0&lt;/li&gt;
+&lt;li&gt;MQTT 3.1.1&lt;/li&gt;
+&lt;li&gt;STOMP 1.0 through 1.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/download.html" rel="nofollow"&gt;Installation guides&lt;/a&gt; for various platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/versions.html" rel="nofollow"&gt;Supported and unsupported series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/which-erlang.html" rel="nofollow"&gt;Supported Erlang versions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-tutorials--documentation" class="anchor" aria-hidden="true" href="#tutorials--documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tutorials &amp;amp; Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/getstarted.html" rel="nofollow"&gt;RabbitMQ tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/documentation.html" rel="nofollow"&gt;All documentation guides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rabbitmq/rabbitmq-website/"&gt;Documentation source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/devtools.html" rel="nofollow"&gt;Client libraries and tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/monitoring.html" rel="nofollow"&gt;Monitoring guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/production-checklist.html" rel="nofollow"&gt;Production checklist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rabbitmq/rabbitmq-tutorials/"&gt;Runnable tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/rabbitmq-users" rel="nofollow"&gt;RabbitMQ mailing list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/services.html" rel="nofollow"&gt;Commercial support&lt;/a&gt; from &lt;a href="https://pivotal.io" rel="nofollow"&gt;Pivotal&lt;/a&gt; for open source RabbitMQ&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq-slack.herokuapp.com/" rel="nofollow"&gt;Community Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#rabbitmq&lt;/code&gt; on Freenode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="./CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; and our &lt;a href="https://rabbitmq.com/github.html" rel="nofollow"&gt;development process overview&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions about contributing, internals and so on are very welcome on the &lt;a href="https://groups.google.com/forum/#!forum/rabbitmq-users" rel="nofollow"&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;RabbitMQ server is &lt;a href="LICENSE-MPL-RabbitMQ"&gt;licensed under the MPL 1.1&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-from-source-and-packaging" class="anchor" aria-hidden="true" href="#building-from-source-and-packaging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building From Source and Packaging&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/build-server.html" rel="nofollow"&gt;Building RabbitMQ from Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/build-server.html" rel="nofollow"&gt;Building RabbitMQ Distribution Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;(c) Pivotal Software Inc., 2007-2020.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-server</guid><pubDate>Fri, 10 Jan 2020 00:02:00 GMT</pubDate></item><item><title>emqx/emqx #3 in Erlang, Today</title><link>https://github.com/emqx/emqx</link><description>&lt;p&gt;&lt;i&gt;EMQ X Broker - Scalable Distributed MQTT Message Broker for IoT in 5G Era&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-emq-x-broker" class="anchor" aria-hidden="true" href="#emq-x-broker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;EMQ X Broker&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/emqx/emqx/releases"&gt;&lt;img src="https://camo.githubusercontent.com/8797d821e46811463507bbf1abce1ff94fee8703/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f656d71782f656d71783f636f6c6f723d627269676874677265656e" alt="GitHub Release" data-canonical-src="https://img.shields.io/github/release/emqx/emqx?color=brightgreen" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/emqx/emqx" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7cbd485bd90653407ba38d91c81237e65b129e82/68747470733a2f2f7472617669732d63692e6f72672f656d71782f656d71782e737667" alt="Build Status" data-canonical-src="https://travis-ci.org/emqx/emqx.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://coveralls.io/github/emqx/emqx" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/aca35bcd7a50e0eab9747ec05c6e474647729170/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f656d71782f656d71782f62616467652e737667" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/emqx/emqx/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://hub.docker.com/r/emqx/emqx" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/31a15885e1e88048bd37acef194474825c3677fd/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f656d71782f656d7178" alt="Docker Pulls" data-canonical-src="https://img.shields.io/docker/pulls/emqx/emqx" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://slack-invite.emqx.io" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/571a9a7d66428e8e2dd295f01055109ad114fdc2/68747470733a2f2f736c61636b2d696e766974652e656d71782e696f2f62616467652e737667" alt="Slack Invite" data-canonical-src="https://slack-invite.emqx.io/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://twitter.com/emqtt" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cd0d07693e13f81c135392b6c8588c304a4503b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769697465722d454d51253230582d3144413146323f6c6f676f3d74776974746572" alt="Twitter" data-canonical-src="https://img.shields.io/badge/Twiiter-EMQ%20X-1DA1F2?logo=twitter" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://emqx.io/about/jobs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9bb85b57d94316a3108767a476878168f6203398/68747470733a2f2f7777772e656d71782e696f2f7374617469632f696d672f6769746875625f726561646d655f656e5f62672e706e67" alt="We are hiring" data-canonical-src="https://www.emqx.io/static/img/github_readme_en_bg.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;English | &lt;a href="./README-CN.md"&gt;简体中文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;EMQ X&lt;/em&gt; broker is a fully open source, highly scalable, highly available distributed MQTT messaging broker for IoT, M2M and Mobile applications that can handle tens of millions of concurrent clients.&lt;/p&gt;
+&lt;p&gt;Starting from 3.0 release, &lt;em&gt;EMQ X&lt;/em&gt; broker fully supports MQTT V5.0 protocol specifications and backward compatible with MQTT V3.1 and V3.1.1,  as well as other communication protocols such as MQTT-SN, CoAP, LwM2M, WebSocket and STOMP. The 3.0 release of the &lt;em&gt;EMQ X&lt;/em&gt; broker can scaled to 10+ million concurrent MQTT connections on one cluster.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For full list of new features, please read &lt;a href="https://github.com/emqx/emqx/releases"&gt;EMQ X Release Notes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For more information, please visit &lt;a href="https://emqx.io" rel="nofollow"&gt;EMQ X homepage&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;EMQ X&lt;/em&gt; broker is cross-platform, which supports Linux, Unix, Mac OS and Windows. It means &lt;em&gt;EMQ X&lt;/em&gt; can be deployed on x86_64 architecture servers and ARM devices like Raspberry Pi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installing via EMQ X Docker Image&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Or download the binary package for your platform from &lt;a href="https://emqx.io/downloads" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.emqx.io/broker/v3/en/install.html" rel="nofollow"&gt;Single Node Install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.emqx.io/broker/v3/en/cluster.html" rel="nofollow"&gt;Multi Node Install&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-build-from-source" class="anchor" aria-hidden="true" href="#build-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build From Source&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;EMQ X&lt;/em&gt; broker requires Erlang/OTP R21+ to build since 3.0 release.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/emqx/emqx-rel.git
+
+cd emqx-rel &amp;amp;&amp;amp; make
+
+cd _build/emqx/rel/emqx &amp;amp;&amp;amp; ./bin/emqx console
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-quick-start" class="anchor" aria-hidden="true" href="#quick-start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# Start emqx
+./bin/emqx start
+
+# Check Status
+./bin/emqx_ctl status
+
+# Stop emqx
+./bin/emqx stop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To view the dashboard after running, use your browser to open: &lt;a href="http://localhost:18083" rel="nofollow"&gt;http://localhost:18083&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-faq" class="anchor" aria-hidden="true" href="#faq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FAQ&lt;/h2&gt;
+&lt;p&gt;Visiting &lt;a href="https://docs.emqx.io/tutorial/v3/en/faq/faq.html" rel="nofollow"&gt;FAQ&lt;/a&gt; to get help of common problems.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-roadmap" class="anchor" aria-hidden="true" href="#roadmap"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Roadmap&lt;/h2&gt;
+&lt;p&gt;The &lt;a href="https://github.com/emqx/emqx/milestones"&gt;EMQ X Roadmap uses Github milestones&lt;/a&gt; to track the progress of the project.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-community-discussion-contribution-and-support" class="anchor" aria-hidden="true" href="#community-discussion-contribution-and-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community, discussion, contribution, and support&lt;/h2&gt;
+&lt;p&gt;You can reach the EMQ community and developers via the following channels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://emqx.slack.com" rel="nofollow"&gt;EMQX Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/emqtt" rel="nofollow"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://groups.google.com/d/forum/emqtt" rel="nofollow"&gt;Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@emqtt" rel="nofollow"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/emqx/" rel="nofollow"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please submit any bugs, issues, and feature requests to &lt;a href="https://github.com/emqx/emqx/issues"&gt;emqx/emqx&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-mqtt-specifications" class="anchor" aria-hidden="true" href="#mqtt-specifications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MQTT Specifications&lt;/h2&gt;
+&lt;p&gt;You can read the mqtt protocol via the following links:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html" rel="nofollow"&gt;MQTT Version 3.1.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html" rel="nofollow"&gt;MQTT Version 5.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf" rel="nofollow"&gt;MQTT SN&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Apache License 2.0, see &lt;a href="./LICENSE"&gt;LICENSE&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>emqx</author><guid isPermaLink="false">https://github.com/emqx/emqx</guid><pubDate>Fri, 10 Jan 2020 00:03:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-management #4 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-management</link><description>&lt;p&gt;&lt;i&gt;RabbitMQ Management UI and HTTP API&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-management-plugin" class="anchor" aria-hidden="true" href="#rabbitmq-management-plugin"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Management Plugin&lt;/h1&gt;
+&lt;p&gt;This plugin provides a management UI and HTTP API for RabbitMQ.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;This plugin is included in the RabbitMQ distribution. Like all &lt;a href="https://www.rabbitmq.com/plugins.html" rel="nofollow"&gt;plugins&lt;/a&gt;,
+it has to be &lt;a href="https://www.rabbitmq.com/plugins.html#basics" rel="nofollow"&gt;enabled&lt;/a&gt; before it can be used.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/management.html" rel="nofollow"&gt;RabbitMQ management UI documentation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/management.html#http-api" rel="nofollow"&gt;HTTP API documentation&lt;/a&gt; and &lt;a href="https://raw.githack.com/rabbitmq/rabbitmq-management/rabbitmq_v3_6_9/priv/www/api/index.html" rel="nofollow"&gt;reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;(c) Pivotal Software Inc., 2007-2020.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-management</guid><pubDate>Fri, 10 Jan 2020 00:04:00 GMT</pubDate></item><item><title>apache/couchdb #5 in Erlang, Today</title><link>https://github.com/apache/couchdb</link><description>&lt;p&gt;&lt;i&gt;Apache CouchDB&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-apache-couchdb-readme" class="anchor" aria-hidden="true" href="#apache-couchdb-readme"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache CouchDB README&lt;/h1&gt;
+&lt;table&gt;
+
+
+
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href="https://ci-couchdb.apache.org/blue/organizations/jenkins/jenkins-cm1%2FFullPlatformMatrix/activity?branch=master" rel="nofollow"&gt;&lt;img alt="1" src="https://camo.githubusercontent.com/dcf26b9ea8e0430e860771f15d5b2a73c7725636/68747470733a2f2f63692d636f75636864622e6170616368652e6f72672f6a6f622f6a656e6b696e732d636d312f6a6f622f46756c6c506c6174666f726d4d61747269782f6a6f622f6d61737465722f62616467652f69636f6e3f7375626a6563743d6d61737465722532306275696c64" data-canonical-src="https://ci-couchdb.apache.org/job/jenkins-cm1/job/FullPlatformMatrix/job/master/badge/icon?subject=master%20build" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a name="user-content-installation"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;For a high-level guide to Unix-like systems, inc. Mac OS X and Ubuntu, see:&lt;/p&gt;
+&lt;blockquote&gt;
+INSTALL.Unix&lt;/blockquote&gt;
+&lt;p&gt;For a high-level guide to Microsoft Windows, see:&lt;/p&gt;
+&lt;blockquote&gt;
+INSTALL.Windows&lt;/blockquote&gt;
+&lt;p&gt;Follow the proper instructions to get CouchDB installed on your system.&lt;/p&gt;
+&lt;p&gt;If you're having problems, skip to the next section.&lt;/p&gt;
+&lt;a name="user-content-documentation"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;We have documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://docs.couchdb.org/" rel="nofollow"&gt;http://docs.couchdb.org/&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;It includes a changelog:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://docs.couchdb.org/en/latest/whatsnew/" rel="nofollow"&gt;http://docs.couchdb.org/en/latest/whatsnew/&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;For troubleshooting or cryptic error messages, see:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://docs.couchdb.org/en/latest/install/troubleshooting.html" rel="nofollow"&gt;http://docs.couchdb.org/en/latest/install/troubleshooting.html&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;For general help, see:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://couchdb.apache.org/#mailing-list" rel="nofollow"&gt;http://couchdb.apache.org/#mailing-list&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;We also have an IRC channel:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://webchat.freenode.net/?channels=couchdb" rel="nofollow"&gt;http://webchat.freenode.net/?channels=couchdb&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;The mailing lists provide a wealth of support and knowledge for you to tap into.
+Feel free to drop by with your questions or discussion. See the official CouchDB
+website for more information about our community resources.&lt;/p&gt;
+&lt;a name="user-content-verifying-your-installation"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-verifying-your-installation" class="anchor" aria-hidden="true" href="#verifying-your-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verifying your Installation&lt;/h2&gt;
+&lt;p&gt;Run a basic test suite for CouchDB by browsing here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="http://127.0.0.1:5984/_utils/#verifyinstall" rel="nofollow"&gt;http://127.0.0.1:5984/_utils/#verifyinstall&lt;/a&gt;&lt;/blockquote&gt;
+&lt;a name="user-content-getting-started-with-developing"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started-with-developing" class="anchor" aria-hidden="true" href="#getting-started-with-developing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting started with developing&lt;/h2&gt;
+&lt;p&gt;For more detail, read the README-DEV.rst file in this directory.&lt;/p&gt;
+&lt;p&gt;Basically you just have to install the needed dependencies which are
+documented in the install docs and then run &lt;code&gt;./configure &amp;amp;&amp;amp; make&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You don't need to run &lt;code&gt;make install&lt;/code&gt; after compiling, just use
+&lt;code&gt;./dev/run&lt;/code&gt; to spin up three nodes. You can add haproxy as a caching
+layer in front of this cluster by running &lt;code&gt;./dev/run --with-haproxy
+--haproxy=/path/to/haproxy&lt;/code&gt; . You will now have a local cluster
+listening on port 5984.&lt;/p&gt;
+&lt;p&gt;For Fauxton developers fixing the admin-party does not work via the button in
+Fauxton. To fix the admin party you have to run &lt;code&gt;./dev/run&lt;/code&gt; with the &lt;code&gt;admin&lt;/code&gt;
+flag, e.g. &lt;code&gt;./dev/run --admin=username:password&lt;/code&gt;. If you want to have an
+admin-party, just omit the flag.&lt;/p&gt;
+&lt;a name="user-content-contributing-to-couchdb"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing-to-couchdb" class="anchor" aria-hidden="true" href="#contributing-to-couchdb"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing to CouchDB&lt;/h2&gt;
+&lt;p&gt;You can learn more about our contributing process here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href="https://github.com/apache/couchdb/blob/master/CONTRIBUTING.md"&gt;https://github.com/apache/couchdb/blob/master/CONTRIBUTING.md&lt;/a&gt;&lt;/blockquote&gt;
+&lt;a name="user-content-cryptographic-software-notice"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-cryptographic-software-notice" class="anchor" aria-hidden="true" href="#cryptographic-software-notice"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cryptographic Software Notice&lt;/h2&gt;
+&lt;p&gt;This distribution includes cryptographic software. The country in which you
+currently reside may have restrictions on the import, possession, use, and/or
+re-export to another country, of encryption software. BEFORE using any
+encryption software, please check your country's laws, regulations and policies
+concerning the import, possession, or use, and re-export of encryption software,
+to see if this is permitted. See &amp;lt;&lt;a href="http://www.wassenaar.org/" rel="nofollow"&gt;http://www.wassenaar.org/&lt;/a&gt;&amp;gt; for more
+information.&lt;/p&gt;
+&lt;p&gt;The U.S. Government Department of Commerce, Bureau of Industry and Security
+(BIS), has classified this software as Export Commodity Control Number (ECCN)
+5D002.C.1, which includes information security software using or performing
+cryptographic functions with asymmetric algorithms. The form and manner of this
+Apache Software Foundation distribution makes it eligible for export under the
+License Exception ENC Technology Software Unrestricted (TSU) exception (see the
+BIS Export Administration Regulations, Section 740.13) for both object code and
+source code.&lt;/p&gt;
+&lt;p&gt;The following provides more details on the included cryptographic software:&lt;/p&gt;
+&lt;p&gt;CouchDB includes a HTTP client (ibrowse) with SSL functionality.&lt;/p&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>apache</author><guid isPermaLink="false">https://github.com/apache/couchdb</guid><pubDate>Fri, 10 Jan 2020 00:05:00 GMT</pubDate></item><item><title>ninenines/cowboy #6 in Erlang, Today</title><link>https://github.com/ninenines/cowboy</link><description>&lt;p&gt;&lt;i&gt;Small, fast, modern HTTP server for Erlang/OTP.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="asciidoc" data-path="README.asciidoc"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-cowboy" class="anchor" aria-hidden="true" href="#cowboy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cowboy&lt;/h1&gt;
+&lt;div id="user-content-preamble"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy is a small, fast and modern HTTP server for Erlang/OTP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-goals"&gt;&lt;a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Goals&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy aims to provide a &lt;strong&gt;complete&lt;/strong&gt; HTTP stack in a &lt;strong&gt;small&lt;/strong&gt; code base.
+It is optimized for &lt;strong&gt;low latency&lt;/strong&gt; and &lt;strong&gt;low memory usage&lt;/strong&gt;, in part
+because it uses &lt;strong&gt;binary strings&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy provides &lt;strong&gt;routing&lt;/strong&gt; capabilities, selectively dispatching requests
+to handlers written in Erlang.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Because it uses Ranch for managing connections, Cowboy can easily be
+&lt;strong&gt;embedded&lt;/strong&gt; in any other application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Cowboy is &lt;strong&gt;clean&lt;/strong&gt; and &lt;strong&gt;well tested&lt;/strong&gt; Erlang code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-online-documentation"&gt;&lt;a id="user-content-online-documentation" class="anchor" aria-hidden="true" href="#online-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Online documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/cowboy/2.6/guide" rel="nofollow"&gt;User guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/cowboy/2.6/manual" rel="nofollow"&gt;Function reference&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-offline-documentation"&gt;&lt;a id="user-content-offline-documentation" class="anchor" aria-hidden="true" href="#offline-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Offline documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;While still online, run &lt;code&gt;make docs&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User guide available in &lt;code&gt;doc/&lt;/code&gt; in PDF and HTML formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Function reference man pages available in &lt;code&gt;doc/man3/&lt;/code&gt; and &lt;code&gt;doc/man7/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;make install-docs&lt;/code&gt; to install man pages on your system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Full documentation in Asciidoc available in &lt;code&gt;doc/src/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples available in &lt;code&gt;examples/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-getting-help"&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Official IRC Channel: #ninenines on irc.freenode.net&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/ninenines/cowboy/issues"&gt;Issues tracker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/services" rel="nofollow"&gt;Commercial Support&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/sponsors/essen"&gt;Sponsor me!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</description><author>ninenines</author><guid isPermaLink="false">https://github.com/ninenines/cowboy</guid><pubDate>Fri, 10 Jan 2020 00:06:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-peer-discovery-k8s #7 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-peer-discovery-k8s</link><description>&lt;p&gt;&lt;i&gt;Kubernetes-based peer discovery backend for RabbitMQ 3.7.0+&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-peer-discovery-kubernetes" class="anchor" aria-hidden="true" href="#rabbitmq-peer-discovery-kubernetes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Peer Discovery Kubernetes&lt;/h1&gt;
+&lt;p&gt;This is an K8s-based implementation of RabbitMQ &lt;a href="https://www.rabbitmq.com/blog/2018/02/12/peer-discovery-subsystem-in-rabbitmq-3-7/" rel="nofollow"&gt;peer discovery interface&lt;/a&gt;
+(new in 3.7.0, previously available in the &lt;a href="https://github.com/rabbitmq/rabbitmq-autocluster"&gt;rabbitmq-autocluster plugin&lt;/a&gt;
+by Gavin Roy).&lt;/p&gt;
+&lt;p&gt;This plugin only performs peer discovery using Kubernetes API as a data source.
+Please get familiar with &lt;a href="https://rabbitmq.com/clustering.html" rel="nofollow"&gt;RabbitMQ clustering fundamentals&lt;/a&gt; before attempting
+to use it.&lt;/p&gt;
+&lt;p&gt;Cluster provisioning and most of Day 2 operations such as &lt;a href="https://rabbitmq.com/monitoring.html" rel="nofollow"&gt;proper monitoring&lt;/a&gt;
+are not in scope for this plugin.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-rabbitmq-versions" class="anchor" aria-hidden="true" href="#supported-rabbitmq-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported RabbitMQ Versions&lt;/h2&gt;
+&lt;p&gt;This plugin ships with RabbitMQ 3.7.0 or later.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;This plugin ships with &lt;a href="https://www.rabbitmq.com/versions.html" rel="nofollow"&gt;supported RabbitMQ versions&lt;/a&gt;.
+There is no need to install it separately.&lt;/p&gt;
+&lt;p&gt;As with any &lt;a href="https://rabbitmq.com/plugins.html" rel="nofollow"&gt;plugin&lt;/a&gt;, it must be enabled before it
+can be used. For peer discovery plugins it means they must be &lt;a href="https://rabbitmq.com//plugins.html#basics" rel="nofollow"&gt;enabled&lt;/a&gt; or &lt;a href="https://rabbitmq.com//plugins.html#enabled-plugins-file" rel="nofollow"&gt;preconfigured&lt;/a&gt;
+before first node boot:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rabbitmq-plugins --offline enable rabbitmq_peer_discovery_k8s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://www.rabbitmq.com/cluster-formation.html" rel="nofollow"&gt;RabbitMQ Cluster Formation guide&lt;/a&gt; for an overview
+of the peer discovery subsystem, general and Kubernetes-specific configurable values and troubleshooting tips.&lt;/p&gt;
+&lt;p&gt;Example deployments that use this plugin can be found under &lt;a href="./examples"&gt;examples&lt;/a&gt;. Note that they
+are just that, examples, and won't be optimal for every use case or cover a lot of important production
+system concerns such as monitoring, persistent volume settings, access control, sizing, and so on.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="./CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; and our &lt;a href="https://www.rabbitmq.com/github.html" rel="nofollow"&gt;development process overview&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="LICENSE-MPL-RabbitMQ"&gt;Licensed under the MPL&lt;/a&gt;, same as RabbitMQ server.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;(c) Pivotal Software Inc., 2007-2020.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-peer-discovery-k8s</guid><pubDate>Fri, 10 Jan 2020 00:07:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-prometheus #8 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-prometheus</link><description>&lt;p&gt;&lt;i&gt;An up-and-coming minimalistic Prometheus exporter for core (unaggregated) RabbitMQ metrics&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-prometheus-exporter-of-core-raw-unaggregated-rabbitmq-metrics" class="anchor" aria-hidden="true" href="#prometheus-exporter-of-core-raw-unaggregated-rabbitmq-metrics"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prometheus Exporter of Core (Raw, Unaggregated) RabbitMQ Metrics&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;This is a Prometheus exporter of core (raw, unaggregated) RabbitMQ metrics, developed by the RabbitMQ core team.
+It is largely a "clean room" design that reuses some prior work from Prometheus exporters done by the community.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-project-maturity" class="anchor" aria-hidden="true" href="#project-maturity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Maturity&lt;/h2&gt;
+&lt;p&gt;This plugin is new and relatively immature. It shipped in the RabbitMQ distribution starting with &lt;code&gt;3.8.0&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://www.rabbitmq.com/prometheus.html" rel="nofollow"&gt;Monitoring RabbitMQ with Prometheus and Grafana&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;This plugin is included into RabbitMQ 3.8.x releases. Like all &lt;a href="https://www.rabbitmq.com/plugins.html" rel="nofollow"&gt;plugins&lt;/a&gt;, it has to be
+&lt;a href="https://www.rabbitmq.com/plugins.html#ways-to-enable-plugins" rel="nofollow"&gt;enabled&lt;/a&gt; before it can be used:&lt;/p&gt;
+&lt;p&gt;To enable it with &lt;a href="http://www.rabbitmq.com/man/rabbitmq-plugins.1.man.html" rel="nofollow"&gt;rabbitmq-plugins&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rabbitmq-plugins enable rabbitmq_prometheus
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href="https://www.rabbitmq.com/prometheus.html" rel="nofollow"&gt;documentation guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Default port used by the plugin is &lt;code&gt;15692&lt;/code&gt;. In most environments there would be no configuration
+necessary.&lt;/p&gt;
+&lt;p&gt;See the entire list of &lt;a href="metrics.md"&gt;metrics&lt;/a&gt; exposed via the default port.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;This exporter supports the following options via a set of &lt;code&gt;prometheus.*&lt;/code&gt; configuration keys:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;prometheus.path&lt;/code&gt; defines a scrape endpoint. Default is &lt;code&gt;"/metrics"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prometheus.tcp.*&lt;/code&gt; controls HTTP listener settings that match &lt;a href="https://www.rabbitmq.com/management.html#configuration" rel="nofollow"&gt;those used by the RabbitMQ HTTP API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prometheus.ssl.*&lt;/code&gt; controls TLS (HTTPS) listener settings that match &lt;a href="https://www.rabbitmq.com/management.html#single-listener-https" rel="nofollow"&gt;those used by the RabbitMQ HTTP API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sample configuration snippet:&lt;/p&gt;
+&lt;div class="highlight highlight-source-ini"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; these values are defaults&lt;/span&gt;
+&lt;span class="pl-k"&gt;prometheus.path&lt;/span&gt; = /metrics
+&lt;span class="pl-k"&gt;prometheus.tcp.port&lt;/span&gt; =  15692&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://github.com/rabbitmq/rabbitmq-prometheus/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-makefile" class="anchor" aria-hidden="true" href="#makefile"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Makefile&lt;/h2&gt;
+&lt;p&gt;This project uses &lt;a href="https://erlang.mk/" rel="nofollow"&gt;erlang.mk&lt;/a&gt;, running &lt;code&gt;make help&lt;/code&gt; will return erlang.mk help.&lt;/p&gt;
+&lt;p&gt;To see all custom targets that have been documented, run &lt;code&gt;make h&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For BASH shell autocompletion, run &lt;code&gt;eval "$(make autocomplete)"&lt;/code&gt;, then type &lt;code&gt;make a&amp;lt;TAB&amp;gt;&lt;/code&gt; to see all Make targets starting with the letter &lt;code&gt;a&lt;/code&gt;, e.g.:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ make a&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;TAB
+ac               all.coverdata    app-build        apps             apps-eunit       asciidoc-guide   autocomplete
+all              app              app-c_src        apps-ct          asciidoc         asciidoc-manual&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;(c) Pivotal Software Inc., 2007-2020.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-prometheus</guid><pubDate>Fri, 10 Jan 2020 00:08:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-shovel #9 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-shovel</link><description>&lt;p&gt;&lt;i&gt;RabbitMQ Shovel plugin&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-rabbitmq-shovel" class="anchor" aria-hidden="true" href="#rabbitmq-shovel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Shovel&lt;/h2&gt;
+&lt;p&gt;RabbitMQ Shovel is a WAN-friendly tool for moving messages from
+a queue to an exchange, typically between different nodes. It is implemented
+as a RabbitMQ plugin and has a &lt;a href="https://github.com/rabbitmq/rabbitmq-shovel-management/"&gt;management UI extension&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-rabbitmq-versions" class="anchor" aria-hidden="true" href="#supported-rabbitmq-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported RabbitMQ Versions&lt;/h2&gt;
+&lt;p&gt;This plugin ships with RabbitMQ, there is no need to
+install it separately.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://www.rabbitmq.com/shovel.html" rel="nofollow"&gt;RabbitMQ shovel plugin&lt;/a&gt; on rabbitmq.com.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license-and-copyright" class="anchor" aria-hidden="true" href="#license-and-copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License and Copyright&lt;/h2&gt;
+&lt;p&gt;Released under &lt;a href="https://www.rabbitmq.com/mpl.html" rel="nofollow"&gt;the same license as RabbitMQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;2007-2017 (c) Pivotal Software Inc.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-shovel</guid><pubDate>Fri, 10 Jan 2020 00:09:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-federation #10 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-federation</link><description>&lt;p&gt;&lt;i&gt;RabbitMQ Federation plugin&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h2&gt;&lt;a id="user-content-rabbitmq-federation" class="anchor" aria-hidden="true" href="#rabbitmq-federation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Federation&lt;/h2&gt;
+&lt;p&gt;RabbitMQ federation offers a group of features for loosely
+coupled and WAN-friendly distributed RabbitMQ setups. Note that
+this is not an alternative to queue mirroring.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-rabbitmq-versions" class="anchor" aria-hidden="true" href="#supported-rabbitmq-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported RabbitMQ Versions&lt;/h2&gt;
+&lt;p&gt;This plugin ships with RabbitMQ, there is no need to
+install it separately.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://www.rabbitmq.com/federation.html" rel="nofollow"&gt;RabbitMQ federation plugin&lt;/a&gt; on rabbitmq.com.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license-and-copyright" class="anchor" aria-hidden="true" href="#license-and-copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License and Copyright&lt;/h2&gt;
+&lt;p&gt;Released under &lt;a href="https://www.rabbitmq.com/mpl.html" rel="nofollow"&gt;the same license as RabbitMQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;2007-2015 (c) Pivotal Software Inc.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-federation</guid><pubDate>Fri, 10 Jan 2020 00:10:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-sharding #11 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-sharding</link><description>&lt;p&gt;&lt;i&gt;Sharded logical queues for RabbitMQ: a queue type which provides improved parallelism and thoughput at the cost of total ordering&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-sharding-plugin" class="anchor" aria-hidden="true" href="#rabbitmq-sharding-plugin"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Sharding Plugin&lt;/h1&gt;
+&lt;p&gt;This plugin introduces the concept of sharded queues for
+RabbitMQ. Sharding is performed by exchanges, that is, messages
+will be partitioned across "shard" queues by one exchange that we should
+define as sharded. The machinery used behind the scenes implies
+defining an exchange that will partition, or shard messages across
+queues. The partitioning will be done automatically for you, i.e: once
+you define an exchange as &lt;em&gt;sharded&lt;/em&gt;, then the supporting queues will
+be automatically created on every cluster node and messages will be sharded across them.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-project-maturity" class="anchor" aria-hidden="true" href="#project-maturity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Maturity&lt;/h2&gt;
+&lt;p&gt;This plugin is reasonably mature and known to have production users.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The following graphic depicts how the plugin works from the standpoint
+of a publisher and a consumer:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/rabbitmq/rabbitmq-sharding/master/docs/sharded_queues.png"&gt;&lt;img src="https://raw.githubusercontent.com/rabbitmq/rabbitmq-sharding/master/docs/sharded_queues.png" alt="Sharding Overview" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the picture above the producers publishes a series of
+messages, those messages get partitioned to different queues, and then
+our consumer get messages from one of those queues. Therefore if there is
+a partition with 3 queues, it is assumed that there are at least 3
+consumers to get all the messages from those queues.&lt;/p&gt;
+&lt;p&gt;Queues in RabbitMQ are &lt;a href="https://www.rabbitmq.com/queues.html#runtime-characteristics" rel="nofollow"&gt;units of concurrency&lt;/a&gt;
+(and, if there are enough cores available, parallelism). This plugin makes
+it possible to have a single logical queue that is partitioned into
+multiple regular queues ("shards"). This trades off total ordering
+on the logical queue for gains in parallelism.&lt;/p&gt;
+&lt;p&gt;Message distribution between shards (partitioning) is achieved
+with a custom exchange type that distributes messages by applying
+a hashing function to the routing key.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-messages-distribution-between-shards-partitioning" class="anchor" aria-hidden="true" href="#messages-distribution-between-shards-partitioning"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Messages Distribution Between Shards (Partitioning)&lt;/h2&gt;
+&lt;p&gt;The exchanges that ship by default with RabbitMQ work in an "all or
+nothing" fashion, i.e: if a routing key matches a set of queues bound
+to the exchange, then RabbitMQ will route the message to all the
+queues in that set. For this plugin to work it is necessary to
+route messages to an exchange that would partition messages, so they
+are routed to &lt;em&gt;at most&lt;/em&gt; one queue (a subset).&lt;/p&gt;
+&lt;p&gt;The plugin provides a new exchange type, &lt;code&gt;"x-modulus-hash"&lt;/code&gt;, that will use
+a hashing function to partition messages routed to a logical queue
+across a number of regular queues (shards).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;"x-modulus-hash"&lt;/code&gt; exchange will hash the routing key used to
+publish the message and then it will apply a &lt;code&gt;Hash mod N&lt;/code&gt; to pick the
+queue where to route the message, where N is the number of queues
+bound to the exchange. &lt;strong&gt;This exchange will completely ignore the
+binding key used to bind the queue to the exchange&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;There are other exchanges with similar behaviour:
+the &lt;em&gt;Consistent Hash Exchange&lt;/em&gt; or the &lt;em&gt;Random Exchange&lt;/em&gt;.
+Those were designed with regular queues in mind, not this plugin, so &lt;code&gt;"x-modulus-hash"&lt;/code&gt;
+is highly recommended.&lt;/p&gt;
+&lt;p&gt;If message partitioning is the only feature necessary and the automatic scaling
+of the number of shards (covered below) is not needed or desired, consider using
+&lt;a href="https://github.com/rabbitmq/rabbitmq-consistent-hash-exchange"&gt;Consistent Hash Exchange&lt;/a&gt;
+instead of this plugin.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-auto-scaling" class="anchor" aria-hidden="true" href="#auto-scaling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Auto-scaling&lt;/h2&gt;
+&lt;p&gt;One of the main properties of this plugin is that when a new node
+is added to the RabbitMQ cluster, then the plugin will automatically create
+more shards on the new node. Say there is a shard with 4 queues on
+&lt;code&gt;node a&lt;/code&gt; and &lt;code&gt;node b&lt;/code&gt; just joined the cluster. The plugin will
+automatically create 4 queues on &lt;code&gt;node b&lt;/code&gt; and "join" them to the shard
+partition. Already delivered messages &lt;em&gt;will not&lt;/em&gt; be rebalanced but
+newly arriving messages will be partitioned to the new queues.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-consuming-from-a-sharded-pseudo-queue" class="anchor" aria-hidden="true" href="#consuming-from-a-sharded-pseudo-queue"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Consuming From a Sharded [Pseudo-]Queue&lt;/h2&gt;
+&lt;p&gt;While the plugin creates a bunch of "shard" queues behind the scenes, the idea
+is that those queues act like a big logical queue where you consume
+messages from it. Total ordering of messages between shards is not defined.&lt;/p&gt;
+&lt;p&gt;An example should illustrate this better: let's say you declared the
+exchange &lt;em&gt;images&lt;/em&gt; to be a sharded exchange. Then RabbitMQ creates
+several "shard" queues behind the scenes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;shard: - nodename images 1&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;shard: - nodename images 2&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;shard: - nodename images 3&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;shard: - nodename images 4&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To consume from a sharded queue, register a consumer on the &lt;code&gt;"images"&lt;/code&gt; pseudo-queue
+using the &lt;code&gt;basic.consume&lt;/code&gt; method. RabbitMQ will attach the consumer to a shard
+behind the scenes. Note that &lt;strong&gt;consumers must not declare a queue with the same
+name as the sharded pseudo-queue prior to consuming&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;TL;DR: if you have a shard called &lt;em&gt;images&lt;/em&gt;, then you can directly
+consume from a queue called &lt;em&gt;images&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;How does it work? The plugin will chose the queue from the shard with
+the &lt;em&gt;least amount of consumers&lt;/em&gt;, provided the queue contents are local
+to the broker you are connected to.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE: there's a small race condition between RabbitMQ updating the
+queue's internal stats about consumers and when clients issue
+&lt;code&gt;basic.consume&lt;/code&gt; commands.&lt;/strong&gt; The problem with this is that if your
+client issue many &lt;code&gt;basic.consume&lt;/code&gt; commands without too much time in
+between, it might happen that the plugin assigns the consumers to
+queues in an uneven way.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-load-distribution-and-consumer-balancing" class="anchor" aria-hidden="true" href="#load-distribution-and-consumer-balancing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Load Distribution and Consumer Balancing&lt;/h2&gt;
+&lt;p&gt;As of RabbitMQ 3.8.1, the plugin is no longer affected by the queue master locator policy when using mirrored queues. Please read below if you use a previous version.&lt;/p&gt;
+&lt;p&gt;This plugin can be affected by &lt;a href="https://www.rabbitmq.com/ha.html" rel="nofollow"&gt;queue master locator policy used&lt;/a&gt; in
+the cluster as well as client connection load balancing strategy.&lt;/p&gt;
+&lt;p&gt;"Minimum masters" is a queue master locator that is most in line with the goals of
+this plugin.&lt;/p&gt;
+&lt;p&gt;For load balancers, the "least connections" strategy is more likely to produce an even distribution compared
+to round robin and other strategies.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-how-evenly-will-messages-be-distributed" class="anchor" aria-hidden="true" href="#how-evenly-will-messages-be-distributed"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How Evenly Will Messages Be Distributed?&lt;/h3&gt;
+&lt;p&gt;As with many data distribution approaches based on a hashing function,
+even distribution between shards depends on the distribution (variability) of inputs,
+that is, routing keys. In other words the larger the set of routing keys is,
+the more even will message distribution between shareds be. If all messages had
+the same routing key, they would all end up on the same shard.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-rabbitmq-360-or-later" class="anchor" aria-hidden="true" href="#rabbitmq-360-or-later"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ 3.6.0 or later&lt;/h3&gt;
+&lt;p&gt;As of RabbitMQ &lt;code&gt;3.6.0&lt;/code&gt; this plugin is included into the RabbitMQ distribution.&lt;/p&gt;
+&lt;p&gt;Like any other &lt;a href="https://www.rabbitmq.com/plugins.html" rel="nofollow"&gt;RabbitMQ plugin&lt;/a&gt; it has to be enabled before it can be used:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rabbitmq-plugins &lt;span class="pl-c1"&gt;enable&lt;/span&gt; rabbitmq_sharding&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You'd probably want to also enable the Consistent Hash Exchange
+plugin, too.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-with-earlier-versions" class="anchor" aria-hidden="true" href="#with-earlier-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;With Earlier Versions&lt;/h3&gt;
+&lt;p&gt;Install the corresponding .ez files from our
+&lt;a href="https://www.rabbitmq.com/community-plugins/" rel="nofollow"&gt;Community Plugins archive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then run the following command:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rabbitmq-plugins &lt;span class="pl-c1"&gt;enable&lt;/span&gt; rabbitmq_sharding&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You'd probably want to also enable the Consistent Hash Exchange
+plugin, too.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Once the plugin is installed you can define an exchange as sharded by
+setting up a policy that matches the exchange name. For example if we
+have the exchange called &lt;code&gt;shard.images&lt;/code&gt;, we could define the following
+policy to shard it:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;$CTL&lt;/span&gt; set_policy images-shard &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;^shard.images$&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;{"shards-per-node": 2, "routing-key": "1234"}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will create &lt;code&gt;2&lt;/code&gt; sharded queues per node in the cluster, and will
+bind those queues using the &lt;code&gt;"1234"&lt;/code&gt; routing key.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-about-the-routing-key-policy-definition" class="anchor" aria-hidden="true" href="#about-the-routing-key-policy-definition"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About the routing-key policy definition&lt;/h3&gt;
+&lt;p&gt;In the example above we use the routing key &lt;code&gt;1234&lt;/code&gt; when defining the
+policy. This means that the underlying exchanges used for sharding
+will bind the sharded queues to the exchange using the &lt;code&gt;1234&lt;/code&gt; routing
+key specified above. This means that for a direct exchange, _only
+messages that are published with the routing key &lt;code&gt;1234&lt;/code&gt; will be routed
+to the sharded queues. If you decide to use a fanout exchange for
+sharding, then the &lt;code&gt;1234&lt;/code&gt; routing key, while used during binding, will
+be ignored by the exchange. If you use the &lt;code&gt;"x-modulus-hash"&lt;/code&gt;
+exchange, then the routing key will be ignored as well. So depending
+on the exchange you use, will be the effect the &lt;code&gt;routing-key&lt;/code&gt; policy
+definition has while routing messages.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;routing-key&lt;/code&gt; policy definition is optional.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-from-source" class="anchor" aria-hidden="true" href="#building-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from Source&lt;/h2&gt;
+&lt;p&gt;Get the RabbitMQ Public Umbrella ready as explained in the
+&lt;a href="https://www.rabbitmq.com/plugin-development.html" rel="nofollow"&gt;RabbitMQ Plugin Development Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Move to the umbrella folder an then run the following commands, to
+fetch dependencies:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;make up
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; deps/rabbitmq-sharding
+make dist&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENSE&lt;/h2&gt;
+&lt;p&gt;See the LICENSE file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-extra-information" class="anchor" aria-hidden="true" href="#extra-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extra information&lt;/h2&gt;
+&lt;p&gt;Some information about how the plugin affects message ordering and
+some other details can be found in the file README.extra.md&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-sharding</guid><pubDate>Fri, 10 Jan 2020 00:11:00 GMT</pubDate></item><item><title>lpgauth/swirl #12 in Erlang, Today</title><link>https://github.com/lpgauth/swirl</link><description>&lt;p&gt;&lt;i&gt;High-Performance Erlang Stream Processor&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-swirl" class="anchor" aria-hidden="true" href="#swirl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;swirl&lt;/h1&gt;
+&lt;p&gt;High Performance Erlang Stream Processor&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/lpgauth/swirl" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3793238b7f948677138df681fcf0a54fba3deac5/68747470733a2f2f7472617669732d63692e6f72672f6c7067617574682f737769726c2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/lpgauth/swirl.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Erlang 16.0 +&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-environment-variables" class="anchor" aria-hidden="true" href="#environment-variables"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Environment variables&lt;/h3&gt;
+
+    &lt;table width="100%"&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Type&lt;/th&gt;
+    &lt;th&gt;Default&lt;/th&gt;
+    &lt;th&gt;Description&lt;/th&gt;
+  
+  &lt;/tr&gt;&lt;tr&gt;
+    &lt;td&gt;mappers_max&lt;/td&gt;
+    &lt;td&gt;pos_integer()&lt;/td&gt;
+    &lt;td&gt;100&lt;/td&gt;
+    &lt;td&gt;maximum number of mappers&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;reducers_max&lt;/td&gt;
+    &lt;td&gt;pos_integer()&lt;/td&gt;
+    &lt;td&gt;100&lt;/td&gt;
+    &lt;td&gt;maximum number of reducers&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-starting-a-flow" class="anchor" aria-hidden="true" href="#starting-a-flow"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Starting a flow&lt;/h4&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;ok&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;application&lt;/span&gt;:&lt;span class="pl-en"&gt;start&lt;/span&gt;(&lt;span class="pl-c1"&gt;swirl&lt;/span&gt;),
+
+&lt;span class="pl-smi"&gt;FlowMod&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;swirl_flow_example&lt;/span&gt;,
+&lt;span class="pl-smi"&gt;FlowOpts&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [
+    {&lt;span class="pl-c1"&gt;stream_names&lt;/span&gt;, [&lt;span class="pl-c1"&gt;delivery&lt;/span&gt;]},
+    {&lt;span class="pl-c1"&gt;stream_filter&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;exchange_id = 3 AND bidder_id IS NOT NULL&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}
+],
+&lt;span class="pl-smi"&gt;MapperNodes&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; [&lt;span class="pl-en"&gt;node&lt;/span&gt;()],
+&lt;span class="pl-smi"&gt;ReducerNode&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;node&lt;/span&gt;(),
+{&lt;span class="pl-c1"&gt;ok&lt;/span&gt;, &lt;span class="pl-smi"&gt;Flow&lt;/span&gt;} &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;swirl_flow&lt;/span&gt;:&lt;span class="pl-en"&gt;start&lt;/span&gt;(&lt;span class="pl-smi"&gt;FlowMod&lt;/span&gt;, &lt;span class="pl-smi"&gt;FlowOpts&lt;/span&gt;, &lt;span class="pl-smi"&gt;MapperNodes&lt;/span&gt;, &lt;span class="pl-smi"&gt;ReducerNode&lt;/span&gt;),
+
+&lt;span class="pl-smi"&gt;StreamName&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;delivery&lt;/span&gt;,
+&lt;span class="pl-smi"&gt;Event&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; #{&lt;span class="pl-c1"&gt;exchange_id&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;bidder_id&lt;/span&gt; &lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;},
+
+&lt;span class="pl-en"&gt;swirl_stream&lt;/span&gt;:&lt;span class="pl-en"&gt;emit&lt;/span&gt;(&lt;span class="pl-smi"&gt;StreamName&lt;/span&gt;, &lt;span class="pl-smi"&gt;Event&lt;/span&gt;),
+
+&lt;span class="pl-c1"&gt;ok&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-en"&gt;swirl_flow&lt;/span&gt;:&lt;span class="pl-en"&gt;stop&lt;/span&gt;(&lt;span class="pl-smi"&gt;Flow&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-implementing-a-flow" class="anchor" aria-hidden="true" href="#implementing-a-flow"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Implementing a flow&lt;/h4&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;-&lt;span class="pl-k"&gt;module&lt;/span&gt;(&lt;span class="pl-en"&gt;swirl_flow_example&lt;/span&gt;).
+-&lt;span class="pl-k"&gt;include_lib&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;swirl/include/swirl.hrl&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;).
+
+-&lt;span class="pl-k"&gt;behavior&lt;/span&gt;(&lt;span class="pl-c1"&gt;swirl_flow&lt;/span&gt;).
+-&lt;span class="pl-k"&gt;export&lt;/span&gt;([
+    &lt;span class="pl-en"&gt;map&lt;/span&gt;/&lt;span class="pl-c1"&gt;3&lt;/span&gt;,
+    &lt;span class="pl-en"&gt;reduce&lt;/span&gt;/&lt;span class="pl-c1"&gt;3&lt;/span&gt;,
+    &lt;span class="pl-en"&gt;output&lt;/span&gt;/&lt;span class="pl-c1"&gt;4&lt;/span&gt;
+]).
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;%&lt;/span&gt;% swirl_flow callbacks&lt;/span&gt;
+&lt;span class="pl-en"&gt;map&lt;/span&gt;(&lt;span class="pl-smi"&gt;StreamName&lt;/span&gt;, &lt;span class="pl-smi"&gt;Event&lt;/span&gt;, &lt;span class="pl-smi"&gt;_MapperOpts&lt;/span&gt;) &lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="pl-smi"&gt;Type&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;?&lt;/span&gt;&lt;span class="pl-en"&gt;L&lt;/span&gt;(&lt;span class="pl-c1"&gt;type&lt;/span&gt;, &lt;span class="pl-smi"&gt;Event&lt;/span&gt;),
+    &lt;span class="pl-smi"&gt;ExchangeId&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;?&lt;/span&gt;&lt;span class="pl-en"&gt;L&lt;/span&gt;(&lt;span class="pl-c1"&gt;exchange_id&lt;/span&gt;, &lt;span class="pl-smi"&gt;Event&lt;/span&gt;),
+    &lt;span class="pl-smi"&gt;BidderId&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;?&lt;/span&gt;&lt;span class="pl-en"&gt;L&lt;/span&gt;(&lt;span class="pl-c1"&gt;bidder_id&lt;/span&gt;, &lt;span class="pl-smi"&gt;Event&lt;/span&gt;),
+
+    &lt;span class="pl-smi"&gt;Key&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {&lt;span class="pl-smi"&gt;Type&lt;/span&gt;, &lt;span class="pl-smi"&gt;StreamName&lt;/span&gt;, &lt;span class="pl-smi"&gt;ExchangeId&lt;/span&gt;, &lt;span class="pl-smi"&gt;BidderId&lt;/span&gt;},
+    &lt;span class="pl-smi"&gt;CounterIncrements&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; {&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;10&lt;/span&gt;},
+
+    {&lt;span class="pl-smi"&gt;Key&lt;/span&gt;, &lt;span class="pl-smi"&gt;CounterIncrements&lt;/span&gt;}.
+
+&lt;span class="pl-en"&gt;reduce&lt;/span&gt;(&lt;span class="pl-smi"&gt;_Flow&lt;/span&gt;, &lt;span class="pl-smi"&gt;Row&lt;/span&gt;, &lt;span class="pl-smi"&gt;_ReducerOpts&lt;/span&gt;) &lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="pl-smi"&gt;Row&lt;/span&gt;.
+
+&lt;span class="pl-en"&gt;output&lt;/span&gt;(&lt;span class="pl-smi"&gt;_Flow&lt;/span&gt;, &lt;span class="pl-smi"&gt;_Period&lt;/span&gt;, &lt;span class="pl-smi"&gt;Rows&lt;/span&gt;, &lt;span class="pl-smi"&gt;OutputOpts&lt;/span&gt;) &lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;%&lt;/span&gt;% do something with the output&lt;/span&gt;
+    &lt;span class="pl-en"&gt;io&lt;/span&gt;:&lt;span class="pl-en"&gt;format&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rows: &lt;span class="pl-c1"&gt;~p~n&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, [&lt;span class="pl-smi"&gt;Rows&lt;/span&gt;]),&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-stream-filter" class="anchor" aria-hidden="true" href="#stream-filter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stream Filter&lt;/h4&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;exchange_id&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt; &lt;span class="pl-smi"&gt;AND&lt;/span&gt; &lt;span class="pl-c1"&gt;bidder_id&lt;/span&gt; &lt;span class="pl-smi"&gt;IS&lt;/span&gt; &lt;span class="pl-smi"&gt;NOT&lt;/span&gt; &lt;span class="pl-smi"&gt;NULL&lt;/span&gt;
+&lt;span class="pl-c1"&gt;flight_id&lt;/span&gt; &lt;span class="pl-en"&gt;in&lt;/span&gt; (&lt;span class="pl-c1"&gt;10&lt;/span&gt;, &lt;span class="pl-c1"&gt;12&lt;/span&gt;, &lt;span class="pl-c1"&gt;23&lt;/span&gt;) &lt;span class="pl-smi"&gt;OR&lt;/span&gt; &lt;span class="pl-c1"&gt;tag_id&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;
+&lt;span class="pl-c1"&gt;buyer_id&lt;/span&gt; &lt;span class="pl-c1"&gt;notnull&lt;/span&gt; &lt;span class="pl-smi"&gt;AND&lt;/span&gt; &lt;span class="pl-c1"&gt;seller_id&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;103&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-swirl-ql" class="anchor" aria-hidden="true" href="#swirl-ql"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swirl QL&lt;/h4&gt;
+&lt;p&gt;variables:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;atom()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;values:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;integer() | float() | binary()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;boolean operators:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;'and' | 'or'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;comparison operators:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;'&amp;lt;' | '&amp;lt;=' | '=' | '&amp;gt;=' | '&amp;gt;' | '&amp;lt;&amp;gt;'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;inclusion operators:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;in | notin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;null operators:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;null | notnull
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-todo" class="anchor" aria-hidden="true" href="#todo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TODO&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;node discovery&lt;/li&gt;
+&lt;li&gt;boolean expression indexing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-tests" class="anchor" aria-hidden="true" href="#tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tests&lt;/h2&gt;
+&lt;div class="highlight highlight-source-makefile"&gt;&lt;pre&gt;make dialyzer
+make elvis
+make eunit
+make xref&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;pre lang="license"&gt;&lt;code&gt;The MIT License (MIT)
+
+Copyright (c) 2013-2016 Louis-Philippe Gauthier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>lpgauth</author><guid isPermaLink="false">https://github.com/lpgauth/swirl</guid><pubDate>Fri, 10 Jan 2020 00:12:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-web-dispatch #13 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-web-dispatch</link><description>&lt;p&gt;&lt;i&gt;Underpins all RabbitMQ plugins that provide an HTTP API&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-web-dispatch" class="anchor" aria-hidden="true" href="#rabbitmq-web-dispatch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Web Dispatch&lt;/h1&gt;
+&lt;p&gt;rabbitmq-web-dispatch is a thin veneer around Cowboy that provides the
+ability for multiple applications to co-exist on Cowboy
+listeners. Applications can register static document roots or dynamic
+handlers to be executed, dispatched by URL path prefix.&lt;/p&gt;
+&lt;p&gt;See&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/management.html" rel="nofollow"&gt;Management plugin guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/web-stomp.html" rel="nofollow"&gt;Web STOMP guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/web-mqtt.html" rel="nofollow"&gt;Web MQTT guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;for information on configuring plugins that expose an HTTP or WebSocket interface.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-web-dispatch</guid><pubDate>Fri, 10 Jan 2020 00:13:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-amqp1.0-common #14 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-amqp1.0-common</link><description>&lt;p&gt;&lt;i&gt;Modules shared by rabbitmq-amqp1.0 and rabbitmq-amqp1.0-client&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;This repo does not have a README.&lt;/i&gt;&lt;/p&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-amqp1.0-common</guid><pubDate>Fri, 10 Jan 2020 00:14:00 GMT</pubDate></item><item><title>ninenines/ranch #15 in Erlang, Today</title><link>https://github.com/ninenines/ranch</link><description>&lt;p&gt;&lt;i&gt;Socket acceptor pool for TCP protocols.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="asciidoc" data-path="README.asciidoc"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ranch" class="anchor" aria-hidden="true" href="#ranch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ranch&lt;/h1&gt;
+&lt;div id="user-content-preamble"&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Ranch is a socket acceptor pool for TCP protocols.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-goals"&gt;&lt;a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Goals&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;Ranch aims to provide everything you need to accept TCP connections with
+a &lt;strong&gt;small&lt;/strong&gt; code base and &lt;strong&gt;low latency&lt;/strong&gt; while being easy to use directly
+as an application or to &lt;strong&gt;embed&lt;/strong&gt; into your own.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Ranch provides a &lt;strong&gt;modular&lt;/strong&gt; design, letting you choose which transport
+and protocol are going to be used for a particular listener. Listeners
+accept and manage connections on one port, and include facilities to
+limit the number of &lt;strong&gt;concurrent&lt;/strong&gt; connections. Connections are sorted
+into &lt;strong&gt;pools&lt;/strong&gt;, each pool having a different configurable limit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;Ranch also allows you to &lt;strong&gt;upgrade&lt;/strong&gt; the acceptor pool without having
+to close any of the currently opened sockets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-online-documentation"&gt;&lt;a id="user-content-online-documentation" class="anchor" aria-hidden="true" href="#online-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Online documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/ranch/2.0/guide" rel="nofollow"&gt;User guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/docs/en/ranch/2.0/manual" rel="nofollow"&gt;Function reference&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-offline-documentation"&gt;&lt;a id="user-content-offline-documentation" class="anchor" aria-hidden="true" href="#offline-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Offline documentation&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;While still online, run &lt;code&gt;make docs&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User guide available in &lt;code&gt;doc/&lt;/code&gt; in PDF and HTML formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Function reference man pages available in &lt;code&gt;doc/man3/&lt;/code&gt; and &lt;code&gt;doc/man7/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;make install-docs&lt;/code&gt; to install man pages on your system&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Full documentation in Asciidoc available in &lt;code&gt;doc/src/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples available in &lt;code&gt;examples/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2 id="user-content-getting-help"&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting help&lt;/h2&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Official IRC Channel: #ninenines on irc.freenode.net&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/ninenines/ranch/issues"&gt;Issues tracker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ninenines.eu/services" rel="nofollow"&gt;Commercial Support&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</description><author>ninenines</author><guid isPermaLink="false">https://github.com/ninenines/ranch</guid><pubDate>Fri, 10 Jan 2020 00:15:00 GMT</pubDate></item><item><title>apache/dubbo-erlang #16 in Erlang, Today</title><link>https://github.com/apache/dubbo-erlang</link><description>&lt;p&gt;&lt;i&gt;Apache Dubbo Erlang Implementation.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-dubboerl" class="anchor" aria-hidden="true" href="#dubboerl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dubboerl&lt;/h1&gt;
+&lt;p&gt;Apache Dubbo Erlang Implementation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/apache/dubbo-erlang" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/48909fd4839b6b3c45af60186e079365ce0cb803/68747470733a2f2f7472617669732d63692e6f72672f6170616368652f647562626f2d65726c616e672e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/apache/dubbo-erlang.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codecov.io/gh/apache/dubbo-erlang" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b532550fd360a981f55bcbad69fb52a98b310ade/68747470733a2f2f636f6465636f762e696f2f67682f6170616368652f647562626f2d65726c616e672f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/apache/dubbo-erlang/branch/master/graph/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-feature-list" class="anchor" aria-hidden="true" href="#feature-list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Feature list&lt;/h2&gt;
+&lt;p&gt;The following features are supported.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zookeeper registry center (√)&lt;/li&gt;
+&lt;li&gt;Dubbo Protocol (√)&lt;/li&gt;
+&lt;li&gt;Serialize
+&lt;ul&gt;
+&lt;li&gt;Hessian serialize (√)&lt;/li&gt;
+&lt;li&gt;Json serialize (√)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Erlang project as consumer or provider (√)&lt;/li&gt;
+&lt;li&gt;Sync and Async invoker (√)&lt;/li&gt;
+&lt;li&gt;Random loadbalance (√)&lt;/li&gt;
+&lt;li&gt;Connection pools (√)&lt;/li&gt;
+&lt;li&gt;Support protocol,cluster,loadbalance,registry and filter extension point.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-start" class="anchor" aria-hidden="true" href="#start"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Start&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-import" class="anchor" aria-hidden="true" href="#import"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Import&lt;/h4&gt;
+&lt;p&gt;Add dubblerl to rebar.config with your project&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;{&lt;span class="pl-c1"&gt;deps&lt;/span&gt;, [
+    {&lt;span class="pl-c1"&gt;dubboerl&lt;/span&gt;, {&lt;span class="pl-c1"&gt;git&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://github.com/apache/dubbo-erlang.git&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, {&lt;span class="pl-c1"&gt;branch&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;master&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;}}}
+]}.&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-step1" class="anchor" aria-hidden="true" href="#step1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step1&lt;/h4&gt;
+&lt;p&gt;Use &lt;a href="./tools/erlanalysis"&gt;erlanalysis&lt;/a&gt; tool transfer java interface to erlang lib. And add the lib to you project app dir.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-step2" class="anchor" aria-hidden="true" href="#step2"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step2&lt;/h4&gt;
+&lt;p&gt;configure dubbo reference.&lt;/p&gt;
+&lt;p&gt;in sys.config add dubboerl config.
+For example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;{&lt;span class="pl-c1"&gt;dubboerl&lt;/span&gt;,[
+    {&lt;span class="pl-c1"&gt;application&lt;/span&gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;testdubboerl&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;},
+    {&lt;span class="pl-c1"&gt;protocol&lt;/span&gt;, {&lt;span class="pl-c1"&gt;dubbo&lt;/span&gt;, [{&lt;span class="pl-c1"&gt;port&lt;/span&gt;, &lt;span class="pl-c1"&gt;20882&lt;/span&gt;}]}},
+    {&lt;span class="pl-c1"&gt;registry&lt;/span&gt;,&lt;span class="pl-c1"&gt;zookeeper&lt;/span&gt;},
+    {&lt;span class="pl-c1"&gt;zookeeper_list&lt;/span&gt;,[{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;127.0.0.1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,&lt;span class="pl-c1"&gt;2181&lt;/span&gt;}]},
+    {&lt;span class="pl-c1"&gt;serialization&lt;/span&gt;,&lt;span class="pl-c1"&gt;hessian&lt;/span&gt;},
+    {&lt;span class="pl-c1"&gt;consumer&lt;/span&gt;,[
+        {&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;org.apache.dubbo.erlang.sample.service.facade.UserOperator&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,[]}
+    ]},
+    {&lt;span class="pl-c1"&gt;provider&lt;/span&gt;,[
+        {&lt;span class="pl-c1"&gt;user_impl&lt;/span&gt;,&lt;span class="pl-c1"&gt;userOperator&lt;/span&gt;,&amp;lt;&amp;lt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;org.apache.dubbo.erlang.sample.service.facade.UserOperator&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&amp;gt;,[]}
+    ]}
+]}&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-step4" class="anchor" aria-hidden="true" href="#step4"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step4&lt;/h4&gt;
+&lt;p&gt;Init dubboerl application context when your project start.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dubboerl:init().
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-step5" class="anchor" aria-hidden="true" href="#step5"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step5&lt;/h4&gt;
+&lt;p&gt;Call the interface method.&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;&lt;span class="pl-smi"&gt;Request&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;#&lt;/span&gt;&lt;span class="pl-en"&gt;userInfoRequest&lt;/span&gt;{&lt;span class="pl-smi"&gt;requestId&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;123&lt;/span&gt;, &lt;span class="pl-smi"&gt;username&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;testname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;},
+&lt;span class="pl-en"&gt;userOperator&lt;/span&gt;:&lt;span class="pl-en"&gt;queryUserInfo&lt;/span&gt;(&lt;span class="pl-smi"&gt;Request&lt;/span&gt;,#{&lt;span class="pl-c1"&gt;sync&lt;/span&gt;&lt;span class="pl-k"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;}).&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-sample" class="anchor" aria-hidden="true" href="#sample"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sample&lt;/h2&gt;
+&lt;p&gt;Reference the demo project &lt;a href="./samples/dubboerl_demo"&gt;dubboerl_demo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-more-documents" class="anchor" aria-hidden="true" href="#more-documents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More Documents&lt;/h2&gt;
+&lt;p&gt;Reference &lt;a href="http://dubbo.apache.org/en-us/docs/user/languages/erlang/start.html" rel="nofollow"&gt;Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>apache</author><guid isPermaLink="false">https://github.com/apache/dubbo-erlang</guid><pubDate>Fri, 10 Jan 2020 00:16:00 GMT</pubDate></item></channel></rss>

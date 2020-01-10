@@ -1,2 +1,317 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Common Lisp, Today</title><link>https://github.com/trending/common-lisp?since=daily</link><description>The top repositories on GitHub for common-lisp, measured daily</description><pubDate>Thu, 09 Jan 2020 01:08:09 GMT</pubDate><lastBuildDate>Thu, 09 Jan 2020 01:08:09 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Common Lisp, Today today</title><pubDate>Thu, 09 Jan 2020 01:08:09 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Common Lisp, Today</title><link>https://github.com/trending/common-lisp?since=daily</link><description>The top repositories on GitHub for common-lisp, measured daily</description><pubDate>Fri, 10 Jan 2020 01:12:54 GMT</pubDate><lastBuildDate>Fri, 10 Jan 2020 01:12:54 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>dimitri/pgloader #1 in Common Lisp, Today</title><link>https://github.com/dimitri/pgloader</link><description>&lt;p&gt;&lt;i&gt;Migrate to PostgreSQL in a single command!&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-pgloader" class="anchor" aria-hidden="true" href="#pgloader"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PGLoader&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/dimitri/pgloader" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9b87c70a3ff663e62c6f1b8291648a118a79f515/68747470733a2f2f7472617669732d63692e6f72672f64696d697472692f70676c6f616465722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/dimitri/pgloader.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://gitter.im/dimitri/pgloader?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/dimitri/pgloader" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://cloud.docker.com/repository/docker/dimitri/pgloader" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d8f7cd9f29252b82f3da2835032c07b8b7b36b2a/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f636c6f75642f6275696c642f64696d697472692f70676c6f616465722e737667" alt="Docker Build Status" data-canonical-src="https://img.shields.io/docker/cloud/build/dimitri/pgloader.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://pgloader.readthedocs.io/en/latest/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4ab5920bc04dc763ffe341142d5a9b292eeff516/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f70676c6f616465722f62616467652f3f76657273696f6e3d6c6174657374267374796c653d706c6173746963" alt="Read The Docs Status" data-canonical-src="https://readthedocs.org/projects/pgloader/badge/?version=latest&amp;amp;style=plastic" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pgloader is a data loading tool for PostgreSQL, using the &lt;code&gt;COPY&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;Its main advantage over just using &lt;code&gt;COPY&lt;/code&gt; or &lt;code&gt;\copy&lt;/code&gt;, and over using a
+&lt;em&gt;Foreign Data Wrapper&lt;/em&gt;, is its transaction behaviour, where &lt;em&gt;pgloader&lt;/em&gt;
+will keep a separate file of rejected data, but continue trying to
+&lt;code&gt;copy&lt;/code&gt; good data in your database.&lt;/p&gt;
+&lt;p&gt;The default PostgreSQL behaviour is transactional, which means that
+&lt;em&gt;any&lt;/em&gt; erroneous line in the input data (file or remote database) will
+stop the entire bulk load for the table.&lt;/p&gt;
+&lt;p&gt;pgloader also implements data reformatting, a typical example of that
+being the transformation of MySQL datestamps &lt;code&gt;0000-00-00&lt;/code&gt; and
+&lt;code&gt;0000-00-00 00:00:00&lt;/code&gt; to PostgreSQL &lt;code&gt;NULL&lt;/code&gt; value (because our calendar
+never had a &lt;em&gt;year zero&lt;/em&gt;).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-versioning" class="anchor" aria-hidden="true" href="#versioning"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Versioning&lt;/h2&gt;
+&lt;p&gt;pgloader version 1.x is quite old and was developed in &lt;code&gt;TCL&lt;/code&gt;.
+When faced with maintaining that code, the new emerging development
+team (hi!) picked &lt;code&gt;python&lt;/code&gt; instead because that made sense at the
+time. So pgloader version 2.x was written in python.&lt;/p&gt;
+&lt;p&gt;The current version of pgloader is the 3.x series, which is written in
+&lt;a href="http://cliki.net/" rel="nofollow"&gt;Common Lisp&lt;/a&gt; for better development flexibility,
+runtime performance, and support of real threading.&lt;/p&gt;
+&lt;p&gt;The versioning is now following the Emacs model, where any X.0 release
+number means you're using a development version (alpha, beta, or release
+candidate). The next stable versions are going to be &lt;code&gt;3.1&lt;/code&gt; then &lt;code&gt;3.2&lt;/code&gt; etc.&lt;/p&gt;
+&lt;p&gt;When using a development snapshot rather than a released version the version
+number includes the git hash (in its abbreviated form):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pgloader version "3.0.99"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Release candidate 9 for pgloader version 3.1, with a &lt;em&gt;git tag&lt;/em&gt; named
+&lt;code&gt;v3.0.99&lt;/code&gt; so that it's easy to checkout the same sources as the
+released code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pgloader version "3.0.fecae2c"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Development snapshot again &lt;em&gt;git hash&lt;/em&gt; &lt;code&gt;fecae2c&lt;/code&gt;. It's possible to have
+the same sources on another setup with using the git command &lt;code&gt;git checkout fecae2c&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pgloader version "3.1.0"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Stable release.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-licence" class="anchor" aria-hidden="true" href="#licence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LICENCE&lt;/h2&gt;
+&lt;p&gt;pgloader is available under &lt;a href="http://www.postgresql.org/about/licence/" rel="nofollow"&gt;The PostgreSQL Licence&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;INSTALL&lt;/h2&gt;
+&lt;p&gt;You can install pgloader directly from
+&lt;a href="https://wiki.postgresql.org/wiki/Apt" rel="nofollow"&gt;apt.postgresql.org&lt;/a&gt; and from official
+debian repositories, see
+&lt;a href="https://packages.debian.org/search?keywords=pgloader" rel="nofollow"&gt;packages.debian.org/pgloader&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ apt-get install pgloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also use a &lt;strong&gt;docker&lt;/strong&gt; image for pgloader at
+&lt;a href="https://hub.docker.com/r/dimitri/pgloader/" rel="nofollow"&gt;https://hub.docker.com/r/dimitri/pgloader/&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker pull dimitri/pgloader
+$ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --version
+$ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-build-from-sources" class="anchor" aria-hidden="true" href="#build-from-sources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build from sources&lt;/h2&gt;
+&lt;p&gt;pgloader is now a Common Lisp program, tested using the
+&lt;a href="http://sbcl.org/" rel="nofollow"&gt;SBCL&lt;/a&gt; (&amp;gt;= 1.2.5) and
+&lt;a href="http://ccl.clozure.com/" rel="nofollow"&gt;Clozure CL&lt;/a&gt; implementations with
+&lt;a href="http://www.quicklisp.org/beta/" rel="nofollow"&gt;Quicklisp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When building from sources, you should always build from the current git
+&lt;code&gt;HEAD&lt;/code&gt; as it's basically the only source that is managed in a way to ensure
+it builds aginst current set of dependencies versions.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-from-sources-on-debian" class="anchor" aria-hidden="true" href="#building-from-sources-on-debian"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from sources on debian&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ apt-get install sbcl unzip libsqlite3-dev make curl gawk freetds-dev libzip-dev
+$ cd /path/to/pgloader
+$ make pgloader
+$ ./build/bin/pgloader --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-building-from-sources-on-macos" class="anchor" aria-hidden="true" href="#building-from-sources-on-macos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from sources on macOS&lt;/h3&gt;
+&lt;p&gt;When using &lt;a href="https://brew.sh" rel="nofollow"&gt;brew&lt;/a&gt;, it should be a simple &lt;code&gt;brew install --HEAD pgloader&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When using &lt;a href="https://www.macports.org" rel="nofollow"&gt;macports&lt;/a&gt;, then we have a situation to
+deal with with shared objects pgloader depends on, as reported in issue #161
+at &lt;a href="https://github.com/dimitri/pgloader/issues/161#issuecomment-201162647"&gt;https://github.com/dimitri/pgloader/issues/161#issuecomment-201162647&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I was able to get a clean build without having to disable compression after
+symlinking /usr/local/lib to /opt/local/lib. Note that I did not have
+anything installed to /usr/local/lib so I didn't lose anything here.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a id="user-content-building-from-sources-on-windows" class="anchor" aria-hidden="true" href="#building-from-sources-on-windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building from sources on Windows&lt;/h3&gt;
+&lt;p&gt;Building pgloader on Windows is supported, thanks to Common Lisp
+implementations being available on that platform, and to the Common Lisp
+Standard for making it easy to write actually portable code.&lt;/p&gt;
+&lt;p&gt;It is recommended to have a look at the issues labelled with &lt;em&gt;Windows
+support&lt;/em&gt; if you run into trouble when building
+pgloader:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/dimitri/pgloader/issues?utf8=%E2%9C%93&amp;amp;q=label%3A%22Windows%20support%22%20"&gt;https://github.com/dimitri/pgloader/issues?utf8=✓&amp;amp;q=label%3A%22Windows%20support%22%20&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-building-docker-image-from-sources" class="anchor" aria-hidden="true" href="#building-docker-image-from-sources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building Docker image from sources&lt;/h3&gt;
+&lt;p&gt;You can build a Docker image from source using SBCL by default:&lt;/p&gt;
+&lt;p&gt;$ docker build .&lt;/p&gt;
+&lt;p&gt;Or Clozure CL (CCL):&lt;/p&gt;
+&lt;p&gt;$ docker build -f Dockerfile.ccl .&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-more-options-when-building-from-source" class="anchor" aria-hidden="true" href="#more-options-when-building-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More options when building from source&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;Makefile&lt;/code&gt; target &lt;code&gt;pgloader&lt;/code&gt; knows how to produce a Self Contained
+Binary file for pgloader, found at &lt;code&gt;./build/bin/pgloader&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make pgloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, the &lt;code&gt;Makefile&lt;/code&gt; uses &lt;a href="http://sbcl.org/" rel="nofollow"&gt;SBCL&lt;/a&gt; to compile your
+binary image, though it's possible to build using
+&lt;a href="http://ccl.clozure.com/" rel="nofollow"&gt;CCL&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make CL=ccl pgloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If using &lt;code&gt;SBCL&lt;/code&gt; and it supports core compression, the make process will
+use it to generate a smaller binary.  To force disabling core
+compression, you may use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make COMPRESS_CORE=no pgloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;--compress-core&lt;/code&gt; is unique to SBCL, so not used when &lt;code&gt;CC&lt;/code&gt; is different
+from the &lt;code&gt;sbcl&lt;/code&gt; value.&lt;/p&gt;
+&lt;p&gt;You can also tweak the default amount of memory that the &lt;code&gt;pgloader&lt;/code&gt; image
+will allow itself using when running through your data (don't ask for more
+than your current RAM tho):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make DYNSIZE=8192 pgloader
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;make pgloader&lt;/code&gt; command when successful outputs a &lt;code&gt;./build/bin/pgloader&lt;/code&gt;
+file for you to use.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;You can either give a command file to pgloader or run it all from the
+command line, see the
+&lt;a href="https://pgloader.readthedocs.io/en/latest/tutorial/tutorial.html#pgloader-quick-start" rel="nofollow"&gt;pgloader quick start&lt;/a&gt; on
+&lt;a href="https://pgloader.readthedocs.io" rel="nofollow"&gt;https://pgloader.readthedocs.io&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./build/bin/pgloader --help
+$ ./build/bin/pgloader &amp;lt;file.load&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, for a full migration from SQLite:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ createdb newdb
+$ pgloader ./test/sqlite/sqlite.db postgresql:///newdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or for a full migration from MySQL, including schema definition (tables,
+indexes, foreign keys, comments) and parallel loading of the corrected data:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ createdb pagila
+$ pgloader mysql://user@localhost/sakila postgresql:///pagila
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dimitri</author><guid isPermaLink="false">https://github.com/dimitri/pgloader</guid><pubDate>Fri, 10 Jan 2020 00:01:00 GMT</pubDate></item><item><title>filecoin-project/orient #2 in Common Lisp, Today</title><link>https://github.com/filecoin-project/orient</link><description>&lt;p&gt;&lt;i&gt;↻Observe-Orient-Decide-Act↩&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-orientable" class="anchor" aria-hidden="true" href="#orientable"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Orient(able)&lt;/h1&gt;
+&lt;p&gt;(↻Observe-Orient-Decide-Act↩)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/filecoin-project/orient/tree/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/52738401c281a0d13b424d14759293bb44d9f7d4/68747470733a2f2f636972636c6563692e636f6d2f67682f66696c65636f696e2d70726f6a6563742f6f7269656e742f747265652f6d61737465722e7376673f7374796c653d73766726636972636c652d746f6b656e3d65303634363164346335636139373331353334613165323338633737653537356433363837393863" alt="CircleCI" data-canonical-src="https://circleci.com/gh/filecoin-project/orient/tree/master.svg?style=svg&amp;amp;circle-token=e06461d4c5ca9731534a1e238c77e575d368798c" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Orient began life as a proof-of-concept reference implementation intended as a lightweight way to explore and clarify
+the (now somewhat outdated) &lt;a href="https://docs.google.com/document/d/1zjWHegvZwTgvU4fOAjUbIwMwQyfPzHoXJVTX8iR--2E/edit#heading=h.2jf8rxk263pw" rel="nofollow"&gt;Orientable specification&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The underlying framework has been developed alongside the &lt;a href="ubercalc/ubercalc.org"&gt;Filecoin Übercalc&lt;/a&gt;. Eventually the repositories
+for these two projects will be split. In the meantime, for ease of development and deployment, they are colocated
+here.&lt;/p&gt;
+&lt;p&gt;For a brief introduction to Orient, see the &lt;a href="tutorial.org"&gt;tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-sbcl" class="anchor" aria-hidden="true" href="#sbcl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sbcl&lt;/h3&gt;
+&lt;p&gt;Code is in Common Lisp, developed and (to the extent it is) tested with SBCL.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; brew install sbcl&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; apt-get install sbcl&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-quicklisp--asdf" class="anchor" aria-hidden="true" href="#quicklisp--asdf"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QuickLisp &amp;amp; ASDF&lt;/h3&gt;
+&lt;p&gt;Install &lt;a href="https://www.quicklisp.org" rel="nofollow"&gt;QuickLisp&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the file for installation. (&lt;a href="https://beta.quicklisp.org/quicklisp.lisp" rel="nofollow"&gt;https://beta.quicklisp.org/quicklisp.lisp&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Then run sbcl with that file loaded by this command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sbcl --load path/of/quicklisp.lisp&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;After sbcl launched, type in the command below.&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(quicklisp-quickstart:install)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now Quicklisp has been installed. To ensure Quicklisp is loaded every time you start Lisp, type in the command below.&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(ql:add-to-init-file)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-optional-for-emacs-users" class="anchor" aria-hidden="true" href="#optional-for-emacs-users"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Optional for Emacs Users&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;NOTE:&lt;/em&gt; If you intend to develop on or with Orient (as opposed to just use CLI or web interfaces), then use of Emacs +
+Slime is strongly recommended.&lt;/p&gt;
+&lt;p&gt;Type in the command which will create a file you can load in Emacs to configure the right load-path for loading
+Quicklisp's installation of SLIME.&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(ql:quickload &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;quicklisp-slime-helper&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then configure Emacs to use Slime. Here is a simple but helpful configuration to place in you &lt;code&gt;.emacs&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(use-package slime
+  :init
+  (global-set-key (kbd &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-c z&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) 'slime-repl)
+  (&lt;span class="pl-c1"&gt;load&lt;/span&gt; (expand-file-name &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~/quicklisp/slime-helper.el&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+  (&lt;span class="pl-c1"&gt;setq&lt;/span&gt; inferior-lisp-program &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/usr/local/bin/sbcl&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  (add-to-list 'slime-contribs 'slime-repl))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ensure the path to your sbcl installation is correct.&lt;/p&gt;
+&lt;p&gt;You may also need to first &lt;a href="https://jwiegley.github.io/use-package/installation/" rel="nofollow"&gt;install use-package&lt;/a&gt; by carefully
+following the linked instructions. This is strongly recommended.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-integrate-the-project-with-quicklisp" class="anchor" aria-hidden="true" href="#integrate-the-project-with-quicklisp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Integrate the project with quicklisp&lt;/h3&gt;
+&lt;p&gt;QuickLisp needs to find the project, so add a symlink:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/quicklisp/local-projects
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; ln -s &lt;span class="pl-k"&gt;~&lt;/span&gt;/&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;installdir&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;/orient/orient.asd orient.asd&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-test-the-setup" class="anchor" aria-hidden="true" href="#test-the-setup"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test the Setup&lt;/h3&gt;
+&lt;p&gt;When configured correctly, this should work and show no failures:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; sbcl
+This is SBCL 1.4.14, an implementation of ANSI Common Lisp.
+More information about SBCL is available at &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;http://www.sbcl.org/&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly &lt;span class="pl-k"&gt;in&lt;/span&gt; the public domain&lt;span class="pl-k"&gt;;&lt;/span&gt; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files &lt;span class="pl-k"&gt;in&lt;/span&gt; the
+distribution &lt;span class="pl-k"&gt;for&lt;/span&gt; more information.
+&lt;span class="pl-k"&gt;*&lt;/span&gt; (ql:quickload :orient)
+To load &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;orient&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;:
+  Load 1 ASDF system:
+    orient
+&lt;span class="pl-k"&gt;;&lt;/span&gt; Loading &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;orient&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+.....................................
+(:ORIENT)
+&lt;span class="pl-k"&gt;*&lt;/span&gt; (asdf:test-system :orient)
+
+Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; suite ORIENT-SUITE
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; RENAME-ATTRIBUTES ..
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; RESTRICT &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; PROJECT-TUPLE &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; PROJECT-RELATION &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; MULTIPLICATION-CONSTRAINT .......
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; DIVISION-CONSTRAINT ....
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ADDITION-CONSTRAINT .......
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; SUBTRACTION-CONSTRAINT ...
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; LOG-CONSTRAINT ....
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; INTEGER-CONSTRAINT .......
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; EQUALITY-CONSTRAINT ...
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; LESS-THAN-CONSTRAINT ..
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; LESS-THAN-OR-EQUAL-CONSTRAINT ...
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; GREATER-THAN-CONSTRAINT ..
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; GREATER-THAN-OR-EQUAL-CONSTRAINT ...
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; AND-CONSTRAINT .............
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; CONSTRAINT-CONSTANTS ..
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ORIENT-TESTS ............
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; JOIN ....
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; RENAME-TUPLE &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; RENAME-RELATION &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; SIMPLE-BIDIRECTIONAL ..
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; PLANNING-TERMINATES &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Did 86 checks.
+    Pass: 86 (100%)
+    Skip: 0 ( 0%)
+    Fail: 0 ( 0%)
+
+
+Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; suite INTERFACE-SUITE
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-TRANSFORMATION &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-SIGNATURE &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-TUPLE &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-SCHEMA &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-PARAMETER &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-COMPONENT &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ROUNDTRIP-SYSTEM &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Did 7 checks.
+    Pass: 7 (100%)
+    Skip: 0 ( 0%)
+    Fail: 0 ( 0%)
+
+
+Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; suite FILECOIN-SUITE
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; PERFORMANCE-TEST &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; MERKLE-TREE-CONSTRAINT-SYSTEM ...
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; SELECT-MERKLE-HASH-FUNCTION &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; SELECT-KDF-HASH-FUNCTION &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; MULTIPLE-HASH-FUNCTION-SELECTORS &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; ZIGZAG-SYSTEM &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; FILECOIN-DEFAULTS &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Did 9 checks.
+    Pass: 9 (100%)
+    Skip: 0 ( 0%)
+    Fail: 0 ( 0%)
+
+
+Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; suite WEB-SUITE
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; TEST-ECONOMIC-PERFORMANCE &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; TEST-ZIGZAG &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; TEST-FILECOIN-SECURITY &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Running &lt;span class="pl-c1"&gt;test&lt;/span&gt; TEST-FILECOIN &lt;span class="pl-c1"&gt;.&lt;/span&gt;
+ Did 4 checks.
+    Pass: 4 (100%)
+    Skip: 0 ( 0%)
+    Fail: 0 ( 0%)
+
+T
+&lt;span class="pl-k"&gt;*&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You should get similar output from the shell:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;  make &lt;span class="pl-c1"&gt;test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To start a web server, from REPL:&lt;/p&gt;
+&lt;div class="highlight highlight-source-lisp"&gt;&lt;pre&gt;(orient.web:start-web)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then navigate to &lt;code&gt;http://localhost:8888&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To generate graphs, you will need &lt;a href="https://www.graphviz.org/" rel="nofollow"&gt;Graphviz&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To generate and view graphs, &lt;code&gt;graphviz&lt;/code&gt; must be installed locally, and &lt;code&gt;dot&lt;/code&gt; must be in the path.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-cli" class="anchor" aria-hidden="true" href="#cli"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CLI&lt;/h2&gt;
+&lt;p&gt;There are severals ways to run the CLI.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-development-mode" class="anchor" aria-hidden="true" href="#development-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development Mode&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href="https://www.cliki.net/cl-launch" rel="nofollow"&gt;cl-launch&lt;/a&gt;, so &lt;code&gt;/usr/local/bin/cl&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, you may need to create a symlink:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; ln -s /&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;installdir&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;cl-launch.sh /usr/local/bin/cl
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;  cl
+cl-launch.sh 4.1.5
+
+For help, invoke script with &lt;span class="pl-c1"&gt;help&lt;/span&gt; argument:
+        /usr/local/bin/cl -h&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can run the CLI and source changes will be immediately reflected, but startup is a bit slow.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; ./bin/orient ... &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;args&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-executable-image" class="anchor" aria-hidden="true" href="#executable-image"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Executable Image&lt;/h3&gt;
+&lt;p&gt;If you just want to &lt;em&gt;use&lt;/em&gt; the CLI, first dump an image:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; make image&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now startup should be very fast:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; ./bin/orient ... &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;args&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-docker" class="anchor" aria-hidden="true" href="#docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker&lt;/h3&gt;
+&lt;p&gt;If you're having a hard time setting up a development environment, Docker might be easiest, but startup is a bit slow.&lt;/p&gt;
+&lt;pre lang="docker"&gt;&lt;code&gt;&amp;gt; make docker
+&amp;gt; ./bin/dcalc ... &amp;lt;args&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-tests-from-shell" class="anchor" aria-hidden="true" href="#tests-from-shell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tests from shell&lt;/h3&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; make &lt;span class="pl-c1"&gt;test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-tutorial" class="anchor" aria-hidden="true" href="#tutorial"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tutorial&lt;/h3&gt;
+&lt;p&gt;For a brief introduction to Orient, see the &lt;a href="tutorial.org"&gt;tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MIT license (&lt;a href="LICENSE-MIT"&gt;LICENSE-MIT&lt;/a&gt; or &lt;a href="http://opensource.org/licenses/MIT" rel="nofollow"&gt;http://opensource.org/licenses/MIT&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>filecoin-project</author><guid isPermaLink="false">https://github.com/filecoin-project/orient</guid><pubDate>Fri, 10 Jan 2020 00:02:00 GMT</pubDate></item></channel></rss>

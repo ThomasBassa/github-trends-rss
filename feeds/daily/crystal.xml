@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Crystal, Today</title><link>https://github.com/trending/crystal?since=daily</link><description>The top repositories on GitHub for crystal, measured daily</description><pubDate>Thu, 09 Jan 2020 01:08:04 GMT</pubDate><lastBuildDate>Thu, 09 Jan 2020 01:08:04 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Crystal, Today today</title><pubDate>Thu, 09 Jan 2020 01:08:04 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Crystal, Today</title><link>https://github.com/trending/crystal?since=daily</link><description>The top repositories on GitHub for crystal, measured daily</description><pubDate>Fri, 10 Jan 2020 01:12:55 GMT</pubDate><lastBuildDate>Fri, 10 Jan 2020 01:12:55 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>schovi/baked_file_system #1 in Crystal, Today</title><link>https://github.com/schovi/baked_file_system</link><description>&lt;p&gt;&lt;i&gt;Virtual File System for Crystal language. Embedding your assets into final binary.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-baked-file-system" class="anchor" aria-hidden="true" href="#baked-file-system"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Baked File System&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/schovi/baked_file_system" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/da5c62829615501f3946c2f07b01f355904acd7c/68747470733a2f2f7472617669732d63692e6f72672f7363686f76692f62616b65645f66696c655f73797374656d2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/schovi/baked_file_system.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Include (bake them) static files into a binary at compile time and access them anytime you need.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Add this to your application's &lt;code&gt;shard.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;dependencies&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;baked_file_system&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;github&lt;/span&gt;: &lt;span class="pl-s"&gt;schovi/baked_file_system&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;version&lt;/span&gt;: &lt;span class="pl-s"&gt;0.9.8&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;A custom type that extends &lt;code&gt;BakedFileSystem&lt;/code&gt; is used as a file system. The macro &lt;code&gt;bake_folder&lt;/code&gt; bakes all files in
+a given path into the virtual file system. Both relative and absolute paths are supported, as well as baking multiple
+folders.&lt;/p&gt;
+&lt;div class="highlight highlight-source-crystal"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;require&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;baked_file_system&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;FileStorage&lt;/span&gt;
+  &lt;span class="pl-k"&gt;extend&lt;/span&gt; &lt;span class="pl-c1"&gt;BakedFileSystem&lt;/span&gt;
+
+  bake_folder &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/home/my_name/work/crystal_project/public&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  bake_folder &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;../public&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Files can be loaded using &lt;code&gt;get&lt;/code&gt; and &lt;code&gt;get?&lt;/code&gt; class methods.&lt;/p&gt;
+&lt;div class="highlight highlight-source-crystal"&gt;&lt;pre&gt;file &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;FileStorage&lt;/span&gt;.get(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;path/to/file.png&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+file.gets_to_end  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; returns content of file&lt;/span&gt;
+file.path         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; returns path of file&lt;/span&gt;
+file.size         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; returns size of original file&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When try to get missing file, &lt;code&gt;get&lt;/code&gt; raises a &lt;code&gt;BakedFileSystem::NoSuchFileError&lt;/code&gt; exception
+while &lt;code&gt;get?&lt;/code&gt; returns &lt;code&gt;nil&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-crystal"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;begin&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;FileStorage&lt;/span&gt;.get &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;missing/file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;rescue&lt;/span&gt; &lt;span class="pl-c1"&gt;BakedFileSystem&lt;/span&gt;::&lt;span class="pl-c1"&gt;NoSuchFileError&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;puts&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;File &lt;span class="pl-pse"&gt;&lt;span class="pl-s1"&gt;#{&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-s1"&gt;path&lt;/span&gt;&lt;span class="pl-pse"&gt;&lt;span class="pl-s1"&gt;}&lt;/span&gt;&lt;/span&gt; is missing&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;end&lt;/span&gt;
+
+&lt;span class="pl-c1"&gt;FileStorage&lt;/span&gt;.get? &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;missing/file&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; =&amp;gt; nil&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;TODO: Write development instructions here&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Fork it ( &lt;a href="https://github.com/schovi/baked_file_system/fork"&gt;https://github.com/schovi/baked_file_system/fork&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;Create your feature branch (git checkout -b my-new-feature)&lt;/li&gt;
+&lt;li&gt;Commit your changes (git commit -am 'Add some feature')&lt;/li&gt;
+&lt;li&gt;Push to the branch (git push origin my-new-feature)&lt;/li&gt;
+&lt;li&gt;Create a new Pull Request&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-contributors" class="anchor" aria-hidden="true" href="#contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/schovi"&gt;schovi&lt;/a&gt; David Schovanec - creator, maintainer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>schovi</author><guid isPermaLink="false">https://github.com/schovi/baked_file_system</guid><pubDate>Fri, 10 Jan 2020 00:01:00 GMT</pubDate></item></channel></rss>
