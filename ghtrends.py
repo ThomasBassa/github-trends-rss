@@ -32,13 +32,15 @@ from trending_db import TrendingDB
 from repo_data import RepoGatherer
 
 ROOT_URL = 'https://github.com/trending'
-MACHINE_RE = re.compile(ROOT_URL + r'/(.*)\?.*')
+#TODO This regex is a mess;
+#might be suited to just switching to string-split techinques instead...
+MACHINE_RE = re.compile(r'(?:https:\/\/github\.com)?(?:\/trending)?\/([^\/]*)\?.*')
 #the group captures the machine name between the '/' and '?'
 #e.g. 'https://github.com/trending/python?since=daily' -> 'python'
 #Assumes the root page will always give us a ?since param in urls
 
 Language = namedtuple('Language', ['machine_name', 'name'])
-ALL_LANG = Language('all', 'All Languages')
+ALL_LANG = Language('', 'All Languages')
 
 async def main():
     tdb = TrendingDB()
