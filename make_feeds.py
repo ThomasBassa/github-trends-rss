@@ -32,8 +32,6 @@ def main():
 
     for lang_t, period_t in itertools.product(langs, periods):
         lang = lang_t[0]
-        if lang == '': #Patch over "all langs" being empty machine name
-            lang = 'all'
         period = period_t[0]
         hlang = lang_t[1]
         hperiod = period_t[1]
@@ -41,12 +39,12 @@ def main():
 
         out_path = 'feeds/{}'.format(period)
         out_file = '{}/{}.xml'.format(out_path, lang)
+        if lang == '': #Patch over "all langs" being empty machine name
+            out_file = '{}/all.xml'.format(out_path)
 
         feed = dict()
         feed['title'] = 'GitHub Trending: {}, {}'.format(hlang, hperiod)
         feed['link'] = '{}/{}?since={}'.format(ROOT_URL, lang, period)
-        if lang == 'all': #"Un-patch" the all lang for the URL...
-            feed['link'] = '{}/{}?since={}'.format(ROOT_URL, '', period)
         feed['description'] = ('The top repositories on GitHub for {}, measured {}'
                 .format(lang, period))
         feed['ttl'] = 720 #720 minutes == 12 hours; arbitrarily chosen
@@ -61,7 +59,7 @@ def main():
         else:
             #TODO today's date as string
             feed['items'] = [PyRSS2Gen.RSSItem(
-                title='No repos in {}, {} today'.format(hlang, hperiod),
+                title='No repos in {}, {} for today'.format(hlang, hperiod),
                 pubDate=datetime.utcnow()
             )]
 
