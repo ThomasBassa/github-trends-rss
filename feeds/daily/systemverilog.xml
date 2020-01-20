@@ -1,299 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: SystemVerilog, Today</title><link>https://github.com/trending/systemverilog?since=daily</link><description>The top repositories on GitHub for systemverilog, measured daily</description><pubDate>Sun, 19 Jan 2020 04:36:40 GMT</pubDate><lastBuildDate>Sun, 19 Jan 2020 04:36:40 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>lowRISC/opentitan #1 in SystemVerilog, Today</title><link>https://github.com/lowRISC/opentitan</link><description>&lt;p&gt;&lt;i&gt;OpenTitan: Open source silicon root of trust&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-opentitan" class="anchor" aria-hidden="true" href="#opentitan"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OpenTitan&lt;/h1&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/opentitan-logo.png"&gt;&lt;img src="doc/opentitan-logo.png" alt="OpenTitan logo" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-about-the-project" class="anchor" aria-hidden="true" href="#about-the-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About the project&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://opentitan.org" rel="nofollow"&gt;OpenTitan&lt;/a&gt; is an open source silicon Root of Trust
-(RoT) project.  OpenTitan will make the silicon RoT design and implementation
-more transparent, trustworthy, and secure for enterprises, platform providers,
-and chip manufacturers.  OpenTitan is administered by &lt;a href="https://www.lowrisc.org" rel="nofollow"&gt;lowRISC
-CIC&lt;/a&gt; as a collaborative project to produce high
-quality, open IP for instantiation as a full-featured product. See the the
-&lt;a href="https://opentitan.org/" rel="nofollow"&gt;OpenTitan site&lt;/a&gt; and &lt;a href="https://docs.opentitan.org" rel="nofollow"&gt;OpenTitan
-docs&lt;/a&gt; for more information about the project.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-about-this-repository" class="anchor" aria-hidden="true" href="#about-this-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About this repository&lt;/h2&gt;
-&lt;p&gt;This repository contains hardware, software and utilities written as part of the
-OpenTitan project. It is structured as monolithic repository, or "monorepo",
-where all components live in one repository. It exists to enable collaboration
-across partners participating in the OpenTitan project.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
-&lt;p&gt;The project contains comprehensive documentation of all IPs and tools. You can
-either access it &lt;a href="https://docs.opentitan.org/" rel="nofollow"&gt;online&lt;/a&gt; or build it
-locally by following the steps below.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Ensure that you have the required Python modules installed (to be executed
-in the repository root):&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ sudo apt install curl python3 python3-pip
-$ pip3 install --user -r python-requirements.txt&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start="2"&gt;
-&lt;li&gt;Execute the build script:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ ./util/build_docs.py --preview&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This compiles the documentation into &lt;code&gt;./build/docs&lt;/code&gt; and starts a local
-server, which allows you to access the documentation at
-&lt;a href="http://127.0.0.1:1313" rel="nofollow"&gt;http://127.0.0.1:1313&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-how-to-contribute" class="anchor" aria-hidden="true" href="#how-to-contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to contribute&lt;/h2&gt;
-&lt;p&gt;Have a look at &lt;a href="./CONTRIBUTING.md"&gt;CONTRIBUTING&lt;/a&gt; for guidelines on how to
-contribute code to this repository.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
-&lt;p&gt;Unless otherwise noted, everything in this repository is covered by the Apache
-License, Version 2.0 (see
-&lt;a href="./LICENSE"&gt;LICENSE&lt;/a&gt; for full text).&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>lowRISC</author><guid isPermaLink="false">https://github.com/lowRISC/opentitan</guid><pubDate>Sun, 19 Jan 2020 00:01:00 GMT</pubDate></item><item><title>pulp-platform/ariane #2 in SystemVerilog, Today</title><link>https://github.com/pulp-platform/ariane</link><description>&lt;p&gt;&lt;i&gt;Ariane is a 6-stage RISC-V CPU capable of booting Linux&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/pulp-platform/ariane" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5c8bd6c7cbffde89626493499936d0d392a8faa5/68747470733a2f2f7472617669732d63692e6f72672f70756c702d706c6174666f726d2f617269616e652e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/pulp-platform/ariane.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-ariane-risc-v-cpu" class="anchor" aria-hidden="true" href="#ariane-risc-v-cpu"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ariane RISC-V CPU&lt;/h1&gt;
-&lt;p&gt;Ariane is a 6-stage, single issue, in-order CPU which implements the 64-bit RISC-V instruction set. It fully implements I, M, A and C extensions as specified in Volume I: User-Level ISA V 2.3 as well as the draft privilege extension 1.10. It implements three privilege levels M, S, U to fully support a Unix-like operating system. Furthermore it is compliant to the draft external debug spec 0.13.&lt;/p&gt;
-&lt;p&gt;It has configurable size, separate TLBs, a hardware PTW and branch-prediction (branch target buffer and branch history table). The primary design goal was on reducing critical path length.&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/img/ariane_overview.png"&gt;&lt;img src="docs/img/ariane_overview.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-publication" class="anchor" aria-hidden="true" href="#publication"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Publication&lt;/h2&gt;
-&lt;p&gt;If you use Ariane in your academic work you can cite us:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;@article{8777130,
-   author={F. {Zaruba} and L. {Benini}},
-   journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
-   title={The Cost of Application-Class Processing: Energy and Performance Analysis of a Linux-Ready 1.7-GHz 64-Bit RISC-V Core in 22-nm FDSOI Technology},
-   year={2019},
-   volume={27},
-   number={11},
-   pages={2629-2640},
-   doi={10.1109/TVLSI.2019.2926114},
-   ISSN={1557-9999},
-   month={Nov},
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h1&gt;
+<rss version="2.0"><channel><title>GitHub Trending: SystemVerilog, Today</title><link>https://github.com/trending/systemverilog?since=daily</link><description>The top repositories on GitHub for systemverilog, measured daily</description><pubDate>Mon, 20 Jan 2020 01:06:26 GMT</pubDate><lastBuildDate>Mon, 20 Jan 2020 01:06:26 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>Xilinx/Vitis-AI #1 in SystemVerilog, Today</title><link>https://github.com/Xilinx/Vitis-AI</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;div align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="doc/img/Vitis-AI.png"&gt;&lt;img width="100%" height="100%" src="doc/img/Vitis-AI.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+Vitis AI is Xilinx’s development stack for AI inference on Xilinx hardware platforms, including both edge devices and Alveo cards. It consists of optimized IP, tools, libraries, models, and example designs. It is designed with high efficiency and ease of use in mind, unleashing the full potential of AI acceleration on Xilinx FPGA and ACAP.  
+&lt;br&gt;
+&lt;br&gt;
+&lt;div align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="doc/img/Vitis-AI-arch.png"&gt;&lt;img width="45%" height="45%" src="doc/img/Vitis-AI-arch.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+Vitis AI is composed of the following key components:
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#ariane-risc-v-cpu"&gt;Ariane RISC-V CPU&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of Contents&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#getting-started"&gt;Getting Started&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#running-user-space-applications"&gt;Running User-Space Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Model Zoo&lt;/strong&gt;  - A comprehensive set of pre-optimized models that are ready to deploy on Xilinx devices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Optimizer&lt;/strong&gt; - An optional model optimizer that can prune a model by up to 90%. It is seperately available with commercial licenses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Quantizer&lt;/strong&gt; - A powerful quantizer that supports model quantization, calibration, and fine tuning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Compiler&lt;/strong&gt; - Compiles the quantized model to a high-efficient instruction set and data flow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Profiler&lt;/strong&gt; - Perform an in-depth analysis of the efficiency and utilization of AI inference implementation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Library&lt;/strong&gt; - Offers high-level yet optimized C++ APIs for AI applications from edge to cloud.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DPU&lt;/strong&gt; - Efficient and scalable IP cores can be customized to meet the needs for many different applications&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#fpga-emulation"&gt;FPGA Emulation&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;Learn More:&lt;/strong&gt; &lt;a href="https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html" rel="nofollow"&gt;Vitis AI Overview&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-see-whats-new" class="anchor" aria-hidden="true" href="#see-whats-new"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="doc/release-notes/1.x.md"&gt;See What's New&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#programming-the-memory-configuration-file"&gt;Programming the Memory Configuration File&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#preparing-the-sd-card"&gt;Preparing the SD Card&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#generating-a-bitstream"&gt;Generating a Bitstream&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#debugging"&gt;Debugging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#preliminary-support-for-openpiton-cache-system"&gt;Preliminary Support for OpenPiton Cache System&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#planned-improvements"&gt;Planned Improvements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#going-beyond"&gt;Going Beyond&lt;/a&gt;
+&lt;li&gt;&lt;a href="doc/release-notes/1.x.md"&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unified Vitis AI APIs with 7 samples for edge to cloud deployment&lt;/li&gt;
+&lt;li&gt;Fully support Vitis flow with XRT 2019.2 and Vitis DPU&lt;/li&gt;
+&lt;li&gt;Model number in Model Zoo increased to 50 with 15 new Tensorflow models&lt;/li&gt;
+&lt;li&gt;Neptune API for X + AI and Butler API for Multiprocess &amp;amp; Scaleout support for cloud deployment&lt;/li&gt;
+&lt;li&gt;Introduce adaptive operating layer to support non-Linux RTOS such as QNX&lt;/li&gt;
+&lt;li&gt;Vitis AI Library is open source with XRT 2019.2 support&lt;/li&gt;
+&lt;li&gt;Tensorflow and Darkenet model pruning&lt;/li&gt;
+&lt;li&gt;Ease of use enhancements
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#ci-testsuites-and-randomized-constrained-testing-with-torture"&gt;CI Testsuites and Randomized Constrained Testing with Torture&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#re-generating-the-bootcode-zsbl"&gt;Re-generating the Bootcode (ZSBL)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Docker Images for both tool and runtime&lt;/li&gt;
+&lt;li&gt;Cross compilation support for Zynq/ZU+ MPSoC platform&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#acknowledgements"&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Created by &lt;a href="https://github.com/ekalinin/github-markdown-toc"&gt;gh-md-toc&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
-&lt;p&gt;Go and get the &lt;a href="https://github.com/riscv/riscv-tools"&gt;RISC-V tools&lt;/a&gt;. Make sure that your &lt;code&gt;RISCV&lt;/code&gt; environment variable points to your RISC-V installation (see the RISC-V tools and related projects for further information).&lt;/p&gt;
-&lt;p&gt;Checkout the repository and initialize all submodules&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/pulp-platform/ariane.git
-$ git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Build the Verilator model of Ariane by using the Makefile:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make verilate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To build the verilator model with support for vcd files run&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make verilate DEBUG=1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will create a C++ model of the core including a SystemVerilog wrapper and link it against a C++ testbench (in the &lt;code&gt;tb&lt;/code&gt; subfolder). The binary can be found in the &lt;code&gt;work-ver&lt;/code&gt; and accepts a RISC-V ELF binary as an argument, e.g.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ work-ver/Variane_testharness rv64um-v-divuw
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The Verilator testbench makes use of the &lt;code&gt;riscv-fesvr&lt;/code&gt;. This means that you can use the &lt;code&gt;riscv-tests&lt;/code&gt; repository as well as &lt;code&gt;riscv-pk&lt;/code&gt; out-of-the-box. As a general rule of thumb the Verilator model will behave like Spike (exception for being orders of magnitudes slower).&lt;/p&gt;
-&lt;p&gt;Both, the Verilator model as well as the Questa simulation will produce trace logs. The Verilator trace is more basic but you can feed the log to &lt;code&gt;spike-dasm&lt;/code&gt; to resolve instructions to mnemonics. Unfortunately value inspection is currently not possible for the Verilator trace file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ spike-dasm &amp;lt; trace_hart_00.dasm &amp;gt; logfile.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;&lt;a id="user-content-running-user-space-applications" class="anchor" aria-hidden="true" href="#running-user-space-applications"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running User-Space Applications&lt;/h3&gt;
-&lt;p&gt;It is possible to run user-space binaries on Ariane with &lt;code&gt;riscv-pk&lt;/code&gt; (&lt;a href="https://github.com/riscv/riscv-pk"&gt;link&lt;/a&gt;).&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mkdir build
-$ cd build
-$ ../configure --prefix=$RISCV --host=riscv64-unknown-elf
-$ make
-$ make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then to run a RISC-V ELF using the Verilator model do:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ echo '
-#include &amp;lt;stdio.h&amp;gt;
-
-int main(int argc, char const *argv[]) {
-    printf("Hello Ariane!\\n");
-    return 0;
-}' &amp;gt; hello.c
-$ riscv64-unknown-elf-gcc hello.c -o hello.elf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;$ make verilate
-$ work-ver/Variane_testharness $RISCV/riscv64-unknown-elf/bin/pk hello.elf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you want to use QuestaSim to run it you can use the following command:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make sim elf-bin=$RISCV/riscv64-unknown-elf/bin/pk target-options=hello.elf  batch-mode=1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Be patient! RTL simulation is way slower than Spike. If you think that you ran into problems you can inspect the trace files.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;&lt;a id="user-content-fpga-emulation" class="anchor" aria-hidden="true" href="#fpga-emulation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FPGA Emulation&lt;/h2&gt;
-&lt;p&gt;We currently only provide support for the &lt;a href="https://reference.digilentinc.com/reference/programmable-logic/genesys-2/reference-manual" rel="nofollow"&gt;Genesys 2 board&lt;/a&gt;. We provide pre-build bitstream and memory configuration files for the Genesys 2 &lt;a href="https://github.com/pulp-platform/ariane/releases"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Tested on Vivado 2018.2. The FPGA SoC currently contains the following peripherals:&lt;/p&gt;
+&lt;p&gt;To facilitate the setup of Vitis AI environment, the docker container is used for Vitis AI package distribution.
+Vitis AI consists of three docker container images: two vitis-ai-docker-tools images and one vitis-ai-docker-runtime image.
+The two vitis-ai-docker-tools images are for GPU and CPU environments respectively.
+The vitis-ai-docker-tools contains the Vitis AI quantizer, AI compiler and examples.
+The vitis-ai-docker-runtime is the runtime docker image for DPU-v2 development, which holds Vitis AI installation package
+for Xilinx ZCU102 and ZCU104 evaluation boards, samples, and Arm GCC cross-compilation toolchain.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;DDR3 memory controller&lt;/li&gt;
-&lt;li&gt;SPI controller to conncet to an SDCard&lt;/li&gt;
-&lt;li&gt;Ethernet controller&lt;/li&gt;
-&lt;li&gt;JTAG port (see debugging section below)&lt;/li&gt;
-&lt;li&gt;Bootrom containing zero stage bootloader and device tree.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="docs/img/fpga_bd.png"&gt;&lt;img src="docs/img/fpga_bd.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The ethernet controller and the corresponding network connection is still work in progress and not functional at the moment. Expect some updates soon-ish.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;&lt;a id="user-content-programming-the-memory-configuration-file" class="anchor" aria-hidden="true" href="#programming-the-memory-configuration-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Programming the Memory Configuration File&lt;/h3&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the Vitis-AI repository to obtain the examples, reference code, and scripts.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/Xilinx/Vitis-AI  
+
+cd Vitis-AI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="doc/install_docker/README.md"&gt;Install Docker&lt;/a&gt; - if Docker not installed on your machine yet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://docs.docker.com/install/linux/linux-postinstall/" rel="nofollow"&gt;Ensure your linux user is in the group docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="doc/install_docker/load_run_docker.md"&gt;Load&amp;amp;Run Docker Container&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get started with examples&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Open Vivado&lt;/li&gt;
-&lt;li&gt;Open the hardware manager and open the target board (Genesys II - &lt;code&gt;xc7k325t&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Tools - Add Configuration Memory Device&lt;/li&gt;
-&lt;li&gt;Select the following Spansion SPI flash &lt;code&gt;s25fl256xxxxxx0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;ariane_xilinx.mcs&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Press Ok. Flashing will take a couple of minutes.&lt;/li&gt;
-&lt;li&gt;Right click on the FPGA device - Boot from Configuration Memory Device (or press the program button on the FPGA)&lt;/li&gt;
+&lt;li&gt;&lt;a href="mpsoc/README.md"&gt;ZU+ MPSoC/Zynq-7000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="alveo/README.md"&gt;Alveo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-preparing-the-sd-card" class="anchor" aria-hidden="true" href="#preparing-the-sd-card"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preparing the SD Card&lt;/h3&gt;
-&lt;p&gt;The first stage bootloader will boot from SD Card by default. Get yourself a suitable SD Card (we use &lt;a href="https://www.amazon.com/Kingston-Digital-Mobility-MBLY10G2-32GB/dp/B00519BEQO" rel="nofollow"&gt;this&lt;/a&gt; one). Either grab a pre-built Linux image from &lt;a href="https://github.com/pulp-platform/ariane-sdk/releases"&gt;here&lt;/a&gt; or generate the Linux image yourself following the README in the &lt;a href="https://github.com/pulp-platform/ariane-sdk"&gt;ariane-sdk repository&lt;/a&gt;. Prepare the SD Card by following the "Booting from SD card" section in the ariane-sdk repository.&lt;/p&gt;
-&lt;p&gt;Connect a terminal to the USB serial device opened by the FTDI chip e.g.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ screen /dev/ttyUSB0 115200
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Default baudrate set by the bootlaoder and Linux is &lt;code&gt;115200&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;After you've inserted the SD Card and programmed the FPGA you can connect to the serial port of the FPGA and should see the bootloader and afterwards Linux booting. Default username is &lt;code&gt;root&lt;/code&gt;, no password required.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-generating-a-bitstream" class="anchor" aria-hidden="true" href="#generating-a-bitstream"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generating a Bitstream&lt;/h3&gt;
-&lt;p&gt;To generate the FPGA bitstream (and memory configuration) yourself for the Genesys II board run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make fpga
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will produce a bitstream file and memory configuration file (in &lt;code&gt;fpga/work-fpga&lt;/code&gt;) which you can permanently flash by running the above commands.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-debugging" class="anchor" aria-hidden="true" href="#debugging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debugging&lt;/h3&gt;
-&lt;p&gt;You can debug (and program) the FPGA using &lt;a href="http://openocd.org/doc/html/Architecture-and-Core-Commands.html" rel="nofollow"&gt;OpenOCD&lt;/a&gt;. We provide two example scripts for OpenOCD below.&lt;/p&gt;
-&lt;p&gt;To get started, connect the micro USB port that is labeled with JTAG to your machine. This port is attached to the FTDI 2232 USB-to-serial chip on the Genesys 2 board, and is usually used to access the native JTAG interface of the Kintex-7 FPGA (e.g. to program the device using Vivado). However, the FTDI chip also exposes a second serial link that is routed to GPIO pins on the FPGA, and we leverage this to wire up the JTAG from the RISC-V debug module.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you are on an Ubuntu based system you need to add the following udev rule to &lt;code&gt;/etc/udev/rules.d/99-ftdi.rules&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;SUBSYSTEM=="usb", ACTION=="add", ATTRS{idProduct}=="6010", ATTRS{idVendor}=="0403", MODE="664", GROUP="plugdev"
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Once attached to your system, the FTDI chip should be listed when you type &lt;code&gt;lsusb&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Bus 005 Device 019: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If this is the case, you can go on and start openocd with the &lt;code&gt;fpga/ariane.cfg&lt;/code&gt; configuration file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ openocd -f fpga/ariane.cfg
-Open On-Chip Debugger 0.10.0+dev-00195-g933cb87 (2018-09-14-19:32)
-Licensed under GNU GPL v2
-For bug reports, read
-    http://openocd.org/doc/doxygen/bugs.html
-adapter speed: 1000 kHz
-Info : auto-selecting first available session transport "jtag". To override use 'transport select &amp;lt;transport&amp;gt;'.
-Info : clock speed 1000 kHz
-Info : TAP riscv.cpu does not have IDCODE
-Info : datacount=2 progbufsize=8
-Info : Examined RISC-V core; found 1 harts
-Info :  hart 0: XLEN=64, misa=0x8000000000141105
-Info : Listening on port 3333 for gdb connections
-Ready for Remote Connections
-Info : Listening on port 6666 for tcl connections
-Info : Listening on port 4444 for telnet connections
-Info : accepting 'gdb' connection on tcp/3333
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then you will be able to either connect through &lt;code&gt;telnet&lt;/code&gt; or with &lt;code&gt;gdb&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ riscv64-unknown-elf-gdb /path/to/elf
-(gdb) target remote localhost:3333
-(gdb) load
-Loading section .text, size 0x6508 lma 0x80000000
-Loading section .rodata, size 0x900 lma 0x80006508
-(gdb) b putchar
-(gdb) c
-Continuing.
-
-Program received signal SIGTRAP, Trace/breakpoint trap.
-0x0000000080009126 in putchar (s=72) at lib/qprintf.c:69
-69    uart_sendchar(s);
-(gdb) si
-0x000000008000912a  69    uart_sendchar(s);
-(gdb) p/x $mepc
-$1 = 0xfffffffffffdb5ee
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can read or write device memory by using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;(gdb) x/i 0x1000
-    0x1000: lui t0,0x4
-(gdb) set {int} 0x1000 = 22
-(gdb) set $pc = 0x1000
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;&lt;a id="user-content-preliminary-support-for-openpiton-cache-system" class="anchor" aria-hidden="true" href="#preliminary-support-for-openpiton-cache-system"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preliminary Support for OpenPiton Cache System&lt;/h3&gt;
-&lt;p&gt;Ariane has preliminary support for the OpenPiton distributed cache system from Princeton University. To this end, a different L1 cache subsystem (&lt;code&gt;src/cache_subsystem/wt_cache_subsystem.sv&lt;/code&gt;) has been developed that follows a write-through protocol and that has support for cache invalidations and atomics.&lt;/p&gt;
-&lt;p&gt;The corresponding integration patches will be released on &lt;a href="https://github.com/PrincetonUniversity/openpiton"&gt;OpenPiton GitHub repository&lt;/a&gt;. Check the &lt;code&gt;README&lt;/code&gt; in that repository to see how to use Ariane in the OpenPiton setting.&lt;/p&gt;
-&lt;p&gt;To activate the different cache system, compile your code with the macro &lt;code&gt;WT_DCACHE&lt;/code&gt; (set by default).&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-planned-improvements" class="anchor" aria-hidden="true" href="#planned-improvements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Planned Improvements&lt;/h2&gt;
-&lt;p&gt;Check-out the issue tab which also loosely tracks planned improvements.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-going-beyond" class="anchor" aria-hidden="true" href="#going-beyond"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Going Beyond&lt;/h2&gt;
-&lt;p&gt;The core has been developed with a full licensed version of QuestaSim. If you happen to have this simulator available yourself here is how you could run the core with it.&lt;/p&gt;
-&lt;p&gt;To specify the test to run use (e.g.: you want to run &lt;code&gt;rv64ui-p-sraw&lt;/code&gt; inside the &lt;code&gt;tmp/risc-tests/build/isa&lt;/code&gt; folder:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make sim elf-bin=path/to/rv64ui-p-sraw
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you call &lt;code&gt;sim&lt;/code&gt; with &lt;code&gt;batch-mode=1&lt;/code&gt; it will run without the GUI. QuestaSim uses &lt;code&gt;riscv-fesvr&lt;/code&gt; for communication as well.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-ci-testsuites-and-randomized-constrained-testing-with-torture" class="anchor" aria-hidden="true" href="#ci-testsuites-and-randomized-constrained-testing-with-torture"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CI Testsuites and Randomized Constrained Testing with Torture&lt;/h3&gt;
-&lt;p&gt;We provide two CI configuration files for Travis CI and GitLab CI that run the RISCV assembly tests, the RISCV benchmarks and a randomized RISCV Torture test. The difference between the two is that Travis CI runs these tests only on Verilator, whereas GitLab CI runs the same tests on QuestaSim and Verilator.&lt;/p&gt;
-&lt;p&gt;If you would like to run the CI test suites locally on your machine, follow any of the two scripts &lt;code&gt;ci/travis-ci-emul.sh&lt;/code&gt; and &lt;code&gt;ci/travis-ci-emul.sh&lt;/code&gt; (depending on whether you have QuestaSim or not). In particular, you have to get the required packages for your system, the paths in &lt;code&gt;ci/path-setup.sh&lt;/code&gt; to match your setup, and run the installation and build scripts prior to running any of the tests suites.&lt;/p&gt;
-&lt;p&gt;Once everything is set up and installed, you can run the tests suites as follows (using Verilator):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ make verilate
-$ make run-asm-tests-verilator
-$ make run-benchmarks-verilator
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In order to run randomized Torture tests, you first have to generate the randomized program prior to running the simulation:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ./ci/get-torture.sh
-$ make torture-gen
-$ make torture-rtest-verilator
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This runs the randomized program on Spike and on the RTL target, and checks whether the two signatures match. The random instruction mix can be configured in the &lt;code&gt;./tmp/riscv-torture/config/default.config&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;Ariane can dump a trace-log in Questa which can be easily diffed against Spike with commit log enabled. In &lt;code&gt;include/ariane_pkg.sv&lt;/code&gt; set:&lt;/p&gt;
-&lt;div class="highlight highlight-source-verilog"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;localparam&lt;/span&gt; bit ENABLE_SPIKE_COMMIT_LOG &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;1'b1&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This runs the randomized program on Spike and on the RTL target, and checks whether the two signatures match. The random instruction mix can be configured in the &lt;code&gt;./tmp/riscv-torture/config/default.config&lt;/code&gt; file.
-This will dump a file called &lt;code&gt;trace_hart_*_*_commit.log&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This can be helpful for debugging long traces (e.g.: torture traces). To compile Spike with the commit log feature do:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ apt-get install device-tree-compiler
-$ mkdir build
-$ cd build
-$ ../configure --prefix=$RISCV --with-fesvr=$RISCV --enable-commitlog
-$ make
-$ [sudo] make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;&lt;a id="user-content-memory-preloading" class="anchor" aria-hidden="true" href="#memory-preloading"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Memory Preloading&lt;/h3&gt;
-&lt;p&gt;In standard configuration the debug module will take care of loading the memory content. It will also handle communication with &lt;code&gt;riscv-fesvr&lt;/code&gt;.
-Depending on the scenario this might not be diserable (e.g.: preloading of a large elf or linux boot in simulation). You can use the preload elf flag to specify the path
-to a binary which will be preloaded.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You will loose all &lt;code&gt;riscv-fesvr&lt;/code&gt; communcation like sytemcalls and eoc capabilities.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;$ make sim preload=elf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;&lt;a id="user-content-re-generating-the-bootcode-zsbl" class="anchor" aria-hidden="true" href="#re-generating-the-bootcode-zsbl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Re-generating the Bootcode (ZSBL)&lt;/h3&gt;
-&lt;p&gt;The zero stage bootloader (ZSBL) for RTL simulation lives in &lt;code&gt;bootrom/&lt;/code&gt; while the bootcode for the FPGA is in &lt;code&gt;fpga/src/bootrom&lt;/code&gt;. The RTL bootcode simply jumps to the base of the DRAM where the FSBL takes over. For the FPGA the ZSBL performs additional housekeeping. Both bootloader pass the hartid as well as address to the device tree in argumen register &lt;code&gt;a0&lt;/code&gt; and &lt;code&gt;a1&lt;/code&gt; respectively.&lt;/p&gt;
-&lt;p&gt;To re-generate the bootcode you can use the existing makefile within those directories. To generate the SystemVerilog files you will need the &lt;code&gt;bitstring&lt;/code&gt; python package installed on your system.&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h1&gt;
-&lt;p&gt;Check out the &lt;a href="CONTRIBUTING.md"&gt;contribution guide&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Acknowledgements&lt;/h1&gt;
-&lt;p&gt;Thanks to Gian Marti, Thomas Kramer and Thomas E. Benz for implementing the PLIC.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>pulp-platform</author><guid isPermaLink="false">https://github.com/pulp-platform/ariane</guid><pubDate>Sun, 19 Jan 2020 00:02:00 GMT</pubDate></item><item><title>pulp-platform/riscv #3 in SystemVerilog, Today</title><link>https://github.com/pulp-platform/riscv</link><description>&lt;p&gt;&lt;i&gt;RISCY is an in-order 4-stage RISC-V RV32IMFCXpulp CPU&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.com/pulp-platform/riscv" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/83b25cf5637cbb31c72792ab8897b820f405d55d/68747470733a2f2f7472617669732d63692e636f6d2f70756c702d706c6174666f726d2f72697363762e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.com/pulp-platform/riscv.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a id="user-content-ri5cy-risc-v-core" class="anchor" aria-hidden="true" href="#ri5cy-risc-v-core"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RI5CY: RISC-V Core&lt;/h1&gt;
-&lt;p&gt;RI5CY is a small 4-stage RISC-V core. It started its life as a
-fork of the OR10N CPU core that is based on the OpenRISC ISA.&lt;/p&gt;
-&lt;p&gt;RI5CY fully implements the RV32IMFC instruction set and many custom instruction
-set extensions that improve its performance for signal processing applications.
-It partially supports the privileged spec 1.10, USER MODE and Physical Memory Protection.&lt;/p&gt;
-&lt;p&gt;It has a custom debug support.&lt;/p&gt;
-&lt;p&gt;The core was developed as part of the &lt;a href="http://pulp.ethz.ch/" rel="nofollow"&gt;PULP platform&lt;/a&gt; for
-energy-efficient computing and is currently used as the processing core for
-PULP and PULPino.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
-&lt;p&gt;A datasheet that explains the most important features of the core can be found
-in  the doc folder.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>pulp-platform</author><guid isPermaLink="false">https://github.com/pulp-platform/riscv</guid><pubDate>Sun, 19 Jan 2020 00:03:00 GMT</pubDate></item></channel></rss>
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-programming-with-vitis-ai" class="anchor" aria-hidden="true" href="#programming-with-vitis-ai"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Programming with Vitis AI&lt;/h2&gt;
+&lt;p&gt;Vitis AI offers a unified set of high-level C++/Python programming APIs to run AI applications across edge-to-cloud platforms, including DPUv1 and DPUv3 for Alveo,&lt;br&gt;
+and DPUv2 for Zynq Ultrascale+ MPSoC and Zynq-7000. It brings the benefits to easily port AI applications from cloud to edge and vice versa.
+7 samples in &lt;a href="mpsoc/vitis_ai_samples_zcu102"&gt;Vitis AI Samples for Zynq&lt;/a&gt; and &lt;a href="alveo/examples/vitis_ai_alveo_samples"&gt;Vitis AI Samples for Alveo&lt;/a&gt; are available
+to help you get familiar with the unfied programming APIs.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;Example Name&lt;/th&gt;
+&lt;th&gt;Models&lt;/th&gt;
+&lt;th&gt;Framework&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;resnet50&lt;/td&gt;
+&lt;td&gt;ResNet50&lt;/td&gt;
+&lt;td&gt;Caffe&lt;/td&gt;
+&lt;td&gt;Image classification with Vitis AI unified C++ APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;resnet50_mt_py&lt;/td&gt;
+&lt;td&gt;ResNet50&lt;/td&gt;
+&lt;td&gt;TensorFlow&lt;/td&gt;
+&lt;td&gt;Multi-threading image classification with Vitis AI unified Python APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;inception_v1_mt_py&lt;/td&gt;
+&lt;td&gt;Inception-v1&lt;/td&gt;
+&lt;td&gt;TensorFlow&lt;/td&gt;
+&lt;td&gt;Multi-threading image classification with Vitis AI unified Python APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;pose_detection&lt;/td&gt;
+&lt;td&gt;SSD, Pose detection&lt;/td&gt;
+&lt;td&gt;Caffe&lt;/td&gt;
+&lt;td&gt;Pose detection with Vitis AI unified C++ APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;video_analysis&lt;/td&gt;
+&lt;td&gt;SSD&lt;/td&gt;
+&lt;td&gt;Caffe&lt;/td&gt;
+&lt;td&gt;Traffic detection with Vitis AI unified C++ APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;adas_detection&lt;/td&gt;
+&lt;td&gt;YOLO-v3&lt;/td&gt;
+&lt;td&gt;Caffe&lt;/td&gt;
+&lt;td&gt;ADAS detection with Vitis AI unified C++ APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;segmentation&lt;/td&gt;
+&lt;td&gt;FPN&lt;/td&gt;
+&lt;td&gt;Caffe&lt;/td&gt;
+&lt;td&gt;Semantic segmentation with Vitis AI unified C++ APIs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For more information, please refer to &lt;a href="http://www.xilinx.com/support/documentation/sw_manuals/vitis_ai/1_0/ug1414-vitis-ai.pdf" rel="nofollow"&gt;Vitis AI User Guide&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-references" class="anchor" aria-hidden="true" href="#references"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html" rel="nofollow"&gt;Vitis AI Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.xilinx.com/support/documentation/sw_manuals/vitis_ai/1_0/ug1414-vitis-ai.pdf" rel="nofollow"&gt;Vitis AI User Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Xilinx/Vitis-AI/tree/master/AI-Model-Zoo"&gt;Vitis AI Model Zoo with Performance &amp;amp; Accuracy Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.xilinx.com/en/get-started/ai.html" rel="nofollow"&gt;Tutorials &amp;amp; Articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.xilinx.com/support/documentation/white_papers/wp504-accel-dnns.pdf" rel="nofollow"&gt;Performance Whitepaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-system-requirements" class="anchor" aria-hidden="true" href="#system-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="doc/system_requirements.md"&gt;System Requirements&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a id="user-content-questions-and-support" class="anchor" aria-hidden="true" href="#questions-and-support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Questions and Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="doc/faq.md"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi" rel="nofollow"&gt;Vitis AI Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Xilinx</author><guid isPermaLink="false">https://github.com/Xilinx/Vitis-AI</guid><pubDate>Mon, 20 Jan 2020 00:01:00 GMT</pubDate></item></channel></rss>

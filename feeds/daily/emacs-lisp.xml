@@ -1,2 +1,944 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Sun, 19 Jan 2020 04:36:47 GMT</pubDate><lastBuildDate>Sun, 19 Jan 2020 04:36:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Emacs Lisp, Today for today</title><pubDate>Sun, 19 Jan 2020 04:36:47 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Emacs Lisp, Today</title><link>https://github.com/trending/emacs-lisp?since=daily</link><description>The top repositories on GitHub for emacs-lisp, measured daily</description><pubDate>Mon, 20 Jan 2020 01:06:03 GMT</pubDate><lastBuildDate>Mon, 20 Jan 2020 01:06:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>hlissner/doom-emacs #1 in Emacs Lisp, Today</title><link>https://github.com/hlissner/doom-emacs</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration for the stubborn martian vimmer&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;a href="http://doomemacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/d38622bbeea8e0a3a1c42e21d2839363d21b4627/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7461672f686c6973736e65722f646f6f6d2d656d6163732e7376673f6c6162656c3d72656c6561736526636f6c6f723d6f72616e6765" alt="Made with Doom Emacs" data-canonical-src="https://img.shields.io/github/tag/hlissner/doom-emacs.svg?label=release&amp;amp;color=orange" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://emacs.org" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/145199dd89d8ed47968846fe8dcdde64b838ffab/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6164655f666f722d456d6163735f32362e312b2d626c756576696f6c65742e737667" alt="Made for Emacs 26.1+" data-canonical-src="https://img.shields.io/badge/Made_for-Emacs_26.1+-blueviolet.svg" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://github.com/hlissner/doom-emacs/actions"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/workflows/CI/badge.svg" alt="Build status: develop" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/48087b2da5b43d9130b73e6e8ad3e7b42caa3330/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d626c75652e7376673f6c6f676f3d646973636f7264266c6162656c3d6a6f696e" alt="Join our discord server" align="right" data-canonical-src="https://img.shields.io/badge/Discord-blue.svg?logo=discord&amp;amp;label=join" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png"&gt;&lt;img src="https://raw.githubusercontent.com/hlissner/doom-emacs/screenshots/main.png" alt="Doom Emacs Screenshot" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;b&gt;&lt;a href="/../../tree/screenshots"&gt;Screenshots&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/getting_started.org"&gt;Get started&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/contributing.org"&gt;Contribute&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/index.org"&gt;Documentation&lt;/a&gt;&lt;/b&gt;
+  |
+  &lt;b&gt;&lt;a href="docs/faq.org"&gt;FAQ&lt;/a&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Quick start&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Install emacs and ripgrep through your package manager, then...&lt;/span&gt;
+git clone https://github.com/hlissner/doom-emacs &lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/.emacs.d/bin/doom install&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what-is-doom-emacs"&gt;What is Doom Emacs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dooms-mantras"&gt;Doom's mantras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#getting-help"&gt;Getting Help&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#community"&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contributing"&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-what-is-doom-emacs" class="anchor" aria-hidden="true" href="#what-is-doom-emacs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Doom Emacs&lt;/h1&gt;
+&lt;a href="http://ultravioletbat.deviantart.com/art/Yay-Evil-111710573" rel="nofollow"&gt;
+  &lt;img src="https://github.com/hlissner/doom-emacs/raw/screenshots/cacochan.png" align="right" style="max-width:100%;"&gt;
+&lt;/a&gt;
+&lt;p&gt;It is a story as old as time. A stubborn, shell-dwelling, and melodramatic
+vimmer -- envious of the features of modern text editors -- spirals into despair
+before succumbing to the &lt;a href="https://github.com/emacs-evil/evil"&gt;dark side&lt;/a&gt;. This is his config.&lt;/p&gt;
+&lt;p&gt;Doom is a configuration for &lt;a href="https://www.gnu.org/software/emacs/" rel="nofollow"&gt;GNU Emacs&lt;/a&gt;
+designed to make Emacs faster and easier to customize. It can serve as framework
+for your own configuration or a resource for fellow Emacs enthusiasts who want
+to learn more about our favorite OS.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dooms-mantras" class="anchor" aria-hidden="true" href="#dooms-mantras"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Doom's mantras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gotta go fast.&lt;/strong&gt; Startup and run-time performance are high priorities.
+Expensive functionality (built-in or in plugins) is modified and optimized
+toward this end, otherwise, they must be opt-in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Close to metal.&lt;/strong&gt; There's less between you and vanilla Emacs, by design.
+There's less to grok. Modules should be syntactically sweet and backend logic
+explicit and abstraction-light. The code itself ought to be designed as if
+grokking it were part of the user experience; and it is!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Opinionated, but not stubborn.&lt;/strong&gt; Doom is a bundle of reasonable defaults
+and curated opinions, but you aren't stuck with it. Use as little or as much
+of it as you like. Use it as-is as a complete Emacs distribution; disable
+everything and use it as a baseline for your own; or anywhere in between.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Your system, your rules.&lt;/strong&gt; There are more ways to set up your programming
+environment than there are dislikes on Youtube Rewind '18, so Doom and its
+plugins promise not to &lt;em&gt;automatically&lt;/em&gt; (and definitely not &lt;em&gt;silently&lt;/em&gt;) install
+system dependencies. This means fonts, packages and programs. &lt;code&gt;doom doctor&lt;/code&gt;
+will tell you what's missing though!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A curated set of sane defaults for all packages, all (major) OSes, and Emacs
+itself.&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; programming languages. Too many to list. Includes syntax
+highlighting, linters/checker integration, inline code evaluation, code
+completion (where possible), REPLs, documentation lookups, snippets, and more!&lt;/li&gt;
+&lt;li&gt;Support for &lt;em&gt;many&lt;/em&gt; tools, like docker, pass, ansible, terraform, and more.&lt;/li&gt;
+&lt;li&gt;Minimalistic good looks inspired by modern editors.&lt;/li&gt;
+&lt;li&gt;A modular architecture for a more organized Emacs configuration.&lt;/li&gt;
+&lt;li&gt;A custom elisp library to help you simplify your config.&lt;/li&gt;
+&lt;li&gt;A declarative &lt;a href="core/autoload/packages.el"&gt;package management system&lt;/a&gt; (powered by
+&lt;a href="https://github.com/raxod502/straight.el"&gt;straight.el&lt;/a&gt;) with a command line interface. Install packages
+from anywhere, not just (M)ELPA.&lt;/li&gt;
+&lt;li&gt;Vim-emulation powered by &lt;a href="https://github.com/emacs-evil/evil"&gt;evil-mode&lt;/a&gt;, including ports of
+popular vim plugins and functionality.&lt;/li&gt;
+&lt;li&gt;A Spacemacs-esque &lt;a href="modules/config/default/+evil-bindings.el"&gt;keybinding scheme&lt;/a&gt;, centered around leader
+and localleader prefix keys (&lt;kbd&gt;SPC&lt;/kbd&gt; and &lt;kbd&gt;SPC&lt;/kbd&gt;&lt;kbd&gt;m&lt;/kbd&gt;, by
+default).&lt;/li&gt;
+&lt;li&gt;A rule-based &lt;a href="modules/ui/popup/README.org"&gt;popup management system&lt;/a&gt; that dictates how
+temporary or disposable buffers are displayed (and disposed of).&lt;/li&gt;
+&lt;li&gt;Automatic indentation detection and &lt;a href="http://editorconfig.org/" rel="nofollow"&gt;editorconfig&lt;/a&gt;
+integration. Let someone else argue about tabs vs &lt;strong&gt;_*&lt;strong&gt;spaces&lt;/strong&gt;*_&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Project-management tools and framework-specific minor modes with their own
+snippets libraries.&lt;/li&gt;
+&lt;li&gt;Project search (and replace) utilities, powered by &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Isolated and persistent workspaces (also substitutes for vim tabs).&lt;/li&gt;
+&lt;li&gt;An environment variables file generator and loader, so that Emacs can
+perfectly inherit your shell configuration.&lt;/li&gt;
+&lt;li&gt;Everything is optional!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;a Discord server&lt;/a&gt;! Hop on and say hi!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Encountered strange behavior or an error? Here are some things to try before you
+shoot off that bug report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom refresh&lt;/code&gt;. This ensures Doom is properly set up and its autoloads
+files are up-to-date.&lt;/li&gt;
+&lt;li&gt;If you have byte-compiled your config (with &lt;code&gt;bin/doom compile&lt;/code&gt;), see if
+&lt;code&gt;bin/doom clean&lt;/code&gt; makes the issue go away. Never debug issues with a
+byte-compiled config, it will make your job harder.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bin/doom doctor&lt;/code&gt; to detect common issues in your development environment.&lt;/li&gt;
+&lt;li&gt;Search Doom's issue tracker for mention of any error messages you've received.&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/faq.org"&gt;Visit our FAQ&lt;/a&gt; to see if your issue is listed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If all else fails, &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;file that bug report&lt;/a&gt;! Please include the
+behavior you've observed, the behavior you expected, and any error messages or
+warnings logged to the *Messages* buffer (can be opened with &lt;kbd&gt;SPC h
+e&lt;/kbd&gt; or &lt;code&gt;M-x view-echo-area-messages&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;It's a great help if you included a backtrace with errors, i.e. &lt;code&gt;M-x toggle-debug-on-error&lt;/code&gt; then recreating the error(s).&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Doom (and my Emacs work in general) is a labor of love and incurable madness,
+done on my spare time. If you'd like to support my work, there are many things
+you can do to help; I welcome any contribution!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I love pull requests and bug reports. Check out the &lt;a href="docs/contributing.org"&gt;Contributing
+Guidelines&lt;/a&gt; to find out how you can help out.&lt;/li&gt;
+&lt;li&gt;I welcome Elisp pointers! Don't hesitate to &lt;a href="https://github.com/hlissner/doom-emacs/issues/new"&gt;tell me my Elisp-fu
+sucks&lt;/a&gt; (but please tell me why).&lt;/li&gt;
+&lt;li&gt;Hop on &lt;a href="https://discord.gg/bcZ6P3y" rel="nofollow"&gt;our Discord server&lt;/a&gt; and say hi! Help others out, hang out
+or talk to me about Emacs, or gamedev, or programming, machine learning,
+physics, pixel art, anime, gaming -- anything you like. Nourish this lonely
+soul!&lt;/li&gt;
+&lt;li&gt;If you'd like to support my work financially, consider buying me a drink
+through &lt;a href="https://liberapay.com/hlissner/donate" rel="nofollow"&gt;liberapay&lt;/a&gt; or &lt;a href="https://paypal.me/henriklissner/10" rel="nofollow"&gt;paypal&lt;/a&gt;. Donations are a
+great help. My work here contends with studies, ventures in indie gamedev, and
+my freelance work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>hlissner</author><guid isPermaLink="false">https://github.com/hlissner/doom-emacs</guid><pubDate>Mon, 20 Jan 2020 00:01:00 GMT</pubDate></item><item><title>jacktasia/dumb-jump #2 in Emacs Lisp, Today</title><link>https://github.com/jacktasia/dumb-jump</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>jacktasia</author><guid isPermaLink="false">https://github.com/jacktasia/dumb-jump</guid><pubDate>Mon, 20 Jan 2020 00:02:00 GMT</pubDate></item><item><title>Kungsgeten/org-brain #3 in Emacs Lisp, Today</title><link>https://github.com/Kungsgeten/org-brain</link><description>&lt;p&gt;&lt;i&gt;Org-mode wiki + concept-mapping&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="org" data-path="README.org"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-org-brain-" class="anchor" aria-hidden="true" href="#org-brain-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;org-brain &lt;a href="http://melpa.org/#/org-brain" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/de411098a5bf8b6b818541cf7368572686af2291/687474703a2f2f6d656c70612e6f72672f7061636b616765732f6f72672d627261696e2d62616467652e737667" alt="http://melpa.org/packages/org-brain-badge.svg" data-canonical-src="http://melpa.org/packages/org-brain-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;org-brain&lt;/code&gt; implements a variant of &lt;a href="https://en.wikipedia.org/wiki/Concept_map" rel="nofollow"&gt;concept mapping&lt;/a&gt; in Emacs, using &lt;a href="http://orgmode.org/" rel="nofollow"&gt;org-mode&lt;/a&gt;. It
+  is heavily inspired by a piece of software called &lt;a href="http://thebrain.com/" rel="nofollow"&gt;The Brain&lt;/a&gt;, and you can view an
+  introduction to that program &lt;a href="https://www.youtube.com/watch?v=GFqLUBKCFdA" rel="nofollow"&gt;here&lt;/a&gt;. They also provide &lt;a href="https://www.thebrain.com/blog/" rel="nofollow"&gt;a blog&lt;/a&gt; with great ideas of
+  how you can think when organizing your Brain.&lt;/p&gt;
+&lt;p&gt;You can think of &lt;code&gt;org-brain&lt;/code&gt; as a combination of a wiki and a mind map, where
+  each wiki page / mind map node is an &lt;code&gt;org-mode&lt;/code&gt; file which resides in your
+  &lt;code&gt;org-brain-path&lt;/code&gt;, or a headline with an ID property in one of those files. These
+  are called &lt;i&gt;entries&lt;/i&gt;. Entries can be linked together, and you can then
+  view the network of links as a mind map, using &lt;code&gt;M-x org-brain-visualize&lt;/code&gt;. Here’s &lt;a href="https://www.youtube.com/watch?v=3EGOwfWok5s&amp;amp;t=" rel="nofollow"&gt;a video introducing =org-brain=&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;PINNED:  Index
+
+
+               +-Python              Game development-+-Game design
+               +-Programming books           |
+   Programming-+-Emacs                       |
+         |                                   |
+         +-----------------+-----------------+
+                           |
+                           V
+                    Game programming &amp;lt;-&amp;gt; Computer games
+
+Game Maker  Unity
+
+--- Resources ---------------------------------
+
+- https://en.wikipedia.org/wiki/Game_programming
+- Passing Through Ghosts in Pac-Man
+- In-House Engine Development: Technical Tips
+
+--- Text --------------------------------------
+
+Game programming is the art of programming computer games...
+&lt;/pre&gt;
+&lt;p&gt;When visualizing an entry, you will see the entry’s relationship to other
+  entries. There are four different types of relationships in &lt;code&gt;org-brain&lt;/code&gt;:&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Parents&lt;/dt&gt;&lt;dd&gt;Entries above the visualized entry. If the visualized entry is a
+    headline, then the parent headline in the &lt;code&gt;org-mode&lt;/code&gt; file will be
+    one of the parents. In the case of top level headlines, the file
+    itself will be considered a parent. Additional parents can be added
+    manually. In the example above, &lt;i&gt;Programming&lt;/i&gt; and &lt;i&gt;Game
+    development&lt;/i&gt; are parents of the visualized &lt;i&gt;Game programming&lt;/i&gt;
+    entry.&lt;/dd&gt;
+  &lt;dt&gt;Children&lt;/dt&gt;&lt;dd&gt;Entries below the visualized entry. This will by default be
+    subheadings of the visualized entry (or level one headlines, if
+    the visualized entry is a file). You can add other children,
+    residing elsewhere, manually. In the example above, &lt;i&gt;Game Maker&lt;/i&gt;
+    and &lt;i&gt;Unity&lt;/i&gt; are the children of &lt;i&gt;Game programming&lt;/i&gt;.&lt;/dd&gt;
+  &lt;dt&gt;Siblings&lt;/dt&gt;&lt;dd&gt;These appear to the right of the parent entries. Siblings are the
+    other children of the visualized entry’s parents.&lt;/dd&gt;
+  &lt;dt&gt;Friends&lt;/dt&gt;&lt;dd&gt;These appear to the right of the visualized entry. Friends provide
+    a way of adding a hierarchy independent two-way relationship
+    between two entries. Friends must be added manually. In the example
+    above, &lt;i&gt;Computer games&lt;/i&gt; and &lt;i&gt;Game programming&lt;/i&gt; are friends.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;a href="http://blogarchive.thebrain.com/thought-relationships/" rel="nofollow"&gt;Here’s an article&lt;/a&gt; describing how you can use the different relationships (The
+  Brain’s &lt;i&gt;jump thoughts&lt;/i&gt; are the equivalent of &lt;i&gt;friends&lt;/i&gt; in &lt;code&gt;org-brain&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Apart from the visualized entry’s relationships, &lt;code&gt;org-brain-visualize&lt;/code&gt; also show
+  pinned entries, which are shown independently of the visualized entry; &lt;i&gt;Index&lt;/i&gt;
+  is a pinned entry in the example above. &lt;code&gt;org-brain-visualize&lt;/code&gt; also show a list
+  of the entry’s resources (links and attachments), and the text in the entry. The
+  example above have three resources, and a short text. The resources and text is
+  gathered from &lt;code&gt;org-mode&lt;/code&gt; automatically.&lt;/p&gt;
+&lt;p&gt;There’s also the option to visualize the entry as a tree, or similar to a
+  mind map, where you can zoom in order to show grandparents and grandchildren.&lt;/p&gt;
+&lt;p&gt;The relationship entries, pinned entries and resources are all links; they can
+  be pressed/clicked to visualize other entries, visit resources etc.&lt;/p&gt;
+&lt;p&gt;You can also annotate the connection between the visualized entry and one of the
+  other entries. You can think of it as annotating the edge between two nodes in a
+  graph. Annotations will show up in the mini-buffer when hovering over an
+  annotated connection.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-setup-and-requirements" class="anchor" aria-hidden="true" href="#setup-and-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup and requirements&lt;/h1&gt;
+&lt;p&gt;The easiest way is to get &lt;code&gt;org-brain&lt;/code&gt; from MELPA. If you do not want to do that,
+  clone this git repository or download &lt;code&gt;org-brain.el&lt;/code&gt; and add it to your
+  load-path. The example below is using &lt;a href="https://github.com/jwiegley/use-package"&gt;use-package&lt;/a&gt; and assumes that you’re using
+  MELPA, but you could use &lt;code&gt;(require 'org-brain)&lt;/code&gt; or add a &lt;code&gt;:load-path&lt;/code&gt; to
+  &lt;code&gt;use-package&lt;/code&gt; instead.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;use-package&lt;/span&gt; org-brain &lt;span class="pl-c1"&gt;:ensure&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;:init&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-path &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;directory/path/where-i-want-org-brain&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; For Evil users&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;with-eval-after-load&lt;/span&gt; &lt;span class="pl-c1"&gt;'evil&lt;/span&gt;
+    (evil-set-initial-state &lt;span class="pl-c1"&gt;'org-brain-visualize-mode&lt;/span&gt; &lt;span class="pl-c1"&gt;'emacs&lt;/span&gt;))
+  &lt;span class="pl-c1"&gt;:config&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-id-track-globally &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-id-locations-file &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;~/.emacs.d/.org-id-locations&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;push&lt;/span&gt; '(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;b&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Brain&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; plain (&lt;span class="pl-k"&gt;function&lt;/span&gt; org-brain-goto-end)
+          &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;* %i%?&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:empty-lines&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;)
+        org-capture-templates)
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-visualize-default-choices &lt;span class="pl-c1"&gt;'all&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-title-max-length &lt;span class="pl-c1"&gt;12&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-include-file-entries &lt;span class="pl-c1"&gt;nil&lt;/span&gt;
+        org-brain-file-entries-use-title &lt;span class="pl-c1"&gt;nil&lt;/span&gt;))&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;org-brain&lt;/code&gt; requires Emacs 25 and org-mode 9. These need to be part of your
+    Emacs.&lt;/li&gt;
+  &lt;li&gt;Configure &lt;code&gt;org-brain-path&lt;/code&gt; (defaults to &lt;code&gt;/brain&lt;/code&gt; in your &lt;code&gt;org-directory&lt;/code&gt;) to
+    a directory where you want to put your &lt;code&gt;org-brain&lt;/code&gt; files (which could be the
+    location where you already keep your org files if you wish to transform your
+    existing org files into &lt;code&gt;org-brain&lt;/code&gt; files). You can set this with the example
+    config presented above or through &lt;code&gt;M-x customize-group RET org-brain&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you’re an &lt;a href="https://github.com/emacs-evil/evil"&gt;evil&lt;/a&gt; user, you’ll want to add &lt;code&gt;(evil-set-initial-state
+    'org-brain-visualize-mode 'emacs)&lt;/code&gt; to your &lt;code&gt;org-brain&lt;/code&gt; configuration.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain&lt;/code&gt; use &lt;code&gt;org-id&lt;/code&gt; in order to speed things up. Because of this, the
+    variable &lt;code&gt;org-id-track-globally&lt;/code&gt; should be &lt;code&gt;t&lt;/code&gt; (which it already is by
+    default). You may want to modify &lt;code&gt;org-id-locations-file&lt;/code&gt; too.&lt;/li&gt;
+  &lt;li&gt;You might want to add information at the end of an entry, without visiting
+    the file. A way to do this is to use a &lt;a href="http://orgmode.org/manual/Capture.html" rel="nofollow"&gt;capture&lt;/a&gt; template, such as the one
+    presented above.&lt;/li&gt;
+  &lt;li&gt;If you have a lot of entries, it might take some time to gather information
+    about all entries when using &lt;code&gt;org-brain-visualize&lt;/code&gt;. You could change the
+    value of &lt;code&gt;org-brain-visualize-default-choices&lt;/code&gt; (which is =’all= by default)
+    to only include files, or even just files in the direct root of
+    &lt;code&gt;org-brain-path&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you feel that &lt;code&gt;org-brain-visualize&lt;/code&gt; is too cluttered, you may want to set
+    &lt;code&gt;org-brain-show-resources&lt;/code&gt; and/or &lt;code&gt;org-brain-show-text&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you have very long entry names, &lt;code&gt;org-brain-visualize&lt;/code&gt; may take a lot of
+    horizontal space. You can cap the shown length of entry titles, by setting
+    &lt;code&gt;org-brain-title-max-length&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Some users find it confusing having both &lt;i&gt;headline&lt;/i&gt; entries and &lt;i&gt;file&lt;/i&gt; entries (see below). It may be preferable to only use headline entries, by setting &lt;code&gt;org-brain-include-file-entries&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;. If doing this, you should probably also set &lt;code&gt;org-brain-file-entries-use-title&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-category-icons" class="anchor" aria-hidden="true" href="#category-icons"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Category icons&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;org-brain&lt;/code&gt; supports showing icons for your entries, depending on their &lt;a href="https://orgmode.org/manual/Categories.html" rel="nofollow"&gt;category&lt;/a&gt;. Use the variable &lt;code&gt;org-agenda-category-icon-alist&lt;/code&gt; to specify icons for categories.&lt;/p&gt;
+&lt;p&gt;See example of using &lt;i&gt;all-the-icons&lt;/i&gt; for this below under &lt;i&gt;Other useful packages&lt;/i&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-customizing-the-look-of-entry-titles" class="anchor" aria-hidden="true" href="#customizing-the-look-of-entry-titles"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customizing the look of entry titles&lt;/h2&gt;
+&lt;p&gt;When visualizing you might want to see additional information about the entries. This can be done by customizing the following variables:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-vis-title-prepend-functions&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-vis-title-append-functions&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-vis-current-title-prepend-functions&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-vis-current-title-append-functions&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these variables should be a list of functions, which all takes an entry as the single parameter and returns a string. This string is the prepended or appended to the entry’s title, according to the name of the function. The variables with the name &lt;code&gt;current&lt;/code&gt; in them only applies the functions on the currently visualized entry (the focused one).&lt;/p&gt;
+&lt;p&gt;Suitable functions to add to these lists might be:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-entry-icon&lt;/code&gt; (included in &lt;code&gt;org-brain-vis-title-prepend-functions&lt;/code&gt; by default)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-entry-todo-state&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;org-brain-entry-tags-string&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-headline-and-file-entries" class="anchor" aria-hidden="true" href="#headline-and-file-entries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Headline and file entries&lt;/h1&gt;
+&lt;p&gt;There are two types of entries in &lt;code&gt;org-brain&lt;/code&gt;: &lt;i&gt;headline&lt;/i&gt; entries and &lt;i&gt;file&lt;/i&gt;
+  entries. For the most part these are used the same way, and the main difference
+  between them is how their content is stored inside your &lt;code&gt;org-brain&lt;/code&gt; directory.
+  All .org-files inside the &lt;code&gt;org-brain-path&lt;/code&gt; are considered as &lt;i&gt;file&lt;/i&gt; entries (the
+  content typically being the text before the first headline in the file) and all
+  headlines &lt;i&gt;with an ID property&lt;/i&gt; inside these files are considered as &lt;i&gt;headline&lt;/i&gt;
+  entries.&lt;/p&gt;
+&lt;p&gt;By default subdirectories inside &lt;code&gt;org-brain-path&lt;/code&gt; are scanned recursively for
+  files, so all subdirectories and their files are considered part of the brain.
+  You can choose to only have the root of &lt;code&gt;org-brain-path&lt;/code&gt; be scanned for files, by
+  setting &lt;code&gt;org-brain-scan-directories-recursively&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you have a headline entry, which you want to convert to a file entry, use &lt;code&gt;M-x
+  org-brain-headline-to-file&lt;/code&gt;. Unfortunately there is currently no function to
+  convert a file entry into a headline entry.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-limiting-org-brain-to-headline-entries" class="anchor" aria-hidden="true" href="#limiting-org-brain-to-headline-entries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Limiting &lt;code&gt;org-brain&lt;/code&gt; to headline entries&lt;/h2&gt;
+&lt;p&gt;Most of &lt;code&gt;org-mode&lt;/code&gt; is tailored towards working with headlines, and because of this
+  &lt;code&gt;org-brain&lt;/code&gt; has some limitations regarding what’s possible with &lt;i&gt;file entries&lt;/i&gt;. The
+  concept of both headline and file entries is confusing to some users.&lt;/p&gt;
+&lt;p&gt;If you prefer to only use headline entries, you can set the variable
+  &lt;code&gt;org-brain-include-file-entries&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;. It then also makes sense to set
+  &lt;code&gt;org-brain-file-entries-use-title&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You may choose to exclude the file part of entry names when choosing among
+  entries. &lt;code&gt;org-brain&lt;/code&gt; passes two objects, the file and the headline, to the emacs
+  &lt;a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Formatting-Strings.html" rel="nofollow"&gt;format&lt;/a&gt; function. By setting &lt;code&gt;org-brain-headline-entry-name-format-string&lt;/code&gt; to
+  =”%2$s”=, &lt;code&gt;org-brain&lt;/code&gt; will only show the headline title.&lt;/p&gt;
+&lt;p&gt;When trying to create entries which doesn’t exist, &lt;code&gt;org-brain&lt;/code&gt; will by default
+  create a new file for these entries. For instance if you’ve set
+  &lt;code&gt;org-brain-include-file-entries&lt;/code&gt; to &lt;code&gt;nil&lt;/code&gt;, run &lt;code&gt;org-brain-visualize&lt;/code&gt; and type in
+  &lt;code&gt;Cucumbers&lt;/code&gt; (an entry which doesn’t exist) &lt;code&gt;org-brain&lt;/code&gt; will create a file named
+  &lt;code&gt;Cucumbers.org&lt;/code&gt; and insert a &lt;code&gt;Cucumbers&lt;/code&gt; headline there. You can change this
+  behaviour by setting &lt;code&gt;org-brain-file-from-input-function&lt;/code&gt;, let’s say if you want
+  to fallback to a default file. Here’s an example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-include-file-entries &lt;span class="pl-c1"&gt;nil&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-file-entries-use-title &lt;span class="pl-c1"&gt;nil&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-headline-entry-name-format-string &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;%2$s&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; my/default-org-brain-file &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;brain&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+
+(&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-brain-file-from-input-function
+      (&lt;span class="pl-k"&gt;lambda&lt;/span&gt; (&lt;span class="pl-v"&gt;x&lt;/span&gt;) (&lt;span class="pl-k"&gt;if&lt;/span&gt; (&lt;span class="pl-k"&gt;cdr&lt;/span&gt; x) (&lt;span class="pl-k"&gt;car&lt;/span&gt; x) my/default-org-brain-file)))&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h1&gt;
+&lt;p&gt;If you find that &lt;code&gt;org-brain&lt;/code&gt; is missing entries, or list entries which doesn’t
+  exist, try using &lt;code&gt;M-x org-brain-update-id-locations&lt;/code&gt;, which syncs the
+  &lt;code&gt;org-brain&lt;/code&gt; entries with the &lt;code&gt;org-id&lt;/code&gt; caching system.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-org-brain-visualize" class="anchor" aria-hidden="true" href="#org-brain-visualize"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;org-brain-visualize&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The primary usage of &lt;code&gt;org-brain&lt;/code&gt; is through &lt;code&gt;M-x org-brain-visualize&lt;/code&gt; (which you
+  might want to bind to a key). From there you can browse entries, add/remove
+  relationships, open entries for editing etc. The following keybindings are
+  available in &lt;code&gt;org-brain-visualize&lt;/code&gt;:&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Key&lt;/th&gt;&lt;th&gt;Command&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;m&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-mind-map&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Toggle between normal and mind-map visualization.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;j or TAB&lt;/td&gt;&lt;td&gt;&lt;code&gt;forward-button&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Goto next link&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;k or S-TAB&lt;/td&gt;&lt;td&gt;&lt;code&gt;backward-button&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Goto previous link&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-back&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Like the back button in a web browser.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;h or *&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-add-child-headline&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add a new child &lt;i&gt;headline&lt;/i&gt; to entry&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;c&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-add-child&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add an existing entry, or a new &lt;i&gt;file&lt;/i&gt;, as a child&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-remove-child&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Remove one the entry’s child relations&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-annotate-edge&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Annotate the connection between the visualized entry and the entry link at point.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;p&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-add-parent&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add an existing entry, or a new &lt;i&gt;file&lt;/i&gt;, as a parent&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;P&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-remove-parent&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Remove one of the entry’s parent relations&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;f&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-add-friendship&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add an existing entry, or a new &lt;i&gt;file&lt;/i&gt;, as a friend&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;F&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-remove-friendship&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Remove one of the entry’s friend relations&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;n&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-pin&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Toggle if the entry is pinned or not&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;s&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-select-dwim&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Select an entry for batch processing.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-select-map&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Prefix key to do batch processing with selected entries.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;t&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-set-title&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Change the title of the entry.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;T&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-set-tags&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Change the tags of the entry.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-delete-entry&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Choose an entry to delete.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;l&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-add-resource&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add a new resource link in entry&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;r&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-open-resource&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Choose and open a resource from the entry.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;C-y&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-paste-resource&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Add a new resource link from clipboard&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-attach&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Run &lt;code&gt;org-attach&lt;/code&gt; on entry (headline entries only)&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-archive&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Archive the entry (headline entries only)&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;o&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-goto-current&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Open current entry for editing&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;O&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-goto&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Choose and edit one of your &lt;code&gt;org-brain&lt;/code&gt; entries&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;v&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Choose and visualize a different entry&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;V&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-follow&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Similar to &lt;code&gt;org-agenda-follow-mode&lt;/code&gt;; view visualized entry in another window.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;w&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-random&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Visualize one of your entries at random.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;W&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-visualize-wander&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Visualize at random, in a set interval. &lt;code&gt;W&lt;/code&gt; again to cancel.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;C-c C-x C-v&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-toggle-inline-images&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Display org-mode images in the entry text.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;M&lt;/td&gt;&lt;td&gt;Move prefix&lt;/td&gt;&lt;td&gt;Move (refile) the current entry.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;M r&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-refile&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Move current entry to another entry (change local parent).&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;M p&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-change-local-parent&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Choose among the entry’s parents and make another of them the local parent.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;You may use &lt;code&gt;org-store-link&lt;/code&gt; inside of &lt;code&gt;org-brain-visualize&lt;/code&gt; in order to store a
+  link to the currently visualized &lt;code&gt;org-brain&lt;/code&gt; entry.&lt;/p&gt;
+&lt;p&gt;If the &lt;i&gt;universal argument&lt;/i&gt; &lt;code&gt;C-u&lt;/code&gt; is used when running &lt;code&gt;org-brain-visualize-random&lt;/code&gt; or
+  &lt;code&gt;org-brain-visualize-wander&lt;/code&gt;, the randomized targets are restricted to descendants
+  (children, grandchildren, grand-grandchildren etc) of the currently visualized
+  entry. Use for instance &lt;code&gt;C-u W&lt;/code&gt; to wander among the descendants.&lt;/p&gt;
+&lt;p&gt;The &lt;i&gt;universal argument&lt;/i&gt; &lt;code&gt;C-u&lt;/code&gt; can also be used with &lt;code&gt;org-brain-open-resource&lt;/code&gt;. This
+  lets you choose not only resource from the visualized entry, but also from
+  descendants (children, grand-children, etc) of that entry.&lt;/p&gt;
+&lt;p&gt;If the &lt;i&gt;universal argument&lt;/i&gt; &lt;code&gt;C-u&lt;/code&gt; is used when calling &lt;code&gt;org-brain-annotate-edge&lt;/code&gt; then
+  the annotation will be “one-way”. The default behaviour is otherwise to annotate
+  the connection in both directions.&lt;/p&gt;
+&lt;p&gt;When using the mind map visualization (toggle by pressing &lt;code&gt;m&lt;/code&gt;), you can use the
+  following keybindings in order to show or hide successive levels of hierarchy
+  relative to the current entry.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Key&lt;/th&gt;&lt;th&gt;Command&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;+&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-show-descendant-level&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Show one more level of entries to the right (children of children, etc.)&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-hide-descendant-level&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Hide rightmost level of descendant entries&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;z&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-show-ancestor-level&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Show one more level of entries to the left (parents of parents, etc.)&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Z&lt;/td&gt;&lt;td&gt;&lt;code&gt;org-brain-hide-ancestor-level&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Hide leftmost level of ancestor entries&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;If you want to select several entries and then remove/add them as
+  children/parents/friends you can use the &lt;code&gt;s&lt;/code&gt; key (&lt;code&gt;org-brain-select-dwim&lt;/code&gt;) to select
+  an entry. If the point is over a button link to an entry, that entry will be
+  selected, otherwise it will select the currently visualized entry. If the entry
+  is already selected, it will be unselected instead.&lt;/p&gt;
+&lt;p&gt;Once you have selected all the entries you wish to use, you can use the &lt;code&gt;S&lt;/code&gt; prefix
+  key to do batch processing on the selected entries. The keybindings in this
+  prefix keymap is identical to those in &lt;code&gt;org-brain-visualize&lt;/code&gt;. You could for
+  instance use &lt;code&gt;S c&lt;/code&gt; to add all selected entries as children to the visualized
+  entry, or &lt;code&gt;S P&lt;/code&gt; to remove the parent relationship of the selected entries. When
+  you’re done and wish to clear the selection use &lt;code&gt;org-brain-clear-selected&lt;/code&gt;, which
+  is bound to &lt;code&gt;S s&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-editing-from-org-mode" class="anchor" aria-hidden="true" href="#editing-from-org-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Editing from &lt;code&gt;org-mode&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;You can edit &lt;code&gt;org-brain&lt;/code&gt; entries directly from &lt;code&gt;org-mode&lt;/code&gt;. You can use the
+  default &lt;code&gt;org-mode&lt;/code&gt; outline structure to define parent/children relationships,
+  but keep in mind that only entries with an &lt;code&gt;ID&lt;/code&gt; property will be considered as
+  entries to &lt;code&gt;org-brain&lt;/code&gt;; use &lt;code&gt;M-x org-id-get-create&lt;/code&gt; to create an &lt;code&gt;ID&lt;/code&gt;
+  property to the current &lt;code&gt;org-mode&lt;/code&gt; headline. Another alternative is to use &lt;code&gt;M-x
+  org-brain-refile&lt;/code&gt; which will create the ids for you.&lt;/p&gt;
+&lt;p&gt;Most of the commands available in &lt;code&gt;org-brain-visualize&lt;/code&gt; can also be used in
+  &lt;code&gt;org-mode&lt;/code&gt; directly, in which case they will operate on the “entry at point”. In
+  other words you can use &lt;code&gt;M-x org-brain-add-child&lt;/code&gt; directly from &lt;code&gt;org-mode&lt;/code&gt; in
+  order to add a child to the &lt;code&gt;org-brain&lt;/code&gt; entry at point. You may also want to use
+  the commands &lt;code&gt;org-brain-goto-&amp;lt;relationsship&amp;gt;&lt;/code&gt; to navigate between entries.&lt;/p&gt;
+&lt;p&gt;You may want to create a link to an &lt;code&gt;org-brain&lt;/code&gt; entry in an &lt;code&gt;org-mode&lt;/code&gt; file (not
+  necessarily an &lt;code&gt;org-brain&lt;/code&gt; file itself). &lt;code&gt;org-brain&lt;/code&gt; provides several link types
+  for this purpose. You can use &lt;code&gt;org-insert-link&lt;/code&gt; (bound to &lt;code&gt;C-c C-l&lt;/code&gt; in
+  &lt;code&gt;org-mode&lt;/code&gt; by default) to insert one of these links. They all have in common
+  that they, when clicked, will open the &lt;code&gt;org-brain&lt;/code&gt; entry for editing. When
+  inserting a link like this, &lt;code&gt;org-brain&lt;/code&gt; will run completion upon all your
+  entries.&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;code&gt;brain:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;The default kind of link. Just let’s you visit another &lt;code&gt;org-brain&lt;/code&gt;
+    entry when clicked. If the variable &lt;code&gt;org-brain-backlink&lt;/code&gt; is &lt;code&gt;t&lt;/code&gt; a brain-link will
+    also be created as a resource in the link target, linking back to where the
+    link was created. If &lt;code&gt;org-brain-backlink&lt;/code&gt; is set to a string, that string will
+    be added as a prefix to the title of the backlink. &lt;b&gt;Example:&lt;/b&gt; You set
+    &lt;code&gt;org-brain-backlink&lt;/code&gt; to =”&amp;lt;– “= and create a &lt;code&gt;brain:&lt;/code&gt; link in &lt;code&gt;Rabbits&lt;/code&gt; linking to
+    &lt;code&gt;Carrots&lt;/code&gt;. Now a resource with the description &lt;code&gt;&amp;lt;-- Rabbits&lt;/code&gt; will be created in
+    &lt;code&gt;Carrots&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;brain-child:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;When inserted using &lt;code&gt;org-insert-link&lt;/code&gt; this will make
+    the linked entry a child to the current &lt;code&gt;org-brain&lt;/code&gt; entry,
+    upon completion. Keep in mind that this doesn’t work if you
+    type the link manually; only by completion through
+    &lt;code&gt;org-insert-link&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;brain-parent:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Like &lt;code&gt;brain-child:&lt;/code&gt; but makes the linked entry a parent of
+    the current entry.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;brain-friend:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Like &lt;code&gt;brain-child:&lt;/code&gt; but adds the linked entry as a friend.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;brainswitch&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;If you have multiple brains you may want a link which switches to a specific brain and one of its entries. The &lt;code&gt;brainswitch&lt;/code&gt; link allows for this.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;The names of the relationship inserting links (&lt;code&gt;brain-child&lt;/code&gt;, &lt;code&gt;brain-parent&lt;/code&gt; and &lt;code&gt;brain-friend&lt;/code&gt;) can be customized with the variables &lt;code&gt;org-brain-child-link-name&lt;/code&gt;, &lt;code&gt;org-brain-parent-link-name&lt;/code&gt;, and &lt;code&gt;org-brain-friend-link-name&lt;/code&gt;. This customization should be done before loading &lt;code&gt;org-brain&lt;/code&gt;. If you’re using &lt;code&gt;use-package&lt;/code&gt;, put the customization in the &lt;code&gt;:init&lt;/code&gt; block.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-commands" class="anchor" aria-hidden="true" href="#other-commands"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other commands&lt;/h2&gt;
+&lt;p&gt;If you’re browsing a file and want to add the file – or the current line in the file – as a resource to an entry, you can use &lt;code&gt;M-x org-brain-add-file-as-resource&lt;/code&gt; or &lt;code&gt;M-x org-brain-add-file-line-as-resource&lt;/code&gt;. If any of these are run with &lt;i&gt;universal argument&lt;/i&gt; &lt;code&gt;C-u&lt;/code&gt; then add the resources to current/last visualized entry.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-general-information" class="anchor" aria-hidden="true" href="#general-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;General information&lt;/h2&gt;
+&lt;p&gt;If you try to add a child/parent/friend to an entry which doesn’t exist, that
+  entry will be created. The name of a new entry can be written like this:
+  &lt;code&gt;file::headline&lt;/code&gt;. The &lt;code&gt;headline&lt;/code&gt; will be created as a level one headline in
+  &lt;code&gt;file&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When adding children, parents, or friends, multiple entries can be added at once
+  by separating their titles with &lt;code&gt;org-brain-entry-separator&lt;/code&gt; (which is &lt;code&gt;;&lt;/code&gt; by
+  default). For instance &lt;code&gt;M-x org-brain-add-parent RET music;artists&lt;/code&gt; would add
+  both &lt;code&gt;music&lt;/code&gt; and &lt;code&gt;artists&lt;/code&gt; as parents.&lt;/p&gt;
+&lt;p&gt;Another available command is &lt;code&gt;M-x org-brain-agenda&lt;/code&gt;, which can be used to run
+  &lt;code&gt;org-agenda&lt;/code&gt; on your &lt;code&gt;org-brain&lt;/code&gt; files.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-slashes-in-file-entry-titles" class="anchor" aria-hidden="true" href="#slashes-in-file-entry-titles"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slashes in file entry titles&lt;/h2&gt;
+&lt;p&gt;When giving a file entry a title, the title can not contain slashes (&lt;code&gt;/&lt;/code&gt;) if
+  &lt;code&gt;org-brain-file-entries-use-title&lt;/code&gt; is &lt;code&gt;t&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-renaming-files-in-org-brain" class="anchor" aria-hidden="true" href="#renaming-files-in-org-brain"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Renaming files in &lt;code&gt;org-brain&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Headline entries use &lt;code&gt;org-id&lt;/code&gt; to identify themselves, so the headlines can be
+  manually renamed without worries. File entries, on the other hand, uses the
+  filename as the identifier. This will cause problems if you try to manually
+  rename files inside of &lt;code&gt;org-brain&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In order to rename a file, use &lt;code&gt;M-x org-brain-rename-file&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-archiving-entries" class="anchor" aria-hidden="true" href="#archiving-entries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Archiving entries&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;org-archive&lt;/code&gt; has a problem in &lt;code&gt;org-brain&lt;/code&gt;: relationships are maintained, even
+  though the entry should really be removed from the brain. Because of this,
+  please use &lt;code&gt;org-brain-archive&lt;/code&gt; instead. This command removes relationships to
+  the entry in the brain, before archiving it. The command also inserts handy
+  links to the archived entry’s relationships.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-special-tags" class="anchor" aria-hidden="true" href="#special-tags"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Special tags&lt;/h2&gt;
+&lt;p&gt;You might have a headline which you do not really want as an entry in
+  &lt;code&gt;org-brain&lt;/code&gt;. The most basic way to exclude such a headline is simply to not add
+  an &lt;code&gt;ID&lt;/code&gt; property to it. However, &lt;code&gt;org-brain&lt;/code&gt; also provide two tags, which you
+  can use to tag the headline:&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;code&gt;:nobrain:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;This tag excludes the headline, and its subheadings, from your
+    &lt;code&gt;org-brain&lt;/code&gt; entries. You can change the tag name by modifying
+    &lt;code&gt;org-brain-exclude-tree-tag&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;:childless:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;This tag does not exclude the headline, but it excludes the
+    subheadings. You can change the tag name by modifying
+    &lt;code&gt;org-brain-exclude-children-tag&lt;/code&gt;. Works on file entries.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;The following tags modifies the kind of information that is shown when an entry
+  is visualized:&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;code&gt;:notext:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Do not show the entry’s text in &lt;code&gt;org-brain-visualize&lt;/code&gt;. You can
+    change the tag name by modifying &lt;code&gt;org-brain-exclude-text-tag&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;:resourceless:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Do not show the entry’s resources in
+    &lt;code&gt;org-brain-visualize&lt;/code&gt;. You can change the tag name by modifying
+    &lt;code&gt;org-brain-exclude-resources-tag&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;:showchildren:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;By default local child entries aren’t shown as text. By
+    setting this tag the entry get the entire subtree as text. You can change
+    the tag name by modifying &lt;code&gt;org-brain-show-children-tag&lt;/code&gt;. Works on file
+    entries.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;:nosiblings:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;You may have an entry with lots of children, and when you visualize one of these children you might not want to see the siblings from this parent. A good example would be if you have an &lt;code&gt;index&lt;/code&gt; entry or similar. By tagging the parent with &lt;code&gt;nosiblings&lt;/code&gt; the parent’s children will not show siblings from that parent. You can change the tag name by modifying &lt;code&gt;org-brain-exclude-siblings-tag&lt;/code&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;The following tags modify the way how information is shown when an
+  entry is visualized.&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;code&gt;:ownline:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Make each child of the tagged entry appear on its own
+    line when the tagged entry is visualized. This
+    only affects the tagged entry. It works akin to
+    temporarily setting &lt;code&gt;org-brain-child-fill-column-sexp&lt;/code&gt;
+    to &lt;code&gt;0&lt;/code&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;:nosort:&lt;/code&gt;&lt;/dt&gt;&lt;dd&gt;Display each child of the tagged node in the order the
+    children are listed in the file, rather than in the
+    sorted order determined by
+    &lt;code&gt;org-brain-visualize-sort-function&lt;/code&gt;. This affects the
+    order of the node’s children in both the child list
+    (when the tagged node is being visited) and in the
+    sibling list (when one of the tagged node’s children
+    is being visited).&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;&lt;a id="user-content-having-multiple-brains" class="anchor" aria-hidden="true" href="#having-multiple-brains"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Having multiple brains&lt;/h2&gt;
+&lt;p&gt;You can have multiple brains simply by having more than one brain folder. In this way, each folder becomes a separate brain. You can switch between these using &lt;code&gt;M-x org-brain-switch-brain&lt;/code&gt;. You can also use &lt;code&gt;brainswitch:&lt;/code&gt; links in &lt;code&gt;org-mode&lt;/code&gt; to switch brains.&lt;/p&gt;
+&lt;p&gt;If you run &lt;code&gt;org-brain-visualize&lt;/code&gt; from inside an org-file in &lt;i&gt;the root&lt;/i&gt; of an org-brain directory, &lt;code&gt;org-brain&lt;/code&gt; will automatically switch to this brain.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-take-note" class="anchor" aria-hidden="true" href="#take-note"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Take note!&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;org-brain&lt;/code&gt; creates and uses several headline properties in the &lt;code&gt;PROPERTIES&lt;/code&gt;
+  drawer of &lt;code&gt;org-mode&lt;/code&gt; headlines:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;BRAIN_PARENTS&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;BRAIN_CHILDREN&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;BRAIN_FRIENDS&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;BRAIN_EDGE_$IDENTIFIER&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ID&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These properties are also mirrored as file keywords at the top of file entries,
+  for instance &lt;code&gt;#+BRAIN_CHILDREN: 00c0f06c-9bd4-4c31-aed0-15bb3361d9a2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These properties/keywords are &lt;i&gt;not meant to be manipulated directly&lt;/i&gt;! If you
+  want to remove these properties, use the corresponding command instead
+  (&lt;code&gt;org-brain-remove-child&lt;/code&gt; or similar).&lt;/p&gt;
+&lt;p&gt;You might also see that &lt;code&gt;org-brain&lt;/code&gt; inserts a &lt;code&gt;RESOURCES&lt;/code&gt; drawer. It is okay to
+  modify this drawer manually.&lt;/p&gt;
+&lt;p&gt;The names of the parents/children/friends properties, the prefix for edge
+  properties and the &lt;code&gt;RESOURCES&lt;/code&gt; drawer can customized by setting the variables
+  &lt;code&gt;org-brain-parents-property-name&lt;/code&gt;, &lt;code&gt;org-brain-children-property-name&lt;/code&gt;,
+  &lt;code&gt;org-brain-friends-property-name&lt;/code&gt;, &lt;code&gt;org-brain-edge-property-prefix-name&lt;/code&gt; and
+  &lt;code&gt;org-brain-resources-drawer-name&lt;/code&gt;, respectively. Of course, after doing any
+  customization, the property/drawer names of existing brain files have to be
+  adjusted manually.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-org-brain-is-slow" class="anchor" aria-hidden="true" href="#org-brain-is-slow"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;org-brain&lt;/code&gt; is slow!&lt;/h2&gt;
+&lt;p&gt;If you feel that &lt;code&gt;org-brain&lt;/code&gt; is slow while indexing your entries (for instance when running &lt;code&gt;M-x org-brain-visualize&lt;/code&gt;) you can customize &lt;code&gt;org-brain-file-entries-use-title&lt;/code&gt;, and set it to &lt;code&gt;nil&lt;/code&gt;. This will display file names when indexing, instead of the file entry’s title, which is faster.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-export-to-other-formats" class="anchor" aria-hidden="true" href="#export-to-other-formats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Export to other formats&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;org-brain&lt;/code&gt; has no built-in functionality for exporting to other formats. I’ve
+  started experimenting with another package named &lt;a href="https://github.com/Kungsgeten/org-brain-export"&gt;org-brain-export&lt;/a&gt; which might be
+  merged into &lt;code&gt;org-brain&lt;/code&gt; in the future. &lt;code&gt;org-brain-export&lt;/code&gt; is in VERY early stages of
+  development.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-helm-and-ivy" class="anchor" aria-hidden="true" href="#helm-and-ivy"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Helm and Ivy&lt;/h1&gt;
+&lt;p&gt;If you use &lt;a href="https://github.com/emacs-helm/helm"&gt;Helm&lt;/a&gt; or &lt;a href="https://oremacs.com/swiper/" rel="nofollow"&gt;Ivy&lt;/a&gt; you can use the commands &lt;code&gt;helm-brain&lt;/code&gt; or &lt;code&gt;counsel-brain&lt;/code&gt; respectively. These allow for visualizing entries, and adding parents/children/friends to the entry at point. They also allow selecting multiple entries.&lt;/p&gt;
+&lt;p&gt;These commands do not have any keybindings by default.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-backwards-compatibility-breaking-changes" class="anchor" aria-hidden="true" href="#backwards-compatibility-breaking-changes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Backwards compatibility breaking changes&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-07" class="anchor" aria-hidden="true" href="#07"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0.7&lt;/h2&gt;
+&lt;p&gt;As of version 0.7 &lt;i&gt;entry descriptions&lt;/i&gt; are deprecated. They made visualization slow, and it was quite a hassle to actually write them. The “help echo” text is now used for edge annotations instead.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-04" class="anchor" aria-hidden="true" href="#04"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0.4&lt;/h2&gt;
+&lt;p&gt;&lt;i&gt;This is only relevant if you’ve been using org-brain before version 0.4&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;As of version 0.4 (June 2017) &lt;code&gt;org-brain&lt;/code&gt; has been rewritten, in order to
+  increase performance and add more options. Because of this, older setups are
+  considered obsolete. Prior to 0.4 only files were considered entries, but now
+  also headlines with an &lt;code&gt;ID&lt;/code&gt; property are included as entries. Prior to 0.4
+  &lt;code&gt;org-brain&lt;/code&gt; was using the &lt;code&gt;brain:&lt;/code&gt; link and &lt;code&gt;#+BRAIN_PINNED:&lt;/code&gt; file keyword to
+  connect files, which was slow due to the need of searching all files for links.
+  In version 0.4 &lt;code&gt;org-brain&lt;/code&gt; uses a combination of headline properties, file
+  keywords, &lt;code&gt;org-id&lt;/code&gt;, and a data file (&lt;code&gt;org-brain-data-file&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;No data in old configurations should be lost, but you’ll have to update the
+  connections between entries. This can be done by using &lt;code&gt;M-x
+  org-brain-create-relationships-from-links&lt;/code&gt;, but please backup your &lt;code&gt;org-brain&lt;/code&gt;
+  directory first.&lt;/p&gt;
+&lt;p&gt;It is still possible to add children to an entry by using the &lt;code&gt;brain-child:&lt;/code&gt; link, but
+  only if the link is inserted with &lt;code&gt;org-insert-link&lt;/code&gt; (bound to &lt;code&gt;C-c C-l&lt;/code&gt; in
+  &lt;code&gt;org-mode&lt;/code&gt; by default). Linking to specific headlines in a file, via
+  &lt;code&gt;brain:filename::*Headline&lt;/code&gt; is &lt;b&gt;deprecated&lt;/b&gt; and will no longer work, instead you
+  can convert the headline to an entry and link directly to that.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-other-useful-packages" class="anchor" aria-hidden="true" href="#other-useful-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other useful packages&lt;/h1&gt;
+&lt;p&gt;There’s some missing functionality in &lt;code&gt;org-brain&lt;/code&gt;, which you may find useful.
+  However there are other packages which might improve your &lt;code&gt;org-brain&lt;/code&gt;
+  experience. Below are some suggestions (feel free to create an issue or send a
+  pull request if you have more examples), all of them should be available on
+  MELPA.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-org-cliplink" class="anchor" aria-hidden="true" href="#org-cliplink"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/rexim/org-cliplink"&gt;org-cliplink&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A simple command that takes a URL from the clipboard and inserts an org-mode link with a title of a page found by the URL into the current buffer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here’s a command which uses &lt;code&gt;org-cliplink&lt;/code&gt; to add a link from the clipboard as an &lt;code&gt;org-brain&lt;/code&gt; resource. It guesses the description from the URL title. Here I’ve bound it to &lt;code&gt;L&lt;/code&gt; in &lt;code&gt;org-brain-visualize&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;org-brain-cliplink-resource&lt;/span&gt; ()
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Add a URL from the clipboard as an org-brain resource.&lt;/span&gt;
+&lt;span class="pl-s"&gt;Suggest the URL title as a description for resource.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;interactive&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; ((url (org-cliplink-clipboard-content)))
+    (org-brain-add-resource
+     url
+     (org-cliplink-retrieve-title-synchronously url)
+     &lt;span class="pl-c1"&gt;t&lt;/span&gt;)))
+
+(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; org-brain-visualize-mode-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;L&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'org-brain-cliplink-resource&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-link-hint" class="anchor" aria-hidden="true" href="#link-hint"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/noctuid/link-hint.el"&gt;link-hint&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;link-hint.el is inspired by the link hinting functionality in vim-like browsers
+    and browser plugins such as pentadactyl. It provides commands for using avy to
+    open or copy “links.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After installing &lt;code&gt;link-hint&lt;/code&gt; you could bind &lt;code&gt;link-hint-open-link&lt;/code&gt; to a key, and
+  use it in &lt;code&gt;org-brain-visualize-mode&lt;/code&gt;. If you only want to use &lt;code&gt;link-hint&lt;/code&gt; in
+  &lt;code&gt;org-brain-visualize-mode&lt;/code&gt;, you could add the following to your init-file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; org-brain-visualize-mode-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;C-l&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'link-hint-open-link&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-ascii-art-to-unicode" class="anchor" aria-hidden="true" href="#ascii-art-to-unicode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="http://www.gnuvola.org/software/aa2u/" rel="nofollow"&gt;ascii-art-to-unicode&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Converts simple ASCII art line drawings in the region of the current buffer to
+    Unicode.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;ascii-art-to-unicode&lt;/code&gt; is useful if you want &lt;code&gt;org-brain-visualize-mode&lt;/code&gt; to look
+  a bit nicer. After installing, add the following to your init-file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defface&lt;/span&gt; &lt;span class="pl-en"&gt;aa2u-face&lt;/span&gt; '((&lt;span class="pl-c1"&gt;t&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt;))
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Face for aa2u box drawing characters&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;advice-add&lt;/span&gt; &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'aa2u-1c&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;:filter-return&lt;/span&gt;
+            (&lt;span class="pl-k"&gt;lambda&lt;/span&gt; (&lt;span class="pl-v"&gt;str&lt;/span&gt;) (&lt;span class="pl-c1"&gt;propertize&lt;/span&gt; str &lt;span class="pl-c1"&gt;'face&lt;/span&gt; &lt;span class="pl-c1"&gt;'aa2u-face&lt;/span&gt;)))
+(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;aa2u-org-brain-buffer&lt;/span&gt; ()
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; ((&lt;span class="pl-c1"&gt;inhibit-read-only&lt;/span&gt; &lt;span class="pl-c1"&gt;t&lt;/span&gt;))
+    (&lt;span class="pl-c1"&gt;make-local-variable&lt;/span&gt; &lt;span class="pl-c1"&gt;'face-remapping-alist&lt;/span&gt;)
+    (&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'face-remapping-alist&lt;/span&gt;
+                 '(aa2u-face &lt;span class="pl-k"&gt;.&lt;/span&gt; org-brain-wires))
+    (&lt;span class="pl-c1"&gt;ignore-errors&lt;/span&gt; (&lt;span class="pl-c1"&gt;aa2u&lt;/span&gt; (&lt;span class="pl-c1"&gt;point-min&lt;/span&gt;) (&lt;span class="pl-c1"&gt;point-max&lt;/span&gt;)))))
+(&lt;span class="pl-c1"&gt;with-eval-after-load&lt;/span&gt; &lt;span class="pl-c1"&gt;'org-brain&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'org-brain-after-visualize-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'aa2u-org-brain-buffer&lt;/span&gt;&lt;/span&gt;))&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-all-the-icons" class="anchor" aria-hidden="true" href="#all-the-icons"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/domtronn/all-the-icons.el"&gt;all-the-icons&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A utility package to collect various Icon Fonts and propertize them within Emacs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After installing &lt;code&gt;all-the-icons&lt;/code&gt; you could decorate the resources in &lt;code&gt;org-brain&lt;/code&gt;, by using
+  &lt;code&gt;org-brain-after-resource-button-functions&lt;/code&gt;. Here’s a small example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;org-brain-insert-resource-icon&lt;/span&gt; (&lt;span class="pl-v"&gt;link&lt;/span&gt;)
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Insert an icon, based on content of org-mode LINK.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (&lt;span class="pl-c1"&gt;insert&lt;/span&gt; (&lt;span class="pl-c1"&gt;format&lt;/span&gt; &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-c1"&gt;%s&lt;/span&gt; &lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;
+                  (&lt;span class="pl-k"&gt;cond&lt;/span&gt; ((&lt;span class="pl-c1"&gt;string-prefix-p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;brain:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt;)
+                         (all-the-icons-fileicon &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;brain&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+                        ((&lt;span class="pl-c1"&gt;string-prefix-p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;info:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt;)
+                         (all-the-icons-octicon &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;info&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+                        ((&lt;span class="pl-c1"&gt;string-prefix-p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;help:&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt;)
+                         (all-the-icons-material &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;help&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+                        ((&lt;span class="pl-c1"&gt;string-prefix-p&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;http&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;link&lt;/span&gt;)
+                         (all-the-icons-icon-for-url &lt;span class="pl-c1"&gt;link&lt;/span&gt;))
+                        (&lt;span class="pl-c1"&gt;t&lt;/span&gt;
+                         (all-the-icons-icon-for-file &lt;span class="pl-c1"&gt;link&lt;/span&gt;))))))
+
+  (&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'org-brain-after-resource-button-functions&lt;/span&gt; &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'org-brain-insert-resource-icon&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You could also use &lt;code&gt;all-the-icons&lt;/code&gt; to add icons to entry &lt;a href="https://orgmode.org/manual/Categories.html" rel="nofollow"&gt;categories&lt;/a&gt;. For instance if you have two categories named &lt;i&gt;computers&lt;/i&gt; and &lt;i&gt;books&lt;/i&gt; which you want icons for:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;setq&lt;/span&gt; org-agenda-category-icon-alist
+      `((&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;computers&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ,(&lt;span class="pl-k"&gt;list&lt;/span&gt; (all-the-icons-material &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;computer&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:ascent&lt;/span&gt; center)
+        (&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;books&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; ,(&lt;span class="pl-k"&gt;list&lt;/span&gt; (all-the-icons-faicon &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;book&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)) &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;nil&lt;/span&gt; &lt;span class="pl-c1"&gt;:ascent&lt;/span&gt; center)))&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-deft" class="anchor" aria-hidden="true" href="#deft"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="http://jblevins.org/projects/deft/" rel="nofollow"&gt;deft&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An Emacs mode for quickly browsing, filtering, and editing directories of plain
+    text notes, inspired by Notational Velocity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After installing &lt;code&gt;deft&lt;/code&gt;, you can add the function below to your init-file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;org-brain-deft&lt;/span&gt; ()
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Use &lt;span class="pl-smi"&gt;`deft'&lt;/span&gt; for files in &lt;span class="pl-smi"&gt;`org-brain-path'&lt;/span&gt;.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;interactive&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; ((deft-directory org-brain-path)
+        (deft-recursive &lt;span class="pl-c1"&gt;t&lt;/span&gt;)
+        (deft-extensions '(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;org&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)))
+    (deft)))&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-helm-org-rifle" class="anchor" aria-hidden="true" href="#helm-org-rifle"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/alphapapa/helm-org-rifle"&gt;helm-org-rifle&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;It searches both headings and contents of entries in Org buffers, and it
+    displays entries that match all search terms, whether the terms appear in the
+    heading, the contents, or both.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After installing &lt;code&gt;helm-org-rifle&lt;/code&gt;, you can add the function below to your
+  init-file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;helm-org-rifle-brain&lt;/span&gt; ()
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Rifle files in &lt;span class="pl-smi"&gt;`org-brain-path'&lt;/span&gt;.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  (&lt;span class="pl-k"&gt;interactive&lt;/span&gt;)
+  (&lt;span class="pl-k"&gt;let&lt;/span&gt; ((helm-org-rifle-close-unopened-file-buffers &lt;span class="pl-c1"&gt;nil&lt;/span&gt;))
+    (helm-org-rifle-directories (&lt;span class="pl-k"&gt;list&lt;/span&gt; org-brain-path))))
+
+(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;helm-org-rifle-open-in-brain&lt;/span&gt; (&lt;span class="pl-v"&gt;candidate&lt;/span&gt;)
+  (-let (((buffer &lt;span class="pl-k"&gt;.&lt;/span&gt; pos) candidate))
+    (&lt;span class="pl-c1"&gt;with-current-buffer&lt;/span&gt; buffer
+      (&lt;span class="pl-c1"&gt;goto-char&lt;/span&gt; pos)
+      (org-brain-visualize-entry-at-pt))))
+
+(&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'helm-org-rifle-actions&lt;/span&gt;
+             (&lt;span class="pl-k"&gt;cons&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Show entry in org-brain&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;'helm-org-rifle-open-in-brain&lt;/span&gt;)
+             &lt;span class="pl-c1"&gt;t&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-org-noter" class="anchor" aria-hidden="true" href="#org-noter"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/weirdNox/org-noter"&gt;org-noter&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Org-noter’s purpose is to let you create notes that are kept in sync when you scroll through the [PDF etc] document&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/rosetree"&gt;rosetree&lt;/a&gt; for providing this tip! After installing &lt;code&gt;org-noter&lt;/code&gt;, add the following to your init-file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;add-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;'org-noter-insert-heading-hook&lt;/span&gt; &lt;span class="pl-c1"&gt;#&lt;span class="pl-c1"&gt;'org-id-get-create&lt;/span&gt;&lt;/span&gt;)
+(&lt;span class="pl-k"&gt;defun&lt;/span&gt; &lt;span class="pl-e"&gt;org-brain-open-org-noter&lt;/span&gt; (&lt;span class="pl-v"&gt;entry&lt;/span&gt;)
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Open &lt;span class="pl-smi"&gt;`org-noter'&lt;/span&gt; on the ENTRY.&lt;/span&gt;
+&lt;span class="pl-s"&gt;If run interactively, get ENTRY from context.&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    (&lt;span class="pl-k"&gt;interactive&lt;/span&gt; (&lt;span class="pl-k"&gt;list&lt;/span&gt; (org-brain-entry-at-pt)))
+    (&lt;span class="pl-c1"&gt;org-with-point-at&lt;/span&gt; (org-brain-entry-marker entry)
+      (org-noter)))&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;org-brain-open-org-noter&lt;/code&gt; will run &lt;code&gt;org-noter&lt;/code&gt; on the current entry. This lets you save your PDF notes in &lt;code&gt;org-brain&lt;/code&gt;, so you can link to them from other entries etc. It can be a good idea to add this command to &lt;code&gt;org-brain-visualize&lt;/code&gt;, like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;define-key&lt;/span&gt; org-brain-visualize-mode-map (&lt;span class="pl-c1"&gt;kbd&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-cce"&gt;\C&lt;/span&gt;-c n&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-c1"&gt;'org-brain-open-org-noter&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-org-board" class="anchor" aria-hidden="true" href="#org-board"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/scallywag/org-board"&gt;org-board&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;org-board is a bookmarking and web archival system for Emacs Org mode, building
+    on ideas from Pinboard. It archives your bookmarks so that you can access them
+    even when you’re not online, or when the site hosting them goes down.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;&lt;a id="user-content-similar-packages" class="anchor" aria-hidden="true" href="#similar-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Similar packages&lt;/h1&gt;
+&lt;p&gt;The Emacs Wiki has an article about &lt;a href="https://www.emacswiki.org/emacs/WikiModes" rel="nofollow"&gt;wiki modes in Emacs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-org-wiki" class="anchor" aria-hidden="true" href="#org-wiki"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/caiorss/org-wiki"&gt;org-wiki&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Org-wiki is a org-mode extension that provides tools to manage and build
+    personal wiki or desktop wiki where each wiki page is a org-mode file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-emacs-freex" class="anchor" aria-hidden="true" href="#emacs-freex"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://github.com/gregdetre/emacs-freex"&gt;emacs-freex&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Emacs freex is a Pymacs/SQLite/Elisp system that implements a transcluding wiki.
+  Emacs-freex is not compatible at this time with org-mode. Despite this,
+  emacs-freex is an impressive system for maintaining a wiki. Further, because the
+  data is stored both in files on disk and in an SQLite database, it opens the
+  possibility for implementing something like &lt;code&gt;org-brain&lt;/code&gt;’s visualize interface
+  (ala TheBrain’s “plex”) by talking with SQLite, via Pymacs, to return the
+  relationships between nodes. This would consistute a lot of work to implement
+  but would be very impressive. If someone was to also add LaTeX rendering inside
+  &lt;code&gt;emacs-freex&lt;/code&gt; &lt;code&gt;nuggets&lt;/code&gt; also, those two additional features would make
+  &lt;code&gt;emacs-freex&lt;/code&gt; more compelling. As it is, practically speaking, you may think of
+  &lt;code&gt;org-brain&lt;/code&gt; as implementing many of the features of &lt;code&gt;emacs-freex&lt;/code&gt;, but with all
+  of &lt;code&gt;org-mode&lt;/code&gt;’s goodness included.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Kungsgeten</author><guid isPermaLink="false">https://github.com/Kungsgeten/org-brain</guid><pubDate>Mon, 20 Jan 2020 00:03:00 GMT</pubDate></item><item><title>purcell/emacs.d #4 in Emacs Lisp, Today</title><link>https://github.com/purcell/emacs.d</link><description>&lt;p&gt;&lt;i&gt;An Emacs configuration bundle with batteries included&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/purcell/emacs.d" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b8a87eebb8a6e54125f954452f35408a22640b72/68747470733a2f2f7472617669732d63692e6f72672f70757263656c6c2f656d6163732e642e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/purcell/emacs.d.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.patreon.com/sanityinc" rel="nofollow"&gt;&lt;img alt="Support me" src="https://camo.githubusercontent.com/26516b72afb49b1e2a56e48954bf1d5c14d08e95/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537570706f72742532304d652d2546302539462539322539372d6666363962342e737667" data-canonical-src="https://img.shields.io/badge/Support%20Me-%F0%9F%92%97-ff69b4.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-a-reasonable-emacs-config" class="anchor" aria-hidden="true" href="#a-reasonable-emacs-config"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A reasonable Emacs config&lt;/h1&gt;
+&lt;p&gt;This is my emacs configuration tree, continually used and tweaked
+since 2000, and it may be a good starting point for other Emacs
+users, especially web developers. These days it's
+somewhat geared towards OS X, but it is known to also work on Linux
+and Windows.&lt;/p&gt;
+&lt;p&gt;Emacs itself comes with support for many programming languages. This
+config adds improved defaults and extended support for the following, listed
+in the approximate order of how much I use them, from most to least:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Haskell / Purescript / Elm&lt;/li&gt;
+&lt;li&gt;Ruby / Ruby on Rails&lt;/li&gt;
+&lt;li&gt;CSS / LESS / SASS / SCSS&lt;/li&gt;
+&lt;li&gt;Javascript / Typescript / Coffeescript&lt;/li&gt;
+&lt;li&gt;HTML / HAML / Markdown / Textile / ERB&lt;/li&gt;
+&lt;li&gt;Rust&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Clojure (with Cider and nRepl)&lt;/li&gt;
+&lt;li&gt;Common Lisp (with Slime)&lt;/li&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Erlang&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In particular, there's a nice config for &lt;em&gt;autocompletion&lt;/em&gt; with
+&lt;a href="https://company-mode.github.io/" rel="nofollow"&gt;company&lt;/a&gt;, and
+&lt;a href="http://www.flycheck.org" rel="nofollow"&gt;flycheck&lt;/a&gt; is used to immediately highlight
+syntax errors in Ruby, Python, Javascript, Haskell and a number of
+other languages.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-emacs-versions" class="anchor" aria-hidden="true" href="#supported-emacs-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Emacs versions&lt;/h2&gt;
+&lt;p&gt;The config should run on Emacs 24.4 or greater and is designed to
+degrade smoothly - see the Travis build - but note that much newer
+versions are required for an increasing number of key packages, so to
+get full functionality you should use the latest Emacs version
+available to you.&lt;/p&gt;
+&lt;p&gt;Some Windows users might need to follow
+&lt;a href="http://xn--9dbdkw.se/diary/how_to_enable_GnuTLS_for_Emacs_24_on_Windows/index.en.html" rel="nofollow"&gt;these instructions&lt;/a&gt;
+to get TLS (ie. SSL) support included in their Emacs.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-other-requirements" class="anchor" aria-hidden="true" href="#other-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other requirements&lt;/h2&gt;
+&lt;p&gt;To make the most of the programming language-specific support in this
+config, further programs will likely be required, particularly those
+that &lt;a href="https://github.com/flycheck/flycheck"&gt;flycheck&lt;/a&gt; uses to provide
+on-the-fly syntax checking.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To install, clone this repo to &lt;code&gt;~/.emacs.d&lt;/code&gt;, i.e. ensure that the
+&lt;code&gt;init.el&lt;/code&gt; contained in this repo ends up at &lt;code&gt;~/.emacs.d/init.el&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Upon starting up Emacs for the first time, further third-party
+packages will be automatically downloaded and installed. If you
+encounter any errors at that stage, try restarting Emacs, and possibly
+running &lt;code&gt;M-x package-refresh-contents&lt;/code&gt; before doing so.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-updates" class="anchor" aria-hidden="true" href="#updates"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Updates&lt;/h2&gt;
+&lt;p&gt;Update the config with &lt;code&gt;git pull&lt;/code&gt;. You'll probably also want/need to update
+the third-party packages regularly too:&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;M-x package-list-packages&lt;/kbd&gt;, then &lt;kbd&gt;U&lt;/kbd&gt; followed by &lt;kbd&gt;x&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;You should usually restart Emacs after pulling changes or updating
+packages so that they can take effect. Emacs should usually restore
+your working buffers when you restart due to this configuration's use
+of the &lt;code&gt;desktop&lt;/code&gt; and &lt;code&gt;session&lt;/code&gt; packages.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-changing-themes-and-adding-your-own-customization" class="anchor" aria-hidden="true" href="#changing-themes-and-adding-your-own-customization"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Changing themes and adding your own customization&lt;/h2&gt;
+&lt;p&gt;To add your own customization, use &lt;kbd&gt;M-x customize&lt;/kbd&gt;, &lt;kbd&gt;M-x
+customize-themes&lt;/kbd&gt; etc. and/or create a file
+&lt;code&gt;~/.emacs.d/lisp/init-local.el&lt;/code&gt; which looks like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;... your code here ...
+
+(&lt;span class="pl-c1"&gt;provide&lt;/span&gt; &lt;span class="pl-c1"&gt;'init-local&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you need initialisation code which executes earlier in the startup process,
+you can also create an &lt;code&gt;~/.emacs.d/lisp/init-preload-local.el&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;If you plan to customize things more extensively, you should probably
+just fork the repo and hack away at the config to make it your own!
+Remember to regularly merge in changes from this repo, so that your
+config remains compatible with the latest package and Emacs versions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Please note that I cannot provide support for customised versions of
+this configuration.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-similar-configs" class="anchor" aria-hidden="true" href="#similar-configs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Similar configs&lt;/h2&gt;
+&lt;p&gt;You might also want to check out &lt;code&gt;emacs-starter-kit&lt;/code&gt; and &lt;code&gt;prelude&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-support--issues" class="anchor" aria-hidden="true" href="#support--issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support / issues&lt;/h2&gt;
+&lt;p&gt;If you hit any problems, please first ensure that you are using the latest version
+of this code, and that you have updated your packages to the most recent available
+versions (see "Updates" above). If you still experience problems, go ahead and
+&lt;a href="https://github.com/purcell/emacs.d"&gt;file an issue on the github project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;-Steve Purcell&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://www.patreon.com/sanityinc" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="gift_heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f49d.png"&gt;💝&lt;/g-emoji&gt; Support this project and my other Open Source work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://uk.linkedin.com/in/stevepurcell" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="briefcase" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bc.png"&gt;💼&lt;/g-emoji&gt; LinkedIn profile&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sanityinc.com/" rel="nofollow"&gt;✍ sanityinc.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/sanityinc" rel="nofollow"&gt;&lt;g-emoji class="g-emoji" alias="bird" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f426.png"&gt;🐦&lt;/g-emoji&gt; @sanityinc&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>purcell</author><guid isPermaLink="false">https://github.com/purcell/emacs.d</guid><pubDate>Mon, 20 Jan 2020 00:04:00 GMT</pubDate></item><item><title>emacs-helm/helm #5 in Emacs Lisp, Today</title><link>https://github.com/emacs-helm/helm</link><description>&lt;p&gt;&lt;i&gt;Emacs incremental completion and selection narrowing framework&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+  &lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1ba3411d21f0105e0df26c7e29aa214578d377b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c5f332d677265656e2e737667" alt="License GPL 3" data-canonical-src="https://img.shields.io/badge/license-GPL_3-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://melpa.org/#/helm" rel="nofollow"&gt;&lt;img alt="MELPA" src="https://camo.githubusercontent.com/3e081278b9039b90cae61589fad6c405cda673f7/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f68656c6d2d62616467652e737667" data-canonical-src="https://melpa.org/packages/helm-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://stable.melpa.org/#/helm" rel="nofollow"&gt;&lt;img alt="MELPA Stable" src="https://camo.githubusercontent.com/8db93c3ec72ed944d37c5707873badc6aa2407e8/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f68656c6d2d62616467652e737667" data-canonical-src="https://stable.melpa.org/packages/helm-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+  &lt;a href="https://travis-ci.org/emacs-helm/helm" rel="nofollow"&gt;&lt;img alt="Travis CI" src="https://camo.githubusercontent.com/890dd305784d191bd1ef1e49c5aef42b6f3258f4/68747470733a2f2f7472617669732d63692e6f72672f656d6163732d68656c6d2f68656c6d2e7376673f6272616e63683d6d6173746572" data-canonical-src="https://travis-ci.org/emacs-helm/helm.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 align="center"&gt;&lt;a id="user-content-emacs-helm" class="anchor" aria-hidden="true" href="#emacs-helm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emacs-Helm&lt;/h1&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://avatars3.githubusercontent.com/u/1541688?v=3&amp;amp;s=200"&gt;&lt;img src="https://avatars3.githubusercontent.com/u/1541688?v=3&amp;amp;s=200" alt="Emacs-helm" title="" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="justify"&gt;
+  &lt;b&gt;Helm&lt;/b&gt; is an Emacs framework for incremental completions and narrowing
+  selections. It provides an easy-to-use API for developers wishing to build
+  their own Helm applications in Emacs, powerful search tools and dozens of
+  already built-in commands providing completion to almost everything.
+  It is a must-have for anyone using Emacs as a main work environment.
+  Helm has been widely adopted by many Emacs power-users.
+  It is available in Melpa and can be easily installed from the Emacs package manager.
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+  &lt;a href="https://emacs-helm.github.io/helm/" rel="nofollow"&gt;&lt;b&gt;Homepage&lt;/b&gt;&lt;/a&gt; |
+  &lt;a href="https://github.com/emacs-helm/helm/releases"&gt;&lt;b&gt;Downloads&lt;/b&gt;&lt;/a&gt; |
+  &lt;a href="https://github.com/emacs-helm/helm/wiki#install"&gt;&lt;b&gt;Get started&lt;/b&gt;&lt;/a&gt; |
+  &lt;a href="https://github.com/emacs-helm/helm/wiki"&gt;&lt;b&gt;Helm wiki&lt;/b&gt;&lt;/a&gt; |
+  &lt;a href="https://github.com/emacs-helm/helm/wiki/FAQ"&gt;&lt;b&gt;FAQ&lt;/b&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+  Maintaining Helm requires a &lt;a href="https://github.com/emacs-helm/helm/commits?author=thierryvolpiatto"&gt;&lt;b&gt;lot of work&lt;/b&gt;&lt;/a&gt;,
+  which I have done voluntarily since 2011.&lt;br&gt;
+  As it demands lots of my time it gets increasingly difficult&lt;br&gt;
+  maintaining it without financial help.&lt;br&gt;
+  Thanks to all the people that are helping or have helped Helm development,&lt;br&gt;
+  but they are actually too few to continue serenely.&lt;br&gt;
+  By the way, after the release of version 3.0 I will have to stop&lt;br&gt;
+  developing Helm seriously until I get enough financial support,&lt;br&gt;
+  only providing a minimal bugfix maintenance.&lt;br&gt;
+  Thanks for your understanding&lt;br&gt;
+  If you feel Helm is making your daily work easier,&lt;br&gt;
+  &lt;b&gt;please consider making a donation.&lt;/b&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;i&gt;Thank you! — Thierry Volpiatto&lt;/i&gt;
+&lt;/p&gt;
+&lt;div align="center"&gt;
+  &lt;a href="https://www.paypal.me/tvolpiatto" rel="nofollow"&gt;
+    &lt;img title="Donate with Paypal" alt="Donate with Paypal" src="https://github.com/emacs-helm/helm/raw/master/images/paypal.png?raw=true" style="max-width:100%;"&gt;&lt;/a&gt;
+    
+  &lt;a href="https://patreon.com/preview/30231724baf440fabe80d44d0ee77067" rel="nofollow"&gt;
+    &lt;img title="Donate monthly using Patreon" alt="Donate monthly using Patreon" src="https://github.com/emacs-helm/helm/raw/master/images/patreon-25x.png?raw=true" style="max-width:100%;"&gt;&lt;/a&gt;
+    
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+  Helm in action searching with &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;Grep Ag&lt;/a&gt;
+                                   &lt;/p&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/emacs-helm/helm/blob/master/images/helm-grep-ag-persistent.png?raw=true"&gt;&lt;img src="https://github.com/emacs-helm/helm/raw/master/images/helm-grep-ag-persistent.png?raw=true" alt="Emacs-helm grep ag" title="" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>emacs-helm</author><guid isPermaLink="false">https://github.com/emacs-helm/helm</guid><pubDate>Mon, 20 Jan 2020 00:05:00 GMT</pubDate></item><item><title>emacs-evil/evil #6 in Emacs Lisp, Today</title><link>https://github.com/emacs-evil/evil</link><description>&lt;p&gt;&lt;i&gt;The extensible vi layer for Emacs.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/emacs-evil/evil/master/doc/logo.png"&gt;&lt;img src="https://raw.githubusercontent.com/emacs-evil/evil/master/doc/logo.png" alt="An extensible vi layer for Emacs" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/emacs-evil/evil" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9fc8dff9b4c535f17a789c81937dd32e38822c23/68747470733a2f2f7472617669732d63692e6f72672f656d6163732d6576696c2f6576696c2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/emacs-evil/evil.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://melpa.org/#/evil" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bd97222c6e281edeeb067bf6f5926b7c7b16519a/68747470733a2f2f6d656c70612e6f72672f7061636b616765732f6576696c2d62616467652e737667" alt="MELPA" data-canonical-src="https://melpa.org/packages/evil-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://stable.melpa.org/#/evil" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d508a703cde2d4c7f4ac64e5b4bb25d24161bf0c/68747470733a2f2f737461626c652e6d656c70612e6f72672f7061636b616765732f6576696c2d62616467652e737667" alt="MELPA Stable" data-canonical-src="https://stable.melpa.org/packages/evil-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://evil.readthedocs.io/en/latest/?badge=latest" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5e5f5413354f75f41ad51c9280a6d1bdace0b586/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6576696c2f62616467652f3f76657273696f6e3d6c6174657374" alt="Documentation Status" data-canonical-src="https://readthedocs.org/projects/evil/badge/?version=latest" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://www.gnu.org/licenses/gpl-3.0" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bf135a9cea09d0ea4bba410582c0e70ec8222736/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d47504c25323076332d626c75652e737667" alt="License: GPL v3" data-canonical-src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Evil is an &lt;strong&gt;e&lt;/strong&gt;xtensible &lt;strong&gt;vi&lt;/strong&gt; &lt;strong&gt;l&lt;/strong&gt;ayer
+for &lt;a href="http://www.gnu.org/software/emacs/" rel="nofollow"&gt;Emacs&lt;/a&gt;. It emulates the main features
+of &lt;a href="http://www.vim.org/" rel="nofollow"&gt;Vim&lt;/a&gt;, and provides facilities for writing custom
+extensions. Also see our page on &lt;a href="http://emacswiki.org/emacs/Evil" rel="nofollow"&gt;EmacsWiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h1&gt;
+&lt;p&gt;See the
+&lt;a href="https://evil.readthedocs.io/en/latest/overview.html#installation-via-package-el" rel="nofollow"&gt;official documentation&lt;/a&gt;
+for installation instructions. We recommend using &lt;em&gt;package.el&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As a quickstart, you can add the following code to your Emacs init
+file.&lt;/p&gt;
+&lt;div class="highlight highlight-source-emacs-lisp"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Set up package.el to work with MELPA&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;require&lt;/span&gt; &lt;span class="pl-c1"&gt;'package&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;add-to-list&lt;/span&gt; &lt;span class="pl-c1"&gt;'package-archives&lt;/span&gt;
+             '(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;melpa&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;.&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;https://melpa.org/packages/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;))
+(&lt;span class="pl-c1"&gt;package-initialize&lt;/span&gt;)
+(&lt;span class="pl-c1"&gt;package-refresh-contents&lt;/span&gt;)
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Download Evil&lt;/span&gt;
+(&lt;span class="pl-k"&gt;unless&lt;/span&gt; (&lt;span class="pl-c1"&gt;package-installed-p&lt;/span&gt; &lt;span class="pl-c1"&gt;'evil&lt;/span&gt;)
+  (&lt;span class="pl-c1"&gt;package-install&lt;/span&gt; &lt;span class="pl-c1"&gt;'evil&lt;/span&gt;))
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;;&lt;/span&gt;; Enable Evil&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;require&lt;/span&gt; &lt;span class="pl-c1"&gt;'evil&lt;/span&gt;)
+(evil-mode &lt;span class="pl-c1"&gt;1&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Evil requires Emacs 24.1 or later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evil requires &lt;a href="http://www.emacswiki.org/emacs/UndoTree" rel="nofollow"&gt;undo-tree.el&lt;/a&gt; in the
+&lt;code&gt;load-path&lt;/code&gt; for linear undo and undo branches.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For the motions &lt;code&gt;g;&lt;/code&gt; &lt;code&gt;g,&lt;/code&gt; and for the last-change-register &lt;code&gt;.&lt;/code&gt;, Evil requires the
+&lt;a href="https://github.com/emacs-evil/goto-chg"&gt;goto-chg.el&lt;/a&gt; package,
+which provides the functions &lt;code&gt;goto-last-change&lt;/code&gt; and &lt;code&gt;goto-last-change-reverse&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For Emacs 24.1 and 24.2 Evil also requires
+&lt;a href="https://elpa.gnu.org/packages/cl-lib.html" rel="nofollow"&gt;cl-lib&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;The latest version of the documentation is readable online
+&lt;a href="https://evil.readthedocs.io/en/latest/index.html" rel="nofollow"&gt;here&lt;/a&gt;. It is also
+available as
+&lt;a href="https://readthedocs.org/projects/evil/downloads/pdf/latest/" rel="nofollow"&gt;PDF&lt;/a&gt; and
+as &lt;a href="https://readthedocs.org/projects/evil/downloads/epub/latest/" rel="nofollow"&gt;EPUB&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-mailing-list" class="anchor" aria-hidden="true" href="#mailing-list"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mailing list&lt;/h1&gt;
+&lt;p&gt;Evil is discussed at the
+&lt;a href="http://lists.ourproject.org/cgi-bin/mailman/listinfo/implementations-list" rel="nofollow"&gt;gmane.emacs.vim-emulation&lt;/a&gt;
+mailing list.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-irc" class="anchor" aria-hidden="true" href="#irc"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IRC&lt;/h1&gt;
+&lt;p&gt;Visit us on &lt;code&gt;irc.freenode.net #evil-mode&lt;/code&gt;.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-contribution" class="anchor" aria-hidden="true" href="#contribution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribution&lt;/h1&gt;
+&lt;p&gt;See
+&lt;a href="https://github.com/emacs-evil/evil/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt;
+for guidelines for issues and pull requests.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>emacs-evil</author><guid isPermaLink="false">https://github.com/emacs-evil/evil</guid><pubDate>Mon, 20 Jan 2020 00:06:00 GMT</pubDate></item></channel></rss>
