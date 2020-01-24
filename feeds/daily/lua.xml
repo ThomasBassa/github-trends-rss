@@ -1,2 +1,770 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Lua, Today</title><link>https://github.com/trending/lua?since=daily</link><description>The top repositories on GitHub for lua, measured daily</description><pubDate>Thu, 23 Jan 2020 01:01:07 GMT</pubDate><lastBuildDate>Thu, 23 Jan 2020 01:01:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Lua, Today for today</title><pubDate>Thu, 23 Jan 2020 01:01:07 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Lua, Today</title><link>https://github.com/trending/lua?since=daily</link><description>The top repositories on GitHub for lua, measured daily</description><pubDate>Fri, 24 Jan 2020 01:09:58 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:58 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>frederic2ec/onsetrp #1 in Lua, Today</title><link>https://github.com/frederic2ec/onsetrp</link><description>&lt;p&gt;&lt;i&gt;[IN DEV] OnsetRP framework &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-onset-rp-framework" class="anchor" aria-hidden="true" href="#onset-rp-framework"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Onset RP Framework&lt;/h1&gt;
+&lt;p&gt;Roleplay framework for the game &lt;a href="https://store.steampowered.com/app/1105810/Onset/" rel="nofollow"&gt;Onset&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-host-requirements" class="anchor" aria-hidden="true" href="#host-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Host Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows / Linux Host&lt;/li&gt;
+&lt;li&gt;MariaDB 10.4+ (database on lower version need to be tweaked)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-packages-requirements-they-need-to-be-put-in-orders-and-before-the-framework-in-the-config-file" class="anchor" aria-hidden="true" href="#packages-requirements-they-need-to-be-put-in-orders-and-before-the-framework-in-the-config-file"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Packages requirements (They need to be put in orders and before the framework in the config file)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OnfireNetwork/i18n"&gt;i18n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OnfireNetwork/dialogui"&gt;dialogui&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rdlh/cinematicui"&gt;cinematicui&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-install-onsetrp" class="anchor" aria-hidden="true" href="#how-to-install-onsetrp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How To Install OnsetRP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a MariaDB Server if you don't have one. (You can find a tutorial on the Internet)&lt;/li&gt;
+&lt;li&gt;Import the .sql file in your database.&lt;/li&gt;
+&lt;li&gt;add i18n in your server_config.json file. (Keep it in order)&lt;/li&gt;
+&lt;li&gt;add dialogui in your server_config.json file. (Keep it in order)&lt;/li&gt;
+&lt;li&gt;add onsetrp in your server_config.json file. (Keep it in order)&lt;/li&gt;
+&lt;li&gt;remove default in your server_config.json file.&lt;/li&gt;
+&lt;li&gt;configure misc/s_database.json with your MariaDB credentials&lt;/li&gt;
+&lt;li&gt;restart your onset server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-more-information--support" class="anchor" aria-hidden="true" href="#more-information--support"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More information / Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://discord.gg/ejRhqMF" rel="nofollow"&gt;Discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitch.tv/frederiic2ec" rel="nofollow"&gt;Twitch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>frederic2ec</author><guid isPermaLink="false">https://github.com/frederic2ec/onsetrp</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item><item><title>ESX-Org/es_extended #2 in Lua, Today</title><link>https://github.com/ESX-Org/es_extended</link><description>&lt;p&gt;&lt;i&gt;ES Extended Core&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-es_extended" class="anchor" aria-hidden="true" href="#es_extended"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;es_extended&lt;/h1&gt;
+&lt;p&gt;es_extended is a roleplay framework for FiveM. It is developed on top of EssentialMode (aka ES), where the project ESX is originating from - the &lt;strong&gt;Es&lt;/strong&gt;sentialMode E&lt;strong&gt;x&lt;/strong&gt;tended framework for FiveM.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-links--read-more" class="anchor" aria-hidden="true" href="#links--read-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links &amp;amp; Read more&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://esx-org.github.io/" rel="nofollow"&gt;ESX Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discord.gg/MsWzPqE" rel="nofollow"&gt;ESX Development Discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://runtime.fivem.net/doc/reference.html" rel="nofollow"&gt;FiveM Native Reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Weight based inventory system&lt;/li&gt;
+&lt;li&gt;Weapons support, including support for attachments&lt;/li&gt;
+&lt;li&gt;Supports different money accounts (defaulted with bank &amp;amp; black money)&lt;/li&gt;
+&lt;li&gt;Many official resources available in our GitHub&lt;/li&gt;
+&lt;li&gt;Job system, with grades and clothes support&lt;/li&gt;
+&lt;li&gt;Supports multiple languages, most strings are localized&lt;/li&gt;
+&lt;li&gt;Easy to use API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;This order also applies in the startup order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/brouznouf/fivem-mysql-async"&gt;mysql-async&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kanersps/essentialmode"&gt;essentialmode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kanersps/esplugin_mysql"&gt;esplugin_mysql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ESX-Org/async"&gt;async&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-download--installation" class="anchor" aria-hidden="true" href="#download--installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Download &amp;amp; Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-using-fvm" class="anchor" aria-hidden="true" href="#using-fvm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using &lt;a href="https://github.com/qlaffont/fvm-installer"&gt;fvm&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;fvm install --save --folder=essential esx-org/es_extended
+fvm install --save --folder=esx esx-org/esx_menu_default
+fvm install --save --folder=esx esx-org/esx_menu_dialog
+fvm install --save --folder=esx esx-org/esx_menu_list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-using-git" class="anchor" aria-hidden="true" href="#using-git"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Git&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;cd resources
+git clone https://github.com/ESX-Org/es_extended [essential]/es_extended
+git clone https://github.com/ESX-Org/esx_menu_default [esx]/[ui]/esx_menu_default
+git clone https://github.com/ESX-Org/esx_menu_dialog [esx]/[ui]/esx_menu_dialog
+git clone https://github.com/ESX-Org/esx_menu_list [esx]/[ui]/esx_menu_list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-manually" class="anchor" aria-hidden="true" href="#manually"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Manually&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download &lt;a href="https://github.com/ESX-Org/es_extended/releases/latest"&gt;https://github.com/ESX-Org/es_extended/releases/latest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Put it in the &lt;code&gt;resource/[essential]&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;Download &lt;a href="https://github.com/ESX-Org/esx_menu_default/releases/latest"&gt;https://github.com/ESX-Org/esx_menu_default/releases/latest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Put it in the &lt;code&gt;resource/[esx]/[ui]&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;Download &lt;a href="https://github.com/ESX-Org/esx_menu_dialog/releases/latest"&gt;https://github.com/ESX-Org/esx_menu_dialog/releases/latest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Put it in the &lt;code&gt;resource/[esx]/[ui]&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;Download &lt;a href="https://github.com/ESX-Org/esx_menu_list/releases/latest"&gt;https://github.com/ESX-Org/esx_menu_list/releases/latest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Put it in the &lt;code&gt;resource/[esx]/[ui]&lt;/code&gt; directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Import &lt;code&gt;es_extended.sql&lt;/code&gt; in your database&lt;/li&gt;
+&lt;li&gt;Configure your &lt;code&gt;server.cfg&lt;/code&gt; to look like this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;start mysql-async
+start essentialmode
+start esplugin_mysql
+
+start es_extended
+
+start esx_menu_default
+start esx_menu_list
+start esx_menu_dialog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-legal" class="anchor" aria-hidden="true" href="#legal"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Legal&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h3&gt;
+&lt;p&gt;es_extended - EssentialMode Extended framework for FiveM&lt;/p&gt;
+&lt;p&gt;Copyright (C) 2015-2020 Jérémie N'gadi&lt;/p&gt;
+&lt;p&gt;This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.&lt;/p&gt;
+&lt;p&gt;This program Is distributed In the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty Of MERCHANTABILITY Or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License For more details.&lt;/p&gt;
+&lt;p&gt;You should have received a copy Of the GNU General Public License along with this program. If Not, see &lt;a href="http://www.gnu.org/licenses/" rel="nofollow"&gt;http://www.gnu.org/licenses/&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>ESX-Org</author><guid isPermaLink="false">https://github.com/ESX-Org/es_extended</guid><pubDate>Fri, 24 Jan 2020 00:02:00 GMT</pubDate></item><item><title>skywind3000/z.lua #3 in Lua, Today</title><link>https://github.com/skywind3000/z.lua</link><description>&lt;p&gt;&lt;i&gt;A new cd command that helps you navigate faster by learning your habits :zap:&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-zlua" class="anchor" aria-hidden="true" href="#zlua"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;z.lua&lt;/h1&gt;
+&lt;p&gt;A command line tool which helps you navigate faster by learning your habits &lt;g-emoji class="g-emoji" alias="zap" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a1.png"&gt;⚡️&lt;/g-emoji&gt;&lt;/p&gt;
+&lt;p&gt;An alternative to &lt;a href="https://github.com/rupa/z"&gt;z.sh&lt;/a&gt; with windows and posix shells support and various improvements.&lt;/p&gt;
+&lt;p&gt;【&lt;a href="README.cn.md"&gt;README in Chinese | 中文文档&lt;/a&gt;】&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-description" class="anchor" aria-hidden="true" href="#description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
+&lt;p&gt;z.lua is a faster way to navigate your filesystem. It tracks your most used directories, based on 'frecency'.  After  a  short  learning  phase, z will take you to the most 'frecent' directory that matches ALL of the regexes given on the command line, in order.&lt;/p&gt;
+&lt;p&gt;For example, &lt;code&gt;z foo bar&lt;/code&gt; would match &lt;code&gt;/foo/bar&lt;/code&gt; but not &lt;code&gt;/bar/foo&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;10x&lt;/strong&gt; times faster than &lt;strong&gt;fasd&lt;/strong&gt; and &lt;strong&gt;autojump&lt;/strong&gt;, &lt;strong&gt;3x&lt;/strong&gt; times faster than &lt;strong&gt;z.sh&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Available for &lt;strong&gt;posix shells&lt;/strong&gt;: bash, zsh, dash, sh, ash, ksh, busybox and etc.&lt;/li&gt;
+&lt;li&gt;Available for Fish Shell, Power Shell and Windows cmd.&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enhanced-matching"&gt;Enhanced matching algorithm&lt;/a&gt; takes you to where ever you want precisely.&lt;/li&gt;
+&lt;li&gt;Allow updating database only if &lt;code&gt;$PWD&lt;/code&gt; changed with "$_ZL_ADD_ONCE" set to 1.&lt;/li&gt;
+&lt;li&gt;Interactive selection enables you to choose where to go before cd.&lt;/li&gt;
+&lt;li&gt;Intergrated with FZF (optional) for interactive selection and completion.&lt;/li&gt;
+&lt;li&gt;Quickly go back to a parent directory instead of typing "cd ../../..".&lt;/li&gt;
+&lt;li&gt;Corresponding experience in different shells and operating systems.&lt;/li&gt;
+&lt;li&gt;Compatible with Lua 5.1, 5.2 and 5.3+&lt;/li&gt;
+&lt;li&gt;Self contained, distributed as a single &lt;code&gt;z.lua&lt;/code&gt; script, no other dependence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;z foo       &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to most frecent dir matching foo&lt;/span&gt;
+z foo bar   &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to most frecent dir matching foo and bar&lt;/span&gt;
+z -r foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to the highest ranked dir matching foo&lt;/span&gt;
+z -t foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to most recently accessed dir matching foo&lt;/span&gt;
+z -l foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; list matches instead of cd&lt;/span&gt;
+z -c foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; restrict matches to subdirs of $PWD&lt;/span&gt;
+z -e foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; echo the best match, don't cd&lt;/span&gt;
+z -i foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd with interactive selection&lt;/span&gt;
+z -I foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd with interactive selection using fzf&lt;/span&gt;
+z -b foo    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to the parent directory starting with foo&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-install" class="anchor" aria-hidden="true" href="#install"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bash:&lt;/p&gt;
+&lt;p&gt;put something like this in your &lt;code&gt;.bashrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init bash)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the default matching algorithm is similar to z.sh to keep compatible, you may like the enhanced matching algorithm for productivity:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init bash enhanced once)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and perhaps this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export _ZL_ECHO=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;if you want &lt;code&gt;z.lua&lt;/code&gt; print the new directory after cd.&lt;/p&gt;
+&lt;p&gt;If you want &lt;code&gt;fzf&lt;/code&gt; tab completion use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init bash enhanced once fzf)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zsh:&lt;/p&gt;
+&lt;p&gt;put something like this in your &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init zsh)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Options like "enhanced" and "once" can be used after &lt;code&gt;--init&lt;/code&gt; too. It can also be initialized from "skywind3000/z.lua" with your zsh plugin managers (antigen / oh-my-zsh).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Posix Shells:&lt;/p&gt;
+&lt;p&gt;put something like this in your &lt;code&gt;.profile&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init posix)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For old shells like ksh (Korn Shell), some features are missing, you can try:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;eval "$(lua /path/to/z.lua --init posix legacy)"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To generate old posix compatible script.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fish Shell:&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;~/.config/fish/conf.d/z.fish&lt;/code&gt; with following code&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source (lua /path/to/z.lua --init fish | psub)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fish version &lt;code&gt;2.4.0&lt;/code&gt; or above is required.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;lua /path/to/z.lua --init fish &amp;gt; ~/.config/fish/conf.d/z.fish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is another way to initialize z.lua in fish shell, but remember to regenerate z.fish if z.lua has been updated or moved.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Power Shell:&lt;/p&gt;
+&lt;p&gt;put something like this in your &lt;code&gt;profile.ps1&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;iex ($(lua /path/to/z.lua --init powershell) -join "`n") 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows cmd (with clink):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;copy z.lua and z.cmd to clink's home directory&lt;/li&gt;
+&lt;li&gt;Add clink's home to &lt;code&gt;%PATH%&lt;/code&gt; (z.cmd can be called anywhere)&lt;/li&gt;
+&lt;li&gt;Ensure that "lua" can be called in &lt;code&gt;%PATH%&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows cmder:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;copy z.lua and z.cmd to cmder/vendor&lt;/li&gt;
+&lt;li&gt;Add cmder/vendor to &lt;code&gt;%PATH%&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ensure that "lua" can be called in &lt;code&gt;%PATH%&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-options" class="anchor" aria-hidden="true" href="#options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Options&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_CMD&lt;/code&gt; in .bashrc/.zshrc to change the command (default z).&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_DATA&lt;/code&gt; in .bashrc/.zshrc to change the datafile (default ~/.zlua).&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_NO_PROMPT_COMMAND&lt;/code&gt; if you're handling PROMPT_COMMAND yourself.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_EXCLUDE_DIRS&lt;/code&gt; to a comma separated list of dirs to exclude.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_ADD_ONCE&lt;/code&gt; to '1' to update database only if &lt;code&gt;$PWD&lt;/code&gt; changed.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_MAXAGE&lt;/code&gt; to define a aging threshold (default is 5000).&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_CD&lt;/code&gt; to specify your own cd command.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_ECHO&lt;/code&gt; to 1 to display new directory name after cd.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_MATCH_MODE&lt;/code&gt; to 1 to enable enhanced matching.&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_NO_CHECK&lt;/code&gt; to 1 to disable path validation, use &lt;code&gt;z --purge&lt;/code&gt; to clean&lt;/li&gt;
+&lt;li&gt;set &lt;code&gt;$_ZL_HYPHEN&lt;/code&gt; to 1 to treat hyphon (-) as a normal character not a lua regexp keyword.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-aging" class="anchor" aria-hidden="true" href="#aging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Aging&lt;/h2&gt;
+&lt;p&gt;The rank of directories maintained by z.lua undergoes aging based on a simple formula. The rank of each entry is incremented  every  time  it  is accessed.  When the sum of ranks is over 5000 (&lt;code&gt;$_ZL_MAXAGE&lt;/code&gt;), all ranks are multiplied by 0.9. Entries with a rank lower than 1 are forgotten.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-frecency" class="anchor" aria-hidden="true" href="#frecency"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Frecency&lt;/h2&gt;
+&lt;p&gt;Frecency is a portmanteau of 'recent' and 'frequency'. It is a weighted rank that depends on how often and how recently something occurred. As far as I know, Mozilla came up with the term.&lt;/p&gt;
+&lt;p&gt;To z.lua, a directory that has low ranking but has been accessed recently will quickly  have higher rank than a directory accessed frequently a long time ago. Frecency is determined at runtime.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-default-matching" class="anchor" aria-hidden="true" href="#default-matching"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Default Matching&lt;/h2&gt;
+&lt;p&gt;By default, z.lua uses default matching algorithm similar to the original z.sh. Paths must be match all of the regexes in order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;cd to a directory contains foo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;z foo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cd to a directory ends with foo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;z foo$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;use multiple arguments:&lt;/p&gt;
+&lt;p&gt;Assuming the following database:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;10   /home/user/work/inbox
+30   /home/user/mail/inbox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;"z in"&lt;/code&gt; would cd into &lt;code&gt;/home/user/mail/inbox&lt;/code&gt; as the higher weighted entry. However you can pass multiple arguments to z.lua to prefer a different entry. In the above example, &lt;code&gt;"z w in"&lt;/code&gt; would then change directory to &lt;code&gt;/home/user/work/inbox&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-enhanced-matching" class="anchor" aria-hidden="true" href="#enhanced-matching"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Enhanced Matching&lt;/h2&gt;
+&lt;p&gt;Enhanced matching can be enabled by exporting the environment:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; _ZL_MATCH_MODE=1&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or, append a &lt;code&gt;enhanced&lt;/code&gt; after &lt;code&gt;--init xxx&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;eval&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;lua /path/to/z.lua --init bash enhanced&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For a given set of queries (the set of command-line arguments passed to z.lua), a path is a match if and only if:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Queries match the path in order (same as default method).&lt;/li&gt;
+&lt;li&gt;The last query matches the last segment of the path.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If no match is found, it will fall back to default matching method.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;match the last segment of the path:&lt;/p&gt;
+&lt;p&gt;Assuming the following database:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;10   /home/user/workspace
+20   /home/user/workspace/project1
+30   /home/user/workspace/project2
+40   /home/user/workspace/project3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you use &lt;code&gt;"z wo"&lt;/code&gt; in enhanced matching mode, only the &lt;code&gt;/home/user/work&lt;/code&gt; will be matched, because according to rule No.2 it is the only path whose last segment matches &lt;code&gt;"wo"&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Since the last segment of a path is always easier to be recalled, it is sane to give it higher priority. You can also achieve this by typing &lt;code&gt;"z space$"&lt;/code&gt; in both methods, but &lt;code&gt;"z wo"&lt;/code&gt; is easier to type.&lt;/p&gt;
+&lt;p&gt;Tips for rule No.2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want your last query &lt;strong&gt;not only&lt;/strong&gt; to match the last segment of the path, append '$' as the last query. eg. &lt;code&gt;"z wo $"&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If you want your last query &lt;strong&gt;not&lt;/strong&gt; to match the last segment of the path, append '/' as the last query. eg. &lt;code&gt;"z wo /"&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cd to the existent path if there is no match:&lt;/p&gt;
+&lt;p&gt;Sometimes if you use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;z foo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And there is no matching result in the database, but there is an existent directory which can be accessed with the name "foo" from current directory, "&lt;code&gt;z foo&lt;/code&gt;" will just work as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd foo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, in the enhanced matching method, you can always use &lt;code&gt;z&lt;/code&gt; like &lt;code&gt;cd&lt;/code&gt; to change directory even if the new directory is untracked (hasn't been accessed).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skip the current directory:&lt;/p&gt;
+&lt;p&gt;When you are calling &lt;code&gt;z xxx&lt;/code&gt; but the best match is the current directory, z.lua will choose the 2nd best match result for you. Assuming the database:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;10   /Users/Great_Wall/.rbenv/versions/2.4.1/lib/ruby/gems
+20   /Library/Ruby/Gems/2.0.0/gems
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I use &lt;code&gt;z gems&lt;/code&gt; by default, it will take me to &lt;code&gt;/Library/Ruby/Gems/2.0.0/gems&lt;/code&gt;, but it's not what I want, so I press up arrow and execute &lt;code&gt;z gems&lt;/code&gt; again, it will take me to &lt;code&gt;/Users/Great_Wall/.rbenv/versions/2.4.1/lib/ruby/gems&lt;/code&gt; and this what I want.&lt;/p&gt;
+&lt;p&gt;Of course, I can always use &lt;code&gt;z env gems&lt;/code&gt; to indicate what I want precisely. Skip the current directory means when you use &lt;code&gt;z xxx&lt;/code&gt; you always want to change directory instead of stay in the same directory and do nothing if current directory is the best match.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The default matching method is designed to be compatible with original z.sh, but the enhanced matching method is much more handy and exclusive to z.lua.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-add-once" class="anchor" aria-hidden="true" href="#add-once"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Add Once&lt;/h2&gt;
+&lt;p&gt;By default, z.lua will add current directory to database each time before display command prompt (correspond with z.sh). But there is an option to allow z.lua add path only if current working directory changed.&lt;/p&gt;
+&lt;p&gt;To enable this, you can set &lt;code&gt;$_ZL_ADD_ONCE&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt; before init z.lua. Or you can initialize z.lua on linux like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;eval&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;lua /path/to/z.lua --init bash once&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;eval&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;lua /path/to/z.lua --init zsh once&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;source&lt;/span&gt; (lua /path/to/z.lua --init fish once &lt;span class="pl-k"&gt;|&lt;/span&gt; psub)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With &lt;code&gt;add once&lt;/code&gt; mode off (default), z.lua will consider the time you spent in the directory (like z.sh). When this mode is on, consider the times you accessed the directory (like autojump), and that could be much faster on slow hardware.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-interactive-selection" class="anchor" aria-hidden="true" href="#interactive-selection"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interactive Selection&lt;/h2&gt;
+&lt;p&gt;When there are multiple matches found, using &lt;code&gt;z -i&lt;/code&gt; will display a list:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ z -i soft
+3:  0.25        /home/data/software
+2:  3.75        /home/skywind/tmp/comma/software
+1:  21          /home/skywind/software
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; {CURSOR}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And then you can input the number and choose where to go before actual cd. eg. input 3 to cd to &lt;code&gt;/home/data/software&lt;/code&gt;. And if you just press ENTER and input nothing, it will just quit and stay where you were.&lt;/p&gt;
+&lt;p&gt;NOTE: for fish shell, this feature requires fish 2.7.0 or above.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-fzf-supports" class="anchor" aria-hidden="true" href="#fzf-supports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FZF Supports&lt;/h2&gt;
+&lt;p&gt;From version 1.1.0, a new option &lt;code&gt;"-I"&lt;/code&gt; will allow you to use fzf to select when there are multiple matches.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/fzf.png"&gt;&lt;img src="images/fzf.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When we use &lt;code&gt;"z -I vim"&lt;/code&gt;，12 paths contains keyword "vim" has been matched and ordered by their frecent value, the higher frecent comes with the higher rank. Then without cd to the highest ranked path, z.lua passes all the candidates to fzf.&lt;/p&gt;
+&lt;p&gt;Now you can input some space separated keywords (no order required) or use &lt;code&gt;CTRL+J&lt;/code&gt;/&lt;code&gt;CTRL+K&lt;/code&gt; (same as &lt;code&gt;UP&lt;/code&gt;/&lt;code&gt;DOWN&lt;/code&gt;) to select where you want to go, or &lt;code&gt;ESC&lt;/code&gt; / &lt;code&gt;CTRL&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;/&lt;code&gt;G&lt;/code&gt; to give up.&lt;/p&gt;
+&lt;p&gt;Of course, you can always give more keywords to &lt;code&gt;z&lt;/code&gt; command to match your destination precisely. &lt;code&gt;"z -I"&lt;/code&gt; is similar to &lt;code&gt;"z -i"&lt;/code&gt;, but use fzf. Both &lt;code&gt;"-i"&lt;/code&gt; and &lt;code&gt;"-I"&lt;/code&gt; provide you another way for path navigation.&lt;/p&gt;
+&lt;p&gt;Usually, &lt;code&gt;z -I&lt;/code&gt; can be aliased to &lt;code&gt;zf&lt;/code&gt; (z + fuzzy finder) for convenience. If there are only one path matched, &lt;code&gt;z -I&lt;/code&gt; will jump to it directly, fzf will only be invoked for multiple matches. &lt;code&gt;"z -I ."&lt;/code&gt; or &lt;code&gt;"zf ."&lt;/code&gt; can be used to use fzf select from entire database.&lt;/p&gt;
+&lt;p&gt;For more information about this, please visit &lt;a href="https://github.com/skywind3000/z.lua/wiki/Effective-with-fzf"&gt;wiki - effective with fzf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;NOTE: For fish shell, this feature requires fish 2.7.0 or above. You can specify fzf executable in &lt;code&gt;$_ZL_FZF&lt;/code&gt; environment variable, &lt;code&gt;"fzf"&lt;/code&gt; will be called by default.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-jump-backwards" class="anchor" aria-hidden="true" href="#jump-backwards"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jump Backwards&lt;/h2&gt;
+&lt;p&gt;New option &lt;code&gt;"-b"&lt;/code&gt; can quickly go back to a specific parent directory in bash instead of typing "cd ../../.." redundantly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(No argument)&lt;/strong&gt;: &lt;code&gt;cd&lt;/code&gt; into the project root, the project root the nearest parent directory with &lt;code&gt;.git&lt;/code&gt;/&lt;code&gt;.hg&lt;/code&gt;/&lt;code&gt;.svn&lt;/code&gt; in it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(One argument)&lt;/strong&gt;: &lt;code&gt;cd&lt;/code&gt; into the closest parent starting with keyword, if not find, go to the parent containing keyword.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Two arguments)&lt;/strong&gt;: replace the first value with the second one (in the current path).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let's start by aliasing &lt;code&gt;z -b&lt;/code&gt; to &lt;code&gt;zb&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; go all the way up to the project root (in this case, the one that has .git in it)&lt;/span&gt;
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/github/lorem/src/public$ zb
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/github/lorem
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd into to the first parent directory named g*&lt;/span&gt;
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/github/vimium/src/public$ zb g
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/github
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; goto the site directory quickly&lt;/span&gt;
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/github/demo/src/org/main/site/utils/file/reader/whatever$ zb si
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/github/demo/src/org/main/site
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; substitute jekyll with ghost&lt;/span&gt;
+&lt;span class="pl-k"&gt;~&lt;/span&gt;/github/jekyll/test$ zb jekyll ghost
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/github/ghost/test&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Backward jumping can also be used with &lt;code&gt;$_ZL_ECHO&lt;/code&gt; option (echo $PWD after cd), which makes it possible to combine them with other tools without actually changing the working directory (eg. &lt;code&gt;ls `zb git` &lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Environment variable &lt;code&gt;$_ZL_ROOT_MARKERS&lt;/code&gt; is a comma separated list for project root locating, and can be redefined as:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;export&lt;/span&gt; _ZL_ROOT_MARKERS=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;.git,.svn,.hg,.root,package.json&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want &lt;code&gt;zb&lt;/code&gt; jump back to a parent directory contains a &lt;code&gt;.root&lt;/code&gt; or &lt;code&gt;package.json&lt;/code&gt; in it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bonus&lt;/strong&gt;: &lt;code&gt;zb ..&lt;/code&gt; equals to &lt;code&gt;cd ..&lt;/code&gt;, &lt;code&gt;zb ...&lt;/code&gt; equals to &lt;code&gt;cd ../..&lt;/code&gt; and &lt;code&gt;zb ....&lt;/code&gt; equals to &lt;code&gt;cd ../../..&lt;/code&gt;, and so on. Finally, &lt;code&gt;zb ..20&lt;/code&gt; equals to &lt;code&gt;cd (..)x20&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-completion" class="anchor" aria-hidden="true" href="#completion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Completion&lt;/h2&gt;
+&lt;p&gt;For zsh/fish, completion can be triggered by &lt;code&gt;z foo&amp;lt;tab&amp;gt;&lt;/code&gt;. and a list of candidates will display in zsh / fish:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/complete-1.png"&gt;&lt;img src="images/complete-1.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; again, you can select your destination in a visualized way.&lt;/p&gt;
+&lt;p&gt;Bash is not as powerful as zsh/fish, so we introduced fzf-completion for bash, initialize your z.lua and append &lt;code&gt;fzf&lt;/code&gt; keyword after &lt;code&gt;--init&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;eval&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;$(&lt;/span&gt;lua /path/to/z.lua --init bash enhanced once &lt;span class="pl-c1"&gt;echo&lt;/span&gt; fzf&lt;span class="pl-pds"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then press &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; after &lt;code&gt;z xxx&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/complete-2.png"&gt;&lt;img src="images/complete-2.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With the help of fzf, completion in bash is much easier now.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;z.lua&lt;/code&gt; can cooperate with &lt;a href="https://github.com/changyuheng/fz"&gt;fz&lt;/a&gt; for &lt;strong&gt;better completion&lt;/strong&gt; result in both bash and zsh, for more information see &lt;a href="https://github.com/skywind3000/z.lua/wiki/FAQ#fzsh-for-better-completion"&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;NOTE: To enable this, command &lt;code&gt;fzf&lt;/code&gt; must be found in &lt;code&gt;$PATH&lt;/code&gt; before initialization.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-most-recently-accessed-path" class="anchor" aria-hidden="true" href="#most-recently-accessed-path"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Most Recently Accessed Path&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;z.lua&lt;/code&gt; provides a fast way to visit MRU directories without typing any keyword. That is &lt;code&gt;dirstack&lt;/code&gt;, which records recently visited paths and can be manipulated by &lt;code&gt;z -&lt;/code&gt;, &lt;code&gt;z --&lt;/code&gt; and &lt;code&gt;z -{num}&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; display current dir stack&lt;/span&gt;
+$ z --    
+ 0  /home/skywind/work/match/memory-match
+ 1  /home/skywind/.local/etc
+ 2  /home/skywind/software/vifm-0.9.1
+ 3  /home/skywind/work
+ 4  /home/skywind/work/match
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd to the 2nd directory in the stack&lt;/span&gt;
+$ z -2
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; /home/skywind/software/vifm-0.9.1
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; popup stacktop (cd to previous directory), same as "z -0"&lt;/span&gt;
+$ z -
+  =&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; -&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;dirstack&lt;/code&gt; is calculated from z.lua's database, and has no dependency on shells or systems. You will not lost records after re-login, and history can be shared across shells and sessions.&lt;/p&gt;
+&lt;p&gt;There is another way to access MRU directories interactively by utilizing parameter &lt;code&gt;-I&lt;/code&gt; (fzf) and &lt;code&gt;-t&lt;/code&gt; (sort by time):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;alias&lt;/span&gt; zh=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;z -I -t .&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The new alias &lt;code&gt;zh&lt;/code&gt; (jump to history) is very easy to input:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="images/mru.png"&gt;&lt;img src="images/mru.png" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The first column indicates how many seconds ago you have visited, and the second column is the path name. With &lt;code&gt;zh&lt;/code&gt;, you can type some character to use string matching in fzf, or use &lt;code&gt;&amp;lt;Up&amp;gt;&lt;/code&gt;/&lt;code&gt;&amp;lt;Down&amp;gt;&lt;/code&gt; (as well as &lt;code&gt;CTRL+j/k&lt;/code&gt;) to move the selector (red &lt;code&gt;&amp;gt;&lt;/code&gt;) up and down.&lt;/p&gt;
+&lt;p&gt;At last, press &lt;code&gt;&amp;lt;enter&amp;gt;&lt;/code&gt; to accept or &lt;code&gt;&amp;lt;ESC&amp;gt;&lt;/code&gt; to give up.&lt;/p&gt;
+&lt;p&gt;Remember to enable the &lt;a href="#enhanced-matching"&gt;enhanced matching&lt;/a&gt; algorithm, the current working directory can be skipped with it.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-tips" class="anchor" aria-hidden="true" href="#tips"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tips&lt;/h2&gt;
+&lt;p&gt;Recommended aliases you may find useful:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;alias&lt;/span&gt; zz=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;z -c&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; restrict matches to subdirs of $PWD&lt;/span&gt;
+&lt;span class="pl-c1"&gt;alias&lt;/span&gt; zi=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;z -i&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; cd with interactive selection&lt;/span&gt;
+&lt;span class="pl-c1"&gt;alias&lt;/span&gt; zf=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;z -I&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; use fzf to select in multiple matches&lt;/span&gt;
+&lt;span class="pl-c1"&gt;alias&lt;/span&gt; zb=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;z -b&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;      &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; quickly cd to the parent directory&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Import data from z.sh：&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;cat &lt;span class="pl-k"&gt;~&lt;/span&gt;/.z &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/.zlua&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Import data from autojump：&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;FN=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$HOME&lt;/span&gt;/.local/share/autojump/autojump.txt&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+awk -F &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;\t&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;{print $2 "|" $1 "|" 0}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-smi"&gt;$FN&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-k"&gt;~&lt;/span&gt;/.zlua&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Don't forget to read the &lt;a href="https://github.com/skywind3000/z.lua/wiki/FAQ"&gt;Frequently Asked Questions&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-benchmark" class="anchor" aria-hidden="true" href="#benchmark"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Benchmark&lt;/h2&gt;
+&lt;p&gt;The slowest part is adding path to history data file. It will run every time when you press enter (installed in $PROMPT_COMMAND). So I profile it on my NAS:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-k"&gt;time&lt;/span&gt; autojump --add /tmp
+real    0m0.352s
+user    0m0.077s
+sys     0m0.185s
+
+$ &lt;span class="pl-k"&gt;time&lt;/span&gt; fasd -A /tmp
+real    0m0.618s
+user    0m0.076s
+sys     0m0.242s
+
+$ &lt;span class="pl-k"&gt;time&lt;/span&gt; _z --add /tmp
+real    0m0.194s
+user    0m0.046s
+sys     0m0.154s
+
+$ &lt;span class="pl-k"&gt;time&lt;/span&gt; _zlua --add /tmp
+real    0m0.052s
+user    0m0.015s
+sys     0m0.030s&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As you see, z.lua is the fastest one and requires less resource.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reputation" class="anchor" aria-hidden="true" href="#reputation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reputation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;"I like this in principal. I’m pretty damn predictable at the command line and far too lazy to make shortcuts"&lt;/li&gt;
+&lt;li&gt;"It feels far more intuitive and it's so incredibly convenient to be able to jump between folders I'm working in without having to traverse an entire tree. The shell used to feel so constraining for me, but tools like this are making me enjoy it so much more. "&lt;/li&gt;
+&lt;li&gt;"I can finally have autojump-like functionality on my Raspberry Pi 1 without waiting 30 seconds every time I open a new shell. Thanks z.lua devs."&lt;/li&gt;
+&lt;li&gt;"Anyway, z.lua is a promising project. If you only need directory jumping, it may be the best choice."&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-history" class="anchor" aria-hidden="true" href="#history"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;History&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1.7.4 (2019-12-29): new: &lt;code&gt;$_ZL_HYPHEN&lt;/code&gt; to treat hyphen as a normal character, see &lt;a href="https://github.com/skywind3000/z.lua/wiki/FAQ#how-to-input-a-hyphen---in-the-keyword-"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;1.7.3 (2019-09-07): use &lt;a href="http://keplerproject.github.io/luafilesystem/" rel="nofollow"&gt;lua-filesystem&lt;/a&gt; package if possible when &lt;code&gt;$_ZL_USE_LFS&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;1.7.2 (2019-08-01): Improve bash/zsh shell compatibility by &lt;a href="https://github.com/barlik"&gt;@barlik&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;1.7.1 (2019-06-07): Fixed: &lt;code&gt;$_ZL_DATA&lt;/code&gt; failure on Linux sometimes.&lt;/li&gt;
+&lt;li&gt;1.7.0 (2019-03-09): Support &lt;a href="https://github.com/skywind3000/z.lua/wiki/FAQ#how-to-integrate-zlua-to-ranger-"&gt;ranger&lt;/a&gt;, fix ReplaceFile issue in luajit (windows).&lt;/li&gt;
+&lt;li&gt;1.6.0 (2019-03-04): optimize with ffi module (luajit builtin module).&lt;/li&gt;
+&lt;li&gt;1.5.11 (2019-03-02): fixed: os.path.isdir doesn't work for symbol link folders.&lt;/li&gt;
+&lt;li&gt;1.5.10 (2019-03-01): Prevent writing file racing.&lt;/li&gt;
+&lt;li&gt;1.5.9 (2019-02-25): &lt;code&gt;z -b&lt;/code&gt; should not match current directory (close #56).&lt;/li&gt;
+&lt;li&gt;1.5.8 (2019-02-21): new &lt;code&gt;$_ZL_FZF_HEIGHT&lt;/code&gt; to control &lt;code&gt;--height&lt;/code&gt; parameter in fzf.&lt;/li&gt;
+&lt;li&gt;1.5.7 (2019-02-21): rename &lt;code&gt;$_ZL_FZF_SORT&lt;/code&gt; to &lt;code&gt;$_ZL_INT_SORT&lt;/code&gt; it will affect both &lt;code&gt;-i&lt;/code&gt; and &lt;code&gt;-I&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;1.5.6 (2019-02-20): set &lt;code&gt;$_ZL_FZF_SORT&lt;/code&gt; to 1 to sort directories by alphabet in fzf.&lt;/li&gt;
+&lt;li&gt;1.5.5 (2019-02-20): &lt;code&gt;$_ZL_FZF_FLAG&lt;/code&gt; can be used to override fzf flags, default to "+s -e".&lt;/li&gt;
+&lt;li&gt;1.5.4 (2019-02-19): fixed: file/path existence detection fails on read-only fs (closed &lt;a href="https://github.com/skywind3000/z.lua/issues/49"&gt;#49&lt;/a&gt; by &lt;a href="https://github.com/contrun"&gt;@contrun&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;1.5.3 (2019-02-17): new &lt;code&gt;$_ZL_FZF_FLAG&lt;/code&gt; for passing additional flags to fzf, add &lt;code&gt;-e&lt;/code&gt; argument to fzf.&lt;/li&gt;
+&lt;li&gt;1.5.2 (2019-02-16): be aware of all arguments in fzf completion.&lt;/li&gt;
+&lt;li&gt;1.5.1 (2019-02-15): new: simulated dir stack by &lt;code&gt;z -&lt;/code&gt;, &lt;code&gt;z --&lt;/code&gt; and &lt;code&gt;z -{num}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;1.5.0 (2019-02-14): fixed minor issues in backward jumping.&lt;/li&gt;
+&lt;li&gt;1.4.7 (2019-02-13): Don't use regex in backward jumping (use plain text instead).&lt;/li&gt;
+&lt;li&gt;1.4.6 (2019-02-12): change: &lt;code&gt;_ZL_EXCLUDE_DIRS&lt;/code&gt; to a comma separated list of dirs to exclude.&lt;/li&gt;
+&lt;li&gt;1.4.5 (2019-02-10): improve bash fzf completion and posix compatibility.&lt;/li&gt;
+&lt;li&gt;1.4.4 (2019-02-10): supports legacy posix shells like ksh, init with &lt;code&gt;z.lua --init posix legacy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;1.4.3 (2019-02-08): fixed minor issues.&lt;/li&gt;
+&lt;li&gt;1.4.2 (2019-02-06): you can disabled path validation by &lt;code&gt;$_ZL_NO_CHECK&lt;/code&gt;, and use &lt;code&gt;z --purge&lt;/code&gt; to clear bad paths manually.&lt;/li&gt;
+&lt;li&gt;1.4.1 (2019-02-06): fzf tab-completion in bash (&lt;a href="https://github.com/BarbUk"&gt;@BarbUk&lt;/a&gt;), fixed hang in fish shell (close &lt;a href="https://github.com/skywind3000/z.lua/issues/29"&gt;#29&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;1.4.0 (2019-02-04): Ported to Power Shell (&lt;a href="https://github.com/manhong2112"&gt;@manhong2112&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;1.3.0 (2019-02-04): Backward jumping, prevent "cd ../../.." repeatly.&lt;/li&gt;
+&lt;li&gt;1.2.0 (2019-02-03): Upgrade string lib and path lib.&lt;/li&gt;
+&lt;li&gt;1.1.0 (2019-02-02): New option '-I' to use fzf to select from multiple matches.&lt;/li&gt;
+&lt;li&gt;1.0.0 (2019-02-01): Fixed minor issues and make it stable.&lt;/li&gt;
+&lt;li&gt;0.5.0 (2019-01-21): Ported to Fish Shell (&lt;a href="https://github.com/TeddyDD"&gt;@TeddyDD&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;0.4.1 (2019-01-20): Don't return failed exit code when $_ZL_ECHO is unbind (Mario Rodas).&lt;/li&gt;
+&lt;li&gt;0.4.0 (2019-01-17): new enhanced matching algorithm，can be enabled by appending &lt;code&gt;enhanced&lt;/code&gt; keyword after &lt;code&gt;--init&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;0.3.0 (2018-12-26): new option &lt;code&gt;-i&lt;/code&gt; to enable interactive selection.&lt;/li&gt;
+&lt;li&gt;0.2.0 (2018-11-25): new option &lt;code&gt;$_ZL_ADD_ONCE&lt;/code&gt; to enable updating datafile only if &lt;code&gt;$PWD&lt;/code&gt; changed.&lt;/li&gt;
+&lt;li&gt;0.1.0 (2018-04-30): supports windows cmd, cmder and conemu.&lt;/li&gt;
+&lt;li&gt;0.0.0 (2018-03-21): initial commit, compatible with original z.sh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-help" class="anchor" aria-hidden="true" href="#help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Help&lt;/h2&gt;
+&lt;p&gt;This project needs help for the tasks below:&lt;/p&gt;
+&lt;ul class="contains-task-list"&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Support csh/tcsh.&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Completion: Actually I got little knowledge in completion, and need help to improve it.&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Completion: Implement completion for Power Shell.&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Completion: Implement completion for different arguments.&lt;/li&gt;
+&lt;li class="task-list-item"&gt;&lt;input type="checkbox" id="" disabled="" class="task-list-item-checkbox"&gt; Packaging: make it possible to be installed easily in different systems or popular plugin managers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/rupa"&gt;@rupa&lt;/a&gt; for inspiring me to start this project.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/vigneshwaranr"&gt;@vigneshwaranr&lt;/a&gt; and &lt;a href="https://github.com/shyiko"&gt;@shyiko&lt;/a&gt; for inspiring me the backward jumping.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/TeddyDD"&gt;@TeddyDD&lt;/a&gt; for Fish Shell porting.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/manhong2112"&gt;@manhong2112&lt;/a&gt; for Power Shell porting.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/BarbUk"&gt;@BarbUk&lt;/a&gt; for fzf completion in Bash.&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href="https://github.com/barlik"&gt;@barlik&lt;/a&gt; for many improvements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And many others.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under MIT license.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>skywind3000</author><guid isPermaLink="false">https://github.com/skywind3000/z.lua</guid><pubDate>Fri, 24 Jan 2020 00:03:00 GMT</pubDate></item><item><title>bakpakin/Fennel #4 in Lua, Today</title><link>https://github.com/bakpakin/Fennel</link><description>&lt;p&gt;&lt;i&gt;Lua Lisp Language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-fennel" class="anchor" aria-hidden="true" href="#fennel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fennel&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://fennel-lang.org" rel="nofollow"&gt;Fennel&lt;/a&gt; is a lisp that compiles to Lua. It aims to be easy to use,
+expressive, and has almost zero overhead compared to handwritten Lua.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Full Lua compatibility&lt;/em&gt; - You can use any function or library from Lua.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Zero overhead&lt;/em&gt; - Compiled code should be just as or more efficient than hand-written Lua.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Compile-time macros&lt;/em&gt; - Ship compiled code with no runtime dependency on Fennel.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Embeddable&lt;/em&gt; - Fennel is a one-file library as well as an executable. Embed it in other programs to support runtime extensibility and interactive development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="tutorial.md"&gt;tutorial&lt;/a&gt; is a great place to start&lt;/li&gt;
+&lt;li&gt;The &lt;a href="reference.md"&gt;reference&lt;/a&gt; describes all Fennel special forms&lt;/li&gt;
+&lt;li&gt;The &lt;a href="api.md"&gt;API listing&lt;/a&gt; shows how to integrate Fennel into your codebase&lt;/li&gt;
+&lt;li&gt;The &lt;a href="lua-primer.md"&gt;Lua primer&lt;/a&gt; gives a very brief intro to Lua with
+pointers to further details&lt;/li&gt;
+&lt;li&gt;The &lt;a href="test.lua"&gt;test suite&lt;/a&gt; has basic usage examples for most features.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a small complete example that uses the LÖVE game engine, see
+&lt;a href="https://p.hagelb.org/pong.fnl.html" rel="nofollow"&gt;pong.fnl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="changelog.md"&gt;changelog&lt;/a&gt; has a list of user-visible changes for
+each release.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-example" class="anchor" aria-hidden="true" href="#example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-hello-world" class="anchor" aria-hidden="true" href="#hello-world"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hello World&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;(print "hello, world!")
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-fibonacci-sequence" class="anchor" aria-hidden="true" href="#fibonacci-sequence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fibonacci sequence&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;(fn fib [n]
+ (if (&amp;lt; n 2)
+  n
+  (+ (fib (- n 1)) (fib (- n 2)))))
+
+(print (fib 10))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;At &lt;a href="https://fennel-lang.org" rel="nofollow"&gt;https://fennel-lang.org&lt;/a&gt; there's a live in-browser repl you can
+use without installing anything.&lt;/p&gt;
+&lt;p&gt;Check your OS's package manager to see if Fennel is available
+there. If you use &lt;a href="https://luarocks.org/" rel="nofollow"&gt;LuaRocks&lt;/a&gt; you can run &lt;code&gt;luarocks install fennel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otherwise clone this repository, and run &lt;code&gt;./fennel&lt;/code&gt; to start a
+repl. Use &lt;code&gt;./fennel my-file.fnl&lt;/code&gt; to run code or &lt;code&gt;./fennel --compile my-file.fnl &amp;gt; my-file.lua&lt;/code&gt; to perform ahead-of-time compilation.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="api.md"&gt;API documentation&lt;/a&gt; for how to embed Fennel in your program.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-differences-from-lua" class="anchor" aria-hidden="true" href="#differences-from-lua"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Differences from Lua&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Syntax is much more regular and predictable (no statements; no operator precedence)&lt;/li&gt;
+&lt;li&gt;It's impossible to set &lt;em&gt;or read&lt;/em&gt; a global by accident&lt;/li&gt;
+&lt;li&gt;Pervasive destructuring anywhere locals are introduced&lt;/li&gt;
+&lt;li&gt;Clearer syntactic distinction between sequential tables and key/value tables&lt;/li&gt;
+&lt;li&gt;Separate looping constructs for numeric loops vs iterators instead of overloading &lt;code&gt;for&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Opt-in mutability for local variables&lt;/li&gt;
+&lt;li&gt;Opt-in arity checks for &lt;code&gt;lambda&lt;/code&gt; functions&lt;/li&gt;
+&lt;li&gt;Ability to extend the syntax with your own macros and special forms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-differences-from-other-lisp-languages" class="anchor" aria-hidden="true" href="#differences-from-other-lisp-languages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Differences from other lisp languages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lua VM can be embedded in other programs with only 180kb&lt;/li&gt;
+&lt;li&gt;Access to &lt;a href="http://luajit.org/ext_ffi_tutorial.html" rel="nofollow"&gt;excellent FFI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LuaJIT consistently ranks at the top of performance shootouts&lt;/li&gt;
+&lt;li&gt;Inherits aggressively simple semantics from Lua; easy to learn&lt;/li&gt;
+&lt;li&gt;Lua VM is already embedded in databases, window managers, games, etc&lt;/li&gt;
+&lt;li&gt;Low memory usage&lt;/li&gt;
+&lt;li&gt;Readable compiler output resembles input&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Obviously not all these apply to every lisp you could compare Fennel to.)&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-why-not-fennel" class="anchor" aria-hidden="true" href="#why-not-fennel"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why not Fennel?&lt;/h2&gt;
+&lt;p&gt;Fennel inherits the limitations of the Lua runtime, which does not offer
+pre-emptive multitasking or OS-level threads. Libraries for Lua work
+great with Fennel, but the selection of libraries is not as extensive
+as it is with more popular languages. While LuaJIT has excellent
+overall performance, purely-functional algorithms will not be as
+efficient as they would be on a VM with generational garbage collection.&lt;/p&gt;
+&lt;p&gt;Even for cases where the Lua runtime is a good fit, Fennel might not
+be a good fit when end-users are expected to write their own code to
+extend the program, because the available documentation for learning
+Lua is much more readily-available than it is for Fennel.&lt;/p&gt;
+&lt;p&gt;Editor support is currently somewhat limited outside Emacs/Vim, but
+unsupported editors can be used with syntax highlighting for Clojure
+reasonably well.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-resources" class="anchor" aria-hidden="true" href="#resources"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://lists.sr.ht/%7Etechnomancy/fennel" rel="nofollow"&gt;Mailing list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.com/technomancy/fennel-mode" rel="nofollow"&gt;Emacs support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/bakpakin/fennel.vim"&gt;Vim support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/bakpakin/Fennel/wiki"&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Build: &lt;a href="https://circleci.com/gh/bakpakin/Fennel" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/52aad0095dcf936ba0e20975d31b7c00ef456596/68747470733a2f2f636972636c6563692e636f6d2f67682f62616b70616b696e2f46656e6e656c2e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/bakpakin/Fennel.svg?style=svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;#fennel&lt;/code&gt; IRC channel is &lt;a href="https://webchat.freenode.net/" rel="nofollow"&gt;on Freenode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright © 2016-2019 Calvin Rose and contributors&lt;/p&gt;
+&lt;p&gt;Released under the MIT license&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>bakpakin</author><guid isPermaLink="false">https://github.com/bakpakin/Fennel</guid><pubDate>Fri, 24 Jan 2020 00:04:00 GMT</pubDate></item><item><title>nagadomi/waifu2x #5 in Lua, Today</title><link>https://github.com/nagadomi/waifu2x</link><description>&lt;p&gt;&lt;i&gt;Image Super-Resolution for Anime-Style Art&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-waifu2x" class="anchor" aria-hidden="true" href="#waifu2x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;waifu2x&lt;/h1&gt;
+&lt;p&gt;Image Super-Resolution for Anime-style art using Deep Convolutional Neural Networks.
+And it supports photo.&lt;/p&gt;
+&lt;p&gt;The demo application can be found at &lt;a href="http://waifu2x.udp.jp/" rel="nofollow"&gt;http://waifu2x.udp.jp/&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note that I only provide this website and this repository. Other software or website claiming "waifu2x" has nothing to do with me.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-summary" class="anchor" aria-hidden="true" href="#summary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Click to see the slide show.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/nagadomi/waifu2x/master/images/slide.png"&gt;&lt;img src="https://raw.githubusercontent.com/nagadomi/waifu2x/master/images/slide.png" alt="slide" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-references" class="anchor" aria-hidden="true" href="#references"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;p&gt;waifu2x is inspired by SRCNN [1]. 2D character picture (HatsuneMiku) is licensed under CC BY-NC by piapro [2].&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang, "Image Super-Resolution Using Deep Convolutional Networks", &lt;a href="http://arxiv.org/abs/1501.00092" rel="nofollow"&gt;http://arxiv.org/abs/1501.00092&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[2] "For Creators", &lt;a href="http://piapro.net/en_for_creators.html" rel="nofollow"&gt;http://piapro.net/en_for_creators.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-public-ami" class="anchor" aria-hidden="true" href="#public-ami"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Public AMI&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-third-party-software" class="anchor" aria-hidden="true" href="#third-party-software"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Third Party Software&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/nagadomi/waifu2x/wiki/Third-Party"&gt;Third-Party&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are a windows user, I recommend you to use &lt;a href="https://github.com/lltcggie/waifu2x-caffe"&gt;waifu2x-caffe&lt;/a&gt;(Just download from &lt;code&gt;releases&lt;/code&gt; tab), &lt;a href="https://github.com/nihui/waifu2x-ncnn-vulkan"&gt;waifu2x-ncnn-vulkan&lt;/a&gt; or &lt;a href="https://github.com/DeadSix27/waifu2x-converter-cpp"&gt;waifu2x-conver-cpp&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-hardware" class="anchor" aria-hidden="true" href="#hardware"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hardware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NVIDIA GPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-platform" class="anchor" aria-hidden="true" href="#platform"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Platform&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://torch.ch/" rel="nofollow"&gt;Torch7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.nvidia.com/cuda-toolkit" rel="nofollow"&gt;NVIDIA CUDA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-luarocks-packages-excludes-torch7s-default-packages" class="anchor" aria-hidden="true" href="#luarocks-packages-excludes-torch7s-default-packages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LuaRocks packages (excludes torch7's default packages)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;lua-csnappy&lt;/li&gt;
+&lt;li&gt;md5&lt;/li&gt;
+&lt;li&gt;uuid&lt;/li&gt;
+&lt;li&gt;csvigo&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kernelsauce/turbo"&gt;turbo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-setting-up-the-command-line-tool-environment" class="anchor" aria-hidden="true" href="#setting-up-the-command-line-tool-environment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting Up the Command Line Tool Environment&lt;/h3&gt;
+&lt;p&gt;(on Ubuntu 16.04)&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-install-cuda" class="anchor" aria-hidden="true" href="#install-cuda"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install CUDA&lt;/h4&gt;
+&lt;p&gt;See: &lt;a href="http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux/#ubuntu-installation" rel="nofollow"&gt;NVIDIA CUDA Getting Started Guide for Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Download &lt;a href="http://developer.nvidia.com/cuda-downloads" rel="nofollow"&gt;CUDA&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-install-package" class="anchor" aria-hidden="true" href="#install-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Package&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install libsnappy-dev
+sudo apt-get install libgraphicsmagick1-dev
+sudo apt-get install libssl1.0-dev # for web server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: waifu2x requires little-cms2 linked graphicsmagick. if you use macOS/homebrew, See &lt;a href="https://github.com/nagadomi/waifu2x/issues/174#issuecomment-384466451"&gt;#174&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-install-torch7" class="anchor" aria-hidden="true" href="#install-torch7"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Torch7&lt;/h4&gt;
+&lt;p&gt;See: &lt;a href="http://torch.ch/docs/getting-started.html" rel="nofollow"&gt;Getting started with Torch&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For CUDA9.x/CUDA8.x, see &lt;a href="https://github.com/nagadomi/waifu2x/issues/222"&gt;#222&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For CUDA10.x, see &lt;a href="https://github.com/nagadomi/waifu2x/issues/253#issuecomment-445448928"&gt;#253&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a id="user-content-getting-waifu2x" class="anchor" aria-hidden="true" href="#getting-waifu2x"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting waifu2x&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;git clone --depth 1 https://github.com/nagadomi/waifu2x.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and install lua modules.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd waifu2x
+./install_lua_modules.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-validation" class="anchor" aria-hidden="true" href="#validation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Validation&lt;/h4&gt;
+&lt;p&gt;Testing the waifu2x command line tool.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-web-application" class="anchor" aria-hidden="true" href="#web-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web Application&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;th web.lua
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;View at: &lt;a href="http://localhost:8812/" rel="nofollow"&gt;http://localhost:8812/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-command-line-tools" class="anchor" aria-hidden="true" href="#command-line-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Command line tools&lt;/h2&gt;
+&lt;p&gt;Notes: If you have cuDNN library, than you can use cuDNN with &lt;code&gt;-force_cudnn 1&lt;/code&gt; option. cuDNN is too much faster than default kernel. If you got GPU out of memory error, you can avoid it with &lt;code&gt;-crop_size&lt;/code&gt; option (e.g. &lt;code&gt;-crop_size 128&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-noise-reduction" class="anchor" aria-hidden="true" href="#noise-reduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Noise Reduction&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -m noise -noise_level 1 -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -m noise -noise_level 0 -i input_image.png -o output_image.png
+th waifu2x.lua -m noise -noise_level 2 -i input_image.png -o output_image.png
+th waifu2x.lua -m noise -noise_level 3 -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-2x-upscaling" class="anchor" aria-hidden="true" href="#2x-upscaling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2x Upscaling&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -m scale -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-noise-reduction--2x-upscaling" class="anchor" aria-hidden="true" href="#noise-reduction--2x-upscaling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Noise Reduction + 2x Upscaling&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -m noise_scale -noise_level 1 -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -m noise_scale -noise_level 0 -i input_image.png -o output_image.png
+th waifu2x.lua -m noise_scale -noise_level 2 -i input_image.png -o output_image.png
+th waifu2x.lua -m noise_scale -noise_level 3 -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-batch-conversion" class="anchor" aria-hidden="true" href="#batch-conversion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Batch conversion&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;find /path/to/imagedir -name "*.png" -o -name "*.jpg" &amp;gt; image_list.txt
+th waifu2x.lua -m scale -l ./image_list.txt -o /path/to/outputdir/prefix_%d.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output format supports &lt;code&gt;%s&lt;/code&gt; and &lt;code&gt;%d&lt;/code&gt;(e.g. %06d). &lt;code&gt;%s&lt;/code&gt; will be replaced the basename of the source filename. &lt;code&gt;%d&lt;/code&gt; will be replaced a sequence number.
+For example, when input filename is &lt;code&gt;piyo.png&lt;/code&gt;, &lt;code&gt;%s_%03d.png&lt;/code&gt; will be replaced &lt;code&gt;piyo_001.png&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See also &lt;code&gt;th waifu2x.lua -h&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-using-photo-model" class="anchor" aria-hidden="true" href="#using-photo-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using photo model&lt;/h3&gt;
+&lt;p&gt;Please add &lt;code&gt;-model_dir models/photo&lt;/code&gt; to command line option, if you want to use photo model.
+For example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;th waifu2x.lua -model_dir models/photo -m scale -i input_image.png -o output_image.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-video-encoding" class="anchor" aria-hidden="true" href="#video-encoding"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Video Encoding&lt;/h3&gt;
+&lt;p&gt;* &lt;code&gt;avconv&lt;/code&gt; is alias of &lt;code&gt;ffmpeg&lt;/code&gt; on Ubuntu 14.04.&lt;/p&gt;
+&lt;p&gt;Extracting images and audio from a video. (range: 00:09:00 ~ 00:12:00)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir frames
+avconv -i data/raw.avi -ss 00:09:00 -t 00:03:00 -r 24 -f image2 frames/%06d.png
+avconv -i data/raw.avi -ss 00:09:00 -t 00:03:00 audio.mp3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generating a image list.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;find ./frames -name "*.png" |sort &amp;gt; data/frame.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;waifu2x (for example, noise reduction)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir new_frames
+th waifu2x.lua -m noise -noise_level 1 -resume 1 -l data/frame.txt -o new_frames/%d.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generating a video from waifu2xed images and audio.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;avconv -f image2 -framerate 24 -i new_frames/%d.png -i audio.mp3 -r 24 -vcodec libx264 -crf 16 video.mp4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-train-your-own-model" class="anchor" aria-hidden="true" href="#train-your-own-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train Your Own Model&lt;/h2&gt;
+&lt;p&gt;Note1: If you have cuDNN library, you can use cudnn kernel with &lt;code&gt;-backend cudnn&lt;/code&gt; option. And, you can convert trained cudnn model to cunn model with &lt;code&gt;tools/rebuild.lua&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Note2: The command that was used to train for waifu2x's pretrained models is available at &lt;code&gt;appendix/train_upconv_7_art.sh&lt;/code&gt;, &lt;code&gt;appendix/train_upconv_7_photo.sh&lt;/code&gt;. Maybe it is helpful.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-data-preparation" class="anchor" aria-hidden="true" href="#data-preparation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Preparation&lt;/h3&gt;
+&lt;p&gt;Genrating a file list.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;find /path/to/image/dir -name "*.png" &amp;gt; data/image_list.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should use noise free images. In my case, waifu2x is trained with 6000 high-resolution-noise-free-PNG images.&lt;/p&gt;
+&lt;p&gt;Converting training data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;th convert_data.lua
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-train-a-noise-reductionlevel1-model" class="anchor" aria-hidden="true" href="#train-a-noise-reductionlevel1-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train a Noise Reduction(level1) model&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;mkdir models/my_model
+th train.lua -model_dir models/my_model -method noise -noise_level 1 -test images/miku_noisy.png
+# usage
+th waifu2x.lua -model_dir models/my_model -m noise -noise_level 1 -i images/miku_noisy.png -o output.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check the performance of model with &lt;code&gt;models/my_model/noise1_best.png&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-train-a-noise-reductionlevel2-model" class="anchor" aria-hidden="true" href="#train-a-noise-reductionlevel2-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train a Noise Reduction(level2) model&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th train.lua -model_dir models/my_model -method noise -noise_level 2 -test images/miku_noisy.png
+# usage
+th waifu2x.lua -model_dir models/my_model -m noise -noise_level 2 -i images/miku_noisy.png -o output.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check the performance of model with &lt;code&gt;models/my_model/noise2_best.png&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-train-a-2x-upscaling-model" class="anchor" aria-hidden="true" href="#train-a-2x-upscaling-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train a 2x UpScaling model&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th train.lua -model upconv_7 -model_dir models/my_model -method scale -scale 2 -test images/miku_small.png
+# usage
+th waifu2x.lua -model_dir models/my_model -m scale -scale 2 -i images/miku_small.png -o output.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check the performance of model with &lt;code&gt;models/my_model/scale2.0x_best.png&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-train-a-2x-and-noise-reduction-fusion-model" class="anchor" aria-hidden="true" href="#train-a-2x-and-noise-reduction-fusion-model"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Train a 2x and noise reduction fusion model&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;th train.lua -model upconv_7 -model_dir models/my_model -method noise_scale -scale 2 -noise_level 1 -test images/miku_small.png
+# usage
+th waifu2x.lua -model_dir models/my_model -m noise_scale -scale 2 -noise_level 1 -i images/miku_small.png -o output.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check the performance of model with &lt;code&gt;models/my_model/noise1_scale2.0x_best.png&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-docker" class="anchor" aria-hidden="true" href="#docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker&lt;/h2&gt;
+&lt;p&gt;( Docker image is available at &lt;a href="https://hub.docker.com/r/nagadomi/waifu2x" rel="nofollow"&gt;https://hub.docker.com/r/nagadomi/waifu2x&lt;/a&gt; )&lt;/p&gt;
+&lt;p&gt;Requires &lt;code&gt;nvidia-docker&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker build -t waifu2x .
+nvidia-docker run -p 8812:8812 waifu2x th web.lua
+nvidia-docker run -v `pwd`/images:/images waifu2x th waifu2x.lua -force_cudnn 1 -m scale -scale 2 -i /images/miku_small.png -o /images/output.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that running waifu2x in without &lt;a href="https://devblogs.nvidia.com/parallelforall/cuda-pro-tip-understand-fat-binaries-jit-caching/" rel="nofollow"&gt;JIT caching&lt;/a&gt; is very slow, which is what would happen if you use docker.
+For a workaround, you can mount a host volume to the &lt;code&gt;CUDA_CACHE_PATH&lt;/code&gt;, for instance,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nvidia-docker run -v $PWD/ComputeCache:/root/.nv/ComputeCache waifu2x th waifu2x.lua --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>nagadomi</author><guid isPermaLink="false">https://github.com/nagadomi/waifu2x</guid><pubDate>Fri, 24 Jan 2020 00:05:00 GMT</pubDate></item><item><title>winterbeak/Noneuclilypads #6 in Lua, Today</title><link>https://github.com/winterbeak/Noneuclilypads</link><description>&lt;p&gt;&lt;i&gt;Game for GitHub Game-Off 2019&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;This repo does not have a README.&lt;/i&gt;&lt;/p&gt;</description><author>winterbeak</author><guid isPermaLink="false">https://github.com/winterbeak/Noneuclilypads</guid><pubDate>Fri, 24 Jan 2020 00:06:00 GMT</pubDate></item><item><title>openwrt/luci #7 in Lua, Today</title><link>https://github.com/openwrt/luci</link><description>&lt;p&gt;&lt;i&gt;LuCI - OpenWrt Configuration Interface&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-openwrt-luci-feed" class="anchor" aria-hidden="true" href="#openwrt-luci-feed"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OpenWrt luci feed&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://hosted.weblate.org/engage/openwrt/?utm_source=widget" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/47d411daca21e7a3a1e812d4f30c9c5a41a23cb3/68747470733a2f2f686f737465642e7765626c6174652e6f72672f776964676574732f6f70656e7772742f2d2f7376672d62616467652e737667" alt="Translation status" data-canonical-src="https://hosted.weblate.org/widgets/openwrt/-/svg-badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-description" class="anchor" aria-hidden="true" href="#description"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Description&lt;/h2&gt;
+&lt;p&gt;This is the OpenWrt "luci"-feed containing LuCI - OpenWrt Configuration Interface.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;This feed is enabled by default. Your feeds.conf.default (or feeds.conf) should contain a line like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src-git luci https://github.com/openwrt/luci.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install all its package definitions, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./scripts/feeds update luci
+./scripts/feeds install -a -p luci
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-api-reference" class="anchor" aria-hidden="true" href="#api-reference"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API Reference&lt;/h2&gt;
+&lt;p&gt;You can browse the generated API documentation directly on Github.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://openwrt.github.io/luci/api/index.html" rel="nofollow"&gt;Server side Lua APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://openwrt.github.io/luci/jsapi/index.html" rel="nofollow"&gt;Client side JavaScript APIs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;Documentation for developing and extending LuCI can be found &lt;a href="https://github.com/openwrt/luci/wiki"&gt;in the Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="LICENSE"&gt;LICENSE&lt;/a&gt; file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-package-guidelines" class="anchor" aria-hidden="true" href="#package-guidelines"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Package Guidelines&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-translation-status" class="anchor" aria-hidden="true" href="#translation-status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translation status&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://hosted.weblate.org/engage/openwrt/?utm_source=widget" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f855e22709cc0ccc6f6e012a71d57c0a9297838e/68747470733a2f2f686f737465642e7765626c6174652e6f72672f776964676574732f6f70656e7772742f2d2f6d756c74692d6175746f2e737667" alt="Translation status" data-canonical-src="https://hosted.weblate.org/widgets/openwrt/-/multi-auto.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>openwrt</author><guid isPermaLink="false">https://github.com/openwrt/luci</guid><pubDate>Fri, 24 Jan 2020 00:07:00 GMT</pubDate></item></channel></rss>

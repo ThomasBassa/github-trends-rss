@@ -1,2 +1,743 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Smalltalk, This month</title><link>https://github.com/trending/smalltalk?since=monthly</link><description>The top repositories on GitHub for smalltalk, measured monthly</description><pubDate>Thu, 23 Jan 2020 01:01:05 GMT</pubDate><lastBuildDate>Thu, 23 Jan 2020 01:01:05 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Smalltalk, This month for today</title><pubDate>Thu, 23 Jan 2020 01:01:05 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Smalltalk, This month</title><link>https://github.com/trending/smalltalk?since=monthly</link><description>The top repositories on GitHub for smalltalk, measured monthly</description><pubDate>Fri, 24 Jan 2020 01:09:58 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:58 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>dionisiydk/StateSpecs #1 in Smalltalk, This month</title><link>https://github.com/dionisiydk/StateSpecs</link><description>&lt;p&gt;&lt;i&gt;Object validation framework based on first class specs&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-statespecs" class="anchor" aria-hidden="true" href="#statespecs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;StateSpecs&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/dionisiydk/StateSpecs" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d5a364e6bada2e96aa4c1719756f3436a2a352b4/68747470733a2f2f7472617669732d63692e6f72672f64696f6e69736979646b2f537461746553706563732e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/dionisiydk/StateSpecs.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;StateSpecs is object state specification framework. It describes particular object states by first class specifications.
+For example there are SpecOfCollectionItem, SpecOfObjectClass and SpecOfObjectSuperclass.
+StateSpecs provides fluent DSL to validate objects over these specification.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Use following script for Pharo version &amp;gt;= 6:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;StateSpecs&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://dionisiydk/StateSpecs&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To add dependency in your project baseline:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;StateSpecs&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;with:&lt;/span&gt; [ spec &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://dionisiydk/StateSpecs:versionTagOrBranch&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; ]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For old Pharo versions project should be loaded from smalltalkhub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+      &lt;span class="pl-c1"&gt;smalltalkhubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dionisiy&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;StateSpecs&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;configuration:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;StateSpecs&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;version:&lt;/span&gt; &lt;span class="pl-c1"&gt;#stable&lt;/span&gt;;
+      load.&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-basic" class="anchor" aria-hidden="true" href="#basic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic&lt;/h2&gt;
+&lt;p&gt;Specifications can match and validate objects. In case when object does not satisfied a specification you will get failure result with detailed information about the problem.
+For example try create SpecOfObjectClass and validate objects over it.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;SpecOfObjectClass&lt;/span&gt; &lt;span class="pl-c1"&gt;requiredClass:&lt;/span&gt; &lt;span class="pl-c1"&gt;SmallInteger&lt;/span&gt;.
+spec &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfValidationSuccess&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+spec &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfValidationFailure(Got 'some string' but it should be an instance of SmallInteger)&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Instead of validation you can simply match objects for specification to get true or false:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec &lt;span class="pl-c1"&gt;matches:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; true&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+spec &lt;span class="pl-c1"&gt;matches:&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;string&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; false&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Specifications can be inverted by &lt;em&gt;#not&lt;/em&gt; message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfValidationFailure(Got 10 but it should not be an instance of SmallInteger)&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+spec &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfValidationSuccess&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;#not&lt;/em&gt; creates new spec instance. You can also invert current one with message &lt;em&gt;#invert&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To easily create specifications and validate objects by them StateSpecs provides two kind DSL: should expressions and "word" classes.&lt;/p&gt;
+&lt;p&gt;First allows you to write "assertions":&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt; should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;
+&lt;span class="pl-c1"&gt;1&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;which create particular kind of specification and verify receiver over it.&lt;/p&gt;
+&lt;p&gt;And second allows you to instantiate specs by natural readable words:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Number&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfObjectSuperclass(should be a kind of Number)&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfObjectClass(should be an instance of String)&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Equal&lt;/span&gt; &lt;span class="pl-c1"&gt;to:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfEquality(should equal 'test')&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Word classes were introduced to get fluent interface for mock expectations (mock stub someMessage: (Kind of: String)).&lt;/p&gt;
+&lt;p&gt;But they are very handy shorcuts to access specifications in general. Same word can return different specifications in different expressions which allows very fluent instantiation interface:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Equal&lt;/span&gt; &lt;span class="pl-c1"&gt;to:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; a SpecOfEquality(should equal 'test')&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Equal&lt;/span&gt; &lt;span class="pl-c1"&gt;to:&lt;/span&gt; &lt;span class="pl-c1"&gt;10.0123&lt;/span&gt; &lt;span class="pl-c1"&gt;within:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.01&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt;  a SpecOfApproxEquality(should be within 0.01 of 10.0123)&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-should-expressions" class="anchor" aria-hidden="true" href="#should-expressions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Should expressions&lt;/h2&gt;
+&lt;p&gt;Underhood should expression creates particular kind of specification and verify receiver over it.&lt;/p&gt;
+&lt;p&gt;When object is not valid should expression signals SpecOfFailed error. Then in debugger you can inspect validation result to deeply analyze the reason.&lt;/p&gt;
+&lt;p&gt;Sending extra &lt;em&gt;#not&lt;/em&gt; message after &lt;em&gt;should&lt;/em&gt; inverts logic of following expression:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;fail with message: Got '3' but it should not equal '3'&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Should expressions were created with the goal to replace SUnit assertions (self assert: a = b).
+They were originally invented by Dave Astels in project SSpec as part of general rethinking of TDD methodology in flavor of BDD.
+Nowdays SSpec approach was ported to many languages (NSpec in C#, RSpec in Ruby for example).&lt;/p&gt;
+&lt;p&gt;StateSpecs provides clean implementation for should expressions on top of first class specifications. It uses more pragmatic approach for "should syntax" to avoid magic over expressions to make them more explorable with standart development tools.&lt;/p&gt;
+&lt;p&gt;To explore complete set of expressions look at SpecOfShouldExpression. It is also place where to extend them. SpecOfShouldExpressionTests describes them in tests.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-specification-of-object-identity" class="anchor" aria-hidden="true" href="#specification-of-object-identity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Specification of object identity&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;#be:&lt;/em&gt; message is used to verify that receiver is identical to given argument:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt; should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "1" but it should be "2".&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;1&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "1" but it should not be "1".&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-specification-of-object-equality" class="anchor" aria-hidden="true" href="#specification-of-object-equality"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Specification of object equality&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;#equal:&lt;/em&gt; message is used to verify that receiver is equivalent to given argument:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "3" but it should equal "2".&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "3" but it should not equal "3"&lt;/p&gt;
+&lt;p&gt;Language equality operation #= is redefined by many classes according to domain logic. Sometimes they check a lot of conditions to compare objects.
+Problem that it can be not suitable from the point of view of specification. Imaging that we want compare two collection of different type:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; asOrderedCollection &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt;false&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It returns false which is correct from the point of view of collection library. But what we would expect from specification?&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; asOrderedCollection should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It would be not suitable to fail because it will force us to always think about collection type when we would like assert their equality.
+In fact we are supposed to assert collection items with this expression and not instances of collections.&lt;/p&gt;
+&lt;p&gt;So this expression will not fail in StateSpecs. And to achieve it equality specification uses specific message &lt;em&gt;#checkStateSpecsEqualityTo:&lt;/em&gt; instead of standart #=.
+Default Object implementation calls #=. But some classes redefine it with appropriate logic to provide as less restrictive behaviour as possible.&lt;/p&gt;
+&lt;p&gt;Idea is that general equality specification should be as much simple equality as possible with enough restrictions. And if you want some extra details you should use different explicit specification which describes them.
+In case of collections you should check for collection class explicitly if it is important for your business case where you use specification:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;actual &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; asOrderedCollection.
+expected &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt;.
+
+actual should &lt;span class="pl-c1"&gt;beInstanceOf:&lt;/span&gt; expected &lt;span class="pl-k"&gt;class&lt;/span&gt;.
+actual should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; expected.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Following this logic StateSpecs do not check order when compare basic collection classes:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(2 1 3)&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; asSet should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(2 1 3)&lt;/span&gt;. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When order is important use different message &lt;em&gt;#equalInOrder:&lt;/em&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2 3)&lt;/span&gt; asOrderedCollection should &lt;span class="pl-c1"&gt;equalInOrder:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(2 1 3)&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "#(1 2 3)" but it should equal in order to "#(2 1 3)".&lt;/p&gt;
+&lt;p&gt;There are collection classes like String or ByteArray which are supposed to be in order and which type is important. For them theses properties are always taken into account for equality comparison:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;123&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;#($1 $2 $3)&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got '123' but it should equal "#($1 $2 $3)".&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;123&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;132&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got '123' but it should equal '132'.&lt;/p&gt;
+&lt;p&gt;Floats are another example where specification behaves differently then standart language comparison:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;0.1&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-c1"&gt;0.2&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-c1"&gt;0.3&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; false&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It is correct result because of rounding errors in float arithmetics. But it is completelly not suitable to be part of specification. So in StateSpecs following expression will succeed:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;0.1&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-c1"&gt;0.2&lt;/span&gt;) should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.3&lt;/span&gt;  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; will not fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Float implements &lt;em&gt;#checkStateSpecsEqualityTo:&lt;/em&gt; by comparing numbers with default accuracy.&lt;/p&gt;
+&lt;p&gt;And there is special specification for floats when concrete accuracy is important:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;10.123&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;10.1&lt;/span&gt; &lt;span class="pl-c1"&gt;within:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.1&lt;/span&gt;  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; will not fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;10.123&lt;/span&gt; should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;10.1&lt;/span&gt; &lt;span class="pl-c1"&gt;within:&lt;/span&gt; &lt;span class="pl-c1"&gt;0.01&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;==&amp;gt; will fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Last expression fails with message: Got 10.123 but it should be within 0.01 of 10.1.&lt;/p&gt;
+&lt;p&gt;Same logic is used by equality specification of Point class.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-specification-of-class-relationship" class="anchor" aria-hidden="true" href="#specification-of-class-relationship"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Specification of class relationship&lt;/h3&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should &lt;span class="pl-c1"&gt;beKindOf:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It will fail with message: Got 3 but it should be a kind of String.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should &lt;span class="pl-c1"&gt;beInstanceOf:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It will fail with message: Got 3 but it should be an instance of String.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-specifications-of-collection" class="anchor" aria-hidden="true" href="#specifications-of-collection"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Specifications of collection&lt;/h3&gt;
+&lt;p&gt;To specify size of expected collection use &lt;em&gt;#haveSize:&lt;/em&gt; message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;haveSize:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got #(1 2) but it should have 10 elements.&lt;/p&gt;
+&lt;p&gt;There is simple expression for empty collections:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should be isEmpty&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: #(1 2) should be isEmpty. It uses predicate syntax explained below at &lt;em&gt;@predicate&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To require concrete item in collection use one of &lt;em&gt;#include:&lt;/em&gt; messages:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;include:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If fails with message: Got #(1 2) but it should include 10.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;include:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt; &lt;span class="pl-c1"&gt;at:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 1 at key 1 of #(1 2) but should equal 10.&lt;/p&gt;
+&lt;p&gt;Argument of include messages can be specification itself:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;include:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;) &lt;span class="pl-c1"&gt;at:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 1 at key 1 of #(1 2) but should be an instance of String.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;include:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got #(1 2) but should include (be an instance of String).&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should &lt;span class="pl-c1"&gt;include:&lt;/span&gt; [&lt;span class="pl-en"&gt;:each&lt;/span&gt; | each &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It is succeed without error.&lt;/p&gt;
+&lt;p&gt;To specify expected key in dictionary use &lt;em&gt;#includeKey:&lt;/em&gt; message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;{ &lt;span class="pl-c1"&gt;#key1&lt;/span&gt; &lt;span class="pl-k"&gt;-&lt;/span&gt;&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;#value1&lt;/span&gt; } asDictionary should &lt;span class="pl-c1"&gt;includeKey:&lt;/span&gt; &lt;span class="pl-c1"&gt;#key2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got a Dictionary{#key1-&amp;gt;#value1} but it should include key #key2&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-specifications-of-string" class="anchor" aria-hidden="true" href="#specifications-of-string"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Specifications of string&lt;/h3&gt;
+&lt;p&gt;To specify the substring of expected string use ==includeSubstring:== message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some test string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;includeSubstring:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test2&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 'some test string' but it should include 'test2'.&lt;/p&gt;
+&lt;p&gt;To specify prefix of expected string use ==beginWith:== message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;string for test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;beginWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 'string for test' but it should begin with 'test'.&lt;/p&gt;
+&lt;p&gt;To specify suffix of expected string use ==endWith:== message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;endWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 'test string' but it should end with 'test'.&lt;/p&gt;
+&lt;p&gt;To specify regex expression which expected string should satisfy use ==matchRegex:== message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;string for test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;matchRegex:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;^test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 'string for test' but it should match regex '^test'.&lt;/p&gt;
+&lt;p&gt;By default all this specifications validate strings ignoring case.
+If you want case sensitive specs just add ==caseSensitive: true== keyword to all examples:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some test string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;includeSubstring:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;caseSensitive:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;beginWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;caseSensitive:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;string for test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;endWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;caseSensitive:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test string&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; should &lt;span class="pl-c1"&gt;matchRegex:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;^Test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;caseSensitive:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-raising-exception" class="anchor" aria-hidden="true" href="#raising-exception"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Raising exception&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;#raise:&lt;/em&gt; message allows specify expected failure of given block:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZeroDivide&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got no failures but should be an instance of ZeroDivide.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;0&lt;/span&gt;] should &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZeroDivide&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got ZeroDivide but it should not be an instance of ZeroDivide.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;0&lt;/span&gt;] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; &lt;span class="pl-c1"&gt;Error&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got ZeroDivide but it should be an instance of Error.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;0&lt;/span&gt;] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Error&lt;/span&gt;).&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It not fails because ZeroDevide is kind of Error class.&lt;/p&gt;
+&lt;p&gt;You can use instance of expected exception instead of class:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;errorInstance &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Error&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-c1"&gt;messageText:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test error&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.
+[error &lt;span class="pl-k"&gt;signal&lt;/span&gt;] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; errorInstance&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It not fails.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-k"&gt;self&lt;/span&gt; &lt;span class="pl-c1"&gt;error:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;another error&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; errorInstance&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got "Error: another error" but it should equal "Error: test error".&lt;/p&gt;
+&lt;p&gt;Also there is simple message &lt;em&gt;#fail&lt;/em&gt; to expect general failure:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;0&lt;/span&gt;] should fail.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It not fails beause block is really failed as expected.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;/&lt;/span&gt;&lt;span class="pl-c1"&gt;0&lt;/span&gt;] should &lt;span class="pl-k"&gt;not&lt;/span&gt; fail.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got ZeroDivide but it should not be a kind of Error.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[&lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;span class="pl-k"&gt;+&lt;/span&gt;&lt;span class="pl-c1"&gt;2&lt;/span&gt;] should fail.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got no failures but should be a kind of Error.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-predicate-syntax" class="anchor" aria-hidden="true" href="#predicate-syntax"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Predicate syntax&lt;/h3&gt;
+&lt;p&gt;@predicate&lt;/p&gt;
+&lt;p&gt;In many cases only thing which we want to specify is some boolean state of objects using their own methods.
+For this porpose special SpecOfBooleanProperty specification is implemented which should be created with given boolean message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;SpecOfBooleanProperty&lt;/span&gt; &lt;span class="pl-c1"&gt;fromMessage:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Message&lt;/span&gt; &lt;span class="pl-c1"&gt;selector:&lt;/span&gt; &lt;span class="pl-c1"&gt;#isEmpty&lt;/span&gt;)
+spec &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-c1"&gt;#()&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Message can includes arguments:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;SpecOfBooleanProperty&lt;/span&gt; &lt;span class="pl-c1"&gt;fromMessage:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Message&lt;/span&gt; &lt;span class="pl-c1"&gt;selector:&lt;/span&gt; &lt;span class="pl-c1"&gt;#between:and:&lt;/span&gt; &lt;span class="pl-c1"&gt;arguments:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(1 10)&lt;/span&gt;)
+spec &lt;span class="pl-c1"&gt;validate:&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To use this spec from should expression special &lt;em&gt;#be&lt;/em&gt; message is introduced. Any following expression after #be will create message for boolean spec as in example above. And then it will validate #should receiver:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should be even.
+&lt;span class="pl-c1"&gt;2&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; be even.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Last expression fails with message: 2 should not be even. Predicate expressions are always report problem as they were written.&lt;/p&gt;
+&lt;p&gt;Other examples:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;3&lt;/span&gt; should be &lt;span class="pl-c1"&gt;between:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt; &lt;span class="pl-k"&gt;and&lt;/span&gt;: &lt;span class="pl-c1"&gt;50&lt;/span&gt;.
+&lt;span class="pl-c1"&gt;2&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; &lt;span class="pl-c1"&gt;between:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-k"&gt;and&lt;/span&gt;: &lt;span class="pl-c1"&gt;5&lt;/span&gt;.
+
+&lt;span class="pl-c1"&gt;#(1 2)&lt;/span&gt; should be isEmpty.
+&lt;span class="pl-c1"&gt;#()&lt;/span&gt; should &lt;span class="pl-k"&gt;not&lt;/span&gt; be isEmpty.&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-validation-object-properties" class="anchor" aria-hidden="true" href="#validation-object-properties"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Validation object properties&lt;/h3&gt;
+&lt;p&gt;Last interesting feature of StateSpecs is ability to validate particular property of object without loosing property itself.
+Imaging that we want to validate x coordinate of rectangle origin. It could be done like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;1&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;@&lt;span class="pl-c1"&gt;1&lt;/span&gt;) origin x should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 1 but it should equal 100. But it has no information about what exact property of rectangle is wrong. Users would like to see it in failure message.&lt;/p&gt;
+&lt;p&gt;To achieve this goal StateSpecs introduced &lt;em&gt;#where&lt;/em&gt; message which should be sent to receiver and all following messages up to &lt;em&gt;#should&lt;/em&gt; will be recorded as object propety. At the end #should expression will validate retrieved property instead of receiver:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;1&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;@&lt;span class="pl-c1"&gt;30&lt;/span&gt;) where origin x should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It fails with message: Got 1 from (1@1) corner: (20@3) origin x but it should equal 100.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dionisiydk</author><guid isPermaLink="false">https://github.com/dionisiydk/StateSpecs</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item><item><title>pharo-ide/Ghost #2 in Smalltalk, This month</title><link>https://github.com/pharo-ide/Ghost</link><description>&lt;p&gt;&lt;i&gt;Ghost is framework to implement unnatural smalltalk objects like proxies or prototypes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ghost" class="anchor" aria-hidden="true" href="#ghost"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ghost&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/pharo-ide/Ghost" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a92da21e92f59368fe138ebcd27c414629e172fd/68747470733a2f2f7472617669732d63692e6f72672f706861726f2d6964652f47686f73742e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/pharo-ide/Ghost.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ghost is framework to implement unnatural smalltalk objects like proxies or prototypes. It provides suitable infrastructure to implement message processing in special way&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Use following script for Pharo version &amp;gt;= 6:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Ghost&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://pharo-ide/Ghost&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Notice that Pharo 6 requires manual loading of Tonel format.&lt;/p&gt;
+&lt;p&gt;To add dependency in your project baseline:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Ghost&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;with:&lt;/span&gt; [ spec &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://pharo-ide/Ghost:v4.0.?&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; ]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For old Pharo versions project should be loaded from smalltalkhub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+      &lt;span class="pl-c1"&gt;smalltalkhubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Pharo&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Ghost&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;configuration:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Ghost&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;version:&lt;/span&gt; &lt;span class="pl-c1"&gt;#stable&lt;/span&gt;;
+      load.&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>pharo-ide</author><guid isPermaLink="false">https://github.com/pharo-ide/Ghost</guid><pubDate>Fri, 24 Jan 2020 00:02:00 GMT</pubDate></item><item><title>dionisiydk/Mocketry #3 in Smalltalk, This month</title><link>https://github.com/dionisiydk/Mocketry</link><description>&lt;p&gt;&lt;i&gt;Mock objects framework&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://travis-ci.org/dionisiydk/Mocketry" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ca1454b8d44904ae7df952b33d75c561874da586/68747470733a2f2f7472617669732d63692e6f72672f64696f6e69736979646b2f4d6f636b657472792e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/dionisiydk/Mocketry.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-mocketry" class="anchor" aria-hidden="true" href="#mocketry"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mocketry&lt;/h1&gt;
+&lt;p&gt;Mocketry is mock objects framework. It provides simplest way to stub any message to any object and to verify any occurred behaviour&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Use following script for Pharo version &amp;gt;= 6:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Mocketry&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://dionisiydk/Mocketry&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To add dependency in your project baseline:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;spec
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Mocketry&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;with:&lt;/span&gt; [ spec &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://dionisiydk/Mocketry:versionTagOrBranch&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; ]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For old Pharo versions project should be loaded from smalltalkhub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+      &lt;span class="pl-c1"&gt;smalltalkhubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;dionisiy&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Mocketry&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;configuration:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Mocketry&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+      &lt;span class="pl-c1"&gt;version:&lt;/span&gt; &lt;span class="pl-c1"&gt;#stable&lt;/span&gt;;
+      load.&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-create-mocks-easily" class="anchor" aria-hidden="true" href="#create-mocks-easily"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create mocks easily&lt;/h2&gt;
+&lt;p&gt;To create mock just use &lt;strong&gt;#new&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;yourMock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Mocketry not requires any special context variables for this.&lt;/p&gt;
+&lt;p&gt;Also Mocketry implements auto naming logic to retrive variable names from test context. Inside test yourMock will be shown as "a Mock(yourMock)" (in debugger).&lt;/p&gt;
+&lt;p&gt;But if you need special name you can specify it:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-c1"&gt;named:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;yourMock&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can look at it livelly in MockTests.&lt;/p&gt;
+&lt;p&gt;Also there is way to get multiple mocks at once:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;[ &lt;span class="pl-en"&gt;:mockA&lt;/span&gt; &lt;span class="pl-en"&gt;:mockB&lt;/span&gt; | &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;your code here&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt; ] runWithMocks&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-stub-any-message-sends" class="anchor" aria-hidden="true" href="#stub-any-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stub any message sends&lt;/h2&gt;
+&lt;p&gt;&lt;a name="user-content-stubmessagesends"&gt;&lt;/a&gt;To stub message send just send message &lt;strong&gt;#stub&lt;/strong&gt; to object and following message will create expectation:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock stub someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can stub any objects. It is not only about mocks:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+    
+rect stub width &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt;.
+    
+rect area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;3000&lt;/span&gt; &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;are = width * height&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you can do this with globals too:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; stub now &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#constantValue&lt;/span&gt;.
+    
+&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; now should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#constantValue&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But you should be carefull with globals. Don't try&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Array&lt;/span&gt; stub &lt;span class="pl-k"&gt;new&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It will crash image.
+And if you stub global from workspace it is your responsibility to recover it from stub behaviour. Do it by this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; recoverFromGHMutation.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In case when you stub global inside test Mocketry automatically recovers all global stubs when test completes.&lt;/p&gt;
+&lt;p&gt;Also with Mocketry you can define expectations for set of objects. For example you can stub message to &lt;strong&gt;ANY object&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Any&lt;/span&gt; stub width &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock width should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;#stub activates message intercection for real object. Without it following sentence will not work&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+    
+rect area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or you can stub &lt;strong&gt;ANY message&lt;/strong&gt; to particular object:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock stub anyMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+mock someMessage2 should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And both variants are supported:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Any&lt;/span&gt; stub anyMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+rect area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+rect width should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Any&lt;/strong&gt; class is specific object spec which means "any" object. You can uses any kind of specs:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;(&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Rectangle&lt;/span&gt;) stub width &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+rect area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;.
+    
+rect2 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;@&lt;span class="pl-c1"&gt;5&lt;/span&gt;.
+rect2 stub.
+    
+rect2 area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;500&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-stub-message-sends-with-arguments" class="anchor" aria-hidden="true" href="#stub-message-sends-with-arguments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stub message sends with arguments&lt;/h3&gt;
+&lt;p&gt;In place of message arguments you can use expected objects itself. Or you can put specifications for expected arguments:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; arg1 &lt;span class="pl-k"&gt;and&lt;/span&gt;: arg2
+mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;Any&lt;/span&gt; &lt;span class="pl-k"&gt;and&lt;/span&gt;: arg2
+mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; [&lt;span class="pl-en"&gt;:arg&lt;/span&gt; | &lt;span class="pl-c1"&gt;true&lt;/span&gt;]
+mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;) &lt;span class="pl-k"&gt;and&lt;/span&gt;: arg2
+mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Float&lt;/span&gt;) &lt;span class="pl-k"&gt;&amp;amp;&lt;/span&gt; (&lt;span class="pl-c1"&gt;Satisfying&lt;/span&gt; &lt;span class="pl-c1"&gt;for:&lt;/span&gt; [&lt;span class="pl-en"&gt;:arg&lt;/span&gt; | arg &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;]).&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Last defined expectation has more priority than previous one. It allows you to define default expectations in setUp method and override it in particular tests. Following example shows it:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+(mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;SmallInteger&lt;/span&gt;)) &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#anyInt&lt;/span&gt;.
+(mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;)) &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#anyString&lt;/span&gt;.
+(mock stub &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;) &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#ten&lt;/span&gt;.
+    
+(mock &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;) should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#ten&lt;/span&gt;.
+(mock &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;20&lt;/span&gt;) should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#anyInt&lt;/span&gt;.
+(mock &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;) should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#anyString&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-expected-actions-for-stubs" class="anchor" aria-hidden="true" href="#expected-actions-for-stubs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Expected actions for stubs&lt;/h3&gt;
+&lt;p&gt;There are different kind of expected actions:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock stub someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#result&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#result&lt;/span&gt;.
+    
+mock stub someMessage &lt;span class="pl-c1"&gt;willRaise:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZeroDivide&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+[mock someMessage] should &lt;span class="pl-c1"&gt;raise:&lt;/span&gt; &lt;span class="pl-c1"&gt;ZeroDivide&lt;/span&gt;.
+    
+(mock stub &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;#arg&lt;/span&gt;) &lt;span class="pl-c1"&gt;will:&lt;/span&gt; [&lt;span class="pl-c1"&gt;#result&lt;/span&gt;].
+(mock &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;#arg&lt;/span&gt;) should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#result&lt;/span&gt;.
+    
+(mock stub &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;#arg1&lt;/span&gt; &lt;span class="pl-k"&gt;and&lt;/span&gt;: &lt;span class="pl-c1"&gt;#arg2&lt;/span&gt;) &lt;span class="pl-c1"&gt;will:&lt;/span&gt; [&lt;span class="pl-en"&gt;:arg1&lt;/span&gt; &lt;span class="pl-en"&gt;:arg2&lt;/span&gt; | arg1, arg2].
+(mock &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;#arg1&lt;/span&gt; &lt;span class="pl-k"&gt;and&lt;/span&gt;: &lt;span class="pl-c1"&gt;#arg2&lt;/span&gt;) should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;arg1arg2&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.
+    
+mock stub someMessage &lt;span class="pl-c1"&gt;willReturnValueFrom:&lt;/span&gt; &lt;span class="pl-c1"&gt;#(result1 result2)&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#result1&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#result2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-extra-conditions-on-message-sends" class="anchor" aria-hidden="true" href="#extra-conditions-on-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extra conditions on message sends&lt;/h3&gt;
+&lt;p&gt;It is possible to verify arbitrary condition when expected message is going to be executed. For example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock stub someMessage
+    &lt;span class="pl-c1"&gt;when:&lt;/span&gt; [flag] &lt;span class="pl-c1"&gt;is:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Boolean&lt;/span&gt;);
+    &lt;span class="pl-c1"&gt;when:&lt;/span&gt; [flag] &lt;span class="pl-c1"&gt;is:&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;when:&lt;/span&gt; [ flag ] &lt;span class="pl-c1"&gt;satisfy:&lt;/span&gt; [ &lt;span class="pl-en"&gt;:object&lt;/span&gt; | &lt;span class="pl-c1"&gt;true&lt;/span&gt; &lt;span class="pl-k"&gt;or&lt;/span&gt;: [ &lt;span class="pl-c1"&gt;false&lt;/span&gt; ] ].
+    
+flag &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;true&lt;/span&gt;.
+mock someMessage. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;not failes&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+    
+flag &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;.
+mock someMessage &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail immediately on call by last condition: flag should be true&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+    
+flag &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;#flag&lt;/span&gt;.
+mock someMessage &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail immediately on call by first condition: flag should be boolean&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Also Mocketry implements process related condition to check that message was synchronously sent (relative to test process):&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock stub someMessage shouldBeSentInThisProcess.
+[ mock someMessage ] fork. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail immediately on call&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;.
+    
+mock stub someMessage shouldBeSentInAnotherProcess.
+[ mock someMessage ] fork. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;.
+mock someMessage. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail immediately on call&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-message-sends-usage-rules" class="anchor" aria-hidden="true" href="#message-sends-usage-rules"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Message sends usage rules&lt;/h3&gt;
+&lt;p&gt;It is possible to specify how much times expectation can be used:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock stub someMesage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;#default&lt;/span&gt;.
+mock stub someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;; &lt;span class="pl-c1"&gt;use:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+mock stub someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;200&lt;/span&gt;; useTwice.
+mock stub someMesage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt; useOnce.
+    
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;last defined expectation is more preferred then previously defined&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;200&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;200&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;.
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;300&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#default&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-unexpected-messages-automocks" class="anchor" aria-hidden="true" href="#unexpected-messages-automocks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Unexpected messages. Automocks&lt;/h3&gt;
+&lt;p&gt;Mock returns another special mock for unexpected messages (when no expectation is defined for received message):&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+automock &lt;span class="pl-k"&gt;:=&lt;/span&gt; mock someMessage.
+    
+automock should &lt;span class="pl-c1"&gt;beInstanceOf:&lt;/span&gt; &lt;span class="pl-c1"&gt;MockForMessageReturn&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And any message to this mock will produce another automock.
+It means that your tests will not fail if you will not define any expectation for your mocks.
+It allows you put only required detailes inside your tests which really make sense for tested aspect of functionality. Anything else does not matters.&lt;/p&gt;
+&lt;p&gt;Also to improve this idea automock try to play role of false in boolean expressions.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+returnedMock &lt;span class="pl-k"&gt;:=&lt;/span&gt; mock someMessage.
+    
+result &lt;span class="pl-k"&gt;:=&lt;/span&gt; returnedMock &lt;span class="pl-k"&gt;ifFalse:&lt;/span&gt; [ &lt;span class="pl-c1"&gt;#falseBranch&lt;/span&gt; ] &lt;span class="pl-k"&gt;ifTrue:&lt;/span&gt; [ &lt;span class="pl-c1"&gt;#trueBranch&lt;/span&gt; ].
+    
+result should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#falseBranch&lt;/span&gt;.
+returnedMock should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And play zero in arithmetic&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+returnedMock &lt;span class="pl-k"&gt;:=&lt;/span&gt; mock someMessage.
+    
+result &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; returnedMock.
+result should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;.
+returnedMock should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-stub-group-of-message-sends" class="anchor" aria-hidden="true" href="#stub-group-of-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stub group of message sends&lt;/h3&gt;
+&lt;p&gt;There is way to stub multiple message sends at once:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+[ mock someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.
+rect width &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-c1"&gt;1000&lt;/span&gt; ] should expect.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.
+rect area should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;3000&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Inside "should expect" block you don't need to send &lt;strong&gt;extra #stub&lt;/strong&gt; message to objects&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-verify-message-sends" class="anchor" aria-hidden="true" href="#verify-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify message sends&lt;/h2&gt;
+&lt;p&gt;With Mocketry you can check that particular object received particular message. Use &lt;strong&gt;"should receive&lt;/strong&gt;" expression for this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock someMessage.
+    
+mock should receive someMessage.
+mock should &lt;span class="pl-k"&gt;not&lt;/span&gt; receive anotherMessage&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can verify that message was send to real objects. It is not only about mocks:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+    
+rect stub &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;it should be here to enable message interception&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+rect area
+    
+rect should receive width. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;area = width * height&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you can do this with globals too:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; stub.
+&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; midnight.
+    
+&lt;span class="pl-c1"&gt;DateAndTime&lt;/span&gt; should receive now. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;inside midnight #now is called&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But you should be carefull with globals. Look at section &lt;a href="#stubMessageSends"&gt;¿?&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also with Mocketry you can verify that message was sent to set of objects.
+For example you can verify that message was sent to &lt;strong&gt;ANY object&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+mock width.
+rect area.
+    
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive width. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;it will check that mock and rect received message #width&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive area &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;it will fail because mock not received #area message&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Also you can verify that &lt;strong&gt;ANY message&lt;/strong&gt; was sent to particular object:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock someMessage should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;100&lt;/span&gt;.
+    
+mock should receive anyMessage.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And both variants are supported:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+mock someMessage.
+    
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive anyMessage. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail because rect not received any message&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;.
+    
+rect width.
+    
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive anyMessage. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail because both objects received at least one message&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Any&lt;/strong&gt; class is specific object spec which means "any" object. You can use any kind of specs to verify message send for set of objects:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+rect area.
+    
+rect2 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;4&lt;/span&gt;@&lt;span class="pl-c1"&gt;5&lt;/span&gt;.
+rect2 width.
+    
+(&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Rectangle&lt;/span&gt;) inTest should receive width. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail because both rect's received message #width&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+(&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Rectangle&lt;/span&gt;) inTest should receive area &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail because rect2 not received message #area&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+    
+mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+(&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;Rectangle&lt;/span&gt;) inTest should receive width. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail because mock is not kind of Rectangle&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-message-sends-with-arguments" class="anchor" aria-hidden="true" href="#verify-message-sends-with-arguments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify message sends with arguments&lt;/h3&gt;
+&lt;p&gt;In place of message arguments you can use expected objects itself. Or you can put specifications for expected arguments:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.
+mock &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.
+    
+mock should receive &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;10&lt;/span&gt;.
+mock should receive &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Instance&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;SmallInteger&lt;/span&gt;).
+mock should receive &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;test&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.
+mock should receive &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; (&lt;span class="pl-c1"&gt;Kind&lt;/span&gt; &lt;span class="pl-c1"&gt;of:&lt;/span&gt; &lt;span class="pl-c1"&gt;String&lt;/span&gt;).
+mock should receive &lt;span class="pl-c1"&gt;messageWith:&lt;/span&gt; [&lt;span class="pl-en"&gt;:arg&lt;/span&gt; | arg isNumber].&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-capture-message-arguments" class="anchor" aria-hidden="true" href="#capture-message-arguments"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Capture message arguments&lt;/h3&gt;
+&lt;p&gt;Mocketry provides suitable tool to capture arguments of messages for subsequent verification:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName.
+    
+mock &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;#argValue&lt;/span&gt;.
+    
+&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#argValue&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As argument spec capture plays role of any object. So it does not restrict message send expectation. Capture will store all received argument values. To verify concrete argument use message #fromCall:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName fromFirstCall should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#value1&lt;/span&gt;.
+&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName fromLastCall should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#value3&lt;/span&gt;.
+(&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName &lt;span class="pl-c1"&gt;fromCall:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;) should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#value2&lt;/span&gt;.
+&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName fromAllCalls should &lt;span class="pl-c1"&gt;beKindOf:&lt;/span&gt; &lt;span class="pl-c1"&gt;Symbol&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Short version:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; argName should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; &lt;span class="pl-c1"&gt;#argValue&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;will signal error if there are multiple different captured values.&lt;/p&gt;
+&lt;p&gt;Also "should" expression on capture will verify that owner message send was occurred required number of times.&lt;/p&gt;
+&lt;p&gt;When argument is captured its value is stubbed. It allows you to verify subsequent message sends to captured arguments:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock stub &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; &lt;span class="pl-c1"&gt;Arg&lt;/span&gt; rectangle.
+    
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+mock &lt;span class="pl-c1"&gt;someMessageWith:&lt;/span&gt; rect.
+rect area.
+    
+&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; rectangle should &lt;span class="pl-c1"&gt;be:&lt;/span&gt; rect.
+&lt;span class="pl-c1"&gt;Arg&lt;/span&gt; rectangle should receive width.&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-message-sends-count" class="anchor" aria-hidden="true" href="#verify-message-sends-count"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify message sends count&lt;/h3&gt;
+&lt;p&gt;Mocketry allows to verify how many times object received particular message:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock someMessage.
+mock should receive someMessage once.
+    
+mock someMessage.
+mock should receive someMessage twice.
+    
+mock someMessage.
+mock should receive someMessage &lt;span class="pl-c1"&gt;exactly:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+mock should receive someMessage &lt;span class="pl-c1"&gt;atLeast:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;.
+mock should receive someMessage &lt;span class="pl-c1"&gt;atMost:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+mock should receive someMessage &lt;span class="pl-c1"&gt;atLeast:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt; &lt;span class="pl-c1"&gt;atMost:&lt;/span&gt; &lt;span class="pl-c1"&gt;5&lt;/span&gt;.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Same works to verify that set of objects received particular message expected number of times:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock2 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+mock someMessage; someMessage.
+mock2 someMessage.
+    
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive someMessage twice. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will fail because mock2 received #someMessage only once&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+    
+mock2 someMessage.
+&lt;span class="pl-c1"&gt;Any&lt;/span&gt; inTest should receive someMessage twice. &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;will not fail because both mocks received #someMessage twice&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-message-send-result" class="anchor" aria-hidden="true" href="#verify-message-send-result"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify message send result&lt;/h3&gt;
+&lt;p&gt;There are two ways how to verify result of occurred message:&lt;/p&gt;
+&lt;p&gt;First you can continue "should receive" expression with "which should" clause to validate actual returned value:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+rect area.
+    
+rect should receive area which should &lt;span class="pl-c1"&gt;equal:&lt;/span&gt; &lt;span class="pl-c1"&gt;6&lt;/span&gt;.
+rect should receive width which should &lt;span class="pl-c1"&gt;beKindOf:&lt;/span&gt; &lt;span class="pl-c1"&gt;Number&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you can validate sender message of any object:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+result &lt;span class="pl-k"&gt;:=&lt;/span&gt; mock someMessage.
+    
+result should &lt;span class="pl-c1"&gt;beReturnedFrom:&lt;/span&gt; [ mock someMessage ].&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-group-of-message-sends" class="anchor" aria-hidden="true" href="#verify-group-of-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify group of message sends&lt;/h3&gt;
+&lt;p&gt;There is way to verify group of message sends at once:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+rect &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;0&lt;/span&gt;@&lt;span class="pl-c1"&gt;0&lt;/span&gt; &lt;span class="pl-c1"&gt;corner:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;@&lt;span class="pl-c1"&gt;3&lt;/span&gt;.
+rect stub.
+    
+mock someMessage.
+rect area.
+    
+[ rect width.
+mock someMessage ] should beDone.
+    
+[ mock someMessage.
+rect width ] should beDoneInOrder.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;#beDone&lt;/strong&gt; don't care about order of message sends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#beDoneInOrder&lt;/strong&gt; verifies that messages were set in same order as they defined inside given block&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-all-expectations" class="anchor" aria-hidden="true" href="#verify-all-expectations"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify all expectations&lt;/h3&gt;
+&lt;p&gt;There is way how to verify that all defined expectations were occurred:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock1 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock2 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+[mock1 someMessage. mock2 someMessage2]
+    should lenient &lt;span class="pl-c1"&gt;satisfy:&lt;/span&gt;
+[ mock2 someMessage2.
+mock1 someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;].&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;#lenient&lt;/strong&gt; means that we don't care about order in which expected messages were happened.&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock1 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+mock2 &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+    
+[mock1 someMessage. mock2 someMessage2]
+    should strictly &lt;span class="pl-c1"&gt;satisfy:&lt;/span&gt;
+[ mock1 someMessage &lt;span class="pl-c1"&gt;willReturn:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;some&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;.
+mock2 someMessage2].&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;#strictly&lt;/strong&gt; means that we want expected messages were happened in same order in which they were defined.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-verify-delayed-async-message-sends" class="anchor" aria-hidden="true" href="#verify-delayed-async-message-sends"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verify delayed async message sends&lt;/h3&gt;
+&lt;p&gt;StateSpecs provide special expression &lt;strong&gt;#takeAWhile&lt;/strong&gt; on verify future state of objects which use usefull for testing asyncronous code when synchronization in the test is not possible:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;mock &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;Mock&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;.
+[mock someMessage] fork.
+
+mock should takeAWhile to receive someMessage.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;"Take a while" logic is supported for any kind of should expressions described above.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dionisiydk</author><guid isPermaLink="false">https://github.com/dionisiydk/Mocketry</guid><pubDate>Fri, 24 Jan 2020 00:03:00 GMT</pubDate></item><item><title>feenkcom/gtoolkit-gleam #4 in Smalltalk, This month</title><link>https://github.com/feenkcom/gtoolkit-gleam</link><description>&lt;p&gt;&lt;i&gt;C wrapper around OpenGL bindings for Servo&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-gtoolkit-gleam-" class="anchor" aria-hidden="true" href="#gtoolkit-gleam-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GToolkit-Gleam &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/feenkcom/gtoolkit-gleam/workflows/Cargo%20Build/badge.svg"&gt;&lt;img src="https://github.com/feenkcom/gtoolkit-gleam/workflows/Cargo%20Build/badge.svg" alt="" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Pharo bindings for &lt;a href="https://github.com/servo/gleam"&gt;Gleam&lt;/a&gt; - OpenGL bindings and wrapper for Servo.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;EpMonitor&lt;/span&gt; current disable.
+[ 
+  &lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;GToolkitGleam&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;github://feenkcom/gtoolkit-gleam/src&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load
+] &lt;span class="pl-k"&gt;ensure&lt;/span&gt;: [ &lt;span class="pl-c1"&gt;EpMonitor&lt;/span&gt; current enable ].  &lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Gleam&lt;/code&gt; is not responsible for OpenGL context creation. Instead, it is a wrapper that unifies OpenGL and OpenGles APIs.
+Users are expected to use other libraries to create an OpenGL context and then wrap with &lt;code&gt;Gleam&lt;/code&gt;.
+Let's see an example:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;users creates a context as she wishes&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+context &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-k"&gt;self&lt;/span&gt; createContext.
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;a context must be valid and be made current&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+context makeCurrent.
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;Gleam wraps OpenGL functions by loading OpenGL functions by their name&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+gl &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-c1"&gt;GtGleamGL&lt;/span&gt; &lt;span class="pl-c1"&gt;loadGl:&lt;/span&gt; [ &lt;span class="pl-en"&gt;:aSymbol&lt;/span&gt; | context &lt;span class="pl-c1"&gt;getProcAddress:&lt;/span&gt; aSymbol ].
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;Now we are ready to draw&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+gl &lt;span class="pl-c1"&gt;clear_color:&lt;/span&gt; &lt;span class="pl-c1"&gt;Color&lt;/span&gt; red.
+gl &lt;span class="pl-c1"&gt;clear:&lt;/span&gt; gl &lt;span class="pl-c1"&gt;GL_COLOR_BUFFER_BIT&lt;/span&gt;.
+
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;"&lt;/span&gt;once rendering is completed swap buffers to display on the screen&lt;span class="pl-c"&gt;"&lt;/span&gt;&lt;/span&gt;
+context swapBuffers.&lt;/pre&gt;&lt;/div&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>feenkcom</author><guid isPermaLink="false">https://github.com/feenkcom/gtoolkit-gleam</guid><pubDate>Fri, 24 Jan 2020 00:04:00 GMT</pubDate></item><item><title>SeasideSt/Grease #5 in Smalltalk, This month</title><link>https://github.com/SeasideSt/Grease</link><description>&lt;p&gt;&lt;i&gt;The Grease Portability Library &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;: Since version 1.3.0, this is the main repository of Grease. Versions older than 1.1.9 can only be found in the &lt;a href="http://www.smalltalkhub.com/#!/~Seaside/Grease11" rel="nofollow"&gt;Smalltalkhub repository&lt;/a&gt;. Check out the &lt;a href="https://github.com/SeasideSt/Grease/releases"&gt;releases list&lt;/a&gt; for all version numbers in this repository.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-the-grease-portability-library" class="anchor" aria-hidden="true" href="#the-grease-portability-library"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Grease Portability Library&lt;/h1&gt;
+&lt;p&gt;Grease enhances the ANSI Smalltalk standard. With only a few exceptions, we assume platforms are fully ANSI-compliant. Platforms want to support Seaside and standardization makes this easier for the project’s developers and its porters.&lt;/p&gt;
+&lt;p&gt;Grease defines expected APIs with unit tests. Platforms can quickly determine if they are compatible and users can examine the tests to determine exactly which behaviours they can count on.&lt;/p&gt;
+&lt;p&gt;Grease takes a pragmatic approach to compatibility. Sometimes a method behaves so differently on two platforms, for example, that we are forced to avoid it or to standardize on a new selector. To get standard exception signaling on all platforms, Grease is forced to provide special exception classes that can be subclassed. Sometimes we need to put “right” aside and settle, instead, on a solution that can be implemented everywhere.&lt;/p&gt;
+&lt;p&gt;Grease tries to be concise and consistent. Despite its pragmatic approach, we still want to be “right” as much as possible. Because it’s hard to remove functionality once it has been added, we need to carefully consider each addition before proceeding. We’re moving slowly and looking for methods that are commonly used and that have clear names and semantics.&lt;/p&gt;
+&lt;p&gt;Grease does not try to solve all problems. We are not testing Sockets or HTTP clients. We don’t expect platforms to have standard SSL or graphics libraries. Its scope may grow over time, but for now we’re focusing on extending the functionality of the core classes defined in the ANSI standard (collections, exceptions, streams, blocks, etc.) and on other pieces of functionality that are critical to the Seaside project (e.g. random number generation and secure hashing).&lt;/p&gt;
+&lt;p&gt;Grease is widely adopted. Implementations exist already for all platforms that support Seaside 3.x. As well as Seaside, new versions of Magritte, Pier, and Monticello are already being implemented on top of Grease.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-platform-compatibility-and-travis-builds" class="anchor" aria-hidden="true" href="#platform-compatibility-and-travis-builds"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Platform compatibility and Travis builds&lt;/h2&gt;
+&lt;p&gt;The latest Grease version is supported on the following platforms and versions, which are tested using &lt;a href="https://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;Travis CI builds&lt;/a&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Squeak&lt;/th&gt;
+&lt;th&gt;Pharo&lt;/th&gt;
+&lt;th&gt;GemStone&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7812ccceda9c952cfa7186261cac731c0353b730/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d53717565616b2d7472756e6b266c6162656c3d352e32" alt="Build status: Squeak-5.2" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Squeak-trunk&amp;amp;label=5.2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9b4a010188fc435051d4f7759ce3f4c60a881c31/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d506861726f36342d372e30266c6162656c3d372e30" alt="Build status: Pharo64-7.0" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Pharo64-7.0&amp;amp;label=7.0" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4508df03fb312dc2a757f11ed5dccf8475d0731a/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d332e352e30266c6162656c3d332e352e30" alt="Build status: Gemstone-3.5.0" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-3.5.0&amp;amp;label=3.5.0" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c6f22b7db9d4c6c2743f330a6d09e6c49a36b3f1/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d53717565616b2d352e31266c6162656c3d352e31" alt="Build status: Squeak-5.1" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Squeak-5.1&amp;amp;label=5.1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f498c071b1ad11de1569812e71f542c51aa51eca/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d506861726f36342d362e31266c6162656c3d362e31" alt="Build status: Pharo64-6.1" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Pharo64-6.1&amp;amp;label=6.1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c5518fcdfa8850a212ea14900780fe5d97df669d/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d332e342e33266c6162656c3d332e342e33" alt="Build status: Gemstone-3.4.3" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-3.4.3&amp;amp;label=3.4.3" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3c332f442ed98a258bfa4765e39f770c0ee561b5/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d506861726f2d352e30266c6162656c3d352e30" alt="Build status: Pharo-5.0" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Pharo-5.0&amp;amp;label=5.0" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/397e03b1845dc3656a1c3fda6c9db157835419b5/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d332e332e39266c6162656c3d332e332e39" alt="Build status: Gemstone-3.3.9" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-3.3.9&amp;amp;label=3.3.9" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5deb3813c8bed4129227b11d0902318a6ce371c1/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d506861726f2d342e30266c6162656c3d342e30" alt="Build status: Pharo-4.0" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=Pharo-4.0&amp;amp;label=4.0" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/7a6969a7bf273b7df33989cdd1ec2b040348a69b/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d332e322e3137266c6162656c3d332e322e3137" alt="Build status: Gemstone-3.2.17" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-3.2.17&amp;amp;label=3.2.17" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4049b4fc9d1f9f451db27195cf5ae28e89bbdd4f/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d332e312e302e36266c6162656c3d332e312e302e36" alt="Build status: Gemstone-3.1.0.6" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-3.1.0.6&amp;amp;label=3.1.0.6" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="http://travis-ci.org/SeasideSt/Grease" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8d7e60ffeb8ace7f89a7c46c47b586bb329aa0e3/687474703a2f2f6261646765732e6865726f6b756170702e636f6d2f7472617669732f5365617369646553742f4772656173653f6272616e63683d6d617374657226656e763d4255494c445f4e414d453d47656d53746f6e652d322e342e38266c6162656c3d322e342e38" alt="Build status: Gemstone-2.4.8" data-canonical-src="http://badges.herokuapp.com/travis/SeasideSt/Grease?branch=master&amp;amp;env=BUILD_NAME=GemStone-2.4.8&amp;amp;label=2.4.8" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Coveralls (experimental): &lt;a href="https://coveralls.io/github/SeasideSt/Grease?branch=test-coveralls" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/063c067e499f1b4d119e10d9c353b8f5e0c47f1b/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f5365617369646553742f4772656173652f62616467652e7376673f6272616e63683d746573742d636f766572616c6c73" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/SeasideSt/Grease/badge.svg?branch=test-coveralls" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h4&gt;&lt;a id="user-content-prerequisite-on-squeak" class="anchor" aria-hidden="true" href="#prerequisite-on-squeak"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite on Squeak&lt;/h4&gt;
+&lt;p&gt;Make sure you have the &lt;a href="https://github.com/dalehenrich/metacello-work"&gt;MetacelloPreview version&lt;/a&gt;, otherwise the load will not work.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-squeak-and-pharo-40-or-newer" class="anchor" aria-hidden="true" href="#squeak-and-pharo-40-or-newer"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Squeak and Pharo (4.0 or newer)&lt;/h3&gt;
+&lt;p&gt;Load the latest code from master (i.e. stable):&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;githubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;SeasideSt&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;commitish:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;master&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;path:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;repository&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-or-&lt;/p&gt;
+&lt;p&gt;Load a specific version:
+(See &lt;a href="https://github.com/SeasideSt/Grease/releases"&gt;Releases&lt;/a&gt; for a list of versions)&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;githubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;SeasideSt&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;commitish:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;v1.3.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;path:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;repository&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-or-&lt;/p&gt;
+&lt;p&gt;Legacy: load older versions from Smalltalkhub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;configuration:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;version:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1.0.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-gemstone" class="anchor" aria-hidden="true" href="#gemstone"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GemStone&lt;/h3&gt;
+&lt;p&gt;Grease is part of the GLASS setup. You can upgrade your version of Grease using &lt;a href="https://github.com/GsDevKit/gsUpgrader"&gt;GsUpgrader&lt;/a&gt;.
+GsUpgrader works on all versions of GemStone against all versions of GLASS:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Gofer&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+  &lt;span class="pl-c1"&gt;package:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;GsUpgrader-Core&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  &lt;span class="pl-c1"&gt;url:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http://ss3.gemtalksystems.com/ss/gsUpgrader&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+  load.
+(&lt;span class="pl-k"&gt;Smalltalk&lt;/span&gt; &lt;span class="pl-c1"&gt;at:&lt;/span&gt; &lt;span class="pl-c1"&gt;#GsUpgrader&lt;/span&gt;) upgradeGrease.&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-pharo-30-or-older" class="anchor" aria-hidden="true" href="#pharo-30-or-older"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pharo (3.0 or older)&lt;/h3&gt;
+&lt;p&gt;The compatibility for Pharo &amp;lt; 4.0 is not maintained for new releases. If you need grease in Pharo &amp;lt; 4, we recommend to either update your pharo version or reference the latest release compatible with Pharo &amp;lt; 4, which is currently v1.4.1.&lt;/p&gt;
+&lt;p&gt;For Pharo versions &amp;lt; 3.0, make sure you have the &lt;a href="https://github.com/dalehenrich/metacello-work"&gt;MetacelloPreview version&lt;/a&gt;, otherwise the load will not work.&lt;/p&gt;
+&lt;p&gt;Load the latest compatible release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;baseline:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;githubUser:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;SeasideSt&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;project:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;commitish:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;v1.4.1&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-c1"&gt;path:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;repository&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-or-&lt;/p&gt;
+&lt;p&gt;Legacy: load older versions from Smalltalkhub:&lt;/p&gt;
+&lt;div class="highlight highlight-source-smalltalk"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;Metacello&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt;
+    &lt;span class="pl-c1"&gt;configuration:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Grease&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;repository:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class="pl-c1"&gt;version:&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;1.0.0&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
+    load&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In case you need a specific feature for Pharo 3, it is still possible to create a new release by branching from v1.4.1.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>SeasideSt</author><guid isPermaLink="false">https://github.com/SeasideSt/Grease</guid><pubDate>Fri, 24 Jan 2020 00:05:00 GMT</pubDate></item></channel></rss>

@@ -1,2 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Thu, 23 Jan 2020 01:01:06 GMT</pubDate><lastBuildDate>Thu, 23 Jan 2020 01:01:06 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Erlang, Today for today</title><pubDate>Thu, 23 Jan 2020 01:01:06 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Erlang, Today</title><link>https://github.com/trending/erlang?since=daily</link><description>The top repositories on GitHub for erlang, measured daily</description><pubDate>Fri, 24 Jan 2020 01:09:47 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>erlang/otp #1 in Erlang, Today</title><link>https://github.com/erlang/otp</link><description>&lt;p&gt;&lt;i&gt;Erlang/OTP&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-erlangotp" class="anchor" aria-hidden="true" href="#erlangotp"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="https://www.erlang.org" rel="nofollow"&gt;Erlang/OTP&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Erlang&lt;/strong&gt; is a programming language and runtime system for building massively scalable soft real-time systems with requirements on high availability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OTP&lt;/strong&gt; is a set of Erlang libraries, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. &lt;a href="http://erlang.org/doc/system_architecture_intro/sys_arch_intro.html" rel="nofollow"&gt;Learn more about Erlang and OTP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://erlang.org/download/otp_versions_tree.html" rel="nofollow"&gt;Release notes&lt;/a&gt; for all OTP versions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://learnyousomeerlang.com/content" rel="nofollow"&gt;Learn how to program in Erlang&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Examples&lt;/h2&gt;
+&lt;p&gt;There are several examples &lt;a href="http://erlang.org/faq/getting_started.html" rel="nofollow"&gt;on the website&lt;/a&gt; to help you get started. The below example defines a function &lt;code&gt;world/0&lt;/code&gt; that prints "Hello, world" in the Erlang shell:&lt;/p&gt;
+&lt;div class="highlight highlight-source-erlang"&gt;&lt;pre&gt;-&lt;span class="pl-k"&gt;module&lt;/span&gt;(&lt;span class="pl-en"&gt;hello&lt;/span&gt;).
+-&lt;span class="pl-k"&gt;export&lt;/span&gt;([&lt;span class="pl-en"&gt;world&lt;/span&gt;/&lt;span class="pl-c1"&gt;0&lt;/span&gt;]).
+
+&lt;span class="pl-en"&gt;world&lt;/span&gt;() &lt;span class="pl-k"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;io&lt;/span&gt;:&lt;span class="pl-en"&gt;format&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hello, world&lt;span class="pl-cce"&gt;\n&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;).&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save the file as &lt;code&gt;hello.erl&lt;/code&gt; and run &lt;code&gt;erl&lt;/code&gt; to enter the Erlang shell to compile the module.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Erlang/OTP 19 [erts-8.2] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Eshell V8.2  (abort with ^G)
+1&amp;gt; c(hello).
+{ok,hello}
+2&amp;gt; hello:world().
+Hello, world
+ok
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Learn more about the Erlang syntax of &lt;a href="http://erlang.org/doc/reference_manual/modules.html" rel="nofollow"&gt;modules&lt;/a&gt;, &lt;a href="http://erlang.org/doc/reference_manual/functions.html" rel="nofollow"&gt;functions&lt;/a&gt; and &lt;a href="http://erlang.org/doc/reference_manual/expressions.html" rel="nofollow"&gt;expressions&lt;/a&gt; on &lt;a href="https://www.erlang.org" rel="nofollow"&gt;Erlang.org&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-binary-distributions" class="anchor" aria-hidden="true" href="#binary-distributions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Binary Distributions&lt;/h3&gt;
+&lt;p&gt;Erlang/OTP is available as pre-built binary packages by most OS package managers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get install erlang
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-compiling-from-source" class="anchor" aria-hidden="true" href="#compiling-from-source"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling from source&lt;/h3&gt;
+&lt;p&gt;To compile Erlang from source, run the following commands. The complete building and installation instructions &lt;a href="HOWTO/INSTALL.md"&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/erlang/otp.git
+cd otp
+./otp_build autoconf
+./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can use &lt;a href="https://github.com/kerl/kerl"&gt;Kerl&lt;/a&gt;, a script that lets you easily build Erlang with a few commands.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-bug-reports" class="anchor" aria-hidden="true" href="#bug-reports"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bug Reports&lt;/h2&gt;
+&lt;p&gt;Please visit &lt;a href="https://bugs.erlang.org/issues/?jql=project%20%3D%20ERL" rel="nofollow"&gt;bugs.erlang.org&lt;/a&gt; for reporting bugs. The instructions for submitting bugs reports &lt;a href="https://github.com/erlang/otp/wiki/Bug-reports"&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-security-disclosure" class="anchor" aria-hidden="true" href="#security-disclosure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Security Disclosure&lt;/h3&gt;
+&lt;p&gt;We take security bugs in Erlang/OTP seriously. Please disclose the issues regarding security by sending an email to &lt;strong&gt;erlang-security [at] erlang [dot] org&lt;/strong&gt; and not by creating a public issue.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;We are grateful to the community for contributing bug fixes and improvements. Read below to learn how you can take part in improving Erlang/OTP. We appreciate your help!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-contribution-guide" class="anchor" aria-hidden="true" href="#contribution-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribution Guide&lt;/h3&gt;
+&lt;p&gt;Read our &lt;a href="CONTRIBUTING.md"&gt;contribution guide&lt;/a&gt; to learn about our development process, how to propose fixes and improvements, and how to test your changes to Erlang/OTP before submitting a pull request.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-help-wanted" class="anchor" aria-hidden="true" href="#help-wanted"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Help Wanted&lt;/h3&gt;
+&lt;p&gt;We have a list of &lt;a href="https://bugs.erlang.org/issues/?jql=status%20%3D%20%22Help%20Wanted%22" rel="nofollow"&gt;Help Wanted&lt;/a&gt; bugs that we would appreciate external help from the community. This is a great place to get involved.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;Erlang/OTP is released under the &lt;a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow"&gt;Apache License 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;%CopyrightBegin%&lt;/p&gt;
+&lt;p&gt;Copyright Ericsson AB 2010-2017. All Rights Reserved.&lt;/p&gt;
+&lt;p&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://www.apache.org/licenses/LICENSE-2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.&lt;/p&gt;
+&lt;p&gt;%CopyrightEnd%&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a id="user-content-awesome-erlang" class="anchor" aria-hidden="true" href="#awesome-erlang"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Awesome-Erlang&lt;/h2&gt;
+&lt;p&gt;You can find more projects, tools and articles related to Erlang/OTP on the &lt;a href="https://github.com/drobakowski/awesome-erlang"&gt;awesome-erlang list&lt;/a&gt;. Add your project there.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>erlang</author><guid isPermaLink="false">https://github.com/erlang/otp</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item><item><title>processone/ejabberd #2 in Erlang, Today</title><link>https://github.com/processone/ejabberd</link><description>&lt;p&gt;&lt;i&gt;Robust, Ubiquitous and Massively Scalable Messaging Platform (XMPP, MQTT, SIP Server)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ejabberd-community-edition" class="anchor" aria-hidden="true" href="#ejabberd-community-edition"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ejabberd Community Edition&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/processone/ejabberd" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e26f2673232de92b391dd11071ea48f8ea6d283a/68747470733a2f2f7472617669732d63692e6f72672f70726f636573736f6e652f656a6162626572642e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/processone/ejabberd.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://hex.pm/packages/ejabberd" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3bfccfbe74dee9451b013e8afe247470e2857bdd/68747470733a2f2f696d672e736869656c64732e696f2f686578706d2f762f656a6162626572642e737667" alt="Hex version" title="Hex version" data-canonical-src="https://img.shields.io/hexpm/v/ejabberd.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ejabberd is a distributed, fault-tolerant technology that allows the creation
+of large-scale instant messaging applications. The server can reliably support
+thousands of simultaneous users on a single node and has been designed to
+provide exceptional standards of fault tolerance. As an open source
+technology, based on industry-standards, ejabberd can be used to build bespoke
+solutions very cost effectively.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-key-features" class="anchor" aria-hidden="true" href="#key-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cross-platform&lt;/strong&gt;
+ejabberd runs under Microsoft Windows and Unix-derived systems such as
+Linux, FreeBSD and NetBSD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Distributed&lt;/strong&gt;
+You can run ejabberd on a cluster of machines and all of them will serve the
+same XMPP domain(s). When you need more capacity you can simply add a new
+cheap node to your cluster. Accordingly, you do not need to buy an expensive
+high-end machine to support tens of thousands concurrent users.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fault-tolerant&lt;/strong&gt;
+You can deploy an ejabberd cluster so that all the information required for
+a properly working service will be replicated permanently on all nodes. This
+means that if one of the nodes crashes, the others will continue working
+without disruption. In addition, nodes also can be added or replaced ‘on
+the fly’.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Administrator-friendly&lt;/strong&gt;
+ejabberd is built on top of the Open Source Erlang. As a result you do not
+need to install an external database, an external web server, amongst others
+because everything is already included, and ready to run out of the box.
+Other administrator benefits include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comprehensive documentation.&lt;/li&gt;
+&lt;li&gt;Straightforward installers for Linux and Mac OS X.&lt;/li&gt;
+&lt;li&gt;Web administration.&lt;/li&gt;
+&lt;li&gt;Shared roster groups.&lt;/li&gt;
+&lt;li&gt;Command line administration tool.&lt;/li&gt;
+&lt;li&gt;Can integrate with existing authentication mechanisms.&lt;/li&gt;
+&lt;li&gt;Capability to send announce messages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Internationalized&lt;/strong&gt;
+ejabberd leads in internationalization. Hence it is very well suited in a
+globalized world. Related features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Translated to 25 languages.&lt;/li&gt;
+&lt;li&gt;Support for IDNA.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Open Standards&lt;/strong&gt;
+ejabberd is the first Open Source Jabber server claiming to fully comply to
+the XMPP standard.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fully XMPP-compliant.&lt;/li&gt;
+&lt;li&gt;XML-based protocol.&lt;/li&gt;
+&lt;li&gt;Many protocols supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-additional-features" class="anchor" aria-hidden="true" href="#additional-features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Additional Features&lt;/h2&gt;
+&lt;p&gt;Moreover, ejabberd comes with a wide range of other state-of-the-art features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Modularity&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Load only the modules you want.&lt;/li&gt;
+&lt;li&gt;Extend ejabberd with your own custom modules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SASL and STARTTLS for c2s and s2s connections.&lt;/li&gt;
+&lt;li&gt;STARTTLS and Dialback s2s connections.&lt;/li&gt;
+&lt;li&gt;Web Admin accessible via HTTPS secure access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Databases&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal database for fast deployment (Mnesia).&lt;/li&gt;
+&lt;li&gt;Native MySQL support.&lt;/li&gt;
+&lt;li&gt;Native PostgreSQL support.&lt;/li&gt;
+&lt;li&gt;ODBC data storage support.&lt;/li&gt;
+&lt;li&gt;Microsoft SQL Server support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Authentication&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal authentication.&lt;/li&gt;
+&lt;li&gt;PAM, LDAP and ODBC.&lt;/li&gt;
+&lt;li&gt;External authentication script.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Others&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for virtual hosting.&lt;/li&gt;
+&lt;li&gt;Compressing XML streams with Stream Compression (XEP-0138).&lt;/li&gt;
+&lt;li&gt;Statistics via Statistics Gathering (XEP-0039).&lt;/li&gt;
+&lt;li&gt;IPv6 support both for c2s and s2s connections.&lt;/li&gt;
+&lt;li&gt;Multi-User Chat module with support for clustering and HTML logging.&lt;/li&gt;
+&lt;li&gt;Users Directory based on users vCards.&lt;/li&gt;
+&lt;li&gt;Publish-Subscribe component with support for Personal Eventing.&lt;/li&gt;
+&lt;li&gt;Support for web clients: HTTP Polling and HTTP Binding (BOSH).&lt;/li&gt;
+&lt;li&gt;Component support: interface with networks such as AIM, ICQ and MSN.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart-guide" class="anchor" aria-hidden="true" href="#quickstart-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart guide&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-0-requirements" class="anchor" aria-hidden="true" href="#0-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. Requirements&lt;/h3&gt;
+&lt;p&gt;To compile ejabberd you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GNU Make.&lt;/li&gt;
+&lt;li&gt;GCC.&lt;/li&gt;
+&lt;li&gt;Libexpat ≥ 1.95.&lt;/li&gt;
+&lt;li&gt;Libyaml ≥ 0.1.4.&lt;/li&gt;
+&lt;li&gt;Erlang/OTP ≥ 19.3.&lt;/li&gt;
+&lt;li&gt;OpenSSL ≥ 1.0.0.&lt;/li&gt;
+&lt;li&gt;Zlib ≥ 1.2.3, for Stream Compression support (XEP-0138). Optional.&lt;/li&gt;
+&lt;li&gt;PAM library. Optional. For Pluggable Authentication Modules (PAM).&lt;/li&gt;
+&lt;li&gt;ImageMagick's Convert program and Ghostscript fonts. Optional. For CAPTCHA
+challenges.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your system splits packages in libraries and development headers, you must
+install the development packages also.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-1-compile-and-install-on-nix-systems" class="anchor" aria-hidden="true" href="#1-compile-and-install-on-nix-systems"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Compile and install on *nix systems&lt;/h3&gt;
+&lt;p&gt;To compile ejabberd, execute the following commands.  The first one is only
+necessary if your source tree didn't come with a &lt;code&gt;configure&lt;/code&gt; script (In this
+case you need autoconf installed).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;./autogen.sh
+./configure
+make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install ejabberd, run this command with system administrator rights (root
+user):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These commands will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the configuration files in &lt;code&gt;/etc/ejabberd/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install ejabberd binary, header and runtime files in &lt;code&gt;/lib/ejabberd/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install the administration script: &lt;code&gt;/sbin/ejabberdctl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install ejabberd documentation in &lt;code&gt;/share/doc/ejabberd/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a spool directory: &lt;code&gt;/var/lib/ejabberd/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a directory for log files: &lt;code&gt;/var/log/ejabberd/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-2-start-ejabberd" class="anchor" aria-hidden="true" href="#2-start-ejabberd"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Start ejabberd&lt;/h3&gt;
+&lt;p&gt;You can use the &lt;code&gt;ejabberdctl&lt;/code&gt; command line administration script to
+start and stop ejabberd. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ejabberdctl start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For detailed information please refer to the ejabberd Installation and
+Operation Guide available online and in the &lt;code&gt;doc&lt;/code&gt; directory of the source
+tarball.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-development" class="anchor" aria-hidden="true" href="#development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development&lt;/h2&gt;
+&lt;p&gt;In order to assist in the development of ejabberd, and particularly the
+execution of the test suite, a Vagrant environment is available at
+&lt;a href="https://github.com/processone/ejabberd-vagrant-dev"&gt;https://github.com/processone/ejabberd-vagrant-dev&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To start ejabberd in development mode from the repository directory, you can
+type a command like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;EJABBERD_CONFIG_PATH=ejabberd.yml erl -pa ebin -pa deps/*/ebin -pa test -pa deps/elixir/lib/*/ebin/ -s ejabberd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-links" class="anchor" aria-hidden="true" href="#links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation: &lt;a href="https://docs.ejabberd.im" rel="nofollow"&gt;https://docs.ejabberd.im&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Community site: &lt;a href="https://www.ejabberd.im" rel="nofollow"&gt;https://www.ejabberd.im&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ejabberd commercial offering and support: &lt;a href="https://www.process-one.net/en/ejabberd" rel="nofollow"&gt;https://www.process-one.net/en/ejabberd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>processone</author><guid isPermaLink="false">https://github.com/processone/ejabberd</guid><pubDate>Fri, 24 Jan 2020 00:02:00 GMT</pubDate></item><item><title>TTK4145/Exercise2 #3 in Erlang, Today</title><link>https://github.com/TTK4145/Exercise2</link><description>&lt;p&gt;&lt;i&gt;Bottlenecks&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-exercise-2-bottlenecks" class="anchor" aria-hidden="true" href="#exercise-2-bottlenecks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Exercise 2: Bottlenecks&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-parts" class="anchor" aria-hidden="true" href="#parts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Parts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="./Part1/README.md"&gt;Part 1: Some theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./Part2/README.md"&gt;Part 2: Avoiding data races&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./Part3/README.md"&gt;Part 3: (OPTIONAL) Protection against data races&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./Part4/README.md"&gt;Part 4: Choosing a language&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-approval" class="anchor" aria-hidden="true" href="#approval"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Approval&lt;/h2&gt;
+&lt;p&gt;When asking for approval, make sure to prepare the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Part 1:
+&lt;ul&gt;
+&lt;li&gt;Your modified .md file with answers filled in (with markdown rendered at github).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Part 2:
+&lt;ul&gt;
+&lt;li&gt;Terminals ready to run the new improved versions of the i++/i-- program.&lt;/li&gt;
+&lt;li&gt;The code for your new and improved programs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>TTK4145</author><guid isPermaLink="false">https://github.com/TTK4145/Exercise2</guid><pubDate>Fri, 24 Jan 2020 00:03:00 GMT</pubDate></item><item><title>rabbitmq/rabbitmq-server #4 in Erlang, Today</title><link>https://github.com/rabbitmq/rabbitmq-server</link><description>&lt;p&gt;&lt;i&gt;Open source multi-protocol messaging broker&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rabbitmq-server" class="anchor" aria-hidden="true" href="#rabbitmq-server"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RabbitMQ Server&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://rabbitmq.com" rel="nofollow"&gt;RabbitMQ&lt;/a&gt; is a &lt;a href="https://rabbitmq.com/documentation.html" rel="nofollow"&gt;feature rich&lt;/a&gt;, multi-protocol messaging broker. It supports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AMQP 0-9-1&lt;/li&gt;
+&lt;li&gt;AMQP 1.0&lt;/li&gt;
+&lt;li&gt;MQTT 3.1.1&lt;/li&gt;
+&lt;li&gt;STOMP 1.0 through 1.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/download.html" rel="nofollow"&gt;Installation guides&lt;/a&gt; for various platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/versions.html" rel="nofollow"&gt;Supported and unsupported series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rabbitmq.com/which-erlang.html" rel="nofollow"&gt;Supported Erlang versions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-tutorials--documentation" class="anchor" aria-hidden="true" href="#tutorials--documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tutorials &amp;amp; Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/getstarted.html" rel="nofollow"&gt;RabbitMQ tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/documentation.html" rel="nofollow"&gt;All documentation guides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rabbitmq/rabbitmq-website/"&gt;Documentation source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/devtools.html" rel="nofollow"&gt;Client libraries and tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/monitoring.html" rel="nofollow"&gt;Monitoring guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/production-checklist.html" rel="nofollow"&gt;Production checklist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rabbitmq/rabbitmq-tutorials/"&gt;Runnable tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Help&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!forum/rabbitmq-users" rel="nofollow"&gt;RabbitMQ mailing list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/services.html" rel="nofollow"&gt;Commercial support&lt;/a&gt; from &lt;a href="https://pivotal.io" rel="nofollow"&gt;Pivotal&lt;/a&gt; for open source RabbitMQ&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq-slack.herokuapp.com/" rel="nofollow"&gt;Community Slack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#rabbitmq&lt;/code&gt; on Freenode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="./CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; and our &lt;a href="https://rabbitmq.com/github.html" rel="nofollow"&gt;development process overview&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions about contributing, internals and so on are very welcome on the &lt;a href="https://groups.google.com/forum/#!forum/rabbitmq-users" rel="nofollow"&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-licensing" class="anchor" aria-hidden="true" href="#licensing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Licensing&lt;/h2&gt;
+&lt;p&gt;RabbitMQ server is &lt;a href="LICENSE-MPL-RabbitMQ"&gt;licensed under the MPL 1.1&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-from-source-and-packaging" class="anchor" aria-hidden="true" href="#building-from-source-and-packaging"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building From Source and Packaging&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/build-server.html" rel="nofollow"&gt;Building RabbitMQ from Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rabbitmq.com/build-server.html" rel="nofollow"&gt;Building RabbitMQ Distribution Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-copyright" class="anchor" aria-hidden="true" href="#copyright"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;(c) Pivotal Software Inc., 2007-2020.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rabbitmq</author><guid isPermaLink="false">https://github.com/rabbitmq/rabbitmq-server</guid><pubDate>Fri, 24 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>

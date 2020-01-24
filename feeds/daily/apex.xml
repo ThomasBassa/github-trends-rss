@@ -1,2 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Apex, Today</title><link>https://github.com/trending/apex?since=daily</link><description>The top repositories on GitHub for apex, measured daily</description><pubDate>Thu, 23 Jan 2020 01:01:10 GMT</pubDate><lastBuildDate>Thu, 23 Jan 2020 01:01:10 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Apex, Today for today</title><pubDate>Thu, 23 Jan 2020 01:01:10 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Apex, Today</title><link>https://github.com/trending/apex?since=daily</link><description>The top repositories on GitHub for apex, measured daily</description><pubDate>Fri, 24 Jan 2020 01:09:55 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:55 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>pozil/quiz-host-app #1 in Apex, Today</title><link>https://github.com/pozil/quiz-host-app</link><description>&lt;p&gt;&lt;i&gt;Multiplayer quiz app built on Salesforce technology (host app)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;div align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="doc-media/quiz-icon.png"&gt;&lt;img src="doc-media/quiz-icon.png" alt="Quiz icon" width="150" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;h1&gt;&lt;a id="user-content-multiplayer-quiz-app-built-on-salesforce-technology-host-app" class="anchor" aria-hidden="true" href="#multiplayer-quiz-app-built-on-salesforce-technology-host-app"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multiplayer quiz app built on Salesforce technology (host app)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/pozil/quiz-host-app/actions"&gt;&lt;img src="https://github.com/pozil/quiz-host-app/workflows/CI/badge.svg?branch=master" alt="GitHub Workflow" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#requirements"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#steps"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#setting-up-questions"&gt;Setting up questions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#troubleshooting"&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#building-and-contributing"&gt;Building and contributing&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-about" class="anchor" aria-hidden="true" href="#about"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;This application is a multiplayer game entirely built on Salesforce technology. A game host presents questions from a Salesforce Org on a shared screen or a video projector. Players compete by answering those questions in real-time using a Lightning Web Component Open Source mobile application hosted on Heroku. The fastest player to give the correct answer scores the most points. As the game progresses, leaderboards are displayed so that players can keep track of scores and ranks.&lt;/p&gt;
+&lt;p&gt;The quiz app was launched during Developer Game Night at Dreamforce 2019.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc-media/registration.jpg"&gt;&lt;img src="doc-media/registration.jpg" alt="Quiz registration at Dreamforce 2019" style="max-width:100%;"&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc-media/question-host.jpg"&gt;&lt;img src="doc-media/question-host.jpg" width="500" alt="Quiz host app showing question" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc-media/question-player.png"&gt;&lt;img src="doc-media/question-player.png" width="200" alt="Quiz player app showing answer buttons" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="doc-media/leaderboard.jpg"&gt;&lt;img src="doc-media/leaderboard.jpg" width="500" alt="Quiz leaderboard at Dreamforce 2019" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;The quiz requires two applications: a host app and a player app.&lt;/p&gt;
+&lt;p&gt;The host app is a Lightning Web Component (LWC) app running on a Salesforce Org.
+You'll need to set up Salesforce DX to deploy it.&lt;/p&gt;
+&lt;p&gt;The player app is a mobile app built with Lightning Web Component Open Source (LWC OSS). It runs on Node.js deployed on Heroku.
+You'll need a free &lt;a href="https://signup.heroku.com" rel="nofollow"&gt;Heroku account&lt;/a&gt; to set it up.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc-media/architecture.jpg"&gt;&lt;img src="doc-media/architecture.jpg" alt="Quiz app architecture" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-steps" class="anchor" aria-hidden="true" href="#steps"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Steps&lt;/h3&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="movie_camera" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3a5.png"&gt;🎥&lt;/g-emoji&gt; &lt;a href="https://youtu.be/oDXUMldi0lw" rel="nofollow"&gt;Watch the installation video&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Set up your Salesforce DX environment:
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="https://developer.salesforce.com/tools/sfdxcli" rel="nofollow"&gt;Install Salesforce CLI&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Enable &lt;a href="https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_enable_devhub.htm" rel="nofollow"&gt;Dev Hub&lt;/a&gt; on a Salesforce org. You can do that on a &lt;a href="https://developer.salesforce.com/signup" rel="nofollow"&gt;free Developer Edition&lt;/a&gt;.&lt;/li&gt;
+        &lt;li&gt;Authenticate with your Dev Hub org and provide it with an alias (&lt;b&gt;myhuborg&lt;/b&gt; in the command below):
+&lt;pre&gt;sfdx force:auth:web:login -d -a myhuborg&lt;/pre&gt;
+    &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Open a Terminal and clone the git repository:
+&lt;pre&gt;git clone https://github.com/pozil/quiz-host-app.git
+cd quiz-host-app&lt;/pre&gt;
+&lt;p&gt;Tip: you can also download the files from the website if you don't want to install git.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Run the installation script. The script deploys the quiz host app on a scratch org with a &lt;code&gt;quiz&lt;/code&gt; alias and pre-loads &lt;code&gt;sample&lt;/code&gt; questions.&lt;/p&gt;
+    &lt;p&gt;MacOS or Linux&lt;/p&gt;
+    &lt;pre&gt;./install-dev.sh quiz sample&lt;/pre&gt;
+    &lt;p&gt;Windows&lt;/p&gt;
+    &lt;pre&gt;install-dev.bat quiz sample&lt;/pre&gt;
+    &lt;p&gt;Once the script completes, it will open your new scratch org in a browser tab. If you close the tab or get disconnected, run this command to reopen the org &lt;code&gt;sfdx force:org:open -u quiz&lt;/code&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Generate a &lt;a href="https://help.salesforce.com/articleView?id=user_security_token.htm" rel="nofollow"&gt;security token&lt;/a&gt; for your user&lt;/li&gt;
+    &lt;li&gt;Generate a password using &lt;a href="https://passwordsgenerator.net/" rel="nofollow"&gt;this service&lt;/a&gt;. This will be the secret &lt;b&gt;Quiz API Key&lt;/b&gt; that you'll set later in both applications.
+    &lt;/li&gt;&lt;li&gt;Deploy the &lt;b&gt;Quiz Player App&lt;/b&gt; to Heroku by clicking this button:&lt;br&gt;
+      &lt;p align="center"&gt;
+        &lt;a href="https://heroku.com/deploy?template=https://github.com/pozil/quiz-player-app/edit/master" title="Deploy to Heroku" rel="nofollow"&gt;
+          &lt;img src="https://camo.githubusercontent.com/83b0e95b38892b49184e07ad572c94c8038323fb/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667" alt="Deploy to Heroku" data-canonical-src="https://www.herokucdn.com/deploy/button.svg" style="max-width:100%;"&gt;
+        &lt;/a&gt;
+      &lt;/p&gt;&lt;p&gt;
+    &lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;Set the &lt;b&gt;Config Vars&lt;/b&gt; for the Heroku Player app as following:
+      &lt;table&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+          &lt;th&gt;Variable&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;QUIZ_API_KEY&lt;/td&gt;
+          &lt;td&gt;The Quiz API key that was generated in step 5.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;SF_LOGIN_URL&lt;/td&gt;
+          &lt;td&gt;The login URL of your Salesforce org:&lt;br&gt;
+          &lt;code&gt;https://test.salesforce.com/&lt;/code&gt; for scratch orgs and sandboxes&lt;br&gt;
+          &lt;code&gt;https://login.salesforce.com/&lt;/code&gt; for Developer Edition and production&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;SF_PASSWORD&lt;/td&gt;
+          &lt;td&gt;Your Salesforce password.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;SF_TOKEN&lt;/td&gt;
+          &lt;td&gt;Your Salesforce user's security token that was generated in step 4.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;SF_USERNAME&lt;/td&gt;
+          &lt;td&gt;Your Salesforce username.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Generate a minified URL for the Heroku player app using &lt;a href="https://bit.do/" rel="nofollow"&gt;this service&lt;/a&gt; (I suggest a custom link for greater readability).&lt;/li&gt;
+    &lt;li&gt;In your Salesforce org, go to &lt;b&gt;Setup &amp;gt; Remote Site Settings&lt;/b&gt; and add the complete player app URL (not the minified URL).&lt;/li&gt;
+    &lt;li&gt;Go to &lt;b&gt;Setup &amp;gt; Custom Metadata Types&lt;/b&gt; and add a &lt;b&gt;Quiz Settings&lt;/b&gt; record. Set it up with these values:
+      &lt;table&gt;
+      &lt;tbody&gt;&lt;tr&gt;
+        &lt;th&gt;Field&lt;/th&gt;
+        &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Player App URL&lt;/td&gt;
+        &lt;td&gt;The Heroku player app URL that was generated in step 6.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Player App URL Minified&lt;/td&gt;
+        &lt;td&gt;The minified URL for the player app that was generated in step 8.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Quiz API Key&lt;/td&gt;
+        &lt;td&gt;The password that was generated in step 5.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-setting-up-questions" class="anchor" aria-hidden="true" href="#setting-up-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up questions&lt;/h3&gt;
+&lt;p&gt;The default installation provides a limited set of sample questions but you can customize questions as you see fit as these are based on records.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-importing-other-questions" class="anchor" aria-hidden="true" href="#importing-other-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Importing other questions&lt;/h4&gt;
+&lt;p&gt;The easiest way to add new questions is to import them using the Salesforce CLI.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get a zip with custom questions and extract in the &lt;code&gt;data&lt;/code&gt; folder. Assuming that your custom question folder is named &lt;code&gt;CUSTOM_QUESTIONS&lt;/code&gt;, you should have the following files and:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;/data
+  /CUSTOM_QUESTIONS
+    /plan.json
+    /Quiz_Question__cs.json
+    /Quiz_Session__cs.json
+    /Quiz_Session_Question__cs.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Run this script to remove existing questions:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;sfdx force:apex:execute -f bin/wipe-data.apex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Run this script from the project root to import your custom questions:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;sfdx force:data:tree:import -p data/CUSTOM_QUESTIONS/plan.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-addingediting-questions" class="anchor" aria-hidden="true" href="#addingediting-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding/editing questions&lt;/h4&gt;
+&lt;p&gt;You can add or edit &lt;code&gt;Quiz_Question__c&lt;/code&gt; records to customize the game.&lt;/p&gt;
+&lt;p&gt;Follow this process to add a new question:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a &lt;code&gt;Quiz_Question__c&lt;/code&gt; record with a question label, the four possible answers and a correct answer.&lt;/li&gt;
+&lt;li&gt;Create a &lt;code&gt;Quiz_Session_Question__c&lt;/code&gt; to tie your &lt;code&gt;Quiz_Question__c&lt;/code&gt; to the &lt;code&gt;Quiz_Session__c&lt;/code&gt;. You'll need to specify an unique index number for the question. This index is used to order questions during the game.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; if you change the first quiz question, make sure to hit the reset button on the quiz host app.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="movie_camera" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3a5.png"&gt;🎥&lt;/g-emoji&gt; &lt;a href="https://www.youtube.com/watch?v=vLTZ_jdwhRo" rel="nofollow"&gt;Watch the playthrough video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once you have installed the app, test it in private to confirm that it works.&lt;/p&gt;
+&lt;p&gt;Here is how the game works:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Salesforce org. You log in with your browser or simply run this command: &lt;code&gt;sfdx force:org:open -u quiz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Quiz app&lt;/strong&gt; from App Launcher.&lt;/li&gt;
+&lt;li&gt;Make sure that the screen is showing the &lt;strong&gt;Registration&lt;/strong&gt; screen. If not, click the &lt;strong&gt;Reset&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Open the mini URL or scan the QR code with your phone. That should open the player app.&lt;/li&gt;
+&lt;li&gt;Register on the player app. Your player name should automatically appear on the host app.&lt;/li&gt;
+&lt;li&gt;Click on the top right &lt;strong&gt;Start&lt;/strong&gt; button on the host app. Once the game is started, players are no longer able to register.&lt;/li&gt;
+&lt;li&gt;Your player app should show a "Waiting for question" message for a few seconds then show the 4 answer buttons. If the player app does not refresh, you likely have a setup issue. See troubleshooting.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Scoring system&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Players start with a zero score. The fastest player to answer a question correctly earns 1000 points.
+Players who also answered correctly but slower will earn a decreasing number of points depending on how late they answered. Wrong answers grant no points. The player that scores the most points at the end of the game wins.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Player app wake-up&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shortly before running the official game, make sure to access the player app a first time to load it.&lt;br&gt;
+The default Heroku setup uses a free Heroku dyno. This implies that apps that are inactive for more than 30 minutes are put to sleep. Any connection to the app will wake it up but it takes a bit less than a minute. You may experience some "Request time out" errors during that wake-up time.&lt;/p&gt;
+&lt;p&gt;If you are running the game with 40+ players, consider upgrading to a &lt;a href="https://www.heroku.com/dynos" rel="nofollow"&gt;Hobby dyno&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resetting the game&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can reset the game at any time by clicking on the Reset button on top right of the Quiz app. This resets the quiz session to the registration phase, clears players and previous answers.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="#troubleshooting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Review these common problems. If you can't find a solution to your problem, &lt;a href="https://github.com/pozil/quiz-host-app/issues"&gt;open a new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Player app is not starting (Heroku error page is displayed)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the Heroku app logs for the cause of the error. The app will refuse to start if your Salesforce credentials are incorrect (most likely error).&lt;/li&gt;
+&lt;li&gt;Verify your Salesforce credentials in the configuration variables of your Heroku app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Player app is not updating when switching game phase (from registration to question for example)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check that you have registered the correct Remote Site in your org.&lt;/li&gt;
+&lt;li&gt;Check that your Quiz API Key is correctly set up in both the Custom Metadata Types and in the configuration variables of your Heroku app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Something is wrong with the quiz data or you'd like to reset it&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reset the game using the Reset button on the quiz app. This resets the quiz session to the registration phase, clears players and previous answers.&lt;/li&gt;
+&lt;li&gt;Run the following script wipe ALL quiz data. You'll have to reimport questions.
+&lt;pre&gt;&lt;code&gt;sfdx force:apex:execute -f bin/wipe-data.apex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; You're seeing a "Failed to validate Quiz app settings: Read timed out" error on the host app.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;
+Refresh the page to fix the problem. Refer to the &lt;strong&gt;Player app wake-up&lt;/strong&gt; section of this document for more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-and-contributing" class="anchor" aria-hidden="true" href="#building-and-contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building and contributing&lt;/h2&gt;
+&lt;p&gt;If you want to build the project from sources and contribute, run &lt;code&gt;npm install&lt;/code&gt; to install the project build tools.&lt;/p&gt;
+&lt;p&gt;Here is the &lt;a href="https://github.com/pozil/quiz-player-app"&gt;Quiz Player App repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>pozil</author><guid isPermaLink="false">https://github.com/pozil/quiz-host-app</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item></channel></rss>

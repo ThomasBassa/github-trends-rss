@@ -1,2 +1,437 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: CoffeeScript, This month</title><link>https://github.com/trending/coffeescript?since=monthly</link><description>The top repositories on GitHub for coffeescript, measured monthly</description><pubDate>Thu, 23 Jan 2020 01:01:07 GMT</pubDate><lastBuildDate>Thu, 23 Jan 2020 01:01:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in CoffeeScript, This month for today</title><pubDate>Thu, 23 Jan 2020 01:01:07 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: CoffeeScript, This month</title><link>https://github.com/trending/coffeescript?since=monthly</link><description>The top repositories on GitHub for coffeescript, measured monthly</description><pubDate>Fri, 24 Jan 2020 01:09:59 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:59 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>Pagedraw/pagedraw #1 in CoffeeScript, This month</title><link>https://github.com/Pagedraw/pagedraw</link><description>&lt;p&gt;&lt;i&gt;a UI builder for React web apps&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-pagedraw" class="anchor" aria-hidden="true" href="#pagedraw"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pagedraw&lt;/h1&gt;
+&lt;p&gt;Pagedraw is a UI builder for React web apps.  It works like a Sketch or Figma style design tool, but emits good quality JSX code.  You can play with a demo on the web without installing at &lt;a href="https://pagedraw.io/tutorials/basics" rel="nofollow"&gt;https://pagedraw.io/tutorials/basics&lt;/a&gt;. Videos about pagedraw can be found on &lt;a href="https://www.youtube.com/channel/UCgAP0A2HDlk81eVKOaChzHg" rel="nofollow"&gt;Youtube&lt;/a&gt;. See &lt;a href="https://pagedraw.io/" rel="nofollow"&gt;https://pagedraw.io/&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;Pagedraw is not currently under development.  We do not recommend using it for production.  Please fork and use it for something cool!&lt;/p&gt;
+&lt;p&gt;Here is a &lt;a href="https://medium.com/@gabriel_20625/technical-lessons-from-building-a-compiler-startup-for-3-years-4473405161cd?fbclid=IwAR1xjLudFtOrh5m5pr2cSo9aNhXncC3a519jUTmBKMixIRbXo_c72dz1COU" rel="nofollow"&gt;blog post&lt;/a&gt; with some lessons we took from working on Pagedraw.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Download the final release at &lt;a href="https://github.com/Pagedraw/pagedraw/releases/download/1.0/Pagedraw.zip"&gt;https://github.com/Pagedraw/pagedraw/releases/download/1.0/Pagedraw.zip&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Clone &lt;a href="https://github.com/pagedraw/sample-app"&gt;https://github.com/pagedraw/sample-app&lt;/a&gt; and use it as the scaffolding for your app.  It's based on create-react-app; all very standard.  You'll want to do the ususal &lt;code&gt;yarn&lt;/code&gt; to install dependencies.&lt;/p&gt;
+&lt;p&gt;Open the Pagedraw app, which will ask you to pick a file.  Pick &lt;code&gt;sample-app/main.pagedraw.json&lt;/code&gt; to open.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;yarn start&lt;/code&gt; in &lt;code&gt;sample-app&lt;/code&gt; (or whatever you've renamed it).  This is just the regular create-react-app's &lt;code&gt;yarn start&lt;/code&gt;.  Once you have your localhost development environment up, try doing things around in Pagedraw.  It should live update in the localhost environment.  You're all set up!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-adding-pagedraw-to-an-existing-project" class="anchor" aria-hidden="true" href="#adding-pagedraw-to-an-existing-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding Pagedraw to an existing project&lt;/h2&gt;
+&lt;p&gt;Use &lt;a href="https://github.com/pagedraw/sample-app"&gt;https://github.com/pagedraw/sample-app&lt;/a&gt; as a reference.&lt;/p&gt;
+&lt;p&gt;Put a &lt;code&gt;main.pagedraw.json&lt;/code&gt; in the root of your repo.  All files built by Pagedraw will be written into a &lt;code&gt;/src/pagedraw/&lt;/code&gt; folder.  These are regular JSX/CSS files, so you can import them just like the rest of your code.&lt;/p&gt;
+&lt;p&gt;If you ever want to stop using Pagedraw, just delete the source &lt;code&gt;*.pagedraw.json&lt;/code&gt; files.  The generated files will still live in &lt;code&gt;src/pagedraw&lt;/code&gt;, and you can treat them like any other code files.&lt;/p&gt;
+&lt;p&gt;The editor itself is straightforward if you've used a design tool like Sketch or Figma.  Detailed documentation is available at &lt;a href="https://documentation.pagedraw.io/the-editor/" rel="nofollow"&gt;https://documentation.pagedraw.io/the-editor/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you open Pagedraw for the first time, it will ask you to open a &lt;code&gt;.pagedraw.json&lt;/code&gt; file.  If you'd like to create a new file, click cancel when it asks you to open a file, and it'll ask you where to create a new file.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-developing" class="anchor" aria-hidden="true" href="#developing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Developing&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-setting-up-the-development-environment" class="anchor" aria-hidden="true" href="#setting-up-the-development-environment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up the development environment&lt;/h3&gt;
+&lt;p&gt;As a prerequisite, install&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Node.js version 8.9.0.  (&lt;code&gt;nvm&lt;/code&gt; is useful here)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yarn&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; clone the repo and install the project dependencies&lt;/span&gt;
+git clone https://github.com/Pagedraw/pagedraw
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; pagedraw
+yarn install
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; desktop-app/ &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; npm install &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pl-c1"&gt;cd&lt;/span&gt; ..&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-running-pagedraw-in-development" class="anchor" aria-hidden="true" href="#running-pagedraw-in-development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running Pagedraw in development&lt;/h3&gt;
+&lt;p&gt;In the background, run&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;yarn devserver&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;then start Electron with&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;yarn run-electron&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-config-for-development" class="anchor" aria-hidden="true" href="#config-for-development"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Config for development&lt;/h3&gt;
+&lt;p&gt;Turn on asserts the first time you run in development mode, which will help you debug.  In the Electron developer tools console, run &lt;code&gt;__openConfigEditor()&lt;/code&gt; and set your local config to&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;crashButton&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;,
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;asserts&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;To run the standard tests, run all the servers needed for Pagedraw development, as described in the section above.  While &lt;code&gt;yarn devserver&lt;/code&gt; is running, run&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;yarn &lt;span class="pl-c1"&gt;test&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-todos" class="anchor" aria-hidden="true" href="#todos"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TODOs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Today all images brought into Pagedraw are stored as part of the Pagedraw doc as base64 encoded strings and they also get compiled to generated code
+as &lt;code&gt;img&lt;/code&gt; tags with base 64 data &lt;code&gt;src&lt;/code&gt;s. That bloats the Pagedraw docs and forces an unnecessary constraint on generated code.
+We should move to a world where that system is more flexible and generates code that &lt;code&gt;require&lt;/code&gt;s images instead&lt;/li&gt;
+&lt;li&gt;Same thing for fonts. Today they're being stored directly in the Pagedraw doc as base64 strings and also injected into the compiled code as such&lt;/li&gt;
+&lt;li&gt;Make Sketch Importer into a Sketch to Pagedraw converter command instead of a server.&lt;/li&gt;
+&lt;li&gt;Compile-Check can work with local &lt;code&gt;/compiler-blobs&lt;/code&gt;, and not depend on S3 to host them.  Look in &lt;code&gt;/compiler-blob-builder&lt;/code&gt; and &lt;code&gt;/deploy-checks/fetch-other-compiler-build.js&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;The code in the repository is being provided to you under an open source license.  There are multiple contributors to this code. All contributions provided after 2/1/2019 were done in a personal capacity, and the license you receive to code following 2/1/2019 is from the contributors personally and not their respective employers.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Pagedraw</author><guid isPermaLink="false">https://github.com/Pagedraw/pagedraw</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item><item><title>progedu/intro-curriculum-3006 #2 in CoffeeScript, This month</title><link>https://github.com/progedu/intro-curriculum-3006</link><description>&lt;p&gt;&lt;i&gt;入門コースの3章6節の練習 (ISC License)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-hubot-study" class="anchor" aria-hidden="true" href="#hubot-study"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hubot-study&lt;/h1&gt;
+&lt;p&gt;hubot-study is a chat bot built on the &lt;a href="http://hubot.github.com"&gt;Hubot&lt;/a&gt; framework. It was
+initially generated by &lt;a href="https://github.com/github/generator-hubot"&gt;generator-hubot&lt;/a&gt;, and configured to be
+deployed on &lt;a href="http://www.heroku.com" rel="nofollow"&gt;Heroku&lt;/a&gt; to get you up and running as quick as possible.&lt;/p&gt;
+&lt;p&gt;This README is intended to help get you started. Definitely update and improve
+to talk about your own instance, how to use and deploy, what functionality he
+has, etc!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-running-hubot-study-locally" class="anchor" aria-hidden="true" href="#running-hubot-study-locally"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running hubot-study Locally&lt;/h3&gt;
+&lt;p&gt;You can test your hubot by running the following, however some plugins will not
+behave as expected unless the &lt;a href="#configuration"&gt;environment variables&lt;/a&gt; they rely
+upon have been set.&lt;/p&gt;
+&lt;p&gt;You can start hubot-study locally by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% bin/hubot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You'll see some start up output and a prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
+hubot-study&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you can interact with hubot-study by typing &lt;code&gt;hubot-study help&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hubot-study&amp;gt; hubot-study help
+hubot-study animate me &amp;lt;query&amp;gt; - The same thing as `image me`, except adds [snip]
+hubot-study help - Displays all of the help commands that hubot-study knows about.
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h3&gt;
+&lt;p&gt;A few scripts (including some installed by default) require environment
+variables to be set as a simple form of configuration.&lt;/p&gt;
+&lt;p&gt;Each script should have a commented header which contains a "Configuration"
+section that explains which values it requires to be placed in which variable.
+When you have lots of scripts installed this process can be quite labour
+intensive. The following shell command can be used as a stop gap until an
+easier way to do this has been implemented.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;grep -o 'hubot-[a-z0-9_-]\+' external-scripts.json | \
+  xargs -n1 -I {} sh -c 'sed -n "/^# Configuration/,/^#$/ s/^/{} /p" \
+      $(find node_modules/{}/ -name "*.coffee")' | \
+    awk -F '#' '{ printf "%-25s %s\n", $1, $2 }'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to set environment variables will be specific to your operating system.
+Rather than recreate the various methods and best practices in achieving this,
+it's suggested that you search for a dedicated guide focused on your OS.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-scripting" class="anchor" aria-hidden="true" href="#scripting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scripting&lt;/h3&gt;
+&lt;p&gt;An example script is included at &lt;code&gt;scripts/example.coffee&lt;/code&gt;, so check it out to
+get started, along with the &lt;a href="scripting-docs"&gt;Scripting Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For many common tasks, there's a good chance someone has already one to do just
+the thing.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-external-scripts" class="anchor" aria-hidden="true" href="#external-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;external-scripts&lt;/h3&gt;
+&lt;p&gt;There will inevitably be functionality that everyone will want. Instead of
+writing it yourself, you can use existing plugins.&lt;/p&gt;
+&lt;p&gt;Hubot is able to load plugins from third-party &lt;code&gt;npm&lt;/code&gt; packages. This is the
+recommended way to add functionality to your hubot. You can get a list of
+available hubot plugins on &lt;a href="npmjs"&gt;npmjs.com&lt;/a&gt; or by using &lt;code&gt;npm search&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% npm search hubot-scripts panda
+NAME             DESCRIPTION                        AUTHOR DATE       VERSION KEYWORDS
+hubot-pandapanda a hubot script for panda responses =missu 2014-11-30 0.9.2   hubot hubot-scripts panda
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To use a package, check the package's documentation, but in general it is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;npm install --save&lt;/code&gt; to add the package to &lt;code&gt;package.json&lt;/code&gt; and install it&lt;/li&gt;
+&lt;li&gt;Add the package name to &lt;code&gt;external-scripts.json&lt;/code&gt; as a double quoted string&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can review &lt;code&gt;external-scripts.json&lt;/code&gt; to see what is included by default.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-advanced-usage" class="anchor" aria-hidden="true" href="#advanced-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advanced Usage&lt;/h5&gt;
+&lt;p&gt;It is also possible to define &lt;code&gt;external-scripts.json&lt;/code&gt; as an object to
+explicitly specify which scripts from a package should be included. The example
+below, for example, will only activate two of the six available scripts inside
+the &lt;code&gt;hubot-fun&lt;/code&gt; plugin, but all four of those in &lt;code&gt;hubot-auto-deploy&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hubot-fun&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;crazy&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;thanks&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  ],
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hubot-auto-deploy&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;*&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Be aware that not all plugins support this usage and will typically fallback
+to including all scripts.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-hubot-scripts" class="anchor" aria-hidden="true" href="#hubot-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hubot-scripts&lt;/h3&gt;
+&lt;p&gt;Before hubot plugin packages were adopted, most plugins were held in the
+&lt;a href="https://github.com/github/hubot-scripts"&gt;hubot-scripts&lt;/a&gt; package. Some of these plugins have yet to be
+migrated to their own packages. They can still be used but the setup is a bit
+different.&lt;/p&gt;
+&lt;p&gt;To enable scripts from the hubot-scripts package, add the script name with
+extension as a double quoted string to the &lt;code&gt;hubot-scripts.json&lt;/code&gt; file in this
+repo.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-persistence" class="anchor" aria-hidden="true" href="#persistence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Persistence&lt;/h2&gt;
+&lt;p&gt;If you are going to use the &lt;code&gt;hubot-redis-brain&lt;/code&gt; package (strongly suggested),
+you will need to add the Redis to Go addon on Heroku which requires a verified
+account or you can create an account at &lt;a href="https://redistogo.com/" rel="nofollow"&gt;Redis to Go&lt;/a&gt; and manually
+set the &lt;code&gt;REDISTOGO_URL&lt;/code&gt; variable.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add REDISTOGO_URL="..."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you don't need any persistence feel free to remove the &lt;code&gt;hubot-redis-brain&lt;/code&gt;
+from &lt;code&gt;external-scripts.json&lt;/code&gt; and you don't need to worry about redis at all.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-adapters" class="anchor" aria-hidden="true" href="#adapters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adapters&lt;/h2&gt;
+&lt;p&gt;Adapters are the interface to the service you want your hubot to run on, such
+as Campfire or IRC. There are a number of third party adapters that the
+community have contributed. Check &lt;a href="https://github.com/github/hubot/blob/master/docs/adapters.md"&gt;Hubot Adapters&lt;/a&gt; for the
+available ones.&lt;/p&gt;
+&lt;p&gt;If you would like to run a non-Campfire or shell adapter you will need to add
+the adapter package as a dependency to the &lt;code&gt;package.json&lt;/code&gt; file in the
+&lt;code&gt;dependencies&lt;/code&gt; section.&lt;/p&gt;
+&lt;p&gt;Once you've added the dependency with &lt;code&gt;npm install --save&lt;/code&gt; to install it you
+can then run hubot with the adapter.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% bin/hubot -a &amp;lt;adapter&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where &lt;code&gt;&amp;lt;adapter&amp;gt;&lt;/code&gt; is the name of your adapter without the &lt;code&gt;hubot-&lt;/code&gt; prefix.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;% heroku create --stack cedar
+% git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your Heroku account has been verified you can run the following to enable
+and add the Redis to Go addon to your app.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku addons:add redistogo:nano
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you run into any problems, checkout Heroku's &lt;a href="http://devcenter.heroku.com/articles/node-js" rel="nofollow"&gt;docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You'll need to edit the &lt;code&gt;Procfile&lt;/code&gt; to set the name of your hubot.&lt;/p&gt;
+&lt;p&gt;More detailed documentation can be found on the &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/heroku.md"&gt;deploying hubot onto
+Heroku&lt;/a&gt; wiki page.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-deploying-to-unix-or-windows" class="anchor" aria-hidden="true" href="#deploying-to-unix-or-windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deploying to UNIX or Windows&lt;/h3&gt;
+&lt;p&gt;If you would like to deploy to either a UNIX operating system or Windows.
+Please check out the &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/unix.md"&gt;deploying hubot onto UNIX&lt;/a&gt; and &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/unix.md"&gt;deploying
+hubot onto Windows&lt;/a&gt; wiki pages.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-campfire-variables" class="anchor" aria-hidden="true" href="#campfire-variables"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Campfire Variables&lt;/h2&gt;
+&lt;p&gt;If you are using the Campfire adapter you will need to set some environment
+variables. If not, refer to your adapter documentation for how to configure it,
+links to the adapters can be found on &lt;a href="https://github.com/github/hubot/blob/master/docs/adapters.md"&gt;Hubot Adapters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create a separate Campfire user for your bot and get their token from the web
+UI.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_TOKEN="..."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
+you want the bot to connect to &lt;code&gt;https://mysubdomain.campfirenow.com/room/42&lt;/code&gt;
+and &lt;code&gt;https://mysubdomain.campfirenow.com/room/1024&lt;/code&gt; then you'd add it like
+this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_ROOMS="42,1024"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add the subdomain hubot should connect to. If you web URL looks like
+&lt;code&gt;http://mysubdomain.campfirenow.com&lt;/code&gt; then you'd add it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_ACCOUNT="mysubdomain"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-restart-the-bot" class="anchor" aria-hidden="true" href="#restart-the-bot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Restart the bot&lt;/h2&gt;
+&lt;p&gt;You may want to get comfortable with &lt;code&gt;heroku logs&lt;/code&gt; and &lt;code&gt;heroku restart&lt;/code&gt; if
+you're having issues.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>progedu</author><guid isPermaLink="false">https://github.com/progedu/intro-curriculum-3006</guid><pubDate>Fri, 24 Jan 2020 00:02:00 GMT</pubDate></item><item><title>Psiphon-Inc/psiphon-website #3 in CoffeeScript, This month</title><link>https://github.com/Psiphon-Inc/psiphon-website</link><description>&lt;p&gt;&lt;i&gt;Source of the psiphon3.com, etc., download and info sites&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-psiphon-website" class="anchor" aria-hidden="true" href="#psiphon-website"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Psiphon Website&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-technical-requirements" class="anchor" aria-hidden="true" href="#technical-requirements"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Technical Requirements&lt;/h2&gt;
+&lt;p&gt;The site must support translation/localization. This includes supporting right-to-left languages.&lt;/p&gt;
+&lt;p&gt;The site must be fully functional without JavaScript. (We expect a significant proportion of our users to be running NoScript.)&lt;/p&gt;
+&lt;p&gt;The site must support desktop and mobile screen sizes, without using JS or subdomains.&lt;/p&gt;
+&lt;p&gt;The site must be somewhat usable by IE7+. A lot of our user base uses very old browsers. For example, &lt;a href="https://blog.cloudflare.com/introducing-universal-ssl/" rel="nofollow"&gt;CloudFlare found&lt;/a&gt; that only 52% of requests from Iran come from “modern” browsers.&lt;/p&gt;
+&lt;p&gt;The site must be able to be served from static storage (i.e., S3 bucket).&lt;/p&gt;
+&lt;p&gt;The site resources must be served from the same domain as the site itself (i.e., no external JS resources, fonts, etc.). This closes some potential security holes.&lt;/p&gt;
+&lt;p&gt;The site must be able to be served from any sub-path of a domain. That is, the same site must be simultaneously accessible from xyz.example.com/blah/index.html and from example.com/abc/blah/index.html. This is because we serve from &lt;a href="https://s3.amazonaws.com/f58p-mqce-k1yj/en/index.html" rel="nofollow"&gt;https://s3.amazonaws.com/f58p-mqce-k1yj/en/index.html&lt;/a&gt; and from &lt;a href="http://play.psiphon3.com/en/index.html" rel="nofollow"&gt;http://play.psiphon3.com/en/index.html&lt;/a&gt; and even more exotic anti-blocking locations.&lt;/p&gt;
+&lt;p&gt;The site should be fairly fast to load -- images that aren’t too large, etc. A lot of our users are on degraded connections.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href="http://nodejs.org/" rel="nofollow"&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href="http://docpad.org/" rel="nofollow"&gt;Docpad&lt;/a&gt;:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ [sudo] npm install -g docpad
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Install all dependencies:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ npm ci
+$ cd plugins/languagemaker &amp;amp;&amp;amp; npm ci . &amp;amp;&amp;amp; cd -
+$ cd plugins/languageredirector &amp;amp;&amp;amp; npm ci . &amp;amp;&amp;amp; cd -
+# Or maybe: find . -name package.json -maxdepth 3 -execdir npm ci \;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Generate site, serve it, and monitor for changes:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ node --max-old-space-size=8192 --max-semi-space-size=512 --nouse-idle-notification node_modules/docpad/out/bin/docpad.js run --cache --offline
+
+# Site builds can be quite slow. Skip language generation for faster builds:
+# docpad run --cache --offline --env fastbuild
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The use of a complicated &lt;code&gt;node&lt;/code&gt; command instead of &lt;code&gt;docpad&lt;/code&gt; is so that the generate process has more memory to work with. Note that it's probably more memory-reasonable to generate the site separately from serving it (using &lt;code&gt;python -m SimpleHTTPServer 9778&lt;/code&gt; or whatever). See below for simply generating the site.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-generating-the-site" class="anchor" aria-hidden="true" href="#generating-the-site"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generating the site&lt;/h2&gt;
+&lt;p&gt;The commands necessary to do a constant-memory generation have been collected in a script.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./generate.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-running-the-site-at-root-and-below-a-path" class="anchor" aria-hidden="true" href="#running-the-site-at-root-and-below-a-path"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running the site at root and below a path&lt;/h2&gt;
+&lt;p&gt;This website gets run both at the root of a domain (e.g. &lt;code&gt;http://psiphon3.com/&lt;/code&gt;) and under a subdirectory of a domain -- specifically, under a S3 bucket (e.g., &lt;code&gt;https://s3.amazonaws.com/57wj-4j1q-wa7e/&lt;/code&gt;). This makes it difficult to refer to other pages and resources with &lt;code&gt;href&lt;/code&gt; and &lt;code&gt;src&lt;/code&gt; attributes from within the site -- &lt;code&gt;/styles/style.css&lt;/code&gt; won't work when the site is under a subdirectory. One approach would be to hand-craft relative paths for each and page, but this is very brittle and a total pain when using layouts/templates for different pages at different path depths.&lt;/p&gt;
+&lt;p&gt;So we use a Docpad plugin that provides the relative path to root for each document, and then a global function that we can use wherever we want to provide a path to a page or resource. So, the &lt;code&gt;src&lt;/code&gt; attribute for an image would look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src="&amp;lt;%= @relativeToRoot '/images/path/filename.png' %&amp;gt;"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the page containing that line is located at &lt;code&gt;/en/blog/index.html.eco&lt;/code&gt;, then it will render to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src="../../images/path/filename.png"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the path will remain correct regardless of the path location of the containing page, and whether the site is hosted at root or in a bucket/subdirectory.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h3&gt;
+&lt;p&gt;Serving the site with Docpad will only test the site-at-root scenario. Testing the site-under-subdirectory scenario can be done like so:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Run a static site server in the root directory of the website source (i.e., the directory of this README lives in). (You can use Python's &lt;code&gt;SimpleHTTPServer&lt;/code&gt; or Node's &lt;code&gt;node-static&lt;/code&gt; package, or whatever.)&lt;/li&gt;
+&lt;li&gt;In your browser, go to &lt;code&gt;http://localhost:8080/out/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You'll be redirected to &lt;code&gt;http://localhost:8080/out/en/index.html&lt;/code&gt;. The site is effectively under the &lt;code&gt;out&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;Browse around. Watch the console for errors.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-qr-codes" class="anchor" aria-hidden="true" href="#qr-codes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QR Codes&lt;/h2&gt;
+&lt;p&gt;An easy way to generate a QR code is via the Google Chart API. Just put the target URL at the end of this URL: &lt;code&gt;https://chart.googleapis.com/chart?chs=150x150&amp;amp;cht=qr&amp;amp;chld=M|0&amp;amp;chl=&lt;/code&gt;. For example, here's a &lt;a href="https://chart.googleapis.com/chart?chs=150x150&amp;amp;cht=qr&amp;amp;chld=M%7C0&amp;amp;chl=http://psiphon3.com" rel="nofollow"&gt;QR for psiphon3.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-sponsor-snippets" class="anchor" aria-hidden="true" href="#sponsor-snippets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sponsor Snippets&lt;/h2&gt;
+&lt;p&gt;Enabling sponsor HTML snippets for a bucket site mostly involves configuring &lt;code&gt;sponsor_snippet_pull.py&lt;/code&gt; to retrieve the desired snippet and upload it to the correct bucket. The page code will detect the presence of snippet, sanitize, and load it.&lt;/p&gt;
+&lt;p&gt;JavaScript will be stripped completely from the snippet. &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; blocks and external CSS files will be stripped, but inline styles and CSS class names will be left intact.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-i18n-hints-tips-issues" class="anchor" aria-hidden="true" href="#i18n-hints-tips-issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;I18n hints, tips, issues&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-translating-blog-posts" class="anchor" aria-hidden="true" href="#translating-blog-posts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Translating blog posts&lt;/h3&gt;
+&lt;p&gt;Blog posts are originally written in English, and will typically be written using &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Markdown&lt;/a&gt;; here is &lt;a href="https://bitbucket.org/psiphon/psiphon-circumvention-system/raw/e74506889cb91ca4acdb9db3cc5f6b1c986dc577/Website/src/documents/en/blog/psiphon-a-technical-description.html.md" rel="nofollow"&gt;an example of one&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Translations can be written using either Markdown or HTML. We're not yet sure if Markdown is entirely happy with i18n, but it's probably best to try that first. Markdown is simpler to write in, HTML provides more control.&lt;/p&gt;
+&lt;p&gt;If the translation is done in HTML, it should only contain the inner body of the post, and not &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;, or &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tags; here is &lt;a href="https://bitbucket.org/psiphon/psiphon-circumvention-system/src/cfc2d583bb8cd8f3c4a61d2d248a90c742389ff9/Website/src/documents/fa/blog/psiphon-a-technical-description.html" rel="nofollow"&gt;an example of one&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the top of the raw blog post example above you will see the post "metadata". The &lt;code&gt;title&lt;/code&gt; must be translated and the &lt;code&gt;author&lt;/code&gt; may be transliterated if appropriate for the target langage. The &lt;code&gt;layout&lt;/code&gt; must not be changed.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-locale-specific-images" class="anchor" aria-hidden="true" href="#locale-specific-images"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Locale-specific images&lt;/h3&gt;
+&lt;p&gt;It's quite easy to add images (screenshots, etc.) that are locale-specific.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create an English version of the image. This will also be used as a fallback if a locale-specific image doesn't exist. Give it a filename of the form &lt;code&gt;whatever.en.ext&lt;/code&gt;. For example, &lt;code&gt;i18n-test.en.png&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the page where you want to use it, create an &lt;code&gt;img&lt;/code&gt; tag that looks something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src="&amp;lt;%- @relativeToRoot @ttURL '/images/i18n-test.png' %&amp;gt;"&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Note that you should also provide an &lt;code&gt;alt&lt;/code&gt; attribute and you probably also want &lt;code&gt;class="img-responsive"&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ttURL&lt;/code&gt; is defined in &lt;a href="https://bitbucket.org/psiphon/psiphon-circumvention-system/src/tip/Website/docpad.coffee?at=default" rel="nofollow"&gt;&lt;code&gt;docpad.coffee&lt;/code&gt;&lt;/a&gt;. If the document currently being generated is in Farsi, it checks to see if there exists a file with the name &lt;code&gt;/images/i18n-test.fa.png&lt;/code&gt;, uses it if it exists, and falls back to &lt;code&gt;/images/i18n-test.en.png&lt;/code&gt; or &lt;code&gt;/images/i18n-test.png&lt;/code&gt; if not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create the localized images. Save them with appropriate filenames. E.g.: &lt;code&gt;i18n-test.fa.png&lt;/code&gt;, &lt;code&gt;i18n-test.zh.png&lt;/code&gt;, &lt;code&gt;i18n-test.ug@Latn.png&lt;/code&gt;, etc. There doesn't need to (immediately) be one for each supported language, because the English fallback will compensate for missing images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that &lt;code&gt;ttURL&lt;/code&gt; could also be used for files other than images. Video? CSS?&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-using-google-analytics" class="anchor" aria-hidden="true" href="#using-google-analytics"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Google Analytics&lt;/h2&gt;
+&lt;p&gt;Google Analytics is not enabled by default, but can be enabled by adding a file to &lt;code&gt;src/files/assets/&lt;/code&gt; named &lt;code&gt;google-analytics-id&lt;/code&gt; containing the Google Analytics tracking ID (like &lt;code&gt;UA-XXXXX-XX&lt;/code&gt;) that should be used.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-docpad-tips-and-caveats" class="anchor" aria-hidden="true" href="#docpad-tips-and-caveats"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docpad Tips and Caveats&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-metadata" class="anchor" aria-hidden="true" href="#metadata"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Metadata&lt;/h3&gt;
+&lt;p&gt;Metadata in layouts is basically ignored (besides another &lt;code&gt;layout&lt;/code&gt; in the chain). There's &lt;a href="https://github.com/bevry/docpad/issues/458"&gt;an issue to improve this&lt;/a&gt;. This is very unfortunate for us because we put almost all content into layouts. And, for example, it would be best to put a page's keywords into the layout rather than in &lt;code&gt;documents/en/blah.html&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;p&gt;Background pattern from: &lt;a href="http://subtlepatterns.com/3px-tile/" rel="nofollow"&gt;http://subtlepatterns.com/3px-tile/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;See the &lt;code&gt;LICENSE&lt;/code&gt; file.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Psiphon-Inc</author><guid isPermaLink="false">https://github.com/Psiphon-Inc/psiphon-website</guid><pubDate>Fri, 24 Jan 2020 00:03:00 GMT</pubDate></item><item><title>progedu/intro-curriculum-3008 #4 in CoffeeScript, This month</title><link>https://github.com/progedu/intro-curriculum-3008</link><description>&lt;p&gt;&lt;i&gt;入門コースの3章8節の練習 (ISC License)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-hubot-todo" class="anchor" aria-hidden="true" href="#hubot-todo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hubot-todo&lt;/h1&gt;
+&lt;p&gt;hubot-todo is a chat bot built on the &lt;a href="http://hubot.github.com"&gt;Hubot&lt;/a&gt; framework. It was
+initially generated by &lt;a href="https://github.com/github/generator-hubot"&gt;generator-hubot&lt;/a&gt;, and configured to be
+deployed on &lt;a href="http://www.heroku.com" rel="nofollow"&gt;Heroku&lt;/a&gt; to get you up and running as quick as possible.&lt;/p&gt;
+&lt;p&gt;This README is intended to help get you started. Definitely update and improve
+to talk about your own instance, how to use and deploy, what functionality he
+has, etc!&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-running-hubot-todo-locally" class="anchor" aria-hidden="true" href="#running-hubot-todo-locally"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running hubot-todo Locally&lt;/h3&gt;
+&lt;p&gt;You can test your hubot by running the following, however some plugins will not
+behave as expected unless the &lt;a href="#configuration"&gt;environment variables&lt;/a&gt; they rely
+upon have been set.&lt;/p&gt;
+&lt;p&gt;You can start hubot-todo locally by running:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% bin/hubot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You'll see some start up output and a prompt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
+hubot-todo&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you can interact with hubot-todo by typing &lt;code&gt;hubot-todo help&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hubot-todo&amp;gt; hubot-todo help
+hubot-todo animate me &amp;lt;query&amp;gt; - The same thing as `image me`, except adds [snip]
+hubot-todo help - Displays all of the help commands that hubot-todo knows about.
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-configuration" class="anchor" aria-hidden="true" href="#configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h3&gt;
+&lt;p&gt;A few scripts (including some installed by default) require environment
+variables to be set as a simple form of configuration.&lt;/p&gt;
+&lt;p&gt;Each script should have a commented header which contains a "Configuration"
+section that explains which values it requires to be placed in which variable.
+When you have lots of scripts installed this process can be quite labour
+intensive. The following shell command can be used as a stop gap until an
+easier way to do this has been implemented.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;grep -o 'hubot-[a-z0-9_-]\+' external-scripts.json | \
+  xargs -n1 -I {} sh -c 'sed -n "/^# Configuration/,/^#$/ s/^/{} /p" \
+      $(find node_modules/{}/ -name "*.coffee")' | \
+    awk -F '#' '{ printf "%-25s %s\n", $1, $2 }'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to set environment variables will be specific to your operating system.
+Rather than recreate the various methods and best practices in achieving this,
+it's suggested that you search for a dedicated guide focused on your OS.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-scripting" class="anchor" aria-hidden="true" href="#scripting"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scripting&lt;/h3&gt;
+&lt;p&gt;An example script is included at &lt;code&gt;scripts/example.coffee&lt;/code&gt;, so check it out to
+get started, along with the &lt;a href="scripting-docs"&gt;Scripting Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For many common tasks, there's a good chance someone has already one to do just
+the thing.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-external-scripts" class="anchor" aria-hidden="true" href="#external-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;external-scripts&lt;/h3&gt;
+&lt;p&gt;There will inevitably be functionality that everyone will want. Instead of
+writing it yourself, you can use existing plugins.&lt;/p&gt;
+&lt;p&gt;Hubot is able to load plugins from third-party &lt;code&gt;npm&lt;/code&gt; packages. This is the
+recommended way to add functionality to your hubot. You can get a list of
+available hubot plugins on &lt;a href="npmjs"&gt;npmjs.com&lt;/a&gt; or by using &lt;code&gt;npm search&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% npm search hubot-scripts panda
+NAME             DESCRIPTION                        AUTHOR DATE       VERSION KEYWORDS
+hubot-pandapanda a hubot script for panda responses =missu 2014-11-30 0.9.2   hubot hubot-scripts panda
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To use a package, check the package's documentation, but in general it is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;npm install --save&lt;/code&gt; to add the package to &lt;code&gt;package.json&lt;/code&gt; and install it&lt;/li&gt;
+&lt;li&gt;Add the package name to &lt;code&gt;external-scripts.json&lt;/code&gt; as a double quoted string&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can review &lt;code&gt;external-scripts.json&lt;/code&gt; to see what is included by default.&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-advanced-usage" class="anchor" aria-hidden="true" href="#advanced-usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advanced Usage&lt;/h5&gt;
+&lt;p&gt;It is also possible to define &lt;code&gt;external-scripts.json&lt;/code&gt; as an object to
+explicitly specify which scripts from a package should be included. The example
+below, for example, will only activate two of the six available scripts inside
+the &lt;code&gt;hubot-fun&lt;/code&gt; plugin, but all four of those in &lt;code&gt;hubot-auto-deploy&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hubot-fun&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: [
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;crazy&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;thanks&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+  ],
+  &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;hubot-auto-deploy&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;*&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Be aware that not all plugins support this usage and will typically fallback
+to including all scripts.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-hubot-scripts" class="anchor" aria-hidden="true" href="#hubot-scripts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hubot-scripts&lt;/h3&gt;
+&lt;p&gt;Before hubot plugin packages were adopted, most plugins were held in the
+&lt;a href="https://github.com/github/hubot-scripts"&gt;hubot-scripts&lt;/a&gt; package. Some of these plugins have yet to be
+migrated to their own packages. They can still be used but the setup is a bit
+different.&lt;/p&gt;
+&lt;p&gt;To enable scripts from the hubot-scripts package, add the script name with
+extension as a double quoted string to the &lt;code&gt;hubot-scripts.json&lt;/code&gt; file in this
+repo.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-persistence" class="anchor" aria-hidden="true" href="#persistence"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Persistence&lt;/h2&gt;
+&lt;p&gt;If you are going to use the &lt;code&gt;hubot-redis-brain&lt;/code&gt; package (strongly suggested),
+you will need to add the Redis to Go addon on Heroku which requires a verified
+account or you can create an account at &lt;a href="https://redistogo.com/" rel="nofollow"&gt;Redis to Go&lt;/a&gt; and manually
+set the &lt;code&gt;REDISTOGO_URL&lt;/code&gt; variable.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add REDISTOGO_URL="..."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you don't need any persistence feel free to remove the &lt;code&gt;hubot-redis-brain&lt;/code&gt;
+from &lt;code&gt;external-scripts.json&lt;/code&gt; and you don't need to worry about redis at all.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-adapters" class="anchor" aria-hidden="true" href="#adapters"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adapters&lt;/h2&gt;
+&lt;p&gt;Adapters are the interface to the service you want your hubot to run on, such
+as Campfire or IRC. There are a number of third party adapters that the
+community have contributed. Check &lt;a href="https://github.com/github/hubot/blob/master/docs/adapters.md"&gt;Hubot Adapters&lt;/a&gt; for the
+available ones.&lt;/p&gt;
+&lt;p&gt;If you would like to run a non-Campfire or shell adapter you will need to add
+the adapter package as a dependency to the &lt;code&gt;package.json&lt;/code&gt; file in the
+&lt;code&gt;dependencies&lt;/code&gt; section.&lt;/p&gt;
+&lt;p&gt;Once you've added the dependency with &lt;code&gt;npm install --save&lt;/code&gt; to install it you
+can then run hubot with the adapter.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% bin/hubot -a &amp;lt;adapter&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where &lt;code&gt;&amp;lt;adapter&amp;gt;&lt;/code&gt; is the name of your adapter without the &lt;code&gt;hubot-&lt;/code&gt; prefix.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;% heroku create --stack cedar
+% git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your Heroku account has been verified you can run the following to enable
+and add the Redis to Go addon to your app.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku addons:add redistogo:nano
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you run into any problems, checkout Heroku's &lt;a href="http://devcenter.heroku.com/articles/node-js" rel="nofollow"&gt;docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You'll need to edit the &lt;code&gt;Procfile&lt;/code&gt; to set the name of your hubot.&lt;/p&gt;
+&lt;p&gt;More detailed documentation can be found on the &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/heroku.md"&gt;deploying hubot onto
+Heroku&lt;/a&gt; wiki page.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-deploying-to-unix-or-windows" class="anchor" aria-hidden="true" href="#deploying-to-unix-or-windows"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deploying to UNIX or Windows&lt;/h3&gt;
+&lt;p&gt;If you would like to deploy to either a UNIX operating system or Windows.
+Please check out the &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/unix.md"&gt;deploying hubot onto UNIX&lt;/a&gt; and &lt;a href="https://github.com/github/hubot/blob/master/docs/deploying/unix.md"&gt;deploying
+hubot onto Windows&lt;/a&gt; wiki pages.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-campfire-variables" class="anchor" aria-hidden="true" href="#campfire-variables"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Campfire Variables&lt;/h2&gt;
+&lt;p&gt;If you are using the Campfire adapter you will need to set some environment
+variables. If not, refer to your adapter documentation for how to configure it,
+links to the adapters can be found on &lt;a href="https://github.com/github/hubot/blob/master/docs/adapters.md"&gt;Hubot Adapters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create a separate Campfire user for your bot and get their token from the web
+UI.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_TOKEN="..."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
+you want the bot to connect to &lt;code&gt;https://mysubdomain.campfirenow.com/room/42&lt;/code&gt;
+and &lt;code&gt;https://mysubdomain.campfirenow.com/room/1024&lt;/code&gt; then you'd add it like
+this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_ROOMS="42,1024"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add the subdomain hubot should connect to. If you web URL looks like
+&lt;code&gt;http://mysubdomain.campfirenow.com&lt;/code&gt; then you'd add it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% heroku config:add HUBOT_CAMPFIRE_ACCOUNT="mysubdomain"
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-restart-the-bot" class="anchor" aria-hidden="true" href="#restart-the-bot"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Restart the bot&lt;/h2&gt;
+&lt;p&gt;You may want to get comfortable with &lt;code&gt;heroku logs&lt;/code&gt; and &lt;code&gt;heroku restart&lt;/code&gt; if
+you're having issues.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>progedu</author><guid isPermaLink="false">https://github.com/progedu/intro-curriculum-3008</guid><pubDate>Fri, 24 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>
