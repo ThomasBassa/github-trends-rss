@@ -1,47 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Jsonnet, This week</title><link>https://github.com/trending/jsonnet?since=weekly</link><description>The top repositories on GitHub for jsonnet, measured weekly</description><pubDate>Fri, 24 Jan 2020 01:09:58 GMT</pubDate><lastBuildDate>Fri, 24 Jan 2020 01:09:58 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>kubeflow/kfserving #1 in Jsonnet, This week</title><link>https://github.com/kubeflow/kfserving</link><description>&lt;p&gt;&lt;i&gt;Serverless Inferencing on Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kfserving" class="anchor" aria-hidden="true" href="#kfserving"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KFServing&lt;/h1&gt;
-&lt;p&gt;KFServing provides a Kubernetes &lt;a href="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/" rel="nofollow"&gt;Custom Resource Definition&lt;/a&gt; for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model serving use cases by providing performant, high abstraction interfaces for common ML frameworks like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX.&lt;/p&gt;
-&lt;p&gt;It encapsulates the complexity of autoscaling, networking, health checking, and server configuration to bring cutting edge serving features like GPU Autoscaling, Scale to Zero, and Canary Rollouts to your ML deployments. It enables a simple, pluggable, and complete story for Production ML Serving including prediction, pre-processing, post-processing and explainability.&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/docs/diagrams/kfserving.png"&gt;&lt;img src="/docs/diagrams/kfserving.png" alt="KFServing" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-learn-more" class="anchor" aria-hidden="true" href="#learn-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learn More&lt;/h3&gt;
-&lt;p&gt;To learn more about KFServing, how to deploy it as part of Kubeflow, how to use various supported features, and how to participate in the KFServing community, please follow the &lt;a href="https://www.kubeflow.org/docs/components/serving/kfserving/" rel="nofollow"&gt;KFServing docs on the Kubeflow Website&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
-&lt;p&gt;KNative Serving and Istio should be available on Kubernetes Cluster.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Istio Version: v1.1.7+&lt;/li&gt;
-&lt;li&gt;Knative Version: v0.8.x&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You may find this &lt;a href="https://github.com/kubeflow/kfserving/blob/master/docs/DEVELOPER_GUIDE.md#install-knative-on-a-kubernetes-cluster"&gt;installation instruction&lt;/a&gt; useful.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-installation-using-kubectl" class="anchor" aria-hidden="true" href="#installation-using-kubectl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using kubectl&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;TAG=0.2.2
-kubectl apply -f ./install/$TAG/kfserving.yaml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;By default, you can create InferenceService instances in any namespace which has no label with &lt;code&gt;control-plane&lt;/code&gt; as key.
-You can also configure KFServing to make InferenceService instances only work in the namespace which has label pair &lt;code&gt;serving.kubeflow.org/inferenceservice: enabled&lt;/code&gt;. To enable this mode, you need to add &lt;code&gt;env&lt;/code&gt; field as stated below to &lt;code&gt;manager&lt;/code&gt; container of statefulset &lt;code&gt;kfserving-controller-manager&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;env:
-- name: ENABLE_WEBHOOK_NAMESPACE_SELECTOR
-  value: enabled
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Please refer to our &lt;a href="docs/DEVELOPER_GUIDE.md#troubleshooting"&gt;troubleshooting section&lt;/a&gt; for recommendations and tips.&lt;/p&gt;
-&lt;h3&gt;&lt;a id="user-content-use" class="anchor" aria-hidden="true" href="#use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Install the SDK&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pip install kfserving
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Get the KFServing SDK documents from &lt;a href="python/kfserving/README.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Follow the &lt;a href="docs/samples/client/kfserving_sdk_sample.ipynb"&gt;example here&lt;/a&gt; to use the KFServing SDK to create, rollout, promote, and delete an InferenceService instance.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="/docs/DEVELOPER_GUIDE.md"&gt;Developer Guide&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/kfserving</guid><pubDate>Fri, 24 Jan 2020 00:01:00 GMT</pubDate></item><item><title>kubernetes-monitoring/kubernetes-mixin #2 in Jsonnet, This week</title><link>https://github.com/kubernetes-monitoring/kubernetes-mixin</link><description>&lt;p&gt;&lt;i&gt; A set of Grafana dashboards and Prometheus alerts for Kubernetes.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-prometheus-monitoring-mixin-for-kubernetes" class="anchor" aria-hidden="true" href="#prometheus-monitoring-mixin-for-kubernetes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prometheus Monitoring Mixin for Kubernetes&lt;/h1&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Jsonnet, This week</title><link>https://github.com/trending/jsonnet?since=weekly</link><description>The top repositories on GitHub for jsonnet, measured weekly</description><pubDate>Sat, 25 Jan 2020 01:09:44 GMT</pubDate><lastBuildDate>Sat, 25 Jan 2020 01:09:44 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>argoproj/argocd-example-apps #1 in Jsonnet, This week</title><link>https://github.com/argoproj/argocd-example-apps</link><description>&lt;p&gt;&lt;i&gt;Example Apps to Demonstrate Argo CD&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-argocd-example-apps" class="anchor" aria-hidden="true" href="#argocd-example-apps"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ArgoCD Example Apps&lt;/h1&gt;
+&lt;p&gt;This repository contains example applications for demoing ArgoCD functionality. Feel free
+to register this repository to your ArgoCD instance, or fork this repo and push your own commits
+to explore ArgoCD and GitOps!&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Application&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="guestbook/"&gt;guestbook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;A hello word guestbook app as plain YAML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="ksonnet-guestbook/"&gt;ksonnet-guestbook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The guestbook app as a ksonnet app&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="helm-guestbook/"&gt;helm-guestbook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The guestbook app as a Helm chart&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="jsonnet-guestbook/"&gt;jsonnet-guestbook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The guestbook app as a raw jsonnet&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="jsonnet-guestbook-tla/"&gt;jsonnet-guestbook-tla&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The guestbook app as a raw jsonnet with support for top level arguments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="kustomize-guestbook/"&gt;kustomize-guestbook&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The guestbook app as a Kustomize 2 app&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="pre-post-sync/"&gt;pre-post-sync&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Demonstrates Argo CD PreSync and PostSync hooks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="sync-waves/"&gt;sync-waves&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Demonstrates Argo CD sync waves with hooks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="helm-dependency/"&gt;helm-dependency&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Demonstrates how to customize an OTS (off-the-shelf) helm chart from an upstream repo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="sock-shop/"&gt;sock-shop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;A microservices demo app (&lt;a href="https://microservices-demo.github.io" rel="nofollow"&gt;https://microservices-demo.github.io&lt;/a&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="plugins/"&gt;plugins&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Apps which demonstrate config management plugins usage&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="blue-green/"&gt;blue-green&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Demonstrates how to implement blue-green deployment using &lt;a href="https://github.com/argoproj/argo-rollouts"&gt;Argo Rollouts&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="apps/"&gt;apps&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;An app composed of other apps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>argoproj</author><guid isPermaLink="false">https://github.com/argoproj/argocd-example-apps</guid><pubDate>Sat, 25 Jan 2020 00:01:00 GMT</pubDate></item><item><title>kubernetes-monitoring/kubernetes-mixin #2 in Jsonnet, This week</title><link>https://github.com/kubernetes-monitoring/kubernetes-mixin</link><description>&lt;p&gt;&lt;i&gt; A set of Grafana dashboards and Prometheus alerts for Kubernetes.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-prometheus-monitoring-mixin-for-kubernetes" class="anchor" aria-hidden="true" href="#prometheus-monitoring-mixin-for-kubernetes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prometheus Monitoring Mixin for Kubernetes&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://circleci.com/gh/kubernetes-monitoring/kubernetes-mixin" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d451e046d04bd62048ed4c44aa9affbb79e7ff97/68747470733a2f2f636972636c6563692e636f6d2f67682f6b756265726e657465732d6d6f6e69746f72696e672f6b756265726e657465732d6d6978696e2f747265652f6d61737465722e7376673f7374796c653d736869656c64" alt="CircleCI" data-canonical-src="https://circleci.com/gh/kubernetes-monitoring/kubernetes-mixin/tree/master.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NOTE: This project is &lt;em&gt;pre-release&lt;/em&gt; stage. Flags, configuration, behaviour and design may change significantly in following releases.&lt;/p&gt;
@@ -205,7 +229,7 @@ $ jsonnet -J vendor -m files/dashboards -e '(import "mixin.libsonnet").grafanaDa
 "&lt;a href="https://kccncna17.sched.com/event/CU8K/the-red-method-how-to-instrument-your-services-b-tom-wilkie-kausal?iframe=no&amp;amp;w=100%&amp;amp;sidebar=yes&amp;amp;bg=no" rel="nofollow"&gt;The RED Method: How to instrument your services&lt;/a&gt;" talk from CloudNativeCon Austin.&lt;/li&gt;
 &lt;li&gt;For more information about monitoring mixins, see this &lt;a href="https://docs.google.com/document/d/1A9xvzwqnFVSOZ5fD3blKODXfsat5fg6ZhnKu9LK3lB4/edit#" rel="nofollow"&gt;design doc&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>kubernetes-monitoring</author><guid isPermaLink="false">https://github.com/kubernetes-monitoring/kubernetes-mixin</guid><pubDate>Fri, 24 Jan 2020 00:02:00 GMT</pubDate></item><item><title>coreos/kube-prometheus #3 in Jsonnet, This week</title><link>https://github.com/coreos/kube-prometheus</link><description>&lt;p&gt;&lt;i&gt;Use Prometheus to monitor Kubernetes and applications running on Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kube-prometheus" class="anchor" aria-hidden="true" href="#kube-prometheus"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kube-prometheus&lt;/h1&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>kubernetes-monitoring</author><guid isPermaLink="false">https://github.com/kubernetes-monitoring/kubernetes-mixin</guid><pubDate>Sat, 25 Jan 2020 00:02:00 GMT</pubDate></item><item><title>coreos/kube-prometheus #3 in Jsonnet, This week</title><link>https://github.com/coreos/kube-prometheus</link><description>&lt;p&gt;&lt;i&gt;Use Prometheus to monitor Kubernetes and applications running on Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kube-prometheus" class="anchor" aria-hidden="true" href="#kube-prometheus"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kube-prometheus&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note that everything is experimental and may change significantly at any time.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -741,73 +765,7 @@ process. This is likely to change in the future).&lt;/li&gt;
 &lt;li&gt;Generate dependent &lt;code&gt;*.yaml&lt;/code&gt; files: &lt;code&gt;make generate-in-docker&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Commit the generated changes.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>coreos</author><guid isPermaLink="false">https://github.com/coreos/kube-prometheus</guid><pubDate>Fri, 24 Jan 2020 00:03:00 GMT</pubDate></item><item><title>argoproj/argocd-example-apps #4 in Jsonnet, This week</title><link>https://github.com/argoproj/argocd-example-apps</link><description>&lt;p&gt;&lt;i&gt;Example Apps to Demonstrate Argo CD&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-argocd-example-apps" class="anchor" aria-hidden="true" href="#argocd-example-apps"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ArgoCD Example Apps&lt;/h1&gt;
-&lt;p&gt;This repository contains example applications for demoing ArgoCD functionality. Feel free
-to register this repository to your ArgoCD instance, or fork this repo and push your own commits
-to explore ArgoCD and GitOps!&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Application&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="guestbook/"&gt;guestbook&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;A hello word guestbook app as plain YAML&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="ksonnet-guestbook/"&gt;ksonnet-guestbook&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The guestbook app as a ksonnet app&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="helm-guestbook/"&gt;helm-guestbook&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The guestbook app as a Helm chart&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="jsonnet-guestbook/"&gt;jsonnet-guestbook&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The guestbook app as a raw jsonnet&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="jsonnet-guestbook-tla/"&gt;jsonnet-guestbook-tla&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The guestbook app as a raw jsonnet with support for top level arguments&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="kustomize-guestbook/"&gt;kustomize-guestbook&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The guestbook app as a Kustomize 2 app&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="pre-post-sync/"&gt;pre-post-sync&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Demonstrates Argo CD PreSync and PostSync hooks&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="sync-waves/"&gt;sync-waves&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Demonstrates Argo CD sync waves with hooks&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="helm-dependency/"&gt;helm-dependency&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Demonstrates how to customize an OTS (off-the-shelf) helm chart from an upstream repo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="sock-shop/"&gt;sock-shop&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;A microservices demo app (&lt;a href="https://microservices-demo.github.io" rel="nofollow"&gt;https://microservices-demo.github.io&lt;/a&gt;)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="plugins/"&gt;plugins&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Apps which demonstrate config management plugins usage&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="blue-green/"&gt;blue-green&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Demonstrates how to implement blue-green deployment using &lt;a href="https://github.com/argoproj/argo-rollouts"&gt;Argo Rollouts&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="apps/"&gt;apps&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;An app composed of other apps&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>argoproj</author><guid isPermaLink="false">https://github.com/argoproj/argocd-example-apps</guid><pubDate>Fri, 24 Jan 2020 00:04:00 GMT</pubDate></item><item><title>google/jsonnet #5 in Jsonnet, This week</title><link>https://github.com/google/jsonnet</link><description>&lt;p&gt;&lt;i&gt;Jsonnet - The data templating language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-jsonnet---the-data-templating-language" class="anchor" aria-hidden="true" href="#jsonnet---the-data-templating-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jsonnet - The data templating language&lt;/h1&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>coreos</author><guid isPermaLink="false">https://github.com/coreos/kube-prometheus</guid><pubDate>Sat, 25 Jan 2020 00:03:00 GMT</pubDate></item><item><title>google/jsonnet #4 in Jsonnet, This week</title><link>https://github.com/google/jsonnet</link><description>&lt;p&gt;&lt;i&gt;Jsonnet - The data templating language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-jsonnet---the-data-templating-language" class="anchor" aria-hidden="true" href="#jsonnet---the-data-templating-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jsonnet - The data templating language&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://travis-ci.org/google/jsonnet" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1038e748b2be0d7b3e29dae2951dd8835fc5d313/68747470733a2f2f7472617669732d63692e6f72672f676f6f676c652f6a736f6e6e65742e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/google/jsonnet.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For an introduction to Jsonnet and documentation,
 &lt;a href="http://jsonnet.org" rel="nofollow"&gt;visit our website&lt;/a&gt;.&lt;/p&gt;
@@ -888,7 +846,49 @@ bazel-bin/cmd/jsonnetfmt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This should the website on localhost:8080, automatically rebuild when you change any underlying
 files, and automatically refresh your browser when that happens.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>google</author><guid isPermaLink="false">https://github.com/google/jsonnet</guid><pubDate>Fri, 24 Jan 2020 00:05:00 GMT</pubDate></item><item><title>kubeflow/examples #6 in Jsonnet, This week</title><link>https://github.com/kubeflow/examples</link><description>&lt;p&gt;&lt;i&gt;A repository to host extended examples and tutorials&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kubeflow-examples" class="anchor" aria-hidden="true" href="#kubeflow-examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kubeflow-examples&lt;/h1&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>google</author><guid isPermaLink="false">https://github.com/google/jsonnet</guid><pubDate>Sat, 25 Jan 2020 00:04:00 GMT</pubDate></item><item><title>kubeflow/kfserving #5 in Jsonnet, This week</title><link>https://github.com/kubeflow/kfserving</link><description>&lt;p&gt;&lt;i&gt;Serverless Inferencing on Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kfserving" class="anchor" aria-hidden="true" href="#kfserving"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KFServing&lt;/h1&gt;
+&lt;p&gt;KFServing provides a Kubernetes &lt;a href="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/" rel="nofollow"&gt;Custom Resource Definition&lt;/a&gt; for serving machine learning (ML) models on arbitrary frameworks. It aims to solve production model serving use cases by providing performant, high abstraction interfaces for common ML frameworks like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX.&lt;/p&gt;
+&lt;p&gt;It encapsulates the complexity of autoscaling, networking, health checking, and server configuration to bring cutting edge serving features like GPU Autoscaling, Scale to Zero, and Canary Rollouts to your ML deployments. It enables a simple, pluggable, and complete story for Production ML Serving including prediction, pre-processing, post-processing and explainability.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="/docs/diagrams/kfserving.png"&gt;&lt;img src="/docs/diagrams/kfserving.png" alt="KFServing" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-learn-more" class="anchor" aria-hidden="true" href="#learn-more"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Learn More&lt;/h3&gt;
+&lt;p&gt;To learn more about KFServing, how to deploy it as part of Kubeflow, how to use various supported features, and how to participate in the KFServing community, please follow the &lt;a href="https://www.kubeflow.org/docs/components/serving/kfserving/" rel="nofollow"&gt;KFServing docs on the Kubeflow Website&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;KNative Serving and Istio should be available on Kubernetes Cluster.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Istio Version: v1.1.7+&lt;/li&gt;
+&lt;li&gt;Knative Version: v0.8.x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may find this &lt;a href="https://github.com/kubeflow/kfserving/blob/master/docs/DEVELOPER_GUIDE.md#install-knative-on-a-kubernetes-cluster"&gt;installation instruction&lt;/a&gt; useful.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-installation-using-kubectl" class="anchor" aria-hidden="true" href="#installation-using-kubectl"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation using kubectl&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;TAG=0.2.2
+kubectl apply -f ./install/$TAG/kfserving.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default, you can create InferenceService instances in any namespace which has no label with &lt;code&gt;control-plane&lt;/code&gt; as key.
+You can also configure KFServing to make InferenceService instances only work in the namespace which has label pair &lt;code&gt;serving.kubeflow.org/inferenceservice: enabled&lt;/code&gt;. To enable this mode, you need to add &lt;code&gt;env&lt;/code&gt; field as stated below to &lt;code&gt;manager&lt;/code&gt; container of statefulset &lt;code&gt;kfserving-controller-manager&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;env:
+- name: ENABLE_WEBHOOK_NAMESPACE_SELECTOR
+  value: enabled
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please refer to our &lt;a href="docs/DEVELOPER_GUIDE.md#troubleshooting"&gt;troubleshooting section&lt;/a&gt; for recommendations and tips.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-use" class="anchor" aria-hidden="true" href="#use"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install the SDK&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install kfserving
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get the KFServing SDK documents from &lt;a href="python/kfserving/README.md"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the &lt;a href="docs/samples/client/kfserving_sdk_sample.ipynb"&gt;example here&lt;/a&gt; to use the KFServing SDK to create, rollout, promote, and delete an InferenceService instance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/docs/DEVELOPER_GUIDE.md"&gt;Developer Guide&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/kfserving</guid><pubDate>Sat, 25 Jan 2020 00:05:00 GMT</pubDate></item><item><title>kubeflow/examples #6 in Jsonnet, This week</title><link>https://github.com/kubeflow/examples</link><description>&lt;p&gt;&lt;i&gt;A repository to host extended examples and tutorials&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kubeflow-examples" class="anchor" aria-hidden="true" href="#kubeflow-examples"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;kubeflow-examples&lt;/h1&gt;
 &lt;p&gt;A repository to share extended Kubeflow examples and tutorials to demonstrate machine learning
 concepts, data science workflows, and Kubeflow deployments. The examples illustrate the happy path,
 acting as a starting point for new users and a reference guide for experienced users.&lt;/p&gt;
@@ -1041,7 +1041,7 @@ on-stage rhythm and limited timing.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.&lt;/p&gt;
 &lt;p&gt;The Kubeflow community is guided by our &lt;a href="https://github.com/kubeflow/community/blob/master/CODE_OF_CONDUCT.md"&gt;Code of Conduct&lt;/a&gt;, which we encourage everybody to read before participating.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/examples</guid><pubDate>Fri, 24 Jan 2020 00:06:00 GMT</pubDate></item><item><title>kubeflow/kubeflow #7 in Jsonnet, This week</title><link>https://github.com/kubeflow/kubeflow</link><description>&lt;p&gt;&lt;i&gt;Machine Learning Toolkit for Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bd4adfc06b0e349c47f2bae3319544a2e547c796/68747470733a2f2f7777772e6b756265666c6f772e6f72672f696d616765732f6c6f676f2e737667"&gt;&lt;img src="https://camo.githubusercontent.com/bd4adfc06b0e349c47f2bae3319544a2e547c796/68747470733a2f2f7777772e6b756265666c6f772e6f72672f696d616765732f6c6f676f2e737667" width="100" data-canonical-src="https://www.kubeflow.org/images/logo.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/examples</guid><pubDate>Sat, 25 Jan 2020 00:06:00 GMT</pubDate></item><item><title>kubeflow/kubeflow #7 in Jsonnet, This week</title><link>https://github.com/kubeflow/kubeflow</link><description>&lt;p&gt;&lt;i&gt;Machine Learning Toolkit for Kubernetes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bd4adfc06b0e349c47f2bae3319544a2e547c796/68747470733a2f2f7777772e6b756265666c6f772e6f72672f696d616765732f6c6f676f2e737667"&gt;&lt;img src="https://camo.githubusercontent.com/bd4adfc06b0e349c47f2bae3319544a2e547c796/68747470733a2f2f7777772e6b756265666c6f772e6f72672f696d616765732f6c6f676f2e737667" width="100" data-canonical-src="https://www.kubeflow.org/images/logo.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
 Kubeflow is a Cloud Native platform for machine learning based on Google’s internal machine learning pipelines.
 &lt;hr&gt;
 &lt;p&gt;Please refer to the official docs at &lt;a href="http://kubeflow.org" rel="nofollow"&gt;kubeflow.org&lt;/a&gt;.&lt;/p&gt;
@@ -1053,4 +1053,4 @@ Kubeflow is a Cloud Native platform for machine learning based on Google’s int
 &lt;/ul&gt;
 &lt;h2&gt;&lt;a id="user-content-get-involved" class="anchor" aria-hidden="true" href="#get-involved"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get Involved&lt;/h2&gt;
 &lt;p&gt;Please refer to the &lt;a href="https://www.kubeflow.org/docs/about/community/" rel="nofollow"&gt;Community&lt;/a&gt; page.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/kubeflow</guid><pubDate>Fri, 24 Jan 2020 00:07:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>kubeflow</author><guid isPermaLink="false">https://github.com/kubeflow/kubeflow</guid><pubDate>Sat, 25 Jan 2020 00:07:00 GMT</pubDate></item></channel></rss>
