@@ -1,2 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: RobotFramework, This month</title><link>https://github.com/trending/robotframework?since=monthly</link><description>The top repositories on GitHub for robotframework, measured monthly</description><pubDate>Mon, 27 Jan 2020 01:07:02 GMT</pubDate><lastBuildDate>Mon, 27 Jan 2020 01:07:02 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in RobotFramework, This month for today</title><pubDate>Mon, 27 Jan 2020 01:07:02 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: RobotFramework, This month</title><link>https://github.com/trending/robotframework?since=monthly</link><description>The top repositories on GitHub for robotframework, measured monthly</description><pubDate>Tue, 28 Jan 2020 01:13:01 GMT</pubDate><lastBuildDate>Tue, 28 Jan 2020 01:13:01 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>robotframework/WebDemo #1 in RobotFramework, This month</title><link>https://github.com/robotframework/WebDemo</link><description>&lt;p&gt;&lt;i&gt;Robot Framework web testing demo using SeleniumLibrary&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="rst" data-path="README.rst"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-web-testing-with-robot-framework-and-seleniumlibrary" class="anchor" aria-hidden="true" href="#web-testing-with-robot-framework-and-seleniumlibrary"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web testing with Robot Framework and SeleniumLibrary&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://robotframework.org" rel="nofollow"&gt;Robot Framework&lt;/a&gt; is a generic open source test automation framework and
+&lt;a href="https://github.com/robotframework/SeleniumLibrary"&gt;SeleniumLibrary&lt;/a&gt; is one of the many test libraries that can be used with
+it. In addition to showing how they can be used together for web testing,
+this demo introduces the basic Robot Framework test data syntax, how tests
+are executed, and how logs and reports look like.&lt;/p&gt;
+&lt;div id="user-content-contents"&gt;
+&lt;p&gt;&lt;strong&gt;Contents:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#downloading-demo-package" id="user-content-id4"&gt;Downloading demo package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#demo-application" id="user-content-id5"&gt;Demo application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#test-cases" id="user-content-id6"&gt;Test cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#generated-results" id="user-content-id7"&gt;Generated results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#running-demo" id="user-content-id8"&gt;Running demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;a name="user-content-downloading-demo-package"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-downloading-demo-package" class="anchor" aria-hidden="true" href="#downloading-demo-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="#id4"&gt;Downloading demo package&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To get the demo, you can either &lt;a href="https://github.com/robotframework/WebDemo/archive/master.zip"&gt;download&lt;/a&gt; the repository from GitHub or checkout
+the &lt;a href="https://github.com/robotframework/WebDemo.git"&gt;source code&lt;/a&gt; directly. As a result you get &lt;code&gt;WebDemo&lt;/code&gt; directory with
+&lt;code&gt;demoapp&lt;/code&gt; and &lt;code&gt;login_tests&lt;/code&gt; sub directories.&lt;/p&gt;
+&lt;p&gt;Example &lt;a href="#test-cases"&gt;test cases&lt;/a&gt; and &lt;a href="#generated-results"&gt;generated results&lt;/a&gt; are available also online.
+There is thus no need to download the demo if you are not interested in
+&lt;a href="#running-demo"&gt;running it&lt;/a&gt; yourself.&lt;/p&gt;
+&lt;a name="user-content-demo-application"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-demo-application" class="anchor" aria-hidden="true" href="#demo-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="#id5"&gt;Demo application&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The demo application is a very simple login page shown below. With
+user name &lt;code&gt;demo&lt;/code&gt; and password &lt;code&gt;mode&lt;/code&gt; you get into a welcome page, and
+otherwise you end up to an error page. How to start and stop the
+application yourself is explained in the &lt;a href="#starting-demo-application"&gt;Starting demo application&lt;/a&gt;
+section.&lt;/p&gt;
+&lt;div&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="demoapp.png"&gt;&lt;img alt="demoapp.png" src="demoapp.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;a name="user-content-test-cases"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-test-cases" class="anchor" aria-hidden="true" href="#test-cases"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="#id6"&gt;Test cases&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Test case files as well as a resource file used by them are located in
+the &lt;code&gt;login_test&lt;/code&gt; directory. Click file names below to see the latest versions
+online.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/valid_login.robot"&gt;valid_login.robot&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;A test suite with a single test for valid login.&lt;/p&gt;
+&lt;p&gt;This test has a workflow that is created using keywords in
+the imported resource file.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/invalid_login.robot"&gt;invalid_login.robot&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;A test suite containing tests related to invalid login.&lt;/p&gt;
+&lt;p&gt;These tests are data-driven by their nature. They use a single
+keyword, specified with the &lt;code&gt;Test Template&lt;/code&gt; setting, that is called
+with different arguments to cover different scenarios.&lt;/p&gt;
+&lt;p&gt;This suite also demonstrates using setups and teardowns in
+different levels.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/gherkin_login.robot"&gt;gherkin_login.robot&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;A test suite with a single Gherkin style test.&lt;/p&gt;
+&lt;p&gt;This test is functionally identical to the example in the
+&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/valid_login.robot"&gt;valid_login.robot&lt;/a&gt; file.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/resource.robot"&gt;resource.robot&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;A resource file with reusable keywords and variables.&lt;/p&gt;
+&lt;p&gt;The system specific keywords created here form our own
+domain specific language. They utilize keywords provided
+by the imported &lt;a href="https://github.com/robotframework/SeleniumLibrary"&gt;SeleniumLibrary&lt;/a&gt;.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;See &lt;a href="http://robotframework.org/robotframework/#user-guide" rel="nofollow"&gt;Robot Framework User Guide&lt;/a&gt; for more details about the test data syntax.&lt;/p&gt;
+&lt;a name="user-content-generated-results"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-generated-results" class="anchor" aria-hidden="true" href="#generated-results"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="#id7"&gt;Generated results&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;After &lt;a href="#running-tests"&gt;running tests&lt;/a&gt; you will get report and log in HTML format. Example
+files are also visible online in case you are not interested in running
+the demo yourself:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://robotframework.org/WebDemo/report.html" rel="nofollow"&gt;report.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robotframework.org/WebDemo/log.html" rel="nofollow"&gt;log.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a name="user-content-running-demo"&gt;&lt;/a&gt;
+&lt;h2&gt;&lt;a id="user-content-running-demo" class="anchor" aria-hidden="true" href="#running-demo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="#id8"&gt;Running demo&lt;/a&gt;&lt;/h2&gt;
+&lt;a name="user-content-preconditions"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-preconditions" class="anchor" aria-hidden="true" href="#preconditions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preconditions&lt;/h3&gt;
+&lt;p&gt;A precondition for running the tests is having &lt;a href="http://robotframework.org" rel="nofollow"&gt;Robot Framework&lt;/a&gt; and
+&lt;a href="https://github.com/robotframework/SeleniumLibrary"&gt;SeleniumLibrary&lt;/a&gt; installed, and they in turn require
+&lt;a href="http://python.org" rel="nofollow"&gt;Python&lt;/a&gt;. Robot Framework &lt;a href="https://github.com/robotframework/robotframework/blob/master/INSTALL.rst"&gt;installation instructions&lt;/a&gt; cover both
+Robot and Python installations, and SeleniumLibrary has its own
+&lt;a href="https://github.com/robotframework/SeleniumLibrary#installation"&gt;installation instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In practice it is easiest to install Robot Framework and
+SeleniumLibrary along with its dependencies using &lt;a href="http://pip-installer.org" rel="nofollow"&gt;pip&lt;/a&gt; package
+manager. Once you have pip installed, all you need to do is running
+these commands:&lt;/p&gt;
+&lt;pre&gt;pip install -r requirements.txt
+&lt;/pre&gt;
+&lt;a name="user-content-starting-demo-application"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-starting-demo-application" class="anchor" aria-hidden="true" href="#starting-demo-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Starting demo application&lt;/h3&gt;
+&lt;p&gt;Running tests requires the &lt;a href="#demo-application"&gt;demo application&lt;/a&gt; located under &lt;code&gt;demoapp&lt;/code&gt;
+directory to be running.  It can be started either by double clicking
+&lt;code&gt;demoapp/server.py&lt;/code&gt; file in a file manager or by executing it from the
+command line:&lt;/p&gt;
+&lt;pre&gt;python demoapp/server.py
+&lt;/pre&gt;
+&lt;p&gt;After the demo application is started, it is be available in URL
+&lt;a href="http://localhost:7272" rel="nofollow"&gt;http://localhost:7272&lt;/a&gt;. You can test it manually, valid credentials are
+&lt;code&gt;demo/mode&lt;/code&gt;, and it needs to be running while executing the automated
+tests.&lt;/p&gt;
+&lt;p&gt;If the application was started by double-clicking &lt;code&gt;demoapp/server.py&lt;/code&gt;
+file, it can be shut down by closing the opened window. If it was
+executed from the command line, using &lt;code&gt;Ctrl-C&lt;/code&gt; is enough.&lt;/p&gt;
+&lt;a name="user-content-running-tests"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="#test-cases"&gt;test cases&lt;/a&gt; are located in the &lt;code&gt;login_tests&lt;/code&gt; directory. They can be
+executed using the &lt;code&gt;robot&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;robot login_tests
+&lt;/pre&gt;
+&lt;div&gt;
+&lt;p&gt;Note&lt;/p&gt;
+&lt;p&gt;If you are using Robot Framework 2.9 or earlier, you need to
+use the &lt;code&gt;pybot&lt;/code&gt; command instead.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can also run an individual test case file and use various command line
+options supported by Robot Framework:&lt;/p&gt;
+&lt;pre&gt;robot login_tests/valid_login.robot
+robot --test InvalidUserName --loglevel DEBUG login_tests
+&lt;/pre&gt;
+&lt;p&gt;Run &lt;code&gt;robot --help&lt;/code&gt; for more information about the command line usage and see
+&lt;a href="http://robotframework.org/robotframework/#user-guide" rel="nofollow"&gt;Robot Framework User Guide&lt;/a&gt; for more details about test execution in general.&lt;/p&gt;
+&lt;a name="user-content-using-different-browsers"&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a id="user-content-using-different-browsers" class="anchor" aria-hidden="true" href="#using-different-browsers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using different browsers&lt;/h3&gt;
+&lt;p&gt;The browser that is used is controlled by &lt;code&gt;${BROWSER}&lt;/code&gt; variable defined in
+&lt;a href="https://github.com/robotframework/WebDemo/blob/master/login_tests/resource.robot"&gt;resource.robot&lt;/a&gt; resource file. Firefox browser is used by default, but that
+can be easily overridden from the command line:&lt;/p&gt;
+&lt;pre&gt;robot --variable BROWSER:Chrome login_tests
+robot --variable BROWSER:IE login_tests
+&lt;/pre&gt;
+&lt;p&gt;Consult &lt;a href="https://github.com/robotframework/SeleniumLibrary"&gt;SeleniumLibrary&lt;/a&gt; documentation about supported browsers.&lt;/p&gt;
+
+&lt;/article&gt;&lt;/div&gt;</description><author>robotframework</author><guid isPermaLink="false">https://github.com/robotframework/WebDemo</guid><pubDate>Tue, 28 Jan 2020 00:01:00 GMT</pubDate></item></channel></rss>

@@ -1,2 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Smali, This month</title><link>https://github.com/trending/smali?since=monthly</link><description>The top repositories on GitHub for smali, measured monthly</description><pubDate>Mon, 27 Jan 2020 01:07:03 GMT</pubDate><lastBuildDate>Mon, 27 Jan 2020 01:07:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Smali, This month for today</title><pubDate>Mon, 27 Jan 2020 01:07:03 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Smali, This month</title><link>https://github.com/trending/smali?since=monthly</link><description>The top repositories on GitHub for smali, measured monthly</description><pubDate>Tue, 28 Jan 2020 01:12:55 GMT</pubDate><lastBuildDate>Tue, 28 Jan 2020 01:12:55 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>phhusson/treble_experimentations #1 in Smali, This month</title><link>https://github.com/phhusson/treble_experimentations</link><description>&lt;p&gt;&lt;i&gt;Notes about tinkering with Android Project Treble&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-community" class="anchor" aria-hidden="true" href="#community"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Community&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;IRC: irc://irc.freenode.net/#phh-treble&lt;/li&gt;
+&lt;li&gt;WebIRC: &lt;a href="http://webchat.freenode.net/?channels=%23phh-treble&amp;amp;uio=d4" rel="nofollow"&gt;http://webchat.freenode.net/?channels=%23phh-treble&amp;amp;uio=d4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Matrix: #freenode_#phh-treble:matrix.org&lt;/li&gt;
+&lt;li&gt;Telegram &lt;a href="https://t.me/phhtreble" rel="nofollow"&gt;https://t.me/phhtreble&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;xda-developers threads: &lt;a href="https://forum.xda-developers.com/search.php?do=finduser&amp;amp;u=1915408&amp;amp;starteronly=1" rel="nofollow"&gt;https://forum.xda-developers.com/search.php?do=finduser&amp;amp;u=1915408&amp;amp;starteronly=1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-how-to-build" class="anchor" aria-hidden="true" href="#how-to-build"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to build&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;clone this repository&lt;/li&gt;
+&lt;li&gt;call the build scripts from a separate directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/phhusson/treble_experimentations
+mkdir Lineage; cd Lineage
+bash ../treble_experimentations/build-rom.sh android-8.1 lineage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-more-flexible-build-script" class="anchor" aria-hidden="true" href="#more-flexible-build-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;More flexible build script&lt;/h2&gt;
+&lt;p&gt;(this has been tested much less)&lt;/p&gt;
+&lt;p&gt;bash ../treble_experimentations/build-dakkar.sh rr &lt;br&gt;
+arm-aonly-gapps-su &lt;br&gt;
+arm64-ab-go-nosu&lt;/p&gt;
+&lt;p&gt;The script should provide a help message if you pass something it
+doesn't understand&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-using-docker" class="anchor" aria-hidden="true" href="#using-docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Docker&lt;/h1&gt;
+&lt;p&gt;clone this repository, then:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker build -t treble docker/
+
+docker container create --name treble treble
+
+docker run -ti \
+    -v $(pwd):/treble \
+    -v $(pwd)/../treble_output:/treble_output \
+    -w /treble_output \
+    treble \
+    /bin/bash /treble/build-dakkar.sh rr \
+    arm-aonly-gapps-su \
+    arm64-ab-go-nosu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;&lt;a id="user-content-conventions-for-commit-messages" class="anchor" aria-hidden="true" href="#conventions-for-commit-messages"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conventions for commit messages:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[UGLY]&lt;/code&gt; Please make this patch disappear as soon as possible&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[master]&lt;/code&gt; tag means that the commit should be dropped in a future
+rebase&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[device]&lt;/code&gt; tag means this change is device-specific workaround&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;::device name::&lt;/code&gt; will try to describe which devices are concerned
+by this change&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[userfriendly]&lt;/code&gt; This commit is NOT used for hardware support, but
+to make the rom more user friendly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>phhusson</author><guid isPermaLink="false">https://github.com/phhusson/treble_experimentations</guid><pubDate>Tue, 28 Jan 2020 00:01:00 GMT</pubDate></item><item><title>AhMyth/AhMyth-Android-RAT #2 in Smali, This month</title><link>https://github.com/AhMyth/AhMyth-Android-RAT</link><description>&lt;p&gt;&lt;i&gt;Android Remote Administration Tool&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ahmyth-android-rat" class="anchor" aria-hidden="true" href="#ahmyth-android-rat"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AhMyth Android Rat&lt;/h1&gt;
+&lt;h6&gt;&lt;a id="user-content-beta-version" class="anchor" aria-hidden="true" href="#beta-version"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Beta Version&lt;/h6&gt;
+&lt;p&gt;It consists of two parts :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server side : desktop application based on electron framework (control panel)&lt;/li&gt;
+&lt;li&gt;Client side : android application (backdoor)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-getting-started" class="anchor" aria-hidden="true" href="#getting-started"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-you-have-two-options-to-install-it" class="anchor" aria-hidden="true" href="#you-have-two-options-to-install-it"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;You have two options to install it&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-1-from-source-code" class="anchor" aria-hidden="true" href="#1-from-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1) From source code&lt;/h4&gt;
+&lt;h6&gt;&lt;a id="user-content-prerequisite-" class="anchor" aria-hidden="true" href="#prerequisite-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite :&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Electron (to start the app)&lt;/li&gt;
+&lt;li&gt;Java (to generate apk backdoor)&lt;/li&gt;
+&lt;li&gt;Electron-builder and electron-packer (to build binaries for (OSX,WINDOWS,LINUX))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git clone https://github.com/AhMyth/AhMyth-Android-RAT.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd AhMyth-Android-RAT/AhMyth-Server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a id="user-content-2-from-binaries" class="anchor" aria-hidden="true" href="#2-from-binaries"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2) From binaries&lt;/h4&gt;
+&lt;h6&gt;&lt;a id="user-content-prerequisite--1" class="anchor" aria-hidden="true" href="#prerequisite--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite :&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Download a binary from &lt;a href="https://github.com/AhMyth/AhMyth-Android-RAT/releases"&gt;https://github.com/AhMyth/AhMyth-Android-RAT/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Java (to generate apk backdoor)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-screenshots" class="anchor" aria-hidden="true" href="#screenshots"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Screenshots&lt;/h2&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7fea8685062d44c9846d6ef5bcab1aeeb74659ed/687474703a2f2f692e696d6775722e636f6d2f484d3375584c362e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/7fea8685062d44c9846d6ef5bcab1aeeb74659ed/687474703a2f2f692e696d6775722e636f6d2f484d3375584c362e706e67" width="600" data-canonical-src="http://i.imgur.com/HM3uXL6.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/683e0d8007fefe9accb78c26d67b0e4622063241/687474703a2f2f692e696d6775722e636f6d2f6e4854474748692e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/683e0d8007fefe9accb78c26d67b0e4622063241/687474703a2f2f692e696d6775722e636f6d2f6e4854474748692e706e67" width="600" data-canonical-src="http://i.imgur.com/nHTGGHi.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;
+  &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/88559d97a325953755bb0e45a0f1fd9f54334570/687474703a2f2f692e696d6775722e636f6d2f585658434856392e706e67"&gt;&lt;img src="https://camo.githubusercontent.com/88559d97a325953755bb0e45a0f1fd9f54334570/687474703a2f2f692e696d6775722e636f6d2f585658434856392e706e67" width="600" data-canonical-src="http://i.imgur.com/XVXCHV9.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-video-tutorial" class="anchor" aria-hidden="true" href="#video-tutorial"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Video Tutorial&lt;/h2&gt;
+&lt;p align="center"&gt;
+&lt;a href="https://www.youtube.com/watch?v=DDIZTABABzs" rel="nofollow"&gt;
+  &lt;img src="https://camo.githubusercontent.com/dc7f0cc511fc7bc3049823bfabf15f0a00058f4e/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4444495a54414241427a732f302e6a7067" width="600" data-canonical-src="https://img.youtube.com/vi/DDIZTABABzs/0.jpg" style="max-width:100%;"&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;&lt;a id="user-content-i-will-not-be-responsible-for-any-direct-or-indirect-damage-caused-due-to-the-usage-of-this-tool-it-is-for-educational-purposes-only" class="anchor" aria-hidden="true" href="#i-will-not-be-responsible-for-any-direct-or-indirect-damage-caused-due-to-the-usage-of-this-tool-it-is-for-educational-purposes-only"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;I will not be responsible for any direct or indirect damage caused due to the usage of this tool, it is for educational purposes only.&lt;/h5&gt;
+&lt;h6&gt;&lt;a id="user-content-twitter---ahmythdev-" class="anchor" aria-hidden="true" href="#twitter---ahmythdev-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Twitter : &lt;a href="https://twitter.com/AhMythDev" rel="nofollow"&gt; @AhMythDev &lt;/a&gt;&lt;/h6&gt;
+&lt;h6&gt;&lt;a id="user-content-bitcoin-address-for-donations---1evwluwmbseuej7qjnnqufeqjlsgd2b8lq" class="anchor" aria-hidden="true" href="#bitcoin-address-for-donations---1evwluwmbseuej7qjnnqufeqjlsgd2b8lq"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bitcoin address for donations:  : 1EVwLuwmbsEuej7qJnNquFeQJLsgd2b8Lq&lt;/h6&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>AhMyth</author><guid isPermaLink="false">https://github.com/AhMyth/AhMyth-Android-RAT</guid><pubDate>Tue, 28 Jan 2020 00:02:00 GMT</pubDate></item><item><title>jcwarrior/Libre2-patched-App #3 in Smali, This month</title><link>https://github.com/jcwarrior/Libre2-patched-App</link><description>&lt;p&gt;&lt;i&gt;Patch instructions for Libre 2 App&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-how-to-patch-the-librelink-app-to-provide-xdrip-with-value-received-by-bluetooth-directly-from-sensor" class="anchor" aria-hidden="true" href="#how-to-patch-the-librelink-app-to-provide-xdrip-with-value-received-by-bluetooth-directly-from-sensor"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to patch the Librelink app to provide xDrip with Value received by bluetooth directly from sensor&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;IF YOU WANT TO USE THIS, YOU NEED TO ACTIVATE A NEW SENSOR AFTER THE INSTALLATION PROCEDURE IS COMPLETED, IT DOES NOT WORK WITH ALLREADY ACTIVATED SENSORS!!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Already activated sensors will also stop sending alarms to the handset device if they had been activated with the unpatched phone app.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-get-the-apk-and-tools" class="anchor" aria-hidden="true" href="#get-the-apk-and-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get the APK and Tools&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Load the Version 2.3.0 of the freestyle Libre App DE, for example from &lt;a href="https://apkpure.com/de/freestyle-librelink-de/com.freestylelibre.app.de" rel="nofollow"&gt;here&lt;/a&gt; or &lt;a href="https://www.apkmonk.com/download-app/com.freestylelibre.app.de/5_com.freestylelibre.app.de_2019-04-22.apk/" rel="nofollow"&gt;here&lt;/a&gt;
+(The German version does have english language, don't worry.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[OPTIONAL] If you want to check if your Version is correct, check the MD5 (for windows you might need to get an App like:
+&lt;a href="http://www.winmd5.com" rel="nofollow"&gt;http://www.winmd5.com&lt;/a&gt; to perform md5 checksumming). The Checksum should be: &lt;code&gt;420735605bacf0e18d2570079ebaa238&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Load the &lt;a href="https://ibotpeaches.github.io/Apktool/" rel="nofollow"&gt;apkTool&lt;/a&gt; and install it as described &lt;a href="https://ibotpeaches.github.io/Apktool/install/" rel="nofollow"&gt;here&lt;/a&gt;. It seems that the current 2.4 Version of Apktool has some problems on Windows, please download and install an older 2.3 Version if you are using Windows!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a CMD-Prompt (windows) or Shell (*nix) where you downloaded the apk (e.g. your download folder)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the apktool: &lt;code&gt;apktool d -o librelink [FILENAME_OF_THE_DOWNLOADED_APK]&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You should now have a folder named &lt;code&gt;librelink&lt;/code&gt; with all the extracted files of the application&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the patch Files from this repository to the same location as the &lt;code&gt;librelink&lt;/code&gt; folder (you should now have a directory with at least the following files/folders: &lt;code&gt;librelink&lt;/code&gt;, &lt;code&gt;xdrip2.git.patch&lt;/code&gt;, &lt;code&gt;sources&lt;/code&gt; and &lt;code&gt;xdrip2.patch&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-patch-application" class="anchor" aria-hidden="true" href="#patch-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Patch Application&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Use either of the two methods:&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-option-1-patch-method" class="anchor" aria-hidden="true" href="#option-1-patch-method"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OPTION 1: patch method&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;For Windows, get the patch tool from &lt;a href="http://gnuwin32.sourceforge.net/packages/patch.htm" rel="nofollow"&gt;here&lt;/a&gt; and install it correctly. Mac, Linux and *nix should have patch onboard, if not install from your trusted repository.&lt;/li&gt;
+&lt;li&gt;Change in the prompt/shell into the &lt;code&gt;librelink&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Use the Patch tool with the patch: &lt;code&gt;patch -p1 --binary --merge &amp;lt; ../xdrip2.patch&lt;/code&gt;. for Windows &lt;code&gt;patch -p1 --binary --merge &amp;lt; ..\xdrip2.patch&lt;/code&gt;. Be sure to use CMD-Prompt and not PowerShell,a s PowerShell does not support &amp;lt; operation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a id="user-content-option-2-git-apply-method" class="anchor" aria-hidden="true" href="#option-2-git-apply-method"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OPTION 2: git apply method&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Get your git client ready. For windows install something like &lt;a href="https://gitforwindows.org" rel="nofollow"&gt;this&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Change in the prompt/shell into the &lt;code&gt;librelink&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Use igt to apply the patch: &lt;code&gt;git apply ../xdrip2.git.patch&lt;/code&gt;, for Windows &lt;code&gt;git apply ..\xdrip2.git.patch&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-add-files" class="anchor" aria-hidden="true" href="#add-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Add Files&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In your Filebrowser navigate within the librelink folder to the path &lt;code&gt;smali_classes2/com/librelink/app/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy the following Files from the &lt;code&gt;sources&lt;/code&gt; folder of this repository to this folder:
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;ThirdPartyIntegration.smali&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ForegroundService.smali&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CrashReportUtil.smali&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;APKExtractor.smali&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Rename the Downloaded APK to &lt;code&gt;original.apk&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy the &lt;code&gt;original.apk&lt;/code&gt; into the Folder &lt;code&gt;assets&lt;/code&gt; in the &lt;code&gt;librelink&lt;/code&gt; folder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-rebuild-the-apk" class="anchor" aria-hidden="true" href="#rebuild-the-apk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rebuild the APK&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the Prompt/Shell move into the folder, which contains the &lt;code&gt;librelink&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Use apktool to rebuild the APK: &lt;code&gt;apktool b -o librelink.apk librelink&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Generate a Signing keystore: &lt;code&gt;keytool -genkey -v -keystore librelink.keystore -alias librelink -keyalg RSA -keysize 2048 -validity 10000&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;Fill in the necessary informations. You must enter two passwords, one for the keystore, one for the key, you should note them down! I prefer to use rather simple passwords like both times &lt;code&gt;librelink&lt;/code&gt; as this keystore is only for the resigned app&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If this fails, please install current java developer tools like &lt;a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" rel="nofollow"&gt;this&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;If you need to update the App later, omit this step, as the keystore is now available.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Sign the APK: &lt;code&gt;jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore librelink.keystore librelink.apk librelink&lt;/code&gt;. If the jarsigner is not found in Windows, please check that your java variables are setup correctly, like described &lt;a href="https://stackoverflow.com/questions/1672281/environment-variables-for-java-installation" rel="nofollow"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-install-the-new-apk" class="anchor" aria-hidden="true" href="#install-the-new-apk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install the new APK&lt;/h2&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;Uninstall the current librelink app on the phone.&lt;/li&gt;
+&lt;li&gt;Copy the generated &lt;code&gt;librelink.apk&lt;/code&gt; to your phone (USB, google drive, ... gmail will not work) and install it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-finished" class="anchor" aria-hidden="true" href="#finished"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finished&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Open the app, go to "Alarms" and give all necessary permissions that the app requests, or else the first sensor you will start with the app will not transmit any data via Bluetooth!!!&lt;/strong&gt; As an alternative, you can navigate to the app in your android-settings -&amp;gt; security and enbale there all permission (Location and Files)&lt;/p&gt;
+&lt;p&gt;If all Steps where succesfully executed, you will have now a patched librelink app, capable of sending its data to &lt;a href="https://github.com/jamorham/xDrip-plus"&gt;xDrip&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wait for more informations about which Version/Patches you need for xDrip to get the Data to Display!&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jcwarrior</author><guid isPermaLink="false">https://github.com/jcwarrior/Libre2-patched-App</guid><pubDate>Tue, 28 Jan 2020 00:03:00 GMT</pubDate></item></channel></rss>

