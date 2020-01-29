@@ -1,2 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Verilog, This month</title><link>https://github.com/trending/verilog?since=monthly</link><description>The top repositories on GitHub for verilog, measured monthly</description><pubDate>Tue, 28 Jan 2020 01:12:56 GMT</pubDate><lastBuildDate>Tue, 28 Jan 2020 01:12:56 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Verilog, This month for today</title><pubDate>Tue, 28 Jan 2020 01:12:56 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Verilog, This month</title><link>https://github.com/trending/verilog?since=monthly</link><description>The top repositories on GitHub for verilog, measured monthly</description><pubDate>Wed, 29 Jan 2020 01:06:31 GMT</pubDate><lastBuildDate>Wed, 29 Jan 2020 01:06:31 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>steveicarus/ivtest #1 in Verilog, This month</title><link>https://github.com/steveicarus/ivtest</link><description>&lt;p&gt;&lt;i&gt;Regression test suite for Icarus Verilog.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="" data-path="README"&gt;&lt;div class="plain"&gt;&lt;pre style="white-space: pre-wrap"&gt;####################
+#
+# Main test script
+#
+####################
+
+There are a group of tests that are meant to exercise the compiler
+and the run time. To run them just type:
+
+./regress
+
+or
+
+perl vvp_reg.pl
+
+or if perl is located in /usr/bin
+
+./vvp_reg.pl
+
+The output from these tests are displayed on the screen
+and are also placed in the regression_report.txt file.
+The expected output for the current development release
+is located in the regression_report-devel.txt file. The
+expected output for stable (released) versions can be
+found in files named regression_report-v&amp;lt;version&amp;gt;.txt.
+
+The results from individual tests can be found in the
+log directory and gold files, when needed, are in the
+gold directory. The source files can be found in the
+ivltests and contrib directories. The list of tests
+and how they are run is in the regress.list file.
+
+To check a specific suffixed version of Icarus Verilog
+use the --suffix=&amp;lt;suffix&amp;gt; flag to tell the script which
+version to run e.g.(--suffix=-0.9 will test iverilog-0.9,
+etc.). You can also run the test with valgrind (very very
+slow) by giving the script the --with-valgrind flag.
+
+
+####################
+#
+# VPI test script
+#
+####################
+
+To test the VPI interface type:
+
+perl vpi_reg.pl
+
+or if perl is located in /usr/bin
+
+./vpi_reg.pl
+
+All these tests should pass for V0.10.devel and V0.9.?.
+V0.8.? is expected to fail for realtime (64 bit time
+issue) and memmon (no full array call backs).
+
+The individual test results are found in the vpi_log
+directory and the gold files are in the vpi_gold
+directory. The source files are in the vpi directory.
+The vpi_regress.list file has the tests to perform.
+
+This script also takes the --suffix=&amp;lt;suffix&amp;gt; and the
+--with-valgrind flags described above.
+
+
+####################
+#
+# VHDL test script
+#
+####################
+
+This test script require that ghdl be installed in your
+path and is used to test the Verilog to VHDL translation.
+
+perl vhdl_reg.pl
+
+or if perl is located in /usr/bin
+
+./vhdl_reg.pl
+
+The expected output for V0.10.devel and V0.9 is located
+in the vhdl_regression_report-devel.txt file. V0.8 does
+not support converting Verilog to VHDL.
+
+This script also takes the --suffix=&amp;lt;suffix&amp;gt; and the
+--with-valgrind flags described above.
+
+
+####################
+#
+# BLIF test script
+#
+####################
+
+This test script require that abc be installed in your
+path and is used to test the Verilog to VHDL translation.
+
+python blif_reg.py
+
+There is no expected output as of yet so to check for
+regressions simply run with and without your patches.
+
+
+####################
+#
+# Windows (MinGW) test issues
+#
+####################
+
+Running under Windows (using a MinGW build) the following tests are
+expected to fail:
+
+pr1699519       - MinGW has three digit exponents.
+pr1873372       - MinGW has three digit exponents
+pr2509349a      - MinGW cannot find /tmp
+pr2590274a      - MinGW has three digit exponents
+pr2590274b      - MinGW has three digit exponents
+pr2590274c      - MinGW has three digit exponents
+sformatf        - MinGW has three digit exponents
+swrite          - MinGW has three digit exponents
+test_va_math    - MinGW has three digit exponents
+test_vams_math  - MinGW has three digit exponents
+
+pr723  - MinGW has some fd problems that need to be investigated.
+
+v0.9 hasn't been updated to use the MinGW ANSI stdio functions, so
+has the following additional failures:
+
+ca_time         - %#g of 0.0 gives six decimal digits
+delayed_sfunc   - %#g of 0.0 gives six decimal digits
+pr1703120       - integer infinity and infinity display
+pr1752823a      - missing -0
+pr1752823b      - infinity display, missing -0
+pr1864115       - %#g of 0.0 gives six decimal digits
+test_va_math    - infinity and NaN display, missing -0
+test_vams_math  - infinity and NaN display, missing -0
+
+All of these issues produce something that humans should recognize
+as correct results (-0 == 0, extra digits, out of order text, etc.).
+
+It is reported that the -0 problem is fixed in Windows 7 so pr1752823a
+will pass and pr1752823b, test_va_math and test_vams_math only have the
+other listed issues.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><author>steveicarus</author><guid isPermaLink="false">https://github.com/steveicarus/ivtest</guid><pubDate>Wed, 29 Jan 2020 00:01:00 GMT</pubDate></item><item><title>crboth/LDPC_Decoder #2 in Verilog, This month</title><link>https://github.com/crboth/LDPC_Decoder</link><description>&lt;p&gt;&lt;i&gt;Low Density Parity Check Decoder&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-ldpc_decoder" class="anchor" aria-hidden="true" href="#ldpc_decoder"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LDPC_Decoder&lt;/h1&gt;
+&lt;p&gt;Low Density Parity Check Decoder&lt;/p&gt;
+&lt;p&gt;This is the LDPC decoder I developed for my ECEN 654 final project. It currently impliments a rate .5 code but is nearly fully parameterised so it could generate decoders for arbitrary H matrices with only minor changes.&lt;/p&gt;
+&lt;p&gt;It consists of a MATLAB simulation used to verify the algorithm and generate test data for the Verilog implimentation.&lt;/p&gt;
+&lt;p&gt;The top level Verilog module is generated by script_LDPC_v, which calls verigen which uses print statements to generate LDPC.v&lt;/p&gt;
+&lt;p&gt;The Verilog generating files have not been refactored so they're rather cumbersome, however the rest of the MATLAB simulation files are heavily optimised to allow for rapid evaluation of changes even for high SNR values.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>crboth</author><guid isPermaLink="false">https://github.com/crboth/LDPC_Decoder</guid><pubDate>Wed, 29 Jan 2020 00:02:00 GMT</pubDate></item></channel></rss>

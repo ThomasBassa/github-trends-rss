@@ -1,2 +1,917 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Dockerfile, Today</title><link>https://github.com/trending/dockerfile?since=daily</link><description>The top repositories on GitHub for dockerfile, measured daily</description><pubDate>Tue, 28 Jan 2020 01:12:57 GMT</pubDate><lastBuildDate>Tue, 28 Jan 2020 01:12:57 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Dockerfile, Today for today</title><pubDate>Tue, 28 Jan 2020 01:12:57 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Dockerfile, Today</title><link>https://github.com/trending/dockerfile?since=daily</link><description>The top repositories on GitHub for dockerfile, measured daily</description><pubDate>Wed, 29 Jan 2020 01:06:24 GMT</pubDate><lastBuildDate>Wed, 29 Jan 2020 01:06:24 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>masmovil/base-images #1 in Dockerfile, Today</title><link>https://github.com/masmovil/base-images</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>masmovil</author><guid isPermaLink="false">https://github.com/masmovil/base-images</guid><pubDate>Wed, 29 Jan 2020 00:01:00 GMT</pubDate></item><item><title>microsoft/mssql-docker #2 in Dockerfile, Today</title><link>https://github.com/microsoft/mssql-docker</link><description>&lt;p&gt;&lt;i&gt;Official Microsoft repository for SQL Server in Docker resources&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-sql-server-in-docker" class="anchor" aria-hidden="true" href="#sql-server-in-docker"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SQL Server in Docker&lt;/h1&gt;
+&lt;p&gt;This GitHub repository aims to provide a centralized location for community engagement. In here you will find documentation, Dockerfiles and additional developer resources.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SQL Server in Docker&lt;/strong&gt; comes in two different flavors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Microsoft/mssql-docker/tree/master/linux"&gt;Linux-based containers&lt;/a&gt;: This Docker image uses &lt;a href="https://docs.microsoft.com/en-us/sql/linux/" rel="nofollow"&gt;SQL Server 2017 Developer Edition on Linux&lt;/a&gt; on top of an Ubuntu 16.04 base image. This is meant to be run on &lt;a href="https://www.docker.com/products/overview" rel="nofollow"&gt;Docker Engine&lt;/a&gt; on its multiple platforms.  There are also Dockerfiles here for building &lt;a href="linux/preview/RHEL/Dockerfile"&gt;RHEL&lt;/a&gt; &amp;amp; &lt;a href="linux/preview/CentOS/Dockerfile"&gt;CentOS&lt;/a&gt; based images.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Microsoft/mssql-docker/tree/master/windows"&gt;Windows-based containers&lt;/a&gt;: These Docker images use SQL Server 2017 Express Edition and SQL Server 2017 Developer Edition. Both images are based on Windows Container technology and can only be run using &lt;a href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/docker/configure_docker_daemon" rel="nofollow"&gt;Docker Engine for Windows Containers&lt;/a&gt;. You can currently sign-up for SQL Server 2019 on Windows Containers available in our &lt;a href="https://cloudblogs.microsoft.com/sqlserver/2019/07/01/sql-server-2019-on-windows-containers-now-in-early-adopters-program/" rel="nofollow"&gt;Early Adopter Preview&lt;/a&gt; program.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before choosing to run a SQL Server container for production use cases, please review our &lt;a href="https://support.microsoft.com/en-us/help/4047326/support-policy-for-microsoft-sql-server" rel="nofollow"&gt;support policy&lt;/a&gt; for SQL Server Containers to ensure that you are running on a supported configuration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SQL Server Command Line Tools(sqlcmd,bcp)&lt;/strong&gt; are also available as a Docker Image. You can now deliver SQL Server management payload using this as a base image for your CI/CD scenarios. Check out the &lt;a href="https://hub.docker.com/r/microsoft/mssql-tools/" rel="nofollow"&gt;mssql-tools Docker Image&lt;/a&gt; to get started.&lt;/p&gt;
+&lt;p&gt;Visit the &lt;a href="https://hub.docker.com/u/microsoft" rel="nofollow"&gt;Microsoft Docker Hub page&lt;/a&gt; for more information and additional images.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker" rel="nofollow"&gt;Getting started guide for the SQL Server on Linux container&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-docker" rel="nofollow"&gt;Best practices guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-take-our-survey" class="anchor" aria-hidden="true" href="#take-our-survey"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Take our survey&lt;/h2&gt;
+&lt;p&gt;Let us know more about how you would like to use SQL containers by taking our &lt;a href="https://www.surveymonkey.com/r/XXSY536" rel="nofollow"&gt;survey&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-issues" class="anchor" aria-hidden="true" href="#issues"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Issues&lt;/h2&gt;
+&lt;p&gt;For any issues with the repo, please file under this GitHub project on the &lt;a href="https://github.com/Microsoft/mssql-docker/issues"&gt;Issues section&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you require support with a production related issue, then please raise a support incident with Microsoft &lt;a href="https://support.microsoft.com/en-us/hub/4343728/support-for-business" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There is also a &lt;a href="https://gitter.im/Microsoft/mssql-devops?utm_source=share-link&amp;amp;utm_medium=link&amp;amp;utm_campaign=share-link" rel="nofollow"&gt;Gitter channel for SQL Server in DevOps&lt;/a&gt; that you can join and discuss interesting topics with other container, SQL Server, and DevOps enthusiasts.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-troubleshooting--frequently-asked-questions" class="anchor" aria-hidden="true" href="#troubleshooting--frequently-asked-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Troubleshooting &amp;amp; Frequently Asked Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;"Unknown blob" error code: You are probably trying to run the Windows Containers-based Docker image on a Linux-based Docker Engine. If you want to continue running the Windows Container-based image, we recommend reading the following community article: &lt;a href="https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/" rel="nofollow"&gt;Run Linux and Windows Containers on Windows 10&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When using the Windows Docker CLI you must use double quotes instead of single ticks for the environment variables, else the mssql-server-linux image won't find the &lt;code&gt;ACCEPT_EULA&lt;/code&gt; or &lt;code&gt;SA_PASSWORD&lt;/code&gt; variables which are required to start the container.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The 'sa' password has a minimum complexity requirement (8 characters, uppercase, lowercase, alphanumerical and/or non-alphanumerical)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Licensing for SQL Server in Docker: Regardless of where you run it - VM, Docker, physical, cloud, on prem - the licensing model is the same and it depends on which edition of SQL Server you are using. The Express and Developer Editions are free. Standard and Enterprise have a cost. More information here: &lt;a href="https://www.microsoft.com/en-us/sql-server/sql-server-2016-editions" rel="nofollow"&gt;https://www.microsoft.com/en-us/sql-server/sql-server-2016-editions&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;The Docker resource files for SQL Server are licensed under the MIT license.  See the &lt;a href="LICENSE"&gt;LICENSE file&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><guid isPermaLink="false">https://github.com/microsoft/mssql-docker</guid><pubDate>Wed, 29 Jan 2020 00:02:00 GMT</pubDate></item><item><title>GoogleCloudBuild/gcbapp-dockerfile-example #3 in Dockerfile, Today</title><link>https://github.com/GoogleCloudBuild/gcbapp-dockerfile-example</link><description>&lt;p&gt;&lt;i&gt;Example used in the Cloud Build GitHub app tutorial&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-gcbapp-dockerfile-example" class="anchor" aria-hidden="true" href="#gcbapp-dockerfile-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gcbapp-dockerfile-example&lt;/h1&gt;
+&lt;p&gt;Example used in the Cloud Build GitHub app tutorial
+&lt;a href="https://cloud.google.com/cloud-build/docs/run-builds-on-github" rel="nofollow"&gt;https://cloud.google.com/cloud-build/docs/run-builds-on-github&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>GoogleCloudBuild</author><guid isPermaLink="false">https://github.com/GoogleCloudBuild/gcbapp-dockerfile-example</guid><pubDate>Wed, 29 Jan 2020 00:03:00 GMT</pubDate></item><item><title>Tecnativa/docker-socket-proxy #4 in Dockerfile, Today</title><link>https://github.com/Tecnativa/docker-socket-proxy</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>Tecnativa</author><guid isPermaLink="false">https://github.com/Tecnativa/docker-socket-proxy</guid><pubDate>Wed, 29 Jan 2020 00:04:00 GMT</pubDate></item><item><title>mathworks-ref-arch/matlab-dockerfile #5 in Dockerfile, Today</title><link>https://github.com/mathworks-ref-arch/matlab-dockerfile</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>mathworks-ref-arch</author><guid isPermaLink="false">https://github.com/mathworks-ref-arch/matlab-dockerfile</guid><pubDate>Wed, 29 Jan 2020 00:05:00 GMT</pubDate></item><item><title>laradock/laradock #6 in Dockerfile, Today</title><link>https://github.com/laradock/laradock</link><description>&lt;p&gt;&lt;i&gt;The (most popular) full PHP development environment for Docker.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="/.github/home-page-images/laradock-logo.jpg?raw=true"&gt;&lt;img src="/.github/home-page-images/laradock-logo.jpg?raw=true" alt="Laradock Logo" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p align="center"&gt;&lt;b&gt;Full PHP development environment based on Docker.&lt;/b&gt;&lt;/p&gt;
+&lt;p align="center"&gt;Supporting a variety of common services, all pre-configured to provide a full PHP development environment.&lt;/p&gt;
+&lt;p align="center"&gt;
+   &lt;a href="http://laradock.io/contributing" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/926d8ca67df15de5bd1abac234c0603d94f66c00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e747269627574696f6e732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c6174" alt="contributions welcome" data-canonical-src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;
+   &lt;a href="https://github.com/laradock/laradock/network"&gt;&lt;img src="https://camo.githubusercontent.com/5ac23454baef3a11247e2dc9d9df5041a600cc30/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f6c617261646f636b2f6c617261646f636b2e737667" alt="GitHub forks" data-canonical-src="https://img.shields.io/github/forks/laradock/laradock.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+   &lt;a href="https://github.com/laradock/laradock/issues"&gt;&lt;img src="https://camo.githubusercontent.com/1d7098c21bb00616413cce541bae649ff3d3387b/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6c617261646f636b2f6c617261646f636b2e737667" alt="GitHub issues" data-canonical-src="https://img.shields.io/github/issues/laradock/laradock.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+   &lt;a href="https://github.com/laradock/laradock/stargazers"&gt;&lt;/a&gt;&lt;a href="#backers" alt="sponsors on Open Collective"&gt;&lt;img src="https://camo.githubusercontent.com/21b7957db7d2e44847e630d6cf6eb90ef4b2e2d8/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f6261636b6572732f62616467652e737667" data-canonical-src="https://opencollective.com/laradock/backers/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="#sponsors" alt="Sponsors on Open Collective"&gt;&lt;img src="https://camo.githubusercontent.com/95c53b274a5c1e2bcc0d7ce922aaf437ecf04ad6/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f72732f62616467652e737667" data-canonical-src="https://opencollective.com/laradock/sponsors/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4a436be3ad133f92ea92debdc7d5635969d261d1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6c617261646f636b2f6c617261646f636b2e737667"&gt;&lt;img src="https://camo.githubusercontent.com/4a436be3ad133f92ea92debdc7d5635969d261d1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6c617261646f636b2f6c617261646f636b2e737667" alt="GitHub stars" data-canonical-src="https://img.shields.io/github/stars/laradock/laradock.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+   &lt;a href="https://travis-ci.org/laradock/laradock" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ae922a3e5b9f7dde170951826a39f674648cef22/68747470733a2f2f7472617669732d63692e6f72672f6c617261646f636b2f6c617261646f636b2e7376673f6272616e63683d6d6173746572" alt="Build status" data-canonical-src="https://travis-ci.org/laradock/laradock.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+   &lt;a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667" alt="GitHub license" data-canonical-src="https://img.shields.io/badge/license-MIT-blue.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+    &lt;a href="http://zalt.me" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3d5a4261110d54ffe7cd9516812b36ae39a3a5ea/687474703a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d62792d646576656c6f706572732e737667" alt="forthebadge" width="240" data-canonical-src="http://forthebadge.com/images/badges/built-by-developers.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h4 align="center"&gt;&lt;a id="user-content-use-docker-first---then-learn-about-it-later" class="anchor" aria-hidden="true" href="#use-docker-first---then-learn-about-it-later"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use Docker First - Then Learn About It Later&lt;/h4&gt;
+&lt;p align="center"&gt;
+	&lt;a href="http://laradock.io" rel="nofollow"&gt;
+	   &lt;img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/documentation-button.png" width="300px" alt="Laradock Documentation" style="max-width:100%;"&gt;
+	&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;&lt;a id="user-content-awesome-people" class="anchor" aria-hidden="true" href="#awesome-people"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Awesome People&lt;/h2&gt;
+&lt;p&gt;Laradock exists thanks to all the people who contribute.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-project-maintainers" class="anchor" aria-hidden="true" href="#project-maintainers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Maintainers&lt;/h3&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/mahmoudz.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/mahmoudz.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Mahmoud Zalt&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/Mahmoudz"&gt;@mahmoudz&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/appleboy.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/appleboy.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Bo-Yi Wu&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/appleboy"&gt;@appleboy&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/philtrep.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/philtrep.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Philippe Trépanier&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/philtrep"&gt;@philtrep&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/mikeerickson.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/mikeerickson.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Mike Erickson&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/mikeerickson"&gt;@mikeerickson&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/zeroc0d3.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/zeroc0d3.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Dwi Fahni Denni&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/zeroc0d3"&gt;@zeroc0d3&lt;/a&gt;
+        &lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/thorerik.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/thorerik.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Thor Erik&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/thorerik"&gt;@thorerik&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/winfried-van-loon.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/winfried-van-loon.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Winfried van Loon&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/winfried-van-loon"&gt;@winfried-van-loon&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/sixlive.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/sixlive.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;TJ Miller&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/sixlive"&gt;@sixlive&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/bestlong.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/bestlong.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Yu-Lung Shao (Allen)&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/bestlong"&gt;@bestlong&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/urukalo.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/urukalo.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Milan Urukalo&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/urukalo"&gt;@urukalo&lt;/a&gt;
+        &lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/vwchu.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/vwchu.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Vince Chu&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/vwchu"&gt;@vwchu&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/zuohuadong.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/zuohuadong.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Huadong Zuo&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/zuohuadong"&gt;@zuohuadong&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/lanphan.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/lanphan.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Lan Phan&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/lanphan"&gt;@lanphan&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/ahkui.png?s=150"&gt;&lt;img width="125" height="125" src="https://github.com/ahkui.png?s=150" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;Ahkui&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/ahkui"&gt;@ahkui&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td align="center" valign="top"&gt;
+            &lt;a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/join-us.png"&gt;&lt;img width="125" height="125" src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/join-us.png" style="max-width:100%;"&gt;&lt;/a&gt;
+            &lt;br&gt;
+            &lt;strong&gt;&amp;lt; Join Us &amp;gt;&lt;/strong&gt;
+            &lt;br&gt;
+            &lt;a href="https://github.com/laradock"&gt;@laradock&lt;/a&gt;
+        &lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;&lt;a id="user-content-code-contributors" class="anchor" aria-hidden="true" href="#code-contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Contributors&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/laradock/laradock/graphs/contributors"&gt;&lt;img src="https://camo.githubusercontent.com/77f858538e755ac6c43ec26a3db73214ebe6a032/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f636f6e7472696275746f72732e7376673f77696474683d38393026627574746f6e3d66616c7365" data-canonical-src="https://opencollective.com/laradock/contributors.svg?width=890&amp;amp;button=false" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-financial-contributors" class="anchor" aria-hidden="true" href="#financial-contributors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Financial Contributors&lt;/h3&gt;
+&lt;p&gt;Contribute and help us sustain the project.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Option 1:&lt;/b&gt; Donate directly to &lt;a href="https://paypal.me/mzmmzz" rel="nofollow"&gt;Paypal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://paypal.me/mzmmzz" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d5d24e33e2f4b6fe53987419a21b203c03789a8f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d50617950616c2d677265656e2e737667" alt="Donate" data-canonical-src="https://img.shields.io/badge/Donate-PayPal-green.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Option 2:&lt;/b&gt; Support us via &lt;a href="https://beerpay.io/laradock/laradock" rel="nofollow"&gt;BeerPay&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://beerpay.io/laradock/laradock" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5121500d81e8c1bb49ebf50d0bdb480e98feae54/68747470733a2f2f626565727061792e696f2f6c617261646f636b2f6c617261646f636b2f62616467652e7376673f7374796c653d666c6174" alt="Beerpay" data-canonical-src="https://beerpay.io/laradock/laradock/badge.svg?style=flat" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Option 3:&lt;/b&gt; Become a backer on &lt;a href="https://opencollective.com/laradock/contribute" rel="nofollow"&gt;Open Collective&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/laradock" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3082748a930064309c806fc7cd9fbcf0a16a1c11/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f6261636b65722e7376673f77696474683d383930" data-canonical-src="https://opencollective.com/laradock/backer.svg?width=890" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-sponsors" class="anchor" aria-hidden="true" href="#sponsors"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sponsors&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://opencollective.com/laradock/sponsor/0/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3b5ee41879e7304d54c81330805eb6df4b6e0875/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f302f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/0/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/1/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/461dc16e7f473d8c597915d9aa3aaf4d9358e92c/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f312f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/1/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/2/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4cd30b8082b3a3ca0a3e64371217bfc87242ba34/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f322f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/2/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/3/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e3feef4068bad0ac44eae7b95b72db96a6679934/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f332f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/3/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/4/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e1b735c8a3dfe97ce094dd475e9baba16667b239/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f342f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/4/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/5/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c63eae6af6c3ce7373a2b1253dd870f575d8aa23/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f352f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/5/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/6/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d596a1d85263959171fa9d9d8ed7d494759797aa/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f362f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/6/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/7/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/829e823866afc32f965a32a9316cfb8b599a8f94/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f372f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/7/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/8/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/416d138cc1346c4602ae6be4e45e08775389abcf/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f382f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/8/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/9/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/61c7534c7c4f220cbfe1180801bc1556d894e143/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f392f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/9/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/10/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/be529532a0be3d0cd214229671b3dfed55111968/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31302f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/10/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/11/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9660a169239e6303c4b0341339809be615fd638b/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31312f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/11/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/12/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b51cffd548fd11d89d32a168fb16f64fd28a85d0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31322f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/12/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/13/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c1f67fe851ea8fcd16a79f0e079fd8612a1588e0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31332f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/13/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/14/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/5d9fccfee7a4ec6081465e2d1f15f7357e563327/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31342f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/14/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/15/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/22550710f3a38df7910b294d0c3a092a9e7e2d2f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31352f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/15/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/16/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fc057b1b3d4abbfd57f5d7ae14e5b0931724d8b9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31362f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/16/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/17/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0a25f778771a135d6ef8640eff1b22df0b8908fd/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31372f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/17/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/18/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9a4371ba46ac8a0cac13f79780588cb7434fb2fb/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31382f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/18/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/19/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/58d11ac66538a90b9c319792ee6ff7968b527029/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f31392f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/19/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/20/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a28ac7a108ab97959268d874dedd8f1d2c0efb73/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32302f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/20/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/21/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a604de5ed6c01858ac62334910ffd3f59e80e068/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32312f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/21/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/22/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fce952a36ba8c6a41a9352ff99d414896c3b7faf/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32322f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/22/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/23/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d87c4e8481e10f8b150672286db4cb4eb75b2c12/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32332f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/23/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/24/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2f1c2bf62710e2424cec9d8a0ddb53c8f109529e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32342f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/24/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/25/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f8de590ee9a23251acc0a74596b75058179714f9/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32352f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/25/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/26/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d5ec926b92b9d280e37276d897b2db00fbb929b2/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32362f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/26/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/27/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/55931721a7bfba5dc134adcecca4f2323df1691e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32372f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/27/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/28/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4d8f719f04f669a234f211bb699541004d558f41/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32382f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/28/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/29/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c36c08c99366fffc3e70e442d7107fde016541f0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f32392f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/29/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/30/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0cfde5d0b34338ab9f1e6e223bb66e6e9bb784c6/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33302f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/30/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/31/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/fcfe5b52e490a971c8161969f444d1310fc88211/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33312f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/31/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/32/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/27e75f41b8b08651b7834e4b7497f2e6b8903d92/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33322f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/32/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/33/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2bb72d35f6ee283ba1997f907bcec94ff02df93d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33332f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/33/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/34/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/8677cbb37dd96a6effe8b7e2e7ab0ae9d8cbc795/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33342f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/34/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/35/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/9e40973a572d209466fa1907eefbf8d39b6036c4/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33352f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/35/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/36/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e19d5ce3a69357cbdd7566aaa9a4f7920f5e0f65/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33362f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/36/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/37/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/ceb2c314fd1840813b85b8e2158c2ba66e626d3a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33372f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/37/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/38/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/2a39b54d46e8809d9b88f39291ef20aeeca20d4d/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33382f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/38/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/39/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/687891bce5c61db9b342031482d9c26c65306c91/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f33392f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/39/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/40/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/13b38e32bb024cc39296d26f960df1323c179f89/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34302f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/40/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/41/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/4585d43bfdd3df57169e70799fdb3a9299b26233/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34312f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/41/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/42/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/86261f4750778aa0d951c5b9338aff256db327cc/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34322f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/42/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/43/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dfa0aafba3255c57044b992e1dc4f358050dba83/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34332f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/43/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/44/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d8c26203fa0d1b838993769655ffd1400c126e76/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34342f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/44/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/45/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/c49fa193a110820f25980c4801de176ae67bdf4a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34352f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/45/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/46/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e4cf76a69934e4d553e54f161f57c3a6a0361c5a/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34362f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/46/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/47/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/dfbafac75946753329d2c526c8acbe402b89a5dd/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34372f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/47/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/48/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/98b9750a230efc4ec2e55e4d57cea005f9e7f3b0/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34382f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/48/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://opencollective.com/laradock/sponsor/49/website?requireActive=false" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cbef9b93e75561784a524da787363bb1aa6cb34e/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f6c617261646f636b2f73706f6e736f722f34392f6176617461722e7376673f726571756972654163746976653d66616c7365" data-canonical-src="https://opencollective.com/laradock/sponsor/49/avatar.svg?requireActive=false" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Support Laradock with your &lt;a href="https://opencollective.com/laradock/contribute/" rel="nofollow"&gt;organization&lt;/a&gt;.
+&lt;br&gt;
+Your logo will show up on the &lt;a href="https://github.com/laradock/laradock/"&gt;github repository&lt;/a&gt; index page and the &lt;a href="http://laradock.io/" rel="nofollow"&gt;documentation&lt;/a&gt; main page.
+&lt;br&gt;
+For more info contact &lt;a href="mailto: support@laradock.io"&gt;&lt;/a&gt;&lt;a href="mailto:support@laradock.io"&gt;support@laradock.io&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/laradock/laradock/blob/master/LICENSE"&gt;MIT License&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>laradock</author><guid isPermaLink="false">https://github.com/laradock/laradock</guid><pubDate>Wed, 29 Jan 2020 00:06:00 GMT</pubDate></item><item><title>jolicode/docker-starter #7 in Dockerfile, Today</title><link>https://github.com/jolicode/docker-starter</link><description>&lt;p&gt;&lt;i&gt;A skeleton to start a new web project with PHP, Docker and Fabric&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p align="center"&gt;
+    &lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c6a884255f45e24f1e7ea3f3248b1199ed232717/68747470733a2f2f6a6f6c69636f64652e636f6d2f6d656469612f6f726967696e616c2f646f636b65722d737461727465722d6c6f676f2e706e67"&gt;&lt;img width="500" height="180" src="https://camo.githubusercontent.com/c6a884255f45e24f1e7ea3f3248b1199ed232717/68747470733a2f2f6a6f6c69636f64652e636f6d2f6d656469612f6f726967696e616c2f646f636b65722d737461727465722d6c6f676f2e706e67" alt="Docker starter kit logo" data-canonical-src="https://jolicode.com/media/original/docker-starter-logo.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-jolicodes-docker-starter-kit" class="anchor" aria-hidden="true" href="#jolicodes-docker-starter-kit"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JoliCode's Docker starter kit&lt;/h1&gt;
+&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Read &lt;a href="https://jolicode.com/blog/introducing-our-docker-starter-kit" rel="nofollow"&gt;in English &lt;g-emoji class="g-emoji" alias="gb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f1ec-1f1e7.png"&gt;🇬🇧&lt;/g-emoji&gt;&lt;/a&gt;
+or &lt;a href="https://jolicode.com/blog/presentation-de-notre-starter-kit-docker" rel="nofollow"&gt;in French &lt;g-emoji class="g-emoji" alias="fr" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f1eb-1f1f7.png"&gt;🇫🇷&lt;/g-emoji&gt;&lt;/a&gt;
+why we created and open-sourced this starter-kit.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-project-configuration" class="anchor" aria-hidden="true" href="#project-configuration"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project configuration&lt;/h2&gt;
+&lt;p&gt;Before executing any command, you need to configure few parameters in the
+&lt;code&gt;fabfile.py&lt;/code&gt; file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;env.project_name&lt;/code&gt; (&lt;strong&gt;required&lt;/strong&gt;): This will be used to prefix all docker
+objects (network, images, containers);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;env.root_domain&lt;/code&gt; (optional, default: &lt;code&gt;project_name + '.test'&lt;/code&gt;): This is the
+root domain where the application will be available;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;env.extra_domains&lt;/code&gt; (optional): This contains extra domains where the
+application will be available;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;env.project_directory&lt;/code&gt; (optional, default: &lt;code&gt;application&lt;/code&gt;): This is the host
+directory containing your PHP application.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: Some Fabric tasks have been added for DX purposes. Checkout and adapt
+the tasks &lt;code&gt;install&lt;/code&gt;, &lt;code&gt;migrate&lt;/code&gt; and &lt;code&gt;cache_clear&lt;/code&gt; to your project&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-ssl-certificate" class="anchor" aria-hidden="true" href="#ssl-certificate"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSL certificate&lt;/h2&gt;
+&lt;p&gt;To save your time with certificate generation, this project already embed a
+basic self-signed certificate. So &lt;em&gt;HTTPS will work out of the box&lt;/em&gt; in your browser
+as soon as you accept this self-signed certificate.&lt;/p&gt;
+&lt;p&gt;However, if you prefer to have valid certificate in local (some tools do not
+necessarily let you work with invalid certificates), you will have to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;generate a certificate valid for your domain name&lt;/li&gt;
+&lt;li&gt;sign this certificate with a locally trusted CA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this case, it's recommended to use more powerful tool like &lt;a href="https://github.com/FiloSottile/mkcert"&gt;mkcert&lt;/a&gt;.
+As mkcert uses a CA root, you will need to generate a certificate on each computer
+using this stack and so add &lt;code&gt;/infrastructure/services/router/certs/&lt;/code&gt; to the
+&lt;code&gt;.gitignore&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can configure
+&lt;code&gt;infrastructure/docker/services/router/openssl.cnf&lt;/code&gt; then use
+&lt;code&gt;infrastructure/docker/services/router/generate-ssl.sh&lt;/code&gt; to create your own
+certificate. Then you will have to add it to your computer CA store.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-usage-documentation" class="anchor" aria-hidden="true" href="#usage-documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage documentation&lt;/h2&gt;
+&lt;p&gt;We provide a &lt;a href="./README.dist.md"&gt;README.dist.md&lt;/a&gt; to explain what anyone need
+to know to start and interact with the infrastructure.&lt;/p&gt;
+&lt;p&gt;You should probably use this README.dist.md as a base for your project's README.md:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;mv README.{dist.md,md}&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-cookbooks" class="anchor" aria-hidden="true" href="#cookbooks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cookbooks&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-use-with-symfony" class="anchor" aria-hidden="true" href="#how-to-use-with-symfony"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use with Symfony&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;If you want to create a new Symfony project, you need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Remove the &lt;code&gt;application&lt;/code&gt; folder:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rm -rf application/&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new project:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;composer create-project symfony/website-skeleton application&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configure the &lt;code&gt;.env&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sed -i &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;s#DATABASE_URL.*#DATABASE_URL=pgsql://app:app@postgres/YOUR_DB_NAME#&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; application/.env&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configure doctrine&lt;/p&gt;
+&lt;p&gt;By default, Symfony and Doctrine are configured to use MySQL. Since MySQL
+has bad default configuration, Doctrine is forced to configure MySQL
+explicitly. PostgreSQL does not have this issue. So &lt;strong&gt;update the following
+configuration&lt;/strong&gt; in &lt;code&gt;application/config/packages/doctrine.yaml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;doctrine&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;dbal&lt;/span&gt;:
+        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; configure these for your database server&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;driver&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;pdo_pgsql&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;server_version&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;11&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;charset&lt;/span&gt;: &lt;span class="pl-s"&gt;UTF8&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;default_table_options&lt;/span&gt;:
+            &lt;span class="pl-ent"&gt;charset&lt;/span&gt;: &lt;span class="pl-s"&gt;UTF8&lt;/span&gt;
+            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; Adapt the collate according to the content of your DB.&lt;/span&gt;
+            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; For example, if your content is mainly in French:&lt;/span&gt;
+            &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; collate: fr_FR.UTF8&lt;/span&gt;
+
+        &lt;span class="pl-ent"&gt;url&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;%env(resolve:DATABASE_URL)%&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-add-elasticsearch-and-kibana" class="anchor" aria-hidden="true" href="#how-to-add-elasticsearch-and-kibana"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to add Elasticsearch and Kibana&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to use Elasticsearch and Kibana, you should add the following content
+to the &lt;code&gt;docker-compose.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;elasticsearch-data&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+
+&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;elasticsearch&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;elasticsearch:7.3.2&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;elasticsearch-data:/usr/share/elasticsearch/data&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;environment&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;ES_JAVA_OPTS=-Xms128m -Xmx128m&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;discovery.type=single-node&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;labels&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.enable=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-elasticsearch.rule=Host(`elasticsearch.${PROJECT_ROOT_DOMAIN}`)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-elasticsearch.tls=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+    &lt;span class="pl-ent"&gt;kibana&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;kibana:7.3.2&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;depends_on&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;elasticsearch&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;labels&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.enable=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-kibana.rule=Host(`kibana.${PROJECT_ROOT_DOMAIN}`)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-kibana.tls=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, you will be able to browse:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;https://kibana.&amp;lt;root_domain&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;https://elasticsearch.&amp;lt;root_domain&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-add-rabbitmq-and-its-dashboard" class="anchor" aria-hidden="true" href="#how-to-add-rabbitmq-and-its-dashboard"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to add RabbitMQ and its dashboard&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to use RabbitMQ and its dashboard, you should add the following content
+to the &lt;code&gt;docker-compose.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;rabbitmq-data&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+
+&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;rabbitmq&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;rabbitmq:3-management-alpine&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;rabbitmq-data:/var/lib/rabbitmq&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;environment&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;RABBITMQ_VM_MEMORY_HIGH_WATERMARK=1024MiB&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;labels&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.enable=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-rabbitmq.rule=Host(`rabbitmq.${PROJECT_ROOT_DOMAIN}`)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-rabbitmq.tls=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.services.rabbitmq.loadbalancer.server.port=15672&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In order to publish and consume messages with PHP, you need to install the
+&lt;code&gt;php7-amqp&lt;/code&gt; in the &lt;code&gt;php-base&lt;/code&gt; image.&lt;/p&gt;
+&lt;p&gt;Then, you will be able to browse:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;https://rabbitmq.&amp;lt;root_domain&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-add-redis-and-its-dashboard" class="anchor" aria-hidden="true" href="#how-to-add-redis-and-its-dashboard"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to add Redis and its dashboard&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to use Redis and its dashboard, you should add the following content to
+the &lt;code&gt;docker-compose.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;redis-data&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;redis-insight-data&lt;/span&gt;: &lt;span class="pl-s"&gt;{}&lt;/span&gt;
+
+&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;redis&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;redis:5&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;redis-data:/data&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+
+    &lt;span class="pl-ent"&gt;redis-insight&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;redislabs/redisinsight&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;redis-insight-data:/db&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;labels&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.enable=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-redis.rule=Host(`redis.${PROJECT_ROOT_DOMAIN}`)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-redis.tls=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, you will be able to browse:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;https://redis.&amp;lt;root_domain&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-add-maildev" class="anchor" aria-hidden="true" href="#how-to-add-maildev"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to add Maildev&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to use Maildev and its dashboard, you should add the following content
+to the &lt;code&gt;docker-compose.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;maildev&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;djfarrelly/maildev&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;command&lt;/span&gt;: &lt;span class="pl-s"&gt;["bin/maildev", "--web", "80", "--smtp", "25", "--hide-extensions", "STARTTLS"]&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;labels&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.enable=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-maildev.rule=Host(`maildev.${PROJECT_ROOT_DOMAIN}`)&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.routers.${PROJECT_NAME}-maildev.tls=true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;traefik.http.services.maildev.loadbalancer.server.port=80&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, you will be able to browse:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;https://maildev.&amp;lt;root_domain&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-add-support-for-crons" class="anchor" aria-hidden="true" href="#how-to-add-support-for-crons"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to add support for crons?&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to setup crontab, you should add a new container:&lt;/p&gt;
+&lt;div class="highlight highlight-source-dockerfile"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; services/cron/Dockerfile&lt;/span&gt;
+&lt;span class="pl-k"&gt;ARG&lt;/span&gt; PROJECT_NAME
+
+&lt;span class="pl-k"&gt;FROM&lt;/span&gt; ${PROJECT_NAME}_php-base
+
+&lt;span class="pl-k"&gt;COPY&lt;/span&gt; crontab /etc/crontabs/app
+
+&lt;span class="pl-k"&gt;CMD&lt;/span&gt; [&lt;span class="pl-s"&gt;"crond"&lt;/span&gt;, &lt;span class="pl-s"&gt;"-l"&lt;/span&gt;, &lt;span class="pl-s"&gt;"0"&lt;/span&gt;, &lt;span class="pl-s"&gt;"-f"&lt;/span&gt;]&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And you can add all your crons in the &lt;code&gt;services/cron/crontab&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre lang="crontab"&gt;&lt;code&gt;* * * * * php /home/app/application/my-command &amp;gt;&amp;gt; /path/to/log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, add the following content to the &lt;code&gt;docker-compose.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;cron&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;build&lt;/span&gt;: &lt;span class="pl-s"&gt;services/cron&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;../../${PROJECT_DIRECTORY}:/home/app/application:cached&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-run-workers" class="anchor" aria-hidden="true" href="#how-to-run-workers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to run workers?&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to setup workers, you should define their service in the &lt;code&gt;docker-compose.worker.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;worker_my_worker&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;&amp;lt;&amp;lt;&lt;/span&gt;: &lt;span class="pl-s"&gt;*worker_base&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;command&lt;/span&gt;: &lt;span class="pl-s"&gt;/home/app/application/my-worker&lt;/span&gt;
+
+    &lt;span class="pl-ent"&gt;worker_date&lt;/span&gt;:
+        &lt;span class="pl-ent"&gt;&amp;lt;&amp;lt;&lt;/span&gt;: &lt;span class="pl-s"&gt;*worker_base&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;command&lt;/span&gt;: &lt;span class="pl-s"&gt;watch -n 1 date&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You also need to fill the &lt;code&gt;fabfile.py&lt;/code&gt; to fill the tasks &lt;code&gt;start_workers&lt;/code&gt; and &lt;code&gt;stop_workers&lt;/code&gt;.
+These tasks currently propose default examples to use with Symfony Messenger.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-use-mysql-instead-of-postgresql" class="anchor" aria-hidden="true" href="#how-to-use-mysql-instead-of-postgresql"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use MySQL instead of PostgreSQL&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;In order to use MySQL, you will need to apply this patch:&lt;/p&gt;
+&lt;div class="highlight highlight-source-diff"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/docker-compose.builder.yml b/infrastructure/docker/docker-compose.builder.yml&lt;/span&gt;
+index d00f315..bdfdc65 100644
+&lt;span class="pl-md"&gt;--- a/infrastructure/docker/docker-compose.builder.yml&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ b/infrastructure/docker/docker-compose.builder.yml&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -10,7 +10,7 @@&lt;/span&gt; services:
+     builder:
+         build: services/builder
+         depends_on:
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - postgres&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;            - mysql&lt;/span&gt;
+         environment:
+             - COMPOSER_MEMORY_LIMIT=-1
+         volumes:
+&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/docker-compose.worker.yml b/infrastructure/docker/docker-compose.worker.yml&lt;/span&gt;
+index 2eda814..59f8fed 100644
+&lt;span class="pl-md"&gt;--- a/infrastructure/docker/docker-compose.worker.yml&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ b/infrastructure/docker/docker-compose.worker.yml&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -5,7 +5,7 @@&lt;/span&gt; x-services-templates:
+     worker_base: &amp;amp;worker_base
+         build: services/worker
+         depends_on:
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - postgres&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;            - mysql&lt;/span&gt;
+             #- rabbitmq
+         volumes:
+             - "../../${PROJECT_DIRECTORY}:/home/app/application:cached"
+&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/docker-compose.yml b/infrastructure/docker/docker-compose.yml&lt;/span&gt;
+index 49a2661..1804a01 100644
+&lt;span class="pl-md"&gt;--- a/infrastructure/docker/docker-compose.yml&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ b/infrastructure/docker/docker-compose.yml&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -1,7 +1,7 @@&lt;/span&gt;
+ version: '3.7'
+ 
+ volumes:
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;    postgres-data: {}&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;    mysql-data: {}&lt;/span&gt;
+ 
+ services:
+     router:
+&lt;span class="pl-mdr"&gt;@@ -13,7 +13,7 @@&lt;/span&gt; services:
+     frontend:
+         build: services/frontend
+         depends_on:
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - postgres&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;            - mysql&lt;/span&gt;
+         volumes:
+             - "../../${PROJECT_DIRECTORY}:/home/app/application:cached"
+         labels:
+&lt;span class="pl-mdr"&gt;@@ -24,10 +24,7 @@&lt;/span&gt; services:
+             # Comment the next line to be able to access frontend via HTTP instead of HTTPS
+             - "traefik.http.routers.${PROJECT_NAME}-frontend-unsecure.middlewares=redirect-to-https@file"
+ 
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;    postgres:&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;        build: services/postgres&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;        environment:&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - POSTGRES_USER=app&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - POSTGRES_PASSWORD=app&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;    mysql:&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;        build: services/mysql&lt;/span&gt;
+         volumes:
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;            - postgres-data:/var/lib/postgresql/data&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;            - mysql-data:/var/lib/mysql&lt;/span&gt;
+&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/services/mysql/Dockerfile b/infrastructure/docker/services/mysql/Dockerfile&lt;/span&gt;
+new file mode 100644
+index 0000000..e9e0245
+&lt;span class="pl-md"&gt;--- /dev/null&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ b/infrastructure/docker/services/mysql/Dockerfile&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -0,0 +1,3 @@&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;FROM mariadb:10.4&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;ENV MYSQL_ALLOW_EMPTY_PASSWORD=1&lt;/span&gt;
+&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/services/php-base/Dockerfile b/infrastructure/docker/services/php-base/Dockerfile&lt;/span&gt;
+index 56e1835..95fee78 100644
+&lt;span class="pl-md"&gt;--- a/infrastructure/docker/services/php-base/Dockerfile&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ b/infrastructure/docker/services/php-base/Dockerfile&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -22,7 +22,7 @@&lt;/span&gt; RUN apk add --no-cache \
+     php7-opcache \
+     php7-openssl \
+     php7-pdo \
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;    php7-pdo_pgsql \&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;&lt;span class="pl-mi1"&gt;+&lt;/span&gt;    php7-pdo_mysql \&lt;/span&gt;
+     php7-pcntl \
+     php7-posix \
+     php7-session \
+&lt;span class="pl-c1"&gt;diff --git a/infrastructure/docker/services/postgres/Dockerfile b/infrastructure/docker/services/postgres/Dockerfile&lt;/span&gt;
+deleted file mode 100644
+index a1c26c4..0000000
+&lt;span class="pl-md"&gt;--- a/infrastructure/docker/services/postgres/Dockerfile&lt;/span&gt;
+&lt;span class="pl-mi1"&gt;+++ /dev/null&lt;/span&gt;
+&lt;span class="pl-mdr"&gt;@@ -1,3 +0,0 @@&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;FROM postgres:11&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt;EXPOSE 5432&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-solves-build-dependencies" class="anchor" aria-hidden="true" href="#how-to-solves-build-dependencies"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to solves build dependencies&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;Docker-compose is not a tool to build images. This is why you can hit the
+following bug:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: Service 'frontend' failed to build: pull access denied for app_basephp, repository does not exist or may require 'docker login': denied: requested access to the resource is denied&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In order to fix this issue, you can update the &lt;code&gt;services_to_build_first&lt;/code&gt; variable
+in the &lt;code&gt;fabfile.py&lt;/code&gt; file. This will force docker-compose to build theses
+services first.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-windows-support-experimental" class="anchor" aria-hidden="true" href="#windows-support-experimental"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows support (experimental)&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;This starter kit is compatible with Docker for Windows, so you can enjoy native Docker experience on Windows. You will have to keep in mind some differences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Composer cache can't be set to the relative home path in &lt;code&gt;infrastructure/docker/docker-compose.builder.yml&lt;/code&gt;: remove &lt;code&gt;- "~/.composer/cache:/home/app/.composer/cache"&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Python 2.7.17 is broken, do not use it: &lt;a href="https://github.com/pypa/pipenv/issues/4016"&gt;https://github.com/pypa/pipenv/issues/4016&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;You will be prompted to run the env vars manually if you use PowerShell.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h3&gt;&lt;a id="user-content-how-to-access-a-container-via-a-custom-hostname-from-another-container" class="anchor" aria-hidden="true" href="#how-to-access-a-container-via-a-custom-hostname-from-another-container"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to access a container via a custom hostname from another container&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;Read the cookbook&lt;/summary&gt;
+&lt;p&gt;Let's say you have a container (&lt;code&gt;frontend&lt;/code&gt;) that responds to many hostname:
+&lt;code&gt;app.test&lt;/code&gt;, &lt;code&gt;api.app.test&lt;/code&gt;, &lt;code&gt;admin.app.test&lt;/code&gt;. And you have another container
+(&lt;code&gt;builder&lt;/code&gt;) that need to call the &lt;code&gt;frontend&lt;/code&gt; with a specific hostname - or with
+HTTPS. This is usually the case when you have a functional test suite.&lt;/p&gt;
+&lt;p&gt;To enable this feature, you need to add &lt;code&gt;extra_hosts&lt;/code&gt; to the &lt;code&gt;builder&lt;/code&gt; container
+like following:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;builder&lt;/span&gt;:
+        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; [...]&lt;/span&gt;
+        &lt;span class="pl-ent"&gt;extra_hosts&lt;/span&gt;:
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;app.test:172.17.0.1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;api.app.test:172.17.0.1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+            - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;admin.app.test:172.17.0.1&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note: &lt;code&gt;172.17.0.1&lt;/code&gt; is the default IP of the &lt;code&gt;docker0&lt;/code&gt; interface. It can be
+different on some installations. You can see this IP thanks to the following
+command &lt;code&gt;ip address show docker0&lt;/code&gt;. Since &lt;code&gt;docker-compose.yml&lt;/code&gt; file supports
+environnement variables you may script this with fabric.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Created at &lt;a href="https://jolicode.com/" rel="nofollow"&gt;JoliCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Logo by &lt;a href="https://twitter.com/caneco" rel="nofollow"&gt;Caneco&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>jolicode</author><guid isPermaLink="false">https://github.com/jolicode/docker-starter</guid><pubDate>Wed, 29 Jan 2020 00:07:00 GMT</pubDate></item><item><title>opensemanticsearch/open-semantic-search #8 in Dockerfile, Today</title><link>https://github.com/opensemanticsearch/open-semantic-search</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>opensemanticsearch</author><guid isPermaLink="false">https://github.com/opensemanticsearch/open-semantic-search</guid><pubDate>Wed, 29 Jan 2020 00:08:00 GMT</pubDate></item><item><title>nodejs/docker-node #9 in Dockerfile, Today</title><link>https://github.com/nodejs/docker-node</link><description>&lt;p&gt;&lt;i&gt;Official Docker Image for Node.js :whale: :turtle: :rocket: &lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-nodejs" class="anchor" aria-hidden="true" href="#nodejs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Node.js&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://registry.hub.docker.com/_/node/" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/206305622ef74fd1323ea435f8ce8e2bf86b40f4/687474703a2f2f646f636b6572692e636f2f696d6167652f5f2f6e6f6465" alt="dockeri.co" data-canonical-src="http://dockeri.co/image/_/node" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/nodejs/docker-node"&gt;&lt;img src="https://camo.githubusercontent.com/66abd2a84d31ae74d7661f20c0a3378d3f548651/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6e6f64656a732f646f636b65722d6e6f64652e737667" alt="GitHub issues" title="GitHub issues" data-canonical-src="https://img.shields.io/github/issues/nodejs/docker-node.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/nodejs/docker-node"&gt;&lt;img src="https://camo.githubusercontent.com/4c662851739950fed16b31f7f6731fdef1e2ca2a/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6e6f64656a732f646f636b65722d6e6f64652e737667" alt="GitHub stars" title="GitHub stars" data-canonical-src="https://img.shields.io/github/stars/nodejs/docker-node.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The official Node.js docker image, made with love by the node community.&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what-is-nodejs"&gt;What is Node.js?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#how-to-use-this-image"&gt;How to use this image&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-a-dockerfile-in-your-nodejs-app-project"&gt;Create a &lt;code&gt;Dockerfile&lt;/code&gt; in your Node.js app project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#best-practices"&gt;Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#run-a-single-nodejs-script"&gt;Run a single Node.js script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#verbosity"&gt;Verbosity&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#dockerfile"&gt;Dockerfile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#docker-run"&gt;Docker Run&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#npm-run"&gt;NPM run&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#image-variants"&gt;Image Variants&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#nodeversion"&gt;&lt;code&gt;node:&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#nodealpine"&gt;&lt;code&gt;node:alpine&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#nodeslim"&gt;&lt;code&gt;node:slim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#license"&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#supported-docker-versions"&gt;Supported Docker versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#supported-nodejs-versions"&gt;Supported Node.js versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#governance-and-current-members"&gt;Governance and Current Members&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#docker-working-group-members"&gt;Docker Working Group Members&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#docker-working-group-collaborators"&gt;Docker Working Group Collaborators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#emeritus"&gt;Emeritus&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#docker-working-group-members-1"&gt;Docker Working Group Members&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a id="user-content-what-is-nodejs" class="anchor" aria-hidden="true" href="#what-is-nodejs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Node.js?&lt;/h2&gt;
+&lt;p&gt;Node.js is a platform built on Chrome's JavaScript runtime for easily building
+fast, scalable network applications. Node.js uses an event-driven, non-blocking
+I/O model that makes it lightweight and efficient, perfect for data-intensive
+real-time applications that run across distributed devices.&lt;/p&gt;
+&lt;p&gt;See: &lt;a href="http://nodejs.org" rel="nofollow"&gt;http://nodejs.org&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use-this-image" class="anchor" aria-hidden="true" href="#how-to-use-this-image"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use this image&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-create-a-dockerfile-in-your-nodejs-app-project" class="anchor" aria-hidden="true" href="#create-a-dockerfile-in-your-nodejs-app-project"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a &lt;code&gt;Dockerfile&lt;/code&gt; in your Node.js app project&lt;/h3&gt;
+&lt;div class="highlight highlight-source-dockerfile"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; specify the node base image with your desired version node:&amp;lt;version&amp;gt;&lt;/span&gt;
+&lt;span class="pl-k"&gt;FROM&lt;/span&gt; node:10
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;#&lt;/span&gt; replace this with your application's default port&lt;/span&gt;
+&lt;span class="pl-k"&gt;EXPOSE&lt;/span&gt; 8888&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can then build and run the Docker image:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;docker build -t my-nodejs-app &lt;span class="pl-c1"&gt;.&lt;/span&gt;&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;docker run -it --rm --name my-running-app my-nodejs-app&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you prefer Docker Compose:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;version&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+&lt;span class="pl-ent"&gt;services&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;node&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;image&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;node:8&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;user&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;node&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;working_dir&lt;/span&gt;: &lt;span class="pl-s"&gt;/home/node/app&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;environment&lt;/span&gt;:
+      - &lt;span class="pl-s"&gt;NODE_ENV=production&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;volumes&lt;/span&gt;:
+      - &lt;span class="pl-s"&gt;./:/home/node/app&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;expose&lt;/span&gt;:
+      - &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;8081&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;command&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;npm start&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can then run using Docker Compose:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;docker-compose up -d&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Docker Compose example copies your current directory (including node_modules) to the container.
+It assumes that your application has a file named &lt;a href="https://docs.npmjs.com/files/package.json" rel="nofollow"&gt;&lt;code&gt;package.json&lt;/code&gt;&lt;/a&gt;
+defining &lt;a href="https://docs.npmjs.com/misc/scripts#default-values" rel="nofollow"&gt;start script&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-best-practices" class="anchor" aria-hidden="true" href="#best-practices"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Best Practices&lt;/h3&gt;
+&lt;p&gt;We have assembled a &lt;a href="./docs/BestPractices.md"&gt;Best Practices Guide&lt;/a&gt; for those using these images on a daily basis.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-run-a-single-nodejs-script" class="anchor" aria-hidden="true" href="#run-a-single-nodejs-script"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Run a single Node.js script&lt;/h3&gt;
+&lt;p&gt;For many simple, single file projects, you may find it inconvenient to write a
+complete &lt;code&gt;Dockerfile&lt;/code&gt;. In such cases, you can run a Node.js script by using the
+Node.js Docker image directly:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;docker run -it --rm --name my-running-script -v &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;span class="pl-smi"&gt;$PWD&lt;/span&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;:/usr/src/app -w /usr/src/app node:8 node your-daemon-or-script.js&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-verbosity" class="anchor" aria-hidden="true" href="#verbosity"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Verbosity&lt;/h3&gt;
+&lt;p&gt;Prior to 8.7.0 and 6.11.4 the docker images overrode the default npm log
+level from &lt;code&gt;warn&lt;/code&gt; to &lt;code&gt;info&lt;/code&gt;. However due to improvements to npm and new Docker
+patterns (e.g. multi-stage builds) the working group reached a &lt;a href="https://github.com/nodejs/docker-node/issues/528"&gt;consensus&lt;/a&gt;
+to revert the log level to npm defaults. If you need more verbose output, please
+use one of the following methods to change the verbosity level.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-dockerfile" class="anchor" aria-hidden="true" href="#dockerfile"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dockerfile&lt;/h4&gt;
+&lt;p&gt;If you create your own &lt;code&gt;Dockerfile&lt;/code&gt; which inherits from the &lt;code&gt;node&lt;/code&gt; image you can
+simply use &lt;code&gt;ENV&lt;/code&gt; to override &lt;code&gt;NPM_CONFIG_LOGLEVEL&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-dockerfile"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;FROM&lt;/span&gt; node
+&lt;span class="pl-k"&gt;ENV&lt;/span&gt; NPM_CONFIG_LOGLEVEL info
+...&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-docker-run" class="anchor" aria-hidden="true" href="#docker-run"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Run&lt;/h4&gt;
+&lt;p&gt;If you run the node image using &lt;code&gt;docker run&lt;/code&gt; you can use the &lt;code&gt;-e&lt;/code&gt; flag to
+override &lt;code&gt;NPM_CONFIG_LOGLEVEL&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;docker run -e NPM_CONFIG_LOGLEVEL=info node ...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a id="user-content-npm-run" class="anchor" aria-hidden="true" href="#npm-run"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NPM run&lt;/h4&gt;
+&lt;p&gt;If you are running npm commands you can use &lt;code&gt;--loglevel&lt;/code&gt; to control the
+verbosity of the output.&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;docker run node npm --loglevel=warn ...&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-image-variants" class="anchor" aria-hidden="true" href="#image-variants"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Image Variants&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;node&lt;/code&gt; images come in many flavors, each designed for a specific use case.
+All of the images contain pre-installed versions of &lt;code&gt;node&lt;/code&gt;,
+&lt;a href="https://www.npmjs.com/" rel="nofollow"&gt;&lt;code&gt;npm&lt;/code&gt;&lt;/a&gt;, and &lt;a href="https://yarnpkg.com" rel="nofollow"&gt;&lt;code&gt;yarn&lt;/code&gt;&lt;/a&gt;. For each
+supported architecture, the supported variants are different. In the file:
+&lt;a href="./architectures"&gt;architectures&lt;/a&gt;, it lists all supported variants for all of
+the architectures that we support now.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-nodeversion" class="anchor" aria-hidden="true" href="#nodeversion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;node:&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This is the defacto image. If you are unsure about what your needs are, you
+probably want to use this one. It is designed to be used both as a throw away
+container (mount your source code and start the container to start your app), as
+well as the base to build other images off of. This tag is based off of
+&lt;a href="https://registry.hub.docker.com/_/buildpack-deps/" rel="nofollow"&gt;&lt;code&gt;buildpack-deps&lt;/code&gt;&lt;/a&gt;.
+&lt;code&gt;buildpack-deps&lt;/code&gt; is designed for the average user of docker who has many images
+on their system. It, by design, has a large number of extremely common Debian
+packages. This reduces the number of packages that images that derive from it
+need to install, thus reducing the overall size of all images on your system.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-nodealpine" class="anchor" aria-hidden="true" href="#nodealpine"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;node:alpine&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This image is based on the popular
+&lt;a href="http://alpinelinux.org" rel="nofollow"&gt;Alpine Linux project&lt;/a&gt;, available in
+&lt;a href="https://hub.docker.com/_/alpine" rel="nofollow"&gt;the &lt;code&gt;alpine&lt;/code&gt; official image&lt;/a&gt;. Alpine Linux is
+much smaller than most distribution base images (~5MB), and thus leads to much
+slimmer images in general.&lt;/p&gt;
+&lt;p&gt;This variant is highly recommended when final image size being as small as
+possible is desired. The main caveat to note is that it does use
+&lt;a href="http://www.musl-libc.org" rel="nofollow"&gt;musl libc&lt;/a&gt; instead of
+&lt;a href="http://www.etalabs.net/compare_libcs.html" rel="nofollow"&gt;glibc and friends&lt;/a&gt;, so certain
+software might run into issues depending on the depth of their libc
+requirements. However, most software doesn't have an issue with this, so this
+variant is usually a very safe choice. See
+&lt;a href="https://news.ycombinator.com/item?id=10782897" rel="nofollow"&gt;this Hacker News comment thread&lt;/a&gt;
+for more discussion of the issues that might arise and some pro/con comparisons
+of using Alpine-based images. One common issue that may arise is a missing shared
+library required for use of &lt;code&gt;process.dlopen&lt;/code&gt;. To add the missing shared libraries
+to your image, adding the &lt;a href="https://pkgs.alpinelinux.org/package/edge/main/x86/libc6-compat" rel="nofollow"&gt;&lt;code&gt;libc6-compat&lt;/code&gt;&lt;/a&gt;
+package in your Dockerfile is recommended: &lt;code&gt;apk add --no-cache libc6-compat&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To minimize image size, it's uncommon for additional related tools
+(such as &lt;code&gt;git&lt;/code&gt; or &lt;code&gt;bash&lt;/code&gt;) to be included in Alpine-based images. Using this
+image as a base, add the things you need in your own Dockerfile
+(see the &lt;a href="https://hub.docker.com/_/alpine/" rel="nofollow"&gt;&lt;code&gt;alpine&lt;/code&gt; image description&lt;/a&gt; for
+examples of how to install packages if you are unfamiliar).&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-nodeslim" class="anchor" aria-hidden="true" href="#nodeslim"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code&gt;node:slim&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This image does not contain the common packages contained in the default tag and
+only contains the minimal packages needed to run &lt;code&gt;node&lt;/code&gt;. Unless you are working
+in an environment where &lt;em&gt;only&lt;/em&gt; the Node.js image will be deployed and you have
+space constraints, we highly recommend using the default image of this
+repository.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/nodejs/node/blob/master/LICENSE"&gt;License information&lt;/a&gt; for
+the software contained in this image. &lt;a href="https://github.com/nodejs/docker-node/blob/master/LICENSE"&gt;License
+information&lt;/a&gt; for the
+Node.js Docker project.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-docker-versions" class="anchor" aria-hidden="true" href="#supported-docker-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Docker versions&lt;/h2&gt;
+&lt;p&gt;This image is officially supported on Docker version 1.9.1.&lt;/p&gt;
+&lt;p&gt;Support for older versions (down to 1.6) is provided on a best-effort basis.&lt;/p&gt;
+&lt;p&gt;Please see &lt;a href="https://docs.docker.com/installation/" rel="nofollow"&gt;the Docker installation
+documentation&lt;/a&gt; for details on how to
+upgrade your Docker daemon.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-nodejs-versions" class="anchor" aria-hidden="true" href="#supported-nodejs-versions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported Node.js versions&lt;/h2&gt;
+&lt;p&gt;This project will support Node.js versions as still under active support as per the &lt;a href="https://github.com/nodejs/Release"&gt;Node.js release schedule&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-governance-and-current-members" class="anchor" aria-hidden="true" href="#governance-and-current-members"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Governance and Current Members&lt;/h2&gt;
+&lt;p&gt;The Node.js Docker Image is governed by the Docker Working Group. See
+&lt;a href="https://github.com/nodejs/docker-node/blob/master/GOVERNANCE.md"&gt;GOVERNANCE.md&lt;/a&gt;
+to learn more about the group's structure and &lt;a href="CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; for guidance
+about the expectations for all contributors to this project.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-docker-working-group-members" class="anchor" aria-hidden="true" href="#docker-working-group-members"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Working Group Members&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hans Kristian Flaatten (&lt;a href="https://github.com/starefossen"&gt;starefossen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Hugues Malphettes (&lt;a href="https://github.com/hmalphettes"&gt;hmalphettes&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;John Mitchell (&lt;a href="https://github.com/jlmitch5"&gt;jlmitch5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Peter Petrov (&lt;a href="https://github.com/pesho"&gt;pesho&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-docker-working-group-collaborators" class="anchor" aria-hidden="true" href="#docker-working-group-collaborators"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Working Group Collaborators&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mikeal Rogers (&lt;a href="https://github.com/mikeal"&gt;mikeal&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Laurent Goderre (&lt;a href="https://github.com/LaurentGoderre"&gt;LaurentGoderre&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Simen Bekkhus (&lt;a href="https://github.com/SimenB"&gt;SimenB&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Peter Dave Hello (&lt;a href="https://github.com/PeterDaveHello"&gt;PeterDaveHello&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-emeritus" class="anchor" aria-hidden="true" href="#emeritus"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emeritus&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-docker-working-group-members-1" class="anchor" aria-hidden="true" href="#docker-working-group-members-1"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Working Group Members&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Christopher Horrell (&lt;a href="https://github.com/chorrell"&gt;chorrell&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>nodejs</author><guid isPermaLink="false">https://github.com/nodejs/docker-node</guid><pubDate>Wed, 29 Jan 2020 00:09:00 GMT</pubDate></item><item><title>nginxinc/docker-nginx #10 in Dockerfile, Today</title><link>https://github.com/nginxinc/docker-nginx</link><description>&lt;p&gt;&lt;i&gt;Official NGINX Dockerfiles&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-about-this-repo" class="anchor" aria-hidden="true" href="#about-this-repo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About this Repo&lt;/h1&gt;
+&lt;p&gt;This is the Git repo of the official Docker image for &lt;a href="https://registry.hub.docker.com/_/nginx/" rel="nofollow"&gt;nginx&lt;/a&gt;. See the
+Hub page for the full readme on how to use the Docker image and for information
+regarding contributing and issues.&lt;/p&gt;
+&lt;p&gt;The full readme is generated over in &lt;a href="https://github.com/docker-library/docs"&gt;docker-library/docs&lt;/a&gt;,
+specifically in &lt;a href="https://github.com/docker-library/docs/tree/master/nginx"&gt;docker-library/docs/nginx&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>nginxinc</author><guid isPermaLink="false">https://github.com/nginxinc/docker-nginx</guid><pubDate>Wed, 29 Jan 2020 00:10:00 GMT</pubDate></item><item><title>MithunTechnologiesDevOps/metrics-server #11 in Dockerfile, Today</title><link>https://github.com/MithunTechnologiesDevOps/metrics-server</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-kubernetes-metrics-server" class="anchor" aria-hidden="true" href="#kubernetes-metrics-server"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kubernetes Metrics Server&lt;/h1&gt;
+&lt;p&gt;Metrics-server aggregates resource consumption data like CPU and memory usage for Kubernetes nodes, pods and containers. These metrics are collected from the API exposed by the Kubelet on each node.&lt;/p&gt;
+&lt;p&gt;The metrics server is commonly used by other Kubernetes add ons, such as the Horizontal Pod Autoscaler or the Kubernetes Dashboard.&lt;/p&gt;
+&lt;p&gt;It is not deployed by default.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;In order to deploy metrics-server in your kubernetes master machine clone &lt;a href="https://github.com/MithunTechnologiesDevOps/metrics-server.git"&gt;https://github.com/MithunTechnologiesDevOps/metrics-server.git&lt;/a&gt;  and run the following command from
+the top-level directory(metrics-server) of this repository:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;$ &lt;span class="pl-s1"&gt;kubectl apply -f deploy/1.8+/&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;# &lt;span class="pl-s1"&gt;Display node metrics&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;kubectl top nodes&lt;/span&gt;
+
+# &lt;span class="pl-s1"&gt;Display pod metrics&lt;/span&gt;
+$ &lt;span class="pl-s1"&gt;kubectl top pods&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-user-guide" class="anchor" aria-hidden="true" href="#user-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;User guide&lt;/h2&gt;
+&lt;p&gt;You can find the user guide in
+&lt;a href="https://kubernetes.io/docs/tasks/debug-application-cluster/resource-metrics-pipeline/" rel="nofollow"&gt;the official Kubernetes documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-design" class="anchor" aria-hidden="true" href="#design"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Design&lt;/h2&gt;
+&lt;p&gt;The detailed design of the project can be found in the following docs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/resource-metrics-api.md"&gt;Metrics API&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/metrics-server.md"&gt;Metrics Server&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/kubernetes-sigs/metrics-server.git"&gt;Metrics Server Git Hub&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the broader view of monitoring in Kubernetes take a look into
+&lt;a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/monitoring_architecture.md"&gt;Monitoring architecture&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>MithunTechnologiesDevOps</author><guid isPermaLink="false">https://github.com/MithunTechnologiesDevOps/metrics-server</guid><pubDate>Wed, 29 Jan 2020 00:11:00 GMT</pubDate></item><item><title>matomo-org/docker #12 in Dockerfile, Today</title><link>https://github.com/matomo-org/docker</link><description>&lt;p&gt;&lt;i&gt;Official Docker project for Matomo Analytics&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-matomo-formerly-piwik" class="anchor" aria-hidden="true" href="#matomo-formerly-piwik"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Matomo (formerly Piwik)&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/matomo-org/docker" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0b31211be2b91cfac8daf61918911d505cae54ab/68747470733a2f2f7472617669732d63692e6f72672f6d61746f6d6f2d6f72672f646f636b65722e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/matomo-org/docker.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/049a3f2d9db7c6b5e57e023b3551b0e0a2b8b39b/68747470733a2f2f6d61746f6d6f2e6f72672f77702d636f6e74656e742f7468656d65732f776562736974652d6368696c642f6173736574732f696d672f6d656469612f6d61746f6d6f2e706e67"&gt;&lt;img align="right" width="300px" src="https://camo.githubusercontent.com/049a3f2d9db7c6b5e57e023b3551b0e0a2b8b39b/68747470733a2f2f6d61746f6d6f2e6f72672f77702d636f6e74656e742f7468656d65732f776562736974652d6368696c642f6173736574732f696d672f6d656469612f6d61746f6d6f2e706e67" alt="Matomo logo" data-canonical-src="https://matomo.org/wp-content/themes/website-child/assets/img/media/matomo.png" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://matomo.org/" rel="nofollow"&gt;Matomo&lt;/a&gt; (formerly Piwik) is the leading open-source analytics platform that gives you more than just powerful analytics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Free open-source software&lt;/li&gt;
+&lt;li&gt;100% data ownership&lt;/li&gt;
+&lt;li&gt;User privacy protection&lt;/li&gt;
+&lt;li&gt;User-centric insights&lt;/li&gt;
+&lt;li&gt;Customisable and extensible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-how-to-use-this-image" class="anchor" aria-hidden="true" href="#how-to-use-this-image"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to use this image&lt;/h2&gt;
+&lt;p&gt;You can run the Matomo container and service like so:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;docker run -d --link some-mysql:db matomo&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This assumes you've already launched a suitable MySQL or MariaDB database container.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-persistent-data" class="anchor" aria-hidden="true" href="#persistent-data"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Persistent data&lt;/h2&gt;
+&lt;p&gt;Use a Docker volume to keep persistent data:&lt;/p&gt;
+&lt;div class="highlight highlight-text-shell-session"&gt;&lt;pre&gt;&lt;span class="pl-c1"&gt;docker run -d --link some-mysql:db -v matomo:/var/www/html matomo&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-matomo-installation" class="anchor" aria-hidden="true" href="#matomo-installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Matomo Installation&lt;/h2&gt;
+&lt;p&gt;Once you're up and running, you'll arrive at the configuration wizard page. If you're using the compose file, at the &lt;code&gt;Database Setup&lt;/code&gt; step, please enter the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Database Server: &lt;code&gt;db&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Login: MYSQL_USER&lt;/li&gt;
+&lt;li&gt;Password: MYSQL_PASSWORD&lt;/li&gt;
+&lt;li&gt;Database Name: MYSQL_DATABASE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And leave the rest as default.&lt;/p&gt;
+&lt;p&gt;Then you can continue the installation with the super user.&lt;/p&gt;
+&lt;p&gt;The following environment variables are also honored for configuring your Matomo instance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_HOST&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_ADAPTER&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_TABLES_PREFIX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_USERNAME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_PASSWORD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MATOMO_DATABASE_DBNAME&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-docker-composer-examples-and-log-import-instructions" class="anchor" aria-hidden="true" href="#docker-composer-examples-and-log-import-instructions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker-composer examples and log import instructions&lt;/h2&gt;
+&lt;p&gt;A minimal set-up using docker-compose is available in the &lt;a href=".examples/nginx/docker-compose.yml"&gt;.examples folder&lt;/a&gt;, a more complete &lt;a href="https://github.com/libresh/compose-matomo/blob/master/docker-compose.yml"&gt;example can be found at IndieHosters/piwik&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to use the import logs script, you can then run the following container as needed, in order to execute the python import logs script:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm --volumes-from="matomo_app_1" --link matomo_app_1 python:2-alpine python /var/www/html/misc/log-analytics/import_logs.py --url=http://ip.of.your.matomo --login=yourlogin --password=yourpassword --idsite=1 --recorders=4 /var/www/html/logs/access.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute&lt;/h2&gt;
+&lt;p&gt;Pull requests are very welcome!&lt;/p&gt;
+&lt;p&gt;We'd love to hear your feedback and suggestions in the issue tracker: &lt;a href="https://github.com/matomo-org/docker/issues"&gt;github.com/matomo-org/docker/issues&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-geoip" class="anchor" aria-hidden="true" href="#geoip"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GeoIP&lt;/h2&gt;
+&lt;p&gt;This product includes GeoLite data created by MaxMind, available from &lt;a href="https://www.maxmind.com" rel="nofollow"&gt;https://www.maxmind.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>matomo-org</author><guid isPermaLink="false">https://github.com/matomo-org/docker</guid><pubDate>Wed, 29 Jan 2020 00:12:00 GMT</pubDate></item><item><title>apple/swift-docker #13 in Dockerfile, Today</title><link>https://github.com/apple/swift-docker</link><description>&lt;p&gt;&lt;i&gt;[No description found.]&lt;/i&gt;&lt;/p&gt;&lt;p&gt;No README was found for this project.&lt;/p&gt;</description><author>apple</author><guid isPermaLink="false">https://github.com/apple/swift-docker</guid><pubDate>Wed, 29 Jan 2020 00:13:00 GMT</pubDate></item></channel></rss>
