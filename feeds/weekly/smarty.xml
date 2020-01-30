@@ -1,2 +1,435 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Smarty, This week</title><link>https://github.com/trending/smarty?since=weekly</link><description>The top repositories on GitHub for smarty, measured weekly</description><pubDate>Wed, 29 Jan 2020 01:06:20 GMT</pubDate><lastBuildDate>Wed, 29 Jan 2020 01:06:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Smarty, This week for today</title><pubDate>Wed, 29 Jan 2020 01:06:20 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Smarty, This week</title><link>https://github.com/trending/smarty?since=weekly</link><description>The top repositories on GitHub for smarty, measured weekly</description><pubDate>Thu, 30 Jan 2020 01:14:07 GMT</pubDate><lastBuildDate>Thu, 30 Jan 2020 01:14:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>bitnami/charts #1 in Smarty, This week</title><link>https://github.com/bitnami/charts</link><description>&lt;p&gt;&lt;i&gt;Helm Charts&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-the-bitnami-library-for-kubernetes" class="anchor" aria-hidden="true" href="#the-bitnami-library-for-kubernetes"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Bitnami Library for Kubernetes&lt;/h1&gt;
+&lt;p&gt;Popular applications, provided by &lt;a href="https://bitnami.com" rel="nofollow"&gt;Bitnami&lt;/a&gt;, ready to launch on Kubernetes using &lt;a href="https://github.com/helm/helm"&gt;Kubernetes Helm&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-tldr" class="anchor" aria-hidden="true" href="#tldr"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ helm repo add bitnami https://charts.bitnami.com/bitnami
+$ helm search bitnami
+$ helm install bitnami/&lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt;chart&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="demo.gif"&gt;&lt;img src="demo.gif" alt="Installing a chart" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-charts" class="anchor" aria-hidden="true" href="#charts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Charts&lt;/h2&gt;
+&lt;p&gt;This repository contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="./upstreamed"&gt;Upstreamed charts&lt;/a&gt; (contributed to &lt;a href="https://github.com/helm/charts"&gt;helm/charts&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="./bitnami"&gt;Bitnami charts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-before-you-begin" class="anchor" aria-hidden="true" href="#before-you-begin"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Before you begin&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-setup-a-kubernetes-cluster" class="anchor" aria-hidden="true" href="#setup-a-kubernetes-cluster"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup a Kubernetes Cluster&lt;/h3&gt;
+&lt;p&gt;The quickest way to setup a Kubernetes cluster is with &lt;a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" rel="nofollow"&gt;Azure Kubernetes Service&lt;/a&gt;, &lt;a href="https://aws.amazon.com/eks/" rel="nofollow"&gt;AWS Elastic Kubernetes Service&lt;/a&gt; or &lt;a href="https://cloud.google.com/kubernetes-engine/" rel="nofollow"&gt;Google Kubernetes Engine&lt;/a&gt; using their respective quick-start guides. For setting up Kubernetes on other cloud platforms or bare-metal servers refer to the Kubernetes &lt;a href="http://kubernetes.io/docs/getting-started-guides/" rel="nofollow"&gt;getting started guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-install-helm" class="anchor" aria-hidden="true" href="#install-helm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Helm&lt;/h3&gt;
+&lt;p&gt;Helm is a tool for managing Kubernetes charts. Charts are packages of pre-configured Kubernetes resources.&lt;/p&gt;
+&lt;p&gt;To install Helm, refer to the &lt;a href="https://github.com/helm/helm#install"&gt;Helm install guide&lt;/a&gt; and ensure that the &lt;code&gt;helm&lt;/code&gt; binary is in the &lt;code&gt;PATH&lt;/code&gt; of your shell.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-add-repo" class="anchor" aria-hidden="true" href="#add-repo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Add Repo&lt;/h3&gt;
+&lt;p&gt;The stable charts are contributed to the upstream &lt;a href="https://github.com/helm/charts"&gt;helm/charts&lt;/a&gt; repository. The following command allows you to download and install all the charts from this repository, both the bitnami and the upstreamed ones.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ helm repo add bitnami https://charts.bitnami.com/bitnami&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-using-helm" class="anchor" aria-hidden="true" href="#using-helm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Helm&lt;/h3&gt;
+&lt;p&gt;Once you have installed the Helm client and initialized the Tiller server, you can deploy a Bitnami Helm Chart into a Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;Please refer to the &lt;a href="https://github.com/helm/helm/blob/master/docs/quickstart.md"&gt;Quick Start guide&lt;/a&gt; if you wish to get running in just a few commands, otherwise the &lt;a href="https://github.com/helm/helm/blob/master/docs/using_helm.md"&gt;Using Helm Guide&lt;/a&gt; provides detailed instructions on how to use the Helm client to manage packages on your Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;Useful Helm Client Commands:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;View available charts: &lt;code&gt;helm search&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install a chart: &lt;code&gt;helm install bitnami/&amp;lt;package-name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Upgrade your application: &lt;code&gt;helm upgrade&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h1&gt;
+&lt;p&gt;Copyright (c) 2020 Bitnami&lt;/p&gt;
+&lt;p&gt;Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://www.apache.org/licenses/LICENSE-2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>bitnami</author><guid isPermaLink="false">https://github.com/bitnami/charts</guid><pubDate>Thu, 30 Jan 2020 00:01:00 GMT</pubDate></item><item><title>confluentinc/cp-helm-charts #2 in Smarty, This week</title><link>https://github.com/confluentinc/cp-helm-charts</link><description>&lt;p&gt;&lt;i&gt;The Confluent Platform Helm charts enable you to deploy Confluent Platform services on Kubernetes for development, test, and proof of concept environments.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-confluent-open-source-helm-chart" class="anchor" aria-hidden="true" href="#confluent-open-source-helm-chart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Confluent Open Source Helm Chart&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;CAUTION: Open Source Helm charts are not supported by Confluent. If you want to use Confluent Platform on Kubernetes in a test or production environment, follow these instructions to install &lt;a href="https://docs.confluent.io/current/installation/operator/index.html#operator-about-intro" rel="nofollow"&gt;Confluent Operator&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/confluentinc/cp-helm-charts"&gt;Confluent Platform Helm charts&lt;/a&gt; enable you to deploy Confluent Platform services on Kubernetes for development, test, and proof of concept environments.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-installing-charts" class="anchor" aria-hidden="true" href="#installing-charts"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing Charts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;helm repo add confluentinc https://confluentinc.github.io/cp-helm-charts/
+helm repo update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-documentation" class="anchor" aria-hidden="true" href="#documentation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;The Confluent Helm Chart documentation is located at &lt;a href="https://docs.confluent.io/current/quickstart/cp-helm-charts/docs/index.html" rel="nofollow"&gt;docs.confluent.io&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;We welcome any contributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Report all enhancements, bugs, and tasks as &lt;a href="https://github.com/confluentinc/cp-helm-charts/issues"&gt;GitHub issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Provide fixes or enhancements by opening pull requests in GitHub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-thanks" class="anchor" aria-hidden="true" href="#thanks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Huge thanks to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/charts/tree/master/incubator/kafka"&gt;Kafka helm chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/charts/tree/master/incubator/zookeeper"&gt;ZooKeeper helm chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/charts/tree/master/incubator/schema-registry"&gt;Schema Registry helm chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Yolean/kubernetes-kafka"&gt;kubernetes-kafka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/solsson/dockerfiles"&gt;docker-kafka&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>confluentinc</author><guid isPermaLink="false">https://github.com/confluentinc/cp-helm-charts</guid><pubDate>Thu, 30 Jan 2020 00:02:00 GMT</pubDate></item><item><title>fluxcd/helm-operator-get-started #3 in Smarty, This week</title><link>https://github.com/fluxcd/helm-operator-get-started</link><description>&lt;p&gt;&lt;i&gt;Managing Helm releases with Flux Helm Operator&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-managing-helm-releases-the-gitops-way" class="anchor" aria-hidden="true" href="#managing-helm-releases-the-gitops-way"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Managing Helm releases the GitOps way&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;What is GitOps?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GitOps is a way to do Continuous Delivery, it works by using Git as a source of truth for declarative infrastructure and workloads.
+For Kubernetes this means using &lt;code&gt;git push&lt;/code&gt; instead of &lt;code&gt;kubectl create/apply&lt;/code&gt; or &lt;code&gt;helm install/upgrade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In a traditional CICD pipeline, CD is an implementation extension powered by the
+continuous integration tooling to promote build artifacts to production.
+In the GitOps pipeline model, any change to production must be committed in source control
+(preferable via a pull request) prior to being applied on the cluster.
+This way rollback and audit logs are provided by Git.
+If the entire production state is under version control and described in a single Git repository, when disaster strikes,
+the whole infrastructure can be quickly restored from that repository.&lt;/p&gt;
+&lt;p&gt;To better understand the benefits of this approach to CD and what the differences between GitOps and
+Infrastructure-as-Code tools are, head to the Weaveworks website and read &lt;a href="https://www.weave.works/technologies/gitops/" rel="nofollow"&gt;GitOps - What you need to know&lt;/a&gt; article.&lt;/p&gt;
+&lt;p&gt;In order to apply the GitOps pipeline model to Kubernetes you need three things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a Git repository with your workloads definitions in YAML format, Helm charts and any other Kubernetes custom resource that defines your cluster desired state (I will refer to this as the &lt;em&gt;config&lt;/em&gt; repository)&lt;/li&gt;
+&lt;li&gt;a container registry where your CI system pushes immutable images (no &lt;em&gt;latest&lt;/em&gt; tags, use &lt;em&gt;semantic versioning&lt;/em&gt; or git &lt;em&gt;commit sha&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;an operator that runs in your cluster and does a two-way synchronization:
+&lt;ul&gt;
+&lt;li&gt;watches the registry for new image releases and based on deployment policies updates the workload definitions with the new image tag and commits the changes to the config repository&lt;/li&gt;
+&lt;li&gt;watches for changes in the config repository and applies them to your cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will be using GitHub to host the config repo, Docker Hub as the container registry and Flux as the GitOps Kubernetes Operator.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/fluxcd/helm-operator-get-started/blob/master/diagrams/flux-helm-operator-registry.png"&gt;&lt;img src="https://github.com/fluxcd/helm-operator-get-started/raw/master/diagrams/flux-helm-operator-registry.png" alt="gitops" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="#prerequisites"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;You'll need a Kubernetes cluster v1.11 or newer, a GitHub account, git and kubectl installed locally.&lt;/p&gt;
+&lt;p&gt;Install Helm v3 and fluxctl for macOS with Homebrew:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew install helm fluxctl&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On Windows you can use Chocolatey:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;choco install kubernetes-helm fluxctl&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On Linux you can download the &lt;a href="https://github.com/helm/helm/releases"&gt;helm&lt;/a&gt;
+and &lt;a href="https://github.com/fluxcd/flux/releases"&gt;fluxctl&lt;/a&gt; binaries from GitHub.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-install-flux" class="anchor" aria-hidden="true" href="#install-flux"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Flux&lt;/h3&gt;
+&lt;p&gt;The first step in automating Helm releases with &lt;a href="https://github.com/fluxcd/flux"&gt;Flux&lt;/a&gt; is to create a Git repository with your charts source code.&lt;/p&gt;
+&lt;p&gt;On GitHub, fork this repository and clone it locally
+(replace &lt;code&gt;fluxcd&lt;/code&gt; with your GitHub username):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;git clone https://github.com/fluxcd/helm-operator-get-started
+&lt;span class="pl-c1"&gt;cd&lt;/span&gt; helm-operator-get-started&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*If you fork, update the release definitions with your Docker Hub repository and GitHub username located in
+\releases(dev/stg/prod)\podinfo.yaml in your master branch before proceeding.&lt;/p&gt;
+&lt;p&gt;Add FluxCD repository to Helm repos:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;helm repo add fluxcd https://charts.fluxcd.io&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Create the &lt;code&gt;fluxcd&lt;/code&gt; namespace:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubectl create ns fluxcd&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Install Flux by specifying your fork URL (replace &lt;code&gt;fluxcd&lt;/code&gt; with your GitHub username):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;helm upgrade -i flux fluxcd/flux --wait \
+--namespace fluxcd \
+--set git.url=git@github.com:fluxcd/helm-operator-get-started&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Install the &lt;code&gt;HelmRelease&lt;/code&gt; Kubernetes custom resource definition:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubectl apply -f https://raw.githubusercontent.com/fluxcd/helm-operator/master/deploy/flux-helm-release-crd.yaml&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Install Flux Helm Operator with &lt;em&gt;&lt;strong&gt;Helm v3&lt;/strong&gt;&lt;/em&gt; support:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;helm upgrade -i helm-operator fluxcd/helm-operator --wait \
+--namespace fluxcd \
+--set git.ssh.secretName=flux-git-deploy \
+--set helm.versions=v3&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The Flux Helm operator provides an extension to Flux that automates Helm Chart releases for it.
+A Chart release is described through a Kubernetes custom resource named HelmRelease.
+The Flux daemon synchronizes these resources from git to the cluster,
+and the Flux Helm operator makes sure Helm charts are released as specified in the resources.&lt;/p&gt;
+&lt;p&gt;Note that Flux Helm Operator works with Kubernetes 1.11 or newer.&lt;/p&gt;
+&lt;p&gt;At startup, Flux generates a SSH key and logs the public key. Find the public key with:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;fluxctl identity --k8s-fwd-ns fluxcd&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In order to sync your cluster state with Git you need to copy the public key and
+create a &lt;strong&gt;deploy key&lt;/strong&gt; with &lt;strong&gt;write access&lt;/strong&gt; on your GitHub repository.&lt;/p&gt;
+&lt;p&gt;Open GitHub, navigate to your fork, go to &lt;em&gt;Setting &amp;gt; Deploy keys&lt;/em&gt; click on &lt;em&gt;Add deploy key&lt;/em&gt;, check
+&lt;em&gt;Allow write access&lt;/em&gt;, paste the Flux public key and click &lt;em&gt;Add key&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-gitops-pipeline-example" class="anchor" aria-hidden="true" href="#gitops-pipeline-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GitOps pipeline example&lt;/h3&gt;
+&lt;p&gt;The config repo has the following structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;├── charts
+│   └── podinfo
+│       ├── Chart.yaml
+│       ├── README.md
+│       ├── templates
+│       └── values.yaml
+├── hack
+│   ├── Dockerfile.ci
+│   └── ci-mock.sh
+├── namespaces
+│   ├── dev.yaml
+│   └── stg.yaml
+└── releases
+    ├── dev
+    │   └── podinfo.yaml
+    └── stg
+        └── podinfo.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I will be using &lt;a href="https://github.com/stefanprodan/podinfo"&gt;podinfo&lt;/a&gt; to demonstrate a full CI/CD pipeline including promoting releases between environments.&lt;/p&gt;
+&lt;p&gt;I'm assuming the following Git branching model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dev branch (feature-ready state)&lt;/li&gt;
+&lt;li&gt;stg branch (release-candidate state)&lt;/li&gt;
+&lt;li&gt;master branch (production-ready state)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When a PR is merged in the dev or stg branch will produce a immutable container image as in &lt;code&gt;repo/app:branch-commitsha&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Inside the &lt;em&gt;hack&lt;/em&gt; dir you can find a script that simulates the CI process for dev and stg.
+The &lt;em&gt;ci-mock.sh&lt;/em&gt; script does the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pulls the podinfo source code from GitHub&lt;/li&gt;
+&lt;li&gt;generates a random string and modifies the code&lt;/li&gt;
+&lt;li&gt;generates a random Git commit short SHA&lt;/li&gt;
+&lt;li&gt;builds a Docker image with the format: &lt;code&gt;yourname/podinfo:branch-sha&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;pushes the image to Docker Hub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let's create an image corresponding to the &lt;code&gt;dev&lt;/code&gt; branch (replace &lt;code&gt;stefanprodan&lt;/code&gt; with your Docker Hub username):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd hack &amp;amp;&amp;amp; ./ci-mock.sh -r stefanprodan/podinfo -b dev
+
+Sending build context to Docker daemon  4.096kB
+Step 1/15 : FROM golang:1.10 as builder
+....
+Step 9/15 : FROM alpine:3.7
+....
+Step 12/15 : COPY --from=builder /go/src/github.com/stefanprodan/k8s-podinfo/podinfo .
+....
+Step 15/15 : CMD ["./podinfo"]
+....
+Successfully built 71bee4549fb2
+Successfully tagged stefanprodan/podinfo:dev-kb9lm91e
+The push refers to repository [docker.io/stefanprodan/podinfo]
+36ced78d2ca2: Pushed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inside the &lt;em&gt;charts&lt;/em&gt; directory there is a podinfo Helm chart.
+Using this chart I want to create a release in the &lt;code&gt;dev&lt;/code&gt; namespace with the image I've just published to Docker Hub.
+Instead of editing the &lt;code&gt;values.yaml&lt;/code&gt; from the chart source, I create a &lt;code&gt;HelmRelease&lt;/code&gt; definition (located in /releases/dev/podinfo.yaml):&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;apiVersion&lt;/span&gt;: &lt;span class="pl-s"&gt;helm.fluxcd.io/v1&lt;/span&gt;
+&lt;span class="pl-ent"&gt;kind&lt;/span&gt;: &lt;span class="pl-s"&gt;HelmRelease&lt;/span&gt;
+&lt;span class="pl-ent"&gt;metadata&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-dev&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;namespace&lt;/span&gt;: &lt;span class="pl-s"&gt;dev&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;annotations&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;fluxcd.io/automated&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;filter.fluxcd.io/chart-image&lt;/span&gt;: &lt;span class="pl-s"&gt;glob:dev-*&lt;/span&gt;
+&lt;span class="pl-ent"&gt;spec&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;releaseName&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-dev&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;chart&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;git&lt;/span&gt;: &lt;span class="pl-s"&gt;git@github.com:fluxcd/helm-operator-get-started&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;path&lt;/span&gt;: &lt;span class="pl-s"&gt;charts/podinfo&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;ref&lt;/span&gt;: &lt;span class="pl-s"&gt;master&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;values&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;image&lt;/span&gt;:
+      &lt;span class="pl-ent"&gt;repository&lt;/span&gt;: &lt;span class="pl-s"&gt;stefanprodan/podinfo&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;tag&lt;/span&gt;: &lt;span class="pl-s"&gt;dev-kb9lm91e&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;replicaCount&lt;/span&gt;: &lt;span class="pl-c1"&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Flux Helm release fields:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;metadata.name&lt;/code&gt; is mandatory and needs to follow Kubernetes naming conventions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;metadata.namespace&lt;/code&gt; is optional and determines where the release is created&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spec.releaseName&lt;/code&gt; is optional and if not provided the release name will be $namespace-$name&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spec.chart.path&lt;/code&gt; is the directory containing the chart, given relative to the repository root&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spec.values&lt;/code&gt; are user customizations of default parameter values from the chart itself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The options specified in the HelmRelease &lt;code&gt;spec.values&lt;/code&gt; will override the ones in &lt;code&gt;values.yaml&lt;/code&gt; from the chart source.&lt;/p&gt;
+&lt;p&gt;With the &lt;code&gt;fluxcd.io/automated&lt;/code&gt; annotations I instruct Flux to automate this release.
+When a new tag with the prefix &lt;code&gt;dev&lt;/code&gt; is pushed to Docker Hub, Flux will update the image field in the yaml file,
+will commit and push the change to Git and finally will apply the change on the cluster.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-image-update.png"&gt;&lt;img src="https://github.com/stefanprodan/openfaas-flux/raw/master/docs/screens/flux-helm-image-update.png" alt="gitops-automation" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When the &lt;code&gt;podinfo-dev&lt;/code&gt; HelmRelease object changes inside the cluster,
+Kubernetes API will notify the Flux Helm Operator and the operator will perform a Helm release upgrade.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ helm -n dev history podinfo-dev
+
+REVISION	STATUS    	CHART        	DESCRIPTION
+1       	superseded	podinfo-0.2.0	Install complete
+2       	deployed  	podinfo-0.2.0	Upgrade complete
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Flux Helm Operator reacts to changes in the HelmRelease collection but will also detect changes in the charts source files.
+If I make a change to the podinfo chart, the operator will pick that up and run an upgrade.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-chart-update.png"&gt;&lt;img src="https://github.com/stefanprodan/openfaas-flux/raw/master/docs/screens/flux-helm-chart-update.png" alt="gitops-chart-change" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ helm -n dev history podinfo-dev
+
+REVISION	STATUS    	CHART        	DESCRIPTION
+1       	superseded	podinfo-0.2.0	Install complete
+2       	superseded	podinfo-0.2.0	Upgrade complete
+3       	deployed  	podinfo-0.2.1	Upgrade complete
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let's assume that I want to promote the code from the &lt;code&gt;dev&lt;/code&gt; branch into a more stable environment for others to test it.
+I would create a release candidate by merging the podinfo code from &lt;code&gt;dev&lt;/code&gt; into the &lt;code&gt;stg&lt;/code&gt; branch.
+The CI would kick in and publish a new image:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; hack &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./ci-mock.sh -r stefanprodan/podinfo -b stg
+
+Successfully tagged stefanprodan/podinfo:stg-9ij63o4c
+The push refers to repository [docker.io/stefanprodan/podinfo]
+8f21c3669055: Pushed&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Assuming the staging environment has some sort of automated load testing in place,
+I want to have a different configuration than dev:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;apiVersion&lt;/span&gt;: &lt;span class="pl-s"&gt;helm.fluxcd.io/v1&lt;/span&gt;
+&lt;span class="pl-ent"&gt;kind&lt;/span&gt;: &lt;span class="pl-s"&gt;HelmRelease&lt;/span&gt;
+&lt;span class="pl-ent"&gt;metadata&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-rc&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;namespace&lt;/span&gt;: &lt;span class="pl-s"&gt;stg&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;annotations&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;fluxcd.io/automated&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;filter.fluxcd.io/chart-image&lt;/span&gt;: &lt;span class="pl-s"&gt;glob:stg-*&lt;/span&gt;
+&lt;span class="pl-ent"&gt;spec&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;releaseName&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-rc&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;chart&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;git&lt;/span&gt;: &lt;span class="pl-s"&gt;git@github.com:fluxcd/helm-operator-get-started&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;path&lt;/span&gt;: &lt;span class="pl-s"&gt;charts/podinfo&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;ref&lt;/span&gt;: &lt;span class="pl-s"&gt;master&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;values&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;image&lt;/span&gt;:
+      &lt;span class="pl-ent"&gt;repository&lt;/span&gt;: &lt;span class="pl-s"&gt;stefanprodan/podinfo&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;tag&lt;/span&gt;: &lt;span class="pl-s"&gt;stg-9ij63o4c&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;replicaCount&lt;/span&gt;: &lt;span class="pl-c1"&gt;2&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;hpa&lt;/span&gt;:
+      &lt;span class="pl-ent"&gt;enabled&lt;/span&gt;: &lt;span class="pl-c1"&gt;true&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;maxReplicas&lt;/span&gt;: &lt;span class="pl-c1"&gt;10&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;cpu&lt;/span&gt;: &lt;span class="pl-c1"&gt;50&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;memory&lt;/span&gt;: &lt;span class="pl-s"&gt;128Mi&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With Flux Helm releases it's easy to manage different configurations per environment.
+When adding a new option in the chart source make sure it's turned off by default so it will not affect all environments.&lt;/p&gt;
+&lt;p&gt;If I want to create a new environment, let's say for hotfixes testing, I would do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create a new namespace definition in &lt;code&gt;namespaces/hotfix.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;create a dir &lt;code&gt;releases/hotfix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;create a HelmRelease named &lt;code&gt;podinfo-hotfix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;set the automation filter to &lt;code&gt;glob:hotfix-*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;make the CI tooling publish images from my hotfix branch to &lt;code&gt;stefanprodan/podinfo:hotfix-sha&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-production-promotions-with-sem-ver" class="anchor" aria-hidden="true" href="#production-promotions-with-sem-ver"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Production promotions with sem ver&lt;/h3&gt;
+&lt;p&gt;For production, instead of tagging the images with the Git commit, I will use &lt;a href="https://semver.org" rel="nofollow"&gt;Semantic Versioning&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let's assume that I want to promote the code from the &lt;code&gt;stg&lt;/code&gt; branch into &lt;code&gt;master&lt;/code&gt; and do a production release.
+After merging &lt;code&gt;stg&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt; via a pull request, I would cut a release by tagging &lt;code&gt;master&lt;/code&gt; with version &lt;code&gt;0.4.10&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When I push the git tag, the CI will publish a new image in the &lt;code&gt;repo/app:git_tag&lt;/code&gt; format:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; hack &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./ci-mock.sh -r stefanprodan/podinfo -v 0.4.10
+
+Successfully built f176482168f8
+Successfully tagged stefanprodan/podinfo:0.4.10&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If I want to automate the production deployment based on version tags, I would use &lt;code&gt;semver&lt;/code&gt; filters instead of &lt;code&gt;glob&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;apiVersion&lt;/span&gt;: &lt;span class="pl-s"&gt;helm.fluxcd.io/v1&lt;/span&gt;
+&lt;span class="pl-ent"&gt;kind&lt;/span&gt;: &lt;span class="pl-s"&gt;HelmRelease&lt;/span&gt;
+&lt;span class="pl-ent"&gt;metadata&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-prod&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;namespace&lt;/span&gt;: &lt;span class="pl-s"&gt;prod&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;annotations&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;fluxcd.io/automated&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;true&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;filter.fluxcd.io/chart-image&lt;/span&gt;: &lt;span class="pl-s"&gt;semver:~0.4&lt;/span&gt;
+&lt;span class="pl-ent"&gt;spec&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;releaseName&lt;/span&gt;: &lt;span class="pl-s"&gt;podinfo-prod&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;chart&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;git&lt;/span&gt;: &lt;span class="pl-s"&gt;git@github.com:fluxcd/helm-operator-get-started&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;path&lt;/span&gt;: &lt;span class="pl-s"&gt;charts/podinfo&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;ref&lt;/span&gt;: &lt;span class="pl-s"&gt;master&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;values&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;image&lt;/span&gt;:
+      &lt;span class="pl-ent"&gt;repository&lt;/span&gt;: &lt;span class="pl-s"&gt;stefanprodan/podinfo&lt;/span&gt;
+      &lt;span class="pl-ent"&gt;tag&lt;/span&gt;: &lt;span class="pl-s"&gt;0.4.10&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;replicaCount&lt;/span&gt;: &lt;span class="pl-c1"&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now if I release a new patch, let's say &lt;code&gt;0.4.11&lt;/code&gt;, Flux will automatically deploy it.&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ &lt;span class="pl-c1"&gt;cd&lt;/span&gt; hack &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./ci-mock.sh -r stefanprodan/podinfo -v 0.4.11
+
+Successfully tagged stefanprodan/podinfo:0.4.11&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-semver.png"&gt;&lt;img src="https://github.com/stefanprodan/openfaas-flux/raw/master/docs/screens/flux-helm-semver.png" alt="gitops-semver" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-managing-kubernetes-secrets" class="anchor" aria-hidden="true" href="#managing-kubernetes-secrets"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Managing Kubernetes secrets&lt;/h3&gt;
+&lt;p&gt;In order to store secrets safely in a public Git repo you can use the Bitnami &lt;a href="https://github.com/bitnami-labs/sealed-secrets"&gt;Sealed Secrets controller&lt;/a&gt;
+and encrypt your Kubernetes Secrets into SealedSecrets.
+The SealedSecret can be decrypted only by the controller running in your cluster.&lt;/p&gt;
+&lt;p&gt;The Sealed Secrets Helm chart is available on &lt;a href="https://hub.helm.sh/charts/stable/sealed-secrets" rel="nofollow"&gt;Helm Hub&lt;/a&gt;,
+so I can use the Helm repository instead of a git repo. This is the sealed-secrets controller release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;apiVersion&lt;/span&gt;: &lt;span class="pl-s"&gt;helm.fluxcd.io/v1&lt;/span&gt;
+&lt;span class="pl-ent"&gt;kind&lt;/span&gt;: &lt;span class="pl-s"&gt;HelmRelease&lt;/span&gt;
+&lt;span class="pl-ent"&gt;metadata&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;sealed-secrets&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;namespace&lt;/span&gt;: &lt;span class="pl-s"&gt;adm&lt;/span&gt;
+&lt;span class="pl-ent"&gt;spec&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;releaseName&lt;/span&gt;: &lt;span class="pl-s"&gt;sealed-secrets&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;chart&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;repository&lt;/span&gt;: &lt;span class="pl-s"&gt;https://kubernetes-charts.storage.googleapis.com/&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;sealed-secrets&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;version&lt;/span&gt;: &lt;span class="pl-s"&gt;1.6.1&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that this release is not automated, since this is a critical component I prefer to update it manually.&lt;/p&gt;
+&lt;p&gt;Install the kubeseal CLI:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;brew install kubeseal&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At startup, the sealed-secrets controller generates a RSA key and logs the public key.
+Using kubeseal you can save your public key as &lt;code&gt;pub-cert.pem&lt;/code&gt;,
+the public key can be safely stored in Git, and can be used to encrypt secrets without direct access to the Kubernetes cluster:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubeseal --fetch-cert \
+--controller-namespace=adm \
+--controller-name=sealed-secrets \
+&lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; pub-cert.pem&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can generate a Kubernetes secret locally with kubectl and encrypt it with kubeseal:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubectl -n dev create secret generic basic-auth \
+--from-literal=user=admin \
+--from-literal=password=admin \
+--dry-run \
+-o json &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; basic-auth.json
+
+kubeseal --format=yaml --cert=pub-cert.pem &lt;span class="pl-k"&gt;&amp;lt;&lt;/span&gt; basic-auth.json &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; basic-auth.yaml&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This generates a custom resource of type &lt;code&gt;SealedSecret&lt;/code&gt; that contains the encrypted credentials:&lt;/p&gt;
+&lt;div class="highlight highlight-source-yaml"&gt;&lt;pre&gt;&lt;span class="pl-ent"&gt;apiVersion&lt;/span&gt;: &lt;span class="pl-s"&gt;bitnami.com/v1alpha1&lt;/span&gt;
+&lt;span class="pl-ent"&gt;kind&lt;/span&gt;: &lt;span class="pl-s"&gt;SealedSecret&lt;/span&gt;
+&lt;span class="pl-ent"&gt;metadata&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;name&lt;/span&gt;: &lt;span class="pl-s"&gt;basic-auth&lt;/span&gt;
+  &lt;span class="pl-ent"&gt;namespace&lt;/span&gt;: &lt;span class="pl-s"&gt;adm&lt;/span&gt;
+&lt;span class="pl-ent"&gt;spec&lt;/span&gt;:
+  &lt;span class="pl-ent"&gt;encryptedData&lt;/span&gt;:
+    &lt;span class="pl-ent"&gt;password&lt;/span&gt;: &lt;span class="pl-s"&gt;AgAR5nzhX2TkJ.......&lt;/span&gt;
+    &lt;span class="pl-ent"&gt;user&lt;/span&gt;: &lt;span class="pl-s"&gt;AgAQDO58WniIV3gTk.......&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Delete the &lt;code&gt;basic-auth.json&lt;/code&gt; file and push the &lt;code&gt;pub-cert.pem&lt;/code&gt; and &lt;code&gt;basic-auth.yaml&lt;/code&gt; to Git:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;rm basic-auth.json
+mv basic-auth.yaml /releases/dev/
+
+git commit -a -m &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Add basic auth credentials to dev namespace&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Flux will apply the sealed secret on your cluster and sealed-secrets controller will then decrypt it into a
+Kubernetes secret.&lt;/p&gt;
+&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/fluxcd/helm-operator-get-started/blob/master/diagrams/flux-helm-operator-sealed-secrets.png"&gt;&lt;img src="https://github.com/fluxcd/helm-operator-get-started/raw/master/diagrams/flux-helm-operator-sealed-secrets.png" alt="SealedSecrets" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To prepare for disaster recovery you should backup the sealed-secrets controller private key with:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubectl get secret -n adm sealed-secrets-key -o yaml --export &lt;span class="pl-k"&gt;&amp;gt;&lt;/span&gt; sealed-secrets-key.yaml&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To restore from backup after a disaster, replace the newly-created secret and restart the controller:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;kubectl replace secret -n adm sealed-secrets-key -f sealed-secrets-key.yaml
+kubectl delete pod -n adm -l app=sealed-secrets&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-getting-help" class="anchor" aria-hidden="true" href="#getting-help"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a name="user-content-help"&gt;&lt;/a&gt;Getting Help&lt;/h3&gt;
+&lt;p&gt;If you have any questions about Helm Operator and continuous delivery:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read &lt;a href="https://docs.fluxcd.io/projects/helm-operator/en/latest/" rel="nofollow"&gt;the Helm Operator docs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Read &lt;a href="https://docs.fluxcd.io/en/latest/references/helm-operator-integration.html" rel="nofollow"&gt;the Flux integration with the Helm operator docs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Invite yourself to the &lt;a href="https://slack.cncf.io" rel="nofollow"&gt;CNCF community&lt;/a&gt;
+slack and ask a question on the &lt;a href="https://cloud-native.slack.com/messages/flux/" rel="nofollow"&gt;#flux&lt;/a&gt;
+channel.&lt;/li&gt;
+&lt;li&gt;To be part of the conversation about Helm Operator's development, join the
+&lt;a href="https://lists.cncf.io/g/cncf-flux-dev" rel="nofollow"&gt;flux-dev mailing list&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/fluxcd/flux/issues/new"&gt;File an issue.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your feedback is always welcome!&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>fluxcd</author><guid isPermaLink="false">https://github.com/fluxcd/helm-operator-get-started</guid><pubDate>Thu, 30 Jan 2020 00:03:00 GMT</pubDate></item><item><title>Alfresco/acs-community-deployment #4 in Smarty, This week</title><link>https://github.com/Alfresco/acs-community-deployment</link><description>&lt;p&gt;&lt;i&gt;Deployment descriptors pull together Alfresco Content Services (Community)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-alfresco-content-services-community-deployment" class="anchor" aria-hidden="true" href="#alfresco-content-services-community-deployment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alfresco Content Services Community Deployment&lt;/h1&gt;
+&lt;h3&gt;&lt;a id="user-content-contributing-guide" class="anchor" aria-hidden="true" href="#contributing-guide"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing guide&lt;/h3&gt;
+&lt;p&gt;Please use &lt;a href="CONTRIBUTING.md"&gt;this guide&lt;/a&gt; to make a contribution to the project.&lt;/p&gt;
+&lt;p&gt;This project contains the code for starting the entire Alfresco Content Services (Community Edition) product with &lt;strong&gt;Docker&lt;/strong&gt; or &lt;strong&gt;Kubernetes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;master&lt;/strong&gt; branch of this repository will endeavour to support the following deployments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="docs/docker-compose-deployment.md"&gt;Docker Compose&lt;/a&gt; (latest): For development and trials&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/helm-deployment-minikube.md"&gt;MiniKube&lt;/a&gt; (latest): For development and POCs&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/helm-deployment-aws_kops.md"&gt;Helm - AWS Cloud with Kubernetes&lt;/a&gt; (latest): As a deployment template which can be used as the basis for your specific deployment needs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the Enterprise project, go to &lt;a href="https://github.com/Alfresco/acs-deployment"&gt;acs-deployment&lt;/a&gt;. The only difference between these projects is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the Community chart, clustering is not supported, so only a single &lt;code&gt;alfresco-content-repository-community&lt;/code&gt; node is started by default.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-contents-of-the-deployment" class="anchor" aria-hidden="true" href="#contents-of-the-deployment"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contents of the deployment&lt;/h2&gt;
+&lt;p&gt;Alfresco Content Services Community deployed via &lt;code&gt;docker-compose&lt;/code&gt; or Kubernetes contains the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Alfresco Repository for Community, with:&lt;br&gt;
+1.1. Alfresco Share Services AMP&lt;br&gt;
+1.2. Alfresco AOS AMP&lt;br&gt;
+1.3. Alfresco vti-bin war - helps with AOS integration&lt;br&gt;
+1.4. Alfresco Google Docs Repo AMP&lt;/li&gt;
+&lt;li&gt;Alfresco Share, with:&lt;br&gt;
+2.1 Alfresco Google Docs Share AMP&lt;/li&gt;
+&lt;li&gt;A Postgres DB&lt;/li&gt;
+&lt;li&gt;Alfresco Search Services (Solr6)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id="user-content-deployment-options" class="anchor" aria-hidden="true" href="#deployment-options"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment options&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="docs/helm-deployment-aws_kops.md"&gt;Deploying with Helm charts on AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/helm-deployment-minikube.md"&gt;Deploying with Helm charts using Minikube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="docs/docker-compose-deployment.md"&gt;Deploying using Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use the steps in this project to customize your deployment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="docs/customising-deployment.md"&gt;Customizing your deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-other-information" class="anchor" aria-hidden="true" href="#other-information"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Other information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;See alternative commands and start up &lt;a href="https://github.com/Alfresco/alfresco-anaxes-shipyard/blob/master/docs/running-a-cluster.md"&gt;tutorial with AWS support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Alfresco/alfresco-anaxes-shipyard/blob/master/docs/tips-and-tricks.md"&gt;Tips and tricks&lt;/a&gt; for working with Kubernetes and Alfresco Content Services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>Alfresco</author><guid isPermaLink="false">https://github.com/Alfresco/acs-community-deployment</guid><pubDate>Thu, 30 Jan 2020 00:04:00 GMT</pubDate></item></channel></rss>
