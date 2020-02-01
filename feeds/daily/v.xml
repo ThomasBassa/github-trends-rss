@@ -1,2 +1,347 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: V, Today</title><link>https://github.com/trending/v?since=daily</link><description>The top repositories on GitHub for v, measured daily</description><pubDate>Fri, 31 Jan 2020 01:07:31 GMT</pubDate><lastBuildDate>Fri, 31 Jan 2020 01:07:31 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in V, Today for today</title><pubDate>Fri, 31 Jan 2020 01:07:31 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: V, Today</title><link>https://github.com/trending/v?since=daily</link><description>The top repositories on GitHub for v, measured daily</description><pubDate>Sat, 01 Feb 2020 01:11:33 GMT</pubDate><lastBuildDate>Sat, 01 Feb 2020 01:11:33 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>taojy123/valval #1 in V, Today</title><link>https://github.com/taojy123/valval</link><description>&lt;p&gt;&lt;i&gt;The fastest web framework in V language (vlang)&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-valval" class="anchor" aria-hidden="true" href="#valval"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Valval&lt;/h1&gt;
+&lt;p&gt;Valval is the fastest web framework in V language.&lt;/p&gt;
+&lt;p&gt;This means you can &lt;strong&gt;develop&lt;/strong&gt; a website &lt;em&gt;&lt;strong&gt;quickly&lt;/strong&gt;&lt;/em&gt; and &lt;strong&gt;run&lt;/strong&gt; it &lt;em&gt;&lt;strong&gt;even faster&lt;/strong&gt;&lt;/em&gt;!&lt;/p&gt;
+&lt;h5&gt;&lt;a id="user-content-a-simple-demo" class="anchor" aria-hidden="true" href="#a-simple-demo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A simple demo:&lt;/h5&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-en"&gt;valval&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;hello&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello world&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;() {
+	&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)
+	app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, hello)
+	valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;8012&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-install-v-language" class="anchor" aria-hidden="true" href="#install-v-language"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install V language&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/vlang/v
+$ cd v
+$ make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Install OpenSSL&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;macOS:
+$ brew install openssl
+
+Debian/Ubuntu:
+$ sudo apt install libssl-dev openssl ca-certificates
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Windows (Win10 Verified):
+Source can be downloaded from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.openssl.org/source/" rel="nofollow"&gt;https://www.openssl.org/source/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openssl/"&gt;https://github.com/openssl/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find a &lt;a href="https://slproweb.com/products/Win32OpenSSL.html" title="32 and 64 bit available" rel="nofollow"&gt;Graphic installer&lt;/a&gt; if that's more to you're liking.&lt;/p&gt;
+&lt;p&gt;Or use V in docker, it includes OpenSSL&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -it -p 8012:8012 --name vlang taojy123/vlang bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-install-valval" class="anchor" aria-hidden="true" href="#install-valval"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Valval&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-using-git" class="anchor" aria-hidden="true" href="#using-git"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using Git&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/taojy123/valval
+$ ln -s $(pwd)/valval ~/.vmodules/valval 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;a id="user-content-using-vpm" class="anchor" aria-hidden="true" href="#using-vpm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Using VPM&lt;/h4&gt;
+&lt;p&gt;Watchman123456 has registered the module with vpm.
+Simply use the following if you have v on your PATH variable:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;$ v install watchman123456.valval&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/em&gt;: If you use vpm; you'll have to change the import to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import watchman123456.valval
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As well as the usage to &lt;code&gt;watchman123456.valval&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-quickstart" class="anchor" aria-hidden="true" href="#quickstart"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quickstart&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-a-minimal-application" class="anchor" aria-hidden="true" href="#a-minimal-application"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A Minimal Application&lt;/h3&gt;
+&lt;p&gt;A minimal Valval application looks something like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; demo.v&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;module&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-en"&gt;valval&lt;/span&gt;
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;hello&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello world&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;() {
+	&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)
+	app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, hello)
+	valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;8012&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Run server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ v run demo.v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you can visit &lt;code&gt;http://127.0.0.1:8012/&lt;/code&gt; to see the website&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl http://127.0.0.1:8012/
+hello world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-debug-mode" class="anchor" aria-hidden="true" href="#debug-mode"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debug Mode&lt;/h3&gt;
+&lt;p&gt;You can decide whether to use debug mode when calling &lt;code&gt;valval.new_app()&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; debug mode&lt;/span&gt;
+&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;false&lt;/span&gt;) &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; production mode&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;debug mode will print out more infomation while app running&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-service-port" class="anchor" aria-hidden="true" href="#service-port"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Service Port&lt;/h3&gt;
+&lt;p&gt;You can decide the service port number when calling the &lt;code&gt;valval.runserver()&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;8012&lt;/span&gt;)  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; listening 8012 port&lt;/span&gt;
+valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;80&lt;/span&gt;)    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; listening 80 port&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The valval server will bind &lt;code&gt;0.0.0.0&lt;/code&gt; address, so you can visit the website by &lt;code&gt;127.0.0.1:Port&lt;/code&gt; or &lt;code&gt;ServerIp:Port&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-routing" class="anchor" aria-hidden="true" href="#routing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Routing&lt;/h3&gt;
+&lt;p&gt;Use the &lt;code&gt;App.register()&lt;/code&gt; function to band a handler function to request path&lt;/p&gt;
+&lt;p&gt;The handler function should have a parameter of type &lt;code&gt;Request&lt;/code&gt; and return a &lt;code&gt;Response&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, hello)   		         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1&lt;/span&gt;
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/users&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function1)        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1/users&lt;/span&gt;
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/user/info&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function2)    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1/user/info&lt;/span&gt;
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;POST:/book&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function3)  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1/book by POST&lt;/span&gt;
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;DELETE:/book&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function4)    &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1/book by DELETE&lt;/span&gt;
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/book&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function5)         &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; http://127.0.0.1/book by other methods&lt;/span&gt;
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;*&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, function6)   		     &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; all remain&lt;/span&gt;
+
+valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;80&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-accessing-request-data" class="anchor" aria-hidden="true" href="#accessing-request-data"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Accessing Request Data&lt;/h3&gt;
+&lt;p&gt;Currently, only the following data can be parsed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;query parameters by GET request; by &lt;code&gt;valval.Request.query[xxx]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x-www-form-urlencoded&lt;/code&gt; parameters by POST / PUT / PATCH request; by &lt;code&gt;valval.Request.form[xxx]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;hello&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; request.query[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
+	&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; {
+		&lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;world&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+	}
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;post_hello&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; request.form[&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;]
+	&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; {
+		&lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;world&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+	}
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;GET:/hello&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, hello)
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;POST:/hello&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, post_hello)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;valval.Request.get()&lt;/code&gt; provides a quick way to get data whether it is from &lt;code&gt;query&lt;/code&gt; or &lt;code&gt;form&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;hello&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; request.&lt;span class="pl-en"&gt;get&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;world&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)  &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; default: 'world'&lt;/span&gt;
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+app.&lt;span class="pl-en"&gt;register&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/hello&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, hello)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;More types of request data will be supported in the future:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters in url&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;multipart/form-data&lt;/code&gt; by POST request&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;application/json&lt;/code&gt; by POST request&lt;/li&gt;
+&lt;li&gt;uploaded files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-static-files" class="anchor" aria-hidden="true" href="#static-files"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Static Files&lt;/h3&gt;
+&lt;p&gt;Use &lt;code&gt;valval.App.serve_static&lt;/code&gt; to serve local files&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;app&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_app&lt;/span&gt;(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)
+
+app.&lt;span class="pl-en"&gt;serve_static&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/static/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;./relative/path/to/static/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)  
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; visit http://127.0.0.1/static/xxx.js ...&lt;/span&gt;
+
+app.&lt;span class="pl-en"&gt;serve_static&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/static2/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/absolute/path/to/static2/&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;) 
+&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; visit http://127.0.0.1/static2/yyy.css ...&lt;/span&gt;
+
+valval.&lt;span class="pl-en"&gt;runserver&lt;/span&gt;(app, &lt;span class="pl-c1"&gt;80&lt;/span&gt;)&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-rendering-templates" class="anchor" aria-hidden="true" href="#rendering-templates"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering Templates&lt;/h3&gt;
+&lt;p&gt;Valval used a whole new idea to implement the template function; inspired by &lt;a href="https://github.com/vuejs/vue"&gt;Vue's&lt;/a&gt; system.&lt;/p&gt;
+&lt;p&gt;Has the following advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You don't need to spend time learning how to use templates, if you have used &lt;code&gt;Vue&lt;/code&gt; before.&lt;/li&gt;
+&lt;li&gt;If you haven't used &lt;code&gt;Vue&lt;/code&gt;, you also can &lt;a href="https://vuejs.org/v2/guide/syntax.html" rel="nofollow"&gt;learn&lt;/a&gt; it fast, because it's so easy.&lt;/li&gt;
+&lt;li&gt;It can integrate some commonly used UI frameworks, such as: &lt;code&gt;element&lt;/code&gt;, &lt;code&gt;mint&lt;/code&gt;, &lt;code&gt;vant&lt;/code&gt;, &lt;code&gt;antd&lt;/code&gt;, &lt;code&gt;bootstrap&lt;/code&gt;...&lt;/li&gt;
+&lt;li&gt;I don't need to spend time developing built-in templates &lt;g-emoji class="g-emoji" alias="grin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png"&gt;😁&lt;/g-emoji&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An example for template:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;server.v&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;import&lt;/span&gt; (
+	&lt;span class="pl-en"&gt;valval&lt;/span&gt;
+	json
+)
+
+&lt;span class="pl-k"&gt;struct&lt;/span&gt; &lt;span class="pl-en"&gt;User&lt;/span&gt; {
+	&lt;span class="pl-smi"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;string&lt;/span&gt;
+	&lt;span class="pl-smi"&gt;age&lt;/span&gt; &lt;span class="pl-k"&gt;int&lt;/span&gt;
+	&lt;span class="pl-smi"&gt;sex&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt;
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;users&lt;/span&gt;(req valval.Request) valval.Response {
+
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; create a view by template file (`test6.html` can be a relative or absolute path)&lt;/span&gt;
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; use `element` (https://github.com/ElemeFE/element) as ui framework&lt;/span&gt;
+	&lt;span class="pl-k"&gt;mut&lt;/span&gt; &lt;span class="pl-v"&gt;view&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; valval.&lt;span class="pl-en"&gt;new_view&lt;/span&gt;(req, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;users.html&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;element&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-k"&gt;or&lt;/span&gt; {
+		&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_bad&lt;/span&gt;(err)
+	}
+
+	&lt;span class="pl-v"&gt;users&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; [
+		User{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Lucy&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;13&lt;/span&gt;, &lt;span class="pl-c1"&gt;false&lt;/span&gt;},
+		User{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Lily&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;13&lt;/span&gt;, &lt;span class="pl-c1"&gt;false&lt;/span&gt;},
+		User{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Jim&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;12&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;},
+	]
+	&lt;span class="pl-v"&gt;msg&lt;/span&gt; &lt;span class="pl-k"&gt;:=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;This is a page of three user&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; use view.set to bind data for rendering template&lt;/span&gt;
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; the second parameter must be a json string&lt;/span&gt;
+	view.&lt;span class="pl-en"&gt;set&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;users&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, json.&lt;span class="pl-en"&gt;encode&lt;/span&gt;(users))
+	view.&lt;span class="pl-en"&gt;set&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;msg&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, json.&lt;span class="pl-en"&gt;encode&lt;/span&gt;(msg))
+
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_view&lt;/span&gt;(view)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;users.html&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight highlight-text-html-basic"&gt;&lt;pre&gt;&amp;lt;&lt;span class="pl-ent"&gt;html&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;head&lt;/span&gt;&amp;gt;
+        &amp;lt;&lt;span class="pl-ent"&gt;title&lt;/span&gt;&amp;gt;Users Page&amp;lt;/&lt;span class="pl-ent"&gt;title&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span class="pl-ent"&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span class="pl-ent"&gt;body&lt;/span&gt;&amp;gt;
+        &lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;&amp;lt;!--&lt;/span&gt; Content in body can use template syntax &lt;span class="pl-c"&gt;--&amp;gt;&lt;/span&gt;&lt;/span&gt;
+        &amp;lt;&lt;span class="pl-ent"&gt;h3&lt;/span&gt;&amp;gt;{{msg}}&amp;lt;/&lt;span class="pl-ent"&gt;h3&lt;/span&gt;&amp;gt;
+        &amp;lt;&lt;span class="pl-ent"&gt;p&lt;/span&gt; &lt;span class="pl-e"&gt;v-for&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;u in users&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;
+            &amp;lt;&lt;span class="pl-ent"&gt;span&lt;/span&gt;&amp;gt;{{u.name}}&amp;lt;/&lt;span class="pl-ent"&gt;span&lt;/span&gt;&amp;gt; ,
+            &amp;lt;&lt;span class="pl-ent"&gt;span&lt;/span&gt;&amp;gt;{{u.age}}&amp;lt;/&lt;span class="pl-ent"&gt;span&lt;/span&gt;&amp;gt; ,
+            &amp;lt;&lt;span class="pl-ent"&gt;el-tag&lt;/span&gt; &lt;span class="pl-e"&gt;v-if&lt;/span&gt;=&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;u.sex&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;Male&amp;lt;/&lt;span class="pl-ent"&gt;el-tag&lt;/span&gt;&amp;gt;
+            &amp;lt;&lt;span class="pl-ent"&gt;el-tag&lt;/span&gt; &lt;span class="pl-e"&gt;v-else&lt;/span&gt;&amp;gt;Female&amp;lt;/&lt;span class="pl-ent"&gt;el-tag&lt;/span&gt;&amp;gt;
+        &amp;lt;/&lt;span class="pl-ent"&gt;p&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span class="pl-ent"&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span class="pl-ent"&gt;html&lt;/span&gt;&amp;gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-redirects" class="anchor" aria-hidden="true" href="#redirects"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Redirects&lt;/h3&gt;
+&lt;p&gt;Use &lt;code&gt;valval.response_redirect()&lt;/code&gt; to generate a redirect response&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;test1&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; req.&lt;span class="pl-en"&gt;get&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;name&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+	&lt;span class="pl-k"&gt;if&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt;&lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; {
+		&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_redirect&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;/not_found&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+	}
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_ok&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;hello &lt;span class="pl-smi"&gt;$name&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;a id="user-content-responses" class="anchor" aria-hidden="true" href="#responses"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Responses&lt;/h3&gt;
+&lt;p&gt;In addition to the responses mentioned above (&lt;code&gt;response_ok&lt;/code&gt;,  &lt;code&gt;response_view&lt;/code&gt;, &lt;code&gt;response_redirect&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Valval also provides other response types, as follows:&lt;/p&gt;
+&lt;div class="highlight highlight-source-v"&gt;&lt;pre&gt;&lt;span class="pl-k"&gt;struct&lt;/span&gt; &lt;span class="pl-en"&gt;User&lt;/span&gt; {
+	&lt;span class="pl-smi"&gt;name&lt;/span&gt; &lt;span class="pl-k"&gt;string&lt;/span&gt;
+	&lt;span class="pl-smi"&gt;age&lt;/span&gt; &lt;span class="pl-k"&gt;int&lt;/span&gt;
+	&lt;span class="pl-smi"&gt;sex&lt;/span&gt; &lt;span class="pl-k"&gt;bool&lt;/span&gt;
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;text&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_text&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;this is plain text response&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;json&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-v"&gt;user&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; User{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Tom&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;12&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;}
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_json&lt;/span&gt;(user)
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; -&amp;gt; {"name": "Tom", "age": 12, "sex": true}&lt;/span&gt;
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;json_str&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-v"&gt;user&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; User{&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Tom&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;12&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;}
+	&lt;span class="pl-v"&gt;user_str&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; json.&lt;span class="pl-en"&gt;encode&lt;/span&gt;(user)
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_json_str&lt;/span&gt;(user_str)
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; -&amp;gt; {"name": "Tom", "age": 12, "sex": true}&lt;/span&gt;
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;file&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_file&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;path/to/local/file&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+}
+
+&lt;span class="pl-k"&gt;fn&lt;/span&gt; &lt;span class="pl-en"&gt;bad&lt;/span&gt;(req valval.Request) valval.Response {
+	&lt;span class="pl-k"&gt;return&lt;/span&gt; valval.&lt;span class="pl-en"&gt;response_bad&lt;/span&gt;(&lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;Parameter error!&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;)
+	&lt;span class="pl-c"&gt;&lt;span class="pl-c"&gt;//&lt;/span&gt; response with statu code 400&lt;/span&gt;
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;a id="user-content-complete-example" class="anchor" aria-hidden="true" href="#complete-example"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Complete Example&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You can visit &lt;a href="https://github.com/taojy123/valval/tree/master/example"&gt;https://github.com/taojy123/valval/tree/master/example&lt;/a&gt; to see the complete example.&lt;/li&gt;
+&lt;li&gt;And the official website of valval (&lt;a href="https://valval.cool" rel="nofollow"&gt;https://valval.cool&lt;/a&gt;) is also written with the valval framework: &lt;a href="https://github.com/taojy123/valval_website"&gt;https://github.com/taojy123/valval_website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-api-reference" class="anchor" aria-hidden="true" href="#api-reference"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API Reference&lt;/h2&gt;
+&lt;h3&gt;&lt;a id="user-content-functions" class="anchor" aria-hidden="true" href="#functions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Functions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;valval.new_app(debug bool) App&lt;/li&gt;
+&lt;li&gt;valval.runserver(app App, port int)&lt;/li&gt;
+&lt;li&gt;valval.new_view(req Request, template string, ui string) ?View&lt;/li&gt;
+&lt;li&gt;valval.response_ok(content string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_text(content string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_json(obj T) Response&lt;/li&gt;
+&lt;li&gt;valval.response_json_str(data string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_file(path string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_redirect(url string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_bad(msg string) Response&lt;/li&gt;
+&lt;li&gt;valval.response_view(view View) Response&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a id="user-content-structs" class="anchor" aria-hidden="true" href="#structs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Structs&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;valval.Request&lt;/strong&gt; {&lt;/p&gt;
+&lt;p&gt;​    pub:&lt;/p&gt;
+&lt;p&gt;​        app App&lt;/p&gt;
+&lt;p&gt;​        method string&lt;/p&gt;
+&lt;p&gt;​        path string&lt;/p&gt;
+&lt;p&gt;​        query map[string]string&lt;/p&gt;
+&lt;p&gt;​        form map[string]string&lt;/p&gt;
+&lt;p&gt;​        body string&lt;/p&gt;
+&lt;p&gt;​        headers map[string]string&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fn (req Request) get(key string, default_value string) string&lt;/li&gt;
+&lt;li&gt;fn (req Request) is_api() bool&lt;/li&gt;
+&lt;li&gt;fn (req Request) is_page() bool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;valval.Response&lt;/strong&gt; {&lt;/p&gt;
+&lt;p&gt;​    pub mut:&lt;/p&gt;
+&lt;p&gt;​        status int = 200&lt;/p&gt;
+&lt;p&gt;​        body string = ''&lt;/p&gt;
+&lt;p&gt;​        content_type string = 'text/html; charset=utf-8'&lt;/p&gt;
+&lt;p&gt;​        headers map[string]string&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fn (res mut Response) set_header(key string, value string)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;valval.View&lt;/strong&gt; {&lt;/p&gt;
+&lt;p&gt;​        req Request&lt;/p&gt;
+&lt;p&gt;​        template string&lt;/p&gt;
+&lt;p&gt;​        ui string = 'element'&lt;/p&gt;
+&lt;p&gt;​    mut:&lt;/p&gt;
+&lt;p&gt;​        context map[string]string&lt;/p&gt;
+&lt;p&gt;​    pub:&lt;/p&gt;
+&lt;p&gt;​        content string  // html after template compiled&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fn (view mut View) set(key string, data string)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;valval.App&lt;/strong&gt; {&lt;/p&gt;
+&lt;p&gt;​    pub:&lt;/p&gt;
+&lt;p&gt;​        name string = 'ValvalApp'&lt;/p&gt;
+&lt;p&gt;​        debug bool = true&lt;/p&gt;
+&lt;p&gt;​        run_ts int = 0&lt;/p&gt;
+&lt;p&gt;​    mut:&lt;/p&gt;
+&lt;p&gt;​        router map[string]Handler&lt;/p&gt;
+&lt;p&gt;​        static_map map[string]string&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fn (app mut App) register(path string, func fn(Request) Response)&lt;/li&gt;
+&lt;li&gt;fn (app mut App) serve_static(static_prefix string, static_root string)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;valval.Server&lt;/strong&gt; {&lt;/p&gt;
+&lt;p&gt;​    pub:&lt;/p&gt;
+&lt;p&gt;​        address string = '0.0.0.0'&lt;/p&gt;
+&lt;p&gt;​        port int = 8012&lt;/p&gt;
+&lt;p&gt;​    mut:&lt;/p&gt;
+&lt;p&gt;​        app App&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fn (server Server) run()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>taojy123</author><guid isPermaLink="false">https://github.com/taojy123/valval</guid><pubDate>Sat, 01 Feb 2020 00:01:00 GMT</pubDate></item></channel></rss>
