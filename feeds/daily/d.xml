@@ -1,2 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: D, Today</title><link>https://github.com/trending/d?since=daily</link><description>The top repositories on GitHub for d, measured daily</description><pubDate>Wed, 05 Feb 2020 01:08:33 GMT</pubDate><lastBuildDate>Wed, 05 Feb 2020 01:08:33 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in D, Today for today</title><pubDate>Wed, 05 Feb 2020 01:08:33 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: D, Today</title><link>https://github.com/trending/d?since=daily</link><description>The top repositories on GitHub for d, measured daily</description><pubDate>Thu, 06 Feb 2020 01:10:38 GMT</pubDate><lastBuildDate>Thu, 06 Feb 2020 01:10:38 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>vibe-d/eventcore #1 in D, Today</title><link>https://github.com/vibe-d/eventcore</link><description>&lt;p&gt;&lt;i&gt;High performance proactor event loop abstraction library&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-eventcore" class="anchor" aria-hidden="true" href="#eventcore"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;EventCore&lt;/h1&gt;
+&lt;p&gt;This is a high-performance native event loop abstraction for D, focused on asynchronous I/O and GUI message integration. The API is callback (delegate) based. For a higher level fiber based abstraction, take a look at &lt;a href="https://vibed.org/" rel="nofollow"&gt;vibe.d&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The API documentation is part of vibe.d:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vibed.org/api/eventcore.driver/EventDriver" rel="nofollow"&gt;&lt;code&gt;EventDriver&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vibed.org/api/eventcore.core/eventDriver" rel="nofollow"&gt;&lt;code&gt;eventDriver&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vibed.org/api/eventcore.socket/" rel="nofollow"&gt;Experimental &lt;code&gt;eventcore.socket&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://code.dlang.org/packages/eventcore" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/1150b6122575afbd1038cc2330bf0bd52dfd906c/68747470733a2f2f696d672e736869656c64732e696f2f6475622f762f6576656e74636f72652e737667" alt="DUB Package" data-canonical-src="https://img.shields.io/dub/v/eventcore.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/vibe-d/eventcore" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/e02d6619f3cb443859921400a9d33657ca64f40a/68747470733a2f2f7472617669732d63692e6f72672f766962652d642f6576656e74636f72652e7376673f6272616e63683d6d6173746572" alt="Posix Build Status" data-canonical-src="https://travis-ci.org/vibe-d/eventcore.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/s-ludwig/eventcore" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f95a41ed8c2847428947582960020cd9a288c24d/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f31613972387379707979396671326a382f6272616e63682f6d61737465723f7376673d74727565" alt="Windows Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/1a9r8sypyy9fq2j8/branch/master?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-drivers-and-operating-systems" class="anchor" aria-hidden="true" href="#supported-drivers-and-operating-systems"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported drivers and operating systems&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Driver&lt;/th&gt;
+&lt;th&gt;Linux&lt;/th&gt;
+&lt;th&gt;Windows&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;FreeBSD&lt;/th&gt;
+&lt;th&gt;Android&lt;/th&gt;
+&lt;th&gt;iOS&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;SelectEventDriver&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes¹&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;EpollEventDriver&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WinAPIEventDriver&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;KqueueEventDriver&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes¹&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LibasyncEventDriver&lt;/td&gt;
+&lt;td&gt;—¹&lt;/td&gt;
+&lt;td&gt;—¹&lt;/td&gt;
+&lt;td&gt;—¹&lt;/td&gt;
+&lt;td&gt;—¹&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;¹ planned, but not currenly implemented&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-compilers" class="anchor" aria-hidden="true" href="#supported-compilers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported compilers&lt;/h2&gt;
+&lt;p&gt;The following compilers are tested and supported:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.087.1&lt;/li&gt;
+&lt;li&gt;DMD 2.086.1&lt;/li&gt;
+&lt;li&gt;DMD 2.085.1&lt;/li&gt;
+&lt;li&gt;DMD 2.084.1&lt;/li&gt;
+&lt;li&gt;DMD 2.079.0&lt;/li&gt;
+&lt;li&gt;LDC 1.17.0&lt;/li&gt;
+&lt;li&gt;LDC 1.16.0&lt;/li&gt;
+&lt;li&gt;LDC 1.15.0&lt;/li&gt;
+&lt;li&gt;LDC 1.14.0&lt;/li&gt;
+&lt;li&gt;LDC 1.13.0&lt;/li&gt;
+&lt;li&gt;LDC 1.9.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-driver-development-status" class="anchor" aria-hidden="true" href="#driver-development-status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Driver development status&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature \ EventDriver&lt;/th&gt;
+&lt;th&gt;Select&lt;/th&gt;
+&lt;th&gt;Epoll&lt;/th&gt;
+&lt;th&gt;WinAPI&lt;/th&gt;
+&lt;th&gt;Kqueue&lt;/th&gt;
+&lt;th&gt;Libasync&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;TCP Sockets&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UDP Sockets&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;USDS&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DNS&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Timers&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Events&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unix Signals&lt;/td&gt;
+&lt;td&gt;yes²&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Files&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UI Integration&lt;/td&gt;
+&lt;td&gt;yes¹&lt;/td&gt;
+&lt;td&gt;yes¹&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes¹&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;File watcher&lt;/td&gt;
+&lt;td&gt;yes²&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes²&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pipes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Processes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;yes&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;¹ Manually, by adopting the X11 display connection socket&lt;/p&gt;
+&lt;p&gt;² Systems other than Linux use a polling implementation&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-open-questions" class="anchor" aria-hidden="true" href="#open-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Open questions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Error code reporting&lt;/li&gt;
+&lt;li&gt;Enqueued writes&lt;/li&gt;
+&lt;li&gt;Use the type system to prohibit passing thread-local handles to foreign threads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>vibe-d</author><guid isPermaLink="false">https://github.com/vibe-d/eventcore</guid><pubDate>Thu, 06 Feb 2020 00:01:00 GMT</pubDate></item><item><title>dlang-community/D-YAML #2 in D, Today</title><link>https://github.com/dlang-community/D-YAML</link><description>&lt;p&gt;&lt;i&gt;YAML parser and emitter for the D programming language&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-dyaml" class="anchor" aria-hidden="true" href="#dyaml"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;D:YAML&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://travis-ci.org/dlang-community/D-YAML" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/6aa939fb22b3eae391472c4cfecb333d3bbc5779/68747470733a2f2f7472617669732d63692e6f72672f646c616e672d636f6d6d756e6974792f442d59414d4c2e7376673f6272616e63683d6d6173746572" alt="travis-ci" data-canonical-src="https://travis-ci.org/dlang-community/D-YAML.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://codecov.io/gh/dlang-community/D-YAML" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/49e25ef9fa42e4200e6c30039f7e27b2e3a23710/68747470733a2f2f636f6465636f762e696f2f67682f646c616e672d636f6d6d756e6974792f442d59414d4c2f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/dlang-community/D-YAML/branch/master/graph/badge.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="http://code.dlang.org/packages/dyaml" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/0139331d13c0fe36ef91e79546653920d350d7fe/68747470733a2f2f696d672e736869656c64732e696f2f6475622f762f6479616d6c2e737667" alt="code.dlang.org" data-canonical-src="https://img.shields.io/dub/v/dyaml.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;D:YAML is an open source YAML parser and emitter library for the D programming language.
+It is &lt;a href="https://dlang-community.github.io/D-YAML/articles/spec_differences.html" rel="nofollow"&gt;almost&lt;/a&gt; compliant to the YAML 1.1 specification.
+D:YAML is based on &lt;a href="http://www.pyyaml.org" rel="nofollow"&gt;PyYAML&lt;/a&gt; created by Kirill Simonov.&lt;/p&gt;
+&lt;p&gt;D:YAML is designed to be easy to use while supporting the full feature set of YAML.
+To start using it in your project, see the &lt;a href="https://dlang-community.github.io/D-YAML/tutorials/getting_started.html" rel="nofollow"&gt;Getting Started&lt;/a&gt; tutorial.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-features" class="anchor" aria-hidden="true" href="#features"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to use, high level API and detailed debugging messages.&lt;/li&gt;
+&lt;li&gt;Detailed API documentation and tutorials.&lt;/li&gt;
+&lt;li&gt;Code examples.&lt;/li&gt;
+&lt;li&gt;Supports all YAML 1.1 constructs. All examples from the YAML 1.1
+specification are parsed correctly.&lt;/li&gt;
+&lt;li&gt;Reads from and writes from/to YAML files or in-memory buffers.&lt;/li&gt;
+&lt;li&gt;UTF-8, UTF-16 and UTF-32 encodings are supported, both big and
+little endian (plain ASCII also works as it is a subset of UTF-8).&lt;/li&gt;
+&lt;li&gt;Support for both block (Python-like, based on indentation) and flow
+(JSON-like, based on bracing) constructs.&lt;/li&gt;
+&lt;li&gt;Support for YAML anchors and aliases.&lt;/li&gt;
+&lt;li&gt;Support for default values in mappings.&lt;/li&gt;
+&lt;li&gt;Support for custom tags (data types), and implicit tag resolution
+for custom scalar tags.&lt;/li&gt;
+&lt;li&gt;All tags (data types) described at &lt;a href="http://yaml.org/type/" rel="nofollow"&gt;http://yaml.org/type/&lt;/a&gt; are
+supported, with the exception of &lt;code&gt;tag:yaml.org,2002:yaml&lt;/code&gt;, which is
+used to represent YAML code in YAML.&lt;/li&gt;
+&lt;li&gt;Remembers YAML style information between loading and dumping if
+possible.&lt;/li&gt;
+&lt;li&gt;Reuses input memory and uses slices to minimize memory allocations.&lt;/li&gt;
+&lt;li&gt;There is no support for recursive data structures. There are no
+plans to implement this at the moment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-directory-structure" class="anchor" aria-hidden="true" href="#directory-structure"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Directory structure&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Directory&lt;/th&gt;
+&lt;th&gt;Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;./&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;This README, utility scripts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;./docs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Documentation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;./source&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Source code.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;./examples/&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Example projects using D:YAML.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;./test&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Unittest data.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;a id="user-content-installing-and-tutorial" class="anchor" aria-hidden="true" href="#installing-and-tutorial"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Installing and tutorial&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href="https://dlang-community.github.io/D-YAML/tutorials/getting_started.html" rel="nofollow"&gt;Getting Started&lt;/a&gt;.
+Tutorial and other tutorials that can be found at the &lt;a href="https://dlang-community.github.io/D-YAML/" rel="nofollow"&gt;GitHub pages&lt;/a&gt; or in the &lt;code&gt;docs&lt;/code&gt; directory of the repository.&lt;/p&gt;
+&lt;p&gt;API documentation is available &lt;a href="https://dyaml.dpldocs.info/dyaml.html" rel="nofollow"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h2&gt;
+&lt;p&gt;D:YAML is released under the terms of the &lt;a href="http://www.boost.org/LICENSE_1_0.txt" rel="nofollow"&gt;Boost Software
+License 1.0&lt;/a&gt;. This license allows
+you to use the source code in your own projects, open source or
+proprietary, and to modify it to suit your needs. However, in source
+distributions, you have to preserve the license headers in the source
+code and the accompanying license file.&lt;/p&gt;
+&lt;p&gt;Full text of the license can be found in file &lt;code&gt;LICENSE_1_0.txt&lt;/code&gt; and is
+also displayed here:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Boost Software License - Version 1.0 - August 17th, 2003
+
+Permission is hereby granted, free of charge, to any person or organization
+obtaining a copy of the software and accompanying documentation covered by
+this license (the "Software") to use, reproduce, display, distribute,
+execute, and transmit the Software, and to prepare derivative works of the
+Software, and to permit third-parties to whom the Software is furnished to
+do so, all subject to the following:
+
+The copyright notices in the Software and this entire statement, including
+the above license grant, this restriction and the following disclaimer,
+must be included in all copies of the Software, in whole or in part, and
+all derivative works of the Software, unless such copies or derivative
+works are solely in the form of machine-executable object code generated by
+a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;p&gt;D:YAML was created by Ferdinand Majerech aka Kiith-Sa and is handled by the &lt;a href="https://github.com/dlang-community"&gt;dlang-community&lt;/a&gt; organization since 2017.
+Parts of code based on &lt;a href="http://www.pyyaml.org" rel="nofollow"&gt;PyYAML&lt;/a&gt; created by Kirill Simonov.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>dlang-community</author><guid isPermaLink="false">https://github.com/dlang-community/D-YAML</guid><pubDate>Thu, 06 Feb 2020 00:02:00 GMT</pubDate></item><item><title>vibe-d/vibe-core #3 in D, Today</title><link>https://github.com/vibe-d/vibe-core</link><description>&lt;p&gt;&lt;i&gt;Repository for the next generation of vibe.d's core package.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a href="https://vibed.org" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/af9d553740d06b60b71136ee5b1946bf40522e2d/68747470733a2f2f76696265642e6f72672f696d616765732f6c6f676f2d616e642d7469746c652e706e67" alt="vibe.d" data-canonical-src="https://vibed.org/images/logo-and-title.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-vibed-core-package" class="anchor" aria-hidden="true" href="#vibed-core-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vibe.d core package&lt;/h1&gt;
+&lt;p&gt;The core package provides the low level I/O and concurrency primitives that are used to implement the higher level systems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Event loop management&lt;/li&gt;
+&lt;li&gt;Fiber based lightweight tasks, including task local storage and &lt;code&gt;std.concurrency&lt;/code&gt; integration&lt;/li&gt;
+&lt;li&gt;Files, sockets, timers&lt;/li&gt;
+&lt;li&gt;Stream type definitions (used for files, sockets and higher level stream types)&lt;/li&gt;
+&lt;li&gt;Synchronization primitives (mutexes, condition variables, semaphores, cross task/cross thread events)&lt;/li&gt;
+&lt;li&gt;Logging facilities&lt;/li&gt;
+&lt;li&gt;Command line argument parsing&lt;/li&gt;
+&lt;li&gt;Various smaller utilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The fundamental building block is the fiber based task concept, together with the event based asynchronous I/O model. This enables developing highly scalable I/O concurrent applications without running into the complexities and design implications that asynchronous I/O programming models usually impose. See the &lt;a href="https://vibed.org/features" rel="nofollow"&gt;features page&lt;/a&gt; for a more detailed explanation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://code.dlang.org/packages/vibe-core" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/3eb8dcbcb88955da5a03bb93234ab21bbdc9d530/68747470733a2f2f696d672e736869656c64732e696f2f6475622f762f766962652d636f72652e737667" alt="DUB Package" data-canonical-src="https://img.shields.io/dub/v/vibe-core.svg" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://travis-ci.org/vibe-d/vibe-core" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/d5710a60e7cdd9f462c883e5ff79a1b0530b8c65/68747470733a2f2f7472617669732d63692e6f72672f766962652d642f766962652d636f72652e7376673f6272616e63683d6d6173746572" alt="Posix Build Status" data-canonical-src="https://travis-ci.org/vibe-d/vibe-core.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;
+&lt;a href="https://ci.appveyor.com/project/s-ludwig/vibe-core/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/f6d275b28953af529c3306bb864bbbe50401da79/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f65657865706879726f613761673378722f6272616e63682f6d61737465723f7376673d74727565" alt="Windows Build status" data-canonical-src="https://ci.appveyor.com/api/projects/status/eexephyroa7ag3xr/branch/master?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-supported-compilers" class="anchor" aria-hidden="true" href="#supported-compilers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supported compilers&lt;/h2&gt;
+&lt;p&gt;The following compilers are tested and supported:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.088.0&lt;/li&gt;
+&lt;li&gt;DMD 2.087.1&lt;/li&gt;
+&lt;li&gt;DMD 2.086.1&lt;/li&gt;
+&lt;li&gt;DMD 2.085.1&lt;/li&gt;
+&lt;li&gt;DMD 2.079.0&lt;/li&gt;
+&lt;li&gt;LDC 1.17.0&lt;/li&gt;
+&lt;li&gt;LDC 1.16.0&lt;/li&gt;
+&lt;li&gt;LDC 1.15.0&lt;/li&gt;
+&lt;li&gt;LDC 1.14.0&lt;/li&gt;
+&lt;li&gt;LDC 1.9.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported up to 1.6.2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.078.3&lt;/li&gt;
+&lt;li&gt;LDC 1.8.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported up to 1.4.7:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.077.1&lt;/li&gt;
+&lt;li&gt;DMD 2.076.1&lt;/li&gt;
+&lt;li&gt;LDC 1.7.0&lt;/li&gt;
+&lt;li&gt;LDC 1.6.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported up to 1.4.3:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.075.1&lt;/li&gt;
+&lt;li&gt;DMD 2.074.1&lt;/li&gt;
+&lt;li&gt;DMD 2.073.2&lt;/li&gt;
+&lt;li&gt;DMD 2.072.2&lt;/li&gt;
+&lt;li&gt;LDC 1.5.0&lt;/li&gt;
+&lt;li&gt;LDC 1.4.0&lt;/li&gt;
+&lt;li&gt;LDC 1.3.0&lt;/li&gt;
+&lt;li&gt;LDC 1.2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported up to 1.3.0:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.071.2&lt;/li&gt;
+&lt;li&gt;LDC 1.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported up to 1.1.1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DMD 2.070.2&lt;/li&gt;
+&lt;li&gt;LDC 1.0.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id="user-content-separation-of-the-former-vibe-dcore-package" class="anchor" aria-hidden="true" href="#separation-of-the-former-vibe-dcore-package"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Separation of the former &lt;code&gt;vibe-d:core&lt;/code&gt; package&lt;/h2&gt;
+&lt;p&gt;This is the successor of the &lt;code&gt;vibe-d:core&lt;/code&gt; sub package of &lt;a href="https://github.com/rejectedsoftware/vibe.d.git"&gt;vibe.d 0.7.x&lt;/a&gt;. The API is mostly compatible from a library user point of view, but the whole library has received some heavy lifting under the surface, close to a rewrite. Most classes have been replaced by reference counting structs and &lt;code&gt;@safe nothrow&lt;/code&gt; attributes are now used throughout the library, whenever possible. Adding &lt;code&gt;@nogc&lt;/code&gt; on the other hand could only be done in a very limited context due to its viral nature and the lack of an &lt;code&gt;@trusted&lt;/code&gt; equivalent.&lt;/p&gt;
+&lt;p&gt;Another major design change is that instead of the previous driver model, there is now a separate, lower-level event loop abstraction (&lt;a href="https://github.com/vibe-d/eventcore.git"&gt;eventcore&lt;/a&gt;) which follows a callback based Proactor pattern. The logic to schedule fibers based on events has been pulled out of this abstraction and is now maintained as a single function, leading to a huge improvment in terms of robustness (most issues in the previous implementation have probably never surfaced in practice, but there turned out to be lots of them).&lt;/p&gt;
+&lt;p&gt;Finally, the stream design has received two big changes. Streams can now either be implemented as classes, as usual, or they can be implemented as structs in a duck typing/DbC fashion. This, coupled with templated wrapper stream types, allows to eliminate the overhead of virtual function calls, enables reference counting instead of GC allocations, and allows the compiler to inline across stream boundaries. The second change to streams is the added support for an &lt;a href="https://github.com/vibe-d/eventcore/blob/c242fdae16470ae4dc4e7e6578d582c1d3ba57ec/source/eventcore/driver.d#L533"&gt;&lt;code&gt;IOMode&lt;/code&gt;&lt;/a&gt; parameter that enables I/O patterns as they are possible when using OS sockets directly. The &lt;code&gt;leastSize&lt;/code&gt; and &lt;code&gt;dataAvailableForRead&lt;/code&gt; properties will in turn be deprecated.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>vibe-d</author><guid isPermaLink="false">https://github.com/vibe-d/vibe-core</guid><pubDate>Thu, 06 Feb 2020 00:03:00 GMT</pubDate></item></channel></rss>
