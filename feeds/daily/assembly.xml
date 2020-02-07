@@ -1,47 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Assembly, Today</title><link>https://github.com/trending/assembly?since=daily</link><description>The top repositories on GitHub for assembly, measured daily</description><pubDate>Thu, 06 Feb 2020 01:10:41 GMT</pubDate><lastBuildDate>Thu, 06 Feb 2020 01:10:41 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>hsoft/collapseos #1 in Assembly, Today</title><link>https://github.com/hsoft/collapseos</link><description>&lt;p&gt;&lt;i&gt;Bootstrap post-collapse technology&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-collapse-os" class="anchor" aria-hidden="true" href="#collapse-os"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Collapse OS&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;Bootstrap post-collapse technology&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Collapse OS is a z80 kernel and a collection of programs, tools and
-documentation that allows you to assemble an OS that, when completed, will be
-able to:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Run on minimal and improvised machines.&lt;/li&gt;
-&lt;li&gt;Interface through improvised means (serial, keyboard, display).&lt;/li&gt;
-&lt;li&gt;Edit text files.&lt;/li&gt;
-&lt;li&gt;Compile assembler source files for a wide range of MCUs and CPUs.&lt;/li&gt;
-&lt;li&gt;Read and write from a wide range of storage devices.&lt;/li&gt;
-&lt;li&gt;Replicate itself.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Additionally, the goal of this project is to be as self-contained as possible.
-With a copy of this project, a capable and creative person should be able to
-manage to build and install Collapse OS without external resources (i.e.
-internet) on a machine of her design, built from scavenged parts with low-tech
-tools.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-see-it-in-action" class="anchor" aria-hidden="true" href="#see-it-in-action"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;See it in action&lt;/h2&gt;
-&lt;p&gt;Michael Schierl has put together &lt;a href="https://schierlm.github.io/CollapseOS-Web-Emulator/" rel="nofollow"&gt;a set of emulators running in the browser that
-run Collapse OS in different contexts&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Using those while following along with the &lt;a href="doc/"&gt;User Guide&lt;/a&gt; is your quickest
-path to giving Collapse OS a try.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-organisation-of-this-repository" class="anchor" aria-hidden="true" href="#organisation-of-this-repository"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Organisation of this repository&lt;/h2&gt;
+<rss version="2.0"><channel><title>GitHub Trending: Assembly, Today</title><link>https://github.com/trending/assembly?since=daily</link><description>The top repositories on GitHub for assembly, measured daily</description><pubDate>Fri, 07 Feb 2020 01:04:29 GMT</pubDate><lastBuildDate>Fri, 07 Feb 2020 01:04:29 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>chrislgarry/Apollo-11 #1 in Assembly, Today</title><link>https://github.com/chrislgarry/Apollo-11</link><description>&lt;p&gt;&lt;i&gt;Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-apollo-11" class="anchor" aria-hidden="true" href="#apollo-11"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apollo-11&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/b0879e5ad3dded69a38362aacf9ec5baac73b1eb/68747470733a2f2f72617763646e2e6769746861636b2e636f6d2f616c65656e34322f6261646765732f63393234366637342f7372632f6e6173612e737667" alt="NASA" data-canonical-src="https://rawcdn.githack.com/aleen42/badges/c9246f74/src/nasa.svg" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;g-emoji class="g-emoji" alias="crossed_flags" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f38c.png"&gt;🎌&lt;/g-emoji&gt;
+&lt;a href="README.id.md"&gt;Bahasa Indonesia&lt;/a&gt;,
+&lt;a href="README.ca.md"&gt;Català&lt;/a&gt;,
+&lt;a href="README.de.md"&gt;Deutsch&lt;/a&gt;,
+&lt;strong&gt;English&lt;/strong&gt;,
+&lt;a href="README.es.md"&gt;Español&lt;/a&gt;,
+&lt;a href="README.fr.md"&gt;Français&lt;/a&gt;,
+&lt;a href="README.it.md"&gt;Italiano&lt;/a&gt;,
+&lt;a href="README.pl.md"&gt;Polski&lt;/a&gt;,
+&lt;a href="README.pt_br.md"&gt;Português&lt;/a&gt;,
+&lt;a href="README.ro.md"&gt;Română&lt;/a&gt;,
+&lt;a href="README.vi.md"&gt;Tiếng Việt&lt;/a&gt;,
+&lt;a href="README.tr.md"&gt;Türkçe&lt;/a&gt;,
+&lt;a href="README.ru.md"&gt;Русский&lt;/a&gt;,
+&lt;a href="README.ar.md"&gt;العربية&lt;/a&gt;,
+&lt;a href="README.fa.md"&gt;فارسی&lt;/a&gt;,
+&lt;a href="README.hi_in.md"&gt;हिंदी&lt;/a&gt;,
+&lt;a href="README.bd_bn.md"&gt;বাংলা&lt;/a&gt;,
+&lt;a href="README.mm.md"&gt;မြန်မာ&lt;/a&gt;,
+&lt;a href="README.ja.md"&gt;日本&lt;/a&gt;,
+&lt;a href="README.zh_tw.md"&gt;正體中文&lt;/a&gt;,
+&lt;a href="README.zh_cn.md"&gt;简体中文&lt;/a&gt;,
+&lt;a href="README.ko_kr.md"&gt;한국어&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Original Apollo 11 guidance computer (AGC) source code for Command
+Module (Comanche055) and Lunar Module (Luminary099). Digitized by
+the folks at &lt;a href="http://www.ibiblio.org/apollo/" rel="nofollow"&gt;Virtual AGC&lt;/a&gt; and &lt;a href="http://web.mit.edu/museum/" rel="nofollow"&gt;MIT Museum&lt;/a&gt;. The goal is to be
+a repo for the original Apollo 11 source code. As such, PRs are
+welcome for any issues identified between the transcriptions in this
+repository and the original source scans for &lt;a href="http://www.ibiblio.org/apollo/ScansForConversion/Luminary099/" rel="nofollow"&gt;Luminary 099&lt;/a&gt; and
+&lt;a href="http://www.ibiblio.org/apollo/ScansForConversion/Comanche055/" rel="nofollow"&gt;Comanche 055&lt;/a&gt;, as well as any files I may have missed.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-contributing" class="anchor" aria-hidden="true" href="#contributing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Please read &lt;a href="https://github.com/chrislgarry/Apollo-11/blob/master/CONTRIBUTING.md"&gt;CONTRIBUTING.md&lt;/a&gt; before opening a pull request.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-compiling" class="anchor" aria-hidden="true" href="#compiling"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Compiling&lt;/h2&gt;
+&lt;p&gt;If you are interested in compiling the original source code, check
+out &lt;a href="https://github.com/rburkey2005/virtualagc"&gt;Virtual AGC&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-attribution" class="anchor" aria-hidden="true" href="#attribution"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Attribution&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt; &lt;/th&gt;
+&lt;th align="left"&gt; &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Copyright&lt;/td&gt;
+&lt;td align="left"&gt;Public domain&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Comanche055&lt;/td&gt;
+&lt;td align="left"&gt;Part of the source code for Colossus 2A, the Command Module's (CM) Apollo Guidance Computer (AGC) for Apollo 11&lt;br&gt;&lt;code&gt;Assemble revision 055 of AGC program Comanche by NASA&lt;/code&gt;&lt;br&gt;&lt;code&gt;2021113-051. 10:28 APR. 1, 1969&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Luminary099&lt;/td&gt;
+&lt;td align="left"&gt;Part of the source code for Luminary 1A, the Lunar Module's (LM) Apollo Guidance Computer (AGC) for Apollo 11&lt;br&gt;&lt;code&gt;Assemble revision 001 of AGC program LYM99 by NASA&lt;/code&gt;&lt;br&gt;&lt;code&gt;2021112-061. 16:27 JUL. 14, 1969&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Assembler&lt;/td&gt;
+&lt;td align="left"&gt;yaYUL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Contact&lt;/td&gt;
+&lt;td align="left"&gt;Ron Burkey &lt;a href="mailto:info@sandroid.org"&gt;info@sandroid.org&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Website&lt;/td&gt;
+&lt;td align="left"&gt;&lt;a href="http://www.ibiblio.org/apollo" rel="nofollow"&gt;www.ibiblio.org/apollo&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Digitalization&lt;/td&gt;
+&lt;td align="left"&gt;This source code has been transcribed or otherwise adapted from digitized images of a hardcopy from the MIT Museum. The digitization was performed by Paul Fjeld, and arranged for by Deborah Douglas of the Museum. Many thanks to both.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;&lt;a id="user-content-contract-and-approvals" class="anchor" aria-hidden="true" href="#contract-and-approvals"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contract and Approvals&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Derived from &lt;a href="https://github.com/chrislgarry/Apollo-11/blob/master/Comanche055/CONTRACT_AND_APPROVALS.agc"&gt;CONTRACT_AND_APPROVALS.agc&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This AGC program shall also be referred to as Colossus 2A.&lt;/p&gt;
+&lt;p&gt;This program is intended for use in the CM as specified in report &lt;code&gt;R-577&lt;/code&gt;. This program was prepared under DSR project &lt;code&gt;55-23870&lt;/code&gt;, sponsored by the Manned Spacecraft Center of The National Aeronautics and Space Administration through contract &lt;code&gt;NAS 9-4065&lt;/code&gt; with the Instrumentation Laboratory, Massachusetts Institute of Technology, Cambridge, Mass.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Submitted by&lt;/th&gt;
+&lt;th align="left"&gt;Role&lt;/th&gt;
+&lt;th align="left"&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Margaret H. Hamilton&lt;/td&gt;
+&lt;td align="left"&gt;Colossus Programming Leader&lt;br&gt;Apollo Guidance and Navigation&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Approved by&lt;/th&gt;
+&lt;th align="left"&gt;Role&lt;/th&gt;
+&lt;th align="left"&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Daniel J. Lickly&lt;/td&gt;
+&lt;td align="left"&gt;Director, Mission Program Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Fred H. Martin&lt;/td&gt;
+&lt;td align="left"&gt;Colossus Project Manager&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Norman E. Sears&lt;/td&gt;
+&lt;td align="left"&gt;Director, Mission Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Richard H. Battin&lt;/td&gt;
+&lt;td align="left"&gt;Director, Mission Development&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;David G. Hoag&lt;/td&gt;
+&lt;td align="left"&gt;Director&lt;br&gt;Apollo Guidance and Navigation Program&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Ralph R. Ragan&lt;/td&gt;
+&lt;td align="left"&gt;Deputy Director&lt;br&gt;Instrumentation Laboratory&lt;/td&gt;
+&lt;td align="left"&gt;28 Mar 69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>chrislgarry</author><guid isPermaLink="false">https://github.com/chrislgarry/Apollo-11</guid><pubDate>Fri, 07 Feb 2020 00:01:00 GMT</pubDate></item><item><title>n64decomp/oot #2 in Assembly, Today</title><link>https://github.com/n64decomp/oot</link><description>&lt;p&gt;&lt;i&gt;A decompilation of Ocarina of Time: Master Quest (debug) brought to you by a bunch of clever folks.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-legend-of-zelda-ocarina-of-time-master-quest-debug" class="anchor" aria-hidden="true" href="#legend-of-zelda-ocarina-of-time-master-quest-debug"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Legend of Zelda: Ocarina of Time Master Quest (debug)&lt;/h1&gt;
+&lt;div class="highlight highlight-source-diff"&gt;&lt;pre&gt;&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt; WARNING! -&lt;/span&gt;
+
+The ROM this repository builds while has a matching checksum cannot be 'shifted' due
+to hardcoded pointers which have yet to be dumped. Thus this repository is currently
+in an experimental and research phase and cannot currently be used traditionally as a
+source code base for general changes.&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This repo does not include all assets necessary for compiling the ROM. A prior copy of the game is required to extract the required assets.&lt;/p&gt;
+&lt;p&gt;This is a disassembly and decompilation of Legend of Zelda: Ocarina of Time Master Quest (debug)&lt;/p&gt;
+&lt;p&gt;It builds the following ROM:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;kernel&lt;/code&gt;: Pieces of code to be assembled by the user into a kernel.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;apps&lt;/code&gt;: Pieces of code to be assembled into "userspace" application.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;recipes&lt;/code&gt;: collection of recipes that assemble parts together on a specific
-machine.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;doc&lt;/code&gt;: User guide for when you've successfully installed Collapse OS.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tools&lt;/code&gt;: Tools for working with Collapse OS from "modern" environments. For
-example, tools for facilitating data upload to a Collapse OS machine
-through a serial port.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;emul&lt;/code&gt;: Emulated applications, such as zasm and the shell.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tests&lt;/code&gt;: Automated test suite for the whole project.&lt;/li&gt;
+&lt;li&gt;zelda_ocarina_mq_dbg.z64 &lt;code&gt;md5: 717179476af84133b14ff73af87db57a&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-status" class="anchor" aria-hidden="true" href="#status"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Status&lt;/h2&gt;
-&lt;p&gt;The project unfinished but is progressing well! See &lt;a href="https://collapseos.org" rel="nofollow"&gt;Collapse OS' website&lt;/a&gt;
-for more information.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-discussion" class="anchor" aria-hidden="true" href="#discussion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Discussion&lt;/h2&gt;
-&lt;p&gt;For a general discussion of Collapse OS and the ecosystem of technologies and ideas that may develop around it refer to &lt;a href="https://www.reddit.com/r/collapseos" rel="nofollow"&gt;r/collapseos&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A more traditional &lt;a href="http://lists.sonic.net/mailman/listinfo/collapseos" rel="nofollow"&gt;mailing list&lt;/a&gt; and IRC (#collapseos on freenode) channels are also maintained.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>hsoft</author><guid isPermaLink="false">https://github.com/hsoft/collapseos</guid><pubDate>Thu, 06 Feb 2020 00:01:00 GMT</pubDate></item><item><title>xiph/rav1e #2 in Assembly, Today</title><link>https://github.com/xiph/rav1e</link><description>&lt;p&gt;&lt;i&gt;The fastest and safest AV1 encoder.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rav1e----" class="anchor" aria-hidden="true" href="#rav1e----"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rav1e &lt;a href="https://travis-ci.org/xiph/rav1e" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cf5369dac6e2aa181e4161efdf47b446dd524f78/68747470733a2f2f7472617669732d63692e6f72672f786970682f72617631652e7376673f6272616e63683d6d6173746572" alt="Travis Build Status" data-canonical-src="https://travis-ci.org/xiph/rav1e.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://ci.appveyor.com/project/tdaede/rav1e/history" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/caa4dc60c0d8d4460dda29f8891f4ebcb786841f/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f786970682f72617631653f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/xiph/rav1e?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://github.com/xiph/rav1e/actions"&gt;&lt;img src="https://github.com/xiph/rav1e/workflows/rav1e/badge.svg" alt="Actions Status" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://coveralls.io/github/xiph/rav1e?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/687a8e0c6b9fa1a58949e9de01b1cb82876b30f7/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f786970682f72617631652f62616467652e7376673f6272616e63683d6d6173746572" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/xiph/rav1e/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Please refer to the Getting Started guide in the Wiki for setup instructions.&lt;/p&gt;
+&lt;p&gt;Thanks to z64me and CrookedPoe for their actor documentation. &lt;a href="https://github.com/CrookedPoe/z64-rw"&gt;https://github.com/CrookedPoe/z64-rw&lt;/a&gt;&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>n64decomp</author><guid isPermaLink="false">https://github.com/n64decomp/oot</guid><pubDate>Fri, 07 Feb 2020 00:02:00 GMT</pubDate></item><item><title>microsoft/MS-DOS #3 in Assembly, Today</title><link>https://github.com/microsoft/MS-DOS</link><description>&lt;p&gt;&lt;i&gt;The original sources of MS-DOS 1.25 and 2.0, for reference purposes&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="https://github.com/Microsoft/MS-DOS/blob/master/msdos-logo.png"&gt;&lt;img width="150" height="150" align="left" alt="MS-DOS logo" src="https://github.com/Microsoft/MS-DOS/raw/master/msdos-logo.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;   
+&lt;h1&gt;&lt;a id="user-content-ms-dos-v125-and-v20-source-code" class="anchor" aria-hidden="true" href="#ms-dos-v125-and-v20-source-code"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MS-DOS v1.25 and v2.0 Source Code&lt;/h1&gt;
+&lt;p&gt;This repo contains the original source-code and compiled binaries for MS-DOS v1.25 and MS-DOS v2.0.&lt;/p&gt;
+&lt;p&gt;These are the same files &lt;a href="http://www.computerhistory.org/atchm/microsoft-ms-dos-early-source-code/" rel="nofollow"&gt;originally shared at the Computer History Museum on March 25th, 2014&lt;/a&gt; and are being (re)published in this repo to make them easier to find, reference-to in external writing and works, and to allow exploration and experimentation for those interested in early PC Operating Systems.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-license" class="anchor" aria-hidden="true" href="#license"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;License&lt;/h1&gt;
+&lt;p&gt;All files within this repo are released under the &lt;a href="https://en.wikipedia.org/wiki/MIT_License" rel="nofollow"&gt;MIT (OSI) License&lt;/a&gt; as per the &lt;a href="https://github.com/Microsoft/MS-DOS/blob/master/LICENSE.md"&gt;LICENSE file&lt;/a&gt; stored in the root of this repo.&lt;/p&gt;
+&lt;h1&gt;&lt;a id="user-content-contribute" class="anchor" aria-hidden="true" href="#contribute"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contribute!&lt;/h1&gt;
+&lt;p&gt;The source files in this repo are for historical reference and will be kept static, so please &lt;strong&gt;don’t send&lt;/strong&gt; Pull Requests suggesting any modifications to the source files, but feel free to fork this repo and experiment &lt;g-emoji class="g-emoji" alias="blush" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png"&gt;😊&lt;/g-emoji&gt;.&lt;/p&gt;
+&lt;p&gt;If, however, you’d like to submit additional non-source content or modifications to non-source files (e.g., this README), please submit via PR, and we’ll review and consider.&lt;/p&gt;
+&lt;p&gt;This project has adopted the &lt;a href="https://opensource.microsoft.com/codeofconduct/" rel="nofollow"&gt;Microsoft Open Source Code of Conduct&lt;/a&gt;.  For more information see the &lt;a href="https://opensource.microsoft.com/codeofconduct/faq/" rel="nofollow"&gt;Code of Conduct FAQ&lt;/a&gt; or contact &lt;a href="mailto:opencode@microsoft.com"&gt;opencode@microsoft.com&lt;/a&gt; with any additional questions or comments.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>microsoft</author><guid isPermaLink="false">https://github.com/microsoft/MS-DOS</guid><pubDate>Fri, 07 Feb 2020 00:03:00 GMT</pubDate></item><item><title>xiph/rav1e #4 in Assembly, Today</title><link>https://github.com/xiph/rav1e</link><description>&lt;p&gt;&lt;i&gt;The fastest and safest AV1 encoder.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rav1e----" class="anchor" aria-hidden="true" href="#rav1e----"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rav1e &lt;a href="https://travis-ci.org/xiph/rav1e" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cf5369dac6e2aa181e4161efdf47b446dd524f78/68747470733a2f2f7472617669732d63692e6f72672f786970682f72617631652e7376673f6272616e63683d6d6173746572" alt="Travis Build Status" data-canonical-src="https://travis-ci.org/xiph/rav1e.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://ci.appveyor.com/project/tdaede/rav1e/history" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/caa4dc60c0d8d4460dda29f8891f4ebcb786841f/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f786970682f72617631653f6272616e63683d6d6173746572267376673d74727565" alt="AppVeyor Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/xiph/rav1e?branch=master&amp;amp;svg=true" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://github.com/xiph/rav1e/actions"&gt;&lt;img src="https://github.com/xiph/rav1e/workflows/rav1e/badge.svg" alt="Actions Status" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://coveralls.io/github/xiph/rav1e?branch=master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/687a8e0c6b9fa1a58949e9de01b1cb82876b30f7/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f786970682f72617631652f62616467652e7376673f6272616e63683d6d6173746572" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/xiph/rav1e/badge.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;The fastest and safest AV1 encoder.&lt;/p&gt;
 &lt;h2&gt;&lt;a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
 &lt;p&gt;rav1e is an AV1 video encoder. It is designed to eventually cover all use cases, though in its current form it is most suitable for cases where libaom (the reference encoder) is too slow.&lt;/p&gt;
@@ -132,114 +252,18 @@ make -j8
 &lt;h2&gt;&lt;a id="user-content-getting-in-touch" class="anchor" aria-hidden="true" href="#getting-in-touch"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting in Touch&lt;/h2&gt;
 &lt;p&gt;Come chat with us on the IRC channel #daala on Freenode! If you don't have IRC set
 up you can easily connect from your &lt;a href="http://webchat.freenode.net/?channels=%23daala" rel="nofollow"&gt;web browser&lt;/a&gt;.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>xiph</author><guid isPermaLink="false">https://github.com/xiph/rav1e</guid><pubDate>Thu, 06 Feb 2020 00:02:00 GMT</pubDate></item><item><title>n64decomp/oot #3 in Assembly, Today</title><link>https://github.com/n64decomp/oot</link><description>&lt;p&gt;&lt;i&gt;A decompilation of Ocarina of Time: Master Quest (debug) brought to you by a bunch of clever folks.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-legend-of-zelda-ocarina-of-time-master-quest-debug" class="anchor" aria-hidden="true" href="#legend-of-zelda-ocarina-of-time-master-quest-debug"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Legend of Zelda: Ocarina of Time Master Quest (debug)&lt;/h1&gt;
-&lt;div class="highlight highlight-source-diff"&gt;&lt;pre&gt;&lt;span class="pl-md"&gt;&lt;span class="pl-md"&gt;-&lt;/span&gt; WARNING! -&lt;/span&gt;
-
-The ROM this repository builds while has a matching checksum cannot be 'shifted' due
-to hardcoded pointers which have yet to be dumped. Thus this repository is currently
-in an experimental and research phase and cannot currently be used traditionally as a
-source code base for general changes.&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This repo does not include all assets necessary for compiling the ROM. A prior copy of the game is required to extract the required assets.&lt;/p&gt;
-&lt;p&gt;This is a disassembly and decompilation of Legend of Zelda: Ocarina of Time Master Quest (debug)&lt;/p&gt;
-&lt;p&gt;It builds the following ROM:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;zelda_ocarina_mq_dbg.z64 &lt;code&gt;md5: 717179476af84133b14ff73af87db57a&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please refer to the Getting Started guide in the Wiki for setup instructions.&lt;/p&gt;
-&lt;p&gt;Thanks to z64me and CrookedPoe for their actor documentation. &lt;a href="https://github.com/CrookedPoe/z64-rw"&gt;https://github.com/CrookedPoe/z64-rw&lt;/a&gt;&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>n64decomp</author><guid isPermaLink="false">https://github.com/n64decomp/oot</guid><pubDate>Thu, 06 Feb 2020 00:03:00 GMT</pubDate></item><item><title>z88dk/z88dk #4 in Assembly, Today</title><link>https://github.com/z88dk/z88dk</link><description>&lt;p&gt;&lt;i&gt;The development kit for over eighty z80 family machines - c compiler, assembler, linker, libraries.&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-z88dk---the-development-kit-for-z80-computers" class="anchor" aria-hidden="true" href="#z88dk---the-development-kit-for-z80-computers"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Z88DK - The Development Kit for Z80 Computers&lt;/h1&gt;
-&lt;p&gt;&lt;a target="_blank" rel="noopener noreferrer" href="doc/images/windows.png"&gt;&lt;img src="doc/images/windows.png" alt="WinXP+" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a target="_blank" rel="noopener noreferrer" href="doc/images/mac.png"&gt;&lt;img src="doc/images/mac.png" alt="MacOSX" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a target="_blank" rel="noopener noreferrer" href="doc/images/linux.png"&gt;&lt;img src="doc/images/linux.png" alt="Linux and Other" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://travis-ci.org/z88dk/z88dk" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/bb654cf077ea79c8bb384e54adc20deed9085445/68747470733a2f2f7472617669732d63692e6f72672f7a3838646b2f7a3838646b2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/z88dk/z88dk.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Z88DK is a collection of software development tools that targets the 8080 and z80 family of machines.  It allows development of programs in C, assembly language or any mixture of the two.  What makes z88dk unique is its ease of use, built-in support for many z80 machines and its extensive set of assembly language library subroutines implementing the C standard and extensions.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-the-tools" class="anchor" aria-hidden="true" href="#the-tools"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;THE TOOLS&lt;/h2&gt;
-&lt;p&gt;Many tools have a &lt;code&gt; z88dk-&lt;/code&gt; prefix to distinguish them from tools from other packages that may be installed with the same name. The documentation
-generally omits the prefix when referring to them.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ZCC&lt;/strong&gt; is the toolchain's front end.  zcc can generate an output binary out of any set of input source files.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SCCZ80&lt;/strong&gt; is z88dk's native c compiler.   sccz80 is derived from small c but has seen much development to the point that it is nearly c90 compliant.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ZSDCC&lt;/strong&gt; is z88dk's customization of the &lt;a href="https://sourceforge.net/projects/sdcc/" rel="nofollow"&gt;sdcc compiler&lt;/a&gt;.  &lt;a href="https://github.com/z88dk/z88dk/tree/master/src/zsdcc"&gt;Our patch&lt;/a&gt; makes sdcc compatible with the z88dk toolchain, gives it access to z88dk's extensive assembly language libraries and ready-made crts, addresses code generation bugs where present and improves on sdcc's generated code.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z80ASM&lt;/strong&gt; (not to be confused with several external projects called z80asm) is a fully featured assembler / linker / librarian implementing sections.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z80NM&lt;/strong&gt; is z80asm's companion archiver.  It can provide a listing of functions or data encoded in an object or library file.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;APPMAKE&lt;/strong&gt; processes the raw binaries generated by the toolkit into a form suitable for specific target machines.  For example, it can generate intel hex files, tapes, ROMs, etc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-TICKS&lt;/strong&gt; is a command line z80 emulator that can be used to time execution speed of code fragments. Ticks includes a debugger and disassembler in addition to supporting some of the ZX Next Z80N extension instructions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-DIS&lt;/strong&gt; is a command line disassembler for Z80, Z180, Z80N and Rabbit 2000/3000. It can additionally read map files generated by z80asm to provide a more symbolic output.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-LIB&lt;/strong&gt; is an installer for third party libraries.  It manages installation, removal and listing of available libraries.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-ZX7&lt;/strong&gt; is a PC-side optimal lz77 data compression tool with companion decompression functions in the z80 library.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-DZX7&lt;/strong&gt; is a PC-side decompressor counterpart to zx7.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These tools are not normally directly invoked by the user:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;M4&lt;/strong&gt; acts as z88dk's macro preprocessor and can optionally process files ahead of the c preprocessor or assembler.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-UCPP&lt;/strong&gt; is the c preprocessor invoked for sccz80.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ZSDCPP&lt;/strong&gt; is the c preprocessor invoked for zsdcc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-ZPRAGMA&lt;/strong&gt; is used by the toolchain to process pragmas embedded in c source.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z88DK-COPT&lt;/strong&gt; is a regular expression engine that is used as peephole optimizer for sccz80 and as a post-processing tool for both sccz80 and zsdcc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-benchmarks" class="anchor" aria-hidden="true" href="#benchmarks"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BENCHMARKS&lt;/h2&gt;
-&lt;p&gt;The assembly language libraries supplied by z88dk give it performance advantages over other z80 compilers.
-(COMING)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Dhrystone 2.1&lt;/strong&gt;  Dhrystone was a common synthetic benchmark for measuring the integer performance of compilers in the 1980s until more modern benchmarks replaced it.  It attempts to simulate typical programs by executing a set of statements statistically determined from common programs.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pi&lt;/strong&gt;  Mainly measures 32-bit integer performance.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Sieve of Eratosthenes&lt;/strong&gt;  Popular benchmark for small machine compilers because just about everything is able to compile it.  As a benchmark it doesn't reveal much more than loop overhead.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Whetstone 1.2&lt;/strong&gt;  Whetstone is a common synthetic floating point benchmark.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Program Size&lt;/strong&gt;  Program size has great importance for small machines.  A collection of test programs were compiled for the common cp/m target and resulting binary sizes were compared.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;INSTALLATION&lt;/h2&gt;
-&lt;p&gt;There are three ways to install z88dk.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Use the &lt;a href="https://github.com/z88dk/z88dk/tree/github/Readme#most-recent-official-release"&gt;Most Recent Official Release&lt;/a&gt; currently v1.99C dated 19 Jan 2019.  Follow these &lt;a href="https://github.com/z88dk/z88dk/wiki/installation"&gt;installation instructions&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Get the &lt;a href="http://nightly.z88dk.org/" rel="nofollow"&gt;Nightly Build&lt;/a&gt;.  Every night we build complete binary packages for windows and osx and generate source packages for everyone else.  The same &lt;a href="https://github.com/z88dk/z88dk/wiki/installation"&gt;installation instructions&lt;/a&gt; apply.  Using a nightly build means you can keep up with bugfixes and new features rather than having to wait an entire year for a release to occur.&lt;/li&gt;
-&lt;li&gt;Use Github.  Using github will keep you up-to-date with the developers and will allow you to contribute to the project.  We do not store the z80 libraries or the binaries in the github repository.  Instead you will either have to build those things yourself or acquire them from the nightly build to have a working install.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The z88dk repository uses git submodules, these are not automatically downloaded by git by default so you will have to either adjust your clone line, or retrieve them manually. To clone with submodules use &lt;code&gt;git clone --recursive https://github.com/z88dk/z88dk.git&lt;/code&gt;. To add the submodules to an already existing clone use &lt;code&gt;git submodule update --init --recursive&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Installing the Z88DK Binaries&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mac OSX&lt;/strong&gt; Download the nightly build for osx and copy the z88dk/bin directory to the same place in your z88dk tree.  If you would like to try building the binaries yourself, follow the Other instructions below.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt; Download the nightly build for win32 and copy the z88dk/bin directory to the same place in your z88dk tree.  You can also build the z88dk binaries yourself using the VS2015 solution found in z88dk/win32 however you should copy the nightly build initially so that various required dlls and some non-z88dk binaries are present.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Other&lt;/strong&gt; Build the binaries yourself by following these &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front#linux_unix" rel="nofollow"&gt;instructions&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Installing the Classic Lib Z80 Libraries&lt;/strong&gt;  If you installed the z88dk binaries following the Other instructions in (I) you should have also built the classic z80 libraries.  You can confirm this by checking that z88dk/lib/clibs contains about 138 .lib files.  Otherwise you can following one of these two methods:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Copy the classic lib library files&lt;/strong&gt; from any nightly build by copying the z88dk/lib/clibs directory to the same place in your z88dk tree.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build the classic lib library from source&lt;/strong&gt;  Building the classic lib from source requires unix-like tools so windows users will need to use msys or cygwin.  Aside from that the process is simple.  After setting the environment variables as detailed below, open a shell, cd to z88dk/libsrc and enter "make -i" then "make install" followed by "make clean".&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Installing the New Lib Z80 Libraries&lt;/strong&gt;  If you installed the z88dk binaries following the Other instructions in (I) you should have also built the new z80 libraries.  You can confirm this by checking that z88dk/libsrc/_DEVELOPMENT/lib contains six .lib files in each of the subdirectories.  Otherwise you can following one of these two methods:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Copy the new lib library files&lt;/strong&gt; from any nightly build by copying the z88dk/libsrc/_DEVELOPMENT/lib tree to the same place in your z88dk tree.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build the new lib library files from source&lt;/strong&gt;  After setting the environment variables as detailed below, open a command prompt, cd to z88dk/libsrc/_DEVELOPMENT and enter "Winmake all" for windows or "make" for other platforms.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We do not maintain the zsdcc or zsdcpp source code in the repository.  Instead zsdcc is built separately from a &lt;a href="https://github.com/z88dk/z88dk/tree/master/src/zsdcc"&gt;patched sdcc&lt;/a&gt;.  We supply the zsdcc and zsdcpp binaries for win32 and osx in the nightly build so if you are using win32 or osx and you copied z88dk/bin, you will already have zsdcc and zsdcpp installed.  Other users will have to build the zsdcc binary by following these &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front#sdcc1" rel="nofollow"&gt;instructions&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The last step for installation is to set the ZCCCFG environment variable and your PATH appropriately.  You can find that information &lt;a href="https://github.com/z88dk/z88dk/wiki/installation"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To verify that the install was successful, try some test compiles from the examples directories in &lt;a href="https://github.com/z88dk/z88dk/tree/master/examples"&gt;z88dk/examples&lt;/a&gt; (classic c lib) and &lt;a href="https://github.com/z88dk/z88dk/tree/master/libsrc/_DEVELOPMENT/EXAMPLES"&gt;z88dk/libsrc/_DEVELOPMENT/EXAMPLES&lt;/a&gt; (new c lib).  Compile instructions most often appear as comments at the top of .c files.  Note that zsdcc compiles with optimization turned high can be slow.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-using-z88dk" class="anchor" aria-hidden="true" href="#using-z88dk"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;USING Z88DK&lt;/h2&gt;
-&lt;p&gt;Unfortunately, like a lot of open source projects, we could use a lot of help with the documentation.&lt;/p&gt;
-&lt;p&gt;Some things to know:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There are &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front#z88dk_supports_two_c_compilers" rel="nofollow"&gt;two c compilers&lt;/a&gt; in z88dk.  Projects must be completely compiled with one compiler only.  Due to various &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front#limitations" rel="nofollow"&gt;differences&lt;/a&gt; the object files generated by the two compilers are &lt;a href="https://github.com/z88dk/z88dk/issues/15"&gt;not compatible&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front#z88dk_contains_two_independent_c_libraries" rel="nofollow"&gt;two c libraries&lt;/a&gt; in z88dk.  These are referred to as the classic c library and the new c library.&lt;/li&gt;
-&lt;li&gt;Thankfully there is only one assembler so we only need to deal with 2*2 combinations :)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When you form a compile line you must decide which compiler you will use and which c library you will link against.  You will make that decision based on which targets you want to compile for and what features you need.&lt;/p&gt;
-&lt;p&gt;The classic c library is z88dk's original c library and it has crts that allow generation of programs for &lt;a href="https://github.com/z88dk/z88dk/wiki/Platform"&gt;80+ different z80 machines&lt;/a&gt;.  The level of support for each is historically determined by user interest.  &lt;a href="https://github.com/z88dk/z88dk/wiki"&gt;Documentation begins here&lt;/a&gt; and example programs can be found in &lt;a href="https://github.com/z88dk/z88dk/tree/master/examples"&gt;z88dk/examples&lt;/a&gt; with compile lines most often appearing at the top of .c files.&lt;/p&gt;
-&lt;p&gt;The new c library is z88dk's rewrite aiming for a large subset of C11 conformance.  It directly supports eleven targets currently (&lt;a href="https://github.com/z88dk/z88dk/wiki/Platform---CPM"&gt;cpm&lt;/a&gt;, &lt;a href="https://github.com/wwarthen/RomWBW/blob/master/Doc/RomWBW%20Architecture.pdf"&gt;hbios&lt;/a&gt;, &lt;a href="https://rc2014.co.uk/" rel="nofollow"&gt;rc2014&lt;/a&gt;, &lt;a href="https://smallcomputercentral.wordpress.com/sc130-z180-motherboard/" rel="nofollow"&gt;scz180&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Master_System" rel="nofollow"&gt;sega master system&lt;/a&gt;, &lt;a href="https://hackaday.io/project/166921-v-tech-genius-leader-precomputer-hacking" rel="nofollow"&gt;vgl&lt;/a&gt;, &lt;a href="https://github.com/feilipu/yaz180"&gt;yaz180&lt;/a&gt;, z180, &lt;a href="https://www.z88dk.org/wiki/doku.php?id=libnew:target_embedded" rel="nofollow"&gt;z80&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/ZX_Spectrum" rel="nofollow"&gt;zx spectrum&lt;/a&gt;, and &lt;a href="https://www.specnext.com/" rel="nofollow"&gt;zx spectrum next&lt;/a&gt;) but the &lt;a href="https://www.z88dk.org/wiki/doku.php?id=libnew:target_embedded" rel="nofollow"&gt;z80 target&lt;/a&gt; (aka embedded target) can also be used to compile programs for any z80 machine.  &lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front" rel="nofollow"&gt;Documentation begins here&lt;/a&gt; and example programs can be found in &lt;a href="https://github.com/z88dk/z88dk/tree/master/libsrc/_DEVELOPMENT/EXAMPLES"&gt;z88dk/libsrc/_DEVELOPMENT/EXAMPLES&lt;/a&gt; with compile lines most often appearing at the top of .c files.  The documentation for the &lt;a href="https://www.z88dk.org/wiki/doku.php?id=libnew:target_embedded" rel="nofollow"&gt;z80 target&lt;/a&gt; gives an excellent overview of how the tools work.&lt;/p&gt;
-&lt;h2&gt;&lt;a id="user-content-quick-links" class="anchor" aria-hidden="true" href="#quick-links"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QUICK LINKS&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.z88dk.org/forum/" rel="nofollow"&gt;Z88DK Home Page&lt;/a&gt;
-Includes a link to the nightly builds where you can get an up-to-date package.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/z88dk/z88dk/wiki/installation"&gt;Install Instructions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.z88dk.org/forum/forums.php" rel="nofollow"&gt;Forum for Questions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/z88dk/z88dk/issues"&gt;Bug Reporting&lt;/a&gt;
-(old bugs in the forum)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/z88dk/z88dk/wiki"&gt;Introduction to Compiling Using the Classic C Library&lt;/a&gt;
-Examples in &lt;a href="https://github.com/z88dk/z88dk/tree/master/examples"&gt;z88dk/examples&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.z88dk.org/wiki/doku.php?id=temp:front" rel="nofollow"&gt;Introduction to Compiling Using the New C Library&lt;/a&gt;
-Examples in &lt;a href="https://github.com/z88dk/z88dk/tree/master/libsrc/_DEVELOPMENT/EXAMPLES"&gt;z88dk/libsrc/_DEVELOPMENT/EXAMPLES&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.z88dk.org/wiki/doku.php?id=libnew:target_embedded" rel="nofollow"&gt;Compiling for Generic z80 Systems Using the New C Library&lt;/a&gt;
-For any z80 computer, embedded or not.&lt;/p&gt;
-&lt;p&gt;Using &lt;a href="https://github.com/RC2014Z80/RC2014/wiki/Using-Z88DK"&gt;z88dk with the rc2014 target&lt;/a&gt;, covers cpm, hbios, and rc2014 subtypes.&lt;/p&gt;
-&lt;p&gt;Using &lt;a href="https://github.com/z88dk/z88dk/blob/master/doc/overview.md"&gt;z88dk with zx&lt;/a&gt;, covers the zx target, and by extension the zxn target.&lt;/p&gt;
-&lt;/article&gt;&lt;/div&gt;</description><author>z88dk</author><guid isPermaLink="false">https://github.com/z88dk/z88dk</guid><pubDate>Thu, 06 Feb 2020 00:04:00 GMT</pubDate></item></channel></rss>
+&lt;/article&gt;&lt;/div&gt;</description><author>xiph</author><guid isPermaLink="false">https://github.com/xiph/rav1e</guid><pubDate>Fri, 07 Feb 2020 00:04:00 GMT</pubDate></item><item><title>corkami/pics #5 in Assembly, Today</title><link>https://github.com/corkami/pics</link><description>&lt;p&gt;&lt;i&gt;Posters, drawings...&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;p&gt;Support me: order &lt;a href="http://prints.corkami.com/" rel="nofollow"&gt;prints&lt;/a&gt;, check my &lt;a href="https://www.patreon.com/corkami" rel="nofollow"&gt;patreon&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Welcome!&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-47-binary-posters-2017-08-23" class="anchor" aria-hidden="true" href="#47-binary-posters-2017-08-23"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="binary/README.md"&gt;47 binary posters (2017-08-23)&lt;/a&gt;&lt;/h2&gt;&lt;a href="binary/README.md"&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a href="binary/README.md"&gt;&lt;img src="binary/PE101.png" width="400" style="max-width:100%;"&gt;&lt;img src="binary/PDF.png" width="200" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-25-posters-2017-10-30" class="anchor" aria-hidden="true" href="#25-posters-2017-10-30"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="posters/README.md"&gt;25 posters (2017-10-30)&lt;/a&gt;&lt;/h2&gt;&lt;a href="posters/README.md"&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a href="posters/README.md"&gt;&lt;img src="posters/MS067OldVuln.png" width="100" style="max-width:100%;"&gt; &lt;img src="posters/STM32F40xxx.png" width="130" style="max-width:100%;"&gt; &lt;img src="posters/NeoGeo.png" width="200" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-58-tracings-2018-08-11" class="anchor" aria-hidden="true" href="#58-tracings-2018-08-11"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="tracing/README.md"&gt;58 tracings (2018-08-11)&lt;/a&gt;&lt;/h2&gt;&lt;a href="tracing/README.md"&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a href="tracing/README.md"&gt;&lt;img src="tracing/rfc791.png" width="200" style="max-width:100%;"&gt; &lt;img src="tracing/sonic.png" width="200" style="max-width:100%;"&gt; &lt;img src="tracing/DeReAtari.png" width="150" style="max-width:100%;"&gt; &lt;img src="tracing/ocean.png" width="200" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-9-outlines-2016-11-29" class="anchor" aria-hidden="true" href="#9-outlines-2016-11-29"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href="outline/README.md"&gt;9 outlines (2016-11-29)&lt;/a&gt;&lt;/h2&gt;&lt;a href="outline/README.md"&gt;
+&lt;/a&gt;&lt;p&gt;&lt;a href="outline/README.md"&gt;&lt;img src="outline/AtariCX30.png" width="100" style="max-width:100%;"&gt; &lt;img src="outline/rob.png" width="100" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Ange&lt;/p&gt;
+&lt;p&gt;Support me: order &lt;a href="http://prints.corkami.com/" rel="nofollow"&gt;prints&lt;/a&gt;, check my &lt;a href="https://www.patreon.com/corkami" rel="nofollow"&gt;patreon&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>corkami</author><guid isPermaLink="false">https://github.com/corkami/pics</guid><pubDate>Fri, 07 Feb 2020 00:05:00 GMT</pubDate></item></channel></rss>
