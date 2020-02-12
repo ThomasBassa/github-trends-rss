@@ -1,2 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GitHub Trending: Raku, Today</title><link>https://github.com/trending/raku?since=daily</link><description>The top repositories on GitHub for raku, measured daily</description><pubDate>Tue, 11 Feb 2020 01:06:43 GMT</pubDate><lastBuildDate>Tue, 11 Feb 2020 01:06:43 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>No repos in Raku, Today for today</title><pubDate>Tue, 11 Feb 2020 01:06:43 GMT</pubDate></item></channel></rss>
+<rss version="2.0"><channel><title>GitHub Trending: Raku, Today</title><link>https://github.com/trending/raku?since=daily</link><description>The top repositories on GitHub for raku, measured daily</description><pubDate>Wed, 12 Feb 2020 01:06:38 GMT</pubDate><lastBuildDate>Wed, 12 Feb 2020 01:06:38 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><ttl>720</ttl><item><title>rakudo/rakudo #1 in Raku, Today</title><link>https://github.com/rakudo/rakudo</link><description>&lt;p&gt;&lt;i&gt;🦋 Rakudo – Raku on MoarVM, JVM, and JS&lt;/i&gt;&lt;/p&gt;&lt;div id="readme" class="md" data-path="README.md"&gt;&lt;article class="markdown-body entry-content p-5" itemprop="text"&gt;&lt;h1&gt;&lt;a id="user-content-rakudo" class="anchor" aria-hidden="true" href="#rakudo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rakudo&lt;/h1&gt;
+&lt;p&gt;This is Rakudo, a Raku compiler for the MoarVM and JVM.&lt;/p&gt;
+&lt;p&gt;Rakudo is Copyright © 2008-2020, The Perl Foundation. Rakudo
+is distributed under the terms of the Artistic License 2.0. For more
+details, see the full text of the license in the file LICENSE.&lt;/p&gt;
+&lt;p&gt;This directory contains only the Rakudo compiler itself; it
+does not contain any of the modules, documentation, or other items
+that would normally come with a full Raku distribution.  If you're
+after more than just the bare compiler, please download &lt;a href="http://rakudo.org/downloads/star" rel="nofollow"&gt;the latest
+Rakudo Star package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that different backends implement slightly different sets of
+features. For a high-level overview of implemented and missing features,
+please visit &lt;a href="https://perl6.org/compilers/features" rel="nofollow"&gt;the features page on raku.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Recent changes and feature additions are documented in the &lt;code&gt;docs/ChangeLog&lt;/code&gt;
+text file.&lt;/p&gt;
+&lt;p&gt;To receive important notifications from the core developer team, please
+subscribe to &lt;a href="https://alerts.perl6.org" rel="nofollow"&gt;the p6lert service&lt;/a&gt; using the RSS feed,
+twitter, or &lt;a href="https://github.com/zoffixznet/perl6-p6lert"&gt;the p6lert commandline script&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-building-and-installing-rakudo" class="anchor" aria-hidden="true" href="#building-and-installing-rakudo"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building and Installing Rakudo&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://circleci.com/gh/rakudo/rakudo" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/cf089021ffffe5632b3044202d071b45704d60ea/68747470733a2f2f636972636c6563692e636f6d2f67682f72616b75646f2f72616b75646f2e7376673f7374796c653d736869656c64" alt="Build Status" data-canonical-src="https://circleci.com/gh/rakudo/rakudo.svg?style=shield" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://travis-ci.org/rakudo/rakudo" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/885b1bdceb87182be425664a946090930db9b3ba/68747470733a2f2f7472617669732d63692e6f72672f72616b75646f2f72616b75646f2e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/rakudo/rakudo.svg?branch=master" style="max-width:100%;"&gt;&lt;/a&gt; &lt;a href="https://ci.appveyor.com/project/rakudo/rakudo/branch/master" rel="nofollow"&gt;&lt;img src="https://camo.githubusercontent.com/a23a0038b4ea6bb8b470b74f0347e8c3ab70874b/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f72616b75646f2f72616b75646f3f7376673d74727565" alt="Build Status" data-canonical-src="https://ci.appveyor.com/api/projects/status/github/rakudo/rakudo?svg=true" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the INSTALL.txt file for detailed prerequisites and build and
+installation instructions.&lt;/p&gt;
+&lt;p&gt;The general process for building is running &lt;code&gt;perl Configure.pl&lt;/code&gt; with
+the desired configuration options (common options listed below), and
+then running &lt;code&gt;make&lt;/code&gt; or &lt;code&gt;make install&lt;/code&gt;. Optionally, you may run
+&lt;code&gt;make spectest&lt;/code&gt; to test your build on &lt;a href="http://github.com/perl6/roast"&gt;Roast&lt;/a&gt;,
+the Official Raku test suite. To update the test suite, run
+&lt;code&gt;make spectest_update&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Installation of Rakudo simply requires building and running &lt;code&gt;make install&lt;/code&gt;.
+Note that this step is necessary for running Rakudo from outside the build
+directory. But don't worry, it installs locally by default, so you don't need
+any administrator privileges for carrying out this step.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-configuring-rakudo-to-run-on-moarvm" class="anchor" aria-hidden="true" href="#configuring-rakudo-to-run-on-moarvm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuring Rakudo to run on MoarVM&lt;/h3&gt;
+&lt;p&gt;To automatically download, build, and install a fresh MoarVM and NQP, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --gen-moar --gen-nqp --backends=moar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please be aware, that this will install MoarVM and NQP into your given
+--prefix before Configure.pl exits.&lt;/p&gt;
+&lt;p&gt;Alternatively, feel free to git clone &lt;a href="https://github.com/perl6/nqp"&gt;https://github.com/perl6/nqp&lt;/a&gt; and
+&lt;a href="https://github.com/MoarVM/MoarVM"&gt;https://github.com/MoarVM/MoarVM&lt;/a&gt; manually and install them individually.&lt;/p&gt;
+&lt;p&gt;Configuration flags can be passed to MoarVM's Configure.pl using the
+--moar-option flag. For example, if you wish to use Clang when GCC is the
+default compiler selected for your OS, use the --compiler flag:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --gen-moar --moar-option='--compiler=clang' \
+    --gen-nqp --backends=moar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the compiler you want to use isn't known by MoarVM or you have multiple
+versions of the same compiler installed, the --cc flag can be used to pass its
+exact binary:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --gen-moar --moar-option='--cc=egcc' \
+    --gen-nqp --backends=moar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Custom optimization and debugging levels may also be passed through:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --gen-moar --moar-option='--optimize=0 --debug=3' \
+    --gen-nqp --backends=moar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more information on how MoarVM can be configured, view MoarVM's
+Configure.pl.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-configuring-rakudo-to-run-on-the-jvm" class="anchor" aria-hidden="true" href="#configuring-rakudo-to-run-on-the-jvm"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuring Rakudo to run on the JVM&lt;/h3&gt;
+&lt;p&gt;Note that to run Rakudo on JVM, JDK 1.8 must be installed. To automatically
+download, build, and install a fresh NQP, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --gen-nqp --backends=jvm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you get a &lt;code&gt;java.lang.OutOfMemoryError: Java heap space&lt;/code&gt; error building
+rakudo on the JVM, you may need to modify your NQP runner to limit memory
+use. e.g. edit the nqp-j / nqp-j.bat executable (found wherever you installed to, or in the
+&lt;code&gt;install/bin&lt;/code&gt; directory) to include &lt;code&gt;-Xms500m -Xmx3g&lt;/code&gt; as options passed to java.
+Alternatively, you can set &lt;code&gt;JAVA_OPTS&lt;/code&gt; env var; e.g.
+&lt;code&gt;export JAVA_OPTS="-Xmx51200000000"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Please be aware, that this will install NQP into your given --prefix
+before Configure.pl exits.&lt;/p&gt;
+&lt;p&gt;Alternatively, feel free to git clone &lt;a href="https://github.com/perl6/nqp"&gt;https://github.com/perl6/nqp&lt;/a&gt; manually
+and install it individually.&lt;/p&gt;
+&lt;h3&gt;&lt;a id="user-content-multiple-backends-at-the-same-time" class="anchor" aria-hidden="true" href="#multiple-backends-at-the-same-time"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multiple backends at the same time&lt;/h3&gt;
+&lt;p&gt;By supplying combinations of backends to the &lt;code&gt;--backends&lt;/code&gt; flag, you
+can get two or three backends built in the same prefix. The first
+backend you supply in the list is the one that gets the &lt;code&gt;perl6&lt;/code&gt; name
+as a symlink, and all backends are installed separately as
+&lt;code&gt;perl6-m&lt;/code&gt; or &lt;code&gt;perl6-j&lt;/code&gt; for Rakudo on
+MoarVM, or JVM respectively.&lt;/p&gt;
+&lt;p&gt;The format for the &lt;code&gt;--backends&lt;/code&gt; flag is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ perl Configure.pl --backends=moar,jvm
+$ perl Configure.pl --backends=ALL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;&lt;a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing&lt;/h3&gt;
+&lt;h4&gt;&lt;a id="user-content-ensure-the-test-suite-is-installed" class="anchor" aria-hidden="true" href="#ensure-the-test-suite-is-installed"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ensure the test suite is installed&lt;/h4&gt;
+&lt;p&gt;The roast test suite is installed as the t/spec directory
+under your rakudo directory. If your installed rakudo
+source directory doesn't have t/spec installed, then
+you can clone it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd $YOUR_RAKUDO_SRCDIR
+git clone https://github.com/perl6/roast.git t/spec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the rakudo code includes an entry in its .gitignore file
+so git will ignore any content under t/spec.&lt;/p&gt;
+&lt;p&gt;Now you can run tests in the rakudo directory.&lt;/p&gt;
+&lt;h4&gt;&lt;a id="user-content-running-tests" class="anchor" aria-hidden="true" href="#running-tests"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Running tests&lt;/h4&gt;
+&lt;p&gt;Run the full spectest:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make spectest   # &amp;lt;== takes a LONG time!!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To run a single test, one must use &lt;code&gt;make&lt;/code&gt; because of the tooling required to
+run the spectests.  For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make t/spec/S03-operators/comparison.t
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run all tests in one S* directory with a sh script. One example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat run-tests.sh
+#!/bin/sh
+
+# specify the desired directory:
+D='t/spec/S26-documentation'
+
+# collect the individual files
+F=$(ls $D/*t)
+
+# and run them
+for f in $F
+do
+    echo "Testing file '$f'"
+    make $f
+done
+echo "All tests in dir '$D' have been run."
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That can be written as a one-liner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for f in $(ls t/spec/S26-documentation/*t); do make "$f"; done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;&lt;a id="user-content-where-to-get-help-or-answers-to-questions" class="anchor" aria-hidden="true" href="#where-to-get-help-or-answers-to-questions"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Where to get help or answers to questions&lt;/h2&gt;
+&lt;p&gt;There are several mailing lists, IRC channels, and wikis available with
+help for Raku and Rakudo. Figuring out the right one to use
+is often the biggest battle. Here are some rough guidelines:&lt;/p&gt;
+&lt;p&gt;The central hub for Raku information is &lt;a href="https://raku.org/" rel="nofollow"&gt;raku.org&lt;/a&gt;.
+This is always a good starting point.&lt;/p&gt;
+&lt;p&gt;If you have a question about Raku syntax or the right way to approach
+a problem using Raku, you probably want the “&lt;a href="mailto:perl6-users@perl.org"&gt;perl6-users@perl.org&lt;/a&gt;”
+mailing list or the &lt;a href="https://webchat.freenode.net/?channels=#raku" rel="nofollow"&gt;irc.freenode.net/#raku IRC
+channel&lt;/a&gt;. The perl6-users
+list is primarily for the people who want to use Raku to write
+programs, so newbie questions are welcomed there.  Newbie questions
+are also welcome on the #raku channel; the Rakudo and Raku
+development teams tend to hang out there and are generally glad
+to help.  You can follow &lt;a href="https://twitter.com/perl6org" rel="nofollow"&gt;@perl6org&lt;/a&gt;
+and on Twitter, there's a Raku news aggregator at
+&lt;a href="http://pl6anet.org/" rel="nofollow"&gt;Planet Perl 6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions about NQP can also be posted to the #raku IRC channel.
+For questions about MoarVM, you can join #moarvm on freenode.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-reporting-bugs" class="anchor" aria-hidden="true" href="#reporting-bugs"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reporting bugs&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://rakudo.org/bugs" rel="nofollow"&gt;https://rakudo.org/bugs&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-submitting-patches" class="anchor" aria-hidden="true" href="#submitting-patches"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Submitting patches&lt;/h2&gt;
+&lt;p&gt;If you have a patch that fixes a bug or adds a new feature, please
+create a pull request using github's pull request infrastructure.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/rakudo/rakudo/blob/master/CONTRIBUTING.md"&gt;our contribution guidelines&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-line-editing-and-tab-completion" class="anchor" aria-hidden="true" href="#line-editing-and-tab-completion"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Line editing and tab completion&lt;/h2&gt;
+&lt;p&gt;If you would like simple history and tab completion in the perl6 executable,
+you need to install the Linenoise module.  The recommended way to install
+Linenoise is via &lt;a href="https://github.com/ugexe/zef"&gt;zef&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ zef install Linenoise
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An alternative is to use a third-party program such as &lt;a href="http://utopia.knoware.nl/~hlub/uck/rlwrap/#rlwrap" rel="nofollow"&gt;rlwrap&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="user-content-author" class="anchor" aria-hidden="true" href="#author"&gt;&lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AUTHOR&lt;/h2&gt;
+&lt;p&gt;See CREDITS for the many people that have contributed
+to the development of the Rakudo compiler.&lt;/p&gt;
+&lt;/article&gt;&lt;/div&gt;</description><author>rakudo</author><guid isPermaLink="false">https://github.com/rakudo/rakudo</guid><pubDate>Wed, 12 Feb 2020 00:01:00 GMT</pubDate></item></channel></rss>
