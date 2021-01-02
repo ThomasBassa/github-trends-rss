@@ -1,5 +1,13 @@
 # Github Trends RSS Generator
 
+This project has been abandoned; I've stopped maintaining it for a while.
+I ran this project on a Raspberry Pi, which frequently ran out of memory running this.
+I'd correct that and other flaws, except there are already
+multiple other projects that accomplish the same goals.
+
+See https://github.com/mshibanami/GitHubTrendingRSS and https://mshibanami.github.io/GitHubTrendingRSS/
+for an active implementation of this project. (It even predates mine!)
+
 ## Motivation
 
 GitHub sadly lacks an API for getting trending repositories,
